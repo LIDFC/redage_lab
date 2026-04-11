@@ -66,7 +66,9 @@ gm.events.add('client:OnHospitalDialogCallback', (state) => {
 let isOpenPopupList = false;
 
 gm.events.add('popup.list.open', (header, list) => {
-    mp.gui.emmit(`window.router.setPopUp("PopupSelect", {title: '${header}', elements: '${list}'});`);
+    const safeHeader = JSON.stringify(String(header ?? ""));
+    const safeList = JSON.stringify(String(list ?? "[]"));
+    mp.gui.emmit(`window.router.setPopUp("PopupSelect", {title: ${safeHeader}, elements: ${safeList}});`);
     mp.gui.cursor.visible = true;
     isInterface = false;
     isOpenPopupList = true;
@@ -82,4 +84,3 @@ gm.events.add('popup.list.selected', (listItem) => {
     isOpenPopupList = false;
     global.closeDialog ();
 })
-

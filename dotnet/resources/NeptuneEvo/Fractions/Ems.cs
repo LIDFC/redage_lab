@@ -329,6 +329,7 @@ namespace NeptuneEvo.Fractions
                 SafeMain.onPlayerDeathHandler(player, entityKiller, weapon);
                 Army.Event_PlayerDeath(player, entityKiller, weapon);
                 Police.Event_PlayerDeath(player, entityKiller, weapon);
+                DrivingSchool.Event_PlayerDeath(player, entityKiller, weapon);
                 Houses.HouseManager.Event_OnPlayerDeath(player, entityKiller, weapon);
                 //Jobs.Collector.Event_PlayerDeath(player, entityKiller, weapon);
                 //Jobs.Gopostal.Event_PlayerDeath(player, entityKiller, weapon);

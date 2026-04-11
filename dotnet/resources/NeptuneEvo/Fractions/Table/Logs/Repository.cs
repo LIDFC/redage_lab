@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using NeptuneEvo.Character;
 using NeptuneEvo.Fractions.Models;
+using NeptuneEvo.Fractions.Player;
 using NeptuneEvo.Handles;
+using NeptuneEvo.Players;
 using Redage.SDK;
 
 namespace NeptuneEvo.Fractions.Table.Logs

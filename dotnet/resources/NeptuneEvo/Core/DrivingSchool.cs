@@ -282,7 +282,7 @@ namespace NeptuneEvo.Core
             dSchoolData.License = (byte)licenseIndex;
 
             Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Теоретический экзамен начат (10 вопросов). Для сдачи нужно минимум 3 правильных ответа.", 6500);
-            OpenTheoryQuestion(player);
+            NAPI.Task.Run(() => OpenTheoryQuestion(player), 150);
         }
 
         private static void OpenTheoryQuestion(ExtPlayer player)
@@ -314,7 +314,8 @@ namespace NeptuneEvo.Core
         {
             try
             {
-                if (!(listItem is int answerIndex)) return;
+                if (listItem == null) return;
+                if (!int.TryParse(listItem.ToString(), out var answerIndex)) return;
 
                 var sessionData = player.GetSessionData();
                 if (sessionData == null) return;
@@ -328,7 +329,7 @@ namespace NeptuneEvo.Core
                     dSchoolData.TheoryCorrectAnswers++;
 
                 dSchoolData.TheoryQuestionIndex++;
-                OpenTheoryQuestion(player);
+                NAPI.Task.Run(() => OpenTheoryQuestion(player), 100);
             }
             catch (Exception e)
             {
@@ -517,13 +518,15 @@ namespace NeptuneEvo.Core
 
         private static void CallbackDriveSchool(ExtPlayer player, object listItem)
         {
-            if (!(listItem is int))
+            if (listItem == null)
+                return;
+            if (!int.TryParse(listItem.ToString(), out var index))
                 return;
 
             if (!player.IsCharacterData())
                 return;
 
-            StartDrivingCourse(player, Convert.ToInt32(listItem));
+            StartDrivingCourse(player, index);
         }
         #endregion
 

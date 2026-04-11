@@ -390,7 +390,7 @@ namespace NeptuneEvo.Core
             var spawnRotation = StartCourseRot[Step];
             if (++Step >= StartCourseCoord.Length) Step = 0;
 
-            var vehicle = VehicleStreaming.CreateVehicle(vehicleHash, spawnPosition, spawnRotation, 30, 30, $"{platePrefix}{player.Value}", acc: "SCHOOL", workdriv: player, petrol: 9999);
+            var vehicle = VehicleStreaming.CreateVehicle((uint)vehicleHash, spawnPosition, spawnRotation.Z, 30, 30, $"{platePrefix}{player.Value}", acc: VehicleAccess.School, workdriv: characterData.UUID, petrol: 9999);
 
             var dSchoolData = sessionData.DSchoolData;
             dSchoolData.Vehicle = vehicle;

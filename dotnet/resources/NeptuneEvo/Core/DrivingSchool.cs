@@ -282,7 +282,8 @@ namespace NeptuneEvo.Core
             dSchoolData.License = (byte)licenseIndex;
 
             Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Теоретический экзамен начат (10 вопросов). Для сдачи нужно минимум 3 правильных ответа.", 6500);
-            NAPI.Task.Run(() => OpenTheoryQuestion(player), 150);
+            // Даём клиенту закрыть предыдущий PopupSelect из выбора категории.
+            NAPI.Task.Run(() => OpenTheoryQuestion(player), 600);
         }
 
         private static void OpenTheoryQuestion(ExtPlayer player)
@@ -301,7 +302,7 @@ namespace NeptuneEvo.Core
 
             var question = TheoryQuestions[dSchoolData.TheoryQuestionIndex];
             var frameList = new FrameListData();
-            frameList.Header = $"Теория {dSchoolData.TheoryQuestionIndex + 1}/{TheoryQuestions.Count}\n{question.Question}";
+            frameList.Header = $"Теория {dSchoolData.TheoryQuestionIndex + 1}/{TheoryQuestions.Count}: {question.Question}";
             frameList.Callback = CallbackTheory;
 
             for (int i = 0; i < question.Answers.Length; i++)
@@ -329,7 +330,9 @@ namespace NeptuneEvo.Core
                     dSchoolData.TheoryCorrectAnswers++;
 
                 dSchoolData.TheoryQuestionIndex++;
-                NAPI.Task.Run(() => OpenTheoryQuestion(player), 100);
+                // Переключение между вопросами тоже делаем с паузой,
+                // иначе новый popup может быть сброшен закрытием предыдущего.
+                NAPI.Task.Run(() => OpenTheoryQuestion(player), 300);
             }
             catch (Exception e)
             {

@@ -225,6 +225,7 @@ namespace NeptuneEvo.Players.Disconnect
                     NeptuneEvo.Events.AirDrop.Repository.onPlayerDisconnectedhandler(player);
                     Selecting.onPlayerDisconnectedhandler(player);
                     Police.onPlayerDisconnectedhandler(player, type, reason);
+                    DrivingSchool.OnPlayerDisconnected(player, type, reason);
                     CarDelivery.Event_PlayerDisconnected(player);
                     HouseManager.Event_OnPlayerDisconnected(player, type, reason);
                     Airsoft.OnPlayerDisconnected(player);

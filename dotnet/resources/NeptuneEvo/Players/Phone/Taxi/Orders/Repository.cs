@@ -6,6 +6,7 @@ using Localization;
 using NeptuneEvo.Character;
 using NeptuneEvo.Core;
 using NeptuneEvo.Handles;
+using NeptuneEvo.MoneySystem;
 using NeptuneEvo.Jobs.Models;
 using NeptuneEvo.Players.Models;
 using NeptuneEvo.Players.Phone.Messages.Models;
@@ -311,6 +312,45 @@ namespace NeptuneEvo.Players.Phone.Taxi.Orders
                     Notify.Send(target, NotifyType.Warning, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.TaxiDriverLost), 3000);
                 }
             }
+        }
+
+
+        public static void BotFinish(ExtPlayer player, int distance)
+        {
+            var sessionData = player.GetSessionData();
+            if (sessionData == null)
+                return;
+
+            var characterData = player.GetCharacterData();
+            if (characterData == null)
+                return;
+
+            if (characterData.WorkID != (int)JobsId.Taxi || !sessionData.WorkData.OnWork)
+                return;
+
+            var vehicle = player.Vehicle as ExtVehicle;
+            if (vehicle == null)
+                return;
+
+            var vehicleLocalData = vehicle.GetVehicleLocalData();
+            if (vehicleLocalData == null || vehicleLocalData.WorkId != JobsId.Taxi)
+                return;
+
+            if (distance < 200) distance = 200;
+            else if (distance > 5000) distance = 5000;
+
+            var reward = distance / 3;
+            if (reward < 150) reward = 150;
+            else if (reward > 1700) reward = 1700;
+
+            Wallet.Change(player, reward);
+            GameLog.Money($"server", $"player({characterData.UUID})", reward, $"taxiBotRide");
+
+            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Поездка выполнена. Вы заработали ${reward}", 3000);
+
+            BattlePass.Repository.UpdateReward(player, 59);
+            BattlePass.Repository.UpdateReward(player, 2);
+            BattlePass.Repository.UpdateReward(player, 159);
         }
 
         private static int OneMileagePrice = 30;//Цена за милю

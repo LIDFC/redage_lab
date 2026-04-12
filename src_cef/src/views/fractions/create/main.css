@@ -1,0 +1,315 @@
+.magicorg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 55.5556vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 1.1111vh;
+    background: rgb(255, 255, 255);
+}
+
+.magicorg .headblock {
+    width: 55.5556vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1.4815vh;
+    box-sizing: border-box;
+    padding-bottom: 2.1296vh;
+    border-bottom: solid 0.0926vh rgb(217, 217, 217);
+}
+
+.magicorg .listorg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 2.7778vh;
+    box-sizing: border-box;
+    gap: 2.7778vh;
+}
+
+.magicorg .nameorg {
+    width: 46.2963vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2.7778vh 0vh;
+    gap: 0.7407vh;
+}
+
+.magicorg .createorg {
+    width: 55.5556vh;
+    height: 9.2593vh;
+    border-top: solid 0.0926vh rgb(217, 217, 217);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0vh 4.6296vh;
+}
+
+.magicorg .createorg .priceorg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.magicorg .createorg .btncreate {
+    width: 18.0556vh;
+    height: 3.7037vh;
+    border-radius: 0.5556vh;
+    background: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magicorg .createorg .btncreate p {
+    color: rgba(30, 30, 30, 0.5);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.magicorg .createorg .priceorg p {
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 1%;
+    text-align: left;
+    color: rgb(30, 30, 30);
+}
+
+.magicorg .createorg .priceorg b {
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 1%;
+    text-align: left;
+    color: rgb(75, 95, 143);
+    margin-left: 0.463vh;
+}
+
+.magicorg .nameorg h1 {
+    color: rgb(30, 30, 30);
+    font-family: Proxima Nova;
+    font-size: 1.1111vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.magicorg .nameorg input {
+    width: 31.0185vh;
+    height: 3.7037vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(30, 30, 30, 0.1);
+    border-radius: 0.2778vh;
+    background: rgb(251, 251, 251);
+    outline: none;
+    padding: 0vh 1.5741vh;
+    color: rgb(30, 30, 30);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.magicorg .listorg .blockorg {
+    width: 46.2963vh;
+    height: 14.3519vh;
+    border-radius: 1.1111vh;
+    background: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.magicorg .listorg .blockorg .iconorg {
+    width: 9.7222vh;
+    height: 9.7222vh;
+    border-radius: 4.6296vh;
+    background: rgb(230, 230, 230);
+    margin-left: 2.3148vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.magicorg .listorg .blockorg .infoorg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.9259vh;
+    width: 29.6296vh;
+    margin-left: 2.3148vh;
+}
+
+.magicorg .listorg .blockorg .infoorg h1 {
+    color: rgb(0, 0, 0);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.magicorg .listorg .blockorg .infoorg p {
+    color: rgba(0, 0, 0, 0.45);
+    font-family: Proxima Nova;
+    font-size: 1.1111vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.magicorg .listorg .blockorg .iconorg svg {
+    width: 5.9259vh;
+    height: 5.9259vh;
+    fill: rgba(30, 30, 30);
+    opacity: 0.5;
+}
+
+.magicorg .headblock .hbinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 4.6296vh;
+    margin-top: 0.9259vh;
+}
+
+.magicorg .headblock span {
+    width: 2.7778vh;
+    height: 2.7778vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.463vh;
+    background: rgba(30, 30, 30, 0.05);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.8519vh;
+}
+
+.magicorg .headblock span svg {
+    width: 0.9259vh;
+    height: 0.9259vh;
+    fill: rgb(30, 30, 30);
+    stroke: rgb(30, 30, 30);
+    opacity: 0.5;
+}
+
+.magicorg .headblock .hbinfo h1 {
+    color: rgb(69, 109, 203);
+    font-family: Proxima Nova;
+    font-size: 2.037vh;
+    font-weight: 600;
+    line-height: 2.5vh;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.magicorg .headblock .hbinfo span {
+    color: rgb(0, 0, 0);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 1%;
+    text-align: left;
+    margin-top: 0.6481vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+    background: none !important;
+    height: 1.5741vh;
+}
+
+.magicorg p, .magicorg h1 {
+    margin: 0;
+}
+
+.magicorg .listorg .blockorg:hover {
+    background: rgb(66, 111, 206);
+}
+
+.magicorg .listorg .blockorg:hover .iconorg {
+    background: rgba(230, 230, 230, 0.2);
+}
+
+.magicorg .listorg .blockorg:hover .iconorg svg {
+    opacity: 1;
+    fill: #fff;
+}
+
+.magicorg .listorg .blockorg:hover .infoorg h1 {
+    color: rgb(255, 255, 255);
+}
+
+.magicorg .listorg .blockorg:hover .infoorg p {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.magicorg .listorg .blockorg.active {
+    background: rgb(66, 111, 206);
+}
+
+.magicorg .listorg .blockorg.active .iconorg {
+    background: rgba(230, 230, 230, 0.2);
+}
+
+.magicorg .listorg .blockorg.active .iconorg svg {
+    opacity: 1;
+    fill: #fff;
+}
+
+.magicorg .listorg .blockorg.active .infoorg h1 {
+    color: rgb(255, 255, 255);
+}
+
+.magicorg .listorg .blockorg.active .infoorg p {
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.magicorg .createorg .btncreate:hover {
+    background: rgb(66, 111, 206);
+}
+
+.magicorg .createorg .btncreate:hover p {
+    color: #fff;
+}
+
+.magicorg .headblock span:hover {
+    background: rgb(66, 111, 206);
+}
+
+.magicorg .headblock span:hover svg {
+    fill: #fff;
+    opacity: 1;
+    stroke: #fff;
+}

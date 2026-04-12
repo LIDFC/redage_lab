@@ -1,0 +1,534 @@
+.autodilergta5dev {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0vh;
+    left: 0vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.autodilergta5dev .autolmenu {
+    position: absolute;
+    top: 50%;
+    transform: translate(0vh, -50%);
+    left: 2.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 35.1852vh;
+    height: 94.4444vh;
+    border-radius: 0.9259vh;
+    background: rgb(26, 26, 26);
+}
+
+.autodilergta5dev .autormenu {
+    position: absolute;
+    top: 50%;
+    transform: translate(0vh, -50%);
+    right: 2.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.autodilergta5dev p, h1 {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.autodilergta5dev .autolmenu img {
+    width: 20.7407vh;
+    height: 16.8519vh;
+}
+
+.autodilergta5dev .autolmenu h1 {
+    width: 30.5556vh;
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 2.3148vh;
+    margin-top: 0.3704vh;
+}
+
+.autodilergta5dev .autolmenu span {
+    width: 30.5556vh;
+    margin-left: 2.3148vh;
+    margin-top: 0.3704vh;
+    color: rgb(137, 137, 137);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autolmenu .seachcars {
+    width: 30.5556vh;
+    height: 4.6296vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.8519vh;
+}
+
+.autodilergta5dev .autolmenu .allist {
+    width: 31.5556vh;
+    max-height: 55.5556vh;
+    overflow-y: scroll;
+    margin-top: 1.8519vh;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 1vh;
+}
+
+.autodilergta5dev .autolmenu .alexit {
+    width: 30.5556vh;
+    height: 5.5556vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.autodilergta5dev .autolmenu .seachcars input {
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 2.3148vh;
+    width: 24.0741vh;
+}
+
+.autodilergta5dev .autolmenu .seachcars svg {
+    width: 1.2963vh;
+    height: 1.2963vh;
+    margin-right: 1.7593vh;
+}
+
+.autodilergta5dev .autolmenu .allist .carsblock {
+    min-width: 30.5556vh;
+    min-height: 4.6296vh;
+    max-width: 30.5556vh;
+    max-height: 4.6296vh;
+    border-radius: 0.5556vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.autodilergta5dev .autolmenu .allist .carsblock p {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 1.3889vh;
+}
+
+.autodilergta5dev .autolmenu .allist .carsblock.act {
+    background: rgb(255, 255, 255) !important;
+}
+
+.autodilergta5dev .autolmenu .allist .carsblock.act p {
+    color: rgb(26, 26, 26);
+}
+
+.autodilergta5dev .autolmenu .alexit svg {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.9259vh;
+    margin-left: 2.3148vh;
+}
+
+.autodilergta5dev .autolmenu .alexit p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto {
+    width: 35.1852vh;
+    height: 59.2593vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.9259vh;
+    background: rgb(26, 26, 26);
+}
+
+.autodilergta5dev .autormenu .textdown {
+    width: 35.1852vh;
+    height: 4.4444vh;
+    margin-top: 1.3889vh;
+    border-radius: 0.5556vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autodilergta5dev .autormenu .armenuauto h1 {}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.8704vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .colorscars {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 0.9259vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .pricecars {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.1481vh;
+    margin-bottom: 2.8704vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .buycars {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.2778vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .testdrive {
+    width: 27.7778vh;
+    height: 4.6296vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockcenter {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockright {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockleft h1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockleft p {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.3889vh;
+    font-weight: 400;
+    line-height: 1.6667vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockleft p svg {
+    width: 1.2963vh;
+    height: 1.2963vh;
+    margin-left: 0.463vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockcenter h1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockcenter p {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.3889vh;
+    font-weight: 400;
+    line-height: 1.6667vh;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockright h1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockright p {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.3889vh;
+    font-weight: 400;
+    line-height: 1.6667vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hautohead .blockright p svg {
+    width: 1.2963vh;
+    height: 1.2963vh;
+    margin-left: 0.463vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto .hautotop {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.7407vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto .hautodown {
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto .hautotop p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto .hautotop b {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto .hautodown .bgproghauto {
+    width: 27.5926vh;
+    height: 0.2778vh;
+    background: url(https://imgur.com/tDfoi0v.png);
+    background-position: left;
+    background-size: cover;
+}
+
+.autodilergta5dev .autormenu .armenuauto .hauto .hautodown .bgproghauto .proghauto {
+    position: absolute;
+    max-width: 27.5926vh;
+    width: 59%;
+    height: 0.2778vh;
+    background: url(https://imgur.com/nB24QrP.png);
+    background-position: left;
+    background-size: cover;
+}
+.autodilergta5dev .autormenu .armenuauto .colorscars h1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Proxima Nova;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto .colorscars .listcolors {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.1111vh;
+    gap: 0.2778vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .colorscars .listcolors .blockcolor {
+    width: 2.5vh;
+    height: 1.8519vh;
+    border-radius: 0.1852vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .pricecars p {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.autodilergta5dev .autormenu .armenuauto .pricecars b {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.6667vh;
+    font-weight: 600;
+    line-height: 2.037vh;
+    letter-spacing: 0%;
+    text-align: right;
+}
+
+.autodilergta5dev .autormenu .armenuauto .buycars .buyblock {
+    width: 13.7963vh;
+    height: 4.6296vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.autodilergta5dev .autormenu .armenuauto .buycars .buyblock p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.autodilergta5dev .autormenu .armenuauto .testdrive p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.autodilergta5dev .autormenu .textdown p {
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.4815vh;
+    font-weight: 400;
+    line-height: 1.7593vh;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.autodilergta5dev .autolmenu .allist .carsblock:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.autodilergta5dev .autormenu .armenuauto h2 {
+    width: 27.7778vh;
+    color: rgb(255, 255, 255);
+    font-family: Proxima Nova;
+    font-size: 1.6667vh;
+    font-weight: 600;
+    line-height: 2.037vh;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 3.7037vh;
+    margin-bottom: 2.3148vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .buycars .buyblock:hover {
+    background: rgb(255, 255, 255);
+}
+
+.autodilergta5dev .autormenu .armenuauto .buycars .buyblock:hover p {
+    color: rgb(26, 26, 26);
+}
+
+.autodilergta5dev .autormenu .armenuauto .testdrive:hover {
+    background: rgb(255, 255, 255);
+}
+
+.autodilergta5dev .autormenu .armenuauto .testdrive:hover p {
+    color: rgb(26, 26, 26);
+}
+
+.allist::-webkit-scrollbar {
+    width: 0.2778vh;
+}
+.allist::-webkit-scrollbar-track {
+    background: #d7d7d721;
+}
+.allist::-webkit-scrollbar-thumb {
+    background-color: #ffffff1f;
+    width: 0.2778vh;
+}
+
+.autodilergta5dev .autormenu .armenuauto .colorscars .listcolors .blockcolor.act {
+    position: relative;
+    top: -0.1852vh;
+}

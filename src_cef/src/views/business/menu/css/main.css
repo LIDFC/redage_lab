@@ -1,0 +1,778 @@
+@keyframes openshop{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blacshophaxzer {
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(278% 89% at 276% 45%,rgba(38, 38, 38, 0) 4.167%,rgba(34, 35, 40, 0.72) 112.604%);
+}
+
+.blacshophaxzer .bshhead {
+    position: absolute;
+    top: 6.2037vh;
+    left: 7.8704vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.blacshophaxzer .bshclosed {
+    position: absolute;
+    top: 2.2222vh;
+    right: 3.5185vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.blacshophaxzer .bshmenu {
+    position: absolute;
+    left: 3.7037vh;
+    top: 19.4444vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 46.8148vh;
+    height: 71.9259vh;
+    overflow: auto;
+}
+
+.blacshophaxzer .bshmenu::-webkit-scrollbar {
+    border-radius: 2.1296vh;
+    width: 0.9259vh; /* в основном для вертикальных полос прокрутки */
+    height: 0.9259vh; /* в основном для горизонтальных полос прокрутки */
+}
+.blacshophaxzer .bshmenu::-webkit-scrollbar-thumb { /* плашка-бегунок */
+  background: #009EFF;
+  border-radius: 2.1296vh;
+}
+.blacshophaxzer .bshmenu::-webkit-scrollbar-track { /* фон */
+  background: #ffffff10;
+  border-radius: 2.1296vh;
+}
+
+.blacshophaxzer .bshhead h1 {
+    font-family: SF Pro Display;
+    font-size: 3.3333vh;
+    font-weight: 600;
+    line-height: 3.9815vh;
+    text-align: left;
+    color: #fff;
+}
+
+.blacshophaxzer .bshhead span {
+    width: 39.2593vh;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 400;
+    line-height: 1.7593vh;
+    text-align: left;
+    margin-top: 0.9259vh;
+}
+
+.blacshophaxzer .bshhead h1 b {
+    font-family: SF Pro Display;
+    font-size: 3.3333vh;
+    font-weight: 600;
+    line-height: 3.9815vh;
+    text-align: left;
+    color: #009EFF;
+}
+
+.blacshophaxzer .bshclosed p {
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    line-height: 1.3889vh;
+    text-align: right;
+}
+
+.blacshophaxzer .bshclosed b {
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0.5556vh 2.037vh 0vh rgba(201, 42, 42, 0.5);
+    background: rgb(201, 42, 42);
+    color: rgb(255, 255, 255);
+    font-family: Gilroy;
+    font-size: 1.2963vh;
+    font-weight: 300;
+    line-height: 1.3889vh;
+    text-align: center;
+    padding: 0.7407vh 0.9259vh;
+    margin-left: 0.8333vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock {
+    width: 14.2593vh;
+    height: 17.037vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(135.00deg, rgba(255, 255, 255, 0) 0.776%,rgba(255, 255, 255, 0.05) 100.021%);
+    margin-right: 0.9259vh;
+    margin-bottom: 0.9259vh;
+    border-image-slice: 45;
+    border-image-width: 3.6111vh;
+    border-image-repeat: stretch;
+}
+
+.blacshophaxzer .bshmenu .bshblock span {
+    width: 5.8333vh;
+    height: 2.2222vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180.00deg, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0) 100%);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 700;
+    line-height: 1.1111vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0.9259vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock .itembl {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: -1.1111vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock .btnbuyit {
+    width: 12.4074vh;
+    height: 2.1296vh;
+    border-radius: 0.1852vh;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.1111vh;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-top: 0.5556vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock .itembl svg.leftitb {
+    width: 1.0185vh;
+    height: 3.4259vh;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: 0.8333vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock .itembl .itemico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2.5vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock .itembl svg.rightitb {
+    width: 1.0185vh;
+    height: 3.4259vh;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 0.8333vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock .itembl .itemico img {
+    height: 6.3102vh;
+    background-size: cover;
+}
+
+.blacshophaxzer .bshmenu .bshblock .itembl .itemico p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 0.9vh;
+    font-weight: 700;
+    line-height: 1.9444vh;
+    text-align: center;
+    margin-top: 1.5741vh;
+}
+
+.blacshophaxzer p, h1 {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.blacshophaxzer .bshmenu .bshblock:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.blacshophaxzer .bshmenu .bshblock .btnbuyit:hover {
+    background: rgb(0, 158, 255);
+}
+
+.blacshophaxzer .casebs {
+    position: absolute;
+    left: 0vh;
+    bottom: 0vh;
+    width: 58.1481vh;
+    height: 25vh;
+    background: url(http://88.151.88.77/heone1/blackmarket/case.png);
+    background-size: cover;
+}
+
+.blacshophaxzer .line1bs {
+    top: 0vh;
+    right: 0vh;
+    position: absolute;
+    width: 41.5741vh;
+    height: 26.3889vh;
+    background: url(http://88.151.88.77/heone1/blackmarket/top.png);
+    background-size: cover;
+}
+
+.blacshophaxzer .line2bs {
+    bottom: 0vh;
+    right: 0vh;
+    position: absolute;
+    width: 36.9444vh;
+    height: 25.8333vh;
+    background: url(http://88.151.88.77/heone1/blackmarket/bottom.png);
+    background-size: cover;
+}
+
+.gta5dev24 {
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5dev24 .shopmenu {
+    display: flex;
+    width: 140.7407vh;
+    height: 81.8519vh;
+    border-radius: 1.2963vh;
+    background: #fff;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gta5dev24 .shopmenu .smenuhead {
+    display: flex;
+    width: 100%;
+    height: 9.3519vh;
+    border-bottom: 0.0926vh solid rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.02);
+    align-items: center;
+    flex-direction: row;
+}
+
+.gta5dev24 .shopmenu .smitemlist {
+    width: 136.7407vh;
+    margin-top: 1.0185vh;
+    margin-left: 3.7963vh;
+    max-height: 71.0185vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.gta5dev24 .shopmenu .smenuhead img.logo24 {
+    width: 7.3736vh;
+    height: 3.7963vh;
+    margin-left: 4.7222vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .nameshop {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0.8333vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .closed {
+    margin-right: 4.6296vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gta5dev24 .shopmenu .smenuhead .nameshop h1 {
+    color: #FFF;
+    text-shadow: 0vh 0vh 0.6481vh rgba(0, 0, 0, 0.25);
+    font-family: "SF Pro Display";
+    font-size: 1.8519vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1296vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .nameshop p {
+    color: rgba(255, 255, 255, 0.50);
+    text-shadow: 0vh 0vh 0.6481vh rgba(0, 0, 0, 0.25);
+    font-family: "SF Pro Display";
+    font-size: 1.4815vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.0148vh;
+    width: 30.6481vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .closed p {
+    color: #FFF;
+    text-align: right;
+    font-family: "SF Pro Display";
+    font-size: 1.3889vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0833vh;
+    margin-right: 0.8333vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .closed b {
+    color: #fff;
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 1.2037vh;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.0722vh;
+    background: rgb(41, 41, 41);
+    border-radius: 0.1852vh;
+    padding: 0.463vh 0.7407vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock {
+    width: 31.4815vh;
+    height: 33.4259vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    border-radius: 0.5556vh;
+    border: 0.0926vh solid rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.03);
+    margin-right: 1.8519vh;
+    margin-bottom: 1.7593vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .headblock {
+    width: 100%;
+    height: 18.5185vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 0.0926vh solid rgba(0, 0, 0, 0.05);
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .infoblock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1.9907vh;
+    margin-left: 1.6667vh;
+    margin-right: 1.6667vh;
+    height: 12.5926vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .infoblock p {
+    color: rgba(0, 0, 0, 0.80);
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    font-family: "SF Pro Display";
+    font-size: 1.3889vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0833vh;
+    margin-bottom: 0.6481vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .infoblock span {
+    color: rgba(0, 0, 0, 0.30);
+    font-family: "SF Pro Display";
+    font-size: 1.2963vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0778vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .infoblock b {
+    color: rgb(41,41,41);
+    text-shadow: 0vh 0vh 0.3704vh rgba(255, 255, 255, 0.25);
+    font-family: "SF Pro Display";
+    font-size: 1.6667vh;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1vh;
+    margin-top: auto;
+    margin-bottom: 2.5926vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .headblock img.item {
+    width: 10.8507vh;
+    height: 10.8507vh;
+    position: relative;
+    margin-top: 3.7963vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .headblock .smbtnbuy {
+    display: none;
+}
+
+.gta5dev24 p,h1 {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .headblock {
+    background: rgba(217, 217, 217, 0.01);
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .headblock .smbtnbuy {
+    display: block;
+    position: relative;
+    width: 13.7037vh;
+    height: 4.3519vh;
+    border-radius: 0.463vh;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.50);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 1.4815vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0889vh;
+    margin-top: -2.2222vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .headblock .smbtnbuy:hover {
+    background: rgb(41, 41, 41);
+    color: #FFF;
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 1.4815vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0889vh;
+}
+
+.smitemlist::-webkit-scrollbar {
+    border-radius: 2.1296vh;
+    width: 0.9259vh; /* в основном для вертикальных полос прокрутки */
+    height: 0.9259vh; /* в основном для горизонтальных полос прокрутки */
+}
+.smitemlist::-webkit-scrollbar-thumb { /* плашка-бегунок */
+  background: #fff !important;
+  border-radius: 2.1296vh;
+}
+.smitemlist::-webkit-scrollbar-track { /* фон */
+  background: #ffffff10;
+  border-radius: 2.1296vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate {
+    margin-left: 6.0185vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category {
+    border-radius: 3.3333vh;
+    background: rgb(41, 41, 41,0.1);
+    height: 3.8889vh;
+    padding-left: 1.3889vh;
+    padding-right: 1.8519vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.9259vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category p {
+    color: rgb(41, 41, 41);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 0.0278vh;
+    text-align: left;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category:hover {
+    background: rgb(41, 41, 41);
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category:hover p {
+    color: #fff;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category.active {
+    background: rgb(41, 41, 41);
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category.active p {
+    color: #fff;
+}
+
+.smitemlist::-webkit-scrollbar {
+    border-radius: 2.1296vh;
+    width: 0.9259vh; /* в основном для вертикальных полос прокрутки */
+    height: 0.9259vh; /* в основном для горизонтальных полос прокрутки */
+}
+.smitemlist::-webkit-scrollbar-thumb { /* плашка-бегунок */
+  background: #fff;
+  border-radius: 2.1296vh;
+}
+.smitemlist::-webkit-scrollbar-track { /* фон */
+  background: #ffffff10;
+  border-radius: 2.1296vh;
+}
+
+
+.gta5dev24 .shopmenu .smenuhead .money {
+    margin-left: auto;
+    margin-right: 2.8704vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.gta5dev24 .shopmenu .smenuhead .money .nal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5dev24 .shopmenu .smenuhead .money .bank {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 0.463vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .money .bank svg {
+    margin-left: 0.7407vh;
+    width: 1.2963vh;
+    height: 1.2963vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .money .nal svg {
+    margin-left: 0.7407vh;
+    width: 1.2963vh;
+    height: 1.2963vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .money .nal p {
+    color: rgba(0, 0, 0, 0.8);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 6%;
+    text-align: right;
+}
+
+.gta5dev24 .shopmenu .smenuhead .money .bank p {
+    color: rgba(0, 0, 0, 0.3);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 6%;
+    text-align: right;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .headblock span {
+    margin-left: auto;
+    margin-right: 2vh;
+    margin-top: 1vh;
+    margin-bottom: -2.5vh;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "SF Pro Display";
+    font-size: 1.2963vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0778vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .headblock span {
+    margin-left: auto;
+    margin-right: 2vh;
+    margin-top: 1vh;
+    margin-bottom: -2.5vh;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: "SF Pro Display";
+    font-size: 1.2963vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0778vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock .btnlist {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9259vh;
+    position: relative;
+    margin-top: -2.2222vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy {
+    width: 13.7037vh;
+    height: 4.3519vh;
+    border-radius: 0.463vh;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 1.4815vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0889vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy2 {
+    width: 13.7037vh;
+    height: 4.3519vh;
+    border-radius: 0.463vh;
+    background: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 1.4815vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0889vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist {
+    display: flex;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy:hover {
+    color: #fff;
+    background: rgb(41, 41, 41);
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy2:hover {
+    color: #fff;
+    background: rgb(41, 41, 41);
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category img {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+    background-size: cover;
+    display: block;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy svg {
+    fill: rgb(41, 41, 41);
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy:hover svg {
+    fill: #fff;
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy2 svg {
+    fill: rgb(41, 41, 41);
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+}
+
+.gta5dev24 .shopmenu .smitemlist .itemblock:hover .btnlist .btnbuy2:hover svg {
+    fill: #fff;
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category img.active {
+    display: none;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category.active img {
+    display: none;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category.active img.active {
+    display: block !important;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category:hover img {
+    display: none;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category:hover img.active {
+    display: block !important;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category.active:hover img {
+    display: none;
+}

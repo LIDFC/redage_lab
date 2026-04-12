@@ -1,0 +1,1577 @@
+.gta5devbp  {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    background: url(http://u90228c5.beget.tech/heone1/sbp/bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.gta5devbp .headbp {
+    width: 51.4815vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 13.4259vh;
+    margin-right: 91.1111vh;
+}
+
+.gta5devbp .missionbp {position: absolute;top: 7.6389vh;margin-left: 66.7963vh;width: 91.1111vh;display: flex;flex-direction: column;align-items: flex-end;justify-content: flex-start;}
+
+.gta5devbp .menubp {
+    position: absolute;
+    top: 46.0185vh;
+    width: 157.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devbp .headbp img {
+    width: 51.4815vh;
+    height: 11.6167vh;
+    margin-bottom: 1.6204vh;
+}
+
+.gta5devbp .headbp span {
+    width: 51.4815vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.0185vh;
+}
+
+.gta5devbp .headbp .butnsbp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devbp .headbp .butnsbp .butnbp {
+    width: 21.8519vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0vh 0.4167vh;
+}
+
+.gta5devbp .missionbp .headmisbp {
+    width: 21.8519vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.8333vh;
+}
+
+.gta5devbp .missionbp .listmisbp {display: flex;width: 92.1111vh;height: 25.9259vh;flex-direction: row-reverse;align-items: flex-start;justify-content: flex-start;flex-wrap: wrap;}
+
+.gta5devbp .missionbp .listmisbp .misbp {
+    width: 29.8148vh;
+    height: 12.037vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.8333vh;
+    margin-left: 0.8333vh;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis {
+    width: 27.2546vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1.2778vh;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .descmis {
+    width: 27.2546vh;
+    height: 5.2315vh;
+    margin-top: auto;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .bottommis {
+    width: 27.2546vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5278vh;
+    margin-bottom: 1.2778vh;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis .rewradmis {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis .rewradmis p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis .rewradmis .rewradmislist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 0.463vh;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis .rewradmis .rewradmislist span {
+    font-family: SF Pro Display;
+    font-size: 1.0185vh;
+    font-weight: 600;
+    line-height: 0vh;
+    letter-spacing: 0vh;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis .rewradmis .rewradmislist span svg.exp {
+    width: 1.1111vh;
+    height: 1.2037vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .headmis .rewradmis .rewradmislist span svg.money {
+    width: 1.1111vh;
+    height: 1.2037vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .descmis p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 600;
+    line-height: 1.1111vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .bottommis p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 600;
+    line-height: 1.1111vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .bottommis span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 600;
+    line-height: 1.1111vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}
+
+.gta5devbp .missionbp .listmisbp .misbp .bottommis p b {
+    color: #fff;
+}
+
+.gta5devbp .menubp .navmenubp {width: 157.7778vh;display: flex;flex-direction: row;align-items: flex-start;justify-content: flex-start;margin-bottom: 2.1296vh;}
+
+.gta5devbp .menubp .itemsbp {
+    width: 157.7778vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gta5devbp .menubp .navmenubp .butnbp {
+    width: 21.8519vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8333vh;
+}
+
+.gta5devbp .menubp .navmenubp .butnbpact {
+    width: 21.8519vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(106, 202, 0);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8333vh;
+}
+
+.gta5devbp .menubp .navmenubp .leftbutnbp {
+    width: 5.463vh;
+    height: 5vh;
+    border-radius: 0.9259vh 0vh 0vh 0.9259vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0.1852vh;
+}
+
+.gta5devbp .menubp .navmenubp .rightbutnbp {
+    width: 5.463vh;
+    height: 5vh;
+    border-radius: 0vh 0.9259vh 0.9259vh 0vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.8333vh;
+}
+
+.gta5devbp .menubp .navmenubp .lvlbp {
+    width: 21.8519vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    font-size: 1.3889vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devbp .menubp .navmenubp .leftbutnbp svg {
+    width: 0.8333vh;
+    height: 1.5741vh;
+}
+
+.gta5devbp .menubp .navmenubp .rightbutnbp svg {
+    width: 0.8333vh;
+    height: 1.5741vh;
+}
+
+.gta5devbp .menubp .navmenubp .lvlbp p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devbp .menubp .navmenubp .lvlbp span {
+    margin-left: 0.463vh;
+    color: rgb(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devbp .menubp .navmenubp .lvlbp span svg.exp {
+    width: 1.1111vh;
+    height: 1.2037vh;
+}
+
+.gta5devbp .menubp .itemsbp .leftbp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 1.1111vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devbp .menubp .itemsbp .leftbp .standartbp {
+    display: flex;
+    width: 5vh;
+    height: 19.4444vh;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 19);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devbp .menubp .itemsbp .leftbp .premiumbp {
+    display: flex;
+    width: 5vh;
+    height: 19.4444vh;
+    border-radius: 0.9259vh;
+    background: rgb(106, 202, 0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devbp .menubp .itemsbp .leftbp .standartbp svg {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-top: 1.6204vh;
+}
+
+.gta5devbp .menubp .itemsbp .leftbp .standartbp p {width: 9.2593vh;color: rgb(255, 255, 255);font-family: SF Pro Display;font-size: 1.3889vh;font-weight: 500;line-height: 2.1296vh;letter-spacing: 0.0463vh;text-align: left;transform: rotate(-90.00deg);margin-top: 7.8704vh;text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);}
+
+.gta5devbp .menubp .itemsbp .leftbp .premiumbp svg {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-top: 1.6204vh;
+}
+
+.gta5devbp .menubp .itemsbp .leftbp .premiumbp p {
+    width: 9.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    transform: rotate(-90.00deg);
+    margin-top: 7.8704vh;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem {
+    width: 24.4444vh;
+    height: 19.4444vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-left: 0.8333vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top {
+    width: 22.1296vh;
+    margin-top: 0.7407vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .butnitem {
+    position: absolute;
+    margin-top: 7.4074vh;
+    opacity: 0;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top .lineitem {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top .lineitem.\30 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(148, 148, 148, 0.5);
+    background: rgb(148, 148, 148);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top .lineitem.\31 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(253, 33, 61, 0.5);
+    background: rgb(253, 33, 61);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top .lineitem.\32 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(248, 201, 65, 0.5);
+    background: rgb(248, 201, 65);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top .lineitem.\33 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(50, 166, 134, 0.5);
+    background: rgb(50, 166, 134);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .top span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .butnitem .butuse {
+    width: 14.1667vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(106, 202, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .item img {
+    max-width: 21.7037vh;
+    height: 13.7037vh;
+    max-height: 13.7037vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem .item p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    letter-spacing: 0.0463vh;
+    margin-top: 0.2vh;
+    text-align: center;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem {
+    width: 24.4444vh;
+    height: 19.4444vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin-left: 0.8333vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top {
+    width: 22.1296vh;
+    margin-top: 0.7407vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .butnitem {
+    position: absolute;
+    margin-top: 7.4074vh;
+    opacity: 0;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top .lineitem {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top .lineitem.\30 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(148, 148, 148, 0.5);
+    background: rgb(148, 148, 148);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top .lineitem.\31 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(253, 33, 61, 0.5);
+    background: rgb(253, 33, 61);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top .lineitem.\32 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(248, 201, 65, 0.5);
+    background: rgb(248, 201, 65);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top .lineitem.\33 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(50, 166, 134, 0.5);
+    background: rgb(50, 166, 134);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .top span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .butnitem .butdone {
+    width: 14.1667vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .butnitem .butuse {
+    width: 14.1667vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(106, 202, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .item img {
+    max-width: 21.7037vh;
+    height: 13.7037vh;
+    max-height: 13.7037vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem .item p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    letter-spacing: 0.0463vh;
+    margin-top: 0.2vh;
+    text-align: center;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp .blocklvlbp.active {}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp .blocklvlbp {
+    width: 24.4444vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0.8333vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp .blocklvlbp .linelvlbp {
+    width: 20.1852vh;
+    height: 0.463vh;
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp .blocklvlbp .blvlbp {
+    width: 3.5185vh;
+    height: 2.5926vh;
+    border-radius: 0.6481vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp .blocklvlbp.active .linelvlbp {
+    box-shadow: 0vh 0vh 0.5556vh 0vh rgba(106, 202, 0, 0.25);
+    background: rgb(106, 202, 0);
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .progreslvlbp .blocklvlbp.active .blvlbp {
+    box-shadow: 0vh 0vh 0.5556vh 0vh rgba(106, 202, 0, 0.25);
+    background: rgb(106, 202, 0);
+}
+
+.gta5devbp p,h1 {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.gta5devbp .headbp .butnsbp .butnbp:hover {
+    background: rgb(106, 202, 0);
+}
+
+.gta5devbp .menubp .navmenubp .butnbp:hover {
+    background: rgb(106, 202, 0);
+}
+
+.blockitem {}
+
+.gta5devbp .menubp .itemsbp .rightbp .standartlvlbp .blockitem.active:hover .butnitem {
+    opacity: 1;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem:hover .butnitem {
+    opacity: 1;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp .blockitem.active .butnitem .butdone {
+    display: flex;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp.active .blockitem.active .butnitem .butuse {
+    display: flex;
+}
+
+.gta5devbp .lvlpbbuy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background: linear-gradient(0.00deg, rgba(25, 26, 39, 0.9),rgba(25, 26, 39, 0.7) 100%);
+}
+
+.gta5devbp .lvlpbbuy .blocklvl {
+    width: 36.2963vh;
+    height: 38.5185vh;
+    display: flex;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 17);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 1.8519vh;
+}
+
+.gta5devbp .lvlpbbuy .blocklvl h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.3148vh;
+    font-weight: 500;
+    line-height: 2.7778vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    margin-top: 2.2222vh;
+}
+
+.gta5devbp .lvlpbbuy .blocklvl svg {
+    width: 18.5185vh;
+    height: 18.5185vh;
+    margin-top: 2.8704vh;
+}
+
+.gta5devbp .lvlpbbuy .blocklvl .btnbplvl {
+    margin-top: 2.8704vh;
+    width: 28.5185vh;
+    height: 5.5556vh;
+    border-radius: 0.9259vh;
+    background: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 0.9259vh;
+}
+
+.gta5devbp .lvlpbbuy .blocklvl .btnbplvl p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devbp .lvlpbbuy .blocklvl .btnbplvl svg {
+    width: 2.1296vh;
+    height: 2.037vh;
+    margin: 0 0.463vh;
+}
+
+.gta5devbp .lvlpbbuy .blocklvl .btnbplvl:hover {
+    background: rgb(255, 255, 255);
+}
+
+.gta5devbp .lvlpbbuy .blocklvl .btnbplvl:hover p {
+    color: #1e1e1e;
+    text-shadow: none;
+}
+
+.gta5devbp .lvlpbbuy .bpinform {
+    width: 52.7778vh;
+    height: 47.6852vh;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devbp .lvlpbbuy .bpinform h1 {
+    width: 41.6667vh;
+    margin-top: 4.6296vh;
+    margin-bottom: 3.2407vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 700;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gta5devbp .lvlpbbuy .bpinform p {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.9444vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    width: 41.6667vh;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1.9444vh;
+}
+
+.gta5devbp .lvlpbbuy .bpinform p b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.9444vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    width: 41.6667vh;
+    color: rgba(255, 255, 255);
+}
+
+.gta5devbp .pbbuy {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    background: url(http://u90228c5.beget.tech/heone1/sbp/bg.png);
+    background-size: cover;
+}
+
+.gta5devbp .pbbuy img {
+    width: 51.4815vh;
+    height: 11.6667vh;
+    margin-top: 11.6667vh;
+}
+
+.gta5devbp .pbbuy .blocklist {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 5.463vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp {
+    width: 31.4815vh;
+    height: 39.3519vh;
+    border-radius: 0.9259vh;
+    background: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0.9259vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp h1 {
+    width: 25.9259vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 700;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    margin-top: 2.5926vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp p {
+    width: 25.9259vh;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.9444vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    margin-top: 2.1296vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp .btnlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: 2.5926vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp p b {
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.9444vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp .btnlist .btnbpbuy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 25.9259vh;
+    height: 5vh;
+    border-radius: 0.3704vh;
+    background: rgb(35, 35, 35);
+    margin-top: 0.9259vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp .btnlist .btnbpbuy p {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: auto;
+    margin: 0;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp .btnlist .btnbpbuy svg {
+    width: 1.9444vh;
+    height: 1.8519vh;
+    margin: 0 0.463vh;
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp .btnlist .btnbpbuy:hover {
+    background: rgb(255, 255, 255);
+}
+
+.gta5devbp .pbbuy .blocklist .blockbp .btnlist .btnbpbuy:hover p {
+    color: #1e1e1e;
+}
+
+.gta5devbp .lvlpbbuy .bpinform h1 span {
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.3704vh;
+    width: 2.2222vh;
+    height: 2.2222vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.2);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 400;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devbp .lvlpbbuy .bpinform h1 span:hover {
+    border: 0.0926vh solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devbp .lvlpbbuy .blocklvl span {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 6.9444vh;
+    font-weight: 600;
+    line-height: 8.3333vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    margin-top: 14.7926vh;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp.active .blockitem.active .butnitem .butdone {
+    display: none;
+}
+
+.gta5devbp .menubp .itemsbp .rightbp .premiumlvlbp.active .blockitem .butnitem .butdone {
+    display: none;
+}
+
+.gta5devbp .menubp2 {
+    width: 157.7778vh;
+    height: 52.2222vh;
+    border-radius: 0.9259vh;
+    background: rgba(17, 17, 17, 0.5);
+    margin-top: 46.0185vh;
+    position: relative;
+}
+
+.gta5devbp .menubp2 .blockmis {
+    width: 7.1213vh;
+    height: 8.2407vh;
+    background: url(http://u90228c5.beget.tech/heone1/sbp/mis.png);
+    background-size: cover !important;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.battlepass__missions_element_info {
+    width: 12.963vh;
+    height: 12.963vh;
+}
+
+.battlepass__missions_element_progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 11.5741vh;
+    height: 11.5741vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.gta5devbp .menubp2 .blockmis:hover {
+    background: url(http://u90228c5.beget.tech/heone1/sbp/misact.png);
+}
+
+.gta5devbp .menubp2 .blockmis.selected {
+    width: 7.1213vh;
+    height: 8.2407vh;
+    background: url(http://u90228c5.beget.tech/heone1/sbp/misact.png);
+    background-size: cover;
+}
+
+.gta5devbp .menubp2 .blockmis.closed {
+    width: 7.1213vh;
+    height: 8.2407vh;
+    background: url(http://u90228c5.beget.tech/heone1/sbp/misdone.png);
+    background-size: cover;
+}
+
+.gta5devbp .menubp2 .blockmis.done {
+    width: 7.1213vh;
+    height: 8.2407vh;
+    background: url(http://u90228c5.beget.tech/heone1/sbp/miscomp.png);
+    background-size: cover;
+}
+
+.gta5devbp .menubp2 .blockmis.pos1 {
+    position: absolute;
+    left: 2.5463vh;
+    top: 12.8241vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos2 {
+    position: absolute;
+    left: 18.4722vh;
+    top: 3.9352vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos3 {
+    position: absolute;
+    left: 18.4722vh;
+    top: 21.9907vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos4 {
+    position: absolute;
+    left: 33.9352vh;
+    top: 3.9352vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos5 {
+    position: absolute;
+    left: 49.3981vh;
+    top: 3.9352vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos6 {
+    position: absolute;
+    left: 64.8611vh;
+    top: 3.9352vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos7 {
+    position: absolute;
+    left: 33.9352vh;
+    top: 21.9907vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos8 {
+    position: absolute;
+    left: 33.9352vh;
+    top: 40.0463vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos9 {
+    position: absolute;
+    left: 18.4722vh;
+    top: 40.0463vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos10 {
+    position: absolute;
+    left: 3.1019vh;
+    top: 40.0463vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos11 {
+    position: absolute;
+    left: 49.3981vh;
+    top: 21.9907vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos12 {
+    position: absolute;
+    left: 64.8611vh;
+    top: 21.9907vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos13 {
+    position: absolute;
+    left: 80.4167vh;
+    top: 30.8796vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos14 {
+    position: absolute;
+    left: 80.4167vh;
+    top: 12.8241vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos15 {
+    position: absolute;
+    left: 95.8796vh;
+    top: 30.8796vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos16 {
+    position: absolute;
+    left: 95.8796vh;
+    top: 12.8241vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos17 {
+    position: absolute;
+    left: 106.6204vh;
+    top: 3.9352vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos18 {
+    position: absolute;
+    left: 122.0833vh;
+    top: 3.9352vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos19 {
+    position: absolute;
+    left: 132.8241vh;
+    top: 12.8241vh;
+}
+
+.gta5devbp .menubp2 .blockmis.pos20 {
+    position: absolute;
+    left: 148.287vh;
+    top: 12.8241vh;
+}
+
+.gta5devbp .menubp2 .linemis {}
+
+.gta5devbp .menubp2 .linemis svg {
+    stroke: white; 
+    stroke-opacity: 0.5;
+}
+
+.gta5devbp .menubp2 .linemis svg.active {
+    stroke: #6ACA00; 
+    stroke-opacity: 1;
+}
+
+
+.gta5devbp .menubp2 .linemis svg.line1 {
+    width: 9.3519vh;
+    height: 18.0556vh;
+    position: absolute;
+    top: 8.0556vh;
+    left: 9.4444vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line2 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 25.3704vh;
+    top: 8.0556vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line3 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 25.3704vh;
+    top: 26.1111vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line4 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 40.8333vh;
+    top: 8.0556vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line5 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 56.2963vh;
+    top: 8.0556vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line6 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 41.2963vh;
+    top: 26.1111vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line7 {
+    width: 0.1852vh;
+    height: 10.463vh;
+    position: absolute;
+    left: 37.5926vh;
+    top: 29.9074vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line8 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 25.3704vh;
+    top: 44.1667vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line9 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 9.9074vh;
+    top: 44.1667vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line10 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 56.3889vh;
+    top: 26.1111vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line11 {
+    width: 8.8889vh;
+    height: 18.2407vh;
+    position: absolute;
+    left: 71.8519vh;
+    top: 16.9444vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line12 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 87.2222vh;
+    top: 16.9444vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line13 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 87.2222vh;
+    top: 35vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line14 {
+    position: absolute;
+    left: 113.5185vh;
+    bottom: 14.537vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line15 {
+    width: 4.0741vh;
+    height: 9.0741vh;
+    position: absolute;
+    left: 102.7778vh;
+    top: 8.0556vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line16 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 113.4259vh;
+    top: 8.0556vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line17 {
+    width: 4.1667vh;
+    height: 9.0741vh;
+    position: absolute;
+    left: 128.9815vh;
+    top: 8.0556vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line18 {
+    width: 8.8889vh;
+    height: 0.1852vh;
+    position: absolute;
+    left: 139.6296vh;
+    top: 16.9444vh;
+}
+
+.gta5devbp .menubp2 .linemis svg.line19 {
+    position: absolute;
+    left: 150.463vh;
+    bottom: 41.2963vh;
+}
+
+.gta5devbp .menubp2 .linemis {}
+
+.gta5devbp .menubp2 .linemis svg.line1 {
+    width: 9.3519vh;
+    height: 18.0556vh;
+    position: absolute;
+    top: 8.0556vh;
+    left: 9.4444vh;
+}
+
+.hovermisson{
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    bottom: 50%;
+    left: 90%;
+    transition: opacity 0.3s;
+    width: 45.1852vh;
+    height: 26.6667vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hovermisson .headmis {
+    margin-top: 3.7037vh;
+    width: 37.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hovermisson .descmis {
+    width: 37.7778vh;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-top: 0.5556vh;
+}
+
+.hovermisson .bottommis {
+    width: 37.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.037vh;
+    margin-top: auto;
+}
+
+.hovermisson .headmis h1 {
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 600;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.hovermisson .headmis .rewradmis {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin-top: 0.1852vh;
+}
+
+.hovermisson .headmis h1 b {
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 600;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+}
+
+.hovermisson .headmis .rewradmis p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0px;
+    text-align: right;
+}
+
+.hovermisson .headmis .rewradmis .rewradmislist {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 0.463vh;
+}
+
+.hovermisson .headmis .rewradmis .rewradmislist span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0px;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0.0926vh;
+}
+
+.hovermisson .headmis .rewradmis .rewradmislist span svg.exp {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-left: 0.463vh;
+}
+
+.hovermisson .headmis .rewradmis .rewradmislist span svg.money {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-left: 0.463vh;
+}
+
+.hovermisson .descmis p {}
+
+.hovermisson .bottommis p {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgb(255, 255, 255, 0.4);
+}
+
+.hovermisson .bottommis span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}
+
+.hovermisson .bottommis p b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.hovermisson .bar {
+    width: 37.7778vh;
+    height: 0.3704vh;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 3.7037vh;
+}
+
+.hovermisson .bar .barprog {
+    height: 0.3704vh;
+    background: rgb(106, 202, 0);
+}
+
+.hovermisson .bottommis span b {
+    color: rgb(106, 202, 0);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}

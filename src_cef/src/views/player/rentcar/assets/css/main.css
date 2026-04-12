@@ -1,0 +1,476 @@
+.gta5devrent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devrent .rentmenu {
+    position: relative;
+    padding: 3.7037037037vh 2.2222222222vh 2.7778vh 4.6296296296vh;
+    width: 105.5555555556vh;
+    height: 77.962962963vh;
+    background-color: #efefef;
+    border-radius: 1.1111111111vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.gta5devrent .rentmenu .headrent {
+    display: flex;
+    position: relative;
+    margin-bottom: 2.7777777778vh;
+    background-color: transparent;
+    z-index: 4;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gta5devrent .rentmenu .rentlist {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-wrap: wrap;
+}
+
+.gta5devrent .rentmenu .headrent .name {
+    flex-shrink: 0;
+    margin-right: 1.8518518519vh;
+    width: 12.5925925926vh;
+    height: 3.8888888889vh;
+    border-radius: 0.5555555556vh;
+    overflow: hidden;
+    background-color: #f8d43e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devrent .rentmenu .headrent .catologs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devrent .rentmenu .headrent .money {
+    position: absolute;
+    top: 0.1851851852vh;
+    right: 9.3518518519vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gta5devrent .rentmenu .headrent span {
+    position: absolute;
+    top: 0.8333333333vh;
+    right: 2.6851851852vh;
+    cursor: pointer;
+    padding: 0.462962963vh 0.9259259259vh;
+    border-radius: 0.2777777778vh;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1111111111vh;
+    background-color: #212121;
+    color: #efefef;
+}
+
+.gta5devrent .rentmenu .headrent .name p {font-weight: 900;font-style: normal;font-size: 1.4814814815vh;font-family: SF Pro Display;color: #212121;transition: color .2s ease;}
+
+.gta5devrent .rentmenu .headrent .catologs .blockcatl {
+    margin-right: 0.9259259259vh;
+    border: .0925925926vh solid #f8d43e;
+    background-color: #f8d43e;
+    border-radius: 3.7037037037vh;
+    cursor: pointer;
+    padding: 0 1.8518518519vh 0 1.2037037037vh;
+    transition: background-color .2s ease, border .2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 3.8888888889vh;
+}
+
+.gta5devrent .rentmenu .headrent .catologs .blockcatl svg {
+    width: 1.4814814815vh;
+    height: 1.4814814815vh;
+    fill: #212121;
+    transition: fill .2s ease;
+}
+
+.gta5devrent .rentmenu .headrent .catologs .blockcatl p {
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    margin-left: 0.9259259259vh;
+    color: #101010;
+    transition: color .2s ease;
+}
+
+.gta5devrent .rentmenu .headrent .money .moneyl {
+    margin-bottom: 0.3703703704vh;
+    display: flex;
+    align-items: center;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    color: #212121;
+}
+
+.gta5devrent .rentmenu .headrent .money .moneyl p {}
+
+.gta5devrent .rentmenu .headrent .money .moneyl svg {
+    margin-left: 0.7407407407vh;
+    width: 1.2962962963vh;
+    height: 1.2962962963vh;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar {
+    position: relative;
+    padding: 1.6666666667vh 1.8518518519vh 1.8518518519vh;
+    min-width: 31.5vh;
+    max-width: 31.5vh;
+    margin: 0;
+    margin-right: 0.9259259259vh;
+    margin-bottom: 0.9259259259vh;
+    background-color: #fcfcfc;
+    border: 0.0925925926vh solid #e8e8e8;
+    border-radius: 0.7407407407vh;
+    transition: background .2s ease;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar h1 {
+    font-family: SF Pro Display;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.4814814815vh;
+    color: #212121;
+    margin-bottom: 1.3888888889vh;
+    transition: color .2s ease;
+    width: 27.5vh;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .carsimg {
+    margin-bottom: 1.3888888889vh;
+    position: relative;
+    background-position: center;
+    width: 100%;
+    max-height: 17.888889vh;
+    min-height: 15.888889vh;
+    overflow: hidden;
+    background-color: transparent;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 27.5vh;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info .rleft {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info .rright {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info .rleft p {
+    margin-bottom: 0.7407407407vh;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    color: rgba(33, 33, 33, .5);
+    transition: color .2s ease;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info .rleft span {
+    font-family: SF Pro Display;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    color: #212121;
+    transition: color .2s ease;
+    display: flex;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info .rright p {
+    margin-bottom: 0.7407407407vh;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    color: rgba(33, 33, 33, .5);
+    transition: color .2s ease;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar .info .rright span {
+    font-family: SF Pro Display;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    color: #212121;
+    transition: color .2s ease;
+    display: flex;
+}
+
+.gta5devrent p,h1 {
+    margin: 0;
+}
+
+.gta5devrent .rentmenu .rentlist::-webkit-scrollbar {
+    width: .2777777778vh
+}
+
+.gta5devrent .rentmenu .rentlist::-webkit-scrollbar-track {
+    border-radius: .9259259259vh;
+    background: linear-gradient(270deg, transparent 0, transparent 30%, rgba(0, 0, 0, .15) 50%, transparent 70%, transparent)
+}
+
+.gta5devrent .rentmenu .rentlist::-webkit-scrollbar-thumb {
+    border-radius: .9259259259vh;
+    background: #909090
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar:nth-child(3n) {
+    margin-right: 0;
+}
+
+.gta5devrent .rentmenu .rentlist .blockcar:hover {
+    background-color: #f8d43e;
+}
+
+.gta5devrent .rentmenu .acceptcar {
+    position: absolute;
+    padding: 3.7037037037vh 2.2222222222vh 2.7778vh 4.6296296296vh;
+    width: 105.5555555556vh;
+    height: 77.962962963vh;
+    background: hsla(0, 0%, 93.7%, .75);
+    z-index: 5;
+    left: 0vh;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected {
+    position: relative;
+    height: auto;
+    background: #fff;
+    padding: 3.7037037037vh;
+    border-radius: 1.1111111111vh;
+    overflow: hidden;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .close-block.flex-block {
+    position: absolute;
+    width: 2.2222222222vh;
+    height: 2.2222222222vh;
+    right: 2.3148148148vh;
+    display: flex;
+    top: 2.3148148148vh;
+    background: transparent;
+    border: 0.0925925926vh solid #e8e8e8;
+    border-radius: 0.3703703704vh;
+    cursor: pointer;
+    transition: background-color .2s ease, border .2s ease;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .close-block.flex-block svg {
+    width: 0.9259259259vh;
+    height: 0.9259259259vh;
+    stroke: #e8e8e8;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__text-title {
+    font-family: SF Pro Display;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.6666666667vh;
+    margin-bottom: 2.5vh;
+    stroke: #212121;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__text-text {
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.2962962963vh;
+    margin-bottom: 1.1111111111vh;
+    color: rgba(33, 33, 33, .75);
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__text-value {
+    font-family: SF Pro Display;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1.4814814815vh;
+    margin-bottom: 2.7777777778vh;
+    color: #212121;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__text-value span.content_block_main_selected__text-text.per-hour {
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4814814815vh;
+    margin-bottom: 0;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__hours-wrapper.row-block.align-center.justify-start {
+    margin-bottom: 2.7777777778vh;
+    width: 32.037037037vh;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .close-block.flex-block:hover {
+    background: #f8d43e;
+    border: 0.0925925926vh solid #f8d43e;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .close-block.flex-block:hover svg {
+    fill: #fff;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors {
+    margin-bottom: 2.7777777778vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 1.0185185185vh;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .buttons_panel.row-block.justify-between {
+    height: auto;
+    width: auto;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__hours-wrapper.row-block.align-center.justify-start .content_block_main_selected__hours.row-block.align-center.justify-start {color: rgba(33, 33, 33, .5);margin-right: 0.5555555556vh;margin-bottom: .5555555556vh;min-height: 4.4444444444vh;font-family: SF Pro Display;border-radius: 0.5555555556vh;background-color: #fcfcfc;border: 0.0925925926vh solid #e8e8e8;cursor: pointer;justify-content: center;min-width: 6.592593vh;max-width: 7.5925925926vh;display: flex;align-items: center;font-weight: 500;font-style: normal;font-size: 1.4814814815vh;transition: color .2s ease;}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__hours-wrapper.row-block.align-center.justify-start .content_block_main_selected__hours.row-block.align-center.justify-start:hover {background-color: #efefef;}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors .color-block.row-block.align-center.justify-center.selected {
+    transform: none;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors .color-block.row-block.align-center.justify-center.selected svg {
+    opacity: 1;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors .color-block.row-block.align-center.justify-center {
+    position: relative;
+    min-width: 2.777778vh;
+    min-height: 2.777778vh;
+    max-width: 2.777778vh;
+    max-height: 2.777778vh;
+    /* overflow: hidden; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors .color-block.row-block.align-center.justify-center .color-block__back {
+    border: 0.0925925926vh solid #e8e8e8;
+    border-radius: 0.5555555556vh;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity .2s ease;
+    opacity: .5;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors .color-block.row-block.align-center.justify-center svg {
+    position: absolute;
+    z-index: 9999;
+    top: calc(50% - 0.29676vh);
+    left: calc(50% - 0.46296vh);
+    opacity: 0;
+    min-width: 0.9259259259vh;
+    max-width: 0.9259259259vh;
+    min-height: 0.5935185185vh;
+    max-height: 0.5935185185vh;
+    transition: opacity .2s ease;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .buttons_panel.row-block.justify-between .panel_button {
+    min-height: 4.4444444444vh;
+    width: 100%;
+    max-width: 15.7407407407vh;
+    transition-property: background-color, color;
+    transition: .2s ease;
+    border-radius: 0.5555555556vh;
+    cursor: pointer;
+    font-family: SF Pro Display;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4814814815vh;
+    color: rgba(33, 33, 33, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 33, 33, .05);
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected-colors .color-block.row-block.align-center.justify-center.selected .color-block__back {
+    opacity: 1;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .buttons_panel.row-block.justify-between .panel_button:hover {
+    background-color: #f8d43e;
+    color: #212121;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__hours-wrapper.row-block.align-center.justify-start .content_block_main_selected__hours.row-block.align-center.justify-start:hover span {
+    color: #212121;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__hours-wrapper.row-block.align-center.justify-start .content_block_main_selected__hours.row-block.align-center.justify-start.selected {
+    background-color: #f8d43e;
+    border: 0.0925925926vh solid #f8d43e;
+}
+
+.gta5devrent .rentmenu .acceptcar .content_block_main_selected .content_block_main_selected__hours-wrapper.row-block.align-center.justify-start .content_block_main_selected__hours.row-block.align-center.justify-start.selected span {
+    color: #212121;
+}

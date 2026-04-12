@@ -1,0 +1,6941 @@
+@keyframes rightmenu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.gta5devmenuf2 {
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    animation: rightmenu 0.5s ease-in-out;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gta5devmenuf2 .leftmenu {
+    width: 27.7778vh;
+    height: 100%;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu {
+    width: 84.35%;
+    height: 100%;
+    display: none;
+    animation: rightmenu 0.5s ease-in-out;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu.active {
+    display: flex;
+}
+
+.gta5devmenuf2 .leftmenu .headplayr {
+    width: 27.7778vh;
+    height: 7.5926vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgb(11, 11, 11);
+}
+
+.gta5devmenuf2 .leftmenu .menulist {
+    width: 27.7778vh;
+    max-height: 92.4074vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .leftmenu .headplayr img {
+    width: 5vh;
+    height: 5vh;
+    margin-left: 2.6852vh;
+    margin-right: 1.7593vh;
+}
+
+.gta5devmenuf2 .leftmenu .headplayr .infoplayer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .leftmenu .headplayr .infoplayer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 0.0185vh;
+    text-align: left;
+    margin-bottom: 0.2778vh;
+}
+
+.gta5devmenuf2 .leftmenu .headplayr .infoplayer span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 600;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0185vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    outline: none;
+}
+
+.gta5devmenuf2 .leftmenu .menulist ::marker {
+    color: transparent;
+    height: 0vh;
+    width: 0vh;
+}
+
+.gta5devmenuf2 p,h1 {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav .navblock {
+    width: 27.7778vh;
+    height: 4.8148vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    outline: none;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 27.7778vh;
+    margin: 0vh;
+    padding: 0vh;
+    background: rgb(13, 13, 13);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav .navblock svg.icon {
+    width: 1.7593vh;
+    height: 1.7593vh;
+    margin-left: 2.963vh;
+    margin-right: 1.2963vh;
+    fill: #fff;
+    opacity: 0.2;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav .navblock p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav .navblock svg.arrow1 {
+    width: 1.0185vh;
+    height: 0.6481vh;
+    margin-right: 2.4074vh;
+    margin-left: auto;
+    stroke: #fff;
+    opacity: 0.5;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li {
+    width: 27.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li svg {
+    width: 1.0185vh;
+    height: 3.8889vh;
+    stroke: #fff;
+    margin-left: 2.7778vh;
+    opacity: 0.2;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li p {
+    width: 21.2963vh;
+    height: 3.8889vh;
+    border-radius: 0.5556vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    color: rgb(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding-left: 1.4815vh;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav .navblock svg.arrow2 {
+    width: 0.6481vh;
+    height: 1.0185vh;
+    margin-left: auto;
+    margin-right: 2.5463vh;
+    stroke: #fff;
+    opacity: 0.5;
+}
+
+.gta5devmenuf2 .rightmenu .topnav {
+    background: rgb(20, 20, 20);
+    height: 7.5926vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu {
+    width: 100%;
+    background: rgba(27, 27, 27, 0.94);
+    height: 92.4074vh;
+    max-height: 92.4074vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.gta5devmenuf2 .rightmenu .topnav h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.2222vh;
+    font-weight: 600;
+    line-height: 2.6852vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    margin-left: 2.7778vh;
+    text-transform: uppercase;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .balance {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .btnbuy {
+    margin-left: 1.9444vh;
+    width: 12.6852vh;
+    height: 4.0741vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .esc {
+    display: flex;
+    margin-left: 1.6667vh;
+    margin-right: 2.7778vh;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .balance svg {
+    width: 2.037vh;
+    height: 2.037vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .balance p {
+    margin-left: 0.3704vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.037vh;
+    font-weight: 600;
+    line-height: 2.4074vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .btnbuy svg {
+    fill: rgba(255, 255, 255);
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.7407vh;
+    opacity: 0.2;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .btnbuy p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .esc p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: right;
+    margin-right: 0.6481vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .esc span {
+    border-radius: 0.1852vh;
+    background: rgb(255, 255, 255);
+    color: rgb(18, 18, 18);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 600;
+    line-height: 1.4815vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+    padding: 0.463vh 0.5556vh;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:hover .navblock, .gta5devmenuf2 .leftmenu .menulist li.namenav:focus .navblock  {
+    background: rgb(11, 11, 11);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:hover .navblock p, .gta5devmenuf2 .leftmenu .menulist li.namenav:focus p {
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:hover .navblock p, .gta5devmenuf2 .leftmenu .menulist li.namenav:focus svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:focus ul.dropdown {
+    display: flex;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li:hover svg {
+    stroke: #AA8ED6;
+    opacity: 1;
+    filter: drop-shadow( 0vh 0vh 0.463vh rgba(170,142,214));
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li:hover p {
+    background: rgba(255, 255, 255, 0.07);
+    color: rgb(255, 255, 255);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li.active svg {
+    stroke: #AA8ED6;
+    opacity: 1;
+    filter: drop-shadow( 0vh 0vh 0.463vh rgba(170,142,214));
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav ul.dropdown li.active p {
+    background: rgba(255, 255, 255, 0.07);
+    color: rgb(255, 255, 255);
+}
+
+.gta5devmenuf2 .leftmenu .menulist::-webkit-scrollbar {
+  display:none;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .btnbuy:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .topnav .btnbuy:hover svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .btnbuy:hover p {
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active .navblock  {
+    background: rgb(11, 11, 11);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active p {
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active ul.dropdown {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    width: 97%;
+    margin-right: 2.4074vh;
+    display: flex;
+    gap: 0.9259vh;
+    justify-items: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block {
+    width: 35.2778vh;
+    height: 13.4259vh;
+    display: flex;
+    border-radius: 0.463vh;
+    background: rgb(18, 18, 18);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 500;
+    line-height: 1.8519vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    margin-left: 2.4074vh;
+    margin-top: 2.1296vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.9444vh;
+    font-weight: 500;
+    line-height: 2.3148vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    margin-left: 2.4074vh;
+    margin-top: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block span {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 2.4074vh;
+    margin-top: 1.5741vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block span b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+    margin-left: 0.5vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu::-webkit-scrollbar {
+    display:none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block span .timeblock.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block span .timeblock {
+    margin-right: 0.5vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block span .timeblock:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active svg.icon {
+    opacity: 1;
+    fill: #AA8ED6;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:focus svg.icon,.gta5devmenuf2 .leftmenu .menulist li.namenav:hover svg.icon {
+    opacity: 1;
+    fill: #AA8ED6;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active svg.arrow1 {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav.active svg.arrow2 {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:focus svg.arrow1,.gta5devmenuf2 .leftmenu .menulist li.namenav:hover svg.arrow1 {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .leftmenu .menulist li.namenav:focus svg.arrow2,.gta5devmenuf2 .leftmenu .menulist li.namenav:hover svg.arrow2 {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars {
+    width: 35.2778vh;
+    height: 38.9815vh;
+    border-radius: 0.463vh;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .headblock {
+    width: 35.2778vh;
+    height: 17.5926vh;
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    margin-top: 1.3889vh;
+    margin-bottom: 1.3889vh;
+    margin-left: 1.8519vh;
+    width: 31.5741vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .infocar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1.8519vh;
+    width: 31.5741vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar {
+    margin-left: 1.8519vh;
+    width: 31.5741vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .headblock img {
+    width: 22.9796vh;
+    height: 12.963vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .infocar p {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .infocar .fuel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .infocar p b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .infocar .fuel svg {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.5556vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .infocar .fuel span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 0.9259vh;
+    font-weight: 400;
+    line-height: 1.1111vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+    padding: 0.1852vh 0.5556vh;
+    border-radius: 0.1852vh;
+    background: rgb(70, 70, 70);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar {
+    width: 14.7222vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 1.2037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .tophar {
+    width: 14.7222vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 0.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .progbar {
+    width: 14.7222vh;
+    background: url(https://imgur.com/XTUDQ5N.png);
+    min-height: 0.1852vh;
+    max-height: 0.1852vh;
+    background-position: left;
+    background-size: cover;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .tophar svg {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .tophar p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 400;
+    line-height: 1.4815vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .tophar b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 400;
+    line-height: 1.4815vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .progbar .prog {
+    width: 2%;
+    max-width: 14.7222vh;
+    background: url(https://imgur.com/JG1Prea.png);
+    min-height: 0.1852vh;
+    max-height: 0.1852vh;
+    background-position: left;
+    background-size: cover;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse {
+    width: 35.2778vh;
+    height: 17.5926vh;
+    border-radius: 0.463vh;
+    background-size: cover !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse {
+    width: 35.2778vh;
+    height: 17.5926vh;
+    background: linear-gradient(0.00deg, rgba(27, 27, 27, 0.7) 67%,rgba(27, 27, 27, 0.2) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 1.3889vh;
+    margin-left: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse {
+    width: 31.5741vh;
+    margin-bottom: 1.3889vh;
+    margin-top: auto;
+    margin-left: 1.8519vh;
+    margin-right: 1.8519vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse .lefthouse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse .righthouse {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse .lefthouse p {
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse .lefthouse b {
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse .righthouse p {
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 0.2778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockhouse .bgblockhouse .infohouse .righthouse p b {
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+    margin-left: 0.3vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill {
+    width: 35.2778vh;
+    height: 14.2593vh;
+    border-radius: 0.463vh;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 500;
+    line-height: 1.8519vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    margin-top: 2.1296vh;
+    margin-left: 2.4074vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.9444vh;
+    font-weight: 500;
+    line-height: 2.3148vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    margin-top: 1.9444vh;
+    margin-left: 2.4074vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-left: 2.4074vh;
+    margin-bottom: 2.037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill .headskill {
+    width: 31.5741vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill .bgprog {
+    width: 31.5741vh;
+    height: 0.2778vh;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill .headskill p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill .headskill b {
+    margin: 0;
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill .headskill b p {
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockskill .progskill .bgprog .progbar {
+    width: 50%;
+    height: 0.2778vh;
+    max-width: 100%;
+    background: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    width: 97%;
+    margin-right: 2.4074vh;
+    max-height: 71.2963vh;
+    display: flex;
+    gap: 0.9259vh;
+    justify-items: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2::-webkit-scrollbar {
+  display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim {
+    width: 27.963vh;
+    height: 23.1481vh;
+    border-radius: 0.463vh;
+    background: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim img {
+    min-width: 15.7407vh;
+    min-height: 15.7407vh;
+    width: 15.7407vh;
+    height: 15.7407vh;
+    background-size: cover;
+    margin-top: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim svg {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    min-width: 1.4815vh;
+    min-height: 1.4815vh;
+    margin-top: 1.7593vh;
+    margin-right: 1.7593vh;
+    margin-left: auto;
+    fill: #fff;
+    opacity: 0.2;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim p {
+    width: 25.1852vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 1.3889vh;
+    margin-top: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim {
+    width: 100%;
+    height: 13.8889vh;
+    margin-bottom: 1.9444vh;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock .blockbg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10.1111vh;
+    height: 10.1111vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vh;
+    background: rgb(18, 18, 18);
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.0185vh;
+    font-weight: 500;
+    line-height: 1.2037vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-top: 0.9259vh;
+    width: 10.1111vh;
+    height: 2.1296vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock .blockbg img {
+    width: 9.2593vh;
+    height: 9.2593vh;
+    position: relative;
+    margin-top: -0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock .blockbg span {
+    color: rgb(52, 52, 52);
+    font-family: SF Pro Display;
+    font-size: 0.7407vh;
+    font-weight: 500;
+    line-height: 0.9259vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2963vh;
+    height: 1.2963vh;
+    border-radius: 0.1852vh;
+    background: rgb(255, 255, 255);
+    margin-top: 0.5556vh;
+    margin-left: auto;
+    margin-right: 0.5556vh;
+    position: relative;
+}
+
+div#animations1 .blockbg1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10.1111vh;
+    height: 10.1111vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vh;
+    background: rgb(18, 18, 18);
+    position: absolute;
+    z-index: 1;
+}
+
+div#animations1 .blockbg1 img {
+    width: 9.2593vh;
+    height: 9.2593vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock .blockbg .blockanim.isBind {
+    z-index: 1;
+    width: 10.1111vh;
+    height: 10.1111vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock .blockbg .blockanim.isBind video.animations__element_img {
+    position: absolute;
+    width: 10.1111vh;
+    height: 10.1111vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .fastslotanim .fastblock .blockbg .blockanim.isBind p {
+    color: #F44336;
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin: auto;
+    z-index: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim svg.active {
+    opacity: 1;
+    fill: #AA8ED6;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim:hover {
+    background: rgb(0, 0, 0);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 87.7778vh;
+    align-items: center;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 17);
+    width: 36.841%;
+    padding-top: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright {
+    width: 62.036%;
+    margin-left: auto;
+    height: 87.7778vh;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 90%;
+    height: 7.6852vh;
+    border-radius: 0.7407vh;
+    background: rgba(255, 255, 255, 0.04);
+    margin-bottom: 0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock img {
+    width: 4.3519vh;
+    height: 4.3519vh;
+    margin-left: 1.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock .questinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1.1111vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock .questinfo h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock .questinfo p {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock .questinfo p b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+    margin-left: 0.2778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.4259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questdesc {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3.2407vh;
+    padding: 2.3148vh 0vh;
+    border-radius: 1.1111vh;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.8519vh;
+    border-radius: 1.1111vh;
+    padding: 2.3148vh 0vh;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questrewrad {
+    width: 82%;
+    margin-top: 2.5926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth img {
+    width: 5.463vh;
+    height: 5.463vh;
+    margin-right: 1.2963vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth .questinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth .questinfo h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.8519vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth .questinfo p {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth .questinfo p b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+    margin-left: 0.2778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questrighth p {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questrighth p b {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questrighth p b span {
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 0vh;
+    letter-spacing: 0vh;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questrighth p b span svg {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questdesc .questdescleft {
+    margin-left: 2.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 74%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questdesc .questdescright {
+    margin-right: 3.7037vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questdesc .questdescleft h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 1.4815vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questdesc .questdescleft p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questdesc .questdescright svg {
+    width: 6.2037vh;
+    height: 6.2037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft {
+    margin-left: 2.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 74%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonright {
+    margin-right: 3.7037vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 1.0185vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.463vh 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft p svg {
+    width: 1.9444vh;
+    height: 1.9444vh;
+    margin-right: 0.9259vh;
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft p.done svg.done {
+    display: block;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft p.undone svg.undone {
+    display: block;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questbtns {
+    width: 82%;
+    margin-top: 2.5926vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questbtns .btnquest {
+    width: 16.6852vh;
+    height: 4.0741vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin: 0 1vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questbtns .btnquest:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+    color: #fff;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonleft p b {
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questmisson .questmissonright svg {
+    width: 6.2037vh;
+    height: 6.2037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questrewrad h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questrewrad .rewardlist {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2.6852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questrewrad .rewardlist .rewardblock {
+    width: 11.2963vh;
+    height: 11.2963vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.1111vh;
+    background: rgba(255, 255, 255, 0.03);
+    margin-right: 2.95363%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questrewrad .rewardlist .rewardblock img {
+    width: 7.4074vh;
+    height: 7.4074vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock:hover .questinfo p {
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock.active {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock.active .questinfo p {
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu {
+    width: 100%;
+    height: 92.4074vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: rgba(27, 27, 27, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft {
+    width: 50%;
+    height: 92.4074vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright {
+    width: 50%;
+    height: 92.4074vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reporthead {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    background: rgb(15, 14, 14);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 500;
+    line-height: 2.2222vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist {
+    width: 100%;
+    height: 94%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock {
+    width: 90%;
+    border-radius: 0.5556vh;
+    background: rgb(11, 11, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.7593vh;
+    padding: 1.7593vh 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .headblock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 88%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .textreport {
+    width: 90%;
+    margin-top: 1.2963vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .headblock p {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .headblock p b {
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .headblock span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding: 0.1852vh 0.6481vh;
+    margin-left: 0.9259vh;
+    border-radius: 0.1852vh;
+    background: rgb(177, 24, 70);
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .headblock .timedata {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist .reportblock .textreport p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .reporthead {
+    height: 5vh;
+    min-height: 5vh;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: rgb(12, 12, 12);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 500;
+    line-height: 2.2222vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage {
+    width: 100%;
+    height: 87%;
+    background: rgba(12, 12, 12, 0.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .inputbg {
+    width: 100%;
+    height: 7.4074vh;
+    background: rgba(27, 27, 27, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: auto;
+    margin-top: 4.1667vh;
+    margin-right: 4.6296vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messleft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messleft .headmess {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messleft .messus {
+    border-radius: 0.7407vh;
+    background: rgb(22, 22, 22);
+    padding: 1.4815vh 1.8519vh;
+    margin-top: 0.3704vh;
+    max-width: 66%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messleft .headmess p {
+    color: rgba(255, 255, 255, 0.3);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messleft .messus p {
+    color: rgb(192, 192, 192);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messright img {
+    width: 4.6296vh;
+    height: 4.6296vh;
+    margin-left: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .inputbg input {
+    width: 90%;
+    height: 4.6296vh;
+    border-radius: 0.3704vh;
+    background: rgb(19, 19, 19);
+    border: none;
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 400;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding: 0vh 1.3889vh;
+    outline: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .messageuser .messleft .headmess p b {
+    color: rgb(192, 192, 192);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: right;
+    margin-left: 1.1111vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportleft .reportlist::-webkit-scrollbar {
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad {
+    width: 19.7148vh;
+    height: 16.7593vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgb(255, 255, 255, 0.1);
+    border-radius: 0.463vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .headrewrad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 17.2222vh;
+    margin-top: 0.8333vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad img {
+    width: 11.5741vh;
+    height: 11.5741vh;
+    margin-top: 0.463vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad img.n {
+    width: 11.5741vh;
+    height: 11.5741vh;
+    position: relative;
+    margin-top: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .btnerror {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(232, 28, 91);
+    margin-top: -9.3333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad p {
+    width: 17.037vh;
+    height: 4.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    position: relative;
+    margin-top: -2.2222vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .btntime {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(51, 51, 51);
+    margin-top: -9.3333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .btnuse {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(106, 202, 0);
+    margin-top: -9.3333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .headrewrad .line {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(147, 147, 147, 0.5);
+    background: rgb(147, 147, 147);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .headrewrad span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad .headrewrad span svg {
+    width: 1.8519vh;
+    height: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad:hover .btntime {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad:hover .btnuse {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 {
+    width: 19.7148vh;
+    height: 16.7593vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgb(255, 255, 255, 0.1);
+    border-radius: 0.463vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .headrewrad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 17.2222vh;
+    margin-top: 0.8333vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 img {
+    width: 11.5741vh;
+    height: 11.5741vh;
+    margin-top: 0.463vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 img.n {
+    width: 11.5741vh;
+    height: 11.5741vh;
+    position: relative;
+    margin-top: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .btnerror {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(232, 28, 91);
+    margin-top: -9.3333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 p {
+    width: 17.037vh;
+    height: 4.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    position: relative;
+    margin-top: -2.2222vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .btntime {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(51, 51, 51);
+    margin-top: -9.3333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .btnuse {
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 3.4259vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: #232323;
+    margin-bottom: 3vh;
+    z-index: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .headrewrad .line {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(147, 147, 147, 0.5);
+    background: rgb(147, 147, 147);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .headrewrad span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1 .headrewrad span svg {
+    width: 1.8519vh;
+    height: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1:hover .btntime {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1:hover p {
+    margin-top: -8vh;
+    min-height: 6vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1:hover .btnuse {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad1:hover .btnuse:hover {
+    background: #AA8ED6;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    width: 97%;
+    margin-right: 2.4074vh;
+    display: flex;
+    gap: 1.8519vh;
+    justify-items: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus {
+    width: 45.9259vh;
+    padding: 2.7778vh 0vh;
+    border-radius: 1.1111vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .headbonus {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 40.3704vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .linebonus {
+    width: 40.3704vh;
+    height: 0.0926vh;
+    background: rgba(255, 255, 255, 0.05);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.3889vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .headbonus svg {
+    width: 1.9444vh;
+    height: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .headbonus h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: 0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .headbonus span.use {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: auto;
+    background: #E81C5B;
+    padding: 0.2vh 0.8vh;
+    border-radius: 0.2vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .headbonus span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0;
+    text-align: left;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.3889vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew .bgitem {
+    width: 7.2222vh;
+    height: 7.4074vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew .nameitem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew .bgitem .lineitem {
+    width: 1.4815vh;
+    height: 0.3704vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(50, 166, 134, 0.5);
+    background: rgb(50, 166, 134);
+    margin-top: 1.0185vh;
+    margin-left: 1.0185vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew .bgitem img {
+    width: 5.5556vh;
+    height: 5.5556vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: -0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew .nameitem p {
+    color: rgb(184, 184, 184);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list3 .blockbonus .rewradbonus .blockbrew .nameitem b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 1.2037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase {
+    width: 28.0556vh;
+    height: 37.037vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.0185vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .usecase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 3.2407vh;
+    border-radius: 0.7407vh;
+    background: rgb(24, 28, 26);
+    padding-right: 0.8333vh;
+    margin-top: 1.4815vh;
+    margin-left: 1.4815vh;
+    z-index: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase img {
+    width: 22.6852vh;
+    height: 22.6852vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1.3889vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .namecase {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    max-width: 25.7407vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .pricecase {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.963vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .pricecase.none {
+    opacity: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .pricecase p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.6667vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .pricecase svg {
+    width: 2.7778vh;
+    height: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .usecase svg {
+    width: 3.2407vh;
+    height: 3.2407vh;
+    margin-left: 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .usecase p {
+    margin-left: -0.2778vh;
+    font-family: SF Pro Display;
+    font-size: 1.0185vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockcase .usecase p b {
+    font-family: SF Pro Display;
+    font-size: 1.0185vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    width: 97%;
+    margin-right: 2.4074vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    height: 32.4074vh;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border-radius: 0.9259vh;
+    background: rgba(19, 19, 19, 0.7);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns.none {
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems {
+    width: 100%;
+    max-height: 44vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1.2037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .infocasename {
+    display: flex;
+    width: 32.4074vh;
+    height: 11.6667vh;
+    border-radius: 1.6667vh;
+    background: rgb(30, 30, 30);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .caseblockuse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3.7037vh;
+    margin-right: 3.7037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock.none {
+    opacity: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .infocasename h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.6667vh;
+    font-weight: 600;
+    line-height: 1.9444vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    width: 26.8519vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.3148vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .infocasename p {
+    width: 26.8519vh;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.2407vh;
+    margin-top: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .caseblockuse img {
+    width: 27.037vh;
+    height: 27.037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .caseblockuse .caseuseb {
+    height: 3.2407vh;
+    margin-top: -3.2407vh;
+    border-radius: 0.7407vh;
+    background: rgb(24, 28, 26);
+    padding-right: 0.9259vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .caseblockuse .caseuseb svg {
+    width: 3.2407vh;
+    height: 3.2407vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .caseblockuse .caseuseb p {
+    font-family: SF Pro Display;
+    font-size: 1.0185vh;
+    font-weight: 500;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .caseblockuse .caseuseb p b {
+    font-family: SF Pro Display;
+    font-size: 1.0185vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.8519vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock span {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 1.3889vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .bginput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 32.4074vh;
+    height: 4.8148vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(13, 13, 13);
+    margin-bottom: 3.4259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .btnbuycase {
+    width: 32.4074vh;
+    height: 4.8148vh;
+    border-radius: 0.7407vh;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .bginput input {
+    width: 18.0556vh;
+    height: 4.8148vh;
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 1.6667vh;
+    margin-right: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .bginput .pricinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+    margin-right: 1.0185vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .bginput .pricinput p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .bginput .pricinput svg {
+    width: 2.5926vh;
+    height: 2.5926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .btnbuycase p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .btnbuycase svg {
+    width: 2.2222vh;
+    height: 2.2222vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase.none {
+    opacity: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncase {
+    width: 27.037vh;
+    height: 5.5556vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1111vh;
+    background: rgba(170,142,214);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-left: 3.7037vh;
+    margin-right: 3.7037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncaseon {
+    width: 27.037vh;
+    height: 5.5556vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1111vh;
+    background: rgba(255, 255, 255, 0.06);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    color: #ffffff7a;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-left: 3.7037vh;
+    margin-right: 3.7037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .usebtncase {
+    width: 27.037vh;
+    height: 5.5556vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1111vh;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin: 0vh 0.5vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .usebtncase:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .usebtncase p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .sellbtncase {
+    width: 27.037vh;
+    height: 5.5556vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.1111vh;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin: 0vh 0.5vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .sellbtncase:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .sellbtncase p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns1 .sellbtncase svg {
+    width: 2.2222vh;
+    height: 2.2222vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncasefast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 23.6111vh;
+    height: 5.5556vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.1111vh;
+    background: rgb(17, 17, 17);
+    margin-right: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncasefast.none {
+    opacity: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-right: 0.9259vh;
+    margin-left: -9.2593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase .listbtnnum {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase .listbtnnum .btnnum.active {
+    box-shadow: 0vh 0vh 0.9259vh 0vh rgba(232, 28, 91, 0.5);
+    background: rgb(232, 28, 91);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase .listbtnnum .btnnum {
+    width: 3.7037vh;
+    height: 3.7037vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin: 0 0.1852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncasefast p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncasefast svg {
+    width: 4.9074vh;
+    height: 3.5185vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 22.963vh;
+    height: 19.6296vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.6667vh;
+    background: rgb(19, 19, 19);
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase .linebic {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(253, 33, 61, 0.5);
+    background: rgb(253, 33, 61);
+    margin-top: 1.7593vh;
+    margin-left: 1.4815vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase img {
+    height: 12.8704vh;
+    max-width: 22.7778vh;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    width: 21.1111vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 4.4444vh;
+    margin-top: -1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .casebuyblock .btnbuycase:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .numberopencase .listbtnnum .btnnum:hover {
+    box-shadow: 0vh 0vh 0.9259vh 0vh rgba(232, 28, 91, 0.5);
+    background: rgb(232, 28, 91);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems::-webkit-scrollbar {
+  display:none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .infocl {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-top: 2.963vh;
+    margin-bottom: 2.037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .opencasebtns .openbtncase:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney {
+    width: 71.4815vh;
+    height: 21.2963vh;
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .iconitem {
+    width: 20.3704vh;
+    height: 21.2963vh;
+    border-radius: 0.7407vh 0vh 0vh 0.7407vh;
+    background: rgba(255, 255, 255, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem {
+    height: 21.2963vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .iconitem img {
+    width: 20.3704vh;
+    height: 20.3704vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 700;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    margin-top: 2.3148vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem span {
+    margin-top: 1.4815vh;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem .buyinfoitem {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: 1.8519vh;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45.5556vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem .buyinfoitem p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem .buyinfoitem .btnbuyitem {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.6481vh;
+    height: 4.1667vh;
+    border-radius: 0.3704vh;
+    background: rgb(24, 24, 24);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem .buyinfoitem p svg {
+    width: 2vh;
+    height: 2vh;
+    margin-right: 0.0926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem .buyinfoitem .btnbuyitem:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    width: 97%;
+    margin-right: 2.4074vh;
+    display: flex;
+    gap: 1.2963vh;
+    justify-items: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem {
+    width: 35.0926vh;
+    height: 87.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem img {
+    width: 35.0926vh;
+    height: 32.2222vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.8519vh;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 29.537vh;
+    margin: 0 auto;
+    margin-top: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .buypersprem {
+    width: 29.537vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.9444vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .infopersprem {
+    width: 29.537vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 2.3148vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .buypersprem p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .buypersprem .buybtnpprem {
+    width: 15.6481vh;
+    height: 4.1667vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5556vh;
+    background: rgb(29, 29, 29);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .buypersprem p svg {
+    width: 2vh;
+    height: 2vh;
+    margin-left: -0.463vh;
+    margin-right: 0.0926vh;
+    margin-top: -0.2vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .infopersprem p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 2.037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .infopersprem span {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .infopersprem b {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem .buypersprem .buybtnpprem:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockpersm {
+    width: 35.0926vh;
+    height: 23.1481vh;
+    border-radius: 0.7407vh;
+    background: rgb(19, 19, 19);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockpersm img {
+    width: 35.0926vh;
+    height: 23.1481vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockpersm h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    width: 30.463vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 3.7037vh;
+    margin-top: -6.1111vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm {
+    position: relative;
+    width: 100%;
+    height: 92.4074vh;
+    margin-bottom: -92.4074vh;
+    background: rgba(27, 27, 27, 0.7);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm {
+    padding: 4.6296vh 5.5556vh;
+    border-radius: 1.1111vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .headdial {
+    width: 41.6667vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodial {
+    width: 41.6667vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm input {
+    width: 39.7222vh;
+    height: 4.8148vh;
+    border-radius: 0.5556vh;
+    background: rgb(24, 24, 24);
+    border: none;
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding-left: 1.9444vh;
+    outline: none;
+    margin-bottom: 0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodialdop {
+    width: 41.6667vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-left: 0.1852vh solid #DFC896;
+    margin: 2.7778vh 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial {
+    width: 41.6667vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .headdial h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 600;
+    line-height: 2.1296vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .headdial span {
+    width: 2.2222vh;
+    height: 2.2222vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.3704vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .headdial span svg {
+    width: 1vh;
+    height: 1vh;
+    stroke: #fff;
+    opacity: 0.4;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodial p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial .btndial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.5556vh;
+    height: 4.8148vh;
+    border-radius: 0.5556vh;
+    background: rgb(29, 29, 29);
+    flex-direction: row;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial .btndial p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial .btndial svg {
+    width: 2vh;
+    height: 2vh;
+    margin: 0 0.1852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial .btndial b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodialdop .lineidp {
+    width: 0.1852vh;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    box-shadow: 0vh 0vh 0.463vh 0vh rgba(223, 200, 150, 0.25);
+    background: rgb(223, 200, 150);
+    margin-right: 2.5926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodialdop .idilp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodialdop .idilp b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-bottom: 1.3889vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .infodialdop .idilp p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial .btndial:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .btnsdial .btndial:hover p {
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .headdial span:hover {
+    border: 0.0926vh solid #fff;
+}
+
+.gta5devmenuf2 .rightmenu .menu .opendialogpersm .dialogpm .headdial span:hover svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor {
+    width: 47vh;
+    height: 50.0926vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .headstna {
+    width: 47vh;
+    height: 19.8148vh;
+    border-radius: 0.9259vh 0.9259vh 0vh 0vh;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.8519vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+    width: 41.9444vh;
+    margin: 2.037vh auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor span {
+    width: 41.9444vh;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 400;
+    line-height: 1.8519vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy {
+    width: 41.9444vh;
+    margin: auto;
+    margin-bottom: 2.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .headstna img {
+    width: 47vh;
+    height: 19.8148vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy .blockprice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy .blockbuybtn {
+    width: 15.8333vh;
+    height: 4.3519vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5556vh;
+    background: rgb(29, 29, 29);
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy .blockprice svg {
+    width: 2vh;
+    height: 2vh;
+    margin-left: -0.463vh;
+    margin-right: 0.0926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy .blockprice p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    line-height: 1.3889vh;
+    letter-spacing: 0.037vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy .blockbuybtn:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+    color: #fff;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules {
+    width: 100%;
+    height: 92.4074vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: rgba(27, 27, 27, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft {
+    width: 40%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .headrules {
+    width: 100%;
+    height: 5vh;
+    background: rgb(15, 14, 14);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist {
+    width: 100%;
+    height: 85vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .headrules h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 500;
+    line-height: 2.2222vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist .rulesblock {
+    width: 90%;
+    padding: 1.6667vh 0vh;
+    margin-bottom: 0.463vh;
+    border-radius: 0.3704vh;
+    background: rgb(16, 16, 16);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist .rulesblock p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 1.8519vh;
+    margin-right: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .headrules {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgb(12, 12, 12);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .rulesblockbg {
+    width: 100%;
+    height: 87vh;
+    overflow: auto;
+    background: rgba(12, 12, 12, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .headrules h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 500;
+    line-height: 2.2222vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .rulesblockbg h1 {
+    color: rgb(249, 202, 28);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin: 2.3148vh auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .rulesblockbg p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 500;
+    line-height: 1.8519vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .rulesblockbg p b {
+    color: rgb(249, 202, 28);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 500;
+    line-height: 1.8519vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesright .rulesblockbg::-webkit-scrollbar {
+  display:none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist::-webkit-scrollbar {
+  display:none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist .rulesblock:hover {
+    border-left: 0.1852vh solid #AA8ED6;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist .rulesblock:hover p {
+    margin-left: 1.7593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist .rulesblock.active {
+    border-left: 0.1852vh solid #AA8ED6;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menurules .rulesleft .ruleslist .rulesblock.active p {
+    margin-left: 1.7593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting {
+    width: 100%;
+    height: 92.4074vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: rgba(27, 27, 27, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft {
+    width: 40%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .headsetting {
+    width: 100%;
+    height: 5vh;
+    background: rgb(15, 14, 14);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .settinglist {
+    width: 100%;
+    height: 85vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .headsetting h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 500;
+    line-height: 2.2222vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .settinglist .settingblock {
+    width: 90%;
+    padding: 1.6667vh 0vh;
+    margin-bottom: 0.463vh;
+    border-radius: 0.3704vh;
+    background: rgb(16, 16, 16);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .settinglist .settingblock p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 1.8519vh;
+    margin-right: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .headsetting {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: rgb(12, 12, 12);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg {
+    width: 100%;
+    height: 88.04vh;
+    overflow: auto;
+    background: rgba(12, 12, 12, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .headsetting h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 500;
+    line-height: 2.2222vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    height: 5.09vh;
+    margin-bottom: 0.463vh;
+    border-radius: 0.3704vh;
+    background: rgb(16, 16, 16);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: 1.8519vh;
+    margin-right: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .leftselcet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    width: 24.537vh;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .rightselcet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .leftselcet svg {
+    width: 0.6481vh;
+    height: 1.0185vh;
+    opacity: 0.4;
+    stroke: #fff;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .rightselcet svg {
+    width: 0.6481vh;
+    height: 1.0185vh;
+    opacity: 0.4;
+    stroke: #fff;
+    margin-right: 0vh;
+    margin-bottom: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr svg {
+    margin-right: 1.8519vh;
+    width: 4.9074vh;
+    height: 3.5185vh;
+    margin-bottom: -0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .settinglist .settingblock:hover {
+    background: rgb(14, 14, 14);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingleft .settinglist .settingblock.active {
+    background: rgb(14, 14, 14);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass {
+    width: 100%;
+    height: 92.4074vh;
+    background: url(https://imgur.com/DDU8AqR.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .head {
+    margin-top: 8.8889vh;
+    margin-left: 2.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 8.8889vh;
+    width: 100%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems {
+    width: 100%;
+    height: 45.3704vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 2.1296vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .head img {
+    height: 11.6667vh;
+    margin-bottom: 1.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .head span {
+    width: 51.4815vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnnav {
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2.037vh;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnrewrad {
+    width: 21.8519vh;
+    height: 5vh;
+    border-radius: 0.9259vh;
+    background: rgb(170,142,214);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .leftslide {
+    margin-left: auto;
+    width: 5.463vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.9259vh 0vh 0vh 0.9259vh;
+    background: rgb(20, 20, 20);
+    margin-right: 0.1852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .rightslide {
+    width: 5.463vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0vh 0.9259vh 0.9259vh 0vh;
+    background: rgb(20, 20, 20);
+    margin-right: 0.7407vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnlvlyou {
+    width: 21.8519vh;
+    height: 5vh;
+    margin-right: 2.7778vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.9259vh;
+    background: rgb(20, 20, 20);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnnav p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnrewrad p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnlvlyou p {
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    color: #fff;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnlvlyou b {
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    margin-left: 0.463vh;
+    display: flex;
+    align-items: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnlvlyou b svg {
+    width: 1.1111vh;
+    height: 1.1111vh;
+    margin-left: 0.1852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems {
+    width: 92.2%;
+    margin-left: 0.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems .standartbp {
+    display: flex;
+    width: 5vh;
+    height: 19.4444vh;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 19);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems .premiumbp {
+    display: flex;
+    width: 5vh;
+    height: 19.4444vh;
+    border-radius: 0.9259vh;
+    background: rgb(170,142,214);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems .standartbp svg {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-top: 1.6204vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems .standartbp p {
+    width: 9.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    transform: rotate(-90.00deg);
+    margin-top: 7.8704vh;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems .premiumbp svg {
+    width: 2.5vh;
+    height: 2.5vh;
+    margin-top: 1.6204vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .leftlitems .premiumbp p {
+    width: 9.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    transform: rotate(-90.00deg);
+    margin-top: 7.8704vh;
+    text-shadow: 0vh 0vh 0.3704vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 1vh;
+    width: 16%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems {
+    width: 100%;
+    height: 19.4444vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems {
+    width: 100%;
+    height: 19.4444vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blocklvlbp {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .top {
+    width: 90%;
+    margin-top: 0.7407vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .butnitem {
+    position: absolute;
+    margin-top: 7.2222vh;
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .top .lineitem {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .top span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .butnitem .butuse {
+    width: 14.1667vh;
+    height: 4.0741vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(170,142,214);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .item img {
+    width: 13.7037vh;
+    height: 13.7037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems .item p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    height: 4.4444vh;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    margin-top: -1.4815vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .top {
+    width: 90%;
+    margin-top: 0.7407vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .butnitem {
+    position: absolute;
+    margin-top: 7.2222vh;
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .top .lineitem {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .lineitem.\30 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(148, 148, 148, 0.5);
+    background: rgb(148, 148, 148);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .lineitem.\31 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(253, 33, 61, 0.5);
+    background: rgb(253, 33, 61);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .lineitem.\32 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(248, 201, 65, 0.5);
+    background: rgb(248, 201, 65);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .lineitem.\33 {
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(50, 166, 134, 0.5);
+    background: rgb(50, 166, 134);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .top span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 1.5741vh;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .butnitem .butuse {
+    width: 14.1667vh;
+    height: 4.0741vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(170,142,214);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .item img {
+    width: 13.7037vh;
+    height: 13.7037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .item p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    height: 4.4444vh;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    margin-top: -1.4815vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blocklvlbp .linelvlbp {
+    height: 0.463vh;
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    margin-right: 0.7407vh;
+    width: 79%;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blocklvlbp .blvlbp {
+    width: 3.5185vh;
+    height: 2.5926vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6481vh;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2037vh;
+    font-weight: 500;
+    line-height: 1.4815vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .leftslide svg {
+    width: 0.8333vh;
+    height: 1.5741vh;
+    stroke: #fff;
+    opacity: 0.2;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .rightslide svg {
+    width: 0.8333vh;
+    height: 1.5741vh;
+    stroke: #fff;
+    opacity: 0.2;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .btnnav:hover {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .leftslide:hover {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .rightslide:hover {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .rightslide:hover svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .battlenav .leftslide:hover svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockstandartitems.active .butnitem {
+    display: block;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems.active:hover .butnitem {
+    display: block;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blocklvlbp.active .linelvlbp {
+    box-shadow: 0vh 0vh 0.5556vh 0vh rgba(170,142,214, 0.25);
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blocklvlbp.active .blvlbp {
+    box-shadow: 0vh 0vh 0.5556vh 0vh rgba(170,142,214, 0.25);
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 {
+    width: 100%;
+    height: 92.4074vh;
+    background: url(https://imgur.com/DDU8AqR.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 7.4074vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp {
+    width: 100%;
+    margin-top: 9.0741vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .head img {
+    height: 11.6667vh;
+    margin-bottom: 1.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .head span {
+    width: 51.4815vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 26%;
+    height: 38.5185vh;
+    border-radius: 0.9259vh;
+    background: rgb(17, 17, 17);
+    margin: 0 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.3148vh;
+    font-weight: 500;
+    line-height: 2.7778vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    margin-top: 2.2222vh;
+    margin-bottom: 4.9074vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.9444vh;
+    font-weight: 500;
+    line-height: 2.3148vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp span svg {
+    width: 2.037vh;
+    height: 2.037vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .blockexpname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1.5741vh 0vh;
+    height: 6.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .btnexpbuy {
+    width: 28.5185vh;
+    height: 5.5556vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5556vh;
+    background: rgb(32, 32, 32);
+    margin-bottom: 3.7037vh;
+    margin-top: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .blockexpname svg {
+    width: 6.6667vh;
+    height: 6.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .blockexpname .tablenameexp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.1852vh;
+    height: 2.7778vh;
+    border-radius: 0.2778vh;
+    background: rgba(255, 255, 255, 0.25);
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    line-height: 1.2963vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -4.8611vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .btnexpbuy p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .btnexpbuy svg {
+    width: 2vh;
+    height: 2vh;
+    margin: 0 0.1852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockexp .btnexpbuy:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 {
+    width: 100%;
+    height: 92.4074vh;
+    background: url(https://imgur.com/DDU8AqR.png);
+    background-size: cover;
+    gap: 1.8519vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 3.7037vh;
+    padding-top: 1.8519vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson {
+    width: 45.0926vh;
+    height: 26.8519vh;
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .headmis {
+    width: 37.6852vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3.7037vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .descmis {
+    width: 37.6852vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.963vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .bottommis {
+    display: flex;
+    width: 37.6852vh;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2.037vh;
+    margin-top: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .missbar {
+    width: 37.6852vh;
+    height: 0.3704vh;
+    background: rgba(255, 255, 255, 0.08);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.7037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .headmis h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.8519vh;
+    font-weight: 600;
+    line-height: 2.2222vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .headmis p {
+    color: rgba(255, 255, 255, 0.4);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: right;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .headmis p b {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: right;
+    margin-left: 0.3704vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .headmis svg {
+    margin-left: 0.463vh;
+    width: 1.4815vh;
+    height: 1.4815vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .descmis p {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .bottommis p {
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .bottommis p b {
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    text-align: left;
+    color: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .bottommis span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    text-align: right;
+    margin-left: auto;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass2 .blockmisson .missbar .progbar {
+    max-width: 100%;
+    width: 20%;
+    height: 0.3704vh;
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp {
+    width: 31.4815vh;
+    height: 39.3519vh;
+    border-radius: 0.9259vh;
+    background: rgb(16, 16, 16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp h1 {
+    width: 25.9259vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.7593vh;
+    font-weight: 700;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    margin-top: 2.5926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp span {
+    width: 25.9259vh;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 400;
+    line-height: 1.9444vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    margin-top: 2.1296vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp .btnlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+    margin-bottom: 2.5926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp .btnlist .btnbpbuy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 25.9259vh;
+    height: 5vh;
+    border-radius: 0.3704vh;
+    background: rgb(35, 35, 35);
+    margin-top: 0.9259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp .btnlist .btnbpbuy p {
+    color: rgba(255, 255, 255, 0.9);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: auto;
+    margin: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp .btnlist .btnbpbuy svg {
+    width: 1.9444vh;
+    height: 1.8519vh;
+    margin: 0 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass1 .selectexp .blockupgradebp .btnlist .btnbpbuy:hover {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block p.active {
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block.active p.active {
+    display: block;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list1 .block.active p {
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block.switch-box {
+    margin-right: 2.7778vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block.switch-box label.switch {
+    height: 1.8519vh !important;
+    width: 3.2407vh !important;
+    background: #272727 !important;
+    border: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block.switch-box label.switch span.slider.round {
+    background-color: #fff0;
+    margin-left: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block.switch-box label.switch span.slider.round::before {
+    position: absolute;
+    content: "";
+    left: 0.1vh;
+    bottom: 0vh;
+    height: 1.8519vh !important;
+    width: 1.8519vh !important;
+    transition: 0.4s;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: -0.3704vh 0vh 0.9259vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block.switch-box label.switch input:checked + .slider:before {
+    position: absolute;
+    content: "";
+    right: 0.1vh;
+    left: auto;
+    height: 1.8519vh !important;
+    width: 1.8519vh !important;
+    bottom: 0vh;
+    transition: 0.4s;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: -0.3704vh 0vh 0.9259vh rgba(0, 0, 0, 0.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block.switch-box label.switch input:checked + .slider {
+    background: #AA8ED6;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block {
+    margin-right: 2.7778vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .rangeslider {
+    width: 19.537vh !important;
+    height: 0.1852vh !important;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .rangeslider .rangeslider__fill__bg {
+    width: 19.537vh;
+    height: 0.1852vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .rangeslider .rangeslider__fill {
+    max-width: 100% !important;
+    height: 0.2778vh !important;
+    background: #AA8ED6 !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .rangeslider .rangeslider__handle {
+    width: 1.1111vh !important;
+    height: 1.1111vh !important;
+    top: 0.0926vh !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 500;
+    line-height: 1.7593vh;
+    width: 3vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    margin-left: 1.5vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .box-flex.box-center .main__input.settings.m-0 input.main__input_text {
+    height: 3vh;
+    width: 17.3vh;
+    border-radius: 0.3704vh;
+    background: rgb(19, 19, 19);
+    color: rgba(255, 255, 255) !important;
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 400;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    padding: 0vh 1.3889vh;
+    outline: none;
+    border: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .box-flex.box-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .box-flex.box-center .main__input.settings.m-0 {
+    border: none;
+    background: none !important;
+    height: 5.09vh !important;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    width: auto !important;
+    padding: 0 !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .box-flex.box-center .main__button_square.box-center {
+    margin-left: 1.3vh;
+    width: 9.6852vh;
+    height: 3.4vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .settingblockr .sound__input-block .box-flex.box-center .main__button_square.box-center:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+    background: rgba(170,142,214);
+    color: #fff;
+}
+
+.cases_wallpaper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.cases_header {
+    min-height: 7.5901250000000005vh;
+    padding: 0 2.776875vh;
+    background-color: hsl(0, 0%, 7%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cases_header_left-back {
+    width: 2.776875vh;
+    height: 2.776875vh;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, .05);
+    transition: background-color .2s ease;
+    margin-right: 1.3884375vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases_header_left-back svg {
+    width: 1.1107500000000001vh;
+    height: 0.5553750000000001vh;
+    transform: rotate(90deg);
+    stroke: #ffffff69;
+    fill: none;
+    transition: .2s ease;
+}
+
+.cases_header_left-back:hover {
+    background-color: hsla(0, 0%, 100%, .2);
+}
+
+.cases_header_left-back:hover svg {
+    stroke: #ffffff96;
+}
+
+.cases_header_left {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.3140625000000004vh;    
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: .65vh;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.cases_header_right {
+    display: flex;
+    align-items: center;
+}
+
+.cases_header_right-coins {
+    margin-right: 1.85125vh;
+    display: flex;
+    align-items: center;
+}
+
+.cases_header_right-coins_pic {
+    width: 1.85125vh;
+    height: 1.85125vh;
+}
+
+.cases_header_right-coins_text {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.036375vh;   
+    color: #fff;
+    margin-left: .5553750000000001vh;
+}
+
+.cases_header_right-replenish,
+.cases_header_right-entercode {
+    background-color: hsla(0, 0%, 100%, .04);
+    padding: 1.1107500000000001vh 1.85125vh 1.1107500000000001vh 1.295875vh;
+    border-radius: .5553750000000001vh;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cases_header_right-entercode span,
+.cases_header_right-replenish span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.481vh;    
+    color: hsla(0, 0%, 100%, .5);
+    margin-left: .7405vh;
+    transition: color .2s ease;
+}
+
+.cases_header_right-entercode svg,
+.cases_header_right-replenish svg {
+    width: 1.295875vh;
+    height: 1.295875vh;
+    fill: hsla(0, 0%, 100%, .25);
+    transition: fill .2s ease;
+}
+
+.cases_header_right-entercode:hover,
+.cases_header_right-replenish:hover {
+    background-color: #424242;
+}
+
+.cases_header_right-entercode:hover span,
+.cases_header_right-replenish:hover span {
+    color: hsla(0, 0%, 100%, .9);
+}
+
+.cases_header_right-entercode:hover svg,
+.cases_header_right-replenish:hover svg {
+    fill: hsla(0, 0%, 100%, .5);
+}
+
+.cases_header_right-replenish {
+    margin-left: .37025vh;
+}
+
+.cases_header_right-exit {
+    margin-left: 1.85125vh;
+    display: flex;
+    align-items: center;
+}
+
+.cases_header_right-exit_tilte {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.295875vh;   
+    color: hsla(0, 0%, 98%, .5);
+}
+
+.cases_header_right-exit_key {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.295875vh;   
+    color: #111;
+    margin-left: .7405vh;
+    background-color: #fbfbfb;
+    padding: .41653125vh .7405vh;
+    border-radius: .27768750000000003vh;
+}
+
+.cases_content {
+    background-color: rgba(28, 28, 28, .9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.65vh;
+}
+
+.cases_content_data {
+    position: relative;
+    top: 1.86vh;
+    width: 97%;
+    height: 32.582vh;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    border: .3vh solid #1e1e1e;
+    background-color: hsla(0, 0%, 5%, .7);
+}
+
+.cases_content_data-descr {
+    width: 31.396875vh;
+    background-color: #1e1e1e;
+    border-radius: 1.481vh;
+    padding: 2.3140625000000004vh 2.776875vh 2.776875vh 2.776875vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cases_content_data-descr p {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.666125vh;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cases_content_data-descr span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.295875vh;
+    color: hsla(0, 0%, 100%, .5);
+    margin-top: 1.295875vh;
+}
+
+.cases_content_data-case {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 27.028250000000003vh;
+    height: 27.028250000000003vh;
+    margin: 0 3.7025vh;
+}
+
+.cases_content_data-case img {
+    width: inherit;
+    height: inherit;
+}
+
+.cases_content_data-case-count {
+    position: absolute;
+    background: #1b1b1b;
+    border-radius: 0.7405vh;
+    padding: 0.925625vh 0.7405vh;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.cases_content_data-case-count_icon {
+    width: 1.3884375vh;
+    height: 1.3884375vh;
+    border-radius: 0.37025vh;
+    background-color: #AA8ED6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases_content_data-case-count_icon svg {
+    width: 0.925625vh;
+    height: 0.6479375vh;
+}
+
+.cases_content_data-case-count span {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.1107500000000001vh;
+    margin-left: 0.5553750000000001vh;
+    color: hsla(0, 0%, 100%, .5);
+}
+
+.cases_content_data-case-count b {
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+}
+
+.cases_content_data-buy {
+    min-width: 30vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+.cases_content_data-buy span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.9vh;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cases_content_data-buy-pay {
+    min-width: 30vh;
+    background-color: hsla(0, 0%, 100%, .05);
+    border-radius: 0.7405vh;
+    padding: 0 1.85125vh;
+    height: 5.81325vh;
+    display: flex;
+    justify-content: center;
+    font-size: 1.65vh;
+    font-weight: 600;
+    align-items: center;
+    transition: background-color .2s ease;
+    width: inherit;
+}
+
+.cases_content_data-buy-pay:hover {
+    background-color: #AA8ED6;
+}
+
+.cases_content_btns {
+    display: flex;
+    align-items: center;
+    margin-top: 2.45vh;
+    gap: 1.65vh;
+}
+
+.cases_content_btns-amount {
+    display: flex;
+    align-items: center;
+    gap: 1.45vh;
+}
+
+.cases_content_btns-amount span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.45vh;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.cases_content_btns-amount-amounts {
+    display: flex;
+    align-items: center;
+    gap: .45vh;
+}
+
+.cases_content_btns-amount-amounts_item {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.481vh;
+    width: 3.7025vh;
+    border-radius: 1.1111vh;
+    min-height: 3.7025vh;
+    border-radius: 0.7405vh;
+    border: .1vh solid #292929;
+    background-color: #111;
+    transition: .2s ease;
+    transition-property: background-color, border-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cases_content_btns-amount-amounts_item.active {
+    background-color: #AA8ED6;
+    border-color: #AA8ED6;
+}
+
+.cases_content_btns-amount-amounts_item:hover {
+    background-color: #AA8ED6;
+    border-color: #AA8ED6;
+}
+
+.cases_content_btns-open {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.481vh;
+    height: 6vh;
+    width: 27.028250000000003vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 1.1107500000000001vh;
+    background-image: linear-gradient(180deg, #AA8ED6, #ce154d);
+}
+
+.cases_content_btns-open1 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.481vh;
+    height: 6vh;
+    width: 27.028250000000003vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 1.1107500000000001vh;
+    background: #292929;
+}
+
+.cases_content_btns-open1:hover {
+    background: linear-gradient(180deg, #AA8ED6, #ce154d);
+}
+
+.cases_content_btns-fustopen {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.481vh;
+    
+    height: 6vh;
+    width: 27.028250000000003vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 1.1107500000000001vh;
+    background: #ffffff2c;
+}
+
+.cases_content_prizes {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    margin-top: 1.3vh;
+}
+
+.cases_content_prizes span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.75vh;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+}
+
+
+.cases_content_prizes_list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22.963vh;
+    height: 19.6296vh;
+    border-radius: 1.6667vh;
+    padding: 2vh;
+    justify-content: center;
+    overflow: hidden;
+    background: hsla(0, 0%, 5%, .7);
+}
+
+.cases_content_prizes_list-item-line {
+    width: 2.2222vh;
+    height: 0.5556vh;
+    border-radius: 999vh;
+    margin-right: auto;
+}
+
+.cases_content_prizes_list-item-line.blue {
+    background-color: #939393;
+    box-shadow: 0 0 8rem 4rem rgba(147,147,147,.25);
+}
+
+.cases_content_prizes_list-item-line.yellow {
+    background-color: #4FAAF9;
+    box-shadow: 0 0 8rem 4rem rgba(79,170,249,.25);
+}
+
+.cases_content_prizes_list-item-line.pink {
+    background-color: #FE213F;
+    box-shadow: 0 0 8rem 4rem rgba(254,33,63,.25);
+}
+
+.cases_content_prizes_list-item-line.red {
+    background-color: #feb336;
+    box-shadow: 0 0 8rem 4rem rgba(254,179,54,.25);
+}
+
+.cases_content_prizes_list-item img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 13.8889vh;
+    max-height: 11.1111vh;
+    object-fit: contain;
+}
+
+.cases_content_prizes_list-item span {
+    width: 100%;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.25vh;
+}
+
+.caselut {
+    position: absolute;
+    left: 0vh;
+    top: 0vh;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 21, 24, 0.90);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caselut p {
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 2.222vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.caselut .itemlut {
+    background: url(https://imgur.com/UlpTIOU.png);
+    background-size: cover;
+    width: 65.926vh;
+    height: 52.685vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: -10vh;
+}
+
+.caselut .lutbtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -13vh;
+}
+
+.caselut .itemlut img.iclut {
+    height: 11.389vh;
+    width: 11.389vh;
+    position: absolute;
+}
+
+.caselut .itemlut p {
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 2.222vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: auto;
+    margin-bottom: 6.574vh;
+}
+
+.caselut .lutbtn .btninv {
+    display: flex;
+    width: 11.944vh;
+    height: 2.963vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #386ED7 0%, #45C7FF 100%);
+    margin-right: 0.5vh;
+}
+
+.caselut .lutbtn .btnsell {
+    display: flex;
+    width: 11.944vh;
+    height: 2.963vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #D77138 0%, #FF6745 100%);
+}
+
+.caselut .lutbtn .btninv p {
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.111vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.caselut .lutbtn .btnsell p {
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 1.111vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+}
+
+.caselut .lutbtn .btninv:hover {
+    transform: scale(1.03);
+}
+
+.caselut .lutbtn .btnsell:hover {
+    transform: scale(1.03);
+}
+
+.linecenter {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0vh);
+    width: 0.2778vh;
+    z-index: 1;
+    height: 100%;
+    background: #FDC537;
+    box-shadow: 0vh 0vh 0.9259vh 0.1852vh rgba(253, 197, 55, 0.5);
+
+}
+
+.cases_content_data1 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 32.4074vh;
+    border-radius: 1vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.cases_content_data1 .lists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cases_content_data1 .lists .bg {
+    width:36.5741vh;
+    height:23.3333vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cases_content_data1 .lists .bg svg.blue {
+    width:36.5741vh;
+    height:23.3333vh;
+    fill: #939393;
+    position: absolute;
+    filter: drop-shadow(0vh 0vh 1.8519vh #939393);
+}
+
+.cases_content_data1 .lists .bg svg.yellow {
+    width:36.5741vh;
+    height:23.3333vh;
+    fill: #4FAAF9;
+    position: absolute;
+    filter: drop-shadow(0vh 0vh 1.8519vh #4FAAF9);
+}
+
+.cases_content_data1 .lists .bg svg.pink {
+    width:36.5741vh;
+    height:23.3333vh;
+    fill: #FE213F;
+    position: absolute;
+    filter: drop-shadow(0vh 0vh 1.8519vh #FE213F);
+}
+
+.cases_content_data1 .lists .bg svg.red {
+    width:36.5741vh;
+    height:23.3333vh;
+    fill: #feb336;
+    position: absolute;
+    filter: drop-shadow(0vh 0vh 1.8519vh #feb336);
+}
+
+
+.cases_content_data1 .lists .bg .block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 22.963vh;
+    min-height: 19.6296vh;
+    max-width: 22.963vh;
+    max-height: 19.6296vh;
+    border-radius: 1.6667vh;
+    padding: 2vh;
+    justify-content: center;
+    overflow: hidden;
+    background: hsla(0, 0%, 5%, 1);
+    z-index: 1;
+}
+
+.cases_content_data1 .lists .bg .block .linecase {
+    width: 2.2222vh;
+    height: 0.5556vh;
+    border-radius: 999vh;
+    margin-right: auto;
+}
+
+.cases_content_data1 .lists .bg .block .linecase.blue {
+    background-color: #939393;
+    box-shadow: 0 0 8rem 4rem rgba(147,147,147,.25);
+}
+
+.cases_content_data1 .lists .bg .block .linecase.yellow {
+    background-color: #4FAAF9;
+    box-shadow: 0 0 8rem 4rem rgba(79,170,249,.25);
+}
+
+.cases_content_data1 .lists .bg .block .linecase.pink {
+    background-color: #FE213F;
+    box-shadow: 0 0 8rem 4rem rgba(254,33,63,.25);
+}
+
+.cases_content_data1 .lists .bg .block .linecase.red {
+    background-color: #feb336;
+    box-shadow: 0 0 8rem 4rem rgba(254,179,54,.25);
+}
+
+.cases_content_data1 .lists .bg .block img {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 13.8889vh;
+    max-height: 11.1111vh;
+    object-fit: contain;
+}
+
+.cases_content_data1 .lists .bg .block span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    width: 21.1111vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 4.4444vh;
+    margin-top: -1.8519vh;
+}
+
+.cases_content_data1 .butns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.cases_content_data1 .butns .butnmj {
+    width: 27.037vh;
+    height: 5.5556vh;
+    border-radius: 0.9259vh;
+    background: #292929;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.481vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 1vh;
+    margin-right: 0.5vh;
+    margin-left: 0.5vh;
+}
+
+.cases_content_data1 .butns .butnmj:hover {
+    background: #E01A57;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems.active .butnitem.active .butuse {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems.active .butnitem .butdone {
+    width: 14.1667vh;
+    height: 4.0741vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: #333333;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems .butnitem .butdone {
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems:hover .butnitem {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems.active .butnitem.active .butdone {
+    display: none;
+}
+
+#app::-webkit-scrollbar{
+    display: none;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 {
+    width: 100%;
+    height: 92.4074vh;
+    background: url(https://imgur.com/5kFuQn5.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock {
+    position: absolute;
+    min-width: 5.8333vh;
+    min-height: 5.8333vh;
+    max-width: 5.8333vh;
+    max-height: 5.8333vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos1 {margin-top: 1.8519vh;}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos2 {
+    margin-top: 12.3148vh;
+    margin-right: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos3 {
+    margin-top: 12.3148vh;
+    margin-left: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos4 {
+    margin-top: 22.7778vh;
+    margin-left: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos5 {
+    margin-top: 33.2407vh;
+    margin-left: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos6 {
+    margin-top: 43.7037vh;
+    margin-left: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos7 {
+    margin-top: 22.7778vh;
+    margin-right: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos8 {
+    margin-top: 22.7778vh;
+    margin-right: 41.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos9 {
+    margin-top: 22.7778vh;
+    margin-right: 62.5vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos10 {
+    margin-top: 22.7778vh;
+    margin-right: 83.4259vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos11 {
+    margin-top: 33.2407vh;
+    margin-right: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos12 {
+    margin-top: 43.7037vh;
+    margin-right: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos13 {
+    margin-top: 54.1667vh;
+    margin-right: 41.7593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos14 {
+    margin-top: 54.1667vh;
+    margin-right: 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos15 {
+    margin-top: 64.6296vh;
+    margin-right: 41.7593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos16 {
+    margin-top: 64.6296vh;
+    margin-right: 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos17 {
+    margin-top: 75.0926vh;
+    margin-left: 20.8333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos18 {
+    margin-top: 75.0926vh;
+    margin-left: 41.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos19 {
+    margin-top: 75.0926vh;
+    margin-left: 62.5926vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.pos20 {
+    margin-top: 75.0926vh;
+    margin-left: 83.5185vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.active {
+    background: rgb(17, 17, 17);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock svg.active {
+    width: 0.2778vh;
+    height: 1.3889vh;
+    opacity: 0;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.active svg.active {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.done {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.done svg.done {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock svg.done {
+    opacity: 0;
+    width: 1.5741vh;
+    height: 1.3889vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.selected {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.selected svg.selected {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock svg.selected {
+    width: 0.2778vh;
+    height: 1.3889vh;
+    opacity: 0;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.active:hover {
+    background: rgb(170,142,214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock.closed .closed {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock .closed svg.closed {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questblock svg.closed {
+    width: 1.5741vh;
+    height: 1.5741vh;
+    opacity: 0;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline1 {
+    background: url(https://imgur.com/IGcpdKg.png);
+    width: 20.8704vh;
+    height: 4.6296vh;
+    position: absolute;
+    margin-top: 7.6852vh;
+    background-size: cover;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline2 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 4.6296vh;
+    position: absolute;
+    margin-top: 18.1481vh;
+    margin-right: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline3 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 5.6296vh;
+    position: absolute;
+    margin-top: 28.1481vh;
+    margin-right: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline4 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 5.6296vh;
+    position: absolute;
+    margin-top: 38.1481vh;
+    margin-right: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline5 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 4.6296vh;
+    position: absolute;
+    margin-top: 18.1481vh;
+    margin-left: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline6 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 5.6296vh;
+    position: absolute;
+    margin-top: 28.1481vh;
+    margin-left: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline7 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 5.6296vh;
+    position: absolute;
+    margin-top: 38.1481vh;
+    margin-left: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline8 {
+    background: url(https://imgur.com/IGcpdKg.png);
+    width: 21vh;
+    height: 4.6296vh;
+    position: absolute;
+    margin-top: 49.5vh;
+    background-size: cover;
+    margin-right: 20.7333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline9 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 5.6296vh;
+    position: absolute;
+    margin-top: 59.1481vh;
+    margin-right: 41.6333vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline10 {
+    background: url(https://imgur.com/3REES0A.png);
+    width: 0.0926vh;
+    height: 5.6296vh;
+    position: absolute;
+    margin-top: 59.1481vh;
+    margin-right: 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline11 {
+    background: url(https://imgur.com/enweQI6.png);
+    width: 5.6296vh;
+    height: 0.0926vh;
+    margin-top: 25.7vh;
+    margin-right: 31vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline12 {
+    background: url(https://imgur.com/enweQI6.png);
+    width: 5.6296vh;
+    height: 0.0926vh;
+    margin-top: 25.7vh;
+    margin-right: 52vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline13 {
+    background: url(https://imgur.com/enweQI6.png);
+    width: 5.6296vh;
+    height: 0.0926vh;
+    margin-top: 25.7vh;
+    margin-right: 73vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline14 {
+    background: url(https://imgur.com/7qP5V3c.png);
+    width: 9.0185vh;
+    height: 11.5926vh;
+    margin-top: 66.5vh;
+    margin-right: -9vh;
+    position: absolute;
+    background-size: cover;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline15 {
+    background: url(https://imgur.com/enweQI6.png);
+    width: 5.6296vh;
+    height: 0.0926vh;
+    margin-top: 78vh;
+    margin-left: 32vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline16 {
+    background: url(https://imgur.com/enweQI6.png);
+    width: 5.6296vh;
+    height: 0.0926vh;
+    margin-top: 78vh;
+    margin-left: 52vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass3 .questline17 {
+    background: url(https://imgur.com/enweQI6.png);
+    width: 5.6296vh;
+    height: 0.0926vh;
+    margin-top: 78vh;
+    margin-left: 74vh;
+    position: absolute;
+}
+
+.gta5devmenuf2 .rightmenu .menu h1.shop {
+    margin-top: 1.8519vh;
+    margin-left: 2.7778vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.2222vh;
+    font-weight: 600;
+    line-height: 2.6852vh;
+    letter-spacing: 0.037vh;
+    text-align: left;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slider__item {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.8519vh;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .slider__item img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .gta5devmenuf2 .rightmenu .menu .slider__item {
+    width: 19.7148vh;
+    height: 16.7593vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgb(255, 255, 255, 0.1);
+    border-radius: 0.463vh;
+    background: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .headrewrad {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 17.2222vh;
+    margin-top: 0.8333vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item img {
+    width: 11.5741vh;
+    height: 11.5741vh;
+    margin-top: 0.463vh;
+    position: relative;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item img.n {
+    width: 11.5741vh;
+    height: 11.5741vh;
+    position: relative;
+    margin-top: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .btnerror {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(232, 28, 91);
+    margin-top: 6.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item p {
+    width: 17.037vh;
+    height: 4.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    position: relative;
+    margin-top: -2.2222vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .btntime {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(51, 51, 51);
+    margin-top: 6.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .btnuse {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: center;
+    width: 13.3333vh;
+    height: 3.4259vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3704vh;
+    background: rgb(106, 202, 0);
+    margin-top: 6.6667vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .headrewrad .line {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(147, 147, 147, 0.5);
+    background: rgb(147, 147, 147);
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .headrewrad span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.1111vh;
+    font-weight: 500;
+    letter-spacing: 0.0463vh;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item .headrewrad span svg {
+    width: 1.8519vh;
+    height: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item:hover .btntime {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .slider__item:hover .btnuse {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .headsbcl {
+    margin-top: 5.463vh;
+    width: 85.2778vh;
+    height: 4.0741vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl {
+    width: 85.2778vh;
+    height: 33.5185vh;
+    margin-top: 2.7778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems {
+    width: 85.2778vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 14.2593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .headsbcl h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 2.037vh;
+    font-weight: 700;
+    line-height: 2.4074vh;
+    letter-spacing: 0.0741vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .headsbcl span {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.5741vh;
+    font-weight: 600;
+    letter-spacing: 0vh;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 2.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .headsbcl .btnbuy {
+    width: 26.1111vh;
+    height: 4.0741vh;
+    border-radius: 0.3704vh;
+    background: #AA8ED6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .headsbcl span svg {
+    width: 1.5741vh;
+    height: 1.5741vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl .linesbcl {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(253, 33, 61, 0.5);
+    background: rgb(253, 33, 61);
+    margin-top: 2.7778vh;
+    margin-right: auto;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl .centersbcl {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.7593vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl .centersbcl span.rligh {
+    margin: 0vh 2.037vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl .centersbcl span.rligh.none {
+    opacity: 0;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl .centersbcl img {
+    margin: 0 auto;
+    height: 23.1481vh;
+    background-size: cover;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .bgblocksbcl .centersbcl span.rligh svg {}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems h1 {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 700;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist {
+    max-width: 85.2778vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2.6852vh;
+    gap: 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist .clotblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 19.1667vh;
+    height: 22.2222vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.7407vh;
+    background: rgb(17, 17, 17);
+    overflow: hidden;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist .headcbl {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4815vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist img {
+    width: 13.7037vh;
+    height: 13.7037vh;
+    background-size: cover;
+    margin-top: 1.4815vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist p {
+    width: 17.037vh;
+    height: 4.2593vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 500;
+    line-height: 2.1296vh;
+    letter-spacing: 0.0463vh;
+    text-align: left;
+    position: relative;
+    margin-top: -2.2222vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist .headcbl h1 {}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist .headcbl span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1.4815vh;
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: right;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist .headcbl span svg {
+    width: 1.5741vh;
+    height: 1.5741vh;
+    margin-left: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .headsbcl .btnbuy:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170,142,214, 0.5);
+}
+
+.gta5devmenuf2 .rightmenu .menu .selectblockcl .catalogitems .clilist .headcbl .linesbcl {
+    width: 2.3148vh;
+    height: 0.5556vh;
+    border-radius: 0.2778vh;
+    box-shadow: 0vh 0vh 8.8889vh 2.1296vh rgba(253, 33, 61, 0.5);
+    background: rgb(253, 33, 61);
+    margin-left: 1.4815vh;
+}
+
+.blgf {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.blgf.act {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .bginput {
+    width: 37.3148vh;
+    height: 4.1667vh;
+    box-sizing: border-box;
+    border: 0.0926vh solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5556vh;
+    background: rgb(13, 13, 13);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 2.7778vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .bginput svg {
+    width: 1.5741vh;
+    height: 1.5741vh;
+    margin-left: 1.3889vh;
+    margin-right: 0.7407vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .bginput input {
+    height: 100%;
+    width: 33.1481vh;
+    background: none;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.2963vh;
+    font-weight: 600;
+    line-height: 1.5741vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .list2 .blockanim video.animations__element_img {
+    height: 15.7407vh;
+    min-height: 15.7407vh;
+    margin-top: 0.463vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .line1 {
+    box-shadow: rgba(148, 148, 148, 0.5) 0vh 0vh 8.8889vh 2.1296vh !important;
+    background: rgb(148, 148, 148) !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .line2 {
+    box-shadow: rgba(74, 170, 254, 0.5) 0vh 0vh 8.8889vh 2.1296vh !important;
+    background: rgb(74, 170, 254) !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .line3 {
+    box-shadow: rgba(135, 88, 254, 0.5) 0vh 0vh 8.8889vh 2.1296vh !important;
+    background: rgb(135, 88, 254) !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .line4 {
+    box-shadow: rgba(253, 33, 61, 0.5) 0vh 0vh 8.8889vh 2.1296vh !important;
+    background: rgb(253, 33, 61) !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .line5 {
+    box-shadow: rgba(248, 201, 65, 0.5) 0vh 0vh 8.8889vh 2.1296vh !important;
+    background: rgb(248, 201, 65) !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .line6 {
+    box-shadow: rgba(50, 166, 134, 0.5) 0vh 0vh 8.8889vh 2.1296vh !important;
+    background: rgb(50, 166, 134) !important;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase .linebic.blue {
+    background: #939393;
+    box-shadow: 0 0 8rem 4rem rgba(147,147,147,.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase .linebic.yellow {
+    background: #4FAAF9;
+    box-shadow: 0 0 8rem 4rem rgba(79,170,249,.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase .linebic.pink {
+    background: #FE213F;
+    box-shadow: 0 0 8rem 4rem rgba(254,33,63,.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .listblockitems .blockitemcase .linebic.red {
+    background: #feb336;
+    box-shadow: 0 0 8rem 4rem rgba(254,179,54,.25);
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .colcaseopen {
+    position: absolute;
+    width: 12.2222vh;
+    height: 3.4259vh;
+    border-radius: 0.7407vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #201F1F;
+    margin-top: 28vh;
+    margin-right: 1vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .colcaseopen p {
+    color: #989EA3;
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .caseopenmenu .headcasemenu .colcaseopen p b {
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 2vh;
+    margin-right: 4.6296vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .btns .btnreport {
+    background: rgb(255,255,255,0.03);
+    padding: 1.4815vh 1.8519vh;
+    border-radius: 0.7407vh;
+    margin-left: 0.3vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .btns .btnreport p {
+    color: rgb(192, 192, 192);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .btns .btnreport:hover {
+    box-shadow: 0vh 0vh 1.8519vh 0vh rgba(170, 142, 214, 0.5);
+    background: rgb(170, 142, 214);
+}
+
+.gta5devmenuf2 .rightmenu .menu .reportmenu .reportright .bgreportmessage .btns .btnreport:hover p {
+    color: #fff;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 2vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype .blocktype {
+    outline: 0.1vh solid rgba(0, 0, 0, 0.08);
+    border-radius: 0.556vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 23.056vh;
+    height: 4.259vh;
+    background: #1A1A1A;
+    z-index: 1;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype ul {
+    position: absolute;
+    margin-top: 4.2vh;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    outline: 0.1vh solid rgba(0, 0, 0, 0.08);
+    width: 23.056vh;
+    background: #1A1A1A;
+    border-radius: 0vh 0vh 0.556vh 0.556vh;
+    z-index: 1;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype .blocktype svg {
+    width: 1.6vh;
+    height: 1.2vh;
+    fill: #fff;
+    margin-left: 0.8vh;
+    opacity: 0.4;
+    margin-right: 0.8vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype .blocktype p {
+    color: #FFFBF2;
+    font-family: Proxima Nova;
+    font-size: 1.2vh;
+    font-weight: 600;
+    letter-spacing: 0vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype ul li {
+    color: #fff;
+    font-family: Proxima Nova;
+    font-size: 1.2vh;
+    font-weight: 600;
+    letter-spacing: 0vh;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 4.259vh;
+    padding: 0vh 1vh;
+    opacity: 0.2;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype .blocktype.active {
+    border-radius: 0.556vh 0.556vh 0vh 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype ul.active {
+    display: flex;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype .blocktype.active svg {
+    opacity: 1;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype .blocktype.active svg:nth-child(3) {
+    transform: rotate(180deg);
+    opacity: 0.4;
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype ul li:hover {
+    opacity: 1;
+    background: rgba(255,255,255,0.2);
+}
+
+.gta5devmenuf2 .rightmenu .topnav .cataloglisttype ul li:last-child {
+    border-radius: 0vh 0vh 0.556vh 0.556vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems {
+    opacity: 0.7;
+}
+
+.gta5devmenuf2 .rightmenu .menu .battlepass .listitems .rightlitems .blockrlitems .blockpremiumitems.buy {
+    opacity: 1;
+}
+
+/*Биндер*/
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind {
+    width: 100%;
+    height: 88.04vh;
+    box-sizing: border-box;
+    padding-left: 3%;
+    display: flex;
+    gap: 2vh 1vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .list {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .blockbind {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1vh;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .blockbind h2 {
+    color: rgb(255, 255, 255,0.5);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .blockbind .blockbindslist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.463vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .blockbind .blockbindslist .blockbinditem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.09vh;
+    box-sizing: border-box;
+    border-radius: 0.3704vh;
+    background: rgb(16, 16, 16);
+    padding: 0vh 1.8519vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .blockbind .blockbindslist .blockbinditem p {
+    color: rgb(255, 255, 255);
+    font-family: SF Pro Display;
+    font-size: 1.4815vh;
+    font-weight: 600;
+    line-height: 1.7593vh;
+    letter-spacing: 0vh;
+    text-align: left;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg .menulistbind .blockbind .blockbindslist .blockbinditem span {
+    min-width: 4vh;
+    height: 3.4vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255);
+    color: rgb(47, 43, 43);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+    text-align: center;
+    padding: 0vh 0.7vh;
+    border-radius: 0.5556vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .headsetting .btnrest {
+    margin-left: 1.9444vh;
+    height: 4.0741vh;
+    border-radius: 0.5556vh;
+    background: rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0vh 2vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .headsetting .btnrest p {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: SF Pro Display;
+    font-size: 1.3889vh;
+    font-weight: 500;
+    line-height: 1.6667vh;
+    letter-spacing: 0vh;
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .headsetting .btnrest:hover {
+    background: rgba(255, 255, 255);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .headsetting .btnrest:hover p {
+    color: rgb(47, 43, 43);
+}
+
+.gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg::-webkit-scrollbar {
+  display:none;
+}

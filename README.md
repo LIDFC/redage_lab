@@ -5,6 +5,7 @@
 ![.NET](https://img.shields.io/badge/.NET-Core-purple)
 ![Status](https://img.shields.io/badge/status-in%20development-orange)
 ![License](https://img.shields.io/badge/license-private-red)
+![MongoDB Dawn](https://img.shields.io/badge/MongoDB-Dawn%20of%20Pain-red)
 
 Полностью настроенный сервер на базе RedAge v3 для RAGE:MP.
 Сервер с кастомной логикой, системой фич и возможностью дальнейшего развития.

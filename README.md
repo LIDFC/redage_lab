@@ -108,7 +108,6 @@ plugins/       # Плагины
 
 Не пушить:
 
-* client_packages/
 * node_modules/
 * bin/
 * obj/

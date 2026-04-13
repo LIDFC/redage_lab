@@ -21,11 +21,11 @@
 
 ### 👕 Система одежды
 
-![Clothes](https://media.giphy.com/media/3o7TKMt1VVNkHV2PaE/giphy.gif)
+![Clothes](./assets/clothes.gif)
 
 ### 🌍 Игровой процесс
 
-![Gameplay](https://media.giphy.com/media/xT0GqeSlGSRQut8aZ2/giphy.gif)
+![Gameplay](./assets/gameplay.gif)
 
 ---
 

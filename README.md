@@ -21,7 +21,7 @@
 
 ### 👕 Система одежды
 
-![Clothes](./assets/clothes.gif)
+![Clothes](./assets/clothing.gif)
 
 ### 🌍 Игровой процесс
 

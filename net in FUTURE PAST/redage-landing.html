@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RedAge v3 — NeptuneEvo | RAGE:MP Server</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #e8372c;
+    --red-dim: #a0251c;
+    --red-glow: rgba(232,55,44,0.25);
+    --red-glow-hard: rgba(232,55,44,0.55);
+    --bg: #090909;
+    --bg-card: #111111;
+    --bg-card2: #0f0f0f;
+    --border: rgba(255,255,255,0.06);
+    --border-hot: rgba(232,55,44,0.35);
+    --text: #e8e8e0;
+    --text-dim: rgba(232,232,224,0.45);
+    --text-mid: rgba(232,232,224,0.72);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  html { scroll-behavior: smooth; }
+
+  /* ─── HIDE NATIVE CURSOR EVERYWHERE ─── */
+  *, *::before, *::after { cursor: none !important; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── CUSTOM CURSOR ─── */
+  #cursor-ring {
+    position: fixed;
+    top: 0; left: 0;
+    width: 36px; height: 36px;
+    border: 1.5px solid var(--red);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: width 0.25s cubic-bezier(0.23,1,0.32,1),
+                height 0.25s cubic-bezier(0.23,1,0.32,1),
+                border-color 0.25s,
+                background 0.25s,
+                opacity 0.2s;
+    mix-blend-mode: normal;
+    will-change: transform;
+  }
+  #cursor-dot {
+    position: fixed;
+    top: 0; left: 0;
+    width: 5px; height: 5px;
+    background: var(--red);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s, height 0.15s, background 0.2s, opacity 0.2s;
+    will-change: transform;
+  }
+  /* hover state — expand ring, hide dot */
+  body.cursor-hover #cursor-ring {
+    width: 56px; height: 56px;
+    border-color: rgba(232,55,44,0.5);
+    background: rgba(232,55,44,0.08);
+  }
+  body.cursor-hover #cursor-dot {
+    width: 3px; height: 3px;
+    opacity: 0.5;
+  }
+  /* click state */
+  body.cursor-click #cursor-ring {
+    width: 22px; height: 22px;
+    border-color: #fff;
+    background: rgba(232,55,44,0.25);
+  }
+  body.cursor-click #cursor-dot {
+    width: 6px; height: 6px;
+    background: #fff;
+  }
+
+  /* ─── NOISE OVERLAY ─── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.6;
+  }
+
+  /* ─── TYPOGRAPHY ─── */
+  .font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
+  .font-mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* ─── HERO GLOW BLOBS ─── */
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    pointer-events: none;
+  }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, rgba(9,9,9,0.95) 0%, transparent 100%);
+    backdrop-filter: blur(2px);
+  }
+
+  /* ─── BUTTONS ─── */
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--red);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    padding: 14px 32px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 0.2s;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  }
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.15);
+    transform: translateX(-100%) skewX(-15deg);
+    transition: transform 0.4s;
+  }
+  .btn-primary:hover::before { transform: translateX(200%) skewX(-15deg); }
+  .btn-primary:hover { box-shadow: 0 0 40px var(--red-glow-hard); }
+
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: var(--text-mid);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.03em;
+    padding: 13px 32px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s;
+    clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
+  }
+  .btn-ghost:hover {
+    border-color: var(--border-hot);
+    color: var(--text);
+    box-shadow: 0 0 20px var(--red-glow);
+  }
+
+  /* ─── CARDS ─── */
+  .feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 32px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: default;
+  }
+  .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--red), transparent);
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
+  .feature-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top center, var(--red-glow) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.35s;
+  }
+  .feature-card:hover { border-color: var(--border-hot); transform: translateY(-4px); }
+  .feature-card:hover::before { opacity: 1; }
+  .feature-card:hover::after { opacity: 1; }
+
+  .card-icon {
+    width: 48px; height: 48px;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    transition: border-color 0.35s;
+  }
+  .feature-card:hover .card-icon { border-color: var(--border-hot); }
+
+  /* ─── SECTION LABEL ─── */
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 20px;
+  }
+  .section-label::before {
+    content: '';
+    display: block;
+    width: 24px; height: 1px;
+    background: var(--red);
+  }
+
+  /* ─── TERMINAL ─── */
+  .terminal {
+    background: #0c0c0c;
+    border: 1px solid rgba(255,255,255,0.08);
+    overflow: hidden;
+  }
+  .terminal-bar {
+    background: #1a1a1a;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .dot-r { background: #e8372c; }
+  .dot-y { background: #f5a623; }
+  .dot-g { background: #4ec94e; }
+  .terminal-body { padding: 24px; }
+  .cmd-line { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+  .prompt { color: var(--red); font-size: 13px; user-select: none; flex-shrink: 0; padding-top: 1px; }
+  .cmd-text { color: #c8f542; font-size: 13px; line-height: 1.6; }
+  .cmd-comment { color: #555; font-size: 12px; }
+
+  /* ─── TECH BADGES ─── */
+  .tech-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-mid);
+    transition: all 0.25s;
+  }
+  .tech-badge:hover {
+    border-color: var(--border-hot);
+    color: var(--text);
+    box-shadow: 0 0 16px var(--red-glow);
+  }
+
+  /* ─── SCREENSHOT CARD ─── */
+  .screen-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .screen-card:hover { border-color: var(--border-hot); transform: translateY(-3px); }
+  .screen-placeholder {
+    background: linear-gradient(135deg, #111 0%, #1a1a1a 50%, #0f0f0f 100%);
+    aspect-ratio: 16/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .screen-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 40px,
+      rgba(255,255,255,0.015) 40px,
+      rgba(255,255,255,0.015) 41px
+    );
+  }
+
+  /* ─── FOLDER TREE ─── */
+  .tree-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--text-dim);
+    transition: color 0.2s;
+  }
+  .tree-item:hover { color: var(--text); }
+  .tree-item.folder { color: var(--text-mid); }
+  .tree-item.folder:hover { color: #fff; }
+
+  /* ─── HORIZONTAL SCROLL TICKER ─── */
+  .ticker-wrap { overflow: hidden; position: relative; }
+  .ticker-track {
+    display: flex;
+    gap: 0;
+    animation: ticker 28s linear infinite;
+    width: max-content;
+  }
+  .ticker-item {
+    padding: 0 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    color: var(--text-dim);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .ticker-sep { color: var(--red); }
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ─── HERO TEXT ANIMATION ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .animate-hero > * { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.23,1,0.32,1) forwards; }
+  .animate-hero > *:nth-child(1) { animation-delay: 0.1s; }
+  .animate-hero > *:nth-child(2) { animation-delay: 0.25s; }
+  .animate-hero > *:nth-child(3) { animation-delay: 0.4s; }
+  .animate-hero > *:nth-child(4) { animation-delay: 0.55s; }
+  .animate-hero > *:nth-child(5) { animation-delay: 0.7s; }
+
+  /* ─── SCROLL REVEAL ─── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity 0.7s cubic-bezier(0.23,1,0.32,1), transform 0.7s cubic-bezier(0.23,1,0.32,1);
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ─── STAT COUNTER ─── */
+  .stat-number {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    line-height: 1;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+  }
+
+  /* ─── GLOW TEXT ─── */
+  .text-glow { text-shadow: 0 0 40px var(--red-glow-hard); }
+
+  /* ─── SCROLL INDICATOR ─── */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  /* ─── CUSTOM SCROLLBAR ─── */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--red-dim); border-radius: 2px; }
+
+  /* ─── SELECTION ─── */
+  ::selection { background: var(--red); color: #fff; }
+
+  /* ─── RESPONSIVE HERO TITLE ─── */
+  .hero-title { font-size: clamp(72px, 12vw, 180px); line-height: 0.92; }
+
+  /* ─── GRID RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .feature-card { padding: 24px; }
+    .stat-number { font-size: 48px; }
+  }
+
+  /* ─── SCANLINE HERO ─── */
+  .scanline {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      to bottom,
+      transparent 0px,
+      transparent 3px,
+      rgba(0,0,0,0.08) 3px,
+      rgba(0,0,0,0.08) 4px
+    );
+    pointer-events: none;
+  }
+
+  /* ─── LINE DECORATION ─── */
+  .line-h {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+  }
+
+  /* ─── NUMBERED SECTIONS ─── */
+  .section-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+
+<!-- ───────────────────────────────────────────── NAV -->
+<nav>
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3 text-decoration-none" style="text-decoration:none">
+      <div style="width:32px;height:32px;background:var(--red);clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));display:flex;align-items:center;justify-content:center;">
+        <span style="font-family:'Bebas Neue';font-size:16px;color:#fff;letter-spacing:0">RA</span>
+      </div>
+      <span class="font-display" style="font-size:18px;letter-spacing:0.05em;color:#fff">REDAGE <span style="color:var(--red)">v3</span></span>
+    </a>
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#about" style="font-size:14px;color:var(--text-dim);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-dim)'">О сервере</a>
+      <a href="#features" style="font-size:14px;color:var(--text-dim);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-dim)'">Фичи</a>
+      <a href="#tech" style="font-size:14px;color:var(--text-dim);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-dim)'">Технологии</a>
+      <a href="#install" style="font-size:14px;color:var(--text-dim);text-decoration:none;transition:color 0.2s" onmouseover="this.style.color='var(--text)'" onmouseout="this.style.color='var(--text-dim)'">Установка</a>
+    </div>
+    <a href="#install" class="btn-primary" style="font-size:13px;padding:10px 24px">Начать →</a>
+  </div>
+</nav>
+
+<!-- ───────────────────────────────────────────── HERO -->
+<section style="min-height:100vh;position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 80px 0;overflow:hidden;">
+
+  <!-- bg blobs -->
+  <div class="blob" style="width:800px;height:800px;background:radial-gradient(circle,rgba(232,55,44,0.18) 0%,transparent 70%);top:-200px;left:-200px;animation:blobmove 12s ease-in-out infinite alternate;"></div>
+  <div class="blob" style="width:600px;height:600px;background:radial-gradient(circle,rgba(232,55,44,0.1) 0%,transparent 70%);bottom:-100px;right:-100px;animation:blobmove2 16s ease-in-out infinite alternate;"></div>
+  <div class="blob" style="width:300px;height:300px;background:radial-gradient(circle,rgba(232,55,44,0.12) 0%,transparent 70%);top:40%;left:55%;"></div>
+
+  <!-- scanline -->
+  <div class="scanline"></div>
+
+  <!-- grid bg -->
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 80% at 50% 50%,black 40%,transparent 100%);"></div>
+
+  <!-- content -->
+  <div class="max-w-7xl mx-auto px-6 w-full animate-hero">
+    
+    <div class="section-label">NeptuneEvo · RAGE:MP · GTA V</div>
+
+    <h1 class="hero-title font-display" style="color:#fff">
+      RED<span style="color:var(--red)">AGE</span><br>
+      <span style="opacity:0.18">───────</span>
+    </h1>
+    <h2 class="hero-title font-display" style="color:var(--text-dim);margin-top:-8px">
+      СВОБОДА<br>В ГОРОДЕ
+    </h2>
+
+    <p style="max-width:520px;margin-top:32px;font-size:17px;line-height:1.65;color:var(--text-mid);font-weight:300">
+      Полноценный roleplay сервер на базе <span style="color:var(--text)">RAGE:MP</span> с открытым исходным кодом. Кастомный .NET backend, живая экономика, фракции, телефон, бизнес — всё что нужно для настоящего города.
+    </p>
+
+    <div style="display:flex;align-items:center;gap:16px;margin-top:40px;flex-wrap:wrap">
+      <a href="#install" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm3.5 7.5l-4 3a.5.5 0 01-.8-.4v-6a.5.5 0 01.8-.4l4 3a.5.5 0 010 .8z"/></svg>
+        Начать играть
+      </a>
+      <a href="https://github.com" target="_blank" class="btn-ghost">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+    </div>
+
+    <!-- stats row -->
+    <div style="display:flex;gap:48px;margin-top:72px;flex-wrap:wrap">
+      <div>
+        <div class="stat-number text-glow">8</div>
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-top:4px">разделов кода</div>
+      </div>
+      <div style="width:1px;background:var(--border)"></div>
+      <div>
+        <div class="stat-number">v3</div>
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-top:4px">текущая версия</div>
+      </div>
+      <div style="width:1px;background:var(--border)"></div>
+      <div>
+        <div class="stat-number">100<span style="color:var(--red)">%</span></div>
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-dim);margin-top:4px">open source</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scroll hint -->
+  <div style="position:absolute;bottom:32px;right:48px;display:flex;flex-direction:column;align-items:center;gap:8px;animation:bounce 2s ease-in-out infinite">
+    <span style="font-family:'JetBrains Mono';font-size:10px;letter-spacing:0.1em;color:var(--text-dim);writing-mode:vertical-rl">SCROLL</span>
+    <div style="width:1px;height:48px;background:linear-gradient(to bottom,var(--red),transparent)"></div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── TICKER -->
+<div style="border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:16px 0;background:#0c0c0c">
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker">
+      <div class="ticker-item">RAGE:MP <span class="ticker-sep">✦</span> GTA V MULTIPLAYER <span class="ticker-sep">✦</span> ROLEPLAY <span class="ticker-sep">✦</span> OPEN SOURCE <span class="ticker-sep">✦</span> .NET BACKEND <span class="ticker-sep">✦</span> КАСТОМНЫЙ ИНТЕРФЕЙС <span class="ticker-sep">✦</span> ЖИВАЯ ЭКОНОМИКА <span class="ticker-sep">✦</span> NEPTUNE EVO <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">RAGE:MP <span class="ticker-sep">✦</span> GTA V MULTIPLAYER <span class="ticker-sep">✦</span> ROLEPLAY <span class="ticker-sep">✦</span> OPEN SOURCE <span class="ticker-sep">✦</span> .NET BACKEND <span class="ticker-sep">✦</span> КАСТОМНЫЙ ИНТЕРФЕЙС <span class="ticker-sep">✦</span> ЖИВАЯ ЭКОНОМИКА <span class="ticker-sep">✦</span> NEPTUNE EVO <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ───────────────────────────────────────────── ABOUT -->
+<section id="about" style="padding:140px 0">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center" class="reveal">
+
+      <div>
+        <div class="section-label">О проекте</div>
+        <h2 class="font-display" style="font-size:clamp(48px,6vw,80px);color:#fff;line-height:0.95;margin-bottom:32px">
+          ЭТО НЕ<br>ПРОСТО<br>СЕРВЕР<span style="color:var(--red)">.</span>
+        </h2>
+        <p style="font-size:17px;line-height:1.75;color:var(--text-mid);font-weight:300;margin-bottom:24px">
+          RedAge v3 — это полноценная платформа для roleplay с открытым кодом. Никаких сторонних утечек, никакого ворованного кода — только чистый, структурированный проект на <strong style="color:var(--text)">.NET Core</strong> и <strong style="color:var(--text)">Node.js</strong>.
+        </p>
+        <p style="font-size:17px;line-height:1.75;color:var(--text-mid);font-weight:300">
+          Архитектура разделена на <strong style="color:var(--text)">src_client</strong>, <strong style="color:var(--text)">src_cef</strong> и <strong style="color:var(--text)">dotnet</strong> — каждый слой делает своё дело. MariaDB для данных, Redis для кэша. MongoDB не используется, и все счастливы.
+        </p>
+      </div>
+
+      <div style="position:relative">
+        <!-- decorative code block -->
+        <div style="background:#0f0f0f;border:1px solid var(--border);padding:32px;position:relative">
+          <div style="position:absolute;top:-1px;left:32px;right:32px;height:1px;background:linear-gradient(90deg,transparent,var(--red),transparent)"></div>
+          <div class="font-mono" style="font-size:13px;line-height:2;color:var(--text-dim)">
+            <div><span style="color:#555">// NeptuneEvo core</span></div>
+            <div><span style="color:var(--red)">namespace</span> <span style="color:#c8f542">NeptuneEvo</span>.Core {</div>
+            <div style="padding-left:20px"><span style="color:var(--red)">class</span> <span style="color:#64d2ff">RedAge</span> {</div>
+            <div style="padding-left:40px"><span style="color:var(--red)">string</span> version = <span style="color:#ffa">"3.0.0"</span>;</div>
+            <div style="padding-left:40px"><span style="color:var(--red)">bool</span> isAlive = <span style="color:#f5a623">true</span>;</div>
+            <div style="padding-left:40px"><span style="color:var(--red)">bool</span> isMongoDB = <span style="color:#f5a623">false</span>; <span style="color:#555">// ✓</span></div>
+            <div style="padding-left:20px">}</div>
+            <div>}</div>
+          </div>
+        </div>
+        <!-- corner deco -->
+        <div style="position:absolute;bottom:-16px;right:-16px;width:64px;height:64px;border-right:2px solid var(--red);border-bottom:2px solid var(--red)"></div>
+        <div style="position:absolute;top:-16px;left:-16px;width:64px;height:64px;border-left:2px solid rgba(232,55,44,0.3);border-top:2px solid rgba(232,55,44,0.3)"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── FEATURES -->
+<section id="features" style="padding:80px 0 140px">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div class="reveal" style="margin-bottom:72px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:gap:24px">
+      <div>
+        <div class="section-label">Возможности</div>
+        <h2 class="font-display" style="font-size:clamp(48px,6vw,80px);color:#fff;line-height:0.95">
+          ЧТО<br>ВНУТРИ<span style="color:var(--red)">?</span>
+        </h2>
+      </div>
+      <p style="max-width:360px;font-size:15px;line-height:1.7;color:var(--text-dim)">Система, которую не стыдно показать коллеге. Каждый модуль — отдельная история.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1px;background:var(--border)" class="reveal">
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">🚗</div>
+        <div class="section-num">01</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Автосалон</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">Тест-драйв, подбор цвета, характеристики. Покупка за наличку или ОРГ-валюту. Реальная физика из GTA native API.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">👔</div>
+        <div class="section-num">02</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Гардероб</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">Тысячи вариантов одежды, маски, очки, головные уборы. Кастомизация через CEF с превью в реальном времени.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">💰</div>
+        <div class="section-num">03</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Экономика</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">Банки, наличка, RedBucks. Аукцион, переводы, зарплата. Экономика как в реальном городе — без читов и дупломбагов.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">🚔</div>
+        <div class="section-num">04</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Фракции</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">LSPD, ФБИ, Армия, криминальные группировки. Звания, задания, склад оружия, война за районы.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">🎒</div>
+        <div class="section-num">05</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Инвентарь</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">Drag-and-drop, стеки, быстрый доступ. Оружие, аптечки, документы, одежда — всё в одном окне.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">📱</div>
+        <div class="section-num">06</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Телефон</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">SMS, звонки, такси, GPS, аукцион, новости, галерея, механик. Полноценный смартфон прямо в игре.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">🏢</div>
+        <div class="section-num">07</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Бизнесы</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">24/7, АЗС, автосалоны, оружейные, барбershop, казино. Доходы, склад, заказы — управляй своей империей.</p>
+      </div>
+
+      <div class="feature-card" style="background:var(--bg-card)">
+        <div class="card-icon">⚒️</div>
+        <div class="section-num">08</div>
+        <h3 style="font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:0.03em;color:#fff;margin:8px 0 12px;position:relative;z-index:1">Работы</h3>
+        <p style="font-size:14px;line-height:1.7;color:var(--text-dim);position:relative;z-index:1">Дальнобойщик, лесоруб, шахтёр, почтальон, таксист. Каждая работа — свой геймплей, не просто кружки на карте.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── SCREENSHOTS -->
+<section id="demo" style="padding:80px 0 140px;background:#0a0a0a;border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal" style="margin-bottom:64px">
+      <div class="section-label">Демонстрация</div>
+      <h2 class="font-display" style="font-size:clamp(48px,6vw,80px);color:#fff;line-height:0.95">
+        КАК ЭТО<br>ВЫГЛЯДИТ<span style="color:var(--red)">.</span>
+      </h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:2px;background:var(--border)" class="reveal">
+
+      <div class="screen-card" style="grid-row:span 2">
+        <div class="screen-placeholder" style="aspect-ratio:unset;height:100%;min-height:340px">
+          <div style="text-align:center;position:relative;z-index:1">
+            <div style="font-family:'Bebas Neue';font-size:48px;color:rgba(255,255,255,0.08);letter-spacing:0.05em">HUD</div>
+            <div style="font-family:'JetBrains Mono';font-size:11px;color:var(--text-dim);letter-spacing:0.1em;margin-top:8px">player/hudevo</div>
+          </div>
+          <div style="position:absolute;bottom:20px;left:20px;right:20px;height:1px;background:linear-gradient(90deg,var(--red),transparent)"></div>
+        </div>
+        <div style="padding:20px 24px;background:var(--bg-card)">
+          <div style="font-size:13px;font-weight:500;color:var(--text);margin-bottom:4px">Игровой HUD</div>
+          <div style="font-size:12px;color:var(--text-dim)">Карта, телефон, уведомления, биндер, статус игрока</div>
+        </div>
+      </div>
+
+      <div class="screen-card">
+        <div class="screen-placeholder">
+          <div style="text-align:center;position:relative;z-index:1">
+            <div style="font-size:32px">🛒</div>
+            <div style="font-family:'JetBrains Mono';font-size:10px;color:var(--text-dim);margin-top:6px">SHOP24</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px;background:var(--bg-card)">
+          <div style="font-size:13px;font-weight:500;color:var(--text)">24/7 Магазин</div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:2px">Категории, поиск, покупка</div>
+        </div>
+      </div>
+
+      <div class="screen-card">
+        <div class="screen-placeholder">
+          <div style="text-align:center;position:relative;z-index:1">
+            <div style="font-size:32px">🚗</div>
+            <div style="font-family:'JetBrains Mono';font-size:10px;color:var(--text-dim);margin-top:6px">AUTOSHOP</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px;background:var(--bg-card)">
+          <div style="font-size:13px;font-weight:500;color:var(--text)">Автосалон</div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:2px">Тест-драйв, характеристики</div>
+        </div>
+      </div>
+
+      <div class="screen-card">
+        <div class="screen-placeholder">
+          <div style="text-align:center;position:relative;z-index:1">
+            <div style="font-size:32px">👤</div>
+            <div style="font-family:'JetBrains Mono';font-size:10px;color:var(--text-dim);margin-top:6px">F2-MENU</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px;background:var(--bg-card)">
+          <div style="font-size:13px;font-weight:500;color:var(--text)">Меню персонажа</div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:2px">Статы, имущество, магазин</div>
+        </div>
+      </div>
+
+      <div class="screen-card">
+        <div class="screen-placeholder">
+          <div style="text-align:center;position:relative;z-index:1">
+            <div style="font-size:32px">🚕</div>
+            <div style="font-family:'JetBrains Mono';font-size:10px;color:var(--text-dim);margin-top:6px">RENT·CAR</div>
+          </div>
+        </div>
+        <div style="padding:16px 20px;background:var(--bg-card)">
+          <div style="font-size:13px;font-weight:500;color:var(--text)">Аренда авто</div>
+          <div style="font-size:11px;color:var(--text-dim);margin-top:2px">Выбор, оплата, документы</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── TECH -->
+<section id="tech" style="padding:140px 0">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal" style="margin-bottom:72px">
+      <div class="section-label">Стек</div>
+      <h2 class="font-display" style="font-size:clamp(48px,6vw,80px);color:#fff;line-height:0.95">
+        ЧЕМ<br>СОБРАНО<span style="color:var(--red)">.</span>
+      </h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:2px;background:var(--border)" class="reveal">
+
+      <div class="tech-badge" style="flex-direction:column;align-items:flex-start;padding:28px;gap:12px">
+        <span style="font-size:28px">⚡</span>
+        <div>
+          <div style="font-size:16px;color:var(--text);margin-bottom:4px">RAGE:MP</div>
+          <div style="font-size:11px;color:var(--text-dim)">Multiplayer платформа</div>
+        </div>
+      </div>
+
+      <div class="tech-badge" style="flex-direction:column;align-items:flex-start;padding:28px;gap:12px">
+        <span style="font-size:28px">🔵</span>
+        <div>
+          <div style="font-size:16px;color:var(--text);margin-bottom:4px">.NET Core</div>
+          <div style="font-size:11px;color:var(--text-dim)">Серверная логика</div>
+        </div>
+      </div>
+
+      <div class="tech-badge" style="flex-direction:column;align-items:flex-start;padding:28px;gap:12px">
+        <span style="font-size:28px">🟢</span>
+        <div>
+          <div style="font-size:16px;color:var(--text);margin-bottom:4px">Node.js</div>
+          <div style="font-size:11px;color:var(--text-dim)">Клиентский билд</div>
+        </div>
+      </div>
+
+      <div class="tech-badge" style="flex-direction:column;align-items:flex-start;padding:28px;gap:12px">
+        <span style="font-size:28px">🗄️</span>
+        <div>
+          <div style="font-size:16px;color:var(--text);margin-bottom:4px">MariaDB</div>
+          <div style="font-size:11px;color:var(--text-dim)">Основная база данных</div>
+        </div>
+      </div>
+
+      <div class="tech-badge" style="flex-direction:column;align-items:flex-start;padding:28px;gap:12px">
+        <span style="font-size:28px">🔴</span>
+        <div>
+          <div style="font-size:16px;color:var(--text);margin-bottom:4px">Redis</div>
+          <div style="font-size:11px;color:var(--text-dim)">Кэш и сессии</div>
+        </div>
+      </div>
+
+      <div class="tech-badge" style="flex-direction:column;align-items:flex-start;padding:28px;gap:12px">
+        <span style="font-size:28px">🎨</span>
+        <div>
+          <div style="font-size:16px;color:var(--text);margin-bottom:4px">Svelte + Webpack</div>
+          <div style="font-size:11px;color:var(--text-dim)">CEF интерфейс</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- not used -->
+    <div class="reveal" style="margin-top:40px;padding:24px;border:1px solid rgba(80,80,80,0.3);background:#0c0c0c;display:flex;align-items:center;gap:16px">
+      <div style="font-size:24px;opacity:0.4">🍃</div>
+      <div>
+        <span style="font-family:'JetBrains Mono';font-size:12px;color:#555;text-decoration:line-through">MongoDB</span>
+        <span style="font-size:13px;color:var(--text-dim);margin-left:16px">не используется. и не будет. вы правильно поняли.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── INSTALL -->
+<section id="install" style="padding:80px 0 140px;background:#0a0a0a;border-top:1px solid var(--border)">
+  <div class="max-w-7xl mx-auto px-6">
+    
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start" class="reveal">
+      
+      <div>
+        <div class="section-label">Установка</div>
+        <h2 class="font-display" style="font-size:clamp(48px,6vw,80px);color:#fff;line-height:0.95;margin-bottom:32px">
+          ЗАПУСТИ<br>СЕРВЕР<span style="color:var(--red)">.</span>
+        </h2>
+        <p style="font-size:16px;line-height:1.75;color:var(--text-mid);font-weight:300">
+          Клонируй, собери, запусти. Три команды — и у тебя живой RP-сервер. Ну, почти. Не забудь настроить MariaDB и Redis.
+        </p>
+        <div style="margin-top:32px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text-dim)">
+            <div style="width:6px;height:6px;background:var(--red);flex-shrink:0"></div>
+            Требуется RAGE:MP сервер
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text-dim)">
+            <div style="width:6px;height:6px;background:var(--red);flex-shrink:0"></div>
+            .NET 6.0+ и Node.js 16+
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--text-dim)">
+            <div style="width:6px;height=6px;background:var(--red);flex-shrink:0"></div>
+            Visual Studio 2022 для dotnet сборки
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- Terminal -->
+        <div class="terminal reveal">
+          <div class="terminal-bar">
+            <div class="dot dot-r"></div>
+            <div class="dot dot-y"></div>
+            <div class="dot dot-g"></div>
+            <span style="font-family:'JetBrains Mono';font-size:11px;color:#555;margin-left:8px">bash — redage-setup</span>
+          </div>
+          <div class="terminal-body">
+            <div class="cmd-line">
+              <span class="prompt">$</span>
+              <div>
+                <div class="cmd-text">git clone https://github.com/LIDFC/redage_lab</div>
+                <div class="cmd-comment"># клонируем репозиторий</div>
+              </div>
+            </div>
+            <div class="cmd-line">
+              <span class="prompt">$</span>
+              <div>
+                <div class="cmd-text">cd redage_lab/src_cef && npm install</div>
+                <div class="cmd-comment"># ставим зависимости интерфейса</div>
+              </div>
+            </div>
+            <div class="cmd-line">
+              <span class="prompt">$</span>
+              <div>
+                <div class="cmd-text">npm run build</div>
+                <div class="cmd-comment"># билдим Svelte → client_packages</div>
+              </div>
+            </div>
+            <div class="cmd-line">
+              <span class="prompt">$</span>
+              <div>
+                <div class="cmd-text">cd ../src_client && npm run build</div>
+                <div class="cmd-comment"># билдим клиентский JS</div>
+              </div>
+            </div>
+            <div class="cmd-line">
+              <span class="prompt">$</span>
+              <div>
+                <div class="cmd-text">./ragemp-server</div>
+                <div class="cmd-comment"># 🚀 поехали</div>
+              </div>
+            </div>
+            <div style="margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06)">
+              <div style="color:#4ec94e;font-family:'JetBrains Mono';font-size:12px">✓ Server started on port 22005</div>
+              <div style="color:#555;font-family:'JetBrains Mono';font-size:12px;margin-top:4px"># NeptuneEvo is alive.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- dotnet note -->
+        <div style="margin-top:2px;background:#0f0f0f;border:1px solid var(--border);padding:20px 24px;border-top:none">
+          <div style="font-family:'JetBrains Mono';font-size:12px;color:var(--text-dim);line-height:1.8">
+            <div><span style="color:var(--red)">#</span> dotnet: открой redage_v3-main.slnx</div>
+            <div><span style="color:var(--red)">#</span> собери решение в Visual Studio 2022</div>
+            <div><span style="color:var(--red)">#</span> скопируй resources/ на Linux сервер</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── STRUCTURE -->
+<section id="structure" style="padding:140px 0">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal" style="margin-bottom:72px">
+      <div class="section-label">Архитектура</div>
+      <h2 class="font-display" style="font-size:clamp(48px,6vw,80px);color:#fff;line-height:0.95">
+        СТРУКТУРА<br>ПРОЕКТА<span style="color:var(--red)">.</span>
+      </h2>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border)" class="reveal">
+
+      <div style="background:var(--bg-card);padding:40px">
+        <div style="font-family:'JetBrains Mono';font-size:12px;color:var(--red);margin-bottom:24px;letter-spacing:0.08em">FRONTEND</div>
+        
+        <div class="tree-item folder">
+          <span style="color:var(--red)">▶</span>
+          <span>📁 src_cef/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Svelte CEF UI</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">└─</span>
+          <span>📁 src/views/player/</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>hudevo/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">HUD</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>gta5devmenu/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">F2-меню</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>newauthentication/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Авторизация</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">└─</span>
+          <span>menu/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Инвентарь</span>
+        </div>
+
+        <div class="tree-item folder" style="margin-top:16px">
+          <span style="color:var(--red)">▶</span>
+          <span>📁 src_client/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">RAGE:MP JS</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">├─</span>
+          <span>player/</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">├─</span>
+          <span>vehicle/</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">├─</span>
+          <span>phone/</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">└─</span>
+          <span>battlepass/</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg-card2);padding:40px">
+        <div style="font-family:'JetBrains Mono';font-size:12px;color:var(--red);margin-bottom:24px;letter-spacing:0.08em">BACKEND</div>
+        
+        <div class="tree-item folder">
+          <span style="color:var(--red)">▶</span>
+          <span>📁 dotnet/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">.NET Core</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">└─</span>
+          <span>resources/NeptuneEvo/</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>Core/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Businesses, Carroom...</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>Chars/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Repository, Events</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>Fractions/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Manager</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">├─</span>
+          <span>Jobs/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Truckers, Miner...</span>
+        </div>
+        <div class="tree-item" style="padding-left:40px">
+          <span style="color:#333">└─</span>
+          <span>Events/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Battlepass, Awards</span>
+        </div>
+
+        <div class="tree-item folder" style="margin-top:16px">
+          <span style="color:var(--red)">▶</span>
+          <span>📁 client_packages/</span>
+          <span style="margin-left:auto;font-size:11px;color:#333">Готовый билд → Linux</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">├─</span>
+          <span>main.js</span>
+          <span style="margin-left:auto;font-size:11px;color:#4ec94e">↑ src_client build</span>
+        </div>
+        <div class="tree-item" style="padding-left:20px">
+          <span style="color:#333">└─</span>
+          <span>*.html + assets</span>
+          <span style="margin-left:auto;font-size:11px;color:#4ec94e">↑ src_cef build</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────────────────────────── CTA -->
+<section style="padding:140px 0;position:relative;overflow:hidden;background:#090909;border-top:1px solid var(--border)">
+  
+  <div class="blob" style="width:1000px;height:600px;background:radial-gradient(ellipse,rgba(232,55,44,0.15) 0%,transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none"></div>
+
+  <!-- bg letters -->
+  <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;overflow:hidden">
+    <div class="font-display" style="font-size:clamp(200px,30vw,400px);color:rgba(255,255,255,0.02);line-height:1;user-select:none;letter-spacing:-0.02em">GTA</div>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-6 text-center reveal" style="position:relative;z-index:2">
+    
+    <div class="section-label" style="justify-content:center">Готов?</div>
+    
+    <h2 class="font-display text-glow" style="font-size:clamp(64px,12vw,160px);color:#fff;line-height:0.9;margin:24px 0 40px">
+      ВРЫВАЙСЯ<br>В ГОРОД<span style="color:var(--red)">.</span>
+    </h2>
+
+    <p style="max-width:480px;margin:0 auto 48px;font-size:18px;line-height:1.7;color:var(--text-mid);font-weight:300">
+      Сервер живёт. Код открыт. Город ждёт. Осталось только нажать одну кнопку.
+    </p>
+
+    <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap">
+      <a href="https://github.com/LIDFC/redage_lab" target="_blank" class="btn-primary" style="font-size:16px;padding:16px 40px">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        Открыть на GitHub
+      </a>
+      <a href="#install" class="btn-ghost" style="font-size:16px;padding:15px 40px">
+        Инструкция
+      </a>
+    </div>
+
+    <!-- bottom meta -->
+    <div style="margin-top:80px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap">
+      <div style="font-family:'JetBrains Mono';font-size:11px;color:#333;letter-spacing:0.1em">LIDFC / redage_lab</div>
+      <div style="width:1px;height:12px;background:var(--border)"></div>
+      <div style="font-family:'JetBrains Mono';font-size:11px;color:#333;letter-spacing:0.1em">NeptuneEvo · RAGE:MP</div>
+      <div style="width:1px;height:12px;background:var(--border)"></div>
+      <div style="font-family:'JetBrains Mono';font-size:11px;color:#333;letter-spacing:0.1em">v3.0.0</div>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes blobmove {
+  0% { transform: translate(0,0) scale(1); }
+  100% { transform: translate(60px,40px) scale(1.15); }
+}
+@keyframes blobmove2 {
+  0% { transform: translate(0,0) scale(1); }
+  100% { transform: translate(-50px,-30px) scale(1.1); }
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(10px); }
+}
+</style>
+
+<script>
+// ─── SCROLL REVEAL
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, 80);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ─── STAGGER CHILDREN on reveal
+document.querySelectorAll('.reveal').forEach(el => {
+  if (el.children.length > 2) {
+    Array.from(el.children).forEach((child, i) => {
+      child.style.transitionDelay = `${i * 60}ms`;
+    });
+  }
+});
+
+// ─── SMOOTH NAV LINKS
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+
+// ─── CUSTOM CURSOR
+if (window.innerWidth > 768) {
+  const ring = document.createElement('div');
+  ring.id = 'cursor-ring';
+  const dot = document.createElement('div');
+  dot.id = 'cursor-dot';
+  document.body.appendChild(ring);
+  document.body.appendChild(dot);
+
+  const glow = document.createElement('div');
+  glow.style.cssText = `
+    position:fixed;width:500px;height:500px;pointer-events:none;z-index:9997;
+    background:radial-gradient(circle,rgba(232,55,44,0.05) 0%,transparent 65%);
+    border-radius:50%;top:-250px;left:-250px;
+    transition:left 0.6s cubic-bezier(0.23,1,0.32,1),top 0.6s cubic-bezier(0.23,1,0.32,1);
+  `;
+  document.body.appendChild(glow);
+
+  let mouseX = -200, mouseY = -200;
+  let ringX = -200, ringY = -200;
+
+  function lerp(a, b, t) { return a + (b - a) * t; }
+
+  function tick() {
+    ringX = lerp(ringX, mouseX, 0.14);
+    ringY = lerp(ringY, mouseY, 0.14);
+    ring.style.left = ringX + 'px';
+    ring.style.top  = ringY + 'px';
+    requestAnimationFrame(tick);
+  }
+  tick();
+
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    dot.style.left = e.clientX + 'px';
+    dot.style.top  = e.clientY + 'px';
+    glow.style.left = (e.clientX - 250) + 'px';
+    glow.style.top  = (e.clientY - 250) + 'px';
+  });
+
+  document.addEventListener('mouseleave', () => { ring.style.opacity='0'; dot.style.opacity='0'; });
+  document.addEventListener('mouseenter', () => { ring.style.opacity='1'; dot.style.opacity='1'; });
+
+  const hoverEls = 'a, button, .feature-card, .tech-badge, .screen-card';
+  document.querySelectorAll(hoverEls).forEach(el => {
+    el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+    el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+  });
+
+  document.addEventListener('mousedown', () => document.body.classList.add('cursor-click'));
+  document.addEventListener('mouseup',   () => document.body.classList.remove('cursor-click'));
+}
+
+// ─── FEATURE CARD 3D tilt
+document.querySelectorAll('.feature-card').forEach(card => {
+  card.addEventListener('mousemove', e => {
+    const rect = card.getBoundingClientRect();
+    const x = (e.clientX - rect.left) / rect.width - 0.5;
+    const y = (e.clientY - rect.top) / rect.height - 0.5;
+    card.style.transform = `translateY(-4px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
+    card.style.transformStyle = 'preserve-3d';
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+  });
+});
+
+// ─── TYPING cursor blink in terminal (decorative)
+const terminalOutput = document.querySelector('.terminal-body');
+if (terminalOutput) {
+  const cursor = document.createElement('span');
+  cursor.style.cssText = 'display:inline-block;width:8px;height:14px;background:var(--red);vertical-align:middle;animation:blink 1s step-end infinite;margin-left:4px;';
+  const style = document.createElement('style');
+  style.textContent = '@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}';
+  document.head.appendChild(style);
+}
+</script>
+
+</body>
+</html>

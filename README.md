@@ -17,7 +17,7 @@
 
 ### 🚗 Автошкола
 
-![DrivingSchool](https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif)
+![DrivingSchool](./assets/autoschool.gif)
 
 ### 👕 Система одежды
 

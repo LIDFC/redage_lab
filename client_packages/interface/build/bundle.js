@@ -47038,7 +47038,7 @@ function create_fragment(ctx) {
 
 			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block) if_block.c();
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "img/autoshop_logo.png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "img/autoshop_logo.png")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", "Поиск");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M13.8289 13.0041L9.84773 9.02291C10.6189 8.07035 11.0832 6.85993 11.0832 5.54162C11.0832 2.48615 8.59706 0 5.54159 0C2.48612 0 0 2.48612 0 5.54159C0 8.59706 2.48615 11.0832 5.54162 11.0832C6.85993 11.0832 8.07035 10.6189 9.02291 9.84773L13.0041 13.8289C13.1179 13.9427 13.2672 13.9999 13.4165 13.9999C13.5659 13.9999 13.7152 13.9427 13.829 13.8289C14.057 13.6009 14.057 13.2322 13.8289 13.0041ZM5.54162 9.91655C3.12897 9.91655 1.16666 7.95425 1.16666 5.54159C1.16666 3.12894 3.12897 1.16664 5.54162 1.16664C7.95427 1.16664 9.91658 3.12894 9.91658 5.54159C9.91658 7.95425 7.95425 9.91655 5.54162 9.91655Z");
@@ -275139,7 +275139,7 @@ __webpack_require__.r(__webpack_exports__);
         acceleration: 4.5,
         maxSpeed: 0,
         fuel: 100
-    },
+    }, 
     "BmwM8": {
         img: "bmwm8",
         desc: "Элитное двухдверное купе, его превосходный внешний вид и ходовые характеристики не оставят равнодушным НИКОГО!",

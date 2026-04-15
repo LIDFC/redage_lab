@@ -110,7 +110,7 @@
 
 <div class="autodilergta5dev">
     <div class="autolmenu">
-        <img src="{document.cloud}img/autoshop_logo.png" alt=""/>
+        <img src="img/autoshop_logo.png" alt=""/>
         <h1>Добро пожаловать</h1>
         <span>Введите название</span>
         <div class="seachcars">

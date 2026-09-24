@@ -28,6 +28,8 @@ namespace NeptuneEvo.Jobs
             "[Городской 2] EMS - Old City Hall - Market - Driving School - NEWS - LSPD",
             "[Городской 3] EMS - Old City Hall - Market - Driving School - NEWS - LSPD",
         };
+        public static int RoutesCount => BusWays.Count;
+
         private static List<List<BusCheck>> BusWays = new List<List<BusCheck>>()
         {
             new List<BusCheck>() // busway1

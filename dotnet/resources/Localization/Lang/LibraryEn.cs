@@ -476,7 +476,7 @@ namespace Localization
  EnText[DataName.YourNotAutoMech] = "You are not a car mechanic";
  EnText[DataName.MechanikRepairTo] = "Player ({0}) offered to repair your vehicle for $ {1}";
  EnText[DataName.MechanikRepairFrom] = "You offered the player ({0}) to repair the vehicle for {MoneySystem.Wallet.Format (1)} $";
- EnText[DataName.Price5to30] = "You can set the price from $ 5 to $ 30";
+ EnText[DataName.Price5to30] = "You can set the repair price from ${0} to ${1}";
  EnText[DataName.SellerNotOnline] = "The seller is currently offline.";
  EnText[DataName.RepairPayed] = "You paid for the repair of your vehicle";
  EnText[DataName.PlayerPayedRepair] = "Player ({0}) paid for repairs";

@@ -76,6 +76,7 @@ namespace NeptuneEvo
             ServerSettings = Settings.ReadAsync("serverSettings", ServerSettings);
             ServerNumber = ServerSettings.ServerId;
             DonateSettings = Settings.ReadAsync("donationsSettings", DonateSettings);
+            Settings.ApplyMysqlEnv(DonateSettings, "REDAGE_DONATE_DB");
             MoneySettings = Settings.ReadAsync("moneySettings", MoneySettings);
             LumberjackPrice = Settings.ReadAsync("lumberjackPrice", LumberjackPrice);
             DonatePack = Settings.ReadAsync("donatePack", DonatePack);
@@ -3212,7 +3213,7 @@ namespace NeptuneEvo
                 // Настройка Mysql соединение
                 #region MySQL Connect
                 
-                var mainDB = Settings.ReadAsync("mainDB", new MysqlSettings());
+                var mainDB = Settings.ReadMysql("mainDB", new MysqlSettings());
                 
                 List<IConnectionStringSettings> connectionStrings = new List<IConnectionStringSettings>();
                 
@@ -3239,7 +3240,8 @@ namespace NeptuneEvo
                 #endregion
 
                 DataConnection.DefaultSettings = new DatabaseSettings(connectionStrings.ToArray());
-                DataConnection.TurnTraceSwitchOn();
+                if (ServerSettings.IsSqlTrace)
+                    DataConnection.TurnTraceSwitchOn();
                 DataConnection.WriteTraceLine = (message, category, level) =>
                 {
                     if (IsStartGameMode && Thread.CurrentThread.Name == "Main")

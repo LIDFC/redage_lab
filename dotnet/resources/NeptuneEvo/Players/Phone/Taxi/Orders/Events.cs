@@ -12,9 +12,17 @@ namespace NeptuneEvo.Players.Phone.Taxi.Orders
         public void OnTake(ExtPlayer player, int id) => 
             Repository.OnTake(player, id);
 
+        [RemoteEvent("server.phone.taxijob.botBoarded")]
+        public void OnBotBoarded(ExtPlayer player, int id) =>
+            Bots.Repository.OnBoarded(player, id);
+
         [RemoteEvent("server.phone.taxijob.botFinish")]
-        public void OnBotFinish(ExtPlayer player, int distance) =>
-            Repository.BotFinish(player, distance);
+        public void OnBotFinish(ExtPlayer player, int id) =>
+            Bots.Repository.OnFinish(player, id);
+
+        [RemoteEvent("server.phone.taxijob.botCancel")]
+        public void OnBotCancel(ExtPlayer player, int id) =>
+            Bots.Repository.OnCancel(player, id);
 
         [ServerEvent(Event.PlayerEnterVehicle)]
         public void OnPlayerEnterVehicle(ExtPlayer player, ExtVehicle vehicle, sbyte seatId) =>

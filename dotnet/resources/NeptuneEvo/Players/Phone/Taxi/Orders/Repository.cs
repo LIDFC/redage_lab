@@ -65,6 +65,12 @@ namespace NeptuneEvo.Players.Phone.Taxi.Orders
         
         public static void OnTake(ExtPlayer player, int id)
         {
+            if (Bots.Repository.IsBotOrderId(id))
+            {
+                Bots.Repository.OnTake(player, id);
+                return;
+            }
+
             var sessionData = player.GetSessionData();       
             if (sessionData == null) 
                 return;
@@ -224,6 +230,8 @@ namespace NeptuneEvo.Players.Phone.Taxi.Orders
         
         public static void OnPlayerDisconnect(ExtPlayer player)
         {
+            Bots.Repository.OnEndWork(player);
+
             var sessionData = player.GetSessionData();
             if (sessionData == null) return;
             var characterData = player.GetCharacterData();
@@ -291,6 +299,8 @@ namespace NeptuneEvo.Players.Phone.Taxi.Orders
             if (characterData == null) 
                 return;
 
+            Bots.Repository.OnEndWork(player);
+
             if (sessionData.WorkData.OnWork)
             {
                 Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.EndWorkDay), 3000);
@@ -315,45 +325,7 @@ namespace NeptuneEvo.Players.Phone.Taxi.Orders
         }
 
 
-        public static void BotFinish(ExtPlayer player, int distance)
-        {
-            var sessionData = player.GetSessionData();
-            if (sessionData == null)
-                return;
-
-            var characterData = player.GetCharacterData();
-            if (characterData == null)
-                return;
-
-            if (characterData.WorkID != (int)JobsId.Taxi || !sessionData.WorkData.OnWork)
-                return;
-
-            var vehicle = player.Vehicle as ExtVehicle;
-            if (vehicle == null)
-                return;
-
-            var vehicleLocalData = vehicle.GetVehicleLocalData();
-            if (vehicleLocalData == null || vehicleLocalData.WorkId != JobsId.Taxi)
-                return;
-
-            if (distance < 200) distance = 200;
-            else if (distance > 5000) distance = 5000;
-
-            var reward = distance / 3;
-            if (reward < 150) reward = 150;
-            else if (reward > 1700) reward = 1700;
-
-            Wallet.Change(player, reward);
-            GameLog.Money($"server", $"player({characterData.UUID})", reward, $"taxiBotRide");
-
-            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Поездка выполнена. Вы заработали ${reward}", 3000);
-
-            BattlePass.Repository.UpdateReward(player, 59);
-            BattlePass.Repository.UpdateReward(player, 2);
-            BattlePass.Repository.UpdateReward(player, 159);
-        }
-
-        private static int OneMileagePrice = 30;//Цена за милю
+        public const int OneMileagePrice = 30;//Цена за милю
         
         public static void TaxiPay(ExtPlayer player, int mileage)
         {

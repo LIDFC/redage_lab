@@ -11,7 +11,7 @@ namespace NeptuneEvo.Functions
         {
             Main.Log.Write("Backup Starting");
             
-            var config = Settings.ReadAsync("mainDB", new MysqlSettings());
+            var config = Settings.ReadMysql("mainDB", new MysqlSettings());
             
             var connection =
                 $"Host={config.Server};" +

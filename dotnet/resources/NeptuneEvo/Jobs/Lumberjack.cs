@@ -194,7 +194,14 @@ namespace NeptuneEvo.Jobs
                 }
                 else if (index == 2)
                 {
-                    Trigger.ClientEvent(player, "resourceSell_openMenu", 1);
+                    // Цены берутся из settings/lumberjackPrice.json — интерфейс получает их с сервера
+                    var woodPrices = new Dictionary<int, object>
+                    {
+                        { 0, new { Price = Main.LumberjackPrice.OakPrice, ItemId = (int)ItemId.WoodOak } },
+                        { 1, new { Price = Main.LumberjackPrice.MaplePrice, ItemId = (int)ItemId.WoodMaple } },
+                        { 2, new { Price = Main.LumberjackPrice.PinePrice, ItemId = (int)ItemId.WoodPine } },
+                    };
+                    Trigger.ClientEvent(player, "resourceSell_openMenu", 1, JsonConvert.SerializeObject(woodPrices));
                 }
             }
             catch (Exception e)
@@ -643,7 +650,7 @@ namespace NeptuneEvo.Jobs
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.FunctionOffByAdmins), 3000);
                     return;
                 }
-                else if (TreeStock.Count < stock_item_index) return;
+                else if (stock_item_index < 0 || stock_item_index >= TreeStock.Count || amount <= 0) return;
 
                 ItemId item_type = ItemId.WoodOak;
                 int price = Main.LumberjackPrice.OakPrice;
@@ -690,7 +697,7 @@ namespace NeptuneEvo.Jobs
                     TreeStock[stock_item_index] += amount;
                     TreeStockLabel.Text = Main.StringToU16(LangFunc.GetText(LangType.Ru, DataName.Hranilishe,  TreeStock[0], TreeStock[1], TreeStock[2]));
 
-                    Perform(player, 1);
+                    Perform(player, 2);
                     
                     if (qMain.GetQuestsLine(player, Zdobich.QuestName) == (int)zdobich_quests.Stage11)
                     {

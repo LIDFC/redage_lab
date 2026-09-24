@@ -1,6 +1,6 @@
-﻿{
-  "ServerName": "Test",
-  "ServerId": 0,
+{
+  "ServerName": "RedAge",
+  "ServerId": 1,
   "MoneyMultiplier": 1,
   "ExpMultiplier": 1,
   "IsBusinessTax": true,
@@ -26,5 +26,7 @@
   "IsDeleteProp": false,
   "IsCreateProp": false,
   "IsHeliCrash": true,
-  "IsAcceptExit": true
+  "IsAcceptExit": true,
+  "DirectorLogins": [],
+  "IsSqlTrace": false
 }

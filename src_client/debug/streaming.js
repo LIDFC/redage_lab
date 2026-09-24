@@ -1,0 +1,7 @@
+// Восстановлено из собранного client_packages/main.js (модуль 9853).
+// Исходник не попал в git из-за правила [Dd]ebug/ в .gitignore.
+const __req = () => { throw new Error('unexpected require'); };
+__req.g = global;
+(function (e,t,a) {
+mp.events.add("entityStreamIn",e=>{e&&("player"===e.type&&mp.players.exists(e)?(e.setLodDist(a.g.getLodDist(a.g.DistancePlayer)),mp.events.call("pPlayerStreamIn",e),mp.events.call("playerStreamIn",e)):"vehicle"===e.type&&mp.vehicles.exists(e)?(e.setLodDist(a.g.getLodDist(a.g.DistanceVehicle)),mp.events.call("vehicleStreamIn",e)):"ped"===e.type&&mp.peds.exists(e)?(e.setLodDist(a.g.getLodDist(a.g.DistancePlayer)),mp.events.call("pedStreamIn",e)):"object"===e.type&&mp.objects.exists(e)&&mp.events.call("objectStreamIn",e))}),mp.events.add("entityStreamOut",e=>{e&&("player"===e.type&&mp.players.exists(e)?mp.events.call("playerStreamOut",e):"vehicle"===e.type&&mp.vehicles.exists(e)?mp.events.call("vehicleStreamOut",e):"ped"===e.type&&mp.peds.exists(e)?mp.events.call("pedStreamOut",e):"object"===e.type&&mp.objects.exists(e)&&mp.events.call("objectStreamOut",e))}),mp.peds.newLegacy=(e,t,a,n,o)=>{let i=mp.peds.new(e,t,a,o);return i.streamInHandler=n,i},mp.events.add("pedStreamIn",e=>{e.streamInHandler&&e.streamInHandler(e)}),mp.vehicles.newLegacy=(e,t,a,n)=>{let o=mp.vehicles.new(e,t,a);return o.streamInHandler=n,o},mp.events.add("vehicleStreamIn",e=>{e.streamInHandler&&e.streamInHandler(e)})
+})(module, module.exports, __req);

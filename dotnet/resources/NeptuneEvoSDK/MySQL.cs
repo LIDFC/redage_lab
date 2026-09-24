@@ -13,7 +13,7 @@ namespace Redage.SDK
     /// </summary>
     public static class MySQL
     {
-        private static MysqlSettings config = Settings.ReadAsync("mainDB", new MysqlSettings());
+        private static MysqlSettings config = Settings.ReadMysql("mainDB", new MysqlSettings());
         private static nLog Log = new nLog("MySQL");
 
         private static string Connection = null;

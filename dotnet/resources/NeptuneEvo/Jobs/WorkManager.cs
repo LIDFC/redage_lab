@@ -188,14 +188,125 @@ namespace NeptuneEvo.Jobs
             }
         }
 
+        /// <summary>
+        /// Ключ в CharacterData.JobSkills для каждой работы (исторически не совпадает с JobsId).
+        /// </summary>
+        public static readonly Dictionary<JobsId, int> JobSkillKey = new Dictionary<JobsId, int>
+        {
+            { JobsId.Electrician, 0 },
+            { JobsId.Lawnmower, 1 },
+            { JobsId.Postman, 2 },
+            { JobsId.Taxi, 3 },
+            { JobsId.Bus, 4 },
+            { JobsId.CarMechanic, 5 },
+            { JobsId.Trucker, 6 },
+            { JobsId.CashCollector, 7 },
+        };
+
+        /// <summary>
+        /// Права для устройства на работу: 1 = B (легковые), 2 = C (грузовые). Совпадает с проверкой в JobJoin.
+        /// </summary>
+        private static int GetJoinLicense(int job)
+        {
+            if (job == (int)JobsId.Postman || job == (int)JobsId.Taxi || job == (int)JobsId.CarMechanic) return 1;
+            if (job == (int)JobsId.Bus || job == (int)JobsId.Trucker || job == (int)JobsId.CashCollector) return 2;
+            return 0;
+        }
+
+        /// <summary>
+        /// Права для аренды рабочего транспорта. Совпадает с проверкой в Rentcar.RentCarToInterface.
+        /// </summary>
+        private static int GetRentLicense(int job)
+        {
+            if (job == (int)JobsId.Electrician) return 0; // работа без транспорта
+            return Main.ServerSettings.IsCheckJobLicC ? 2 : 0;
+        }
+
+        private static string LicenseName(int index) => index == 1 ? "B" : index == 2 ? "C" : "";
+
+        /// <summary>
+        /// Подсказка по оплате — считается из тех же констант, что и реальные выплаты.
+        /// Без учёта VIP и бонуса уровня работы.
+        /// </summary>
+        private static string GetPayHint(int job)
+        {
+            var mult = Main.ServerSettings.MoneyMultiplier;
+            switch ((JobsId)job)
+            {
+                case JobsId.Electrician:
+                    return $"{Main.ElectricianPayment * mult}$ за каждый щиток";
+                case JobsId.Lawnmower:
+                    return $"{Main.LawnmowerPayment * mult}$ за точку + бонус за круг";
+                case JobsId.Postman:
+                    return $"{Main.PostalPayment * mult}$ за каждые 100 м пути (до {3500 * mult}$ за посылку)";
+                case JobsId.Taxi:
+                    return $"{Players.Phone.Taxi.Orders.Repository.OneMileagePrice}$ за милю с игроков, {Players.Phone.Taxi.Bots.Repository.MinReward * mult}–{Players.Phone.Taxi.Bots.Repository.MaxReward * mult}$ за NPC";
+                case JobsId.Bus:
+                {
+                    var payments = Main.BuswaysPayments.Take(Math.Max(1, Math.Min(Bus.RoutesCount, Main.BuswaysPayments.Length))).ToList();
+                    return $"{payments.Min() * mult}–{payments.Max() * mult}$ за каждую точку маршрута";
+                }
+                case JobsId.Trucker:
+                    return $"{Main.PricesSettings.DalnoboyMoney[1] * mult}–{Main.PricesSettings.DalnoboyMoney[0] * mult}$ за рейс";
+                case JobsId.CashCollector:
+                    return $"{Main.CollectorPayment * mult}$ за каждые 100 м пути (до {4000 * mult}$ за сумку)";
+                case JobsId.CarMechanic:
+                    return $"{AutoMechanic.MinRepairPrice}–{AutoMechanic.MaxRepairPrice}$ за ремонт (платит клиент)";
+                default:
+                    return "";
+            }
+        }
+
+        private static object GetJobMenuData(ExtPlayer player, SessionData sessionData, CharacterData characterData)
+        {
+            var nextLevels = Main.GetPlayerJobsNextLevel(player);
+            var jobs = new List<object>();
+
+            foreach (var job in JobsMinLvl)
+            {
+                var jobId = (JobsId)job.Key;
+                var skillKey = JobSkillKey.ContainsKey(jobId) ? JobSkillKey[jobId] : -1;
+                var points = skillKey != -1 && characterData.JobSkills.ContainsKey(skillKey) ? characterData.JobSkills[skillKey] : 0;
+                var skillLevel = skillKey != -1 ? Main.GetPlayerJobLevelBonus((sbyte)skillKey, points).Item1 : 0;
+                var joinLic = GetJoinLicense(job.Key);
+                var rentLic = GetRentLicense(job.Key);
+
+                jobs.Add(new
+                {
+                    id = job.Key,
+                    minLvl = job.Value,
+                    lic = LicenseName(joinLic),
+                    hasLic = joinLic == 0 || characterData.Licenses[joinLic],
+                    rentLic = LicenseName(rentLic),
+                    hasRentLic = rentLic == 0 || characterData.Licenses[rentLic],
+                    skillLvl = skillLevel,
+                    skillPoints = points,
+                    nextPoints = skillKey >= 0 && skillKey < nextLevels.Length ? nextLevels[skillKey] : 0,
+                    pay = GetPayHint(job.Key),
+                    x = Points.ContainsKey(job.Key) ? Points[job.Key].X : 0,
+                    y = Points.ContainsKey(job.Key) ? Points[job.Key].Y : 0,
+                });
+            }
+
+            return new
+            {
+                lvl = characterData.LVL,
+                workId = characterData.WorkID,
+                onWork = sessionData.WorkData.OnWork,
+                jobs,
+            };
+        }
+
         [Interaction(ColShapeEnums.JobSelect)]
         public static void InJobSelect(ExtPlayer player)
         {
             try
             {
+                var sessionData = player.GetSessionData();
+                if (sessionData == null) return;
                 var characterData = player.GetCharacterData();
                 if (characterData == null) return;
-                Trigger.ClientEvent(player, "showJobMenu", JsonConvert.SerializeObject(JobsMinLvl));
+                Trigger.ClientEvent(player, "showJobMenu", JsonConvert.SerializeObject(GetJobMenuData(player, sessionData, characterData)));
             }
             catch (Exception e)
             {

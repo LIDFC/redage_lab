@@ -85,6 +85,15 @@ namespace Redage.SDK.Models
         public bool IsHeliCrash = true;
         //
         public bool IsAcceptExit = true;
+        /// <summary>
+        /// Логины с доступом к «директорским» командам (выдача денег, предметов, рестарт и т.д.).
+        /// Раньше были захардкожены в CommandsAccess.LoginsDirector.
+        /// </summary>
+        public List<string> DirectorLogins = new List<string>();
+        /// <summary>
+        /// Писать все SQL-запросы linq2db в mainDB.txt (только для отладки — сильно нагружает диск)
+        /// </summary>
+        public bool IsSqlTrace = false;
         
     }
 }

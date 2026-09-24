@@ -23,8 +23,8 @@ namespace NeptuneEvo.Utils.Redis
             {
                 var configurationOptions = new ConfigurationOptions
                 {
-                    EndPoints = { "127.0.0.1:6379" },
-                    Password = ""
+                    EndPoints = { Environment.GetEnvironmentVariable("REDAGE_REDIS_HOST") ?? "127.0.0.1:6379" },
+                    Password = Environment.GetEnvironmentVariable("REDAGE_REDIS_PASSWORD") ?? ""
                 };
                 RedisInstance = ConnectionMultiplexer.Connect(configurationOptions);
 

@@ -594,7 +594,8 @@ namespace NeptuneEvo.Functions
             AdminCommands.Stt
         };
         
-        public static string[] LoginsDirector = new string[3] { "source1488", "sokolyansky", "qwelpy" };
+        // Логины директоров задаются в settings/serverSettings.json -> DirectorLogins
+        public static List<string> LoginsDirector => Main.ServerSettings.DirectorLogins ?? new List<string>();
 
         [ServerEvent(Event.ResourceStart)]
         public void Event_ResourceStart()

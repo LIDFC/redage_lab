@@ -363,3 +363,16 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# --- RedAge ---
+# Исходники логов фракций/организаций попадали под правило [Ll]ogs/ выше и не коммитились
+!dotnet/resources/NeptuneEvo/Fractions/Table/Logs/
+!dotnet/resources/NeptuneEvo/Organizations/Table/Logs/
+# Исходники клиентского модуля debug попадали под правило [Dd]ebug/
+!src_client/debug/
+# Трассировка SQL (включается IsSqlTrace) и логи сервера
+mainDB.txt
+dotnet/server_logs.txt
+dotnet/server_exceptions.txt
+# Локальные секреты
+.env
+settings/*.local.json

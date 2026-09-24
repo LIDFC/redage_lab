@@ -19,6 +19,12 @@ namespace NeptuneEvo.Jobs
     {
         private static readonly nLog Log = new nLog("Jobs.AutoMechanic");
 
+        /// <summary>
+        /// Допустимая цена ремонта через /repair. Текст ошибки подставляет эти же значения.
+        /// </summary>
+        public const int MinRepairPrice = 1000;
+        public const int MaxRepairPrice = 1500;
+
         public static void mechanicRepair(ExtPlayer player, ExtPlayer target, int price)
         {
             try
@@ -70,9 +76,9 @@ namespace NeptuneEvo.Jobs
                         Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.PlayerTooFar), 3000);
                         return;
                     }
-                    if (price < 1000 || price > 1500)
+                    if (price < MinRepairPrice || price > MaxRepairPrice)
                     {
-                        Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.Price5to30), 3000);
+                        Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.Price5to30, MinRepairPrice, MaxRepairPrice), 3000);
                         return;
                     }
                     if (targetCharacterData.Money < price)

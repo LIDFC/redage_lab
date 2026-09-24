@@ -365,13 +365,9 @@ gm.events.add('resourceSell_openMenu', (state, json) => {
     if (global.menuCheck()) return;
     global.menuOpen();
 
-    // todo delete
-    if (state == 1) {
-        json = JSON.stringify({0: {Price: 9, ItemId: 245}, 1: {Price: 19, ItemId: 246}, 2: {Price: 30, ItemId: 247}});
-    }
-
+    // Цены приходят с сервера: руда — таблица `ores` (ConfigDB), дерево — settings/lumberjackPrice.json
     mp.gui.emmit(`window.router.setView("PlayerOresSale", [${state}, '${json}']);`);
-    gm.discord(translateText("Продаёт руду"));
+    gm.discord(state == 1 ? translateText("Продаёт древесину") : translateText("Продаёт руду"));
 });
 
 gm.events.add('resourceSell_closeMenu', () => {

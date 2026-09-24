@@ -476,7 +476,7 @@ namespace Localization
             RuText[DataName.YourNotAutoMech] = "Вы не работаете автомехаником";
             RuText[DataName.MechanikRepairTo] = "Игрок ({0}) предложил отремонтировать Ваш транспорт за ${1}";
             RuText[DataName.MechanikRepairFrom] = "Вы предложили игроку ({0}) отремонтировать транспорт за {1}$";
-            RuText[DataName.Price5to30] = "Вы можете установить цену от 5$ до 30$";
+            RuText[DataName.Price5to30] = "Вы можете установить цену ремонта от {0}$ до {1}$";
             RuText[DataName.SellerNotOnline] = "Продавец сейчас не в сети.";
             RuText[DataName.RepairPayed] = "Вы оплатили ремонт Вашего транспортного средства";
             RuText[DataName.PlayerPayedRepair] = "Игрок ({0}) оплатил ремонт";

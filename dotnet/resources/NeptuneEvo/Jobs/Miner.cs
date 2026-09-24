@@ -691,7 +691,7 @@ namespace NeptuneEvo.Jobs
                 
                 var characterData = player.GetCharacterData();
                 if (characterData == null) return;
-                else if (!OresData.ContainsKey(stock_item_index)) return;
+                else if (!OresData.ContainsKey(stock_item_index) || amount <= 0) return;
 
                 ItemId item_type = OresData [stock_item_index].ItemId;
                 int price = OresData[stock_item_index].Price;

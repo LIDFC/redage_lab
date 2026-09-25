@@ -303,10 +303,28 @@
     overflow: auto;
 }
 
-.gta5dev24 .shopmenu .smenuhead img.logo24 {
-    width: 7.3736vh;
+.gta5dev24 .shopmenu .smenuhead .logo24 {
+    min-width: 7.3736vh;
     height: 3.7963vh;
     margin-left: 4.7222vh;
+    padding: 0 0.9259vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7407vh;
+    background: linear-gradient(135deg, rgb(237, 28, 36) 0%, rgb(247, 148, 29) 100%);
+    font-family: SF Pro Display;
+    font-weight: 800;
+    font-size: 2.2222vh;
+    color: #fff;
+    letter-spacing: -0.0463vh;
+}
+
+.gta5dev24 .shopmenu .smenuhead .logo24 span {
+    margin: 0 0.1852vh;
+    opacity: 0.8;
+    font-weight: 500;
 }
 
 .gta5dev24 .shopmenu .smenuhead .nameshop {
@@ -775,4 +793,16 @@
 
 .gta5dev24 .shopmenu .smenuhead .cate .category.active:hover img {
     display: none;
+}
+.gta5dev24 .shopmenu .smenuhead .cate .category .caticon {
+    width: 1.4815vh;
+    height: 1.4815vh;
+    margin-right: 0.8333vh;
+    color: rgb(41, 41, 41);
+    flex-shrink: 0;
+}
+
+.gta5dev24 .shopmenu .smenuhead .cate .category:hover .caticon,
+.gta5dev24 .shopmenu .smenuhead .cate .category.active .caticon {
+    color: #fff;
 }

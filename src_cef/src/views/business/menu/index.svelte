@@ -72,6 +72,7 @@
 
     const configImages = [
         { name: 'Сим-карта', url: 'inventoryItems/items/sm-icon-sim.png' },
+        { name: 'Лотерейный билет', url: 'inventoryItems/items/lottery.png' },
         { name: 'Рабочий топор', url: 'inventoryItems/items/244.png' },
         { name: 'Обычная кирка', url: 'inventoryItems/items/234.png' },
         { name: 'Усиленная кирка', url: 'inventoryItems/items/235.png' },
@@ -159,9 +160,8 @@
     ];
 
     const getOtherImageUrl = (name) => {
-        let ind = configImages.findIndex(x => x.name === name);
-        let url = document.cloud + configImages[ind].url;
-        return url;
+        const image = configImages.find(x => x.name === name);
+        return document.cloud + (image ? image.url : 'inventoryItems/items/sm-icon-sim.png');
     }
 
     const getTypeName = (type) => {
@@ -176,37 +176,57 @@
         executeClient ('client.sm.exit')
     }
 
+    // Раскладка товаров 24/7 по вкладкам. Всё, что не попало в список (в т.ч. новые товары,
+    // добавленные админом), показывается в «Разное», чтобы ничего не пропадало.
     const categories = [
         {
-    	   Name: "Продукты",
-   	   Type: "products",
-    	   Icon: "Продукты",
-           Items: [1, 3, 4, 5, 6, 7, 8, 9, 10, 225, 229, 228, 233]
-    	   // Аптечка, Чипсы, Пиво, Пицца, Бургер, ХотДог, Сэндвич, Кола, Спрайт, Вейп, Бонг, Бинокль, Гитара
-	},
+            Name: "Продукты",
+            Type: "products",
+            Icon: "M3 4h2l2.4 10.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6.2M9 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
+            Items: [1, 3, 4, 5, 6, 7, 8, 9, 10],
+            Names: []
+        },
         {
-    	   Name: "Электроника",
-    	   Type: "elect",
-    	   Icon: "Электроника",
-    	   Items: [2, 271, 230, 224, 226, 231, 232, 248, 243]
-    	   // Канистра, СимКарта, Зонтик, LoveNote, Роза, Камера, Микрофон, Бумбокс, Радио
-	},
+            Name: "Электроника",
+            Type: "elect",
+            Icon: "M7 2h10a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1Zm4 16h2",
+            Items: [228, 231, 232, 243, 248, 271],
+            Names: ["Сим-карта"]
+        },
         {
-    	   Name: "Инструменты",
-    	   Type: "tools",
-    	   Icon: "Инструменты",
-    	   Items: [191, 194, 182, 184, 19, 41, 234, 235, 236, 244]
-    	   // Фонарик, Ключ, Молоток, Лом, Ключи от машины, Связка ключей, Кирка1/2/3, Рабочий топор
-	},
+            Name: "Инструменты",
+            Type: "tools",
+            Icon: "M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.3-.7-.7-2.3 2.5-2.5Z",
+            Items: [2, 19, 41, 182, 184, 191, 194, 234, 235, 236, 244],
+            Names: []
+        },
         {
-           Name: "Разное",
-    	   Type: "other",
-    	   Icon: "Разное",
-    	   Items: [17, 18, 11, 16, 279, 270, -9, 223, 249, 181, 225]
-    	   // Мешок, Стяжки, Отмычка, Военная отмычка, Радиоперехватчик, QR-код, Броник, Записка, Кальян, Дубинка, Вейп
-	}
+            Name: "Разное",
+            Type: "other",
+            Icon: "M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.4l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3Z",
+            Items: [],
+            Names: []
+        }
     ];
-    
+
+    const getCategory = (value) => {
+        const itemId = Number(value.ItemId);
+        const category = categories.find(c => (itemId !== 0 && c.Items.includes(itemId)) || c.Names.includes(value.Name));
+        return category ? category.Type : "other";
+    }
+
+    const getDescription = (value) => {
+        if (value.Name === "Сим-карта") return "Новая сим-карта со случайным номером.";
+        if (value.Name === "Лотерейный билет") return "Билет на участие в розыгрыше лотереи.";
+        const info = itemsInfo [value.ItemId];
+        return info && info.Description ? info.Description : "";
+    }
+
+    const getPrice = (price) => {
+        const digits = String(price).replace(/[^\d]+/g, "");
+        return digits.length ? `$${format("money", Number(digits))}` : price;
+    }
+
     let currentCategory = categories[0].Type;
 
     const selectCategory = (type) => {
@@ -219,12 +239,11 @@
     <div class="gta5dev24">
         <div class="shopmenu">
             <div class="smenuhead">
-                <img class="logo24" src="http://u90228c5.beget.tech/heone1/247/logo.png" alt="">
+                <div class="logo24"><b>24</b><span>/</span><b>7</b></div>
                 <div class="cate">
                     {#each categories as item, index}
                         <div class="category" class:active={ currentCategory == item.Type } on:keypress={() => {}} on:click={() => selectCategory(item.Type)}>
-                                <img class="active" src="http://u90228c5.beget.tech/heone1/247/{item.Icon}1.png" alt=""/>
-                                <img src="http://u90228c5.beget.tech/heone1/247/{item.Icon}.png" alt=""/>
+                                <svg class="caticon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d={item.Icon}/></svg>
                             <p>{ item.Name }</p>
                         </div>
                     {/each}
@@ -266,12 +285,12 @@
                 </div>
             </div>
             <div class="smitemlist">
-                {#each elements.filter(x => categories.find(x => x.Type == currentCategory).Items.includes(Number(x.ItemId))) as value, index}
+                {#each elements.filter(x => getCategory(x) === currentCategory) as value, index}
                     <div class="itemblock" id={value.id} key={index}>
                         <div class="headblock">
                             <span>1шт</span>
                             {#if value.ItemId == 0 || value.ItemId == -5}
-                                    <img class="item" alt="" src="{getOtherImageUrl(value.Name)}">
+                                    <img class="item" alt="" src="{getOtherImageUrl(value.ItemId == -5 ? 'Сумка' : value.Name)}">
                                 {:else}
                                     <img class="item" alt="" src="{getPng(value, itemsInfo[value.ItemId])}">
                             {/if}
@@ -281,9 +300,9 @@
                             </div>
                         </div>
                         <div class="infoblock">
-                            <p>{@html value.Name}</p>
-                            <span>{itemsInfo [value.ItemId].Description}</span>
-                            <b>{value.Price.replace(/[0-9]+/,'')}{value.Price.replace(/[^\d]+/g,'')}</b>
+                            <p>{value.Name}</p>
+                            <span>{getDescription(value)}</span>
+                            <b>{getPrice(value.Price)}</b>
                         </div>
                     </div>
                 {/each}

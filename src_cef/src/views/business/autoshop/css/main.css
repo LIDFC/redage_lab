@@ -42,6 +42,7 @@
 .autodilergta5dev .autolmenu img {
     width: 20.7407vh;
     height: 16.8519vh;
+    object-fit: contain;
 }
 
 .autodilergta5dev .autolmenu h1 {
@@ -385,19 +386,18 @@
 .autodilergta5dev .autormenu .armenuauto .hauto .hautodown .bgproghauto {
     width: 27.5926vh;
     height: 0.2778vh;
-    background: url(https://imgur.com/tDfoi0v.png);
-    background-position: left;
-    background-size: cover;
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
 }
 
 .autodilergta5dev .autormenu .armenuauto .hauto .hautodown .bgproghauto .proghauto {
     position: absolute;
     max-width: 27.5926vh;
+    left: 0;
+    top: 0;
     width: 59%;
     height: 0.2778vh;
-    background: url(https://imgur.com/nB24QrP.png);
-    background-position: left;
-    background-size: cover;
+    background: #fff;
 }
 .autodilergta5dev .autormenu .armenuauto .colorscars h1 {
     color: rgba(255, 255, 255, 0.7);

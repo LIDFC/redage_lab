@@ -207,6 +207,20 @@ const destroyAutoShop = () => {
 
 let spectateInfo = false;
 
+// Объём бака по классу, как VehicleManager.VehicleTank на сервере
+const vehicleTank = {
+	[-1]: 100, 0: 120, 1: 150, 2: 200, 3: 100, 4: 130, 5: 150, 6: 100, 7: 150, 8: 100, 9: 200, 10: 150,
+	11: 150, 12: 150, 13: 1, 14: 300, 15: 400, 16: 500, 17: 130, 18: 200, 19: 150, 20: 150
+};
+
+const toScore = (value, mult) => Math.max(1, Math.min(100, Math.round(Number(value) * mult))) || 1;
+
+const getAutoDisplayName = (hash, modelName) => {
+	const label = mp.game.vehicle.getDisplayNameFromVehicleModel(hash);
+	const name = label ? mp.game.ui.getLabelText(label) : "";
+	return (!name || name === "NULL") ? modelName : name;
+};
+
 gm.events.add('openAuto', async (models, prices, gosPrices, bagageSlots, _buyMetodName, isDonate = false) => {
 	try
 	{
@@ -220,15 +234,21 @@ gm.events.add('openAuto', async (models, prices, gosPrices, bagageSlots, _buyMet
 		bagageSlots = JSON.parse(bagageSlots);
 		autoModels = [];
 		models.forEach((value, index) => {
+			const hash = mp.game.joaat(value);
 			autoModels = [
 				...autoModels, {
 					index: index,
 					modelName: value,
+					displayName: getAutoDisplayName(hash, value),
 					price: prices[index],
 					gosPrice: gosPrices[index],
-					speed: (mp.game.vehicle.getVehicleModelMaxSpeed(mp.game.joaat(value)) * 3.6).toFixed(1),
-					boost: (mp.game.vehicle.getVehicleModelAcceleration(mp.game.joaat(value))).toFixed(2),
-					seat: Math.round(mp.game.vehicle.getVehicleModelMaxNumberOfPassengers(mp.game.joaat(value))),
+					speed: Math.round(mp.game.vehicle.getVehicleModelMaxSpeed(hash) * 3.6),
+					// Оценки 0-100 для полосок в интерфейсе
+					boost: toScore(mp.game.vehicle.getVehicleModelAcceleration(hash), 250),
+					break: toScore(mp.game.vehicle.getVehicleModelMaxBraking(hash), 80),
+					ypr: toScore(mp.game.vehicle.getVehicleModelMaxTraction(hash), 30),
+					fuel: vehicleTank[mp.game.vehicle.getVehicleClassFromName(hash)] || vehicleTank[-1],
+					seat: Math.round(mp.game.vehicle.getVehicleModelMaxNumberOfPassengers(hash)),
 					invslots: bagageSlots[index]
 				}
 			];
@@ -236,7 +256,7 @@ gm.events.add('openAuto', async (models, prices, gosPrices, bagageSlots, _buyMet
 		//const isUpdate = getSpawn (mp.game.joaat(autoModels[0].modelName));
 		global.localplayer.position = new mp.Vector3(spawnCar [selectSpawn] [0], spawnCar [selectSpawn] [1], spawnCar [selectSpawn] [2]);
 		await global.wait(50);
-		mp.gui.emmit(`window.authShop.data('${JSON.stringify(autoModels)}', ${isDonate});`);
+		mp.gui.emmit(`window.authShop.data('${JSON.stringify(autoModels).replace(/\\/g, "\\\\").replace(/'/g, "\\'")}', ${isDonate});`);
 		auto.entity = mp.vehicles.new(mp.game.joaat(autoModels[0].modelName), new mp.Vector3(spawnCar [selectSpawn] [0], spawnCar [selectSpawn] [1], spawnCar [selectSpawn] [2]), {
 			heading: spawnCar [selectSpawn] [3],
 			numberPlate: 'AUTOROOM',
@@ -249,13 +269,6 @@ gm.events.add('openAuto', async (models, prices, gosPrices, bagageSlots, _buyMet
 		auto.entity.setInvincible(true);
 		await global.IsLoadEntity (auto.entity);//TODO
 		auto.entity.setInvincible(true);
-		autoModels = autoModels.map(m => ({
-			...m,
-			break: auto.entity.getMaxBraking() !== undefined ? (auto.entity.getMaxBraking() * 100).toFixed(1) : "—",
-			ypr: auto.entity.getMaxTraction() !== undefined ? (auto.entity.getMaxTraction() * 10).toFixed(2) : "—",
-			fuel: 100
-		}));
-
 		if (auto.entity && auto.entity.handle !== 0)
 			global.localplayer.setIntoVehicle(auto.entity.handle, -1);
 

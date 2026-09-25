@@ -9,6 +9,7 @@
     import './fonts/Gilroy/stylesheet.css';
     import './fonts/SFPro/stylesheet.css';
     import authInfo from './authInfo';
+    import ImgLogo from '../../assets/images/logo.png';
     const authColors =[
         "#000",
         "#fff",
@@ -34,20 +35,16 @@
             let modelInfo;
             JSON.parse(value).forEach(value => {
                 modelInfo = authInfo [value.modelName] || false;
-                
+                // Марка/модель из справочника, иначе — название из игры
+                const hasInfo = modelInfo && modelInfo.name;
+
                 returnList = [
                     ...returnList, {
                         ...value,
-                        speed: (!modelInfo || (modelInfo && !modelInfo.speed)) ? value.speed : modelInfo.speed,
-                        boost: (!modelInfo || (modelInfo && !modelInfo.boost)) ? value.boost : modelInfo.boost,
-                        seat: (!modelInfo || (modelInfo && !modelInfo.seats)) ? value.seat : modelInfo.seats,
-                        name: (!modelInfo || (modelInfo && !modelInfo.name)) ? value.name : modelInfo.name,
-                        model: (!modelInfo || (modelInfo && !modelInfo.model)) ? value.model : modelInfo.model,
-                        img: (!modelInfo || (modelInfo && !modelInfo.img)) ? value.img : modelInfo.img,
+                        name: hasInfo ? modelInfo.name : (value.displayName || value.modelName),
+                        model: hasInfo ? (modelInfo.model || "") : "",
+                        img: (modelInfo && modelInfo.img) ? modelInfo.img : value.modelName.toLowerCase(),
                         invslots: (value.invslots !== undefined) ? value.invslots : 25,
-                        ypr: (!modelInfo || (modelInfo && !modelInfo.ypr)) ? value.ypr : modelInfo.ypr,
-                        fuel: (!modelInfo || (modelInfo && !modelInfo.fuel)) ? value.fuel : modelInfo.fuel,
-                        break: (!modelInfo || (modelInfo && !modelInfo.break)) ? value.break : modelInfo.break,
                         desc: !modelInfo ? false : modelInfo.desc,
                     }
                 ];
@@ -106,11 +103,12 @@
     let searchText = "";
 </script>
 
+
 <svelte:window on:keyup={HandleKeyDown} />
 
 <div class="autodilergta5dev">
     <div class="autolmenu">
-        <img src="{document.cloud}img/autoshop_logo.png" alt=""/>
+        <img src={ImgLogo} alt=""/>
         <h1>Добро пожаловать</h1>
         <span>Введите название</span>
         <div class="seachcars">
@@ -132,7 +130,7 @@
                 (searchText && value.name && value.name.toLowerCase().trim().includes(searchText.toLowerCase().trim())) || 
                 (searchText && value.model && value.model.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
                 <div class="carsblock" class:act={select === index} on:keypress={() => {}} on:click={() => setItem (index)}>
-                  <p>{@html value.name} {@html value.model}</p>
+                  <p>{value.name} {value.model}</p>
                 </div>
               {/if}
             {/each}
@@ -187,44 +185,44 @@
                 <div class="hauto">
                     <div class="hautotop">
                         <p>Скорость</p>
-                        <b>{list [select].speed} км/ч.</b>
+                        <b>{list [select].speed} км/ч</b>
                     </div>
                     <div class="hautodown">
                         <div class="bgproghauto">
-                            <div style="width: {list [select].speed / 3.1}%" class="proghauto"></div>
+                            <div style="width: {Math.min(100, list [select].speed / 3.5)}%" class="proghauto"></div>
                         </div>
                     </div>
                 </div>
                 <div class="hauto">
                     <div class="hautotop">
                         <p>Ускорение</p>
-                        <b>{list [select].boost}</b>
+                        <b>{list [select].boost} / 100</b>
                     </div>
                     <div class="hautodown">
                         <div class="bgproghauto">
-                            <div style="width: {list [select].boost / 1}%" class="proghauto"></div>
+                            <div style="width: {list [select].boost}%" class="proghauto"></div>
                         </div>
                     </div>
                 </div>
                 <div class="hauto">
                     <div class="hautotop">
                         <p>Торможение</p>
-                        <b>{list [select].break}</b>
+                        <b>{list [select].break} / 100</b>
                     </div>
                     <div class="hautodown">
                         <div class="bgproghauto">
-                            <div style="width: {list [select].break / 1.25}%" class="proghauto"></div>
+                            <div style="width: {list [select].break}%" class="proghauto"></div>
                         </div>
                     </div>
                 </div>
                 <div class="hauto">
                     <div class="hautotop">
                         <p>Управляемость</p>
-                        <b>{list [select].ypr} км/ч.</b>
+                        <b>{list [select].ypr} / 100</b>
                     </div>
                     <div class="hautodown">
                         <div class="bgproghauto">
-                            <div style="width: {list [select].ypr / 0.5}%" class="proghauto"></div>
+                            <div style="width: {list [select].ypr}%" class="proghauto"></div>
                         </div>
                     </div>
                 </div>
@@ -238,14 +236,19 @@
                 </div>
                 <div class="pricecars">
                     <p>Цена:</p>
-                    <b>${format("money", list [select].gosPrice)}</b>
+                    {#if isDonateAutoroom}
+                        <b>{format("money", list [select].price)} RB</b>
+                    {:else}
+                        <b>${format("money", list [select].price)}</b>
+                    {/if}
                 </div>
+
                 <div class="buycars">
                     <div class="buyblock" on:keypress={() => {}} on:click={() => executeClient ('buyAuto', 1, 'closeAuto')}>
                         <p>Купить</p>
                     </div>
                     <div class="buyblock" on:keypress={() => {}} on:click={() => executeClient ('buyAuto', 2, 'closeAuto')}>
-                        <p>Купить(ОРГ)</p>
+                        <p>Купить(ОРГ){#if !isDonateAutoroom && list [select].gosPrice && list [select].gosPrice !== list [select].price}&nbsp;${format("money", list [select].gosPrice)}{/if}</p>
                     </div>
                 </div>
                 <div class="testdrive" on:keypress={() => {}} on:click={() => startTestDrive (1)}>

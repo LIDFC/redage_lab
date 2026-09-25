@@ -10,6 +10,7 @@ gm.events.add('client.rentcar.open', (json) => {
             Model: item[1],
             Price: item[2],
             IsJob: item[3],
+            FinalPrice: item[4] !== undefined ? item[4] : item[2],
         })
     });
 

@@ -628,7 +628,11 @@ global.isAttached = (entity) => new Promise(async (resolve, reject) => {
 });
 
 gm.events.add("setTraffic", (index) => {
-	mp.game.streaming.setPedPopulationBudget(index);
+	// Бюджет трафика ведёт pritonCode/trafficWithoutSync: 0 — обычный режим, >0 — временный
+	if (global.setAmbientTrafficBudget)
+		global.setAmbientTrafficBudget(index);
+	else
+		mp.game.streaming.setPedPopulationBudget(index);
 });
 
 gm.events.add("cleartraffic", () => {

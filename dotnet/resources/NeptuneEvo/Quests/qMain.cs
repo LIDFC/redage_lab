@@ -73,6 +73,7 @@ namespace NeptuneEvo.Quests
                 else if (questData.ActorName == Fractions.Ticket.QuestName) Fractions.Ticket.OpenTickets(player);
                 else if (questData.ActorName == "npc_org") Organizations.Manager.Perform(player);
                 else if (questData.ActorName == "npc_birthday") Wedding.OpenBonus(player, 0);
+                else Jobs.JobEmployers.TryPerform(player, questData.ActorName);
                 
                 
             }
@@ -154,6 +155,7 @@ namespace NeptuneEvo.Quests
 
                 if (questData.ActorName == "npc_granny") Granny.Action(player, questData.Line);
                 else if (questData.ActorName == "npc_fd_zak") Zak.Action(player, questData.Line);
+                else Jobs.JobEmployers.TryAction(player, questData.ActorName);
 
             }
             catch (Exception e)

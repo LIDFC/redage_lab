@@ -694,7 +694,12 @@ namespace NeptuneEvo.Core
                     if (rentPedData.ZoneId < 36 || rentPedData.ZoneId > 57)
                         Main.CreateBlip(new Main.BlipData(rentBlisessionData.BlipId, rentBlisessionData.BlipName, rentPedData.Position, rentBlisessionData.Color, true, 1f));
                     
-                    var ped = PedSystem.Repository.CreateQuest(rentPedData.Skin, rentPedData.Position, rentPedData.Heading, title: $"~y~NPC~w~ {rentPedData.Title}", colShapeEnums: ColShapeEnums.RentCar);
+                    ExtPed ped;
+                    // На рабочих базах вместо безымянного арендодателя стоит работодатель со своим диалогом
+                    if (Jobs.JobEmployers.ByRentZone.TryGetValue(rentPedData.Index, out var employer))
+                        ped = PedSystem.Repository.CreateQuest(employer.Skin, rentPedData.Position, rentPedData.Heading, questName: employer.Actor, title: Jobs.JobEmployers.GetTitle(employer), colShapeEnums: ColShapeEnums.RentCar, isBlipVisible: false);
+                    else
+                        ped = PedSystem.Repository.CreateQuest(rentPedData.Skin, rentPedData.Position, rentPedData.Heading, title: $"~y~NPC~w~ {rentPedData.Title}", colShapeEnums: ColShapeEnums.RentCar);
 
                     if (!PedsToRentCarId.ContainsKey(ped.Value)) PedsToRentCarId.Add(ped.Value, i);
                     i++;
@@ -720,6 +725,47 @@ namespace NeptuneEvo.Core
 
                 var rentCarId = RentPedsData[PedsToRentCarId[Index]].Index;
 
+                if (Jobs.JobEmployers.ByRentZone.TryGetValue(rentCarId, out var employer))
+                {
+                    Jobs.JobEmployers.OpenDialog(player, Index, employer.Actor);
+                    return;
+                }
+
+                OpenRentMenu(player, rentCarId);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnRentMenu Exception: {e.ToString()}");
+            }
+        }
+
+        /// <summary>
+        /// Меню аренды той точки, в колшейпе которой стоит игрок (вызывается из диалога работодателя).
+        /// </summary>
+        public static void OpenRentMenuInZone(ExtPlayer player)
+        {
+            var zoneId = CustomColShape.GetDataToEnum(player, ColShapeEnums.RentCar);
+            if (zoneId == (int)ColShapeData.Error || !PedsToRentCarId.ContainsKey(zoneId))
+                return;
+
+            if (!FunctionsAccess.IsWorking("RentCar"))
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.FunctionOffByAdmins), 3000);
+                return;
+            }
+
+            OpenRentMenu(player, RentPedsData[PedsToRentCarId[zoneId]].Index);
+        }
+
+        private static void OpenRentMenu(ExtPlayer player, RentCarId rentCarId)
+        {
+            try
+            {
+                var accountData = player.GetAccountData();
+                var characterData = player.GetCharacterData();
+                if (accountData == null || characterData == null)
+                    return;
+
                 var rentCarsData = new List<List<object>>();
                 foreach(var rentCarData in RentCarsData)
                 {
@@ -732,6 +778,9 @@ namespace NeptuneEvo.Core
                     carData.Add(rentCarData.Model);
                     carData.Add(rentCarData.Price);
                     carData.Add(rentCarData.Job != JobsId.None);
+                    // Итоговая цена за час (для рабочего транспорта — за смену) с учётом VIP и уровня,
+                    // ровно та, что спишется в RentCarToInterface
+                    carData.Add(rentCarData.Price > 0 ? GetRentCarCash(accountData.VipLvl, characterData.LVL, rentCarData.Price) : 0);
 
                     rentCarsData.Add(carData);
                 }
@@ -774,6 +823,10 @@ namespace NeptuneEvo.Core
                 }
                 else if(0 > carId || carId >= RentCarsData.Length) return;
                 RentCarData rentCarsData = RentCarsData[carId];
+
+                // Рабочий транспорт оплачивается один раз за смену и не истекает по времени,
+                // обычная аренда — от 1 до 8 часов. Раньше из интерфейса для рабочих машин приходило hour = 0.
+                hour = rentCarsData.Job != JobsId.None ? 1 : Math.Clamp(hour, 1, 8);
 
                 switch (rentCarsData.Job)
                 {

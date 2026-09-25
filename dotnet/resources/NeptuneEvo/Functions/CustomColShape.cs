@@ -197,6 +197,8 @@ namespace NeptuneEvo.Functions
         WarGangZone,
         
         QuestBonus,
+
+        JobEmployer,
     }
     class CustomColShape : Script
     {

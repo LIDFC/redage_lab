@@ -70,7 +70,7 @@ namespace NeptuneEvo.Jobs
             {8, new Vector3(-229.61082, -1378.2086, 31.258224) },  // AutoMechanic job
         };
 
-        private static SortedList<int, string> JobList = new SortedList<int, string>
+        public static SortedList<int, string> JobList = new SortedList<int, string>
         {
             {1, LangFunc.GetText(LangType.Ru, DataName.Electriciany) },
             {2, LangFunc.GetText(LangType.Ru, DataName.Postmany) },

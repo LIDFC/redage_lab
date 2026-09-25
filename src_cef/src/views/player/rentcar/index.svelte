@@ -1,268 +1,498 @@
 <script>
-    import './assets/css/iconsarenda.css'
-    import './assets/css/main.sass'
-    import './assets/css/main.css'
-	import { fade } from 'svelte/transition';
-    import { accountVip } from 'store/account'
-    import { charMoney, charLVL, charBankMoney } from 'store/chars'
-    import rangeslider from 'components/rangeslider/index'
+    import { fade, fly } from 'svelte/transition';
+    import { charMoney, charBankMoney } from 'store/chars'
     import { format } from 'api/formatter'
     import { executeClient } from 'api/rage'
+    import authInfo from '@/views/business/autoshop/authInfo';
+
     export let viewData;
-    
-    let userData = {
-        targetMoney: 0,
-        changeMoney: 0,
-        timerIdMoney: 0,
-        Money: 0,
-        targetBank: 0,
-        changeBank: 0,
-        timerIdBank: 0,
-        Bank: 0,
+
+    // Список приходит с сервера (Rentcar.OpenRentMenu → client.rentcar.open):
+    // FinalPrice — цена за час (для рабочего транспорта — за смену) уже с учётом VIP и уровня.
+    let vehicles = [];
+    try {
+        vehicles = JSON.parse(viewData || '[]');
+    } catch (e) {
+        vehicles = [];
+    }
+
+    const authInfoLower = {};
+    Object.keys(authInfo).forEach((key) => { authInfoLower[key.toLowerCase()] = authInfo[key]; });
+
+    const getName = (model) => {
+        const info = authInfo[model] || authInfoLower[String(model).toLowerCase()];
+        if (info && info.name)
+            return `${info.name} ${info.model || ""}`.trim();
+        return String(model).charAt(0).toUpperCase() + String(model).slice(1);
     };
 
-    import { onMount } from 'svelte';
-    onMount(async () => {
-        //bar.animate(1.0);
+    const getImage = (model) => `${document.cloud}inventoryItems/vehicle/${String(model).toLowerCase()}.png`;
+    const getPrice = (item) => item.FinalPrice !== undefined ? item.FinalPrice : item.Price;
 
-        charMoney.subscribe(value => {
-            if (userData.Money !== value) {
-                CounterUpdate ("Money", value);
-            }
-        });
-        charBankMoney.subscribe(value => {
-            if (userData.Bank !== value) {
-                CounterUpdate ("Bank", value);
-            }
-        });
-    });
+    const colors = ["#111111", "#f2f2f2", "#e60000", "#ff7300", "#f0f000", "#00e600", "#00cdff", "#0000e6", "#be3ca5"];
+    const HOURS = [1, 2, 3, 4, 5, 6, 7, 8];
 
-    const CounterUpdate = (args, value) => {
-        if (userData["timerId" + args])
-            clearTimeout (userData["timerId" + args]);
-        userData["change" + args] = userData[args] > value ? (0 - (userData[args] - value)) : (value - userData[args]);
-        userData[args] = value;
-        userData["timerId" + args] = setTimeout (() => {
-            userData["timerId" + args] = 0;
-            userData["change" + args] = 0;
-            if (!userData["target" + args]) {
-                userData["target" + args] = new CountUp("target" + args, value);
-                //userData["target" + args].start();
-                //userData["target" + args].update(value);
-            }
-            else
-                userData["target" + args].update(value);
-        }, !userData["target" + args] ? 0 : 5000)
-    }
+    const isJobMenu = vehicles.length > 0 && vehicles.every((v) => v.IsJob);
 
-
-    if (!viewData) viewData = '[]';
-
-    let HourValue = 0;
-
-    const VehicleArray = JSON.parse (viewData);
-
-    let SelectVehicle = -1;
-
-    const authColors =[
-        "#000",
-        "#fff",
-        "#e60000",
-        "#ff7300",
-        "#f0f000",
-        "#00e600",
-        "#00cdff",
-        "#0000e6",
-        "#be3ca5",
-    ];
+    let selectedIndex = vehicles.length ? 0 : -1;
+    let hours = 1;
     let colorId = 0;
 
-    const setColor = (index) => {
-        if (index === colorId) return;
-        colorId = index;
-    }
+    $: selected = selectedIndex >= 0 ? vehicles[selectedIndex] : null;
+    $: total = selected ? getPrice(selected) * (selected.IsJob ? 1 : hours) : 0;
+    $: canPay = total <= $charMoney;
 
-    const setHourValue = (value) => {
-        HourValue = Number(value);
-    }
-
-    const rangeslidercreate = () => {
-        const max = 8;
-        HourValue = 1;
-        setTimeout(() => {
-            rangeslider.create(document.getElementById("rangeslider"), {min: 1, max: max, value: 1, step: 1, onSlide: (value, percent, position) => {
-                HourValue = Number(value);
-            }});
-        }, 0);
-    }
-
-    const onBuy = () => {
-        if ($charMoney < GetRentCarCash (VehicleArray [SelectVehicle].Price * HourValue)) {            
-            window.notificationAdd(1, 9, `У Вас не достаточно средств!`, 3000);
+    const onRent = () => {
+        if (!selected)
+            return;
+        if (!canPay) {
+            window.notificationAdd(4, 9, "Недостаточно наличных для аренды", 3000);
             return;
         }
-        executeClient ('client.rentcar.buy', VehicleArray [SelectVehicle].Id, colorId, HourValue);
-    }
+        executeClient('client.rentcar.buy', selected.Id, colorId, selected.IsJob ? 1 : hours);
+    };
 
-    const onExit = () => {        
-        executeClient ('client.rentcar.exit');
-    }
+    const onExit = () => executeClient('client.rentcar.exit');
 
-    const GetRentCarCashToLevel = (Price) => {
-        const level = $charLVL;
-
-        if (level <= 2) Price = Math.round(Price * 1.0);
-        else if (level <= 4) Price = Math.round(Price * 1.5);
-        else if (level <= 6) Price = Math.round(Price * 2.0);
-        else if (level <= 9) Price = Math.round(Price * 4.5);
-        else if (level <= 19) Price = Math.round(Price * 6.0);
-        else Price = Math.round(Price * 8.0);
-        return Price;
-    }
-
-    const GetRentCarCash = (Price) => {
-
-        switch ($accountVip)
-        {
-            case 1:
-                Price = Math.round(Price * 0.95);
-                break;
-            case 2:
-                Price = Math.round(Price * 0.9);
-                break;
-            case 3:
-                Price = Math.round(Price * 0.85);
-                break;
-            case 4:
-            case 5:
-                Price = Math.round(Price * 0.8);
-                break;
+    const onKeyDown = (event) => {
+        if (event.key === "Escape") {
+            onExit();
+            return;
         }
-        return GetRentCarCashToLevel (Price);
-    }
-
-    const handleKeyDown = (event) => {
-        const { keyCode } = event;
-        if (keyCode !== 27) return;
-
-        if (SelectVehicle !== -1) SelectVehicle = -1;
-        else onExit ();
-    }
-
+        if (!vehicles.length)
+            return;
+        if (event.key === "ArrowDown" || event.key === "ArrowUp" || event.key === "ArrowLeft" || event.key === "ArrowRight") {
+            const step = event.key === "ArrowDown" ? 2 : event.key === "ArrowUp" ? -2 : event.key === "ArrowRight" ? 1 : -1;
+            selectedIndex = (selectedIndex + step + vehicles.length) % vehicles.length;
+            event.preventDefault();
+        }
+        if (event.key === "Enter")
+            onRent();
+    };
 </script>
 
-<svelte:window on:keyup={handleKeyDown}/>
+<svelte:window on:keydown={onKeyDown} />
 
+<div class="rent" in:fade={{ duration: 180 }}>
+    <div class="rent__panel" in:fly={{ y: 24, duration: 260 }}>
 
-<div class="gta5devrent">
-    <div class="rentmenu">
-        {#if SelectVehicle !== -1}
-            <div class="acceptcar">
-                    <div class="content_block_main_selected">
-                    <div class="close-block flex-block" on:keypress={() => {}} on:click={() => SelectVehicle = -1}>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="17.122" height="17.121" viewBox="0 0 17.122 17.121">
-                            <g transform="translate(1.061 1.061)">
-                                <path d="M0,0,15,15" fill="none" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></path> 
-                                <path d="M6.929,0l-15,15" transform="translate(8.071)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2"></path>
-                            </g>
-                        </svg>
-                    </div> 
-                    <div class="content_block_main_selected__text-title">Аренда транспорта:</div> 
-                    <div class="content_block_main_selected__text-text">Название транспорта:</div> 
-                    <div class="content_block_main_selected__text-value">{VehicleArray [SelectVehicle].Model}</div> 
-                    {#if !VehicleArray [SelectVehicle].IsJob}
-                    <div class="content_block_main_selected__text-text">Стоимость аренды:</div> 
-                    <div class="content_block_main_selected__text-value">${format("money", GetRentCarCash (VehicleArray [SelectVehicle].Price))} <span class="content_block_main_selected__text-text per-hour">/ час</span></div> 
-                    <div class="content_block_main_selected__text-text">Выберите кол-во часов:</div> 
-                    <div class="content_block_main_selected__hours-wrapper row-block align-center justify-start">
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 1} on:keypress={() => {}} on:click={() => setHourValue (1)}><span data-v-ef912ed0="">1</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 2} on:keypress={() => {}} on:click={() => setHourValue (2)}><span data-v-ef912ed0="">2</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 3} on:keypress={() => {}} on:click={() => setHourValue (3)}><span data-v-ef912ed0="">3</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 4} on:keypress={() => {}} on:click={() => setHourValue (4)}><span data-v-ef912ed0="">4</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 5} on:keypress={() => {}} on:click={() => setHourValue (5)}><span data-v-ef912ed0="">5</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 6} on:keypress={() => {}} on:click={() => setHourValue (6)}><span data-v-ef912ed0="">6</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 7} on:keypress={() => {}} on:click={() => setHourValue (7)}><span data-v-ef912ed0="">7</span></div> 
-                        <div class="content_block_main_selected__hours row-block align-center justify-start" class:selected={HourValue === 8} on:keypress={() => {}} on:click={() => setHourValue (8)}><span data-v-ef912ed0="">8</span></div>
-                    </div> 
-                    {/if}
-                    <div class="content_block_main_selected__text-text">Выберите цвет:</div> 
-                    <div class="content_block_main_selected-colors">
-                        {#each authColors as value, index}
-                            <div key={index} class:selected={colorId === index} on:keypress={() => {}} on:click={() => setColor (index)} class="color-block row-block align-center justify-center">
-                                <div class="color-block__back" style="background: {value}"></div>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.414 8.534" style="stroke: rgb(255, 255, 255);">
-                                    <path d="M5.864,7.815,9.452,11.4,15.864,4.99" transform="translate(-5.157 -4.283)" fill="none" stroke-width="2"></path>
-                                </svg>
-                            </div> 
-                        {/each}
-                    </div> 
-                    <div class="content_block_main_selected__text-text">К оплате:</div> 
-                    <div class="content_block_main_selected__text-value to-be-paid">${format("money", GetRentCarCash (VehicleArray [SelectVehicle].Price * HourValue))}</div> 
-                    <div class="buttons_panel row-block justify-between">
-                        <div class="panel_button" on:keypress={() => {}} on:click={onBuy}>Наличными</div> 
-                        <div class="panel_button">Картой</div>
+        <section class="rent__board">
+            <header class="rent__head">
+                <div>
+                    <div class="rent__eyebrow">{isJobMenu ? "Рабочий транспорт" : "Прокат транспорта"}</div>
+                    <h1 class="rent__title">Аренда</h1>
+                </div>
+                <div class="rent__money">
+                    <div>
+                        <span class="rent__label">Наличные</span>
+                        <span class="rent__value">${format("money", $charMoney)}</span>
+                    </div>
+                    <div>
+                        <span class="rent__label">Банк</span>
+                        <span class="rent__value small">${format("money", $charBankMoney)}</span>
                     </div>
                 </div>
+            </header>
+
+            <div class="rent__grid">
+                {#each vehicles as item, index (item.Id)}
+                    <button class="tile" class:tile--active={index === selectedIndex} on:click={() => (selectedIndex = index)}>
+                        <span class="tile__img" style="background-image: url('{getImage(item.Model)}')"></span>
+                        <span class="tile__name">{getName(item.Model)}</span>
+                        <span class="tile__price">
+                            {#if getPrice(item) > 0}
+                                ${format("money", getPrice(item))}<small>{item.IsJob ? " / смена" : " / час"}</small>
+                            {:else}
+                                Бесплатно
+                            {/if}
+                        </span>
+                    </button>
+                {/each}
+                {#if !vehicles.length}
+                    <div class="rent__empty">Здесь сейчас нечего арендовать</div>
+                {/if}
             </div>
+
+            <footer class="rent__hint">
+                <span><b>↑↓←→</b> выбор</span>
+                <span><b>Enter</b> арендовать</span>
+                <span><b>Esc</b> закрыть</span>
+            </footer>
+        </section>
+
+        {#if selected}
+            {#key selected.Id}
+                <section class="details" in:fade={{ duration: 160 }}>
+                    <div class="details__hero">
+                        <span class="details__img" style="background-image: url('{getImage(selected.Model)}')"></span>
+                        <span class="details__hero-shade"></span>
+                        <button class="details__close" on:click={onExit} aria-label="Закрыть">✕</button>
+                        <h2 class="details__name">{getName(selected.Model)}</h2>
+                    </div>
+
+                    <div class="details__body">
+                        <div class="row">
+                            <div class="block">
+                                <div class="block__title">{selected.IsJob ? "Цена за смену" : "Цена за час"}</div>
+                                <div class="pay">{getPrice(selected) > 0 ? `$${format("money", getPrice(selected))}` : "Бесплатно"}</div>
+                                <div class="block__note">с учётом VIP и уровня</div>
+                            </div>
+                            <div class="block">
+                                <div class="block__title">Срок</div>
+                                <div class="pay pay--light">{selected.IsJob ? "До конца смены" : `${hours} ч.`}</div>
+                                <div class="block__note">{selected.IsJob ? "вернуть можно в любой момент" : "транспорт вернётся сам"}</div>
+                            </div>
+                        </div>
+
+                        {#if !selected.IsJob}
+                            <div class="block">
+                                <div class="block__title">Количество часов</div>
+                                <div class="hours">
+                                    {#each HOURS as h}
+                                        <button class="hours__item" class:hours__item--active={hours === h} on:click={() => (hours = h)}>{h}</button>
+                                    {/each}
+                                </div>
+                            </div>
+                        {/if}
+
+                        <div class="block">
+                            <div class="block__title">Цвет</div>
+                            <div class="colors">
+                                {#each colors as color, index}
+                                    <button class="colors__item" class:colors__item--active={colorId === index} style="background: {color}" on:click={() => (colorId = index)} aria-label="Цвет {index + 1}"></button>
+                                {/each}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="details__total">
+                        <span>К оплате</span>
+                        <b class:bad={!canPay}>{total > 0 ? `$${format("money", total)}` : "Бесплатно"}</b>
+                    </div>
+                    <div class="details__actions">
+                        <button class="btn btn--ghost" on:click={onExit}>Отмена</button>
+                        <button class="btn" class:btn--disabled={!canPay} on:click={onRent}>Арендовать</button>
+                    </div>
+                    <div class="details__status" class:warn={!canPay}>
+                        {canPay ? "Оплата наличными. Машина будет отмечена на карте" : "Не хватает наличных"}
+                    </div>
+                </section>
+            {/key}
         {/if}
-        <div class="headrent">
-            <div class="name">
-                <p>Аренда</p>
-            </div>
-            <div class="catologs">
-                <div class="blockcatl">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
-                        <path d="M10.566,7.223a.742.742,0,0,1-.736-.736V1.839a.742.742,0,0,1,.736-.736h4.748a.742.742,0,0,1,.736.736V6.487a.742.742,0,0,1-.736.736Z"></path> 
-                        <path d="M12.606,9.964,9.864,12.94a.465.465,0,0,0,0,.635l2.742,2.976a.447.447,0,0,0,.669,0l2.742-2.976a.465.465,0,0,0,0-.635L13.275,9.964A.446.446,0,0,0,12.606,9.964Z"></path> 
-                        <circle cx="3.11" cy="3.11" r="3.11" transform="translate(1.237 10.065)"></circle> 
-                        <path d="M1.605,2.173,4.013.8a.664.664,0,0,1,.7,0L7.089,2.173a.717.717,0,0,1,.368.635V5.551a.717.717,0,0,1-.368.635L4.715,7.557a.664.664,0,0,1-.7,0L1.605,6.186a.717.717,0,0,1-.368-.635V2.809A.717.717,0,0,1,1.605,2.173Z"></path>
-                    </svg>
-                    <p>Весь транспорт</p>
-                </div>
-            </div>
-            <div class="money">
-                <div class="moneyl">
-                    <p>${format("money", userData.Money)}</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 12.981">
-                        <g transform="translate(-1 -1.019)">
-                            <path d="M13.5,5H3A1,1,0,0,1,3,3H5a.472.472,0,0,0,.5-.5A.472.472,0,0,0,5,2H3A2.006,2.006,0,0,0,1,4v8a2.006,2.006,0,0,0,2,2H13.5A1.473,1.473,0,0,0,15,12.5v-6A1.473,1.473,0,0,0,13.5,5ZM14,7.9v3.2a1.479,1.479,0,0,0-.5-.1h-2a1.5,1.5,0,0,1,0-3h2A1.479,1.479,0,0,0,14,7.9Z" fill="#212121"></path> 
-                            <path d="M3.5,3.5A.472.472,0,0,0,3,4a.472.472,0,0,0,.5.5H13a.617.617,0,0,0,.4-.2.486.486,0,0,0,.05-.45l-1-2.5a.52.52,0,0,0-.65-.3L5.4,3.5Z" fill="#212121"></path> 
-                            <path d="M12.5,9h-1a.5.5,0,0,0,0,1h1a.5.5,0,0,0,0-1Z" fill="#212121"></path>
-                        </g>
-                    </svg>
-                </div>
-                <div class="moneyl">
-                    <p>${format("money", userData.Bank)}</p>
-                    <svg viewBox="0 0 15 12" style="width: 1.5vh; margin-left: 0.5vh;">
-                        <g id="credit-card" transform="translate(0 -54.821)">
-                            <g id="Group_477" data-name="Group 477" transform="translate(0 54.821)">
-                                <path xmlns="http://www.w3.org/2000/svg" id="Path_8530" data-name="Path 8530" d="M14.633,55.188a1.2,1.2,0,0,0-.883-.367H1.25a1.2,1.2,0,0,0-.883.367A1.2,1.2,0,0,0,0,56.071v9.5a1.2,1.2,0,0,0,.367.883,1.2,1.2,0,0,0,.883.367h12.5A1.254,1.254,0,0,0,15,65.571v-9.5A1.2,1.2,0,0,0,14.633,55.188ZM14,65.571a.253.253,0,0,1-.25.25H1.25a.253.253,0,0,1-.25-.25v-4.75H14v4.75Zm0-7.75H1v-1.75a.253.253,0,0,1,.25-.25h12.5a.253.253,0,0,1,.25.25v1.75Z" transform="translate(0 -54.821)" fill="#212121"></path> 
-                                <rect id="Rectangle_1187" data-name="Rectangle 1187" width="2" height="1" transform="translate(2 9)" fill="#212121"></rect> 
-                                <rect id="Rectangle_1188" data-name="Rectangle 1188" width="3" height="1" transform="translate(5 9)" fill="#212121"></rect>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <span>ESC</span>
-        </div>
-        <div class="rentlist">
-            {#each VehicleArray as item, index}
-                <div class="blockcar" on:keypress={() => {}} on:click={() => SelectVehicle = index}>
-                    <h1>{item.Model}</h1>
-                    <div class="carsimg" style="background-image: url({document.cloud}inventoryItems/vehicle/{item.Model.toLowerCase()}.png)"></div>
-                    <div class="info">
-                        <div class="rleft">
-                            <p>Цена</p>
-                            <span>${format("money", GetRentCarCash (item.Price))}<p>/ час</p></span>
-                        </div>
-                        <div class="rright">
-                            <p>Тип топлива</p>
-                            <span>Regular</span>
-                        </div>
-                    </div>
-                </div>
-            {/each}
-        </div>
     </div>
 </div>
+
+<style>
+    .rent {
+        --bg: rgba(12, 13, 16, 0.94);
+        --panel: rgba(255, 255, 255, 0.035);
+        --line: rgba(255, 255, 255, 0.08);
+        --text: #f3f1ec;
+        --muted: rgba(243, 241, 236, 0.55);
+        --accent: #ffb400;
+        --accent-dark: #1a1405;
+        --bad: #ff5d52;
+
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7));
+        font-family: 'TTNorms-Medium', 'UniNeue', sans-serif;
+        color: var(--text);
+        user-select: none;
+    }
+
+    @media (max-width: 1400px) { .rent__panel { zoom: 80%; } }
+    @media (min-width: 2400px) { .rent__panel { zoom: 125%; } }
+
+    .rent__panel {
+        position: relative;
+        display: grid;
+        grid-template-columns: 600px 420px;
+        width: 1020px;
+        height: 640px;
+        background: var(--bg);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55);
+    }
+
+    .rent__panel::before {
+        content: "";
+        position: absolute;
+        left: 0; top: 0; right: 0;
+        height: 4px;
+        background: repeating-linear-gradient(-45deg, var(--accent) 0 14px, #111 14px 28px);
+        opacity: 0.9;
+    }
+
+    .rent__board {
+        display: flex;
+        flex-direction: column;
+        padding: 28px 24px 18px 28px;
+        min-height: 0;
+    }
+
+    .rent__head {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .rent__eyebrow {
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 6px;
+    }
+
+    .rent__title {
+        margin: 0;
+        font-family: 'RF Dewi Expanded', 'TTNorms-Bold', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    .rent__money { display: flex; text-align: right; }
+    .rent__money > div { display: flex; flex-direction: column; }
+    .rent__money > div + div { margin-left: 18px; }
+    .rent__label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .rent__value { font-family: 'RF Dewi Expanded', sans-serif; font-weight: 700; font-size: 20px; margin-top: 2px; }
+    .rent__value.small { font-family: 'TTNorms-Bold', sans-serif; font-size: 15px; margin-top: 6px; }
+
+    .rent__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 132px;
+        gap: 10px;
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        padding-right: 4px;
+    }
+
+    .rent__grid::-webkit-scrollbar { width: 4px; }
+    .rent__grid::-webkit-scrollbar-thumb { background: var(--line); border-radius: 2px; }
+
+    .rent__empty { grid-column: 1 / -1; color: var(--muted); font-size: 14px; padding: 20px 0; }
+
+    .tile {
+        position: relative;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: linear-gradient(160deg, #1c1d22, #121317);
+        overflow: hidden;
+        cursor: pointer;
+        padding: 0;
+        color: inherit;
+        font: inherit;
+        text-align: left;
+        outline: none;
+        transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+
+    .tile:hover { transform: translateY(-2px); border-color: rgba(255, 180, 0, 0.45); }
+    .tile--active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), 0 10px 24px rgba(255, 180, 0, 0.18); }
+
+    .tile__img {
+        position: absolute;
+        left: 12px; right: 12px; top: 8px; bottom: 44px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .tile__name {
+        position: absolute;
+        left: 12px; bottom: 24px; right: 12px;
+        font-family: 'TTNorms-Bold', sans-serif;
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .tile__price {
+        position: absolute;
+        left: 12px; bottom: 8px;
+        font-size: 13px;
+        color: var(--accent);
+        font-family: 'TTNorms-Bold', sans-serif;
+    }
+
+    .tile__price small { color: var(--muted); font-family: 'TTNorms-Medium', sans-serif; }
+
+    .rent__hint { display: flex; margin-top: 14px; font-size: 12px; color: var(--muted); }
+    .rent__hint span + span { margin-left: 18px; }
+    .rent__hint b {
+        font-family: 'TTNorms-Bold', sans-serif;
+        font-weight: normal;
+        color: var(--text);
+        padding: 1px 6px;
+        margin-right: 4px;
+        border: 1px solid var(--line);
+        border-radius: 4px;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        background: var(--panel);
+        border-left: 1px solid var(--line);
+        min-height: 0;
+    }
+
+    .details__hero {
+        position: relative;
+        height: 190px;
+        flex-shrink: 0;
+        background: radial-gradient(ellipse at 50% 60%, rgba(255, 180, 0, 0.12), rgba(0, 0, 0, 0) 70%);
+    }
+
+    .details__img {
+        position: absolute;
+        left: 40px; right: 40px; top: 24px; bottom: 40px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .details__hero-shade {
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        background: linear-gradient(180deg, rgba(12, 13, 16, 0) 55%, rgba(12, 13, 16, 0.9) 100%);
+    }
+
+    .details__close {
+        position: absolute;
+        top: 14px; right: 14px;
+        width: 32px; height: 32px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: rgba(0, 0, 0, 0.55);
+        color: var(--text);
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .details__close:hover { border-color: var(--accent); color: var(--accent); }
+
+    .details__name {
+        position: absolute;
+        left: 24px; bottom: 10px; right: 24px;
+        margin: 0;
+        font-family: 'RF Dewi Expanded', 'TTNorms-Bold', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .details__body { flex: 1; padding: 10px 24px 0; overflow-y: auto; min-height: 0; }
+
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+    .block {
+        padding: 12px 14px;
+        margin-bottom: 10px;
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.25);
+    }
+
+    .block__title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 8px; }
+    .block__note { font-size: 11px; color: var(--muted); margin-top: 6px; }
+
+    .pay { font-family: 'TTNorms-Bold', sans-serif; font-size: 18px; color: var(--accent); }
+    .pay--light { color: var(--text); font-size: 15px; }
+
+    .hours { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; }
+
+    .hours__item,
+    .colors__item {
+        height: 32px;
+        border-radius: 7px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+        font-family: 'TTNorms-Bold', sans-serif;
+        font-size: 13px;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .hours__item:hover { border-color: rgba(255, 180, 0, 0.45); }
+    .hours__item--active { background: var(--accent); border-color: var(--accent); color: var(--accent-dark); }
+
+    .colors { display: grid; grid-template-columns: repeat(9, 1fr); gap: 6px; }
+    .colors__item { height: 26px; }
+    .colors__item--active { box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent); }
+
+    .details__total {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        padding: 12px 24px 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
+    }
+
+    .details__total b {
+        font-family: 'RF Dewi Expanded', 'TTNorms-Bold', sans-serif;
+        font-size: 24px;
+        letter-spacing: 0;
+        color: var(--text);
+    }
+
+    .details__total b.bad { color: var(--bad); }
+
+    .details__actions {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        gap: 10px;
+        padding: 12px 24px 6px;
+    }
+
+    .btn {
+        height: 46px;
+        border-radius: 10px;
+        border: none;
+        background: var(--accent);
+        color: var(--accent-dark);
+        font-family: 'TTNorms-Bold', sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        transition: filter 0.15s ease, transform 0.1s ease;
+    }
+
+    .btn:hover { filter: brightness(1.1); }
+    .btn:active { transform: scale(0.98); }
+
+    .btn--ghost { background: transparent; color: var(--text); border: 1px solid var(--line); }
+    .btn--ghost:hover { border-color: var(--accent); color: var(--accent); filter: none; }
+
+    .btn--disabled,
+    .btn--disabled:hover {
+        background: rgba(255, 255, 255, 0.08);
+        color: var(--muted);
+        cursor: not-allowed;
+        filter: none;
+        transform: none;
+    }
+
+    .details__status { padding: 2px 24px 16px; font-size: 12px; color: var(--muted); text-align: right; }
+    .details__status.warn { color: var(--bad); }
+</style>

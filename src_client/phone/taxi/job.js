@@ -13,7 +13,9 @@ global.isInitTaxiList = false;
 // Клиент отвечает только за визуал: спавн педа, посадку и высадку.
 
 const botSpawnDistance = 120;     // на каком расстоянии создаём педа у точки посадки
-const botBoardDistance = 15;      // на каком расстоянии пассажир начинает садиться
+const botBoardDistance = 25;      // на каком расстоянии пассажир начинает садиться
+const botHintDistance = 70;       // подсказка «остановитесь рядом с пассажиром»
+const botWarpMs = 7000;           // если пед не сел сам за это время — сажаем принудительно
 const botFinishDistance = 25;     // радиус точки назначения
 const botResendMs = 5000;         // повтор запроса к серверу, если ответа нет
 
@@ -224,6 +226,8 @@ const prepareBotPed = () => {
         return;
 
     // Каждый вызов отдельно: если какой-то метод недоступен в версии клиента, остальные всё равно применятся
+    // Педы, созданные через mp.peds.new, по умолчанию заморожены и не выполняют задачи движения
+    try { ped.freezePosition(false); } catch (e) {}
     try { ped.setInvincible(true); } catch (e) {}
     try { ped.setCanRagdoll(false); } catch (e) {}
     try { ped.setBlockingOfNonTemporaryEvents(true); } catch (e) {}
@@ -265,8 +269,14 @@ gm.events.add("render", () => {
             if (!ped || !activeBotTrip.pedReady)
                 return;
 
-            if (dist2d(player.position, ped.position) > botBoardDistance || vehicle.getSpeed() > 2.0)
+            const pedDist = dist2d(player.position, ped.position);
+            if (pedDist > botBoardDistance || vehicle.getSpeed() > 2.0) {
+                if (pedDist <= botHintDistance && !activeBotTrip.hintShown) {
+                    activeBotTrip.hintShown = true;
+                    mp.events.call('phone.notify', 228, translateText("Остановитесь рядом с пассажиром, он сядет сам"), 3);
+                }
                 return;
+            }
 
             const seat = getFreePassengerSeat(vehicle);
             if (seat === -2) {
@@ -277,8 +287,11 @@ gm.events.add("render", () => {
                 return;
             }
 
-            mp.game.ai.clearPedTasks(ped.handle);
-            mp.game.ai.taskEnterVehicle(ped.handle, vehicle.handle, 10000, seat, 1.0, 1, 0);
+            try { ped.freezePosition(false); } catch (e) {}
+            try { mp.game.ai.clearPedTasksImmediately(ped.handle); } catch (e) {}
+            // Пед не может открыть запертую дверь: открываем замок локально, только для этого пассажира
+            try { vehicle.setDoorsLocked(1); } catch (e) {}
+            mp.game.ai.taskEnterVehicle(ped.handle, vehicle.handle, botWarpMs, seat, 2.0, 1, 0);
 
             activeBotTrip.stage = "boarding";
             activeBotTrip.seat = seat;
@@ -304,11 +317,16 @@ gm.events.add("render", () => {
             }
 
             const inSeat = vehicle.getPedInSeat(activeBotTrip.seat) === ped.handle;
-            if (!inSeat && Date.now() - activeBotTrip.stageTime < 12000)
+            if (!inSeat && Date.now() - activeBotTrip.stageTime < botWarpMs)
                 return;
 
-            if (!inSeat)
-                mp.game.ped.setPedIntoVehicle(ped.handle, vehicle.handle, activeBotTrip.seat);
+            if (!inSeat) {
+                // Не дошёл сам (заперто, мешает препятствие) — сажаем на место
+                try { mp.game.ai.clearPedTasksImmediately(ped.handle); } catch (e) {}
+                try { ped.setIntoVehicle(vehicle.handle, activeBotTrip.seat); } catch (e) {
+                    try { mp.game.ped.setPedIntoVehicle(ped.handle, vehicle.handle, activeBotTrip.seat); } catch (e2) {}
+                }
+            }
 
             activeBotTrip.stage = "wait_destination";
             activeBotTrip.lastRequestAt = 0;

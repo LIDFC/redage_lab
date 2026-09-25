@@ -36,24 +36,43 @@ dotnet build dotnet/resources/NeptuneEvo.sln   # эталон: 9 warnings, 0 err
 
 ## 3. Развёртывание (VPS Ubuntu 24.04 + MariaDB)
 
-Инструкция: `DEPLOY.md` и `deploy/` (`redage.env.example`, `redage.service`, `start-windows.bat`). Что выяснили при установке у пользователя:
+Инструкция: `DEPLOY.md` и `deploy/` (`redage.env.example`, `redage.service`, `start-windows.bat`).
 
-- Сервер лежит в `/opt/redage-srv`, git-клон в `/opt/redage-git`. Пользователь `ragemp`, сервис `redage` (systemd).
+### Где что лежит у пользователя (проверено на VPS)
+
+- **Сервер запускается из `/opt/ragemp-srv`** (`WorkingDirectory=/opt/ragemp-srv`, `ExecStart=/opt/ragemp-srv/ragemp-server`). Сервис `redage` (systemd), пользователь `ragemp`.
+- `/opt/redage-srv` — лишняя копия, сервер её **не читает**. Из-за неё одно обновление «не применялось»: файлы копировали туда. Перед любым обновлением проверять: `systemctl cat redage | grep -iE "WorkingDirectory|ExecStart"`.
+- Пользователь обновляет так: собирает на Windows-виртуалке (Visual Studio, конфигурация **Debug**) или берёт репозиторий из `master` с GitHub, кладёт его в `/tmp/redage_lab` на VPS и копирует нужное вручную.
 - Пароли задаются через `/etc/redage/redage.env` (права 640, `root:ragemp`). Переменные `REDAGE_DB_*`, `REDAGE_REDIS_*` перекрывают `settings/mainDB.json`.
-- Для .NET Core 3.1 на 24.04 нужен `libicu66` (ставится deb-пакетом). Берётся `dotnet/runtime` из Linux-пакета RAGE:MP. Сигнатуру событий решил `dotnet/runtime/Bootstrapper.dll` из репозитория.
-- `conf.json`: bind `0.0.0.0`, порты 22005 (UDP+TCP) и 22006 (TCP, раздача `client_packages`). Клиент нужен GTA V **Legacy**, не Enhanced.
-- `SET GLOBAL max_connections` падает с access denied — это безвредно, значение задаётся в cnf MariaDB. Нужна папка для бэкапов.
-- Тестовый режим — `ServerId: 0` (у всех админ-команды). Бой — `ServerId: 1` и `DirectorLogins` в `settings/serverSettings.json`.
-- Обновление на VPS:
-  ```bash
-  cd /opt/redage-git && git pull
-  dotnet build dotnet/resources/NeptuneEvo/NeptuneEvo.csproj -c Debug
-  # остановить сервер с сохранением данных
-  sudo rsync -a --delete client_packages/ /opt/redage-srv/client_packages/
-  sudo rsync -a --exclude obj dotnet/resources/ /opt/redage-srv/dotnet/resources/
-  sudo chown -R ragemp:ragemp /opt/redage-srv && sudo systemctl start redage
-  ```
-  Игрокам после обновления интерфейса иногда нужно очистить кэш `client_resources/<ip>_<порт>`.
+- Для .NET Core 3.1 на 24.04 нужен `libicu66` (deb-пакет). Используется `dotnet/runtime` из Linux-пакета RAGE:MP. Сигнатуру событий решил `dotnet/runtime/Bootstrapper.dll` из репозитория.
+- `conf.json`: bind `0.0.0.0`, порты 22005 (UDP+TCP) и 22006 (TCP). Клиент нужен GTA V **Legacy**.
+- `SET GLOBAL max_connections` падает с access denied — это безвредно (значение задаётся в cnf MariaDB). Нужна папка для бэкапов.
+- Тестовый режим — `ServerId: 0`, бой — `ServerId: 1` и `DirectorLogins` в `settings/serverSettings.json`.
+
+### Интерфейс грузился с чужого CDN
+
+Старый `main.js` при `ServerId != 0` открывал `client_packages/interface/cloud.html`, а тот брал `bundle.js` и `bundle.css` с `https://cdn-ra3.ragemp.pro`, то есть со старым оригинальным интерфейсом (imgur, `undefined`). Сейчас:
+- `src_client/utils/cef.js` всегда открывает `local.html`;
+- `cloud.html` — точная копия `local.html` (коммит `a37a374`).
+
+Если снова кажется, что «интерфейс не обновился», первым делом сравнить хеши `bundle.js` в репозитории и в `/opt/ragemp-srv`, затем проверить `cloud.html`.
+
+### Обновление на VPS (что копировать)
+
+Копировать **не всю** `client_packages`: она большая, и `cp -a` / `rsync` без прогресса выглядят как зависание. Пользователь из-за этого прерывал копирование.
+
+```bash
+S=/opt/ragemp-srv
+systemctl stop redage            # перед этим сохранение — как привык пользователь
+rsync -a --info=progress2 /tmp/redage_lab/client_packages/interface/ $S/client_packages/interface/
+cp -v /tmp/redage_lab/client_packages/main.js $S/client_packages/main.js
+cp -r /tmp/redage_lab/dotnet/resources/NeptuneEvo/bin/. $S/dotnet/resources/NeptuneEvo/bin/
+cp -v /tmp/redage_lab/dotnet/resources/NeptuneEvo/meta.xml $S/dotnet/resources/NeptuneEvo/meta.xml
+md5sum /tmp/redage_lab/client_packages/interface/build/bundle.js $S/client_packages/interface/build/bundle.js
+chown -R ragemp:ragemp $S && systemctl start redage
+```
+
+`bin/` появляется после сборки в Visual Studio (или `dotnet build ... -c Debug` прямо на VPS). После обновления интерфейса игроку нужно удалить `C:\RAGEMP\client_resources`.
 
 ## 4. Что сделано (коммиты по порядку)
 
@@ -68,7 +87,9 @@ dotnet build dotnet/resources/NeptuneEvo.sln   # эталон: 9 warnings, 0 err
 | `5044a45` | Интерфейс всегда грузится локально (`src_client/utils/cef.js`) |
 | `ec963b1` | Такси: точки посадки у гаражей домов и точек разгрузки бизнесов, проверка земли (больше не на крышах). Лицензии на аренду рабочего транспорта: `WorkManager.GetRentLicense` / `CheckRentLicense` — B для такси, почты и механика; C для автобуса, дальнобойщика и инкассатора |
 | `6e4a651` | Меню F3: все картинки imgur и beget заменены (см. п. 5), настоящие каталоги одежды и транспорта, исправлены падения |
-| *(этот коммит)* | Автосалон и 24/7 (см. п. 6) |
+| `8e226e8` | Автосалон и 24/7 (см. п. 6) |
+| `a37a374` | `cloud.html` грузит локальный интерфейс, а не CDN оригинального RedAge |
+| *(последний коммит)* | Такси-NPC, NPC-трафик, NPC-работодатели, новое окно аренды (см. п. 7) |
 
 ## 5. Меню F3 (`src_cef/src/views/player/gta5devmenu`)
 
@@ -83,7 +104,7 @@ dotnet build dotnet/resources/NeptuneEvo.sln   # эталон: 9 warnings, 0 err
   - аватар, иконка репорта, фоны дома и бизнеса взяты из `views/player/hudevo/phonenew/assets/images`;
   - превью анимаций подключено через import.
 
-## 6. Автосалон и 24/7 (последний коммит)
+## 6. Автосалон и 24/7
 
 **Автосалон** (`src_cef/src/views/business/autoshop`, `src_client/vehicle/autoshop.js`)
 
@@ -116,15 +137,55 @@ dotnet build dotnet/resources/NeptuneEvo.sln   # эталон: 9 warnings, 0 err
 - Описания для сим-карты и лотереи; безопасные фолбэки картинок; цены через `format("money")`.
 - Проверено в стенде: 24 из 24 товаров видны, 0 битых запросов.
 
-## 7. Что осталось или стоит проверить
+## 7. Такси, трафик, работодатели, аренда (последний коммит)
 
-- В игре не проверялись: F3 → «Транспорт» (новое серверное событие), автосалон (оценки 0–100 из нативов `getVehicleModelMaxBraking` / `getVehicleModelMaxTraction`; если в сборке RAGE их нет, будет `client_trycatch` в логах), 24/7.
+**NPC-пассажир такси** (`src_client/phone/taxi/job.js`):
+- Пед из `mp.peds.new` по умолчанию заморожен и не выполнял `taskEnterVehicle`. Теперь `freezePosition(false)` вызывается при создании и перед посадкой, а перед посадкой делается `clearPedTasksImmediately`.
+- Запертую дверь пед открыть не может, поэтому замок открывается локально (`setDoorsLocked(1)`).
+- Радиус посадки 25 м (был 15), подсказка «остановитесь рядом» появляется с 70 м.
+- Если за 7 с пед не сел сам, его принудительно сажают через `ped.setIntoVehicle`. Дальше, как раньше, `server.phone.taxijob.botBoarded`, а сервер проверяет дистанцию до точки посадки (60 м).
+
+**NPC-трафик** (`src_client/pritonCode/trafficWithoutSync/index.js`):
+- Было: отладочная клавиша HOME, плотность ×3, при входе трафик выключался.
+- Стало: трафик включён по умолчанию с умеренной плотностью (машины 0.45, пешеходы 0.6, припаркованные 0.3, бюджет 2).
+- В RAGE:MP трафик **не синхронизируется**: у каждого игрока свои NPC-машины. Поэтому выключены NPC-полиция и розыск (`setMaxWantedLevel(0)`, dispatch 1–15), случайные копы, поезда, лодки, мусоровозы и выпадение денег с педов. Посадка в NPC-машину запрещена (`getVehicleIsTryingToEnter` + `mp.vehicles.atHandle`), иначе это был бы бесплатный транспорт, который видит только сам игрок.
+- HOME — личный переключатель трафика. Событие `setTraffic` (метро, логин) идёт через `global.setAmbientTrafficBudget`.
+- Плотность задаётся константами `TRAFFIC` в начале файла.
+
+**NPC-работодатели** (`dotnet/resources/NeptuneEvo/Jobs/JobEmployers.cs`):
+- Диалоги `src_cef/src/json/quests/work/npc_*.json` существовали, но на сервере их никто не создавал и не обрабатывал.
+- Теперь на базах с рабочей арендой (`Rentcar.RentPedsData`, зоны `RentCarId.Job*`) вместо безымянного арендодателя стоит работодатель: своя модель, имя из `quests.js`, questName = actor.
+- Колшейп остаётся `RentCar`: от него аренда берёт точку спавна. `OnRentMenu` для рабочих зон открывает диалог.
+- «Устроиться на работу» (perform) → `qMain.QuestPerform` → `JobEmployers.TryPerform` → `WorkManager.JobJoin` с теми же проверками.
+- Второе действие (action) → `qMain.QuestAction` → `TryAction` → `Rentcar.OpenRentMenuInZone`.
+- Электрик: отдельный NPC у маркера смены (новый `ColShapeEnums.JobEmployer`, добавлен в конец enum), его action — начать или закончить смену (`Electrician.OnElectrician`).
+- Тексты диалогов переписаны; голос охотника, который играл у всех работодателей, убран.
+
+**Аренда** (`src_cef/src/views/player/rentcar/index.svelte`, `Core/Rentcar.cs`, `src_client/vehicle/rentcar.js`):
+- **Было:**
+  - у рабочих машин блок цены был скрыт, часов 0, в интерфейсе «К оплате: $0»;
+  - сервер считал `цена × 0` и выдавал рабочий транспорт бесплатно;
+  - скидка VIP в интерфейсе (5/10/15/20%) не совпадала с серверной (10/15/20/25%);
+  - кнопка «Картой» ничего не делала.
+- **Стало:**
+  - сервер присылает итоговую цену `FinalPrice` (VIP + уровень, `GetRentCarCash`) пятым полем;
+  - в `server.rentcar.buy` для рабочего транспорта `hour = 1` (разовая оплата за смену, аренда не истекает), для обычной аренды — `Math.Clamp(hour, 1, 8)` (защита от 0 и отрицательных значений).
+- Окно переделано в стиле центра занятости Эммы Смит: сетка машин с картинками и названиями из справочника автосалона, справа цена, срок, часы, цвет, «К оплате» и «Арендовать». Это единственное окно аренды в проекте (`PlayerRentCar`), им пользуются и прокат, и рабочие базы.
+
+## 8. Что осталось или стоит проверить
+
+- В игре не проверены (проверены только в стенде или сборкой):
+  - посадка NPC в такси: нативы `setIntoVehicle` / `clearPedTasksImmediately` / `setDoorsLocked`;
+  - NPC-трафик: `enableDispatchService`, `setCreateRandomCops*` и т.п. обёрнуты в try; если в сборке RAGE их нет, они просто не сработают;
+  - NPC-работодатели и открытие аренды из диалога;
+  - F3 → «Транспорт»;
+  - оценки 0–100 в автосалоне.
 - `src_cef/src/api/imgSave.js`: загрузка фото на imgur (`document.imgurClientId` в `App.svelte`). Это отдельная функция, а не картинки. imgur из сети сервера может не работать.
 - «Тип топлива» в автосалоне всегда «Regular», в том числе у электромобилей и вертолётов. На сервере различий нет, поэтому оставлено.
 - У женских «Ластов» (donate clothes id 30) иконка в архиве — ботинки. Название взято из основного донат-магазина.
 - В `gta5devmenu/elements/shop/elements/shopcl/` лежат неиспользуемые копии `cPopup` / `pPopup` / `popupname` / `img`. Их можно удалить.
 
-## 8. Правила работы в этом репозитории
+## 9. Правила работы в этом репозитории
 
 - Разработка в ветке `claude/new-session-2adzoy`, push: `git push -u origin claude/new-session-2adzoy`. PR создавать только по просьбе пользователя.
 - В коммитах, PR и коде не упоминать модель ИИ.

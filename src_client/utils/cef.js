@@ -14,12 +14,10 @@ let main_browser = null;
 
 //package://interface/local.html
 
-const getInterfaceUrl = (serverId) => {
-	if (serverId === 0)
-		return 'package://interface/local.html';
-	else
-		return 'package://interface/cloud.html';
-}
+// Интерфейс всегда грузится из client_packages/interface этого сервера.
+// cloud.html тянул сборку с CDN оригинального RedAge (cdn-ra3.ragemp.pro), поэтому
+// при ServerId != 0 игроки получали чужой/недоступный интерфейс и не видели окно входа.
+const getInterfaceUrl = (serverId) => 'package://interface/local.html';
 
 gm.events.add('client.init', async (serverId) => {
 	mp.gui.cursor.visible = true;

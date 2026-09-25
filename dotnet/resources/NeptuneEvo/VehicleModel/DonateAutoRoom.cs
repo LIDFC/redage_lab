@@ -2,6 +2,7 @@
 using System.Linq;
 using GTANetworkAPI;
 using Localization;
+using Newtonsoft.Json;
 using NeptuneEvo.Character;
 using NeptuneEvo.Core;
 using NeptuneEvo.Functions;
@@ -53,6 +54,30 @@ namespace NeptuneEvo.VehicleModel
             catch (Exception e)
             {
                 Log.Write($"OpenDialog Exception: {e.ToString()}");
+            }
+        }
+        /// <summary>
+        /// Список донат-транспорта для магазина в меню F3: те же позиции и цены (RB), что и в салоне у NPC.
+        /// </summary>
+        [RemoteEvent("server.donate.vehicles.load")]
+        public void LoadDonateVehicles(ExtPlayer player)
+        {
+            try
+            {
+                if (!player.IsCharacterData()) return;
+
+                var vehicles = BusinessManager.BusProductsData
+                    .Where(b => b.Value.Type == BusinessManager.BusProductToType.Donate)
+                    .Where(b => b.Value.OtherPrice > 0 && b.Value.Toggled)
+                    .OrderByDescending(b => b.Value.OtherPrice)
+                    .Select(b => new object[] { b.Key, b.Value.OtherPrice })
+                    .ToList();
+
+                Trigger.ClientEvent(player, "client.donate.vehicles", JsonConvert.SerializeObject(vehicles), NpcBuyPosition.X, NpcBuyPosition.Y);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"LoadDonateVehicles Exception: {e.ToString()}");
             }
         }
         public static void Perform(ExtPlayer player)

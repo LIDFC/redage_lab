@@ -778,11 +778,8 @@ namespace NeptuneEvo.Core
                 switch (rentCarsData.Job)
                 {
                     case JobsId.Taxi:
-                        if (Main.ServerSettings.IsCheckJobLicC && !characterData.Licenses[2])
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoLicenceC), 10000);
+                        if (!Jobs.WorkManager.CheckRentLicense(player, characterData, rentCarsData.Job))
                             return;
-                        }
                         
                         if (characterData.WorkID != (int)JobsId.Taxi)
                         {
@@ -800,11 +797,8 @@ namespace NeptuneEvo.Core
 
                         break;
                     case JobsId.Trucker:
-                        if (Main.ServerSettings.IsCheckJobLicC && !characterData.Licenses[2])
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoLicenceC), 10000);
+                        if (!Jobs.WorkManager.CheckRentLicense(player, characterData, rentCarsData.Job))
                             return;
-                        }
 
                         if (characterData.WorkID != (int)JobsId.Trucker)
                         {
@@ -828,11 +822,8 @@ namespace NeptuneEvo.Core
 
                         break;
                     case JobsId.Bus:
-                        if (Main.ServerSettings.IsCheckJobLicC && !characterData.Licenses[2])
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoLicenceC), 10000);
+                        if (!Jobs.WorkManager.CheckRentLicense(player, characterData, rentCarsData.Job))
                             return;
-                        }
 
                         if (characterData.WorkID != (int)JobsId.Bus)
                         {
@@ -850,11 +841,8 @@ namespace NeptuneEvo.Core
 
                         break;
                     case JobsId.CashCollector:
-                        if (Main.ServerSettings.IsCheckJobLicC && !characterData.Licenses[2])
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoLicenceC), 10000);
+                        if (!Jobs.WorkManager.CheckRentLicense(player, characterData, rentCarsData.Job))
                             return;
-                        }
 
                         if (characterData.WorkID != (int)JobsId.CashCollector)
                         {
@@ -874,11 +862,8 @@ namespace NeptuneEvo.Core
                     case JobsId.Lawnmower:
                     case JobsId.CarMechanic:
                     case JobsId.Postman:
-                        if (Main.ServerSettings.IsCheckJobLicC && !characterData.Licenses[2])
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoLicenceC), 10000);
+                        if (!Jobs.WorkManager.CheckRentLicense(player, characterData, rentCarsData.Job))
                             return;
-                        }
 
                         if (rentCarsData.Job != (JobsId)characterData.WorkID)
                         {

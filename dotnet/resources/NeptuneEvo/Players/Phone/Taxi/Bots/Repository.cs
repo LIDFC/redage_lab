@@ -81,8 +81,10 @@ namespace NeptuneEvo.Players.Phone.Taxi.Bots
         #region Точки посадки/назначения
 
         /// <summary>
-        /// Пул точек строится из входов в дома и бизнесы: они всегда на суше,
-        /// доступны пешком и не находятся внутри объектов.
+        /// Пул точек — места, куда гарантированно подъезжает машина:
+        ///  - точки заезда в гаражи домов (там же появляется машина при выезде);
+        ///  - точки разгрузки бизнесов (туда заезжают грузовики дальнобойщиков).
+        /// Входы в дома не используем: у квартир и мотелей они бывают на этажах и крышах.
         /// Дополнительно отсекаем воду/горы по высоте и выезды за пределы города.
         /// </summary>
         private static List<Vector3> GetPoints()
@@ -92,18 +94,18 @@ namespace NeptuneEvo.Players.Phone.Taxi.Bots
 
             var points = new List<Vector3>();
 
-            foreach (var house in NeptuneEvo.Houses.HouseManager.Houses)
+            foreach (var garage in NeptuneEvo.Houses.GarageManager.Garages.Values)
             {
-                if (house == null || house.Type == 7 || house.Position == null)
+                if (garage?.Position == null)
                     continue;
-                points.Add(house.Position);
+                points.Add(garage.Position);
             }
 
             foreach (var biz in BusinessManager.BizList.Values)
             {
-                if (biz?.EnterPoint == null)
+                if (biz?.UnloadPoint == null || (biz.UnloadPoint.X == 0 && biz.UnloadPoint.Y == 0))
                     continue;
-                points.Add(biz.EnterPoint);
+                points.Add(biz.UnloadPoint);
             }
 
             _points = points

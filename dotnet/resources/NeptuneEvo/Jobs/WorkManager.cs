@@ -214,12 +214,42 @@ namespace NeptuneEvo.Jobs
         }
 
         /// <summary>
-        /// Права для аренды рабочего транспорта. Совпадает с проверкой в Rentcar.RentCarToInterface.
+        /// Права для аренды рабочего транспорта (индекс в CharacterData.Licenses: 1 = B, 2 = C).
+        /// Категория C нужна только для грузового/тяжёлого транспорта: автобус, грузовик, броневик.
+        /// Проверку можно отключить флагом ServerSettings.IsCheckJobLicC.
         /// </summary>
-        private static int GetRentLicense(int job)
+        public static int GetRentLicense(int job)
         {
-            if (job == (int)JobsId.Electrician) return 0; // работа без транспорта
-            return Main.ServerSettings.IsCheckJobLicC ? 2 : 0;
+            if (!Main.ServerSettings.IsCheckJobLicC)
+                return 0;
+
+            switch ((JobsId)job)
+            {
+                case JobsId.Taxi:
+                case JobsId.Postman:
+                case JobsId.CarMechanic:
+                    return 1;
+                case JobsId.Bus:
+                case JobsId.Trucker:
+                case JobsId.CashCollector:
+                    return 2;
+                default: // электрик — без транспорта, газонокосилка — права не нужны
+                    return 0;
+            }
+        }
+
+        /// <summary>
+        /// Проверка прав при аренде рабочего транспорта. Возвращает false и показывает сообщение, если прав нет.
+        /// </summary>
+        public static bool CheckRentLicense(ExtPlayer player, CharacterData characterData, JobsId job)
+        {
+            var license = GetRentLicense((int)job);
+            if (license == 0 || characterData.Licenses[license])
+                return true;
+
+            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter,
+                LangFunc.GetText(LangType.Ru, license == 1 ? DataName.NoLicenceB : DataName.NoLicenceC), 10000);
+            return false;
         }
 
         private static string LicenseName(int index) => index == 1 ? "B" : index == 2 ? "C" : "";

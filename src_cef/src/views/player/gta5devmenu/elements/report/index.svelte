@@ -2,6 +2,7 @@
     import { executeClient } from 'api/rage'
     import { selected, reportsData, text } from '../../../reports/index'
     import { onDestroy } from 'svelte'
+    import ImgAuthor from '../../../hudevo/phonenew/assets/images/person.png';
     
     let
         reports = [],
@@ -111,7 +112,7 @@
                         </div>
                     </div>
                     <div class="messright">
-						<img src="{document.cloud}img/report_icon.png" alt=""/>
+						<img src={ImgAuthor} alt=""/>
                     </div>
                 </div>
                 <div class="btns">

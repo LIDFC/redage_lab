@@ -26,7 +26,7 @@ const dist2d = (a, b) => global.vdist2(a, b, false);
 const getBotSpawnPos = (pos) => {
     let z = pos.z;
     try {
-        const groundZ = mp.game.gameplay.getGroundZFor3dCoord(pos.x, pos.y, pos.z + 3.0, 0, false);
+        const groundZ = mp.game.gameplay.getGroundZFor3dCoord(pos.x, pos.y, pos.z + 1.5, 0, false);
         if (groundZ && Math.abs(groundZ - pos.z) < 6)
             z = groundZ;
     } catch (e) {}

@@ -7820,6 +7820,646 @@ module.exports = "/src/views/player/documets/msc/images/logo.png";
 
 /***/ }),
 
+/***/ "./src/views/player/gta5devmenu/assets/clothes/0.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/0.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/0.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/1.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/1.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/1.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/10.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/10.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/10.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/11.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/11.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/11.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/12.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/12.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/12.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/13.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/13.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/13.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/14.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/14.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/14.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/15.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/15.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/15.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/16.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/16.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/16.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/17.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/17.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/17.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/18.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/18.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/18.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/19.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/19.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/19.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/2.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/2.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/2.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/20.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/20.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/20.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/21.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/21.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/21.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/22.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/22.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/22.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/23.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/23.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/23.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/24.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/24.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/24.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/25.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/25.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/25.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/26.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/26.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/26.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/27.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/27.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/27.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/28.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/28.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/28.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/29.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/29.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/29.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/3.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/3.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/3.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/30.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/30.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/30.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/31.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/31.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/31.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/32.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/32.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/32.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/33.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/33.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/33.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/34.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/34.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/34.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/35.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/35.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/35.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/4.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/4.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/4.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/5.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/5.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/5.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/6.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/6.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/6.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/7.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/7.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/7.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/8.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/8.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/8.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/clothes/9.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/clothes/9.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/clothes/9.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/money/1.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/money/1.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/money/1.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/money/2.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/money/2.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/money/2.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/money/3.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/money/3.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/money/3.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/money/4.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/money/4.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/money/4.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/money/5.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/money/5.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/money/5.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/money/6.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/money/6.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/money/6.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/1.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/1.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/1.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/10.png":
+/*!**********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/10.png ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/10.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/11.png":
+/*!**********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/11.png ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/11.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/2.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/2.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/2.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/3.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/3.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/3.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/4.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/4.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/4.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/5.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/5.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/5.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/6.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/6.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/6.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/7.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/7.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/7.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/8.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/8.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/8.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/packs/9.png":
+/*!*********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/packs/9.png ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/packs/9.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/premium/bronze.svg":
+/*!****************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/premium/bronze.svg ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/premium/bronze.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/premium/gold.svg":
+/*!**************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/premium/gold.svg ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/premium/gold.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/premium/platinum.svg":
+/*!******************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/premium/platinum.svg ***!
+  \******************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/premium/platinum.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/premium/silver.svg":
+/*!****************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/premium/silver.svg ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/premium/silver.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/premium/subscripte.png":
+/*!********************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/premium/subscripte.png ***!
+  \********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/premium/subscripte.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/quest/cityhall.png":
+/*!****************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/quest/cityhall.png ***!
+  \****************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/quest/cityhall.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/quest/ems.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/quest/ems.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/quest/ems.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/quest/news.png":
+/*!************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/quest/news.png ***!
+  \************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/quest/news.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/quest/org.png":
+/*!***********************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/quest/org.png ***!
+  \***********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/quest/org.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/assets/quest/police.png":
+/*!**************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/assets/quest/police.png ***!
+  \**************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/assets/quest/police.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/anim/images/preview.png":
+/*!***********************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/anim/images/preview.png ***!
+  \***********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/elements/anim/images/preview.png";
+
+/***/ }),
+
 /***/ "./src/views/player/gta5devmenu/elements/minigames/images/logo-sapper.png":
 /*!********************************************************************************!*\
   !*** ./src/views/player/gta5devmenu/elements/minigames/images/logo-sapper.png ***!
@@ -7827,6 +8467,56 @@ module.exports = "/src/views/player/documets/msc/images/logo.png";
 /***/ ((module) => {
 
 module.exports = "/src/views/player/gta5devmenu/elements/minigames/images/logo-sapper.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/number.png":
+/*!*********************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shop/img/number.png ***!
+  \*********************************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/elements/shop/elements/shop/img/number.png";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_1.svg":
+/*!******************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_1.svg ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_1.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_2.svg":
+/*!******************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_2.svg ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_2.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_3.svg":
+/*!******************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_3.svg ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_3.svg";
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/sim.png":
+/*!******************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shop/img/sim.png ***!
+  \******************************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/gta5devmenu/elements/shop/elements/shop/img/sim.png";
 
 /***/ }),
 
@@ -8660,6 +9350,16 @@ module.exports = "/src/views/player/hudevo/phonenew/assets/images/gift.png";
 
 /***/ }),
 
+/***/ "./src/views/player/hudevo/phonenew/assets/images/house.png":
+/*!******************************************************************!*\
+  !*** ./src/views/player/hudevo/phonenew/assets/images/house.png ***!
+  \******************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/hudevo/phonenew/assets/images/house.png";
+
+/***/ }),
+
 /***/ "./src/views/player/hudevo/phonenew/assets/images/maps.png":
 /*!*****************************************************************!*\
   !*** ./src/views/player/hudevo/phonenew/assets/images/maps.png ***!
@@ -8700,6 +9400,16 @@ module.exports = "/src/views/player/hudevo/phonenew/assets/images/news.png";
 
 /***/ }),
 
+/***/ "./src/views/player/hudevo/phonenew/assets/images/person.png":
+/*!*******************************************************************!*\
+  !*** ./src/views/player/hudevo/phonenew/assets/images/person.png ***!
+  \*******************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/hudevo/phonenew/assets/images/person.png";
+
+/***/ }),
+
 /***/ "./src/views/player/hudevo/phonenew/assets/images/property.png":
 /*!*********************************************************************!*\
   !*** ./src/views/player/hudevo/phonenew/assets/images/property.png ***!
@@ -8737,6 +9447,16 @@ module.exports = "/src/views/player/hudevo/phonenew/assets/images/rent.png";
 /***/ ((module) => {
 
 module.exports = "/src/views/player/hudevo/phonenew/assets/images/settings.png";
+
+/***/ }),
+
+/***/ "./src/views/player/hudevo/phonenew/assets/images/shop.png":
+/*!*****************************************************************!*\
+  !*** ./src/views/player/hudevo/phonenew/assets/images/shop.png ***!
+  \*****************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/hudevo/phonenew/assets/images/shop.png";
 
 /***/ }),
 
@@ -108075,7 +108795,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _images_preview_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/preview.png */ "./src/views/player/gta5devmenu/elements/anim/images/preview.png");
+/* harmony import */ var _images_preview_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_preview_png__WEBPACK_IMPORTED_MODULE_1__);
 /* src/views/player/gta5devmenu/elements/anim/element.svelte generated by Svelte v3.59.2 */
+
+
 
 
 function create_if_block_4(ctx) {
@@ -108125,7 +108849,7 @@ function create_if_block_4(ctx) {
 
 			if (/*use*/ ctx[2].length > 1) {
 				if (if_block1) {
-					
+					if_block1.p(ctx, dirty);
 				} else {
 					if_block1 = create_if_block_5(ctx);
 					if_block1.c();
@@ -108148,7 +108872,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (24:4) {#if isEnterAnim}
+// (25:4) {#if isEnterAnim}
 function create_if_block(ctx) {
 	let t;
 	let if_block1_anchor;
@@ -108210,7 +108934,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (58:8) {:else}
+// (59:8) {:else}
 function create_else_block_2(ctx) {
 	let svg;
 	let path;
@@ -108250,7 +108974,7 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (54:8) {#if isFavorite}
+// (55:8) {#if isFavorite}
 function create_if_block_6(ctx) {
 	let svg;
 	let path;
@@ -108291,7 +109015,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (63:4) {#if use.length > 1}
+// (64:4) {#if use.length > 1}
 function create_if_block_5(ctx) {
 	let img;
 	let img_src_value;
@@ -108299,19 +109023,20 @@ function create_if_block_5(ctx) {
 	return {
 		c() {
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "./images/preview.png")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (_images_preview_png__WEBPACK_IMPORTED_MODULE_1___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, img, anchor);
 		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(img);
 		}
 	};
 }
 
-// (35:4) {:else}
+// (36:4) {:else}
 function create_else_block_1(ctx) {
 	let p;
 	let mounted;
@@ -108343,7 +109068,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (25:4) {#if !isBind}
+// (26:4) {#if !isBind}
 function create_if_block_2(ctx) {
 	let if_block_anchor;
 
@@ -108384,7 +109109,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (30:8) {:else}
+// (31:8) {:else}
 function create_else_block(ctx) {
 	let svg;
 	let path;
@@ -108424,7 +109149,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (26:8) {#if isFavorite}
+// (27:8) {#if isFavorite}
 function create_if_block_3(ctx) {
 	let svg;
 	let path;
@@ -108465,7 +109190,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (40:4) {#if use.length > 1}
+// (41:4) {#if use.length > 1}
 function create_if_block_1(ctx) {
 	let video;
 	let track;
@@ -108754,20 +109479,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
-/* harmony import */ var _main_sass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main.sass */ "./src/views/player/gta5devmenu/elements/anim/main.sass");
-/* harmony import */ var _main_sass__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_main_sass__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _fonts_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/style.css */ "./src/views/player/gta5devmenu/elements/anim/fonts/style.css");
-/* harmony import */ var _fonts_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_style_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var json_animations_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! json/animations.js */ "./src/json/animations.js");
-/* harmony import */ var _element_svelte__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./element.svelte */ "./src/views/player/gta5devmenu/elements/anim/element.svelte");
-/* harmony import */ var store_animation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! store/animation */ "./src/store/animation.js");
-/* harmony import */ var svelte_motion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! svelte/motion */ "./node_modules/svelte/motion/index.mjs");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var _components_keyAnimation_index_svelte__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/components/keyAnimation/index.svelte */ "./src/components/keyAnimation/index.svelte");
-/* harmony import */ var store_keys__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! store/keys */ "./src/store/keys.js");
-/* harmony import */ var json_keys_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! json/keys.js */ "./src/json/keys.js");
-/* harmony import */ var _index_svelte__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./../../index.svelte */ "./src/views/player/gta5devmenu/index.svelte");
+/* harmony import */ var _images_preview_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/preview.png */ "./src/views/player/gta5devmenu/elements/anim/images/preview.png");
+/* harmony import */ var _images_preview_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_images_preview_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lang */ "./lang/index.js");
+/* harmony import */ var _main_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./main.sass */ "./src/views/player/gta5devmenu/elements/anim/main.sass");
+/* harmony import */ var _main_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_main_sass__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _fonts_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fonts/style.css */ "./src/views/player/gta5devmenu/elements/anim/fonts/style.css");
+/* harmony import */ var _fonts_style_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fonts_style_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var json_animations_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! json/animations.js */ "./src/json/animations.js");
+/* harmony import */ var _element_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./element.svelte */ "./src/views/player/gta5devmenu/elements/anim/element.svelte");
+/* harmony import */ var store_animation__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! store/animation */ "./src/store/animation.js");
+/* harmony import */ var svelte_motion__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! svelte/motion */ "./node_modules/svelte/motion/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _components_keyAnimation_index_svelte__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/components/keyAnimation/index.svelte */ "./src/components/keyAnimation/index.svelte");
+/* harmony import */ var store_keys__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! store/keys */ "./src/store/keys.js");
+/* harmony import */ var json_keys_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! json/keys.js */ "./src/json/keys.js");
 /* src/views/player/gta5devmenu/elements/anim/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -108817,7 +109543,7 @@ function create_if_block_5(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "./images/preview.png")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (_images_preview_png__WEBPACK_IMPORTED_MODULE_1___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "blockbg1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "style", div_style_value = `top:${/*$coords*/ ctx[12].y - /*offsetInElementY*/ ctx[6]}px;left:${/*$coords*/ ctx[12].x - /*offsetInElementX*/ ctx[5]}px;`);
@@ -108841,7 +109567,7 @@ function create_if_block_5(ctx) {
 function create_else_block_2(ctx) {
 	let each_1_anchor;
 	let current;
-	let each_value_2 = Object.values(json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default).filter(/*func*/ ctx[33]);
+	let each_value_2 = Object.values(json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default).filter(/*func*/ ctx[33]);
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_2.length; i += 1) {
@@ -108872,7 +109598,7 @@ function create_else_block_2(ctx) {
 		},
 		p(ctx, dirty) {
 			if (dirty[0] & /*onSelectedView1, enterAnim, IsFavorite, favoritesAnim, AddFavorite, DellFavorite, onPlayAnimation, handleMouseDown, handleSlotMouseEnter, handleSlotMouseLeave, searchText*/ 470138895) {
-				each_value_2 = Object.values(json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default).filter(/*func*/ ctx[33]);
+				each_value_2 = Object.values(json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default).filter(/*func*/ ctx[33]);
 				let i;
 
 				for (i = 0; i < each_value_2.length; i += 1) {
@@ -109022,7 +109748,7 @@ function create_if_block_4(ctx) {
 		return /*mouseenter_handler_1*/ ctx[35](/*animation*/ ctx[47]);
 	}
 
-	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
 			props: {
 				title: /*animation*/ ctx[47][2],
 				isEnterAnim: /*enterAnim*/ ctx[3] === `${/*onSelectedView1*/ ctx[1].id}_${/*animation*/ ctx[47][1]}`,
@@ -109142,9 +109868,9 @@ function create_if_block_3(ctx) {
 		return /*mouseenter_handler*/ ctx[32](/*index*/ ctx[46]);
 	}
 
-	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
 			props: {
-				title: json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*animation*/ ctx[47]][2],
+				title: json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*animation*/ ctx[47]][2],
 				isEnterAnim: /*favoriteIndex*/ ctx[9] === /*index*/ ctx[46],
 				use: /*animation*/ ctx[47],
 				isFavorite: true,
@@ -109168,7 +109894,7 @@ function create_if_block_3(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 			const animelement_changes = {};
-			if (dirty[0] & /*favoritesAnim*/ 4) animelement_changes.title = json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*animation*/ ctx[47]][2];
+			if (dirty[0] & /*favoritesAnim*/ 4) animelement_changes.title = json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*animation*/ ctx[47]][2];
 			if (dirty[0] & /*favoriteIndex*/ 512) animelement_changes.isEnterAnim = /*favoriteIndex*/ ctx[9] === /*index*/ ctx[46];
 			if (dirty[0] & /*favoritesAnim*/ 4) animelement_changes.use = /*animation*/ ctx[47];
 			animelement.$set(animelement_changes);
@@ -109190,7 +109916,7 @@ function create_if_block_3(ctx) {
 
 // (232:12) {#each favoritesAnim as animation, index}
 function create_each_block_1(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*animation*/ ctx[47]][2].toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
+	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*animation*/ ctx[47]][2].toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
 	let if_block_anchor;
 	let current;
 	let if_block = show_if && create_if_block_3(ctx);
@@ -109206,7 +109932,7 @@ function create_each_block_1(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*searchText, favoritesAnim*/ 5) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*animation*/ ctx[47]][2].toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
+			if (dirty[0] & /*searchText, favoritesAnim*/ 5) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*animation*/ ctx[47]][2].toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
 
 			if (show_if) {
 				if (if_block) {
@@ -109256,7 +109982,7 @@ function create_else_block_1(ctx) {
 		return /*mouseenter_handler_3*/ ctx[37](/*index*/ ctx[46]);
 	}
 
-	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
 			props: {
 				animations__anim: /*fastSlotAnim*/ ctx[11],
 				isBind: true,
@@ -109308,7 +110034,7 @@ function create_if_block_1(ctx) {
 		return /*mouseenter_handler_2*/ ctx[36](/*index*/ ctx[46]);
 	}
 
-	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+	animelement = new _element_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
 			props: {
 				isEnterAnim: /*fastSlotIndex*/ ctx[10] === /*index*/ ctx[46],
 				use: /*item*/ ctx[44],
@@ -109326,7 +110052,7 @@ function create_if_block_1(ctx) {
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
 			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(animelement.$$.fragment);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "./images/preview.png")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (_images_preview_png__WEBPACK_IMPORTED_MODULE_1___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 		},
 		m(target, anchor) {
@@ -109366,7 +110092,7 @@ function create_else_block(ctx) {
 	return {
 		c() {
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Пусто')}`;
+			h1.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Пусто')}`;
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
@@ -109381,7 +110107,7 @@ function create_else_block(ctx) {
 // (288:16) {#if $storeAnimBind && Animations [item]}
 function create_if_block(ctx) {
 	let h1;
-	let t_value = json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*item*/ ctx[44]][2] + "";
+	let t_value = json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*item*/ ctx[44]][2] + "";
 	let t;
 
 	return {
@@ -109394,7 +110120,7 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*$storeAnimBind*/ 8192 && t_value !== (t_value = json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*item*/ ctx[44]][2] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+			if (dirty[0] & /*$storeAnimBind*/ 8192 && t_value !== (t_value = json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*item*/ ctx[44]][2] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
@@ -109419,7 +110145,7 @@ function create_each_block(ctx) {
 	const if_blocks = [];
 
 	function select_block_type_1(ctx, dirty) {
-		if (/*$storeAnimBind*/ ctx[13] && json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*item*/ ctx[44]]) return 0;
+		if (/*$storeAnimBind*/ ctx[13] && json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*item*/ ctx[44]]) return 0;
 		return 1;
 	}
 
@@ -109427,7 +110153,7 @@ function create_each_block(ctx) {
 	if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 
 	function select_block_type_2(ctx, dirty) {
-		if (/*$storeAnimBind*/ ctx[13] && json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default[/*item*/ ctx[44]]) return create_if_block;
+		if (/*$storeAnimBind*/ ctx[13] && json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default[/*item*/ ctx[44]]) return create_if_block;
 		return create_else_block;
 	}
 
@@ -109701,7 +110427,7 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let $coords;
 	let $storeAnimBind;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_animation__WEBPACK_IMPORTED_MODULE_6__.storeAnimBind, $$value => $$invalidate(13, $storeAnimBind = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_animation__WEBPACK_IMPORTED_MODULE_7__.storeAnimBind, $$value => $$invalidate(13, $storeAnimBind = $$value));
 	let { viewData } = $$props;
 	let { selectView } = $$props;
 	let { searchText } = $$props;
@@ -109709,42 +110435,42 @@ function instance($$self, $$props, $$invalidate) {
 	let animMenuList = [
 		{
 			id: 0,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Избранное'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Избранное'),
 			count: 0
 		},
 		{
 			id: 1,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Сесть/Лечь'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Сесть/Лечь'),
 			count: 0
 		},
 		{
 			id: 2,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Социальные'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Социальные'),
 			count: 0
 		},
 		{
 			id: 3,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Позы'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Позы'),
 			count: 0
 		},
 		{
 			id: 4,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Неприличное'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Неприличное'),
 			count: 0
 		},
 		{
 			id: 5,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Физ. упражнения'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Физ. упражнения'),
 			count: 0
 		},
 		{
 			id: 6,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Танцы'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Танцы'),
 			count: 0
 		},
 		{
 			id: 7,
-			title: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player', 'Прочее'),
+			title: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player', 'Прочее'),
 			count: 0
 		}
 	];
@@ -109769,7 +110495,7 @@ function instance($$self, $$props, $$invalidate) {
 		onSelectedView1 = animMenuList[7];
 	}
 
-	Object.values(json_animations_js__WEBPACK_IMPORTED_MODULE_4__.default).forEach(animation => {
+	Object.values(json_animations_js__WEBPACK_IMPORTED_MODULE_5__.default).forEach(animation => {
 		animMenuList.forEach((item, index) => {
 			if (animation[0] === item.title) {
 				animMenuList[index].count++;
@@ -109779,7 +110505,7 @@ function instance($$self, $$props, $$invalidate) {
 
 	let favoritesAnim = [];
 
-	store_animation__WEBPACK_IMPORTED_MODULE_6__.storeAnimFavorites.subscribe(value => {
+	store_animation__WEBPACK_IMPORTED_MODULE_7__.storeAnimFavorites.subscribe(value => {
 		$$invalidate(2, favoritesAnim = value);
 		animMenuList[0].count = favoritesAnim.length;
 	});
@@ -109805,7 +110531,7 @@ function instance($$self, $$props, $$invalidate) {
 
 	const onPlayAnimation = item => {
 		if (dubleClickData === item && dubleClickTime > new Date().getTime()) {
-			(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClient)("client.animation.play", item);
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClient)("client.animation.play", item);
 		} else {
 			dubleClickTime = new Date().getTime() + 1000; //window.events.callEvent("hud.enter", 'SPACE', 'Нажмите чтобы отменить анимацию');
 			dubleClickData = item;
@@ -109819,7 +110545,7 @@ function instance($$self, $$props, $$invalidate) {
 	let clientY = 0;
 
 	/* Functions */
-	let coords = (0,svelte_motion__WEBPACK_IMPORTED_MODULE_7__.spring)({ x: 0, y: 0 }, { stiffness: 1.0, damping: 1.0 });
+	let coords = (0,svelte_motion__WEBPACK_IMPORTED_MODULE_8__.spring)({ x: 0, y: 0 }, { stiffness: 1.0, damping: 1.0 });
 
 	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, coords, value => $$invalidate(12, $coords = value));
 
@@ -109902,11 +110628,11 @@ function instance($$self, $$props, $$invalidate) {
 
 	const StopAnim = () => {
 		$$invalidate(29, viewData = false);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClient)("client.animation.stop");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClient)("client.animation.stop");
 	};
 
 	const OnClose = () => {
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClient)("escape");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClient)("escape");
 	};
 
 	const mousedown_handler = (animation, event) => handleMouseDown(event, animation);
@@ -115021,6 +115747,187 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/player/gta5devmenu/elements/quest/avatar.svelte":
+/*!*******************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/quest/avatar.svelte ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var json_quests_quests_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! json/quests/quests.js */ "./src/json/quests/quests.js");
+/* harmony import */ var _assets_quest_cityhall_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/quest/cityhall.png */ "./src/views/player/gta5devmenu/assets/quest/cityhall.png");
+/* harmony import */ var _assets_quest_cityhall_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_quest_cityhall_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_quest_police_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/quest/police.png */ "./src/views/player/gta5devmenu/assets/quest/police.png");
+/* harmony import */ var _assets_quest_police_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_quest_police_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_quest_ems_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../assets/quest/ems.png */ "./src/views/player/gta5devmenu/assets/quest/ems.png");
+/* harmony import */ var _assets_quest_ems_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_quest_ems_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_quest_news_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../assets/quest/news.png */ "./src/views/player/gta5devmenu/assets/quest/news.png");
+/* harmony import */ var _assets_quest_news_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_quest_news_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_quest_org_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../assets/quest/org.png */ "./src/views/player/gta5devmenu/assets/quest/org.png");
+/* harmony import */ var _assets_quest_org_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_quest_org_png__WEBPACK_IMPORTED_MODULE_6__);
+/* src/views/player/gta5devmenu/elements/quest/avatar.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-16fw5hy", ".questavatar.svelte-16fw5hy{flex-shrink:0;object-fit:contain}.initials.svelte-16fw5hy{display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.06));border:0.0926vh solid rgba(255, 255, 255, 0.25);color:#fff;font-family:SF Pro Display;font-weight:700;font-size:1.6667vh;box-sizing:border-box}");
+}
+
+// (28:0) {:else}
+function create_else_block(ctx) {
+	let div;
+	let t;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*initials*/ ctx[0]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "questavatar initials svelte-16fw5hy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*initials*/ 1) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, /*initials*/ ctx[0]);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (26:0) {#if logo}
+function create_if_block(ctx) {
+	let img;
+	let img_src_value;
+
+	return {
+		c() {
+			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "questavatar svelte-16fw5hy");
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*logo*/ ctx[1])) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, img, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*logo*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*logo*/ ctx[1])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(img);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let if_block_anchor;
+
+	function select_block_type(ctx, dirty) {
+		if (/*logo*/ ctx[1]) return create_if_block;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+		},
+		m(target, anchor) {
+			if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+		},
+		p(ctx, [dirty]) {
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let logo;
+	let name;
+	let initials;
+	let { actor } = $$props;
+
+	// Портретов NPC нет ни в архиве, ни на CDN: фракционным NPC ставим логотип фракции,
+	// остальным — инициалы.
+	const logos = {
+		npc_cityhall: (_assets_quest_cityhall_png__WEBPACK_IMPORTED_MODULE_2___default()),
+		npc_fracpolic: (_assets_quest_police_png__WEBPACK_IMPORTED_MODULE_3___default()),
+		npc_fracems: (_assets_quest_ems_png__WEBPACK_IMPORTED_MODULE_4___default()),
+		npc_fracnews: (_assets_quest_news_png__WEBPACK_IMPORTED_MODULE_5___default()),
+		npc_org: (_assets_quest_org_png__WEBPACK_IMPORTED_MODULE_6___default())
+	};
+
+	$$self.$$set = $$props => {
+		if ('actor' in $$props) $$invalidate(2, actor = $$props.actor);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*actor*/ 4) {
+			$: $$invalidate(1, logo = logos[actor]);
+		}
+
+		if ($$self.$$.dirty & /*actor*/ 4) {
+			$: $$invalidate(3, name = ((0,json_quests_quests_js__WEBPACK_IMPORTED_MODULE_1__.getActors)(actor) || {}).name || "");
+		}
+
+		if ($$self.$$.dirty & /*name*/ 8) {
+			$: $$invalidate(0, initials = name.split(" ").filter(part => part.length).slice(0, 2).map(part => part[0].toUpperCase()).join("") || "?");
+		}
+	};
+
+	return [initials, logo, actor, name];
+}
+
+class Avatar extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { actor: 2 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Avatar);
+
+
+/***/ }),
+
 /***/ "./src/views/player/gta5devmenu/elements/quest/index.svelte":
 /*!******************************************************************!*\
   !*** ./src/views/player/gta5devmenu/elements/quest/index.svelte ***!
@@ -115043,6 +115950,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
 /* harmony import */ var store_quest__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! store/quest */ "./src/store/quest.js");
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _avatar_svelte__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./avatar.svelte */ "./src/views/player/gta5devmenu/elements/quest/avatar.svelte");
 /* src/views/player/gta5devmenu/elements/quest/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -115056,28 +115964,29 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 
+
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[10] = list[i];
-	child_ctx[12] = i;
+	child_ctx[11] = list[i];
+	child_ctx[13] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[13] = list[i];
-	child_ctx[12] = i;
+	child_ctx[14] = list[i];
+	child_ctx[13] = i;
 	return child_ctx;
 }
 
 function get_each_context_2(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[15] = list[i];
-	child_ctx[12] = i;
+	child_ctx[16] = list[i];
+	child_ctx[13] = i;
 	return child_ctx;
 }
 
-// (264:4) {:else}
+// (269:4) {:else}
 function create_else_block_3(ctx) {
 	let div2;
 
@@ -115094,13 +116003,15 @@ function create_else_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
 		},
 		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
 		}
 	};
 }
 
-// (94:0) {#if QuestsList && QuestsList.length}
+// (99:0) {#if QuestsList && QuestsList.length}
 function create_if_block(ctx) {
 	let div11;
 	let div0;
@@ -115108,8 +116019,7 @@ function create_if_block(ctx) {
 	let div10;
 	let div3;
 	let div2;
-	let img;
-	let img_src_value;
+	let avatar;
 	let t1;
 	let div1;
 	let h10;
@@ -115117,7 +116027,7 @@ function create_if_block(ctx) {
 	let t2;
 	let t3;
 	let p0;
-	let t4_value = (0,json_quests_quests_js__WEBPACK_IMPORTED_MODULE_5__.getActors)(/*quest*/ ctx[1].ActorName).name + "";
+	let t4_value = /*getActorName*/ ctx[2](/*quest*/ ctx[1].ActorName) + "";
 	let t4;
 	let b;
 	let t6;
@@ -115138,6 +116048,7 @@ function create_if_block(ctx) {
 	let div7;
 	let t16;
 	let div8;
+	let current;
 	let mounted;
 	let dispose;
 	let each_value_2 = /*QuestsList*/ ctx[0];
@@ -115146,6 +116057,14 @@ function create_if_block(ctx) {
 	for (let i = 0; i < each_value_2.length; i += 1) {
 		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
 	}
+
+	const out = i => (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(each_blocks[i], 1, 1, () => {
+		each_blocks[i] = null;
+	});
+
+	avatar = new _avatar_svelte__WEBPACK_IMPORTED_MODULE_9__.default({
+			props: { actor: /*quest*/ ctx[1].ActorName }
+		});
 
 	let if_block0 = /*quest*/ ctx[1].Reward && create_if_block_5(ctx);
 	let if_block1 = /*quest*/ ctx[1].Tasks && create_if_block_4(ctx);
@@ -115164,7 +116083,7 @@ function create_if_block(ctx) {
 			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(avatar.$$.fragment);
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			h10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
@@ -115199,8 +116118,6 @@ function create_if_block(ctx) {
 			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div8.textContent = "Взять кест";
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "questleft");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "http://u90228c5.beget.tech/heone1/f2menu/" + /*quest*/ ctx[1].ActorName + ".png")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "questinfo");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "questlefth");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "questhead");
@@ -115227,7 +116144,7 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div10);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(avatar, div2, null);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h10);
@@ -115256,20 +116173,21 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div7);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t16);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+			current = true;
 
 			if (!mounted) {
 				dispose = [
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "keypress", keypress_handler_1),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*onRoute*/ ctx[3]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*onRoute*/ ctx[4]),
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "keypress", keypress_handler_2),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*onSelect*/ ctx[4])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*onSelect*/ ctx[5])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*QuestsList, quest, getActors*/ 3) {
+			if (dirty & /*QuestsList, quest, getActorName*/ 7) {
 				each_value_2 = /*QuestsList*/ ctx[0];
 				let i;
 
@@ -115278,26 +116196,29 @@ function create_if_block(ctx) {
 
 					if (each_blocks[i]) {
 						each_blocks[i].p(child_ctx, dirty);
+						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(each_blocks[i], 1);
 					} else {
 						each_blocks[i] = create_each_block_2(child_ctx);
 						each_blocks[i].c();
+						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(each_blocks[i], 1);
 						each_blocks[i].m(div0, null);
 					}
 				}
 
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+
+				for (i = each_value_2.length; i < each_blocks.length; i += 1) {
+					out(i);
 				}
 
-				each_blocks.length = each_value_2.length;
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
 			}
 
-			if (dirty & /*quest*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "http://u90228c5.beget.tech/heone1/f2menu/" + /*quest*/ ctx[1].ActorName + ".png")) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (dirty & /*quest*/ 2 && t2_value !== (t2_value = /*quest*/ ctx[1].Title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-			if (dirty & /*quest*/ 2 && t4_value !== (t4_value = (0,json_quests_quests_js__WEBPACK_IMPORTED_MODULE_5__.getActors)(/*quest*/ ctx[1].ActorName).name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			const avatar_changes = {};
+			if (dirty & /*quest*/ 2) avatar_changes.actor = /*quest*/ ctx[1].ActorName;
+			avatar.$set(avatar_changes);
+			if ((!current || dirty & /*quest*/ 2) && t2_value !== (t2_value = /*quest*/ ctx[1].Title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if ((!current || dirty & /*quest*/ 2) && t4_value !== (t4_value = /*getActorName*/ ctx[2](/*quest*/ ctx[1].ActorName) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
 
 			if (/*quest*/ ctx[1].Reward) {
 				if (if_block0) {
@@ -115312,7 +116233,7 @@ function create_if_block(ctx) {
 				if_block0 = null;
 			}
 
-			if (dirty & /*quest*/ 2 && t10_value !== (t10_value = /*quest*/ ctx[1].Desc + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+			if ((!current || dirty & /*quest*/ 2) && t10_value !== (t10_value = /*quest*/ ctx[1].Desc + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
 
 			if (/*quest*/ ctx[1].Tasks) {
 				if (if_block1) {
@@ -115340,9 +116261,30 @@ function create_if_block(ctx) {
 				if_block2 = null;
 			}
 		},
+		i(local) {
+			if (current) return;
+
+			for (let i = 0; i < each_value_2.length; i += 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(each_blocks[i]);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(avatar.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			each_blocks = each_blocks.filter(Boolean);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(each_blocks[i]);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(avatar.$$.fragment, local);
+			current = false;
+		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div11);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(avatar);
 			if (if_block0) if_block0.d();
 			if (if_block1) if_block1.d();
 			if (if_block2) if_block2.d();
@@ -115352,33 +116294,37 @@ function create_if_block(ctx) {
 	};
 }
 
-// (97:12) {#each QuestsList as questData, index}
+// (102:12) {#each QuestsList as questData, index}
 function create_each_block_2(ctx) {
 	let div1;
-	let img;
-	let img_src_value;
+	let avatar;
 	let t0;
 	let div0;
 	let h1;
-	let t1_value = /*questData*/ ctx[15].Title + "";
+	let t1_value = /*questData*/ ctx[16].Title + "";
 	let t1;
 	let t2;
 	let p;
-	let t3_value = (0,json_quests_quests_js__WEBPACK_IMPORTED_MODULE_5__.getActors)(/*questData*/ ctx[15].ActorName).name + "";
+	let t3_value = /*getActorName*/ ctx[2](/*questData*/ ctx[16].ActorName) + "";
 	let t3;
 	let b;
 	let t5;
+	let current;
 	let mounted;
 	let dispose;
 
+	avatar = new _avatar_svelte__WEBPACK_IMPORTED_MODULE_9__.default({
+			props: { actor: /*questData*/ ctx[16].ActorName }
+		});
+
 	function click_handler() {
-		return /*click_handler*/ ctx[6](/*questData*/ ctx[15]);
+		return /*click_handler*/ ctx[7](/*questData*/ ctx[16]);
 	}
 
 	return {
 		c() {
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(avatar.$$.fragment);
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
@@ -115389,15 +116335,13 @@ function create_each_block_2(ctx) {
 			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
 			b.textContent = "-  Квестовое задание";
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "http://u90228c5.beget.tech/heone1/f2menu/" + /*questData*/ ctx[15].ActorName + ".png")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "questinfo");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "questblock");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*questData*/ ctx[15] == /*quest*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*questData*/ ctx[16] == /*quest*/ ctx[1]);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, img);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(avatar, div1, null);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, h1);
@@ -115407,6 +116351,7 @@ function create_each_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, b);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t5);
+			current = true;
 
 			if (!mounted) {
 				dispose = [
@@ -115419,27 +116364,35 @@ function create_each_block_2(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
+			const avatar_changes = {};
+			if (dirty & /*QuestsList*/ 1) avatar_changes.actor = /*questData*/ ctx[16].ActorName;
+			avatar.$set(avatar_changes);
+			if ((!current || dirty & /*QuestsList*/ 1) && t1_value !== (t1_value = /*questData*/ ctx[16].Title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if ((!current || dirty & /*QuestsList*/ 1) && t3_value !== (t3_value = /*getActorName*/ ctx[2](/*questData*/ ctx[16].ActorName) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 
-			if (dirty & /*QuestsList*/ 1 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "http://u90228c5.beget.tech/heone1/f2menu/" + /*questData*/ ctx[15].ActorName + ".png")) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!current || dirty & /*QuestsList, quest*/ 3) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*questData*/ ctx[16] == /*quest*/ ctx[1]);
 			}
-
-			if (dirty & /*QuestsList*/ 1 && t1_value !== (t1_value = /*questData*/ ctx[15].Title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
-			if (dirty & /*QuestsList*/ 1 && t3_value !== (t3_value = (0,json_quests_quests_js__WEBPACK_IMPORTED_MODULE_5__.getActors)(/*questData*/ ctx[15].ActorName).name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
-
-			if (dirty & /*QuestsList, quest*/ 3) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*questData*/ ctx[15] == /*quest*/ ctx[1]);
-			}
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(avatar.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(avatar.$$.fragment, local);
+			current = false;
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(avatar);
 			mounted = false;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 }
 
-// (116:16) {#if quest.Reward}
+// (121:16) {#if quest.Reward}
 function create_if_block_5(ctx) {
 	let div;
 	let p;
@@ -115516,7 +116469,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (135:32) {:else}
+// (140:32) {:else}
 function create_else_block_2(ctx) {
 	let span;
 
@@ -115537,7 +116490,7 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (119:28) {#if quest.Reward && quest.Reward.Exp}
+// (124:28) {#if quest.Reward && quest.Reward.Exp}
 function create_if_block_7(ctx) {
 	let span;
 	let t0_value = /*quest*/ ctx[1].Reward.Exp + "";
@@ -115604,7 +116557,7 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (172:32) {:else}
+// (177:32) {:else}
 function create_else_block_1(ctx) {
 	let span;
 
@@ -115625,7 +116578,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (152:28) {#if quest.Reward && quest.Reward.Money}
+// (157:28) {#if quest.Reward && quest.Reward.Money}
 function create_if_block_6(ctx) {
 	let span;
 	let t0_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_6__.format)("money", /*quest*/ ctx[1].Reward.Money) + "";
@@ -115712,7 +116665,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (209:12) {#if quest.Tasks}
+// (214:12) {#if quest.Tasks}
 function create_if_block_4(ctx) {
 	let div2;
 	let div0;
@@ -115792,7 +116745,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (213:24) {#each quest.Tasks as task, index}
+// (218:24) {#each quest.Tasks as task, index}
 function create_each_block_1(ctx) {
 	let p;
 	let svg0;
@@ -115802,7 +116755,7 @@ function create_each_block_1(ctx) {
 	let rect1;
 	let path;
 	let t1;
-	let t2_value = /*task*/ ctx[13] + "";
+	let t2_value = /*task*/ ctx[14] + "";
 	let t2;
 	let t3;
 
@@ -115841,8 +116794,8 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "viewBox", "0 0 21 21");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "fill", "none");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "done", !(/*index*/ ctx[12] >= /*quest*/ ctx[1].Stage));
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "undone", /*index*/ ctx[12] >= /*quest*/ ctx[1].Stage);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "done", !(/*index*/ ctx[13] >= /*quest*/ ctx[1].Stage));
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "undone", /*index*/ ctx[13] >= /*quest*/ ctx[1].Stage);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, p, anchor);
@@ -115857,14 +116810,14 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t3);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*quest*/ 2 && t2_value !== (t2_value = /*task*/ ctx[13] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*quest*/ 2 && t2_value !== (t2_value = /*task*/ ctx[14] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 
 			if (dirty & /*quest*/ 2) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "done", !(/*index*/ ctx[12] >= /*quest*/ ctx[1].Stage));
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "done", !(/*index*/ ctx[13] >= /*quest*/ ctx[1].Stage));
 			}
 
 			if (dirty & /*quest*/ 2) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "undone", /*index*/ ctx[12] >= /*quest*/ ctx[1].Stage);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(p, "undone", /*index*/ ctx[13] >= /*quest*/ ctx[1].Stage);
 			}
 		},
 		d(detaching) {
@@ -115873,7 +116826,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (240:12) {#if quest.Reward}
+// (245:12) {#if quest.Reward}
 function create_if_block_1(ctx) {
 	let if_block_anchor;
 	let if_block = /*quest*/ ctx[1].Reward.Items && create_if_block_2(ctx);
@@ -115908,7 +116861,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (241:16) {#if quest.Reward.Items}
+// (246:16) {#if quest.Reward.Items}
 function create_if_block_2(ctx) {
 	let div1;
 	let h1;
@@ -115979,7 +116932,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (250:32) {:else}
+// (255:32) {:else}
 function create_else_block(ctx) {
 	let div;
 
@@ -115998,7 +116951,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (246:32) {#if quest.Reward.Items[index] && window.getItem (quest.Reward.Items[index])}
+// (251:32) {#if quest.Reward.Items[index] && window.getItem (quest.Reward.Items[index])}
 function create_if_block_3(ctx) {
 	let div;
 	let img;
@@ -116010,7 +116963,7 @@ function create_if_block_3(ctx) {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
 			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "/inventoryItems/items/" + /*quest*/ ctx[1].Reward.Items[/*index*/ ctx[12]] + ".png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "inventoryItems/items/" + /*quest*/ ctx[1].Reward.Items[/*index*/ ctx[13]] + ".png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "rewardblock");
 		},
@@ -116020,7 +116973,7 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*quest*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "/inventoryItems/items/" + /*quest*/ ctx[1].Reward.Items[/*index*/ ctx[12]] + ".png"))) {
+			if (dirty & /*quest*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "inventoryItems/items/" + /*quest*/ ctx[1].Reward.Items[/*index*/ ctx[13]] + ".png"))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 		},
@@ -116030,14 +116983,14 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (245:28) {#each new Array(4) as _, index}
+// (250:28) {#each new Array(4) as _, index}
 function create_each_block(ctx) {
 	let show_if;
 	let if_block_anchor;
 
 	function select_block_type_3(ctx, dirty) {
 		if (dirty & /*quest*/ 2) show_if = null;
-		if (show_if == null) show_if = !!(/*quest*/ ctx[1].Reward.Items[/*index*/ ctx[12]] && window.getItem(/*quest*/ ctx[1].Reward.Items[/*index*/ ctx[12]]));
+		if (show_if == null) show_if = !!(/*quest*/ ctx[1].Reward.Items[/*index*/ ctx[13]] && window.getItem(/*quest*/ ctx[1].Reward.Items[/*index*/ ctx[13]]));
 		if (show_if) return create_if_block_3;
 		return create_else_block;
 	}
@@ -116075,17 +117028,22 @@ function create_each_block(ctx) {
 }
 
 function create_fragment(ctx) {
+	let current_block_type_index;
+	let if_block;
 	let if_block_anchor;
+	let current;
 	let mounted;
 	let dispose;
+	const if_block_creators = [create_if_block, create_else_block_3];
+	const if_blocks = [];
 
 	function select_block_type(ctx, dirty) {
-		if (/*QuestsList*/ ctx[0] && /*QuestsList*/ ctx[0].length) return create_if_block;
-		return create_else_block_3;
+		if (/*QuestsList*/ ctx[0] && /*QuestsList*/ ctx[0].length) return 0;
+		return 1;
 	}
 
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
+	current_block_type_index = select_block_type(ctx, -1);
+	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 
 	return {
 		c() {
@@ -116093,31 +117051,53 @@ function create_fragment(ctx) {
 			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
-			if_block.m(target, anchor);
+			if_blocks[current_block_type_index].m(target, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+			current = true;
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*handleArrowKeys*/ ctx[2]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*handleArrowKeys*/ ctx[3]);
 				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
+			let previous_block_index = current_block_type_index;
+			current_block_type_index = select_block_type(ctx, dirty);
 
-				if (if_block) {
+			if (current_block_type_index === previous_block_index) {
+				if_blocks[current_block_type_index].p(ctx, dirty);
+			} else {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_blocks[previous_block_index], 1, 1, () => {
+					if_blocks[previous_block_index] = null;
+				});
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
+				if_block = if_blocks[current_block_type_index];
+
+				if (!if_block) {
+					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				} else {
+					if_block.p(ctx, dirty);
 				}
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+				if_block.m(if_block_anchor.parentNode, if_block_anchor);
 			}
 		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block);
+			current = false;
+		},
 		d(detaching) {
-			if_block.d(detaching);
+			if_blocks[current_block_type_index].d(detaching);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
 			mounted = false;
 			dispose();
@@ -116139,11 +117119,12 @@ const keypress_handler_2 = () => {
 
 function instance($$self, $$props, $$invalidate) {
 	let $selectQuest;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_quest__WEBPACK_IMPORTED_MODULE_7__.selectQuest, $$value => $$invalidate(8, $selectQuest = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_quest__WEBPACK_IMPORTED_MODULE_7__.selectQuest, $$value => $$invalidate(9, $selectQuest = $$value));
 	let { visible } = $$props;
 	let QuestsList = [];
 	let OldQuest = [];
 	let quest = false;
+	const getActorName = actorName => ((0,json_quests_quests_js__WEBPACK_IMPORTED_MODULE_5__.getActors)(actorName) || {}).name || "";
 
 	const onSelectQuest = actorName => {
 		const listIndex = QuestsList.findIndex(q => q.ActorName == actorName);
@@ -116188,6 +117169,9 @@ function instance($$self, $$props, $$invalidate) {
 					return;
 				}
 			}
+
+			// Нет закреплённого квеста — показываем первый, иначе правая панель падает на quest === false
+			if (!quest || !QuestsList.includes(quest)) $$invalidate(1, quest = QuestsList[0] || false);
 		}
 	});
 
@@ -116218,16 +117202,25 @@ function instance($$self, $$props, $$invalidate) {
 	const click_handler = questData => $$invalidate(1, quest = questData);
 
 	$$self.$$set = $$props => {
-		if ('visible' in $$props) $$invalidate(5, visible = $$props.visible);
+		if ('visible' in $$props) $$invalidate(6, visible = $$props.visible);
 	};
 
-	return [QuestsList, quest, handleArrowKeys, onRoute, onSelect, visible, click_handler];
+	return [
+		QuestsList,
+		quest,
+		getActorName,
+		handleArrowKeys,
+		onRoute,
+		onSelect,
+		visible,
+		click_handler
+	];
 }
 
 class Quest extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { visible: 5 });
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { visible: 6 });
 	}
 }
 
@@ -116254,7 +117247,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
 /* harmony import */ var _reports_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../reports/index */ "./src/views/player/reports/index.js");
 /* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../hudevo/phonenew/assets/images/person.png */ "./src/views/player/hudevo/phonenew/assets/images/person.png");
+/* harmony import */ var _hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_4__);
 /* src/views/player/gta5devmenu/elements/report/index.svelte generated by Svelte v3.59.2 */
+
 
 
 
@@ -116268,7 +117264,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (88:24) {#if report.blocked}
+// (89:24) {#if report.blocked}
 function create_if_block_2(ctx) {
 	let span;
 	let t_value = /*report*/ ctx[23].blockedBy + "";
@@ -116292,7 +117288,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (84:12) {#each reports as report, index}
+// (85:12) {#each reports as report, index}
 function create_each_block(ctx) {
 	let div3;
 	let div1;
@@ -116402,7 +117398,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (101:73) {:else}
+// (102:73) {:else}
 function create_else_block(ctx) {
 	let t;
 
@@ -116420,7 +117416,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (101:43) {#if $selected}
+// (102:43) {#if $selected}
 function create_if_block_1(ctx) {
 	let t0;
 	let t1_value = /*$selected*/ ctx[2].id + "";
@@ -116445,7 +117441,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (103:12) {#if $selected}
+// (104:12) {#if $selected}
 function create_if_block(ctx) {
 	let div4;
 	let div2;
@@ -116536,7 +117532,7 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "headmess");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "messus");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "messleft");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "img/report_icon.png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (_hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_4___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "messright");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "messageuser");
@@ -126321,8 +127317,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
+/* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
+/* harmony import */ var _assets_money_1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../assets/money/1.png */ "./src/views/player/gta5devmenu/assets/money/1.png");
+/* harmony import */ var _assets_money_1_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_money_1_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_money_2_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../assets/money/2.png */ "./src/views/player/gta5devmenu/assets/money/2.png");
+/* harmony import */ var _assets_money_2_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_money_2_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_money_3_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../assets/money/3.png */ "./src/views/player/gta5devmenu/assets/money/3.png");
+/* harmony import */ var _assets_money_3_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_money_3_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _assets_money_4_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../assets/money/4.png */ "./src/views/player/gta5devmenu/assets/money/4.png");
+/* harmony import */ var _assets_money_4_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_money_4_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _assets_money_5_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../assets/money/5.png */ "./src/views/player/gta5devmenu/assets/money/5.png");
+/* harmony import */ var _assets_money_5_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_money_5_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _assets_money_6_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../assets/money/6.png */ "./src/views/player/gta5devmenu/assets/money/6.png");
+/* harmony import */ var _assets_money_6_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_money_6_png__WEBPACK_IMPORTED_MODULE_10__);
 /* src/views/player/gta5devmenu/elements/shop/elements/money/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -126330,441 +127339,312 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function create_fragment(ctx) {
-	let div30;
+
+
+
+
+
+
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[7] = list[i];
+	return child_ctx;
+}
+
+// (35:4) {#each packs as pack}
+function create_each_block(ctx) {
 	let div4;
 	let div0;
+	let img;
+	let img_src_value;
 	let t0;
 	let div3;
-	let h10;
+	let h1;
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*pack*/ ctx[7].rb * /*rate*/ ctx[0]) + "";
+	let t1;
 	let t2;
-	let span0;
+	let t3;
+	let span;
+	let t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*pack*/ ctx[7].rb * /*rate*/ ctx[0]) + "";
 	let t4;
-	let div2;
-	let p0;
+	let t5;
 	let t6;
-	let div1;
+	let div2;
+	let p;
+	let svg;
+	let g;
+	let rect;
+	let path;
+	let defs;
+	let filter;
+	let feFlood;
+	let feColorMatrix0;
+	let feOffset;
+	let feGaussianBlur;
+	let feComposite;
+	let feColorMatrix1;
+	let feBlend0;
+	let feBlend1;
+	let t7;
+	let t8_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*pack*/ ctx[7].rb) + "";
 	let t8;
-	let div9;
-	let div5;
 	let t9;
-	let div8;
-	let h11;
+	let div1;
 	let t11;
-	let span1;
-	let t13;
-	let div7;
-	let p1;
-	let t15;
-	let div6;
-	let t17;
-	let div14;
-	let div10;
-	let t18;
-	let div13;
-	let h12;
-	let t20;
-	let span2;
-	let t22;
-	let div12;
-	let p2;
-	let t24;
-	let div11;
-	let t26;
-	let div19;
-	let div15;
-	let t27;
-	let div18;
-	let h13;
-	let t29;
-	let span3;
-	let t31;
-	let div17;
-	let p3;
-	let t33;
-	let div16;
-	let t35;
-	let div24;
-	let div20;
-	let t36;
-	let div23;
-	let h14;
-	let t38;
-	let span4;
-	let t40;
-	let div22;
-	let p4;
-	let t42;
-	let div21;
-	let t44;
-	let div29;
-	let div25;
-	let t45;
-	let div28;
-	let h15;
-	let t47;
-	let span5;
-	let t49;
-	let div27;
-	let p5;
-	let t51;
-	let div26;
 	let mounted;
 	let dispose;
 
+	function click_handler() {
+		return /*click_handler*/ ctx[5](/*pack*/ ctx[7]);
+	}
+
 	return {
 		c() {
-			div30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.innerHTML = `<img src="https://imgur.com/JrVcKvF.png" alt=""/>`;
+			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h10.textContent = "10 000$";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span0.textContent = "10 000$ на ваш игровой счёт";
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-
-			p0.innerHTML = `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_713_42)"><rect x="5" y="5" width="16" height="16" rx="8" fill="#CFF80B"></rect></g><path d="M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z" fill="#1E1E1E" fill-opacity="0.5"></path><defs><filter id="filter0_d_713_42" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_713_42"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_713_42" result="shape"></feBlend></filter></defs></svg>
-                    200`;
-
+			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$ на ваш игровой счёт");
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
+			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			path = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
+			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
+			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
+			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
+			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
+			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
+			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
+			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
+			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
+			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1.textContent = "Приобрести";
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div5.innerHTML = `<img src="https://imgur.com/ayC1pdc.png" alt=""/>`;
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h11.textContent = "50 000$";
 			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span1.textContent = "50 000$ на ваш игровой счёт";
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-
-			p1.innerHTML = `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_713_42)"><rect x="5" y="5" width="16" height="16" rx="8" fill="#CFF80B"></rect></g><path d="M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z" fill="#1E1E1E" fill-opacity="0.5"></path><defs><filter id="filter0_d_713_42" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_713_42"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_713_42" result="shape"></feBlend></filter></defs></svg>
-                    1000`;
-
-			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div6.textContent = "Приобрести";
-			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div10.innerHTML = `<img src="https://imgur.com/0sXE8dx.png" alt=""/>`;
-			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h12.textContent = "200 000$";
-			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span2.textContent = "200 000$ на ваш игровой счёт";
-			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-
-			p2.innerHTML = `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_713_42)"><rect x="5" y="5" width="16" height="16" rx="8" fill="#CFF80B"></rect></g><path d="M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z" fill="#1E1E1E" fill-opacity="0.5"></path><defs><filter id="filter0_d_713_42" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_713_42"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_713_42" result="shape"></feBlend></filter></defs></svg>
-                    4000`;
-
-			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div11.textContent = "Приобрести";
-			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div15.innerHTML = `<img src="https://imgur.com/4kBx0oq.png" alt=""/>`;
-			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h13.textContent = "500 000$";
-			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span3.textContent = "500 000$ на ваш игровой счёт";
-			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-
-			p3.innerHTML = `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_713_42)"><rect x="5" y="5" width="16" height="16" rx="8" fill="#CFF80B"></rect></g><path d="M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z" fill="#1E1E1E" fill-opacity="0.5"></path><defs><filter id="filter0_d_713_42" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_713_42"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_713_42" result="shape"></feBlend></filter></defs></svg>
-                    10000`;
-
-			t33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div16.textContent = "Приобрести";
-			t35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div20.innerHTML = `<img src="https://imgur.com/e9tSCkg.png" alt=""/>`;
-			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h14.textContent = "2 000 000$";
-			t38 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span4.textContent = "2 000 000$ на ваш игровой счёт";
-			t40 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-
-			p4.innerHTML = `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_713_42)"><rect x="5" y="5" width="16" height="16" rx="8" fill="#CFF80B"></rect></g><path d="M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z" fill="#1E1E1E" fill-opacity="0.5"></path><defs><filter id="filter0_d_713_42" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_713_42"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_713_42" result="shape"></feBlend></filter></defs></svg>
-                    100`;
-
-			t42 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div21.textContent = "Приобрести";
-			t44 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div25.innerHTML = `<img src="https://imgur.com/H23eohN.png" alt=""/>`;
-			t45 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h15.textContent = "10 000 000$";
-			t47 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span5.textContent = "10 000 000$ на ваш игровой счёт";
-			t49 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-
-			p5.innerHTML = `<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_d_713_42)"><rect x="5" y="5" width="16" height="16" rx="8" fill="#CFF80B"></rect></g><path d="M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z" fill="#1E1E1E" fill-opacity="0.5"></path><defs><filter id="filter0_d_713_42" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset></feOffset><feGaussianBlur stdDeviation="2.5"></feGaussianBlur><feComposite in2="hardAlpha" operator="out"></feComposite><feColorMatrix type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0"></feColorMatrix><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_713_42"></feBlend><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_713_42" result="shape"></feBlend></filter></defs></svg>
-                    200000`;
-
-			t51 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div26.textContent = "Приобрести";
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*pack*/ ctx[7].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "iconitem");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "x", "5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "y", "5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "rx", "8");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "#CFF80B");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "filter", "url(#filter0_d_713_42)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "d", "M8.65985 15.097C8.65985 15.009 8.71852 14.965 8.83585 14.965C8.95318 14.965 9.31618 15.0457 9.92485 15.207C10.0642 14.0043 10.4565 12.699 11.1019 11.291C11.3292 10.7777 11.6005 10.521 11.9159 10.521C11.9745 10.521 12.0295 10.5833 12.0809 10.708C12.1395 10.8327 12.1689 10.9867 12.1689 11.17C12.1689 11.39 12.0515 11.995 11.8169 12.985C11.5895 13.975 11.4392 14.8367 11.3659 15.57C11.8499 15.68 12.2752 15.735 12.6419 15.735C13.0159 15.735 13.3569 15.6397 13.6649 15.449C13.9729 15.251 14.2369 14.998 14.4569 14.69C14.9115 14.0373 15.1389 13.2527 15.1389 12.336C15.1315 10.642 14.4569 9.795 13.1149 9.795C12.6382 9.80233 11.7949 10.015 10.5849 10.433C10.3502 10.5137 10.1449 10.554 9.96885 10.554C9.79285 10.554 9.70485 10.5027 9.70485 10.4C9.70485 10.2607 9.80752 10.0957 10.0129 9.905C10.2182 9.71433 10.4822 9.531 10.8049 9.355C11.5969 8.92967 12.3669 8.717 13.1149 8.717C14.1415 8.717 14.9849 8.992 15.6449 9.542C16.4222 10.1947 16.8072 11.1847 16.7999 12.512C16.7999 13.0767 16.7119 13.634 16.5359 14.184C16.3599 14.734 16.0922 15.2253 15.7329 15.658C15.3735 16.0833 14.9189 16.428 14.3689 16.692C13.8189 16.956 13.1699 17.088 12.4219 17.088C12.1212 17.088 11.7399 17.022 11.2779 16.89C11.2265 17.0293 11.0982 17.099 10.8929 17.099C10.5115 17.099 10.2512 17.0367 10.1119 16.912C9.97985 16.78 9.90285 16.5673 9.88085 16.274C9.52885 16.076 9.23552 15.8707 9.00085 15.658C8.77352 15.4453 8.65985 15.2583 8.65985 15.097Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "fill", "#1E1E1E");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "fill-opacity", "0.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_713_42");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_713_42");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_713_42");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "26");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "26");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "26");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "26");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 26 26");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "btnbuyitem");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "buyinfoitem");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "infoitem");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "blockmoney");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "iconitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "btnbuyitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "buyinfoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "infoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "blockmoney");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "iconitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "btnbuyitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "buyinfoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "infoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "blockmoney");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "iconitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "btnbuyitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "buyinfoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "infoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "blockmoney");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "iconitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div21, "class", "btnbuyitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div22, "class", "buyinfoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div23, "class", "infoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div24, "class", "blockmoney");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div25, "class", "iconitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div26, "class", "btnbuyitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div27, "class", "buyinfoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div28, "class", "infoitem");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div29, "class", "blockmoney");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div30, "class", "list1");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div30, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, img);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, h10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, h1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, svg);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, rect);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t9);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, div9);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t9);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, h11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, span1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, p1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, t17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, div14);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t18);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, h12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t20);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, span2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t22);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, p2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t24);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, t26);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, div19);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, t27);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div18);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, h13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t29);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, span3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t31);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, p3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, t33);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, div16);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, t35);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, div24);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, div20);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, t36);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, div23);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, h14);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, t38);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, span4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, t40);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, div22);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, p4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, t42);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, div21);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, t44);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div30, div29);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, div25);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, t45);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, div28);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, h15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, t47);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, span5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, t49);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, div27);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div27, p5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div27, t51);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div27, div26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "keypress", /*keypress_handler*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onChange1*/ ctx[0]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "keypress", /*keypress_handler_1*/ ctx[10]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*onChange2*/ ctx[1]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div11, "keypress", /*keypress_handler_2*/ ctx[9]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div11, "click", /*onChange3*/ ctx[2]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div16, "keypress", /*keypress_handler_3*/ ctx[8]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div16, "click", /*onChange4*/ ctx[3]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div21, "keypress", /*keypress_handler_4*/ ctx[7]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div21, "click", /*onChange5*/ ctx[4]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div26, "keypress", /*keypress_handler_5*/ ctx[6]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div26, "click", /*onChange6*/ ctx[5])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "keypress", /*keypress_handler*/ ctx[4]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler)
 				];
 
 				mounted = true;
 			}
 		},
-		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*rate*/ 1 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*pack*/ ctx[7].rb * /*rate*/ ctx[0]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*rate*/ 1 && t4_value !== (t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*pack*/ ctx[7].rb * /*rate*/ ctx[0]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div30);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
 			mounted = false;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 }
 
+function create_fragment(ctx) {
+	let div;
+	let each_value = /*packs*/ ctx[1];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div, null);
+				}
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*onChange, packs, format, rate*/ 7) {
+				each_value = /*packs*/ ctx[1];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+		}
+	};
+}
+
 function instance($$self, $$props, $$invalidate) {
+	let rate;
 	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_2__.accountRedbucks, $$value => $$invalidate(12, $accountRedbucks = $$value));
+	let $serverDonateDoubleConvert;
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_3__.accountRedbucks, $$value => $$invalidate(6, $accountRedbucks = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_server__WEBPACK_IMPORTED_MODULE_4__.serverDonateDoubleConvert, $$value => $$invalidate(3, $serverDonateDoubleConvert = $$value));
 
-	const onChange1 = () => {
-		let moneytransfer1 = 200;
-		if ($accountRedbucks < moneytransfer1) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", moneytransfer1);
-		return window.notificationAdd(2, 9, `Вы приобрели 10 000$`, 3000);
+	const packs = [
+		{ rb: 200, img: (_assets_money_1_png__WEBPACK_IMPORTED_MODULE_5___default()) },
+		{ rb: 1000, img: (_assets_money_2_png__WEBPACK_IMPORTED_MODULE_6___default()) },
+		{ rb: 4000, img: (_assets_money_3_png__WEBPACK_IMPORTED_MODULE_7___default()) },
+		{ rb: 10000, img: (_assets_money_4_png__WEBPACK_IMPORTED_MODULE_8___default()) },
+		{ rb: 40000, img: (_assets_money_5_png__WEBPACK_IMPORTED_MODULE_9___default()) },
+		{ rb: 200000, img: (_assets_money_6_png__WEBPACK_IMPORTED_MODULE_10___default()) }
+	];
+
+	const onChange = pack => {
+		if ($accountRedbucks < pack.rb) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", pack.rb);
+		window.notificationAdd(2, 9, `Вы обменяли ${(0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", pack.rb)} RB на ${(0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", pack.rb * rate)}$`, 3000);
 	};
-
-	const onChange2 = () => {
-		let moneytransfer2 = 1000;
-		if ($accountRedbucks < moneytransfer2) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", moneytransfer2);
-		return window.notificationAdd(2, 9, `Вы приобрели 50 000$`, 3000);
-	};
-
-	const onChange3 = () => {
-		let moneytransfer3 = 4000;
-		if ($accountRedbucks < moneytransfer3) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", moneytransfer3);
-		return window.notificationAdd(2, 9, `Вы приобрели 200 000$`, 3000);
-	};
-
-	const onChange4 = () => {
-		let moneytransfer4 = 10000;
-		if ($accountRedbucks < moneytransfer4) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", moneytransfer4);
-		return window.notificationAdd(2, 9, `Вы приобрели 500 000$`, 3000);
-	};
-
-	const onChange5 = () => {
-		let moneytransfer5 = 40000;
-		if ($accountRedbucks < moneytransfer5) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", moneytransfer5);
-		return window.notificationAdd(2, 9, `Вы приобрели 2 000 000$`, 3000);
-	};
-
-	const onChange6 = () => {
-		let moneytransfer6 = 200000;
-		if ($accountRedbucks < moneytransfer6) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.donate.change", moneytransfer6);
-		return window.notificationAdd(2, 9, `Вы приобрели 10 000 000$`, 3000);
-	};
-
-	function keypress_handler_5(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
 
 	function keypress_handler(event) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
 	}
 
+	const click_handler = pack => onChange(pack);
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*$serverDonateDoubleConvert*/ 8) {
+			// Тот же курс, что и на сервере: amount * Convert.ToInt32(10 * DonateSettings.Convert)
+			$: $$invalidate(0, rate = Math.round(10 * $serverDonateDoubleConvert));
+		}
+	};
+
 	return [
-		onChange1,
-		onChange2,
-		onChange3,
-		onChange4,
-		onChange5,
-		onChange6,
-		keypress_handler_5,
-		keypress_handler_4,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler
+		rate,
+		packs,
+		onChange,
+		$serverDonateDoubleConvert,
+		keypress_handler,
+		click_handler
 	];
 }
 
@@ -126799,7 +127679,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
 /* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _assets_packs_1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../assets/packs/1.png */ "./src/views/player/gta5devmenu/assets/packs/1.png");
+/* harmony import */ var _assets_packs_1_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_1_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_packs_2_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../assets/packs/2.png */ "./src/views/player/gta5devmenu/assets/packs/2.png");
+/* harmony import */ var _assets_packs_2_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_2_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_packs_3_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../assets/packs/3.png */ "./src/views/player/gta5devmenu/assets/packs/3.png");
+/* harmony import */ var _assets_packs_3_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_3_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _assets_packs_4_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../assets/packs/4.png */ "./src/views/player/gta5devmenu/assets/packs/4.png");
+/* harmony import */ var _assets_packs_4_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_4_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _assets_packs_5_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../assets/packs/5.png */ "./src/views/player/gta5devmenu/assets/packs/5.png");
+/* harmony import */ var _assets_packs_5_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_5_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _assets_packs_6_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../assets/packs/6.png */ "./src/views/player/gta5devmenu/assets/packs/6.png");
+/* harmony import */ var _assets_packs_6_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_6_png__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _assets_packs_7_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../assets/packs/7.png */ "./src/views/player/gta5devmenu/assets/packs/7.png");
+/* harmony import */ var _assets_packs_7_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_7_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _assets_packs_8_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../assets/packs/8.png */ "./src/views/player/gta5devmenu/assets/packs/8.png");
+/* harmony import */ var _assets_packs_8_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_8_png__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _assets_packs_9_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../assets/packs/9.png */ "./src/views/player/gta5devmenu/assets/packs/9.png");
+/* harmony import */ var _assets_packs_9_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_9_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _assets_packs_10_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../assets/packs/10.png */ "./src/views/player/gta5devmenu/assets/packs/10.png");
+/* harmony import */ var _assets_packs_10_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_10_png__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _assets_packs_11_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../assets/packs/11.png */ "./src/views/player/gta5devmenu/assets/packs/11.png");
+/* harmony import */ var _assets_packs_11_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_assets_packs_11_png__WEBPACK_IMPORTED_MODULE_15__);
 /* src/views/player/gta5devmenu/elements/shop/elements/personal/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126809,23 +127722,23 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[7] = list[i];
-	child_ctx[9] = i;
+	child_ctx[9] = list[i];
+	child_ctx[11] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[10] = list[i];
-	child_ctx[9] = i;
+	child_ctx[12] = list[i];
+	child_ctx[11] = i;
 	return child_ctx;
 }
 
-// (38:12) {#each item.list as text, index}
+// (53:12) {#each item.list as text, index}
 function create_each_block_1(ctx) {
 	let span;
 	let t0;
-	let t1_value = /*text*/ ctx[10] + "";
+	let t1_value = /*text*/ ctx[12] + "";
 	let t1;
 
 	return {
@@ -126840,7 +127753,7 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*shopList*/ 1 && t1_value !== (t1_value = /*text*/ ctx[10] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*shopList*/ 1 && t1_value !== (t1_value = /*text*/ ctx[12] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
@@ -126848,7 +127761,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (32:4) {#each shopList as item, index}
+// (47:4) {#each shopList as item, index}
 function create_each_block(ctx) {
 	let div4;
 	let div0;
@@ -126857,7 +127770,7 @@ function create_each_block(ctx) {
 	let t0;
 	let h1;
 	let t1;
-	let t2_value = /*item*/ ctx[7].name + "";
+	let t2_value = /*item*/ ctx[9].name + "";
 	let t2;
 	let t3;
 	let t4;
@@ -126879,14 +127792,14 @@ function create_each_block(ctx) {
 	let feBlend1;
 	let t5;
 	let p;
-	let t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*getPrice*/ ctx[3](/*item*/ ctx[7].price, /*index*/ ctx[9], /*$accountUnique*/ ctx[1])) + "";
+	let t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*getPrice*/ ctx[4](/*item*/ ctx[9].price, /*index*/ ctx[11], /*$accountUnique*/ ctx[1])) + "";
 	let t6;
 	let t7;
 	let div2;
 	let t9;
 	let mounted;
 	let dispose;
-	let each_value_1 = /*item*/ ctx[7].list;
+	let each_value_1 = /*item*/ ctx[9].list;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -126894,7 +127807,7 @@ function create_each_block(ctx) {
 	}
 
 	function click_handler() {
-		return /*click_handler*/ ctx[5](/*item*/ ctx[7]);
+		return /*click_handler*/ ctx[6](/*item*/ ctx[9]);
 	}
 
 	return {
@@ -126936,7 +127849,7 @@ function create_each_block(ctx) {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2.textContent = "Приобрести";
 			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "donate/personal/1.png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getPackImage*/ ctx[2](/*item*/ ctx[9].id))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "headstna");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "x", "5");
@@ -127026,7 +127939,7 @@ function create_each_block(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler*/ ctx[4]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler*/ ctx[5]),
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler)
 				];
 
@@ -127035,10 +127948,15 @@ function create_each_block(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*shopList*/ 1 && t2_value !== (t2_value = /*item*/ ctx[7].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+
+			if (dirty & /*shopList*/ 1 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getPackImage*/ ctx[2](/*item*/ ctx[9].id))) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
+
+			if (dirty & /*shopList*/ 1 && t2_value !== (t2_value = /*item*/ ctx[9].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 
 			if (dirty & /*shopList*/ 1) {
-				each_value_1 = /*item*/ ctx[7].list;
+				each_value_1 = /*item*/ ctx[9].list;
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -127060,7 +127978,7 @@ function create_each_block(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if (dirty & /*shopList, $accountUnique*/ 3 && t6_value !== (t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*getPrice*/ ctx[3](/*item*/ ctx[7].price, /*index*/ ctx[9], /*$accountUnique*/ ctx[1])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*shopList, $accountUnique*/ 3 && t6_value !== (t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*getPrice*/ ctx[4](/*item*/ ctx[9].price, /*index*/ ctx[11], /*$accountUnique*/ ctx[1])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
@@ -127100,7 +128018,7 @@ function create_fragment(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*onToServer, shopList, format, getPrice, $accountUnique, document*/ 15) {
+			if (dirty & /*onToServer, shopList, format, getPrice, $accountUnique, getPackImage*/ 31) {
 				each_value = /*shopList*/ ctx[0];
 				let i;
 
@@ -127136,7 +128054,9 @@ function instance($$self, $$props, $$invalidate) {
 	let $accountUnique;
 	let $accountRedbucks;
 	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_3__.accountUnique, $$value => $$invalidate(1, $accountUnique = $$value));
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_3__.accountRedbucks, $$value => $$invalidate(6, $accountRedbucks = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_3__.accountRedbucks, $$value => $$invalidate(7, $accountRedbucks = $$value));
+	const packImages = [(_assets_packs_1_png__WEBPACK_IMPORTED_MODULE_5___default()), (_assets_packs_2_png__WEBPACK_IMPORTED_MODULE_6___default()), (_assets_packs_3_png__WEBPACK_IMPORTED_MODULE_7___default()), (_assets_packs_4_png__WEBPACK_IMPORTED_MODULE_8___default()), (_assets_packs_5_png__WEBPACK_IMPORTED_MODULE_9___default()), (_assets_packs_6_png__WEBPACK_IMPORTED_MODULE_10___default()), (_assets_packs_7_png__WEBPACK_IMPORTED_MODULE_11___default()), (_assets_packs_8_png__WEBPACK_IMPORTED_MODULE_12___default()), (_assets_packs_9_png__WEBPACK_IMPORTED_MODULE_13___default()), (_assets_packs_10_png__WEBPACK_IMPORTED_MODULE_14___default()), (_assets_packs_11_png__WEBPACK_IMPORTED_MODULE_15___default())];
+	const getPackImage = id => packImages[Number(id) % packImages.length] || packImages[0];
 
 	const onToServer = item => {
 		if ($accountRedbucks < getPrice(item.price, item.id, $accountUnique)) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
@@ -127172,6 +128092,7 @@ function instance($$self, $$props, $$invalidate) {
 	return [
 		shopList,
 		$accountUnique,
+		getPackImage,
 		onToServer,
 		getPrice,
 		keypress_handler,
@@ -127206,15 +128127,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
-/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_moment__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! api/moment */ "./src/api/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _assets_premium_subscripte_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../assets/premium/subscripte.png */ "./src/views/player/gta5devmenu/assets/premium/subscripte.png");
+/* harmony import */ var _assets_premium_subscripte_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_premium_subscripte_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_premium_bronze_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../assets/premium/bronze.svg */ "./src/views/player/gta5devmenu/assets/premium/bronze.svg");
+/* harmony import */ var _assets_premium_bronze_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_premium_bronze_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_premium_silver_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../assets/premium/silver.svg */ "./src/views/player/gta5devmenu/assets/premium/silver.svg");
+/* harmony import */ var _assets_premium_silver_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_premium_silver_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_premium_gold_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../assets/premium/gold.svg */ "./src/views/player/gta5devmenu/assets/premium/gold.svg");
+/* harmony import */ var _assets_premium_gold_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_premium_gold_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_premium_platinum_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../assets/premium/platinum.svg */ "./src/views/player/gta5devmenu/assets/premium/platinum.svg");
+/* harmony import */ var _assets_premium_platinum_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_premium_platinum_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lang */ "./lang/index.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
+/* harmony import */ var api_moment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! api/moment */ "./src/api/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/views/player/gta5devmenu/elements/shop/elements/premium/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
 
 
 
@@ -127227,19 +128163,19 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[14] = list[i];
-	child_ctx[16] = i;
+	child_ctx[15] = list[i];
+	child_ctx[17] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[17] = list[i];
-	child_ctx[16] = i;
+	child_ctx[18] = list[i];
+	child_ctx[17] = i;
 	return child_ctx;
 }
 
-// (96:16) {:else}
+// (110:16) {:else}
 function create_else_block_1(ctx) {
 	let p;
 	let svg;
@@ -127257,7 +128193,7 @@ function create_else_block_1(ctx) {
 	let feBlend0;
 	let feBlend1;
 	let t0;
-	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*item*/ ctx[14].price) + "";
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*item*/ ctx[15].price) + "";
 	let t1;
 	let t2;
 	let div;
@@ -127265,7 +128201,7 @@ function create_else_block_1(ctx) {
 	let dispose;
 
 	function click_handler_1() {
-		return /*click_handler_1*/ ctx[11](/*item*/ ctx[14], /*index*/ ctx[16]);
+		return /*click_handler_1*/ ctx[12](/*item*/ ctx[15], /*index*/ ctx[17]);
 	}
 
 	return {
@@ -127355,7 +128291,7 @@ function create_else_block_1(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler_3*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler_3*/ ctx[10]),
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_1)
 				];
 
@@ -127364,7 +128300,7 @@ function create_else_block_1(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*item*/ ctx[14].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*item*/ ctx[15].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(p);
@@ -127376,14 +128312,14 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (67:16) {#if item.id === 0}
+// (81:16) {#if item.id === 0}
 function create_if_block(ctx) {
 	let show_if;
 	let if_block_anchor;
 
 	function select_block_type_1(ctx, dirty) {
 		if (dirty & /*$accountSubscribe*/ 4) show_if = null;
-		if (show_if == null) show_if = !!/*Bool*/ ctx[3](/*$accountSubscribe*/ ctx[2]);
+		if (show_if == null) show_if = !!/*Bool*/ ctx[4](/*$accountSubscribe*/ ctx[2]);
 		if (show_if) return create_if_block_1;
 		if (/*unixTime*/ ctx[0] > 0) return create_if_block_2;
 		return create_else_block;
@@ -127421,7 +128357,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (93:20) {:else}
+// (107:20) {:else}
 function create_else_block(ctx) {
 	let div;
 	let mounted;
@@ -127430,7 +128366,7 @@ function create_else_block(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('donate', 'Забрать')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_6__.translateText)('donate', 'Забрать')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "buybtnpprem");
 		},
 		m(target, anchor) {
@@ -127438,8 +128374,8 @@ function create_else_block(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler_2*/ ctx[8]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*onReward*/ ctx[5])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler_2*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*onReward*/ ctx[6])
 				];
 
 				mounted = true;
@@ -127454,10 +128390,10 @@ function create_else_block(ctx) {
 	};
 }
 
-// (91:43) 
+// (105:43) 
 function create_if_block_2(ctx) {
 	let div;
-	let t_value = moment__WEBPACK_IMPORTED_MODULE_6___default().utc(/*unixTime*/ ctx[0]).format("HH:mm") + "";
+	let t_value = moment__WEBPACK_IMPORTED_MODULE_11___default().utc(/*unixTime*/ ctx[0]).format("HH:mm") + "";
 	let t;
 	let mounted;
 	let dispose;
@@ -127474,15 +128410,15 @@ function create_if_block_2(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler_1*/ ctx[7]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*onReward*/ ctx[5])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler_1*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*onReward*/ ctx[6])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*unixTime*/ 1 && t_value !== (t_value = moment__WEBPACK_IMPORTED_MODULE_6___default().utc(/*unixTime*/ ctx[0]).format("HH:mm") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+			if (dirty & /*unixTime*/ 1 && t_value !== (t_value = moment__WEBPACK_IMPORTED_MODULE_11___default().utc(/*unixTime*/ ctx[0]).format("HH:mm") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
@@ -127492,7 +128428,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (68:20) {#if Bool ($accountSubscribe)}
+// (82:20) {#if Bool ($accountSubscribe)}
 function create_if_block_1(ctx) {
 	let p;
 	let svg;
@@ -127510,7 +128446,7 @@ function create_if_block_1(ctx) {
 	let feBlend0;
 	let feBlend1;
 	let t0;
-	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*item*/ ctx[14].price) + "";
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*item*/ ctx[15].price) + "";
 	let t1;
 	let t2;
 	let div;
@@ -127518,7 +128454,7 @@ function create_if_block_1(ctx) {
 	let dispose;
 
 	function click_handler() {
-		return /*click_handler*/ ctx[10](/*item*/ ctx[14], /*index*/ ctx[16]);
+		return /*click_handler*/ ctx[11](/*item*/ ctx[15], /*index*/ ctx[17]);
 	}
 
 	return {
@@ -127608,7 +128544,7 @@ function create_if_block_1(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler*/ ctx[6]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "keypress", /*keypress_handler*/ ctx[7]),
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler)
 				];
 
@@ -127617,7 +128553,7 @@ function create_if_block_1(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_2__.format)("money", /*item*/ ctx[14].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*item*/ ctx[15].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(p);
@@ -127629,11 +128565,11 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (124:16) {#each item.list as text, index}
+// (138:16) {#each item.list as text, index}
 function create_each_block_1(ctx) {
 	let b;
 	let t0;
-	let t1_value = /*text*/ ctx[17] + "";
+	let t1_value = /*text*/ ctx[18] + "";
 	let t1;
 
 	return {
@@ -127648,7 +128584,7 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t1);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = /*text*/ ctx[17] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = /*text*/ ctx[18] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(b);
@@ -127656,14 +128592,14 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (62:4) {#each vipLists as item, index}
+// (76:4) {#each vipLists as item, index}
 function create_each_block(ctx) {
 	let div2;
 	let img;
 	let img_src_value;
 	let t0;
 	let h1;
-	let t1_value = /*item*/ ctx[14].name + "";
+	let t1_value = /*item*/ ctx[15].name + "";
 	let t1;
 	let t2;
 	let div0;
@@ -127676,13 +128612,13 @@ function create_each_block(ctx) {
 	let t8;
 
 	function select_block_type(ctx, dirty) {
-		if (/*item*/ ctx[14].id === 0) return create_if_block;
+		if (/*item*/ ctx[15].id === 0) return create_if_block;
 		return create_else_block_1;
 	}
 
 	let current_block_type = select_block_type(ctx, -1);
 	let if_block = current_block_type(ctx);
-	let each_value_1 = /*item*/ ctx[14].list;
+	let each_value_1 = /*item*/ ctx[15].list;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -127713,7 +128649,7 @@ function create_each_block(ctx) {
 			}
 
 			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "img/roulette/items_13.png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*premiumImages*/ ctx[3][/*item*/ ctx[15].img] || /*premiumImages*/ ctx[3].gold)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "buypersprem");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "infopersprem");
@@ -127744,7 +128680,11 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t8);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = /*item*/ ctx[14].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*vipLists*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*premiumImages*/ ctx[3][/*item*/ ctx[15].img] || /*premiumImages*/ ctx[3].gold)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
+
+			if (dirty & /*vipLists*/ 2 && t1_value !== (t1_value = /*item*/ ctx[15].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 
 			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
@@ -127759,7 +128699,7 @@ function create_each_block(ctx) {
 			}
 
 			if (dirty & /*vipLists*/ 2) {
-				each_value_1 = /*item*/ ctx[14].list;
+				each_value_1 = /*item*/ ctx[15].list;
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -127818,7 +128758,7 @@ function create_fragment(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*vipLists, showPopup, format, Bool, $accountSubscribe, onReward, moment, unixTime, translateText, document*/ 63) {
+			if (dirty & /*vipLists, showPopup, format, Bool, $accountSubscribe, onReward, moment, unixTime, translateText, premiumImages*/ 127) {
 				each_value = /*vipLists*/ ctx[1];
 				let i;
 
@@ -127853,8 +128793,16 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let $accountSubscribe;
 	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_4__.accountSubscribe, $$value => $$invalidate(2, $accountSubscribe = $$value));
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_4__.accountRedbucks, $$value => $$invalidate(13, $accountRedbucks = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_9__.accountSubscribe, $$value => $$invalidate(2, $accountSubscribe = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_9__.accountRedbucks, $$value => $$invalidate(14, $accountRedbucks = $$value));
+
+	const premiumImages = {
+		subscripte: (_assets_premium_subscripte_png__WEBPACK_IMPORTED_MODULE_1___default()),
+		bronze: (_assets_premium_bronze_svg__WEBPACK_IMPORTED_MODULE_2___default()),
+		silver: (_assets_premium_silver_svg__WEBPACK_IMPORTED_MODULE_3___default()),
+		gold: (_assets_premium_gold_svg__WEBPACK_IMPORTED_MODULE_4___default()),
+		platinum: (_assets_premium_platinum_svg__WEBPACK_IMPORTED_MODULE_5___default())
+	};
 
 	const Bool = text => {
 		return String(text).toLowerCase() === "false";
@@ -127865,27 +128813,27 @@ function instance($$self, $$props, $$invalidate) {
 			if (Bool($accountSubscribe) && $accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
 		} else if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
 
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)("client.donate.buy.premium", item.id);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClient)("client.donate.buy.premium", item.id);
 	};
 
 	const onReward = () => {
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)("client.donate.reward");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClient)("client.donate.reward");
 	};
 
 	let unixTime = 0;
 	let unixInterval = null;
 
-	store_account__WEBPACK_IMPORTED_MODULE_4__.accountSubscribe.subscribe(value => {
+	store_account__WEBPACK_IMPORTED_MODULE_9__.accountSubscribe.subscribe(value => {
 		if (Bool(value)) return;
-		$$invalidate(0, unixTime = value !== false ? (0,api_moment__WEBPACK_IMPORTED_MODULE_5__.GetTime)(value).diff((0,api_moment__WEBPACK_IMPORTED_MODULE_5__.GetTime)()) : 0);
+		$$invalidate(0, unixTime = value !== false ? (0,api_moment__WEBPACK_IMPORTED_MODULE_10__.GetTime)(value).diff((0,api_moment__WEBPACK_IMPORTED_MODULE_10__.GetTime)()) : 0);
 		if (unixTime > 86500 - 1000 * 60) $$invalidate(0, unixTime -= 1000 * 60);
 	});
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_7__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_12__.onMount)(() => {
 		unixInterval = setInterval(
 			() => {
 				if (unixTime > 0) {
-					$$invalidate(0, unixTime = (0,api_moment__WEBPACK_IMPORTED_MODULE_5__.GetTime)($accountSubscribe).diff((0,api_moment__WEBPACK_IMPORTED_MODULE_5__.GetTime)()));
+					$$invalidate(0, unixTime = (0,api_moment__WEBPACK_IMPORTED_MODULE_10__.GetTime)($accountSubscribe).diff((0,api_moment__WEBPACK_IMPORTED_MODULE_10__.GetTime)()));
 					if (unixTime > 86500 - 1000 * 60) $$invalidate(0, unixTime -= 1000 * 60);
 				}
 			},
@@ -127893,14 +128841,14 @@ function instance($$self, $$props, $$invalidate) {
 		);
 	});
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_7__.onDestroy)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_12__.onDestroy)(() => {
 		clearInterval(unixInterval);
 		unixInterval = null;
 	});
 
 	let vipLists = [];
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClientAsync)("donate.vipLists").then(result => {
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClientAsync)("donate.vipLists").then(result => {
 		if (result && typeof result === "string") {
 			$$invalidate(1, vipLists = JSON.parse(result));
 		}
@@ -127929,6 +128877,7 @@ function instance($$self, $$props, $$invalidate) {
 		unixTime,
 		vipLists,
 		$accountSubscribe,
+		premiumImages,
 		Bool,
 		showPopup,
 		onReward,
@@ -129201,7 +130150,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
 /* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
 /* harmony import */ var api_validation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/validation */ "./src/api/validation.js");
+/* harmony import */ var _img_p_1_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./img/p_1.svg */ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_1.svg");
+/* harmony import */ var _img_p_1_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_p_1_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _img_p_2_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./img/p_2.svg */ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_2.svg");
+/* harmony import */ var _img_p_2_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_p_2_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _img_p_3_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./img/p_3.svg */ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/p_3.svg");
+/* harmony import */ var _img_p_3_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_img_p_3_svg__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _img_sim_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./img/sim.png */ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/sim.png");
+/* harmony import */ var _img_sim_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_img_sim_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _img_number_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./img/number.png */ "./src/views/player/gta5devmenu/elements/shop/elements/shop/img/number.png");
+/* harmony import */ var _img_number_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_img_number_png__WEBPACK_IMPORTED_MODULE_9__);
 /* src/views/player/gta5devmenu/elements/shop/elements/shop/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
 
 
 
@@ -129216,7 +130180,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (130:4) {#each shopList[selectIndex].list as item, index}
+// (135:4) {#each shopList[selectIndex].list as item, index}
 function create_each_block(ctx) {
 	let div;
 	let img;
@@ -129241,11 +130205,7 @@ function create_each_block(ctx) {
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[8].img && /*item*/ ctx[8].img.startsWith('http')
-			? /*item*/ ctx[8].img
-			: document.cloud + 'img/donate/shop/' + /*item*/ ctx[8].img + '.png')) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[8].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "blockpersm");
 		},
@@ -129306,7 +130266,7 @@ function create_fragment(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*onToServer, shopList, selectIndex, document*/ 3) {
+			if (dirty & /*onToServer, shopList, selectIndex*/ 3) {
 				each_value = /*shopList*/ ctx[0][selectIndex].list;
 				let i;
 
@@ -129361,7 +130321,7 @@ function instance($$self, $$props, $$invalidate) {
                             Вашего персонажа.
                             После смены имени персонаж забудет о совершенных ранее рукопожатиях,
                             при этом инвентарь и статистика персонажа никак не изменятся. Только никнейм.`,
-					img: "yKbEaXm",
+					img: (_img_p_1_svg__WEBPACK_IMPORTED_MODULE_5___default()),
 					price: 800
 				},
 				{
@@ -129371,7 +130331,7 @@ function instance($$self, $$props, $$invalidate) {
 					text: `Warn - предупреждение от Администрации. Эта донат-функция снимает только 1 warn.
                         В случае, если у вас 2 warn'a, то для полного снятия потребуется дважды оплатить "Снять предупреждение".
                         Если у вас накопится 3 warn'a одновременно - персонаж будет автоматически заблокирован на 30 дней.`,
-					img: "uYu8q4K",
+					img: (_img_p_3_svg__WEBPACK_IMPORTED_MODULE_7___default()),
 					price: 1000
 				},
 				{
@@ -129382,7 +130342,7 @@ function instance($$self, $$props, $$invalidate) {
                             Ваш персонаж будет отправлен в редактор внешности (как при создании персонажа),
                             где Вы сможете заново настроить его внешность.
                             Содержимое инвентаря и татуировки останутся.`,
-					img: "kNJU7gs",
+					img: (_img_p_2_svg__WEBPACK_IMPORTED_MODULE_6___default()),
 					price: 1000
 				},
 				{
@@ -129393,7 +130353,7 @@ function instance($$self, $$props, $$invalidate) {
 					text: `Долгожданная система покупки номера для телефона!
                         Соберите свой уникальный номер из любых цифр и пусть все вокруг завидуют...
                         Номер на авто выдаётся как предмет в инвентарь.`,
-					img: "KujMwkH",
+					img: (_img_sim_png__WEBPACK_IMPORTED_MODULE_8___default()),
 					btnName: "Купить"
 				},
 				{
@@ -129404,7 +130364,7 @@ function instance($$self, $$props, $$invalidate) {
 					text: `Долгожданная система покупки номера для автомобиля!
                         Соберите свой уникальный номер из букв и/или цифр и пусть все вокруг завидуют...
                         Номер на авто выдаётся как предмет в инвентарь.`,
-					img: "3i7RJU9",
+					img: (_img_number_png__WEBPACK_IMPORTED_MODULE_9___default()),
 					btnName: "Купить"
 				}
 			]
@@ -130489,9 +131449,9 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/cars.svelte":
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/list.svelte":
 /*!**************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/cars.svelte ***!
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/list.svelte ***!
   \**************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -130503,50 +131463,57 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/cars.svelte generated by Svelte v3.59.2 */
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/list.svelte generated by Svelte v3.59.2 */
 
 
 
 
 
-function get_each_context_2(ctx, list, i) {
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-tst2hh", ".shopback.svelte-tst2hh{font-family:SF Pro Display;font-weight:500;color:rgba(255, 255, 255, 0.6);font-size:1.2963vh;line-height:1.2963vh;padding:0.9259vh 1.2963vh;margin-right:1.8519vh;border-radius:0.463vh;background:rgba(255, 255, 255, 0.06);white-space:nowrap;cursor:pointer}.shopback.svelte-tst2hh:hover{color:#fff;background:rgba(255, 255, 255, 0.12)}.shopempty.svelte-tst2hh{margin:1.8519vh 2.7778vh 0;color:rgba(255, 255, 255, 0.5);font-size:1.4815vh}");
+}
+
+function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
+	child_ctx[28] = list[i];
 	return child_ctx;
 }
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
+	child_ctx[28] = list[i];
 	return child_ctx;
 }
 
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (192:4) {:else}
-function create_else_block_2(ctx) {
+// (119:53) 
+function create_if_block_2(ctx) {
 	let h1;
+	let t0_value = /*category*/ ctx[0].title + "";
+	let t0;
 	let t1;
+	let t2;
 	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
 	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let if_block = !/*items*/ ctx[4].length && create_if_block_3(ctx);
+	let each_value_1 = /*items*/ ctx[4];
+	const get_key = ctx => /*item*/ ctx[28].model;
 
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		let child_ctx = get_each_context_1(ctx, each_value_1, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
 	}
 
 	return {
 		c() {
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Автомобили";
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -130558,7 +131525,10 @@ function create_else_block_2(ctx) {
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -130568,168 +131538,280 @@ function create_else_block_2(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
+			if (dirty[0] & /*category*/ 1 && t0_value !== (t0_value = /*category*/ ctx[0].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
 
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
+			if (!/*items*/ ctx[4].length) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_3(ctx);
+					if_block.c();
+					if_block.m(t2.parentNode, t2);
 				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
 
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
+			if (dirty[0] & /*select, items, getImage, getRarity*/ 1808) {
+				each_value_1 = /*items*/ ctx[4];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_1, null, get_each_context_1);
 			}
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
 		}
 	};
 }
 
-// (105:0) {#if selectIndex > -1}
+// (49:0) {#if selected}
 function create_if_block(ctx) {
+	let div7;
+	let div6;
 	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
 	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
+	let t1;
+	let h1;
+	let t2_value = /*selected*/ ctx[7].name + "";
+	let t2;
+	let t3;
+	let span0;
+	let t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*selected*/ ctx[7].price) + "";
+	let t4;
+	let t5;
+	let svg0;
+	let g;
+	let path0;
+	let path1;
+	let defs;
+	let clipPath;
+	let rect0;
+	let t6;
+	let div1;
+	let t8;
+	let div5;
+	let div3;
+	let div3_class_value;
+	let t9;
+	let div4;
+	let span1;
+	let t10;
+	let img;
+	let img_src_value;
+	let t11;
+	let span2;
+	let t12;
+	let mounted;
+	let dispose;
+	let if_block = /*others*/ ctx[6].length && create_if_block_1(ctx);
 
 	return {
 		c() {
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
+			div0.textContent = "← Назад к списку";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			svg0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
+			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
+			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
+			rect0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Купить в автосалоне";
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "shopback svelte-tst2hh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "width", "16.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "height", "16.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "fill", "white");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "width", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "height", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "viewBox", "0 0 17 17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "xmlns", "http://www.w3.org/2000/svg");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "btnbuy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "headsbcl");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", div3_class_value = "linesbcl line" + /*getRarity*/ ctx[8](/*selected*/ ctx[7].price) + " svelte-tst2hh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "rligh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "none", /*currentIndex*/ ctx[3] <= 0);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getImage*/ ctx[9](/*selected*/ ctx[7]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "rligh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "none", /*currentIndex*/ ctx[3] >= /*items*/ ctx[4].length - 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "centersbcl");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bgblocksbcl");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "blgf act");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "selectblockcl");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, h1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, svg0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, g);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, defs);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, img);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			if (if_block) if_block.m(div7, null);
 
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*click_handler*/ ctx[21]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "keypress", /*keypress_handler_1*/ ctx[18]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_1*/ ctx[22]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span1, "keypress", /*keypress_handler_2*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span1, "click", /*click_handler_2*/ ctx[23]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span2, "keypress", /*keypress_handler_3*/ ctx[16]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span2, "click", /*click_handler_3*/ ctx[24])
+				];
+
+				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
+			if (dirty[0] & /*selected*/ 128 && t2_value !== (t2_value = /*selected*/ ctx[7].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty[0] & /*selected*/ 128 && t4_value !== (t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*selected*/ ctx[7].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
 
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
+			if (dirty[0] & /*selected*/ 128 && div3_class_value !== (div3_class_value = "linesbcl line" + /*getRarity*/ ctx[8](/*selected*/ ctx[7].price) + " svelte-tst2hh")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", div3_class_value);
 			}
 
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
+			if (dirty[0] & /*currentIndex*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "none", /*currentIndex*/ ctx[3] <= 0);
+			}
 
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
+			if (dirty[0] & /*selected*/ 128 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getImage*/ ctx[9](/*selected*/ ctx[7]))) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
 
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
+			if (dirty[0] & /*currentIndex, items*/ 24) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "none", /*currentIndex*/ ctx[3] >= /*items*/ ctx[4].length - 1);
+			}
+
+			if (/*others*/ ctx[6].length) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_1(ctx);
+					if_block.c();
+					if_block.m(div7, null);
 				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
 			}
 		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
+			if (if_block) if_block.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 }
 
-// (196:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
+// (121:4) {#if !items.length}
 function create_if_block_3(ctx) {
+	let p;
+
+	let t_value = (/*search*/ ctx[5].length
+	? "Ничего не найдено"
+	: "В этом разделе пока нет транспорта") + "";
+
+	let t;
+
+	return {
+		c() {
+			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(p, "class", "shopempty svelte-tst2hh");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, p, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*search*/ 32 && t_value !== (t_value = (/*search*/ ctx[5].length
+			? "Ничего не найдено"
+			: "В этом разделе пока нет транспорта") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(p);
+		}
+	};
+}
+
+// (125:8) {#each items as item (item.model)}
+function create_each_block_1(key_1, ctx) {
 	let div2;
 	let div1;
 	let div0;
 	let div0_class_value;
 	let t0;
 	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*item*/ ctx[28].price) + "";
 	let t1;
 	let t2;
 	let svg;
@@ -130754,17 +131836,19 @@ function create_if_block_3(ctx) {
 	let img_src_value;
 	let t4;
 	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
+	let t5_value = /*item*/ ctx[28].name + "";
 	let t5;
 	let t6;
 	let mounted;
 	let dispose;
 
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
+	function click_handler_5() {
+		return /*click_handler_5*/ ctx[26](/*item*/ ctx[28]);
 	}
 
 	return {
+		key: key_1,
+		first: null,
 		c() {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
@@ -130796,7 +131880,7 @@ function create_if_block_3(ctx) {
 			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line line" + /*getRarity*/ ctx[8](/*item*/ ctx[28].price) + " svelte-tst2hh");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
@@ -130840,9 +131924,10 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getImage*/ ctx[9](/*item*/ ctx[28]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
+			this.first = div2;
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
@@ -130878,8 +131963,8 @@ function create_if_block_3(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_5*/ ctx[20]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_5)
 				];
 
 				mounted = true;
@@ -130887,482 +131972,18 @@ function create_if_block_3(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
 
-// (195:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (136:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (129:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (152:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (145:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (107:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить Автомобиль";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
+			if (dirty[0] & /*items*/ 16 && div0_class_value !== (div0_class_value = "line line" + /*getRarity*/ ctx[8](/*item*/ ctx[28].price) + " svelte-tst2hh")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value);
 			}
 
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
+			if (dirty[0] & /*items*/ 16 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*item*/ ctx[28].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
+			if (dirty[0] & /*items*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getImage*/ ctx[9](/*item*/ ctx[28]))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (167:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
+			if (dirty[0] & /*items*/ 16 && t5_value !== (t5_value = /*item*/ ctx[28].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
@@ -131372,365 +131993,29 @@ function create_each_block(ctx) {
 	};
 }
 
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Mercedes-Benz E63S AMGe63s",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					model: "e63s",
-					name: "Mercedes-Benz E63S AMG",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Mercedes-Benz E63S AMGe63s",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					model: "e63s",
-					name: "Mercedes-Benz E63S AMG",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(1);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client::donate:buyCar", item.model);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Cars extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cars);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/helicopter.svelte":
-/*!********************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/helicopter.svelte ***!
-  \********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/helicopter.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (192:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Вертолеты";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (105:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
+// (89:8) {#if others.length}
+function create_if_block_1(ctx) {
 	let div1;
 	let h1;
-	let t2;
+	let t1;
 	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
 	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*others*/ ctx[6];
+	const get_key = ctx => /*item*/ ctx[28].model;
 
 	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
 	}
 
 	return {
 		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
 			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -131739,21 +132024,11 @@ function create_if_block(ctx) {
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -131763,86 +132038,37 @@ function create_if_block(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
+			if (dirty[0] & /*select, others, getImage, getRarity*/ 1856) {
+				each_value = /*others*/ ctx[6];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div0, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
 			}
 		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
 		}
 	};
 }
 
-// (196:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
+// (93:16) {#each others as item (item.model)}
+function create_each_block(key_1, ctx) {
 	let div2;
 	let div1;
 	let div0;
 	let div0_class_value;
 	let t0;
 	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*item*/ ctx[28].price) + "";
 	let t1;
 	let t2;
 	let svg;
-	let g1;
-	let g0;
+	let g;
 	let path0;
 	let path1;
 	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
 	let clipPath;
 	let rect;
 	let t3;
@@ -131850,17 +132076,19 @@ function create_if_block_3(ctx) {
 	let img_src_value;
 	let t4;
 	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
+	let t5_value = /*item*/ ctx[28].name + "";
 	let t5;
 	let t6;
 	let mounted;
 	let dispose;
 
 	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
+		return /*click_handler_4*/ ctx[25](/*item*/ ctx[28]);
 	}
 
 	return {
+		key: key_1,
+		first: null,
 		c() {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
@@ -131870,20 +132098,10 @@ function create_if_block_3(ctx) {
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
+			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
 			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
 			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
 			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
 			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
 			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
@@ -131892,53 +132110,27 @@ function create_if_block_3(ctx) {
 			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl line" + /*getRarity*/ ctx[8](/*item*/ ctx[28].price) + " svelte-tst2hh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getImage*/ ctx[9](/*item*/ ctx[28]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
+			this.first = div2;
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
@@ -131949,20 +132141,10 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
@@ -131983,482 +132165,18 @@ function create_if_block_3(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
 
-// (195:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (136:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (129:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (152:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (145:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (107:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить Вертолет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
+			if (dirty[0] & /*others*/ 64 && div0_class_value !== (div0_class_value = "linesbcl line" + /*getRarity*/ ctx[8](/*item*/ ctx[28].price) + " svelte-tst2hh")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value);
 			}
 
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
+			if (dirty[0] & /*others*/ 64 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*item*/ ctx[28].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
+			if (dirty[0] & /*others*/ 64 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getImage*/ ctx[9](/*item*/ ctx[28]))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (167:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
+			if (dirty[0] & /*others*/ 64 && t5_value !== (t5_value = /*item*/ ctx[28].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
@@ -132472,28 +132190,28 @@ function create_fragment(ctx) {
 	let if_block_anchor;
 
 	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
+		if (/*selected*/ ctx[7]) return create_if_block;
+		if (/*items*/ ctx[4].length || /*pageload*/ ctx[1] === /*category*/ ctx[0].page) return create_if_block_2;
 	}
 
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type && current_block_type(ctx);
 
 	return {
 		c() {
-			if_block.c();
+			if (if_block) if_block.c();
 			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
-			if_block.m(target, anchor);
+			if (if_block) if_block.m(target, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
-		p(ctx, [dirty]) {
+		p(ctx, dirty) {
 			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
 			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
+				if (if_block) if_block.d(1);
+				if_block = current_block_type && current_block_type(ctx);
 
 				if (if_block) {
 					if_block.c();
@@ -132504,111 +132222,58 @@ function create_fragment(ctx) {
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
-			if_block.d(detaching);
+			if (if_block) {
+				if_block.d(detaching);
+			}
+
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
 		}
 	};
 }
 
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
 function instance($$self, $$props, $$invalidate) {
+	let search;
+	let items;
+	let currentIndex;
+	let selected;
+	let others;
 	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(27, $accountRedbucks = $$value));
+	let { vehicles = [] } = $$props;
+	let { category } = $$props;
 	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
+	let { pageload } = $$props;
 
-	const shopList = [
-		{
-			title: "Mercedes-Benz E63S AMGe63s",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					model: "e63s",
-					name: "Mercedes-Benz E63S AMG",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Mercedes-Benz E63S AMGe63s",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					model: "e63s",
-					name: "Mercedes-Benz E63S AMG",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(2);
-		window.pagenameitemf2(title);
+	const getRarity = price => {
+		if (price >= 50000) return 5;
+		if (price >= 30000) return 4;
+		if (price >= 15000) return 3;
+		return 2;
 	};
 
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
+	let selectedModel = null;
+	const getImage = item => `${document.cloud}inventoryItems/vehicle/${item.model.toLowerCase()}.png`;
 
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
+	const select = item => {
+		$$invalidate(2, selectedModel = item.model);
+		window.pageloadf2(category.page);
+		window.pagenameitemf2(item.name);
 	};
 
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
+	const step = dir => {
+		const next = items[currentIndex + dir];
+		if (next) select(next);
 	};
 
+	// Покупка идёт в донат-автосалоне (выбор цвета, тест-драйв), из меню ставим туда метку
 	const onBuy = item => {
 		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client::donate:buyCar", item.model);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.vehicles.route");
 	};
+
+	function keypress_handler_4(event) {
+		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
+	}
 
 	function keypress_handler_3(event) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
@@ -132626,57 +132291,107 @@ function instance($$self, $$props, $$invalidate) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
 	}
 
-	function keypress_handler_4(event) {
+	function keypress_handler_5(event) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
 	}
 
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
+	const click_handler = () => $$invalidate(2, selectedModel = null);
+	const click_handler_1 = () => onBuy(selected);
+	const click_handler_2 = () => step(-1);
+	const click_handler_3 = () => step(1);
+	const click_handler_4 = item => select(item);
+	const click_handler_5 = item => select(item);
 
 	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
+		if ('vehicles' in $$props) $$invalidate(13, vehicles = $$props.vehicles);
+		if ('category' in $$props) $$invalidate(0, category = $$props.category);
+		if ('searchText' in $$props) $$invalidate(14, searchText = $$props.searchText);
+		if ('pageload' in $$props) $$invalidate(1, pageload = $$props.pageload);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*searchText*/ 16384) {
+			$: $$invalidate(5, search = (searchText || "").toLowerCase().trim());
+		}
+
+		if ($$self.$$.dirty[0] & /*vehicles, category, search*/ 8225) {
+			$: $$invalidate(4, items = vehicles.filter(item => item.isHeli === category.isHeli).filter(item => !search.length || item.name.toLowerCase().includes(search) || item.model.toLowerCase().includes(search)));
+		}
+
+		if ($$self.$$.dirty[0] & /*pageload*/ 2) {
+			$: if (pageload === 0) $$invalidate(2, selectedModel = null);
+		}
+
+		if ($$self.$$.dirty[0] & /*items, selectedModel*/ 20) {
+			$: $$invalidate(3, currentIndex = items.findIndex(item => item.model === selectedModel));
+		}
+
+		if ($$self.$$.dirty[0] & /*currentIndex, items*/ 24) {
+			$: $$invalidate(7, selected = currentIndex > -1 ? items[currentIndex] : null);
+		}
+
+		if ($$self.$$.dirty[0] & /*items, selectedModel*/ 20) {
+			$: $$invalidate(6, others = items.filter(item => item.model !== selectedModel).slice(0, 4));
+		}
 	};
 
 	return [
-		searchText,
-		selectIndex,
-		maxindex,
+		category,
+		pageload,
+		selectedModel,
 		currentIndex,
-		shopList,
-		randomItems,
+		items,
+		search,
+		others,
 		selected,
-		nextBlock,
-		prevBlock,
+		getRarity,
+		getImage,
+		select,
+		step,
 		onBuy,
-		SetPopup,
+		vehicles,
+		searchText,
+		keypress_handler_4,
 		keypress_handler_3,
 		keypress_handler_2,
 		keypress_handler_1,
 		keypress_handler,
-		keypress_handler_4,
+		keypress_handler_5,
 		click_handler,
 		click_handler_1,
 		click_handler_2,
 		click_handler_3,
-		click_handler_4
+		click_handler_4,
+		click_handler_5
 	];
 }
 
-class Helicopter extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+class List extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
+
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(
+			this,
+			options,
+			instance,
+			create_fragment,
+			svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal,
+			{
+				vehicles: 13,
+				category: 0,
+				searchText: 14,
+				pageload: 1
+			},
+			add_css,
+			[-1, -1]
+		);
 	}
 }
 
 
 if (false) {}
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Helicopter);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (List);
 
 
 /***/ }),
@@ -132693,12 +132408,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
-/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
-/* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
-/* harmony import */ var api_validation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/validation */ "./src/api/validation.js");
-/* harmony import */ var _cars_cars_svelte__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./cars/cars.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/cars.svelte");
-/* harmony import */ var _cars_helicopter_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./cars/helicopter.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/helicopter.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _cars_list_svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cars/list.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcar/cars/list.svelte");
 /* src/views/player/gta5devmenu/elements/shop/elements/shopcar/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -132706,212 +132418,230 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[4] = list[i];
+	return child_ctx;
+}
 
-
-
-function create_if_block_1(ctx) {
-	let cars;
+// (23:4) {#if pageload === 0 || pageload === category.page}
+function create_if_block(ctx) {
+	let list;
 	let current;
 
-	cars = new _cars_cars_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+	list = new _cars_list_svelte__WEBPACK_IMPORTED_MODULE_3__.default({
 			props: {
-				searchText: /*searchText*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
+				vehicles: /*vehicles*/ ctx[2],
+				category: /*category*/ ctx[4],
+				searchText: /*searchText*/ ctx[1],
+				pageload: /*pageload*/ ctx[0]
 			}
 		});
 
 	return {
 		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(cars.$$.fragment);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(list.$$.fragment);
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(cars, target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(list, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
-			const cars_changes = {};
-			if (dirty & /*searchText*/ 8) cars_changes.searchText = /*searchText*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) cars_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) cars_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) cars_changes.SetPopup = /*SetPopup*/ ctx[2];
-			cars.$set(cars_changes);
+			const list_changes = {};
+			if (dirty & /*vehicles*/ 4) list_changes.vehicles = /*vehicles*/ ctx[2];
+			if (dirty & /*searchText*/ 2) list_changes.searchText = /*searchText*/ ctx[1];
+			if (dirty & /*pageload*/ 1) list_changes.pageload = /*pageload*/ ctx[0];
+			list.$set(list_changes);
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(cars.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(list.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(cars.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(list.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(cars, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(list, detaching);
 		}
 	};
 }
 
-// (17:0) {#if pageload === 0 || pageload === 2 }
-function create_if_block(ctx) {
-	let helicopter;
+// (22:0) {#each categories as category (category.page)}
+function create_each_block(key_1, ctx) {
+	let first;
+	let if_block_anchor;
 	let current;
-
-	helicopter = new _cars_helicopter_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
-			props: {
-				searchText: /*searchText*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
+	let if_block = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === /*category*/ ctx[4].page) && create_if_block(ctx);
 
 	return {
+		key: key_1,
+		first: null,
 		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(helicopter.$$.fragment);
+			first = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			if (if_block) if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			this.first = first;
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(helicopter, target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, first, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 			current = true;
 		},
-		p(ctx, dirty) {
-			const helicopter_changes = {};
-			if (dirty & /*searchText*/ 8) helicopter_changes.searchText = /*searchText*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) helicopter_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) helicopter_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) helicopter_changes.SetPopup = /*SetPopup*/ ctx[2];
-			helicopter.$set(helicopter_changes);
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === /*category*/ ctx[4].page) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*pageload*/ 1) {
+						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			} else if (if_block) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
+			}
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(helicopter.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(helicopter.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block);
 			current = false;
 		},
 		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(helicopter, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(first);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
 		}
 	};
 }
 
 function create_fragment(ctx) {
-	let t;
-	let if_block1_anchor;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_1_anchor;
 	let current;
-	let if_block0 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 1) && create_if_block_1(ctx);
-	let if_block1 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 2) && create_if_block(ctx);
+	let each_value = /*categories*/ ctx[3];
+	const get_key = ctx => /*category*/ ctx[4].page;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
 
 	return {
 		c() {
-			if (if_block0) if_block0.c();
-			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block1) if_block1.c();
-			if_block1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
-			if (if_block0) if_block0.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
-			if (if_block1) if_block1.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block1_anchor, anchor);
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(target, anchor);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 1) {
-				if (if_block0) {
-					if_block0.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
-					}
-				} else {
-					if_block0 = create_if_block_1(ctx);
-					if_block0.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
-					if_block0.m(t.parentNode, t);
-				}
-			} else if (if_block0) {
+			if (dirty & /*vehicles, categories, searchText, pageload*/ 15) {
+				each_value = /*categories*/ ctx[3];
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block0, 1, 1, () => {
-					if_block0 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 2) {
-				if (if_block1) {
-					if_block1.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1, 1);
-					}
-				} else {
-					if_block1 = create_if_block(ctx);
-					if_block1.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1, 1);
-					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
-				}
-			} else if (if_block1) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block1, 1, 1, () => {
-					if_block1 = null;
-				});
-
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.outro_and_destroy_block, create_each_block, each_1_anchor, get_each_context);
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
 			}
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1);
+
+			for (let i = 0; i < each_value.length; i += 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(each_blocks[i]);
+			}
+
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block1);
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(each_blocks[i]);
+			}
+
 			current = false;
 		},
 		d(detaching) {
-			if (if_block0) if_block0.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
-			if (if_block1) if_block1.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block1_anchor);
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d(detaching);
+			}
+
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
 		}
 	};
 }
 
 function instance($$self, $$props, $$invalidate) {
 	let { pageload } = $$props;
-	let { pagenameitem } = $$props;
-	let { SetPopup } = $$props;
 	let { searchText } = $$props;
+
+	const categories = [
+		{
+			page: 1,
+			title: "Автомобили",
+			isHeli: false
+		},
+		{
+			page: 2,
+			title: "Вертолёты",
+			isHeli: true
+		}
+	];
+
+	let vehicles = [];
+
+	window.gta5devmenuDonateVehicles = json => {
+		$$invalidate(2, vehicles = JSON.parse(json));
+	};
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_1__.onDestroy)(() => {
+		window.gta5devmenuDonateVehicles = () => {
+			
+		};
+	});
+
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.vehicles.load");
 
 	$$self.$$set = $$props => {
 		if ('pageload' in $$props) $$invalidate(0, pageload = $$props.pageload);
-		if ('pagenameitem' in $$props) $$invalidate(1, pagenameitem = $$props.pagenameitem);
-		if ('SetPopup' in $$props) $$invalidate(2, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(3, searchText = $$props.searchText);
+		if ('searchText' in $$props) $$invalidate(1, searchText = $$props.searchText);
 	};
 
-	return [pageload, pagenameitem, SetPopup, searchText];
+	return [pageload, searchText, vehicles, categories];
 }
 
 class Shopcar extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {
-			pageload: 0,
-			pagenameitem: 1,
-			SetPopup: 2,
-			searchText: 3
-		});
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { pageload: 0, searchText: 1 });
 	}
 }
 
@@ -132923,10 +132653,10 @@ if (false) {}
 
 /***/ }),
 
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/accessories.svelte":
-/*!***********************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/accessories.svelte ***!
-  \***********************************************************************************************/
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/list.svelte":
+/*!****************************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/list.svelte ***!
+  \****************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -132936,51 +132666,62 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/accessories.svelte generated by Svelte v3.59.2 */
+/* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var _catalog_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../catalog.js */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/catalog.js");
+/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/list.svelte generated by Svelte v3.59.2 */
 
 
 
 
 
-function get_each_context_2(ctx, list, i) {
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-tst2hh", ".shopback.svelte-tst2hh{font-family:SF Pro Display;font-weight:500;color:rgba(255, 255, 255, 0.6);font-size:1.2963vh;line-height:1.2963vh;padding:0.9259vh 1.2963vh;margin-right:1.8519vh;border-radius:0.463vh;background:rgba(255, 255, 255, 0.06);white-space:nowrap;cursor:pointer}.shopback.svelte-tst2hh:hover{color:#fff;background:rgba(255, 255, 255, 0.12)}.shopempty.svelte-tst2hh{margin:1.8519vh 2.7778vh 0;color:rgba(255, 255, 255, 0.5);font-size:1.4815vh}");
+}
+
+function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[27] = list[i];
-	child_ctx[29] = i;
+	child_ctx[29] = list[i];
 	return child_ctx;
 }
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[27] = list[i];
-	child_ctx[29] = i;
+	child_ctx[29] = list[i];
 	return child_ctx;
 }
 
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[27] = list[i];
-	child_ctx[29] = i;
-	return child_ctx;
-}
-
-// (302:4) {:else}
-function create_else_block_2(ctx) {
+// (122:53) 
+function create_if_block_2(ctx) {
 	let h1;
+	let t0_value = /*category*/ ctx[0].title + "";
+	let t0;
 	let t1;
+	let t2;
 	let div;
-	let each_value_2 = /*sortedShopList*/ ctx[4];
 	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let if_block = !/*items*/ ctx[4].length && create_if_block_3(ctx);
+	let each_value_1 = /*items*/ ctx[4];
+	const get_key = ctx => /*item*/ ctx[29].id;
 
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		let child_ctx = get_each_context_1(ctx, each_value_1, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
 	}
 
 	return {
 		c() {
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Аксессуары";
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -132992,7 +132733,10 @@ function create_else_block_2(ctx) {
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -133002,168 +132746,280 @@ function create_else_block_2(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*selected, sortedShopList, searchText*/ 145) {
-				each_value_2 = /*sortedShopList*/ ctx[4];
-				let i;
+			if (dirty[0] & /*category*/ 1 && t0_value !== (t0_value = /*category*/ ctx[0].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
 
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
+			if (!/*items*/ ctx[4].length) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_3(ctx);
+					if_block.c();
+					if_block.m(t2.parentNode, t2);
 				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
 
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
+			if (dirty[0] & /*select, items*/ 272) {
+				each_value_1 = /*items*/ ctx[4];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_1, null, get_each_context_1);
 			}
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
 		}
 	};
 }
 
-// (215:0) {#if selectIndex > -1}
+// (52:0) {#if selected}
 function create_if_block(ctx) {
+	let div7;
+	let div6;
 	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
 	let div0;
-	let each_value_1 = /*shopList*/ ctx[5][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[6];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
+	let t1;
+	let h1;
+	let t2_value = /*selected*/ ctx[7].name + "";
+	let t2;
+	let t3;
+	let span0;
+	let t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*selected*/ ctx[7].price) + "";
+	let t4;
+	let t5;
+	let svg0;
+	let g;
+	let path0;
+	let path1;
+	let defs;
+	let clipPath;
+	let rect0;
+	let t6;
+	let div1;
+	let t8;
+	let div5;
+	let div3;
+	let div3_class_value;
+	let t9;
+	let div4;
+	let span1;
+	let t10;
+	let img;
+	let img_src_value;
+	let t11;
+	let span2;
+	let t12;
+	let mounted;
+	let dispose;
+	let if_block = /*others*/ ctx[6].length && create_if_block_1(ctx);
 
 	return {
 		c() {
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
+			div0.textContent = "← Назад к списку";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			svg0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
+			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
+			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
+			rect0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Купить предмет";
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "shopback svelte-tst2hh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "width", "16.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "height", "16.5");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "fill", "white");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "width", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "height", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "viewBox", "0 0 17 17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "xmlns", "http://www.w3.org/2000/svg");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "btnbuy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "headsbcl");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", div3_class_value = "linesbcl line" + (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(/*selected*/ ctx[7].price) + " svelte-tst2hh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "rligh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "none", /*currentIndex*/ ctx[3] <= 0);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*selected*/ ctx[7].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "rligh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "none", /*currentIndex*/ ctx[3] >= /*items*/ ctx[4].length - 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "centersbcl");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bgblocksbcl");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "blgf act");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "selectblockcl");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, h1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, svg0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, g);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, defs);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, img);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			if (if_block) if_block.m(div7, null);
 
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*click_handler*/ ctx[21]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "keypress", /*keypress_handler_1*/ ctx[18]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_1*/ ctx[22]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span1, "keypress", /*keypress_handler_2*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span1, "click", /*click_handler_2*/ ctx[23]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span2, "keypress", /*keypress_handler_3*/ ctx[16]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span2, "click", /*click_handler_3*/ ctx[24])
+				];
+
+				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 1838) {
-				each_value_1 = /*shopList*/ ctx[5][/*selectIndex*/ ctx[1]].list;
-				let i;
+			if (dirty[0] & /*selected*/ 128 && t2_value !== (t2_value = /*selected*/ ctx[7].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty[0] & /*selected*/ 128 && t4_value !== (t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*selected*/ ctx[7].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
 
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
+			if (dirty[0] & /*selected*/ 128 && div3_class_value !== (div3_class_value = "linesbcl line" + (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(/*selected*/ ctx[7].price) + " svelte-tst2hh")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", div3_class_value);
 			}
 
-			if (dirty[0] & /*selected, randomItems*/ 192) {
-				each_value = /*randomItems*/ ctx[6];
-				let i;
+			if (dirty[0] & /*currentIndex*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "none", /*currentIndex*/ ctx[3] <= 0);
+			}
 
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
+			if (dirty[0] & /*selected*/ 128 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*selected*/ ctx[7].img)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
 
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
+			if (dirty[0] & /*currentIndex, items*/ 24) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "none", /*currentIndex*/ ctx[3] >= /*items*/ ctx[4].length - 1);
+			}
+
+			if (/*others*/ ctx[6].length) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_1(ctx);
+					if_block.c();
+					if_block.m(div7, null);
 				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
 			}
 		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
+			if (if_block) if_block.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 }
 
-// (306:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
+// (124:4) {#if !items.length}
 function create_if_block_3(ctx) {
+	let p;
+
+	let t_value = (/*search*/ ctx[5].length
+	? "Ничего не найдено"
+	: "В этом разделе пока нет товаров") + "";
+
+	let t;
+
+	return {
+		c() {
+			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(p, "class", "shopempty svelte-tst2hh");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, p, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*search*/ 32 && t_value !== (t_value = (/*search*/ ctx[5].length
+			? "Ничего не найдено"
+			: "В этом разделе пока нет товаров") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(p);
+		}
+	};
+}
+
+// (128:8) {#each items as item (item.id)}
+function create_each_block_1(key_1, ctx) {
 	let div2;
 	let div1;
 	let div0;
 	let div0_class_value;
 	let t0;
 	let span;
-	let t1_value = /*item*/ ctx[27].price + "";
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*item*/ ctx[29].price) + "";
 	let t1;
 	let t2;
 	let svg;
@@ -133188,17 +133044,19 @@ function create_if_block_3(ctx) {
 	let img_src_value;
 	let t4;
 	let p;
-	let t5_value = /*item*/ ctx[27].title + "";
+	let t5_value = /*item*/ ctx[29].name + "";
 	let t5;
 	let t6;
 	let mounted;
 	let dispose;
 
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[22](/*index*/ ctx[29], /*item*/ ctx[27]);
+	function click_handler_5() {
+		return /*click_handler_5*/ ctx[26](/*item*/ ctx[29]);
 	}
 
 	return {
+		key: key_1,
+		first: null,
 		c() {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
@@ -133230,7 +133088,7 @@ function create_if_block_3(ctx) {
 			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[27].line);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line line" + (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(/*item*/ ctx[29].price) + " svelte-tst2hh");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
@@ -133274,9 +133132,10 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[27].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[29].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
+			this.first = div2;
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
@@ -133312,8 +133171,8 @@ function create_if_block_3(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[17]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_5*/ ctx[20]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_5)
 				];
 
 				mounted = true;
@@ -133322,17 +133181,17 @@ function create_if_block_3(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 
-			if (dirty[0] & /*sortedShopList*/ 16 && div0_class_value !== (div0_class_value = "line " + /*item*/ ctx[27].line)) {
+			if (dirty[0] & /*items*/ 16 && div0_class_value !== (div0_class_value = "line line" + (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(/*item*/ ctx[29].price) + " svelte-tst2hh")) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value);
 			}
 
-			if (dirty[0] & /*sortedShopList*/ 16 && t1_value !== (t1_value = /*item*/ ctx[27].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*items*/ 16 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*item*/ ctx[29].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 
-			if (dirty[0] & /*sortedShopList*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[27].img)) {
+			if (dirty[0] & /*items*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[29].img)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 
-			if (dirty[0] & /*sortedShopList*/ 16 && t5_value !== (t5_value = /*item*/ ctx[27].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty[0] & /*items*/ 16 && t5_value !== (t5_value = /*item*/ ctx[29].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
@@ -133342,373 +133201,75 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (305:8) {#each sortedShopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[27].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty[0] & /*searchText, sortedShopList*/ 17) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[27].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (246:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[19])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty[0] & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (239:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty[0] & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (262:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[20])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty[0] & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (255:20) {#if currentIndex === maxindex}
+// (92:8) {#if others.length}
 function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty[0] & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (217:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
 	let div1;
 	let h1;
-	let t0_value = /*item*/ ctx[27].name + "";
-	let t0;
 	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[27].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
 	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*others*/ ctx[6];
+	const get_key = ctx => /*item*/ ctx[29].id;
 
-	function click_handler() {
-		return /*click_handler*/ ctx[18](/*item*/ ctx[27]);
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
 	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, [-1, -1]);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, [-1, -1]);
-	let if_block1 = current_block_type_1(ctx);
 
 	return {
 		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			h1.textContent = "Другие модели";
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[27].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[27].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[29] === 0);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
 
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[16]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div0, null);
+				}
 			}
 		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty[0] & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[27].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty[0] & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[27].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty[0] & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[27].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty[0] & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[27].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
+		p(ctx, dirty) {
+			if (dirty[0] & /*select, others*/ 320) {
+				each_value = /*others*/ ctx[6];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div0, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
 			}
 		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
 		}
 	};
 }
 
-// (277:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
+// (96:16) {#each others as item (item.id)}
+function create_each_block(key_1, ctx) {
 	let div2;
 	let div1;
 	let div0;
 	let div0_class_value;
 	let t0;
 	let span;
-	let t1_value = /*item*/ ctx[27].price + "";
+	let t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*item*/ ctx[29].price) + "";
 	let t1;
 	let t2;
 	let svg;
@@ -133723,17 +133284,19 @@ function create_each_block(ctx) {
 	let img_src_value;
 	let t4;
 	let p;
-	let t5_value = /*item*/ ctx[27].title + "";
+	let t5_value = /*item*/ ctx[29].name + "";
 	let t5;
 	let t6;
 	let mounted;
 	let dispose;
 
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[21](/*index*/ ctx[29], /*item*/ ctx[27]);
+	function click_handler_4() {
+		return /*click_handler_4*/ ctx[25](/*item*/ ctx[29]);
 	}
 
 	return {
+		key: key_1,
+		first: null,
 		c() {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
@@ -133755,7 +133318,7 @@ function create_each_block(ctx) {
 			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[27].line);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl line" + (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(/*item*/ ctx[29].price) + " svelte-tst2hh");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
@@ -133772,9 +133335,10 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[27].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[29].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
+			this.first = div2;
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
@@ -133800,8 +133364,8 @@ function create_each_block(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
 				];
 
 				mounted = true;
@@ -133809,6 +133373,18 @@ function create_each_block(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
+
+			if (dirty[0] & /*others*/ 64 && div0_class_value !== (div0_class_value = "linesbcl line" + (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(/*item*/ ctx[29].price) + " svelte-tst2hh")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value);
+			}
+
+			if (dirty[0] & /*others*/ 64 && t1_value !== (t1_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*item*/ ctx[29].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty[0] & /*others*/ 64 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[29].img)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
+
+			if (dirty[0] & /*others*/ 64 && t5_value !== (t5_value = /*item*/ ctx[29].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
@@ -133822,28 +133398,28 @@ function create_fragment(ctx) {
 	let if_block_anchor;
 
 	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
+		if (/*selected*/ ctx[7]) return create_if_block;
+		if (/*items*/ ctx[4].length || /*pageload*/ ctx[1] === /*category*/ ctx[0].page) return create_if_block_2;
 	}
 
 	let current_block_type = select_block_type(ctx, [-1, -1]);
-	let if_block = current_block_type(ctx);
+	let if_block = current_block_type && current_block_type(ctx);
 
 	return {
 		c() {
-			if_block.c();
+			if (if_block) if_block.c();
 			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
-			if_block.m(target, anchor);
+			if (if_block) if_block.m(target, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
 		p(ctx, dirty) {
 			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
 			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
+				if (if_block) if_block.d(1);
+				if_block = current_block_type && current_block_type(ctx);
 
 				if (if_block) {
 					if_block.c();
@@ -133854,220 +133430,61 @@ function create_fragment(ctx) {
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
-			if_block.d(detaching);
+			if (if_block) {
+				if_block.d(detaching);
+			}
+
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
 		}
 	};
 }
 
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
 function instance($$self, $$props, $$invalidate) {
-	let sortedShopList;
+	let isMale;
+	let search;
+	let items;
+	let currentIndex;
+	let selected;
+	let others;
 	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(23, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
+	let $charData;
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(27, $accountRedbucks = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_2__.charData, $$value => $$invalidate(14, $charData = $$value));
+	let { category } = $$props;
 	let { searchText } = $$props;
 	let { pagefilter } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
+	let { pageload } = $$props;
 
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 2000,
-			line: "line2",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 2000,
-					line: "line2"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 2000,
-					line: "line2"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 2000,
-					line: "line2"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 2000,
-					line: "line2"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 1000,
-			line: "line3",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 1000,
-					line: "line3"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 1000,
-					line: "line3"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 1000,
-					line: "line3"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 1000,
-					line: "line3"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	const sortFunctions = {
-		10: (a, b) => a.price - b.price,
-		11: (a, b) => b.price - a.price,
-		13: (a, b) => a.line.localeCompare(b.line),
-		12: (a, b) => b.line.localeCompare(a.line)
+	const sorters = {
+		10: (a, b) => b.price - a.price,
+		11: (a, b) => a.price - b.price,
+		12: (a, b) => (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(b.price) - (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(a.price) || b.price - a.price,
+		13: (a, b) => (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(a.price) - (0,_catalog_js__WEBPACK_IMPORTED_MODULE_5__.getRarity)(b.price) || a.price - b.price
 	};
 
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
+	let selectedId = -1;
 
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(3);
-		window.pagenameitemf2(title);
+	const select = item => {
+		$$invalidate(2, selectedId = item.id);
+		window.pageloadf2(category.page);
+		window.pagenameitemf2(item.name);
 	};
 
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
+	const step = dir => {
+		const next = items[currentIndex + dir];
+		if (next) select(next);
 	};
 
 	const onBuy = item => {
 		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
+
+		// Результат покупки присылает сервер (успех / нет места в инвентаре)
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)("client.donate.buy.clothes", item.id);
 	};
+
+	function keypress_handler_4(event) {
+		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
+	}
 
 	function keypress_handler_3(event) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
@@ -134085,56 +133502,87 @@ function instance($$self, $$props, $$invalidate) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
 	}
 
-	function keypress_handler_4(event) {
+	function keypress_handler_5(event) {
 		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
 	}
 
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
+	const click_handler = () => $$invalidate(2, selectedId = -1);
+	const click_handler_1 = () => onBuy(selected);
+	const click_handler_2 = () => step(-1);
+	const click_handler_3 = () => step(1);
+	const click_handler_4 = item => select(item);
+	const click_handler_5 = item => select(item);
 
 	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(11, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
+		if ('category' in $$props) $$invalidate(0, category = $$props.category);
+		if ('searchText' in $$props) $$invalidate(11, searchText = $$props.searchText);
 		if ('pagefilter' in $$props) $$invalidate(12, pagefilter = $$props.pagefilter);
+		if ('pageload' in $$props) $$invalidate(1, pageload = $$props.pageload);
 	};
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty[0] & /*pagefilter*/ 4096) {
-			$: $$invalidate(4, sortedShopList = [...shopList].sort(sortFunctions[pagefilter]));
+		if ($$self.$$.dirty[0] & /*$charData*/ 16384) {
+			$: $$invalidate(13, isMale = !$charData || $charData.Gender !== false);
+		}
+
+		if ($$self.$$.dirty[0] & /*searchText*/ 2048) {
+			$: $$invalidate(5, search = (searchText || "").toLowerCase().trim());
+		}
+
+		if ($$self.$$.dirty[0] & /*category, isMale, search, pagefilter*/ 12321) {
+			$: $$invalidate(4, items = _catalog_js__WEBPACK_IMPORTED_MODULE_5__.clothesList.filter(item => item.type === category.type && item.male === isMale).filter(item => !search.length || item.name.toLowerCase().includes(search)).sort(sorters[pagefilter] || sorters[10]));
+		}
+
+		if ($$self.$$.dirty[0] & /*pageload*/ 2) {
+			// Вернулись в «Все» — закрываем карточку товара
+			$: if (pageload === 0) $$invalidate(2, selectedId = -1);
+		}
+
+		if ($$self.$$.dirty[0] & /*items, selectedId*/ 20) {
+			$: $$invalidate(3, currentIndex = items.findIndex(item => item.id === selectedId));
+		}
+
+		if ($$self.$$.dirty[0] & /*currentIndex, items*/ 24) {
+			$: $$invalidate(7, selected = currentIndex > -1 ? items[currentIndex] : null);
+		}
+
+		if ($$self.$$.dirty[0] & /*items, selectedId*/ 20) {
+			$: $$invalidate(6, others = items.filter(item => item.id !== selectedId).slice(0, 4));
 		}
 	};
 
 	return [
-		searchText,
-		selectIndex,
-		maxindex,
+		category,
+		pageload,
+		selectedId,
 		currentIndex,
-		sortedShopList,
-		shopList,
-		randomItems,
+		items,
+		search,
+		others,
 		selected,
-		nextBlock,
-		prevBlock,
+		select,
+		step,
 		onBuy,
-		SetPopup,
+		searchText,
 		pagefilter,
+		isMale,
+		$charData,
+		keypress_handler_4,
 		keypress_handler_3,
 		keypress_handler_2,
 		keypress_handler_1,
 		keypress_handler,
-		keypress_handler_4,
+		keypress_handler_5,
 		click_handler,
 		click_handler_1,
 		click_handler_2,
 		click_handler_3,
-		click_handler_4
+		click_handler_4,
+		click_handler_5
 	];
 }
 
-class Accessories extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+class List extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
 
@@ -134145,11 +133593,12 @@ class Accessories extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCom
 			create_fragment,
 			svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal,
 			{
-				SetPopup: 11,
-				searchText: 0,
-				pagefilter: 12
+				category: 0,
+				searchText: 11,
+				pagefilter: 12,
+				pageload: 1
 			},
-			null,
+			add_css,
 			[-1, -1]
 		);
 	}
@@ -134158,8931 +133607,7 @@ class Accessories extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCom
 
 if (false) {}
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Accessories);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/armore.svelte":
-/*!******************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/armore.svelte ***!
-  \******************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/armore.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (292:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Бронежилеты";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (205:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (296:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (295:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (236:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (229:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (252:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (245:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (207:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (267:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(5);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Armore extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Armore);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/heat.svelte":
-/*!****************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/heat.svelte ***!
-  \****************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/heat.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (844:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Головные уборы";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (757:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (848:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (847:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (788:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (781:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (804:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (797:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (759:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (819:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(2);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Heat extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Heat);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/mask.svelte":
-/*!****************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/mask.svelte ***!
-  \****************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/mask.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (292:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Маски";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (205:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (296:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (295:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (236:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (229:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (252:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (245:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (207:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (267:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(1);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Mask extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Mask);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/outerwear.svelte":
-/*!*********************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/outerwear.svelte ***!
-  \*********************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/outerwear.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (292:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Верхняя одежда";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (205:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (296:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (295:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (236:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (229:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (252:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (245:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (207:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (267:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(4);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Outerwear extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Outerwear);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/pants.svelte":
-/*!*****************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/pants.svelte ***!
-  \*****************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/pants.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (292:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Штаны";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (205:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (296:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (295:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (236:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (229:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (252:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (245:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (207:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (267:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(7);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Pants extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Pants);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/shoes.svelte":
-/*!*****************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/shoes.svelte ***!
-  \*****************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/shoes.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (292:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Обувь";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (205:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (296:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (295:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (236:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (229:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (252:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (245:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (207:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (267:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(8);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Shoes extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Shoes);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/undergarments.svelte":
-/*!*************************************************************************************************!*\
-  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/undergarments.svelte ***!
-  \*************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/undergarments.svelte generated by Svelte v3.59.2 */
-
-
-
-
-
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-function get_each_context_1(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	child_ctx[26] = i;
-	return child_ctx;
-}
-
-// (292:4) {:else}
-function create_else_block_2(ctx) {
-	let h1;
-	let t1;
-	let div;
-	let each_value_2 = /*shopList*/ ctx[4];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value_2.length; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Нижняя одежда";
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "shop");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, h1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected, shopList, searchText*/ 81) {
-				each_value_2 = /*shopList*/ ctx[4];
-				let i;
-
-				for (i = 0; i < each_value_2.length; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value_2.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(h1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (205:0) {#if selectIndex > -1}
-function create_if_block(ctx) {
-	let div2;
-	let t0;
-	let div1;
-	let h1;
-	let t2;
-	let div0;
-	let each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-	let each_blocks_1 = [];
-
-	for (let i = 0; i < each_value_1.length; i += 1) {
-		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
-	}
-
-	let each_value = /*randomItems*/ ctx[5];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				each_blocks_1[i].c();
-			}
-
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Другие модели";
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "clilist");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "catalogitems");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "selectblockcl");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-
-			for (let i = 0; i < each_blocks_1.length; i += 1) {
-				if (each_blocks_1[i]) {
-					each_blocks_1[i].m(div2, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div0, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex, nextBlock, shopList, selectIndex, prevBlock, onBuy*/ 926) {
-				each_value_1 = /*shopList*/ ctx[4][/*selectIndex*/ ctx[1]].list;
-				let i;
-
-				for (i = 0; i < each_value_1.length; i += 1) {
-					const child_ctx = get_each_context_1(ctx, each_value_1, i);
-
-					if (each_blocks_1[i]) {
-						each_blocks_1[i].p(child_ctx, dirty);
-					} else {
-						each_blocks_1[i] = create_each_block_1(child_ctx);
-						each_blocks_1[i].c();
-						each_blocks_1[i].m(div2, t0);
-					}
-				}
-
-				for (; i < each_blocks_1.length; i += 1) {
-					each_blocks_1[i].d(1);
-				}
-
-				each_blocks_1.length = each_value_1.length;
-			}
-
-			if (dirty & /*selected, randomItems*/ 96) {
-				each_value = /*randomItems*/ ctx[5];
-				let i;
-
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div0, null);
-					}
-				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (296:12) {#if (!searchText || !searchText.length) || (searchText && item.title.toLowerCase().trim().includes(searchText.toLowerCase().trim()))}
-function create_if_block_3(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g1;
-	let g0;
-	let path0;
-	let path1;
-	let defs;
-	let filter;
-	let feFlood;
-	let feColorMatrix0;
-	let feOffset;
-	let feGaussianBlur;
-	let feComposite;
-	let feColorMatrix1;
-	let feBlend0;
-	let feBlend1;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			g0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			filter = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("filter");
-			feFlood = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feFlood");
-			feColorMatrix0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feOffset = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feOffset");
-			feGaussianBlur = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feGaussianBlur");
-			feComposite = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feComposite");
-			feColorMatrix1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feColorMatrix");
-			feBlend0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			feBlend1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("feBlend");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "line " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.875 10C16.875 6.20304 13.797 3.125 10 3.125C6.20304 3.125 3.125 6.20304 3.125 10C3.125 13.797 6.20304 16.875 10 16.875C13.797 16.875 16.875 13.797 16.875 10Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g0, "filter", "url(#filter0_d_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M6.38281 11.9125C6.38281 11.8275 6.4395 11.785 6.55281 11.785C6.66613 11.785 7.01675 11.8629 7.60469 12.0187C7.73925 10.8571 8.11825 9.59625 8.74156 8.23625C8.96113 7.74044 9.22325 7.4925 9.52781 7.4925C9.5845 7.4925 9.63763 7.55269 9.68719 7.67312C9.74388 7.79356 9.77219 7.94231 9.77219 8.11937C9.77219 8.33187 9.65888 8.91625 9.43219 9.8725C9.21263 10.8287 9.06738 11.6611 8.99656 12.3694C9.46406 12.4756 9.87488 12.5287 10.2291 12.5287C10.5903 12.5287 10.9197 12.4367 11.2172 12.2525C11.5147 12.0613 11.7697 11.8169 11.9822 11.5194C12.4214 10.8889 12.6409 10.1311 12.6409 9.24562C12.6339 7.60937 11.9822 6.79125 10.6859 6.79125C10.2255 6.79831 9.41094 7.00375 8.24219 7.4075C8.0155 7.48544 7.81719 7.52437 7.64719 7.52437C7.47719 7.52437 7.39219 7.47481 7.39219 7.37562C7.39219 7.24106 7.49138 7.08169 7.68969 6.8975C7.888 6.71331 8.143 6.53625 8.45469 6.36625C9.21969 5.95542 9.96344 5.75 10.6859 5.75C11.6776 5.75 12.4922 6.01562 13.1297 6.54687C13.8805 7.17731 14.2524 8.13356 14.2453 9.41562C14.2453 9.96106 14.1603 10.4994 13.9903 11.0306C13.8203 11.5619 13.5618 12.0364 13.2147 12.4544C12.8676 12.8652 12.4284 13.1981 11.8972 13.4531C11.3659 13.7081 10.7391 13.8356 10.0166 13.8356C9.72613 13.8356 9.35781 13.7719 8.91156 13.6444C8.862 13.7789 8.738 13.8462 8.53969 13.8462C8.17138 13.8462 7.91988 13.7861 7.78531 13.6656C7.65781 13.5381 7.58344 13.3327 7.56219 13.0494C7.22219 12.8581 6.93888 12.6598 6.71219 12.4544C6.49263 12.2489 6.38281 12.0683 6.38281 11.9125Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g1, "clip-path", "url(#clip0_951_28)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "flood-opacity", "0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feFlood, "result", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "in", "SourceAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "values", "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix0, "result", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feGaussianBlur, "stdDeviation", "2.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "in2", "hardAlpha");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feComposite, "operator", "out");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "type", "matrix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feColorMatrix1, "values", "0 0 0 0 0.811765 0 0 0 0 0.972549 0 0 0 0 0.0431373 0 0 0 0.25 0");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "in2", "BackgroundImageFix");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend0, "result", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "mode", "normal");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in", "SourceGraphic");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "in2", "effect1_dropShadow_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(feBlend1, "result", "shape");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "id", "filter0_d_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "x", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "y", "-1.875");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "width", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "height", "23.75");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "filterUnits", "userSpaceOnUse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(filter, "color-interpolation-filters", "sRGB");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_951_28");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 20 20");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headrewrad");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "n");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "blockrewrad");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, g0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g0, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g1, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, filter);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feFlood);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feOffset);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feGaussianBlur);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feComposite);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feColorMatrix1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(filter, feBlend1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_4*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_4)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (295:8) {#each shopList as item, index}
-function create_each_block_2(ctx) {
-	let show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-	let if_block_anchor;
-	let if_block = show_if && create_if_block_3(ctx);
-
-	return {
-		c() {
-			if (if_block) if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if (if_block) if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*searchText*/ 1) show_if = !/*searchText*/ ctx[0] || !/*searchText*/ ctx[0].length || /*searchText*/ ctx[0] && /*item*/ ctx[24].title.toLowerCase().trim().includes(/*searchText*/ ctx[0].toLowerCase().trim());
-
-			if (show_if) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block_3(ctx);
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		d(detaching) {
-			if (if_block) if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-// (236:24) {:else}
-function create_else_block_1(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_1*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_1*/ ctx[17])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (229:20) {#if currentIndex <= 0}
-function create_if_block_2(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="30" y="30" width="30" height="30" rx="15" transform="rotate(-180 30 30)" fill="#262626"></rect><path d="M18 10L11.4 15.5L18 21" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] <= 0);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (252:24) {:else}
-function create_else_block(ctx) {
-	let span;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "keypress", /*keypress_handler_2*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*click_handler_2*/ ctx[18])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (245:20) {#if currentIndex === maxindex}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.innerHTML = `<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="30" rx="15" fill="#262626"></rect><path d="M12 20L18.6 14.5L12 9" stroke="white" stroke-opacity="0.5" stroke-linecap="round"></path></svg>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "rligh");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*currentIndex, maxindex*/ 12) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "none", /*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (207:8) {#each shopList[selectIndex].list as item, index}
-function create_each_block_1(ctx) {
-	let div5;
-	let div1;
-	let h1;
-	let t0_value = /*item*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let span;
-	let t2_value = /*item*/ ctx[24].price + "";
-	let t2;
-	let t3;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t4;
-	let div0;
-	let t6;
-	let div4;
-	let div2;
-	let div2_class_value;
-	let t7;
-	let div3;
-	let t8;
-	let img;
-	let img_src_value;
-	let t9;
-	let mounted;
-	let dispose;
-
-	function click_handler() {
-		return /*click_handler*/ ctx[16](/*item*/ ctx[24]);
-	}
-
-	function select_block_type_1(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] <= 0) return create_if_block_2;
-		return create_else_block_1;
-	}
-
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block0 = current_block_type(ctx);
-
-	function select_block_type_2(ctx, dirty) {
-		if (/*currentIndex*/ ctx[3] === /*maxindex*/ ctx[2]) return create_if_block_1;
-		return create_else_block;
-	}
-
-	let current_block_type_1 = select_block_type_2(ctx, -1);
-	let if_block1 = current_block_type_1(ctx);
-
-	return {
-		c() {
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Купить предмет";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if_block0.c();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "btnbuy");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headsbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "centersbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bgblocksbcl");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "blgf");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "act", /*index*/ ctx[26] === 0);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			if_block0.m(div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
-			if_block1.m(div3, null);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "keypress", /*keypress_handler*/ ctx[14]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*selectIndex*/ 2 && t0_value !== (t0_value = /*item*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectIndex*/ 2 && t2_value !== (t2_value = /*item*/ ctx[24].price + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectIndex*/ 2 && div2_class_value !== (div2_class_value = "linesbcl " + /*item*/ ctx[24].line)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
-			}
-
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
-				if_block0.p(ctx, dirty);
-			} else {
-				if_block0.d(1);
-				if_block0 = current_block_type(ctx);
-
-				if (if_block0) {
-					if_block0.c();
-					if_block0.m(div3, t8);
-				}
-			}
-
-			if (dirty & /*selectIndex*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			}
-
-			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
-				if_block1.p(ctx, dirty);
-			} else {
-				if_block1.d(1);
-				if_block1 = current_block_type_1(ctx);
-
-				if (if_block1) {
-					if_block1.c();
-					if_block1.m(div3, null);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if_block0.d();
-			if_block1.d();
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-// (267:16) {#each randomItems as item, index}
-function create_each_block(ctx) {
-	let div2;
-	let div1;
-	let div0;
-	let div0_class_value;
-	let t0;
-	let span;
-	let t1_value = /*item*/ ctx[24].price + "";
-	let t1;
-	let t2;
-	let svg;
-	let g;
-	let path0;
-	let path1;
-	let defs;
-	let clipPath;
-	let rect;
-	let t3;
-	let img;
-	let img_src_value;
-	let t4;
-	let p;
-	let t5_value = /*item*/ ctx[24].title + "";
-	let t5;
-	let t6;
-	let mounted;
-	let dispose;
-
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[19](/*index*/ ctx[26], /*item*/ ctx[24]);
-	}
-
-	return {
-		c() {
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
-			g = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("g");
-			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
-			defs = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("defs");
-			clipPath = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("clipPath");
-			rect = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "linesbcl " + /*item*/ ctx[24].line);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M16.5 8.25C16.5 3.69365 12.8063 0 8.25 0C3.69365 0 0 3.69365 0 8.25C0 12.8063 3.69365 16.5 8.25 16.5C12.8063 16.5 16.5 12.8063 16.5 8.25Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#CFF80B");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M3.91016 10.5434C3.91016 10.4414 3.97818 10.3904 4.11416 10.3904C4.25013 10.3904 4.67088 10.484 5.37641 10.6709C5.53788 9.27691 5.99268 7.76394 6.74066 6.13194C7.00413 5.53696 7.31868 5.23944 7.68416 5.23944C7.75218 5.23944 7.81593 5.31166 7.87541 5.45619C7.94343 5.60071 7.97741 5.77921 7.97741 5.99169C7.97741 6.24669 7.84143 6.94794 7.56941 8.09544C7.30593 9.24294 7.13163 10.2417 7.04666 11.0917C7.60766 11.2192 8.10063 11.2829 8.52566 11.2829C8.95916 11.2829 9.35441 11.1725 9.71141 10.9514C10.0684 10.7219 10.3744 10.4287 10.6294 10.0717C11.1564 9.31516 11.4199 8.40571 11.4199 7.34319C11.4114 5.37969 10.6294 4.39794 9.07391 4.39794C8.52138 4.40641 7.54391 4.65294 6.14141 5.13744C5.86938 5.23096 5.63141 5.27769 5.42741 5.27769C5.22341 5.27769 5.12141 5.21821 5.12141 5.09919C5.12141 4.93771 5.24043 4.74646 5.47841 4.52544C5.71638 4.30441 6.02238 4.09194 6.39641 3.88794C7.31441 3.39494 8.20691 3.14844 9.07391 3.14844C10.2639 3.14844 11.2414 3.46719 12.0064 4.10469C12.9074 4.86121 13.3536 6.00871 13.3452 7.54719C13.3452 8.20171 13.2432 8.84769 13.0392 9.48519C12.8352 10.1227 12.5249 10.6922 12.1084 11.1937C11.6919 11.6867 11.1649 12.0862 10.5274 12.3922C9.88991 12.6982 9.13766 12.8512 8.27066 12.8512C7.92213 12.8512 7.48016 12.7747 6.94466 12.6217C6.88518 12.7832 6.73638 12.8639 6.49841 12.8639C6.05643 12.8639 5.75463 12.7917 5.59316 12.6472C5.44016 12.4942 5.35091 12.2477 5.32541 11.9077C4.91741 11.6782 4.57743 11.4402 4.30541 11.1937C4.04193 10.9472 3.91016 10.7304 3.91016 10.5434Z");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#1E1E1E");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill-opacity", "0.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(g, "clip-path", "url(#clip0_1_40)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "width", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "height", "16.5");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect, "fill", "white");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(clipPath, "id", "clip0_1_40");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", "17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 17 17");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "xmlns", "http://www.w3.org/2000/svg");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headcbl");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*item*/ ctx[24].img)) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "clotblock");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, svg);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, g);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(g, path1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, defs);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(defs, clipPath);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(clipPath, rect);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, img);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "keypress", /*keypress_handler_3*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_3)
-				];
-
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let if_block_anchor;
-
-	function select_block_type(ctx, dirty) {
-		if (/*selectIndex*/ ctx[1] > -1) return create_if_block;
-		return create_else_block_2;
-	}
-
-	let current_block_type = select_block_type(ctx, -1);
-	let if_block = current_block_type(ctx);
-
-	return {
-		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			if_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
-		},
-		p(ctx, [dirty]) {
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
-			} else {
-				if_block.d(1);
-				if_block = current_block_type(ctx);
-
-				if (if_block) {
-					if_block.c();
-					if_block.m(if_block_anchor.parentNode, if_block_anchor);
-				}
-			}
-		},
-		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if_block.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
-		}
-	};
-}
-
-function shuffle(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		let j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-
-	return array;
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_1__.accountRedbucks, $$value => $$invalidate(21, $accountRedbucks = $$value));
-	let { SetPopup } = $$props;
-	let { searchText } = $$props;
-	let selectIndex = -1;
-	let maxindex;
-	let currentIndex = 0;
-
-	const shopList = [
-		{
-			title: "Яркий верх",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий верх",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий верх 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий низ",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий низ",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий низ 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		},
-		{
-			title: "Яркий хуй",
-			desc: "",
-			function: "onSelectC",
-			img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-			price: 3000,
-			line: "line4",
-			list: [
-				{
-					id: 16,
-					name: "Яркий хуй",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 2",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 3",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				},
-				{
-					id: 16,
-					name: "Яркий хуй 4",
-					desc: "",
-					text: `Одежда`,
-					img: document.cloud + "inventoryItems/clothes/male/masks/0_0.png",
-					price: 3000,
-					line: "line4"
-				}
-			]
-		}
-	];
-
-	let shuffledList = shuffle(shopList);
-	let randomItems = shuffledList.slice(0, 4);
-
-	const selected = (index, title) => {
-		$$invalidate(1, selectIndex = index);
-		$$invalidate(3, currentIndex = 0);
-		$$invalidate(2, maxindex = shopList[index].list.length - 1);
-		switchBlock();
-		window.pageloadf2(6);
-		window.pagenameitemf2(title);
-	};
-
-	function switchBlock() {
-		const blocks = document.querySelectorAll('.blgf');
-
-		blocks.forEach((block, index) => {
-			if (index === currentIndex) {
-				block.style.display = 'flex';
-			} else {
-				block.style.display = 'none';
-			}
-		});
-	}
-
-	const nextBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex + 1);
-		switchBlock();
-	};
-
-	const prevBlock = () => {
-		$$invalidate(3, currentIndex = currentIndex - 1);
-		switchBlock();
-	};
-
-	const onBuy = item => {
-		if ($accountRedbucks < item.price) return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
-		SetPopup();
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("client.donate.buy.clothes", item.id);
-		window.notificationAdd(3, 9, `Поздравляем с покупкой`, 3000);
-	};
-
-	function keypress_handler_3(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_2(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_1(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	function keypress_handler_4(event) {
-		svelte_internal__WEBPACK_IMPORTED_MODULE_0__.bubble.call(this, $$self, event);
-	}
-
-	const click_handler = item => onBuy(item);
-	const click_handler_1 = () => prevBlock();
-	const click_handler_2 = () => nextBlock();
-	const click_handler_3 = (index, item) => selected(index, item.title);
-	const click_handler_4 = (index, item) => selected(index, item.title);
-
-	$$self.$$set = $$props => {
-		if ('SetPopup' in $$props) $$invalidate(10, SetPopup = $$props.SetPopup);
-		if ('searchText' in $$props) $$invalidate(0, searchText = $$props.searchText);
-	};
-
-	return [
-		searchText,
-		selectIndex,
-		maxindex,
-		currentIndex,
-		shopList,
-		randomItems,
-		selected,
-		nextBlock,
-		prevBlock,
-		onBuy,
-		SetPopup,
-		keypress_handler_3,
-		keypress_handler_2,
-		keypress_handler_1,
-		keypress_handler,
-		keypress_handler_4,
-		click_handler,
-		click_handler_1,
-		click_handler_2,
-		click_handler_3,
-		click_handler_4
-	];
-}
-
-class Undergarments extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { SetPopup: 10, searchText: 0 });
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Undergarments);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (List);
 
 
 /***/ }),
@@ -143099,711 +133624,207 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
-/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
-/* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
-/* harmony import */ var api_validation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/validation */ "./src/api/validation.js");
-/* harmony import */ var _clothes_accessories_svelte__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./clothes/accessories.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/accessories.svelte");
-/* harmony import */ var _clothes_armore_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./clothes/armore.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/armore.svelte");
-/* harmony import */ var _clothes_heat_svelte__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./clothes/heat.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/heat.svelte");
-/* harmony import */ var _clothes_outerwear_svelte__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./clothes/outerwear.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/outerwear.svelte");
-/* harmony import */ var _clothes_pants_svelte__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./clothes/pants.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/pants.svelte");
-/* harmony import */ var _clothes_shoes_svelte__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./clothes/shoes.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/shoes.svelte");
-/* harmony import */ var _clothes_undergarments_svelte__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./clothes/undergarments.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/undergarments.svelte");
-/* harmony import */ var _clothes_mask_svelte__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./clothes/mask.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/mask.svelte");
+/* harmony import */ var _clothes_list_svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./clothes/list.svelte */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/clothes/list.svelte");
+/* harmony import */ var _catalog_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./catalog.js */ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/catalog.js");
 /* src/views/player/gta5devmenu/elements/shop/elements/shopcl/index.svelte generated by Svelte v3.59.2 */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-function create_if_block_7(ctx) {
-	let mask;
-	let current;
-
-	mask = new _clothes_mask_svelte__WEBPACK_IMPORTED_MODULE_12__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(mask.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(mask, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const mask_changes = {};
-			if (dirty & /*searchText*/ 16) mask_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) mask_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) mask_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) mask_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) mask_changes.SetPopup = /*SetPopup*/ ctx[2];
-			mask.$set(mask_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(mask.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(mask.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(mask, detaching);
-		}
-	};
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[3] = list[i];
+	return child_ctx;
 }
 
-// (24:0) {#if pageload === 0 || pageload === 2 }
-function create_if_block_6(ctx) {
-	let heat;
-	let current;
-
-	heat = new _clothes_heat_svelte__WEBPACK_IMPORTED_MODULE_7__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(heat.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(heat, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const heat_changes = {};
-			if (dirty & /*searchText*/ 16) heat_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) heat_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) heat_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) heat_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) heat_changes.SetPopup = /*SetPopup*/ ctx[2];
-			heat.$set(heat_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(heat.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(heat.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(heat, detaching);
-		}
-	};
-}
-
-// (27:0) {#if pageload === 0 || pageload === 3 }
-function create_if_block_5(ctx) {
-	let accessories;
-	let current;
-
-	accessories = new _clothes_accessories_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(accessories.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(accessories, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const accessories_changes = {};
-			if (dirty & /*searchText*/ 16) accessories_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) accessories_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) accessories_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) accessories_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) accessories_changes.SetPopup = /*SetPopup*/ ctx[2];
-			accessories.$set(accessories_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(accessories.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(accessories.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(accessories, detaching);
-		}
-	};
-}
-
-// (30:0) {#if pageload === 0 || pageload === 4 }
-function create_if_block_4(ctx) {
-	let outerwear;
-	let current;
-
-	outerwear = new _clothes_outerwear_svelte__WEBPACK_IMPORTED_MODULE_8__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(outerwear.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(outerwear, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const outerwear_changes = {};
-			if (dirty & /*searchText*/ 16) outerwear_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) outerwear_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) outerwear_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) outerwear_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) outerwear_changes.SetPopup = /*SetPopup*/ ctx[2];
-			outerwear.$set(outerwear_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(outerwear.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(outerwear.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(outerwear, detaching);
-		}
-	};
-}
-
-// (33:0) {#if pageload === 0 || pageload === 5 }
-function create_if_block_3(ctx) {
-	let armore;
-	let current;
-
-	armore = new _clothes_armore_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(armore.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(armore, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const armore_changes = {};
-			if (dirty & /*searchText*/ 16) armore_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) armore_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) armore_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) armore_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) armore_changes.SetPopup = /*SetPopup*/ ctx[2];
-			armore.$set(armore_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(armore.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(armore.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(armore, detaching);
-		}
-	};
-}
-
-// (36:0) {#if pageload === 0 || pageload === 6 }
-function create_if_block_2(ctx) {
-	let undergarments;
-	let current;
-
-	undergarments = new _clothes_undergarments_svelte__WEBPACK_IMPORTED_MODULE_11__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(undergarments.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(undergarments, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const undergarments_changes = {};
-			if (dirty & /*searchText*/ 16) undergarments_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) undergarments_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) undergarments_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) undergarments_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) undergarments_changes.SetPopup = /*SetPopup*/ ctx[2];
-			undergarments.$set(undergarments_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(undergarments.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(undergarments.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(undergarments, detaching);
-		}
-	};
-}
-
-// (39:0) {#if pageload === 0 || pageload === 7 }
-function create_if_block_1(ctx) {
-	let pants;
-	let current;
-
-	pants = new _clothes_pants_svelte__WEBPACK_IMPORTED_MODULE_9__.default({
-			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
-			}
-		});
-
-	return {
-		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(pants.$$.fragment);
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(pants, target, anchor);
-			current = true;
-		},
-		p(ctx, dirty) {
-			const pants_changes = {};
-			if (dirty & /*searchText*/ 16) pants_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) pants_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) pants_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) pants_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) pants_changes.SetPopup = /*SetPopup*/ ctx[2];
-			pants.$set(pants_changes);
-		},
-		i(local) {
-			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(pants.$$.fragment, local);
-			current = true;
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(pants.$$.fragment, local);
-			current = false;
-		},
-		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(pants, detaching);
-		}
-	};
-}
-
-// (42:0) {#if pageload === 0 || pageload === 8 }
+// (9:4) {#if pageload === 0 || pageload === category.page}
 function create_if_block(ctx) {
-	let shoes;
+	let list;
 	let current;
 
-	shoes = new _clothes_shoes_svelte__WEBPACK_IMPORTED_MODULE_10__.default({
+	list = new _clothes_list_svelte__WEBPACK_IMPORTED_MODULE_1__.default({
 			props: {
-				searchText: /*searchText*/ ctx[4],
-				pagefilter: /*pagefilter*/ ctx[3],
-				pagenameitem: /*pagenameitem*/ ctx[1],
-				pageload: /*pageload*/ ctx[0],
-				SetPopup: /*SetPopup*/ ctx[2]
+				category: /*category*/ ctx[3],
+				searchText: /*searchText*/ ctx[2],
+				pagefilter: /*pagefilter*/ ctx[1],
+				pageload: /*pageload*/ ctx[0]
 			}
 		});
 
 	return {
 		c() {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(shoes.$$.fragment);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(list.$$.fragment);
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(shoes, target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(list, target, anchor);
 			current = true;
 		},
 		p(ctx, dirty) {
-			const shoes_changes = {};
-			if (dirty & /*searchText*/ 16) shoes_changes.searchText = /*searchText*/ ctx[4];
-			if (dirty & /*pagefilter*/ 8) shoes_changes.pagefilter = /*pagefilter*/ ctx[3];
-			if (dirty & /*pagenameitem*/ 2) shoes_changes.pagenameitem = /*pagenameitem*/ ctx[1];
-			if (dirty & /*pageload*/ 1) shoes_changes.pageload = /*pageload*/ ctx[0];
-			if (dirty & /*SetPopup*/ 4) shoes_changes.SetPopup = /*SetPopup*/ ctx[2];
-			shoes.$set(shoes_changes);
+			const list_changes = {};
+			if (dirty & /*searchText*/ 4) list_changes.searchText = /*searchText*/ ctx[2];
+			if (dirty & /*pagefilter*/ 2) list_changes.pagefilter = /*pagefilter*/ ctx[1];
+			if (dirty & /*pageload*/ 1) list_changes.pageload = /*pageload*/ ctx[0];
+			list.$set(list_changes);
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(shoes.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(list.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(shoes.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(list.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(shoes, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(list, detaching);
+		}
+	};
+}
+
+// (8:0) {#each categories as category (category.page)}
+function create_each_block(key_1, ctx) {
+	let first;
+	let if_block_anchor;
+	let current;
+	let if_block = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === /*category*/ ctx[3].page) && create_if_block(ctx);
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			first = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			if (if_block) if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			this.first = first;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, first, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+			current = true;
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === /*category*/ ctx[3].page) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+
+					if (dirty & /*pageload*/ 1) {
+						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+					}
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			} else if (if_block) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block, 1, 1, () => {
+					if_block = null;
+				});
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
+			}
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(first);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
 		}
 	};
 }
 
 function create_fragment(ctx) {
-	let t0;
-	let t1;
-	let t2;
-	let t3;
-	let t4;
-	let t5;
-	let t6;
-	let if_block7_anchor;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_1_anchor;
 	let current;
-	let if_block0 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 1) && create_if_block_7(ctx);
-	let if_block1 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 2) && create_if_block_6(ctx);
-	let if_block2 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 3) && create_if_block_5(ctx);
-	let if_block3 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 4) && create_if_block_4(ctx);
-	let if_block4 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 5) && create_if_block_3(ctx);
-	let if_block5 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 6) && create_if_block_2(ctx);
-	let if_block6 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 7) && create_if_block_1(ctx);
-	let if_block7 = (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 8) && create_if_block(ctx);
+	let each_value = _catalog_js__WEBPACK_IMPORTED_MODULE_2__.categories;
+	const get_key = ctx => /*category*/ ctx[3].page;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
 
 	return {
 		c() {
-			if (if_block0) if_block0.c();
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block1) if_block1.c();
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block2) if_block2.c();
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block3) if_block3.c();
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block4) if_block4.c();
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block5) if_block5.c();
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block6) if_block6.c();
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block7) if_block7.c();
-			if_block7_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
-			if (if_block0) if_block0.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
-			if (if_block1) if_block1.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
-			if (if_block2) if_block2.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
-			if (if_block3) if_block3.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
-			if (if_block4) if_block4.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
-			if (if_block5) if_block5.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
-			if (if_block6) if_block6.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t6, anchor);
-			if (if_block7) if_block7.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block7_anchor, anchor);
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(target, anchor);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
 			current = true;
 		},
 		p(ctx, [dirty]) {
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 1) {
-				if (if_block0) {
-					if_block0.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
-					}
-				} else {
-					if_block0 = create_if_block_7(ctx);
-					if_block0.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
-					if_block0.m(t0.parentNode, t0);
-				}
-			} else if (if_block0) {
+			if (dirty & /*categories, searchText, pagefilter, pageload*/ 7) {
+				each_value = _catalog_js__WEBPACK_IMPORTED_MODULE_2__.categories;
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block0, 1, 1, () => {
-					if_block0 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 2) {
-				if (if_block1) {
-					if_block1.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1, 1);
-					}
-				} else {
-					if_block1 = create_if_block_6(ctx);
-					if_block1.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1, 1);
-					if_block1.m(t1.parentNode, t1);
-				}
-			} else if (if_block1) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block1, 1, 1, () => {
-					if_block1 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 3) {
-				if (if_block2) {
-					if_block2.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2, 1);
-					}
-				} else {
-					if_block2 = create_if_block_5(ctx);
-					if_block2.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2, 1);
-					if_block2.m(t2.parentNode, t2);
-				}
-			} else if (if_block2) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block2, 1, 1, () => {
-					if_block2 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 4) {
-				if (if_block3) {
-					if_block3.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block3, 1);
-					}
-				} else {
-					if_block3 = create_if_block_4(ctx);
-					if_block3.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block3, 1);
-					if_block3.m(t3.parentNode, t3);
-				}
-			} else if (if_block3) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block3, 1, 1, () => {
-					if_block3 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 5) {
-				if (if_block4) {
-					if_block4.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block4, 1);
-					}
-				} else {
-					if_block4 = create_if_block_3(ctx);
-					if_block4.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block4, 1);
-					if_block4.m(t4.parentNode, t4);
-				}
-			} else if (if_block4) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block4, 1, 1, () => {
-					if_block4 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 6) {
-				if (if_block5) {
-					if_block5.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block5, 1);
-					}
-				} else {
-					if_block5 = create_if_block_2(ctx);
-					if_block5.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block5, 1);
-					if_block5.m(t5.parentNode, t5);
-				}
-			} else if (if_block5) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block5, 1, 1, () => {
-					if_block5 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 7) {
-				if (if_block6) {
-					if_block6.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block6, 1);
-					}
-				} else {
-					if_block6 = create_if_block_1(ctx);
-					if_block6.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block6, 1);
-					if_block6.m(t6.parentNode, t6);
-				}
-			} else if (if_block6) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block6, 1, 1, () => {
-					if_block6 = null;
-				});
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-			}
-
-			if (/*pageload*/ ctx[0] === 0 || /*pageload*/ ctx[0] === 8) {
-				if (if_block7) {
-					if_block7.p(ctx, dirty);
-
-					if (dirty & /*pageload*/ 1) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block7, 1);
-					}
-				} else {
-					if_block7 = create_if_block(ctx);
-					if_block7.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block7, 1);
-					if_block7.m(if_block7_anchor.parentNode, if_block7_anchor);
-				}
-			} else if (if_block7) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block7, 1, 1, () => {
-					if_block7 = null;
-				});
-
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.outro_and_destroy_block, create_each_block, each_1_anchor, get_each_context);
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
 			}
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block7);
+
+			for (let i = 0; i < each_value.length; i += 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(each_blocks[i]);
+			}
+
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block7);
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(each_blocks[i]);
+			}
+
 			current = false;
 		},
 		d(detaching) {
-			if (if_block0) if_block0.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
-			if (if_block1) if_block1.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
-			if (if_block2) if_block2.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
-			if (if_block3) if_block3.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
-			if (if_block4) if_block4.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
-			if (if_block5) if_block5.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
-			if (if_block6) if_block6.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t6);
-			if (if_block7) if_block7.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block7_anchor);
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d(detaching);
+			}
+
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
 		}
 	};
 }
 
 function instance($$self, $$props, $$invalidate) {
 	let { pageload } = $$props;
-	let { pagenameitem } = $$props;
-	let { SetPopup } = $$props;
 	let { pagefilter } = $$props;
 	let { searchText } = $$props;
 
 	$$self.$$set = $$props => {
 		if ('pageload' in $$props) $$invalidate(0, pageload = $$props.pageload);
-		if ('pagenameitem' in $$props) $$invalidate(1, pagenameitem = $$props.pagenameitem);
-		if ('SetPopup' in $$props) $$invalidate(2, SetPopup = $$props.SetPopup);
-		if ('pagefilter' in $$props) $$invalidate(3, pagefilter = $$props.pagefilter);
-		if ('searchText' in $$props) $$invalidate(4, searchText = $$props.searchText);
+		if ('pagefilter' in $$props) $$invalidate(1, pagefilter = $$props.pagefilter);
+		if ('searchText' in $$props) $$invalidate(2, searchText = $$props.searchText);
 	};
 
-	return [pageload, pagenameitem, SetPopup, pagefilter, searchText];
+	return [pageload, pagefilter, searchText];
 }
 
 class Shopcl extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
@@ -143812,10 +133833,8 @@ class Shopcl extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponen
 
 		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {
 			pageload: 0,
-			pagenameitem: 1,
-			SetPopup: 2,
-			pagefilter: 3,
-			searchText: 4
+			pagefilter: 1,
+			searchText: 2
 		});
 	}
 }
@@ -145904,10 +135923,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
 /* harmony import */ var api_validation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! api/validation */ "./src/api/validation.js");
-/* harmony import */ var _views_player_hudevo_phonenew_components_calls_addContact_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/components/calls/addContact.svelte */ "./src/views/player/hudevo/phonenew/components/calls/addContact.svelte");
 /* src/views/player/gta5devmenu/elements/shop/popup/popupsim.svelte generated by Svelte v3.59.2 */
-
-
 
 
 
@@ -146519,8 +136535,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var json_fraction_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! json/fraction.js */ "./src/json/fraction.js");
 /* harmony import */ var json_jobs_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! json/jobs.js */ "./src/json/jobs.js");
 /* harmony import */ var json_vipinfo_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! json/vipinfo.js */ "./src/json/vipinfo.js");
-/* harmony import */ var _authInfo_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./authInfo.js */ "./src/views/player/gta5devmenu/elements/user/authInfo.js");
+/* harmony import */ var _hudevo_phonenew_assets_images_house_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../hudevo/phonenew/assets/images/house.png */ "./src/views/player/hudevo/phonenew/assets/images/house.png");
+/* harmony import */ var _hudevo_phonenew_assets_images_house_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_hudevo_phonenew_assets_images_house_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _hudevo_phonenew_assets_images_shop_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../hudevo/phonenew/assets/images/shop.png */ "./src/views/player/hudevo/phonenew/assets/images/shop.png");
+/* harmony import */ var _hudevo_phonenew_assets_images_shop_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_hudevo_phonenew_assets_images_shop_png__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _authInfo_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./authInfo.js */ "./src/views/player/gta5devmenu/elements/user/authInfo.js");
 /* src/views/player/gta5devmenu/elements/user/index.svelte generated by Svelte v3.59.2 */
+
+
 
 
 
@@ -146535,18 +136557,18 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[16] = list[i];
+	child_ctx[17] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[19] = list[i];
-	child_ctx[21] = i;
+	child_ctx[20] = list[i];
+	child_ctx[22] = i;
 	return child_ctx;
 }
 
-// (68:0) {#if selectView === "Osnovnoe"}
+// (70:0) {#if selectView === "Osnovnoe"}
 function create_if_block_14(ctx) {
 	let div9;
 	let div0;
@@ -146904,7 +136926,7 @@ function create_if_block_14(ctx) {
 	};
 }
 
-// (95:8) {#if selectCharData.FractionID > 0}
+// (97:8) {#if selectCharData.FractionID > 0}
 function create_if_block_16(ctx) {
 	let div;
 	let h1;
@@ -146956,7 +136978,7 @@ function create_if_block_16(ctx) {
 	};
 }
 
-// (102:8) {#if selectCharData.OrganizationID > 0}
+// (104:8) {#if selectCharData.OrganizationID > 0}
 function create_if_block_15(ctx) {
 	let div;
 	let h1;
@@ -147008,7 +137030,7 @@ function create_if_block_15(ctx) {
 	};
 }
 
-// (132:0) {#if selectView === "Statiskic"}
+// (134:0) {#if selectView === "Statiskic"}
 function create_if_block_6(ctx) {
 	let div16;
 	let div0;
@@ -147483,7 +137505,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (145:20) {:else}
+// (147:20) {:else}
 function create_else_block(ctx) {
 	let t0_value = /*diff*/ ctx[4].minutes + "";
 	let t0;
@@ -147508,7 +137530,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (143:45) 
+// (145:45) 
 function create_if_block_13(ctx) {
 	let t0_value = /*diff*/ ctx[4].hours + "";
 	let t0;
@@ -147533,7 +137555,7 @@ function create_if_block_13(ctx) {
 	};
 }
 
-// (141:44) 
+// (143:44) 
 function create_if_block_12(ctx) {
 	let t0_value = /*diff*/ ctx[4].days + "";
 	let t0;
@@ -147558,7 +137580,7 @@ function create_if_block_12(ctx) {
 	};
 }
 
-// (139:46) 
+// (141:46) 
 function create_if_block_11(ctx) {
 	let t0_value = /*diff*/ ctx[4].months + "";
 	let t0;
@@ -147583,7 +137605,7 @@ function create_if_block_11(ctx) {
 	};
 }
 
-// (137:16) {#if diff.years > 0}
+// (139:16) {#if diff.years > 0}
 function create_if_block_10(ctx) {
 	let t0_value = /*diff*/ ctx[4].years + "";
 	let t0;
@@ -147608,7 +137630,7 @@ function create_if_block_10(ctx) {
 	};
 }
 
-// (159:16) {#if onSelectedView2 === "Page1"}
+// (161:16) {#if onSelectedView2 === "Page1"}
 function create_if_block_9(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].TodayTime, "minutes").format("h[ч.] m[м.]") + "";
 	let t;
@@ -147629,7 +137651,7 @@ function create_if_block_9(ctx) {
 	};
 }
 
-// (162:16) {#if onSelectedView2 === "Page2"}
+// (164:16) {#if onSelectedView2 === "Page2"}
 function create_if_block_8(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].MonthTime, "minutes").format("w[нед.] d[д.] h[ч.] m[м.]") + "";
 	let t;
@@ -147650,7 +137672,7 @@ function create_if_block_8(ctx) {
 	};
 }
 
-// (165:16) {#if onSelectedView2 === "Page3"}
+// (167:16) {#if onSelectedView2 === "Page3"}
 function create_if_block_7(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].TotalTime, "minutes").format("y[г.] M[мес.] w[nнед.] d[д.] h[ч.] m[м.]") + "";
 	let t;
@@ -147671,7 +137693,7 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (237:0) {#if selectView === "Skills"}
+// (239:0) {#if selectView === "Skills"}
 function create_if_block_4(ctx) {
 	let if_block_anchor;
 	let if_block = /*selectCharData*/ ctx[2].jobSkillsInfo && create_if_block_5(ctx);
@@ -147706,7 +137728,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (238:4) {#if selectCharData.jobSkillsInfo}
+// (240:4) {#if selectCharData.jobSkillsInfo}
 function create_if_block_5(ctx) {
 	let div;
 	let each_value_1 = /*selectCharData*/ ctx[2].jobSkillsInfo;
@@ -147766,15 +137788,15 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (240:12) {#each selectCharData.jobSkillsInfo as job, index}
+// (242:12) {#each selectCharData.jobSkillsInfo as job, index}
 function create_each_block_1(ctx) {
 	let div4;
 	let h1;
-	let t0_value = /*job*/ ctx[19].name + "";
+	let t0_value = /*job*/ ctx[20].name + "";
 	let t0;
 	let t1;
 	let p0;
-	let t2_value = /*job*/ ctx[19].currentLevel + "";
+	let t2_value = /*job*/ ctx[20].currentLevel + "";
 	let t2;
 	let t3;
 	let t4;
@@ -147783,11 +137805,11 @@ function create_each_block_1(ctx) {
 	let p1;
 	let t6;
 	let b;
-	let t7_value = /*job*/ ctx[19].current + "";
+	let t7_value = /*job*/ ctx[20].current + "";
 	let t7;
 	let p2;
 	let t8;
-	let t9_value = /*job*/ ctx[19].nextLevel + "";
+	let t9_value = /*job*/ ctx[20].nextLevel + "";
 	let t9;
 	let t10;
 	let div2;
@@ -147821,9 +137843,9 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "headskill");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "progbar");
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", (/*job*/ ctx[19].currentLevel >= 5
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", (/*job*/ ctx[20].currentLevel >= 5
 			? 100
-			: /*job*/ ctx[19].currentLevel / 5 * 100 + /*job*/ ctx[19].current / /*job*/ ctx[19].nextLevel * 20) + "%");
+			: /*job*/ ctx[20].currentLevel / 5 * 100 + /*job*/ ctx[20].current / /*job*/ ctx[20].nextLevel * 20) + "%");
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bgprog");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "progskill");
@@ -147853,15 +137875,15 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*selectCharData*/ 4 && t0_value !== (t0_value = /*job*/ ctx[19].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectCharData*/ 4 && t2_value !== (t2_value = /*job*/ ctx[19].currentLevel + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-			if (dirty & /*selectCharData*/ 4 && t7_value !== (t7_value = /*job*/ ctx[19].current + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
-			if (dirty & /*selectCharData*/ 4 && t9_value !== (t9_value = /*job*/ ctx[19].nextLevel + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+			if (dirty & /*selectCharData*/ 4 && t0_value !== (t0_value = /*job*/ ctx[20].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*selectCharData*/ 4 && t2_value !== (t2_value = /*job*/ ctx[20].currentLevel + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*selectCharData*/ 4 && t7_value !== (t7_value = /*job*/ ctx[20].current + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty & /*selectCharData*/ 4 && t9_value !== (t9_value = /*job*/ ctx[20].nextLevel + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
 
 			if (dirty & /*selectCharData*/ 4) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", (/*job*/ ctx[19].currentLevel >= 5
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", (/*job*/ ctx[20].currentLevel >= 5
 				? 100
-				: /*job*/ ctx[19].currentLevel / 5 * 100 + /*job*/ ctx[19].current / /*job*/ ctx[19].nextLevel * 20) + "%");
+				: /*job*/ ctx[20].currentLevel / 5 * 100 + /*job*/ ctx[20].current / /*job*/ ctx[20].nextLevel * 20) + "%");
 			}
 		},
 		d(detaching) {
@@ -147870,10 +137892,10 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (259:0) {#if selectView === "Carsuser"}
+// (261:0) {#if selectView === "Carsuser"}
 function create_if_block_3(ctx) {
 	let div;
-	let each_value = /*carsList*/ ctx[1];
+	let each_value = (/*carsList*/ ctx[1] || []).filter(/*func*/ ctx[13]);
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -147900,8 +137922,8 @@ function create_if_block_3(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*carsList, document*/ 2) {
-				each_value = /*carsList*/ ctx[1];
+			if (dirty & /*carsList, Array, document*/ 2) {
+				each_value = (/*carsList*/ ctx[1] || []).filter(/*func*/ ctx[13]);
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -147930,7 +137952,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (261:8) {#each carsList as item}
+// (263:8) {#each (carsList || []).filter((item) => Array.isArray(item) && item[1]) as item}
 function create_each_block(ctx) {
 	let div3;
 	let div0;
@@ -147938,14 +137960,14 @@ function create_each_block(ctx) {
 	let img_src_value;
 	let t0;
 	let h1;
-	let t1_value = /*item*/ ctx[16][1] + "";
+	let t1_value = /*item*/ ctx[17][1] + "";
 	let t1;
 	let t2;
 	let div2;
 	let p;
 	let t3;
 	let b;
-	let t4_value = /*item*/ ctx[16][2] + "";
+	let t4_value = /*item*/ ctx[17][2] + "";
 	let t4;
 	let t5;
 	let div1;
@@ -147972,7 +137994,7 @@ function create_each_block(ctx) {
                         <span>Regular</span>`;
 
 			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[16][1].toLowerCase() + ".png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[17][1].toLowerCase() + ".png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "headblock");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fuel");
@@ -147997,12 +138019,12 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*carsList*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[16][1].toLowerCase() + ".png"))) {
+			if (dirty & /*carsList*/ 2 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[17][1].toLowerCase() + ".png"))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 
-			if (dirty & /*carsList*/ 2 && t1_value !== (t1_value = /*item*/ ctx[16][1] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
-			if (dirty & /*carsList*/ 2 && t4_value !== (t4_value = /*item*/ ctx[16][2] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty & /*carsList*/ 2 && t1_value !== (t1_value = /*item*/ ctx[17][1] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*carsList*/ 2 && t4_value !== (t4_value = /*item*/ ctx[17][2] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
@@ -148010,7 +138032,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (288:0) {#if selectView === "Housebiz"}
+// (290:0) {#if selectView === "Housebiz"}
 function create_if_block(ctx) {
 	let div;
 	let t;
@@ -148066,7 +138088,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (290:8) {#if selectCharData.houseId}
+// (292:8) {#if selectCharData.houseId}
 function create_if_block_2(ctx) {
 	let div4;
 	let div3;
@@ -148138,7 +138160,8 @@ function create_if_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "infohouse");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bgblockhouse");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "blockhouse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background", "url(" + document.cloud + "img/house_bg.png)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background", "rgb(35, 35, 35) url(" + (_hudevo_phonenew_assets_images_house_png__WEBPACK_IMPORTED_MODULE_9___default()) + ") right center / auto 100% no-repeat");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-size", "auto 100%", 1);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
@@ -148183,7 +138206,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (308:8) {#if selectCharData.BizId}
+// (310:8) {#if selectCharData.BizId}
 function create_if_block_1(ctx) {
 	let div4;
 	let div3;
@@ -148233,7 +138256,8 @@ function create_if_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "infohouse");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bgblockhouse");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "blockhouse");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background", "url(" + document.cloud + "img/biz_bg.png)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background", "rgb(35, 35, 35) url(" + (_hudevo_phonenew_assets_images_shop_png__WEBPACK_IMPORTED_MODULE_10___default()) + ") right center / auto 100% no-repeat");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-size", "auto 100%", 1);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
@@ -148441,6 +138465,7 @@ function instance($$self, $$props, $$invalidate) {
 	const click_handler = () => $$invalidate(3, onSelectedView2 = "Page1");
 	const click_handler_1 = () => $$invalidate(3, onSelectedView2 = "Page2");
 	const click_handler_2 = () => $$invalidate(3, onSelectedView2 = "Page3");
+	const func = item => Array.isArray(item) && item[1];
 
 	$$self.$$set = $$props => {
 		if ('visible' in $$props) $$invalidate(6, visible = $$props.visible);
@@ -148480,7 +138505,8 @@ function instance($$self, $$props, $$invalidate) {
 		$otherStatsData,
 		click_handler,
 		click_handler_1,
-		click_handler_2
+		click_handler_2,
+		func
 	];
 }
 
@@ -148513,41 +138539,44 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
 /* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.css */ "./src/views/player/gta5devmenu/main.css");
 /* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _fonts_inv_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./fonts/inv/style.css */ "./src/views/player/gta5devmenu/fonts/inv/style.css");
-/* harmony import */ var _fonts_inv_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_inv_style_css__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _fonts_items_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/items/style.css */ "./src/views/player/gta5devmenu/fonts/items/style.css");
-/* harmony import */ var _fonts_items_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_items_style_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _fonts_gamemenu_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fonts/gamemenu/style.css */ "./src/views/player/gta5devmenu/fonts/gamemenu/style.css");
-/* harmony import */ var _fonts_gamemenu_style_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fonts_gamemenu_style_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fonts/Gilroy/stylesheet.css */ "./src/views/player/gta5devmenu/fonts/Gilroy/stylesheet.css");
-/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fonts/SFPro/stylesheet.css */ "./src/views/player/gta5devmenu/fonts/SFPro/stylesheet.css");
-/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
-/* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
-/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
-/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
-/* harmony import */ var _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./elements/user/index.svelte */ "./src/views/player/gta5devmenu/elements/user/index.svelte");
-/* harmony import */ var _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./elements/anim/index.svelte */ "./src/views/player/gta5devmenu/elements/anim/index.svelte");
-/* harmony import */ var _elements_quest_index_svelte__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./elements/quest/index.svelte */ "./src/views/player/gta5devmenu/elements/quest/index.svelte");
-/* harmony import */ var _elements_rewardslist_index_svelte__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./elements/rewardslist/index.svelte */ "./src/views/player/gta5devmenu/elements/rewardslist/index.svelte");
-/* harmony import */ var _elements_report_index_svelte__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./elements/report/index.svelte */ "./src/views/player/gta5devmenu/elements/report/index.svelte");
-/* harmony import */ var _elements_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./elements/roulette/index.svelte */ "./src/views/player/gta5devmenu/elements/roulette/index.svelte");
-/* harmony import */ var _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./elements/battlepass/index.svelte */ "./src/views/player/gta5devmenu/elements/battlepass/index.svelte");
-/* harmony import */ var _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./elements/shop/index.svelte */ "./src/views/player/gta5devmenu/elements/shop/index.svelte");
-/* harmony import */ var _elements_minigames_index_svelte__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./elements/minigames/index.svelte */ "./src/views/player/gta5devmenu/elements/minigames/index.svelte");
-/* harmony import */ var _elements_rules_state_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./elements/rules/state.svelte */ "./src/views/player/gta5devmenu/elements/rules/state.svelte");
-/* harmony import */ var _elements_rules_crime_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./elements/rules/crime.svelte */ "./src/views/player/gta5devmenu/elements/rules/crime.svelte");
-/* harmony import */ var _elements_rules_general_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./elements/rules/general.svelte */ "./src/views/player/gta5devmenu/elements/rules/general.svelte");
-/* harmony import */ var _elements_faq_index_svelte__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./elements/faq/index.svelte */ "./src/views/player/gta5devmenu/elements/faq/index.svelte");
-/* harmony import */ var _elements_settings_index_svelte__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./elements/settings/index.svelte */ "./src/views/player/gta5devmenu/elements/settings/index.svelte");
-/* harmony import */ var _elements_stock_stock_svelte__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./elements/stock/stock.svelte */ "./src/views/player/gta5devmenu/elements/stock/stock.svelte");
+/* harmony import */ var _hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hudevo/phonenew/assets/images/person.png */ "./src/views/player/hudevo/phonenew/assets/images/person.png");
+/* harmony import */ var _hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _fonts_inv_style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./fonts/inv/style.css */ "./src/views/player/gta5devmenu/fonts/inv/style.css");
+/* harmony import */ var _fonts_inv_style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_inv_style_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _fonts_items_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fonts/items/style.css */ "./src/views/player/gta5devmenu/fonts/items/style.css");
+/* harmony import */ var _fonts_items_style_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fonts_items_style_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _fonts_gamemenu_style_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fonts/gamemenu/style.css */ "./src/views/player/gta5devmenu/fonts/gamemenu/style.css");
+/* harmony import */ var _fonts_gamemenu_style_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fonts_gamemenu_style_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fonts/Gilroy/stylesheet.css */ "./src/views/player/gta5devmenu/fonts/Gilroy/stylesheet.css");
+/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fonts/SFPro/stylesheet.css */ "./src/views/player/gta5devmenu/fonts/SFPro/stylesheet.css");
+/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var store_server__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! store/server */ "./src/store/server.js");
+/* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
+/* harmony import */ var store_account__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! store/account */ "./src/store/account.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./elements/user/index.svelte */ "./src/views/player/gta5devmenu/elements/user/index.svelte");
+/* harmony import */ var _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./elements/anim/index.svelte */ "./src/views/player/gta5devmenu/elements/anim/index.svelte");
+/* harmony import */ var _elements_quest_index_svelte__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./elements/quest/index.svelte */ "./src/views/player/gta5devmenu/elements/quest/index.svelte");
+/* harmony import */ var _elements_rewardslist_index_svelte__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./elements/rewardslist/index.svelte */ "./src/views/player/gta5devmenu/elements/rewardslist/index.svelte");
+/* harmony import */ var _elements_report_index_svelte__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./elements/report/index.svelte */ "./src/views/player/gta5devmenu/elements/report/index.svelte");
+/* harmony import */ var _elements_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./elements/roulette/index.svelte */ "./src/views/player/gta5devmenu/elements/roulette/index.svelte");
+/* harmony import */ var _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./elements/battlepass/index.svelte */ "./src/views/player/gta5devmenu/elements/battlepass/index.svelte");
+/* harmony import */ var _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./elements/shop/index.svelte */ "./src/views/player/gta5devmenu/elements/shop/index.svelte");
+/* harmony import */ var _elements_minigames_index_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./elements/minigames/index.svelte */ "./src/views/player/gta5devmenu/elements/minigames/index.svelte");
+/* harmony import */ var _elements_rules_state_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./elements/rules/state.svelte */ "./src/views/player/gta5devmenu/elements/rules/state.svelte");
+/* harmony import */ var _elements_rules_crime_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./elements/rules/crime.svelte */ "./src/views/player/gta5devmenu/elements/rules/crime.svelte");
+/* harmony import */ var _elements_rules_general_svelte__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./elements/rules/general.svelte */ "./src/views/player/gta5devmenu/elements/rules/general.svelte");
+/* harmony import */ var _elements_faq_index_svelte__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./elements/faq/index.svelte */ "./src/views/player/gta5devmenu/elements/faq/index.svelte");
+/* harmony import */ var _elements_settings_index_svelte__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./elements/settings/index.svelte */ "./src/views/player/gta5devmenu/elements/settings/index.svelte");
+/* harmony import */ var _elements_stock_stock_svelte__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./elements/stock/stock.svelte */ "./src/views/player/gta5devmenu/elements/stock/stock.svelte");
 /* src/views/player/gta5devmenu/index.svelte generated by Svelte v3.59.2 */
 
 
 const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
 
 
 
@@ -148602,7 +138631,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (662:12) {#if selectView === "Shopcl" || selectView === "Shopcar" || selectView === "Anim0" || selectView === "Anim1" || selectView === "Anim2" || selectView === "Anim3" || selectView === "Anim4" || selectView === "Anim5" || selectView === "Anim6" || selectView === "Anim7"}
+// (654:12) {#if selectView === "Shopcl" || selectView === "Shopcar" || selectView === "Anim0" || selectView === "Anim1" || selectView === "Anim2" || selectView === "Anim3" || selectView === "Anim4" || selectView === "Anim5" || selectView === "Anim6" || selectView === "Anim7"}
 function create_if_block_2(ctx) {
 	let div;
 	let svg;
@@ -148656,7 +138685,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (672:12) {#if selectView ==="Shopcl"}
+// (664:12) {#if selectView ==="Shopcl"}
 function create_if_block(ctx) {
 	let div1;
 	let div0;
@@ -149010,7 +139039,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (687:28) {:else}
+// (679:28) {:else}
 function create_else_block(ctx) {
 	let p;
 
@@ -149029,7 +139058,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (685:24) {#if pageload}
+// (677:24) {#if pageload}
 function create_if_block_1(ctx) {
 	let p;
 	let t_value = (/*replacements*/ ctx[12].find(/*func_1*/ ctx[62])?.replacement ?? /*pageload*/ ctx[5]) + "";
@@ -149183,7 +139212,7 @@ function create_fragment(ctx) {
 	let rect3;
 	let t143;
 	let p43;
-	let t144_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", /*$accountRedbucks*/ ctx[10]) + "";
+	let t144_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_11__.format)("money", /*$accountRedbucks*/ ctx[10]) + "";
 	let t144;
 	let t145;
 	let div15;
@@ -149550,7 +139579,7 @@ function create_fragment(ctx) {
 			t152 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(switch_instance.$$.fragment);
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = "" + (document.cloud + "img/default_avatar.png"))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (_hudevo_phonenew_assets_images_person_png__WEBPACK_IMPORTED_MODULE_2___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "infoplayer");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "headplayr");
@@ -150079,7 +140108,7 @@ function create_fragment(ctx) {
 				if_block1 = null;
 			}
 
-			if ((!current || dirty[0] & /*$accountRedbucks*/ 1024) && t144_value !== (t144_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", /*$accountRedbucks*/ ctx[10]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t144, t144_value);
+			if ((!current || dirty[0] & /*$accountRedbucks*/ 1024) && t144_value !== (t144_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_11__.format)("money", /*$accountRedbucks*/ ctx[10]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t144, t144_value);
 			const switch_instance_changes = {};
 			if (dirty[0] & /*pagefilter*/ 256) switch_instance_changes.pagefilter = /*pagefilter*/ ctx[8];
 			if (dirty[0] & /*pageload*/ 32) switch_instance_changes.pageload = /*pageload*/ ctx[5];
@@ -150335,9 +140364,9 @@ function instance($$self, $$props, $$invalidate) {
 	let $charData;
 	let $otherStatsData;
 	let $accountRedbucks;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_8__.charData, $$value => $$invalidate(21, $charData = $$value));
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_9__.otherStatsData, $$value => $$invalidate(22, $otherStatsData = $$value));
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_9__.accountRedbucks, $$value => $$invalidate(10, $accountRedbucks = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_9__.charData, $$value => $$invalidate(21, $charData = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_10__.otherStatsData, $$value => $$invalidate(22, $otherStatsData = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_account__WEBPACK_IMPORTED_MODULE_10__.accountRedbucks, $$value => $$invalidate(10, $accountRedbucks = $$value));
 	let { visible = false } = $$props;
 
 	const handleKeyDown = event => {
@@ -150346,7 +140375,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onClose = () => {
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.stockitemsexit");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.stockitemsexit");
 	};
 
 	let replacements = [
@@ -150443,31 +140472,22 @@ function instance($$self, $$props, $$invalidate) {
 		}
 	];
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.stockitems");
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.phone.cars.load");
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.gta5devmenucars");
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.donate.load");
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.stockitems");
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.phone.cars.load");
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.gta5devmenucars");
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.donate.load");
 
 	window.gta5devmenustockitems = function (itemstock) {
 		$$invalidate(2, itemliststock = itemstock);
 	};
 
 	window.gta5devmenucars = function (vehiclesJson) {
-		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_12__.hasJsonStructure)(vehiclesJson)) $$invalidate(3, carsList = JSON.parse(vehiclesJson));
+		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_13__.hasJsonStructure)(vehiclesJson)) $$invalidate(3, carsList = JSON.parse(vehiclesJson));
 	};
 
 	let itemliststock;
-
-	let carsList = [
-		{
-			number: "222133218 2132",
-			model: "adder",
-			header: "Hausbesitzer"
-		},
-		{ number: "229", model: "adder" }
-	];
-
-	(0,api_functions__WEBPACK_IMPORTED_MODULE_12__.addListernEvent)("phoneCarsLoad", true);
+	let carsList = [];
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_13__.addListernEvent)("phoneCarsLoad", true);
 	let useVisible = -1;
 	let selectCharData = $charData;
 	let selectView = "Menu";
@@ -150478,48 +140498,48 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const Views = {
-		Osnovnoe: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_13__.default,
-		Statiskic: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_13__.default,
-		Carsuser: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_13__.default,
-		Housebiz: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_13__.default,
-		Skills: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_13__.default,
-		Anim0: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim1: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim2: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim3: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim4: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim5: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim6: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Anim7: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
-		Q1: _elements_quest_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
-		Q2: _elements_rewardslist_index_svelte__WEBPACK_IMPORTED_MODULE_16__.default,
-		Q3: _elements_rewardslist_index_svelte__WEBPACK_IMPORTED_MODULE_16__.default,
-		Report: _elements_report_index_svelte__WEBPACK_IMPORTED_MODULE_17__.default,
-		BP1: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_19__.default,
-		BP2: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_19__.default,
-		BP3: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_19__.default,
-		BP4: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_19__.default,
-		Shop: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Shopcl: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Shopcar: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Money: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Personal: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Roulette: _elements_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_18__.default,
-		Cases: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Premium: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		MiniGames: _elements_minigames_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
-		State: _elements_rules_state_svelte__WEBPACK_IMPORTED_MODULE_22__.default,
-		Crime: _elements_rules_crime_svelte__WEBPACK_IMPORTED_MODULE_23__.default,
-		General: _elements_rules_general_svelte__WEBPACK_IMPORTED_MODULE_24__.default,
-		FAQ: _elements_faq_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
-		Settings: _elements_settings_index_svelte__WEBPACK_IMPORTED_MODULE_26__.default,
-		Stock: _elements_stock_stock_svelte__WEBPACK_IMPORTED_MODULE_27__.default
+		Osnovnoe: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
+		Statiskic: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
+		Carsuser: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
+		Housebiz: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
+		Skills: _elements_user_index_svelte__WEBPACK_IMPORTED_MODULE_14__.default,
+		Anim0: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim1: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim2: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim3: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim4: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim5: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim6: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Anim7: _elements_anim_index_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
+		Q1: _elements_quest_index_svelte__WEBPACK_IMPORTED_MODULE_16__.default,
+		Q2: _elements_rewardslist_index_svelte__WEBPACK_IMPORTED_MODULE_17__.default,
+		Q3: _elements_rewardslist_index_svelte__WEBPACK_IMPORTED_MODULE_17__.default,
+		Report: _elements_report_index_svelte__WEBPACK_IMPORTED_MODULE_18__.default,
+		BP1: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
+		BP2: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
+		BP3: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
+		BP4: _elements_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
+		Shop: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Shopcl: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Shopcar: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Money: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Personal: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Roulette: _elements_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_19__.default,
+		Cases: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Premium: _elements_shop_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		MiniGames: _elements_minigames_index_svelte__WEBPACK_IMPORTED_MODULE_22__.default,
+		State: _elements_rules_state_svelte__WEBPACK_IMPORTED_MODULE_23__.default,
+		Crime: _elements_rules_crime_svelte__WEBPACK_IMPORTED_MODULE_24__.default,
+		General: _elements_rules_general_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
+		FAQ: _elements_faq_index_svelte__WEBPACK_IMPORTED_MODULE_26__.default,
+		Settings: _elements_settings_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
+		Stock: _elements_stock_stock_svelte__WEBPACK_IMPORTED_MODULE_28__.default
 	};
 
 	window.gameMenuView = wiew => {
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.stockitems");
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.phone.cars.load");
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client.gta5devmenucars");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.stockitems");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.phone.cars.load");
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client.gta5devmenucars");
 		selecttypecat = false;
 		$$invalidate(6, catlist = false);
 		selectgender = true;
@@ -150601,15 +140621,15 @@ function instance($$self, $$props, $$invalidate) {
 		PagesSorted = sorted;
 	};
 
-	store_server__WEBPACK_IMPORTED_MODULE_7__.isEvent.subscribe(value => {
+	store_server__WEBPACK_IMPORTED_MODULE_8__.isEvent.subscribe(value => {
 		updatePage("Animation", value);
 	});
 
-	store_chars__WEBPACK_IMPORTED_MODULE_8__.charFractionID.subscribe(value => {
+	store_chars__WEBPACK_IMPORTED_MODULE_9__.charFractionID.subscribe(value => {
 		updatePage("MiniGames", value > 0);
 	});
 
-	store_chars__WEBPACK_IMPORTED_MODULE_8__.charOrganizationID.subscribe(value => {
+	store_chars__WEBPACK_IMPORTED_MODULE_9__.charOrganizationID.subscribe(value => {
 		updatePage("User", value > 0);
 	});
 
@@ -150620,7 +140640,7 @@ function instance($$self, $$props, $$invalidate) {
 	const onClickPage = () => {
 		setTimeout(
 			() => {
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_11__.executeClient)("client:binder", "get", "all");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_12__.executeClient)("client:binder", "get", "all");
 			},
 			100
 		);
@@ -282980,6 +273000,192 @@ __webpack_require__.r(__webpack_exports__);
 
 const CaseData = (0,svelte_store__WEBPACK_IMPORTED_MODULE_0__.writable)([0, 4, 5]);
 const selectCase = (0,svelte_store__WEBPACK_IMPORTED_MODULE_0__.writable)(0);
+
+/***/ }),
+
+/***/ "./src/views/player/gta5devmenu/elements/shop/elements/shopcl/catalog.js":
+/*!*******************************************************************************!*\
+  !*** ./src/views/player/gta5devmenu/elements/shop/elements/shopcl/catalog.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "clothesList": () => (/* binding */ clothesList),
+/* harmony export */   "categories": () => (/* binding */ categories),
+/* harmony export */   "getRarity": () => (/* binding */ getRarity)
+/* harmony export */ });
+/* harmony import */ var _assets_clothes_0_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../assets/clothes/0.png */ "./src/views/player/gta5devmenu/assets/clothes/0.png");
+/* harmony import */ var _assets_clothes_0_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_0_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _assets_clothes_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../assets/clothes/1.png */ "./src/views/player/gta5devmenu/assets/clothes/1.png");
+/* harmony import */ var _assets_clothes_1_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_1_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _assets_clothes_2_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../assets/clothes/2.png */ "./src/views/player/gta5devmenu/assets/clothes/2.png");
+/* harmony import */ var _assets_clothes_2_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_2_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_clothes_3_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../assets/clothes/3.png */ "./src/views/player/gta5devmenu/assets/clothes/3.png");
+/* harmony import */ var _assets_clothes_3_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_3_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _assets_clothes_4_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../assets/clothes/4.png */ "./src/views/player/gta5devmenu/assets/clothes/4.png");
+/* harmony import */ var _assets_clothes_4_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_4_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_clothes_5_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../assets/clothes/5.png */ "./src/views/player/gta5devmenu/assets/clothes/5.png");
+/* harmony import */ var _assets_clothes_5_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_5_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_clothes_6_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../assets/clothes/6.png */ "./src/views/player/gta5devmenu/assets/clothes/6.png");
+/* harmony import */ var _assets_clothes_6_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_6_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_clothes_7_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../../assets/clothes/7.png */ "./src/views/player/gta5devmenu/assets/clothes/7.png");
+/* harmony import */ var _assets_clothes_7_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_7_png__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _assets_clothes_8_png__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../assets/clothes/8.png */ "./src/views/player/gta5devmenu/assets/clothes/8.png");
+/* harmony import */ var _assets_clothes_8_png__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_8_png__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _assets_clothes_9_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../assets/clothes/9.png */ "./src/views/player/gta5devmenu/assets/clothes/9.png");
+/* harmony import */ var _assets_clothes_9_png__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_9_png__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _assets_clothes_10_png__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../assets/clothes/10.png */ "./src/views/player/gta5devmenu/assets/clothes/10.png");
+/* harmony import */ var _assets_clothes_10_png__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_10_png__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _assets_clothes_11_png__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../../assets/clothes/11.png */ "./src/views/player/gta5devmenu/assets/clothes/11.png");
+/* harmony import */ var _assets_clothes_11_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_11_png__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _assets_clothes_12_png__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../../assets/clothes/12.png */ "./src/views/player/gta5devmenu/assets/clothes/12.png");
+/* harmony import */ var _assets_clothes_12_png__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_12_png__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _assets_clothes_13_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../../assets/clothes/13.png */ "./src/views/player/gta5devmenu/assets/clothes/13.png");
+/* harmony import */ var _assets_clothes_13_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_13_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _assets_clothes_14_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../../assets/clothes/14.png */ "./src/views/player/gta5devmenu/assets/clothes/14.png");
+/* harmony import */ var _assets_clothes_14_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_14_png__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _assets_clothes_15_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../assets/clothes/15.png */ "./src/views/player/gta5devmenu/assets/clothes/15.png");
+/* harmony import */ var _assets_clothes_15_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_15_png__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _assets_clothes_16_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../../assets/clothes/16.png */ "./src/views/player/gta5devmenu/assets/clothes/16.png");
+/* harmony import */ var _assets_clothes_16_png__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_16_png__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _assets_clothes_17_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../../assets/clothes/17.png */ "./src/views/player/gta5devmenu/assets/clothes/17.png");
+/* harmony import */ var _assets_clothes_17_png__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_17_png__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _assets_clothes_18_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../../assets/clothes/18.png */ "./src/views/player/gta5devmenu/assets/clothes/18.png");
+/* harmony import */ var _assets_clothes_18_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_18_png__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _assets_clothes_19_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../../assets/clothes/19.png */ "./src/views/player/gta5devmenu/assets/clothes/19.png");
+/* harmony import */ var _assets_clothes_19_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_19_png__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _assets_clothes_20_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../../assets/clothes/20.png */ "./src/views/player/gta5devmenu/assets/clothes/20.png");
+/* harmony import */ var _assets_clothes_20_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_20_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _assets_clothes_21_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../../assets/clothes/21.png */ "./src/views/player/gta5devmenu/assets/clothes/21.png");
+/* harmony import */ var _assets_clothes_21_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_21_png__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _assets_clothes_22_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../../../../assets/clothes/22.png */ "./src/views/player/gta5devmenu/assets/clothes/22.png");
+/* harmony import */ var _assets_clothes_22_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_22_png__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _assets_clothes_23_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../../../../assets/clothes/23.png */ "./src/views/player/gta5devmenu/assets/clothes/23.png");
+/* harmony import */ var _assets_clothes_23_png__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_23_png__WEBPACK_IMPORTED_MODULE_23__);
+/* harmony import */ var _assets_clothes_24_png__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../../../assets/clothes/24.png */ "./src/views/player/gta5devmenu/assets/clothes/24.png");
+/* harmony import */ var _assets_clothes_24_png__WEBPACK_IMPORTED_MODULE_24___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_24_png__WEBPACK_IMPORTED_MODULE_24__);
+/* harmony import */ var _assets_clothes_25_png__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ../../../../assets/clothes/25.png */ "./src/views/player/gta5devmenu/assets/clothes/25.png");
+/* harmony import */ var _assets_clothes_25_png__WEBPACK_IMPORTED_MODULE_25___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_25_png__WEBPACK_IMPORTED_MODULE_25__);
+/* harmony import */ var _assets_clothes_26_png__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../../../assets/clothes/26.png */ "./src/views/player/gta5devmenu/assets/clothes/26.png");
+/* harmony import */ var _assets_clothes_26_png__WEBPACK_IMPORTED_MODULE_26___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_26_png__WEBPACK_IMPORTED_MODULE_26__);
+/* harmony import */ var _assets_clothes_27_png__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ../../../../assets/clothes/27.png */ "./src/views/player/gta5devmenu/assets/clothes/27.png");
+/* harmony import */ var _assets_clothes_27_png__WEBPACK_IMPORTED_MODULE_27___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_27_png__WEBPACK_IMPORTED_MODULE_27__);
+/* harmony import */ var _assets_clothes_28_png__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ../../../../assets/clothes/28.png */ "./src/views/player/gta5devmenu/assets/clothes/28.png");
+/* harmony import */ var _assets_clothes_28_png__WEBPACK_IMPORTED_MODULE_28___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_28_png__WEBPACK_IMPORTED_MODULE_28__);
+/* harmony import */ var _assets_clothes_29_png__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../../../../assets/clothes/29.png */ "./src/views/player/gta5devmenu/assets/clothes/29.png");
+/* harmony import */ var _assets_clothes_29_png__WEBPACK_IMPORTED_MODULE_29___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_29_png__WEBPACK_IMPORTED_MODULE_29__);
+/* harmony import */ var _assets_clothes_30_png__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ../../../../assets/clothes/30.png */ "./src/views/player/gta5devmenu/assets/clothes/30.png");
+/* harmony import */ var _assets_clothes_30_png__WEBPACK_IMPORTED_MODULE_30___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_30_png__WEBPACK_IMPORTED_MODULE_30__);
+/* harmony import */ var _assets_clothes_31_png__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ../../../../assets/clothes/31.png */ "./src/views/player/gta5devmenu/assets/clothes/31.png");
+/* harmony import */ var _assets_clothes_31_png__WEBPACK_IMPORTED_MODULE_31___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_31_png__WEBPACK_IMPORTED_MODULE_31__);
+/* harmony import */ var _assets_clothes_32_png__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ../../../../assets/clothes/32.png */ "./src/views/player/gta5devmenu/assets/clothes/32.png");
+/* harmony import */ var _assets_clothes_32_png__WEBPACK_IMPORTED_MODULE_32___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_32_png__WEBPACK_IMPORTED_MODULE_32__);
+/* harmony import */ var _assets_clothes_33_png__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ../../../../assets/clothes/33.png */ "./src/views/player/gta5devmenu/assets/clothes/33.png");
+/* harmony import */ var _assets_clothes_33_png__WEBPACK_IMPORTED_MODULE_33___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_33_png__WEBPACK_IMPORTED_MODULE_33__);
+/* harmony import */ var _assets_clothes_34_png__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ../../../../assets/clothes/34.png */ "./src/views/player/gta5devmenu/assets/clothes/34.png");
+/* harmony import */ var _assets_clothes_34_png__WEBPACK_IMPORTED_MODULE_34___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_34_png__WEBPACK_IMPORTED_MODULE_34__);
+/* harmony import */ var _assets_clothes_35_png__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ../../../../assets/clothes/35.png */ "./src/views/player/gta5devmenu/assets/clothes/35.png");
+/* harmony import */ var _assets_clothes_35_png__WEBPACK_IMPORTED_MODULE_35___default = /*#__PURE__*/__webpack_require__.n(_assets_clothes_35_png__WEBPACK_IMPORTED_MODULE_35__);
+// Каталог донат-одежды. id, тип и цена должны совпадать с DonateClothesList
+// в dotnet/resources/NeptuneEvo/Chars/Donate.cs (server.donate.buy.clothes).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const clothesList = [
+    { id: 0, type: "Mask", male: true, price: 30000, name: "Борода", img: (_assets_clothes_0_png__WEBPACK_IMPORTED_MODULE_0___default()) },
+    { id: 1, type: "Mask", male: true, price: 1000, name: "Маска крысы", img: (_assets_clothes_1_png__WEBPACK_IMPORTED_MODULE_1___default()) },
+    { id: 2, type: "Mask", male: true, price: 2000, name: "Неоновая маска", img: (_assets_clothes_2_png__WEBPACK_IMPORTED_MODULE_2___default()) },
+    { id: 3, type: "Mask", male: true, price: 35000, name: "Маска Marshmallow", img: (_assets_clothes_3_png__WEBPACK_IMPORTED_MODULE_3___default()) },
+    { id: 4, type: "Glasses", male: true, price: 10000, name: "Неоновые очки", img: (_assets_clothes_4_png__WEBPACK_IMPORTED_MODULE_4___default()) },
+    { id: 5, type: "Hat", male: true, price: 30000, name: "Неоновый шлем", img: (_assets_clothes_5_png__WEBPACK_IMPORTED_MODULE_5___default()) },
+    { id: 6, type: "Hat", male: true, price: 1500, name: "Фуражка адмирала", img: (_assets_clothes_6_png__WEBPACK_IMPORTED_MODULE_6___default()) },
+    { id: 7, type: "Hat", male: true, price: 4200, name: "Модная повязка", img: (_assets_clothes_7_png__WEBPACK_IMPORTED_MODULE_7___default()) },
+    { id: 8, type: "Leg", male: true, price: 25000, name: "Неоновые штаны", img: (_assets_clothes_8_png__WEBPACK_IMPORTED_MODULE_8___default()) },
+    { id: 9, type: "Leg", male: true, price: 20000, name: "Яркие штаны", img: (_assets_clothes_9_png__WEBPACK_IMPORTED_MODULE_9___default()) },
+    { id: 10, type: "Leg", male: true, price: 20000, name: "Штаны с подсветкой", img: (_assets_clothes_10_png__WEBPACK_IMPORTED_MODULE_10___default()) },
+    { id: 11, type: "Leg", male: true, price: 5000, name: "Шорты Supreme", img: (_assets_clothes_11_png__WEBPACK_IMPORTED_MODULE_11___default()) },
+    { id: 12, type: "Leg", male: true, price: 30000, name: "Штаны GUCCI", img: (_assets_clothes_12_png__WEBPACK_IMPORTED_MODULE_12___default()) },
+    { id: 13, type: "Feet", male: true, price: 25000, name: "Неоновая обувь", img: (_assets_clothes_13_png__WEBPACK_IMPORTED_MODULE_13___default()) },
+    { id: 14, type: "Feet", male: true, price: 3000, name: "Ласты", img: (_assets_clothes_14_png__WEBPACK_IMPORTED_MODULE_14___default()) },
+    { id: 15, type: "Top", male: true, price: 15000, name: "Неоновый верх", img: (_assets_clothes_15_png__WEBPACK_IMPORTED_MODULE_15___default()) },
+    { id: 16, type: "Top", male: true, price: 10000, name: "Яркий верх", img: (_assets_clothes_16_png__WEBPACK_IMPORTED_MODULE_16___default()) },
+    { id: 17, type: "Top", male: true, price: 10000, name: "Верх с подсветкой", img: (_assets_clothes_17_png__WEBPACK_IMPORTED_MODULE_17___default()) },
+    { id: 18, type: "Top", male: true, price: 30000, name: "Толстовка GUCCI", img: (_assets_clothes_18_png__WEBPACK_IMPORTED_MODULE_18___default()) },
+    { id: 19, type: "Top", male: true, price: 5000, name: "Модная футболка", img: (_assets_clothes_19_png__WEBPACK_IMPORTED_MODULE_19___default()) },
+    { id: 20, type: "Mask", male: false, price: 1000, name: "Маска крысы", img: (_assets_clothes_20_png__WEBPACK_IMPORTED_MODULE_20___default()) },
+    { id: 21, type: "Mask", male: false, price: 2000, name: "Неоновая маска", img: (_assets_clothes_21_png__WEBPACK_IMPORTED_MODULE_21___default()) },
+    { id: 22, type: "Mask", male: false, price: 35000, name: "Маска Marshmallow", img: (_assets_clothes_22_png__WEBPACK_IMPORTED_MODULE_22___default()) },
+    { id: 23, type: "Glasses", male: false, price: 10000, name: "Неоновые очки", img: (_assets_clothes_23_png__WEBPACK_IMPORTED_MODULE_23___default()) },
+    { id: 24, type: "Hat", male: false, price: 30000, name: "Неоновый шлем", img: (_assets_clothes_24_png__WEBPACK_IMPORTED_MODULE_24___default()) },
+    { id: 25, type: "Hat", male: false, price: 1500, name: "Фуражка адмирала", img: (_assets_clothes_25_png__WEBPACK_IMPORTED_MODULE_25___default()) },
+    { id: 26, type: "Leg", male: false, price: 25000, name: "Неоновые штаны", img: (_assets_clothes_26_png__WEBPACK_IMPORTED_MODULE_26___default()) },
+    { id: 27, type: "Leg", male: false, price: 20000, name: "Яркие штаны", img: (_assets_clothes_27_png__WEBPACK_IMPORTED_MODULE_27___default()) },
+    { id: 28, type: "Leg", male: false, price: 20000, name: "Штаны с подсветкой", img: (_assets_clothes_28_png__WEBPACK_IMPORTED_MODULE_28___default()) },
+    { id: 29, type: "Feet", male: false, price: 10000, name: "Неоновая обувь", img: (_assets_clothes_29_png__WEBPACK_IMPORTED_MODULE_29___default()) },
+    { id: 30, type: "Feet", male: false, price: 3000, name: "Ласты", img: (_assets_clothes_30_png__WEBPACK_IMPORTED_MODULE_30___default()) },
+    { id: 31, type: "Top", male: false, price: 15000, name: "Неоновый верх", img: (_assets_clothes_31_png__WEBPACK_IMPORTED_MODULE_31___default()) },
+    { id: 32, type: "Top", male: false, price: 10000, name: "Яркий верх", img: (_assets_clothes_32_png__WEBPACK_IMPORTED_MODULE_32___default()) },
+    { id: 33, type: "Top", male: false, price: 10000, name: "Верх с подсветкой", img: (_assets_clothes_33_png__WEBPACK_IMPORTED_MODULE_33___default()) },
+    { id: 34, type: "Top", male: false, price: 2000, name: "Модная футболка", img: (_assets_clothes_34_png__WEBPACK_IMPORTED_MODULE_34___default()) },
+    { id: 35, type: "Top", male: false, price: 4000, name: "Пошлая футболка", img: (_assets_clothes_35_png__WEBPACK_IMPORTED_MODULE_35___default()) },
+];
+
+// Разделы меню (pageload в gta5devmenu/index.svelte)
+const categories = [
+    { page: 1, title: "Маски", type: "Mask" },
+    { page: 2, title: "Головные уборы", type: "Hat" },
+    { page: 3, title: "Аксессуары", type: "Glasses" },
+    { page: 4, title: "Верхняя одежда", type: "Top" },
+    { page: 5, title: "Бронежилеты", type: "Armor" },
+    { page: 6, title: "Нижняя одежда", type: "Undershirt" },
+    { page: 7, title: "Штаны", type: "Leg" },
+    { page: 8, title: "Обувь", type: "Feet" },
+];
+
+const getRarity = (price) => {
+    if (price >= 30000) return 5;
+    if (price >= 15000) return 4;
+    if (price >= 5000) return 3;
+    if (price >= 2500) return 2;
+    return 1;
+}
+
 
 /***/ }),
 

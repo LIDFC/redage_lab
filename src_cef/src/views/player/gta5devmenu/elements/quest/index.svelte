@@ -7,12 +7,14 @@
     import { format } from 'api/formatter'
     import { storeQuests, selectQuest } from 'store/quest'
     import { executeClient } from 'api/rage'
+    import Avatar from './avatar.svelte';
     export let visible;
 
     let QuestsList = [];
     let OldQuest = [];
 
     let quest = false;
+    const getActorName = (actorName) => (getActors (actorName) || {}).name || "";
     const onSelectQuest = (actorName) => {
 
         const listIndex = QuestsList.findIndex(q => q.ActorName == actorName);
@@ -55,6 +57,9 @@
                     return;
                 }
             }
+            // Нет закреплённого квеста — показываем первый, иначе правая панель падает на quest === false
+            if (!quest || !QuestsList.includes(quest))
+                quest = QuestsList [0] || false;
 
         }
     });
@@ -96,10 +101,10 @@
         <div class="questleft">
             {#each QuestsList as questData, index}
                 <div class="questblock" class:active={questData == quest} on:keypress={() => {}} on:click={() => quest = questData}>
-                    <img src="http://u90228c5.beget.tech/heone1/f2menu/{questData.ActorName}.png" alt=""/>
+                    <Avatar actor={questData.ActorName}/>
                     <div class="questinfo">
                         <h1>{questData.Title}</h1>
-                        <p>{getActors (questData.ActorName).name}<b>-  Квестовое задание</b></p>
+                        <p>{getActorName (questData.ActorName)}<b>-  Квестовое задание</b></p>
                     </div>
                 </div>
             {/each}
@@ -107,10 +112,10 @@
         <div class="questright">
             <div class="questhead">
                 <div class="questlefth">
-                    <img src="http://u90228c5.beget.tech/heone1/f2menu/{quest.ActorName}.png" alt=""/>
+                    <Avatar actor={quest.ActorName}/>
                     <div class="questinfo">
                         <h1>{quest.Title}</h1>
-                        <p>{getActors (quest.ActorName).name}<b>-  Квестовое задание</b></p>
+                        <p>{getActorName (quest.ActorName)}<b>-  Квестовое задание</b></p>
                     </div>
                 </div>
                 {#if quest.Reward}
@@ -245,7 +250,7 @@
                             {#each new Array(4) as _, index}
                                 {#if quest.Reward.Items[index] && window.getItem (quest.Reward.Items[index])}
                                     <div class="rewardblock">
-                                        <img src="{document.cloud}/inventoryItems/items/{quest.Reward.Items[index]}.png" alt=""/>
+                                        <img src="{document.cloud}inventoryItems/items/{quest.Reward.Items[index]}.png" alt=""/>
                                     </div>
                                 {:else}
                                     <div class="rewardblock"></div>

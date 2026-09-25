@@ -4,7 +4,7 @@
     position: absolute;
     left: 0vh;
     top: 0vh;
-    background: url(http://u90228c5.beget.tech/heone1/sbp/bg.png);
+    background: url(./assets/background.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -893,7 +893,7 @@
     align-items: center;
     justify-content: flex-start;
     z-index: 1;
-    background: url(http://u90228c5.beget.tech/heone1/sbp/bg.png);
+    background: url(./assets/background.png);
     background-size: cover;
 }
 
@@ -1059,7 +1059,7 @@
 .gta5devbp .menubp2 .blockmis {
     width: 7.1213vh;
     height: 8.2407vh;
-    background: url(http://u90228c5.beget.tech/heone1/sbp/mis.png);
+    background: url(./assets/active.png);
     background-size: cover !important;
     position: relative;
     cursor: pointer;
@@ -1087,27 +1087,27 @@
 }
 
 .gta5devbp .menubp2 .blockmis:hover {
-    background: url(http://u90228c5.beget.tech/heone1/sbp/misact.png);
+    background: url(./assets/selected.png) center / cover;
 }
 
 .gta5devbp .menubp2 .blockmis.selected {
     width: 7.1213vh;
     height: 8.2407vh;
-    background: url(http://u90228c5.beget.tech/heone1/sbp/misact.png);
+    background: url(./assets/selected.png) center / cover;
     background-size: cover;
 }
 
 .gta5devbp .menubp2 .blockmis.closed {
     width: 7.1213vh;
     height: 8.2407vh;
-    background: url(http://u90228c5.beget.tech/heone1/sbp/misdone.png);
+    background: url(./assets/blocked.png);
     background-size: cover;
 }
 
 .gta5devbp .menubp2 .blockmis.done {
     width: 7.1213vh;
     height: 8.2407vh;
-    background: url(http://u90228c5.beget.tech/heone1/sbp/miscomp.png);
+    background: url(./assets/done.png);
     background-size: cover;
 }
 

@@ -138,3 +138,4 @@ screen -r ragemp
 ## Автор
 
 вчерашний школьник со сломанной MongoDB
+INT https://drive.google.com/file/d/1dzBjvkB5d6V9hH2Pafza_D14NGDZBxb8/view

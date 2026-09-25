@@ -643,7 +643,7 @@
 
 .gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .progbar {
     width: 14.7222vh;
-    background: url(https://imgur.com/XTUDQ5N.png);
+    background: rgba(255, 255, 255, 0.15);
     min-height: 0.1852vh;
     max-height: 0.1852vh;
     background-position: left;
@@ -680,7 +680,7 @@
 .gta5devmenuf2 .rightmenu .menu .list1 .blockcars .harcar .blockhar .progbar .prog {
     width: 2%;
     max-width: 14.7222vh;
-    background: url(https://imgur.com/JG1Prea.png);
+    background: #fff;
     min-height: 0.1852vh;
     max-height: 0.1852vh;
     background-position: left;
@@ -1123,7 +1123,8 @@ div#animations1 .blockbg1 img {
     margin-bottom: 0.9259vh;
 }
 
-.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock img {
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock img,
+.gta5devmenuf2 .rightmenu .menu .questmenu .questleft .questblock .questavatar {
     width: 4.3519vh;
     height: 4.3519vh;
     margin-left: 1.6667vh;
@@ -1213,7 +1214,8 @@ div#animations1 .blockbg1 img {
     justify-content: flex-start;
 }
 
-.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth img {
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth img,
+.gta5devmenuf2 .rightmenu .menu .questmenu .questright .questhead .questlefth .questavatar {
     width: 5.463vh;
     height: 5.463vh;
     margin-right: 1.2963vh;
@@ -2929,6 +2931,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .iconitem img {
     width: 20.3704vh;
     height: 20.3704vh;
+    object-fit: contain;
 }
 
 .gta5devmenuf2 .rightmenu .menu .list1 .blockmoney .infoitem h1 {
@@ -3035,6 +3038,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem img {
     width: 35.0926vh;
     height: 32.2222vh;
+    object-fit: contain;
 }
 
 .gta5devmenuf2 .rightmenu .menu .list4 .blockpersprem h1 {
@@ -3170,6 +3174,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .list1 .blockpersm img {
     width: 35.0926vh;
     height: 23.1481vh;
+    object-fit: contain;
 }
 
 .gta5devmenuf2 .rightmenu .menu .list1 .blockpersm h1 {
@@ -3454,6 +3459,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .headstna img {
     width: 47vh;
     height: 19.8148vh;
+    object-fit: contain;
 }
 
 .gta5devmenuf2 .rightmenu .menu .list1 .blockstartnabor .blockbuy .blockprice {
@@ -3871,7 +3877,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .battlepass {
     width: 100%;
     height: 92.4074vh;
-    background: url(https://imgur.com/DDU8AqR.png);
+    background: url(./elements/battlepass/assets/background.png) center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -4411,7 +4417,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .battlepass1 {
     width: 100%;
     height: 92.4074vh;
-    background: url(https://imgur.com/DDU8AqR.png);
+    background: url(./elements/battlepass/assets/background.png) center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -4568,7 +4574,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .battlepass2 {
     width: 100%;
     height: 92.4074vh;
-    background: url(https://imgur.com/DDU8AqR.png);
+    background: url(./elements/battlepass/assets/background.png) center;
     background-size: cover;
     gap: 1.8519vh;
     display: flex;
@@ -5467,7 +5473,7 @@ div#animations1 .blockbg1 img {
 }
 
 .caselut .itemlut {
-    background: url(https://imgur.com/UlpTIOU.png);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
     background-size: cover;
     width: 65.926vh;
     height: 52.685vh;
@@ -5770,7 +5776,7 @@ div#animations1 .blockbg1 img {
 .gta5devmenuf2 .rightmenu .menu .battlepass3 {
     width: 100%;
     height: 92.4074vh;
-    background: url(https://imgur.com/5kFuQn5.png);
+    background: url(./elements/battlepass/assets/background.png) center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -5956,7 +5962,9 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline1 {
-    background: url(https://imgur.com/IGcpdKg.png);
+    border: 0.0926vh solid rgba(255, 255, 255, 0.35);
+    border-bottom: none;
+    box-sizing: border-box;
     width: 20.8704vh;
     height: 4.6296vh;
     position: absolute;
@@ -5965,7 +5973,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline2 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 4.6296vh;
     position: absolute;
@@ -5974,7 +5982,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline3 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 5.6296vh;
     position: absolute;
@@ -5983,7 +5991,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline4 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 5.6296vh;
     position: absolute;
@@ -5992,7 +6000,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline5 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 4.6296vh;
     position: absolute;
@@ -6001,7 +6009,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline6 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 5.6296vh;
     position: absolute;
@@ -6010,7 +6018,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline7 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 5.6296vh;
     position: absolute;
@@ -6019,7 +6027,9 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline8 {
-    background: url(https://imgur.com/IGcpdKg.png);
+    border: 0.0926vh solid rgba(255, 255, 255, 0.35);
+    border-bottom: none;
+    box-sizing: border-box;
     width: 21vh;
     height: 4.6296vh;
     position: absolute;
@@ -6029,7 +6039,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline9 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 5.6296vh;
     position: absolute;
@@ -6038,7 +6048,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline10 {
-    background: url(https://imgur.com/3REES0A.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 0.0926vh;
     height: 5.6296vh;
     position: absolute;
@@ -6047,7 +6057,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline11 {
-    background: url(https://imgur.com/enweQI6.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 5.6296vh;
     height: 0.0926vh;
     margin-top: 25.7vh;
@@ -6056,7 +6066,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline12 {
-    background: url(https://imgur.com/enweQI6.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 5.6296vh;
     height: 0.0926vh;
     margin-top: 25.7vh;
@@ -6065,7 +6075,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline13 {
-    background: url(https://imgur.com/enweQI6.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 5.6296vh;
     height: 0.0926vh;
     margin-top: 25.7vh;
@@ -6074,7 +6084,9 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline14 {
-    background: url(https://imgur.com/7qP5V3c.png);
+    border-left: 0.0926vh solid rgba(255, 255, 255, 0.35);
+    border-bottom: 0.0926vh solid rgba(255, 255, 255, 0.35);
+    box-sizing: border-box;
     width: 9.0185vh;
     height: 11.5926vh;
     margin-top: 66.5vh;
@@ -6084,7 +6096,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline15 {
-    background: url(https://imgur.com/enweQI6.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 5.6296vh;
     height: 0.0926vh;
     margin-top: 78vh;
@@ -6093,7 +6105,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline16 {
-    background: url(https://imgur.com/enweQI6.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 5.6296vh;
     height: 0.0926vh;
     margin-top: 78vh;
@@ -6102,7 +6114,7 @@ div#animations1 .blockbg1 img {
 }
 
 .gta5devmenuf2 .rightmenu .menu .battlepass3 .questline17 {
-    background: url(https://imgur.com/enweQI6.png);
+    background: rgba(255, 255, 255, 0.35);
     width: 5.6296vh;
     height: 0.0926vh;
     margin-top: 78vh;
@@ -6938,4 +6950,9 @@ div#animations1 .blockbg1 img {
 
 .gta5devmenuf2 .rightmenu .menu .menusetting .settingright .settingblockbg::-webkit-scrollbar {
   display:none;
+}
+/* Иконки одежды и транспорта в донат-магазине: без растягивания */
+.gta5devmenuf2 .rightmenu .menu .list1 .blockrewrad img.n,
+.gta5devmenuf2 .rightmenu .menu .selectblockcl img {
+    object-fit: contain;
 }

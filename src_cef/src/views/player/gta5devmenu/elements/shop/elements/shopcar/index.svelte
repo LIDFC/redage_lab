@@ -1,19 +1,26 @@
 <script>
-    import { translateText } from 'lang'
-    import { format } from 'api/formatter'
-    import { serverDonatMultiplier } from 'store/server'
-    import { validate } from 'api/validation';
-    import Cars from './cars/cars.svelte';
-    import Helicopter from './cars/helicopter.svelte';
+    import { onDestroy } from 'svelte';
+    import { executeClient } from 'api/rage'
+    import List from './cars/list.svelte';
     export let pageload;
-    export let pagenameitem;
-    export let SetPopup;
     export let searchText;
 
+    const categories = [
+        { page: 1, title: "Автомобили", isHeli: false },
+        { page: 2, title: "Вертолёты", isHeli: true },
+    ];
+
+    let vehicles = [];
+    window.gta5devmenuDonateVehicles = (json) => {
+        vehicles = JSON.parse(json);
+    };
+    onDestroy(() => {
+        window.gta5devmenuDonateVehicles = () => {};
+    });
+    executeClient ("client.donate.vehicles.load");
 </script>
-{#if pageload === 0 || pageload === 1 }
-    <Cars {searchText} {pagenameitem} {pageload} {SetPopup}/>
-{/if}
-{#if pageload === 0 || pageload === 2 }
-    <Helicopter {searchText} {pagenameitem} {pageload} {SetPopup}/>
-{/if}
+{#each categories as category (category.page)}
+    {#if pageload === 0 || pageload === category.page}
+        <List {vehicles} {category} {searchText} {pageload}/>
+    {/if}
+{/each}

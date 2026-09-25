@@ -4,7 +4,7 @@ const
     serverName = "server.phone.cars.";
 
 let vehiclesList = [];
-let carlist = []
+let carlist = JSON.stringify("[]");
 let inGarage = false;
 let isOwner = false;
 

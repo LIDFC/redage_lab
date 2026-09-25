@@ -1,4 +1,5 @@
 <script>
+    import ImgPreview from './images/preview.png';
     export let title;
     export let isEnterAnim;
     export let use;
@@ -61,7 +62,7 @@
         </svg>
         {/if}
     {#if use.length > 1}
-    <img src="./images/preview.png" alt=""/>
+    <img src={ImgPreview} alt=""/>
     {/if}
     <p>{title}</p>   
     {/if}

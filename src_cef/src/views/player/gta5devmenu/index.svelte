@@ -1,5 +1,6 @@
 <script>
     import './main.css';
+    import ImgAvatar from '../hudevo/phonenew/assets/images/person.png';
     import './fonts/inv/style.css';
     import './fonts/items/style.css';
     import './fonts/gamemenu/style.css';
@@ -94,16 +95,7 @@
 
     let itemliststock;
 
-    let carsList = [{
-        number: "222133218 2132",
-        model: "adder",
-        header: "Hausbesitzer"
-        },
-        {
-        number: "229",
-        model: "adder",
-        },
-    ];
+    let carsList = [];
 
     addListernEvent("phoneCarsLoad", true);
 
@@ -309,7 +301,7 @@
 <div class="gta5devmenuf2">
     <div class="leftmenu">
         <div class="headplayr">
-            <img src="{document.cloud}img/default_avatar.png" alt=""/>
+            <img src={ImgAvatar} alt=""/>
             <div class="infoplayer">
                 <p>Логин</p>
                 <span>{selectCharData.Login}</span>

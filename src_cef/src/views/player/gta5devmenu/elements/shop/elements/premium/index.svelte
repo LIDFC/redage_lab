@@ -1,4 +1,18 @@
 <script>
+    import ImgSubscripte from '../../../../assets/premium/subscripte.png';
+    import ImgBronze from '../../../../assets/premium/bronze.svg';
+    import ImgSilver from '../../../../assets/premium/silver.svg';
+    import ImgGold from '../../../../assets/premium/gold.svg';
+    import ImgPlatinum from '../../../../assets/premium/platinum.svg';
+
+    const premiumImages = {
+        subscripte: ImgSubscripte,
+        bronze: ImgBronze,
+        silver: ImgSilver,
+        gold: ImgGold,
+        platinum: ImgPlatinum,
+    };
+
     import { translateText } from 'lang'
     import { format } from 'api/formatter'
     import {executeClient, executeClientAsync} from 'api/rage'
@@ -61,7 +75,7 @@
 <div class="list4">
     {#each vipLists as item, index}
         <div class="blockpersprem">
-			<img src="{document.cloud}img/roulette/items_13.png" alt=""/>
+			<img src={premiumImages[item.img] || premiumImages.gold} alt=""/>
             <h1>{item.name}</h1>
             <div class="buypersprem">
                 {#if item.id === 0}

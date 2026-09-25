@@ -3,6 +3,11 @@
     import { format } from 'api/formatter'
     import { serverDonatMultiplier } from 'store/server'
     import { validate } from 'api/validation';
+    import ImgName from './img/p_1.svg';
+    import ImgAppearance from './img/p_2.svg';
+    import ImgWarn from './img/p_3.svg';
+    import ImgSim from './img/sim.png';
+    import ImgNumber from './img/number.png';
     let selectIndex = 0;
 
     export let SetPopup;
@@ -24,7 +29,7 @@
                             Вашего персонажа.
                             После смены имени персонаж забудет о совершенных ранее рукопожатиях,
                             при этом инвентарь и статистика персонажа никак не изменятся. Только никнейм.`,
-                    img: "yKbEaXm",
+                    img: ImgName,
                     price: 800,
                 },
                 {
@@ -34,7 +39,7 @@
                     text: `Warn - предупреждение от Администрации. Эта донат-функция снимает только 1 warn.
                         В случае, если у вас 2 warn'a, то для полного снятия потребуется дважды оплатить "Снять предупреждение".
                         Если у вас накопится 3 warn'a одновременно - персонаж будет автоматически заблокирован на 30 дней.`,
-                    img: "uYu8q4K",
+                    img: ImgWarn,
                     price: 1000,
                 },
                 {
@@ -45,7 +50,7 @@
                             Ваш персонаж будет отправлен в редактор внешности (как при создании персонажа),
                             где Вы сможете заново настроить его внешность.
                             Содержимое инвентаря и татуировки останутся.`,
-                    img: "kNJU7gs",
+                    img: ImgAppearance,
                     price: 1000,
                 },
                 {
@@ -56,7 +61,7 @@
                     text: `Долгожданная система покупки номера для телефона!
                         Соберите свой уникальный номер из любых цифр и пусть все вокруг завидуют...
                         Номер на авто выдаётся как предмет в инвентарь.`,
-                    img: "KujMwkH",
+                    img: ImgSim,
                     btnName: "Купить"
                 },
                 {
@@ -67,7 +72,7 @@
                     text: `Долгожданная система покупки номера для автомобиля!
                         Соберите свой уникальный номер из букв и/или цифр и пусть все вокруг завидуют...
                         Номер на авто выдаётся как предмет в инвентарь.`,
-                    img: "3i7RJU9",
+                    img: ImgNumber,
                     btnName: "Купить"
                 },
             ]
@@ -129,7 +134,7 @@
 <div class="list1">
     {#each shopList[selectIndex].list as item, index}
     <div class="blockpersm" on:keypress on:click={() => onToServer (item)}>
-        <img src="{item.img && item.img.startsWith('http') ? item.img : document.cloud + 'img/donate/shop/' + item.img + '.png'}" alt=""/>
+        <img src={item.img} alt=""/>
         <h1>{item.name}</h1>
     </div>
     {/each}

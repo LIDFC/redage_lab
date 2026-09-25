@@ -4,6 +4,21 @@
     import { accountRedbucks, accountUnique } from 'store/account'
     import { executeClient, executeClientAsync } from 'api/rage'
 
+    import pack1 from '../../../../assets/packs/1.png'
+    import pack2 from '../../../../assets/packs/2.png'
+    import pack3 from '../../../../assets/packs/3.png'
+    import pack4 from '../../../../assets/packs/4.png'
+    import pack5 from '../../../../assets/packs/5.png'
+    import pack6 from '../../../../assets/packs/6.png'
+    import pack7 from '../../../../assets/packs/7.png'
+    import pack8 from '../../../../assets/packs/8.png'
+    import pack9 from '../../../../assets/packs/9.png'
+    import pack10 from '../../../../assets/packs/10.png'
+    import pack11 from '../../../../assets/packs/11.png'
+
+    const packImages = [pack1, pack2, pack3, pack4, pack5, pack6, pack7, pack8, pack9, pack10, pack11];
+    const getPackImage = (id) => packImages[Number(id) % packImages.length] || packImages[0];
+
     const onToServer = (item) => {
         if ($accountRedbucks < getPrice (item.price, item.id, $accountUnique))
             return window.notificationAdd(4, 9, `Недостаточно Redbucks!`, 3000);
@@ -32,7 +47,7 @@
     {#each shopList as item, index}
     <div class="blockstartnabor">
         <div class="headstna">
-			<img src="{document.cloud}donate/personal/1.png" alt=""/>
+			<img src="{getPackImage(item.id)}" alt=""/>
         </div>
         <h1>Стартовый пак {item.name}</h1>
             {#each item.list as text, index}

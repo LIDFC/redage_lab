@@ -7,6 +7,8 @@
     import fraction from 'json/fraction.js'
     import jobs from 'json/jobs.js'
     import vipinfo from 'json/vipinfo.js'
+    import ImgHouse from '../../../hudevo/phonenew/assets/images/house.png';
+    import ImgBiz from '../../../hudevo/phonenew/assets/images/shop.png';
     export let visible;
     export let selectView;
     export let carsList;
@@ -258,7 +260,7 @@
 
 {#if selectView === "Carsuser"}
     <div class="list1">
-        {#each carsList as item}
+        {#each (carsList || []).filter((item) => Array.isArray(item) && item[1]) as item}
             <div class="blockcars">
                 <div class="headblock">
                     <img src="{document.cloud}inventoryItems/vehicle/{item[1].toLowerCase()}.png" alt=""/>
@@ -288,7 +290,7 @@
 {#if selectView === "Housebiz"}
     <div class="list1">
         {#if selectCharData.houseId}
-            <div class="blockhouse" style="background: url({document.cloud}img/house_bg.png);">
+            <div class="blockhouse" style="background: rgb(35, 35, 35) url({ImgHouse}) right center / auto 100% no-repeat; background-size: auto 100% !important;">
                 <div class="bgblockhouse">
                     <h1>Дом #{selectCharData.houseId}</h1>
                     <div class="infohouse">
@@ -306,7 +308,7 @@
             </div>
         {/if}
         {#if selectCharData.BizId}
-            <div class="blockhouse" style="background: url({document.cloud}img/biz_bg.png);">
+            <div class="blockhouse" style="background: rgb(35, 35, 35) url({ImgBiz}) right center / auto 100% no-repeat; background-size: auto 100% !important;">
                 <div class="bgblockhouse">
                     <h1>Бизнес #{selectCharData.BizId}</h1>
                     <div class="infohouse">

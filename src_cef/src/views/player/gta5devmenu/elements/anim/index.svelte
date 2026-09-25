@@ -1,4 +1,5 @@
 <script>
+    import ImgPreview from './images/preview.png';
     import { translateText } from 'lang'
     import './main.sass';
     import './fonts/style.css';
@@ -12,7 +13,6 @@
     import keys from 'store/keys'
     import keysName from 'json/keys.js'
     export let selectView;
-    import { selectedView } from "./../../index.svelte"
     export let searchText;
     
     let animMenuList = [
@@ -223,7 +223,7 @@
 <div id="animations1">
     {#if DragonDropData != "" && ($coords.x !== clientX || $coords.y !== clientY) && DragonDropData.split("_") && DragonDropData.split("_").length}
                 <div class="blockbg1" style={`top:${$coords.y - offsetInElementY}px;left:${$coords.x - offsetInElementX}px;`}>
-					<img src="./images/preview.png" alt=""/>                                
+					<img src={ImgPreview} alt=""/>                                
                 </div>
     {/if}
 </div>
@@ -267,7 +267,7 @@
                 <div class="blockbg">
                     <span>{index + 1 === 10 ? 0 : index + 1}</span>
                     {#if $storeAnimBind && Animations [item]}
-                    <img src="./images/preview.png" alt=""/> 
+                    <img src={ImgPreview} alt=""/> 
                     <AnimElement
                         isEnterAnim={fastSlotIndex === index}
                         use={item}

@@ -1,3 +1,4 @@
+using NeptuneEvo.EternalDev.MarketPlace.Extensions;
 using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using Newtonsoft.Json;
@@ -778,7 +779,7 @@ namespace NeptuneEvo.Houses
             new Vector3(-754.38, 325.07, 198.91 + 1.12f),
         };
 
-        private static List<int> MaxRoommates = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 0, 15, 30 };
+        public static List<int> MaxRoommates = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 0, 15, 30 };
 
         private static int GetUID()
         {
@@ -1620,12 +1621,11 @@ namespace NeptuneEvo.Houses
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы должны выйти из гаража", 3000);
                     return;
                 }
+                if (house.IsOnMarketplace(player))
+                    return;
                 house.RemoveAllPlayers();
                 house.ClearOwner();
-                Rieltagency.Repository.OnPayDay(new List<House>()
-                {
-                    house
-                }, new List<Business>());
+                EternalDev.MarketPlace.Auction.AuctionManager.SetPropertyToAuction(house);
                 int price = 0;
                 switch (accountData.VipLvl)
                 {
@@ -2293,6 +2293,8 @@ namespace NeptuneEvo.Houses
                         if (Fractions.Ticket.IsVehicleTickets(vehicleData.SqlId))
                             return;
                         
+                        if (vehicleData.IsOnMarketplace(player))
+                            return;
                         sessionData.CarSellGov = number;
                         
                         int price = 0;
@@ -2915,6 +2917,8 @@ namespace NeptuneEvo.Houses
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoHome), 3000);
                     return;
                 }
+                if (house.IsOnMarketplace(player))
+                    return;
                 if (GetHouse(target, true) != null)
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У игрока уже есть недвижимость", 3000);
@@ -2999,6 +3003,8 @@ namespace NeptuneEvo.Houses
                     sessionData.SellItemData = new SellItemData();
                     return;
                 }
+                if (house.IsOnMarketplace(player))
+                    return;
                 int tax = Convert.ToInt32(house.Price / 100 * 0.026);
                 if (MoneySystem.Bank.GetBalance(house.BankID) < (tax * 2))
                 {

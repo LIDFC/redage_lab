@@ -374,6 +374,7 @@ require('./player/boombox.js');
 require('./player/wedding.js');
 require('./player/damage/index.js');
 require('./player/chatHeadOverlay.js')
+require('./player/warehouse.js');
 
 require('./business/businessmanage.js');
 
@@ -812,3 +813,6 @@ const propsTypes = {
 	Watches: 6,
 	Bracelets: 7
 }
+
+// Торговая площадка (EternalDev MarketPlace)
+require("./EternalDev/index.js");

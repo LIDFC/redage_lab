@@ -126,5 +126,65 @@ namespace NeptuneEvo.Businesses.History
                 Debugs.Repository.Exception(e);
             }
         }
+            // ---- Статистика бизнеса для карточки лота на торговой площадке (EternalDev.MarketPlace) ----
+
+        public class BusinessStatsDTO
+        {
+            [JsonProperty("income")] public int Income { get; set; }
+            [JsonProperty("netProfit")] public int NetProfit { get; set; }
+            [JsonProperty("averageCheck")] public int AverageCheck { get; set; }
+            [JsonProperty("governmentPrice")] public int GovernmentPrice { get; set; }
+            [JsonProperty("salesCount")] public int SalesCount { get; set; }
+            [JsonProperty("profitability")] public int Profitability { get; set; }
+        }
+
+        public static async Task<Dictionary<string, BusinessStatsDTO>> GetBusinessStats(int bizId)
+        {
+            if (!NeptuneEvo.Core.BusinessManager.BizList.TryGetValue(bizId, out var business))
+                return null;
+
+            await using var db = new ServerBD("MainDB");
+
+            var historyList = await db.Businesshistory
+                .Where(bh => bh.Bizid == bizId)
+                .OrderByDescending(bh => bh.Autoid)
+                .Select(bh => new { bh.Date, bh.Price })
+                .ToListAsync();
+
+            BusinessStatsDTO GetData(int days)
+            {
+                var from = DateTime.Now.Subtract(new TimeSpan(days, 0, 0, 0));
+                var perTime = historyList.Where(x => x.Date >= from).ToList();
+                var count = perTime.Count;
+                return new BusinessStatsDTO
+                {
+                    Income = business.Pribil,
+                    NetProfit = Math.Max(business.Pribil - business.Zatratq, 0),
+                    AverageCheck = count == 0 ? 0 : (int)Math.Round((decimal)perTime.Sum(x => x.Price) / count),
+                    GovernmentPrice = business.SellPrice,
+                    SalesCount = count,
+                    Profitability = business.Zatratq == 0 ? 0 : Math.Max((int)Math.Round((decimal)business.Pribil / business.Zatratq * 100), 0),
+                };
+            }
+
+            return new Dictionary<string, BusinessStatsDTO>
+            {
+                { "yesterday", GetData(1) },
+                { "week", GetData(7) },
+                { "month", GetData(30) },
+                { "quarter", GetData(GetDaysPassedOfCurrentQuarter()) },
+                { "year", GetData(365) },
+            };
+        }
+
+        /// <summary>
+        /// Сколько дней прошло с начала текущего квартала (у автора считалось от начала следующего — получалось отрицательное число)
+        /// </summary>
+        public static int GetDaysPassedOfCurrentQuarter()
+        {
+            var today = DateTime.Today;
+            var quarterStart = new DateTime(today.Year, (today.Month - 1) / 3 * 3 + 1, 1);
+            return Math.Max(1, (today - quarterStart).Days + 1);
+        }
     }
 }

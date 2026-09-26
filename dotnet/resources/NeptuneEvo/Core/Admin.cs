@@ -360,6 +360,7 @@ namespace NeptuneEvo.Core
                         AlcoFabrication.SaveAlco();
                         await Main.SaveDoorsControl(db);
                         await Players.Phone.Tinder.Repository.Saves(db);
+                        EternalDev.MarketPlace.Manager.Save();
                         //
                         Ban.Delete();
                         
@@ -444,6 +445,7 @@ namespace NeptuneEvo.Core
                     await Main.SaveDoorsControl(db);
 
                     await Players.Phone.Tinder.Repository.Saves(db);
+                    EternalDev.MarketPlace.Manager.Save();
 
                     //Log.Write($"[{DateTime.Now - speedSave}] Save property", nLog.Type.Success);
                     

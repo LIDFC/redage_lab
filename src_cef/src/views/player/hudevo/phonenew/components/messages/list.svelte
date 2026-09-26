@@ -1,7 +1,7 @@
 <script>
     import { translateText } from 'lang'
     import { executeClientAsyncToGroup } from 'api/rage'
-    import { loadImage } from 'api/functions'
+    import { loadImage, addListernEvent } from 'api/functions'
     import { TimeFormatStartOf } from 'api/moment'
     import { messageType, formatMessage } from './data.js'
 
@@ -42,6 +42,7 @@
         return "";
     }
     let isPopup = false;
+    addListernEvent("phone.messages.openPopup", () => isPopup = true);
 
     const closePopup = () => isPopup = false;
 

@@ -3221,7 +3221,8 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
                             if (newItem.ItemId == ItemId.CarKey) newItem.Data = GetVehicleName(newItem.Data);
                             _JsonInventoryItemData.Add(newItem);
 
-                            if (_JsonInventoryItemData.Count == 250) 
+                            // Большие хранилища (склады на 300 слотов) отдаём целиком
+                            if (_JsonInventoryItemData.Count >= Math.Max(250, MaxSlots)) 
                                 break;
                         }
                     }
@@ -3387,7 +3388,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
             }
         }
 
-        public static void Remove(ExtPlayer player, string locationName, string Location, ItemId ItemId, int count = 1)
+        public static void Remove(ExtPlayer player, string locationName, string Location, ItemId ItemId, int count = 1, string data = null)
         {
             try
             {
@@ -3399,7 +3400,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
 
                 foreach (var item in ItemsData[locationName][Location])
                 {
-                    if (item.Value.ItemId == ItemId)
+                    if (item.Value.ItemId == ItemId && (data == null || item.Value.Data == data))
                     {
                         if (ItemsInfo[ItemId].Stack > 1 && (item.Value.Count - count) > 0)
                         {
@@ -3811,6 +3812,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
             { "Organization", 300 },
             { "furniture", 25 },
             { "tent", 16 },
+            { "publicwarehouse", Warehouses.WarehouseManager.StorageSlots },
         };
         public const int MaxSlotsInventory = 35;
         public static int GetMaxSlots(ExtPlayer player, string Location)
@@ -4438,7 +4440,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
             }
         }
 
-        public static int getCountToLacationItem(string locationName, string Location, ItemId ItemId)
+        public static int getCountToLacationItem(string locationName, string Location, ItemId ItemId, string data = null)
         {
             try
             {
@@ -4448,7 +4450,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
                     foreach (InventoryItemData itemData in ItemsData[locationName][Location].Values)//Todo
                     {
                         if (itemData.ItemId == ItemId.Debug) continue;
-                        else if (itemData.ItemId != ItemId) continue;
+                        else if (itemData.ItemId != ItemId || (data != null && itemData.Data != data)) continue;
                         count += itemData.Count < 1 ? 1 : itemData.Count;
                     }
                 }

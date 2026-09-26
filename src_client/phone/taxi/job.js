@@ -39,24 +39,111 @@ const getBotSpawnPos = (pos) => {
 // Пассажир — обычный GTA-пед (CREATE_PED), а не mp.peds.new:
 // клиентские педы RAGE статичны, движок возвращает их на место каждый кадр,
 // поэтому пассажир делал шаг и «замерзал». Нативный пед полностью слушается задач.
+// Нативы GTA вызываем напрямую по хешам: обёртки mp.game.entity.* есть не во всех версиях клиента,
+// и без них пед не получал защиту — реагировал на удары и мог выкинуть водителя из машины.
+const N = {
+    DOES_ENTITY_EXIST: "0x7239B21A38F536BA",
+    GET_ENTITY_COORDS: "0x3FEF770D40960D5A",
+    SET_ENTITY_AS_MISSION_ENTITY: "0xAD738C3085FE7E11",
+    SET_ENTITY_INVINCIBLE: "0x3882114BDE571AD4",
+    SET_ENTITY_VISIBLE: "0xEA1C610A04DB6BBB",
+    SET_ENTITY_COORDS_NO_OFFSET: "0x239A3351AC1DA385",
+    SET_BLOCKING_OF_NON_TEMPORARY_EVENTS: "0x9F8AA94D6D97DBF4",
+    TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS: "0x90D2156198831D69",
+    SET_PED_CAN_RAGDOLL: "0xB128377056A54E2A",
+    SET_PED_FLEE_ATTRIBUTES: "0x70A2D1137C8ED7C9",
+    SET_PED_COMBAT_ATTRIBUTES: "0x9F7794730795E019",
+    SET_PED_CONFIG_FLAG: "0x1913FE4CBF41C463",
+    SET_PED_CAN_BE_DRAGGED_OUT: "0xC1670E958EEE24E5",
+    SET_PED_RELATIONSHIP_GROUP_HASH: "0xC80A74AC829DDD92",
+    SET_PED_KEEP_TASK: "0x971D38760FBC02EF",
+    IS_PED_IN_COMBAT: "0x4859F1FC66A6278E",
+    IS_PED_FLEEING: "0xBBCCE00B381F8482",
+    CLEAR_PED_TASKS: "0xE1EF3C1216AFF2CD",
+    CLEAR_PED_TASKS_IMMEDIATELY: "0xAAA34F8A7CB32098",
+    TASK_ENTER_VEHICLE: "0xC20E50AA46D09CA8",
+    TASK_START_SCENARIO_IN_PLACE: "0x142A02425FF02BD9",
+    TASK_LEAVE_VEHICLE: "0xD3DBCE61A490BE02",
+    TASK_WANDER_STANDARD: "0xBB9CE077274F6A1B",
+    SET_PED_INTO_VEHICLE: "0xF75B0D629E1C063D",
+};
+
+const native = (hash, ...args) => {
+    try { return mp.game.invoke(hash, ...args); } catch (e) { return undefined; }
+};
+
+// mp.game.invoke передаёт целые числа как int: нативам с float-параметром нужна дробная часть
+const float = (value) => Number.isInteger(value) ? value + 0.0001 : value;
+
 class BotPed {
     constructor(handle) {
         this.handle = handle;
     }
     exists() {
-        try { return !!this.handle && mp.game.entity.doesEntityExist(this.handle); } catch (e) { return false; }
+        if (!this.handle)
+            return false;
+        const result = native(N.DOES_ENTITY_EXIST, this.handle);
+        // Если invoke недоступен — считаем, что пед есть (handle получен от createPed)
+        return result === undefined ? true : !!result;
     }
     get position() {
-        return mp.game.entity.getEntityCoords(this.handle, true);
+        try {
+            const pos = mp.game.invokeVector(N.GET_ENTITY_COORDS, this.handle, true);
+            if (pos && (pos.x || pos.y))
+                return new mp.Vector3(pos.x, pos.y, pos.z);
+        } catch (e) {}
+        return null;
+    }
+    // Пассажир не реагирует на удары/выстрелы/сигнал, не убегает, не дерётся и не падает
+    makeCalm() {
+        const h = this.handle;
+        native(N.SET_ENTITY_INVINCIBLE, h, true);
+        native(N.SET_PED_CAN_RAGDOLL, h, false);
+        native(N.SET_BLOCKING_OF_NON_TEMPORARY_EVENTS, h, true);
+        native(N.TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS, h, true);
+        native(N.SET_PED_FLEE_ATTRIBUTES, h, 0, false);
+        native(N.SET_PED_COMBAT_ATTRIBUTES, h, 17, true);   // при угрозе только убегать, не нападать
+        native(N.SET_PED_COMBAT_ATTRIBUTES, h, 46, false);
+        native(N.SET_PED_CONFIG_FLAG, h, 17, true);         // BlockNonTemporaryEvents
+        native(N.SET_PED_CONFIG_FLAG, h, 281, true);        // без «корчится от боли»
+        native(N.SET_PED_CONFIG_FLAG, h, 32, false);        // не вылетает через лобовое
+        native(N.SET_PED_CAN_BE_DRAGGED_OUT, h, false);
+        native(N.SET_PED_RELATIONSHIP_GROUP_HASH, h, mp.game.joaat("PLAYER"));
+        native(N.SET_PED_KEEP_TASK, h, true);
+    }
+    isAgitated() {
+        return !!native(N.IS_PED_IN_COMBAT, this.handle, 0) || !!native(N.IS_PED_FLEEING, this.handle);
+    }
+    clearTasks(immediately = false) {
+        native(immediately ? N.CLEAR_PED_TASKS_IMMEDIATELY : N.CLEAR_PED_TASKS, this.handle);
+    }
+    idle() {
+        native(N.TASK_START_SCENARIO_IN_PLACE, this.handle, "WORLD_HUMAN_STAND_MOBILE", 0, true);
+    }
+    enterVehicle(vehicle, seat, timeout) {
+        // flag 1 — продолжать после прерывания; без флагов «угона», поэтому водителя он не вытащит
+        native(N.TASK_ENTER_VEHICLE, this.handle, vehicle.handle, timeout, seat, float(1.5), 1, 0);
+    }
+    leaveVehicle(vehicle) {
+        native(N.TASK_LEAVE_VEHICLE, this.handle, vehicle.handle, 0);
+    }
+    wander() {
+        native(N.TASK_WANDER_STANDARD, this.handle, float(10), 10);
+    }
+    warpIntoVehicle(vehicle, seat) {
+        native(N.SET_PED_INTO_VEHICLE, this.handle, vehicle.handle, seat);
     }
     destroy() {
         if (!this.handle)
             return;
         const handle = this.handle;
         this.handle = 0;
-        try { mp.game.entity.setEntityAsMissionEntity(handle, true, true); } catch (e) {}
+        native(N.SET_ENTITY_AS_MISSION_ENTITY, handle, true, true);
+        try { mp.game.ped.deletePed(handle); return; } catch (e) {}
         try { mp.game.entity.deleteEntity(handle); return; } catch (e) {}
-        try { mp.game.ped.deletePed(handle); } catch (e) {}
+        // Удалить не удалось — хотя бы убираем с глаз
+        native(N.SET_ENTITY_VISIBLE, handle, false, false);
+        native(N.SET_ENTITY_COORDS_NO_OFFSET, handle, float(0), float(0), float(-100), false, false, false);
     }
 }
 
@@ -68,8 +155,10 @@ const createBotPed = async (model, pos, heading) => {
     try { mp.game.streaming.setModelAsNoLongerNeeded(hash); } catch (e) {}
     if (!handle)
         return null;
-    try { mp.game.entity.setEntityAsMissionEntity(handle, true, true); } catch (e) {}
-    return new BotPed(handle);
+    native(N.SET_ENTITY_AS_MISSION_ENTITY, handle, true, true);
+    const ped = new BotPed(handle);
+    ped.makeCalm();
+    return ped;
 };
 
 const destroyBotPed = () => {
@@ -203,11 +292,11 @@ gm.events.add(clientName + "botFinished", (id) => {
     if (ped && ped.exists()) {
         try {
             if (vehicle)
-                mp.game.ai.taskLeaveVehicle(ped.handle, vehicle.handle, 0);
+                ped.leaveVehicle(vehicle);
             setTimeout(() => {
                 try {
                     if (ped.exists())
-                        mp.game.ai.taskWanderStandard(ped.handle, 10.0, 10);
+                        ped.wander();
                 } catch (e) {}
             }, 2500);
         } catch (e) {}
@@ -270,12 +359,9 @@ const prepareBotPed = () => {
     if (!ped || activeBotTrip.pedReady || !ped.exists())
         return;
 
-    // Каждый вызов отдельно: если какой-то метод недоступен в версии клиента, остальные всё равно применятся
-    try { mp.game.entity.setEntityInvincible(ped.handle, true); } catch (e) {}
-    try { mp.game.ped.setPedCanRagdoll(ped.handle, false); } catch (e) {}
-    try { mp.game.ped.setBlockingOfNonTemporaryEvents(ped.handle, true); } catch (e) {}
-    try { mp.game.ped.setPedFleeAttributes(ped.handle, 0, false); } catch (e) {}
-    try { mp.game.ai.taskStartScenarioInPlace(ped.handle, "WORLD_HUMAN_STAND_MOBILE", 0, true); } catch (e) {}
+    ped.makeCalm();
+    ped.idle();
+    activeBotTrip.calmCheckAt = Date.now();
 
     activeBotTrip.pedReady = true;
 };
@@ -303,6 +389,20 @@ gm.events.add("render", () => {
 
     prepareBotPed();
 
+    // Раз в секунду: если пассажира всё-таки что-то разозлило/напугало — успокаиваем
+    const calmPed = activeBotTrip.ped;
+    if (calmPed && activeBotTrip.pedReady && Date.now() - (activeBotTrip.calmCheckAt || 0) > 1000) {
+        activeBotTrip.calmCheckAt = Date.now();
+        calmPed.makeCalm();
+        if (calmPed.isAgitated()) {
+            calmPed.clearTasks(true);
+            if (activeBotTrip.stage === "pickup")
+                calmPed.idle();
+            else if (activeBotTrip.stage === "boarding" && mp.players.local.vehicle)
+                calmPed.warpIntoVehicle(mp.players.local.vehicle, activeBotTrip.seat);
+        }
+    }
+
     const vehicle = player.vehicle;
     if (!vehicle || vehicle.getPedInSeat(-1) !== player.handle)
         return;
@@ -313,7 +413,8 @@ gm.events.add("render", () => {
             if (!ped || !activeBotTrip.pedReady)
                 return;
 
-            const pedDist = dist2d(player.position, ped.position);
+            // Если координаты педа не читаются — он стоит на точке посадки
+            const pedDist = dist2d(player.position, ped.position || activeBotTrip.pickupPos);
             if (pedDist > botBoardDistance || vehicle.getSpeed() > 2.0) {
                 if (pedDist <= botHintDistance && !activeBotTrip.hintShown) {
                     activeBotTrip.hintShown = true;
@@ -331,10 +432,10 @@ gm.events.add("render", () => {
                 return;
             }
 
-            try { mp.game.ai.clearPedTasksImmediately(ped.handle); } catch (e) {}
+            ped.clearTasks(true);
             // Пед не может открыть запертую дверь: открываем замок локально, только для этого пассажира
             try { vehicle.setDoorsLocked(1); } catch (e) {}
-            mp.game.ai.taskEnterVehicle(ped.handle, vehicle.handle, botWarpMs, seat, 2.0, 1, 0);
+            ped.enterVehicle(vehicle, seat, botWarpMs);
 
             activeBotTrip.stage = "boarding";
             activeBotTrip.seat = seat;
@@ -353,7 +454,7 @@ gm.events.add("render", () => {
 
             // Уехал, не дождавшись пассажира
             if (dist2d(player.position, activeBotTrip.pickupPos) > botBoardDistance * 2) {
-                mp.game.ai.clearPedTasks(ped.handle);
+                ped.clearTasks();
                 activeBotTrip.pedReady = false;
                 activeBotTrip.stage = "pickup";
                 return;
@@ -365,8 +466,8 @@ gm.events.add("render", () => {
 
             if (!inSeat) {
                 // Не дошёл сам (заперто, мешает препятствие) — сажаем на место
-                try { mp.game.ai.clearPedTasksImmediately(ped.handle); } catch (e) {}
-                try { mp.game.ped.setPedIntoVehicle(ped.handle, vehicle.handle, activeBotTrip.seat); } catch (e) {}
+                ped.clearTasks(true);
+                ped.warpIntoVehicle(vehicle, activeBotTrip.seat);
             }
 
             activeBotTrip.stage = "wait_destination";

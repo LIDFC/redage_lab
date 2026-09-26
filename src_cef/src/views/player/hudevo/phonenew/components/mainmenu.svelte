@@ -11,6 +11,7 @@
     import MechIcon from '../assets/images/mech.png'
     import PropertyIcon from '../assets/images/property.png'
     import TinderIcon from '../assets/images/tinder.png'
+    import MarketplaceIcon from '../assets/images/marketplace.svg'
 
 
     import RadioIcon from '../assets/images/radio.png'
@@ -105,6 +106,11 @@
             icon: TinderIcon,
             link: "tinder"
         },
+        {
+            name: "Маркетплейс",
+            icon: MarketplaceIcon,
+            link: "marketPlace"
+        },
     ]
 
     import WeatherWidget from './weather/widget.svelte'
@@ -112,10 +118,15 @@
 
 
     import { onMessage } from "@/views/player/hudevo/phonenew/data";
-    import {executeClientAsyncToGroup, executeClientToGroup} from "api/rage";
+    import {executeClient, executeClientAsyncToGroup, executeClientToGroup} from "api/rage";
 
     const onSelectPage = (pageName) => {
         if (typeof pageName === "string") {
+            if (pageName === "marketPlace") {
+                executeClientToGroup("close");
+                executeClient("client.marketPlace.openApp");
+                return;
+            }
             if (pageName === "camera") {
                 executeClientAsyncToGroup("getGallery").then((result) => {
                     result = JSON.parse(result);

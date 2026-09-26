@@ -1,4 +1,5 @@
-﻿using Database;
+﻿using NeptuneEvo.EternalDev.MarketPlace.Extensions;
+using Database;
 using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using LinqToDB;
@@ -3300,6 +3301,8 @@ namespace NeptuneEvo.Core
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.BizCantSellPrice, biz.SellPrice), 3000);
                     return;
                 }
+                if (biz.IsOnMarketplace(player))
+                    return;
                 if (!biz.Owner.Equals(player.Name))
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.BizNotYour), 3000);
@@ -3347,6 +3350,8 @@ namespace NeptuneEvo.Core
                 }
                 int price = sellItemData.Price;
                 Business biz = BizList[sellItemData.Count];
+                if (biz.IsOnMarketplace(player))
+                    return;
                 if (player.Position.DistanceTo(target.Position) > 2)
                 {
                     sessionData.SellItemData = new SellItemData();

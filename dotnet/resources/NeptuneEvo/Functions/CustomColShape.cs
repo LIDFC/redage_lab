@@ -199,6 +199,12 @@ namespace NeptuneEvo.Functions
         QuestBonus,
 
         JobEmployer,
+
+        PublicWarehouse,
+
+        MarketPlaceInterior,
+        MarketPlaceAuction,
+        MarketPlaceStorage,
     }
     class CustomColShape : Script
     {

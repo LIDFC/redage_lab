@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NeptuneEvo.EternalDev.MarketPlace.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Localization;
@@ -524,6 +525,8 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
             }
             
             var biz = BusinessManager.BizList[bizId];
+            if (biz.IsOnMarketplace(player))
+                return;
             
             int price = Wallet.GetPriceToVip(player, biz.SellPrice);
 
@@ -532,10 +535,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
             characterData.BizIDs.Remove(bizId);
             biz.ClearOwner();
             
-            Houses.Rieltagency.Repository.OnPayDay(new List<Houses.House>(), new List<Business>()
-            {
-                biz
-            });
+            EternalDev.MarketPlace.Auction.AuctionManager.SetPropertyToAuction(biz);
             //Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы продали бизнес государству за {MoneySystem.Wallet.Format(price)}$", 3000);
             Players.Phone.Messages.Repository.AddSystemMessage(player, (int)DefaultNumber.Bank, LangFunc.GetText(LangType.Ru, DataName.SellBizGos, MoneySystem.Wallet.Format(price)), DateTime.Now);
         }

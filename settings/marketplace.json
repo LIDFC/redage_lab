@@ -1,0 +1,57 @@
+{
+  "storage_positions": [
+    {
+      "position": {
+        "x": -826.19,
+        "y": -757.41,
+        "z": 22.31
+      },
+      "range": 25.0,
+      "label_position": {
+        "x": -846.72,
+        "y": -750.43,
+        "z": 24.1
+      }
+    }
+  ],
+  "testdrive_positions": [
+    {
+      "position": {
+        "x": -816.0768,
+        "y": -743.8378,
+        "z": 23.710386
+      },
+      "heading": -170.0
+    }
+  ],
+  "interior_positions": [],
+  "auction_positions": [
+    {
+      "position": {
+        "x": -827.46,
+        "y": -699.8,
+        "z": 28.05
+      },
+      "range": 2.0,
+      "dimension": 0
+    }
+  ],
+  "app": {
+    "marketPercent": 0.0001,
+    "maxHours": 120,
+    "minHours": 5,
+    "minPriceMultiplier": 0.5,
+    "priceHighLimit": 2500000,
+    "priceLowLimit": 40000,
+    "removeLotPrice": 1000,
+    "servicePercent": 0.01,
+    "timeRuleToAddByBet": 60,
+    "timeAddAuctionByBet": 30,
+    "auctionTime": 12,
+    "betStep": 100000
+  },
+  "testdrive_time": 300,
+  "need_nearest_autoshop_for_testdrive": true,
+  "storage_slots": 300,
+  "_comment": "interior_positions пуст: интерьер аукциона Majestic (q_auc_milo_) — кастомная карта, её нет в проекте. Чтобы включить, поставьте карту в dlcpacks и верните блок интерьера из автора (dimension 3000) и auction_positions внутри него."
+}

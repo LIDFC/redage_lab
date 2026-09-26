@@ -4707,7 +4707,7 @@ namespace NeptuneEvo
                         
                         biz.ClearOwner();
                         
-                        businesses.Add(biz);
+                        EternalDev.MarketPlace.Auction.AuctionManager.SetPropertyToAuction(biz);
                     }
                     catch (Exception e)
                     {
@@ -4795,7 +4795,7 @@ namespace NeptuneEvo
                                 GameLog.Money($"server", $"player({PlayerUUIDs[owner]})", price, $"parkTax({house.ID})");
                         }
 
-                        houses.Add(house);
+                        EternalDev.MarketPlace.Auction.AuctionManager.SetPropertyToAuction(house);
                     }
                     catch (Exception e)
                     {
@@ -4840,7 +4840,7 @@ namespace NeptuneEvo
                         fractionData.Money += GangForPoint;
                 }
 
-                Houses.Rieltagency.Repository.OnPayDay(houses, businesses);
+                // Имущество неплательщиков уходит на аукцион площадки (EternalDev.MarketPlace), а не риелтору
                 
                 Organizations.Manager.NewDay();
                 Log.Write("Payday time ended!");

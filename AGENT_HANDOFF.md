@@ -68,6 +68,7 @@ rsync -a --info=progress2 /tmp/redage_lab/client_packages/interface/ $S/client_p
 cp -v /tmp/redage_lab/client_packages/main.js $S/client_packages/main.js
 cp -r /tmp/redage_lab/dotnet/resources/NeptuneEvo/bin/. $S/dotnet/resources/NeptuneEvo/bin/
 cp -v /tmp/redage_lab/dotnet/resources/NeptuneEvo/meta.xml $S/dotnet/resources/NeptuneEvo/meta.xml
+cp -v /tmp/redage_lab/settings/marketplace.json $S/settings/   # один раз, конфиг маркетплейса
 md5sum /tmp/redage_lab/client_packages/interface/build/bundle.js $S/client_packages/interface/build/bundle.js
 chown -R ragemp:ragemp $S && systemctl start redage
 ```
@@ -89,7 +90,8 @@ chown -R ragemp:ragemp $S && systemctl start redage
 | `6e4a651` | Меню F3: все картинки imgur и beget заменены (см. п. 5), настоящие каталоги одежды и транспорта, исправлены падения |
 | `8e226e8` | Автосалон и 24/7 (см. п. 6) |
 | `a37a374` | `cloud.html` грузит локальный интерфейс, а не CDN оригинального RedAge |
-| *(последний коммит)* | Такси-NPC, NPC-трафик, NPC-работодатели, новое окно аренды (см. п. 7) |
+| `2d3b81c`, `098ca0b` | Такси-NPC, NPC-трафик, NPC-работодатели, новое окно аренды, G-меню (см. п. 7, 7a) |
+| *(последний коммит)* | Склады, маркетплейс, такси-NPC через `invoke` (см. п. 7b, 7c) |
 
 ## 5. Меню F3 (`src_cef/src/views/player/gta5devmenu`)
 
@@ -181,10 +183,40 @@ chown -R ragemp:ragemp $S && systemctl start redage
   - у пункта `vmuted` не было названия, поэтому он не показывался. Теперь «Заглушить игрока» / «Включить звук игрока».
   - В `redage_textures_001` нет спрайта `zamok`, который используется в `world/doors.js`, так что у запертых дверей может рисоваться белый квадрат. Не исправлялось.
 
+## 7b. Такси-NPC: нативы через `mp.game.invoke`
+
+После перехода на `createPed` пассажир всё равно не садился и дрался, если его сбить (выкинул водителя из машины). Похоже, обёртки `mp.game.entity.doesEntityExist` / `getEntityCoords` / `setEntityInvincible` в этом клиенте RAGE отсутствуют: `exists()` всегда возвращал false, поэтому защита не применялась и стадия посадки не запускалась. Теперь все вызовы идут через `mp.game.invoke("0x…")` (таблица `N` в `src_client/phone/taxi/job.js`):
+- `makeCalm()`: блокировка реакций, без рэгдолла, бессмертие, `SET_PED_CAN_BE_DRAGGED_OUT false`, группа `PLAYER`. Повторяется раз в секунду; если пед всё-таки в бою или убегает, задачи сбрасываются;
+- `TASK_ENTER_VEHICLE` без флага угона. У float-аргументов добавляется `+0.0001`, иначе `invoke` передаёт их как int.
+
+## 7c. Готовые системы с форумов
+
+Правило пользователя: с форумов напрямую не качать, только читать обсуждения и инструкции. Код берётся с GitHub или из архива пользователя.
+
+**Склады (семейные и личные)**, источник: github.com/drainerw/Advanced-Family-Personal-Warehouse-Storage-RedAge-v3-. Код переписан:
+- сервер: `dotnet/resources/NeptuneEvo/Warehouses/`, SQL: `database/systems/warehouse.sql`;
+- клиент: `src_client/player/warehouse.js`, UI: `src_cef/src/views/player/warehouse` (view `PlayerWarehouse`);
+- инвентарь `publicwarehouse`, `otherType 13`, 300 слотов;
+- каждая ячейка — отдельное измерение `10000 + id`;
+- у автора не было семейного режима и проверок дистанции. Добавлено: семейную ячейку покупает владелец семьи, пользуются члены с правом `OpenStock`, продать можно только пустую (возврат 50%);
+- `/reloadwarehouses` (admin 8+).
+
+**Маркетплейс MAJESTIC** (EternalDev, архив пользователя):
+- сервер: `NeptuneEvo/EternalDev/`, конфиг `settings/marketplace.json`, SQL: `database/systems/marketplace.sql`;
+- клиент: `src_client/EternalDev/`; CEF: `src_cef/src/eternal-core`, `views/eternal-dev/marketPlace`, `store/marketPlace.js`, иконка в телефоне;
+- DLL автора (`EternalCore`) **не используется**: логгер заменён на `MarketLog` (`nLog`), JSON читает `MarketPlaceConfig.Load()`;
+- `svelte-range-slider-pips` заменён на обычный `<input type=range>`;
+- интерьер аукциона (MLO `q_auc_milo_`) отсутствует, поэтому `interior_positions: []`, а точка аукциона стоит на улице (−827, −699);
+- **изменён геймплей:** в payday дома и бизнесы должников уходят на аукцион маркетплейса, а не риелтору/государству (`Main.cs`, `SetPropertyToAuction`);
+- продажа дома, бизнеса или машины, выставленных на маркетплейс, заблокирована (`IsOnMarketplace`).
+
+SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (таблицы создаются через `IF NOT EXISTS`).
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):
-  - посадка NPC в такси (нативный пед `createPed`, `taskEnterVehicle`, принудительная посадка через 7 с);
+  - посадка NPC в такси (нативы через `mp.game.invoke`, принудительная посадка через 7 с);
+  - склады и маркетплейс (сборка есть, в игре не проверены);
   - G-меню: SVG-кольцо и иконки;
   - NPC-трафик: `enableDispatchService`, `setCreateRandomCops*` и т.п. обёрнуты в try; если в сборке RAGE их нет, они просто не сработают;
   - NPC-работодатели и открытие аренды из диалога;

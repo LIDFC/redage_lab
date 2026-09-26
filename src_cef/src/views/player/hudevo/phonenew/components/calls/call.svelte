@@ -1,4 +1,5 @@
 <script>
+    import { addListernEvent } from "api/functions";
     import { translateText } from 'lang'
     import Header from '../header.svelte'
     import HomeButton from '../homebutton.svelte'
@@ -7,6 +8,8 @@
     import recent from './recent.svelte'
     import { selectNumber } from './../../stores'
     import { currentView } from './stores'
+
+    addListernEvent("phone.calls.setPage", (pageName) => currentView.set(pageName));
 
     let Views = {
         dial,

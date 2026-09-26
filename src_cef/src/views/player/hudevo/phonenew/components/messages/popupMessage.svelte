@@ -1,5 +1,6 @@
 
 <script>
+    import { addListernEvent } from "api/functions";
     import { translateText } from 'lang'
 
     import {validate} from "api/validation";
@@ -8,6 +9,7 @@
     export let closePopup;
 
     let numberValue;
+    addListernEvent("phone.messages.popUp.setTarget", (target) => numberValue = target);
     let inputValue;
 
     import { messageType, getMessageUniqueKey, inputMaxLength } from './data.js'

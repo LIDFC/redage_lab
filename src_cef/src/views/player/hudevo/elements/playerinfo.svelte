@@ -91,7 +91,7 @@
 <div class="hudevo__playerinfo">
     <div class="box-flex mb-5">
         <div class="box-column align-end">
-            <div class="hudevo__playerinfo_link">RedAge.net</div>
+            <div class="hudevo__playerinfo_link">Mkeiit<span>RR</span></div>
             <div class="box-flex">
                 <div class="hudevo__playerinfo_online hudevo__elementparams paramsright">
                     <span class="hudevoicon-person"></span>#{serverPlayerId}
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="hudevo__playerinfo_logo {isRotate ? "transform" : ""}" on:click={()=> secretFunction()}>
-            <div class="hudevo__playerinfo_icon"></div>
+            <div class="hudevo__playerinfo_letter">M</div>
         </div>
     </div>
     <div class="box-flex mb-5">

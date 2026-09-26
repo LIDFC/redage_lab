@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { translateText } from 'lang'
     import { executeClientToGroup, executeClientAsyncToGroup } from 'api/rage'
     import { onInputFocus, onInputBlur } from "@/views/player/menu/elements/fractions/data.js";
@@ -65,7 +66,7 @@
            <div class="box-column">
                 <div class="fractions__element_black newparams">
                     <div class="box-column">
-                        <div class="fractions__black_title">{item.model}</div>
+                        <div class="fractions__black_title">{vehicleName(item.model)}</div>
                         <div class="fractions__black_title gray">{item.number}</div>
                         <div class="fractions__black_title gray mb-18">{item.rankName}</div>
                         <!--<div class="fractions__black_subtitle silver">Состояние: <span class="whitecolor">100%</span></div>-->

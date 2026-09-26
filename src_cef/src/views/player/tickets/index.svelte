@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import './main.sass'
     import './fonts/style.css'
     import { format } from 'api/formatter'
@@ -70,7 +71,7 @@
             <div class="playerticket__element" class:active={hoverIndex === index} on:click={() => onSelect (index)}>
                 <div class="playerticket__carname">
                     <span class="houseicon-car"></span>
-                    {ticket.Model}
+                    {vehicleName(ticket.Model)}
                 </div>
                 <div class="playerticket__date">{moment(ticket.Time).format('DD.MM.YYYY HH:mm')}</div>
                 <div class="playerticket__price">${format("money", ticket.Price)}</div>
@@ -106,7 +107,7 @@
         <div class="box-between">
             <div class="gray">Модель машины:</div>
             <div class="playerticket__line"></div>
-            <div class="playerticket__name">{selectData.Model}</div>
+            <div class="playerticket__name">{vehicleName(selectData.Model)}</div>
         </div>
         <div class="box-between">
             <div class="gray">Нарушение:</div>

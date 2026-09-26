@@ -18,7 +18,12 @@
 
     $: myFlat = data.flats.find(f => f.isMine);
     $: shown = data.flats.filter(f => !onlyFree || f.isFree);
-    $: floors = [...new Set(shown.map(f => f.floor))].sort((a, b) => b - a);
+    $: topFloor = Math.max(data.floors || 0, ...data.flats.map(f => f.floor), 0);
+    $: firstFloor = Math.min(data.firstFloor || 2, ...data.flats.map(f => f.floor));
+    // Все этажи дома сверху вниз (как в лифте); с фильтром «Только свободные» — только этажи со свободными квартирами
+    $: floors = onlyFree
+        ? [...new Set(shown.map(f => f.floor))].sort((a, b) => b - a)
+        : (data.flats.length ? Array.from({ length: topFloor - firstFloor + 1 }, (_, i) => topFloor - i) : []);
     $: freeCount = data.flats.filter(f => f.isFree).length;
     $: if (selected)
         selected = data.flats.find(f => f.id === selected.id) || null;
@@ -56,7 +61,7 @@
                 <div class="aptm__stats">
                     <div><span>{data.flats.length}</span>квартир</div>
                     <div><span>{freeCount}</span>свободно</div>
-                    <div><span>{floors.length ? Math.max(...data.flats.map(f => f.floor)) : 0}</span>этажей</div>
+                    <div><span>{topFloor}</span>этажей</div>
                 </div>
 
                 {#if data.hall}
@@ -132,6 +137,8 @@
                                         <div class="aptm__flat-price">${format("money", flat.price)}</div>
                                     {/if}
                                 </div>
+                            {:else}
+                                <div class="aptm__flat-none">Квартиры этажа не продаются</div>
                             {/each}
                         </div>
                     </div>
@@ -375,6 +382,18 @@
         display: flex;
         gap: 1.4vh;
         margin-bottom: 1.2vh;
+    }
+    .aptm__flat-none {
+        grid-column: 1 / -1;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        padding: 0 14px;
+        min-height: 44px;
+        border-radius: 8px;
+        border: 1px dashed rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 13px;
     }
     .aptm__floor-label {
         width: 6vh;

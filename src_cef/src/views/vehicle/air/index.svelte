@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { translateText } from 'lang'
     import './assets/css/iconsarenda.css'
     import './assets/css/main.sass'
@@ -53,7 +54,7 @@
         <div class="arenda-main">
             {#each VehicleArray as item, index}
             <div class="arenda-main__element">
-                <div class="arenda-main__title">{item.Model}</div>
+                <div class="arenda-main__title">{vehicleName(item.Model)}</div>
                 <div class="arenda-main__price">{item.IsSpawn ? "Вызван" : ""}</div>
                 <div class="arenda-main__img" style="background-image: url({document.cloud}inventoryItems/vehicle/{item.Model.toLowerCase()}.png)" />
                 <div class="arenda-main__button" on:click={() => SelectVehicle = index}>
@@ -67,7 +68,7 @@
     <div class="props-arenda">
         <div class="arenda-customize" transition:fade={{duration: 200}}>
             <div class="arenda-customize__title">{translateText('vehicle', 'Действие')}</div>
-            <div class="arenda-customize__subtitle">{VehicleArray [SelectVehicle].Model}</div>
+            <div class="arenda-customize__subtitle">{vehicleName(VehicleArray [SelectVehicle].Model)}</div>
             <div class="arenda-customize__img" style="background-image: url({document.cloud}inventoryItems/vehicle/{VehicleArray [SelectVehicle].Model.toLowerCase()}.png)" />
             {#if !VehicleArray [SelectVehicle].IsSpawn}
                 <div class="arenda-customize__button" on:click={() => onAction (VehicleArray [SelectVehicle].Number, "spawn")}>

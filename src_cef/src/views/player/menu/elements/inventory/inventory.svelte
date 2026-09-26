@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { translateText } from 'lang'
     export let visible;
     import { charGender, charMoney } from 'store/chars'
@@ -1551,7 +1552,7 @@
             name += `<span>Состояние: ${Item.Data}</span>`;
         }
         else if (Item.ItemId == 19 && Item.Data.split("_")) {
-            name += `<span>${Item.Data.split("_")[0]} | ${Item.Data.split("_")[1]}</span>`;
+            name += `<span>${vehicleName(Item.Data.split("_")[0])} | ${Item.Data.split("_")[1]}</span>`;
         } 
         else if (_infoItem.Stack > 1 && Item.Count > 1) {
             name += ` | ${Item.Count} шт.`;

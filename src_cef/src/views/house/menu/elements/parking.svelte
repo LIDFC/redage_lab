@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { vehicleModelsToMoto, colorData } from '@/json/vehicles'
 
 
@@ -147,7 +148,7 @@
     }
 
     const onOpen = () => {
-        if (houseData && houseData.garageType != undefined && garagesData && garagesData [houseData.garageType + 1])
+        if (houseData && houseData.garageType != undefined && houseData.garageUpgrade !== false && garagesData && garagesData [houseData.garageType + 1])
             selectPopup.set ("popupUpdateGarage")
     }
 
@@ -163,7 +164,7 @@
                 {#if car.number !== selectCar.number && !car.isAir}
                     <div class="house__mainmenu_categorie" on:click={() => OnChangeCars (car.sqlId)}>
                         <div class="line" style="background: {getColor (car.color)};"></div>
-                        {car.model.toUpperCase()} [{car.number}] {car.sell ? " (Личная)" : ""}
+                        {vehicleName(car.model)} [{car.number}] {car.sell ? " (Личная)" : ""}
                     </div>
                 {/if}
             {/each}
@@ -190,7 +191,7 @@
             {#each Array(5).fill(0) as _, index}
                 {#if index + (10 * selectPage) < maxParkingPlaces}
                     {#if houseCars [index + (10 * selectPage)] != undefined}
-                    <div class="house__car_name">{houseCars [index + (10 * selectPage)].model} [{houseCars [index + (10 * selectPage)].number}]</div>
+                    <div class="house__car_name">{vehicleName(houseCars [index + (10 * selectPage)].model)} [{houseCars [index + (10 * selectPage)].number}]</div>
                     {:else}                 
                     <div class="house__car_name">Свободно</div>
                     {/if}
@@ -254,7 +255,7 @@
             {#each Array(5).fill(0) as _, index}
                 {#if index + (5) + (10 * selectPage) < maxParkingPlaces}
                     {#if houseCars [index + (5) + (10 * selectPage)] != undefined}
-                    <div class="house__car_name">{houseCars [index + (5) + (10 * selectPage)].model} [{houseCars [index + (5) + (10 * selectPage)].number}]</div>
+                    <div class="house__car_name">{vehicleName(houseCars [index + (5) + (10 * selectPage)].model)} [{houseCars [index + (5) + (10 * selectPage)].number}]</div>
                     {:else}                
                     <div class="house__car_name">Свободно</div>
                     {/if}
@@ -268,7 +269,7 @@
     </div>
 </div>
 <div class="box-between">
-    {#if houseData && houseData.garageType != undefined && garagesData && garagesData [houseData.garageType + 1]}
+    {#if houseData && houseData.garageType != undefined && houseData.garageUpgrade !== false && garagesData && garagesData [houseData.garageType + 1]}
     <div class="house_bottom_buttons back" on:click={onOpen}>
         <div>Улучшить гараж</div>
         <div class="house_bottom_button">ENTER</div>

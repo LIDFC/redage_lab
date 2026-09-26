@@ -40,9 +40,16 @@ namespace NeptuneEvo.Houses.Apartments
         public Vector3 World(Vector3 local, int floorIndex = 0) =>
             Origin + local + new Vector3(0, 0, FloorHeight * floorIndex);
 
-        /// <summary>Номер квартиры (1..) → индекс этажа и двери.</summary>
+        /// <summary>Номер последнего жилого этажа (для интерфейса).</summary>
+        public int TopFloorNumber => FirstFloorNumber + Floors - 1;
+
+        /// <summary>
+        /// Номер квартиры (1..) → индекс этажа и двери. Квартиры раскладываются по этажам снизу вверх
+        /// (кв. 1 — первый жилой этаж, кв. 2 — второй …), а после верхнего этажа занимают следующую дверь,
+        /// чтобы дом был заселён на всю высоту, а не только на первых этажах.
+        /// </summary>
         public (int floorIndex, int door) Slot(int number) =>
-            ((number - 1) / Doors.Length, (number - 1) % Doors.Length);
+            ((number - 1) % Floors, (number - 1) / Floors);
     }
 
     public static class ApartmentHalls

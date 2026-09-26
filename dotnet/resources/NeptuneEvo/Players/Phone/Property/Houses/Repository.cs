@@ -91,6 +91,7 @@ namespace NeptuneEvo.Players.Phone.Property.House
                 if (garage != null)
                 {
                     houseData.Add("garageType", garage.Type);
+                    houseData.Add("garageUpgrade", !garage.IsApartment && garage.Type < 9);
                     garagesData = GarageManager.GarageTypes;
                 }
             }

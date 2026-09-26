@@ -1841,3 +1841,104 @@ $circleTransitionDelay: 185ms
             background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important
     .mr-6
         @include fluid("margin-right", 6)
+// ---------------------------------------------------------------------------
+// Обновление HUD (MkeiitRR): скруглённые плашки вместо рамок-градиентов,
+// единый акцентный градиент, аккуратный спидометр. Раскладка элементов прежняя.
+// ---------------------------------------------------------------------------
+$hud-accent: #F5334F
+$hud-accent-gradient: linear-gradient(135deg, #FF5570 0%, #E0213D 100%)
+$hud-panel: rgba(9, 13, 22, 0.52)
+$hud-panel-border: rgba(255, 255, 255, 0.09)
+
+#hudevo
+    .hudevo__elementparams,
+    &.night .hudevo__elementparams
+        border: 1px solid $hud-panel-border !important
+        border-image: none !important
+        background: $hud-panel !important
+        @include fluid("border-radius", 8)
+        &.paramsright
+            border: 1px solid $hud-panel-border !important
+            border-image: none !important
+            background: $hud-panel !important
+
+    .hudevo__playerinfo
+        .hudevo__playerinfo_link
+            font-family: 'Gilroy'
+            font-weight: 800
+            @include fluid("font-size", 20)
+            @include fluid("line-height", 20)
+            @include fluid("margin-bottom", 6)
+            letter-spacing: 0.02em
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55)
+            span
+                color: $hud-accent
+        .hudevo__playerinfo_name
+            background: $hud-accent-gradient
+            @include fluid("border-radius", 6)
+            box-shadow: 0 2px 8px rgba(224, 33, 61, 0.35)
+        .hudevo__playerinfo_online
+            @include fluid("border-radius", 6)
+        .hudevo__playerinfo_logo
+            background: $hud-accent-gradient
+            @include fluid("border-radius", 10)
+            box-shadow: 0 3px 12px rgba(224, 33, 61, 0.4)
+            &.transform
+                transform: rotate(90deg)
+        .hudevo__playerinfo_letter
+            font-family: 'Gilroy'
+            font-weight: 800
+            @include fluid("font-size", 24)
+            line-height: 1
+            color: white
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3)
+        .hudevo__playerinfo_icon
+            background: $hud-accent-gradient
+            @include fluid("border-radius", 7)
+        .hudevo__playerinfo_money
+            @include fluid("border-radius", 8)
+        .hudevo__playerinfo_red
+            background: $hud-accent-gradient
+            @include fluid("border-radius", 5)
+        .hudevo__playerinfo_white,
+        .hudevo__playerinfo_ammo
+            @include fluid("border-radius", 5)
+
+    .buttonsinfo__button
+        border: 1px solid rgba(245, 51, 79, 0.65) !important
+        border-image: none !important
+        background: rgba(245, 51, 79, 0.18)
+        @include fluid("border-radius", 6)
+        @include fluid("min-width", 30)
+
+    .hudevo__placetime
+        .hudevo__placetime_image
+            .hudevo__placetime_cirlce
+                border-color: $hud-accent !important
+                background: rgba(9, 13, 22, 0.35)
+
+    .hudevo__speedometr
+        align-items: flex-end
+        @include fluid("padding-top", 14)
+        @include fluid("padding-bottom", 12)
+        @include fluid("padding-left", 18)
+        @include fluid("padding-right", 18)
+        @include fluid("border-radius", 14)
+        background: $hud-panel
+        border: 1px solid $hud-panel-border
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25)
+        .hudevo__speedometr_title
+            font-family: 'Gilroy'
+            font-weight: 800
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.45)
+        .hudevo__speedometr_bottom
+            font-family: 'Gilroy'
+        .active
+            color: $hud-accent
+        .hudevo__speedometr_fuel
+            @include fluid("border-radius", 4)
+            overflow: hidden
+            background: rgba(166, 177, 186, 0.25)
+            .filled
+                background: $hud-accent-gradient !important
+                @include fluid("border-radius", 4)

@@ -1810,6 +1810,11 @@ namespace NeptuneEvo.Houses
                 var garage = house.GetGarageData();
                 if (garage != null && garage.Type != 6)
                 {
+                    if (garage.IsApartment)
+                    {
+                        Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Гараж квартиры зависит от её класса и не улучшается.", 3000);
+                        return;
+                    }
                     if (garage.Type == 9)
                     {
                         Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Ваш дом имеет наибольшее количество гаражных мест.", 3000);

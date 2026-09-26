@@ -243,6 +243,16 @@ namespace NeptuneEvo.Houses
                 GarageManager.Log.Write($"DeleteCar Exception: {e.ToString()}");
             }
         }
+        /// <summary>Сменить тип гаража квартиры (зависит от класса квартиры): пересоздаёт точку выхода внутри.</summary>
+        public void SetApartmentType(int type)
+        {
+            if (Type == type || !GarageManager.GarageTypes.ContainsKey(type))
+                return;
+            Destroy(false);
+            Type = type;
+            if (Type != -1 && Type != 6)
+                CreateInterior();
+        }
         public void AttachToApartment(Vector3 position, float heading)
         {
             IsApartment = true;
@@ -951,6 +961,12 @@ namespace NeptuneEvo.Houses
                     new Vector3(0, 0, -88.9513),//36
                 }, 38, price: Main.PricesSettings.GaragesPrice[8], isDonate: true)},
         };
+        static GarageManager()
+        {
+            // Гаражи квартир из DLC (типы 10..14)
+            foreach (var type in Apartments.ApartmentGarages.Build())
+                GarageTypes[type.Key] = type.Value;
+        }
         public static int DimensionId = 100000;
         public static readonly int MaxGarageCars = 38;
 

@@ -91,7 +91,8 @@ chown -R ragemp:ragemp $S && systemctl start redage
 | `8e226e8` | Автосалон и 24/7 (см. п. 6) |
 | `a37a374` | `cloud.html` грузит локальный интерфейс, а не CDN оригинального RedAge |
 | `2d3b81c`, `098ca0b` | Такси-NPC, NPC-трафик, NPC-работодатели, новое окно аренды, G-меню (см. п. 7, 7a) |
-| *(последний коммит)* | Склады, маркетплейс, такси-NPC через `invoke` (см. п. 7b, 7c) |
+| `8b00a36` | Склады, маркетплейс, такси-NPC через `invoke` (см. п. 7b, 7c) |
+| *(последний коммит)* | Картинки маркетплейса, многоквартирные дома, новая автошкола (см. п. 7d) |
 
 ## 5. Меню F3 (`src_cef/src/views/player/gta5devmenu`)
 
@@ -212,11 +213,39 @@ chown -R ragemp:ragemp $S && systemctl start redage
 
 SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (таблицы создаются через `IF NOT EXISTS`).
 
+## 7d. Квартиры, автошкола, картинки маркетплейса
+
+**Картинки маркетплейса** (`views/eternal-dev/marketPlace/modules/picture.js`):
+- машины и предметы берутся с нашего CDN (`document.cloud`), логика та же, что в инвентаре (`getPng`), в том числе для одежды и купонов на машину;
+- дома и бизнесы — локальные скриншоты из `views/player/help/images` (по типу бизнеса);
+- аватар — `marketPlace/assets/avatar.svg`. Ссылок на cdn.majestic-files.com больше нет.
+
+**Многоквартирные дома** (`Houses/Apartments/ApartmentManager.cs`, SQL: `database/systems/apartments.sql`). Идея из архива «Apartment System for RedAge 1.1» (koltr). Его `houses.sql` делает `DROP TABLE houses` — **не выполнять**.
+- Квартира — обычный `House` плюс строка в `apartment_flats`. Колонку в `houses` не добавляли.
+- `House.AttachToApartment` убирает уличный маркер, подпись и блип; `Position` = подъезд.
+- `Garage.AttachToApartment` убирает маркер гаража. Въезд у всех квартир общий: `ColShapeEnums.ApartmentGarage` → `GarageManager.OnEnterGarage` с гаражом игрока.
+- При старте (`Main.cs` после `HouseManager.Init`) квартиры досоздаются по колонке `plan` дома: House + Garage + банковский счёт.
+- Покупка идёт через общий `HouseManager.TryBuyHouse` (вынесен из `server.houseinfo.action`), по двум путям:
+  - у подъезда — CEF `HouseApartments`, клиент `src_client/house/apartments.js`;
+  - в риэлторском агентстве — вкладка «Многоквартирные дома», `server.rieltagency.buyApartment`.
+- Из обычного списка домов агентства и из заданий почтальона квартиры исключены.
+- Админ-команды (уровень 8+): `/apartlist`, `/apartcreate Название`, `/apartentrance id`, `/apartgarage id` (сидя в машине), `/apartaddflats id класс цена гараж кол-во`.
+- Координаты 6 домов (Integrity Way, Del Perro Heights, Richards Majestic, Tinsel Towers, Weazel Plaza, Alta St) взяты по памяти и в игре не проверены, особенно въезды в гаражи. Eclipse Towers не используется: у входа стоит NPC регистрации семьи.
+- Склады перенесены в измерения 2 000 000+ (`WarehouseManager.BaseDimension`): 10000+ пересекалось с измерениями домов.
+
+**Автошкола** (`Core/DrivingSchool.cs`, CEF: `views/player/drivingschool`, клиент: `src_client/player/drivingschool.js`):
+- вместо списков-попапов — окно с вкладками «Лицензии», «Теория» и «Экзамен»;
+- теория: 10 случайных вопросов из 20, для сдачи нужно 8 (было 3 из 10). Ответы на все вопросы есть в `drivingschool/theory.js`;
+- после сданной теории практику можно начать позже без повторной оплаты (`DSchoolData.TheoryPassed`);
+- практика: HUD `DrivingPracticeHud` показывает точки, скорость, лимит, ошибки и таймер. Клиент ловит превышение (80 км/ч, для C — 70, дольше 2 с) и удары (падение `bodyHealth` ≥ 35) и шлёт `server.drivingschool.penalty`; 3 ошибки — провал.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):
   - посадка NPC в такси (нативы через `mp.game.invoke`, принудительная посадка через 7 с);
   - склады и маркетплейс (сборка есть, в игре не проверены);
+  - квартиры: точки подъездов и гаражей, генерация квартир при первом старте, въезд в общий гараж;
+  - автошкола: новое окно, HUD практики, штрафы за скорость и удары;
   - G-меню: SVG-кольцо и иконки;
   - NPC-трафик: `enableDispatchService`, `setCreateRandomCops*` и т.п. обёрнуты в try; если в сборке RAGE их нет, они просто не сработают;
   - NPC-работодатели и открытие аренды из диалога;

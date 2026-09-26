@@ -16,6 +16,12 @@ namespace NeptuneEvo.Houses.Rieltagency
             Repository.OnBuy(player, id, type);
         }
 
+        [RemoteEvent("server.rieltagency.buyApartment")]
+        private void OnBuyApartment(ExtPlayer player, int houseId)
+        {
+            Repository.OnBuyApartment(player, houseId);
+        }
+
         [RemoteEvent("server.rieltagency.close")]
         private void OnClose(ExtPlayer player)
         {

@@ -205,6 +205,9 @@ namespace NeptuneEvo.Functions
         MarketPlaceInterior,
         MarketPlaceAuction,
         MarketPlaceStorage,
+
+        ApartmentEntrance,
+        ApartmentGarage,
     }
     class CustomColShape : Script
     {

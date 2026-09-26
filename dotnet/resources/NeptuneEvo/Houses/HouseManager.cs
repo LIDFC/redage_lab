@@ -1,4 +1,4 @@
-using NeptuneEvo.EternalDev.MarketPlace.Extensions;
+﻿using NeptuneEvo.EternalDev.MarketPlace.Extensions;
 using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using Newtonsoft.Json;
@@ -72,8 +72,14 @@ namespace NeptuneEvo.Houses
         public int ID { get; }
         public string Owner { get; private set; }
         public int Type { get; private set; }
-        public Vector3 Position { get; }
+        public Vector3 Position { get; private set; }
         public int Price { get; set; }
+        /// <summary>
+        /// Id многоквартирного дома (Houses/Apartments), -1 — обычный дом.
+        /// У квартиры нет своего маркера на улице: вход и гараж общие у подъезда.
+        /// </summary>
+        [JsonIgnore]
+        public int ApartmentId { get; private set; } = -1;
         public bool Locked { get; private set; }
         [JsonIgnore] 
         public string OpenInterface { get; set; } = String.Empty;
@@ -252,7 +258,8 @@ namespace NeptuneEvo.Houses
                             text += $"~w~Гараж: ~o~{GarageManager.GarageTypes[GarageManager.Garages[GarageID].Type].MaxCars} т.с.\n";
                     }
                     text += $"~c~ID{ID}";
-                    label.Text = text;
+                    if (label != null)
+                        label.Text = text;
                 }
                 catch (Exception e)
                 {
@@ -718,6 +725,32 @@ namespace NeptuneEvo.Houses
                 Log.Write($"RemoveAllPlayers Exception: {e.ToString()}");
             }
         }
+        /// <summary>
+        /// Превращает дом в квартиру многоквартирного дома: убирает уличный маркер, подпись и блип,
+        /// позицией становится подъезд (туда игрок выходит из квартиры).
+        /// </summary>
+        public void AttachToApartment(int apartmentId, Vector3 entrance)
+        {
+            try
+            {
+                ApartmentId = apartmentId;
+                Position = entrance;
+
+                CustomColShape.DeleteColShape(shape);
+                shape = null;
+                if (label != null && label.Exists)
+                    label.Delete();
+                label = null;
+                if (blip != null && blip.Exists)
+                    blip.Delete();
+                blip = null;
+            }
+            catch (Exception e)
+            {
+                Log.Write($"AttachToApartment Exception: {e.ToString()}");
+            }
+        }
+
         public void CreateInterior()
         {
             try
@@ -781,7 +814,7 @@ namespace NeptuneEvo.Houses
 
         public static List<int> MaxRoommates = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 0, 15, 30 };
 
-        private static int GetUID()
+        public static int GetUID()
         {
             int newUID = 0;
             while (Houses.FirstOrDefault(h => h.ID == newUID) != null) newUID++;
@@ -1381,6 +1414,93 @@ namespace NeptuneEvo.Houses
                 Log.Write($"OpenHouseBuyMenu Exception: {e.ToString()}");
             }
         }
+        /// <summary>
+        /// Покупка дома у государства. enterInside — сразу завести игрока внутрь (покупка у маркера);
+        /// из риэлторского агентства или меню подъезда игрок остаётся на месте.
+        /// </summary>
+        public static bool TryBuyHouse(ExtPlayer player, House house, bool enterInside)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                if (characterData == null) 
+                    return false;
+
+                if (house == null || house.GarageID == 0) 
+                    return false;
+                
+                if (!string.IsNullOrEmpty(house.Owner))
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У недвижимости уже имеется хозяин", 3000);
+                    return false;
+                }
+                if (house.IsAuction)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы не можете зайти зайти в дом, так как он выставлен на торги на аукционе.", 7000);
+                    return false;
+                }
+                if (Players.Phone.Auction.Repository.IsBet(characterData.UUID, AuctionType.House))
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы не можете приобрести недвижимость, так как ваш дом находится на аукционе.", 6000);
+                    return false;
+                }
+                if (house.Price == 0 && characterData.AdminLVL <= 5)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Дом недоступен для покупки.", 3000);
+                    return false;
+                }
+                if (house.Price > characterData.Money)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У Вас не хватает средств для покупки", 3000);
+                    return false;
+                }
+                if (Houses.Count(h => h.Owner == player.Name) >= 1)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы не можете купить больше одной недвижимости", 3000);
+                    return false;
+                }
+                /*var vehiclesCount = VehicleManager.GetVehiclesCountToPlayer(player.Name);
+                int maxcars = GarageManager.GarageTypes[GarageManager.Garages[house.GarageID].Type].MaxCars;
+                if (vehiclesCount > maxcars)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Недвижимость, которую Вы покупаете, имеет {maxcars} машиномест, продайте лишние машины", 3000);
+                    return false;
+                }*/
+                Players.Phone.Messages.Repository.AddSystemMessage(player, (int)DefaultNumber.Bank, LangFunc.GetText(LangType.Ru, DataName.BuyHouse, house.Price), DateTime.Now);
+                //Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы купили эту недвижимость, не забудьте внести налог за неё в банкомате", 3000);
+               // Notify.Send(player, NotifyType.Success, NotifyPosition.Center, $"НЕ ЗАБУДЬТЕ ВНЕСТИ НАЛОГИ В БЛИЖАЙШЕМ БАНКОМАТЕ!", 8000);
+                CheckAndKick(player);
+                if (house.Type != 7)
+                {
+                    house.SetLock(true);
+                    if (HouseTypeList[house.Type].PetPosition != null) house.PetName = characterData.PetName;
+                    if (enterInside)
+                        house.SendPlayer(player);
+                    house.HealkitTime = DateTime.MinValue;
+                }
+                house.SetOwner(player.Name);
+                Trigger.ClientEvent(player, "client.rieltagency.delBlip", 374, house.ID);
+                
+                var houseBalance = MoneySystem.Bank.Accounts[house.BankID];
+                houseBalance.Balance = Convert.ToInt32(house.Price / 100f * HouseManager.HouseTax) * 2;
+                houseBalance.IsSave = true;
+                
+                MoneySystem.Wallet.Change(player, -house.Price);
+                //Chars.Repository.PlayerStats(player);
+                if (house.Type == 7) GameLog.Money($"player({characterData.UUID})", $"server", house.Price, $"parkBuy({house.ID})");
+                else GameLog.Money($"player({characterData.UUID})", $"server", house.Price, $"houseBuy({house.ID})");
+                
+                qMain.UpdateQuestsStage(player, Zdobich.QuestName, (int)zdobich_quests.Stage24, 1, isUpdateHud: true);
+                qMain.UpdateQuestsComplete(player, Zdobich.QuestName, (int) zdobich_quests.Stage24, true);
+                return true;
+            }
+            catch (Exception e)
+            {
+                Log.Write($"TryBuyHouse Exception: {e.ToString()}");
+                return false;
+            }
+        }
+
         [RemoteEvent("server.houseinfo.action")]
         private static void OnHouseInfoAction(ExtPlayer player, string action)
         {
@@ -1400,77 +1520,11 @@ namespace NeptuneEvo.Houses
                         if (sessionData.HouseID == -1) 
                             return;
 
-                        var house = Houses.FirstOrDefault(h => h.ID == sessionData.HouseID);
-                        
-                        if (house == null || house.GarageID == 0) 
-                            return;
-                        
-                        if (!string.IsNullOrEmpty(house.Owner))
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У недвижимости уже имеется хозяин", 3000);
-                            return;
-                        }
-                        if (house.IsAuction)
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы не можете зайти зайти в дом, так как он выставлен на торги на аукционе.", 7000);
-                            return;
-                        }
-                        if (Players.Phone.Auction.Repository.IsBet(characterData.UUID, AuctionType.House))
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы не можете приобрести недвижимость, так как ваш дом находится на аукционе.", 6000);
-                            return;
-                        }
-                        if (house.Price == 0 && characterData.AdminLVL <= 5)
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Дом недоступен для покупки.", 3000);
-                            return;
-                        }
-                        if (house.Price > characterData.Money)
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У Вас не хватает средств для покупки", 3000);
-                            return;
-                        }
-                        if (Houses.Count(h => h.Owner == player.Name) >= 1)
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы не можете купить больше одной недвижимости", 3000);
-                            return;
-                        }
-                        /*var vehiclesCount = VehicleManager.GetVehiclesCountToPlayer(player.Name);
-                        int maxcars = GarageManager.GarageTypes[GarageManager.Garages[house.GarageID].Type].MaxCars;
-                        if (vehiclesCount > maxcars)
-                        {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Недвижимость, которую Вы покупаете, имеет {maxcars} машиномест, продайте лишние машины", 3000);
-                            return;
-                        }*/
-                        Players.Phone.Messages.Repository.AddSystemMessage(player, (int)DefaultNumber.Bank, LangFunc.GetText(LangType.Ru, DataName.BuyHouse, house.Price), DateTime.Now);
-                        //Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы купили эту недвижимость, не забудьте внести налог за неё в банкомате", 3000);
-                       // Notify.Send(player, NotifyType.Success, NotifyPosition.Center, $"НЕ ЗАБУДЬТЕ ВНЕСТИ НАЛОГИ В БЛИЖАЙШЕМ БАНКОМАТЕ!", 8000);
-                        CheckAndKick(player);
-                        if (house.Type != 7)
-                        {
-                            house.SetLock(true);
-                            if (HouseTypeList[house.Type].PetPosition != null) house.PetName = characterData.PetName;
-                            house.SendPlayer(player);
-                            house.HealkitTime = DateTime.MinValue;
-                        }
-                        house.SetOwner(player.Name);
-                        Trigger.ClientEvent(player, "client.rieltagency.delBlip", 374, house.ID);
-                        
-                        var houseBalance = MoneySystem.Bank.Accounts[house.BankID];
-                        houseBalance.Balance = Convert.ToInt32(house.Price / 100f * HouseManager.HouseTax) * 2;
-                        houseBalance.IsSave = true;
-                        
-                        MoneySystem.Wallet.Change(player, -house.Price);
-                        //Chars.Repository.PlayerStats(player);
-                        if (house.Type == 7) GameLog.Money($"player({characterData.UUID})", $"server", house.Price, $"parkBuy({house.ID})");
-                        else GameLog.Money($"player({characterData.UUID})", $"server", house.Price, $"houseBuy({house.ID})");
-                        
-                        qMain.UpdateQuestsStage(player, Zdobich.QuestName, (int)zdobich_quests.Stage24, 1, isUpdateHud: true);
-                        qMain.UpdateQuestsComplete(player, Zdobich.QuestName, (int) zdobich_quests.Stage24, true);
+                        TryBuyHouse(player, Houses.FirstOrDefault(h => h.ID == sessionData.HouseID), true);
                         return;
                     case "int":
                         if (sessionData.HouseID == -1) return;
-                        house = Houses.FirstOrDefault(h => h.ID == sessionData.HouseID);
+                        var house = Houses.FirstOrDefault(h => h.ID == sessionData.HouseID);
                         if (house == null) return;
                         if (house.Type != 7)
                         {

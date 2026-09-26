@@ -71,6 +71,7 @@ namespace NeptuneEvo.Houses.Rieltagency
             var houses = HouseManager.Houses
                 .Where(h => h.Owner == string.Empty && !h.IsAuction)
                 .Where(h => h.Type != 7)
+                .Where(h => h.ApartmentId == -1) // квартиры — на отдельной вкладке
                 .Where(h => h.Price > 0)
                 .ToList();
 
@@ -102,7 +103,8 @@ namespace NeptuneEvo.Houses.Rieltagency
             Trigger.ClientEvent(player, "client.rieltagency.open", 
                 BuyPrice,
                 JsonConvert.SerializeObject(housesData), houses.Count, 
-                JsonConvert.SerializeObject(businessesData), BusinessManager.BizList.Count);
+                JsonConvert.SerializeObject(businessesData), BusinessManager.BizList.Count,
+                Apartments.ApartmentManager.GetRieltagencyData(player));
         }
 
         [Interaction(ColShapeEnums.Rieltagency, Out: true)]
@@ -171,7 +173,7 @@ namespace NeptuneEvo.Houses.Rieltagency
             var housesData = new List<List<object>>();
             foreach (var house in houses)
             {
-                if (house.Type == 7)
+                if (house.Type == 7 || house.ApartmentId != -1)
                     continue;
                 
                 var houseData = GetHouseData(house);
@@ -194,6 +196,15 @@ namespace NeptuneEvo.Houses.Rieltagency
                         JsonConvert.SerializeObject(housesData), 
                         JsonConvert.SerializeObject(businessesData));
             }
+        }
+
+        public static void OnBuyApartment(ExtPlayer player, int houseId)
+        {
+            if (!player.IsCharacterData())
+                return;
+            if (CustomColShape.GetData(player, ColShapeEnums.Rieltagency) == null)
+                return;
+            Apartments.ApartmentManager.BuyFromRieltagency(player, houseId);
         }
 
         public static void OnBuy(ExtPlayer player, int id, int type)

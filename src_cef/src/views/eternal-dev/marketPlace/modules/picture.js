@@ -1,80 +1,56 @@
-import { ItemId } from "../../../../json/itemsInfo";
+import { itemsInfo } from "../../../../json/itemsInfo";
+import { getPng as getInventoryPng } from "../../../player/menu/elements/inventory/getPng";
+
+// Картинки домов и бизнесов — скриншоты из раздела помощи (лежат в репозитории, CDN не нужен)
+import houseImage from "../../../player/help/images/interior3.jpg";
+import shop247Image from "../../../player/help/images/2472.jpg";
+import fuelImage from "../../../player/help/images/azs.jpg";
+import clothesImage from "../../../player/help/images/clot2.jpg";
+import burgerImage from "../../../player/help/images/burger2.jpg";
+import tattooImage from "../../../player/help/images/tatoo2.jpg";
+import barberImage from "../../../player/help/images/barb2.jpg";
+import masksImage from "../../../player/help/images/mask.jpg";
+import customsImage from "../../../player/help/images/lsc1.jpg";
+import carwashImage from "../../../player/help/images/lsc.jpg";
+import avatarImage from "../assets/avatar.svg";
+
+export const avatarPicture = avatarImage;
+
+// BusinessManager.BusinessTypeNames: 0 24/7, 1 АЗС, 2-5/15 автосалоны, 6 оружейный, 7 одежда, 8 Burger-Shot,
+// 9 тату, 10 барбершоп, 11 маски, 12 LS Customs, 13 мойка, 14 зоомагазин
+const businessPictures = {
+    0: shop247Image,
+    1: fuelImage,
+    2: customsImage, 3: customsImage, 4: customsImage, 5: customsImage, 15: customsImage,
+    7: clothesImage,
+    8: burgerImage,
+    9: tattooImage,
+    10: barberImage,
+    11: masksImage,
+    12: customsImage,
+    13: carwashImage,
+};
 
 export const getPicture = (type, data) => {
     switch(type) {
         case "vehicle":
-            return `https://cdn.majestic-files.com/img/vehicles/${data.params.model.toLowerCase()}.png`;
+            return `${document.cloud}inventoryItems/vehicle/${data.params.model.toLowerCase()}.png`;
         case "business":
-            return "https://cdn.majestic-files.com/img/playermenu/property/item_shops/2.jpg";
+            return businessPictures[data.params.type] || shop247Image;
         case "house":
-            return "https://cdn.majestic-files.com/img/property/houses/exteriors/1554.jpg";
+            return houseImage;
         case "item":
-            return `${document.cloud}inventoryItems/items/${data.params.itemId}.png`;
         case "clothes":
-            let pngDirectory = "inventoryItems/clothes";
-            
-            let dataParse;
-            if (data.params.itemData.split("_").length) 
-                dataParse = data.params.itemData.split("_");
-    
-            
-            let drawableId = 0;
-            let textureId = 0;
-
-            if (dataParse[0] != undefined)
-                drawableId = Number (dataParse[0]);
-
-            if (dataParse[1] != undefined)
-                textureId = Number (dataParse[1]);
-
-            if (dataParse[2].toLowerCase() === "true") 
-                pngDirectory += "/male"
-            else 
-                pngDirectory += "/female"
-            
-            switch (data.params.itemId) {
-                case ItemId.Mask:
-                    pngDirectory += "/masks"
-                    break;
-                case ItemId.Glasses:
-                    pngDirectory += "/glasses"
-                    break;                 
-                case ItemId.Ears:
-                    pngDirectory += "/ears"
-                    break;
-                case ItemId.Jewelry:
-                    pngDirectory += "/accessories"
-                    break;                   
-                case ItemId.Bracelets:
-                    pngDirectory += "/bracelets"
-                    break;
-                case ItemId.Hat:
-                    pngDirectory += "/hats"
-                    break;
-                case ItemId.Leg:
-                    pngDirectory += "/legs"
-                    break;
-                case ItemId.Feet:
-                    pngDirectory += "/shoes"
-                    break;  
-                case ItemId.Top:
-                    pngDirectory += "/tops"
-                    break;
-                case ItemId.Undershit:
-                    pngDirectory += "/undershit"
-                    break;
-                case ItemId.Watches:
-                    pngDirectory += "/watches"
-                    break;                    
-                case ItemId.Bag:
-                    pngDirectory += "/bags"
-                    break;
-                case ItemId.Gloves:
-                    pngDirectory += "/gloves"
-                    break;
+            // Та же логика, что в инвентаре: одежда по drawable/texture, купон на машину — картинка машины
+            try {
+                const itemId = Number(data.params.itemId);
+                const png = getInventoryPng({ ItemId: itemId, Data: String(data.params.itemData || "") }, itemsInfo[itemId] || {});
+                if (png)
+                    return png;
+                return `${document.cloud}inventoryItems/items/${itemId}.png`;
+            } catch (e) {
+                return `${document.cloud}inventoryItems/items/${data.params.itemId}.png`;
             }
-            pngDirectory += `/${drawableId}_${textureId}`
-            return document.cloud + pngDirectory + '.png';
     }
 
     return null;

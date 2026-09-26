@@ -1,13 +1,13 @@
 let isOpenRieltagency = false;
 
-gm.events.add('client.rieltagency.open', (buyPrice, houseData, allHouse, businessData, allBusiness) => {
+gm.events.add('client.rieltagency.open', (buyPrice, houseData, allHouse, businessData, allBusiness, apartmentsData = "[]") => {
 
     if (global.menuCheck()) return;
     isOpenRieltagency = true;
     global.menuOpen();
     gm.discord(translateText("В риэлторском агентстве"));
     mp.gui.emmit(
-        `window.router.setView("HouseRielt", {buyPrice: ${buyPrice}, houseData: '${houseData}', allHouse: ${allHouse}, businessData: '${businessData}', allBusiness: ${allBusiness}})`
+        `window.router.setView("HouseRielt", {buyPrice: ${buyPrice}, houseData: '${houseData}', allHouse: ${allHouse}, businessData: '${businessData}', allBusiness: ${allBusiness}, apartmentsData: '${apartmentsData}'})`
     );
 });
 
@@ -30,6 +30,14 @@ gm.events.add('client.rieltagency.buy', (id, type) => {
         
     mp.events.call('client.rieltagency.close');
     mp.events.callRemote('server.rieltagency.buy', id, type);
+});
+
+gm.events.add('client.rieltagency.buyApartment', (houseId) => {
+    if (!isOpenRieltagency)
+        return;
+
+    mp.events.call('client.rieltagency.close');
+    mp.events.callRemote('server.rieltagency.buyApartment', houseId);
 });
 
 gm.events.add('client.rieltagency.addRange', (houseData, businessData) => {

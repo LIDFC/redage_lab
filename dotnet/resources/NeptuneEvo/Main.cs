@@ -1,4 +1,4 @@
-using GTANetworkAPI;
+﻿using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using Redage.SDK;
 using Database;
@@ -3375,6 +3375,7 @@ namespace NeptuneEvo
                 GarageManager.Init();
                 FurnitureManager.Init();
                 HouseManager.Init();
+                Houses.Apartments.ApartmentManager.Init();
 
                 VehicleManager.Init();
                 

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Newtonsoft.Json;
 using GTANetworkAPI;
 using Localization;
 using NeptuneEvo.Accounts;
@@ -52,19 +54,35 @@ namespace NeptuneEvo.Core
             new Vector3(406.66547, -1029.0198, 29.380238),
         };
 
+        // Вопросы теории. Ответы на все есть во вкладке «Теория» окна автошколы
+        // (src_cef/src/views/player/drivingschool/theory.js) — держите их согласованными.
         private static readonly List<TheoryQuestion> TheoryQuestions = new List<TheoryQuestion>
         {
-            new TheoryQuestion("Какой сигнал светофора запрещает движение?", new [] { "Красный", "Зелёный", "Жёлтый" }, 0),
-            new TheoryQuestion("Можно ли ехать по встречной полосе без причины?", new [] { "Да", "Нет", "Можно ночью" }, 1),
-            new TheoryQuestion("Что нужно сделать перед началом движения?", new [] { "Проверить обстановку и включить поворотник", "Сразу нажать газ", "Посигналить" }, 0),
-            new TheoryQuestion("Разрешено ли управлять транспортом в нетрезвом виде?", new [] { "Разрешено при малой скорости", "Нет, запрещено", "Разрешено за городом" }, 1),
-            new TheoryQuestion("Что означает мигающий жёлтый сигнал?", new [] { "Движение запрещено", "Светофор неисправен/нерегулируемый перекрёсток", "Обязательная остановка" }, 1),
-            new TheoryQuestion("Нужно ли пристёгиваться ремнём безопасности?", new [] { "Да", "Нет", "Только на трассе" }, 0),
-            new TheoryQuestion("Кому нужжно уступить дорогу?", new [] { "Авто с мигалкой", "Пешеходам", "Каждому, из перечисленных" }, 2),
-            new TheoryQuestion("Можно ли резко тормозить без причины в потоке?", new [] { "Да", "Нет", "Можно, если торопишься" }, 1),
-            new TheoryQuestion("Что делать при ДТП?", new [] { "Уехать", "Остановиться и действовать по ситуации", "Продолжить путь и написать позже" }, 1),
-            new TheoryQuestion("Минимум правильных ответов для сдачи теста: 30% от 10 вопросов. Сколько это?", new [] { "3", "5", "7" }, 0),
+            new TheoryQuestion("Какой сигнал светофора запрещает движение?", new [] { "Красный", "Зелёный", "Мигающий жёлтый" }, 0),
+            new TheoryQuestion("Что означает мигающий жёлтый сигнал?", new [] { "Движение запрещено", "Перекрёсток нерегулируемый, проезжайте с осторожностью", "Нужно развернуться" }, 1),
+            new TheoryQuestion("Кому вы обязаны уступить дорогу?", new [] { "Транспорту с включёнными мигалками и сиреной", "Пешеходам на переходе", "И тем, и другим" }, 2),
+            new TheoryQuestion("Можно ли ехать по встречной полосе, чтобы объехать пробку?", new [] { "Да, если никого нет", "Нет", "Только ночью" }, 1),
+            new TheoryQuestion("Что нужно сделать перед началом движения?", new [] { "Убедиться, что никому не мешаете, и включить поворотник", "Сразу нажать газ", "Посигналить и ехать" }, 0),
+            new TheoryQuestion("Можно ли управлять транспортом в нетрезвом виде?", new [] { "Можно на малой скорости", "Нет, запрещено", "Можно за городом" }, 1),
+            new TheoryQuestion("Максимальная скорость на экзамене (легковой, мотоцикл)?", new [] { "60 км/ч", "80 км/ч", "120 км/ч" }, 1),
+            new TheoryQuestion("Максимальная скорость на экзамене на грузовике (категория C)?", new [] { "70 км/ч", "90 км/ч", "Без ограничений" }, 0),
+            new TheoryQuestion("Сколько ошибок на практике приводят к провалу экзамена?", new [] { "1", "3", "10" }, 1),
+            new TheoryQuestion("Что считается ошибкой на практике?", new [] { "Превышение скорости и столкновения", "Включённые фары", "Езда по своей полосе" }, 0),
+            new TheoryQuestion("Вы вышли из учебной машины во время практики. Сколько секунд есть, чтобы вернуться?", new [] { "5", "15", "60" }, 1),
+            new TheoryQuestion("Куда ехать во время практики?", new [] { "Куда угодно, главное — вернуться", "По контрольным точкам маршрута, отмеченным на карте", "На трассу за городом" }, 1),
+            new TheoryQuestion("Что делать при ДТП?", new [] { "Скрыться с места", "Остановиться и действовать по ситуации", "Уехать и написать позже" }, 1),
+            new TheoryQuestion("Можно ли резко тормозить без причины в потоке?", new [] { "Да", "Нет, это опасно для едущих сзади", "Можно, если торопишься" }, 1),
+            new TheoryQuestion("Нужно ли пристёгиваться ремнём безопасности?", new [] { "Да, всегда", "Нет", "Только на трассе" }, 0),
+            new TheoryQuestion("Как правильно поворачивать на перекрёстке?", new [] { "Снизить скорость, включить поворотник и пропустить пешеходов", "Не сбавлять скорость", "Повернуть с крайней противоположной полосы" }, 0),
+            new TheoryQuestion("Как проехать нерегулируемый пешеходный переход, если на нём люди?", new [] { "Посигналить и проехать", "Остановиться и пропустить пешеходов", "Объехать их" }, 1),
+            new TheoryQuestion("Разрешено ли парковаться на тротуаре?", new [] { "Да", "Нет", "Только у магазина" }, 1),
+            new TheoryQuestion("Что будет, если персонаж погибнет во время практики?", new [] { "Экзамен продолжится", "Экзамен провален", "Выдадут лицензию" }, 1),
+            new TheoryQuestion("Что делать, если сзади едет машина экстренной службы с сиреной?", new [] { "Ускориться", "Прижаться вправо и пропустить", "Остановиться посреди дороги" }, 1),
         };
+
+        private const int TheoryQuestionsCount = 10;
+        private const int TheoryPassScore = 8;
+        private const int MaxPenalties = 3;
 
         private static int Step = 0;
 
@@ -199,6 +217,7 @@ namespace NeptuneEvo.Core
                 }
 
                 CreatePracticeCheckpoint(player, dSchoolData.Check);
+                SendPracticeProgress(player);
             }
             catch (Exception e)
             {
@@ -210,6 +229,9 @@ namespace NeptuneEvo.Core
         {
             try
             {
+                if (index < 0 || index >= Main.LicPrices.Length)
+                    return;
+
                 if (!FunctionsAccess.IsWorking("startDrivingCourse"))
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.FunctionOffByAdmins), 3000);
@@ -221,7 +243,7 @@ namespace NeptuneEvo.Core
                 var characterData = player.GetCharacterData();
                 if (characterData == null) return;
 
-                if (sessionData.DSchoolData.IsDriving || sessionData.WorkData.OnWork)
+                if (sessionData.DSchoolData.IsDriving || sessionData.DSchoolData.IsTheory || sessionData.WorkData.OnWork)
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.CantDoThisNow), 3000);
                     return;
@@ -244,6 +266,13 @@ namespace NeptuneEvo.Core
 
                 if (index <= 2)
                 {
+                    // Теория уже сдана по этой категории — сразу на практику, без повторной оплаты
+                    if (sessionData.DSchoolData.TheoryPassed == index)
+                    {
+                        Trigger.ClientEvent(player, "client.drivingschool.close");
+                        StartPractice(player, index);
+                        return;
+                    }
                     StartTheory(player, index);
                     return;
                 }
@@ -253,6 +282,7 @@ namespace NeptuneEvo.Core
                 MoneySystem.Wallet.Change(player, -Main.LicPrices[index]);
                 GrantLicense(player, index);
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, GetSuccessMessage(index), 3000);
+                OpenMenu(player); // обновить карточки лицензий
             }
             catch (Exception e)
             {
@@ -266,11 +296,6 @@ namespace NeptuneEvo.Core
             if (sessionData == null) return;
 
             var dSchoolData = sessionData.DSchoolData;
-            if (dSchoolData.IsDriving || dSchoolData.IsTheory)
-            {
-                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Вы уже проходите экзамен.", 3000);
-                return;
-            }
 
             if (Chars.UpdateData.CanIChange(player, Main.LicPrices[licenseIndex], true) != 255) return;
 
@@ -280,13 +305,15 @@ namespace NeptuneEvo.Core
             dSchoolData.TheoryQuestionIndex = 0;
             dSchoolData.TheoryCorrectAnswers = 0;
             dSchoolData.License = (byte)licenseIndex;
+            dSchoolData.TheoryOrder = Enumerable.Range(0, TheoryQuestions.Count)
+                .OrderBy(_ => SafeMain.SafeRNG.Next())
+                .Take(TheoryQuestionsCount)
+                .ToList();
 
-            Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Теоретический экзамен начат (10 вопросов). Для сдачи нужно минимум 3 правильных ответа.", 6500);
-            // Даём клиенту закрыть предыдущий PopupSelect из выбора категории.
-            NAPI.Task.Run(() => OpenTheoryQuestion(player), 600);
+            SendTheoryQuestion(player);
         }
 
-        private static void OpenTheoryQuestion(ExtPlayer player)
+        private static void SendTheoryQuestion(ExtPlayer player)
         {
             var sessionData = player.GetSessionData();
             if (sessionData == null) return;
@@ -294,49 +321,45 @@ namespace NeptuneEvo.Core
             var dSchoolData = sessionData.DSchoolData;
             if (!dSchoolData.IsTheory) return;
 
-            if (dSchoolData.TheoryQuestionIndex >= TheoryQuestions.Count)
+            if (dSchoolData.TheoryQuestionIndex >= dSchoolData.TheoryOrder.Count)
             {
                 FinishTheory(player);
                 return;
             }
 
-            var question = TheoryQuestions[dSchoolData.TheoryQuestionIndex];
-            var frameList = new FrameListData();
-            frameList.Header = $"Теория {dSchoolData.TheoryQuestionIndex + 1}/{TheoryQuestions.Count}: {question.Question}";
-            frameList.Callback = CallbackTheory;
-
-            for (int i = 0; i < question.Answers.Length; i++)
-                frameList.List.Add(new ListData(question.Answers[i], i));
-
-            Players.Popup.List.Repository.Open(player, frameList);
+            var question = TheoryQuestions[dSchoolData.TheoryOrder[dSchoolData.TheoryQuestionIndex]];
+            Trigger.ClientEvent(player, "client.drivingschool.question", JsonConvert.SerializeObject(new
+            {
+                number = dSchoolData.TheoryQuestionIndex + 1,
+                total = dSchoolData.TheoryOrder.Count,
+                correct = dSchoolData.TheoryCorrectAnswers,
+                question = question.Question,
+                answers = question.Answers,
+            }));
         }
 
-        private static void CallbackTheory(ExtPlayer player, object listItem)
+        [RemoteEvent("server.drivingschool.answer")]
+        public static void OnTheoryAnswer(ExtPlayer player, int answerIndex)
         {
             try
             {
-                if (listItem == null) return;
-                if (!int.TryParse(listItem.ToString(), out var answerIndex)) return;
-
                 var sessionData = player.GetSessionData();
                 if (sessionData == null) return;
 
                 var dSchoolData = sessionData.DSchoolData;
                 if (!dSchoolData.IsTheory) return;
-                if (dSchoolData.TheoryQuestionIndex >= TheoryQuestions.Count) return;
+                if (dSchoolData.TheoryQuestionIndex >= dSchoolData.TheoryOrder.Count) return;
 
-                var question = TheoryQuestions[dSchoolData.TheoryQuestionIndex];
+                var question = TheoryQuestions[dSchoolData.TheoryOrder[dSchoolData.TheoryQuestionIndex]];
                 if (answerIndex == question.CorrectAnswer)
                     dSchoolData.TheoryCorrectAnswers++;
 
                 dSchoolData.TheoryQuestionIndex++;
-                // Переключение между вопросами тоже делаем с паузой,
-                // иначе новый popup может быть сброшен закрытием предыдущего.
-                NAPI.Task.Run(() => OpenTheoryQuestion(player), 300);
+                SendTheoryQuestion(player);
             }
             catch (Exception e)
             {
-                Log.Write($"CallbackTheory Exception: {e}");
+                Log.Write($"OnTheoryAnswer Exception: {e}");
             }
         }
 
@@ -346,19 +369,100 @@ namespace NeptuneEvo.Core
             if (sessionData == null) return;
             var dSchoolData = sessionData.DSchoolData;
 
-            bool isPass = dSchoolData.TheoryCorrectAnswers >= 3;
+            var correct = dSchoolData.TheoryCorrectAnswers;
+            var total = dSchoolData.TheoryOrder.Count;
+            bool isPass = correct >= TheoryPassScore;
             byte license = dSchoolData.License;
 
             CleanupTheory(sessionData);
+            if (isPass)
+                dSchoolData.TheoryPassed = license;
 
-            if (!isPass)
+            Trigger.ClientEvent(player, "client.drivingschool.result", JsonConvert.SerializeObject(new
             {
-                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Теория провалена. Оплата не возвращается, можно пересдавать сразу.", 5000);
-                return;
-            }
+                passed = isPass,
+                correct,
+                total,
+                need = TheoryPassScore,
+                license = (int)license,
+            }));
+        }
 
-            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, "Теория сдана. Начинаем практический экзамен.", 5000);
+        [RemoteEvent("server.drivingschool.start")]
+        public static void OnStart(ExtPlayer player, int index)
+        {
+            if (!IsNearSchool(player)) return;
+            StartDrivingCourse(player, index);
+        }
+
+        [RemoteEvent("server.drivingschool.practice")]
+        public static void OnStartPractice(ExtPlayer player)
+        {
+            var sessionData = player.GetSessionData();
+            if (sessionData == null || !IsNearSchool(player)) return;
+
+            var license = sessionData.DSchoolData.TheoryPassed;
+            if (license > 2) return;
+
+            Trigger.ClientEvent(player, "client.drivingschool.close");
             StartPractice(player, license);
+        }
+
+        [RemoteEvent("server.drivingschool.close")]
+        public static void OnClose(ExtPlayer player)
+        {
+            var sessionData = player.GetSessionData();
+            if (sessionData == null) return;
+
+            if (sessionData.DSchoolData.IsTheory)
+            {
+                CleanupTheory(sessionData);
+                Notify.Send(player, NotifyType.Warning, NotifyPosition.BottomCenter, "Теория прервана. Оплата не возвращается.", 4000);
+            }
+        }
+
+        [RemoteEvent("server.drivingschool.penalty")]
+        public static void OnPenalty(ExtPlayer player, string reason)
+        {
+            try
+            {
+                var sessionData = player.GetSessionData();
+                if (sessionData == null) return;
+
+                var dSchoolData = sessionData.DSchoolData;
+                if (!dSchoolData.IsDriving || dSchoolData.Vehicle == null || player.Vehicle != dSchoolData.Vehicle) return;
+
+                var text = reason == "speed" ? "Превышение скорости" : reason == "crash" ? "Столкновение" : "Нарушение";
+                dSchoolData.Penalties++;
+
+                if (dSchoolData.Penalties >= MaxPenalties)
+                {
+                    FailPractice(player, $"Экзамен провален: {MaxPenalties} ошибки. Последняя — {text.ToLower()}.");
+                    return;
+                }
+
+                Notify.Send(player, NotifyType.Warning, NotifyPosition.BottomCenter, $"Ошибка: {text} ({dSchoolData.Penalties}/{MaxPenalties})", 3000);
+                SendPracticeProgress(player);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnPenalty Exception: {e}");
+            }
+        }
+
+        private static bool IsNearSchool(ExtPlayer player)
+        {
+            return player.IsCharacterData() && player.Dimension == 0 && player.Position.DistanceTo(EnterSchool) < 6f;
+        }
+
+        private static int GetSpeedLimit(int licenseIndex) => licenseIndex == 2 ? 70 : 80;
+
+        private static void SendPracticeProgress(ExtPlayer player)
+        {
+            var sessionData = player.GetSessionData();
+            if (sessionData == null) return;
+            var dSchoolData = sessionData.DSchoolData;
+            Trigger.ClientEvent(player, "client.drivingschool.practice.progress", Math.Max(0, (int)dSchoolData.Check), DrivingCoords.Count, dSchoolData.Penalties);
         }
 
         private static void StartPractice(ExtPlayer player, int licenseIndex)
@@ -401,10 +505,13 @@ namespace NeptuneEvo.Core
             dSchoolData.IsDriving = true;
             dSchoolData.License = (byte)licenseIndex;
             dSchoolData.Check = 0;
+            dSchoolData.Penalties = 0;
+            dSchoolData.TheoryPassed = 255;
 
             Trigger.ClientEvent(player, "setIntoVehicle", vehicle, VehicleSeat.Driver - 1);
             CreatePracticeCheckpoint(player, 0);
-            Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Практика началась. Следуйте по чекпоинтам.", 4000);
+            Trigger.ClientEvent(player, "client.drivingschool.practice.start", LicenseNames[licenseIndex], DrivingCoords.Count, GetSpeedLimit(licenseIndex), MaxPenalties);
+            Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Практика началась. Следуйте по контрольным точкам.", 4000);
         }
 
         private static void CreatePracticeCheckpoint(ExtPlayer player, int index)
@@ -444,8 +551,12 @@ namespace NeptuneEvo.Core
                 Trigger.ClientEvent(player, "deleteWorkBlip");
             }
 
+            if (dSchoolData.IsDriving)
+                Trigger.ClientEvent(player, "client.drivingschool.practice.end");
+
             dSchoolData.IsDriving = false;
             dSchoolData.Check = -1;
+            dSchoolData.Penalties = 0;
 
             if (sessionData.TimersData.SchoolTimer != null)
             {
@@ -460,6 +571,7 @@ namespace NeptuneEvo.Core
             dSchoolData.IsTheory = false;
             dSchoolData.TheoryQuestionIndex = 0;
             dSchoolData.TheoryCorrectAnswers = 0;
+            dSchoolData.TheoryOrder = new List<int>();
             dSchoolData.License = 255;
         }
 
@@ -492,25 +604,15 @@ namespace NeptuneEvo.Core
         }
 
         #region menu
+        private static readonly string[] LicenseNames = { "Мотоцикл (A)", "Легковой (B)", "Грузовой (C)", "Водный транспорт", "Вертолёт", "Самолёт" };
+
         [Interaction(ColShapeEnums.DriveSchool)]
         public static void OnDriveSchool(ExtPlayer player)
         {
             try
             {
                 if (!player.IsCharacterData()) return;
-
-                var frameList = new FrameListData();
-                frameList.Header = "Лицензии";
-                frameList.Callback = CallbackDriveSchool;
-
-                frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.MotoLic, Main.LicPrices[0]), 0));
-                frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.LegLic, Main.LicPrices[1]), 1));
-                frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.GruzLic, Main.LicPrices[2]), 2));
-                frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.VodLic, Main.LicPrices[3]), 3));
-                frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.VertLic, Main.LicPrices[4]), 4));
-                frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.SamLic, Main.LicPrices[5]), 5));
-
-                Players.Popup.List.Repository.Open(player, frameList);
+                OpenMenu(player);
                 BattlePass.Repository.UpdateReward(player, 149);
             }
             catch (Exception e)
@@ -519,17 +621,39 @@ namespace NeptuneEvo.Core
             }
         }
 
-        private static void CallbackDriveSchool(ExtPlayer player, object listItem)
+        /// <summary>
+        /// Окно автошколы (CEF PlayerDrivingSchool): лицензии, теория для подготовки, экзамен.
+        /// </summary>
+        private static void OpenMenu(ExtPlayer player)
         {
-            if (listItem == null)
-                return;
-            if (!int.TryParse(listItem.ToString(), out var index))
-                return;
+            var sessionData = player.GetSessionData();
+            var characterData = player.GetCharacterData();
+            if (sessionData == null || characterData == null) return;
 
-            if (!player.IsCharacterData())
-                return;
+            var licenses = new List<object>();
+            for (var i = 0; i < LicenseNames.Length && i < Main.LicPrices.Length; i++)
+            {
+                licenses.Add(new
+                {
+                    index = i,
+                    name = LicenseNames[i],
+                    price = Main.LicPrices[i],
+                    has = characterData.Licenses[i],
+                    exam = i <= 2,
+                    needLvl = i == 4 || i == 5 ? 20 : 0,
+                    theoryPassed = sessionData.DSchoolData.TheoryPassed == i,
+                });
+            }
 
-            StartDrivingCourse(player, index);
+            Trigger.ClientEvent(player, "client.drivingschool.open", JsonConvert.SerializeObject(new
+            {
+                lvl = characterData.LVL,
+                questions = TheoryQuestionsCount,
+                passScore = TheoryPassScore,
+                maxPenalties = MaxPenalties,
+                checkpoints = DrivingCoords.Count,
+                licenses,
+            }));
         }
         #endregion
 

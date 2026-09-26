@@ -2,6 +2,7 @@
     import "./style.scss";
     import { charMoney, charBankMoney } from "store/chars";
     import { formatThousands, } from "../../modules/money";
+    import { avatarPicture } from "../../modules/picture";
 
     const onClick = () => {
         window.marketPlace.setPage("create");
@@ -34,6 +35,6 @@
     </div>
 
     <div class="avatar">
-        <img src="https://cdn.majestic-files.com/img/avatars/male.svg" alt="avatar" />
+        <img src={avatarPicture} alt="avatar" />
     </div>
 </div>

@@ -8,5 +8,5 @@
   "port": 22005,
   "voice-chat": true,
   "allow-cef-debugging": false,
-  "enable-http-security": false
+  "enable-http-security": true
 }

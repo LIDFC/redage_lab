@@ -1,4 +1,4 @@
-using GTANetworkAPI;
+﻿using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using MySqlConnector;
 using NeptuneEvo.Accounts;
@@ -678,80 +678,9 @@ namespace NeptuneEvo.Core
                         }
                         break;
                     case 7:
-                        vehicleLocalData = vehicle.GetVehicleLocalData();
-                        if (vehicleLocalData != null)
-                        {
-                            if (characterData.DemorganTime >= 1 || characterData.ArrestTime >= 1 || player.IsInVehicle || sessionData.AntiAnimDown) return;
-                            if (player.Position.DistanceTo(vehicle.Position) > 2)
-                            {
-                                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.CarTooFar), 5000);
-                                return;
-                            }
-                            if (sessionData.ActiveWeap.Item != null)
-                            {
-                                if (sessionData.ActiveWeap.Index == -1)
-                                {
-                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MustWrench), 2000);
-                                    return;
-                                }
-                                InventoryItemData Item = Chars.Repository.GetItemData(player, "fastSlots", sessionData.ActiveWeap.Index);
-                                if (Item.ItemId == ItemId.Debug)
-                                {
-                                    sessionData.ActiveWeap = new ItemStruct("", -1, null);
-                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MustWrench), 2000);
-                                    return;
-                                }
-                                else if (Item.ItemId == ItemId.Wrench)
-                                {
-                                    player.Rotation = new Vector3(player.Rotation.X, player.Rotation.Y, player.Rotation.Z - 180);
-                                    Trigger.ClientEvent(player, "blockMove", true);
-                                    Main.OnAntiAnim(player);
-                                    Trigger.PlayAnimation(player, "anim@amb@garage@chassis_repair@", "base_amy_skater_01", 39);
-                                    // Trigger.ClientEventInRange(player.Position, 250f, "PlayAnimToKey", player, false, "repaircar");
-                                    Notify.Send(player, NotifyType.Warning, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.StartRepairing, vehicle.NumberPlate), 5000);
-                                    NAPI.Task.Run(() =>
-                                    {
-                                        try
-                                        {
-                                            if (!player.IsCharacterData()) return;
-                                            Main.OffAntiAnim(player);
-                                            Trigger.ClientEvent(player, "blockMove", false);
-                                            Trigger.StopAnimation(player);
-                                            NAPI.Entity.SetEntityPosition(player, player.Position + new Vector3(0, 0, 0.2));
-                                            if (vehicle == null || vehicleLocalData == null || player.Position.DistanceTo(vehicle.Position) > 3)
-                                            {
-                                                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.CarTooFar), 3000);
-                                                return;
-                                            }
-                                            if (sessionData.ActiveWeap.Item != null)
-                                            {
-                                                if (sessionData.ActiveWeap.Index == -1) return;
-                                                Item = Chars.Repository.GetItemData(player, "fastSlots", sessionData.ActiveWeap.Index);
-                                                if (Item.ItemId != ItemId.Wrench)
-                                                {
-                                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MustWrench), 2000);
-                                                    return;
-                                                }
-                                            }
-                                            else return;
-                                            VehicleManager.RepairCar(vehicle);
-                                            NAPI.Entity.SetEntityPosition(vehicle, vehicle.Position + new Vector3(0, 0, 0.5f));
-                                            NAPI.Entity.SetEntityRotation(vehicle, new Vector3(0, 0, vehicle.Rotation.Z));
-                                            ItemStruct ItemStruct = sessionData.ActiveWeap;
-                                            Chars.Repository.RemoveIndex(player, "fastSlots", ItemStruct.Index);
-                                            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.SucRepair), 3000);
-                                            BattlePass.Repository.UpdateReward(player, 12);
-                                        }
-                                        catch (Exception e)
-                                        {
-                                            Log.Write($"vehicleSelected Task #2 Exception: {e.ToString()}");
-                                        }
-                                    }, 15000);
-                                }
-                                else Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MustWrench), 2000);
-                            }
-                            else Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MustWrench), 2000);
-                        }
+                        // «Починить машину»: при открытом капоте. Есть ключ — обычный ремонт, нет — мини-игра HotWire
+                        if (characterData.DemorganTime >= 1 || characterData.ArrestTime >= 1 || player.IsInVehicle || sessionData.AntiAnimDown) return;
+                        VehicleRepair.Start(player, vehicle);
                         break;
                     case 10:
                         vehicleLocalData = vehicle.GetVehicleLocalData();

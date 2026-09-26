@@ -61,7 +61,7 @@ const categoryDesc = {
 
 	"fraction_mayormenu": translateText("Управление казной"),
 
-	"veh_fix": translateText("Починить транспорт"),
+	"veh_fix": translateText("Починить машину"),
 	"breaking_trunk": translateText("Взломать транспорт"),
 	"belt": translateText("Ремень безопасности"),
 	"sell": translateText("Взаимодействия"),

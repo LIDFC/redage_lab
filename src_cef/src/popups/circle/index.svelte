@@ -22,13 +22,51 @@
     });
 
 
+    // Иконки в шрифте называются circle-c-<действие> (assets/css/iconscircle.css).
+    // Раньше префикс был "circle-", и в меню не показывалась ни одна иконка.
     const    
-        prefix = "circle-";
+        prefix = "circle-c-";
+
+    // Для действий, у которых нет своей иконки в шрифте, — ближайшая по смыслу
+    const iconFallback = {
+        inv: "carinv", phone: "offer", anim: "handshake", paired_animations: "handshake", battlepass: "badge", donate: "givemoney",
+        fraction_table: "fraction", fraction_news: "fraction", fraction_mayormenu: "fraction", org_table: "family",
+        vmuted: "mute", whisper: "offer",
+        embrace: "handshake", kiss: "handshake", paired_five: "handshake", paired_slap: "handshake",
+        carry_0: "handshake", carry_1: "handshake", carry_2: "handshake", carry_3: "leadaway",
+        trunkAction: "trunk", healMenu: "heal",
+        epinephrine: "heal", ticketveh: "ticket", newnumber: "sellcar", pocket: "rob",
+        leave_fraction: "acancel", leave_org: "acancel",
+    };
+
+    const getIcon = (func) => {
+        if (iconFallback [func])
+            return iconFallback [func];
+        if (/lift_/.test(func))
+            return "house";
+        return func;
+    }
+
+    // Кольцо с сектором, повёрнутым к курсору. Раньше его рисовал клиент спрайтом из
+    // redage_textures_001.ytd; если словарь текстур не был загружен, GTA рисовала белый прямоугольник.
+    let circleNode;
+    let pointerAngle = -90;
+    let isBackHover = false;
+
+    const handleMouseMove = (event) => {
+        if (!circleNode)
+            return;
+        const rect = circleNode.getBoundingClientRect();
+        const cx = rect.left + rect.width / 2;
+        const cy = rect.top + rect.height / 2;
+        pointerAngle = Math.atan2(event.clientY - cy, event.clientX - cx) * 180 / Math.PI;
+    }
 
 
     let drawname = "Назад"
     const OnHovered = (name, isBack = false) => {
         drawname = name;
+        isBackHover = isBack;
         executeClient ("client.circle.isBack", isBack);
     }
 
@@ -147,10 +185,21 @@
     }
 </script>
 
-<svelte:window on:keydown={handleKeyDown} on:keyup={handleKeyUp} on:mouseup={handleMouseUp} />
+<svelte:window on:keydown={handleKeyDown} on:keyup={handleKeyUp} on:mouseup={handleMouseUp} on:mousemove={handleMouseMove} />
 
 <div class="circle">
-    <div class="circle__close"  use:initCircle on:mouseenter={() => OnHovered ('Назад', true)} on:mouseleave={() => OnHovered ('Назад')} on:click={() => onCircleClick ("back")}>
+    <svg class="circle__ring" viewBox="0 0 280 280" aria-hidden="true">
+        <circle cx="140" cy="140" r="118" class="circle__ring-bg" />
+        <circle cx="140" cy="140" r="132" class="circle__ring-track" />
+        {#if isBackHover}
+            <circle cx="140" cy="140" r="132" class="circle__ring-back" />
+        {:else}
+            <g transform="rotate({pointerAngle} 140 140)">
+                <path class="circle__ring-arc" d="M {140 + 132 * Math.cos(-0.45)} {140 + 132 * Math.sin(-0.45)} A 132 132 0 0 1 {140 + 132 * Math.cos(0.45)} {140 + 132 * Math.sin(0.45)}" />
+            </g>
+        {/if}
+    </svg>
+    <div class="circle__close" bind:this={circleNode} use:initCircle on:mouseenter={() => OnHovered ('Назад', true)} on:mouseleave={() => OnHovered ('Назад')} on:click={() => onCircleClick ("back")}>
         <div class="box-column">
             <div class="circle__image" class:active={drawname !== "Назад"}></div>
             <div class="circle__text">{drawname}</div>
@@ -159,10 +208,42 @@
     <div class="center">
         {#each popupData as data, index}
         <li on:click={() => onCircleClick (data.func, data.index)} on:mouseenter={() => OnHovered (data.name)} on:mouseleave={() => OnHovered ("Назад")} class="contents child{ontest (index, popupData.length)}">
-            <span class="icons-circle {prefix}{data.func}" />
+            <span class="icons-circle {prefix}{getIcon (data.func)}" />
             <div>{data.name}</div>
             <div class="contents__index">{index + 1}</div>
         </li>
     {/each}
     </div>
 </div>
+<style>
+    .circle__ring {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 58.3%;
+        height: 58.3%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        overflow: visible;
+    }
+    .circle__ring-bg {
+        fill: rgba(20, 24, 30, 0.82);
+    }
+    .circle__ring-track {
+        fill: none;
+        stroke: rgba(255, 255, 255, 0.12);
+        stroke-width: 6;
+    }
+    .circle__ring-arc {
+        fill: none;
+        stroke: #DA2640;
+        stroke-width: 6;
+        stroke-linecap: round;
+        filter: drop-shadow(0 0 6px rgba(218, 38, 64, 0.6));
+    }
+    .circle__ring-back {
+        fill: none;
+        stroke: rgba(218, 38, 64, 0.55);
+        stroke-width: 6;
+    }
+</style>

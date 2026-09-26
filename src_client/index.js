@@ -315,6 +315,7 @@ require('./utils/validator.js');
 require('./admin/esp.js');
 require('./admin/markerteleport.js');
 require('./admin/noclip.js');
+require('./admin/modelCheck.js');
 require("./admin/spectate.js");
 require("./admin/cinematiccamera.js");
 

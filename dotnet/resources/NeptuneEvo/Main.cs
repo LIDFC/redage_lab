@@ -3376,6 +3376,7 @@ namespace NeptuneEvo
                 FurnitureManager.Init();
                 HouseManager.Init();
                 Houses.Apartments.ApartmentManager.Init();
+                BlackMarket.BlackMarketManager.Init();
 
                 VehicleManager.Init();
                 

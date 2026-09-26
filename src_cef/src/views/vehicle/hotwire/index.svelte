@@ -219,17 +219,12 @@
         user-select: none;
         animation: hw-show 0.5s ease forwards;
     }
-    .hw::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: radial-gradient(circle at 50% 45%, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.85));
-    }
     .hw > * {
         position: relative;
     }
     .hw__title {
         text-align: center;
+        text-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.9);
         margin-bottom: 2.4vh;
     }
     .hw__caption {
@@ -316,6 +311,7 @@
     }
     .hw__progress {
         margin-top: 2vh;
+        text-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.9);
         font-family: 'TTNorms-Bold';
         font-size: 2.2vh;
         color: rgba(255, 255, 255, 0.8);

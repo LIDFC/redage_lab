@@ -323,7 +323,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 30%, rgba(0, 0, 0, 0.82) 100%);
         font-family: 'TTNorms-Regular';
         color: white;
         user-select: none;
@@ -349,6 +348,7 @@
     .el__title {
         position: relative;
         text-align: center;
+        text-shadow: 0 0.2vh 0.8vh rgba(0, 0, 0, 0.9);
         margin-bottom: 2.6vh;
     }
     .el__caption {
@@ -370,12 +370,12 @@
     .el__steps span {
         padding: 0.5vh 1.2vh;
         border-radius: 2vh;
-        background: rgba(255, 255, 255, 0.08);
+        background: rgba(0, 0, 0, 0.6);
         font-size: 1.3vh;
-        color: rgba(255, 255, 255, 0.7);
+        color: rgba(255, 255, 255, 0.8);
     }
     .el__steps span.done {
-        background: rgba(60, 214, 74, 0.2);
+        background: rgba(20, 90, 30, 0.75);
         color: #6ef07a;
     }
     .el__layout {

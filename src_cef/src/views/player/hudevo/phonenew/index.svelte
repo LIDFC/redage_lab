@@ -20,6 +20,7 @@
 
     isPhoneCall ();
     addListernEvent ("isPhoneCall", isPhoneCall)
+    addListernEvent("phone.setPage", (pageName) => currentPage.set(pageName));
 
     import './main.sass';
 

@@ -1,4 +1,5 @@
 <script>
+    import { addListernEvent } from "api/functions";
     import { translateText } from 'lang'
     import { executeClientToGroup } from 'api/rage'
     import { validate } from 'api/validation';
@@ -10,6 +11,7 @@
     import { currentPage } from "../../stores";
 
     let numberValue = "";
+    addListernEvent("phone.calls.dial.setTarget", (val) => numberValue = val);
 
     function onButton(value){
         numberValue = numberValue + value;

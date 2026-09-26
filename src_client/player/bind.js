@@ -1,3 +1,4 @@
+import marketPlace from "../EternalDev/marketPlace";
 // TODO Запретить F1, выписать все возможные кнопки для бинда
 global.BinderStatus = false;
 global.indexUpdate = -1;
@@ -613,6 +614,8 @@ global.binderFunctions.openReportInput = () => {
 }
 //Закрытие интерфейса при ESC
 global.binderFunctions.c_globalEscape = (isDeath = false) => {
+    if (marketPlace.opened)
+        return marketPlace.closeApp();
     if (global.circleOpen) global.CloseCircle (true);
     if (global.reportactive) global.binderFunctions.c_reports ();
     if (global.BinderStatus) CloseBinder ();

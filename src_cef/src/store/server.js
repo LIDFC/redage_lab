@@ -14,6 +14,7 @@ export const serverDonateDoubleConvert = writable(1.5);
 window.serverStore.serverDonateDoubleConvert = (value) => serverDonateDoubleConvert.set (value);
 
 export const serverDateTime = writable(new Date().getTime());
+export const serverTime = writable(new Date());
 
 let localDateTime = "2021-08-17T00:44:10.8644836+03:00";
 window.serverStore.serverDateTime = (dateTime) => {
@@ -31,3 +32,9 @@ window.serverStore.getDateTime = () => {
 
 export const isEvent = writable(false);
 window.serverStore.isEvent = (value) => isEvent.set (value);
+// Время сервера для таймеров маркетплейса/аукциона
+setInterval(() => {
+    const date = new Date(localDateTime);
+    date.setSeconds(new Date().getSeconds());
+    serverTime.set(date);
+}, 1000);

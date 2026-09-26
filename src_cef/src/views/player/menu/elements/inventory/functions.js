@@ -118,6 +118,11 @@ export const otherName = [
         descr: "Место, где хранятся награды и посылки.",
         icon: "inventoryicons-padlock",
     },
+    {//13
+        name: "Общественный склад",
+        descr: "Арендованная ячейка склада. Доступ есть только у владельца или у семьи.",
+        icon: "inventoryicons-delivery-box",
+    },
 ]
 
 export const otherType = {
@@ -133,7 +138,8 @@ export const otherType = {
 	wComponents: 9,
 	Storage: 10,
 	Tent: 11,
-    Case: 12
+    Case: 12,
+    PublicWarehouse: 13
 }
 
 export const clothesId = [

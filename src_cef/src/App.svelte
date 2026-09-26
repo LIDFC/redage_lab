@@ -2,6 +2,7 @@
 	let isMultiplayer = window.mp && window.mp.events;
 
 	document.imgurClientId = "ec243f05d2bc44b";
+	import '@/eternal-core/index'
 
 	import 'lang/index'
 	//import '@/advertisement';
@@ -61,6 +62,7 @@
 	import PlayerWedding from '@/views/player/wedding/index.svelte';
 	import PlayerTickets from '@/views/player/tickets/index.svelte';
 	import PlayerRestart from '@/views/player/restart/index.svelte';
+	import PlayerWarehouse from '@/views/player/warehouse/index.svelte';
 
 	//Администрации
 
@@ -123,7 +125,10 @@
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
+	import MajesticMarketplace from "@/views/eternal-dev/marketPlace/index.svelte";
+
 	const Views = {
+		MajesticMarketplace,
 		PlayerBattlePass,
 		//PlayerNewAuthentication,
 		PlayerAuthentication,//Авторизация, выбор спавна, выбор чара
@@ -151,6 +156,7 @@
 		PlayerWedding,
 		PlayerTickets,
 		PlayerRestart,
+		PlayerWarehouse,
 		Gta5devMenu,//CEF-Ui
 
 		BusinessAutoShop,

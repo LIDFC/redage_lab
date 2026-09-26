@@ -2163,6 +2163,16 @@
                                     <div class="inventory__title">{otherName[OtherInfo.Id].name}</div>
                                     <div class="inventory__text"><span class="{otherName[OtherInfo.Id].icon} inventory__icon"></span>{otherName[OtherInfo.Id].descr}</div>
                                 </div>
+                                {#if OtherInfo.Id === otherType.PublicWarehouse && ItemsData["other"] && ItemsData["other"].length}
+                                    <div class="box-column" style="margin-left: 10px; min-width: 120px;">
+                                        <div class="box-flex inventory__text" style="justify-content: flex-end; margin-bottom: 5px;">
+                                            {ItemsData["other"].filter(item => item.ItemId !== 0).length} / {ItemsData["other"].length}
+                                        </div>
+                                        <div style="width: 100%; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden;">
+                                            <div style="width: {(ItemsData["other"].filter(item => item.ItemId !== 0).length / ItemsData["other"].length) * 100}%; height: 100%; background: #CDF15C;"></div>
+                                        </div>
+                                    </div>
+                                {/if}
                             </div>
                             <div class="box-list">
                                 {#each ItemsData["other"] as item, index}

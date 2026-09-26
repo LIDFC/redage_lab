@@ -1,4 +1,6 @@
-﻿using GTANetworkAPI;
+﻿using NeptuneEvo.EternalDev.MarketPlace.Extensions;
+using Vehicles = Database.Vehicles;
+using GTANetworkAPI;
 using NeptuneEvo.Handles;
 using System;
 using System.Collections.Generic;
@@ -1163,7 +1165,7 @@ namespace NeptuneEvo.Core
                 var number = (string) listItem;
                 
                 var vehicleData = GetVehicleToNumber(number);
-                if (vehicleData == null) return;
+                if (vehicleData == null || vehicleData.IsOnMarketplace(player)) return;
                 if (Ticket.IsVehicleTickets(vehicleData.SqlId))
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.VehOnShtrafSell, vehicleData.Model, vehicleData.Number), 3000);

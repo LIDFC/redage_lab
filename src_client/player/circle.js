@@ -192,6 +192,9 @@ const getCircleName = (func, title) => {
 	if (func === "org_table" && global.organizationId === 0)
 		return false;
 
+	if (func === "vmuted")
+		return (selectEntity && global.pplMuted && global.pplMuted[selectEntity.name] === true) ? translateText("Включить звук игрока") : translateText("Заглушить игрока");
+
 	if (func === "belt")
 		return isBelt ? translateText("Отстегнуть ремень") : translateText("Пристегнуть ремень");
 
@@ -365,30 +368,9 @@ gm.events.add('client.circle.isBack', (_isBack) => {
 });
 
 
-const OnRenderCircle = () => {
-	try {
-		if (!isInitCircle)
-			return;
-
-		const [ cursorX, cursorY ] = mp.gui.cursor.position;
-		const ratio = mp.game.graphics.getScreenAspectRatio(true);
-
-		const res = mp.game.graphics.getScreenActiveResolution(0, 0);
-		const centerX = cursorX - res.x / 2;
-		const centerY = cursorY - res.y / 2;
-		let heading = Math.atan2(centerY, centerX) * (180 / Math.PI);
-		if (heading < 0)
-			heading = Math.abs(heading);
-		else if (heading > 0)
-			heading = heading - heading - heading;
-
-		mp.game.graphics.drawSprite("redage_textures_001", isBack ? "noCircleMenu" : "circleMenu", 0.5, 0.5, 0.175 * isInitCircle [0], 0.175 * isInitCircle [0] * ratio, 90 - heading, 255, 255, 255, 255);
-	}
-	catch (e)
-	{
-		mp.events.callRemote("client_trycatch", "player/circle", "OnRenderCircle", e.toString());
-	}
-}
+// Кольцо со стрелкой рисует интерфейс (src_cef/src/popups/circle). Раньше здесь каждый кадр рисовался
+// спрайт из redage_textures_001.ytd — если словарь текстур не был загружен, GTA выводила белый прямоугольник.
+const OnRenderCircle = () => {};
 
 mp.game.graphics.transitionFromBlurred(0);
 global.CloseCircle = () => {

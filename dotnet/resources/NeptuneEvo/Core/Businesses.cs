@@ -3689,9 +3689,38 @@ namespace NeptuneEvo.Core
                 Business biz = BizList[sessionData.BizID];
                 Product prod = biz.Products[0];
 
-                Trigger.ClientEvent(player, "openPetrol");
-                
-                EventSys.SendCoolMsg(player,"Заправка", "Добро пожаловать!", $"Цена за литр: {prod.Price}$", "", 10000);
+                // Данные для окна АЗС (src_cef/src/views/player/gasStation): цена, бак, остаток топлива на станции
+                var characterData = player.GetCharacterData();
+                int fuel = 0, tank = 0;
+                bool canGov = false;
+                int govLeft = 0;
+                var vehicle = player.IsInVehicle ? (ExtVehicle) player.Vehicle : null;
+                var vehicleLocalData = vehicle?.GetVehicleLocalData();
+                if (vehicleLocalData != null)
+                {
+                    fuel = Math.Max(0, vehicleLocalData.Petrol);
+                    tank = VehicleManager.VehicleTank.ContainsKey(vehicle.Class) ? VehicleManager.VehicleTank[vehicle.Class] : 0;
+                    var fractionData = player.GetFractionData();
+                    if (fractionData != null && Fractions.Manager.FractionTypes[fractionData.Id] == FractionsType.Gov
+                        && vehicleLocalData.Access == VehicleAccess.Fraction && vehicleLocalData.Fraction == fractionData.Id)
+                    {
+                        canGov = true;
+                        govLeft = fractionData.FuelLeft;
+                    }
+                }
+
+                Trigger.ClientEvent(player, "openPetrol", JsonConvert.SerializeObject(new
+                {
+                    id = biz.ID,
+                    price = prod.Price,
+                    stock = prod.Lefts,
+                    fuel,
+                    tank,
+                    money = characterData?.Money ?? 0,
+                    canGov,
+                    govLeft,
+                    noFuel = vehicleLocalData != null && vehicleLocalData.Petrol <= -1,
+                }));
                // Notify.Send(player, NotifyType.Info, NotifyPosition.Top, $"Цена за литр: {prod.Price}$", 7000);
             }
             catch (Exception e)

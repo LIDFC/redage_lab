@@ -2,6 +2,7 @@
 using NeptuneEvo.Handles;
 using System.Collections.Generic;
 using System;
+using System.Linq;
 using Localization;
 using NeptuneEvo.Core;
 using Redage.SDK;
@@ -26,8 +27,6 @@ namespace NeptuneEvo.Jobs
         {
             try
             {
-                NAPI.TextLabel.CreateTextLabel("~w~Ryan Nelson", new Vector3(724.8585, 134.1029, 81.95643), 30f, 0.3f, 0, new Color(255, 255, 255), true, NAPI.GlobalDimension);
-
                 if (Main.ServerSettings.IsDeleteProp)
                 {
 
@@ -98,17 +97,9 @@ namespace NeptuneEvo.Jobs
                     NAPI.World.DeleteWorldProp(-1767254195, new Vector3(689.3761, 92.99287, 79.75075), 30f);
                 }
 
-                CustomColShape.CreateCylinderColShape(new Vector3(724.9625, 133.9959, 79.83643), 1, 2, 0, ColShapeEnums.Electrician);
-
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(724.9625, 133.9959, 80.95643), 30f, 0.4f, 0, new Color(255, 255, 255), true, 0);
-                NAPI.Marker.CreateMarker(1, new Vector3(724.9625, 133.9959, 79.83643) - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1, new Color(255, 255, 255, 220));
-
-                int i = 0;
-                foreach (Checkpoint Check in Checkpoints)
-                {
-                    CustomColShape.CreateCylinderColShape(Check.Position, 1, 2, 0, ColShapeEnums.ElectricianPoint, i);
-                    i++;
-                }
+                // Смена начинается/заканчивается через диалог с прорабом (JobEmployers, npc_electrician).
+                // Рабочие точки — из settings/electrician.json, на точке E открывает мини-игру.
+                CreatePointShapes();
             }
             catch (Exception e)
             {
@@ -161,6 +152,7 @@ namespace NeptuneEvo.Jobs
                 ClothesComponents.SetSpecialClothes(player, 11, 153, 10);
                 ClothesComponents.SetSpecialClothes(player, 4, 0, 5);
                 ClothesComponents.SetSpecialClothes(player, 6, 24, 0);
+                ClothesComponents.SetSpecialAccessories(player, 0, 145, 0); // строительная каска
             }
             else
             {
@@ -169,15 +161,16 @@ namespace NeptuneEvo.Jobs
                 ClothesComponents.SetSpecialClothes(player, 11, 150, 1);
                 ClothesComponents.SetSpecialClothes(player, 4, 1, 5);
                 ClothesComponents.SetSpecialClothes(player, 6, 52, 0);
+                ClothesComponents.SetSpecialAccessories(player, 0, 144, 0); // строительная каска
             }
             Chars.Repository.LoadAccessories(player);
 
-            int check = WorkManager.rnd.Next(0, Checkpoints.Count - 1);
+            int check = WorkManager.rnd.Next(0, Checkpoints.Count);
             sessionData.WorkData.WorkCheck = check;
             sessionData.WorkData.OnWork = true;
             Trigger.ClientEvent(player, "createCheckpoint", 15, 1, Checkpoints[check].Position, 1, 0, 255, 0, 0);
             Trigger.ClientEvent(player, "createWorkBlip", Checkpoints[check].Position);
-            Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.StartWorkDay), 3000);
+            Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Смена началась: идите к метке, нажмите E и подключите кабели", 5000);
         }
 
         public static bool EndWork(ExtPlayer player)
@@ -198,19 +191,177 @@ namespace NeptuneEvo.Jobs
             return false;
         }
         
-        private static List<Checkpoint> Checkpoints = new List<Checkpoint>()
+        #region Точки работы (settings/electrician.json)
+        private class ConfigPoint
         {
-            new Checkpoint(new Vector3(678.6784, 163.7561, 79.80791), 338.0567),
-            new Checkpoint(new Vector3(697.9194, 158.3429, 79.8203), 162.1701),
-            new Checkpoint(new Vector3(696.8144, 149.2776, 79.83644), 174.3819),
-            new Checkpoint(new Vector3(701.6469, 110.9194, 79.81911), 163.4535),
-            new Checkpoint(new Vector3(697.663, 104.4758, 79.63456), 162.01),
-            new Checkpoint(new Vector3(658.8223, 114.3996, 79.80294), 346.9411),
-            new Checkpoint(new Vector3(663.0648, 122.4777, 79.80295), 345.3615),
-            new Checkpoint(new Vector3(671.8508, 145.1318, 79.80048), 345.2057),
+            public float X { get; set; }
+            public float Y { get; set; }
+            public float Z { get; set; }
+            public float Heading { get; set; }
+        }
+
+        private class ConfigData
+        {
+            public ConfigPoint Foreman { get; set; }
+            public List<ConfigPoint> Points { get; set; } = new List<ConfigPoint>();
+            /// <summary>Во сколько раз оплата за точку больше Main.ElectricianPayment (мини-игра дольше старой анимации).</summary>
+            public float PaymentMultiplier { get; set; } = 3f;
+        }
+
+        private static string ConfigPath => System.IO.Path.Combine("settings", "electrician.json");
+
+        // Проверенные точки подстанции — значения по умолчанию, пока стройка не настроена командами
+        private static readonly ConfigData Defaults = new ConfigData
+        {
+            Foreman = new ConfigPoint { X = 728.2f, Y = 131.8f, Z = 80.1f, Heading = 60f },
+            Points = new List<ConfigPoint>
+            {
+                new ConfigPoint { X = 678.6784f, Y = 163.7561f, Z = 79.80791f, Heading = 338.0567f },
+                new ConfigPoint { X = 697.9194f, Y = 158.3429f, Z = 79.8203f, Heading = 162.1701f },
+                new ConfigPoint { X = 696.8144f, Y = 149.2776f, Z = 79.83644f, Heading = 174.3819f },
+                new ConfigPoint { X = 701.6469f, Y = 110.9194f, Z = 79.81911f, Heading = 163.4535f },
+                new ConfigPoint { X = 697.663f, Y = 104.4758f, Z = 79.63456f, Heading = 162.01f },
+                new ConfigPoint { X = 658.8223f, Y = 114.3996f, Z = 79.80294f, Heading = 346.9411f },
+                new ConfigPoint { X = 663.0648f, Y = 122.4777f, Z = 79.80295f, Heading = 345.3615f },
+                new ConfigPoint { X = 671.8508f, Y = 145.1318f, Z = 79.80048f, Heading = 345.2057f },
+            },
         };
-        [Interaction(ColShapeEnums.ElectricianPoint, In: true)]
-        public void InElectricianPoint(ExtPlayer player, int shapeId)
+
+        private static ConfigData _config;
+        private static ConfigData Config
+        {
+            get
+            {
+                if (_config != null) return _config;
+                try
+                {
+                    if (System.IO.File.Exists(ConfigPath))
+                        _config = Newtonsoft.Json.JsonConvert.DeserializeObject<ConfigData>(System.IO.File.ReadAllText(ConfigPath));
+                }
+                catch (Exception e)
+                {
+                    Log.Write($"{ConfigPath}: {e.Message}");
+                }
+                if (_config == null || _config.Foreman == null || _config.Points == null || _config.Points.Count == 0)
+                    _config = Defaults;
+                return _config;
+            }
+        }
+
+        private static void SaveConfig()
+        {
+            try
+            {
+                System.IO.Directory.CreateDirectory("settings");
+                System.IO.File.WriteAllText(ConfigPath, Newtonsoft.Json.JsonConvert.SerializeObject(Config, Newtonsoft.Json.Formatting.Indented));
+            }
+            catch (Exception e)
+            {
+                Log.Write($"SaveConfig: {e.Message}");
+            }
+        }
+
+        public static Vector3 ForemanPosition => new Vector3(Config.Foreman.X, Config.Foreman.Y, Config.Foreman.Z);
+        public static float ForemanHeading => Config.Foreman.Heading;
+
+        private static List<Checkpoint> Checkpoints => Config.Points
+            .Select(p => new Checkpoint(new Vector3(p.X, p.Y, p.Z), p.Heading))
+            .ToList();
+
+        private static readonly List<ExtColShape> PointShapes = new List<ExtColShape>();
+
+        private static void CreatePointShapes()
+        {
+            foreach (var shape in PointShapes)
+                CustomColShape.DeleteColShape(shape);
+            PointShapes.Clear();
+
+            var i = 0;
+            foreach (var check in Checkpoints)
+            {
+                PointShapes.Add(CustomColShape.CreateCylinderColShape(check.Position, 1.5f, 3, 0, ColShapeEnums.ElectricianPoint, i));
+                i++;
+            }
+        }
+        #endregion
+
+        #region Мини-игра
+        private const int MinGameSeconds = 5;
+        private static readonly Dictionary<ExtPlayer, (int point, DateTime startedAt)> Games = new Dictionary<ExtPlayer, (int, DateTime)>();
+
+        [Interaction(ColShapeEnums.ElectricianPoint)]
+        public static void OnElectricianPoint(ExtPlayer player, int shapeId)
+        {
+            try
+            {
+                var sessionData = player.GetSessionData();
+                var characterData = player.GetCharacterData();
+                if (sessionData == null || characterData == null) return;
+                if (characterData.WorkID != (int)JobsId.Electrician || !sessionData.WorkData.OnWork) return;
+                if (player.IsInVehicle || Games.ContainsKey(player)) return;
+
+                if (shapeId != sessionData.WorkData.WorkCheck)
+                {
+                    Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Здесь уже всё подключено — ваша точка отмечена на карте", 3000);
+                    return;
+                }
+
+                var checkpoints = Checkpoints;
+                if (shapeId >= checkpoints.Count || checkpoints[shapeId].Position.DistanceTo(player.Position) > 3) return;
+
+                Games[player] = (shapeId, DateTime.Now);
+                NAPI.Entity.SetEntityRotation(player, new Vector3(0, 0, checkpoints[shapeId].Heading));
+                Main.OnAntiAnim(player);
+                Trigger.ClientEvent(player, "blockMove", true);
+                Trigger.PlayAnimation(player, "amb@prop_human_movie_studio_light@base", "base", 39);
+                Trigger.ClientEvent(player, "client.electrician.game.open");
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnElectricianPoint Exception: {e}");
+            }
+        }
+
+        private static void StopGame(ExtPlayer player)
+        {
+            Games.Remove(player);
+            if (!player.IsCharacterData()) return;
+            Main.OffAntiAnim(player);
+            Trigger.ClientEvent(player, "blockMove", false);
+            Trigger.StopAnimation(player);
+        }
+
+        [RemoteEvent("server.electrician.game.exit")]
+        public static void OnGameExit(ExtPlayer player)
+        {
+            if (!Games.ContainsKey(player)) return;
+            StopGame(player);
+        }
+
+        [RemoteEvent("server.electrician.game.finished")]
+        public static void OnGameFinished(ExtPlayer player)
+        {
+            try
+            {
+                if (!Games.TryGetValue(player, out var game)) return;
+                StopGame(player);
+                if ((DateTime.Now - game.startedAt).TotalSeconds < MinGameSeconds) return;
+                CompletePoint(player, game.point);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnGameFinished Exception: {e}");
+            }
+        }
+
+        [ServerEvent(Event.PlayerDisconnected)]
+        public void OnPlayerDisconnected(ExtPlayer player, DisconnectionType type, string reason)
+        {
+            Games.Remove(player);
+        }
+        #endregion
+
+        private static void CompletePoint(ExtPlayer player, int shapeId)
         {
             try
             {
@@ -221,9 +372,10 @@ namespace NeptuneEvo.Jobs
                 var characterData = player.GetCharacterData();
                 if (characterData == null) return;
                 if (characterData.WorkID != (int)JobsId.Electrician || !sessionData.WorkData.OnWork || shapeId != sessionData.WorkData.WorkCheck) return;
-                if (Checkpoints[shapeId].Position.DistanceTo(player.Position) > 3) return;
+                var checkpoints = Checkpoints;
+                if (shapeId >= checkpoints.Count || checkpoints[shapeId].Position.DistanceTo(player.Position) > 4) return;
 
-                int payment = Convert.ToInt32(Main.ElectricianPayment * Group.GroupPayAdd[accountData.VipLvl] * Main.ServerSettings.MoneyMultiplier);
+                int payment = Convert.ToInt32(Main.ElectricianPayment * Config.PaymentMultiplier * Group.GroupPayAdd[accountData.VipLvl] * Main.ServerSettings.MoneyMultiplier);
 
                 (byte, float) jobLevelInfo = characterData.JobSkills.ContainsKey(0) ? Main.GetPlayerJobLevelBonus(0, characterData.JobSkills[0]) : (0, 1);
                 if (jobLevelInfo.Item1 >= 1) payment = Convert.ToInt32(payment * jobLevelInfo.Item2);
@@ -232,13 +384,10 @@ namespace NeptuneEvo.Jobs
                 GameLog.Money($"server", $"player({characterData.UUID})", payment, $"electricianCheck");
                 BattlePass.Repository.UpdateReward(player, 22);
                 BattlePass.Repository.UpdateReward(player, 156);
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Кабели подключены: +${payment}", 3000);
 
-                NAPI.Entity.SetEntityPosition(player, Checkpoints[shapeId].Position + new Vector3(0, 0, 1.2));
-                NAPI.Entity.SetEntityRotation(player, new Vector3(0, 0, Checkpoints[shapeId].Heading));
-                Main.OnAntiAnim(player);
-                Trigger.PlayAnimation(player, "amb@prop_human_movie_studio_light@base", "base", 39);
-                // Trigger.ClientEventInRange(player.Position, 250f, "PlayAnimToKey", player, false, "electric");
                 sessionData.WorkData.WorkCheck = -1;
+                Trigger.ClientEvent(player, "deleteCheckpoint", 15);
 
                 if (characterData.JobSkills.ContainsKey(0))
                 {
@@ -262,43 +411,78 @@ namespace NeptuneEvo.Jobs
                     else
                     {
                         qMain.UpdateQuestsData(player, Zdobich.QuestName, (int)zdobich_quests.Stage11, sessionData.WorkData.PointsCount.ToString());
-                        //todo translate (было DataName.PointsQuestGot)
                         Trigger.SendChatMessage(player, LangFunc.GetText(LangType.Ru, DataName.YouEarnedJob, sessionData.WorkData.PointsCount, 500 - sessionData.WorkData.PointsCount));
                     }
                 }
 
-                NAPI.Task.Run(() =>
-                {
-                    try
-                    {
-                        if (!player.IsCharacterData()) return;
+                if (checkpoints.Count == 0) return;
+                int nextCheck = WorkManager.rnd.Next(0, checkpoints.Count);
+                if (checkpoints.Count > 1)
+                    while (nextCheck == shapeId) nextCheck = WorkManager.rnd.Next(0, checkpoints.Count);
 
-                        sessionData = player.GetSessionData();
-                        if (sessionData == null) return;
-
-                        Trigger.StopAnimation(player);
-                        Main.OffAntiAnim(player);
-
-                        int nextCheck = WorkManager.rnd.Next(0, Checkpoints.Count - 1);
-                        while (nextCheck == shapeId) nextCheck = WorkManager.rnd.Next(0, Checkpoints.Count - 1);
-
-                        sessionData.WorkData.WorkCheck = nextCheck;
-
-                        Trigger.ClientEvent(player, "createCheckpoint", 15, 1, Checkpoints[nextCheck].Position, 1, 0, 255, 0, 0);
-                        Trigger.ClientEvent(player, "createWorkBlip", Checkpoints[nextCheck].Position);
-          
-                    }
-                    catch (Exception e)
-                    {
-                        Log.Write($"PlayerEnterCheckpoint Task Exception: {e.ToString()}");
-                    }
-                }, 4000);
+                sessionData.WorkData.WorkCheck = nextCheck;
+                Trigger.ClientEvent(player, "createCheckpoint", 15, 1, checkpoints[nextCheck].Position, 1, 0, 255, 0, 0);
+                Trigger.ClientEvent(player, "createWorkBlip", checkpoints[nextCheck].Position);
             }
             catch (Exception e)
             {
-                Log.Write($"PlayerEnterCheckpoint Exception: {e.ToString()}");
+                Log.Write($"CompletePoint Exception: {e.ToString()}");
             }
         }
+
+        #region Админ-команды настройки стройки
+        private static bool IsAdmin(ExtPlayer player)
+        {
+            var characterData = player.GetCharacterData();
+            return characterData != null && characterData.AdminLVL >= 8;
+        }
+
+        private static void EnsureOwnConfig()
+        {
+            if (!ReferenceEquals(Config, Defaults)) return;
+            _config = new ConfigData
+            {
+                Foreman = Defaults.Foreman,
+                Points = new List<ConfigPoint>(Defaults.Points),
+                PaymentMultiplier = Defaults.PaymentMultiplier,
+            };
+        }
+
+        /// <summary>/elecforeman — поставить прораба туда, где стоите (после рестарта сервера).</summary>
+        [Command("elecforeman")]
+        public static void CMD_Foreman(ExtPlayer player)
+        {
+            if (!IsAdmin(player)) return;
+            EnsureOwnConfig();
+            Config.Foreman = new ConfigPoint { X = player.Position.X, Y = player.Position.Y, Z = player.Position.Z, Heading = player.Rotation.Z };
+            SaveConfig();
+            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, "Прораб будет здесь после рестарта сервера", 4000);
+        }
+
+        /// <summary>/elecpointsclear — удалить все рабочие точки (перед расстановкой на новой стройке).</summary>
+        [Command("elecpointsclear")]
+        public static void CMD_ClearPoints(ExtPlayer player)
+        {
+            if (!IsAdmin(player)) return;
+            EnsureOwnConfig();
+            Config.Points = new List<ConfigPoint>();
+            SaveConfig();
+            CreatePointShapes();
+            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, "Точки удалены. Ставьте новые: /elecpoint (лицом к щитку)", 4000);
+        }
+
+        /// <summary>/elecpoint — добавить рабочую точку: встаньте у щитка/стены лицом к нему.</summary>
+        [Command("elecpoint")]
+        public static void CMD_AddPoint(ExtPlayer player)
+        {
+            if (!IsAdmin(player)) return;
+            EnsureOwnConfig();
+            Config.Points.Add(new ConfigPoint { X = player.Position.X, Y = player.Position.Y, Z = player.Position.Z - 1f, Heading = player.Rotation.Z });
+            SaveConfig();
+            CreatePointShapes();
+            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Точка добавлена, всего: {Config.Points.Count}", 3000);
+        }
+        #endregion
 
         internal class Checkpoint
         {

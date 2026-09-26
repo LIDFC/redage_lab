@@ -59,6 +59,13 @@
                     <div><span>{floors.length ? Math.max(...data.flats.map(f => f.floor)) : 0}</span>этажей</div>
                 </div>
 
+                {#if data.hall}
+                    <div class="aptm__btn primary aptm__hall" on:click={() => executeClient("client.apartments.action", data.id, 0, "hall")}>
+                        Войти в подъезд
+                        <span>{data.hall}</span>
+                    </div>
+                {/if}
+
                 {#if myFlat}
                     <div class="aptm__my">
                         <div class="aptm__gray">Ваша квартира</div>
@@ -226,6 +233,19 @@
         font-family: 'TTNorms-Bold';
         font-size: 2.6vh;
         color: white;
+    }
+    .aptm__btn.aptm__hall {
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2vh;
+        margin-bottom: 1.6vh;
+        padding: 1.2vh 0;
+    }
+    .aptm__hall span {
+        font-family: 'TTNorms-Regular';
+        font-size: 1.2vh;
+        opacity: 0.85;
     }
     .aptm__my {
         background: rgba(43, 182, 168, 0.12);

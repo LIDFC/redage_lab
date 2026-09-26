@@ -208,6 +208,8 @@ namespace NeptuneEvo.Functions
 
         ApartmentEntrance,
         ApartmentGarage,
+        ApartmentHallExit,
+        ApartmentElevator,
     }
     class CustomColShape : Script
     {

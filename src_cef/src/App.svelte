@@ -125,6 +125,8 @@
 	import HouseApartments from '@/views/house/apartments/index.svelte';
 	import PlayerDrivingSchool from '@/views/player/drivingschool/index.svelte';
 	import DrivingPracticeHud from '@/views/player/drivingschool/practiceHud.svelte';
+	import VehicleHotWire from '@/views/vehicle/hotwire/index.svelte';
+	import JobElectricianGame from '@/views/jobs/electrician/index.svelte';
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
@@ -211,6 +213,8 @@
 		HouseRielt,
 		HouseApartments,
 		PlayerDrivingSchool,
+		VehicleHotWire,
+		JobElectricianGame,
 		HouseFurniture
 	}
 	

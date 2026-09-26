@@ -1,11 +1,11 @@
 // PETROL //
 
-gm.events.add('openPetrol', () => {
+gm.events.add('openPetrol', (json = "{}") => {
 	try
 	{
 		if (global.menuCheck()) return;
 		global.menuOpen();
-		mp.gui.emmit(`window.router.setView("PlayerGasStation");`);
+		mp.gui.emmit(`window.router.setView("PlayerGasStation", ${JSON.stringify(json)});`);
 		gm.discord(translateText("Заправляется"));
 	}
 	catch (e) 

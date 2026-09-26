@@ -92,7 +92,10 @@ chown -R ragemp:ragemp $S && systemctl start redage
 | `a37a374` | `cloud.html` грузит локальный интерфейс, а не CDN оригинального RedAge |
 | `2d3b81c`, `098ca0b` | Такси-NPC, NPC-трафик, NPC-работодатели, новое окно аренды, G-меню (см. п. 7, 7a) |
 | `8b00a36` | Склады, маркетплейс, такси-NPC через `invoke` (см. п. 7b, 7c) |
-| *(последний коммит)* | Картинки маркетплейса, многоквартирные дома, новая автошкола (см. п. 7d) |
+| `bc8296f` | Картинки маркетплейса, многоквартирные дома, новая автошкола (см. п. 7d) |
+| `2706daa` | Ремонт через HotWire, новое окно АЗС (см. п. 7e) |
+| `5b37f7c`, `a25a6c1` | DLC-интерьеры квартир, электрик с мини-игрой, прозрачный фон мини-игр (см. п. 7f) |
+| *(последний коммит)* | Подъезды и коридоры с дверьми и лифтом, лофты clawles (см. п. 7g) |
 
 ## 5. Меню F3 (`src_cef/src/views/player/gta5devmenu`)
 
@@ -238,6 +241,50 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - теория: 10 случайных вопросов из 20, для сдачи нужно 8 (было 3 из 10). Ответы на все вопросы есть в `drivingschool/theory.js`;
 - после сданной теории практику можно начать позже без повторной оплаты (`DSchoolData.TheoryPassed`);
 - практика: HUD `DrivingPracticeHud` показывает точки, скорость, лимит, ошибки и таймер. Клиент ловит превышение (80 км/ч, для C — 70, дольше 2 с) и удары (падение `bodyHealth` ≥ 35) и шлёт `server.drivingschool.penalty`; 3 ошибки — провал.
+
+## 7e. Ремонт машины (HotWire), АЗС, DLC-квартиры
+
+- **Ремонт.** G → «Машина» → «Починить машину» (`veh_fix`, `vehicleSelected` index 7) → `Core/VehicleRepair.cs`.
+  - Нужен открытый капот.
+  - Есть ключ (`ItemId.Wrench`, в руке или в инвентаре) — 15 секунд анимации, ключ расходуется.
+  - Ключа нет — мини-игра HotWire. CEF `VehicleHotWire` (`views/vehicle/hotwire`) — порт github.com/NikaKondr/hotwire (MIT) с React на Svelte. Клиент: `src_client/vehicle/hotwire.js`, сервер: `server.hotwire.finished` / `server.hotwire.exit`.
+  - Защита: сессия на сервере, минимум 3 с на прохождение, 30 с между попытками, проверка дистанции.
+  - `pin.svg` автора (7.7 МБ) переведён в PNG; фон-скриншот из Forza убран.
+- **АЗС.** `OpenPetrolMenu` передаёт JSON: цена, остаток на станции, бак, топливо, наличные, доступна ли заправка за счёт штата. Новое окно `views/player/gasStation`: шкала бака, литры, слайдер, быстрые 25/50/75%/полный, сумма. Серверная логика `petrol` не менялась.
+- **DLC-квартиры GTA5RP (архив пользователя).** Все четыре `dlc.rpf` (`GTA5RP_APARTMENT`, `gta5rp_locations`, `GTA5RP_META`, `gta5rp_ymap`) зашифрованы NG (`0x0FEFFFFF`). Без ключей из GTA5.exe их не прочитать, поэтому координаты интерьеров нужно выгрузить в CodeWalker или OpenIV на стороне пользователя (ymap/ytyp → XML).
+
+## 7f. DLC-интерьеры квартир, электрик на стройке
+
+**DLC-квартиры.** Пользователь выгрузил в CodeWalker XML из `GTA5RP_APARTMENT` (сам `dlc.rpf` зашифрован NG).
+- `Houses/Apartments/ApartmentInteriors.cs` — каталог 80 интерьеров: 5 MLO `int_ap_house_1_1..5_milo_` в (250|285|320|355|380, 0, −50), в каждом 16 комнат `House_S_N` по оси Y (размеры из `int_ap_house.ytyp`).
+- Квартира получает интерьер по классу дома (`ApartmentInteriors.Pick`) и случайный стиль. Номер хранится в `apartment_flats.interior` (колонку сервер добавляет сам; запасной вариант — `database/systems/apartments_interiors.sql`).
+- `House.SetCustomInterior` / `InteriorPosition` переносят вход, маркер выхода и аптечку. Питомцы в таких квартирах не появляются.
+- Включается в `settings/apartments.json` → `dlcInteriors`. Без DLC у игроков будет пустота.
+- Клиент подгружает IPL (`src_client/world/dlcApartments.js`). Сам DLC кладётся в `client_packages/dlcpacks/GTA5RP_APARTMENT/dlc.rpf` (в репозитории его нет).
+- Админ-команды: `/aptint id` — осмотреть интерьер, `/aptintset id` — сохранить точку входа (`settings/apartment_interiors.json`).
+- Не подключено, потому что нет ytyp с комнатами: `clawles`, `kor_*` (коридоры), `stair_*`, `kor_bich*`, особняк, `int_garage` (нужны позиции машин).
+
+**Электрик на стройке** (`Jobs/Electrician.cs`):
+- смену начинает прораб (NPC `npc_electrician` из `JobEmployers`, теперь «Прораб»): форма и каска (мужская 145, женская 144);
+- на точке по E открывается мини-игра «кабели RJ45»: порт мини-игры Farko с Vue на Svelte, `views/jobs/electrician`, клиент `src_client/player/electricianGame.js`;
+- оплата только за пройденную игру: `ElectricianPayment × PaymentMultiplier (3)`;
+- точки и прораб хранятся в `settings/electrician.json` (по умолчанию — старые точки подстанции). Настройка: `/elecforeman`, `/elecpointsclear`, `/elecpoint`.
+
+## 7g. Подъезды и коридоры (int_mp_kor.ytyp)
+
+`Houses/Apartments/ApartmentHalls.cs`: коридоры из DLC с координатами дверей, взятыми из entities MLO.
+- `elit` — `kor_elit_1` (700, 1300, −186.3): 10 этажей × 10 дверей, лифт;
+- `med` — `kor_med_1` (500, 1300, −186.3): 10 × 10, лифт;
+- `bich1..5` — `kor_bichN_1` (−200, −100−10(N−1), −100): лестничный подъезд, N этажей × 4 двери, квартиры со 2-го этажа.
+
+Как устроено:
+- Тип подъезда — колонка `apartment_buildings.hall`, сервер добавляет её сам и назначает автоматически (Премиум/Люкс → `elit`, до 20 квартир → `bichN`, иначе `med`). Поменять: `/aparthall id elit|med|bich1..5|none`.
+- У каждого дома свой экземпляр коридора: измерение `3 000 000 + id`.
+- Дверь квартиры — обычный колшейп дома `EnterHouse` в измерении подъезда, поэтому покупка, осмотр, замок, приглашения и лом работают как у домов.
+- `House.SetExit` — выход из квартиры к своей двери; `ExteriorPos` = подъезд, так что выход из игры в коридоре возвращает к дому.
+- Меню у входа: кнопка «Войти в подъезд» (`action "hall"`). Внизу коридора — выход на улицу (`ApartmentHallExit`), на этажах — лифт (`ApartmentElevator`, список этажей).
+- Интерьеры квартир дополнены «лофтами» `clawles`, id 81–125 (`int_mp_apartment_1.ytyp`).
+- Точки у дверей рассчитаны на 0.8 м от петли двери; в игре не проверены.
 
 ## 8. Что осталось или стоит проверить
 

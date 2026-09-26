@@ -80,6 +80,46 @@ namespace NeptuneEvo.Houses
         /// </summary>
         [JsonIgnore]
         public int ApartmentId { get; private set; } = -1;
+        /// <summary>
+        /// Свой интерьер (DLC-квартиры, Houses/Apartments/ApartmentInteriors.cs) вместо общего интерьера класса дома.
+        /// </summary>
+        [JsonIgnore]
+        public Vector3 CustomInterior { get; private set; }
+        /// <summary>
+        /// Куда выходит игрок из квартиры: дверь в коридоре подъезда (ApartmentHalls). null — на улицу к Position.
+        /// </summary>
+        [JsonIgnore]
+        public Vector3 ExitPosition { get; private set; }
+        [JsonIgnore]
+        public uint ExitDimension { get; private set; }
+
+        public void SetExit(Vector3 position, uint dimension)
+        {
+            ExitPosition = position;
+            ExitDimension = dimension;
+        }
+
+        private void PlaceAtExit(ExtPlayer player)
+        {
+            var characterData = player.GetCharacterData();
+            if (ExitPosition != null)
+            {
+                Trigger.Dimension(player, ExitDimension);
+                player.Position = ExitPosition + new Vector3(0, 0, 0.2);
+                // Выход из игры в коридоре вернёт к подъезду
+                if (characterData != null)
+                    characterData.ExteriorPos = Position;
+            }
+            else
+            {
+                Trigger.Dimension(player);
+                player.Position = Position + new Vector3(0, 0, 1.12);
+            }
+        }
+
+        [JsonIgnore]
+        public Vector3 InteriorPosition => CustomInterior ?? HouseManager.HouseTypeList[Type].Position;
+        private Vector3 HealkitPosition => CustomInterior != null ? CustomInterior + new Vector3(1.2, 0, 0) : HouseManager.HouseHealkitPos[Type - 1];
         public bool Locked { get; private set; }
         [JsonIgnore] 
         public string OpenInterface { get; set; } = String.Empty;
@@ -206,9 +246,9 @@ namespace NeptuneEvo.Houses
                     if (Healkit)
                     {
                         if (Healkitshape != null) return;
-                        Healkitmarker = (ExtMarker) NAPI.Marker.CreateMarker(1, HouseManager.HouseHealkitPos[Type - 1] - new Vector3(0, 0, 1.7), new Vector3(), new Vector3(), 1, new Color(255, 255, 255, 220), false, (uint)Dimension);
-                        Healkitlabel = (ExtTextLabel) NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Аптечка"), HouseManager.HouseHealkitPos[Type - 1], 5f, 0.3f, 0, new Color(255, 255, 255), false, (uint)Dimension);
-                        Healkitshape = CustomColShape.CreateCylinderColShape(HouseManager.HouseHealkitPos[Type - 1], 1, 2, (uint)Dimension, ColShapeEnums.HealkitHouse);
+                        Healkitmarker = (ExtMarker) NAPI.Marker.CreateMarker(1, HealkitPosition - new Vector3(0, 0, 1.7), new Vector3(), new Vector3(), 1, new Color(255, 255, 255, 220), false, (uint)Dimension);
+                        Healkitlabel = (ExtTextLabel) NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Аптечка"), HealkitPosition, 5f, 0.3f, 0, new Color(255, 255, 255), false, (uint)Dimension);
+                        Healkitshape = CustomColShape.CreateCylinderColShape(HealkitPosition, 1, 2, (uint)Dimension, ColShapeEnums.HealkitHouse);
                     }
                     else
                     {
@@ -635,10 +675,10 @@ namespace NeptuneEvo.Houses
                 var characterData = player.GetCharacterData();
                 if (characterData == null) return;
                 if (!PlayersInside.Contains(player)) PlayersInside.Add(player);
-                NAPI.Entity.SetEntityPosition(player, HouseManager.HouseTypeList[Type].Position + new Vector3(0, 0, 1.12));
+                NAPI.Entity.SetEntityPosition(player, InteriorPosition + new Vector3(0, 0, 1.12));
                 Trigger.Dimension(player, Convert.ToUInt32(Dimension));
                 characterData.InsideHouseID = ID;
-                if (HouseManager.HouseTypeList[Type].PetPosition != null)
+                if (CustomInterior == null && HouseManager.HouseTypeList[Type].PetPosition != null)
                 {
                     if (!PetName.Equals("null")) 
                         Trigger.ClientEvent(player, "petinhouse", PetName, HouseManager.HouseTypeList[Type].PetPosition.X, HouseManager.HouseTypeList[Type].PetPosition.Y, HouseManager.HouseTypeList[Type].PetPosition.Z, HouseManager.HouseTypeList[Type].PetRotation, Dimension);
@@ -671,8 +711,7 @@ namespace NeptuneEvo.Houses
                 if (characterData == null) return;
                 if (exit)
                 {
-                    Trigger.Dimension(player);
-                    player.Position = Position + new Vector3(0, 0, 1.12);
+                    PlaceAtExit(player);
                     characterData.InsideHouseID = -1;
                 }
                 sessionData.HouseData.InvitedHouseID = -1;
@@ -713,8 +752,7 @@ namespace NeptuneEvo.Houses
                         InventoryItemData Item = Chars.Repository.GetItemData(player, "fastSlots", sessionData.ActiveWeap.Index);
                         if (Chars.Repository.ItemsInfo[Item.ItemId].functionType == newItemType.Weapons) continue;
                     }
-                    NAPI.Entity.SetEntityPosition(player, Position + new Vector3(0, 0, 1.12));
-                    Trigger.Dimension(player, 0);
+                    PlaceAtExit(player);
                     sessionData.HouseData.InvitedHouseID = -1;
                     characterData.InsideHouseID = -1;
                     PlayersInside.Remove(player);
@@ -751,13 +789,41 @@ namespace NeptuneEvo.Houses
             }
         }
 
+        /// <summary>
+        /// Назначить квартире интерьер из DLC: пересоздаёт маркер выхода и аптечку в новой точке.
+        /// position — точка «на полу» (как позиции HouseTypeList), игрок появляется на +1.12.
+        /// </summary>
+        public void SetCustomInterior(Vector3 position)
+        {
+            try
+            {
+                CustomInterior = position;
+                CustomColShape.DeleteColShape(intshape);
+                intshape = null;
+                if (intmarker != null && intmarker.Exists) intmarker.Delete();
+                intmarker = null;
+                CreateInterior();
+                if (Healkit)
+                {
+                    Healkit = false;
+                    UpdateColShapeHealkit();
+                    Healkit = true;
+                    UpdateColShapeHealkit();
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Write($"SetCustomInterior Exception: {e.ToString()}");
+            }
+        }
+
         public void CreateInterior()
         {
             try
             {
-                intmarker = (ExtMarker) NAPI.Marker.CreateMarker(1, HouseManager.HouseTypeList[Type].Position - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1, new Color(255, 255, 255, 220), false, (uint)Dimension);
+                intmarker = (ExtMarker) NAPI.Marker.CreateMarker(1, InteriorPosition - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1, new Color(255, 255, 255, 220), false, (uint)Dimension);
 
-                intshape = CustomColShape.CreateCylinderColShape(HouseManager.HouseTypeList[Type].Position, 2f, 1.5f, (uint)Dimension, ColShapeEnums.ExitHouse);
+                intshape = CustomColShape.CreateCylinderColShape(InteriorPosition, 2f, 1.5f, (uint)Dimension, ColShapeEnums.ExitHouse);
             }
             catch (Exception e)
             {

@@ -1,4 +1,4 @@
-using GTANetworkAPI;
+﻿using GTANetworkAPI;
 using NeptuneEvo.Character;
 using NeptuneEvo.Handles;
 using NeptuneEvo.Players;
@@ -17,6 +17,7 @@ namespace NeptuneEvo.Houses.Apartments
     ///  - 5 стилей отделки — 5 MLO: (250|285|320|355|380, 0, -50);
     ///  - в каждом MLO 16 планировок (комнаты House_S_N), разнесённых по оси Y.
     /// Id интерьера = (стиль - 1) * 16 + планировка (1..80).
+    /// Id 81..125 — квартиры «clawles» (int_mp_apartment_1.ytyp): 5 стилей в (-100|-65|-30|5|40, 0, -50) × 9 планировок AP1..AP9.
     /// Точку появления можно поправить в игре: /aptint id (посмотреть), /aptintset id (сохранить свою позицию),
     /// правки лежат в settings/apartment_interiors.json.
     /// </summary>
@@ -26,6 +27,24 @@ namespace NeptuneEvo.Houses.Apartments
 
         public const int Styles = 5;
         public const int Layouts = 16;
+        public const int ClawlesLayouts = 9;
+        public const int ClawlesFirstId = Styles * Layouts + 1;          // 81
+        public const int MaxId = Styles * Layouts + Styles * ClawlesLayouts; // 125
+        private static readonly float[] ClawlesX = { -100f, -65f, -30f, 5f, 40f };
+
+        // Комнаты APn_S из int_mp_apartment_1.ytyp: minY, maxY, minZ
+        private static readonly (float minY, float maxY, float minZ)[] ClawlesRooms =
+        {
+            (-5.34f, 5.34f, -1.5f),     // AP1 8.9×10.7
+            (29.32f, 40.68f, -1.5f),    // AP2
+            (63.62f, 76.38f, -1.5f),    // AP3
+            (98.74f, 111.26f, -1.5f),   // AP4 13.3×12.5
+            (132.14f, 147.86f, -1.5f),  // AP5
+            (166.12f, 183.88f, -1.5f),  // AP6
+            (201.73f, 218.27f, -1.5f),  // AP7
+            (236.1f, 253.9f, -1.5f),    // AP8
+            (269.7f, 290.3f, -1.5f),    // AP9 13.3×20.6
+        };
         private static readonly float[] StyleX = { 250f, 285f, 320f, 355f, 380f };
         private const float MloZ = -50f;
         private static string OverridesPath => Path.Combine("settings", "apartment_interiors.json");
@@ -51,23 +70,24 @@ namespace NeptuneEvo.Houses.Apartments
             (513.3f, 536.7f, -4.6f, 10.3f),  // 16 два уровня, самая большая
         };
 
-        // Какие планировки подходят классу дома (HouseManager.HouseTypeList): от площади
+        // Какие планировки подходят классу дома (HouseManager.HouseTypeList): от площади.
+        // Положительные — int_ap_house (1..16), отрицательные — clawles (-1..-9)
         private static readonly Dictionary<int, int[]> LayoutsByClass = new Dictionary<int, int[]>
         {
-            { 0, new[] { 1, 3 } },
-            { 1, new[] { 1, 3 } },
-            { 2, new[] { 1, 3 } },         // Эконом+
-            { 3, new[] { 2, 5, 7 } },      // Комфорт
-            { 4, new[] { 6, 9, 10 } },     // Комфорт+
-            { 5, new[] { 4, 11, 13 } },    // Премиум
-            { 6, new[] { 8, 12 } },        // Премиум+
-            { 8, new[] { 8, 12 } },        // Премиум++
-            { 9, new[] { 14, 15, 16 } },   // Люкс
+            { 0, new[] { 1, 3, -1, -2 } },
+            { 1, new[] { 1, 3, -1, -2 } },
+            { 2, new[] { 1, 3, -1, -2 } },          // Эконом+
+            { 3, new[] { 2, 5, 7, -3 } },           // Комфорт
+            { 4, new[] { 6, 9, 10, -4, -5 } },      // Комфорт+
+            { 5, new[] { 4, 11, 13, -6, -7 } },     // Премиум
+            { 6, new[] { 8, 12, -8 } },             // Премиум+
+            { 8, new[] { 8, 12, -8 } },             // Премиум++
+            { 9, new[] { 14, 15, 16, -9 } },        // Люкс
         };
 
         private static Dictionary<int, Vector3> _overrides = new Dictionary<int, Vector3>();
 
-        public static bool IsValid(int id) => id >= 1 && id <= Styles * Layouts;
+        public static bool IsValid(int id) => id >= 1 && id <= MaxId;
 
         public static void LoadOverrides()
         {
@@ -101,6 +121,14 @@ namespace NeptuneEvo.Houses.Apartments
             if (_overrides.TryGetValue(id, out var custom))
                 return custom;
 
+            if (id >= ClawlesFirstId)
+            {
+                var cStyle = (id - ClawlesFirstId) / ClawlesLayouts;
+                var cRoom = ClawlesRooms[(id - ClawlesFirstId) % ClawlesLayouts];
+                var cy = cRoom.minY + Math.Min(2.2f, (cRoom.maxY - cRoom.minY) / 2f);
+                return new Vector3(ClawlesX[cStyle], cy, MloZ + cRoom.minZ + 0.05f);
+            }
+
             var style = (id - 1) / Layouts;
             var layout = (id - 1) % Layouts;
             var room = Rooms[layout];
@@ -112,6 +140,8 @@ namespace NeptuneEvo.Houses.Apartments
         public static string GetName(int id)
         {
             if (!IsValid(id)) return "—";
+            if (id >= ClawlesFirstId)
+                return $"лофт, стиль {(id - ClawlesFirstId) / ClawlesLayouts + 1}, планировка {(id - ClawlesFirstId) % ClawlesLayouts + 1}";
             return $"стиль {(id - 1) / Layouts + 1}, планировка {(id - 1) % Layouts + 1}";
         }
 
@@ -121,6 +151,8 @@ namespace NeptuneEvo.Houses.Apartments
                 layouts = LayoutsByClass[4];
             var layout = layouts[random.Next(layouts.Length)];
             var style = random.Next(Styles);
+            if (layout < 0)
+                return ClawlesFirstId + style * ClawlesLayouts + (-layout - 1);
             return style * Layouts + layout;
         }
 
@@ -146,7 +178,7 @@ namespace NeptuneEvo.Houses.Apartments
             if (!IsAdmin(player)) return;
             if (!ApartmentInteriors.IsValid(id))
             {
-                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Интерьеры 1..{ApartmentInteriors.Styles * ApartmentInteriors.Layouts}", 3000);
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Интерьеры 1..{ApartmentInteriors.MaxId}", 3000);
                 return;
             }
             Trigger.Dimension(player, (uint)(5000000 + player.Value));

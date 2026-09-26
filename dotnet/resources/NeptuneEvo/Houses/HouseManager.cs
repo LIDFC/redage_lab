@@ -85,6 +85,38 @@ namespace NeptuneEvo.Houses
         /// </summary>
         [JsonIgnore]
         public Vector3 CustomInterior { get; private set; }
+        /// <summary>
+        /// Куда выходит игрок из квартиры: дверь в коридоре подъезда (ApartmentHalls). null — на улицу к Position.
+        /// </summary>
+        [JsonIgnore]
+        public Vector3 ExitPosition { get; private set; }
+        [JsonIgnore]
+        public uint ExitDimension { get; private set; }
+
+        public void SetExit(Vector3 position, uint dimension)
+        {
+            ExitPosition = position;
+            ExitDimension = dimension;
+        }
+
+        private void PlaceAtExit(ExtPlayer player)
+        {
+            var characterData = player.GetCharacterData();
+            if (ExitPosition != null)
+            {
+                Trigger.Dimension(player, ExitDimension);
+                player.Position = ExitPosition + new Vector3(0, 0, 0.2);
+                // Выход из игры в коридоре вернёт к подъезду
+                if (characterData != null)
+                    characterData.ExteriorPos = Position;
+            }
+            else
+            {
+                Trigger.Dimension(player);
+                player.Position = Position + new Vector3(0, 0, 1.12);
+            }
+        }
+
         [JsonIgnore]
         public Vector3 InteriorPosition => CustomInterior ?? HouseManager.HouseTypeList[Type].Position;
         private Vector3 HealkitPosition => CustomInterior != null ? CustomInterior + new Vector3(1.2, 0, 0) : HouseManager.HouseHealkitPos[Type - 1];
@@ -679,8 +711,7 @@ namespace NeptuneEvo.Houses
                 if (characterData == null) return;
                 if (exit)
                 {
-                    Trigger.Dimension(player);
-                    player.Position = Position + new Vector3(0, 0, 1.12);
+                    PlaceAtExit(player);
                     characterData.InsideHouseID = -1;
                 }
                 sessionData.HouseData.InvitedHouseID = -1;
@@ -721,8 +752,7 @@ namespace NeptuneEvo.Houses
                         InventoryItemData Item = Chars.Repository.GetItemData(player, "fastSlots", sessionData.ActiveWeap.Index);
                         if (Chars.Repository.ItemsInfo[Item.ItemId].functionType == newItemType.Weapons) continue;
                     }
-                    NAPI.Entity.SetEntityPosition(player, Position + new Vector3(0, 0, 1.12));
-                    Trigger.Dimension(player, 0);
+                    PlaceAtExit(player);
                     sessionData.HouseData.InvitedHouseID = -1;
                     characterData.InsideHouseID = -1;
                     PlayersInside.Remove(player);

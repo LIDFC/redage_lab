@@ -404,6 +404,8 @@ require('./house/rieltagency.js');
 require('./house/apartments.js');
 require('./player/drivingschool.js');
 require('./vehicle/hotwire.js');
+require('./world/dlcApartments.js');
+require('./player/electricianGame.js');
 
 require('./world/anim.js');
 require('./world/doors.js');

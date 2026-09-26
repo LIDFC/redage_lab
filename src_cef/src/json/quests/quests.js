@@ -191,7 +191,7 @@ const actorData = {
         name: "Банковский HR"
     },
     npc_electrician: {
-        name: "Старший электрик"
+        name: "Прораб"
     },
     npc_gopostal: {
         name: "Старший почтальон"

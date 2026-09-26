@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using GTANetworkAPI;
 using NeptuneEvo.Character;
@@ -52,11 +52,7 @@ namespace NeptuneEvo.Jobs
             { RentCarId.JobPostman,   new EmployerData("npc_gopostal",     JobsId.Postman,       "Старший почтальон",       "s_m_m_postal_01") },
         };
 
-        public static readonly EmployerData Electrician = new EmployerData("npc_electrician", JobsId.Electrician, "Старший электрик", "s_m_y_construct_01");
-
-        // Рядом с маркером начала смены электрика (724.96, 133.99)
-        private static readonly Vector3 ElectricianNpcPosition = new Vector3(728.2, 131.8, 80.1);
-        private const float ElectricianNpcHeading = 60f;
+        public static readonly EmployerData Electrician = new EmployerData("npc_electrician", JobsId.Electrician, "Прораб", "s_m_y_construct_01");
 
         private static readonly Dictionary<string, EmployerData> ByActor = new Dictionary<string, EmployerData>();
 
@@ -75,7 +71,8 @@ namespace NeptuneEvo.Jobs
         {
             try
             {
-                PedSystem.Repository.CreateQuest(Electrician.Skin, ElectricianNpcPosition, ElectricianNpcHeading,
+                // Позиция прораба — settings/electrician.json (/elecforeman)
+                PedSystem.Repository.CreateQuest(Electrician.Skin, Jobs.Electrician.ForemanPosition, Jobs.Electrician.ForemanHeading,
                     questName: Electrician.Actor, title: GetTitle(Electrician), colShapeEnums: ColShapeEnums.JobEmployer, isBlipVisible: false);
             }
             catch (Exception e)

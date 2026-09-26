@@ -1,4 +1,4 @@
-using GTANetworkAPI;
+﻿using GTANetworkAPI;
 using MySqlConnector;
 using NeptuneEvo.Character;
 using NeptuneEvo.Chars;
@@ -33,6 +33,8 @@ namespace NeptuneEvo.Houses.Apartments
         public int BuildingId { get; set; }
         public int Floor { get; set; }
         public int Number { get; set; }
+        /// <summary>Интерьер из DLC (ApartmentInteriors), 0 — не назначен.</summary>
+        public int Interior { get; set; }
     }
 
     public class ApartmentBuilding
@@ -72,6 +74,30 @@ namespace NeptuneEvo.Houses.Apartments
         public static readonly Dictionary<int, ApartmentBuilding> Buildings = new Dictionary<int, ApartmentBuilding>();
         private static readonly HashSet<int> BlipCreated = new HashSet<int>(); // блипы клиентские, создаются один раз
         private static bool _tablesReady;
+        private static bool _hasInteriorColumn;
+        private static readonly Random Rnd = new Random();
+
+        /// <summary>
+        /// Включены ли интерьеры из DLC GTA5RP_APARTMENT (settings/apartments.json → "dlcInteriors").
+        /// Без DLC у игроков вместо квартиры будет пустота, поэтому по умолчанию выключено.
+        /// </summary>
+        public static bool UseDlcInteriors { get; private set; }
+
+        private static void LoadSettings()
+        {
+            try
+            {
+                var path = System.IO.Path.Combine("settings", "apartments.json");
+                if (!System.IO.File.Exists(path))
+                    return;
+                var json = Newtonsoft.Json.Linq.JObject.Parse(System.IO.File.ReadAllText(path));
+                UseDlcInteriors = json.Value<bool?>("dlcInteriors") ?? false;
+            }
+            catch (Exception e)
+            {
+                Log.Write($"settings/apartments.json: {e.Message}");
+            }
+        }
 
         /// <summary>
         /// Вызывается из Main после HouseManager.Init: квартиры — это уже загруженные дома.
@@ -88,6 +114,19 @@ namespace NeptuneEvo.Houses.Apartments
                     return;
                 }
                 _tablesReady = true;
+
+                LoadSettings();
+                ApartmentInteriors.LoadOverrides();
+                _hasInteriorColumn = flatsTable.Columns.Contains("interior");
+                if (!_hasInteriorColumn)
+                {
+                    // Колонка появилась в обновлении с DLC-интерьерами; пробуем добавить сами
+                    MySQL.Query("ALTER TABLE `apartment_flats` ADD COLUMN `interior` int(11) NOT NULL DEFAULT 0");
+                    var check = MySQL.QueryRead("SHOW COLUMNS FROM `apartment_flats` LIKE 'interior'");
+                    _hasInteriorColumn = check != null && check.Rows.Count > 0;
+                    if (!_hasInteriorColumn)
+                        Log.Write("Нет колонки apartment_flats.interior — выполните database/systems/apartments_interiors.sql", nLog.Type.Warn);
+                }
 
                 foreach (DataRow row in buildingsTable.Rows)
                 {
@@ -119,6 +158,7 @@ namespace NeptuneEvo.Houses.Apartments
                         BuildingId = Convert.ToInt32(row["building_id"]),
                         Floor = Convert.ToInt32(row["floor"]),
                         Number = Convert.ToInt32(row["number"]),
+                        Interior = flatsTable.Columns.Contains("interior") && row["interior"] != DBNull.Value ? Convert.ToInt32(row["interior"]) : 0,
                     };
                     if (!Buildings.TryGetValue(flat.BuildingId, out var building))
                         continue;
@@ -151,6 +191,35 @@ namespace NeptuneEvo.Houses.Apartments
             house.AttachToApartment(building.Id, building.Entrance);
             var garage = house.GetGarageData();
             garage?.AttachToApartment(building.GaragePos, building.GarageHeading);
+            ApplyInterior(flat, house);
+        }
+
+        private static void ApplyInterior(ApartmentFlat flat, House house)
+        {
+            if (!UseDlcInteriors || !_hasInteriorColumn)
+                return;
+
+            if (!ApartmentInteriors.IsValid(flat.Interior))
+            {
+                flat.Interior = ApartmentInteriors.Pick(house.Type, Rnd);
+                using var cmd = new MySqlCommand { CommandText = "UPDATE `apartment_flats` SET `interior`=@interior WHERE `house_id`=@house" };
+                cmd.Parameters.AddWithValue("@interior", flat.Interior);
+                cmd.Parameters.AddWithValue("@house", flat.HouseId);
+                MySQL.Query(cmd);
+            }
+            house.SetCustomInterior(ApartmentInteriors.GetPosition(flat.Interior));
+        }
+
+        /// <summary>После /aptintset — переставить точку у всех квартир с этим интерьером.</summary>
+        public static void ReapplyInterior(int interiorId)
+        {
+            foreach (var building in Buildings.Values)
+            foreach (var flat in building.Flats.Where(f => f.Interior == interiorId))
+            {
+                var house = HouseManager.Houses.FirstOrDefault(h => h.ID == flat.HouseId);
+                if (house != null)
+                    house.SetCustomInterior(ApartmentInteriors.GetPosition(interiorId));
+            }
         }
 
         #region World
@@ -282,8 +351,11 @@ namespace NeptuneEvo.Houses.Apartments
 
             using var cmd = new MySqlCommand
             {
-                CommandText = "INSERT INTO `apartment_flats` (`house_id`, `building_id`, `floor`, `number`) VALUES (@house, @building, @floor, @number)"
+                CommandText = _hasInteriorColumn
+                    ? "INSERT INTO `apartment_flats` (`house_id`, `building_id`, `floor`, `number`, `interior`) VALUES (@house, @building, @floor, @number, @interior)"
+                    : "INSERT INTO `apartment_flats` (`house_id`, `building_id`, `floor`, `number`) VALUES (@house, @building, @floor, @number)"
             };
+            cmd.Parameters.AddWithValue("@interior", flat.Interior);
             cmd.Parameters.AddWithValue("@house", flat.HouseId);
             cmd.Parameters.AddWithValue("@building", flat.BuildingId);
             cmd.Parameters.AddWithValue("@floor", flat.Floor);
@@ -320,6 +392,7 @@ namespace NeptuneEvo.Houses.Apartments
                 { "isAuction", house.IsAuction },
                 { "locked", house.Locked },
                 { "isMine", isResident },
+                { "layout", UseDlcInteriors && ApartmentInteriors.IsValid(flat.Interior) ? ApartmentInteriors.GetName(flat.Interior) : "" },
             };
         }
 

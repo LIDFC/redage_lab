@@ -93,7 +93,8 @@ chown -R ragemp:ragemp $S && systemctl start redage
 | `2d3b81c`, `098ca0b` | Такси-NPC, NPC-трафик, NPC-работодатели, новое окно аренды, G-меню (см. п. 7, 7a) |
 | `8b00a36` | Склады, маркетплейс, такси-NPC через `invoke` (см. п. 7b, 7c) |
 | `bc8296f` | Картинки маркетплейса, многоквартирные дома, новая автошкола (см. п. 7d) |
-| *(последний коммит)* | Ремонт через HotWire, новое окно АЗС (см. п. 7e) |
+| `2706daa` | Ремонт через HotWire, новое окно АЗС (см. п. 7e) |
+| *(последний коммит)* | DLC-интерьеры квартир, электрик с мини-игрой (см. п. 7f) |
 
 ## 5. Меню F3 (`src_cef/src/views/player/gta5devmenu`)
 
@@ -250,6 +251,23 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
   - `pin.svg` автора (7.7 МБ) переведён в PNG; фон-скриншот из Forza убран.
 - **АЗС.** `OpenPetrolMenu` передаёт JSON: цена, остаток на станции, бак, топливо, наличные, доступна ли заправка за счёт штата. Новое окно `views/player/gasStation`: шкала бака, литры, слайдер, быстрые 25/50/75%/полный, сумма. Серверная логика `petrol` не менялась.
 - **DLC-квартиры GTA5RP (архив пользователя).** Все четыре `dlc.rpf` (`GTA5RP_APARTMENT`, `gta5rp_locations`, `GTA5RP_META`, `gta5rp_ymap`) зашифрованы NG (`0x0FEFFFFF`). Без ключей из GTA5.exe их не прочитать, поэтому координаты интерьеров нужно выгрузить в CodeWalker или OpenIV на стороне пользователя (ymap/ytyp → XML).
+
+## 7f. DLC-интерьеры квартир, электрик на стройке
+
+**DLC-квартиры.** Пользователь выгрузил в CodeWalker XML из `GTA5RP_APARTMENT` (сам `dlc.rpf` зашифрован NG).
+- `Houses/Apartments/ApartmentInteriors.cs` — каталог 80 интерьеров: 5 MLO `int_ap_house_1_1..5_milo_` в (250|285|320|355|380, 0, −50), в каждом 16 комнат `House_S_N` по оси Y (размеры из `int_ap_house.ytyp`).
+- Квартира получает интерьер по классу дома (`ApartmentInteriors.Pick`) и случайный стиль. Номер хранится в `apartment_flats.interior` (колонку сервер добавляет сам; запасной вариант — `database/systems/apartments_interiors.sql`).
+- `House.SetCustomInterior` / `InteriorPosition` переносят вход, маркер выхода и аптечку. Питомцы в таких квартирах не появляются.
+- Включается в `settings/apartments.json` → `dlcInteriors`. Без DLC у игроков будет пустота.
+- Клиент подгружает IPL (`src_client/world/dlcApartments.js`). Сам DLC кладётся в `client_packages/dlcpacks/GTA5RP_APARTMENT/dlc.rpf` (в репозитории его нет).
+- Админ-команды: `/aptint id` — осмотреть интерьер, `/aptintset id` — сохранить точку входа (`settings/apartment_interiors.json`).
+- Не подключено, потому что нет ytyp с комнатами: `clawles`, `kor_*` (коридоры), `stair_*`, `kor_bich*`, особняк, `int_garage` (нужны позиции машин).
+
+**Электрик на стройке** (`Jobs/Electrician.cs`):
+- смену начинает прораб (NPC `npc_electrician` из `JobEmployers`, теперь «Прораб»): форма и каска (мужская 145, женская 144);
+- на точке по E открывается мини-игра «кабели RJ45»: порт мини-игры Farko с Vue на Svelte, `views/jobs/electrician`, клиент `src_client/player/electricianGame.js`;
+- оплата только за пройденную игру: `ElectricianPayment × PaymentMultiplier (3)`;
+- точки и прораб хранятся в `settings/electrician.json` (по умолчанию — старые точки подстанции). Настройка: `/elecforeman`, `/elecpointsclear`, `/elecpoint`.
 
 ## 8. Что осталось или стоит проверить
 

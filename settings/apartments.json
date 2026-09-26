@@ -1,0 +1,4 @@
+{
+  "_comment": "dlcInteriors: true — квартиры используют интерьеры из client_packages/dlcpacks/GTA5RP_APARTMENT. Без этого DLC у игроков будет пустота, тогда ставьте false (вернутся обычные интерьеры классов домов).",
+  "dlcInteriors": true
+}

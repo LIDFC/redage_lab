@@ -12,6 +12,7 @@
     import PropertyIcon from '../assets/images/property.png'
     import TinderIcon from '../assets/images/tinder.png'
     import MarketplaceIcon from '../assets/images/marketplace.svg'
+    import DarknetIcon from '../assets/images/darknet.png'
 
 
     import RadioIcon from '../assets/images/radio.png'
@@ -113,6 +114,14 @@
         },
     ]
 
+    // «Чёрный рынок» виден только при включённом VPN (настройки телефона); доступ всё равно проверяет сервер
+    let isVpn = false;
+    executeClientAsyncToGroup("settings.isVpn").then((result) => isVpn = !!result);
+    window.events.addEvent("phone.vpn", (value) => isVpn = !!value);
+    $: shownMenu = isVpn
+        ? [...menuArray, { name: "Чёрный рынок", icon: DarknetIcon, link: "blackMarket" }]
+        : menuArray;
+
     import WeatherWidget from './weather/widget.svelte'
     import { fade } from 'svelte/transition'
 
@@ -122,6 +131,11 @@
 
     const onSelectPage = (pageName) => {
         if (typeof pageName === "string") {
+            if (pageName === "blackMarket") {
+                executeClientToGroup("close");
+                executeClient("client.blackmarket.openApp");
+                return;
+            }
             if (pageName === "marketPlace") {
                 executeClientToGroup("close");
                 executeClient("client.marketPlace.openApp");
@@ -155,7 +169,7 @@
     <div class="newphone__mainmenu_grid">
         <WeatherWidget />
 
-        {#each menuArray as item}
+        {#each shownMenu as item}
             {#if item.jobId === undefined || item.jobId === $charWorkID}
                 <div class="newphone__mainmenu_element" on:click={() => onSelectPage(item.link)}>
                     <div class="newphone__mainmenu_icon" style="background-image: url({item.icon})"></div>

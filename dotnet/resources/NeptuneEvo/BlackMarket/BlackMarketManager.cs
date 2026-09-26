@@ -2,6 +2,7 @@ using NeptuneEvo.BlackMarket.Config;
 using NeptuneEvo.BlackMarket.Crypto;
 using NeptuneEvo.BlackMarket.Deliveries;
 using NeptuneEvo.BlackMarket.Methods;
+using NeptuneEvo.BlackMarket.P2P;
 using Redage.SDK;
 using System;
 
@@ -24,6 +25,7 @@ namespace NeptuneEvo.BlackMarket
                 CryptoWallets.Load();
                 Lots.Load();
                 DropManager.Load();
+                P2PManager.Load();
                 Ready = true;
 
                 // В главном потоке: объекты мира и инвентарь трогаем только оттуда
@@ -43,6 +45,7 @@ namespace NeptuneEvo.BlackMarket
             {
                 Lots.Tick();
                 DropManager.Tick();
+                P2PManager.Tick();
             }
             catch (Exception e)
             {

@@ -1,4 +1,8 @@
+using NeptuneEvo.BlackMarket.Config;
 using NeptuneEvo.BlackMarket.Crypto;
+using NeptuneEvo.BlackMarket.Deliveries;
+using NeptuneEvo.BlackMarket.Methods;
+using Redage.SDK;
 using System;
 
 namespace NeptuneEvo.BlackMarket
@@ -16,12 +20,33 @@ namespace NeptuneEvo.BlackMarket
             try
             {
                 BlackMarketRepository.Init();
+                BlackMarketConfig.Load();
                 CryptoWallets.Load();
+                Lots.Load();
+                DropManager.Load();
                 Ready = true;
+
+                // В главном потоке: объекты мира и инвентарь трогаем только оттуда
+                Timers.Start("blackmarket.tick", 1000, Tick, true);
             }
             catch (Exception e)
             {
                 BlackMarketCore.Log.Write($"Init Exception: {e}");
+            }
+        }
+
+        private static void Tick()
+        {
+            if (!Ready)
+                return;
+            try
+            {
+                Lots.Tick();
+                DropManager.Tick();
+            }
+            catch (Exception e)
+            {
+                BlackMarketCore.Log.Write($"Tick Exception: {e}");
             }
         }
 

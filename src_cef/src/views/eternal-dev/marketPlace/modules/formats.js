@@ -3,6 +3,7 @@ import { clothesName, clothes } from '@/views/player/menu/elements/inventory/fun
 import { ITEM_TYPES } from "../configs/sort";
 import marketPlaceConfig from "../configs/settings";
 import { favourites } from "store/marketPlace";
+import { vehicleName } from '@/api/vehicleName';
 
 export const getType = (type) => {
     switch(type) {
@@ -32,7 +33,7 @@ export const calculateMinPrice = (data) => {
 
 export const getName = (data) => {
     switch(data.type) {
-        case "vehicle": return data.params.modelName;
+        case "vehicle": return vehicleName(data.params.model || data.params.modelName) || data.params.modelName;
         case "house": 
             return `Дом #${data.params.id}`;
         

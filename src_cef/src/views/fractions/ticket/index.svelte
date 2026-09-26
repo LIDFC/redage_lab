@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { translateText } from 'lang'
     import './main.sass'
     import './fonts/style.css'
@@ -107,7 +108,7 @@
             <div class="box-between">
                 <div class="gray">{translateText('fractions', 'Модель машины')}:</div>
                 <div class="ticket__line"></div>
-                <div class="ticket__name">{viewData.model}</div>
+                <div class="ticket__name">{vehicleName(viewData.model)}</div>
             </div>
             <div class="ticket__subtitle">{translateText('fractions', 'Нарушение')}</div>
             <InputCustom cl="ticket__input" setValue={(value) => ticketText = value} value={ticketText} placeholder={translateText('fractions', 'Описание нарушения')} type="text" />

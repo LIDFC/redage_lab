@@ -12,7 +12,12 @@
 
     $: building = apartmentsData.find(b => b.id === selectedBuildingId) || null;
     $: flats = building ? building.flats.filter(f => classFilter === -1 || f.type === classFilter) : [];
-    $: floors = [...new Set(flats.map(f => f.floor))].sort((a, b) => b - a);
+    // Все этажи дома сверху вниз (как в лифте); при фильтре по классу — только этажи с такими квартирами
+    $: topFloor = building ? Math.max(building.floors || 0, ...building.flats.map(f => f.floor)) : 0;
+    $: firstFloor = building ? Math.min(building.firstFloor || 2, ...building.flats.map(f => f.floor)) : 0;
+    $: floors = classFilter !== -1
+        ? [...new Set(flats.map(f => f.floor))].sort((a, b) => b - a)
+        : (building && building.flats.length ? Array.from({ length: topFloor - firstFloor + 1 }, (_, i) => topFloor - i) : []);
     $: classes = building ? [...new Set(building.flats.map(f => f.type))].sort((a, b) => a - b) : [];
 
     const freeCount = (b) => b.flats.filter(f => f.isFree).length;
@@ -95,6 +100,8 @@
                                     <span>Жильцов: до {flat.maxRoommates + 1}</span>
                                 </div>
                             </div>
+                        {:else}
+                            <div class="apt__flat-none">Квартиры этажа не продаются</div>
                         {/each}
                     </div>
                 </div>
@@ -256,6 +263,18 @@
         align-items: stretch;
         gap: 1.2vh;
         margin-bottom: 1.2vh;
+    }
+    .apt__flat-none {
+        grid-column: 1 / -1;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        padding: 0 1.4vh;
+        min-height: 4.4vh;
+        border-radius: 0.8vh;
+        border: 1px dashed rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 1.3vh;
     }
     .apt__floor-label {
         width: 5.5vh;

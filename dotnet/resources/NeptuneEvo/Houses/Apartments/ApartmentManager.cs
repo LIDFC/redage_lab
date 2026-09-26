@@ -208,7 +208,17 @@ namespace NeptuneEvo.Houses.Apartments
             house.AttachToApartment(building.Id, building.Entrance);
             var garage = house.GetGarageData();
             garage?.AttachToApartment(building.GaragePos, building.GarageHeading);
+            ApplyGarage(house);
             ApplyInterior(flat, house);
+        }
+
+        /// <summary>Гараж квартиры по её классу (ApartmentGarages): чем выше класс, тем больше мест.</summary>
+        private static void ApplyGarage(House house)
+        {
+            var garage = house.GetGarageData();
+            if (garage == null || garage.Type == -1 || garage.Type == 6)
+                return;
+            garage.SetApartmentType(ApartmentGarages.ForClass(house.Type, UseDlcInteriors));
         }
 
         private static void ApplyInterior(ApartmentFlat flat, House house)
@@ -421,6 +431,14 @@ namespace NeptuneEvo.Houses.Apartments
             };
         }
 
+        /// <summary>Этажность дома: у подъезда из DLC — все его этажи (как в лифте), иначе — по верхней квартире.</summary>
+        private static int GetFloors(ApartmentBuilding building, List<(ApartmentFlat flat, House house)> flats)
+        {
+            var hall = ApartmentHalls.Get(building.Hall);
+            var top = flats.Count > 0 ? flats.Max(f => f.flat.Floor) : 0;
+            return hall != null ? Math.Max(hall.TopFloorNumber, top) : top;
+        }
+
         private static IEnumerable<(ApartmentFlat flat, House house)> GetFlats(ApartmentBuilding building)
         {
             foreach (var flat in building.Flats)
@@ -447,7 +465,8 @@ namespace NeptuneEvo.Houses.Apartments
                     { "id", building.Id },
                     { "name", building.Name },
                     { "address", building.Address },
-                    { "floors", flats.Max(f => f.flat.Floor) },
+                    { "floors", GetFloors(building, flats) },
+                    { "firstFloor", ApartmentHalls.Get(building.Hall)?.FirstFloorNumber ?? 2 },
                     { "flats", flats.Select(f => GetFlatData(f.flat, f.house, player)).ToList() },
                 });
             }
@@ -497,6 +516,8 @@ namespace NeptuneEvo.Houses.Apartments
                 { "address", building.Address },
                 { "flats", GetFlats(building).Select(f => GetFlatData(f.flat, f.house, player)).ToList() },
                 { "hall", ApartmentHalls.Get(building.Hall)?.Title ?? "" },
+                { "floors", GetFloors(building, GetFlats(building).ToList()) },
+                { "firstFloor", ApartmentHalls.Get(building.Hall)?.FirstFloorNumber ?? 2 },
             };
             Trigger.ClientEvent(player, "client.apartments.open", JsonConvert.SerializeObject(data));
         }

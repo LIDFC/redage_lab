@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { TimeFormat } from 'api/moment'
     import { translateText } from 'lang'
     export let selectedCar;
@@ -125,7 +126,7 @@
     <div class="newphone__rent_none vehicle">
         <div class="box-column">
             <div class="box-flex">
-                <div class="orange">{selectedCar.model}</div>
+                <div class="orange">{vehicleName(selectedCar.model)}</div>
                 <div class="newphone__rent_status">{selectedCar.header}</div>
             </div>
             {#if selectedCar.isRent && !selectedCar.isJob}

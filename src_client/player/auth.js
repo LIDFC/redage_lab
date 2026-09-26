@@ -24,7 +24,7 @@ gm.events.add('client.init', function (serverId, serverName, donatMultiplier, do
     mp.events.call("cleartraffic");
 
 
-    mp.game.gxt.set('PM_PAUSE_HDR', `REDAGE.NET | ${serverName}`);
+    mp.game.gxt.set('PM_PAUSE_HDR', `MKEIITRR | ${serverName}`);
     mp.gui.emmit(`window.setServerName ('${serverName}')`);
     mp.gui.emmit(`window.serverStore.serverId (${parseInt(serverId)})`);
     mp.gui.emmit(`window.serverStore.serverDonatMultiplier (${donatMultiplier})`);

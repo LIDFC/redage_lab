@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { translateText } from 'lang'
     import { TimeFormat } from 'api/moment'
     import {currentPage} from '../../stores'
@@ -132,7 +133,7 @@
                         {:else}
                         <div class="gray">{translateText('player2', 'Модель')}:</div>
                         <div class="date">
-                            {item.model}
+                            {vehicleName(item.model)}
                         </div>
                         {/if}
                     </div>

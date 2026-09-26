@@ -1,4 +1,5 @@
 <script>
+    import { vehicleName } from '@/api/vehicleName';
     import { translateText } from 'lang'
     import { executeClient } from 'api/rage';
     export let model;
@@ -12,6 +13,6 @@
     <input bind:value={value} maxLength="8" placeholder={translateText('fractions', 'Номер')}/>
     <div class="button" on:click={() => executeClient ('client:pcMenuInput', "checkNumber", value)}>{translateText('fractions', 'Пробить')}</div>
     
-    <p>{translateText('fractions', 'МАРКА')}: <span>{model}</span></p>
+    <p>{translateText('fractions', 'МАРКА')}: <span>{vehicleName(model)}</span></p>
     <p>{translateText('fractions', 'ВЛАДЕЛЕЦ')}: <span>{owner}</span></p>
 </div>

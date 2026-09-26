@@ -12,7 +12,7 @@ using System.Linq;
 namespace NeptuneEvo.Houses.Apartments
 {
     /// <summary>
-    /// Интерьеры квартир из DLC GTA5RP_APARTMENT (client_packages/dlcpacks/GTA5RP_APARTMENT).
+    /// Интерьеры квартир из DLC GTA5RP_APARTMENT (client_packages/game_resources/dlcpacks/GTA5RP_APARTMENT).
     /// Данные взяты из выгрузки CodeWalker (int_ap_house.ytyp + int_ap_house_1_*_milo_.ymap):
     ///  - 5 стилей отделки — 5 MLO: (250|285|320|355|380, 0, -50);
     ///  - в каждом MLO 16 планировок (комнаты House_S_N), разнесённых по оси Y.

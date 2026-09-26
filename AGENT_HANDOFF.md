@@ -260,7 +260,7 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Квартира получает интерьер по классу дома (`ApartmentInteriors.Pick`) и случайный стиль. Номер хранится в `apartment_flats.interior` (колонку сервер добавляет сам; запасной вариант — `database/systems/apartments_interiors.sql`).
 - `House.SetCustomInterior` / `InteriorPosition` переносят вход, маркер выхода и аптечку. Питомцы в таких квартирах не появляются.
 - Включается в `settings/apartments.json` → `dlcInteriors`. Без DLC у игроков будет пустота.
-- Клиент подгружает IPL (`src_client/world/dlcApartments.js`). Сам DLC кладётся в `client_packages/dlcpacks/GTA5RP_APARTMENT/dlc.rpf` (в репозитории его нет).
+- Клиент подгружает IPL (`src_client/world/dlcApartments.js`). Сам DLC кладётся в `client_packages/game_resources/dlcpacks/GTA5RP_APARTMENT/dlc.rpf` (в репозитории его нет).
 - Админ-команды: `/aptint id` — осмотреть интерьер, `/aptintset id` — сохранить точку входа (`settings/apartment_interiors.json`).
 - Не подключено, потому что нет ytyp с комнатами: `clawles`, `kor_*` (коридоры), `stair_*`, `kor_bich*`, особняк, `int_garage` (нужны позиции машин).
 

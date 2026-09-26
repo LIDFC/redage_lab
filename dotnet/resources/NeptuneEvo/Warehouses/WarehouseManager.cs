@@ -30,7 +30,8 @@ namespace NeptuneEvo.Warehouses
     {
         private static readonly nLog Log = new nLog("Warehouses.Manager");
 
-        public const uint BaseDimension = 10000;
+        // Дома занимают измерения 10000+ (HouseManager.DimensionID), гаражи 100000+, поэтому склады выше
+        public const uint BaseDimension = 2000000;
         public const int StorageSlots = 300;          // слотов в ячейке (как у склада семьи)
         private const float InteractDistance = 5f;
         private const string InventoryName = "publicwarehouse";

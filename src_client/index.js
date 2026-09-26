@@ -401,6 +401,8 @@ require('./fractions/menu.js');
 require('./house/furniture.js');
 require('./house/index.js');
 require('./house/rieltagency.js');
+require('./house/apartments.js');
+require('./player/drivingschool.js');
 
 require('./world/anim.js');
 require('./world/doors.js');

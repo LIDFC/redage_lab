@@ -61,8 +61,13 @@ namespace NeptuneEvo.Houses
         [JsonIgnore]
         public bool Upgraded { get; set; } = false;
         public int Type { get; set; }
-        public Vector3 Position { get; }
-        public Vector3 Rotation { get; }
+        public Vector3 Position { get; private set; }
+        public Vector3 Rotation { get; private set; }
+        /// <summary>
+        /// Гараж квартиры: своего маркера на улице нет, въезд общий у многоквартирного дома.
+        /// </summary>
+        [JsonIgnore]
+        public bool IsApartment { get; private set; }
         [JsonIgnore] 
         public int Dimension { get; set; }
         [JsonIgnore]
@@ -238,10 +243,19 @@ namespace NeptuneEvo.Houses
                 GarageManager.Log.Write($"DeleteCar Exception: {e.ToString()}");
             }
         }
+        public void AttachToApartment(Vector3 position, float heading)
+        {
+            IsApartment = true;
+            Position = position;
+            Rotation = new Vector3(0, 0, heading);
+            CustomColShape.DeleteColShape(Shape);
+            Shape = null;
+        }
         public void CreateShape()
         {
             try
             {
+                if (IsApartment) return;
                 if(Shape != null) return;
                 Shape = CustomColShape.CreateCylinderColShape(Position - new Vector3(0, 0, 1), 2f, 4f, 0, ColShapeEnums.EnterGarage, Id);
             }

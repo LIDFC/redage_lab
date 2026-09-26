@@ -11,7 +11,7 @@
 
     import { countMoneyToDollar, formatThousands } from "../../../modules/money";
     import { getName, getType, inFavourite } from "../../../modules/formats";
-    import { getPicture } from "../../../modules/picture";
+    import { getPicture, avatarPicture } from "../../../modules/picture";
     import { calculateDateDifference, convertMilesecondsToString, convertSecondsToString } from "../../../modules/time";
     import { buyLot, deleteLot, marketContactAuthor, marketLotActions, marketProlong, setFavourite, setModalState } from "../../../modules/functions";
 
@@ -310,7 +310,7 @@
                             {/if}
                             
                             <div class="author-interaction__author">
-                                <div class="author__avatar" style="background-image: url(https://cdn.majestic-files.com/img/avatars/male.svg);" >
+                                <div class="author__avatar" style="background-image: url({avatarPicture});" >
                                     
                                 </div>
                                 <div class="author__data">

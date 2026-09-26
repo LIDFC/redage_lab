@@ -255,6 +255,7 @@ namespace NeptuneEvo.Jobs
 
             var houses = HouseManager.Houses
                 .Where(h => h.Type != 7)
+                .Where(h => h.ApartmentId == -1) // у квартир нет своей двери на улице
                 .Where(h => h.Position.DistanceTo2D(playerPosition) >= 200)
                 .ToList();
             

@@ -122,6 +122,9 @@
 	import HouseMenu from '@/views/house/menu/index.svelte';
 	import HouseRielt from '@/views/house/rieltagency/index.svelte';
 	import HouseBuy from '@/views/house/buymenu/index.svelte';
+	import HouseApartments from '@/views/house/apartments/index.svelte';
+	import PlayerDrivingSchool from '@/views/player/drivingschool/index.svelte';
+	import DrivingPracticeHud from '@/views/player/drivingschool/practiceHud.svelte';
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
@@ -206,6 +209,8 @@
 		HouseBuy,
 		HouseMenu,
 		HouseRielt,
+		HouseApartments,
+		PlayerDrivingSchool,
 		HouseFurniture
 	}
 	
@@ -400,6 +405,7 @@
 	<!--<UiFilter/>-->
 	<PlayerGameMenu visible={$router.PlayerGameMenu} />
 	<PlayerHud visible={$router.PlayerHud} />
+	<DrivingPracticeHud visible={$router.PlayerHud} />
 	<!--<svelte:component this={Views.PlayerGameMenu} visible={$router.PlayerGameMenu} />
 	<svelte:component this={Views.PlayerHud} visible={$router.PlayerHud} />
 	<svelte:component this={Views.QuestsDialog} />-->

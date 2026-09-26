@@ -1,5 +1,6 @@
 <script>
     import { executeClient } from 'api/rage'
+    import { format } from 'api/formatter'
     import './main.sass'
     import './fonts/style.css'
 
@@ -7,6 +8,8 @@
     import RieltBusiness from './elements/rielt-business.svelte'
     import RieltInfoHouses from './elements/hrielt-info.svelte'
     import RieltInfoBusiness from './elements/brielt-info.svelte'
+    import RieltApartments from './elements/rielt-apartments.svelte'
+    import RieltInfoApartment from './elements/arielt-info.svelte'
 
     
     export let viewData;
@@ -17,12 +20,15 @@
         houseData: [],
         allBusiness: 0,
         businessData: [],
+        apartmentsData: "[]",
     }
 
 
     let selectData = null;
     let houseData = [];
     let businessData = [];
+    let apartmentsData = [];
+    let selectedBuildingId = null;
 
 
     $: if (viewData.houseData && typeof viewData.houseData === "string") {
@@ -32,6 +38,13 @@
     $: if (viewData.businessData && typeof viewData.businessData === "string") {
         businessData = JSON.parse (viewData.businessData)
     }
+    $: if (viewData.apartmentsData && typeof viewData.apartmentsData === "string") {
+        apartmentsData = JSON.parse (viewData.apartmentsData)
+    }
+
+    $: freeFlats = apartmentsData.reduce((sum, b) => sum + b.flats.filter(f => f.isFree).length, 0);
+    $: allFlats = apartmentsData.reduce((sum, b) => sum + b.flats.length, 0);
+
     const Views = {
         RieltHouses,
         RieltBusiness
@@ -101,9 +114,12 @@
     }
 
     const onBuy = () => {
-        if (selectData) {
+        if (!selectData)
+            return;
+        if (selectData.typeData == "apartment")
+            executeClient ("client.rieltagency.buyApartment", selectData.id);
+        else
             executeClient ("client.rieltagency.buy", selectData[0], selectData.typeData == "house" ? 0 : 1);
-        }
     }
 </script>
 
@@ -126,6 +142,18 @@
                     </div>
                 </div>
             </div>
+            <div class="rielt__mainmenu_categorie big" class:active={SelectViews == "RieltApartments"} on:click={() => OnUpdatePage ("RieltApartments")}>
+                <div class="line"></div>
+                <div class="box-column">
+                    <div class="rielt__mainmenu_categorie-header">Многоквартирные дома</div>
+                    <div class="rielt__gray">
+                        Домов: <span class="rielt__white">{apartmentsData.length}</span>, квартир: <span class="rielt__white">{allFlats}</span>
+                    </div>
+                    <div class="rielt__gray">
+                        Свободных квартир: <span class="rielt__white">{freeFlats}</span>
+                    </div>
+                </div>
+            </div>
             <div class="rielt__mainmenu_categorie big" class:active={SelectViews == "RieltBusiness"} on:click={() => OnUpdatePage ("RieltBusiness")}>
                 <div class="line"></div>
                 <div class="box-column">
@@ -144,6 +172,10 @@
                 <RieltInfoHouses {selectData} buyPrice={viewData.buyPrice} />
             {:else if selectData && selectData.typeData == "business"} 
                 <RieltInfoBusiness {selectData} buyPrice={viewData.buyPrice} />
+            {:else if selectData && selectData.typeData == "apartment"}
+                <RieltInfoApartment {selectData} />
+            {:else if SelectViews === "RieltApartments"}
+                <RieltApartments {apartmentsData} {onSelectData} bind:selectedBuildingId />
             {:else if Views[SelectViews] && ((SelectViews === "RieltHouses" && houseData.length) || (SelectViews === "RieltBusiness" && businessData.length))} 
                 <svelte:component this={Views[SelectViews]} {houseData} {businessData} {onSelectData} />
             {:else}
@@ -157,7 +189,7 @@
         </div>
         <div class="rielt__mainmenu_block">
             <div class="rielt__rielt_block-info">
-                <div class="rielt__rielt_title">{houseData.length + businessData.length}</div>
+                <div class="rielt__rielt_title">{houseData.length + businessData.length + freeFlats}</div>
                 <div class="rielt__rielt_subtitle">Объектов недвижимости доступно</div>
             </div>
         </div>
@@ -165,7 +197,7 @@
     <div class="box-between">
         {#if selectData}
             <div class="house_bottom_buttons back" on:click={onBuy}>
-                <div>Выбрать</div>
+                <div>{selectData.typeData == "apartment" ? `Купить за $${format("money", selectData.price)}` : "Выбрать"}</div>
                 <div class="house_bottom_button">Enter</div>
             </div>
         {/if}

@@ -99,13 +99,11 @@ src_cef/       # UI
 database/      # SQL
 settings/      # Конфиги
 json/          # Данные
-maps/          # Карты
-plugins/       # Плагины
 ```
 
 ---
 
-## ⚠️ Важно
+## Важно
 
 Не пушить:
 
@@ -114,17 +112,6 @@ plugins/       # Плагины
 * obj/
 
 ---
-
-## 🛠️ Dev команды
-
-```bash
-# screen
-screen -S ragemp
-./ragemp-server
-
-# вернуться
-screen -r ragemp
-```
 
 ---
 

@@ -244,6 +244,20 @@ namespace NeptuneEvo.EternalDev.MarketPlace
 
         public static void SetPage(ExtPlayer player, string pageName)
         {
+            try
+            {
+                SetPageUnsafe(player, pageName);
+            }
+            catch (Exception e)
+            {
+                MarketLog.Write($"SetPage({pageName}) Exception: {e}");
+                // Отдаём пустой список, чтобы интерфейс не остался в подвешенном состоянии
+                Trigger.ClientEvent(player, "client.marketPlace.setItems", "main", "[]");
+            }
+        }
+
+        private static void SetPageUnsafe(ExtPlayer player, string pageName)
+        {
             if (!player.GetMarketPlaceSession(out var appSession))
                 return;
 

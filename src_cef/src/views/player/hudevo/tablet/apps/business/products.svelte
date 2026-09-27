@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { getPng } from '@/views/player/hudevo/phonenew/components/property/business/data'
     import { money, markup, isPercent } from './util'
 
@@ -19,9 +20,9 @@
             <div class="biz__meter"><div style="width: {Math.min(100, data.whCount / Math.max(1, data.whMax) * 100)}%"></div></div>
         </div>
         {#if ordered.length}
-            <div class="biz__btn ghost" on:click={() => showOrders = !showOrders}>Активные заказы ({ordered.length})</div>
+            <div use:sound={"tap"} class="biz__btn ghost" on:click={() => showOrders = !showOrders}>Активные заказы ({ordered.length})</div>
         {/if}
-        <div class="biz__btn primary" class:disabled={!canOrderAll} on:click={() => canOrderAll && action("maxProducts")}>
+        <div use:sound={"tap"} class="biz__btn primary" class:disabled={!canOrderAll} on:click={() => canOrderAll && action("maxProducts")}>
             Заказать всё{data.orderAllPrice > 0 ? ` · ${money(data.orderAllPrice)}` : ""}
         </div>
     </div>
@@ -34,7 +35,7 @@
                     <span class="grow">{p.name}</span>
                     <span class="r w">{p.orderAmount}</span>
                     <span class="r w muted">#{p.orderUid}</span>
-                    <span class="r w"><span class="biz__link danger" on:click={() => action("cancelOrder", { uid: p.orderUid })}>Отменить</span></span>
+                    <span class="r w"><span use:sound={"tap"} class="biz__link danger" on:click={() => action("cancelOrder", { uid: p.orderUid })}>Отменить</span></span>
                 </div>
             {/each}
         </div>
@@ -55,14 +56,14 @@
                 <div class="biz__product_stock">На складе <b>{p.count}</b> / {p.max}</div>
                 <div class="biz__product_actions">
                     {#if !p.fixedPrice}
-                        <div class="biz__mini" on:click={() => openModal({ type: "price", product: p, bizType: data.type })}>Цена</div>
+                        <div use:sound={"tap"} class="biz__mini" on:click={() => openModal({ type: "price", product: p, bizType: data.type })}>Цена</div>
                     {/if}
                     {#if p.ordered}
-                        <div class="biz__mini danger" on:click={() => action("cancelOrder", { uid: p.orderUid })}>Отменить заказ</div>
+                        <div use:sound={"tap"} class="biz__mini danger" on:click={() => action("cancelOrder", { uid: p.orderUid })}>Отменить заказ</div>
                     {:else if p.count < p.max}
-                        <div class="biz__mini accent" on:click={() => openModal({ type: "order", product: p, bank: data.bank })}>Заказать</div>
+                        <div use:sound={"tap"} class="biz__mini accent" on:click={() => openModal({ type: "order", product: p, bank: data.bank })}>Заказать</div>
                     {:else}
-                        <div class="biz__mini disabled">Склад полон</div>
+                        <div use:sound={"tap"} class="biz__mini disabled">Склад полон</div>
                     {/if}
                 </div>
             </div>

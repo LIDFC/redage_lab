@@ -43,11 +43,15 @@ export default new class MarketPlace {
         this.callServer("openApp")
     }
 
-    closeApp() {     
-        if (this.modal)
+    // force — кнопка «Выйти» в меню: закрываем всегда, даже если модалка «залипла» или сервер не ответил
+    closeApp(force) {
+        if (this.modal && !force)
             return;
 
-        this.callServer("closeApp")
+        this.modal = null;
+        this.callServer("closeApp");
+        if (force)
+            this.close();
     }
 
     currentPage = null
@@ -159,10 +163,24 @@ export default new class MarketPlace {
         return list.map(x => this.formatMarketItem(x));
     }
 
+    // Район по координатам. Кэшируем и проверяем координаты: лот без позиции (удалённый дом, квартира)
+    // раньше ронял обработчик и оставлял маркетплейс без данных.
+    areaCache = {}
     formatMarketItem(item) {
-        if (item.params && item.params.hasOwnProperty("area") && item.params.hasOwnProperty("position"))
-            item.params.area = global.getAreaName(item.params.position.x, item.params.position.y, item.params.position.z)
-
+        try {
+            const pos = item && item.params && item.params.position;
+            if (item && item.params && item.params.hasOwnProperty("area")) {
+                if (pos && isFinite(pos.x) && isFinite(pos.y) && isFinite(pos.z)) {
+                    const key = `${Math.round(pos.x)}_${Math.round(pos.y)}`;
+                    if (!this.areaCache[key])
+                        this.areaCache[key] = global.getAreaName(Number(pos.x), Number(pos.y), Number(pos.z)) || "";
+                    item.params.area = this.areaCache[key];
+                } else
+                    item.params.area = "";
+            }
+        } catch (e) {
+            if (item && item.params) item.params.area = "";
+        }
         return item;
     }
 

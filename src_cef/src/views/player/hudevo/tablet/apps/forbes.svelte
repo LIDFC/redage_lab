@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { fade } from 'svelte/transition'
     import { executeClient, executeClientAsync } from 'api/rage'
     import { addListernEvent, hasJsonStructure } from 'api/functions'
@@ -51,7 +52,7 @@
                 <div class="forbes__empty">Загрузка…</div>
             {:else}
                 {#each filtered as item}
-                    <div class="forbes__row" class:active={item.index === selectedIndex} class:top={item.index < 3} on:click={() => select(item.index)}>
+                    <div class="forbes__row" use:sound={"tap"} class:active={item.index === selectedIndex} class:top={item.index < 3} on:click={() => select(item.index)}>
                         <span class="pos p{item.index + 1}">{item.index + 1}</span>
                         <span class="name">{item.IsShowForbes === false ? "Скрыл данные" : item.Name}</span>
                         <span class="sum">{money(item.Money)}</span>

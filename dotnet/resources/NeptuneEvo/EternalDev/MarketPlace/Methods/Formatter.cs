@@ -147,7 +147,20 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
 
         public static List<MarketLotDTO> CreateMarketDTO(List<MarketItem> marketItems)
         {
-            return marketItems.Select(x => new MarketLotDTO(x.Id, x.Type)).ToList();
+            // Один битый лот (удалённый дом/бизнес, квартира без гаража) не должен ломать всю вкладку
+            var result = new List<MarketLotDTO>();
+            foreach (var item in marketItems)
+            {
+                try
+                {
+                    result.Add(new MarketLotDTO(item.Id, item.Type));
+                }
+                catch (Exception e)
+                {
+                    MarketLog.Write($"CreateMarketDTO lot {item.Id} ({item.Type}) Exception: {e.Message}");
+                }
+            }
+            return result;
         }
 
         public static List<MarketItemGroupDTO> CreateMarketGroupDTO(List<MarketItem> marketItems)

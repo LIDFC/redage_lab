@@ -1,4 +1,5 @@
 <script>
+    import { sound } from 'api/uiSound'
     import { executeClient } from 'api/rage'
     export let type;
     export let subdata;
@@ -13,7 +14,7 @@
 <div class="atm__sub">Выберите бизнес, на счёт которого внести деньги</div>
 <div class="atm__list">
     {#each list as name, index}
-        <div class="atm__list_item" on:click={() => onSelect (index)}>
+        <div class="atm__list_item" use:sound={"atm"} on:click={() => onSelect (index)}>
             <i class="atm__icon store"></i>
             <span>{name}</span>
             <b>›</b>
@@ -21,5 +22,5 @@
     {/each}
 </div>
 <div class="atm__buttons single">
-    <div class="atm__btn" on:click={onBack}>Назад</div>
+    <div class="atm__btn" use:sound={"atm"} on:click={onBack}>Назад</div>
 </div>

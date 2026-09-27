@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { money, isPercent } from './util'
 
     export let modal;
@@ -23,7 +24,11 @@
         : num >= p.minOrder && num <= orderMax;
 
     const submit = () => {
-        if (!valid) return;
+        if (!valid) {
+            playSound("error");
+            return;
+        }
+        playSound("success");
         if (modal.type === "payTax") action("payTax", { amount: num });
         else if (modal.type === "price") action("extraCharge", { name: p.name, value: num });
         else action("addOrder", { name: p.name, value: num });

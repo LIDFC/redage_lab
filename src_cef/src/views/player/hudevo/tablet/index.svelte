@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { onDestroy } from 'svelte'
     import { fade, scale } from 'svelte/transition'
     import { executeClient } from 'api/rage'
@@ -90,7 +91,7 @@
                     </div>
                     <div class="tablet__apps">
                         {#each apps as item}
-                            <div class="tablet__app" on:click={() => open(item.id)}>
+                            <div class="tablet__app" use:sound={"tap"} on:click={() => open(item.id)}>
                                 <div class="tablet__app_icon" style="--c: {item.color}">{@html icons[item.icon]}</div>
                                 <span>{item.name}</span>
                             </div>
@@ -98,7 +99,7 @@
                     </div>
                     <div class="tablet__dock">
                         {#each apps as item}
-                            <div class="tablet__app_icon small" style="--c: {item.color}" on:click={() => open(item.id)}>{@html icons[item.icon]}</div>
+                            <div class="tablet__app_icon small" style="--c: {item.color}" use:sound={"tap"} on:click={() => open(item.id)}>{@html icons[item.icon]}</div>
                         {/each}
                     </div>
                 </div>
@@ -114,7 +115,7 @@
                 </div>
             {/if}
 
-            <div class="tablet__homebar" on:click={() => app ? (app = "") : close()}></div>
+            <div class="tablet__homebar" use:sound={"tap"} on:click={() => app ? (app = "") : close()}></div>
         </div>
     </div>
 </div>

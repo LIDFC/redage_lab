@@ -20,7 +20,6 @@
     import Events from "./elements/events.svelte";
     import Support from "./elements/support/index.svelte";
     import RewardsList from "./elements/rewardslist/index.svelte";
-    import Table from "./elements/fractions/index.svelte";
 
     const Views = {
         Stats,
@@ -29,8 +28,6 @@
         Events,
         Support,
         RewardsList,
-        Fractions: Table,
-        Organization: Table,
     }
     
     window.gameMenuView = (wiew) => {
@@ -60,18 +57,12 @@
         PagesSorted = sorted;
     }
 
-    import { charFractionID, charOrganizationID } from 'store/chars'
 
 
     isEvent.subscribe(value => {
         updatePage ("Events", value);
     });
-    charFractionID.subscribe(value => {
-        updatePage ("Fractions", value > 0);
-    });
-    charOrganizationID.subscribe(value => {
-        updatePage ("Organization", value > 0);
-    });
+    // Вкладки фракции/организации больше не показываются — их меню живёт на планшете
 
 
     let UseVisible = visible;
@@ -172,18 +163,7 @@
                     {translateText('player1', 'Мероприятие')}
                     <span class="gamemenu-event gamemenu__item_absolute"></span>
                 </div>
-                {#if PagesSorted.includes("Fractions")}
-                <div class="item" class:active={selectView === "Fractions"} on:click={() => window.gameMenuView ("Fractions")}>
-                    {translateText('player1', 'Фракция')}
-                    <span class="gamemenu-friends gamemenu__item_absolute"></span>
-                </div>
-                {/if}
-                {#if PagesSorted.includes("Organization")}
-                    <div class="item" class:active={selectView === "Organization"} on:click={() => window.gameMenuView ("Organization")}>
-                        {translateText('player1', 'Организация')}
-                        <span class="gamemenu-friends gamemenu__item_absolute"></span>
-                    </div>
-                {/if}
+                <!-- «Фракция» и «Организация» перенесены на планшет (клавиша K) -->
             </div>
             <div class="box-key">E</div>
         </div>

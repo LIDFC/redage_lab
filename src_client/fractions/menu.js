@@ -8,14 +8,10 @@ global.binderFunctions.open_Table = () => {
     else if (global.fractionId === 15 || (global.fractionId === 6 && global.isLeader))
         global.OpenCircle(translateText("Открыть планшет"), 0);
     else if (global.fractionId !== 0) {
-        mp.gui.emmit(`window.gameMenuView ("Fractions");`);
-        if (!global.gamemenu)
-            global.binderFunctions.GameMenuOpen ();
+        mp.events.call("client.tablet.openApp", "Fractions"); // меню фракции/организации теперь только на планшете
     }
     else if (global.organizationId !== 0) {
-        mp.gui.emmit(`window.gameMenuView ("Organization");`);
-        if (!global.gamemenu)
-            global.binderFunctions.GameMenuOpen ();
+        mp.events.call("client.tablet.openApp", "Organization"); // меню фракции/организации теперь только на планшете
     }
 }
 

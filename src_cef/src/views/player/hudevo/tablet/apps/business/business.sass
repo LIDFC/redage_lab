@@ -1,0 +1,536 @@
+// Бизнес на планшете — тёмная тема с зелёным акцентом (по макетам пользователя)
+
+$bg: #0E0F11
+$card: #16181B
+$card2: #1C1F23
+$line: rgba(255, 255, 255, 0.05)
+$muted: rgba(255, 255, 255, 0.45)
+$accent: #7ED321
+$danger: #F2555A
+
+.biz
+    position: relative
+    flex: 1
+    min-height: 0
+    display: flex
+    flex-direction: column
+    background: $bg
+    padding: 1.6vh 2.6vh 3vh
+    box-sizing: border-box
+    color: #fff
+
+.biz__header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 2vh
+
+.biz__tabs
+    display: flex
+    align-items: center
+    gap: 0.4vh
+    padding: 0.5vh
+    background: $card
+    border-radius: 0.8vh
+
+.biz__tab
+    display: flex
+    align-items: center
+    gap: 0.8vh
+    padding: 1.1vh 2.6vh
+    border-radius: 0.5vh
+    font-size: 1.45vh
+    font-weight: 600
+    color: $muted
+    cursor: pointer
+    transition: all .2s ease
+    &:hover
+        color: #fff
+    &.active
+        background: $accent
+        color: #0E1A04
+    i
+        width: 1.3vh
+        height: 1.3vh
+        border-radius: 0.25vh
+        background: currentColor
+        opacity: .8
+
+.biz__period
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 3vh
+    min-width: 14vh
+    margin-left: 0.6vh
+    padding: 1.1vh 1.6vh
+    border-radius: 0.5vh
+    background: $card2
+    font-size: 1.45vh
+    font-weight: 600
+    cursor: pointer
+.biz__caret
+    border-left: 0.5vh solid transparent
+    border-right: 0.5vh solid transparent
+    border-top: 0.6vh solid #fff
+.biz__period_list
+    position: absolute
+    top: calc(100% + 0.6vh)
+    left: 0
+    right: 0
+    z-index: 20
+    background: $card2
+    border: 0.1vh solid $line
+    border-radius: 0.6vh
+    overflow: hidden
+    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.5)
+    div
+        padding: 1.1vh 1.6vh
+        &:hover
+            background: rgba(255, 255, 255, 0.05)
+        &.active
+            color: $accent
+
+.biz__title
+    display: flex
+    align-items: center
+    gap: 1.4vh
+    font-size: 1.6vh
+    b
+        font-weight: 700
+.biz__select
+    background: $card
+    color: #fff
+    border: 0.1vh solid $line
+    border-radius: 0.6vh
+    padding: 0.8vh 1.2vh
+    font-family: inherit
+    font-size: 1.45vh
+    font-weight: 700
+    outline: none
+.biz__avatar
+    width: 3.2vh
+    height: 3.2vh
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    font-weight: 800
+    color: #0E1A04
+    background: $accent
+.biz__power
+    position: relative
+    width: 3.2vh
+    height: 3.2vh
+    border-radius: 50%
+    border: 0.2vh solid rgba(255, 255, 255, 0.6)
+    box-sizing: border-box
+    cursor: pointer
+    &::after
+        content: ""
+        position: absolute
+        left: 50%
+        top: 0.5vh
+        width: 0.2vh
+        height: 1.2vh
+        background: rgba(255, 255, 255, 0.8)
+        transform: translateX(-50%)
+    &:hover
+        border-color: $danger
+
+.biz__body
+    flex: 1
+    min-height: 0
+    display: flex
+    flex-direction: column
+    overflow-y: auto
+    &::-webkit-scrollbar
+        width: 0.4vh
+    &::-webkit-scrollbar-thumb
+        background: rgba(255, 255, 255, 0.1)
+        border-radius: 1vh
+
+.biz__cards
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: 1.2vh
+
+.biz__card
+    background: $card
+    border-radius: 0.8vh
+    padding: 1.8vh 2vh 2vh
+    min-width: 0
+
+.biz__card_head
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 1.6vh
+    font-size: 1.45vh
+    font-weight: 600
+    color: rgba(255, 255, 255, 0.85)
+
+.biz__hint
+    font-size: 1.15vh
+    font-weight: 500
+    color: $muted
+
+.biz__mini
+    padding: 0.6vh 1.4vh
+    border-radius: 0.4vh
+    font-size: 1.15vh
+    font-weight: 600
+    color: $muted
+    background: rgba(255, 255, 255, 0.04)
+    cursor: pointer
+    transition: all .2s ease
+    white-space: nowrap
+    &:hover
+        color: #fff
+        background: rgba(255, 255, 255, 0.1)
+    &.accent
+        color: $accent
+        background: rgba(126, 211, 33, 0.1)
+        &:hover
+            background: rgba(126, 211, 33, 0.2)
+    &.danger
+        color: $danger
+        background: rgba(242, 85, 90, 0.1)
+    &.disabled
+        opacity: .35
+        pointer-events: none
+
+.biz__value
+    font-size: 2.5vh
+    font-weight: 700
+    letter-spacing: 0.02vh
+    white-space: nowrap
+    font-variant-numeric: tabular-nums
+    em
+        font-style: normal
+        color: $accent
+        margin-right: 0.4vh
+    small
+        font-size: 2.5vh
+        font-weight: 500
+        color: rgba(255, 255, 255, 0.2)
+    &.danger
+        color: $danger
+
+.biz__skeleton
+    display: inline-block
+    width: 12vh
+    height: 2.2vh
+    border-radius: 0.4vh
+    background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.09), rgba(255,255,255,0.04))
+
+.biz__tables
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 1.6vh
+    margin-top: 2.6vh
+
+.biz__h2
+    font-size: 1.7vh
+    font-weight: 700
+    margin-bottom: 1.2vh
+
+.biz__table
+    background: $card
+    border-radius: 0.8vh
+    padding: 0.6vh 0
+    &.big
+        flex: 1
+        min-height: 0
+        display: flex
+        flex-direction: column
+    &.orders
+        margin-bottom: 1.6vh
+
+.biz__scroll
+    flex: 1
+    min-height: 0
+    overflow-y: auto
+    &::-webkit-scrollbar
+        width: 0.4vh
+    &::-webkit-scrollbar-thumb
+        background: rgba(255, 255, 255, 0.12)
+        border-radius: 1vh
+
+.biz__tr
+    display: flex
+    align-items: center
+    gap: 1.2vh
+    padding: 1vh 2vh
+    font-size: 1.3vh
+    font-weight: 500
+    &:nth-child(even):not(.head)
+        background: rgba(255, 255, 255, 0.015)
+    &.head
+        font-size: 1.2vh
+        font-weight: 600
+        color: $accent
+    &.empty
+        justify-content: center
+        color: $muted
+        padding: 3vh
+    span
+        min-width: 0
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+    .n
+        width: 3vh
+        flex-shrink: 0
+    .grow
+        flex: 1
+    .r
+        text-align: right
+        flex-shrink: 0
+        width: 8vh
+    .w
+        width: 12vh
+    .w2
+        width: 15vh
+    .accent
+        color: $accent
+    .danger
+        color: $danger
+    .muted
+        color: $muted
+.biz__table.big .biz__tr.head
+    border-bottom: 0.1vh solid $line
+
+.biz__note
+    margin-top: 1vh
+    font-size: 1.2vh
+    color: $muted
+    text-align: center
+
+.biz__footer
+    display: flex
+    justify-content: flex-end
+    gap: 1vh
+    margin-top: 2.4vh
+
+.biz__btn
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 1.3vh 2.4vh
+    border-radius: 0.6vh
+    font-size: 1.4vh
+    font-weight: 600
+    background: $card2
+    color: rgba(255, 255, 255, 0.8)
+    cursor: pointer
+    white-space: nowrap
+    transition: all .2s ease
+    &:hover
+        background: #262A30
+        color: #fff
+    &.primary
+        background: $accent
+        color: #0E1A04
+        &:hover
+            background: #8EE22E
+    &.ghost
+        background: transparent
+        border: 0.1vh solid rgba(255, 255, 255, 0.12)
+    &.danger
+        color: $danger
+        background: rgba(242, 85, 90, 0.08)
+        &:hover
+            background: rgba(242, 85, 90, 0.16)
+    &.disabled
+        opacity: .35
+        pointer-events: none
+
+.biz__link
+    cursor: pointer
+    &.danger
+        color: $danger
+
+.biz__stockbar
+    display: flex
+    align-items: center
+    gap: 1.2vh
+    margin-bottom: 1.8vh
+
+.biz__stock_info
+    flex: 1
+    font-size: 1.7vh
+    font-weight: 600
+    b
+        font-weight: 800
+    span
+        margin-left: 2vh
+        color: rgba(255, 255, 255, 0.85)
+
+.biz__meter
+    height: 0.5vh
+    margin-top: 1vh
+    max-width: 50vh
+    border-radius: 1vh
+    background: rgba(255, 255, 255, 0.06)
+    overflow: hidden
+    div
+        height: 100%
+        border-radius: 1vh
+        background: $accent
+    &.small
+        margin: 1.2vh 0 0.6vh
+        max-width: none
+
+.biz__products
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1.2vh
+
+.biz__product
+    background: $card
+    border-radius: 0.8vh
+    padding: 1.4vh 1.6vh 1.6vh
+    display: flex
+    flex-direction: column
+    min-width: 0
+
+.biz__product_img
+    height: 12vh
+    margin: -0.4vh -0.4vh 1.2vh
+    border-radius: 0.6vh
+    background-color: #1B1E22
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+.biz__product_name
+    font-size: 1.5vh
+    font-weight: 700
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+.biz__product_sub
+    margin-top: 0.4vh
+    font-size: 1.15vh
+    color: $muted
+
+.biz__product_markup
+    margin-top: 0.4vh
+    font-size: 2.4vh
+    font-weight: 700
+    color: rgba(255, 255, 255, 0.25)
+    span
+        margin-left: 0.8vh
+        font-size: 1.3vh
+        font-weight: 600
+        color: $muted
+
+.biz__product_stock
+    font-size: 1.2vh
+    color: $muted
+    b
+        color: #fff
+
+.biz__product_actions
+    display: flex
+    gap: 0.6vh
+    margin-top: 1.2vh
+    div
+        flex: 1
+        text-align: center
+
+.biz__empty
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 1vh
+    color: $muted
+    font-size: 1.5vh
+    b
+        color: #fff
+        font-size: 2.2vh
+
+.biz__modal_bg
+    position: absolute
+    inset: 0
+    z-index: 30
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(0, 0, 0, 0.55)
+
+.biz__modal
+    width: 46vh
+    padding: 2.6vh
+    border-radius: 1.2vh
+    background: $card
+    border: 0.1vh solid rgba(255, 255, 255, 0.06)
+    box-shadow: 0 2vh 6vh rgba(0, 0, 0, 0.6)
+    h3
+        margin: 0 0 1vh
+        font-size: 2vh
+    p
+        margin: 0 0 1.4vh
+        font-size: 1.3vh
+        color: rgba(255, 255, 255, 0.7)
+        &.muted
+            color: $muted
+            margin-top: 1.2vh
+
+.biz__input
+    display: flex
+    align-items: center
+    height: 5vh
+    padding: 0 1.4vh
+    border-radius: 0.6vh
+    background: $bg
+    border: 0.15vh solid rgba(255, 255, 255, 0.08)
+    &:focus-within
+        border-color: $accent
+    span
+        color: $accent
+        font-weight: 700
+        font-size: 1.8vh
+        margin-right: 1vh
+    input
+        flex: 1
+        min-width: 0
+        background: none
+        border: none
+        outline: none
+        color: #fff
+        font-family: inherit
+        font-size: 2vh
+        font-weight: 700
+
+.biz__range
+    width: 100%
+    margin: 0 0 1.4vh
+    accent-color: $accent
+
+.biz__quick
+    display: flex
+    gap: 0.6vh
+    margin-top: 1vh
+    div
+        flex: 1
+        text-align: center
+        padding: 0.8vh 0
+        border-radius: 0.5vh
+        font-size: 1.2vh
+        font-weight: 600
+        background: rgba(255, 255, 255, 0.04)
+        cursor: pointer
+        &:hover
+            color: $accent
+
+.biz__modal_buttons
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 1vh
+    margin-top: 2vh

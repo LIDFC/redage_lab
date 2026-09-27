@@ -460,16 +460,12 @@ gm.events.add('client.circle.events', (func, index) => {
 						break;
 					case 2:
 						if (global.fractionId !== 0) {
-							mp.gui.emmit(`window.gameMenuView ("Fractions");`);
-							if (!global.gamemenu)
-								global.binderFunctions.GameMenuOpen ();
+							mp.events.call("client.tablet.openApp", "Fractions"); // меню фракции/организации теперь только на планшете
 						}
 						break;
 					case 3:
 						if (global.organizationId !== 0) {
-							mp.gui.emmit(`window.gameMenuView ("Organization");`);
-							if (!global.gamemenu)
-								global.binderFunctions.GameMenuOpen ();
+							mp.events.call("client.tablet.openApp", "Organization"); // меню фракции/организации теперь только на планшете
 						}
 						break;
 					case 4:
@@ -718,16 +714,12 @@ gm.events.add('client.circle.events', (func, index) => {
 				switch (func) {
 					case "fraction_table":
 						if (global.fractionId !== 0) {
-							mp.gui.emmit(`window.gameMenuView ("Fractions");`);
-							if (!global.gamemenu)
-								global.binderFunctions.GameMenuOpen ();
+							mp.events.call("client.tablet.openApp", "Fractions"); // меню фракции/организации теперь только на планшете
 						}
 						break;
 					case "org_table":
 						if (global.organizationId !== 0) {
-							mp.gui.emmit(`window.gameMenuView ("Organization");`);
-							if (!global.gamemenu)
-								global.binderFunctions.GameMenuOpen ();
+							mp.events.call("client.tablet.openApp", "Organization"); // меню фракции/организации теперь только на планшете
 						}
 						break;
 					case "fraction_news":
@@ -911,6 +903,7 @@ gm.events.add("render", () => {
 });
 
 let isBelt = false;
+global.isBeltOn = () => isBelt;
 gm.events.add("playerEnterVehicle", (entity, seat) => {
 	try
 	{

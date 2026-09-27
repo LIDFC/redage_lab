@@ -384,6 +384,7 @@ require('./vehicle/autoshop.js');
 require('./vehicle/control.js');
 require('./vehicle/petrol.js');
 require('./vehicle/radiosync.js');
+require('./vehicle/panel.js');
 require('./vehicle/vehiclesync.js');
 require('./vehicle/rentcar.js');
 require('./vehicle/drone.js');
@@ -449,6 +450,7 @@ require('./events/matwar.js');
 
 require('./polygons/index.js');
 require('./phone/index.js');
+require('./tablet/index.js');
 require('./battlepass/battlepass.js');
 
 require('./table/index');

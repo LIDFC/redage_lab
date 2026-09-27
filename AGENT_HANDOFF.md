@@ -305,6 +305,27 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - История без имён — `crypto_history`, полный аудит — `blackmarket_audit`. Команды: `/crypto`, `/fcrypto`, `/bm` (см. `Admin/`). SQL-схема: `database/systems/blackmarket.sql`.
 - Обнал (`Crypto/CashOut.cs`, вкладка «Обнал»): только у Мавра (`cashoutPoint`, 5 м). Сумка `BagWithMoney` → BTC (комиссия 5%), BTC → наличные (комиссия 10%, шанс розыска 15% — +1 звезда). Параметры `launderFeePercent`, `cashoutFeePercent`, `cashoutWantedChance`, `/bm cfg launderfee|cashoutfee|wanted`.
 
+## 7j. Приложение «Авто» в телефоне (бывший «Транспорт»)
+
+- CEF `phonenew/components/cars/`: `index.svelte` (вкладки «Панель» / «Мои машины»), `panel.svelte`, `list.svelte` (карточка гаража + улучшение), `car.svelte` (GPS, эвакуация, ключ, замки, восстановление, продажа, место в гараже), стили `auto.sass`.
+- Клиент `src_client/phone/cars.js`: rpc `panelState`, `garageInfo`; события `client.phone.cars.panel|parking|upgradeGarage`. Синхронизация окон/фар/салона — `src_client/vehicle/panel.js` (shared data `vWindows` битовая маска, `vLights` 0/1/2, `vInterior`), режим езды `vDriveMode` множит крутящий момент в `player/render.js`.
+- Сервер `Core/VehiclePanel.cs` (`server.vehicle.panel`): водитель — всё, пассажир — только своя дверь/окно. Расход топлива по режиму — `VehiclePanel.FuelRate` в `Core/Vehicle.cs` FuelControl.
+- Эвакуация, смена замков и места в гараже больше не требуют быть у гаража (`HouseManager.VehicleAction`, `GarageManager.UpdateCarSlots` — добавлены проверки индекса места и принадлежности машины дому). Кнопка «Выбор парковки» в «Имуществе» ведёт в «Авто», меню дома `HouseMenu` для машин не открывается.
+
+- Тёмная тема «Авто» (стили `cars/auto.sass`, статусы машин `cars/data.js::carState`). Улучшения гаражей в приложении нет — на сервере такой системы не используем.
+
+## 7k. Банкомат (FLEECA)
+
+- `src_cef/src/views/player/atm/`: дизайн по архиву пользователя (фон `images/bg.jpg`, карта `images/card.png`), шрифт Gilroy из HUD. Протокол прежний (`window.atm.open/reset`, `atmCB`, `atmVal`, `MoneySystem/Bank.cs`).
+- Исправлено: данные `setatm` теперь обновляются в открытом окне; выбор бизнеса из списка (раньше открывался последний); ввод только цифр; `atmClose` возвращает в меню.
+
+## 7l. Планшет (K)
+
+- CEF `hudevo/tablet/` (оболочка, `apps/business/*`, `apps/forbes.svelte`), клиент `src_client/tablet/index.js` (бинд №63 «Планшет», K), сервер `Players/Tablet/Events.cs` (анимация + проп `tablet` из `inventory/attachments.js`).
+- Меню фракции/организации — только на планшете (вкладки из «I» убраны, `client.tablet.openApp` из круга и `open_Table`).
+- Бизнес: `Businesses/Tablet/*` (`server.tablet.business.load/history/action`). Касса `businesses.cash` и себестоимость `businesshistory.cost` — колонки создаются при старте (`BusinessManager.Init`). Выручка из `takeProd` идёт в кассу; при смене владельца касса выплачивается прежнему.
+- Из телефона убраны: бизнес в «Имуществе», Маркетплейс, Forbes. Новое меню создания организации — `views/fractions/create/index.svelte`.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

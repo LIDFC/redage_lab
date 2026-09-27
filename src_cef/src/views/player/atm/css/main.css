@@ -1,449 +1,340 @@
-.rd-body-inventory-u {
+/* Банкомат FLEECA: тёмный экран с зелёными акцентами (фон и карта — images/bg.jpg, images/card.png) */
 
-    background: rgba(0, 0, 0, 0.4);
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: column;
-    left: 0;
-    right: 0;
-    top: 0;
+.atm {
+    --atm-green: #00A650;
+    --atm-green-soft: rgba(0, 166, 80, 0.14);
+    --atm-text: #FFFFFF;
+    --atm-muted: rgba(255, 255, 255, 0.45);
+    --atm-tile: rgba(255, 255, 255, 0.025);
+    --atm-line: rgba(255, 255, 255, 0.06);
     position: absolute;
-    bottom: 0;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(5, 7, 10, 0.55);
+    font-family: 'Gilroy', sans-serif;
+    color: var(--atm-text);
+    user-select: none;
+}
+
+.atm p, .atm h1 { margin: 0; }
+
+.atm__screen {
+    position: relative;
+    width: 100.37vh;
+    height: 66.67vh;
+    background: url(../images/bg.jpg) center / cover no-repeat;
+    border-radius: 1.4vh;
+    box-shadow: 0 3vh 8vh rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    
 }
 
-.module_atm.page {
-
-    display: flex;
-    max-width: 830px;
-    width: 100%;
-    position: relative;
-    flex-direction: column;
-    max-height: 625px;
-    height: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-
-}
-
-.module_atm .banner:after {
-    background: url('./../images/atm-banner.svg');
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    content: "";
+/* Внутренняя панель фона: x 150..934, y 150..610 из 1084×720 */
+.atm__layout {
     position: absolute;
-    top: 0;
-    max-height: 228px;
-    max-width: 830px;
-    z-index: 0;
-}
-.module_atm .banner {
-
-    height: 228px;
-    width: 100%;
-
-}
-.module_atm .title {
-
-    font-weight: 500;
-    font-size: 36px;
-    margin-bottom: 9px;
-    color: #1D1A21;
-    display: flex;
-    align-items: center;
-
-}
-
-.module_atm .head p {
-
-    color:  #969696;
-    max-width: 364px;
-    font-weight: 500;
-    font-size: 16px;
-    margin-bottom: 30px;
-
-}
-
-.module_atm .title div {
-
-    margin-right: 16px;
-
-}
-.module_atm .title .bold {
-
-    font-weight: bold;
-    color: #E79B4E;
-
-}
-
-.module_atm .title .logo {
-    background: url('./../images/atm-logo.svg');
-    width: 38px;
-    height: 38px;
+    left: 13.84%;
+    top: 20.83%;
+    width: 72.33%;
+    height: 63.9%;
     display: flex;
 }
 
-.module_atm .head {
-
-    position: relative;
-    z-index: 1;
-    padding-top: 27px;
-    padding-left: 27px;
-    padding-right: 40px;
-    padding-bottom: 27px;
-
+.atm__menu {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0.5vh;
+    padding: 1.6vh;
 }
 
-
-.module_atm .head .prevButton {
-    background: #E79B4E;
-    border-radius: 2px;
-    max-width: 167px;
-    height: 37px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-weight: bold;
-    font-size: 14px;
-    color: #FFFFFF;
-  }
-.module_atm .head .prevButton::after {
-
-    position: absolute;
-    background: #855D34;
-    border-radius: 6px;
-    content: "";
-    height: 100%;
-    width: 100%;
-    bottom: -3px;
-    z-index: -2;
-
-}
-
-.module_atm .head .prevButton::before {
-
-    background: #E79B4E;
-    border-radius: 2px;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-
-}
-.module_atm .cont {
-    background: url('./../images/background.svg');
-    max-height: 397px;
-    height: 100%;
+.atm__tile {
     display: flex;
     flex-direction: column;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 43px;
-    padding-right: 43px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.8vh;
+    background: var(--atm-tile);
+    border: 0.1vh solid var(--atm-line);
+    border-radius: 0.6vh;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.atm__tile p {
+    font-size: 1.6vh;
+    font-weight: 600;
+    letter-spacing: 0.05vh;
+    color: rgba(255, 255, 255, 0.7);
+}
+.atm__tile:hover {
+    background: var(--atm-green-soft);
+    border-color: rgba(0, 166, 80, 0.5);
+}
+.atm__tile:hover p { color: #fff; }
+.atm__tile.exit:hover {
+    background: rgba(242, 85, 90, 0.12);
+    border-color: rgba(242, 85, 90, 0.45);
 }
 
-.module_atm .info_atm {
-    background:rgba(106, 51, 51, 0.8);
-    border-radius: 2px;
+.atm__icon {
+    display: block;
+    width: 3vh;
+    height: 3vh;
+    background: var(--atm-green);
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+}
+.atm__icon.user-shared { -webkit-mask-image: url(../images/user-shared-fill.svg); }
+.atm__icon.user-received { -webkit-mask-image: url(../images/user-received-fill.svg); }
+.atm__icon.home { -webkit-mask-image: url(../images/home-fill.svg); }
+.atm__icon.store { -webkit-mask-image: url(../images/store-fill.svg); }
+.atm__icon.article { -webkit-mask-image: url(../images/article-fill.svg); }
+.atm__icon.exit {
+    background: #F2555A;
+    -webkit-mask-image: none;
+    border-radius: 50%;
+    width: 1.2vh;
+    height: 1.2vh;
+    margin: 0.9vh;
+}
+
+.atm__side {
+    width: 26vh;
     display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    height: 100%;
-    margin-bottom: 16px;
-    max-height: 134px;
-    max-width: 744px;
+    flex-direction: column;
+    padding: 2vh 2.2vh;
+    background: rgba(0, 0, 0, 0.18);
+    border-left: 0.1vh solid var(--atm-line);
+}
+.atm__side_title {
+    font-size: 1.7vh;
+    font-weight: 700;
+    margin-bottom: 2.2vh;
+}
+.atm__info { margin-bottom: 1.5vh; }
+.atm__info p {
+    font-size: 1.15vh;
+    color: var(--atm-muted);
+    letter-spacing: 0.04vh;
+    margin-bottom: 0.3vh;
+}
+.atm__info span {
+    font-size: 1.75vh;
+    font-weight: 600;
+}
+.atm__info span.money { color: #38D27F; }
+
+.atm__card {
+    margin-top: 0.8vh;
     width: 100%;
-}
-.module_atm .info_atm .info_head {
-
-    font-weight: bold;
-    color: #FFFFFF;
-    font-size: 16px;
-
-}
-
-.module_atm .info_atm .info_val {
-
-    font-weight: bold;
-    font-size: 16px;
-    color:#FF8484;
-    height: 22px;
-
-}
-
-.module_atm .info_atm li {
-
+    aspect-ratio: 213 / 126;
+    box-sizing: border-box;
+    padding: 1.3vh 1.5vh;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    width:200px;
+    justify-content: space-between;
+    background: url(../images/card.png) center / cover no-repeat;
+    border-radius: 1vh;
+    box-shadow: 0 1vh 2.5vh rgba(0, 166, 80, 0.25);
 }
-
-.module_atm .info_atm .ib {
-
+.atm__card_top {
     display: flex;
-    flex-direction: column;
-    height: 60px;
-    width: 100px;
-
-}
-
-.module_atm .info_atm .bank-card {
-    background: url('./../images/bank-card.svg');
-}
-.module_atm .info_atm .bank-user {
-    background: url('./../images/bank-user.svg');
-}
-.module_atm .info_atm .bank-fill {
-    background: url('./../images/bank-fill.svg');
-}
-
-
-.module_atm .ic-user-shared-fill {
-    background: url('./../images/user-shared-fill.svg');
-}
-.module_atm .ic-user-received-fill {
-    background: url('./../images/user-received-fill.svg');
-}
-.module_atm .ic-home-fill {
-    background: url('./../images/home-fill.svg');
-}
-.module_atm .ic-store-fill {
-    background: url('./../images/store-fill.svg');
-}
-.module_atm .ic-article-fill {
-    background: url('./../images/article-fill.svg');
-}
-
-
-
-
-.module_atm .m1 {
-
-    background: url('./../images/m1.svg');
-    height: 118px;
-    width: 130px;
-
-}
-.module_atm .m2 {
-    background: url('./../images/m2.svg');
-    height: 175px;
-    width: 149px;
-}
-
-.module_atm .inp_atm .after.dollar:before {
-    background: url('./../images/dollar.svg');
-    width: 15px;
-    height: 19px;
-}
-
-.module_atm .inp_atm .after.card:before {
-    background: url('./../images/card.svg');
-    width: 19px;
-    height: 17px;
-}
-.module_atm .inp_atm .after::before {
-    content: "";
-    position: absolute;
-}
-
-.module_atm .inp_atm .after {
-
-    width: 37px;
-    height: 100%;
-    display: flex;
-    left:15px;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-
+    justify-content: space-between;
 }
-
-.module_atm .info_atm_main li {
-    background:rgba(255, 255, 255, 0.05);
-    border-radius: 2px;
-    max-width: 136px;
-    width: 100%;
-    max-height: 136px;
-    height: 100%;
-    display: flex;
-    transition: all ease .3s;
-    font-weight: 500;
-    flex-direction: column;
-    align-items: center;
-    font-size: 13px;
-    color:#fff;
-    padding: 15px;
-    text-align: center;
-    padding-top: 34px;
+.atm__card_top b {
+    font-size: 1.4vh;
+    font-weight: 800;
+    letter-spacing: 0.2vh;
+    font-style: italic;
 }
-.module_atm .info_atm_main {
-
+.atm__chip {
+    width: 2.8vh;
+    height: 2vh;
+    border-radius: 0.4vh;
+    background: linear-gradient(135deg, #F4D27A, #B8913A);
+}
+.atm__card_number {
+    font-size: 1.45vh;
+    font-weight: 600;
+    letter-spacing: 0.25vh;
+    font-variant-numeric: tabular-nums;
+}
+.atm__card_bottom {
     display: flex;
     justify-content: space-between;
-    max-height: 136px;
-    margin-bottom: 16px;
-    height: 100%;
-
+    font-size: 0.95vh;
+    text-transform: uppercase;
+    letter-spacing: 0.08vh;
+    opacity: 0.9;
 }
-.module_atm .info_atm_main .atm_ic {
-
-    width: 45px;
-    height: 45px;
-
-}
-.module_atm .inp_ic {
-
-    width: 54px;
-    height: 54px;
-    background-size: 100%;
-
-}
-.module_atm .info_atm_main li:hover {
-
-    background: rgba(255, 255, 255, 0.15);
+.atm__note {
+    margin-top: auto;
+    font-size: 1.1vh;
+    color: var(--atm-muted);
+    text-align: center;
 }
 
-.module_atm .info_atm_button li:hover {
-
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.flex-center {
+/* Экран операции */
+.atm__op {
+    position: absolute;
+    left: 13.84%;
+    top: 20.83%;
+    width: 72.33%;
+    height: 63.9%;
     display: flex;
-    align-items: center;
-}
-
-.module_atm .info_atm_button li {
-
-    height: 52px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    max-width: 200px;
-    transition: all ease .3s;
-    background:rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    color:#fff;
-    font-weight: bold;
-    width: 100%;
-
-}
-
-.module_atm .info_atm_button {
-
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-}
-.module_atm .inp_atm {
-
-    max-width: 416px;
-    width: 100%;
-    position: relative;
-    margin-bottom: 16px;
-}
-.module_atm .head_vertical .inp_ic {
-    margin-right: 18px;
-}
-.module_atm .head_column {
     flex-direction: column;
-}
-.module_atm .head_vertical .yellow {
-    color: #F9B616;
-}
-.module_atm .head_vertical .small {
-    font-weight: bold;
-    color: #DCB7B7;
-    font-size: 14px;
-}
-.module_atm .head_vertical {
-    justify-content: start !important; 
-    padding-left: 14px;
-}
-.module_atm .head_inp {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 2px 2px 0px 0px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 97px;
-    border-top: #FF5959 2px solid;
-  }
+    justify-content: center;
+}
+.atm__op h1 {
+    font-size: 2.4vh;
+    font-weight: 700;
+}
+.atm__sub {
+    margin-top: 0.8vh;
+    font-size: 1.35vh;
+    color: var(--atm-muted);
+}
+.atm__sub b { color: #fff; }
 
-.module_atm .inp_atm input {
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.atm__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+    width: 34vh;
+    margin-top: 1.6vh;
+}
+.atm__stats div {
+    padding: 1vh 1.3vh;
+    background: var(--atm-tile);
+    border: 0.1vh solid var(--atm-line);
+    border-radius: 0.6vh;
+}
+.atm__stats p {
+    font-size: 1.1vh;
+    color: var(--atm-muted);
+}
+.atm__stats b {
+    font-size: 1.6vh;
+}
+
+.atm__field {
+    width: 34vh;
+    margin-top: 2.2vh;
+}
+.atm__field > p {
+    font-size: 1.25vh;
+    color: var(--atm-muted);
+    margin-bottom: 0.8vh;
+}
+.atm__input {
+    display: flex;
+    align-items: center;
+    height: 5.6vh;
+    padding: 0 1.6vh;
+    background: rgba(0, 0, 0, 0.3);
+    border: 0.15vh solid var(--atm-line);
+    border-radius: 0.6vh;
+    transition: border-color 0.2s ease;
+}
+.atm__input:focus-within { border-color: var(--atm-green); }
+.atm__input span {
+    font-size: 2.4vh;
+    font-weight: 700;
+    color: var(--atm-green);
+    margin-right: 0.8vh;
+}
+.atm__input input {
+    flex: 1;
+    min-width: 0;
     background: none;
-    width: 100%;
-    height: 39px;
-    padding-left: 14px;
-    font-family: UniNeue;
-    color: #DCB7B7;
-    padding-left: 53px;
-    font-weight: bold;
-    font-size: 16px;
-    border-radius: 0px 0px 2px 2px;
-  }
-  .module_atm .inp_atm input::-webkit-outer-spin-button,
-  .module_atm .inp_atm input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-  }
-
-  .module_atm .inp_atm input::placeholder {
-    color: #DCB7B7;
-  }
-  
-
-
-  .module_atm .mdatm .info_atm_button li {
-
-    width: 100%;
-    max-width: 100%;
-
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: inherit;
+    font-size: 2.4vh;
+    font-weight: 700;
+    letter-spacing: 0.1vh;
 }
-.module_atm .mdatm .info_atm_button li:nth-child(1) {
+.atm__input input::placeholder { color: rgba(255, 255, 255, 0.2); }
 
-    margin-right: 16px;
-
+.atm__quick {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6vh;
+    margin-top: 0.8vh;
 }
-.module_atm .bf_img {
+.atm__quick div {
+    text-align: center;
+    padding: 0.8vh 0;
+    font-size: 1.2vh;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+    background: var(--atm-tile);
+    border: 0.1vh solid var(--atm-line);
+    border-radius: 0.5vh;
+    cursor: pointer;
+}
+.atm__quick div:hover {
+    color: #fff;
+    border-color: rgba(0, 166, 80, 0.5);
+}
 
+.atm__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+    width: 34vh;
+    margin-top: 2vh;
+}
+.atm__buttons.single { grid-template-columns: 1fr; width: 20vh; }
+.atm__btn {
     display: flex;
-    height: 100%;
     align-items: center;
-    padding-bottom: 16px;
-
+    justify-content: center;
+    height: 4.6vh;
+    border-radius: 0.6vh;
+    font-size: 1.4vh;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.04);
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
-.module_atm .bf_img span {
+.atm__btn:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
+.atm__btn.primary {
+    background: var(--atm-green);
+    color: #fff;
+}
+.atm__btn.primary:hover { background: #00B85A; }
+.atm__btn.disabled { opacity: 0.4; pointer-events: none; }
+
+.atm__list {
+    width: 40vh;
+    max-height: 22vh;
+    overflow-y: auto;
+    margin-top: 1.8vh;
+}
+.atm__list::-webkit-scrollbar { width: 0; }
+.atm__list_item {
     display: flex;
+    align-items: center;
+    gap: 1.2vh;
+    padding: 1.3vh 1.5vh;
+    margin-bottom: 0.6vh;
+    background: var(--atm-tile);
+    border: 0.1vh solid var(--atm-line);
+    border-radius: 0.6vh;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
-
-.atm_step {
-
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.module_atm .mdatm {
-
-    max-width: 416px;
-    width: 100%;
-    margin-bottom: 16px;
-    position: relative;
-
+.atm__list_item .atm__icon { width: 2.2vh; height: 2.2vh; }
+.atm__list_item span { flex: 1; font-size: 1.5vh; font-weight: 600; }
+.atm__list_item b { font-size: 2vh; color: var(--atm-muted); }
+.atm__list_item:hover {
+    background: var(--atm-green-soft);
+    border-color: rgba(0, 166, 80, 0.5);
 }

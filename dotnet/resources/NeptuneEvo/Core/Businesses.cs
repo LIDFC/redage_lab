@@ -304,6 +304,10 @@ namespace NeptuneEvo.Core
                 Main.CreateBlip(new Main.BlipData(73, "Premium Clothes Shop", new Vector3(-1126.9141, -1440.1637, 4.108331), 35, true, 1f));
                 PedSystem.Repository.CreateQuest("a_m_y_hipster_01", new Vector3(-1126.9141, -1440.1637, 4.108331 + 1.12), -63.85f, title: "~y~NPC~w~ Вовчик", colShapeEnums: ColShapeEnums.PremiumShop);
 
+                // Касса бизнеса и себестоимость продаж (планшет) — колонки создаются сами, SQL вручную не нужен
+                MySQL.Query("ALTER TABLE `businesses` ADD COLUMN IF NOT EXISTS `cash` BIGINT NOT NULL DEFAULT 0");
+                MySQL.Query("ALTER TABLE `businesshistory` ADD COLUMN IF NOT EXISTS `cost` INT NOT NULL DEFAULT 0");
+
                 using MySqlCommand cmd = new MySqlCommand()
                 {
                     CommandText = "SELECT * FROM businesses"
@@ -333,6 +337,8 @@ namespace NeptuneEvo.Core
                         Business data = new Business(id, Row["owner"].ToString(), Convert.ToInt32(Row["sellprice"]), Convert.ToInt32(Row["type"]), prodlist, enterpoint, unloadpoint, bankmoney,
                             Convert.ToInt32(Row["mafia"]), JsonConvert.DeserializeObject<List<Order>>(Row["orders"].ToString()), Convert.ToDouble(Row["tax"]));
                         lastBizID = id;
+                        if (Row.Table.Columns.Contains("cash") && Row["cash"] != DBNull.Value)
+                            data.Cash = Convert.ToInt64(Row["cash"]);
 
                         UpdateBusProd(data);
                         if (data.Type == 12)
@@ -1928,11 +1934,14 @@ namespace NeptuneEvo.Core
                     if (p.Name != prodname) continue;
                     if (p.Lefts - amount < 0) return false;
                     p.Lefts -= amount;
+                    // Себестоимость проданного: количество × закупочная цена единицы
+                    if (BusProductsData.TryGetValue(prodname, out var productData))
+                        biz.PendingCost = amount * (productData.OtherPrice > 0 ? productData.OtherPrice : productData.Price);
                     if (!biz.IsOwner()) break;
-                    Bank.Data bData = Bank.Get(Main.PlayerBankAccs[biz.Owner]);
-                    if (bData.ID == 0) return false;
-                    if (!Bank.Change(bData.ID, addMoney, false)) return false;
-                    GameLog.Money($"biz({bizid})", $"bank({bData.ID})", addMoney, "bizProfit");
+                    // Выручка идёт в кассу бизнеса, владелец выводит её с планшета
+                    biz.Cash += addMoney;
+                    biz.IsSave = true;
+                    GameLog.Money($"biz({bizid})", $"bizcash({bizid})", addMoney, "bizProfit");
                     break;
                 }
                 return true;
@@ -2669,7 +2678,7 @@ namespace NeptuneEvo.Core
                 {
                     GameLog.Money($"player({characterData.UUID})", $"biz({biz.ID})", price, $"buyClothes({type})");
                     Wallet.Change(player, -price);
-                    biz.Pribil += (uint)price;
+                    biz.BuyItemBusiness(characterData.UUID, "Одежда", price);
                 }
                 else
                 {
@@ -2786,7 +2795,7 @@ namespace NeptuneEvo.Core
                 }
                 GameLog.Money($"player({characterData.UUID})", $"biz({biz.ID})", totalprice, "buyBarber");
                 MoneySystem.Wallet.Change(player, -totalprice);
-                biz.Pribil += (uint)totalprice;
+                biz.BuyItemBusiness(characterData.UUID, "Расходники", totalprice);
                 PlayerCustomization custom = Customization.CustomPlayerData[player];
                 switch (id)
                 {
@@ -3982,7 +3991,7 @@ namespace NeptuneEvo.Core
                 foreach (int id in toChange)
                 {
                     if (BizList.ContainsKey(id))
-                        BizList[id].SetOwner(newName);
+                        BizList[id].SetOwner(newName, keepCash: true); // смена имени — касса остаётся у того же владельца
                 }
             }
             catch (Exception e)
@@ -4059,6 +4068,12 @@ namespace NeptuneEvo.Core
         public int Zatratq = 0;
         [JsonIgnore]
         public int Pribil = 0;
+        /// <summary>Касса: выручка копится здесь, владелец выводит её с планшета.</summary>
+        [JsonIgnore]
+        public long Cash = 0;
+        /// <summary>Себестоимость последней продажи (takeProd → BuyItemBusiness, главный поток).</summary>
+        [JsonIgnore]
+        public int PendingCost = 0;
 
         public bool IsAuction = false;
         public bool IsSave = false;
@@ -4179,6 +4194,7 @@ namespace NeptuneEvo.Core
                     .Set(b => b.Money, BankID)
                     .Set(b => b.Mafia, Mafia)
                     .Set(b => b.Orders, JsonConvert.SerializeObject(Orders))
+                    .Set(b => b.Cash, Cash)
                     .UpdateAsync();
                 
             }
@@ -4190,12 +4206,38 @@ namespace NeptuneEvo.Core
 
         public void BuyItemBusiness(int uuid, string itemName, int cost)
         {
-            Businesses.History.Repository.AddHistory(uuid, this.ID, itemName, cost);
+            Businesses.History.Repository.AddHistory(uuid, this.ID, itemName, cost, PendingCost);
+            PendingCost = 0;
             Pribil += cost;
         }
 
-        public void SetOwner(string name)
+        /// <summary>
+        /// При смене владельца остаток кассы уходит прежнему владельцу на банковский счёт.
+        /// </summary>
+        public void PayoutCash()
         {
+            try
+            {
+                if (Cash <= 0 || !IsOwner())
+                    return;
+                if (!Main.PlayerBankAccs.TryGetValue(Owner, out var bankId) || !Bank.Accounts.ContainsKey(bankId))
+                    return;
+                var amount = Cash;
+                Cash = 0;
+                Bank.Change(bankId, amount, false);
+                GameLog.Money($"biz({ID})", $"bank({bankId})", amount, "bizCashPayout");
+                IsSave = true;
+            }
+            catch (Exception e)
+            {
+                BusinessManager.Log.Write($"PayoutCash Exception: {e}");
+            }
+        }
+
+        public void SetOwner(string name, bool keepCash = false)
+        {
+            if (name != Owner && !keepCash)
+                PayoutCash();
             Owner = name;
             UpdateLabel();
             IsSave = true;
@@ -4203,6 +4245,7 @@ namespace NeptuneEvo.Core
         
         public void ClearOwner()
         {
+            PayoutCash();
             Owner = "Государство";
             UpdateLabel();
             IsSave = true;

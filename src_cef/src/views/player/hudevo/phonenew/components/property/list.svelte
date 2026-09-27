@@ -12,14 +12,12 @@
         id: 1
     }*/
 
-    let propertyList = [{
-        id: 5,
-        type: 1
-    }]
+    let propertyList = []
 
     executeClientAsyncToGroup("getProperty").then((result) => {
+        // Бизнесом теперь управляют только с планшета (клавиша K) — в телефоне остаются дома
         if (hasJsonStructure(result))
-            propertyList = JSON.parse(result);
+            propertyList = JSON.parse(result).filter(item => item.type === 0);
     });
 
     const onSelectItem = (item) => {

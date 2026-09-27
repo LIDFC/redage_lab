@@ -85,10 +85,9 @@ gm.events.add(clientName + "action", (action) => {//+
     mp.events.callRemote('server.house.action', action);
 });
 
+// Парковка и гараж перенесены в приложение «Авто» (phone/cars.js) — меню дома для машин больше не открывается
 gm.events.add(clientName + "openPark", () => {//+
-    mp.events.call('client.phone.close');
-
-    mp.events.call('client.parking.open');
+    mp.events.call('client.phone.cars.load');
 });
 
 

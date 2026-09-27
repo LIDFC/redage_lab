@@ -42,7 +42,7 @@
             link: "property"
         },
         {
-            name: "Транспорт",
+            name: "Авто",
             icon: CarsIcon,
             link: "cars"
         },
@@ -77,11 +77,7 @@
             icon: RadioIcon,
             link: "radio"
         },
-       {
-            name: "Forbes",
-            icon: ForbesIcon,
-            link: "forbes"
-        },
+        // Forbes и Маркетплейс перенесены на планшет (клавиша K)
        /*  {
             name: "RA",
             icon: SocialIcon,
@@ -106,11 +102,6 @@
             name: "Tinder",
             icon: TinderIcon,
             link: "tinder"
-        },
-        {
-            name: "Маркетплейс",
-            icon: MarketplaceIcon,
-            link: "marketPlace"
         },
     ]
 

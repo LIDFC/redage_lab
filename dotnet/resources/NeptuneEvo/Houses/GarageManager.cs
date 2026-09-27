@@ -1272,12 +1272,7 @@ namespace NeptuneEvo.Houses
                 return;
             }
             
-            if (house.GarageID != characterData.InsideGarageID)
-            {
-                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.GarageError), 3000);
-                return;
-            }
-            
+            // Места в гараже меняются удалённо из приложения «Авто» в телефоне — находиться в гараже не нужно
             var garage = house.GetGarageData();
 
             if (garage == null)
@@ -1287,6 +1282,19 @@ namespace NeptuneEvo.Houses
             }
 
             if (!GarageTypes.ContainsKey(garage.Type)) return; 
+
+            if (index < 0 || index >= GarageTypes[garage.Type].MaxCars || garage.Type == -1 || garage.Type == 6)
+            {
+                Trigger.ClientEvent(player, "client.phone.cars.error");
+                return;
+            }
+
+            var ownVehicle = VehicleManager.GetVehicleToAutoId(autoId);
+            if (ownVehicle == null || !house.GetVehiclesCarNumber().Contains(ownVehicle.Number))
+            {
+                Trigger.ClientEvent(player, "client.phone.cars.error");
+                return;
+            }
 
             var carSlotIndex = garage.CarSlots
                 .Where(cs => cs.Value == autoId)
@@ -1385,7 +1393,7 @@ namespace NeptuneEvo.Houses
             }
 
             var carsOwnerData = Players.Phone.Cars.Repository.GetCarToHouse(player, house?.Owner, house?.GetVehiclesCarNumber(), garage, false);
-            Trigger.ClientEvent(player, "client.phone.cars.init", JsonConvert.SerializeObject(carsOwnerData), true, house.Owner == sessionData.Name);
+            Trigger.ClientEvent(player, "client.phone.cars.init", JsonConvert.SerializeObject(carsOwnerData), true, house.Owner == sessionData.Name, Players.Phone.Cars.Repository.GarageInfo(player, house, garage));
             
             //Trigger.ClientEvent(player, "client.parking.confirm", autoId, index);
             garage.IsSave = true;

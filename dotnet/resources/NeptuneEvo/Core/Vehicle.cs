@@ -246,7 +246,7 @@ namespace NeptuneEvo.Core
                     try 
                     {
                         var vehicleLocalData = vehicle.GetVehicleLocalData();
-                        vehicleLocalData.Petrol -= PetrolRate[vehicleLocalData.Class];
+                        vehicleLocalData.Petrol -= VehiclePanel.FuelRate(vehicle, PetrolRate[vehicleLocalData.Class]); // режим езды из панели «Авто»
                         if (vehicleLocalData.Petrol <= 0)
                         {
                             vehicleLocalData.Petrol = 0;

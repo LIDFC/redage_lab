@@ -43,6 +43,7 @@
 
     import Walkietalkie from './walkietalkie/index.svelte'
     import Phone from './phonenew/index.svelte';
+    import Tablet from './tablet/index.svelte';
     import PhoneNotify from './phonenew/indexNotify.svelte';
 
 
@@ -133,6 +134,10 @@
     let isHudNewPhone = false;
     window.hudStore.isHudNewPhone = (value) => isHudNewPhone = value;
 
+    // Планшет (K): фракция/организация, бизнес, маркетплейс, Forbes
+    let isHudTablet = false;
+    window.hudStore.isHudTablet = (value) => isHudTablet = value;
+
     let isTaxiCounter = false;
     window.hudStore.isTaxiCounter = (value) => isTaxiCounter = value;
 
@@ -206,6 +211,9 @@
     </div>
 </div>
 
+{#if visible && isHudVisible && isHudTablet}
+    <Tablet />
+{/if}
 {#if visible && isHudVisible}
     {#if isHudNewPhone}
         <div id="hudevo">

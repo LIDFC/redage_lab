@@ -601,6 +601,15 @@ global.userBinder = [ //Тут нужно переписать все досту
             group: binderGroup.user,
             menu: menuType.all//+
         },
+    {//63
+        title: translateText("Планшет"),
+        keyCode: global.Keys.VK_K,
+        keyCodeDefault: global.Keys.VK_K,
+        function: "openTablet",
+        type: binderType.all,
+        group: binderGroup.user,
+        menu: menuType.all//+
+    },
      
 
 ];

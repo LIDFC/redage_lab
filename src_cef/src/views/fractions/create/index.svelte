@@ -1,115 +1,195 @@
 <script>
-    import { translateText } from 'lang'
     import { format } from "api/formatter";
     import { executeClient } from "api/rage";
+    import { fade, scale } from 'svelte/transition'
 
-    import './main.sass'
-    import './main.css'  
-
+    // Регистрация организации (NPC/офис). События прежние: client.org.create.buy / close
     export let viewData;
 
     let isCrime = false;
-    const onSelectType = (_isCrime) => {
-        isCrime = _isCrime;
-    }
+    let orgName = "";
 
+    $: check = orgName ? format("createOrg", orgName) : { valid: false, text: "" };
 
-    let orgName = ""
+    const types = [
+        {
+            crime: true,
+            title: "Группировка",
+            tag: "Криминал",
+            text: "Преступная ячейка: альянсы с другими группировками, борьба за влияние, ограбления, похищения и противостояние силовым структурам.",
+            perks: ["Захваты и война за территории", "Нелегальные заработки", "Свой офис и гараж"],
+            icon: '<path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.3l5-.7L12 3z"/>',
+        },
+        {
+            crime: false,
+            title: "Сообщество",
+            tag: "Легально",
+            text: "Частная компания по контракту с правительством: защита интересов государства, влияние на политические и властные структуры.",
+            perks: ["Госконтракты и влияние", "Легальный бизнес", "Свой офис и гараж"],
+            icon: '<path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/><path d="M3 20h18"/>',
+        },
+    ];
 
     const onCreate = () => {
-        let check = format("createOrg", orgName);
-        if (!check.valid) {
-            window.notificationAdd(4, 9, check.text, 3000);
+        const result = format("createOrg", orgName);
+        if (!result.valid) {
+            window.notificationAdd(4, 9, result.text, 3000);
             return;
         }
-
         executeClient('client.org.create.buy', isCrime, orgName)
     }
 
-    const onClose = () => {
-        executeClient('client.org.create.close')
+    const onClose = () => executeClient('client.org.create.close')
 
-    }
     const onKeyUp = (event) => {
-        const { keyCode } = event;
-
-
-        if (keyCode == 13)
-            onCreate ()
-
-        if (keyCode == 27)
-            onClose ()
+        if (event.keyCode == 13) onCreate();
+        if (event.keyCode == 27) onClose();
     }
 </script>
 
 <svelte:window on:keyup={onKeyUp}/>
 
-<div class="magicorg">
-    <div class="headblock">
-        <div class="hbinfo">
-            <h1>РЕГИСТРАЦИЯ ОРГАНИЗАЦИИ</h1>
-            <span>Выбор направления организации</span>
+<div class="orgc" in:fade={{ duration: 150 }}>
+    <div class="orgc__box" in:scale={{ start: 0.97, duration: 200 }}>
+        <div class="orgc__head">
+            <div>
+                <div class="orgc__eyebrow">Регистрация</div>
+                <h1>Новая организация</h1>
+                <p>Выберите направление и придумайте название — после создания вы станете её лидером.</p>
+            </div>
+            <div class="orgc__close" on:click={onClose} title="Закрыть (Esc)"></div>
         </div>
-        <span on:keypress={() => {}} on:click={onClose}>
-            <svg width="12.007812" height="12.008179" viewBox="0 0 12.0078 12.0082" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs/>
-                <path id="Vector 621" d="M0.32 1.71L0.29 1.71C-0.1 1.31 -0.1 0.69 0.29 0.29C0.69 -0.1 1.31 -0.1 1.71 0.29L1.71 0.32L0.32 1.71ZM11.68 10.29L11.71 10.29C12.1 10.69 12.1 11.31 11.71 11.71C11.31 12.1 10.69 12.1 10.29 11.71L10.29 11.68L11.68 10.29ZM1.71 11.68L1.71 11.71C1.31 12.1 0.69 12.1 0.29 11.71C-0.1 11.31 -0.1 10.69 0.29 10.29L0.32 10.29L1.71 11.68Z" fill="#1E1E1E" fill-opacity="1.000000" fill-rule="nonzero"/>
-                <path id="Vector 621" d="M1 1L6 6L11 11M6 6L11 1L1 11" stroke-width="2.000000" stroke-linejoin="round" stroke-linecap="round"/>
-            </svg>                    
-        </span>
-    </div>
-    <div class="listorg">
-        <div class="blockorg" class:active={isCrime} on:keypress={() => {}} on:click={() => onSelectType (true)}>
-            <div class="iconorg">
-                <svg width="64.000000" height="64.000000" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <clipPath id="clip1_3115">
-                            <rect id="Frame" rx="0.000000" width="63.000000" height="63.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"></rect>
-                        </clipPath>
-                    </defs>
-                    <rect id="Frame" rx="0.000000" width="63.000000" height="63.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"></rect>
-                    <g clip-path="url(#clip1_3115)">
-                        <path id="Vector" d="M60.91 20.69L60.88 20.63C60.12 18.8 58.06 17.88 56.2 18.55C40.55 24.15 23.44 24.15 7.79 18.55C5.93 17.88 3.87 18.8 3.11 20.63L3.08 20.69C2.27 22.66 3.26 24.9 5.26 25.61C22.55 31.8 41.44 31.8 58.73 25.61C60.73 24.9 61.72 22.66 60.91 20.69ZM46.46 33.5C46.46 33.45 46.47 33.42 46.47 33.42C46.37 33.67 45.4 34.6 42.4 35.42C39.58 36.19 35.91 36.62 32.08 36.62C28.25 36.62 24.59 36.19 21.77 35.42C18.77 34.6 17.8 33.67 17.7 33.42C17.7 33.42 17.71 33.45 17.71 33.5L13.96 33.5C13.96 39.71 16.8 46.67 22.39 54.18C26.49 59.67 30.53 63.35 30.7 63.51L31.24 64L32.93 64L33.47 63.51C33.64 63.35 37.68 59.67 41.77 54.18C47.37 46.67 50.21 39.71 50.21 33.5L46.46 33.5Z" fill-rule="nonzero"></path>
-                        <path id="Vector" d="M46.97 3.43C46.53 1.44 44.74 0 42.7 0L37.39 0C35.71 0 34.21 0.93 33.46 2.44L32.08 5.25L30.7 2.44C29.96 0.93 28.46 0 26.78 0L21.47 0C19.43 0 17.63 1.44 17.19 3.43L14.28 16.65C25.92 19.78 38.24 19.77 49.88 16.61L46.97 3.43Z" fill-rule="nonzero"></path>
-                    </g>
-                </svg>
-            </div>
-            <div class="infoorg">
-                <h1>Группировка</h1>
-                <p>Ячейка преступного мира, деятельность которой заключается в создании альянсов с другими преступными группировками, борьбе с влиянием, борьбе с грабежами, похищениями людей и столкновениями с силовыми и правовыми структурами.</p>
-            </div>
+
+        <div class="orgc__types">
+            {#each types as t}
+                <div class="orgc__type" class:active={isCrime === t.crime} class:crime={t.crime} on:click={() => isCrime = t.crime}>
+                    <div class="orgc__type_top">
+                        <div class="orgc__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{@html t.icon}</svg></div>
+                        <div>
+                            <b>{t.title}</b>
+                            <span class="orgc__tag">{t.tag}</span>
+                        </div>
+                        <div class="orgc__radio"></div>
+                    </div>
+                    <p>{t.text}</p>
+                    <ul>
+                        {#each t.perks as perk}<li>{perk}</li>{/each}
+                    </ul>
+                </div>
+            {/each}
         </div>
-        <div class="blockorg" class:active={!isCrime} on:keypress={() => {}} on:click={() => onSelectType (false)}>
-            <div class="iconorg">
-                <svg width="64.000000" height="64.000000" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <clipPath id="clip1_3105">
-                            <rect id="Frame" rx="0.000000" width="63.000000" height="63.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
-                        </clipPath>
-                    </defs>
-                    <rect id="Frame" rx="0.000000" width="63.000000" height="63.000000" transform="translate(0.500000 0.500000)" fill="#FFFFFF" fill-opacity="0"/>
-                    <g clip-path="url(#clip1_3105)">
-                        <path id="Vector" d="M30.21 43.78L33.78 43.78C33.94 43.78 34.09 43.84 34.2 43.95C34.31 44.06 34.38 44.21 34.38 44.37L34.38 55.09C34.38 55.24 34.31 55.39 34.2 55.51C34.09 55.62 33.94 55.68 33.78 55.68L30.21 55.68C30.05 55.68 29.9 55.62 29.79 55.51C29.68 55.39 29.61 55.24 29.61 55.09L29.61 44.37C29.61 44.21 29.68 44.06 29.79 43.95C29.9 43.84 30.05 43.78 30.21 43.78ZM57 54.49C57 54.81 56.87 55.11 56.65 55.33C56.42 55.56 56.12 55.68 55.8 55.68L37.35 55.68C37.19 55.68 37.04 55.62 36.93 55.51C36.82 55.39 36.76 55.24 36.76 55.09L36.76 43.78C36.76 43.14 36.5 42.54 36.06 42.09C35.61 41.65 35.01 41.4 34.38 41.39L29.61 41.39C28.98 41.4 28.38 41.65 27.93 42.09C27.49 42.54 27.23 43.14 27.23 43.78L27.23 55.09C27.23 55.24 27.17 55.39 27.06 55.51C26.95 55.62 26.8 55.68 26.64 55.68L8.19 55.68C7.87 55.68 7.57 55.56 7.34 55.33C7.12 55.11 7 54.81 7 54.49C7 54.17 7.12 53.87 7.34 53.65C7.57 53.42 7.87 53.3 8.19 53.3L9.38 53.3L9.38 33.06C9.38 32.75 9.5 32.44 9.72 32.22C9.95 32 10.25 31.87 10.57 31.87L20.09 31.87L20.09 53.3L21.28 53.3L21.28 9.69C21.28 8.88 21.92 8.31 22.55 8.55L42.03 16.13C42.24 16.23 42.42 16.39 42.54 16.6C42.66 16.8 42.72 17.03 42.71 17.26L42.71 53.3L43.9 53.3L43.9 31.87L53.42 31.87C53.74 31.87 54.04 32 54.27 32.22C54.49 32.44 54.61 32.75 54.61 33.06L54.61 53.3L55.8 53.3C56.12 53.3 56.42 53.42 56.65 53.65C56.87 53.87 57 54.17 57 54.49ZM48.07 50.03C48.07 50.34 48.19 50.64 48.41 50.87C48.64 51.09 48.94 51.22 49.26 51.22C49.57 51.22 49.88 51.09 50.1 50.87C50.32 50.64 50.45 50.34 50.45 50.03L50.45 37.53C50.45 37.21 50.32 36.91 50.1 36.68C49.88 36.46 49.57 36.34 49.26 36.34C48.94 36.34 48.64 36.46 48.41 36.68C48.19 36.91 48.07 37.21 48.07 37.53L48.07 50.03ZM13.54 50.03C13.54 50.34 13.67 50.64 13.89 50.87C14.11 51.09 14.42 51.22 14.73 51.22C15.05 51.22 15.35 51.09 15.58 50.87C15.8 50.64 15.92 50.34 15.92 50.03L15.92 37.53C15.92 37.21 15.8 36.91 15.58 36.68C15.35 36.46 15.05 36.34 14.73 36.34C14.42 36.34 14.11 36.46 13.89 36.68C13.67 36.91 13.54 37.21 13.54 37.53L13.54 50.03ZM33.19 19.37C33.19 19.69 33.31 19.99 33.53 20.21C33.76 20.44 34.06 20.56 34.38 20.56L36.76 20.56C37.07 20.56 37.38 20.44 37.6 20.21C37.82 19.99 37.95 19.69 37.95 19.37C37.95 19.06 37.82 18.75 37.6 18.53C37.38 18.31 37.07 18.18 36.76 18.18L34.38 18.18C34.06 18.18 33.76 18.31 33.53 18.53C33.31 18.75 33.19 19.06 33.19 19.37ZM33.19 25.32C33.19 25.64 33.31 25.94 33.53 26.17C33.76 26.39 34.06 26.51 34.38 26.51L36.76 26.51C37.07 26.51 37.38 26.39 37.6 26.17C37.82 25.94 37.95 25.64 37.95 25.32C37.95 25.01 37.82 24.7 37.6 24.48C37.38 24.26 37.07 24.13 36.76 24.13L34.38 24.13C34.06 24.13 33.76 24.26 33.53 24.48C33.31 24.7 33.19 25.01 33.19 25.32ZM33.19 31.28C33.19 31.59 33.31 31.89 33.53 32.12C33.76 32.34 34.06 32.47 34.38 32.47L36.76 32.47C37.07 32.47 37.38 32.34 37.6 32.12C37.82 31.89 37.95 31.59 37.95 31.28C37.95 30.96 37.82 30.66 37.6 30.43C37.38 30.21 37.07 30.09 36.76 30.09L34.38 30.09C34.06 30.09 33.76 30.21 33.53 30.43C33.31 30.66 33.19 30.96 33.19 31.28ZM30.8 37.23C30.8 36.91 30.68 36.61 30.46 36.39C30.23 36.16 29.93 36.04 29.61 36.04L27.23 36.04C26.92 36.04 26.61 36.16 26.39 36.39C26.17 36.61 26.04 36.91 26.04 37.23C26.04 37.54 26.17 37.85 26.39 38.07C26.61 38.29 26.92 38.42 27.23 38.42L29.61 38.42C29.93 38.42 30.23 38.29 30.46 38.07C30.68 37.85 30.8 37.54 30.8 37.23ZM30.8 31.28C30.8 30.96 30.68 30.66 30.46 30.43C30.23 30.21 29.93 30.09 29.61 30.09L27.23 30.09C26.92 30.09 26.61 30.21 26.39 30.43C26.17 30.66 26.04 30.96 26.04 31.28C26.04 31.59 26.17 31.89 26.39 32.12C26.61 32.34 26.92 32.47 27.23 32.47L29.61 32.47C29.93 32.47 30.23 32.34 30.46 32.12C30.68 31.89 30.8 31.59 30.8 31.28ZM30.8 25.32C30.8 25.01 30.68 24.7 30.46 24.48C30.23 24.26 29.93 24.13 29.61 24.13L27.23 24.13C26.92 24.13 26.61 24.26 26.39 24.48C26.17 24.7 26.04 25.01 26.04 25.32C26.04 25.64 26.17 25.94 26.39 26.17C26.61 26.39 26.92 26.51 27.23 26.51L29.61 26.51C29.93 26.51 30.23 26.39 30.46 26.17C30.68 25.94 30.8 25.64 30.8 25.32ZM30.8 19.37C30.8 19.06 30.68 18.75 30.46 18.53C30.23 18.31 29.93 18.18 29.61 18.18L27.23 18.18C26.92 18.18 26.61 18.31 26.39 18.53C26.17 18.75 26.04 19.06 26.04 19.37C26.04 19.69 26.17 19.99 26.39 20.21C26.61 20.44 26.92 20.56 27.23 20.56L29.61 20.56C29.93 20.56 30.23 20.44 30.46 20.21C30.68 19.99 30.8 19.69 30.8 19.37ZM36.76 38.42C37.07 38.42 37.38 38.29 37.6 38.07C37.82 37.85 37.95 37.54 37.95 37.23C37.95 36.91 37.82 36.61 37.6 36.39C37.38 36.16 37.07 36.04 36.76 36.04L34.38 36.04C34.06 36.04 33.76 36.16 33.53 36.39C33.31 36.61 33.19 36.91 33.19 37.23C33.19 37.54 33.31 37.85 33.53 38.07C33.76 38.29 34.06 38.42 34.38 38.42L36.76 38.42Z" fill-rule="nonzero"/>
-                    </g>
-                </svg>           
-            </div>
-            <div class="infoorg">
-                <h1>Сообщество</h1>
-                <p>Частная компания, которая подписывает контракт с правительством на защиту прав и интересов государства. Обладает способностью влиять на политические и властные структуры, является частью государственной системы.</p>
+
+        <div class="orgc__field">
+            <label for="orgc-name">Название организации</label>
+            <input id="orgc-name" placeholder="Например: Black Wolves" maxlength="30" bind:value={orgName} autofocus>
+            <div class="orgc__rules" class:error={orgName && !check.valid}>
+                {orgName && !check.valid ? check.text : "3–30 символов: латиница, цифры и знаки - _ ."}
+                <span>{orgName.length}/30</span>
             </div>
         </div>
-    </div>
-    <div class="nameorg">
-        <h1>Введите название вашей организации</h1>
-        <input placeholder="Введите название.." bind:value={orgName}>
-    </div>
-    <div class="createorg">
-        <div class="priceorg">
-            <p>Стоимость создания:</p>
-            <b>${format("money", viewData)}</b>
-        </div>
-        <div class="btncreate" on:keypress={() => {}} on:click={onCreate}>
-            <p>Создать организацию</p>
+
+        <div class="orgc__footer">
+            <div class="orgc__price">
+                <span>Стоимость создания</span>
+                <b>${format("money", viewData)}</b>
+            </div>
+            <div class="orgc__btn ghost" on:click={onClose}>Отмена</div>
+            <div class="orgc__btn" class:disabled={!check.valid} on:click={onCreate}>Создать организацию</div>
         </div>
     </div>
 </div>
+
+<style>
+    .orgc {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(5, 6, 8, 0.7);
+        font-family: 'Gilroy', sans-serif;
+        color: #fff;
+    }
+    .orgc__box {
+        width: 100vh;
+        padding: 3.6vh;
+        border-radius: 2vh;
+        background: linear-gradient(160deg, #17191D 0%, #0E0F12 100%);
+        border: 0.1vh solid rgba(255,255,255,0.07);
+        box-shadow: 0 3vh 8vh rgba(0,0,0,0.6);
+    }
+    .orgc__head { display: flex; justify-content: space-between; gap: 2vh; margin-bottom: 3vh; }
+    .orgc__eyebrow { font-size: 1.2vh; font-weight: 700; letter-spacing: 0.3vh; text-transform: uppercase; color: #7ED321; }
+    .orgc__head h1 { margin: 0.6vh 0 0.8vh; font-size: 3.4vh; font-weight: 800; }
+    .orgc__head p { margin: 0; font-size: 1.45vh; color: rgba(255,255,255,0.5); max-width: 60vh; }
+    .orgc__close {
+        position: relative; flex-shrink: 0;
+        width: 4vh; height: 4vh; border-radius: 1vh;
+        background: rgba(255,255,255,0.05); cursor: pointer;
+    }
+    .orgc__close::before, .orgc__close::after {
+        content: ""; position: absolute; left: 50%; top: 50%;
+        width: 1.6vh; height: 0.2vh; background: rgba(255,255,255,0.7);
+    }
+    .orgc__close::before { transform: translate(-50%, -50%) rotate(45deg); }
+    .orgc__close::after { transform: translate(-50%, -50%) rotate(-45deg); }
+    .orgc__close:hover { background: rgba(242,85,90,0.2); }
+
+    .orgc__types { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6vh; }
+    .orgc__type {
+        --tone: #5B9CFF;
+        padding: 2.2vh;
+        border-radius: 1.4vh;
+        background: #16181C;
+        border: 0.15vh solid rgba(255,255,255,0.06);
+        cursor: pointer;
+        transition: all .2s ease;
+    }
+    .orgc__type.crime { --tone: #F2555A; }
+    .orgc__type:hover { border-color: rgba(255,255,255,0.14); }
+    .orgc__type.active { border-color: var(--tone); background: linear-gradient(160deg, rgba(255,255,255,0.03), #16181C); box-shadow: 0 0 0 0.3vh rgba(255,255,255,0.02); }
+    .orgc__type_top { display: flex; align-items: center; gap: 1.4vh; }
+    .orgc__type_top b { display: block; font-size: 2vh; }
+    .orgc__icon {
+        width: 5vh; height: 5vh; border-radius: 1.2vh; flex-shrink: 0;
+        display: flex; align-items: center; justify-content: center;
+        color: var(--tone); background: rgba(255,255,255,0.05);
+    }
+    .orgc__icon svg { width: 55%; height: 55%; }
+    .orgc__tag { display: inline-block; margin-top: 0.4vh; font-size: 1.1vh; font-weight: 700; color: var(--tone); text-transform: uppercase; letter-spacing: 0.1vh; }
+    .orgc__radio {
+        margin-left: auto; width: 2.2vh; height: 2.2vh; border-radius: 50%;
+        border: 0.2vh solid rgba(255,255,255,0.25); box-sizing: border-box;
+    }
+    .orgc__type.active .orgc__radio { border: 0.65vh solid var(--tone); }
+    .orgc__type p { margin: 1.6vh 0 1.2vh; font-size: 1.35vh; line-height: 1.5; color: rgba(255,255,255,0.6); }
+    .orgc__type ul { margin: 0; padding: 0; list-style: none; }
+    .orgc__type li { position: relative; padding-left: 1.8vh; margin-top: 0.6vh; font-size: 1.3vh; color: rgba(255,255,255,0.8); }
+    .orgc__type li::before { content: ""; position: absolute; left: 0; top: 0.55vh; width: 0.7vh; height: 0.7vh; border-radius: 50%; background: var(--tone); }
+
+    .orgc__field { margin-top: 2.6vh; }
+    .orgc__field label { display: block; margin-bottom: 0.8vh; font-size: 1.3vh; font-weight: 600; color: rgba(255,255,255,0.7); }
+    .orgc__field input {
+        width: 100%; box-sizing: border-box;
+        padding: 1.6vh 1.8vh; border-radius: 1vh;
+        background: #0B0C0E; border: 0.15vh solid rgba(255,255,255,0.08);
+        color: #fff; font-family: inherit; font-size: 1.9vh; font-weight: 700; outline: none;
+    }
+    .orgc__field input:focus { border-color: #7ED321; }
+    .orgc__rules { display: flex; justify-content: space-between; margin-top: 0.8vh; font-size: 1.2vh; color: rgba(255,255,255,0.4); }
+    .orgc__rules.error { color: #F2555A; }
+
+    .orgc__footer { display: flex; align-items: center; gap: 1.2vh; margin-top: 3vh; padding-top: 2.4vh; border-top: 0.1vh solid rgba(255,255,255,0.06); }
+    .orgc__price { margin-right: auto; }
+    .orgc__price span { display: block; font-size: 1.2vh; color: rgba(255,255,255,0.45); }
+    .orgc__price b { font-size: 2.6vh; font-weight: 800; color: #7ED321; }
+    .orgc__btn {
+        padding: 1.6vh 3vh; border-radius: 1vh;
+        font-size: 1.5vh; font-weight: 700;
+        background: #7ED321; color: #0E1A04; cursor: pointer; transition: all .2s ease;
+    }
+    .orgc__btn:hover { background: #8EE22E; }
+    .orgc__btn.ghost { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.75); }
+    .orgc__btn.ghost:hover { background: rgba(255,255,255,0.1); color: #fff; }
+    .orgc__btn.disabled { opacity: 0.4; pointer-events: none; }
+</style>

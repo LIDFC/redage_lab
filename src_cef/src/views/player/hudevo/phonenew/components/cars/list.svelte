@@ -1,156 +1,85 @@
 <script>
     import { vehicleName } from '@/api/vehicleName';
-    import { translateText } from 'lang'
-    import { TimeFormat } from 'api/moment'
-    import {currentPage} from '../../stores'
-
-    import { executeClient, executeClientToGroup, executeClientAsyncToGroup } from 'api/rage'
-    import {hasJsonStructure} from "api/functions";
-    export let OnUpdatePage;
-    let carsList = [{
-        number: "222133218 2132",
-        model: "adder",
-        header: "Домовладельца"
-        },
-        {
-        number: "229",
-        model: "adder",
-        },
-    ];
-    let inputText = "";
-
-    executeClientAsyncToGroup("cars.getCarsList").then((result) => {
-        if (hasJsonStructure(result))
-            carsList = JSON.parse(result);
-    });
-
-
-    function isFilter(value, text){
-        if(text === null){
-            return true;
-        }
-        text = text.toLowerCase();
-        return (value.number.toLowerCase().includes(text) || value.model.toLowerCase().includes(text) || value.header.toLowerCase().includes(text));
-    }
-
+    import { carState } from './data'
+    import { currentPage } from '../../stores'
+    import { executeClient, executeClientToGroup } from 'api/rage'
+    import { onInputFocus, onInputBlur } from "@/views/player/hudevo/phonenew/data";
+    import { onDestroy } from 'svelte'
     import { fade } from 'svelte/transition'
 
+    export let OnUpdatePage;
+    export let carsList = [];
+    export let garage = null;
 
+    let inputText = "";
+    let category = "";
 
-
-
-
-
-
-
-
-    import Filter from './filter.svelte'
-
-    let isTypeFilter = [];
-    const updateFilter = (filter) => {
-        isTypeFilter = filter;
-
-        closeFilter ();
-    }
-
-    let isFilterOpen;
-
-    const openFilter = () => isFilterOpen = true;
-    const closeFilter = () => isFilterOpen = false;
-    const clearFilter = (event) => {
-        event.stopPropagation();
-        isTypeFilter = [];
-    }
+    $: categories = [...new Set(carsList.map(c => c.header).filter(Boolean))];
+    $: filtered = carsList.filter(c => {
+        if (category && c.header !== category)
+            return false;
+        const text = inputText.trim().toLowerCase();
+        if (!text)
+            return true;
+        return c.number.toLowerCase().includes(text) || c.model.toLowerCase().includes(text) || vehicleName(c.model).toLowerCase().includes(text);
+    });
+    $: used = garage ? Object.keys(garage.slots || {}).length : 0;
 
     const setPointArenda = () => {
-        executeClient ("gps.name", translateText('player2', 'Ближайшая аренда авто'));
+        executeClient ("gps.name", 'Ближайшая аренда авто');
         executeClientToGroup ("close");
     }
 
-    function getFilterWord(length){
-        switch (length){
-            case 1:
-                return translateText('player2', 'фильтр')
-            case 2:
-                return translateText('player2', 'фильтра')
-            case 3:
-                return translateText('player2', 'фильтра')
-            case 4:
-                return translateText('player2', 'фильтра')
-            case 5:
-                return translateText('player2', 'фильтров')
-            case 6:
-                return translateText('player2', 'фильтров')
-            case 7:
-                return translateText('player2', 'фильтров')
-            case 8:
-                return translateText('player2', 'фильтров')
-            case 9:
-                return translateText('player2', 'фильтров')
-            default:
-                return translateText('player2', 'фильтров')
-        }
-    }
-    import { onInputFocus, onInputBlur } from "@/views/player/hudevo/phonenew/data";
-
-    import { onDestroy } from 'svelte'
-    onDestroy(() => {
-        onInputBlur ();
-    });
+    onDestroy(() => onInputBlur ());
 </script>
-{#if isFilterOpen}
-    <Filter {isTypeFilter} {updateFilter} {closeFilter} />
-{:else}
-    {#if carsList && typeof carsList === "object" && carsList.length > 0}
-        <div class="box-between w-100 mb-10 newphone__project_padding20">
-            <input type="text" class="newphone__ads_input small170 mb-0 mr-6" placeholder="Поиск..." bind:value={inputText} on:focus={onInputFocus} on:blur={onInputBlur}>
-            {#if !isTypeFilter.length}
-                <div class="newphone__button_filter box-center" on:click={openFilter}>
-                    <span class="phoneicons-filter"></span>
-                    {translateText('player2', 'Фильтры')}
-                </div>
-            {:else}
-                <div class="newphone__button_filter box-center orange__background" on:click={openFilter}>
-                    {isTypeFilter.length} {getFilterWord(isTypeFilter.length)}
-                    <span class="phoneicons-close" on:click={clearFilter}></span>
-                </div>
+
+<div class="auto__scroll" in:fade>
+    {#if garage}
+        <div class="auto__garage">
+            <div class="auto__garage_icon">P</div>
+            <div class="auto__garage_info">
+                <b>{garage.parking ? 'Парковочное место' : 'Гараж'}</b>
+                <span>{garage.parking ? 'Машина стоит у дома' : `Занято ${used} из ${garage.maxCars}${garage.apartment ? ' · по классу квартиры' : ''}`}</span>
+            </div>
+            {#if !garage.parking}
+                <div class="auto__meter"><div style="width: {Math.min(100, used / Math.max(1, garage.maxCars) * 100)}%"></div></div>
             {/if}
         </div>
-        <div class="newphone__rent_list small" in:fade>
-            {#each carsList.filter((el) => isFilter(el, inputText)) as item}
-                {#if !isTypeFilter.length || isTypeFilter.includes(item.header)}
-                <div class="newphone__rent_none hover vehicle" on:click={() => OnUpdatePage("Car", item)}>
-                    <div class="box-column">
-                        <div class="box-flex">
-                            <div class="orange">{item.number}</div>
-                            <div class="newphone__rent_status">{item.header}</div>
-                        </div>
-                        {#if item.isRent && !item.isJob}
-                            <div class="gray">{translateText('player2', 'Осталось')}:</div>
-                            <div class="date">
-                                {TimeFormat (item.date, "H:mm DD.MM.YYYY")}
-                            </div>
-                        {:else}
-                        <div class="gray">{translateText('player2', 'Модель')}:</div>
-                        <div class="date">
-                            {vehicleName(item.model)}
-                        </div>
-                        {/if}
-                    </div>
-                    <div class="newphone__rent_noneimage pos-center rent" style="background-image: url('{document.cloud}inventoryItems/vehicle/{item.model.toLowerCase()}.png')"></div>
-                </div>
-                {/if}
-            {/each}
-        </div>
-    {:else}
-        <div class="newphone__rent_none" in:fade>
-            <div class="box-column">
-                <div class="orange">{translateText('player2', 'Транспорта нет')}</div>
-                <div class="gray">{translateText('player2', 'Но вы можете оформить аренду транспортного средства')}</div>
-            </div>
-            <div class="newphone__rent_noneimage"></div>
-        </div>
-        <div class="newphone__project_button rent" on:click={setPointArenda}>{translateText('player2', 'Найти аренду')}</div>
-        <div class="newphone__project_button rent" on:click={()=> currentPage.set("taxi")}>{translateText('player2', 'Вызвать такси')}</div>
     {/if}
-{/if}
+
+    {#if carsList.length}
+        <input type="text" class="auto__search" placeholder="Поиск по модели или номеру" bind:value={inputText} on:focus={onInputFocus} on:blur={onInputBlur}>
+        {#if categories.length > 1}
+            <div class="auto__chips">
+                <div class:active={!category} on:click={() => category = ""}>Все</div>
+                {#each categories as item}
+                    <div class:active={category === item} on:click={() => category = item}>{item}</div>
+                {/each}
+            </div>
+        {/if}
+
+        {#each filtered as item}
+            <div class="auto__vehicle" on:click={() => OnUpdatePage("Car", item)}>
+                <div class="auto__vehicle_img" style="background-image: url('{document.cloud}inventoryItems/vehicle/{item.model.toLowerCase()}.png')"></div>
+                <div class="auto__vehicle_info">
+                    <b>{vehicleName(item.model)}</b>
+                    <div class="auto__vehicle_row">
+                        <span class="auto__plate small">{item.number}</span>
+                        <span class="auto__owner">{item.header}</span>
+                    </div>
+                    <div class="auto__status {carState(item, garage).cls}"><i></i>{carState(item, garage).text}</div>
+                </div>
+                <div class="auto__chevron">›</div>
+            </div>
+        {:else}
+            <div class="auto__empty">Ничего не найдено</div>
+        {/each}
+    {:else}
+        <div class="auto__empty big">
+            <b>Машин нет</b>
+            <span>Можно взять машину в аренду или вызвать такси.</span>
+        </div>
+        <div class="auto__action primary" on:click={setPointArenda}>Найти аренду</div>
+        <div class="auto__action" on:click={() => currentPage.set("taxi")}>Вызвать такси</div>
+    {/if}
+</div>

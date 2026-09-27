@@ -1,84 +1,73 @@
 <script>
-    import { translateText } from 'lang'
     import { executeClient } from 'api/rage'
     import { format } from 'api/formatter'
+    import { charBankMoney } from 'store/chars';
+    import { onMount } from 'svelte';
+
     export let activeMain;
     export let subdata;
     export let type;
     export let placeholder;
     export let menuItem;
+    export let holder;
 
     let value = "";
-    let icon = 'dollar';
-    $: {
-        if (placeholder === translateText('player', 'Счет зачисления')) {
-            icon = 'card';
-        } else {
-            icon = 'dollar';
-        }
+    let input;
+
+    $: isAccount = placeholder === 'Счет зачисления';
+    $: maxLength = isAccount ? 10 : 7;
+    // Для дома/бизнеса сервер присылает "баланс/максимум$"
+    $: target = typeof subdata === "string" && subdata.includes('/') ? subdata.replace('$', '').split('/') : null;
+    $: title = isAccount ? 'Перевод на счёт' : placeholder === 'Сумма для перевода' ? 'Сумма перевода' : (menuItem[activeMain] ? menuItem[activeMain].title : 'Операция');
+    $: quick = !isAccount && (activeMain === 0 || activeMain === 1) ? [100, 500, 1000, 5000] : [];
+
+    const onHandleInput = () => {
+        value = String(value).replace(/\D+/g, "").replace(/^0+/, "").slice(0, maxLength);
     }
+
     const onNext = () => {
+        if (!value || !window.loaderData.delay ("atm.next", 1))
+            return;
         executeClient ('atmVal', value);
-        value = ""
+        value = "";
     }
 
     const onPrev = () => {
         executeClient ('atmCB', type, 0);
-        value = ""
+        value = "";
     }
-	const onHandleInput = (value, num) => {
-        value = Math.round(value.replace(/\D+/g, ""));
-        if (value < 1) value = 1;
-        else if (num === 6 && value > 9999999) value = 9999999;
-        else if (num === 10 && value > 99999999) value = 99999999;
+
+    const onKey = (e) => {
+        if (e.key === "Enter") onNext();
     }
+
+    onMount(() => input && input.focus());
 </script>
-
-
-<div class="atm_step">
-    <div class="bf_img">
-        <span class="m1" />
+<h1>{title}</h1>
+{#if target}
+    <div class="atm__sub">{holder}</div>
+    <div class="atm__stats">
+        <div><p>На счету</p><b>${format("money", target[0])}</b></div>
+        <div><p>Максимум</p><b>${format("money", target[1])}</b></div>
     </div>
-    <div class="mdatm">
-        {#if activeMain === 2 || activeMain === 3}
-            <div class="head_inp head_vertical">
-                <span class="inp_ic {menuItem [activeMain].icon}" />
-                <div>
-                    <span>{menuItem [activeMain].title}</span>
-                    {#if subdata.length}
-                        <div class="small">{translateText('player', 'Баланс')}: <span class="yellow">{format("money", subdata.split('/')[0])}$</span></div>
-                        <div class="small">{translateText('player', 'Максимум')}: <span class="yellow">{format("money", subdata.split('/')[1])}$</span></div>
-                    {/if}
-                </div>
-            </div>
-        {:else}
-            <div class="head_inp head_column">
-                <span class="inp_ic {menuItem [activeMain].icon}" />
-                <div>
-                    <span>{menuItem [activeMain].title}</span>
-                </div>
-            </div>  
-        {/if}
-        <div class="inp_atm dollar">
-            <div class="after {icon}" />
-            {#if icon == "card"}
-            <input bind:value={value} type="text" on:input={(event) => onHandleInput (event.target.value, 10)} placeholder={placeholder} maxLength={10}/>
-            {:else}
-            <input bind:value={value} type="text" on:input={(event) => onHandleInput (event.target.value, 6)} placeholder={placeholder} maxLength={8}/>
-            {/if}
+{:else}
+    <div class="atm__sub">Баланс счёта: <b>${format("money", $charBankMoney)}</b></div>
+{/if}
+<div class="atm__field">
+    <p>{placeholder}</p>
+    <div class="atm__input">
+        {#if !isAccount}<span>$</span>{/if}
+        <input bind:this={input} bind:value={value} type="text" on:input={onHandleInput} on:keydown={onKey} placeholder={isAccount ? "Номер счёта" : "0"} />
+    </div>
+    {#if quick.length}
+        <div class="atm__quick">
+            {#each quick as sum}
+                <div on:click={() => value = String(sum)}>${format("money", sum)}</div>
+            {/each}
         </div>
-
-        <ul class="info_atm_button">
-            <li on:click={onNext}>
-                <span class="info_head">{translateText('player', 'Далее')}</span>
-            </li>
-            <li on:click={onPrev}>
-                <span class="info_head">{translateText('player', 'Назад')}</span>
-            </li>
-        </ul>
-
-    </div>
-    <div class="bf_img">
-        <span class="m2" />
-    </div>
+    {/if}
+</div>
+<div class="atm__buttons">
+    <div class="atm__btn" on:click={onPrev}>Назад</div>
+    <div class="atm__btn primary" class:disabled={!value} on:click={onNext}>{isAccount ? 'Далее' : 'Выполнить'}</div>
 </div>

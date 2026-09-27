@@ -301,6 +301,7 @@ namespace Database
 		[Column("mafia"),                    NotNull] public int     Mafia       { get; set; } // int(11)
 		[Column("orders"),                   NotNull] public string  Orders      { get; set; } // text
 		[Column("tax"),            Nullable         ] public double? Tax         { get; set; } // double
+		[Column("cash"),                     NotNull] public long    Cash        { get; set; } // bigint(20), касса бизнеса (планшет)
 	}
 
 	[Table("businesshistory")]
@@ -312,6 +313,7 @@ namespace Database
 		[Column("uuid"),   NotNull             ] public int      Uuid   { get; set; } // int(11)
 		[Column("item"),   NotNull             ] public string   Item   { get; set; } // varchar(50)
 		[Column("price"),  NotNull             ] public int      Price  { get; set; } // int(11)
+		[Column("cost"),   NotNull             ] public int      Cost   { get; set; } // int(11), себестоимость продажи
 	}
 
 	[Table("characters")]

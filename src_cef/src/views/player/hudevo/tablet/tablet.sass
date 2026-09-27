@@ -1,0 +1,144 @@
+// Планшет: тёмная рамка 16:10 по центру экрана
+
+.tablet
+    position: fixed
+    inset: 0
+    z-index: 10000
+    display: flex
+    align-items: center
+    justify-content: center
+    background: rgba(4, 5, 7, 0.45)
+    font-family: 'Gilroy', sans-serif
+    color: #fff
+    user-select: none
+
+.tablet__frame
+    width: 142vh
+    height: 88.75vh
+    padding: 1.6vh
+    box-sizing: border-box
+    border-radius: 4vh
+    background: linear-gradient(145deg, #2A2D33, #0C0D10)
+    box-shadow: 0 0 0 0.25vh #3A3E46, 0 4vh 10vh rgba(0, 0, 0, 0.7)
+
+.tablet__screen
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 2.6vh
+    overflow: hidden
+    background: radial-gradient(120% 90% at 15% 0%, #1B2130 0%, #0B0C0F 55%, #08090B 100%)
+    display: flex
+    flex-direction: column
+
+.tablet__status
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1vh 2.4vh 0.4vh
+    font-size: 1.25vh
+    font-weight: 600
+    color: rgba(255, 255, 255, 0.85)
+    .tablet__status_center
+        color: rgba(255, 255, 255, 0.45)
+        text-transform: capitalize
+    .tablet__status_right
+        color: rgba(255, 255, 255, 0.55)
+
+.tablet__home
+    flex: 1
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 5vh
+
+.tablet__clock
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-bottom: 6vh
+    b
+        font-size: 9vh
+        font-weight: 300
+        letter-spacing: -0.3vh
+        line-height: 1
+    span
+        margin-top: 0.8vh
+        font-size: 1.8vh
+        color: rgba(255, 255, 255, 0.55)
+        text-transform: capitalize
+
+.tablet__apps
+    display: grid
+    grid-template-columns: repeat(5, 11vh)
+    gap: 3vh 4vh
+
+.tablet__app
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 1vh
+    cursor: pointer
+    span
+        font-size: 1.35vh
+        font-weight: 500
+        color: rgba(255, 255, 255, 0.85)
+        text-align: center
+        white-space: nowrap
+    &:hover .tablet__app_icon
+        transform: translateY(-0.4vh)
+
+.tablet__app_icon
+    width: 8.4vh
+    height: 8.4vh
+    border-radius: 2vh
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.3)), var(--c)
+    box-shadow: 0 1vh 2.4vh rgba(0, 0, 0, 0.45), inset 0 0.1vh 0 rgba(255, 255, 255, 0.25)
+    transition: transform .2s ease
+    cursor: pointer
+    svg
+        width: 50%
+        height: 50%
+    &.small
+        width: 6.4vh
+        height: 6.4vh
+        border-radius: 1.6vh
+
+.tablet__dock
+    margin-top: auto
+    margin-bottom: 4.5vh
+    display: flex
+    gap: 1.6vh
+    padding: 1.2vh 1.6vh
+    border-radius: 2.8vh
+    background: rgba(255, 255, 255, 0.07)
+    backdrop-filter: blur(1vh)
+    border: 0.1vh solid rgba(255, 255, 255, 0.08)
+
+.tablet__app_view
+    flex: 1
+    min-height: 0
+    display: flex
+    flex-direction: column
+    &.fraction
+        align-items: center
+        justify-content: center
+        overflow: hidden
+
+.tablet__homebar
+    position: absolute
+    left: 50%
+    bottom: 0.8vh
+    transform: translateX(-50%)
+    width: 18vh
+    height: 0.55vh
+    border-radius: 1vh
+    background: rgba(255, 255, 255, 0.55)
+    cursor: pointer
+    z-index: 5
+    &:hover
+        background: #fff

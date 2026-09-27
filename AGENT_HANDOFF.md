@@ -319,6 +319,13 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - `src_cef/src/views/player/atm/`: дизайн по архиву пользователя (фон `images/bg.jpg`, карта `images/card.png`), шрифт Gilroy из HUD. Протокол прежний (`window.atm.open/reset`, `atmCB`, `atmVal`, `MoneySystem/Bank.cs`).
 - Исправлено: данные `setatm` теперь обновляются в открытом окне; выбор бизнеса из списка (раньше открывался последний); ввод только цифр; `atmClose` возвращает в меню.
 
+## 7l. Планшет (K)
+
+- CEF `hudevo/tablet/` (оболочка, `apps/business/*`, `apps/forbes.svelte`), клиент `src_client/tablet/index.js` (бинд №63 «Планшет», K), сервер `Players/Tablet/Events.cs` (анимация + проп `tablet` из `inventory/attachments.js`).
+- Меню фракции/организации — только на планшете (вкладки из «I» убраны, `client.tablet.openApp` из круга и `open_Table`).
+- Бизнес: `Businesses/Tablet/*` (`server.tablet.business.load/history/action`). Касса `businesses.cash` и себестоимость `businesshistory.cost` — колонки создаются при старте (`BusinessManager.Init`). Выручка из `takeProd` идёт в кассу; при смене владельца касса выплачивается прежнему.
+- Из телефона убраны: бизнес в «Имуществе», Маркетплейс, Forbes. Новое меню создания организации — `views/fractions/create/index.svelte`.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

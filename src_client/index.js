@@ -450,6 +450,7 @@ require('./events/matwar.js');
 
 require('./polygons/index.js');
 require('./phone/index.js');
+require('./tablet/index.js');
 require('./battlepass/battlepass.js');
 
 require('./table/index');

@@ -122,7 +122,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
             Trigger.ClientEvent(player, "client.phone.business.init", JsonConvert.SerializeObject(stats), JsonConvert.SerializeObject(stocks), JsonConvert.SerializeObject(orders));
         }
         
-        private static int GetPriceMin(string productName, int bizType, int price)
+        internal static int GetPriceMin(string productName, int bizType, int price)
         {
             if (productName == "Лотерейный билет")
                 return price;
@@ -135,7 +135,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
             return Convert.ToInt32(minPrice);
         }
 
-        private static int GetPriceMax(string productName, int bizType, int price)
+        internal static int GetPriceMax(string productName, int bizType, int price)
         {
             if (productName == "Лотерейный билет")
                 return price;
@@ -149,7 +149,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
             return Convert.ToInt32(maxPrice);
         }
         
-        private static int CountMinOrder(int bizType) => (bizType == 14 || (bizType >= 2 && bizType <= 5)) ? 1 : 10;
+        internal static int CountMinOrder(int bizType) => (bizType == 14 || (bizType >= 2 && bizType <= 5)) ? 1 : 10;
 
         public static void AddOrder(ExtPlayer player, string name, int value)
         {

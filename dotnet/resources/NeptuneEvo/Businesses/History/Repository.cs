@@ -15,7 +15,7 @@ namespace NeptuneEvo.Businesses.History
         private static List<Businesshistories> InsertHistoryList = new List<Businesshistories>();
         private static readonly nLog Log = new nLog("Businesses.History.Repository");
         
-        public static void AddHistory(int uuid, int bizId, string itemName, int cost)
+        public static void AddHistory(int uuid, int bizId, string itemName, int cost, int productCost = 0)
         {
             InsertHistoryList.Add(new Businesshistories
             {
@@ -23,6 +23,7 @@ namespace NeptuneEvo.Businesses.History
                 Bizid = bizId,
                 Item = itemName,
                 Price = cost,
+                Cost = productCost,
                 Date = DateTime.Now
             });
         }

@@ -279,6 +279,7 @@ namespace NeptuneEvo.Jobs
                 }
                 MoneySystem.Wallet.Change(player, -amount);
                 GameLog.Money($"player({characterData.UUID})", $"biz({biz.ID})", amount, $"mechanicBuyFuel");
+                biz.BuyItemBusiness(characterData.UUID, biz.Products[0].Name, amount);
                 vehicleLocalData.VehLoadedFuel += fuel;
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.YouFillBack, vehicleLocalData.VehLoadedFuel), 5000);
             }

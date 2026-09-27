@@ -1267,7 +1267,7 @@ namespace NeptuneEvo.Fractions
             { 79, new FracMatsData(79, "Мед. карта", Chars.Repository.ItemsInfo[ItemId.Note].Icon, $"{Main.BlackMarketMedCard}$") },
             { 80, new FracMatsData(80, "QR-код", Chars.Repository.ItemsInfo[ItemId.Note].Icon, $"{Main.BlackQrFake}$") },
             { 81, new FracMatsData(81, "Радиоперехватчик", Chars.Repository.ItemsInfo[ItemId.RadioInterceptor].Icon, $"{Main.BlackRadioInterceptord}$") },
-            { 82, new FracMatsData(82, "Обнал крипты", Chars.Repository.ItemsInfo[ItemId.BagWithMoney].Icon, "BTC ⇄ $") },
+            { 500, new FracMatsData(500, "Обнал крипты", Chars.Repository.ItemsInfo[ItemId.BagWithMoney].Icon, "BTC ⇄ $") },
 
             //Для фракций
             { 8, new FracMatsData(8, Chars.Repository.ItemsInfo[ItemId.Nightstick].Name, Chars.Repository.ItemsInfo[ItemId.Nightstick].Icon, null) },

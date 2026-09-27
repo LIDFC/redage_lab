@@ -136,7 +136,8 @@ namespace NeptuneEvo.BlackMarket.Admin
             if (parts.Length < 3)
             {
                 CryptoCommands.Chat(player, $"rank={c.FractionPaymentRank} ffee={c.FractionFeePercent}% p2pfee={c.P2PFeePercent}% hours={c.LotMinHours}-{c.LotMaxHours} " +
-                    $"drop={c.DropMinutes}/{c.DropOfflineMinutes}мин pickup={c.PickupSeconds}с rate={c.ExchangeUsdPerBtc}$ maxprice={c.MaxPricePerUnit}");
+                    $"drop={c.DropMinutes}/{c.DropOfflineMinutes}мин pickup={c.PickupSeconds}с rate={c.ExchangeUsdPerBtc}$ maxprice={c.MaxPricePerUnit} " +
+                    $"launderfee={c.LaunderFeePercent}% cashoutfee={c.CashoutFeePercent}% wanted={c.CashoutWantedChance}%");
                 return;
             }
             if (!CryptoCommands.CanManage(player))
@@ -159,8 +160,11 @@ namespace NeptuneEvo.BlackMarket.Admin
                 case "pickup": c.PickupSeconds = Math.Max(1, (int)v); break;
                 case "rate": c.ExchangeUsdPerBtc = v; break;
                 case "maxprice": c.MaxPricePerUnit = Math.Max(1, (long)v); break;
+                case "launderfee": c.LaunderFeePercent = Math.Min(100, v); break;
+                case "cashoutfee": c.CashoutFeePercent = Math.Min(100, v); break;
+                case "wanted": c.CashoutWantedChance = (int)Math.Min(100, v); break;
                 default:
-                    CryptoCommands.Chat(player, "Ключи: rank ffee p2pfee minhours maxhours drop dropoffline pickup rate maxprice");
+                    CryptoCommands.Chat(player, "Ключи: rank ffee p2pfee minhours maxhours drop dropoffline pickup rate maxprice launderfee cashoutfee wanted");
                     return;
             }
             BlackMarketConfig.Save();

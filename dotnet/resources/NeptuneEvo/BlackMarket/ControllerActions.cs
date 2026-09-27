@@ -111,6 +111,19 @@ namespace NeptuneEvo.BlackMarket
                     case "exchange":
                         result = CryptoOps.Exchange(player, Long(args, "btc"));
                         break;
+                    case "launder":
+                        result = CashOut.Launder(player);
+                        break;
+                    case "cashout":
+                        result = CashOut.Cashout(player, Long(args, "btc"));
+                        break;
+                    case "cashoutGps":
+                        {
+                            var point = Config.BlackMarketConfig.Current.CashoutPoint;
+                            Trigger.ClientEvent(player, "createWaypoint", point.X, point.Y);
+                            result = OpResult.Success("Мавр отмечен на карте");
+                        }
+                        break;
                     case "gps":
                         {
                             var drop = DropManager.ForBuyer(player.GetUUID()).FirstOrDefault(d => d.Id == Int(args, "id"));

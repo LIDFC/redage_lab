@@ -303,7 +303,7 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Закладки (`Deliveries/DropManager.cs`): после оплаты товар → `bmdrop_{id}`, объект `prop_mp_drug_package` в случайной точке (по умолчанию — точки аирдропов дальше 220 м от участков полиции), блип только покупателю, забрать может любой (E + 5 с). 90 мин / 30 мин после выхода покупателя, восстанавливаются после рестарта.
 - P2P (`P2P/P2PManager.cs`): BTC за наличные, частичная покупка, комиссия в BTC на системный кошелёк. Переводы по номеру телефона, взнос/вывод кошелька банды, обменник $→BTC по курсу из конфига.
 - История без имён — `crypto_history`, полный аудит — `blackmarket_audit`. Команды: `/crypto`, `/fcrypto`, `/bm` (см. `Admin/`). SQL-схема: `database/systems/blackmarket.sql`.
-- Не сделано: «Обнал» (фаза 8, ждёт согласования).
+- Обнал (`Crypto/CashOut.cs`, вкладка «Обнал»): только у Мавра (`cashoutPoint`, 5 м). Сумка `BagWithMoney` → BTC (комиссия 5%), BTC → наличные (комиссия 10%, шанс розыска 15% — +1 звезда). Параметры `launderFeePercent`, `cashoutFeePercent`, `cashoutWantedChance`, `/bm cfg launderfee|cashoutfee|wanted`.
 
 ## 8. Что осталось или стоит проверить
 

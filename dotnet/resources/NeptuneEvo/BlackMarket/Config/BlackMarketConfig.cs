@@ -40,6 +40,16 @@ namespace NeptuneEvo.BlackMarket.Config
         /// <summary>Системный обменник: сколько $ стоит 1 BTC. 0 — обменник выключен.</summary>
         [JsonProperty("exchangeUsdPerBtc")] public decimal ExchangeUsdPerBtc { get; set; } = 10m;
 
+        /// <summary>Обнал: грязные $ из сумки → BTC, комиссия %.</summary>
+        [JsonProperty("launderFeePercent")] public decimal LaunderFeePercent { get; set; } = 5m;
+        /// <summary>Обнал: BTC → $ наличными, комиссия %.</summary>
+        [JsonProperty("cashoutFeePercent")] public decimal CashoutFeePercent { get; set; } = 10m;
+        /// <summary>Шанс получить звезду розыска при обналичивании BTC, %.</summary>
+        [JsonProperty("cashoutWantedChance")] public int CashoutWantedChance { get; set; } = 15;
+        /// <summary>Где работает обнал: у NPC «Мавр» (Caleb Baker, Core/Robbery.cs).</summary>
+        [JsonProperty("cashoutPoint")] public Vector3 CashoutPoint { get; set; } = new Vector3(-2.1323678, -1821.9778, 29.543238);
+        [JsonProperty("cashoutRadius")] public float CashoutRadius { get; set; } = 5f;
+
         /// <summary>
         /// Точки закладок: на улице, на земле (позиция «в полный рост», объект ставится на ~1 м ниже).
         /// По умолчанию — точки аирдропов (проверенные уличные места вне зелёных зон) без тех, что ближе 220 м к участкам полиции.

@@ -52,6 +52,16 @@ namespace NeptuneEvo.BlackMarket
                     rate = config.ExchangeUsdPerBtc,
                     dropMinutes = config.DropMinutes,
                     maxPrice = config.MaxPricePerUnit,
+                    launderFee = config.LaunderFeePercent,
+                    cashoutFee = config.CashoutFeePercent,
+                    wantedChance = config.CashoutWantedChance,
+                },
+                cashout = new
+                {
+                    atPoint = CashOut.AtPoint(player),
+                    bag = CashOut.BagAmount(player),
+                    x = config.CashoutPoint.X,
+                    y = config.CashoutPoint.Y,
                 },
                 lots = Lots.Snapshot().Where(l => l.Count > 0).Select(l => new
                 {

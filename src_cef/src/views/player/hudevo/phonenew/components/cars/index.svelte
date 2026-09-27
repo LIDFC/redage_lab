@@ -1,5 +1,4 @@
 <script>
-    import { translateText } from 'lang'
     import Header from '../header.svelte'
     import HomeButton from '../homebutton.svelte'
     import Loader from './../loader.svelte'
@@ -65,23 +64,25 @@
 {#if !isLoad}
     <Loader />
 {:else}
-    <div class="newphone__rent" in:fade>
+    <div class="newphone__rent auto" in:fade>
         <Header />
-        <div class="newphone__rent_content">
-            <div class="box-flex newphone__project_padding20 p-top">
-                <div class="newphone__maps_headerimage rent"></div>
-                <div class="newphone__maps_headertitle"><span class="orange">Авто</span></div>
+        <div class="auto__head">
+            <div>
+                <div class="auto__head_title">Авто</div>
+                <div class="auto__head_sub">{panel ? 'Вы в машине' : `Машин: ${carsList.filter(c => !c.isRent).length}`}</div>
             </div>
             <div class="auto__tabs">
                 <div class="auto__tab" class:active={tab === "panel"} class:disabled={!panel} on:click={() => panel && (tab = "panel")}>Панель</div>
-                <div class="auto__tab" class:active={tab === "cars"} on:click={() => tab = "cars"}>Мои машины</div>
+                <div class="auto__tab" class:active={tab === "cars"} on:click={() => tab = "cars"}>Гараж</div>
             </div>
+        </div>
+        <div class="auto__body">
             {#if tab === "panel" && panel}
                 <Panel {panel} refresh={loadPanel} />
             {:else if SelectViews === "Car" && selectedCar}
                 <Car {OnUpdatePage} {selectedCar} {garage} {reload} />
             {:else}
-                <List {OnUpdatePage} {carsList} {garage} {reload} />
+                <List {OnUpdatePage} {carsList} {garage} />
             {/if}
         </div>
         <HomeButton />

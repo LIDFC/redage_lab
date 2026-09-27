@@ -74,7 +74,7 @@ namespace NeptuneEvo.Players.Phone.Cars
         }
 
         /// <summary>
-        /// Сведения о гараже для приложения «Авто»: число мест, кто где стоит и следующее улучшение.
+        /// Сведения о гараже для приложения «Авто»: число мест и кто где стоит.
         /// Только для отображения — сервер при действиях всё проверяет заново.
         /// </summary>
         public static string GarageInfo(ExtPlayer player, House house, Garage garage)
@@ -97,14 +97,6 @@ namespace NeptuneEvo.Players.Phone.Cars
                     }
                 }
 
-                object next = null;
-                if (isOwner && !garage.IsApartment && garage.Type != 6 && garage.Type < 9)
-                {
-                    var nextType = garage.Type + 1 == 6 ? garage.Type + 2 : garage.Type + 1;
-                    if (GarageManager.GarageTypes.TryGetValue(nextType, out var nextGarage))
-                        next = new { cars = nextGarage.MaxCars, price = nextGarage.Price, donate = nextGarage.IsDonate };
-                }
-
                 return JsonConvert.SerializeObject(new
                 {
                     maxCars = garageType.MaxCars,
@@ -112,7 +104,6 @@ namespace NeptuneEvo.Players.Phone.Cars
                     apartment = garage.IsApartment,
                     owner = isOwner,
                     slots,
-                    next,
                 });
             }
             catch

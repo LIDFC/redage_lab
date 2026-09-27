@@ -225,11 +225,7 @@ gm.events.add(clientName + "panel", (action, value) => {
     }
 });
 
-// Место машины в гараже и улучшение гаража (раньше — меню дома «Парковка»)
+// Место машины в гараже (раньше — меню дома «Парковка»)
 gm.events.add(clientName + "parking", (sqlId, place) => {
     mp.events.callRemote("server.garage.parking", Number(sqlId), Number(place));
-});
-
-gm.events.add(clientName + "upgradeGarage", () => {
-    mp.events.callRemote("server.garage.update");
 });

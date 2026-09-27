@@ -3,12 +3,23 @@
     export let type;
     export let subdata;
 
-    const emulPress = (index) => {
-        executeClient ("atmCB", type, index);
-    }
+    // Раньше здесь автоматически «нажимались» все бизнесы подряд и открывался последний — теперь игрок выбирает сам
+    $: list = Array.isArray(subdata) ? subdata : [];
 
+    const onSelect = (index) => executeClient ("atmCB", type, index);
+    const onBack = () => executeClient ("atmCB", 2, 0);
 </script>
-
-{#each subdata as value, index}
-    {emulPress(index)}
-{/each}
+<h1>Налог за бизнес</h1>
+<div class="atm__sub">Выберите бизнес, на счёт которого внести деньги</div>
+<div class="atm__list">
+    {#each list as name, index}
+        <div class="atm__list_item" on:click={() => onSelect (index)}>
+            <i class="atm__icon store"></i>
+            <span>{name}</span>
+            <b>›</b>
+        </div>
+    {/each}
+</div>
+<div class="atm__buttons single">
+    <div class="atm__btn" on:click={onBack}>Назад</div>
+</div>

@@ -1,7 +1,6 @@
 <script>
-    import { translateText } from 'lang'
     import { executeClient } from 'api/rage'
-    import { format } from 'api/formatter'    
+    import { format } from 'api/formatter'
     import { charBankMoney } from 'store/chars';
 
     import './css/main.css'
@@ -12,6 +11,9 @@
 
     export let viewData;
 
+    // Протокол с сервером (MoneySystem/Bank.cs) прежний: window.atm.open([type, subdata, placeholder]),
+    // atmCB(type, index) — выбор пункта, atmVal(value) — ввод суммы/счёта.
+
     let SelectViews = "Menu";
 
     const Views = {
@@ -21,47 +23,34 @@
     }
 
     const menuItem = [
-        {
-            "title":translateText('player', 'Внести средства'),
-            "icon":"ic-user-shared-fill"
-        },
-        {
-            "title":translateText('player', 'Вывести средства'),
-            "icon":"ic-user-received-fill"
-        },
-        {
-            "title":translateText('player', 'Внести налог за недвижимость'),
-            "icon":"ic-home-fill"
-        },
-        {
-            "title":translateText('player', 'Внести налог за бизнес'),
-            "icon":"ic-store-fill"
-        },
-        {
-            "title":translateText('player', 'Перевести на другой счет'),
-            "icon":"ic-article-fill"
-        }
+        { title: 'Внести наличные', icon: 'user-shared' },
+        { title: 'Снять наличные', icon: 'user-received' },
+        { title: 'Налог за дом', icon: 'home' },
+        { title: 'Налог за бизнес', icon: 'store' },
+        { title: 'Перевод на счёт', icon: 'article' },
     ];
 
     let
         type = 1,
-        subdata = '',   
-        number = viewData.number,
+        subdata = '',
         activeMain = 0,
-        holder = viewData.holder,
         placeholder = "";
 
+    // При выборе дома/бизнеса сервер присылает setatm с новыми данными в тот же компонент
+    $: number = viewData ? String(viewData.number) : "";
+    $: holder = viewData ? viewData.holder : "";
+    $: isPersonal = /^\d+$/.test(number);
 
     window.atm = {
         open: (data) => {
             window.atm.reset();
             placeholder = data[2];
             subdata = data[1];
-            type = data[0];            
+            type = data[0];
 
-            if(type === 1) SelectViews = "Menu";
-            else if(type === 2) SelectViews = "Input";
-            else if(type === 3) SelectViews = "Business";
+            if (type === 1) SelectViews = "Menu";
+            else if (type === 2) SelectViews = "Input";
+            else if (type === 3) SelectViews = "Business";
         },
         reset: () => {
             subdata = [];
@@ -71,45 +60,48 @@
     }
 
     const onSelectMain = (index) => {
-        activeMain =  index;
+        if (index !== -1)
+            activeMain = index;
 
         executeClient ("atmCB", type, index);
     }
 </script>
 
-<div class="rd-body-inventory-u">
-    <div class="module_atm page">
-        <div class="banner">
-            <div class="head">
-                <div class="title">
-                    <div>
-                    {translateText('player', 'Банкомат')} <span class="bold">ATM</span>
-                    </div>
-                    <span class="logo" />
+<div class="atm">
+    <div class="atm__screen">
+        {#if SelectViews == "Menu"}
+            <div class="atm__layout">
+                <div class="atm__menu">
+                    <svelte:component this={Views[SelectViews]} {menuItem} {onSelectMain} />
                 </div>
-                <p>{translateText('player', 'Самые быстрые и надежные Банкоматы “ATM” Работают 24/7, расположены по всему штату!')}</p>
-                <div class="prevButton">{translateText('player', 'Без комиссии')}</div>
+                <div class="atm__side">
+                    <div class="atm__side_title">Ваш счёт</div>
+                    <div class="atm__info">
+                        <p>Владелец счёта</p>
+                        <span>{holder}</span>
+                    </div>
+                    <div class="atm__info">
+                        <p>Баланс счёта</p>
+                        <span class="money">${format("money", $charBankMoney)}</span>
+                    </div>
+                    <div class="atm__card">
+                        <div class="atm__card_top">
+                            <b>FLEECA</b>
+                            <i class="atm__chip"></i>
+                        </div>
+                        <div class="atm__card_number">{isPersonal ? number.padStart(10, '•').replace(/(.{4})(?=.)/g, '$1 ') : number}</div>
+                        <div class="atm__card_bottom">
+                            <span>{holder}</span>
+                            <span>12/30</span>
+                        </div>
+                    </div>
+                    <div class="atm__note">Без комиссии · 24/7</div>
+                </div>
             </div>
-        </div>
-        <div class="cont">
-            <ul class="info_atm">
-                <li id="number">
-                    <span class="ib bank-card"></span>
-                    <span class="info_head">{translateText('player', 'Номер счёта')}</span>
-                    <span class="info_val">{number}</span>
-                </li>
-                <li id="holder">
-                    <span class="ib bank-user"></span>
-                    <span class="info_head">{translateText('player', 'Владелец счёта')}</span>
-                    <span class="info_val">{holder}</span>
-                </li>
-                <li id="balance">
-                    <span class="ib bank-fill"></span>
-                    <span class="info_head">{translateText('player', 'На банковском счете')}</span>
-                    <span class="info_val">{format("money", $charBankMoney)}$</span>
-                </li>
-            </ul>
-            <svelte:component this={Views[SelectViews]} {menuItem} {type} {subdata} {activeMain} {placeholder} {onSelectMain} />
-        </div>
+        {:else}
+            <div class="atm__op">
+                <svelte:component this={Views[SelectViews]} {menuItem} {type} {subdata} {activeMain} {placeholder} {holder} />
+            </div>
+        {/if}
     </div>
 </div>

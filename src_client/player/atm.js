@@ -53,6 +53,11 @@ gm.events.add('atmVal', (data) => {
 	}
 });
 
+// Сервер шлёт atmClose после внесения наличных — возвращаем банкомат в главное меню
+gm.events.add('atmClose', () => {
+    mp.gui.emmit('window.atm && window.atm.reset()');
+});
+
 gm.events.add('atmOpen', (data) => {
     mp.gui.emmit(`window.atm.open(${data})`);
 });

@@ -2932,6 +2932,7 @@ namespace NeptuneEvo.Core
                         return;
                     }
                     biz.BuyItemBusiness(characterData.UUID, "Бензин", price);
+                    Trigger.ClientEvent(player, "client.fuel.filled", lvl); // звук заливки топлива
                     if (isGov)
                     {
                         GameLog.Money($"frac(6)", $"biz({biz.ID})", price, "buyPetrol");

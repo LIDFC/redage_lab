@@ -70,7 +70,7 @@
         <div class="auto__head">
             <div>
                 <div class="auto__head_title">Авто</div>
-                <div class="auto__head_sub">{panel ? 'Вы в машине' : `Машин: ${carsList.filter(c => !c.isRent).length}`}</div>
+                <div class="auto__head_sub">{panel ? (panel.remote ? `Рядом · ${panel.distance} м` : 'Вы в машине') : `Машин: ${carsList.filter(c => !c.isRent).length}`}</div>
             </div>
             <div class="auto__tabs">
                 <div class="auto__tab" use:sound={"tap"} class:active={tab === "panel"} class:disabled={!panel} on:click={() => panel && (tab = "panel")}>Панель</div>

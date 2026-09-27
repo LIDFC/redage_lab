@@ -91,6 +91,15 @@ const setAnim = (entity, data) => {
 }
 
 mp.events.addDataHandler("ANIM_USE", (entity, value, oldValue) => {
+    // Предмет в руках (планшет и т.п.) снимаем, когда анимация сменилась или остановлена сервером
+    try {
+        if (entity && entity.handle === global.localplayer.handle && typeof oldValue === "string" && oldValue !== "null") {
+            const oldAttachment = oldValue.split("|")[3];
+            const newAttachment = typeof value === "string" && value !== "null" ? value.split("|")[3] : null;
+            if (oldAttachment && oldAttachment !== newAttachment)
+                mp.attachments.removeLocal(oldAttachment);
+        }
+    } catch (e) {}
     setAnim (entity, value);
 });
 

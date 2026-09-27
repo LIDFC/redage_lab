@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Concurrent;
 using GTANetworkAPI;
 using NeptuneEvo.Character;
@@ -29,18 +30,85 @@ namespace NeptuneEvo.Core
         // Режим езды дублируется здесь: таймер расхода топлива работает не в главном потоке и не должен читать shared data
         private static readonly ConcurrentDictionary<ExtVehicle, int> DriveModes = new ConcurrentDictionary<ExtVehicle, int>();
 
+        /// <summary>Радиус, в котором панелью можно управлять снаружи машины (по ключам/аренде).</summary>
+        public const float RemoteRange = 15f;
+
+        /// <summary>
+        /// Можно ли управлять машиной снаружи: личная/гаражная — по ключу, аренда/работа — свой водитель.
+        /// </summary>
+        public static bool CanControlRemote(ExtPlayer player, ExtVehicle vehicle)
+        {
+            var characterData = player.GetCharacterData();
+            var localData = vehicle.GetVehicleLocalData();
+            if (characterData == null || localData == null)
+                return false;
+            switch (localData.Access)
+            {
+                case VehicleAccess.Personal:
+                case VehicleAccess.Garage:
+                    return VehicleManager.canAccessByNumber(player, vehicle.NumberPlate);
+                case VehicleAccess.Rent:
+                case VehicleAccess.Work:
+                    return localData.WorkDriver == characterData.UUID;
+                default:
+                    return false;
+            }
+        }
+
+        /// <summary>
+        /// vehicleId — машина снаружи (в радиусе 15 м); если игрок сидит в машине, используется она.
+        /// </summary>
         [RemoteEvent("server.vehicle.panel")]
-        public static void OnPanel(ExtPlayer player, string action, int value)
+        public static void OnPanel(ExtPlayer player, string action, int value, int vehicleId)
         {
             try
             {
-                if (!player.IsCharacterData() || !player.IsInVehicle)
+                if (!player.IsCharacterData())
                     return;
-                var vehicle = (ExtVehicle)player.Vehicle;
+
+                ExtVehicle vehicle;
+                int seat;
+                if (player.IsInVehicle)
+                {
+                    vehicle = (ExtVehicle)player.Vehicle;
+                    seat = player.VehicleSeat - (int)VehicleSeat.Driver; // 0 — водитель, 1..3 — пассажиры
+                }
+                else
+                {
+                    // Снаружи: права как у водителя, но только в радиусе и при доступе к машине
+                    vehicle = NAPI.Pools.GetAllVehicles().FirstOrDefault(v => v.Id == vehicleId) as ExtVehicle;
+                    if (vehicle == null || !vehicle.Exists || vehicle.Dimension != player.Dimension
+                        || player.Position.DistanceTo(vehicle.Position) > RemoteRange + 1f)
+                        return;
+                    if (!CanControlRemote(player, vehicle))
+                    {
+                        Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Нет ключей от этой машины", 2500);
+                        return;
+                    }
+                    seat = 0;
+                    if (action == "lock")
+                    {
+                        VehicleManager.ChangeVehicleDoors(player, vehicle);
+                        return;
+                    }
+                    if (action == "engine")
+                    {
+                        // Автозапуск с брелока
+                        if (VehicleManager.IsVehicleDeath(vehicle)) return;
+                        var on = !VehicleStreaming.GetEngineState(vehicle);
+                        if (on && (vehicle.GetVehicleLocalData()?.Petrol ?? 0) <= 0)
+                        {
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "В баке нет топлива", 2500);
+                            return;
+                        }
+                        VehicleStreaming.SetEngineState(vehicle, on);
+                        Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, on ? "Двигатель запущен дистанционно" : "Двигатель заглушен", 2500);
+                        return;
+                    }
+                }
                 if (vehicle == null || !vehicle.Exists)
                     return;
 
-                var seat = player.VehicleSeat - (int)VehicleSeat.Driver; // 0 — водитель, 1..3 — пассажиры
                 var isDriver = seat == 0;
 
                 switch (action)

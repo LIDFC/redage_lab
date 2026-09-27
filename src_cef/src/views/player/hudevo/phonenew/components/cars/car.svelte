@@ -4,7 +4,7 @@
     import { format } from 'api/formatter'
     import { executeClient, executeClientToGroup } from 'api/rage'
     import { fade } from 'svelte/transition'
-    import { carState } from './data'
+    import { carState, vehicleImage, onVehicleImageError } from './data'
 
     export let selectedCar;
     export let OnUpdatePage;
@@ -78,7 +78,7 @@
     <div class="auto__back" on:click={() => isSlots ? (isSlots = false) : OnUpdatePage ("List")}>‹ {isSlots ? 'К машине' : 'Все машины'}</div>
 
     <div class="auto__hero car">
-        <div class="auto__hero_img" style="background-image: url('{document.cloud}inventoryItems/vehicle/{selectedCar.model.toLowerCase()}.png')"></div>
+        <div class="auto__hero_img"><img src={vehicleImage(selectedCar.model)} alt="" on:error={onVehicleImageError} /></div>
         <div class="auto__hero_name">{vehicleName(selectedCar.model)}</div>
         <div class="auto__vehicle_row">
             <span class="auto__plate">{selectedCar.number}</span>

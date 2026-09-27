@@ -384,6 +384,7 @@ require('./vehicle/autoshop.js');
 require('./vehicle/control.js');
 require('./vehicle/petrol.js');
 require('./vehicle/radiosync.js');
+require('./vehicle/panel.js');
 require('./vehicle/vehiclesync.js');
 require('./vehicle/rentcar.js');
 require('./vehicle/drone.js');

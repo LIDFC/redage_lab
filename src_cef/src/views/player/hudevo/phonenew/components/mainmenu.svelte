@@ -42,7 +42,7 @@
             link: "property"
         },
         {
-            name: "Транспорт",
+            name: "Авто",
             icon: CarsIcon,
             link: "cars"
         },

@@ -13870,6 +13870,16 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/views/player/hudevo/phonenew/components/cars/auto.sass":
+/*!********************************************************************!*\
+  !*** ./src/views/player/hudevo/phonenew/components/cars/auto.sass ***!
+  \********************************************************************/
+/***/ (() => {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
 /***/ "./src/views/player/hudevo/phonenew/components/tinder/style.css":
 /*!**********************************************************************!*\
   !*** ./src/views/player/hudevo/phonenew/components/tinder/style.css ***!
@@ -196642,11 +196652,18 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[12] = list[i];
+	child_ctx[19] = list[i];
 	return child_ctx;
 }
 
-// (137:12) {:else}
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[22] = list[i];
+	child_ctx[24] = i;
+	return child_ctx;
+}
+
+// (123:12) {:else}
 function create_else_block_1(ctx) {
 	let div0;
 	let t2;
@@ -196681,8 +196698,8 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (132:12) {#if selectedCar.isRent && !selectedCar.isJob}
-function create_if_block_4(ctx) {
+// (118:12) {#if selectedCar.isRent && !selectedCar.isJob}
+function create_if_block_6(ctx) {
 	let div0;
 	let t2;
 	let div1;
@@ -196716,10 +196733,19 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (160:4) {:else}
+// (146:4) {:else}
 function create_else_block(ctx) {
+	let t;
 	let each_1_anchor;
-	let each_value = /*functionData*/ ctx[3];
+
+	function select_block_type_2(ctx, dirty) {
+		if (/*isSlots*/ ctx[3]) return create_if_block_4;
+		if (/*canPark*/ ctx[4]) return create_if_block_5;
+	}
+
+	let current_block_type = select_block_type_2(ctx, -1);
+	let if_block = current_block_type && current_block_type(ctx);
+	let each_value = /*functionData*/ ctx[5];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -196728,6 +196754,9 @@ function create_else_block(ctx) {
 
 	return {
 		c() {
+			if (if_block) if_block.c();
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].c();
 			}
@@ -196735,6 +196764,9 @@ function create_else_block(ctx) {
 			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				if (each_blocks[i]) {
 					each_blocks[i].m(target, anchor);
@@ -196744,8 +196776,20 @@ function create_else_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*onEnter, functionData, selectedCar, format, isVisible, inGarage*/ 61) {
-				each_value = /*functionData*/ ctx[3];
+			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if (if_block) if_block.d(1);
+				if_block = current_block_type && current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(t.parentNode, t);
+				}
+			}
+
+			if (dirty & /*onEnter, functionData, selectedCar, format, isSlots, isVisible*/ 233) {
+				each_value = /*functionData*/ ctx[5];
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -196768,13 +196812,18 @@ function create_else_block(ctx) {
 			}
 		},
 		d(detaching) {
+			if (if_block) {
+				if_block.d(detaching);
+			}
+
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
 		}
 	};
 }
 
-// (154:4) {#if selectedCar.isRent}
+// (140:4) {#if selectedCar.isRent}
 function create_if_block(ctx) {
 	let div0;
 	let t1;
@@ -196805,8 +196854,8 @@ function create_if_block(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*click_handler*/ ctx[7]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_2*/ ctx[9])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*click_handler*/ ctx[11]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_2*/ ctx[13])
 				];
 
 				mounted = true;
@@ -196838,19 +196887,222 @@ function create_if_block(ctx) {
 	};
 }
 
-// (162:12) {#if isVisible (func, selectedCar, inGarage)}
+// (158:26) 
+function create_if_block_5(ctx) {
+	let div;
+	let t0;
+	let t1_value = /*selectedCar*/ ctx[0].place + 1 + "";
+	let t1;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Место в гараже: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button rent");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_5*/ ctx[16]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*selectedCar*/ 1 && t1_value !== (t1_value = /*selectedCar*/ ctx[0].place + 1 + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (147:8) {#if isSlots}
+function create_if_block_4(ctx) {
+	let div0;
+	let t1;
+	let div1;
+	let t2;
+	let div2;
+	let mounted;
+	let dispose;
+	let each_value_1 = Array(/*garage*/ ctx[2].maxCars);
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Выберите место в гараже";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Отмена";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "auto__title w-100");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "auto__slots");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "orange box-center m-top10");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div1, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*click_handler_4*/ ctx[15]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*selectedCar, garage, onPark, vehicleName*/ 261) {
+				each_value_1 = Array(/*garage*/ ctx[2].maxCars);
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div1, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_1.length;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (150:16) {#each Array(garage.maxCars) as _, place}
+function create_each_block_1(ctx) {
+	let div;
+	let b;
+	let t0_value = /*place*/ ctx[24] + 1 + "";
+	let t0;
+	let t1;
+	let span;
+
+	let t2_value = (/*place*/ ctx[24] === /*selectedCar*/ ctx[0].place
+	? 'здесь'
+	: /*garage*/ ctx[2].slots[/*place*/ ctx[24]]
+		? (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*garage*/ ctx[2].slots[/*place*/ ctx[24]])
+		: 'свободно') + "";
+
+	let t2;
+	let t3;
+	let mounted;
+	let dispose;
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[14](/*place*/ ctx[24]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "auto__slot");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "current", /*place*/ ctx[24] === /*selectedCar*/ ctx[0].place);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "busy", /*garage*/ ctx[2].slots[/*place*/ ctx[24]] && /*place*/ ctx[24] !== /*selectedCar*/ ctx[0].place);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t3);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_3);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*selectedCar, garage*/ 5 && t2_value !== (t2_value = (/*place*/ ctx[24] === /*selectedCar*/ ctx[0].place
+			? 'здесь'
+			: /*garage*/ ctx[2].slots[/*place*/ ctx[24]]
+				? (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*garage*/ ctx[2].slots[/*place*/ ctx[24]])
+				: 'свободно') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+
+			if (dirty & /*selectedCar*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "current", /*place*/ ctx[24] === /*selectedCar*/ ctx[0].place);
+			}
+
+			if (dirty & /*garage, selectedCar*/ 5) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "busy", /*garage*/ ctx[2].slots[/*place*/ ctx[24]] && /*place*/ ctx[24] !== /*selectedCar*/ ctx[0].place);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (162:12) {#if !isSlots && isVisible (func, selectedCar)}
 function create_if_block_2(ctx) {
 	let div;
-	let t0_value = /*func*/ ctx[12].name + "";
+	let t0_value = /*func*/ ctx[19].name + "";
 	let t0;
 	let t1;
 	let t2;
 	let mounted;
 	let dispose;
-	let if_block = /*func*/ ctx[12].func == "sell" && create_if_block_3(ctx);
+	let if_block = /*func*/ ctx[19].func == "sell" && create_if_block_3(ctx);
 
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[10](/*func*/ ctx[12]);
+	function click_handler_6() {
+		return /*click_handler_6*/ ctx[17](/*func*/ ctx[19]);
 	}
 
 	return {
@@ -196870,13 +197122,13 @@ function create_if_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t2);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_3);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_6);
 				mounted = true;
 			}
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (/*func*/ ctx[12].func == "sell") if_block.p(ctx, dirty);
+			if (/*func*/ ctx[19].func == "sell") if_block.p(ctx, dirty);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
@@ -196910,7 +197162,7 @@ function create_if_block_3(ctx) {
 
 // (161:8) {#each functionData as func}
 function create_each_block(ctx) {
-	let show_if = /*isVisible*/ ctx[4](/*func*/ ctx[12], /*selectedCar*/ ctx[0], /*inGarage*/ ctx[2]);
+	let show_if = !/*isSlots*/ ctx[3] && /*isVisible*/ ctx[6](/*func*/ ctx[19], /*selectedCar*/ ctx[0]);
 	let if_block_anchor;
 	let if_block = show_if && create_if_block_2(ctx);
 
@@ -196924,7 +197176,7 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*selectedCar, inGarage*/ 5) show_if = /*isVisible*/ ctx[4](/*func*/ ctx[12], /*selectedCar*/ ctx[0], /*inGarage*/ ctx[2]);
+			if (dirty & /*isSlots, selectedCar*/ 9) show_if = !/*isSlots*/ ctx[3] && /*isVisible*/ ctx[6](/*func*/ ctx[19], /*selectedCar*/ ctx[0]);
 
 			if (show_if) {
 				if (if_block) {
@@ -196946,7 +197198,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (156:8) {#if !selectedCar.isJob}
+// (142:8) {#if !selectedCar.isJob}
 function create_if_block_1(ctx) {
 	let div;
 	let t0_value = (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Продлить время аренды за') + "";
@@ -196972,7 +197224,7 @@ function create_if_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t2);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_1*/ ctx[8]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_1*/ ctx[12]);
 				mounted = true;
 			}
 		},
@@ -197010,7 +197262,7 @@ function create_fragment(ctx) {
 	let dispose;
 
 	function select_block_type(ctx, dirty) {
-		if (/*selectedCar*/ ctx[0].isRent && !/*selectedCar*/ ctx[0].isJob) return create_if_block_4;
+		if (/*selectedCar*/ ctx[0].isRent && !/*selectedCar*/ ctx[0].isJob) return create_if_block_6;
 		return create_else_block_1;
 	}
 
@@ -197075,7 +197327,7 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_4*/ ctx[11]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_7*/ ctx[18]);
 				mounted = true;
 			}
 		},
@@ -197131,34 +197383,14 @@ function create_fragment(ctx) {
 }
 
 function instance($$self, $$props, $$invalidate) {
+	let canPark;
 	let { selectedCar } = $$props;
 	let { OnUpdatePage } = $$props;
+	let { garage = null } = $$props;
+	let { reload } = $$props;
 
+	// Всё работает из любого места: находиться у гаража больше не нужно (сервер проверяет владельца, деньги и состояние машины)
 	const functionData = [
-		{
-			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Восстановить'),
-			func: "repair",
-			isGarage: true,
-			isPark: true
-		},
-		{
-			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Получить дубликат ключа'),
-			func: "key"
-		},
-		{
-			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Сменить замки'),
-			func: "changekey",
-			isGarage: true,
-			sell: true,
-			isPark: true
-		},
-		{
-			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Эвакуировать машину'),
-			func: "evac",
-			isGarage: true,
-			isCarGarage: false,
-			isPark: true
-		},
 		{
 			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Отметить в GPS'),
 			func: "gps",
@@ -197166,41 +197398,44 @@ function instance($$self, $$props, $$invalidate) {
 			isPark: true
 		},
 		{
+			name: 'Эвакуировать в гараж',
+			func: "evac",
+			isCarGarage: false,
+			isPark: true,
+			spawned: true
+		},
+		{
+			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Восстановить'),
+			func: "repair",
+			isPark: true,
+			spawned: true
+		},
+		{
+			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Получить дубликат ключа'),
+			func: "key",
+			sell: true
+		},
+		{
+			name: 'Сменить замки ($100)',
+			func: "changekey",
+			sell: true
+		},
+		{
 			name: (0,lang__WEBPACK_IMPORTED_MODULE_3__.translateText)('player2', 'Продать за $'),
 			func: "sell",
 			sell: true
 		}
-	]; //{
-	//    name: "Тюнинговать",
-	//    func: "tune"
+	];
 
-	//},
-	let inGarage = false;
-
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientAsyncToGroup)("cars.inGarage").then(result => {
-		$$invalidate(2, inGarage = result);
-	});
-
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientAsyncToGroup)("cars.inGarage").then(result => {
-		$$invalidate(2, inGarage = result);
-	});
-
-	const isVisible = (func, car, _inGarage) => {
+	const isVisible = (func, car) => {
 		if (!func) return false;
-		if (!car.isCreate && func.func !== "sell" && func.func !== "gps") return false;
+		if (func.spawned && !car.isCreate) return false;
+		if (func.sell && !car.sell) return false;
 
-		if (car.isAir) {
-			
-		} else //    return false;
-		{
-			//if (func.func === "tune")
-			//    return false;
-			if (func.isGarage && !_inGarage) return false; //if (func.func === "evac")
-
+		if (!car.isAir) {
 			if (func.isCarGarage != undefined && func.isCarGarage !== car.isCarGarage) return false;
-			if (func.sell && !car.sell) return false;
 			if (func.isPark != undefined && -1 === car.place) return false;
-			if (func.func !== "gps" && !!car.ticket) return false;
+			if (func.func !== "gps" && func.func !== "key" && !!car.ticket) return false;
 		}
 
 		return true;
@@ -197208,9 +197443,17 @@ function instance($$self, $$props, $$invalidate) {
 
 	const onEnter = (func, car) => {
 		if (!window.loaderData.delay("onVehicleAction", 1)) return;
-		if (!car) return; else if (!isVisible(func, car, inGarage)) return;
+		if (!car || !isVisible(func, car)) return;
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClient)("client.vehicle.action", car.number, func.func);
-		if (func.func === "sell") (0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientToGroup)("close");
+		if (func.func === "sell") (0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientToGroup)("close"); else reload();
+	};
+
+	let isSlots = false;
+
+	const onPark = place => {
+		if (place === selectedCar.place || !window.loaderData.delay("onVehicleParking", 1)) return;
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientToGroup)("cars.parking", selectedCar.sqlId, place);
+		$$invalidate(3, isSlots = false);
 	};
 
 	const onEnterRent = func => {
@@ -197222,34 +197465,59 @@ function instance($$self, $$props, $$invalidate) {
 	const click_handler = () => onEnterRent("gpstrack");
 	const click_handler_1 = () => onEnterRent("datetime");
 	const click_handler_2 = () => onEnterRent("stoprent");
-	const click_handler_3 = func => onEnter(func, selectedCar);
-	const click_handler_4 = () => OnUpdatePage("List");
+	const click_handler_3 = place => onPark(place);
+	const click_handler_4 = () => $$invalidate(3, isSlots = false);
+	const click_handler_5 = () => $$invalidate(3, isSlots = true);
+	const click_handler_6 = func => onEnter(func, selectedCar);
+	const click_handler_7 = () => OnUpdatePage("List");
 
 	$$self.$$set = $$props => {
 		if ('selectedCar' in $$props) $$invalidate(0, selectedCar = $$props.selectedCar);
 		if ('OnUpdatePage' in $$props) $$invalidate(1, OnUpdatePage = $$props.OnUpdatePage);
+		if ('garage' in $$props) $$invalidate(2, garage = $$props.garage);
+		if ('reload' in $$props) $$invalidate(10, reload = $$props.reload);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*garage, selectedCar*/ 5) {
+			// Место в гараже (раньше — схема «Парковка» в меню дома)
+			$: $$invalidate(4, canPark = garage && !garage.parking && !selectedCar.isAir && !selectedCar.isRent && selectedCar.isCarGarage && selectedCar.place !== -1 && garage.maxCars > 1);
+		}
 	};
 
 	return [
 		selectedCar,
 		OnUpdatePage,
-		inGarage,
+		garage,
+		isSlots,
+		canPark,
 		functionData,
 		isVisible,
 		onEnter,
+		onPark,
 		onEnterRent,
+		reload,
 		click_handler,
 		click_handler_1,
 		click_handler_2,
 		click_handler_3,
-		click_handler_4
+		click_handler_4,
+		click_handler_5,
+		click_handler_6,
+		click_handler_7
 	];
 }
 
 class Car extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { selectedCar: 0, OnUpdatePage: 1 });
+
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {
+			selectedCar: 0,
+			OnUpdatePage: 1,
+			garage: 2,
+			reload: 10
+		});
 	}
 }
 
@@ -197554,12 +197822,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _header_svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../header.svelte */ "./src/views/player/hudevo/phonenew/components/header.svelte");
 /* harmony import */ var _homebutton_svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../homebutton.svelte */ "./src/views/player/hudevo/phonenew/components/homebutton.svelte");
 /* harmony import */ var _loader_svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../loader.svelte */ "./src/views/player/hudevo/phonenew/components/loader.svelte");
-/* harmony import */ var _stores__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../stores */ "./src/views/player/hudevo/phonenew/stores.js");
-/* harmony import */ var _car_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./car.svelte */ "./src/views/player/hudevo/phonenew/components/cars/car.svelte");
-/* harmony import */ var _list_svelte__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./list.svelte */ "./src/views/player/hudevo/phonenew/components/cars/list.svelte");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
-/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _car_svelte__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./car.svelte */ "./src/views/player/hudevo/phonenew/components/cars/car.svelte");
+/* harmony import */ var _list_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./list.svelte */ "./src/views/player/hudevo/phonenew/components/cars/list.svelte");
+/* harmony import */ var _panel_svelte__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./panel.svelte */ "./src/views/player/hudevo/phonenew/components/cars/panel.svelte");
+/* harmony import */ var _auto_sass__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./auto.sass */ "./src/views/player/hudevo/phonenew/components/cars/auto.sass");
+/* harmony import */ var _auto_sass__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_auto_sass__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
 /* src/views/player/hudevo/phonenew/components/cars/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -197574,121 +197845,149 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 function create_else_block(ctx) {
-	let div4;
+	let div7;
 	let header;
 	let t0;
-	let div3;
+	let div6;
 	let div2;
-	let div0;
-	let t1;
-	let div1;
-	let span;
-	let t4_value = (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'транспортом') + "";
-	let t4;
+	let t3;
+	let div5;
+	let div3;
 	let t5;
-	let switch_instance;
-	let t6;
+	let div4;
+	let t7;
+	let current_block_type_index;
+	let if_block;
+	let t8;
 	let homebutton;
-	let div4_intro;
+	let div7_intro;
 	let current;
+	let mounted;
+	let dispose;
 	header = new _header_svelte__WEBPACK_IMPORTED_MODULE_2__.default({});
-	var switch_value = /*Views*/ ctx[3][/*SelectViews*/ ctx[1]];
+	const if_block_creators = [create_if_block_1, create_if_block_2, create_else_block_1];
+	const if_blocks = [];
 
-	function switch_props(ctx) {
-		return {
-			props: {
-				OnUpdatePage: /*OnUpdatePage*/ ctx[4],
-				selectedCar: /*selectedCar*/ ctx[2]
-			}
-		};
+	function select_block_type_1(ctx, dirty) {
+		if (/*tab*/ ctx[4] === "panel" && /*panel*/ ctx[3]) return 0;
+		if (/*SelectViews*/ ctx[5] === "Car" && /*selectedCar*/ ctx[6]) return 1;
+		return 2;
 	}
 
-	if (switch_value) {
-		switch_instance = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.construct_svelte_component)(switch_value, switch_props(ctx));
-	}
-
+	current_block_type_index = select_block_type_1(ctx, -1);
+	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 	homebutton = new _homebutton_svelte__WEBPACK_IMPORTED_MODULE_3__.default({});
 
 	return {
 		c() {
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(header.$$.fragment);
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Управление')}  `;
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+
+			div2.innerHTML = `<div class="newphone__maps_headerimage rent"></div> 
+                <div class="newphone__maps_headertitle"><span class="orange">Авто</span></div>`;
+
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Панель";
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(switch_instance.$$.fragment);
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Мои машины";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(homebutton.$$.fragment);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "newphone__maps_headerimage rent");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "orange");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "newphone__maps_headertitle");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "box-flex newphone__project_padding20 p-top");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "newphone__rent_content");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "newphone__rent");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "auto__tab");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*tab*/ ctx[4] === "panel");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "disabled", !/*panel*/ ctx[3]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "auto__tab");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "active", /*tab*/ ctx[4] === "cars");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "auto__tabs");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "newphone__rent_content");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "newphone__rent");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(header, div4, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
-			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(switch_instance, div3, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(homebutton, div4, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(header, div7, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
+			if_blocks[current_block_type_index].m(div6, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(homebutton, div7, null);
 			current = true;
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*click_handler_1*/ ctx[11])
+				];
+
+				mounted = true;
+			}
 		},
 		p(ctx, dirty) {
-			const switch_instance_changes = {};
-			if (dirty & /*selectedCar*/ 4) switch_instance_changes.selectedCar = /*selectedCar*/ ctx[2];
+			if (!current || dirty & /*tab*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*tab*/ ctx[4] === "panel");
+			}
 
-			if (dirty & /*SelectViews*/ 2 && switch_value !== (switch_value = /*Views*/ ctx[3][/*SelectViews*/ ctx[1]])) {
-				if (switch_instance) {
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-					const old_component = switch_instance;
+			if (!current || dirty & /*panel*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "disabled", !/*panel*/ ctx[3]);
+			}
 
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(old_component.$$.fragment, 1, 0, () => {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(old_component, 1);
-					});
+			if (!current || dirty & /*tab*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "active", /*tab*/ ctx[4] === "cars");
+			}
 
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-				}
+			let previous_block_index = current_block_type_index;
+			current_block_type_index = select_block_type_1(ctx, dirty);
 
-				if (switch_value) {
-					switch_instance = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.construct_svelte_component)(switch_value, switch_props(ctx));
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(switch_instance.$$.fragment);
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(switch_instance.$$.fragment, 1);
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(switch_instance, div3, null);
+			if (current_block_type_index === previous_block_index) {
+				if_blocks[current_block_type_index].p(ctx, dirty);
+			} else {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_blocks[previous_block_index], 1, 1, () => {
+					if_blocks[previous_block_index] = null;
+				});
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
+				if_block = if_blocks[current_block_type_index];
+
+				if (!if_block) {
+					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+					if_block.c();
 				} else {
-					switch_instance = null;
+					if_block.p(ctx, dirty);
 				}
-			} else if (switch_value) {
-				switch_instance.$set(switch_instance_changes);
+
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+				if_block.m(div6, null);
 			}
 		},
 		i(local) {
 			if (current) return;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(header.$$.fragment, local);
-			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(switch_instance.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(homebutton.$$.fragment, local);
 
-			if (!div4_intro) {
+			if (!div7_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div4_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div4, svelte_transition__WEBPACK_IMPORTED_MODULE_10__.fade, {});
-					div4_intro.start();
+					div7_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div7, svelte_transition__WEBPACK_IMPORTED_MODULE_12__.fade, {});
+					div7_intro.start();
 				});
 			}
 
@@ -197696,20 +197995,22 @@ function create_else_block(ctx) {
 		},
 		o(local) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(header.$$.fragment, local);
-			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(switch_instance.$$.fragment, local);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(homebutton.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(header);
-			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(switch_instance);
+			if_blocks[current_block_type_index].d();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(homebutton);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 }
 
-// (38:0) {#if !isLoad}
+// (65:0) {#if !isLoad}
 function create_if_block(ctx) {
 	let loader;
 	let current;
@@ -197735,6 +198036,132 @@ function create_if_block(ctx) {
 		},
 		d(detaching) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(loader, detaching);
+		}
+	};
+}
+
+// (83:12) {:else}
+function create_else_block_1(ctx) {
+	let list;
+	let current;
+
+	list = new _list_svelte__WEBPACK_IMPORTED_MODULE_6__.default({
+			props: {
+				OnUpdatePage: /*OnUpdatePage*/ ctx[9],
+				carsList: /*carsList*/ ctx[1],
+				garage: /*garage*/ ctx[2],
+				reload: /*reload*/ ctx[7]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(list.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(list, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const list_changes = {};
+			if (dirty & /*carsList*/ 2) list_changes.carsList = /*carsList*/ ctx[1];
+			if (dirty & /*garage*/ 4) list_changes.garage = /*garage*/ ctx[2];
+			list.$set(list_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(list.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(list.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(list, detaching);
+		}
+	};
+}
+
+// (81:59) 
+function create_if_block_2(ctx) {
+	let car;
+	let current;
+
+	car = new _car_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+			props: {
+				OnUpdatePage: /*OnUpdatePage*/ ctx[9],
+				selectedCar: /*selectedCar*/ ctx[6],
+				garage: /*garage*/ ctx[2],
+				reload: /*reload*/ ctx[7]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(car.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(car, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const car_changes = {};
+			if (dirty & /*selectedCar*/ 64) car_changes.selectedCar = /*selectedCar*/ ctx[6];
+			if (dirty & /*garage*/ 4) car_changes.garage = /*garage*/ ctx[2];
+			car.$set(car_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(car.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(car.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(car, detaching);
+		}
+	};
+}
+
+// (79:12) {#if tab === "panel" && panel}
+function create_if_block_1(ctx) {
+	let panel_1;
+	let current;
+
+	panel_1 = new _panel_svelte__WEBPACK_IMPORTED_MODULE_7__.default({
+			props: {
+				panel: /*panel*/ ctx[3],
+				refresh: /*loadPanel*/ ctx[8]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(panel_1.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(panel_1, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const panel_1_changes = {};
+			if (dirty & /*panel*/ 8) panel_1_changes.panel = /*panel*/ ctx[3];
+			panel_1.$set(panel_1_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(panel_1.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(panel_1.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(panel_1, detaching);
 		}
 	};
 }
@@ -197809,20 +198236,68 @@ function create_fragment(ctx) {
 }
 
 function instance($$self, $$props, $$invalidate) {
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_8__.executeClientToGroup)("cars.load");
 	let isLoad = false;
-	const updateLoad = () => $$invalidate(0, isLoad = true);
-	const Views = { Car: _car_svelte__WEBPACK_IMPORTED_MODULE_6__.default, List: _list_svelte__WEBPACK_IMPORTED_MODULE_7__.default };
-	let SelectViews = "List";
-	let selectedCar = "";
+	let carsList = [];
+	let garage = null;
+	let panel = null;
 
-	const OnUpdatePage = (page, item) => {
-		$$invalidate(1, SelectViews = page);
-		$$invalidate(2, selectedCar = item);
+	const loadCars = () => {
+		Promise.all([
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClientAsyncToGroup)("cars.getCarsList"),
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClientAsyncToGroup)("cars.garageInfo")
+		]).then(([list, info]) => {
+			$$invalidate(1, carsList = (0,api_functions__WEBPACK_IMPORTED_MODULE_10__.hasJsonStructure)(list) ? JSON.parse(list) : []);
+			$$invalidate(2, garage = (0,api_functions__WEBPACK_IMPORTED_MODULE_10__.hasJsonStructure)(info) ? JSON.parse(info) : null);
+
+			if (selectedCar) {
+				const fresh = carsList.find(c => c.number === selectedCar.number && !!c.isRent === !!selectedCar.isRent);
+				if (fresh) $$invalidate(6, selectedCar = fresh); else if (SelectViews === "Car") $$invalidate(5, SelectViews = "List");
+			}
+
+			$$invalidate(0, isLoad = true);
+		});
 	};
 
-	(0,api_functions__WEBPACK_IMPORTED_MODULE_9__.addListernEvent)("phoneCarsLoad", updateLoad);
-	return [isLoad, SelectViews, selectedCar, Views, OnUpdatePage];
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_10__.addListernEvent)("phoneCarsLoad", loadCars);
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClientToGroup)("cars.load");
+	const reload = () => setTimeout(() => (0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClientToGroup)("cars.load"), 700);
+
+	const loadPanel = () => {
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_9__.executeClientAsyncToGroup)("cars.panelState").then(result => {
+			$$invalidate(3, panel = (0,api_functions__WEBPACK_IMPORTED_MODULE_10__.hasJsonStructure)(result) ? JSON.parse(result) : null);
+			if (!panel && tab === "panel") $$invalidate(4, tab = "cars");
+		});
+	};
+
+	let tab = "panel";
+	loadPanel();
+	const timer = setInterval(loadPanel, 600);
+	(0,svelte__WEBPACK_IMPORTED_MODULE_11__.onDestroy)(() => clearInterval(timer));
+	let SelectViews = "List";
+	let selectedCar = null;
+
+	const OnUpdatePage = (page, item) => {
+		$$invalidate(5, SelectViews = page);
+		$$invalidate(6, selectedCar = item);
+	};
+
+	const click_handler = () => panel && $$invalidate(4, tab = "panel");
+	const click_handler_1 = () => $$invalidate(4, tab = "cars");
+
+	return [
+		isLoad,
+		carsList,
+		garage,
+		panel,
+		tab,
+		SelectViews,
+		selectedCar,
+		reload,
+		loadPanel,
+		OnUpdatePage,
+		click_handler,
+		click_handler_1
+	];
 }
 
 class Cars extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
@@ -197858,11 +198333,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _stores__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../stores */ "./src/views/player/hudevo/phonenew/stores.js");
 /* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
 /* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
-/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
-/* harmony import */ var _filter_svelte__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./filter.svelte */ "./src/views/player/hudevo/phonenew/components/cars/filter.svelte");
-/* harmony import */ var _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/data */ "./src/views/player/hudevo/phonenew/data.js");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _filter_svelte__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./filter.svelte */ "./src/views/player/hudevo/phonenew/components/cars/filter.svelte");
+/* harmony import */ var _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/data */ "./src/views/player/hudevo/phonenew/data.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/views/player/hudevo/phonenew/components/cars/list.svelte generated by Svelte v3.59.2 */
+
 
 
 
@@ -197880,11 +198357,221 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[15] = list[i];
+	child_ctx[19] = list[i];
 	return child_ctx;
 }
 
-// (145:4) {:else}
+// (104:0) {#if garage && !isFilterOpen}
+function create_if_block_5(ctx) {
+	let div3;
+	let div2;
+	let div0;
+
+	let t0_value = (/*garage*/ ctx[2].parking
+	? 'Парковочное место'
+	: 'Гараж') + "";
+
+	let t0;
+	let t1;
+	let div1;
+	let t2;
+
+	function select_block_type(ctx, dirty) {
+		if (/*garage*/ ctx[2].parking) return create_if_block_7;
+		return create_else_block_3;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block0 = current_block_type(ctx);
+	let if_block1 = /*garage*/ ctx[2].next && create_if_block_6(ctx);
+
+	return {
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block0.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "orange");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "gray");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "box-column");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "auto__garage");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			if_block0.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			if (if_block1) if_block1.m(div3, null);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*garage*/ 4 && t0_value !== (t0_value = (/*garage*/ ctx[2].parking
+			? 'Парковочное место'
+			: 'Гараж') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block0) {
+				if_block0.p(ctx, dirty);
+			} else {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div1, null);
+				}
+			}
+
+			if (/*garage*/ ctx[2].next) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_6(ctx);
+					if_block1.c();
+					if_block1.m(div3, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if_block0.d();
+			if (if_block1) if_block1.d();
+		}
+	};
+}
+
+// (111:16) {:else}
+function create_else_block_3(ctx) {
+	let t0;
+	let t1_value = Object.keys(/*garage*/ ctx[2].slots || {}).length + "";
+	let t1;
+	let t2;
+	let t3_value = /*garage*/ ctx[2].maxCars + "";
+	let t3;
+
+	let t4_value = (/*garage*/ ctx[2].apartment
+	? ' · ' + 'по классу квартиры'
+	: '') + "";
+
+	let t4;
+
+	return {
+		c() {
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Мест: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*garage*/ 4 && t1_value !== (t1_value = Object.keys(/*garage*/ ctx[2].slots || {}).length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*garage*/ 4 && t3_value !== (t3_value = /*garage*/ ctx[2].maxCars + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+
+			if (dirty & /*garage*/ 4 && t4_value !== (t4_value = (/*garage*/ ctx[2].apartment
+			? ' · ' + 'по классу квартиры'
+			: '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
+		}
+	};
+}
+
+// (109:16) {#if garage.parking}
+function create_if_block_7(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Машина стоит у дома");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
+		}
+	};
+}
+
+// (116:8) {#if garage.next}
+function create_if_block_6(ctx) {
+	let div;
+	let t0;
+	let t1_value = /*garage*/ ctx[2].next.cars + "";
+	let t1;
+	let t2;
+	let span;
+
+	let t3_value = (/*garage*/ ctx[2].next.donate
+	? (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*garage*/ ctx[2].next.price) + ' RB'
+	: '$' + (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*garage*/ ctx[2].next.price)) + "";
+
+	let t3;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Улучшить до ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "auto__garage_btn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*upgradeGarage*/ ctx[7]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*garage*/ 4 && t1_value !== (t1_value = /*garage*/ ctx[2].next.cars + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*garage*/ 4 && t3_value !== (t3_value = (/*garage*/ ctx[2].next.donate
+			? (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*garage*/ ctx[2].next.price) + ' RB'
+			: '$' + (0,api_formatter__WEBPACK_IMPORTED_MODULE_7__.format)("money", /*garage*/ ctx[2].next.price)) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (169:4) {:else}
 function create_else_block_2(ctx) {
 	let div4;
 	let div2;
@@ -197941,8 +198628,8 @@ function create_else_block_2(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*setPointArenda*/ ctx[9]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_1*/ ctx[14])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*setPointArenda*/ ctx[12]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_1*/ ctx[18])
 				];
 
 				mounted = true;
@@ -197952,7 +198639,7 @@ function create_else_block_2(ctx) {
 		i(local) {
 			if (!div4_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div4_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div4, svelte_transition__WEBPACK_IMPORTED_MODULE_7__.fade, {});
+					div4_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div4, svelte_transition__WEBPACK_IMPORTED_MODULE_8__.fade, {});
 					div4_intro.start();
 				});
 			}
@@ -197970,7 +198657,7 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (104:4) {#if carsList && typeof carsList === "object" && carsList.length > 0}
+// (127:4) {#if carsList && typeof carsList === "object" && carsList.length > 0}
 function create_if_block_1(ctx) {
 	let div0;
 	let input;
@@ -197981,14 +198668,14 @@ function create_if_block_1(ctx) {
 	let mounted;
 	let dispose;
 
-	function select_block_type_1(ctx, dirty) {
-		if (!/*isTypeFilter*/ ctx[3].length) return create_if_block_4;
+	function select_block_type_2(ctx, dirty) {
+		if (!/*isTypeFilter*/ ctx[4].length) return create_if_block_4;
 		return create_else_block_1;
 	}
 
-	let current_block_type = select_block_type_1(ctx, -1);
+	let current_block_type = select_block_type_2(ctx, -1);
 	let if_block = current_block_type(ctx);
-	let each_value = /*carsList*/ ctx[1].filter(/*func*/ ctx[12]);
+	let each_value = /*carsList*/ ctx[1].filter(/*func*/ ctx[16]);
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -198017,7 +198704,7 @@ function create_if_block_1(ctx) {
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, input);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*inputText*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*inputText*/ ctx[3]);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
 			if_block.m(div0, null);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
@@ -198031,20 +198718,20 @@ function create_if_block_1(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[11]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "focus", _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_9__.onInputFocus),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "blur", _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_9__.onInputBlur)
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[15]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "focus", _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_10__.onInputFocus),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "blur", _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_10__.onInputBlur)
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*inputText*/ 4 && input.value !== /*inputText*/ ctx[2]) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*inputText*/ ctx[2]);
+			if (dirty & /*inputText*/ 8 && input.value !== /*inputText*/ ctx[3]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*inputText*/ ctx[3]);
 			}
 
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
 			} else {
 				if_block.d(1);
@@ -198056,8 +198743,8 @@ function create_if_block_1(ctx) {
 				}
 			}
 
-			if (dirty & /*OnUpdatePage, carsList, isFilter, inputText, document, TimeFormat, translateText, vehicleName, isTypeFilter*/ 15) {
-				each_value = /*carsList*/ ctx[1].filter(/*func*/ ctx[12]);
+			if (dirty & /*OnUpdatePage, carsList, isFilter, inputText, document, TimeFormat, translateText, vehicleName, carState, isTypeFilter*/ 91) {
+				each_value = /*carsList*/ ctx[1].filter(/*func*/ ctx[16]);
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -198082,7 +198769,7 @@ function create_if_block_1(ctx) {
 		i(local) {
 			if (!div1_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div1_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div1, svelte_transition__WEBPACK_IMPORTED_MODULE_7__.fade, {});
+					div1_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div1, svelte_transition__WEBPACK_IMPORTED_MODULE_8__.fade, {});
 					div1_intro.start();
 				});
 			}
@@ -198100,16 +198787,16 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (101:0) {#if isFilterOpen}
+// (124:0) {#if isFilterOpen}
 function create_if_block(ctx) {
 	let filter;
 	let current;
 
-	filter = new _filter_svelte__WEBPACK_IMPORTED_MODULE_8__.default({
+	filter = new _filter_svelte__WEBPACK_IMPORTED_MODULE_9__.default({
 			props: {
-				isTypeFilter: /*isTypeFilter*/ ctx[3],
-				updateFilter: /*updateFilter*/ ctx[5],
-				closeFilter: /*closeFilter*/ ctx[7]
+				isTypeFilter: /*isTypeFilter*/ ctx[4],
+				updateFilter: /*updateFilter*/ ctx[8],
+				closeFilter: /*closeFilter*/ ctx[10]
 			}
 		});
 
@@ -198123,7 +198810,7 @@ function create_if_block(ctx) {
 		},
 		p(ctx, dirty) {
 			const filter_changes = {};
-			if (dirty & /*isTypeFilter*/ 8) filter_changes.isTypeFilter = /*isTypeFilter*/ ctx[3];
+			if (dirty & /*isTypeFilter*/ 16) filter_changes.isTypeFilter = /*isTypeFilter*/ ctx[4];
 			filter.$set(filter_changes);
 		},
 		i(local) {
@@ -198141,13 +198828,13 @@ function create_if_block(ctx) {
 	};
 }
 
-// (112:12) {:else}
+// (135:12) {:else}
 function create_else_block_1(ctx) {
 	let div;
-	let t0_value = /*isTypeFilter*/ ctx[3].length + "";
+	let t0_value = /*isTypeFilter*/ ctx[4].length + "";
 	let t0;
 	let t1;
-	let t2_value = /*getFilterWord*/ ctx[10](/*isTypeFilter*/ ctx[3].length) + "";
+	let t2_value = /*getFilterWord*/ ctx[13](/*isTypeFilter*/ ctx[4].length) + "";
 	let t2;
 	let t3;
 	let span;
@@ -198175,16 +198862,16 @@ function create_else_block_1(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*clearFilter*/ ctx[8]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*openFilter*/ ctx[6])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(span, "click", /*clearFilter*/ ctx[11]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*openFilter*/ ctx[9])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*isTypeFilter*/ 8 && t0_value !== (t0_value = /*isTypeFilter*/ ctx[3].length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*isTypeFilter*/ 8 && t2_value !== (t2_value = /*getFilterWord*/ ctx[10](/*isTypeFilter*/ ctx[3].length) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*isTypeFilter*/ 16 && t0_value !== (t0_value = /*isTypeFilter*/ ctx[4].length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*isTypeFilter*/ 16 && t2_value !== (t2_value = /*getFilterWord*/ ctx[13](/*isTypeFilter*/ ctx[4].length) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
@@ -198194,7 +198881,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (107:12) {#if !isTypeFilter.length}
+// (130:12) {#if !isTypeFilter.length}
 function create_if_block_4(ctx) {
 	let div;
 	let span;
@@ -198220,7 +198907,7 @@ function create_if_block_4(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*openFilter*/ ctx[6]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*openFilter*/ ctx[9]);
 				mounted = true;
 			}
 		},
@@ -198233,17 +198920,17 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (121:16) {#if !isTypeFilter.length || isTypeFilter.includes(item.header)}
+// (144:16) {#if !isTypeFilter.length || isTypeFilter.includes(item.header)}
 function create_if_block_2(ctx) {
 	let div5;
 	let div3;
 	let div2;
 	let div0;
-	let t0_value = /*item*/ ctx[15].number + "";
+	let t0_value = /*item*/ ctx[19].number + "";
 	let t0;
 	let t1;
 	let div1;
-	let t2_value = /*item*/ ctx[15].header + "";
+	let t2_value = /*item*/ ctx[19].header + "";
 	let t2;
 	let t3;
 	let t4;
@@ -198252,16 +198939,16 @@ function create_if_block_2(ctx) {
 	let mounted;
 	let dispose;
 
-	function select_block_type_2(ctx, dirty) {
-		if (/*item*/ ctx[15].isRent && !/*item*/ ctx[15].isJob) return create_if_block_3;
+	function select_block_type_3(ctx, dirty) {
+		if (/*item*/ ctx[19].isRent && !/*item*/ ctx[19].isJob) return create_if_block_3;
 		return create_else_block;
 	}
 
-	let current_block_type = select_block_type_2(ctx, -1);
+	let current_block_type = select_block_type_3(ctx, -1);
 	let if_block = current_block_type(ctx);
 
 	function click_handler() {
-		return /*click_handler*/ ctx[13](/*item*/ ctx[15]);
+		return /*click_handler*/ ctx[17](/*item*/ ctx[19]);
 	}
 
 	return {
@@ -198284,7 +198971,7 @@ function create_if_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "box-flex");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "box-column");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "newphone__rent_noneimage pos-center rent");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url('" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[15].model.toLowerCase() + ".png')");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url('" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[19].model.toLowerCase() + ".png')");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "newphone__rent_none hover vehicle");
 		},
 		m(target, anchor) {
@@ -198309,10 +198996,10 @@ function create_if_block_2(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*carsList, inputText*/ 6 && t0_value !== (t0_value = /*item*/ ctx[15].number + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*carsList, inputText*/ 6 && t2_value !== (t2_value = /*item*/ ctx[15].header + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*carsList, inputText*/ 10 && t0_value !== (t0_value = /*item*/ ctx[19].number + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*carsList, inputText*/ 10 && t2_value !== (t2_value = /*item*/ ctx[19].header + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 
-			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block) {
+			if (current_block_type === (current_block_type = select_block_type_3(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
 			} else {
 				if_block.d(1);
@@ -198324,8 +199011,8 @@ function create_if_block_2(ctx) {
 				}
 			}
 
-			if (dirty & /*carsList, inputText*/ 6) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url('" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[15].model.toLowerCase() + ".png')");
+			if (dirty & /*carsList, inputText*/ 10) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url('" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[19].model.toLowerCase() + ".png')");
 			}
 		},
 		d(detaching) {
@@ -198337,47 +199024,57 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (133:24) {:else}
+// (157:24) {:else}
 function create_else_block(ctx) {
 	let div0;
-	let t2;
+	let t0_value = /*carState*/ ctx[6](/*item*/ ctx[19]).text + "";
+	let t0;
+	let div0_class_value;
+	let t1;
 	let div1;
-	let t3_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[15].model) + "";
-	let t3;
+	let t2_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[19].model) + "";
+	let t2;
 
 	return {
 		c() {
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Модель')}:`;
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "gray");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "auto__state " + /*carState*/ ctx[6](/*item*/ ctx[19]).cls);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "date");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*carsList, inputText*/ 6 && t3_value !== (t3_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[15].model) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*carsList, inputText*/ 10 && t0_value !== (t0_value = /*carState*/ ctx[6](/*item*/ ctx[19]).text + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+
+			if (dirty & /*carsList, inputText*/ 10 && div0_class_value !== (div0_class_value = "auto__state " + /*carState*/ ctx[6](/*item*/ ctx[19]).cls)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value);
+			}
+
+			if (dirty & /*carsList, inputText*/ 10 && t2_value !== (t2_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[19].model) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
 		}
 	};
 }
 
-// (128:24) {#if item.isRent && !item.isJob}
+// (152:24) {#if item.isRent && !item.isJob}
 function create_if_block_3(ctx) {
 	let div0;
 	let t2;
 	let div1;
-	let t3_value = (0,api_moment__WEBPACK_IMPORTED_MODULE_3__.TimeFormat)(/*item*/ ctx[15].date, "H:mm DD.MM.YYYY") + "";
+	let t3_value = (0,api_moment__WEBPACK_IMPORTED_MODULE_3__.TimeFormat)(/*item*/ ctx[19].date, "H:mm DD.MM.YYYY") + "";
 	let t3;
 
 	return {
@@ -198397,7 +199094,7 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*carsList, inputText*/ 6 && t3_value !== (t3_value = (0,api_moment__WEBPACK_IMPORTED_MODULE_3__.TimeFormat)(/*item*/ ctx[15].date, "H:mm DD.MM.YYYY") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*carsList, inputText*/ 10 && t3_value !== (t3_value = (0,api_moment__WEBPACK_IMPORTED_MODULE_3__.TimeFormat)(/*item*/ ctx[19].date, "H:mm DD.MM.YYYY") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
@@ -198407,9 +199104,9 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (120:12) {#each carsList.filter((el) => isFilter(el, inputText)) as item}
+// (143:12) {#each carsList.filter((el) => isFilter(el, inputText)) as item}
 function create_each_block(ctx) {
-	let show_if = !/*isTypeFilter*/ ctx[3].length || /*isTypeFilter*/ ctx[3].includes(/*item*/ ctx[15].header);
+	let show_if = !/*isTypeFilter*/ ctx[4].length || /*isTypeFilter*/ ctx[4].includes(/*item*/ ctx[19].header);
 	let if_block_anchor;
 	let if_block = show_if && create_if_block_2(ctx);
 
@@ -198423,7 +199120,7 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*isTypeFilter, carsList, inputText*/ 14) show_if = !/*isTypeFilter*/ ctx[3].length || /*isTypeFilter*/ ctx[3].includes(/*item*/ ctx[15].header);
+			if (dirty & /*isTypeFilter, carsList, inputText*/ 26) show_if = !/*isTypeFilter*/ ctx[4].length || /*isTypeFilter*/ ctx[4].includes(/*item*/ ctx[19].header);
 
 			if (show_if) {
 				if (if_block) {
@@ -198446,35 +199143,54 @@ function create_each_block(ctx) {
 }
 
 function create_fragment(ctx) {
+	let t;
 	let current_block_type_index;
-	let if_block;
-	let if_block_anchor;
+	let if_block1;
+	let if_block1_anchor;
 	let current;
+	let if_block0 = /*garage*/ ctx[2] && !/*isFilterOpen*/ ctx[5] && create_if_block_5(ctx);
 	const if_block_creators = [create_if_block, create_if_block_1, create_else_block_2];
 	const if_blocks = [];
 
-	function select_block_type(ctx, dirty) {
-		if (/*isFilterOpen*/ ctx[4]) return 0;
+	function select_block_type_1(ctx, dirty) {
+		if (/*isFilterOpen*/ ctx[5]) return 0;
 		if (/*carsList*/ ctx[1] && typeof /*carsList*/ ctx[1] === "object" && /*carsList*/ ctx[1].length > 0) return 1;
 		return 2;
 	}
 
-	current_block_type_index = select_block_type(ctx, -1);
-	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+	current_block_type_index = select_block_type_1(ctx, -1);
+	if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 
 	return {
 		c() {
-			if_block.c();
-			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			if (if_block0) if_block0.c();
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block1.c();
+			if_block1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
 			if_blocks[current_block_type_index].m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block1_anchor, anchor);
 			current = true;
 		},
 		p(ctx, [dirty]) {
+			if (/*garage*/ ctx[2] && !/*isFilterOpen*/ ctx[5]) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_5(ctx);
+					if_block0.c();
+					if_block0.m(t.parentNode, t);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
 			let previous_block_index = current_block_type_index;
-			current_block_type_index = select_block_type(ctx, dirty);
+			current_block_type_index = select_block_type_1(ctx, dirty);
 
 			if (current_block_type_index === previous_block_index) {
 				if_blocks[current_block_type_index].p(ctx, dirty);
@@ -198486,31 +199202,33 @@ function create_fragment(ctx) {
 				});
 
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-				if_block = if_blocks[current_block_type_index];
+				if_block1 = if_blocks[current_block_type_index];
 
-				if (!if_block) {
-					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-					if_block.c();
+				if (!if_block1) {
+					if_block1 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+					if_block1.c();
 				} else {
-					if_block.p(ctx, dirty);
+					if_block1.p(ctx, dirty);
 				}
 
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
-				if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1, 1);
+				if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
 			}
 		},
 		i(local) {
 			if (current) return;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block1);
 			current = true;
 		},
 		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block1);
 			current = false;
 		},
 		d(detaching) {
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
 			if_blocks[current_block_type_index].d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block1_anchor);
 		}
 	};
 }
@@ -198526,36 +199244,45 @@ function isFilter(value, text) {
 
 function instance($$self, $$props, $$invalidate) {
 	let { OnUpdatePage } = $$props;
-
-	let carsList = [
-		{
-			number: "222133218 2132",
-			model: "adder",
-			header: "Домовладельца"
-		},
-		{ number: "229", model: "adder" }
-	];
-
+	let { carsList = [] } = $$props;
+	let { garage = null } = $$props;
+	let { reload } = $$props;
 	let inputText = "";
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientAsyncToGroup)("cars.getCarsList").then(result => {
-		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_6__.hasJsonStructure)(result)) $$invalidate(1, carsList = JSON.parse(result));
-	});
+	const carState = car => {
+		if (car.ticket) return { cls: "red", text: 'На штрафстоянке' };
+
+		if (car.isCarGarage) return {
+			cls: "green",
+			text: car.place >= 0 && garage && !garage.parking
+			? `В гараже, место ${car.place + 1}`
+			: 'В гараже'
+		};
+
+		if (car.isCreate) return { cls: "orange", text: 'На улице' };
+		return { cls: "gray", text: 'Не вызвана' };
+	};
+
+	const upgradeGarage = () => {
+		if (!window.loaderData.delay("onGarageUpgrade", 2)) return;
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_5__.executeClientToGroup)("cars.upgradeGarage");
+		reload();
+	};
 
 	let isTypeFilter = [];
 
 	const updateFilter = filter => {
-		$$invalidate(3, isTypeFilter = filter);
+		$$invalidate(4, isTypeFilter = filter);
 		closeFilter();
 	};
 
 	let isFilterOpen;
-	const openFilter = () => $$invalidate(4, isFilterOpen = true);
-	const closeFilter = () => $$invalidate(4, isFilterOpen = false);
+	const openFilter = () => $$invalidate(5, isFilterOpen = true);
+	const closeFilter = () => $$invalidate(5, isFilterOpen = false);
 
 	const clearFilter = event => {
 		event.stopPropagation();
-		$$invalidate(3, isTypeFilter = []);
+		$$invalidate(4, isTypeFilter = []);
 	};
 
 	const setPointArenda = () => {
@@ -198588,13 +199315,13 @@ function instance($$self, $$props, $$invalidate) {
 		}
 	}
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_10__.onDestroy)(() => {
-		(0,_views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_9__.onInputBlur)();
+	(0,svelte__WEBPACK_IMPORTED_MODULE_11__.onDestroy)(() => {
+		(0,_views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_10__.onInputBlur)();
 	});
 
 	function input_input_handler() {
 		inputText = this.value;
-		$$invalidate(2, inputText);
+		$$invalidate(3, inputText);
 	}
 
 	const func = el => isFilter(el, inputText);
@@ -198603,20 +199330,27 @@ function instance($$self, $$props, $$invalidate) {
 
 	$$self.$$set = $$props => {
 		if ('OnUpdatePage' in $$props) $$invalidate(0, OnUpdatePage = $$props.OnUpdatePage);
+		if ('carsList' in $$props) $$invalidate(1, carsList = $$props.carsList);
+		if ('garage' in $$props) $$invalidate(2, garage = $$props.garage);
+		if ('reload' in $$props) $$invalidate(14, reload = $$props.reload);
 	};
 
 	return [
 		OnUpdatePage,
 		carsList,
+		garage,
 		inputText,
 		isTypeFilter,
 		isFilterOpen,
+		carState,
+		upgradeGarage,
 		updateFilter,
 		openFilter,
 		closeFilter,
 		clearFilter,
 		setPointArenda,
 		getFilterWord,
+		reload,
 		input_input_handler,
 		func,
 		click_handler,
@@ -198627,7 +199361,13 @@ function instance($$self, $$props, $$invalidate) {
 class List extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { OnUpdatePage: 0 });
+
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {
+			OnUpdatePage: 0,
+			carsList: 1,
+			garage: 2,
+			reload: 14
+		});
 	}
 }
 
@@ -198635,6 +199375,974 @@ class List extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent 
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (List);
+
+
+/***/ }),
+
+/***/ "./src/views/player/hudevo/phonenew/components/cars/panel.svelte":
+/*!***********************************************************************!*\
+  !*** ./src/views/player/hudevo/phonenew/components/cars/panel.svelte ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
+/* harmony import */ var _api_vehicleName__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/api/vehicleName */ "./src/api/vehicleName.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* src/views/player/hudevo/phonenew/components/cars/panel.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[25] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[28] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_2(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[31] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_3(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[34] = list[i];
+	return child_ctx;
+}
+
+// (75:8) {#each lights as item}
+function create_each_block_3(ctx) {
+	let div;
+	let t_value = /*item*/ ctx[34].name + "";
+	let t;
+	let mounted;
+	let dispose;
+
+	function click_handler_6() {
+		return /*click_handler_6*/ ctx[16](/*item*/ ctx[34]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*panel*/ ctx[0].lights === /*item*/ ctx[34].id);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_6);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*panel, lights*/ 129) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*panel*/ ctx[0].lights === /*item*/ ctx[34].id);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (84:8) {#each doors as door}
+function create_each_block_2(ctx) {
+	let div;
+	let t0_value = /*door*/ ctx[31].name + "";
+	let t0;
+	let t1;
+	let div_class_value;
+	let mounted;
+	let dispose;
+
+	function click_handler_8() {
+		return /*click_handler_8*/ ctx[18](/*door*/ ctx[31]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value = "auto__door " + /*door*/ ctx[31].cls);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "on", /*panel*/ ctx[0].doors[/*door*/ ctx[31].id]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "disabled", !/*canDoor*/ ctx[4](/*door*/ ctx[31].id));
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_8);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*panel, doors*/ 9) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "on", /*panel*/ ctx[0].doors[/*door*/ ctx[31].id]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (92:8) {#each [0, 1, 2, 3] as id}
+function create_each_block_1(ctx) {
+	let div;
+	let t0;
+	let t1_value = ['ЛП', 'ПП', 'ЛЗ', 'ПЗ'][/*id*/ ctx[28]] + "";
+	let t1;
+	let t2;
+	let mounted;
+	let dispose;
+
+	function click_handler_9() {
+		return /*click_handler_9*/ ctx[19](/*id*/ ctx[28]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Окно ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "auto__tile small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "on", /*windowDown*/ ctx[6](/*panel*/ ctx[0].windows, /*id*/ ctx[28]));
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "disabled", !/*canWindow*/ ctx[5](/*id*/ ctx[28]));
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t2);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_9);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*windowDown, panel*/ 65) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "on", /*windowDown*/ ctx[6](/*panel*/ ctx[0].windows, /*id*/ ctx[28]));
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (102:8) {#each modes as mode}
+function create_each_block(ctx) {
+	let div;
+	let t_value = /*mode*/ ctx[25].name + "";
+	let t;
+	let mounted;
+	let dispose;
+
+	function click_handler_10() {
+		return /*click_handler_10*/ ctx[20](/*mode*/ ctx[25]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*panel*/ ctx[0].drive === /*mode*/ ctx[25].id);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_10);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*panel, modes*/ 257) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*panel*/ ctx[0].drive === /*mode*/ ctx[25].id);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (116:4) {#if !driver}
+function create_if_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Вы пассажир: доступны своя дверь, своё окно, замок и ремень.";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "auto__hint");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div35;
+	let div6;
+	let div0;
+	let t0_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_2__.vehicleName)(/*panel*/ ctx[0].model.toLowerCase()) + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2_value = /*panel*/ ctx[0].number + "";
+	let t2;
+	let t3;
+	let div5;
+	let div2;
+	let b0;
+	let t4_value = /*panel*/ ctx[0].speed + "";
+	let t4;
+	let span0;
+	let t6;
+	let div3;
+	let b1;
+	let t7_value = /*panel*/ ctx[0].fuel + "";
+	let t7;
+	let span1;
+	let t9;
+	let div4;
+	let b2;
+	let t10_value = /*panel*/ ctx[0].health + "";
+	let t10;
+	let t11;
+	let span2;
+	let t13;
+	let div13;
+	let div8;
+	let t15;
+	let div10;
+	let div9;
+	let t16_value = (/*panel*/ ctx[0].locked ? 'Закрыта' : 'Открыта') + "";
+	let t16;
+	let t17;
+	let div12;
+	let t19;
+	let div14;
+	let t21;
+	let div18;
+	let div15;
+	let t23;
+	let div16;
+	let t25;
+	let div17;
+	let t27;
+	let div19;
+	let t29;
+	let div21;
+	let t30;
+	let div20;
+	let t32;
+	let div22;
+	let t34;
+	let div24;
+	let div23;
+	let t35;
+	let t36;
+	let div25;
+	let t37;
+	let div26;
+	let t39;
+	let div27;
+	let t40;
+	let div28;
+	let t41_value = (/*modes*/ ctx[8][/*panel*/ ctx[0].drive]?.hint || '') + "";
+	let t41;
+	let t42;
+	let div29;
+	let t44;
+	let div34;
+	let div30;
+	let t46;
+	let div31;
+	let t47_value = (/*panel*/ ctx[0].radio || '—') + "";
+	let t47;
+	let t48;
+	let div32;
+	let t50;
+	let div33;
+	let t52;
+	let div35_intro;
+	let mounted;
+	let dispose;
+	let each_value_3 = /*lights*/ ctx[7];
+	let each_blocks_3 = [];
+
+	for (let i = 0; i < each_value_3.length; i += 1) {
+		each_blocks_3[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
+	}
+
+	let each_value_2 = /*doors*/ ctx[3];
+	let each_blocks_2 = [];
+
+	for (let i = 0; i < each_value_2.length; i += 1) {
+		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+	}
+
+	let each_value_1 = [0, 1, 2, 3];
+	let each_blocks_1 = [];
+
+	for (let i = 0; i < 4; i += 1) {
+		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	let each_value = /*modes*/ ctx[8];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	let if_block = !/*driver*/ ctx[1] && create_if_block(ctx);
+
+	return {
+		c() {
+			div35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "км/ч";
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "топливо";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "мотор";
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8.innerHTML = `<div class="auto__dot"></div>Двигатель`;
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t16_value);
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div12.innerHTML = `<div class="auto__dot"></div>Ремень`;
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div14.textContent = "Поворотники";
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div15.textContent = "◀ Левый";
+			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div16.textContent = "Аварийка";
+			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div17.textContent = "Правый ▶";
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div19.textContent = "Фары";
+			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks_3.length; i += 1) {
+				each_blocks_3[i].c();
+			}
+
+			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div20.textContent = "Салон";
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div22.textContent = "Двери и окна";
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			for (let i = 0; i < each_blocks_2.length; i += 1) {
+				each_blocks_2[i].c();
+			}
+
+			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < 4; i += 1) {
+				each_blocks_1[i].c();
+			}
+
+			t37 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div26.textContent = "Режим езды";
+			t39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t40 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t41_value);
+			t42 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div29.textContent = "Радио";
+			t44 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div30.textContent = "◀";
+			t46 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t47 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t47_value);
+			t48 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div32.textContent = "▶";
+			t50 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div33.textContent = "Выкл";
+			t52 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "auto__hero_name");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "auto__hero_number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "auto__stats");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "auto__hero");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "auto__tile");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "on", /*panel*/ ctx[0].engine);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*driver*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "auto__dot");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "auto__tile");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div10, "on", /*panel*/ ctx[0].locked);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "auto__tile");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div12, "on", /*panel*/ ctx[0].belt);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "auto__grid3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "auto__title");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "auto__tile");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div15, "on", /*panel*/ ctx[0].left && !/*panel*/ ctx[0].right);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div15, "disabled", !/*driver*/ ctx[1] || !/*panel*/ ctx[0].engine);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "auto__tile warn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div16, "on", /*panel*/ ctx[0].left && /*panel*/ ctx[0].right);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div16, "disabled", !/*driver*/ ctx[1] || !/*panel*/ ctx[0].engine);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "auto__tile");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div17, "on", /*panel*/ ctx[0].right && !/*panel*/ ctx[0].left);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div17, "disabled", !/*driver*/ ctx[1] || !/*panel*/ ctx[0].engine);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "auto__grid3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "auto__title");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "auto__segment_extra");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div20, "active", /*panel*/ ctx[0].interior);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div21, "class", "auto__segment");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div21, "disabled", !/*driver*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div22, "class", "auto__title");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div23, "class", "auto__car_body");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div24, "class", "auto__car");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div25, "class", "auto__grid4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div26, "class", "auto__title");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div27, "class", "auto__segment");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div27, "disabled", !/*driver*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div28, "class", "auto__hint");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div29, "class", "auto__title");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div30, "class", "auto__radio_btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div31, "class", "auto__radio_name");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div32, "class", "auto__radio_btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div33, "class", "auto__radio_btn off");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div34, "class", "auto__radio");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div34, "disabled", !/*driver*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div35, "class", "auto__panel");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div35, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, b0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b0, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b1, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, b2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t25);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t27);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t29);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div21);
+
+			for (let i = 0; i < each_blocks_3.length; i += 1) {
+				if (each_blocks_3[i]) {
+					each_blocks_3[i].m(div21, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, t30);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, div20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, div23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, t35);
+
+			for (let i = 0; i < each_blocks_2.length; i += 1) {
+				if (each_blocks_2[i]) {
+					each_blocks_2[i].m(div24, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t36);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div25);
+
+			for (let i = 0; i < 4; i += 1) {
+				if (each_blocks_1[i]) {
+					each_blocks_1[i].m(div25, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t37);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t39);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div27);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div27, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t40);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, t41);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t42);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div29);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t44);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, div30);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, t46);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, div31);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div31, t47);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, t48);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, div32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, t50);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, div33);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t52);
+			if (if_block) if_block.m(div35, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*click_handler*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div10, "click", /*click_handler_1*/ ctx[11]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div12, "click", /*click_handler_2*/ ctx[12]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div15, "click", /*click_handler_3*/ ctx[13]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div16, "click", /*click_handler_4*/ ctx[14]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div17, "click", /*click_handler_5*/ ctx[15]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div20, "click", /*click_handler_7*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div30, "click", /*click_handler_11*/ ctx[21]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div32, "click", /*click_handler_12*/ ctx[22]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div33, "click", /*click_handler_13*/ ctx[23])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*panel*/ 1 && t0_value !== (t0_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_2__.vehicleName)(/*panel*/ ctx[0].model.toLowerCase()) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*panel*/ 1 && t2_value !== (t2_value = /*panel*/ ctx[0].number + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty[0] & /*panel*/ 1 && t4_value !== (t4_value = /*panel*/ ctx[0].speed + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*panel*/ 1 && t7_value !== (t7_value = /*panel*/ ctx[0].fuel + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty[0] & /*panel*/ 1 && t10_value !== (t10_value = /*panel*/ ctx[0].health + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "on", /*panel*/ ctx[0].engine);
+			}
+
+			if (dirty[0] & /*driver*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*driver*/ ctx[1]);
+			}
+
+			if (dirty[0] & /*panel*/ 1 && t16_value !== (t16_value = (/*panel*/ ctx[0].locked ? 'Закрыта' : 'Открыта') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t16, t16_value);
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div10, "on", /*panel*/ ctx[0].locked);
+			}
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div12, "on", /*panel*/ ctx[0].belt);
+			}
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div15, "on", /*panel*/ ctx[0].left && !/*panel*/ ctx[0].right);
+			}
+
+			if (dirty[0] & /*driver, panel*/ 3) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div15, "disabled", !/*driver*/ ctx[1] || !/*panel*/ ctx[0].engine);
+			}
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div16, "on", /*panel*/ ctx[0].left && /*panel*/ ctx[0].right);
+			}
+
+			if (dirty[0] & /*driver, panel*/ 3) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div16, "disabled", !/*driver*/ ctx[1] || !/*panel*/ ctx[0].engine);
+			}
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div17, "on", /*panel*/ ctx[0].right && !/*panel*/ ctx[0].left);
+			}
+
+			if (dirty[0] & /*driver, panel*/ 3) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div17, "disabled", !/*driver*/ ctx[1] || !/*panel*/ ctx[0].engine);
+			}
+
+			if (dirty[0] & /*panel, lights, driver, send*/ 135) {
+				each_value_3 = /*lights*/ ctx[7];
+				let i;
+
+				for (i = 0; i < each_value_3.length; i += 1) {
+					const child_ctx = get_each_context_3(ctx, each_value_3, i);
+
+					if (each_blocks_3[i]) {
+						each_blocks_3[i].p(child_ctx, dirty);
+					} else {
+						each_blocks_3[i] = create_each_block_3(child_ctx);
+						each_blocks_3[i].c();
+						each_blocks_3[i].m(div21, t30);
+					}
+				}
+
+				for (; i < each_blocks_3.length; i += 1) {
+					each_blocks_3[i].d(1);
+				}
+
+				each_blocks_3.length = each_value_3.length;
+			}
+
+			if (dirty[0] & /*panel*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div20, "active", /*panel*/ ctx[0].interior);
+			}
+
+			if (dirty[0] & /*driver*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div21, "disabled", !/*driver*/ ctx[1]);
+			}
+
+			if (dirty[0] & /*doors, panel, canDoor, send*/ 29) {
+				each_value_2 = /*doors*/ ctx[3];
+				let i;
+
+				for (i = 0; i < each_value_2.length; i += 1) {
+					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+
+					if (each_blocks_2[i]) {
+						each_blocks_2[i].p(child_ctx, dirty);
+					} else {
+						each_blocks_2[i] = create_each_block_2(child_ctx);
+						each_blocks_2[i].c();
+						each_blocks_2[i].m(div24, null);
+					}
+				}
+
+				for (; i < each_blocks_2.length; i += 1) {
+					each_blocks_2[i].d(1);
+				}
+
+				each_blocks_2.length = each_value_2.length;
+			}
+
+			if (dirty[0] & /*windowDown, panel, canWindow, send*/ 101) {
+				each_value_1 = [0, 1, 2, 3];
+				let i;
+
+				for (i = 0; i < 4; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks_1[i]) {
+						each_blocks_1[i].p(child_ctx, dirty);
+					} else {
+						each_blocks_1[i] = create_each_block_1(child_ctx);
+						each_blocks_1[i].c();
+						each_blocks_1[i].m(div25, null);
+					}
+				}
+
+				for (; i < 4; i += 1) {
+					each_blocks_1[i].d(1);
+				}
+			}
+
+			if (dirty[0] & /*panel, modes, driver, send*/ 263) {
+				each_value = /*modes*/ ctx[8];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div27, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+
+			if (dirty[0] & /*driver*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div27, "disabled", !/*driver*/ ctx[1]);
+			}
+
+			if (dirty[0] & /*panel*/ 1 && t41_value !== (t41_value = (/*modes*/ ctx[8][/*panel*/ ctx[0].drive]?.hint || '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t41, t41_value);
+			if (dirty[0] & /*panel*/ 1 && t47_value !== (t47_value = (/*panel*/ ctx[0].radio || '—') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t47, t47_value);
+
+			if (dirty[0] & /*driver*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div34, "disabled", !/*driver*/ ctx[1]);
+			}
+
+			if (!/*driver*/ ctx[1]) {
+				if (if_block) {
+					
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					if_block.m(div35, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i(local) {
+			if (!div35_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div35_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div35, svelte_transition__WEBPACK_IMPORTED_MODULE_4__.fade, {});
+					div35_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div35);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_3, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_2, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block) if_block.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let own;
+	let driver;
+	let { panel } = $$props;
+	let { refresh } = $$props;
+
+	const send = (action, value = 0) => {
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClientToGroup)("cars.panel", action, value);
+		setTimeout(refresh, 250);
+	};
+
+	const doors = [
+		{ id: 4, name: 'Капот', cls: 'hood' },
+		{ id: 0, name: 'ЛП', cls: 'fl' },
+		{ id: 1, name: 'ПП', cls: 'fr' },
+		{ id: 2, name: 'ЛЗ', cls: 'rl' },
+		{ id: 3, name: 'ПЗ', cls: 'rr' },
+		{ id: 5, name: 'Багажник', cls: 'trunk' }
+	];
+
+	const canDoor = id => panel.hasDoor[id] !== false && (driver || id === own);
+	const canWindow = id => panel.hasDoor[id] !== false && (driver || id === own);
+	const windowDown = (mask, id) => (mask & 1 << id) !== 0;
+
+	const lights = [
+		{ id: 0, name: 'Авто' },
+		{ id: 1, name: 'Ближний' },
+		{ id: 2, name: 'Дальний' }
+	];
+
+	const modes = [
+		{
+			id: 0,
+			name: 'Эко',
+			hint: 'Меньше расход, мягкий разгон'
+		},
+		{
+			id: 1,
+			name: 'Комфорт',
+			hint: 'Обычная езда'
+		},
+		{
+			id: 2,
+			name: 'Спорт',
+			hint: 'Резкий разгон, расход выше'
+		}
+	];
+
+	const click_handler = () => driver && send("engine");
+	const click_handler_1 = () => send("lock");
+	const click_handler_2 = () => send("belt");
+	const click_handler_3 = () => driver && send("left");
+	const click_handler_4 = () => driver && send("hazard");
+	const click_handler_5 = () => driver && send("right");
+	const click_handler_6 = item => driver && send("lights", item.id);
+	const click_handler_7 = () => driver && send("interior", panel.interior ? 0 : 1);
+	const click_handler_8 = door => canDoor(door.id) && send("door", door.id);
+	const click_handler_9 = id => canWindow(id) && send("window", id);
+	const click_handler_10 = mode => driver && send("drive", mode.id);
+	const click_handler_11 = () => driver && send("radio", -1);
+	const click_handler_12 = () => driver && send("radio", 1);
+	const click_handler_13 = () => driver && send("radio", 0);
+
+	$$self.$$set = $$props => {
+		if ('panel' in $$props) $$invalidate(0, panel = $$props.panel);
+		if ('refresh' in $$props) $$invalidate(9, refresh = $$props.refresh);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*panel*/ 1) {
+			// Индекс «своего» места: 0 — водитель, 1 — переднее пассажирское, 2-3 — задние (совпадает с дверями и окнами)
+			$: own = panel.seat + 1;
+		}
+
+		if ($$self.$$.dirty[0] & /*panel*/ 1) {
+			$: $$invalidate(1, driver = panel.driver);
+		}
+	};
+
+	return [
+		panel,
+		driver,
+		send,
+		doors,
+		canDoor,
+		canWindow,
+		windowDown,
+		lights,
+		modes,
+		refresh,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4,
+		click_handler_5,
+		click_handler_6,
+		click_handler_7,
+		click_handler_8,
+		click_handler_9,
+		click_handler_10,
+		click_handler_11,
+		click_handler_12,
+		click_handler_13
+	];
+}
+
+class Panel extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { panel: 0, refresh: 9 }, null, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Panel);
 
 
 /***/ }),
@@ -203452,7 +205160,7 @@ function instance($$self, $$props, $$invalidate) {
 			link: "property"
 		},
 		{
-			name: "Транспорт",
+			name: "Авто",
 			icon: (_assets_images_rent_png__WEBPACK_IMPORTED_MODULE_7___default()),
 			link: "cars"
 		},
@@ -216490,11 +218198,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
-/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var _stores__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../stores */ "./src/views/player/hudevo/phonenew/stores.js");
+/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lang */ "./lang/index.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
 /* src/views/player/hudevo/phonenew/components/property/houses/menu.svelte generated by Svelte v3.59.2 */
+
 
 
 
@@ -216508,8 +218218,8 @@ function create_if_block_8(ctx) {
 	let div;
 
 	let t_value = (/*houseData*/ ctx[4].isOwner
-	? (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Личный')
-	: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Подселенный')) + "";
+	? (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Личный')
+	: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Подселенный')) + "";
 
 	let t;
 
@@ -216525,8 +218235,8 @@ function create_if_block_8(ctx) {
 		},
 		p(ctx, dirty) {
 			if (dirty & /*houseData*/ 16 && t_value !== (t_value = (/*houseData*/ ctx[4].isOwner
-			? (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Личный')
-			: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Подселенный')) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+			? (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Личный')
+			: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Подселенный')) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
@@ -216543,7 +218253,7 @@ function create_if_block_7(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть/закрыть')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Открыть/закрыть')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property auction");
 		},
 		m(target, anchor) {
@@ -216572,7 +218282,7 @@ function create_if_block_6(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Выселиться')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Выселиться')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property");
 		},
 		m(target, anchor) {
@@ -216601,7 +218311,7 @@ function create_if_block_5(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Выгнать посетителей')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Выгнать посетителей')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property");
 		},
 		m(target, anchor) {
@@ -216630,7 +218340,7 @@ function create_if_block_4(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Жильцы')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Жильцы')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property");
 		},
 		m(target, anchor) {
@@ -216659,7 +218369,7 @@ function create_if_block_3(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Улучшения дома')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Улучшения дома')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property");
 		},
 		m(target, anchor) {
@@ -216688,7 +218398,7 @@ function create_if_block_2(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Мебель')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Мебель')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property");
 		},
 		m(target, anchor) {
@@ -216717,7 +218427,7 @@ function create_if_block_1(ctx) {
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Выбор парковки')}`;
+			div.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Машины и гараж — «Авто»')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "newphone__project_button property");
 		},
 		m(target, anchor) {
@@ -216740,10 +218450,10 @@ function create_if_block_1(ctx) {
 // (80:4) {#if menuAccess.includes ("sell") && houseData && Object.values (houseData) && Object.values (houseData).length}
 function create_if_block(ctx) {
 	let div;
-	let t0_value = (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Продать за') + "";
+	let t0_value = (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Продать за') + "";
 	let t0;
 	let t1;
-	let t2_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*houseData*/ ctx[4].sellPrice) + "";
+	let t2_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*houseData*/ ctx[4].sellPrice) + "";
 	let t2;
 	let mounted;
 	let dispose;
@@ -216768,7 +218478,7 @@ function create_if_block(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*houseData*/ 16 && t2_value !== (t2_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*houseData*/ ctx[4].sellPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*houseData*/ 16 && t2_value !== (t2_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*houseData*/ ctx[4].sellPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
@@ -216784,7 +218494,7 @@ function create_fragment(ctx) {
 	let div4;
 	let div1;
 	let div0;
-	let t0_value = (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Дом') + "";
+	let t0_value = (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Дом') + "";
 	let t0;
 	let t1;
 	let t2;
@@ -216794,7 +218504,7 @@ function create_fragment(ctx) {
 	let t7;
 	let div3;
 	let t8;
-	let t9_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*houseData*/ ctx[4].price) + "";
+	let t9_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*houseData*/ ctx[4].price) + "";
 	let t9;
 	let t10;
 	let div5;
@@ -216844,7 +218554,7 @@ function create_fragment(ctx) {
 			if (if_block0) if_block0.c();
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Гос. стоимость')}:`;
+			div2.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Гос. стоимость')}:`;
 			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
@@ -216865,14 +218575,14 @@ function create_fragment(ctx) {
 			if (if_block6) if_block6.c();
 			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div7.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Показать на карте')}`;
+			div7.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Показать на карте')}`;
 			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block7) if_block7.c();
 			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block8) if_block8.c();
 			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div8.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Назад')}`;
+			div8.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player2', 'Назад')}`;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "violet");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "box-flex");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "gray");
@@ -216949,7 +218659,7 @@ function create_fragment(ctx) {
 				if_block0 = null;
 			}
 
-			if (dirty & /*houseData*/ 16 && t9_value !== (t9_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*houseData*/ ctx[4].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+			if (dirty & /*houseData*/ 16 && t9_value !== (t9_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_4__.format)("money", /*houseData*/ ctx[4].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
 			if (dirty & /*menuAccess*/ 8) show_if_7 = /*menuAccess*/ ctx[3].includes("lock");
 
 			if (show_if_7) {
@@ -217092,20 +218802,20 @@ function create_fragment(ctx) {
 function instance($$self, $$props, $$invalidate) {
 	let menuAccess = [];
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClientAsyncToGroup)("house.getStats").then(result => {
-		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_4__.hasJsonStructure)(result)) $$invalidate(3, menuAccess = JSON.parse(result));
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClientAsyncToGroup)("house.getStats").then(result => {
+		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_5__.hasJsonStructure)(result)) $$invalidate(3, menuAccess = JSON.parse(result));
 	});
 
 	let houseData = {};
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClientAsyncToGroup)("house.houseData").then(result => {
-		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_4__.hasJsonStructure)(result)) $$invalidate(4, houseData = JSON.parse(result));
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClientAsyncToGroup)("house.houseData").then(result => {
+		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_5__.hasJsonStructure)(result)) $$invalidate(4, houseData = JSON.parse(result));
 	});
 
 	let residentsCount = 0;
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClientAsyncToGroup)("house.residentsData").then(result => {
-		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_4__.hasJsonStructure)(result)) {
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClientAsyncToGroup)("house.residentsData").then(result => {
+		if ((0,api_functions__WEBPACK_IMPORTED_MODULE_5__.hasJsonStructure)(result)) {
 			result = JSON.parse(result);
 			$$invalidate(5, residentsCount = Object.keys(result).length);
 		}
@@ -217113,12 +218823,11 @@ function instance($$self, $$props, $$invalidate) {
 
 	const onAction = text => {
 		if (!window.loaderData.delay("house.action", 1.5)) return;
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClientToGroup)("house.action", text);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClientToGroup)("house.action", text);
 	};
 
-	const onOpenPark = () => {
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClientToGroup)("house.openPark");
-	};
+	// Машины и гараж теперь управляются из приложения «Авто»
+	const onOpenPark = () => _stores__WEBPACK_IMPORTED_MODULE_1__.currentPage.set("cars");
 
 	let { onSelectedViewHouse } = $$props;
 	let { onSelectedView } = $$props;
@@ -217129,7 +218838,7 @@ function instance($$self, $$props, $$invalidate) {
 	const click_handler_3 = () => onSelectedViewHouse("Residents");
 	const click_handler_4 = () => onSelectedViewHouse("Upgrade");
 	const click_handler_5 = () => onSelectedViewHouse("Furniture");
-	const click_handler_6 = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)("gps.pointDefault", "house");
+	const click_handler_6 = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)("gps.pointDefault", "house");
 	const click_handler_7 = () => onAction("sell");
 	const click_handler_8 = () => onSelectedView();
 

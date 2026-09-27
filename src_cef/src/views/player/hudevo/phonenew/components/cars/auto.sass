@@ -1,0 +1,322 @@
+@import '@/views/assets/css/main.sass'
+
+// Приложение «Авто» в телефоне: вкладки, панель машины, гараж
+
+$auto-accent: #FF7A00
+$auto-soft: rgba(255, 122, 0, 0.12)
+$auto-gray: #F2F4F7
+$auto-text: #1D2433
+
+#newphone
+    .auto__tabs
+        display: flex
+        @include fluid("gap", 6)
+        @include fluid("margin-top", 0)
+        @include fluid("margin-right", 20)
+        @include fluid("margin-bottom", 12)
+        @include fluid("margin-left", 20)
+        @include fluid("padding", 4)
+        @include fluid("border-radius", 12)
+        background: $auto-gray
+        .auto__tab
+            flex: 1
+            text-align: center
+            @include fluid("padding", 8)
+            @include fluid("border-radius", 9)
+            @include fluid("font-size", 15)
+            font-weight: 600
+            color: #869199
+            cursor: pointer
+            transition: all .2s ease
+            &.active
+                background: #fff
+                color: $auto-accent
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08)
+            &.disabled
+                opacity: .4
+                cursor: default
+
+    .auto__panel
+        width: 100%
+        box-sizing: border-box
+        overflow-y: auto
+        overflow-x: hidden
+        @include fluid("max-height", 520)
+        @include fluid("padding-top", 0)
+        @include fluid("padding-right", 20)
+        @include fluid("padding-bottom", 20)
+        @include fluid("padding-left", 20)
+        color: $auto-text
+        &::-webkit-scrollbar
+            width: 0
+
+    .auto__hero
+        @include fluid("border-radius", 16)
+        @include fluid("padding", 14)
+        background: linear-gradient(135deg, #FF7A00 0%, #DA2640 100%)
+        color: #fff
+        .auto__hero_name
+            @include fluid("font-size", 19)
+            font-weight: 700
+        .auto__hero_number
+            @include fluid("font-size", 13)
+            opacity: .8
+            letter-spacing: 1px
+        .auto__stats
+            display: flex
+            justify-content: space-between
+            @include fluid("margin-top", 10)
+            div
+                display: flex
+                flex-direction: column
+                align-items: center
+                flex: 1
+            b
+                @include fluid("font-size", 20)
+            span
+                @include fluid("font-size", 11)
+                opacity: .8
+
+    .auto__title
+        @include fluid("font-size", 13)
+        font-weight: 700
+        text-transform: uppercase
+        letter-spacing: .5px
+        color: #869199
+        @include fluid("margin-top", 14)
+        @include fluid("margin-right", 0)
+        @include fluid("margin-bottom", 6)
+        @include fluid("margin-left", 0)
+
+    .auto__grid3, .auto__grid4
+        display: grid
+        @include fluid("gap", 6)
+        @include fluid("margin-top", 10)
+    .auto__grid3
+        grid-template-columns: repeat(3, 1fr)
+    .auto__grid4
+        grid-template-columns: repeat(4, 1fr)
+
+    .auto__tile
+        display: flex
+        align-items: center
+        justify-content: center
+        @include fluid("gap", 5)
+        @include fluid("min-height", 44)
+        @include fluid("padding", 4)
+        @include fluid("border-radius", 12)
+        @include fluid("font-size", 13)
+        font-weight: 600
+        text-align: center
+        min-width: 0
+        background: $auto-gray
+        cursor: pointer
+        transition: all .2s ease
+        &.small
+            @include fluid("font-size", 11)
+            @include fluid("min-height", 36)
+        .auto__dot
+            @include fluid("width", 7)
+            @include fluid("height", 7)
+            border-radius: 50%
+            background: #C5CCD6
+        &.on
+            background: $auto-soft
+            color: $auto-accent
+            .auto__dot
+                background: $auto-accent
+                box-shadow: 0 0 6px $auto-accent
+        &.warn.on
+            background: rgba(218, 38, 64, 0.12)
+            color: #DA2640
+        &.disabled
+            opacity: .35
+            cursor: default
+
+    .auto__segment
+        display: flex
+        @include fluid("padding", 3)
+        @include fluid("border-radius", 12)
+        background: $auto-gray
+        div
+            flex: 1
+            text-align: center
+            @include fluid("padding-top", 8)
+            @include fluid("padding-right", 2)
+            @include fluid("padding-bottom", 8)
+            @include fluid("padding-left", 2)
+            @include fluid("border-radius", 9)
+            @include fluid("font-size", 13)
+            font-weight: 600
+            color: #869199
+            cursor: pointer
+            transition: all .2s ease
+            &.active
+                background: #fff
+                color: $auto-accent
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08)
+        .auto__segment_extra
+            @include fluid("margin-left", 4)
+            border-left: 1px solid #DDE2E8
+        &.disabled
+            opacity: .4
+            div
+                cursor: default
+
+    .auto__hint
+        @include fluid("font-size", 11)
+        color: #869199
+        text-align: center
+        @include fluid("margin-top", 6)
+
+    // Схема машины сверху: капот, 4 двери, багажник
+    .auto__car
+        display: grid
+        grid-template-columns: 1fr 34% 1fr
+        grid-template-areas: ". hood ." "fl body fr" "rl body rr" ". trunk ."
+        @include fluid("gap", 6)
+        align-items: center
+        .auto__car_body
+            grid-area: body
+            align-self: stretch
+            @include fluid("min-height", 96)
+            @include fluid("border-radius", 30)
+            background: linear-gradient(180deg, #E7EBF0 0%, #D5DBE3 100%)
+            border: 2px solid #C5CCD6
+        .auto__door
+            display: flex
+            align-items: center
+            justify-content: center
+            @include fluid("font-size", 12)
+            font-weight: 700
+            @include fluid("border-radius", 8)
+            @include fluid("height", 34)
+            background: #fff
+            border: 2px solid #DDE2E8
+            cursor: pointer
+            transition: all .2s ease
+            &.on
+                border-color: $auto-accent
+                background: $auto-soft
+                color: $auto-accent
+            &.disabled
+                opacity: .35
+                cursor: default
+            &.hood
+                grid-area: hood
+            &.trunk
+                grid-area: trunk
+            &.fl
+                grid-area: fl
+            &.fr
+                grid-area: fr
+            &.rl
+                grid-area: rl
+            &.rr
+                grid-area: rr
+
+    .auto__radio
+        display: flex
+        align-items: center
+        @include fluid("gap", 6)
+        .auto__radio_name
+            flex: 1
+            text-align: center
+            @include fluid("font-size", 13)
+            font-weight: 600
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+        .auto__radio_btn
+            @include fluid("padding-top", 8)
+            @include fluid("padding-right", 12)
+            @include fluid("padding-bottom", 8)
+            @include fluid("padding-left", 12)
+            @include fluid("border-radius", 10)
+            @include fluid("font-size", 13)
+            background: $auto-gray
+            cursor: pointer
+            &.off
+                color: #DA2640
+        &.disabled
+            opacity: .4
+
+    // Гараж в списке машин
+    .auto__garage
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @include fluid("margin-top", 0)
+        @include fluid("margin-right", 20)
+        @include fluid("margin-bottom", 10)
+        @include fluid("margin-left", 20)
+        @include fluid("padding", 12)
+        @include fluid("border-radius", 14)
+        background: $auto-gray
+        .gray
+            color: #869199
+            @include fluid("font-size", 13)
+        .auto__garage_btn
+            display: flex
+            flex-direction: column
+            align-items: center
+            @include fluid("padding-top", 6)
+            @include fluid("padding-right", 10)
+            @include fluid("padding-bottom", 6)
+            @include fluid("padding-left", 10)
+            @include fluid("border-radius", 10)
+            @include fluid("font-size", 12)
+            font-weight: 700
+            background: $auto-accent
+            color: #fff
+            cursor: pointer
+            span
+                font-weight: 500
+                opacity: .9
+
+    .auto__state
+        @include fluid("font-size", 12)
+        font-weight: 600
+        @include fluid("margin-top", 2)
+        &.gray
+            color: #869199
+
+    .auto__slots
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        @include fluid("gap", 6)
+        width: 100%
+        @include fluid("padding-top", 0)
+        @include fluid("padding-right", 20)
+        @include fluid("padding-bottom", 0)
+        @include fluid("padding-left", 20)
+        box-sizing: border-box
+        .auto__slot
+            display: flex
+            flex-direction: column
+            align-items: center
+            @include fluid("padding-top", 8)
+            @include fluid("padding-right", 4)
+            @include fluid("padding-bottom", 8)
+            @include fluid("padding-left", 4)
+            @include fluid("border-radius", 10)
+            background: $auto-gray
+            cursor: pointer
+            border: 2px solid transparent
+            b
+                @include fluid("font-size", 16)
+            span
+                @include fluid("font-size", 10)
+                color: #869199
+                text-align: center
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+                max-width: 100%
+            &.current
+                border-color: $auto-accent
+                b
+                    color: $auto-accent
+            &.busy
+                background: #fff
+                border-color: #DDE2E8

@@ -7,23 +7,26 @@
     import { executeClient, executeClientToGroup, executeClientAsyncToGroup } from 'api/rage'
     import {hasJsonStructure} from "api/functions";
     export let OnUpdatePage;
-    let carsList = [{
-        number: "222133218 2132",
-        model: "adder",
-        header: "Домовладельца"
-        },
-        {
-        number: "229",
-        model: "adder",
-        },
-    ];
+    export let carsList = [];
+    export let garage = null;
+    export let reload;
     let inputText = "";
 
-    executeClientAsyncToGroup("cars.getCarsList").then((result) => {
-        if (hasJsonStructure(result))
-            carsList = JSON.parse(result);
-    });
+    import { format } from 'api/formatter'
 
+    const carState = (car) => {
+        if (car.ticket) return { cls: "red", text: 'На штрафстоянке' };
+        if (car.isCarGarage) return { cls: "green", text: car.place >= 0 && garage && !garage.parking ? `В гараже, место ${car.place + 1}` : 'В гараже' };
+        if (car.isCreate) return { cls: "orange", text: 'На улице' };
+        return { cls: "gray", text: 'Не вызвана' };
+    }
+
+    const upgradeGarage = () => {
+        if (!window.loaderData.delay ("onGarageUpgrade", 2))
+            return;
+        executeClientToGroup ("cars.upgradeGarage");
+        reload ();
+    }
 
     function isFilter(value, text){
         if(text === null){
@@ -98,6 +101,26 @@
         onInputBlur ();
     });
 </script>
+{#if garage && !isFilterOpen}
+    <div class="auto__garage">
+        <div class="box-column">
+            <div class="orange">{garage.parking ? 'Парковочное место' : 'Гараж'}</div>
+            <div class="gray">
+                {#if garage.parking}
+                    Машина стоит у дома
+                {:else}
+                    Мест: {Object.keys(garage.slots || {}).length} / {garage.maxCars}{garage.apartment ? ' · ' + 'по классу квартиры' : ''}
+                {/if}
+            </div>
+        </div>
+        {#if garage.next}
+            <div class="auto__garage_btn" on:click={upgradeGarage}>
+                Улучшить до {garage.next.cars}
+                <span>{garage.next.donate ? format("money", garage.next.price) + ' RB' : '$' + format("money", garage.next.price)}</span>
+            </div>
+        {/if}
+    </div>
+{/if}
 {#if isFilterOpen}
     <Filter {isTypeFilter} {updateFilter} {closeFilter} />
 {:else}
@@ -125,13 +148,14 @@
                             <div class="orange">{item.number}</div>
                             <div class="newphone__rent_status">{item.header}</div>
                         </div>
+
                         {#if item.isRent && !item.isJob}
                             <div class="gray">{translateText('player2', 'Осталось')}:</div>
                             <div class="date">
                                 {TimeFormat (item.date, "H:mm DD.MM.YYYY")}
                             </div>
                         {:else}
-                        <div class="gray">{translateText('player2', 'Модель')}:</div>
+                        <div class="auto__state {carState(item).cls}">{carState(item).text}</div>
                         <div class="date">
                             {vehicleName(item.model)}
                         </div>

@@ -107,6 +107,7 @@ gm.events.add("vehicleStreamIn", (entity) => {
 	setVehicleDoor(entity, null);
 	setVehicleLock(entity, null);
 	setVehicleIL(entity, null);
+	global.applyVehiclePanel(entity);
 });
 
 
@@ -417,6 +418,7 @@ const UpdateVehicleEngine = async (vehicle, toggle) => {
 			vehicle.setEngineOn(toggle, true, true);
 			vehicle.setUndriveable(!toggle);
 			vehicle.setLights(!toggle ? 1 : 0);
+			if (toggle) global.applyVehiclePanel(vehicle);
 
 			if (vehicle.getPedInSeat(-1) == global.localplayer.handle) {
 				if (toggle) mp.gui.emmit(`window.vehicleState.engine (true)`);

@@ -248,7 +248,8 @@ gm.events.add("render", () => {
 		{
 			let mvsclass = mvs.getClass();
 			mvs.setTyresCanBurst(true);
-			if(engtm != 1) mvs.setEngineTorqueMultiplier(engtm);
+			const torque = engtm * global.getDriveModeTorque(mvs); // режим езды из приложения «Авто»
+			if(torque != 1) mvs.setEngineTorqueMultiplier(torque);
 			if(engpm == 0)
 			{
 				if (new Date().getTime() - lastTyreUpdate >= 1000)

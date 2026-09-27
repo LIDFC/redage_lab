@@ -2505,11 +2505,7 @@ namespace NeptuneEvo.Houses
                         else
                         {
                             if (garage == null) return;
-                            if (!garage.InGarage(player))
-                            {
-                                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы должны находиться около гаража", 3000);
-                                return;
-                            }
+                            // Эвакуация доступна удалённо из приложения «Авто» в телефоне — находиться у гаража не нужно
 
                             if (garage.IsGarageToNumber(vehicleData.SqlId))
                             {
@@ -2672,36 +2668,7 @@ namespace NeptuneEvo.Houses
                             return;
                         }
 
-                        if (!isAir)
-                        {
-                            if (garage?.Type == -1)
-                            {
-                                if (player.Position.DistanceTo(garage.Position) > 4)
-                                {
-                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter,
-                                        $"Вы должны находиться около гаража", 3000);
-                                    return;
-                                }
-                            }
-                            else if (garage?.Type == 6)
-                            {
-                                if (player.Position.DistanceTo(garage.Position) > 4)
-                                {
-                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter,
-                                        $"Вы должны находиться около парковочного места", 3000);
-                                    return;
-                                }
-                            }
-                            else
-                            {
-                                if (characterData.InsideGarageID == -1)
-                                {
-                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter,
-                                        LangFunc.GetText(LangType.Ru, DataName.MustBeInGarage), 3000);
-                                    return;
-                                }
-                            }
-                        }
+                        // Смена замков доступна удалённо из приложения «Авто» — новый ключ сразу кладётся в инвентарь
 
                         if (!MoneySystem.Wallet.Change(player, -100))
                         {

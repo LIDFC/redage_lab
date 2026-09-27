@@ -70,7 +70,55 @@ namespace NeptuneEvo.Players.Phone.Cars
             
             carsOwnerData.AddRange(GetCarToHouse(player, ownerName, vehiclesNumber, garage, inPark));
             
-            Trigger.ClientEvent(player, "client.phone.cars.init", JsonConvert.SerializeObject(carsOwnerData), inGarage, ownerName == sessionData.Name);
+            Trigger.ClientEvent(player, "client.phone.cars.init", JsonConvert.SerializeObject(carsOwnerData), inGarage, ownerName == sessionData.Name, GarageInfo(player, house, garage));
+        }
+
+        /// <summary>
+        /// Сведения о гараже для приложения «Авто»: число мест, кто где стоит и следующее улучшение.
+        /// Только для отображения — сервер при действиях всё проверяет заново.
+        /// </summary>
+        public static string GarageInfo(ExtPlayer player, House house, Garage garage)
+        {
+            try
+            {
+                if (house == null || garage == null || !GarageManager.GarageTypes.TryGetValue(garage.Type, out var garageType))
+                    return "null";
+
+                var isParking = garage.Type == -1 || garage.Type == 6;
+                var isOwner = house.Owner == player.GetSessionData()?.Name;
+                var slots = new Dictionary<int, string>();
+                if (!isParking)
+                {
+                    foreach (var slot in garage.CarSlots)
+                    {
+                        var vehicleData = VehicleManager.GetVehicleToAutoId(slot.Value);
+                        if (vehicleData != null)
+                            slots[slot.Key] = vehicleData.Model;
+                    }
+                }
+
+                object next = null;
+                if (isOwner && !garage.IsApartment && garage.Type != 6 && garage.Type < 9)
+                {
+                    var nextType = garage.Type + 1 == 6 ? garage.Type + 2 : garage.Type + 1;
+                    if (GarageManager.GarageTypes.TryGetValue(nextType, out var nextGarage))
+                        next = new { cars = nextGarage.MaxCars, price = nextGarage.Price, donate = nextGarage.IsDonate };
+                }
+
+                return JsonConvert.SerializeObject(new
+                {
+                    maxCars = garageType.MaxCars,
+                    parking = isParking,
+                    apartment = garage.IsApartment,
+                    owner = isOwner,
+                    slots,
+                    next,
+                });
+            }
+            catch
+            {
+                return "null";
+            }
         }
         
         public static List<List<object>> GetCarToHouse(ExtPlayer player, string ownerName, List<string> vehiclesNumber, Garage garage = null, bool inPark = false)

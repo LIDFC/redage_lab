@@ -1,4 +1,5 @@
 <script>
+    import { currentPage } from '../../../stores'
     import { translateText } from 'lang'
     import { executeClientToGroup, executeClient, executeClientAsyncToGroup } from 'api/rage'
     import { format } from 'api/formatter'
@@ -31,9 +32,8 @@
         executeClientToGroup ("house.action", text)
     }
 
-    const onOpenPark = () => {
-        executeClientToGroup ("house.openPark");
-    }
+    // Машины и гараж теперь управляются из приложения «Авто»
+    const onOpenPark = () => currentPage.set("cars");
 
     export let onSelectedViewHouse;
     export let onSelectedView;
@@ -75,7 +75,7 @@
     {/if}
     <div class="newphone__project_button property" on:click={() => executeClient ("gps.pointDefault", "house")}>{translateText('player2', 'Показать на карте')}</div>
     {#if menuAccess.includes ("inPark")}
-        <div class="newphone__project_button property"  on:click={onOpenPark}>{translateText('player2', 'Выбор парковки')}</div>
+        <div class="newphone__project_button property"  on:click={onOpenPark}>{translateText('player2', 'Машины и гараж — «Авто»')}</div>
     {/if}
     {#if menuAccess.includes ("sell") && houseData && Object.values (houseData) && Object.values (houseData).length}
         <div class="newphone__project_button"  on:click={() => onAction ("sell")}>{translateText('player2', 'Продать за')} ${format("money", houseData.sellPrice)}</div>

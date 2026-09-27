@@ -911,6 +911,7 @@ gm.events.add("render", () => {
 });
 
 let isBelt = false;
+global.isBeltOn = () => isBelt;
 gm.events.add("playerEnterVehicle", (entity, seat) => {
 	try
 	{

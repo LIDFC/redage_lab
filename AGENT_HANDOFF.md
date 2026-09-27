@@ -305,6 +305,13 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - История без имён — `crypto_history`, полный аудит — `blackmarket_audit`. Команды: `/crypto`, `/fcrypto`, `/bm` (см. `Admin/`). SQL-схема: `database/systems/blackmarket.sql`.
 - Обнал (`Crypto/CashOut.cs`, вкладка «Обнал»): только у Мавра (`cashoutPoint`, 5 м). Сумка `BagWithMoney` → BTC (комиссия 5%), BTC → наличные (комиссия 10%, шанс розыска 15% — +1 звезда). Параметры `launderFeePercent`, `cashoutFeePercent`, `cashoutWantedChance`, `/bm cfg launderfee|cashoutfee|wanted`.
 
+## 7j. Приложение «Авто» в телефоне (бывший «Транспорт»)
+
+- CEF `phonenew/components/cars/`: `index.svelte` (вкладки «Панель» / «Мои машины»), `panel.svelte`, `list.svelte` (карточка гаража + улучшение), `car.svelte` (GPS, эвакуация, ключ, замки, восстановление, продажа, место в гараже), стили `auto.sass`.
+- Клиент `src_client/phone/cars.js`: rpc `panelState`, `garageInfo`; события `client.phone.cars.panel|parking|upgradeGarage`. Синхронизация окон/фар/салона — `src_client/vehicle/panel.js` (shared data `vWindows` битовая маска, `vLights` 0/1/2, `vInterior`), режим езды `vDriveMode` множит крутящий момент в `player/render.js`.
+- Сервер `Core/VehiclePanel.cs` (`server.vehicle.panel`): водитель — всё, пассажир — только своя дверь/окно. Расход топлива по режиму — `VehiclePanel.FuelRate` в `Core/Vehicle.cs` FuelControl.
+- Эвакуация, смена замков и места в гараже больше не требуют быть у гаража (`HouseManager.VehicleAction`, `GarageManager.UpdateCarSlots` — добавлены проверки индекса места и принадлежности машины дому). Кнопка «Выбор парковки» в «Имуществе» ведёт в «Авто», меню дома `HouseMenu` для машин не открывается.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

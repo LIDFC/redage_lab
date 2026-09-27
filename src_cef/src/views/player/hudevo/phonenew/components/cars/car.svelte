@@ -8,31 +8,11 @@
     import { format } from 'api/formatter'
     import {executeClient, executeClientAsyncToGroup, executeClientToGroup} from 'api/rage'
 
+    export let garage = null;
+    export let reload;
+
+    // Всё работает из любого места: находиться у гаража больше не нужно (сервер проверяет владельца, деньги и состояние машины)
     const functionData = [
-        {
-            name: translateText('player2', 'Восстановить'),
-            func: "repair",
-            isGarage: true,
-            isPark: true
-        },
-        {
-            name: translateText('player2', 'Получить дубликат ключа'),
-            func: "key",
-        },
-        {
-            name: translateText('player2', 'Сменить замки'),
-            func: "changekey",
-            isGarage: true,
-            sell: true,
-            isPark: true
-        },
-        {
-            name: translateText('player2', 'Эвакуировать машину'),
-            func: "evac",
-            isGarage: true,
-            isCarGarage: false,
-            isPark: true
-        },
         {
             name: translateText('player2', 'Отметить в GPS'),
             func: "gps",
@@ -40,57 +20,53 @@
             isPark: true
         },
         {
+            name: 'Эвакуировать в гараж',
+            func: "evac",
+            isCarGarage: false,
+            isPark: true,
+            spawned: true
+        },
+        {
+            name: translateText('player2', 'Восстановить'),
+            func: "repair",
+            isPark: true,
+            spawned: true
+        },
+        {
+            name: translateText('player2', 'Получить дубликат ключа'),
+            func: "key",
+            sell: true
+        },
+        {
+            name: 'Сменить замки ($100)',
+            func: "changekey",
+            sell: true
+        },
+        {
             name: translateText('player2', 'Продать за $'),
             func: "sell",
             sell: true
         },
-        //{
-        //    name: "Тюнинговать",
-        //    func: "tune"
-        //},
     ];
 
-    let inGarage = false
-
-    executeClientAsyncToGroup("cars.inGarage").then((result) => {
-        inGarage = result;
-    });
-
-    executeClientAsyncToGroup("cars.inGarage").then((result) => {
-        inGarage = result;
-    });
-
-    const isVisible = (func, car, _inGarage) => {
-
+    const isVisible = (func, car) => {
         if (!func)
             return false;
 
-        if (!car.isCreate && func.func !== "sell" && func.func !== "gps")
+        if (func.spawned && !car.isCreate)
             return false;
 
+        if (func.sell && !car.sell)
+            return false;
 
-        if (car.isAir) {
-            //if (func.func === "evac")
-            //    return false;
-
-        } else {
-
-            //if (func.func === "tune")
-            //    return false;
-
-            if (func.isGarage && !_inGarage)
-                return false;
-
+        if (!car.isAir) {
             if (func.isCarGarage != undefined && func.isCarGarage !== car.isCarGarage)
-                return false;
-
-            if (func.sell && !car.sell)
                 return false;
 
             if (func.isPark != undefined && -1 === car.place)
                 return false;
 
-            if (func.func !== "gps" && !!car.ticket)
+            if (func.func !== "gps" && func.func !== "key" && !!car.ticket)
                 return false;
         }
 
@@ -100,16 +76,26 @@
     const onEnter = (func, car) => {
         if (!window.loaderData.delay ("onVehicleAction", 1))
             return;
-        if (!car)
-            return;     
-        else if (!isVisible (func, car, inGarage))
+        if (!car || !isVisible (func, car))
             return;
 
         executeClient ("client.vehicle.action", car.number, func.func);
 
         if (func.func === "sell")
             executeClientToGroup ("close")
-    }	
+        else
+            reload ();
+    }
+
+    // Место в гараже (раньше — схема «Парковка» в меню дома)
+    $: canPark = garage && !garage.parking && !selectedCar.isAir && !selectedCar.isRent && selectedCar.isCarGarage && selectedCar.place !== -1 && garage.maxCars > 1;
+    let isSlots = false;
+    const onPark = (place) => {
+        if (place === selectedCar.place || !window.loaderData.delay ("onVehicleParking", 1))
+            return;
+        executeClientToGroup ("cars.parking", selectedCar.sqlId, place);
+        isSlots = false;
+    }
     import { fade } from 'svelte/transition'
 
 
@@ -158,8 +144,22 @@
         {/if}
         <div on:click={() => onEnterRent ("stoprent")} class="newphone__project_button rent">{translateText('player2', 'Отказаться от аренды')}</div>
     {:else}
+        {#if isSlots}
+            <div class="auto__title w-100">Выберите место в гараже</div>
+            <div class="auto__slots">
+                {#each Array(garage.maxCars) as _, place}
+                    <div class="auto__slot" class:current={place === selectedCar.place} class:busy={garage.slots[place] && place !== selectedCar.place} on:click={() => onPark (place)}>
+                        <b>{place + 1}</b>
+                        <span>{place === selectedCar.place ? 'здесь' : garage.slots[place] ? vehicleName(garage.slots[place]) : 'свободно'}</span>
+                    </div>
+                {/each}
+            </div>
+            <div class="orange box-center m-top10" on:click={() => isSlots = false}>Отмена</div>
+        {:else if canPark}
+            <div on:click={() => isSlots = true} class="newphone__project_button rent">Место в гараже: {selectedCar.place + 1}</div>
+        {/if}
         {#each functionData as func}
-            {#if isVisible (func, selectedCar, inGarage)}
+            {#if !isSlots && isVisible (func, selectedCar)}
                 <div on:click={() => onEnter (func, selectedCar)} class="newphone__project_button rent">
                     {func.name}
                     {#if func.func == "sell"}

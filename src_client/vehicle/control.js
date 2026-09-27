@@ -103,3 +103,18 @@ global.binderFunctions.signaling = () => {// Аварийная сигнализ
 		mp.events.callRemote("client_trycatch", "vehicle/control", "signaling", e.toString());
 	}
 };
+// Анимация брелока: сервер присылает, когда замок сработал по L снаружи машины.
+// Проигрываем только если персонаж стоит нормально: не в машине, не падает, не плывёт, не лезет, не в рэгдолле, не целится.
+gm.events.add("client.keyfob.check", () => {
+	try {
+		const p = global.localplayer;
+		if (!p || p.vehicle || p.isInAnyVehicle(true)) return;
+		const is = (name, ...args) => typeof p[name] === "function" && !!p[name](...args);
+		if (is("isRagdoll") || is("isFalling") || is("isSwimming") || is("isClimbing") || is("isInParachuteFreeFall")) return;
+		if (is("isGettingIntoAVehicle") || is("isDeadOrDying", true) || is("isShooting") || mp.game.player.isFreeAiming()) return;
+		if (global.cuffed || global.isDeath || global.isPhoneOpen || global.isTabletOpen) return;
+		mp.events.callRemote("server.keyfob.play");
+	} catch (e) {
+		mp.events.callRemote("client_trycatch", "vehicle/control", "client.keyfob.check", e.toString());
+	}
+});

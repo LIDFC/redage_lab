@@ -1779,7 +1779,11 @@ namespace NeptuneEvo.Core
                         if (veh != null)
                         {
                             if (IsVehicleDeath(veh)) return;
+                            var wasLocked = VehicleStreaming.GetLockState(veh);
                             ChangeVehicleDoors(sender, veh);
+                            // Замок сработал снаружи (клавиша L) — анимация брелока, если клиент сочтёт её уместной
+                            if (VehicleStreaming.GetLockState(veh) != wasLocked)
+                                Trigger.ClientEvent(sender, "client.keyfob.check");
                         }
                         //else Main.DoorControlState(sender);
                         break;

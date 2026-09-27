@@ -13,7 +13,6 @@
 
     $: query = search.trim().toLowerCase();
     $: lots = (data.lots || [])
-        .filter(l => !l.mine)
         .filter(l => category === "all" || l.category === category)
         .filter(l => !query.length || l.name.toLowerCase().includes(query))
         .sort((a, b) => sort === "asc" ? a.price - b.price : b.price - a.price);
@@ -64,12 +63,12 @@
 <div class="bm__scroll">
     <div class="grid">
         {#each lots as lot (lot.id)}
-            <div class="bm__card lot" on:click={() => open(lot)}>
+            <div class="bm__card lot" class:mine={lot.mine} on:click={() => !lot.mine && open(lot)}>
                 <div class="bm__row">
                     <div class="bm__icon" style="background-image: url({itemIcon(lot.itemId)})"></div>
                     <div class="info">
                         <div class="name">{lot.name}</div>
-                        <div class="bm__muted small">Продавец: аноним · {timeLeft(lot.minutesLeft)}</div>
+                        <div class="bm__muted small">{lot.mine ? "Ваш лот" : "Продавец: аноним"} · {timeLeft(lot.minutesLeft)}</div>
                     </div>
                 </div>
                 <div class="bm__row between">
@@ -155,6 +154,8 @@
         border-color: rgba(216, 57, 75, 0.5);
         background: rgba(216, 57, 75, 0.06);
     }
+    .lot.mine { cursor: default; border-color: rgba(242, 181, 68, 0.35); }
+    .lot.mine:hover { background: rgba(255, 255, 255, 0.035); border-color: rgba(242, 181, 68, 0.35); }
     .info { min-width: 0; }
     .name {
         font-family: 'TTNorms-Bold';

@@ -1,341 +1,395 @@
 <script>
+    // Оружейный магазин (бизнес). Данные: client.gunshop.open → window.weaponshop(weapons, ammo),
+    // модификации: client.weaponshop.components → window.weaponshopcomponents(components, types).
+    // Картинки — иконки предметов с CDN проекта (как в инвентаре), по itemId из json/itemsInfo.
     import { executeClient } from 'api/rage'
     import { translateText } from 'lang'
-    import weaponsinfo from './assets/js/weaponsinfo'
     import { format } from 'api/formatter'
-    import './assets/sass/weaponshop.sass'
+    import { itemsInfo, ItemId } from 'json/itemsInfo'
+    import weaponsinfo from './assets/js/weaponsinfo'
 
-    const wComponentsType = {
-        1: "inv-item-Varmod",//-
-        2: "inv-item-Clips",
-        3: "inv-item-Suppressors", //Supp,
-        4: "inv-item-Scopes", //Scope,
-        5: "inv-item-Muzzle-Brakes", //Invalid,
-        6: "inv-item-Barrels", //Clip2,
-        7: "inv-item-Flashlights", //FlashLaser,
-        8: "inv-item-Grips", //Scope2,
-        9: "inv-item-Varmod", //Grip2,
-    }
+    const categoryNames = ['Пистолеты', 'Дробовики', 'Пистолеты-пулемёты', 'Штурмовые винтовки', 'Снайперские винтовки'];
+    const maxAmmo = [100, 50, 300, 250, 48];
 
-    let category = ['Пистолеты','Дробовики','Пистолеты пулеметы', 'Штурмовые винтовки'],
-        sumAmmo = 0,
-        activeWeaponId = 0,
-        activeWeaponCategory = 0,
-        cntAmmo = 0,
-        weapons = [[{Name:"Pistol","Icon":"inv-item-Pistol","Mats":50},{Name:"SNS Pistol","Icon":"inv-item-SNS-Pistol","Mats":40}]],
-        ammo = [],
-        components = [],
-        ctypes = [],
-        activeComponentId = 0,
-        activeComponentCategory = 0;
+    // Тип модификации → предмет-обвес (для картинки и названия раздела)
+    const componentItems = {
+        1: { item: ItemId.cVarmod, name: 'Раскраски' },
+        2: { item: ItemId.cClip, name: 'Магазины' },
+        3: { item: ItemId.cSuppressor, name: 'Глушители' },
+        4: { item: ItemId.cScope, name: 'Прицелы' },
+        5: { item: ItemId.cMuzzlebrake, name: 'Дульные тормоза' },
+        6: { item: ItemId.cBarrel, name: 'Стволы' },
+        7: { item: ItemId.cFlashlight, name: 'Фонари' },
+        8: { item: ItemId.cGrip, name: 'Рукояти' },
+        9: { item: ItemId.cVarmod, name: 'Отделка' },
+    };
 
-    let selectIWeapon = weapons[activeWeaponCategory][activeWeaponId];
-    let activeWeaponInfo = weaponsinfo[selectIWeapon.Name];
-    let activeComponentInfo = components[activeComponentId];
-    
-    const maxAmmo = [
-        100,
-        50,
-        300,
-        250,
-        48,
-    ]
+    let weapons = [];
+    let ammo = [];
+    let components = [];
+    let ctypes = [];
 
-    const onHandleInput = (value) => {
-        value = Math.round(value.replace(/\D+/g, ""));
-        if (value < 1) value = 0;  
-        const max = maxAmmo [activeWeaponCategory];
-        if (value > max) {
-            value = max
-        }
-        
-        cntAmmo = value;
-        sumAmmo = Math.round(value * ammo[activeWeaponCategory]);
-    }
+    let category = 0;
+    let weaponIndex = 0;
+    let componentType = 0;
+    let componentIndex = 0;
+    let ammoCount = "";
 
     window.weaponshop = (weaponJson, ammoJson) => {
-        weapons = JSON.parse(weaponJson);
-        ammo = JSON.parse(ammoJson);
+        weapons = JSON.parse(weaponJson) || [];
+        ammo = JSON.parse(ammoJson) || [];
+        category = weapons.findIndex(c => c && c.length) >= 0 ? weapons.findIndex(c => c && c.length) : 0;
+        weaponIndex = 0;
     }
-    
+
     window.weaponshopcomponents = (componentsJson, ctypesJson) => {
-        components = JSON.parse(componentsJson);
-        ctypes = JSON.parse(ctypesJson);
-        onClickComponentCategory (ctypes[0])
+        components = JSON.parse(componentsJson) || [];
+        ctypes = JSON.parse(ctypesJson) || [];
+        if (ctypes.length) selectComponentType(ctypes[0]);
     }
 
-    const Specifications = (num) => {
-        let step;
-        let array = [];
-            for (step = 0; step < 5; step++) {
-                array += (`<li class=${step >= num ? '' : 'active'}></li>`)
-            }
-        return array
+    // Иконка предмета с CDN: сначала по классу иконки, потом по названию
+    const itemIdByIcon = {};
+    const itemIdByName = {};
+    for (const id in itemsInfo) {
+        const info = itemsInfo[id];
+        if (!info) continue;
+        if (info.Icon) itemIdByIcon[info.Icon] = id;
+        if (info.Name) itemIdByName[info.Name.toLowerCase()] = id;
+    }
+    const weaponImage = (w) => {
+        if (!w) return "";
+        const id = itemIdByIcon[w.Icon] || itemIdByName[String(w.Name).toLowerCase()];
+        return id !== undefined ? `${document.cloud}inventoryItems/items/${id}.png` : "";
+    }
+    const componentImage = (type) => {
+        const c = componentItems[type];
+        return c ? `${document.cloud}inventoryItems/items/${c.item}.png` : "";
     }
 
-    const onSelectComponent = () => {
-        executeClient('client.weaponshop.components', selectIWeapon.Name.replace(/\s/g, ''));
+    $: list = weapons[category] || [];
+    $: weapon = list[weaponIndex] || null;
+    $: info = weapon ? weaponsinfo[weapon.Name] : null;
+    $: ammoPrice = Number(ammo[category]) || 0;
+    $: ammoN = Math.min(Math.max(0, Math.floor(Number(ammoCount) || 0)), maxAmmo[category] || 100);
+    $: modsMode = ctypes.length > 0;
+    $: shownComponents = components.map((c, index) => ({ ...c, index })).filter(c => c.type == componentType);
+    $: component = components[componentIndex] || null;
+
+    const selectCategory = (i) => {
+        category = i;
+        weaponIndex = 0;
+        ammoCount = "";
+    }
+    const selectWeapon = (i) => {
+        weaponIndex = i;
+        ammoCount = "";
+    }
+    const selectComponentType = (type) => {
+        componentType = type;
+        const first = components.findIndex(c => c.type == type);
+        componentIndex = first >= 0 ? first : 0;
     }
 
-    const onClickWeaponCategory = (id) => {
-        activeWeaponCategory = id;
-        activeWeaponId = 0;
-        cntAmmo = 0;
-        sumAmmo = 0;
-        selectIWeapon = weapons[activeWeaponCategory][activeWeaponId];
-        activeWeaponInfo = weaponsinfo[selectIWeapon.Name];
-    }
-
-    const onClickWeapon = (id) => {
-        activeWeaponId = id; 
-        cntAmmo = 0;
-        sumAmmo = 0;
-        selectIWeapon = weapons[activeWeaponCategory][activeWeaponId];
-        activeWeaponInfo = weaponsinfo[selectIWeapon.Name];
-    }
-    
-    const onClickComponentCategory = (id) => {
-        activeComponentCategory = id;
-        let updateComponentId = false;
-        components.forEach((item, index) => {
-            if (item.type == id && !updateComponentId) {
-                activeComponentId = index;
-                updateComponentId = true;
-            }
-        });
-        activeComponentInfo = components[activeComponentId];
-    }
-
-    const onClickComponent = (id) => {
-        activeComponentId = id;
-        activeComponentInfo = components[activeComponentId];
-    }
-
-    const onBuy = () => {
-        executeClient('client.weaponshop.buy', activeWeaponCategory, activeWeaponId);
-    }
-
-    const onBuyAmmo = () => {
-        executeClient('client.weaponshop.buyAmmo', activeWeaponCategory,cntAmmo);
-    }
-
-    const onBuyComponent = () => {
-        executeClient('client.weaponshop.buyComponent', activeWeaponCategory, activeWeaponId, activeComponentInfo.hash);
-    }
-
-    const onExit = () => {
-        executeClient('client.weaponshop.close');
-    }
-
-    const getLengthFix = (length) => {
-        let rLength = 6;
-        switch (length) {
-            case 1:
-            case 2:
-            case 3:
-                rLength = 3;
-                break;
-            case 4:
-            case 5:
-            case 6:
-                rLength = 6;
-                break;
-            case 7:
-            case 8:
-            case 9:
-                rLength = 9;
-                break;
-            case 10:
-            case 11:
-            case 12:
-                rLength = 12;
-                break;
-            case 13:
-            case 14:
-            case 15:
-                rLength = 15;
-                break;
-        }
-        return rLength;
-    }
-
-    const getLengthFixToComponents = (type) => {
-        let pushData = [];
-        components.forEach((item, index) => {
-            if (item.type == type) pushData.push({...item, index: index});
-        });
-        if (getLengthFix (pushData.length) != pushData.length) {
-            for (let i = 0; i <= getLengthFix (pushData.length) - pushData.length; i++) {
-                pushData.push(0);
-            }
-        }
-        return pushData;
-    }
-    const onBack = () => {
+    const buyWeapon = () => weapon && executeClient('client.weaponshop.buy', category, weaponIndex);
+    const buyAmmo = () => ammoN > 0 && executeClient('client.weaponshop.buyAmmo', category, ammoN);
+    const openMods = () => weapon && executeClient('client.weaponshop.components', weapon.Name.replace(/\s/g, ''));
+    const buyComponent = () => component && executeClient('client.weaponshop.buyComponent', category, weaponIndex, component.hash);
+    const backFromMods = () => {
         components = [];
         ctypes = [];
-        activeComponentId = 0;
-        activeComponentCategory = 0;
-        activeComponentInfo = components[activeComponentId];
+    }
+    const exit = () => executeClient('client.weaponshop.close');
+
+    const onKey = (e) => {
+        if (e.keyCode !== 27) return;
+        if (modsMode) backFromMods();
+        else exit();
     }
 
-    const HandleKeyDown = (event) => {
-        const { keyCode } = event;
-        if (keyCode !== 27) return;
-        onExit()
-    }
+    const stats = [
+        { key: 'damage', name: 'Урон' },
+        { key: 'ratefire', name: 'Скорострельность' },
+        { key: 'accuracy', name: 'Точность' },
+        { key: 'range', name: 'Дальность' },
+    ];
 </script>
-<svelte:window on:keyup={HandleKeyDown} />
 
+<svelte:window on:keyup={onKey} />
 
-        
-<div id="weaponshop">
-    <div class="box-ch">
-        
-        <div class="box-info">
-            <div class="l">
-                <div class="title">{translateText('business', 'Магазин Оружия')}</div>
-                <p>{translateText('business', 'Легальный магазин огнестрельного оружия, если вы имеете лицензию на ношение оружия, то сможете приобрести любое понравившееся вам оружие для самообороны')}.</p>
+<div class="ws">
+    <div class="ws__panel">
+        <div class="ws__head">
+            <div>
+                <div class="ws__caption">Ammu-Nation</div>
+                <div class="ws__title">{modsMode ? `Модификации · ${weapon ? weapon.Name : ""}` : translateText('business', 'Магазин Оружия')}</div>
             </div>
-            <div class="button-box">
-                {#if (ctypes.length)}
-                    <div class="btn blue" on:click={onBack}>{translateText('business', 'Назад')}</div>
-                {:else}
-                    <div class="btn red" on:click={onExit}>{translateText('business', 'Выйти')}</div>
+            <div class="ws__head-right">
+                {#if modsMode}
+                    <div class="ws__btn" on:click={backFromMods}>← Назад к оружию</div>
                 {/if}
+                <div class="ws__btn" on:click={exit}>Выйти <span>ESC</span></div>
             </div>
-        
         </div>
 
-        {#if (ctypes.length)}
-        <ul class="main">
-            {#each ctypes as value, index}
-                <li on:click={() => onClickComponentCategory(value)} key={index} class={"main-icon" + (activeComponentCategory === value ? " active" : "")}><span class={`${wComponentsType [value]} iconData`} /></li>
-            {/each}
-        </ul>
-        {:else}
-        <ul class="main">
-            {#each category as value, index}
-                <li on:click={() => onClickWeaponCategory(index)} key={index} class={"main-small" + (activeWeaponCategory === index ? " active" : "")}>{@html value}</li>
-            {/each}
-        </ul>
-        {/if}
+        <div class="ws__tabs">
+            {#if modsMode}
+                {#each ctypes as type}
+                    <div class="ws__tab" class:active={componentType === type} on:click={() => selectComponentType(type)}>
+                        {componentItems[type] ? componentItems[type].name : `Тип ${type}`}
+                    </div>
+                {/each}
+            {:else}
+                {#each weapons as cat, i}
+                    {#if cat && cat.length}
+                        <div class="ws__tab" class:active={category === i} on:click={() => selectCategory(i)}>{categoryNames[i] || `Категория ${i + 1}`}</div>
+                    {/if}
+                {/each}
+            {/if}
+        </div>
 
-        <div class="item-info">
-                        
-            {#if (ctypes.length)}
-                <ul class="items">
-                    {#each getLengthFixToComponents(activeComponentCategory) as item, index}
-                    <li class={item != 0 ? 'item' : 'empty'} class:active={item && activeComponentId === item.index} key={index} on:click={item != 0 ? () => onClickComponent(item.index) : null}>
-                        {#if item != 0}
-                            <div class="box"><div class="item-title"><div>{@html item.Name}</div><div></div></div>
-                            <span class="item-img {wComponentsType [activeComponentCategory]}" />
-                            <div class={true ? 'price' : 'disabled'}><span>$</span>{format("money", item.Mats)}</div></div>
-                        {:else}
-                            <div>{translateText('business', 'Пусто')}</div>
-                        {/if}
-                    </li>
+        <div class="ws__body">
+            <div class="ws__grid">
+                {#if modsMode}
+                    {#each shownComponents as c (c.index)}
+                        <div class="ws__card" class:active={componentIndex === c.index} on:click={() => componentIndex = c.index}>
+                            <div class="ws__img" style="background-image: url({componentImage(c.type)})"></div>
+                            <div class="ws__name">{@html c.Name}</div>
+                            <div class="ws__price">${format("money", c.Mats)}</div>
+                        </div>
+                    {:else}
+                        <div class="ws__empty">Для этого оружия нет модификаций</div>
                     {/each}
-                </ul>
                 {:else}
-                <ul class="items">
-                    {#each new Array(getLengthFix (weapons.length)).fill(0) as _, index}
-                    <li class={weapons[activeWeaponCategory][index] ? 'item' : 'empty'} class:active={activeWeaponId === index} on:click={weapons[activeWeaponCategory][index] ? () => onClickWeapon(index) : null}>
-                        {#if weapons[activeWeaponCategory][index]}
-                        <div class="box"><div class="item-title"><div>{@html weapons[activeWeaponCategory][index].Name}</div><div></div></div>
-                        <span class={"item-img " + weapons[activeWeaponCategory][index].Icon} />
-                        <div class={true ? 'price': 'disabled'}><span>$</span>{format("money", weapons[activeWeaponCategory][index].Mats)}</div></div>
-                        {:else}
-                        <div>{translateText('business', 'Пусто')}</div>
-                        {/if}
-                    </li>
+                    {#each list as w, i}
+                        <div class="ws__card" class:active={weaponIndex === i} on:click={() => selectWeapon(i)}>
+                            <div class="ws__img" style="background-image: url({weaponImage(w)})"></div>
+                            <div class="ws__name">{w.Name}</div>
+                            <div class="ws__price">${format("money", w.Mats)}</div>
+                        </div>
+                    {:else}
+                        <div class="ws__empty">Нет товара</div>
                     {/each}
-                </ul>
                 {/if}
+            </div>
 
+            <div class="ws__side">
+                {#if modsMode}
+                    {#if component}
+                        <div class="ws__big" style="background-image: url({componentImage(component.type)})"></div>
+                        <div class="ws__side-title">{@html component.Name}</div>
+                        <div class="ws__desc">{@html component.Desc || ""}</div>
+                        <div class="ws__buy" on:click={buyComponent}>Купить за ${format("money", component.Mats)}</div>
+                    {/if}
+                {:else if weapon}
+                    <div class="ws__big" style="background-image: url({weaponImage(weapon)})"></div>
+                    <div class="ws__side-title">{weapon.Name}</div>
+                    <div class="ws__desc">{info ? info.desc : ""}</div>
+                    <div class="ws__stats">
+                        {#each stats as s}
+                            <div class="ws__stat">
+                                <span>{s.name}</span>
+                                <div class="ws__bar"><div style="width: {Math.min(5, info ? info[s.key] || 0 : 0) * 20}%"></div></div>
+                            </div>
+                        {/each}
+                    </div>
+                    <div class="ws__buy" on:click={buyWeapon}>Купить за ${format("money", weapon.Mats)}</div>
+                    <div class="ws__btn wide" on:click={openMods}>Модификации</div>
 
-                {#if (ctypes.length)}
-
-                <div class="c">
-                
-                    <div class="specification">
-                        <div class="contein">
-                            <span>{translateText('business', 'Урон')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.damage : 0)}</ul>
+                    <div class="ws__ammo">
+                        <div class="ws__ammo-head">
+                            <span>Патроны</span>
+                            <span class="ws__muted">1 шт. = ${ammoPrice}</span>
                         </div>
-                        <div class="contein">
-                            <span>{translateText('business', 'Скорострельность')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.ratefire : 0)}</ul>
-                        </div>
-                        <div class="contein">
-                            <span>{translateText('business', 'Точность')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.accuracy : 0)}</ul>
-                        </div>
-                        <div class="contein">
-                            <span>{translateText('business', 'Дальность')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.range : 0)}</ul>
+                        <div class="ws__row">
+                            <input class="ws__input" type="number" min="1" max={maxAmmo[category] || 100} bind:value={ammoCount} placeholder="Количество (до {maxAmmo[category] || 100})" />
+                            <div class="ws__btn" class:disabled={ammoN <= 0} on:click={buyAmmo}>Купить{ammoN > 0 ? ` · $${format("money", ammoN * ammoPrice)}` : ""}</div>
                         </div>
                     </div>
-                    <div class="box-column">
-                        <div class="title x2">
-                            <span>{@html activeComponentInfo.Name}</span>
-                        </div>
-                    
-                        <p>{@html activeComponentInfo.Desc}</p>
-                    </div>
-                    <div class='btn white' on:click={onBuyComponent}>
-                        {translateText('business', 'Купить за')} {format("money", activeComponentInfo.Mats)}$
-                    </div>
-                </div>
-                {:else}
-                <div class="c">
-                    <div class="specification">
-                        <div class="contein">
-                            <span>{translateText('business', 'Урон')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.damage : 0)}</ul>
-                        </div>
-                        <div class="contein">
-                            <span>{translateText('business', 'Скорострельность')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.ratefire : 0)}</ul>
-                        </div>
-                        <div class="contein">
-                            <span>{translateText('business', 'Точность')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.accuracy : 0)}</ul>
-                        </div>
-                        <div class="contein">
-                            <span>{translateText('business', 'Дальность')}</span>
-                            <ul>{@html Specifications(activeWeaponInfo ? activeWeaponInfo.range : 0)}</ul>
-                        </div>
-                    </div>
-                    <div class="box-column">
-                        <div class="title x2">
-                            <span>{selectIWeapon.Name}</span>
-                        </div>
-                        <p>{activeWeaponInfo ? activeWeaponInfo.desc : "Нет"}</p>
-                    </div>
-                
-                    <div class="title x3">
-                        <div>{translateText('business', 'Купить патроны')} <span>1 {translateText('business', 'патрон')} = {ammo[activeWeaponCategory]}$</span></div>
-        
-                        {#if sumAmmo > 0}
-                            <div><span class="priceAmmo">{sumAmmo} <b>$</b></span> <span>{translateText('business', 'Цена')}</span></div>
-                        {/if}
-        
-                    </div>
-                    <div class="inputblock">
-                        <input bind:value={cntAmmo} on:input={(event) => onHandleInput (event.target.value)} class="input" placeholder="Введите кол-во патронов" maxLength="6"/>
-                        <div class="butammo" on:click={onBuyAmmo}>{translateText('business', 'Купить')}</div>
-                    </div>
-                    <div class='box-btn'>
-                        <div class='btn white' on:click={onBuy} style='width: 58%'>
-                            {translateText('business', 'Купить за')} {format("money", selectIWeapon.Mats)}$
-                        </div>
-                        <div class='btn min blue' on:click={onSelectComponent} style='width: 38%'>
-                            {translateText('business', 'Модификации')}
-                        </div>
-                    </div>
-                </div>
                 {/if}
+            </div>
         </div>
     </div>
 </div>
+
+<style>
+    .ws {
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at 25% 15%, rgba(40, 32, 18, 0.9), rgba(6, 7, 10, 0.95) 60%);
+        color: #ececec;
+        font-family: 'TTNorms-Regular';
+        font-size: 1.5vh;
+    }
+    .ws__panel {
+        width: 150vh;
+        max-width: 96vw;
+        height: 82vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2.6vh 3vh;
+        border-radius: 1.4vh;
+        background: rgba(12, 13, 17, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        box-shadow: 0 2vh 6vh rgba(0, 0, 0, 0.55);
+    }
+    .ws__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vh;
+    }
+    .ws__caption {
+        color: #f0a93b;
+        font-size: 1.2vh;
+        letter-spacing: 0.25vh;
+        text-transform: uppercase;
+    }
+    .ws__title { font-family: 'TTNorms-Bold'; font-size: 2.8vh; }
+    .ws__head-right { display: flex; gap: 1vh; }
+    .ws__btn {
+        cursor: pointer;
+        padding: 1.1vh 1.8vh;
+        border-radius: 0.9vh;
+        background: rgba(255, 255, 255, 0.07);
+        text-align: center;
+        white-space: nowrap;
+        transition: background 0.15s;
+    }
+    .ws__btn:hover { background: rgba(255, 255, 255, 0.13); }
+    .ws__btn span {
+        margin-left: 0.6vh;
+        padding: 0.1vh 0.5vh;
+        border-radius: 0.4vh;
+        background: rgba(255, 255, 255, 0.1);
+        font-size: 1.1vh;
+    }
+    .ws__btn.wide { margin-top: 1vh; }
+    .ws__btn.disabled { opacity: 0.45; pointer-events: none; }
+    .ws__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8vh;
+        margin-bottom: 1.8vh;
+    }
+    .ws__tab {
+        cursor: pointer;
+        padding: 0.9vh 1.6vh;
+        border-radius: 2vh;
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.65);
+        transition: all 0.15s;
+    }
+    .ws__tab.active {
+        background: rgba(240, 169, 59, 0.18);
+        color: white;
+        box-shadow: inset 0 0 0 1px rgba(240, 169, 59, 0.7);
+    }
+    .ws__body {
+        flex: 1;
+        min-height: 0;
+        display: flex;
+        gap: 2.4vh;
+    }
+    .ws__grid {
+        flex: 1;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: min-content;
+        gap: 1.2vh;
+        overflow-y: auto;
+        padding-right: 0.6vh;
+    }
+    .ws__grid::-webkit-scrollbar { width: 0.4vh; }
+    .ws__grid::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.12); border-radius: 0.4vh; }
+    .ws__card {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.6vh 1.2vh;
+        border-radius: 1.1vh;
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        transition: all 0.15s;
+    }
+    .ws__card:hover { background: rgba(255, 255, 255, 0.06); }
+    .ws__card.active {
+        border-color: rgba(240, 169, 59, 0.8);
+        background: rgba(240, 169, 59, 0.08);
+    }
+    .ws__img {
+        width: 100%;
+        height: 10vh;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 1vh;
+    }
+    .ws__name { font-family: 'TTNorms-Bold'; text-align: center; }
+    .ws__price { margin-top: 0.4vh; color: #f0a93b; font-family: 'TTNorms-Bold'; }
+    .ws__empty { grid-column: 1 / -1; margin-top: 4vh; text-align: center; color: rgba(255, 255, 255, 0.4); }
+    .ws__side {
+        width: 46vh;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+        border-radius: 1.2vh;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        overflow-y: auto;
+    }
+    .ws__big {
+        height: 16vh;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 1vh;
+        margin-bottom: 1.4vh;
+    }
+    .ws__side-title { font-family: 'TTNorms-Bold'; font-size: 2.2vh; }
+    .ws__desc { margin: 0.8vh 0 1.4vh; color: rgba(255, 255, 255, 0.6); line-height: 1.4; }
+    .ws__stats { display: flex; flex-direction: column; gap: 0.8vh; margin-bottom: 1.6vh; }
+    .ws__stat { display: grid; grid-template-columns: 16vh 1fr; align-items: center; color: rgba(255, 255, 255, 0.7); }
+    .ws__bar { height: 0.8vh; border-radius: 0.4vh; background: rgba(255, 255, 255, 0.08); overflow: hidden; }
+    .ws__bar div { height: 100%; border-radius: 0.4vh; background: linear-gradient(90deg, #f0a93b, #ffcf7a); }
+    .ws__buy {
+        cursor: pointer;
+        padding: 1.3vh;
+        border-radius: 0.9vh;
+        background: #f0a93b;
+        color: #1a1204;
+        text-align: center;
+        font-family: 'TTNorms-Bold';
+        transition: background 0.15s;
+    }
+    .ws__buy:hover { background: #ffbb52; }
+    .ws__ammo {
+        margin-top: 2vh;
+        padding-top: 1.6vh;
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .ws__ammo-head { display: flex; justify-content: space-between; margin-bottom: 1vh; }
+    .ws__muted { color: rgba(255, 255, 255, 0.5); }
+    .ws__row { display: flex; gap: 0.8vh; }
+    .ws__input {
+        flex: 1;
+        min-width: 0;
+        padding: 1.1vh 1.2vh;
+        border-radius: 0.9vh;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.04);
+        color: white;
+        font-family: inherit;
+        font-size: 1.4vh;
+        outline: none;
+    }
+    .ws__input:focus { border-color: rgba(240, 169, 59, 0.6); }
+</style>

@@ -676,7 +676,7 @@ namespace NeptuneEvo.Core
             {
                 if (!player.IsCharacterData()) return;
                 if (Manager.FractionDataMats.Count == 0) return;
-                List<int> ListItems = new List<int>() { 0, 1, 2, 3, 4, 5, 6, 7, 69, 78, 79, 80, 81};
+                List<int> ListItems = new List<int>() { 0, 82, 1, 2, 3, 4, 5, 6, 7, 69, 78, 79, 80, 81};
 
                 List<Manager.FracMatsData> _JsonData = new List<Manager.FracMatsData>();
 
@@ -707,6 +707,10 @@ namespace NeptuneEvo.Core
                 {
                     case 0:
                         MoneyFlow(player);
+                        return;
+                    case 82:
+                        // Обнал крипты — приложение Чёрного рынка на вкладке «Обнал» (у Мавра VPN не нужен)
+                        NeptuneEvo.BlackMarket.Controller.OpenAt(player, "cashout");
                         return;
                     case 1:
                         if (Chars.Repository.isFreeSlots(player, ItemId.BagWithDrill) != 0) return;

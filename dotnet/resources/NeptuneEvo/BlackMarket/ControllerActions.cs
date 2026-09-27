@@ -40,8 +40,22 @@ namespace NeptuneEvo.BlackMarket
                 Trigger.ClientEvent(player, "client.blackmarket.vpn", false);
                 return;
             }
-            Trigger.ClientEvent(player, "client.blackmarket.open", JsonConvert.SerializeObject(BlackMarketView.Build(player)));
+            OpenAt(player, "market");
         }
+
+        /// <summary>Открыть приложение на нужной вкладке (у Мавра — сразу «Обнал», без VPN).</summary>
+        public static void OpenAt(ExtPlayer player, string page)
+        {
+            if (!player.IsCharacterData() || !BlackMarketManager.Ready)
+                return;
+            var view = JObject.FromObject(BlackMarketView.Build(player));
+            view["page"] = page;
+            Trigger.ClientEvent(player, "client.blackmarket.open", view.ToString(Formatting.None));
+        }
+
+        /// <summary>Действия обнала работают у Мавра и без VPN — там игрок стоит лично.</summary>
+        private static bool AllowedWithoutVpn(ExtPlayer player, string action) =>
+            (action == "launder" || action == "cashout" || action == "cashoutGps" || action == "refresh") && CashOut.AtPoint(player);
 
         /// <summary>
         /// Все действия приложения. Из CEF приходят только идентификаторы и введённые числа —
@@ -52,7 +66,7 @@ namespace NeptuneEvo.BlackMarket
         {
             if (!player.IsCharacterData() || !BlackMarketManager.Ready)
                 return;
-            if (!VpnState.IsOn(player))
+            if (!VpnState.IsOn(player) && !AllowedWithoutVpn(player, action))
             {
                 Trigger.ClientEvent(player, "client.blackmarket.vpn", false);
                 return;

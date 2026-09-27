@@ -37,7 +37,8 @@ namespace NeptuneEvo.Jobs
 
                 // blips
 
-                Main.CreateBlip(new Main.BlipData(354, LangFunc.GetText(LangType.Ru, DataName.Electrostanciya), new Vector3(724.9625, 133.9959, 79.83643), 70, true, 1.2f));
+                // Работа электрика — у прораба на стройке (Jobs/Electrician.cs, settings/electrician.json, /elecforeman)
+                Main.CreateBlip(new Main.BlipData(354, "Электрик", Electrician.ForemanPosition, 70, true, 1.2f));
 
             }
             catch (Exception e)

@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `apartment_flats` (
 -- Гаражи: 0 — 2 места, 1 — 3, 2 — 4, 3 — 5, 5 — 10
 INSERT IGNORE INTO `apartment_buildings` (`id`, `name`, `address`, `entrance`, `garage`, `garage_heading`, `plan`) VALUES
 (1, '4 Integrity Way', 'Пиллбокс-Хилл, Integrity Way',
-    '{"x":-47.3,"y":-585.9,"z":36.95}', '{"x":-15.6,"y":-612.0,"z":35.86}', 70,
+    '{"x":-47.3,"y":-585.9,"z":36.95}', '{"x":-28.408848,"y":-623.39954,"z":35.527122}', 70.03,
     '[{"type":4,"price":450000,"garage":2,"count":8},{"type":5,"price":850000,"garage":3,"count":4}]'),
 (2, 'Del Perro Heights', 'Дель-Перро, Bay City Ave',
     '{"x":-1447.2,"y":-537.7,"z":33.74}', '{"x":-1455.0,"y":-503.5,"z":32.1}', 210,

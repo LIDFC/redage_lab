@@ -23,6 +23,8 @@
     $: outUsd = Math.floor((n - outFee) * rate);
 
     $: if (lastResult && lastResult.ok && lastResult.action === "cashout") amount = "";
+    $: launderHint = !atPoint ? "Подойдите к Мавру" : bag <= 0 ? "Наденьте сумку с деньгами после ограбления" : "";
+    $: cashoutHint = !atPoint ? "Подойдите к Мавру" : available <= 0 ? "Нет свободных BTC" : n <= 0 ? "Введите сумму BTC" : outUsd <= 0 ? "Слишком маленькая сумма" : "";
 </script>
 
 <div class="bm__h1">Обнал</div>
@@ -34,6 +36,7 @@
             Обнал проводит только Мавр. Приезжайте к нему лично — приложение подскажет дорогу.
         {/if}
     </div>
+    <div class="bm__btn" on:click={() => action("refresh")}>Обновить</div>
     {#if !atPoint}
         <div class="bm__btn" on:click={() => action("cashoutGps")}>Метка на карте</div>
     {/if}
@@ -50,6 +53,7 @@
         <div class="bm__line"><span class="bm__muted">Комиссия</span><span>{btc(bagFee)}</span></div>
         <div class="bm__line"><span>Получите</span><span class="bm__price">{btc(Math.max(0, bagGross - bagFee))}</span></div>
         <div class="bm__btn primary" style="margin-top: 1.6vh" class:disabled={!atPoint || bag <= 0 || bagGross - bagFee <= 0} on:click={() => action("launder")}>Отмыть в крипту</div>
+        {#if launderHint}<div class="bm__muted small hint">{launderHint}</div>{/if}
     </div>
 
     <div class="bm__card box">
@@ -67,6 +71,7 @@
         <div class="bm__line"><span class="bm__muted">Комиссия</span><span>{btc(outFee)}</span></div>
         <div class="bm__line"><span>Получите наличными</span><span class="bm__price">{usd(Math.max(0, outUsd))}</span></div>
         <div class="bm__btn gold" style="margin-top: 1.6vh" class:disabled={!atPoint || n <= 0 || outUsd <= 0} on:click={() => action("cashout", { btc: n })}>Обналичить</div>
+        {#if cashoutHint}<div class="bm__muted small hint">{cashoutHint}</div>{/if}
     </div>
 </div>
 
@@ -83,4 +88,5 @@
         gap: 1.4vh;
     }
     .box { padding: 2vh; }
+    .hint { margin-top: 0.8vh; text-align: center; }
 </style>

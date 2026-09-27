@@ -15,16 +15,19 @@
 
     export let viewData;
 
+    let page = "market";
     let data = { wallet: { balance: 0, reserved: 0 }, fraction: null, config: {}, lots: [], inventory: [], p2p: [], drops: [] };
     const parse = (value) => {
         if (!value) return;
         try {
             data = typeof value === "string" ? JSON.parse(value) : value;
+            // Стартовая вкладка (у Мавра приложение открывается сразу на «Обнале»)
+            if (data.page)
+                page = data.page;
         } catch (e) {}
     }
     $: parse(viewData);
 
-    let page = "market";
     let lastResult = null;
 
     const pages = [

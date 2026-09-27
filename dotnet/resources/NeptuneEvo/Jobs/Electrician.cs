@@ -213,7 +213,7 @@ namespace NeptuneEvo.Jobs
         // Проверенные точки подстанции — значения по умолчанию, пока стройка не настроена командами
         private static readonly ConfigData Defaults = new ConfigData
         {
-            Foreman = new ConfigPoint { X = 728.2f, Y = 131.8f, Z = 80.1f, Heading = 60f },
+            Foreman = new ConfigPoint { X = -513.3917f, Y = -1019.27136f, Z = 23.476725f, Heading = -81.485634f },
             Points = new List<ConfigPoint>
             {
                 new ConfigPoint { X = 678.6784f, Y = 163.7561f, Z = 79.80791f, Heading = 338.0567f },

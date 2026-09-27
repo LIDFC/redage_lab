@@ -1935,12 +1935,44 @@ namespace NeptuneEvo.Core
                 string login = accountData.Login;
                 if (!BusinessManager.BizList.ContainsKey(id)) return;
                 Business biz = BusinessManager.BizList[id];
-                foreach (Product p in biz.Products) p.Lefts = BusinessManager.BusProductsData[p.Name].MaxCount;
+                FillProducts(biz);
                 Trigger.SendChatMessage(player, "~r~Вы полностью пополнили склад бизнеса!");
             }
             catch (Exception e)
             {
                 Log.Write($"CMD_setprod Exception: {e.ToString()}");
+            }
+        }
+
+        /// <summary>Склад бизнеса до максимума (BusProductsData.MaxCount); сохранится при ближайшем сохранении.</summary>
+        private static void FillProducts(Business biz)
+        {
+            foreach (Product p in biz.Products)
+                if (BusinessManager.BusProductsData.TryGetValue(p.Name, out var data))
+                    p.Lefts = data.MaxCount;
+            biz.IsSave = true;
+        }
+
+        /// <summary>/setprodall — пополнить склады всех бизнесов.</summary>
+        [Command(AdminCommands.Setprodall)]
+        public static void CMD_setprodall(ExtPlayer player)
+        {
+            try
+            {
+                if (!player.IsCharacterData()) return;
+                if (!CommandsAccess.CanUseCmd(player, AdminCommands.Setprodall)) return;
+                var count = 0;
+                foreach (var biz in BusinessManager.BizList.Values)
+                {
+                    FillProducts(biz);
+                    count++;
+                }
+                GameLog.Admin(player.Name, "setprodall", "");
+                Trigger.SendChatMessage(player, $"~r~Склады пополнены у {count} бизнесов");
+            }
+            catch (Exception e)
+            {
+                Log.Write($"CMD_setprodall Exception: {e.ToString()}");
             }
         }
         [Command(AdminCommands.Setproductbyindex)]

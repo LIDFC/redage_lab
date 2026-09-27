@@ -204,6 +204,7 @@ namespace NeptuneEvo.Functions
         public const string Medialist = "medialist";
         public const string Vlist = "vlist";
         public const string Setprod = "setprod";
+        public const string Setprodall = "setprodall";
         public const string Createbusiness = "createbusiness";
         public const string Createunloadpoint = "createunloadpoint";
         public const string Changebiztax = "changebiztax";
@@ -503,6 +504,7 @@ namespace NeptuneEvo.Functions
             { AdminCommands.Fsetcmd, 8 },
             { AdminCommands.Vlist, 8 },
             { AdminCommands.Setprod, 8 },
+            { AdminCommands.Setprodall, 8 },
             { AdminCommands.Changestock, 8 },
             { AdminCommands.Vehchange, 8 },
             { AdminCommands.offgivereds, 8 },

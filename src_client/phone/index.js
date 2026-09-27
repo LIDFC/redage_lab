@@ -27,6 +27,7 @@ require("./recents");
 require("./cars");
 require("./job/index");
 require("./settings");
+require("./blackmarket");
 require('./cars.js')
 require("./forbes");
 require("./notify");

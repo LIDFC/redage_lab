@@ -9360,6 +9360,16 @@ module.exports = "/src/views/player/hudevo/phonenew/assets/images/camera.png";
 
 /***/ }),
 
+/***/ "./src/views/player/hudevo/phonenew/assets/images/darknet.png":
+/*!********************************************************************!*\
+  !*** ./src/views/player/hudevo/phonenew/assets/images/darknet.png ***!
+  \********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/hudevo/phonenew/assets/images/darknet.png";
+
+/***/ }),
+
 /***/ "./src/views/player/hudevo/phonenew/assets/images/forbes.png":
 /*!*******************************************************************!*\
   !*** ./src/views/player/hudevo/phonenew/assets/images/forbes.png ***!
@@ -42572,22 +42582,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
 /* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
 /* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
-/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
+/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -42722,6 +42733,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 
+
 //window.router.setView("FractionsCreate")
 //window.router.close()
 //window.router.updateStatic("PlayerGameMenu");
@@ -42824,7 +42836,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (405:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (407:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -42930,7 +42942,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (418:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (420:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -43137,7 +43149,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -43209,30 +43221,31 @@ function instance($$self, $$props, $$invalidate) {
 		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
 		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
 		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
-		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default
+		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
+		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_104__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_105__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -49945,6 +49958,6372 @@ class War extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (War);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/index.svelte":
+/*!********************************************!*\
+  !*** ./src/views/blackmarket/index.svelte ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./api */ "./src/views/blackmarket/api.js");
+/* harmony import */ var _pages_Market_svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/Market.svelte */ "./src/views/blackmarket/pages/Market.svelte");
+/* harmony import */ var _pages_MyLots_svelte__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/MyLots.svelte */ "./src/views/blackmarket/pages/MyLots.svelte");
+/* harmony import */ var _pages_Orders_svelte__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pages/Orders.svelte */ "./src/views/blackmarket/pages/Orders.svelte");
+/* harmony import */ var _pages_P2P_svelte__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/P2P.svelte */ "./src/views/blackmarket/pages/P2P.svelte");
+/* harmony import */ var _pages_Transfer_svelte__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/Transfer.svelte */ "./src/views/blackmarket/pages/Transfer.svelte");
+/* harmony import */ var _pages_History_svelte__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/History.svelte */ "./src/views/blackmarket/pages/History.svelte");
+/* harmony import */ var _pages_Wallets_svelte__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Wallets.svelte */ "./src/views/blackmarket/pages/Wallets.svelte");
+/* harmony import */ var _pages_CashOut_svelte__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/CashOut.svelte */ "./src/views/blackmarket/pages/CashOut.svelte");
+/* src/views/blackmarket/index.svelte generated by Svelte v3.59.2 */
+
+
+const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
+
+
+
+
+
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1xtaoid", ".bm.svelte-1xtaoid.svelte-1xtaoid{position:absolute;inset:0;z-index:1000;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 70% 10%, rgba(40, 12, 16, 0.94), rgba(4, 5, 8, 0.97) 60%);color:#e6e6e6;font-family:'TTNorms-Regular';font-size:1.5vh}.bm__panel.svelte-1xtaoid.svelte-1xtaoid{width:150vh;max-width:96vw;height:84vh;display:flex;border-radius:1.4vh;overflow:hidden;background:rgba(10, 11, 14, 0.96);border:1px solid rgba(255, 255, 255, 0.06);box-shadow:0 2vh 7vh rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(170, 30, 45, 0.08)}.bm__side.svelte-1xtaoid.svelte-1xtaoid{width:27vh;flex-shrink:0;display:flex;flex-direction:column;padding:2.4vh 2vh;background:linear-gradient(180deg, rgba(20, 8, 11, 0.9), rgba(8, 8, 10, 0.9));border-right:1px solid rgba(255, 255, 255, 0.05)}.bm__logo.svelte-1xtaoid.svelte-1xtaoid{display:flex;align-items:center;gap:1.2vh;margin-bottom:3vh}.bm__logo-mark.svelte-1xtaoid.svelte-1xtaoid{width:4.4vh;height:4.4vh;border-radius:1vh;display:flex;align-items:center;justify-content:center;background:#1a0b0e;border:1px solid rgba(200, 40, 55, 0.5);color:#d8394b;font-size:2.4vh}.bm__logo-title.svelte-1xtaoid.svelte-1xtaoid{font-family:'TTNorms-Bold';font-size:2vh;letter-spacing:0.05vh}.bm__logo-sub.svelte-1xtaoid.svelte-1xtaoid{font-size:1.1vh;color:#7fd36b;opacity:0.8;font-family:monospace}.bm__nav.svelte-1xtaoid.svelte-1xtaoid{display:flex;flex-direction:column;gap:0.5vh}.bm__nav-item.svelte-1xtaoid.svelte-1xtaoid{display:flex;align-items:center;justify-content:space-between;padding:1.2vh 1.4vh;border-radius:0.9vh;cursor:pointer;color:rgba(255, 255, 255, 0.6);transition:all 0.15s}.bm__nav-item.svelte-1xtaoid.svelte-1xtaoid:hover{background:rgba(255, 255, 255, 0.04);color:white}.bm__nav-item.active.svelte-1xtaoid.svelte-1xtaoid{background:rgba(200, 40, 55, 0.14);color:white;box-shadow:inset 0.3vh 0 0 #d8394b}.bm__badge.svelte-1xtaoid.svelte-1xtaoid{min-width:2.2vh;padding:0.2vh 0.6vh;border-radius:1vh;background:#d8394b;color:white;font-size:1.1vh;text-align:center}.bm__wallet.svelte-1xtaoid.svelte-1xtaoid{margin-top:auto;padding:1.6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.03);border:1px solid rgba(255, 255, 255, 0.05)}.bm__wallet-value.svelte-1xtaoid.svelte-1xtaoid{font-family:'TTNorms-Bold';font-size:2.2vh;color:#f2b544}.bm__wallet-value.small.svelte-1xtaoid.svelte-1xtaoid{font-size:1.7vh}.bm__close.svelte-1xtaoid.svelte-1xtaoid{margin-top:1.4vh;cursor:pointer;text-align:center;padding:1vh;border-radius:0.9vh;color:rgba(255, 255, 255, 0.6);background:rgba(255, 255, 255, 0.04)}.bm__close.svelte-1xtaoid span.svelte-1xtaoid{margin-left:0.6vh;padding:0.1vh 0.5vh;border-radius:0.4vh;background:rgba(255, 255, 255, 0.08);font-size:1.1vh}.bm__content.svelte-1xtaoid.svelte-1xtaoid{flex:1;min-width:0;display:flex;flex-direction:column;padding:2.4vh 2.8vh}.bm .bm__muted{color:rgba(255, 255, 255, 0.45)}.bm .bm__muted.small{font-size:1.2vh}.bm .bm__h1{font-family:'TTNorms-Bold';font-size:2.6vh;margin-bottom:1.6vh}.bm .bm__row{display:flex;align-items:center;gap:1vh}.bm .bm__scroll{flex:1;min-height:0;overflow-y:auto;padding-right:0.6vh}.bm .bm__scroll::-webkit-scrollbar{width:0.4vh}.bm .bm__scroll::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.12);border-radius:0.4vh}.bm .bm__input{padding:1.1vh 1.3vh;border-radius:0.9vh;border:1px solid rgba(255, 255, 255, 0.08);background:rgba(255, 255, 255, 0.04);color:white;font-family:inherit;font-size:1.5vh;outline:none}.bm .bm__input:focus{border-color:rgba(216, 57, 75, 0.6)}.bm .bm__btn{cursor:pointer;padding:1.1vh 1.8vh;border-radius:0.9vh;background:rgba(255, 255, 255, 0.07);text-align:center;transition:all 0.15s;user-select:none}.bm .bm__btn:hover{background:rgba(255, 255, 255, 0.12)}.bm .bm__btn.primary{background:#b3283a;color:white;font-family:'TTNorms-Bold'}.bm .bm__btn.primary:hover{background:#cc3044}.bm .bm__btn.gold{background:#f2b544;color:#140f05;font-family:'TTNorms-Bold'}.bm .bm__btn.disabled{opacity:0.4;pointer-events:none}.bm .bm__chip{cursor:pointer;padding:0.7vh 1.3vh;border-radius:2vh;background:rgba(255, 255, 255, 0.05);color:rgba(255, 255, 255, 0.65);white-space:nowrap}.bm .bm__chip.active{background:rgba(216, 57, 75, 0.2);color:white;box-shadow:inset 0 0 0 1px rgba(216, 57, 75, 0.6)}.bm .bm__card{padding:1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.035);border:1px solid rgba(255, 255, 255, 0.05)}.bm .bm__empty{margin:5vh auto;text-align:center;color:rgba(255, 255, 255, 0.35)}.bm .bm__price{font-family:'TTNorms-Bold';color:#f2b544}.bm .bm__icon{width:6vh;height:6vh;flex-shrink:0;border-radius:0.9vh;background-color:rgba(0, 0, 0, 0.35);background-size:80%;background-position:center;background-repeat:no-repeat}.bm .bm__label{font-size:1.2vh;color:rgba(255, 255, 255, 0.45);margin-bottom:0.5vh}.bm .bm__field{display:flex;flex-direction:column;margin-bottom:1.4vh}.bm .bm__modal-bg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0, 0, 0, 0.55);z-index:5}.bm .bm__modal{width:52vh;padding:2.4vh;border-radius:1.2vh;background:#111217;border:1px solid rgba(216, 57, 75, 0.35);box-shadow:0 2vh 5vh rgba(0, 0, 0, 0.6)}.bm .bm__line{display:flex;justify-content:space-between;padding:0.6vh 0;border-bottom:1px solid rgba(255, 255, 255, 0.05)}.bm .bm__error{color:#ff6b6b;margin-top:0.8vh}.bm .bm__ok{color:#7fd36b;margin-top:0.8vh}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[11] = list[i];
+	return child_ctx;
+}
+
+// (72:24) {#if p.key === "orders" && ordersCount > 0}
+function create_if_block_10(ctx) {
+	let span;
+	let t;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*ordersCount*/ ctx[3]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "bm__badge svelte-1xtaoid");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*ordersCount*/ 8) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, /*ordersCount*/ ctx[3]);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (69:16) {#each pages as p}
+function create_each_block(ctx) {
+	let div;
+	let t0_value = /*p*/ ctx[11].name + "";
+	let t0;
+	let t1;
+	let t2;
+	let mounted;
+	let dispose;
+	let if_block = /*p*/ ctx[11].key === "orders" && /*ordersCount*/ ctx[3] > 0 && create_if_block_10(ctx);
+
+	function click_handler() {
+		return /*click_handler*/ ctx[9](/*p*/ ctx[11]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__nav-item svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*page*/ ctx[1] === /*p*/ ctx[11].key);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			if (if_block) if_block.m(div, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t2);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (/*p*/ ctx[11].key === "orders" && /*ordersCount*/ ctx[3] > 0) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_10(ctx);
+					if_block.c();
+					if_block.m(div, t2);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+
+			if (dirty & /*page, pages*/ 34) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*page*/ ctx[1] === /*p*/ ctx[11].key);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if (if_block) if_block.d();
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (79:16) {#if data.wallet?.reserved > 0}
+function create_if_block_9(ctx) {
+	let div;
+	let t0;
+	let t1_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*data*/ ctx[0].wallet.reserved) + "";
+	let t1;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("в P2P-заявках: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__muted small");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t1_value !== (t1_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*data*/ ctx[0].wallet.reserved) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (82:16) {#if data.fraction}
+function create_if_block_8(ctx) {
+	let div0;
+	let t0_value = /*data*/ ctx[0].fraction.name + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*data*/ ctx[0].fraction.balance) + "";
+	let t2;
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "margin-top", "1vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__wallet-value small svelte-1xtaoid");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t0_value !== (t0_value = /*data*/ ctx[0].fraction.name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*data*/ 1 && t2_value !== (t2_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*data*/ ctx[0].fraction.balance) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (105:41) 
+function create_if_block_7(ctx) {
+	let cashout;
+	let current;
+
+	cashout = new _pages_CashOut_svelte__WEBPACK_IMPORTED_MODULE_11__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(cashout.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(cashout, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const cashout_changes = {};
+			if (dirty & /*data*/ 1) cashout_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) cashout_changes.lastResult = /*lastResult*/ ctx[2];
+			cashout.$set(cashout_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(cashout.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(cashout.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(cashout, detaching);
+		}
+	};
+}
+
+// (103:41) 
+function create_if_block_6(ctx) {
+	let wallets;
+	let current;
+
+	wallets = new _pages_Wallets_svelte__WEBPACK_IMPORTED_MODULE_10__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(wallets.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(wallets, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const wallets_changes = {};
+			if (dirty & /*data*/ 1) wallets_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) wallets_changes.lastResult = /*lastResult*/ ctx[2];
+			wallets.$set(wallets_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(wallets.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(wallets.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(wallets, detaching);
+		}
+	};
+}
+
+// (101:41) 
+function create_if_block_5(ctx) {
+	let history;
+	let current;
+	history = new _pages_History_svelte__WEBPACK_IMPORTED_MODULE_9__.default({ props: { data: /*data*/ ctx[0] } });
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(history.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(history, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const history_changes = {};
+			if (dirty & /*data*/ 1) history_changes.data = /*data*/ ctx[0];
+			history.$set(history_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(history.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(history.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(history, detaching);
+		}
+	};
+}
+
+// (99:42) 
+function create_if_block_4(ctx) {
+	let transfer;
+	let current;
+
+	transfer = new _pages_Transfer_svelte__WEBPACK_IMPORTED_MODULE_8__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(transfer.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(transfer, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const transfer_changes = {};
+			if (dirty & /*data*/ 1) transfer_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) transfer_changes.lastResult = /*lastResult*/ ctx[2];
+			transfer.$set(transfer_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(transfer.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(transfer.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(transfer, detaching);
+		}
+	};
+}
+
+// (97:37) 
+function create_if_block_3(ctx) {
+	let p2p;
+	let current;
+
+	p2p = new _pages_P2P_svelte__WEBPACK_IMPORTED_MODULE_7__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(p2p.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(p2p, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const p2p_changes = {};
+			if (dirty & /*data*/ 1) p2p_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) p2p_changes.lastResult = /*lastResult*/ ctx[2];
+			p2p.$set(p2p_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(p2p.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(p2p.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(p2p, detaching);
+		}
+	};
+}
+
+// (95:40) 
+function create_if_block_2(ctx) {
+	let orders;
+	let current;
+	orders = new _pages_Orders_svelte__WEBPACK_IMPORTED_MODULE_6__.default({ props: { data: /*data*/ ctx[0] } });
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(orders.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(orders, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const orders_changes = {};
+			if (dirty & /*data*/ 1) orders_changes.data = /*data*/ ctx[0];
+			orders.$set(orders_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(orders.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(orders.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(orders, detaching);
+		}
+	};
+}
+
+// (93:40) 
+function create_if_block_1(ctx) {
+	let mylots;
+	let current;
+
+	mylots = new _pages_MyLots_svelte__WEBPACK_IMPORTED_MODULE_5__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(mylots.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(mylots, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const mylots_changes = {};
+			if (dirty & /*data*/ 1) mylots_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) mylots_changes.lastResult = /*lastResult*/ ctx[2];
+			mylots.$set(mylots_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(mylots.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(mylots.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(mylots, detaching);
+		}
+	};
+}
+
+// (91:12) {#if page === "market"}
+function create_if_block(ctx) {
+	let market;
+	let current;
+
+	market = new _pages_Market_svelte__WEBPACK_IMPORTED_MODULE_4__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(market.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(market, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const market_changes = {};
+			if (dirty & /*data*/ 1) market_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) market_changes.lastResult = /*lastResult*/ ctx[2];
+			market.$set(market_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(market.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(market.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(market, detaching);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div13;
+	let div12;
+	let div10;
+	let div4;
+	let t5;
+	let div5;
+	let t6;
+	let div8;
+	let div6;
+	let t8;
+	let div7;
+	let t9_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*available*/ ctx[4]) + "";
+	let t9;
+	let t10;
+	let t11;
+	let t12;
+	let div9;
+	let t15;
+	let div11;
+	let current_block_type_index;
+	let if_block2;
+	let current;
+	let mounted;
+	let dispose;
+	let each_value = /*pages*/ ctx[5];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	let if_block0 = /*data*/ ctx[0].wallet?.reserved > 0 && create_if_block_9(ctx);
+	let if_block1 = /*data*/ ctx[0].fraction && create_if_block_8(ctx);
+
+	const if_block_creators = [
+		create_if_block,
+		create_if_block_1,
+		create_if_block_2,
+		create_if_block_3,
+		create_if_block_4,
+		create_if_block_5,
+		create_if_block_6,
+		create_if_block_7
+	];
+
+	const if_blocks = [];
+
+	function select_block_type(ctx, dirty) {
+		if (/*page*/ ctx[1] === "market") return 0;
+		if (/*page*/ ctx[1] === "mylots") return 1;
+		if (/*page*/ ctx[1] === "orders") return 2;
+		if (/*page*/ ctx[1] === "p2p") return 3;
+		if (/*page*/ ctx[1] === "transfer") return 4;
+		if (/*page*/ ctx[1] === "history") return 5;
+		if (/*page*/ ctx[1] === "wallets") return 6;
+		if (/*page*/ ctx[1] === "cashout") return 7;
+		return -1;
+	}
+
+	if (~(current_block_type_index = select_block_type(ctx, -1))) {
+		if_block2 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+	}
+
+	return {
+		c() {
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div4.innerHTML = `<div class="bm__logo-mark svelte-1xtaoid">◈</div> 
+                <div><div class="bm__logo-title svelte-1xtaoid">Чёрный рынок</div> 
+                    <div class="bm__logo-sub svelte-1xtaoid">защищённое соединение · VPN</div></div>`;
+
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6.textContent = "Мой кошелёк";
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9.innerHTML = `Отключиться <span class="svelte-1xtaoid">ESC</span>`;
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block2) if_block2.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__logo svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__nav svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__wallet-value svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__wallet svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__close svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__side svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__content svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__panel svelte-1xtaoid");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "bm svelte-1xtaoid");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div13, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div5);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div5, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t10);
+			if (if_block0) if_block0.m(div8, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t11);
+			if (if_block1) if_block1.m(div8, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+
+			if (~current_block_type_index) {
+				if_blocks[current_block_type_index].m(div11, null);
+			}
+
+			current = true;
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[7]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", /*close*/ ctx[6])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*page, pages, ordersCount*/ 42) {
+				each_value = /*pages*/ ctx[5];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div5, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+
+			if ((!current || dirty & /*available*/ 16) && t9_value !== (t9_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*available*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+
+			if (/*data*/ ctx[0].wallet?.reserved > 0) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_9(ctx);
+					if_block0.c();
+					if_block0.m(div8, t11);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*data*/ ctx[0].fraction) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_8(ctx);
+					if_block1.c();
+					if_block1.m(div8, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			let previous_block_index = current_block_type_index;
+			current_block_type_index = select_block_type(ctx, dirty);
+
+			if (current_block_type_index === previous_block_index) {
+				if (~current_block_type_index) {
+					if_blocks[current_block_type_index].p(ctx, dirty);
+				}
+			} else {
+				if (if_block2) {
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_blocks[previous_block_index], 1, 1, () => {
+						if_blocks[previous_block_index] = null;
+					});
+
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
+				}
+
+				if (~current_block_type_index) {
+					if_block2 = if_blocks[current_block_type_index];
+
+					if (!if_block2) {
+						if_block2 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+						if_block2.c();
+					} else {
+						if_block2.p(ctx, dirty);
+					}
+
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2, 1);
+					if_block2.m(div11, null);
+				} else {
+					if_block2 = null;
+				}
+			}
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(if_block2);
+			current = false;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
+
+			if (~current_block_type_index) {
+				if_blocks[current_block_type_index].d();
+			}
+
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let available;
+	let ordersCount;
+	let { viewData } = $$props;
+
+	let data = {
+		wallet: { balance: 0, reserved: 0 },
+		fraction: null,
+		config: {},
+		lots: [],
+		inventory: [],
+		p2p: [],
+		drops: []
+	};
+
+	const parse = value => {
+		if (!value) return;
+
+		try {
+			$$invalidate(0, data = typeof value === "string" ? JSON.parse(value) : value);
+		} catch(e) {
+			
+		}
+	};
+
+	let page = "market";
+	let lastResult = null;
+
+	const pages = [
+		{ key: "market", name: "Рынок" },
+		{ key: "mylots", name: "Мои лоты" },
+		{ key: "orders", name: "Заказы" },
+		{ key: "p2p", name: "P2P" },
+		{ key: "transfer", name: "Перевод" },
+		{ key: "history", name: "История" },
+		{ key: "wallets", name: "Кошельки" },
+		{ key: "cashout", name: "Обнал" }
+	];
+
+	window.events.addEvent("blackmarket.result", (actionName, ok, message, json) => {
+		parse(json);
+
+		$$invalidate(2, lastResult = {
+			action: actionName,
+			ok,
+			message,
+			time: Date.now()
+		});
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => window.events.removeEvent("blackmarket.result"));
+	const close = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.blackmarket.close");
+
+	const onKey = e => {
+		if (e.keyCode === 27) close();
+	};
+
+	const click_handler = p => $$invalidate(1, page = p.key);
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(8, viewData = $$props.viewData);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*viewData*/ 256) {
+			$: parse(viewData);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(4, available = (data.wallet?.balance || 0) - (data.wallet?.reserved || 0));
+		}
+
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(3, ordersCount = (data.drops || []).length);
+		}
+	};
+
+	return [
+		data,
+		page,
+		lastResult,
+		ordersCount,
+		available,
+		pages,
+		close,
+		onKey,
+		viewData,
+		click_handler
+	];
+}
+
+class Blackmarket extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 8 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Blackmarket);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/CashOut.svelte":
+/*!****************************************************!*\
+  !*** ./src/views/blackmarket/pages/CashOut.svelte ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/CashOut.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1e4oer", ".where.svelte-1e4oer{margin-bottom:1.4vh;border-color:rgba(216, 57, 75, 0.35);color:rgba(255, 255, 255, 0.8)}.where.ok.svelte-1e4oer{border-color:rgba(127, 211, 107, 0.45);color:#9fe08f}.grid.svelte-1e4oer{display:grid;grid-template-columns:1fr 1fr;gap:1.4vh}.box.svelte-1e4oer{padding:2vh}");
+}
+
+// (33:8) {:else}
+function create_else_block(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Обнал проводит только Мавр. Приезжайте к нему лично — приложение подскажет дорогу.");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
+		}
+	};
+}
+
+// (31:8) {#if atPoint}
+function create_if_block_1(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Вы у Мавра — можно работать.");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
+		}
+	};
+}
+
+// (37:4) {#if !atPoint}
+function create_if_block(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Метка на карте";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__btn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler*/ ctx[15]);
+				mounted = true;
+			}
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div0;
+	let t1;
+	let div2;
+	let div1;
+	let t2;
+	let t3;
+	let div21;
+	let div10;
+	let div3;
+	let t5;
+	let div4;
+	let t6;
+	let t7;
+	let t8;
+	let t9;
+	let div5;
+	let span0;
+	let span1;
+	let t11_value = (/*bag*/ ctx[8] > 0 ? (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*bag*/ ctx[8]) : "сумки нет") + "";
+	let t11;
+	let t12;
+	let div6;
+	let span2;
+	let span3;
+	let t14;
+	let t15_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[1]) + "";
+	let t15;
+	let t16;
+	let div7;
+	let span4;
+	let span5;
+	let t18_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*bagFee*/ ctx[10]) + "";
+	let t18;
+	let t19;
+	let div8;
+	let span6;
+	let span7;
+	let t21_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(Math.max(0, /*bagGross*/ ctx[7] - /*bagFee*/ ctx[10])) + "";
+	let t21;
+	let t22;
+	let div9;
+	let t24;
+	let div20;
+	let div11;
+	let t26;
+	let div12;
+	let t27;
+	let t28;
+	let t29;
+	let t30;
+	let t31;
+	let t32;
+	let div16;
+	let div13;
+	let t33;
+	let t34_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[5]) + "";
+	let t34;
+	let t35;
+	let t36;
+	let div15;
+	let input;
+	let t37;
+	let div14;
+	let t39;
+	let div17;
+	let span8;
+	let span9;
+	let t41_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*outFee*/ ctx[2]) + "";
+	let t41;
+	let t42;
+	let div18;
+	let span10;
+	let span11;
+	let t44_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(Math.max(0, /*outUsd*/ ctx[9])) + "";
+	let t44;
+	let t45;
+	let div19;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (/*atPoint*/ ctx[11]) return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block0 = current_block_type(ctx);
+	let if_block1 = !/*atPoint*/ ctx[11] && create_if_block(ctx);
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Обнал";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block0.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Грязные деньги → BTC";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Сумка с деньгами после ограбления (на спине) превращается в крипту. Комиссия ");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*launderFee*/ ctx[6]);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%.");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "В сумке";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "Курс";
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("1 BTC = ");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t15_value);
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span4.textContent = "Комиссия";
+			span5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t18_value);
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span6.textContent = "Получите";
+			span7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t21_value);
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9.textContent = "Отмыть в крипту";
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11.textContent = "BTC → наличные";
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Комиссия ");
+			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*cashoutFee*/ ctx[4]);
+			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%. Риск: с вероятностью ");
+			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*wantedChance*/ ctx[12]);
+			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% вас заметят и объявят в розыск.");
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Сколько BTC обналичить (свободно ");
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t34_value);
+			t35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(")");
+			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t37 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div14.textContent = "Всё";
+			t39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span8.textContent = "Комиссия";
+			span9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t41_value);
+			t42 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span10.textContent = "Получите наличными";
+			span11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t44 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t44_value);
+			t45 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div19.textContent = "Обналичить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__card bm__row where svelte-1e4oer");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "ok", /*atPoint*/ ctx[11]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "margin", "0.6vh 0 1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span7, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div9, "margin-top", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", !/*atPoint*/ ctx[11] || /*bag*/ ctx[8] <= 0 || /*bagGross*/ ctx[7] - /*bagFee*/ ctx[10] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__card box svelte-1e4oer");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div12, "margin", "0.6vh 0 1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(input, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span8, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span11, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "bm__btn gold");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div19, "margin-top", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div19, "disabled", !/*atPoint*/ ctx[11] || /*n*/ ctx[3] <= 0 || /*outUsd*/ ctx[9] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "bm__card box svelte-1e4oer");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div21, "class", "grid svelte-1e4oer");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			if_block0.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
+			if (if_block1) if_block1.m(div2, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div21, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, span4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, span5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span5, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, span6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, span7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span7, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, div20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t27);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t29);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t30);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t31);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t33);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t35);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t36);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*amount*/ ctx[0]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, t37);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, div14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t39);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, span8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, span9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span9, t41);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t42);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, span10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, span11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span11, t44);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t45);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div19);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", /*click_handler_1*/ ctx[16]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div14, "click", /*click_handler_2*/ ctx[18]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div19, "click", /*click_handler_3*/ ctx[19])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (current_block_type !== (current_block_type = select_block_type(ctx, dirty))) {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div1, null);
+				}
+			}
+
+			if (!/*atPoint*/ ctx[11]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					if_block1.m(div2, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty & /*atPoint*/ 2048) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "ok", /*atPoint*/ ctx[11]);
+			}
+
+			if (dirty & /*launderFee*/ 64) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, /*launderFee*/ ctx[6]);
+			if (dirty & /*bag*/ 256 && t11_value !== (t11_value = (/*bag*/ ctx[8] > 0 ? (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*bag*/ ctx[8]) : "сумки нет") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+			if (dirty & /*rate*/ 2 && t15_value !== (t15_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[1]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t15, t15_value);
+			if (dirty & /*bagFee*/ 1024 && t18_value !== (t18_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*bagFee*/ ctx[10]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t18, t18_value);
+			if (dirty & /*bagGross, bagFee*/ 1152 && t21_value !== (t21_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(Math.max(0, /*bagGross*/ ctx[7] - /*bagFee*/ ctx[10])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t21, t21_value);
+
+			if (dirty & /*atPoint, bag, bagGross, bagFee*/ 3456) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", !/*atPoint*/ ctx[11] || /*bag*/ ctx[8] <= 0 || /*bagGross*/ ctx[7] - /*bagFee*/ ctx[10] <= 0);
+			}
+
+			if (dirty & /*cashoutFee*/ 16) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t28, /*cashoutFee*/ ctx[4]);
+			if (dirty & /*wantedChance*/ 4096) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t30, /*wantedChance*/ ctx[12]);
+			if (dirty & /*available*/ 32 && t34_value !== (t34_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[5]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t34, t34_value);
+
+			if (dirty & /*amount*/ 1 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*amount*/ ctx[0]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*amount*/ ctx[0]);
+			}
+
+			if (dirty & /*outFee*/ 4 && t41_value !== (t41_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*outFee*/ ctx[2]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t41, t41_value);
+			if (dirty & /*outUsd*/ 512 && t44_value !== (t44_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(Math.max(0, /*outUsd*/ ctx[9])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t44, t44_value);
+
+			if (dirty & /*atPoint, n, outUsd*/ 2568) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div19, "disabled", !/*atPoint*/ ctx[11] || /*n*/ ctx[3] <= 0 || /*outUsd*/ ctx[9] <= 0);
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if_block0.d();
+			if (if_block1) if_block1.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div21);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let rate;
+	let launderFee;
+	let cashoutFee;
+	let wantedChance;
+	let atPoint;
+	let bag;
+	let available;
+	let bagGross;
+	let bagFee;
+	let n;
+	let outFee;
+	let outUsd;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+
+	// BTC → $
+	let amount = "";
+
+	const click_handler = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("cashoutGps");
+	const click_handler_1 = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("launder");
+
+	function input_input_handler() {
+		amount = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		($$invalidate(0, amount), $$invalidate(14, lastResult));
+	}
+
+	const click_handler_2 = () => $$invalidate(0, amount = String(available));
+	const click_handler_3 = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("cashout", { btc: n });
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(13, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(14, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(1, rate = Number(data.config?.rate) || 0);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(6, launderFee = Number(data.config?.launderFee) || 0);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(4, cashoutFee = Number(data.config?.cashoutFee) || 0);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(12, wantedChance = Number(data.config?.wantedChance) || 0);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(11, atPoint = !!data.cashout?.atPoint);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(8, bag = Number(data.cashout?.bag) || 0);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 8192) {
+			$: $$invalidate(5, available = (data.wallet?.balance || 0) - (data.wallet?.reserved || 0));
+		}
+
+		if ($$self.$$.dirty & /*rate, bag*/ 258) {
+			// Сумка → BTC
+			$: $$invalidate(7, bagGross = rate > 0 ? Math.floor(bag / rate) : 0);
+		}
+
+		if ($$self.$$.dirty & /*bagGross, launderFee*/ 192) {
+			$: $$invalidate(10, bagFee = Math.ceil(bagGross * launderFee / 100));
+		}
+
+		if ($$self.$$.dirty & /*lastResult*/ 16384) {
+			$: if (lastResult && lastResult.ok && lastResult.action === "cashout") $$invalidate(0, amount = "");
+		}
+
+		if ($$self.$$.dirty & /*amount, available*/ 33) {
+			$: $$invalidate(3, n = Math.min(Math.max(0, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(amount)), available));
+		}
+
+		if ($$self.$$.dirty & /*n, cashoutFee*/ 24) {
+			$: $$invalidate(2, outFee = Math.ceil(n * cashoutFee / 100));
+		}
+
+		if ($$self.$$.dirty & /*n, outFee, rate*/ 14) {
+			$: $$invalidate(9, outUsd = Math.floor((n - outFee) * rate));
+		}
+	};
+
+	return [
+		amount,
+		rate,
+		outFee,
+		n,
+		cashoutFee,
+		available,
+		launderFee,
+		bagGross,
+		bag,
+		outUsd,
+		bagFee,
+		atPoint,
+		wantedChance,
+		data,
+		lastResult,
+		click_handler,
+		click_handler_1,
+		input_input_handler,
+		click_handler_2,
+		click_handler_3
+	];
+}
+
+class CashOut extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 13, lastResult: 14 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CashOut);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/History.svelte":
+/*!****************************************************!*\
+  !*** ./src/views/blackmarket/pages/History.svelte ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/History.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-82zhw", ".entry.svelte-82zhw{display:grid;grid-template-columns:16vh 1fr auto;align-items:center;gap:1.4vh;padding:1.1vh 1.2vh;border-bottom:1px solid rgba(255, 255, 255, 0.05)}.title.svelte-82zhw{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.amount.svelte-82zhw{font-family:'TTNorms-Bold';color:#ff7a7a}.amount.plus.svelte-82zhw{color:#7fd36b}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[9] = list[i];
+	return child_ctx;
+}
+
+// (44:4) {#if data.fraction}
+function create_if_block_1(ctx) {
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Мои операции";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Кошелёк банды";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__chip");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "active", /*scope*/ ctx[1] === "me");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__chip");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*scope*/ ctx[1] === "fraction");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__row");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*click_handler*/ ctx[7]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_1*/ ctx[8])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*scope*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "active", /*scope*/ ctx[1] === "me");
+			}
+
+			if (dirty & /*scope*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*scope*/ ctx[1] === "fraction");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (55:4) {:else}
+function create_else_block(ctx) {
+	let each_1_anchor;
+	let each_value = /*entries*/ ctx[2];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	let each_1_else = null;
+
+	if (!each_value.length) {
+		each_1_else = create_else_block_1(ctx);
+	}
+
+	return {
+		c() {
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+
+			if (each_1_else) {
+				each_1_else.c();
+			}
+		},
+		m(target, anchor) {
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(target, anchor);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
+
+			if (each_1_else) {
+				each_1_else.m(target, anchor);
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*entries, amountText, date*/ 100) {
+				each_value = /*entries*/ ctx[2];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+
+				if (!each_value.length && each_1_else) {
+					each_1_else.p(ctx, dirty);
+				} else if (!each_value.length) {
+					each_1_else = create_else_block_1(ctx);
+					each_1_else.c();
+					each_1_else.m(each_1_anchor.parentNode, each_1_anchor);
+				} else if (each_1_else) {
+					each_1_else.d(1);
+					each_1_else = null;
+				}
+			}
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
+			if (each_1_else) each_1_else.d(detaching);
+		}
+	};
+}
+
+// (53:4) {#if loading}
+function create_if_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Загрузка…";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (62:8) {:else}
+function create_else_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Операций пока нет";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (56:8) {#each entries as e}
+function create_each_block(ctx) {
+	let div3;
+	let div0;
+	let t0_value = /*date*/ ctx[5](/*e*/ ctx[9].date) + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2_value = /*e*/ ctx[9].title + "";
+	let t2;
+	let t3;
+	let div2;
+	let t4_value = /*amountText*/ ctx[6](/*e*/ ctx[9]) + "";
+	let t4;
+	let t5;
+
+	return {
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__muted small date");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "title svelte-82zhw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "amount svelte-82zhw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "plus", /*e*/ ctx[9].amount > 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "entry svelte-82zhw");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*entries*/ 4 && t0_value !== (t0_value = /*date*/ ctx[5](/*e*/ ctx[9].date) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*entries*/ 4 && t2_value !== (t2_value = /*e*/ ctx[9].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*entries*/ 4 && t4_value !== (t4_value = /*amountText*/ ctx[6](/*e*/ ctx[9]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+
+			if (dirty & /*entries*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "plus", /*e*/ ctx[9].amount > 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div1;
+	let div0;
+	let t1;
+	let t2;
+	let div2;
+	let if_block0 = /*data*/ ctx[0].fraction && create_if_block_1(ctx);
+
+	function select_block_type(ctx, dirty) {
+		if (/*loading*/ ctx[3]) return create_if_block;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block1 = current_block_type(ctx);
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "История";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "margin", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "justify-content", "space-between");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__scroll");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			if (if_block0) if_block0.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			if_block1.m(div2, null);
+		},
+		p(ctx, [dirty]) {
+			if (/*data*/ ctx[0].fraction) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_1(ctx);
+					if_block0.c();
+					if_block0.m(div1, null);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if_block1.d(1);
+				if_block1 = current_block_type(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div2, null);
+				}
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			if (if_block0) if_block0.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if_block1.d();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { data } = $$props;
+	let scope = "me";
+	let entries = [];
+	let loading = true;
+
+	window.events.addEvent("blackmarket.history", (s, json) => {
+		if (s !== scope) return;
+
+		try {
+			$$invalidate(2, entries = typeof json === "string" ? JSON.parse(json) : json);
+		} catch(e) {
+			$$invalidate(2, entries = []);
+		}
+
+		$$invalidate(3, loading = false);
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_1__.onDestroy)(() => window.events.removeEvent("blackmarket.history"));
+
+	const load = s => {
+		$$invalidate(1, scope = s);
+		$$invalidate(3, loading = true);
+		$$invalidate(2, entries = []);
+		(0,_api__WEBPACK_IMPORTED_MODULE_2__.action)("history", { scope: s });
+	};
+
+	load("me");
+
+	const date = d => {
+		const t = new Date(d);
+		const pad = n => String(n).padStart(2, "0");
+		return `${pad(t.getDate())}.${pad(t.getMonth() + 1)}.${t.getFullYear()} ${pad(t.getHours())}:${pad(t.getMinutes())}`;
+	};
+
+	const amountText = e => {
+		const sign = e.amount > 0 ? "+" : "−";
+		const abs = Math.abs(e.amount);
+		return sign + (e.currency === "$" ? (0,_api__WEBPACK_IMPORTED_MODULE_2__.usd)(abs) : (0,_api__WEBPACK_IMPORTED_MODULE_2__.btc)(abs));
+	};
+
+	const click_handler = () => load("me");
+	const click_handler_1 = () => load("fraction");
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(0, data = $$props.data);
+	};
+
+	return [
+		data,
+		scope,
+		entries,
+		loading,
+		load,
+		date,
+		amountText,
+		click_handler,
+		click_handler_1
+	];
+}
+
+class History extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 0 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (History);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/Market.svelte":
+/*!***************************************************!*\
+  !*** ./src/views/blackmarket/pages/Market.svelte ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/Market.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1oqb7yt", ".grid.svelte-1oqb7yt{display:grid;grid-template-columns:repeat(3, 1fr);gap:1.2vh}.lot.svelte-1oqb7yt{cursor:pointer;display:flex;flex-direction:column;gap:1.2vh;transition:border-color 0.15s, background 0.15s}.lot.svelte-1oqb7yt:hover{border-color:rgba(216, 57, 75, 0.5);background:rgba(216, 57, 75, 0.06)}.info.svelte-1oqb7yt{min-width:0}.name.svelte-1oqb7yt{font-family:'TTNorms-Bold';white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.name.big.svelte-1oqb7yt{font-size:2vh;white-space:normal}.between.svelte-1oqb7yt{justify-content:space-between}.range.svelte-1oqb7yt{width:100%;margin-top:1vh;accent-color:#d8394b}.locked.svelte-1oqb7yt{opacity:0.45;cursor:default}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[32] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[35] = list[i];
+	return child_ctx;
+}
+
+// (54:4) {#each categories as c}
+function create_each_block_1(ctx) {
+	let div;
+	let t_value = /*c*/ ctx[35].name + "";
+	let t;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[20](/*c*/ ctx[35]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__chip");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*category*/ ctx[1] === /*c*/ ctx[35].key);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*category*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*category*/ ctx[1] === /*c*/ ctx[35].key);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (80:8) {:else}
+function create_else_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Предложений нет";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (66:8) {#each lots as lot (lot.id)}
+function create_each_block(key_1, ctx) {
+	let div8;
+	let div4;
+	let div0;
+	let t0;
+	let div3;
+	let div1;
+	let t1_value = /*lot*/ ctx[32].name + "";
+	let t1;
+	let t2;
+	let div2;
+	let t3;
+	let t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*lot*/ ctx[32].minutesLeft) + "";
+	let t4;
+	let t5;
+	let div7;
+	let div5;
+	let span0;
+	let t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*lot*/ ctx[32].price) + "";
+	let t6;
+	let t7;
+	let span1;
+	let t9;
+	let div6;
+	let t10_value = /*lot*/ ctx[32].count + "";
+	let t10;
+	let t11;
+	let t12;
+	let mounted;
+	let dispose;
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[24](/*lot*/ ctx[32]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Продавец: аноним · ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "/ шт.";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" шт.");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__icon");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*lot*/ ctx[32].itemId) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "info svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__row between svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__card lot svelte-1oqb7yt");
+			this.first = div8;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t12);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", click_handler_3);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*lots*/ 8192) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*lot*/ ctx[32].itemId) + ")");
+			}
+
+			if (dirty[0] & /*lots*/ 8192 && t1_value !== (t1_value = /*lot*/ ctx[32].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*lots*/ 8192 && t4_value !== (t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*lot*/ ctx[32].minutesLeft) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*lots*/ 8192 && t6_value !== (t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*lot*/ ctx[32].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty[0] & /*lots*/ 8192 && t10_value !== (t10_value = /*lot*/ ctx[32].count + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div8);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (86:0) {#if selected}
+function create_if_block(ctx) {
+	let div21;
+	let div20;
+	let div4;
+	let div0;
+	let t0;
+	let div3;
+	let div1;
+	let t1_value = /*selected*/ ctx[4].name + "";
+	let t1;
+	let t2;
+	let div2;
+	let t3;
+	let t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*selected*/ ctx[4].minutesLeft) + "";
+	let t4;
+	let t5;
+	let div5;
+	let span0;
+	let span1;
+	let t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*selected*/ ctx[4].price) + "";
+	let t7;
+	let t8;
+	let div6;
+	let span2;
+	let span3;
+	let t10_value = /*selected*/ ctx[4].count + "";
+	let t10;
+	let t11;
+	let t12;
+	let div10;
+	let div7;
+	let t14;
+	let div9;
+	let input;
+	let t15;
+	let div8;
+	let t17;
+	let t18;
+	let div11;
+	let t20;
+	let div13;
+	let div12;
+	let t22;
+	let t23;
+	let t24;
+	let div14;
+	let span4;
+	let span5;
+	let t26_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*total*/ ctx[7]) + "";
+	let t26;
+	let t27;
+	let t28;
+	let div15;
+	let span6;
+	let span7;
+	let t30_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*total*/ ctx[7] + /*fee*/ ctx[8]) + "";
+	let t30;
+	let t31;
+	let t32;
+	let div16;
+	let t34;
+	let div19;
+	let div17;
+	let t36;
+	let div18;
+	let mounted;
+	let dispose;
+	let if_block0 = /*max*/ ctx[9] > 1 && create_if_block_5(ctx);
+	let if_block1 = /*data*/ ctx[0].fraction && create_if_block_4(ctx);
+	let if_block2 = /*data*/ ctx[0].fraction && !/*canFraction*/ ctx[12] && create_if_block_3(ctx);
+	let if_block3 = /*source*/ ctx[6] === "fraction" && create_if_block_2(ctx);
+	let if_block4 = !/*enough*/ ctx[11] && create_if_block_1(ctx);
+
+	return {
+		c() {
+			div21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Продавец: аноним · осталось ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Цена за штуку";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "В наличии";
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" шт.");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7.textContent = "Количество";
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8.textContent = "Всё";
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11.textContent = "Оплата";
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div12.textContent = "Личный кошелёк";
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block2) if_block2.c();
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span4.textContent = "Сумма";
+			span5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t26_value);
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block3) if_block3.c();
+			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span6.textContent = "Итого";
+			span7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t30_value);
+			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block4) if_block4.c();
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div16.textContent = "После оплаты товар оставят в закладке — точка появится на карте только у вас. Кто первым заберёт, тому и достанется.";
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div17.textContent = "Отмена";
+			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div18.textContent = "Купить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__icon");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*selected*/ ctx[4].itemId) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name big svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(input, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", /*max*/ ctx[9]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div10, "margin-top", "1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__chip");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div12, "active", /*source*/ ctx[6] === "personal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div13, "margin-bottom", "1.2vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span7, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div16, "margin", "1.2vh 0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div17, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div18, "flex", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div18, "disabled", !/*enough*/ ctx[11] || /*waiting*/ ctx[10]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "bm__modal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div21, "class", "bm__modal-bg");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div21, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, div20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*count*/ ctx[5]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t17);
+			if (if_block0) if_block0.m(div10, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t22);
+			if (if_block1) if_block1.m(div13, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t23);
+			if (if_block2) if_block2.m(div20, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, span4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, span5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span5, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t27);
+			if (if_block3) if_block3.m(div20, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, span6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, span7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span7, t30);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t31);
+			if (if_block4) if_block4.m(div20, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, t36);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div18);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler_1*/ ctx[25]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*click_handler_4*/ ctx[26]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div12, "click", /*click_handler_5*/ ctx[28]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div17, "click", /*click_handler_7*/ ctx[30]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div18, "click", /*buy*/ ctx[15]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div21, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.self)(/*click_handler_8*/ ctx[31]))
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*selected*/ ctx[4].itemId) + ")");
+			}
+
+			if (dirty[0] & /*selected*/ 16 && t1_value !== (t1_value = /*selected*/ ctx[4].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*selected*/ 16 && t4_value !== (t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*selected*/ ctx[4].minutesLeft) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*selected*/ 16 && t7_value !== (t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*selected*/ ctx[4].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty[0] & /*selected*/ 16 && t10_value !== (t10_value = /*selected*/ ctx[4].count + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (dirty[0] & /*max*/ 512) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", /*max*/ ctx[9]);
+			}
+
+			if (dirty[0] & /*count*/ 32 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*count*/ ctx[5]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*count*/ ctx[5]);
+			}
+
+			if (/*max*/ ctx[9] > 1) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_5(ctx);
+					if_block0.c();
+					if_block0.m(div10, null);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty[0] & /*source*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div12, "active", /*source*/ ctx[6] === "personal");
+			}
+
+			if (/*data*/ ctx[0].fraction) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_4(ctx);
+					if_block1.c();
+					if_block1.m(div13, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (/*data*/ ctx[0].fraction && !/*canFraction*/ ctx[12]) {
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
+				} else {
+					if_block2 = create_if_block_3(ctx);
+					if_block2.c();
+					if_block2.m(div20, t24);
+				}
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
+			}
+
+			if (dirty[0] & /*total*/ 128 && t26_value !== (t26_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*total*/ ctx[7]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t26, t26_value);
+
+			if (/*source*/ ctx[6] === "fraction") {
+				if (if_block3) {
+					if_block3.p(ctx, dirty);
+				} else {
+					if_block3 = create_if_block_2(ctx);
+					if_block3.c();
+					if_block3.m(div20, t28);
+				}
+			} else if (if_block3) {
+				if_block3.d(1);
+				if_block3 = null;
+			}
+
+			if (dirty[0] & /*total, fee*/ 384 && t30_value !== (t30_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*total*/ ctx[7] + /*fee*/ ctx[8]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t30, t30_value);
+
+			if (!/*enough*/ ctx[11]) {
+				if (if_block4) {
+					
+				} else {
+					if_block4 = create_if_block_1(ctx);
+					if_block4.c();
+					if_block4.m(div20, t32);
+				}
+			} else if (if_block4) {
+				if_block4.d(1);
+				if_block4 = null;
+			}
+
+			if (dirty[0] & /*enough, waiting*/ 3072) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div18, "disabled", !/*enough*/ ctx[11] || /*waiting*/ ctx[10]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div21);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
+			if (if_block2) if_block2.d();
+			if (if_block3) if_block3.d();
+			if (if_block4) if_block4.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (105:16) {#if max > 1}
+function create_if_block_5(ctx) {
+	let input;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "range svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "range");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", /*max*/ ctx[9]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, input, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*count*/ ctx[5]);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "change", /*input_change_input_handler*/ ctx[27]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_change_input_handler*/ ctx[27])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*max*/ 512) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", /*max*/ ctx[9]);
+			}
+
+			if (dirty[0] & /*count*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*count*/ ctx[5]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(input);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (113:16) {#if data.fraction}
+function create_if_block_4(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Кошелёк банды";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__chip svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*source*/ ctx[6] === "fraction");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "locked", !/*canFraction*/ ctx[12]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_6*/ ctx[29]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*source*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*source*/ ctx[6] === "fraction");
+			}
+
+			if (dirty[0] & /*canFraction*/ 4096) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "locked", !/*canFraction*/ ctx[12]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (118:12) {#if data.fraction && !canFraction}
+function create_if_block_3(ctx) {
+	let div;
+	let t0;
+	let t1_value = /*data*/ ctx[0].fraction.needRank + "";
+	let t1;
+	let t2;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Платить с кошелька банды можно с ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" ранга");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div, "margin-bottom", "1vh");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].fraction.needRank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (123:12) {#if source === "fraction"}
+function create_if_block_2(ctx) {
+	let div;
+	let span0;
+	let t0;
+	let t1_value = /*data*/ ctx[0].config?.fractionFee + "";
+	let t1;
+	let t2;
+	let span1;
+	let t3_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*fee*/ ctx[8]) + "";
+	let t3;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Комиссия банды ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__line");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t3);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].config?.fractionFee + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*fee*/ 256 && t3_value !== (t3_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*fee*/ ctx[8]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (127:12) {#if !enough}
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Не хватает BTC";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__error");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div0;
+	let t1;
+	let div1;
+	let t2;
+	let div4;
+	let input;
+	let t3;
+	let div2;
+	let t5;
+	let div3;
+	let t7;
+	let div6;
+	let div5;
+	let each_blocks = [];
+	let each1_lookup = new Map();
+	let t8;
+	let if_block_anchor;
+	let mounted;
+	let dispose;
+	let each_value_1 = _api__WEBPACK_IMPORTED_MODULE_1__.categories;
+	let each_blocks_1 = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	let each_value = /*lots*/ ctx[13];
+	const get_key = ctx => /*lot*/ ctx[32].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	let each1_else = null;
+
+	if (!each_value.length) {
+		each1_else = create_else_block(ctx);
+	}
+
+	let if_block = /*selected*/ ctx[4] && create_if_block(ctx);
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Рынок";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				each_blocks_1[i].c();
+			}
+
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Сначала дешёвые";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Сначала дорогие";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			if (each1_else) {
+				each1_else.c();
+			}
+
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "margin-bottom", "1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "flex-wrap", "wrap");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(input, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", "Поиск по названию");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__chip");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "active", /*sort*/ ctx[3] === "asc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__chip");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*sort*/ ctx[3] === "desc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "grid svelte-1oqb7yt");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__scroll");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				if (each_blocks_1[i]) {
+					each_blocks_1[i].m(div1, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*search*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div5, null);
+				}
+			}
+
+			if (each1_else) {
+				each1_else.m(div5, null);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t8, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[21]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*click_handler_1*/ ctx[22]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler_2*/ ctx[23])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*category*/ 2) {
+				each_value_1 = _api__WEBPACK_IMPORTED_MODULE_1__.categories;
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks_1[i]) {
+						each_blocks_1[i].p(child_ctx, dirty);
+					} else {
+						each_blocks_1[i] = create_each_block_1(child_ctx);
+						each_blocks_1[i].c();
+						each_blocks_1[i].m(div1, null);
+					}
+				}
+
+				for (; i < each_blocks_1.length; i += 1) {
+					each_blocks_1[i].d(1);
+				}
+
+				each_blocks_1.length = each_value_1.length;
+			}
+
+			if (dirty[0] & /*search*/ 4 && input.value !== /*search*/ ctx[2]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*search*/ ctx[2]);
+			}
+
+			if (dirty[0] & /*sort*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "active", /*sort*/ ctx[3] === "asc");
+			}
+
+			if (dirty[0] & /*sort*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*sort*/ ctx[3] === "desc");
+			}
+
+			if (dirty[0] & /*open, lots*/ 24576) {
+				each_value = /*lots*/ ctx[13];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each1_lookup, div5, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+
+				if (!each_value.length && each1_else) {
+					each1_else.p(ctx, dirty);
+				} else if (!each_value.length) {
+					each1_else = create_else_block(ctx);
+					each1_else.c();
+					each1_else.m(div5, null);
+				} else if (each1_else) {
+					each1_else.d(1);
+					each1_else = null;
+				}
+			}
+
+			if (/*selected*/ ctx[4]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (each1_else) each1_else.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t8);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let query;
+	let lots;
+	let max;
+	let amount;
+	let total;
+	let fee;
+	let available;
+	let canFraction;
+	let enough;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+	let category = "all";
+	let search = "";
+	let sort = "asc";
+	let selected = null;
+	let count = 1;
+	let source = "personal";
+
+	const open = lot => {
+		$$invalidate(4, selected = lot);
+		$$invalidate(5, count = 1);
+		$$invalidate(6, source = "personal");
+	};
+
+	let waiting = false;
+
+	const buy = () => {
+		if (!selected || !enough || waiting) return;
+		$$invalidate(10, waiting = true);
+		(0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("buy", { id: selected.id, count: amount, source });
+	};
+
+	const click_handler = c => $$invalidate(1, category = c.key);
+
+	function input_input_handler() {
+		search = this.value;
+		$$invalidate(2, search);
+	}
+
+	const click_handler_1 = () => $$invalidate(3, sort = "asc");
+	const click_handler_2 = () => $$invalidate(3, sort = "desc");
+	const click_handler_3 = lot => open(lot);
+
+	function input_input_handler_1() {
+		count = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(5, count);
+	}
+
+	const click_handler_4 = () => $$invalidate(5, count = max);
+
+	function input_change_input_handler() {
+		count = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(5, count);
+	}
+
+	const click_handler_5 = () => $$invalidate(6, source = "personal");
+	const click_handler_6 = () => canFraction && $$invalidate(6, source = "fraction");
+	const click_handler_7 = () => $$invalidate(4, selected = null);
+	const click_handler_8 = () => $$invalidate(4, selected = null);
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(0, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(16, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*search*/ 4) {
+			$: $$invalidate(19, query = search.trim().toLowerCase());
+		}
+
+		if ($$self.$$.dirty[0] & /*data, category, query, sort*/ 524299) {
+			$: $$invalidate(13, lots = (data.lots || []).filter(l => !l.mine).filter(l => category === "all" || l.category === category).filter(l => !query.length || l.name.toLowerCase().includes(query)).sort((a, b) => sort === "asc" ? a.price - b.price : b.price - a.price));
+		}
+
+		if ($$self.$$.dirty[0] & /*selected, data*/ 17) {
+			// Лот мог измениться, пока открыто окно покупки
+			$: if (selected) {
+				const fresh = (data.lots || []).find(l => l.id === selected.id);
+				$$invalidate(4, selected = fresh || null);
+			}
+		}
+
+		if ($$self.$$.dirty[0] & /*lastResult*/ 65536) {
+			$: if (lastResult && lastResult.action === "buy") {
+				$$invalidate(10, waiting = false);
+				if (lastResult.ok) $$invalidate(4, selected = null);
+			}
+		}
+
+		if ($$self.$$.dirty[0] & /*selected*/ 16) {
+			$: $$invalidate(9, max = selected ? selected.count : 1);
+		}
+
+		if ($$self.$$.dirty[0] & /*count, max*/ 544) {
+			$: $$invalidate(17, amount = Math.min(Math.max(1, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(count)), max));
+		}
+
+		if ($$self.$$.dirty[0] & /*selected, amount*/ 131088) {
+			$: $$invalidate(7, total = selected ? selected.price * amount : 0);
+		}
+
+		if ($$self.$$.dirty[0] & /*source, total, data*/ 193) {
+			$: $$invalidate(8, fee = source === "fraction"
+			? Math.ceil(total * (Number(data.config?.fractionFee) || 0) / 100)
+			: 0);
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 1) {
+			$: $$invalidate(18, available = (data.wallet?.balance || 0) - (data.wallet?.reserved || 0));
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 1) {
+			$: $$invalidate(12, canFraction = !!data.fraction && data.fraction.canPay);
+		}
+
+		if ($$self.$$.dirty[0] & /*source, data, total, fee, available*/ 262593) {
+			$: $$invalidate(11, enough = source === "fraction"
+			? (data.fraction?.balance || 0) >= total + fee
+			: available >= total);
+		}
+	};
+
+	return [
+		data,
+		category,
+		search,
+		sort,
+		selected,
+		count,
+		source,
+		total,
+		fee,
+		max,
+		waiting,
+		enough,
+		canFraction,
+		lots,
+		open,
+		buy,
+		lastResult,
+		amount,
+		available,
+		query,
+		click_handler,
+		input_input_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		input_input_handler_1,
+		click_handler_4,
+		input_change_input_handler,
+		click_handler_5,
+		click_handler_6,
+		click_handler_7,
+		click_handler_8
+	];
+}
+
+class Market extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 0, lastResult: 16 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Market);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/MyLots.svelte":
+/*!***************************************************!*\
+  !*** ./src/views/blackmarket/pages/MyLots.svelte ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/MyLots.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1df8qi7", ".mylot.svelte-1df8qi7{margin-bottom:1vh;gap:1.4vh}.name.svelte-1df8qi7{font-family:'TTNorms-Bold';white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bm-items.svelte-1df8qi7{display:grid;grid-template-columns:repeat(3, 1fr);gap:0.8vh;max-height:24vh;overflow-y:auto;margin-bottom:1.4vh}.bm-inv.svelte-1df8qi7{cursor:pointer;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.4vh;padding:1vh}.bm-inv.active.svelte-1df8qi7{border-color:#d8394b;background:rgba(216, 57, 75, 0.1)}.bm-inv-name.svelte-1df8qi7{font-family:\"TTNorms-Regular\";font-size:1.25vh;line-height:1.2}.bm .bm__icon.small{width:4.4vh;height:4.4vh}.range.svelte-1df8qi7{width:100%;accent-color:#d8394b}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[33] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[36] = list[i];
+	return child_ctx;
+}
+
+// (70:4) {:else}
+function create_else_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "У вас нет активных лотов";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (59:4) {#each myLots as lot (lot.id)}
+function create_each_block_1(key_1, ctx) {
+	let div7;
+	let div0;
+	let t0;
+	let div3;
+	let div1;
+	let t1_value = /*lot*/ ctx[36].name + "";
+	let t1;
+	let t2;
+	let div2;
+	let t3;
+	let t4_value = /*lot*/ ctx[36].count + "";
+	let t4;
+	let t5;
+	let t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*lot*/ ctx[36].minutesLeft) + "";
+	let t6;
+	let t7;
+	let div4;
+	let t8_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*lot*/ ctx[36].price) + "";
+	let t8;
+	let t9;
+	let span;
+	let t11;
+	let div5;
+	let t13;
+	let div6;
+	let t15;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[21](/*lot*/ ctx[36]);
+	}
+
+	function click_handler_1() {
+		return /*click_handler_1*/ ctx[22](/*lot*/ ctx[36]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Осталось ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" шт. · до снятия ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "/ шт.";
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5.textContent = "Цена";
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6.textContent = "Снять";
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__icon");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*lot*/ ctx[36].itemId) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name svelte-1df8qi7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "min-width", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__card bm__row mylot svelte-1df8qi7");
+			this.first = div7;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t15);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", click_handler),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", click_handler_1)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*myLots*/ 16384) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*lot*/ ctx[36].itemId) + ")");
+			}
+
+			if (dirty[0] & /*myLots*/ 16384 && t1_value !== (t1_value = /*lot*/ ctx[36].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*myLots*/ 16384 && t4_value !== (t4_value = /*lot*/ ctx[36].count + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*myLots*/ 16384 && t6_value !== (t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*lot*/ ctx[36].minutesLeft) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty[0] & /*myLots*/ 16384 && t8_value !== (t8_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*lot*/ ctx[36].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (75:0) {#if creating}
+function create_if_block_1(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let t1;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (!/*inventory*/ ctx[5].length) return create_if_block_2;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Новый лот";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__modal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__modal-bg");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			if_block.m(div1, null);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.self)(/*click_handler_5*/ ctx[29]));
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div1, null);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if_block.d();
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (82:12) {:else}
+function create_else_block(ctx) {
+	let div0;
+	let t1;
+	let div1;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let t2;
+	let div6;
+	let div3;
+	let div2;
+	let t3;
+	let t4_value = (/*item*/ ctx[6] ? /*item*/ ctx[6].count : 0) + "";
+	let t4;
+	let t5;
+	let t6;
+	let input0;
+	let input0_max_value;
+	let t7;
+	let div5;
+	let div4;
+	let t9;
+	let input1;
+	let t10;
+	let div8;
+	let div7;
+	let t11;
+	let t12;
+	let t13;
+	let t14;
+	let input2;
+	let t15;
+	let div9;
+	let span0;
+	let span1;
+	let t17_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*priceUnit*/ ctx[3] * /*amount*/ ctx[4]) + "";
+	let t17;
+	let t18;
+	let div12;
+	let div10;
+	let t20;
+	let div11;
+	let mounted;
+	let dispose;
+	let each_value = /*inventory*/ ctx[5];
+	const get_key = ctx => /*i*/ ctx[33].itemId;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Товар из инвентаря";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Количество (из ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(")");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Цена за штуку, BTC";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Срок объявления: ");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*hours*/ ctx[8]);
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" ч");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Выручка при продаже всего";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10.textContent = "Отмена";
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11.textContent = "Выставить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm-items svelte-1df8qi7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "max", input0_max_value = /*item*/ ctx[6] ? /*item*/ ctx[6].count : 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "placeholder", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "class", "range svelte-1df8qi7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "type", "range");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "min", /*minHours*/ ctx[13]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "max", /*maxHours*/ ctx[12]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div10, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div11, "flex", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div11, "disabled", !/*canCreate*/ ctx[11]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div12, "margin-top", "1.6vh");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div1, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, input0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*count*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, input1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*price*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t10, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, input2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input2, /*hours*/ ctx[8]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t15, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div9, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t18, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div12, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input0, "input", /*input0_input_handler*/ ctx[25]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input1, "input", /*input1_input_handler*/ ctx[26]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input2, "change", /*input2_change_input_handler*/ ctx[27]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input2, "input", /*input2_change_input_handler*/ ctx[27]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div10, "click", /*click_handler_4*/ ctx[28]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div11, "click", /*create*/ ctx[16])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*inventory, itemId, count*/ 35) {
+				each_value = /*inventory*/ ctx[5];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div1, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+			}
+
+			if (dirty[0] & /*item*/ 64 && t4_value !== (t4_value = (/*item*/ ctx[6] ? /*item*/ ctx[6].count : 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+
+			if (dirty[0] & /*item*/ 64 && input0_max_value !== (input0_max_value = /*item*/ ctx[6] ? /*item*/ ctx[6].count : 1)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "max", input0_max_value);
+			}
+
+			if (dirty[0] & /*count*/ 2 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input0.value) !== /*count*/ ctx[1]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*count*/ ctx[1]);
+			}
+
+			if (dirty[0] & /*price*/ 4 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input1.value) !== /*price*/ ctx[2]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*price*/ ctx[2]);
+			}
+
+			if (dirty[0] & /*hours*/ 256) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t12, /*hours*/ ctx[8]);
+
+			if (dirty[0] & /*minHours*/ 8192) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "min", /*minHours*/ ctx[13]);
+			}
+
+			if (dirty[0] & /*maxHours*/ 4096) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "max", /*maxHours*/ ctx[12]);
+			}
+
+			if (dirty[0] & /*hours*/ 256) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input2, /*hours*/ ctx[8]);
+			}
+
+			if (dirty[0] & /*priceUnit, amount*/ 24 && t17_value !== (t17_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*priceUnit*/ ctx[3] * /*amount*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
+
+			if (dirty[0] & /*canCreate*/ 2048) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div11, "disabled", !/*canCreate*/ ctx[11]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t10);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div8);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t15);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div9);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t18);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div12);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (79:12) {#if !inventory.length}
+function create_if_block_2(ctx) {
+	let div0;
+	let t1;
+	let div1;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "В инвентаре нет товаров, которые принимает рынок";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Закрыть";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__empty");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__btn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_2*/ ctx[23]);
+				mounted = true;
+			}
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (85:20) {#each inventory as i (i.itemId)}
+function create_each_block(key_1, ctx) {
+	let div3;
+	let div0;
+	let t0;
+	let div1;
+	let t1_value = /*i*/ ctx[33].name + "";
+	let t1;
+	let t2;
+	let div2;
+	let t3_value = /*i*/ ctx[33].count + "";
+	let t3;
+	let t4;
+	let t5;
+	let mounted;
+	let dispose;
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[24](/*i*/ ctx[33]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" шт.");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__icon small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*i*/ ctx[33].itemId) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm-inv-name svelte-1df8qi7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__card bm-inv svelte-1df8qi7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*i*/ ctx[33].itemId === /*itemId*/ ctx[0]);
+			this.first = div3;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", click_handler_3);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty[0] & /*inventory*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*i*/ ctx[33].itemId) + ")");
+			}
+
+			if (dirty[0] & /*inventory*/ 32 && t1_value !== (t1_value = /*i*/ ctx[33].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*inventory*/ 32 && t3_value !== (t3_value = /*i*/ ctx[33].count + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+
+			if (dirty[0] & /*inventory, itemId*/ 33) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*i*/ ctx[33].itemId === /*itemId*/ ctx[0]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (117:0) {#if editing}
+function create_if_block(ctx) {
+	let div7;
+	let div6;
+	let div0;
+	let t0;
+	let t1_value = /*editing*/ ctx[9].name + "";
+	let t1;
+	let t2;
+	let div2;
+	let div1;
+	let t4;
+	let input;
+	let t5;
+	let div5;
+	let div3;
+	let t7;
+	let div4;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Цена: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Новая цена за штуку, BTC";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Отмена";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Сохранить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "flex", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*newPrice*/ ctx[10]) <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__modal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__modal-bg");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*newPrice*/ ctx[10]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[30]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler_6*/ ctx[31]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*saveEdit*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.self)(/*click_handler_7*/ ctx[32]))
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*editing*/ 512 && t1_value !== (t1_value = /*editing*/ ctx[9].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty[0] & /*newPrice*/ 1024 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*newPrice*/ ctx[10]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*newPrice*/ ctx[10]);
+			}
+
+			if (dirty[0] & /*newPrice*/ 1024) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*newPrice*/ ctx[10]) <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let t3;
+	let div3;
+	let t5;
+	let div4;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let t6;
+	let t7;
+	let if_block1_anchor;
+	let mounted;
+	let dispose;
+	let each_value_1 = /*myLots*/ ctx[14];
+	const get_key = ctx => /*lot*/ ctx[36].id;
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		let child_ctx = get_each_context_1(ctx, each_value_1, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_1(key, child_ctx));
+	}
+
+	let each_1_else = null;
+
+	if (!each_value_1.length) {
+		each_1_else = create_else_block_1(ctx);
+	}
+
+	let if_block0 = /*creating*/ ctx[7] && create_if_block_1(ctx);
+	let if_block1 = /*editing*/ ctx[9] && create_if_block(ctx);
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Мои лоты";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "+ Выставить товар";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Выставленный товар хранится у рынка: его нельзя использовать или передать, пока лот не снят. Оплата приходит сразу после покупки.";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			if (each_1_else) {
+				each_1_else.c();
+			}
+
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			if_block1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "margin", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "justify-content", "space-between");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "margin-bottom", "1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__scroll");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div4, null);
+				}
+			}
+
+			if (each_1_else) {
+				each_1_else.m(div4, null);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t6, anchor);
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
+			if (if_block1) if_block1.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block1_anchor, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*startCreate*/ ctx[15]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*cancelLot, myLots, editing, newPrice*/ 280064) {
+				each_value_1 = /*myLots*/ ctx[14];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, div4, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_1, null, get_each_context_1);
+
+				if (!each_value_1.length && each_1_else) {
+					each_1_else.p(ctx, dirty);
+				} else if (!each_value_1.length) {
+					each_1_else = create_else_block_1(ctx);
+					each_1_else.c();
+					each_1_else.m(div4, null);
+				} else if (each_1_else) {
+					each_1_else.d(1);
+					each_1_else = null;
+				}
+			}
+
+			if (/*creating*/ ctx[7]) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_1(ctx);
+					if_block0.c();
+					if_block0.m(t7.parentNode, t7);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*editing*/ ctx[9]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (each_1_else) each_1_else.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t6);
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
+			if (if_block1) if_block1.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block1_anchor);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let myLots;
+	let inventory;
+	let minHours;
+	let maxHours;
+	let item;
+	let amount;
+	let priceUnit;
+	let canCreate;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+	let creating = false;
+	let itemId = null;
+	let count = 1;
+	let price = "";
+	let hours = 24;
+
+	const startCreate = () => {
+		$$invalidate(7, creating = true);
+		$$invalidate(0, itemId = inventory.length ? inventory[0].itemId : null);
+		$$invalidate(1, count = 1);
+		$$invalidate(2, price = "");
+		$$invalidate(8, hours = Math.min(Math.max(24, minHours), maxHours));
+	};
+
+	const create = () => {
+		if (!canCreate) return;
+
+		(0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("createLot", {
+			itemId,
+			count: amount,
+			price: priceUnit,
+			hours: (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(hours)
+		});
+	};
+
+	let editing = null;
+	let newPrice = "";
+
+	const saveEdit = () => {
+		if (!editing || (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(newPrice) <= 0) return;
+		(0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("editLot", { id: editing.id, price: (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(newPrice) });
+	};
+
+	const cancelLot = lot => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("cancelLot", { id: lot.id });
+
+	const click_handler = lot => {
+		$$invalidate(9, editing = lot);
+		$$invalidate(10, newPrice = String(lot.price));
+	};
+
+	const click_handler_1 = lot => cancelLot(lot);
+	const click_handler_2 = () => $$invalidate(7, creating = false);
+
+	const click_handler_3 = i => {
+		$$invalidate(0, itemId = i.itemId);
+		$$invalidate(1, count = 1);
+	};
+
+	function input0_input_handler() {
+		count = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(1, count);
+	}
+
+	function input1_input_handler() {
+		price = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(2, price);
+	}
+
+	function input2_change_input_handler() {
+		hours = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(8, hours);
+	}
+
+	const click_handler_4 = () => $$invalidate(7, creating = false);
+	const click_handler_5 = () => $$invalidate(7, creating = false);
+
+	function input_input_handler() {
+		newPrice = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(10, newPrice);
+	}
+
+	const click_handler_6 = () => $$invalidate(9, editing = null);
+	const click_handler_7 = () => $$invalidate(9, editing = null);
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(19, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(20, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(14, myLots = (data.lots || []).filter(l => l.mine));
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(5, inventory = data.inventory || []);
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(13, minHours = data.config?.minHours || 5);
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(12, maxHours = data.config?.maxHours || 120);
+		}
+
+		if ($$self.$$.dirty[0] & /*inventory, itemId*/ 33) {
+			$: $$invalidate(6, item = inventory.find(i => i.itemId === itemId) || null);
+		}
+
+		if ($$self.$$.dirty[0] & /*item, count*/ 66) {
+			$: $$invalidate(4, amount = item
+			? Math.min(Math.max(1, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(count)), item.count)
+			: 0);
+		}
+
+		if ($$self.$$.dirty[0] & /*price*/ 4) {
+			$: $$invalidate(3, priceUnit = (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(price));
+		}
+
+		if ($$self.$$.dirty[0] & /*item, amount, priceUnit*/ 88) {
+			$: $$invalidate(11, canCreate = item && amount > 0 && priceUnit > 0);
+		}
+
+		if ($$self.$$.dirty[0] & /*lastResult*/ 1048576) {
+			$: if (lastResult && lastResult.ok) {
+				if (lastResult.action === "createLot") $$invalidate(7, creating = false);
+				if (lastResult.action === "editLot") $$invalidate(9, editing = null);
+			}
+		}
+	};
+
+	return [
+		itemId,
+		count,
+		price,
+		priceUnit,
+		amount,
+		inventory,
+		item,
+		creating,
+		hours,
+		editing,
+		newPrice,
+		canCreate,
+		maxHours,
+		minHours,
+		myLots,
+		startCreate,
+		create,
+		saveEdit,
+		cancelLot,
+		data,
+		lastResult,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		input0_input_handler,
+		input1_input_handler,
+		input2_change_input_handler,
+		click_handler_4,
+		click_handler_5,
+		input_input_handler,
+		click_handler_6,
+		click_handler_7
+	];
+}
+
+class MyLots extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 19, lastResult: 20 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MyLots);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/Orders.svelte":
+/*!***************************************************!*\
+  !*** ./src/views/blackmarket/pages/Orders.svelte ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/Orders.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1xi5xby", ".order.svelte-1xi5xby{margin-bottom:1vh;gap:1.4vh}.name.svelte-1xi5xby{font-family:'TTNorms-Bold'}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[3] = list[i];
+	return child_ctx;
+}
+
+// (24:4) {:else}
+function create_else_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Активных закладок нет";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (15:4) {#each drops as drop (drop.id)}
+function create_each_block(key_1, ctx) {
+	let div5;
+	let div0;
+	let t0;
+	let div3;
+	let div1;
+	let t1_value = /*drop*/ ctx[3].name + "";
+	let t1;
+	let t2;
+	let t3_value = /*drop*/ ctx[3].count + "";
+	let t3;
+	let t4;
+	let div2;
+	let t5;
+	let t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*drop*/ ctx[3].minutesLeft) + "";
+	let t6;
+	let t7;
+	let div4;
+	let t9;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[2](/*drop*/ ctx[3]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" × ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Исчезнет через ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Метка на карте";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__icon");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*drop*/ ctx[3].itemId) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name svelte-1xi5xby");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__card bm__row order svelte-1xi5xby");
+			this.first = div5;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*drops*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*drop*/ ctx[3].itemId) + ")");
+			}
+
+			if (dirty & /*drops*/ 1 && t1_value !== (t1_value = /*drop*/ ctx[3].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*drops*/ 1 && t3_value !== (t3_value = /*drop*/ ctx[3].count + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*drops*/ 1 && t6_value !== (t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*drop*/ ctx[3].minutesLeft) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div0;
+	let t1;
+	let div1;
+	let t3;
+	let div2;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*drops*/ ctx[0];
+	const get_key = ctx => /*drop*/ ctx[3].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	let each_1_else = null;
+
+	if (!each_value.length) {
+		each_1_else = create_else_block(ctx);
+	}
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Заказы";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Купленный товар ждёт в закладке. Метка на карте видна только вам, но забрать закладку может любой, кто окажется там первым.\n    Если выйти из игры, закладка пролежит не больше 30 минут.";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			if (each_1_else) {
+				each_1_else.c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__scroll");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div2, null);
+				}
+			}
+
+			if (each_1_else) {
+				each_1_else.m(div2, null);
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*action, drops, timeLeft, itemIcon*/ 1) {
+				each_value = /*drops*/ ctx[0];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div2, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+
+				if (!each_value.length && each_1_else) {
+					each_1_else.p(ctx, dirty);
+				} else if (!each_value.length) {
+					each_1_else = create_else_block(ctx);
+					each_1_else.c();
+					each_1_else.m(div2, null);
+				} else if (each_1_else) {
+					each_1_else.d(1);
+					each_1_else = null;
+				}
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (each_1_else) each_1_else.d();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let drops;
+	let { data } = $$props;
+	const click_handler = drop => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("gps", { id: drop.id });
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(1, data = $$props.data);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data*/ 2) {
+			$: $$invalidate(0, drops = data.drops || []);
+		}
+	};
+
+	return [drops, data, click_handler];
+}
+
+class Orders extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 1 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Orders);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/P2P.svelte":
+/*!************************************************!*\
+  !*** ./src/views/blackmarket/pages/P2P.svelte ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/P2P.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1x54col", ".offer.svelte-1x54col{margin-bottom:1vh;gap:1.6vh}.range.svelte-1x54col{width:100%;accent-color:#d8394b}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[32] = list[i];
+	return child_ctx;
+}
+
+// (64:4) {:else}
+function create_else_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Заявок нет";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (60:12) {:else}
+function create_else_block(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[23](/*o*/ ctx[32]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Купить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__btn gold");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_2);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (58:12) {#if o.mine}
+function create_if_block_2(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	function click_handler_1() {
+		return /*click_handler_1*/ ctx[22](/*o*/ ctx[32]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Снять";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__btn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_1);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (48:4) {#each offers as o (o.id)}
+function create_each_block(key_1, ctx) {
+	let div6;
+	let div2;
+	let div0;
+	let t0_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*o*/ ctx[32].amount) + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2_value = (/*o*/ ctx[32].mine ? "Ваша заявка" : "Аноним") + "";
+	let t2;
+	let t3;
+	let t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*o*/ ctx[32].minutesLeft) + "";
+	let t4;
+	let t5;
+	let div5;
+	let div3;
+	let t6_value = /*priceText*/ ctx[15](/*o*/ ctx[32].price) + "";
+	let t6;
+	let t7;
+	let span;
+	let t9;
+	let div4;
+	let t10;
+	let t11_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*costOf*/ ctx[16](/*o*/ ctx[32].amount, /*o*/ ctx[32].price)) + "";
+	let t11;
+	let t12;
+	let t13;
+
+	function select_block_type(ctx, dirty) {
+		if (/*o*/ ctx[32].mine) return create_if_block_2;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type(ctx);
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" · ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "за 1 BTC";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("всё за ");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "text-align", "right");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__card bm__row offer svelte-1x54col");
+			this.first = div6;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t12);
+			if_block.m(div6, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t13);
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*offers*/ 4096 && t0_value !== (t0_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*o*/ ctx[32].amount) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*offers*/ 4096 && t2_value !== (t2_value = (/*o*/ ctx[32].mine ? "Ваша заявка" : "Аноним") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty[0] & /*offers*/ 4096 && t4_value !== (t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.timeLeft)(/*o*/ ctx[32].minutesLeft) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*offers*/ 4096 && t6_value !== (t6_value = /*priceText*/ ctx[15](/*o*/ ctx[32].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty[0] & /*offers*/ 4096 && t11_value !== (t11_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*costOf*/ ctx[16](/*o*/ ctx[32].amount, /*o*/ ctx[32].price)) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div6, t13);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if_block.d();
+		}
+	};
+}
+
+// (69:0) {#if buying}
+function create_if_block_1(ctx) {
+	let div12;
+	let div11;
+	let div0;
+	let t1;
+	let div1;
+	let span0;
+	let span1;
+	let t3_value = /*priceText*/ ctx[15](/*buying*/ ctx[0].price) + "";
+	let t3;
+	let t4;
+	let t5;
+	let div2;
+	let span2;
+	let span3;
+	let t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*buying*/ ctx[0].amount) + "";
+	let t7;
+	let t8;
+	let div4;
+	let div3;
+	let t10;
+	let input;
+	let input_max_value;
+	let t11;
+	let div5;
+	let span4;
+	let span5;
+	let t13_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*costOf*/ ctx[16](/*buyN*/ ctx[4], /*buying*/ ctx[0].price)) + "";
+	let t13;
+	let t14;
+	let div6;
+	let span6;
+	let t15;
+	let t16;
+	let t17;
+	let span7;
+	let t18_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*buyFee*/ ctx[11]) + "";
+	let t18;
+	let t19;
+	let div7;
+	let span8;
+	let span9;
+	let t21_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(Math.max(0, /*buyN*/ ctx[4] - /*buyFee*/ ctx[11])) + "";
+	let t21;
+	let t22;
+	let div10;
+	let div8;
+	let t24;
+	let div9;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Купить BTC";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Цена";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" за 1 BTC");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "Доступно";
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Сколько BTC купить";
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span4.textContent = "Заплатите наличными";
+			span5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t13_value);
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Комиссия ");
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*fee*/ ctx[6]);
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			span7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t18_value);
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span8.textContent = "Получите";
+			span9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t21_value);
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8.textContent = "Отмена";
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9.textContent = "Купить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*buying*/ ctx[0].amount);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "margin-top", "1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span5, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span6, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span9, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div8, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__btn gold");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div9, "flex", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", /*buyN*/ ctx[4] - /*buyFee*/ ctx[11] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div10, "margin-top", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__modal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__modal-bg");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div12, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*buyAmount*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span5, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span6, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span6, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span6, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span7, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, span8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, span9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span9, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[24]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*click_handler_3*/ ctx[25]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", /*buy*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div12, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.self)(/*click_handler_4*/ ctx[26]))
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*buying*/ 1 && t3_value !== (t3_value = /*priceText*/ ctx[15](/*buying*/ ctx[0].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty[0] & /*buying*/ 1 && t7_value !== (t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*buying*/ ctx[0].amount) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+
+			if (dirty[0] & /*buying*/ 1 && input_max_value !== (input_max_value = /*buying*/ ctx[0].amount)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value);
+			}
+
+			if (dirty[0] & /*buyAmount*/ 2 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*buyAmount*/ ctx[1]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*buyAmount*/ ctx[1]);
+			}
+
+			if (dirty[0] & /*buyN, buying*/ 17 && t13_value !== (t13_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*costOf*/ ctx[16](/*buyN*/ ctx[4], /*buying*/ ctx[0].price)) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t13, t13_value);
+			if (dirty[0] & /*fee*/ 64) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t16, /*fee*/ ctx[6]);
+			if (dirty[0] & /*buyFee*/ 2048 && t18_value !== (t18_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*buyFee*/ ctx[11]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t18, t18_value);
+			if (dirty[0] & /*buyN, buyFee*/ 2064 && t21_value !== (t21_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(Math.max(0, /*buyN*/ ctx[4] - /*buyFee*/ ctx[11])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t21, t21_value);
+
+			if (dirty[0] & /*buyN, buyFee*/ 2064) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", /*buyN*/ ctx[4] - /*buyFee*/ ctx[11] <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div12);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (90:0) {#if creating}
+function create_if_block(ctx) {
+	let div14;
+	let div13;
+	let div0;
+	let t1;
+	let div1;
+	let t2;
+	let t3_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[5]) + "";
+	let t3;
+	let t4;
+	let div6;
+	let div3;
+	let div2;
+	let t6;
+	let input0;
+	let t7;
+	let div5;
+	let div4;
+	let t9;
+	let input1;
+	let t10;
+	let div8;
+	let div7;
+	let t11;
+	let t12;
+	let t13;
+	let t14;
+	let input2;
+	let t15;
+	let div9;
+	let span0;
+	let span1;
+	let t17_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*costOf*/ ctx[16](/*sellN*/ ctx[10], /*sellP*/ ctx[9])) + "";
+	let t17;
+	let t18;
+	let div12;
+	let div10;
+	let t20;
+	let div11;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Продать BTC";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("BTC заявки блокируются в кошельке до продажи или снятия. Свободно: ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Сколько BTC";
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Цена за 1 BTC, $";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Срок заявки: ");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*hours*/ ctx[8]);
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" ч");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Получите за всё";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10.textContent = "Отмена";
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11.textContent = "Выставить";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "margin-bottom", "1.2vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "min", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "step", "0.01");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "class", "range svelte-1x54col");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "type", "range");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "min", /*minHours*/ ctx[14]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "max", /*maxHours*/ ctx[13]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div10, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div11, "flex", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div11, "disabled", /*sellN*/ ctx[10] <= 0 || /*sellP*/ ctx[9] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div12, "margin-top", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "bm__modal");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "bm__modal-bg");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div14, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, input0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*sellAmount*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, input1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*sellPrice*/ ctx[3]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, input2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input2, /*hours*/ ctx[8]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input0, "input", /*input0_input_handler*/ ctx[27]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input1, "input", /*input1_input_handler*/ ctx[28]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input2, "change", /*input2_change_input_handler*/ ctx[29]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input2, "input", /*input2_change_input_handler*/ ctx[29]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div10, "click", /*click_handler_5*/ ctx[30]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div11, "click", /*create*/ ctx[18]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div14, "click", (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.self)(/*click_handler_6*/ ctx[31]))
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*available*/ 32 && t3_value !== (t3_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[5]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+
+			if (dirty[0] & /*sellAmount*/ 4 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input0.value) !== /*sellAmount*/ ctx[2]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*sellAmount*/ ctx[2]);
+			}
+
+			if (dirty[0] & /*sellPrice*/ 8 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input1.value) !== /*sellPrice*/ ctx[3]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*sellPrice*/ ctx[3]);
+			}
+
+			if (dirty[0] & /*hours*/ 256) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t12, /*hours*/ ctx[8]);
+
+			if (dirty[0] & /*minHours*/ 16384) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "min", /*minHours*/ ctx[14]);
+			}
+
+			if (dirty[0] & /*maxHours*/ 8192) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "max", /*maxHours*/ ctx[13]);
+			}
+
+			if (dirty[0] & /*hours*/ 256) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input2, /*hours*/ ctx[8]);
+			}
+
+			if (dirty[0] & /*sellN, sellP*/ 1536 && t17_value !== (t17_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*costOf*/ ctx[16](/*sellN*/ ctx[10], /*sellP*/ ctx[9])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
+
+			if (dirty[0] & /*sellN, sellP*/ 1536) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div11, "disabled", /*sellN*/ ctx[10] <= 0 || /*sellP*/ ctx[9] <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div14);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let t3;
+	let div3;
+	let t4;
+	let t5;
+	let t6;
+	let t7;
+	let div4;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let t8;
+	let t9;
+	let if_block1_anchor;
+	let mounted;
+	let dispose;
+	let each_value = /*offers*/ ctx[12];
+	const get_key = ctx => /*o*/ ctx[32].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	let each_1_else = null;
+
+	if (!each_value.length) {
+		each_1_else = create_else_block_1(ctx);
+	}
+
+	let if_block0 = /*buying*/ ctx[0] && create_if_block_1(ctx);
+	let if_block1 = /*creating*/ ctx[7] && create_if_block(ctx);
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "P2P: BTC за наличные";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "+ Продать BTC";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Покупатель платит наличными, продавец получает деньги сразу. Комиссия сети ");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*fee*/ ctx[6]);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% удерживается в BTC с покупателя. Участники анонимны.");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			if (each_1_else) {
+				each_1_else.c();
+			}
+
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			if_block1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "margin", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "justify-content", "space-between");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "margin-bottom", "1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__scroll");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div4, null);
+				}
+			}
+
+			if (each_1_else) {
+				each_1_else.m(div4, null);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t8, anchor);
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t9, anchor);
+			if (if_block1) if_block1.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block1_anchor, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler*/ ctx[21]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*fee*/ 64) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, /*fee*/ ctx[6]);
+
+			if (dirty[0] & /*offers, buying, buyAmount, costOf, priceText*/ 102403) {
+				each_value = /*offers*/ ctx[12];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div4, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+
+				if (!each_value.length && each_1_else) {
+					each_1_else.p(ctx, dirty);
+				} else if (!each_value.length) {
+					each_1_else = create_else_block_1(ctx);
+					each_1_else.c();
+					each_1_else.m(div4, null);
+				} else if (each_1_else) {
+					each_1_else.d(1);
+					each_1_else = null;
+				}
+			}
+
+			if (/*buying*/ ctx[0]) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_1(ctx);
+					if_block0.c();
+					if_block0.m(t9.parentNode, t9);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*creating*/ ctx[7]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (each_1_else) each_1_else.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t8);
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t9);
+			if (if_block1) if_block1.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block1_anchor);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let fee;
+	let minHours;
+	let maxHours;
+	let offers;
+	let available;
+	let buyN;
+	let buyFee;
+	let sellN;
+	let sellP;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+	const priceText = p => `$${Number(p).toLocaleString('ru-RU', { maximumFractionDigits: 4 })}`;
+	const costOf = (amount, price) => Math.ceil(amount * Number(price));
+
+	// Покупка
+	let buying = null;
+
+	let buyAmount = "";
+
+	// Своя заявка
+	let creating = false;
+
+	let sellAmount = "";
+	let sellPrice = "";
+	let hours = 24;
+	const buy = () => buying && buyN > 0 && (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("p2pBuy", { id: buying.id, amount: buyN });
+
+	const create = () => sellN > 0 && sellP > 0 && (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("p2pCreate", {
+		amount: sellN,
+		price: sellP,
+		hours: (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(hours)
+	});
+
+	const click_handler = () => {
+		$$invalidate(7, creating = true);
+		$$invalidate(2, sellAmount = "");
+		$$invalidate(3, sellPrice = "");
+		$$invalidate(8, hours = Math.min(Math.max(24, minHours), maxHours));
+	};
+
+	const click_handler_1 = o => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("p2pCancel", { id: o.id });
+
+	const click_handler_2 = o => {
+		$$invalidate(0, buying = o);
+		$$invalidate(1, buyAmount = String(o.amount));
+	};
+
+	function input_input_handler() {
+		buyAmount = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(1, buyAmount);
+	}
+
+	const click_handler_3 = () => $$invalidate(0, buying = null);
+	const click_handler_4 = () => $$invalidate(0, buying = null);
+
+	function input0_input_handler() {
+		sellAmount = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(2, sellAmount);
+	}
+
+	function input1_input_handler() {
+		sellPrice = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(3, sellPrice);
+	}
+
+	function input2_change_input_handler() {
+		hours = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(8, hours);
+	}
+
+	const click_handler_5 = () => $$invalidate(7, creating = false);
+	const click_handler_6 = () => $$invalidate(7, creating = false);
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(19, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(20, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(6, fee = Number(data.config?.p2pFee) || 0);
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(14, minHours = data.config?.minHours || 5);
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(13, maxHours = data.config?.maxHours || 120);
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(12, offers = (data.p2p || []).slice().sort((a, b) => a.price - b.price));
+		}
+
+		if ($$self.$$.dirty[0] & /*data*/ 524288) {
+			$: $$invalidate(5, available = (data.wallet?.balance || 0) - (data.wallet?.reserved || 0));
+		}
+
+		if ($$self.$$.dirty[0] & /*lastResult*/ 1048576) {
+			$: if (lastResult && lastResult.ok) {
+				if (lastResult.action === "p2pBuy") $$invalidate(0, buying = null);
+				if (lastResult.action === "p2pCreate") $$invalidate(7, creating = false);
+			}
+		}
+
+		if ($$self.$$.dirty[0] & /*buying, buyAmount*/ 3) {
+			$: $$invalidate(4, buyN = buying
+			? Math.min(Math.max(1, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(buyAmount)), buying.amount)
+			: 0);
+		}
+
+		if ($$self.$$.dirty[0] & /*buyN, fee*/ 80) {
+			$: $$invalidate(11, buyFee = Math.ceil(buyN * fee / 100));
+		}
+
+		if ($$self.$$.dirty[0] & /*sellAmount, available*/ 36) {
+			$: $$invalidate(10, sellN = Math.min(Math.max(0, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(sellAmount)), available));
+		}
+
+		if ($$self.$$.dirty[0] & /*sellPrice*/ 8) {
+			$: $$invalidate(9, sellP = Number(String(sellPrice).replace(",", ".")) || 0);
+		}
+	};
+
+	return [
+		buying,
+		buyAmount,
+		sellAmount,
+		sellPrice,
+		buyN,
+		available,
+		fee,
+		creating,
+		hours,
+		sellP,
+		sellN,
+		buyFee,
+		offers,
+		maxHours,
+		minHours,
+		priceText,
+		costOf,
+		buy,
+		create,
+		data,
+		lastResult,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		input_input_handler,
+		click_handler_3,
+		click_handler_4,
+		input0_input_handler,
+		input1_input_handler,
+		input2_change_input_handler,
+		click_handler_5,
+		click_handler_6
+	];
+}
+
+class P2P extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 19, lastResult: 20 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (P2P);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/Transfer.svelte":
+/*!*****************************************************!*\
+  !*** ./src/views/blackmarket/pages/Transfer.svelte ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/Transfer.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-zzt9r0", ".box.svelte-zzt9r0{max-width:60vh;padding:2.4vh}");
+}
+
+// (34:4) {#if lastResult && lastResult.action === "transfer"}
+function create_if_block(ctx) {
+	let div;
+	let t_value = /*lastResult*/ ctx[0].message + "";
+	let t;
+	let div_class_value;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value = /*lastResult*/ ctx[0].ok ? "bm__ok" : "bm__error");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*lastResult*/ 1 && t_value !== (t_value = /*lastResult*/ ctx[0].message + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+
+			if (dirty & /*lastResult*/ 1 && div_class_value !== (div_class_value = /*lastResult*/ ctx[0].ok ? "bm__ok" : "bm__error")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div0;
+	let t1;
+	let div9;
+	let div1;
+	let t3;
+	let div3;
+	let div2;
+	let t5;
+	let input0;
+	let t6;
+	let div7;
+	let div4;
+	let t7;
+	let t8_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[3]) + "";
+	let t8;
+	let t9;
+	let t10;
+	let div6;
+	let input1;
+	let t11;
+	let div5;
+	let t13;
+	let div8;
+	let t15;
+	let mounted;
+	let dispose;
+	let if_block = /*lastResult*/ ctx[0] && /*lastResult*/ ctx[0].action === "transfer" && create_if_block(ctx);
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Перевод BTC";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Перевод на кошелёк по номеру телефона получателя. Получатель увидит только сумму, без вашего имени.";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Номер телефона получателя";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Сумма, BTC (свободно ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(")");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			input1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5.textContent = "Всё";
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8.textContent = "Перевести";
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "margin-bottom", "1.6vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "placeholder", "Например, 5551234");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(input1, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*can*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__card box svelte-zzt9r0");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div9, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, input0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*phone*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, input1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*amount*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t15);
+			if (if_block) if_block.m(div9, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input0, "input", /*input0_input_handler*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input1, "input", /*input1_input_handler*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*click_handler*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*send*/ ctx[5])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*phone*/ 2 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input0.value) !== /*phone*/ ctx[1]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*phone*/ ctx[1]);
+			}
+
+			if (dirty & /*available*/ 8 && t8_value !== (t8_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[3]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (dirty & /*amount*/ 4 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input1.value) !== /*amount*/ ctx[2]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*amount*/ ctx[2]);
+			}
+
+			if (dirty & /*can*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*can*/ ctx[4]);
+			}
+
+			if (/*lastResult*/ ctx[0] && /*lastResult*/ ctx[0].action === "transfer") {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					if_block.m(div9, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div9);
+			if (if_block) if_block.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let available;
+	let n;
+	let can;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+	let phone = "";
+	let amount = "";
+	const send = () => can && (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("transfer", { phone: (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(phone), amount: n });
+
+	function input0_input_handler() {
+		phone = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		$$invalidate(1, phone);
+	}
+
+	function input1_input_handler() {
+		amount = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		($$invalidate(2, amount), $$invalidate(0, lastResult));
+	}
+
+	const click_handler = () => $$invalidate(2, amount = String(available));
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(6, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(0, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data*/ 64) {
+			$: $$invalidate(3, available = (data.wallet?.balance || 0) - (data.wallet?.reserved || 0));
+		}
+
+		if ($$self.$$.dirty & /*lastResult*/ 1) {
+			$: if (lastResult && lastResult.action === "transfer" && lastResult.ok) $$invalidate(2, amount = "");
+		}
+
+		if ($$self.$$.dirty & /*amount*/ 4) {
+			$: $$invalidate(7, n = (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(amount));
+		}
+
+		if ($$self.$$.dirty & /*phone, n, available*/ 138) {
+			$: $$invalidate(4, can = (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(phone) > 0 && n > 0 && n <= available);
+		}
+	};
+
+	return [
+		lastResult,
+		phone,
+		amount,
+		available,
+		can,
+		send,
+		data,
+		n,
+		input0_input_handler,
+		input1_input_handler,
+		click_handler
+	];
+}
+
+class Transfer extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 6, lastResult: 0 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Transfer);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/Wallets.svelte":
+/*!****************************************************!*\
+  !*** ./src/views/blackmarket/pages/Wallets.svelte ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/Wallets.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-zytwo7", ".grid.svelte-zytwo7{display:grid;grid-template-columns:1fr 1fr;gap:1.4vh}.box.svelte-zytwo7{padding:2vh}.wide.svelte-zytwo7{grid-column:1 / -1}.big.svelte-zytwo7{font-family:'TTNorms-Bold';font-size:3vh;color:#f2b544;margin:0.6vh 0 1.2vh}.big.small.svelte-zytwo7{font-size:2vh;color:white}");
+}
+
+// (45:8) {:else}
+function create_else_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Обменник сейчас закрыт";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__empty");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (37:8) {#if rate > 0}
+function create_if_block_1(ctx) {
+	let div0;
+	let t0;
+	let t1_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[5]) + "";
+	let t1;
+	let t2;
+	let div2;
+	let div1;
+	let t4;
+	let input;
+	let t5;
+	let div3;
+	let span0;
+	let span1;
+	let t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(Math.ceil(/*exN*/ ctx[4] * /*rate*/ ctx[5])) + "";
+	let t7;
+	let t8;
+	let div4;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("1 BTC = ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Купить BTC за наличные";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "К оплате";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Купить BTC";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "big small svelte-zytwo7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", "Сколько BTC");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "margin-top", "1.2vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__price");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__btn gold");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "margin-top", "1.2vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", /*exN*/ ctx[4] <= 0);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*exchangeBtc*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[11]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*exchange*/ ctx[7])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*rate*/ 32 && t1_value !== (t1_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[5]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*exchangeBtc*/ 2 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*exchangeBtc*/ ctx[1]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*exchangeBtc*/ ctx[1]);
+			}
+
+			if (dirty & /*exN, rate*/ 48 && t7_value !== (t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(Math.ceil(/*exN*/ ctx[4] * /*rate*/ ctx[5])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+
+			if (dirty & /*exN*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", /*exN*/ ctx[4] <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t8);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (50:4) {#if data.fraction}
+function create_if_block(ctx) {
+	let div12;
+	let div4;
+	let div2;
+	let div0;
+	let t0;
+	let t1_value = /*data*/ ctx[0].fraction.name + "";
+	let t1;
+	let t2;
+	let div1;
+	let t3_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*data*/ ctx[0].fraction.balance) + "";
+	let t3;
+	let t4;
+	let div3;
+	let t5;
+	let t6_value = /*data*/ ctx[0].fraction.rank + "";
+	let t6;
+	let br0;
+	let t7;
+	let t8_value = /*data*/ ctx[0].fraction.needRank + "";
+	let t8;
+	let t9;
+	let br1;
+	let t10;
+	let t11_value = /*data*/ ctx[0].config?.fractionFee + "";
+	let t11;
+	let t12;
+	let t13;
+	let div11;
+	let div6;
+	let div5;
+	let t15;
+	let input0;
+	let t16;
+	let div7;
+	let t18;
+	let div9;
+	let div8;
+	let t20;
+	let input1;
+	let t21;
+	let div10;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Кошелёк банды · ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Ваш ранг: ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			br0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("\n                    Оплата и вывод — с ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" ранга");
+			br1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("\n                    Комиссия при оплате: ");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5.textContent = "Внести из личного кошелька";
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7.textContent = "Внести";
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8.textContent = "Вывести себе";
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10.textContent = "Вывести";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "big svelte-zytwo7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "text-align", "right");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "justify-content", "space-between");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input0, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div6, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div6, "margin", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__btn primary");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div7, "disabled", (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*depositAmount*/ ctx[2]) <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__label");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "class", "bm__input");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__field");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div9, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div9, "margin", "0 0 0 2vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div10, "disabled", !/*data*/ ctx[0].fraction.canPay || (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*withdrawAmount*/ ctx[3]) <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div11, "margin-top", "1.4vh");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div11, "align-items", "flex-end");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__card box wide svelte-zytwo7");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div12, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, br0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, br1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, input0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*depositAmount*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, input1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*withdrawAmount*/ ctx[3]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div10);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input0, "input", /*input0_input_handler*/ ctx[12]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*deposit*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input1, "input", /*input1_input_handler*/ ctx[13]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div10, "click", /*withdraw*/ ctx[9])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].fraction.name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*data*/ 1 && t3_value !== (t3_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*data*/ ctx[0].fraction.balance) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].fraction.rank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*data*/ 1 && t8_value !== (t8_value = /*data*/ ctx[0].fraction.needRank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+			if (dirty & /*data*/ 1 && t11_value !== (t11_value = /*data*/ ctx[0].config?.fractionFee + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+
+			if (dirty & /*depositAmount*/ 4 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input0.value) !== /*depositAmount*/ ctx[2]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input0, /*depositAmount*/ ctx[2]);
+			}
+
+			if (dirty & /*toInt, depositAmount*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div7, "disabled", (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*depositAmount*/ ctx[2]) <= 0);
+			}
+
+			if (dirty & /*withdrawAmount*/ 8 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input1.value) !== /*withdrawAmount*/ ctx[3]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input1, /*withdrawAmount*/ ctx[3]);
+			}
+
+			if (dirty & /*data, toInt, withdrawAmount*/ 9) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div10, "disabled", !/*data*/ ctx[0].fraction.canPay || (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*withdrawAmount*/ ctx[3]) <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div12);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div0;
+	let t1;
+	let div8;
+	let div5;
+	let div1;
+	let t3;
+	let div2;
+	let t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*data*/ ctx[0].wallet?.balance || 0) + "";
+	let t4;
+	let t5;
+	let div3;
+	let span0;
+	let span1;
+	let t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[6]) + "";
+	let t7;
+	let t8;
+	let div4;
+	let span2;
+	let span3;
+	let t10_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*data*/ ctx[0].wallet?.reserved || 0) + "";
+	let t10;
+	let t11;
+	let div7;
+	let div6;
+	let t13;
+	let t14;
+
+	function select_block_type(ctx, dirty) {
+		if (/*rate*/ ctx[5] > 0) return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block0 = current_block_type(ctx);
+	let if_block1 = /*data*/ ctx[0].fraction && create_if_block(ctx);
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Кошельки";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Личный кошелёк";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Свободно";
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "В P2P-заявках";
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6.textContent = "Обменник";
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block0.c();
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "big svelte-zytwo7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bm__line");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__card box svelte-zytwo7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "bm__muted");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__card box svelte-zytwo7");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "grid svelte-zytwo7");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t13);
+			if_block0.m(div7, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t14);
+			if (if_block1) if_block1.m(div8, null);
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*data*/ 1 && t4_value !== (t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*data*/ ctx[0].wallet?.balance || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty & /*available*/ 64 && t7_value !== (t7_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*available*/ ctx[6]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty & /*data*/ 1 && t10_value !== (t10_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*data*/ ctx[0].wallet?.reserved || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block0) {
+				if_block0.p(ctx, dirty);
+			} else {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div7, null);
+				}
+			}
+
+			if (/*data*/ ctx[0].fraction) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					if_block1.m(div8, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div8);
+			if_block0.d();
+			if (if_block1) if_block1.d();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let available;
+	let rate;
+	let exN;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+	let exchangeBtc = "";
+	const exchange = () => exN > 0 && (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("exchange", { btc: exN });
+	let depositAmount = "";
+	let withdrawAmount = "";
+	const deposit = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(depositAmount) > 0 && (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("fDeposit", { amount: (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(depositAmount) });
+	const withdraw = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(withdrawAmount) > 0 && (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("fWithdraw", { amount: (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(withdrawAmount) });
+
+	function input_input_handler() {
+		exchangeBtc = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		($$invalidate(1, exchangeBtc), $$invalidate(10, lastResult));
+	}
+
+	function input0_input_handler() {
+		depositAmount = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		($$invalidate(2, depositAmount), $$invalidate(10, lastResult));
+	}
+
+	function input1_input_handler() {
+		withdrawAmount = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(this.value);
+		($$invalidate(3, withdrawAmount), $$invalidate(10, lastResult));
+	}
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(0, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(10, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(6, available = (data.wallet?.balance || 0) - (data.wallet?.reserved || 0));
+		}
+
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(5, rate = Number(data.config?.rate) || 0);
+		}
+
+		if ($$self.$$.dirty & /*lastResult*/ 1024) {
+			$: if (lastResult && lastResult.ok) {
+				if (lastResult.action === "exchange") $$invalidate(1, exchangeBtc = "");
+				if (lastResult.action === "fDeposit") $$invalidate(2, depositAmount = "");
+				if (lastResult.action === "fWithdraw") $$invalidate(3, withdrawAmount = "");
+			}
+		}
+
+		if ($$self.$$.dirty & /*exchangeBtc*/ 2) {
+			$: $$invalidate(4, exN = (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(exchangeBtc));
+		}
+	};
+
+	return [
+		data,
+		exchangeBtc,
+		depositAmount,
+		withdrawAmount,
+		exN,
+		rate,
+		available,
+		exchange,
+		deposit,
+		withdraw,
+		lastResult,
+		input_input_handler,
+		input0_input_handler,
+		input1_input_handler
+	];
+}
+
+class Wallets extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 0, lastResult: 10 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Wallets);
 
 
 /***/ }),
@@ -196798,29 +203177,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_tinder_png__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_assets_images_tinder_png__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _assets_images_marketplace_svg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../assets/images/marketplace.svg */ "./src/views/player/hudevo/phonenew/assets/images/marketplace.svg");
 /* harmony import */ var _assets_images_marketplace_svg__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_assets_images_marketplace_svg__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _assets_images_radio_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/images/radio.png */ "./src/views/player/hudevo/phonenew/assets/images/radio.png");
-/* harmony import */ var _assets_images_radio_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_images_radio_png__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/images/forbes.png */ "./src/views/player/hudevo/phonenew/assets/images/forbes.png");
-/* harmony import */ var _assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/images/trucker.png */ "./src/views/player/hudevo/phonenew/assets/images/trucker.png");
-/* harmony import */ var _assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _assets_images_auction_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/images/auction.png */ "./src/views/player/hudevo/phonenew/assets/images/auction.png");
-/* harmony import */ var _assets_images_auction_png__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_assets_images_auction_png__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/images/call.png */ "./src/views/player/hudevo/phonenew/assets/images/call.png");
-/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_assets_images_call_png__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/images/messages.png */ "./src/views/player/hudevo/phonenew/assets/images/messages.png");
-/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/images/camera.png */ "./src/views/player/hudevo/phonenew/assets/images/camera.png");
-/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/images/settings.png */ "./src/views/player/hudevo/phonenew/assets/images/settings.png");
-/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/images/gift.png */ "./src/views/player/hudevo/phonenew/assets/images/gift.png");
-/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./weather/widget.svelte */ "./src/views/player/hudevo/phonenew/components/weather/widget.svelte");
-/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
-/* harmony import */ var _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/data */ "./src/views/player/hudevo/phonenew/data.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _assets_images_darknet_png__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../assets/images/darknet.png */ "./src/views/player/hudevo/phonenew/assets/images/darknet.png");
+/* harmony import */ var _assets_images_darknet_png__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_assets_images_darknet_png__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _assets_images_radio_png__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../assets/images/radio.png */ "./src/views/player/hudevo/phonenew/assets/images/radio.png");
+/* harmony import */ var _assets_images_radio_png__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_assets_images_radio_png__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../assets/images/forbes.png */ "./src/views/player/hudevo/phonenew/assets/images/forbes.png");
+/* harmony import */ var _assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/images/trucker.png */ "./src/views/player/hudevo/phonenew/assets/images/trucker.png");
+/* harmony import */ var _assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/images/auction.png */ "./src/views/player/hudevo/phonenew/assets/images/auction.png");
+/* harmony import */ var _assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/images/call.png */ "./src/views/player/hudevo/phonenew/assets/images/call.png");
+/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_assets_images_call_png__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/images/messages.png */ "./src/views/player/hudevo/phonenew/assets/images/messages.png");
+/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/images/camera.png */ "./src/views/player/hudevo/phonenew/assets/images/camera.png");
+/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/images/settings.png */ "./src/views/player/hudevo/phonenew/assets/images/settings.png");
+/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/images/gift.png */ "./src/views/player/hudevo/phonenew/assets/images/gift.png");
+/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./weather/widget.svelte */ "./src/views/player/hudevo/phonenew/components/weather/widget.svelte");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/data */ "./src/views/player/hudevo/phonenew/data.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
 /* src/views/player/hudevo/phonenew/components/mainmenu.svelte generated by Svelte v3.59.2 */
+
 
 
 
@@ -196852,24 +203234,24 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[9] = list[i];
+	child_ctx[11] = list[i];
 	return child_ctx;
 }
 
-// (159:12) {#if item.jobId === undefined || item.jobId === $charWorkID}
+// (173:12) {#if item.jobId === undefined || item.jobId === $charWorkID}
 function create_if_block(ctx) {
 	let div2;
 	let div0;
 	let t0;
 	let div1;
-	let t1_value = /*item*/ ctx[9].name + "";
+	let t1_value = /*item*/ ctx[11].name + "";
 	let t1;
 	let t2;
 	let mounted;
 	let dispose;
 
 	function click_handler() {
-		return /*click_handler*/ ctx[4](/*item*/ ctx[9]);
+		return /*click_handler*/ ctx[5](/*item*/ ctx[11]);
 	}
 
 	return {
@@ -196881,7 +203263,7 @@ function create_if_block(ctx) {
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*item*/ ctx[9].icon + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*item*/ ctx[11].icon + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "newphone__mainmenu_name");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "newphone__mainmenu_element");
 		},
@@ -196900,6 +203282,12 @@ function create_if_block(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
+
+			if (dirty & /*shownMenu*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*item*/ ctx[11].icon + ")");
+			}
+
+			if (dirty & /*shownMenu*/ 2 && t1_value !== (t1_value = /*item*/ ctx[11].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
@@ -196909,10 +203297,10 @@ function create_if_block(ctx) {
 	};
 }
 
-// (158:8) {#each menuArray as item}
+// (172:8) {#each shownMenu as item}
 function create_each_block(ctx) {
 	let if_block_anchor;
-	let if_block = (/*item*/ ctx[9].jobId === undefined || /*item*/ ctx[9].jobId === /*$charWorkID*/ ctx[1]) && create_if_block(ctx);
+	let if_block = (/*item*/ ctx[11].jobId === undefined || /*item*/ ctx[11].jobId === /*$charWorkID*/ ctx[2]) && create_if_block(ctx);
 
 	return {
 		c() {
@@ -196924,7 +203312,7 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (/*item*/ ctx[9].jobId === undefined || /*item*/ ctx[9].jobId === /*$charWorkID*/ ctx[1]) {
+			if (/*item*/ ctx[11].jobId === undefined || /*item*/ ctx[11].jobId === /*$charWorkID*/ ctx[2]) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
@@ -196969,8 +203357,8 @@ function create_fragment(ctx) {
 	let mounted;
 	let dispose;
 	header = new _header_svelte__WEBPACK_IMPORTED_MODULE_2__.default({});
-	weatherwidget = new _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_22__.default({});
-	let each_value = /*menuArray*/ ctx[2];
+	weatherwidget = new _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_23__.default({});
+	let each_value = /*shownMenu*/ ctx[1];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -197005,16 +203393,16 @@ function create_fragment(ctx) {
 			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "newphone__mainmenu_grid");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background-image", "url(" + (_assets_images_call_png__WEBPACK_IMPORTED_MODULE_17___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background-image", "url(" + (_assets_images_call_png__WEBPACK_IMPORTED_MODULE_18___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background-image", "url(" + (_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_18___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background-image", "url(" + (_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "background-image", "url(" + (_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_19___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "background-image", "url(" + (_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div7, "background-image", "url(" + (_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_20___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div7, "background-image", "url(" + (_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "newphone__mainmenu_bottom");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "newphone__background");
@@ -197051,18 +203439,18 @@ function create_fragment(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*click_handler_1*/ ctx[5]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*click_handler_2*/ ctx[6]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_3*/ ctx[7]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*click_handler_4*/ ctx[8])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*click_handler_1*/ ctx[6]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*click_handler_2*/ ctx[7]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_3*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*click_handler_4*/ ctx[9])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*onSelectPage, menuArray, undefined, $charWorkID*/ 14) {
-				each_value = /*menuArray*/ ctx[2];
+			if (dirty & /*onSelectPage, shownMenu, undefined, $charWorkID*/ 14) {
+				each_value = /*shownMenu*/ ctx[1];
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -197095,7 +203483,7 @@ function create_fragment(ctx) {
 
 			if (!div10_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div10_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div10, svelte_transition__WEBPACK_IMPORTED_MODULE_23__.fade, { duration: 200 });
+					div10_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div10, svelte_transition__WEBPACK_IMPORTED_MODULE_24__.fade, { duration: 200 });
 					div10_intro.start();
 				});
 			}
@@ -197119,8 +203507,9 @@ function create_fragment(ctx) {
 }
 
 function instance($$self, $$props, $$invalidate) {
+	let shownMenu;
 	let $charWorkID;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_1__.charWorkID, $$value => $$invalidate(1, $charWorkID = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_1__.charWorkID, $$value => $$invalidate(2, $charWorkID = $$value));
 
 	let menuArray = [
 		{
@@ -197150,7 +203539,7 @@ function instance($$self, $$props, $$invalidate) {
 		},
 		{
 			name: "Развозчик",
-			icon: (_assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_15___default()),
+			icon: (_assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16___default()),
 			link: "trucker",
 			jobId: 6
 		},
@@ -197171,12 +203560,12 @@ function instance($$self, $$props, $$invalidate) {
         }, */
 		{
 			name: "Радио",
-			icon: (_assets_images_radio_png__WEBPACK_IMPORTED_MODULE_13___default()),
+			icon: (_assets_images_radio_png__WEBPACK_IMPORTED_MODULE_14___default()),
 			link: "radio"
 		},
 		{
 			name: "Forbes",
-			icon: (_assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_14___default()),
+			icon: (_assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_15___default()),
 			link: "forbes"
 		},
 		/*  {
@@ -197191,12 +203580,12 @@ function instance($$self, $$props, $$invalidate) {
  }, */
 		{
 			name: "Аукцион",
-			icon: (_assets_images_auction_png__WEBPACK_IMPORTED_MODULE_16___default()),
+			icon: (_assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17___default()),
 			link: "auction"
 		},
 		{
 			name: "Подарок",
-			icon: (_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_21___default()),
+			icon: (_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22___default()),
 			link: 101
 		},
 		{
@@ -197211,16 +203600,28 @@ function instance($$self, $$props, $$invalidate) {
 		}
 	];
 
+	// «Чёрный рынок» виден только при включённом VPN (настройки телефона); доступ всё равно проверяет сервер
+	let isVpn = false;
+
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientAsyncToGroup)("settings.isVpn").then(result => $$invalidate(4, isVpn = !!result));
+	window.events.addEvent("phone.vpn", value => $$invalidate(4, isVpn = !!value));
+
 	const onSelectPage = pageName => {
 		if (typeof pageName === "string") {
+			if (pageName === "blackMarket") {
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientToGroup)("close");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClient)("client.blackmarket.openApp");
+				return;
+			}
+
 			if (pageName === "marketPlace") {
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_25__.executeClientToGroup)("close");
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_25__.executeClient)("client.marketPlace.openApp");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientToGroup)("close");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClient)("client.marketPlace.openApp");
 				return;
 			}
 
 			if (pageName === "camera") {
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_25__.executeClientAsyncToGroup)("getGallery").then(result => {
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientAsyncToGroup)("getGallery").then(result => {
 					result = JSON.parse(result);
 
 					if (result.length >= 25) {
@@ -197230,14 +203631,14 @@ function instance($$self, $$props, $$invalidate) {
 				});
 			} else _stores__WEBPACK_IMPORTED_MODULE_3__.currentPage.set(pageName);
 		} else if (typeof pageName === "number") {
-			(0,_views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_24__.onMessage)(pageName);
-			(0,api_rage__WEBPACK_IMPORTED_MODULE_25__.executeClientToGroup)("messageDefault", pageName);
+			(0,_views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_25__.onMessage)(pageName);
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientToGroup)("messageDefault", pageName);
 		}
 	};
 
 	let background = "";
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_25__.executeClientAsyncToGroup)("settings.wallpaper").then(result => {
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientAsyncToGroup)("settings.wallpaper").then(result => {
 		$$invalidate(0, background = result);
 	});
 
@@ -197247,11 +203648,27 @@ function instance($$self, $$props, $$invalidate) {
 	const click_handler_3 = () => onSelectPage("camera");
 	const click_handler_4 = () => onSelectPage("settings");
 
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*isVpn*/ 16) {
+			$: $$invalidate(1, shownMenu = isVpn
+			? [
+					...menuArray,
+					{
+						name: "Чёрный рынок",
+						icon: (_assets_images_darknet_png__WEBPACK_IMPORTED_MODULE_13___default()),
+						link: "blackMarket"
+					}
+				]
+			: menuArray);
+		}
+	};
+
 	return [
 		background,
+		shownMenu,
 		$charWorkID,
-		menuArray,
 		onSelectPage,
+		isVpn,
 		click_handler,
 		click_handler_1,
 		click_handler_2,
@@ -213278,6 +219695,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-c4rqw8", ".newphone__settings_icon.vpn.svelte-c4rqw8{display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg, #3a3f4b, #111318);color:#9fe870;font-size:9px;font-weight:700;letter-spacing:0.5px}");
+}
+
+// (129:8) {#if $charSim !== -1}
 function create_if_block(ctx) {
 	let div1;
 	let div0;
@@ -213297,7 +219719,7 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onRemoveSim*/ ctx[5]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onRemoveSim*/ ctx[6]);
 				mounted = true;
 			}
 		},
@@ -213311,7 +219733,7 @@ function create_if_block(ctx) {
 }
 
 function create_fragment(ctx) {
-	let div36;
+	let div41;
 	let div2;
 	let div0;
 	let t1;
@@ -213325,13 +219747,13 @@ function create_fragment(ctx) {
 	let t5;
 	let div5;
 
-	let t6_value = (/*$charSim*/ ctx[3] == -1
+	let t6_value = (/*$charSim*/ ctx[4] == -1
 	? "Нет сим-карты"
-	: /*$charSim*/ ctx[3]) + "";
+	: /*$charSim*/ ctx[4]) + "";
 
 	let t6;
 	let t7;
-	let div35;
+	let div40;
 	let div13;
 	let div9;
 	let t8;
@@ -213344,50 +219766,62 @@ function create_fragment(ctx) {
 	let t11;
 	let span0;
 	let t12;
-	let div19;
-	let div15;
-	let t13;
 	let div18;
-	let div16;
-	let t15;
+	let div14;
+	let t14;
 	let div17;
+	let div15;
+	let t16;
+	let div16;
 	let label1;
 	let input1;
-	let t16;
-	let span1;
 	let t17;
+	let span1;
+	let t18;
 	let div24;
 	let div20;
-	let t18;
+	let t19;
 	let div23;
 	let div21;
-	let t20;
-	let div22;
 	let t21;
+	let div22;
+	let label2;
+	let input2;
+	let t22;
+	let span2;
+	let t23;
 	let div29;
 	let div25;
-	let t22;
+	let t24;
 	let div28;
 	let div26;
-	let t24;
+	let t26;
 	let div27;
-	let t25;
+	let t27;
 	let div34;
 	let div30;
-	let t26;
+	let t28;
 	let div33;
 	let div31;
-	let t28;
+	let t30;
 	let div32;
-	let t29;
-	let div36_intro;
+	let t31;
+	let div39;
+	let div35;
+	let t32;
+	let div38;
+	let div36;
+	let t34;
+	let div37;
+	let t35;
+	let div41_intro;
 	let mounted;
 	let dispose;
-	let if_block = /*$charSim*/ ctx[3] !== -1 && create_if_block(ctx);
+	let if_block = /*$charSim*/ ctx[4] !== -1 && create_if_block(ctx);
 
 	return {
 		c() {
-			div36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Настройки')}`;
@@ -213404,7 +219838,7 @@ function create_fragment(ctx) {
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
 			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div40 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div9.innerHTML = `<div class="phoneicons-black-plane"></div>`;
@@ -213419,47 +219853,61 @@ function create_fragment(ctx) {
 			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
 			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div15.innerHTML = `<div class="forbes"></div>`;
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div16.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Приватность в Forbes')}`;
-			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div14.textContent = "VPN";
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div15.textContent = "VPN";
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			label1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("label");
 			input1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
-			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
 			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div20.innerHTML = `<div class="forbes"></div>`;
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div21.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Обои')}`;
-			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div21.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Приватность в Forbes')}`;
 			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			label2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("label");
+			input2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div26.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Рингтоны')}`;
-			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div26.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Обои')}`;
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div31.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Уведомления')}`;
-			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div31.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Рингтоны')}`;
+			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div38 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div36.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Уведомления')}`;
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div37 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block) if_block.c();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "newphone__maps_header");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "box-center box-between w-1 newphone__project_padding16");
@@ -213476,38 +219924,47 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "sound__input-block switch-box");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "box-between w-1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "newphone__settings_element");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "newphone__settings_icon forbes");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "newphone__settings_icon vpn svelte-c4rqw8");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input1, "type", "checkbox");
-			input1.checked = /*forbesVisible*/ ctx[2];
+			input1.checked = /*isVpn*/ ctx[2];
 			input1.disabled = true;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "slider round");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label1, "class", "switch");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "sound__input-block switch-box");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "box-between w-1");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "newphone__settings_element");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "newphone__settings_icon wallpaper");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div22, "class", "phoneicons-Button newphone__chevron-back");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "sound__input-block switch-box");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "box-between w-1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "newphone__settings_element");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "newphone__settings_icon forbes");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input2, "type", "checkbox");
+			input2.checked = /*forbesVisible*/ ctx[3];
+			input2.disabled = true;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "slider round");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label2, "class", "switch");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div22, "class", "sound__input-block switch-box");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div23, "class", "box-between w-1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div24, "class", "newphone__settings_element");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div25, "class", "newphone__settings_icon sound");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div25, "class", "newphone__settings_icon wallpaper");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div27, "class", "phoneicons-Button newphone__chevron-back");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div28, "class", "box-between w-1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div29, "class", "newphone__settings_element");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div30, "class", "newphone__settings_icon sounds");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div30, "class", "newphone__settings_icon sound");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div32, "class", "phoneicons-Button newphone__chevron-back");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div33, "class", "box-between w-1 last-child");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div33, "class", "box-between w-1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div34, "class", "newphone__settings_element");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div35, "class", "newphone__contacts_list n-p big");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div36, "class", "newphone__settings_content");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div35, "class", "newphone__settings_icon sounds");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div37, "class", "phoneicons-Button newphone__chevron-back");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div38, "class", "box-between w-1 last-child");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div39, "class", "newphone__settings_element");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div40, "class", "newphone__contacts_list n-p big");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div41, "class", "newphone__settings_content");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div36, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div36, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div41, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div41, div2);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div36, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div36, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div41, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div41, div7);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
@@ -213515,9 +219972,9 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t5);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div36, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div36, div35);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div41, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div41, div40);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, div13);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div9);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t8);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
@@ -213528,77 +219985,94 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label0, input0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label0, t11);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label0, span0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div19);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, t13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div18);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div16);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, div18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t14);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, label1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, div15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, div16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, label1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label1, input1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label1, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label1, t17);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label1, span1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, div24);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, div20);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, t19);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div24, div23);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, div21);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, t21);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, div22);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t21);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div29);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, label2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label2, input2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label2, t22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label2, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, t23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, div29);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, div25);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, t22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, t24);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div29, div28);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, div26);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, t26);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div28, div27);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t25);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, div34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, t27);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, div34);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, div30);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, t28);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div34, div33);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div33, div31);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div33, t28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div33, t30);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div33, div32);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div35, t29);
-			if (if_block) if_block.m(div35, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, t31);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, div39);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div39, div35);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div39, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div39, div38);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div38, div36);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div38, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div38, div37);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div40, t35);
+			if (if_block) if_block.m(div40, null);
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div11, "click", /*updateAirStatus*/ ctx[4]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div17, "click", /*updateForbesVisible*/ ctx[6]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div24, "click", /*click_handler*/ ctx[7]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div29, "click", /*click_handler_1*/ ctx[8]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div34, "click", /*click_handler_2*/ ctx[9])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div11, "click", /*updateAirStatus*/ ctx[5]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div16, "click", /*updateVpn*/ ctx[7]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div22, "click", /*updateForbesVisible*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div29, "click", /*click_handler*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div34, "click", /*click_handler_1*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div39, "click", /*click_handler_2*/ ctx[11])
 				];
 
 				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*$charSim*/ 8 && t6_value !== (t6_value = (/*$charSim*/ ctx[3] == -1
+			if (dirty & /*$charSim*/ 16 && t6_value !== (t6_value = (/*$charSim*/ ctx[4] == -1
 			? "Нет сим-карты"
-			: /*$charSim*/ ctx[3]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			: /*$charSim*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
 
 			if (dirty & /*isAir*/ 2) {
 				input0.checked = /*isAir*/ ctx[1];
 			}
 
-			if (dirty & /*forbesVisible*/ 4) {
-				input1.checked = /*forbesVisible*/ ctx[2];
+			if (dirty & /*isVpn*/ 4) {
+				input1.checked = /*isVpn*/ ctx[2];
 			}
 
-			if (/*$charSim*/ ctx[3] !== -1) {
+			if (dirty & /*forbesVisible*/ 8) {
+				input2.checked = /*forbesVisible*/ ctx[3];
+			}
+
+			if (/*$charSim*/ ctx[4] !== -1) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
 					if_block = create_if_block(ctx);
 					if_block.c();
-					if_block.m(div35, null);
+					if_block.m(div40, null);
 				}
 			} else if (if_block) {
 				if_block.d(1);
@@ -213606,16 +220080,16 @@ function create_fragment(ctx) {
 			}
 		},
 		i(local) {
-			if (!div36_intro) {
+			if (!div41_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div36_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div36, svelte_transition__WEBPACK_IMPORTED_MODULE_2__.fade, {});
-					div36_intro.start();
+					div41_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div41, svelte_transition__WEBPACK_IMPORTED_MODULE_2__.fade, {});
+					div41_intro.start();
 				});
 			}
 		},
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div36);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div41);
 			if (if_block) if_block.d();
 			mounted = false;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
@@ -213625,7 +220099,7 @@ function create_fragment(ctx) {
 
 function instance($$self, $$props, $$invalidate) {
 	let $charSim;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_3__.charSim, $$value => $$invalidate(3, $charSim = $$value));
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_3__.charSim, $$value => $$invalidate(4, $charSim = $$value));
 	let { onSelectedView } = $$props;
 	let isAir = false;
 
@@ -213644,15 +220118,29 @@ function instance($$self, $$props, $$invalidate) {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_4__.executeClientToGroup)("settings.removeSim");
 	};
 
+	// VPN: только на эту сессию, сервер решает сам (Чёрный рынок: src_client/phone/blackmarket.js)
+	let isVpn = false;
+
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_4__.executeClientAsyncToGroup)("settings.isVpn").then(result => {
+		$$invalidate(2, isVpn = !!result);
+	});
+
+	window.events.addEvent("phone.vpn", value => $$invalidate(2, isVpn = !!value));
+
+	const updateVpn = () => {
+		if (!window.loaderData.delay("phone.updateVpn", 1)) return;
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_4__.executeClientToGroup)("settings.vpn");
+	};
+
 	let forbesVisible = false;
 
 	(0,api_rage__WEBPACK_IMPORTED_MODULE_4__.executeClientAsyncToGroup)("settings.forbesVisible").then(result => {
-		$$invalidate(2, forbesVisible = result);
+		$$invalidate(3, forbesVisible = result);
 	});
 
 	const updateForbesVisible = () => {
 		if (!window.loaderData.delay("phone.updateAirStatus", 1 * 60)) return;
-		$$invalidate(2, forbesVisible = !forbesVisible);
+		$$invalidate(3, forbesVisible = !forbesVisible);
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_4__.executeClientToGroup)("settings.forbesVisible");
 	};
 
@@ -213667,10 +220155,12 @@ function instance($$self, $$props, $$invalidate) {
 	return [
 		onSelectedView,
 		isAir,
+		isVpn,
 		forbesVisible,
 		$charSim,
 		updateAirStatus,
 		onRemoveSim,
+		updateVpn,
 		updateForbesVisible,
 		click_handler,
 		click_handler_1,
@@ -213681,7 +220171,7 @@ function instance($$self, $$props, $$invalidate) {
 class Main extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { onSelectedView: 0 });
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { onSelectedView: 0 }, add_css);
 	}
 }
 
@@ -293235,6 +299725,73 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/api.js":
+/*!**************************************!*\
+  !*** ./src/views/blackmarket/api.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "action": () => (/* binding */ action),
+/* harmony export */   "btc": () => (/* binding */ btc),
+/* harmony export */   "usd": () => (/* binding */ usd),
+/* harmony export */   "itemIcon": () => (/* binding */ itemIcon),
+/* harmony export */   "timeLeft": () => (/* binding */ timeLeft),
+/* harmony export */   "categories": () => (/* binding */ categories),
+/* harmony export */   "toInt": () => (/* binding */ toInt)
+/* harmony export */ });
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var json_itemsInfo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! json/itemsInfo */ "./src/json/itemsInfo.js");
+/* harmony import */ var _views_player_menu_elements_inventory_getPng__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/views/player/menu/elements/inventory/getPng */ "./src/views/player/menu/elements/inventory/getPng.js");
+// Общие функции приложения «Чёрный рынок»
+
+
+
+
+
+// Любое действие уходит на сервер: клиент передаёт только id и введённые числа
+const action = (name, args = {}) => (0,api_rage__WEBPACK_IMPORTED_MODULE_0__.executeClient)("client.blackmarket.action", name, JSON.stringify(args));
+
+const btc = (value) => `${(0,api_formatter__WEBPACK_IMPORTED_MODULE_1__.format)("money", Math.round(Number(value) || 0))} BTC`;
+const usd = (value) => `$${(0,api_formatter__WEBPACK_IMPORTED_MODULE_1__.format)("money", Math.round(Number(value) || 0))}`;
+
+const itemIcon = (itemId) => {
+    try {
+        return (0,_views_player_menu_elements_inventory_getPng__WEBPACK_IMPORTED_MODULE_3__.getPng)({ ItemId: itemId, Data: "" }, json_itemsInfo__WEBPACK_IMPORTED_MODULE_2__.itemsInfo[itemId] || {});
+    } catch (e) {
+        return "";
+    }
+};
+
+const timeLeft = (minutes) => {
+    minutes = Math.max(0, Number(minutes) || 0);
+    if (minutes >= 60 * 24) return `${Math.floor(minutes / 60 / 24)} д ${Math.floor(minutes / 60) % 24} ч`;
+    if (minutes >= 60) return `${Math.floor(minutes / 60)} ч ${minutes % 60} мин`;
+    return `${minutes} мин`;
+};
+
+const categories = [
+    { key: "all", name: "Всё" },
+    { key: "drugs", name: "Вещества" },
+    { key: "weapons", name: "Оружие" },
+    { key: "ammo", name: "Патроны" },
+    { key: "melee", name: "Холодное" },
+    { key: "mods", name: "Обвесы" },
+    { key: "armor", name: "Броня" },
+    { key: "tools", name: "Инструменты" },
+];
+
+const toInt = (value) => {
+    const n = Math.floor(Number(String(value).replace(/\s/g, "").replace(",", ".")));
+    return Number.isFinite(n) ? n : 0;
+};
 
 
 /***/ }),

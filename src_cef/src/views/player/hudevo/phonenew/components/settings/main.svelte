@@ -25,6 +25,19 @@
         executeClientToGroup("settings.removeSim")
     }
 
+    // VPN: только на эту сессию, сервер решает сам (Чёрный рынок: src_client/phone/blackmarket.js)
+    let isVpn = false;
+    executeClientAsyncToGroup("settings.isVpn").then((result) => {
+        isVpn = !!result;
+    });
+    window.events.addEvent("phone.vpn", (value) => isVpn = !!value);
+
+    const updateVpn = () => {
+        if (!window.loaderData.delay ("phone.updateVpn", 1))
+            return;
+        executeClientToGroup("settings.vpn")
+    }
+
     let forbesVisible = false;
     executeClientAsyncToGroup("settings.forbesVisible").then((result) => {
         forbesVisible = result;
@@ -61,6 +74,18 @@
                 <div class="sound__input-block switch-box" on:click={updateAirStatus}>
                     <label class="switch">
                         <input type="checkbox" checked={isAir} disabled >
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="newphone__settings_element">
+            <div class="newphone__settings_icon vpn">VPN</div>
+            <div class="box-between w-1">
+                <div>VPN</div>
+                <div class="sound__input-block switch-box" on:click={updateVpn}>
+                    <label class="switch">
+                        <input type="checkbox" checked={isVpn} disabled >
                         <span class="slider round"></span>
                     </label>
                 </div>
@@ -110,3 +135,15 @@
         {/if}
     </div>
 </div>
+<style>
+    .newphone__settings_icon.vpn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #3a3f4b, #111318);
+        color: #9fe870;
+        font-size: 9px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+</style>

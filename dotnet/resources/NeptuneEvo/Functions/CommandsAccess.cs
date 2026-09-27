@@ -253,6 +253,9 @@ namespace NeptuneEvo.Functions
         public const string tr_ev_start = "tr_ev_start";
         public const string setgarage = "setgarage";
         public const string creategarage = "creategarage";
+        public const string crypto = "crypto";
+        public const string fcrypto = "fcrypto";
+        public const string blackmarket = "bm";
         public const string removegarage = "removegarage";
         public const string createhouse = "createhouse";
         public const string tphouse = "tphouse";
@@ -504,6 +507,9 @@ namespace NeptuneEvo.Functions
             { AdminCommands.Vehchange, 8 },
             { AdminCommands.offgivereds, 8 },
             { AdminCommands.creategarage, 8 },
+            { AdminCommands.crypto, 5 },
+            { AdminCommands.fcrypto, 5 },
+            { AdminCommands.blackmarket, 5 },
             { AdminCommands.setbliporg, 8 },
             { AdminCommands.delbliporg, 8 },
             { AdminCommands.setmicrophone, 8 },

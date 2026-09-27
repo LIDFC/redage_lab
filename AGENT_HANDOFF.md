@@ -295,6 +295,16 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - **HUD**: «MkeiitRR» вместо RedAge.net, логотип «M», скруглённые плашки и спидометр (блок в конце `hudevo/main.sass`). Заголовок паузы — `src_client/player/auth.js`. Имя сервера в плашке — `settings/serverSettings.json` → `ServerName`.
 - Удалена реклама RAGEMP.PRO (base64-строка в `Character/Load/Repository.cs`).
 
+## 7i. Чёрный рынок и крипта (`NeptuneEvo/BlackMarket`)
+
+- Доступ: VPN в настройках телефона (только на сессию, `Vpn/VpnState.cs`), при включённом VPN в меню телефона появляется «Чёрный рынок» (`views/blackmarket`, клиент `src_client/phone/blackmarket.js`). Сервер проверяет VPN на `server.blackmarket.open` и каждом `server.blackmarket.action`.
+- Крипта (`Crypto/`): личные кошельки (`crypto_wallets`, `reserved` — заблокировано P2P), кошельки криминальных фракций (банды, мафии, байкеры), системный кошелёк комиссий. Все мутации — под `BlackMarketCore.Sync` в главном потоке; запись в БД — очередь `BlackMarketRepository` (один поток, по порядку), `Flush()` при сохранении сервера.
+- Лоты (`Methods/Lots.cs`): товар уходит из инвентаря в локацию `bmlot_{id}` (обычная `items_data`), частичная покупка, смена цены, снятие/срок → возврат в инвентарь, остаток — на личный склад. Whitelist и все параметры — `settings/blackmarket.json` (строится по `ItemsInfo`).
+- Закладки (`Deliveries/DropManager.cs`): после оплаты товар → `bmdrop_{id}`, объект `prop_mp_drug_package` в случайной точке (по умолчанию — точки аирдропов дальше 220 м от участков полиции), блип только покупателю, забрать может любой (E + 5 с). 90 мин / 30 мин после выхода покупателя, восстанавливаются после рестарта.
+- P2P (`P2P/P2PManager.cs`): BTC за наличные, частичная покупка, комиссия в BTC на системный кошелёк. Переводы по номеру телефона, взнос/вывод кошелька банды, обменник $→BTC по курсу из конфига.
+- История без имён — `crypto_history`, полный аудит — `blackmarket_audit`. Команды: `/crypto`, `/fcrypto`, `/bm` (см. `Admin/`). SQL-схема: `database/systems/blackmarket.sql`.
+- Обнал (`Crypto/CashOut.cs`, вкладка «Обнал»): только у Мавра (`cashoutPoint`, 5 м). Сумка `BagWithMoney` → BTC (комиссия 5%), BTC → наличные (комиссия 10%, шанс розыска 15% — +1 звезда). Параметры `launderFeePercent`, `cashoutFeePercent`, `cashoutWantedChance`, `/bm cfg launderfee|cashoutfee|wanted`.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

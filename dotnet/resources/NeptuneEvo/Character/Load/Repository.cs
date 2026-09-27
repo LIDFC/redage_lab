@@ -318,6 +318,7 @@ namespace NeptuneEvo.Character.Load
                                 return;
 
                             Main.HelloText(player);
+                            BlackMarket.Deliveries.DropManager.OnCharacterLoaded(player);
 
 
                             //

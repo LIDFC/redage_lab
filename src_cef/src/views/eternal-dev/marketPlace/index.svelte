@@ -45,7 +45,7 @@
             return;
 
         if (type == "exit")
-            return executeClient("client.marketPlace.closeApp");
+            return executeClient("client.marketPlace.closeApp", true);
 
         currentCategory = type;
         executeClient("client.marketPlace.setPage", type);

@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import Header from '../header.svelte'
     import HomeButton from '../homebutton.svelte'
     import Loader from './../loader.svelte'
@@ -69,11 +70,11 @@
         <div class="auto__head">
             <div>
                 <div class="auto__head_title">Авто</div>
-                <div class="auto__head_sub">{panel ? 'Вы в машине' : `Машин: ${carsList.filter(c => !c.isRent).length}`}</div>
+                <div class="auto__head_sub">{panel ? (panel.remote ? `Рядом · ${panel.distance} м` : 'Вы в машине') : `Машин: ${carsList.filter(c => !c.isRent).length}`}</div>
             </div>
             <div class="auto__tabs">
-                <div class="auto__tab" class:active={tab === "panel"} class:disabled={!panel} on:click={() => panel && (tab = "panel")}>Панель</div>
-                <div class="auto__tab" class:active={tab === "cars"} on:click={() => tab = "cars"}>Гараж</div>
+                <div class="auto__tab" use:sound={"tap"} class:active={tab === "panel"} class:disabled={!panel} on:click={() => panel && (tab = "panel")}>Панель</div>
+                <div class="auto__tab" use:sound={"tap"} class:active={tab === "cars"} on:click={() => tab = "cars"}>Гараж</div>
             </div>
         </div>
         <div class="auto__body">

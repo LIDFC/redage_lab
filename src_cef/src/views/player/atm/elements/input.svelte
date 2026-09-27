@@ -3,6 +3,7 @@
     import { format } from 'api/formatter'
     import { charBankMoney } from 'store/chars';
     import { onMount } from 'svelte';
+    import { playSound, sound } from 'api/uiSound'
 
     export let activeMain;
     export let subdata;
@@ -26,8 +27,13 @@
     }
 
     const onNext = () => {
-        if (!value || !window.loaderData.delay ("atm.next", 1))
+        if (!value) {
+            playSound("error");
             return;
+        }
+        if (!window.loaderData.delay ("atm.next", 1))
+            return;
+        playSound("atmOk");
         executeClient ('atmVal', value);
         value = "";
     }
@@ -37,8 +43,10 @@
         value = "";
     }
 
+    // Как на настоящем банкомате: «пип» на каждую цифру
     const onKey = (e) => {
         if (e.key === "Enter") onNext();
+        else if (/^[0-9]$/.test(e.key) || e.key === "Backspace") playSound("atm");
     }
 
     onMount(() => input && input.focus());
@@ -62,12 +70,12 @@
     {#if quick.length}
         <div class="atm__quick">
             {#each quick as sum}
-                <div on:click={() => value = String(sum)}>${format("money", sum)}</div>
+                <div use:sound={"atm"} on:click={() => value = String(sum)}>${format("money", sum)}</div>
             {/each}
         </div>
     {/if}
 </div>
 <div class="atm__buttons">
-    <div class="atm__btn" on:click={onPrev}>Назад</div>
+    <div class="atm__btn" use:sound={"atm"} on:click={onPrev}>Назад</div>
     <div class="atm__btn primary" class:disabled={!value} on:click={onNext}>{isAccount ? 'Далее' : 'Выполнить'}</div>
 </div>

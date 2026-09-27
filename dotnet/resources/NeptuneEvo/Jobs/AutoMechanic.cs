@@ -280,6 +280,7 @@ namespace NeptuneEvo.Jobs
                 MoneySystem.Wallet.Change(player, -amount);
                 GameLog.Money($"player({characterData.UUID})", $"biz({biz.ID})", amount, $"mechanicBuyFuel");
                 biz.BuyItemBusiness(characterData.UUID, biz.Products[0].Name, amount);
+                Trigger.ClientEvent(player, "client.fuel.filled", fuel);
                 vehicleLocalData.VehLoadedFuel += fuel;
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.YouFillBack, vehicleLocalData.VehLoadedFuel), 5000);
             }
@@ -463,6 +464,8 @@ namespace NeptuneEvo.Jobs
                     }
 
                     vehicleLocalData1.VehLoadedFuel -= fuel;
+                    Trigger.ClientEvent(player, "client.fuel.filled", fuel);
+                    Trigger.ClientEvent(driver, "client.fuel.filled", fuel);
                     driverSessionData.SellItemData = new SellItemData();
                     sessionData.SellItemData = new SellItemData();
                 }

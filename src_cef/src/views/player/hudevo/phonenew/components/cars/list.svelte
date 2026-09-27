@@ -1,6 +1,6 @@
 <script>
     import { vehicleName } from '@/api/vehicleName';
-    import { carState } from './data'
+    import { carState, vehicleImage, onVehicleImageError } from './data'
     import { currentPage } from '../../stores'
     import { executeClient, executeClientToGroup } from 'api/rage'
     import { onInputFocus, onInputBlur } from "@/views/player/hudevo/phonenew/data";
@@ -60,7 +60,7 @@
 
         {#each filtered as item}
             <div class="auto__vehicle" on:click={() => OnUpdatePage("Car", item)}>
-                <div class="auto__vehicle_img" style="background-image: url('{document.cloud}inventoryItems/vehicle/{item.model.toLowerCase()}.png')"></div>
+                <div class="auto__vehicle_img"><img src={vehicleImage(item.model)} alt="" on:error={onVehicleImageError} /></div>
                 <div class="auto__vehicle_info">
                     <b>{vehicleName(item.model)}</b>
                     <div class="auto__vehicle_row">

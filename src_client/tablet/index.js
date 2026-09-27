@@ -34,6 +34,10 @@ gm.events.add(clientName + "close", () => {
     mp.gui.emmit(`window.hudStore.isHudTablet (false)`);
     global.menuClose();
     mp.events.callRemote("server.tablet.close");
+    // Страховка: убрать планшет из рук, даже если сервер не прислал остановку анимации
+    setTimeout(() => {
+        try { mp.attachments.removeLocal("tablet"); } catch (e) {}
+    }, 300);
 });
 
 // Открыть планшет сразу в приложении (фракция/организация из круга и бинда «Планшет фракции»)

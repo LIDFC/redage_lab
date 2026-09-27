@@ -1,9 +1,10 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { vehicleName } from '@/api/vehicleName';
     import { format } from 'api/formatter'
     import { executeClient, executeClientToGroup } from 'api/rage'
     import { fade } from 'svelte/transition'
-    import { carState } from './data'
+    import { carState, vehicleImage, onVehicleImageError } from './data'
 
     export let selectedCar;
     export let OnUpdatePage;
@@ -77,7 +78,7 @@
     <div class="auto__back" on:click={() => isSlots ? (isSlots = false) : OnUpdatePage ("List")}>‹ {isSlots ? 'К машине' : 'Все машины'}</div>
 
     <div class="auto__hero car">
-        <div class="auto__hero_img" style="background-image: url('{document.cloud}inventoryItems/vehicle/{selectedCar.model.toLowerCase()}.png')"></div>
+        <div class="auto__hero_img"><img src={vehicleImage(selectedCar.model)} alt="" on:error={onVehicleImageError} /></div>
         <div class="auto__hero_name">{vehicleName(selectedCar.model)}</div>
         <div class="auto__vehicle_row">
             <span class="auto__plate">{selectedCar.number}</span>
@@ -88,9 +89,9 @@
 
     {#if selectedCar.isRent}
         <div class="auto__card list">
-            <div class="auto__row" on:click={() => onEnterRent ("gpstrack")}><i>◎</i><span>Показать на карте</span></div>
+            <div class="auto__row" use:sound={"tap"} on:click={() => onEnterRent ("gpstrack")}><i>◎</i><span>Показать на карте</span></div>
             {#if !selectedCar.isJob}
-                <div class="auto__row" on:click={() => onEnterRent ("datetime")}><i>⟲</i><span>Продлить аренду</span><em>${format("money", selectedCar.rentPrice)}</em></div>
+                <div class="auto__row" use:sound={"tap"} on:click={() => onEnterRent ("datetime")}><i>⟲</i><span>Продлить аренду</span><em>${format("money", selectedCar.rentPrice)}</em></div>
             {/if}
             <div class="auto__row danger" on:click={() => onEnterRent ("stoprent")}><i>✕</i><span>Отказаться от аренды</span></div>
         </div>
@@ -99,7 +100,7 @@
             <div class="auto__card_title">Выберите место в гараже</div>
             <div class="auto__slots">
                 {#each Array(garage.maxCars) as _, place}
-                    <div class="auto__slot" class:current={place === selectedCar.place} class:busy={garage.slots[place] && place !== selectedCar.place} on:click={() => onPark (place)}>
+                    <div class="auto__slot" use:sound={"tap"} class:current={place === selectedCar.place} class:busy={garage.slots[place] && place !== selectedCar.place} on:click={() => onPark (place)}>
                         <b>{place + 1}</b>
                         <span>{place === selectedCar.place ? 'эта машина' : garage.slots[place] ? vehicleName(garage.slots[place]) : 'свободно'}</span>
                     </div>
@@ -110,10 +111,10 @@
     {:else}
         <div class="auto__card list">
             {#if canPark}
-                <div class="auto__row" on:click={() => isSlots = true}><i>P</i><span>Место в гараже</span><em>№{selectedCar.place + 1}</em></div>
+                <div class="auto__row" use:sound={"tap"} on:click={() => isSlots = true}><i>P</i><span>Место в гараже</span><em>№{selectedCar.place + 1}</em></div>
             {/if}
             {#each actions as func}
-                <div class="auto__row" class:danger={func.danger} on:click={() => onEnter (func, selectedCar)}>
+                <div class="auto__row" use:sound={"tap"} class:danger={func.danger} on:click={() => onEnter (func, selectedCar)}>
                     <i>{func.icon}</i>
                     <span>{func.name}</span>
                     {#if func.func === "sell"}

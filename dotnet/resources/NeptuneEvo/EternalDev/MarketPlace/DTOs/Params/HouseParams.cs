@@ -23,14 +23,15 @@ namespace NeptuneEvo.EternalDev.MarketPlace.DTOs.Params
             Cost = house.Price;
             Area = "";
 
-            var garage = GarageManager.Garages[house.GarageID];
-            if (garage != null)
-                Garages = GarageManager.GarageTypes[garage.Type].MaxCars;
-            else
-                Garages = 1;
+            // Квартиры и дома без гаража не должны ронять весь список лотов
+            Garages = GarageManager.Garages.TryGetValue(house.GarageID, out var garage) && garage != null
+                      && GarageManager.GarageTypes.TryGetValue(garage.Type, out var garageType)
+                ? garageType.MaxCars
+                : 1;
 
-            People = HouseManager.MaxRoommates[house.Type];
+            People = house.Type >= 0 && house.Type < HouseManager.MaxRoommates.Count ? HouseManager.MaxRoommates[house.Type] : 1;
             Position = house.Position;
+            Type = house.ApartmentId >= 0 ? "apartament" : "house";
         }
 
         [JsonProperty("cost")]
@@ -44,6 +45,9 @@ namespace NeptuneEvo.EternalDev.MarketPlace.DTOs.Params
 
         [JsonProperty("people")]
         public int People { get; set; }
+
+        [JsonProperty("type")]
+        public string Type { get; set; } = "house";
 
         [JsonProperty("position")]
         public Vector3 Position { get; set; }

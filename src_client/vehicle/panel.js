@@ -64,3 +64,8 @@ global.getDriveModeTorque = (vehicle) => {
 	if (mode === 2) return 1.25;
 	return 1;
 };
+
+// Звук заливки топлива (АЗС и механик) — генерируется в интерфейсе (api/uiSound.js)
+gm.events.add("client.fuel.filled", (liters) => {
+	mp.gui.emmit(`window.playUiSound && window.playUiSound("fuel", ${Number(liters) || 0})`);
+});

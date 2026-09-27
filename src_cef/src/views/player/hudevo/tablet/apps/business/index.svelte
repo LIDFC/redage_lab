@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { onDestroy } from 'svelte'
     import { fade } from 'svelte/transition'
     import { executeClient } from 'api/rage'
@@ -67,11 +68,11 @@
 <div class="biz" in:fade={{ duration: 150 }}>
     <div class="biz__header">
         <div class="biz__tabs">
-            <div class="biz__tab" class:active={tab === "main"} on:click={() => tab = "main"}><i class="ic-grid"></i>Главная</div>
-            <div class="biz__tab" class:active={tab === "transactions"} on:click={() => tab = "transactions"}><i class="ic-list"></i>Транзакции</div>
-            <div class="biz__tab" class:active={tab === "products"} on:click={() => tab = "products"}><i class="ic-box"></i>Товары</div>
+            <div class="biz__tab" use:sound={"tap"} class:active={tab === "main"} on:click={() => tab = "main"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Главная</div>
+            <div class="biz__tab" use:sound={"tap"} class:active={tab === "transactions"} on:click={() => tab = "transactions"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h13M7 12h13M7 17h13"/><circle cx="3.5" cy="7" r="1"/><circle cx="3.5" cy="12" r="1"/><circle cx="3.5" cy="17" r="1"/></svg>Транзакции</div>
+            <div class="biz__tab" use:sound={"tap"} class:active={tab === "products"} on:click={() => tab = "products"}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>Товары</div>
             {#if tab !== "products"}
-                <div class="biz__period" on:click={() => periodOpen = !periodOpen}>
+                <div class="biz__period" use:sound={"tap"} on:click={() => periodOpen = !periodOpen}>
                     {periods.find(p => p.days === days).name}
                     <span class="biz__caret"></span>
                     {#if periodOpen}

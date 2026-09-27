@@ -126,12 +126,43 @@ const radioName = () => {
     }
 };
 
-rpc.register(rpcName + "panelState", () => {
-    const vehicle = global.localplayer.vehicle;
-    if (!vehicle || !mp.vehicles.exists(vehicle))
-        return "null";
+// Своя машина рядом (до 15 м): номера из списка «Авто» (личные, гаражные, аренда).
+// Права всё равно проверяет сервер (ключи / водитель аренды).
+const PANEL_RANGE = 15;
+const getNearbyOwnVehicle = () => {
+    const numbers = vehiclesList.map(v => String(v.number || "").trim().toUpperCase()).filter(Boolean);
+    if (!numbers.length)
+        return null;
+    const pos = global.localplayer.position;
+    let best = null, bestDist = PANEL_RANGE;
+    mp.vehicles.forEachInStreamRange((veh) => {
+        if (!veh || !mp.vehicles.exists(veh) || veh.handle === 0) return;
+        const dist = mp.game.system.vdist(pos.x, pos.y, pos.z, veh.position.x, veh.position.y, veh.position.z);
+        if (dist > bestDist) return;
+        const plate = String(veh.getNumberPlateText() || "").trim().toUpperCase();
+        if (!numbers.includes(plate)) return;
+        best = veh;
+        bestDist = dist;
+    });
+    return best ? { vehicle: best, distance: Math.round(bestDist) } : null;
+};
 
-    const seat = getSeat(vehicle);
+// Машина для панели: та, в которой сидим, или своя рядом
+const getPanelVehicle = () => {
+    const inside = global.localplayer.vehicle;
+    if (inside && mp.vehicles.exists(inside))
+        return { vehicle: inside, remote: false, distance: 0 };
+    const near = getNearbyOwnVehicle();
+    return near ? { vehicle: near.vehicle, remote: true, distance: near.distance } : null;
+};
+
+rpc.register(rpcName + "panelState", () => {
+    const target = getPanelVehicle();
+    if (!target)
+        return "null";
+    const vehicle = target.vehicle;
+
+    const seat = target.remote ? -1 : getSeat(vehicle);
     const doors = [];
     const hasDoor = [];
     DOOR_BONES.forEach((bone, i) => {
@@ -149,6 +180,8 @@ rpc.register(rpcName + "panelState", () => {
         number: vehicle.getNumberPlateText(),
         seat: seat,
         driver: seat === -1,
+        remote: target.remote,
+        distance: target.distance,
         engine: !!vehicle.getVariable("vEngine"),
         locked: !!vehicle.getVariable("vLock"),
         belt: global.isBeltOn ? global.isBeltOn() : false,
@@ -170,12 +203,20 @@ rpc.register(rpcName + "panelState", () => {
 let lastPanelAction = 0;
 gm.events.add(clientName + "panel", (action, value) => {
     try {
-        const vehicle = global.localplayer.vehicle;
-        if (!vehicle || !mp.vehicles.exists(vehicle))
+        const target = getPanelVehicle();
+        if (!target)
             return;
+        const vehicle = target.vehicle;
         if (Date.now() - lastPanelAction < 400)
             return;
         lastPanelAction = Date.now();
+
+        // Снаружи машины: только то, что можно сделать с брелока/ключа — остальное сервер отклонит
+        if (target.remote) {
+            if (["engine", "lock", "door", "window", "lights", "interior", "drive"].includes(action))
+                mp.events.callRemote("server.vehicle.panel", action, Number(value) || 0, vehicle.remoteId);
+            return;
+        }
 
         const isDriver = vehicle.getPedInSeat(-1) === global.localplayer.handle;
         value = Number(value) || 0;
@@ -217,7 +258,7 @@ gm.events.add(clientName + "panel", (action, value) => {
             case "lights":
             case "interior":
             case "drive":
-                mp.events.callRemote("server.vehicle.panel", action, value);
+                mp.events.callRemote("server.vehicle.panel", action, value, vehicle.remoteId);
                 break;
         }
     } catch (e) {

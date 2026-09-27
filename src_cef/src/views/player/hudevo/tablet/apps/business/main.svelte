@@ -1,4 +1,5 @@
 <script>
+    import { sound, playSound } from 'api/uiSound'
     import { splitMoney, dateTime, money } from './util'
 
     export let data;
@@ -18,14 +19,14 @@
         <div class="biz__card">
             <div class="biz__card_head">
                 <span>Баланс кассы</span>
-                <div class="biz__mini" class:disabled={data.cash <= 0} on:click={() => data.cash > 0 && action("withdraw")}>Вывести</div>
+                <div class="biz__mini" use:sound={"tap"} class:disabled={data.cash <= 0} on:click={() => data.cash > 0 && action("withdraw")}>Вывести</div>
             </div>
             <div class="biz__value"><em>$</em>{cash.int}<small>{cash.frac}</small></div>
         </div>
         <div class="biz__card">
             <div class="biz__card_head">
                 <span>Налоговый счёт</span>
-                <div class="biz__mini" class:disabled={taxRoom <= 0}
+                <div class="biz__mini" use:sound={"tap"} class:disabled={taxRoom <= 0}
                      on:click={() => taxRoom > 0 && openModal({ type: "payTax", max: taxRoom, bank: data.bank, taxHour: data.taxHour })}>Пополнить</div>
             </div>
             <div class="biz__value"><em>$</em>{tax.int}<small>{tax.frac}</small></div>
@@ -81,7 +82,7 @@
     </div>
 
     <div class="biz__footer">
-        <div class="biz__btn" on:click={() => action("gps")}>Показать на карте</div>
-        <div class="biz__btn danger" on:click={() => action("sell")}>Продать государству за {money(data.sellPrice)}</div>
+        <div use:sound={"tap"} class="biz__btn" on:click={() => action("gps")}>Показать на карте</div>
+        <div use:sound={"tap"} class="biz__btn danger" on:click={() => action("sell")}>Продать государству за {money(data.sellPrice)}</div>
     </div>
 </div>

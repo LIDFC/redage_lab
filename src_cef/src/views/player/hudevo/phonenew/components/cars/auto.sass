@@ -137,10 +137,19 @@ $blue: #5B9CFF
         @include fluid("margin-bottom", 6)
     .auto__hero_img
         @include fluid("height", 110)
-        background-size: contain
-        background-repeat: no-repeat
-        background-position: center
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+            max-width: 100%
+            max-height: 100%
+            object-fit: contain
         @include fluid("margin-bottom", 8)
+    .auto__badges
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        @include fluid("gap", 4)
     .auto__badge
         @include pad(4, 8)
         @include fluid("border-radius", 6)
@@ -152,6 +161,9 @@ $blue: #5B9CFF
         &.ok
             color: $green
             background: rgba(61, 214, 140, 0.1)
+        &.remote
+            color: $blue
+            background: rgba(91, 156, 255, 0.12)
     .auto__stats
         display: grid
         grid-template-columns: repeat(3, 1fr)
@@ -292,20 +304,14 @@ $blue: #5B9CFF
     .auto__car_body
         grid-area: body
         align-self: stretch
-        position: relative
-        @include fluid("min-height", 100)
-        @include fluid("border-radius", 26)
-        background: linear-gradient(180deg, #262B36 0%, #1B1F27 100%)
-        border: 1px solid rgba(255, 255, 255, 0.1)
-    .auto__car_glass
-        position: absolute
-        left: 16%
-        right: 16%
-        top: 22%
-        bottom: 30%
-        @include fluid("border-radius", 10)
-        background: rgba(91, 156, 255, 0.08)
-        border: 1px solid rgba(91, 156, 255, 0.18)
+        display: flex
+        align-items: center
+        justify-content: center
+        @include fluid("min-height", 110)
+        svg
+            height: 100%
+            width: 100%
+            max-height: 100%
     .auto__door
         display: flex
         align-items: center
@@ -458,9 +464,14 @@ $blue: #5B9CFF
         @include fluid("height", 58)
         @include fluid("border-radius", 10)
         background-color: #1F242E
-        background-size: 92%
-        background-repeat: no-repeat
-        background-position: center
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+        img
+            width: 92%
+            height: 92%
+            object-fit: contain
     .auto__vehicle_info
         flex: 1
         min-width: 0

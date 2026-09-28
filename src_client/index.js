@@ -296,6 +296,7 @@ global.pAdmin = 0;
 
 require('./configs/natives.js');
 require('./utils/cef.js');
+require('./utils/escManager.js');
 require('./constants/controls.js');
 require('./constants/keys.js');
 require('./camera/index.js');
@@ -318,6 +319,7 @@ require('./admin/noclip.js');
 require('./admin/modelCheck.js');
 require("./admin/spectate.js");
 require("./admin/cinematiccamera.js");
+require("./admin/cfgpanel.js");
 
 require("./inventory/attachments.js");
 require("./inventory/dropEditor.js");
@@ -347,6 +349,7 @@ require('./player/dial.js');
 require('./player/lockbreak.js');
 require('./player/cyberhack.js');
 require('./player/crime.js');
+require('./player/hudlayout.js');
 require('./player/docs.js');
 require('./player/donatemenu.js');
 require('./player/fingerpointing.js');

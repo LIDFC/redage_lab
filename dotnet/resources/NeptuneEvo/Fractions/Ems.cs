@@ -58,12 +58,12 @@ namespace NeptuneEvo.Fractions
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Удаление татуировки"), new Vector3(emsCheckpoints[6].X, emsCheckpoints[6].Y, emsCheckpoints[6].Z + 0.3), 5F, 0.3F, 0, new Color(255, 255, 255));
 
                 #region Load Medkits
-                CustomColShape.CreateCylinderColShape(new Vector3(-53.072685, -2416.0156, 6.000165), 4, 5, 0, ColShapeEnums.FractionEms, 5); // take meds
-                NAPI.Marker.CreateMarker(1, new Vector3(-53.072685, -2416.0156, 3.000165), new Vector3(), new Vector3(), 4, new Color(255, 0, 0));
-
-                CustomColShape.CreateCylinderColShape(new Vector3(-34.496403, -2419.0205, 5.994418), 4, 5, 0, ColShapeEnums.FractionEms, 5); // take meds
-                NAPI.Marker.CreateMarker(1, new Vector3(-34.496403, -2419.0205, 2.994418), new Vector3(), new Vector3(), 4, new Color(255, 0, 0));
-                Main.CreateBlip(new Main.BlipData(499, "Humane Labs", new Vector3(-53.072685, -2416.0156, 6.000165), 4, true));
+                // Загрузка аптечек — у настоящего Humane Labs (раньше точка с этим названием стояла в порту Лос-Сантоса).
+                // Та же точка, куда ведёт задание EMS в таблице фракции (Fractions/Table/Tasks/Repository.cs).
+                CustomColShape.CreateCylinderColShape(HumaneLabsMedkits - new Vector3(0, 0, 2), 6, 6, 0, ColShapeEnums.FractionEms, 5); // take meds
+                NAPI.Marker.CreateMarker(1, HumaneLabsMedkits - new Vector3(0, 0, 1.8), new Vector3(), new Vector3(), 5, new Color(255, 0, 0));
+                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~r~Склад медикаментов~w~\nЗагрузка аптечек в машину EMS"), HumaneLabsMedkits + new Vector3(0, 0, 1.2), 15f, 0.35f, 4, new Color(255, 255, 255), false, 0);
+                Main.CreateBlip(new Main.BlipData(499, "Humane Labs", HumaneLabsMedkits, 4, true));
                 #endregion
 
                 CustomColShape.CreateCylinderColShape(emsCheckpoints[7], 1, 2, 0, ColShapeEnums.FractionEms, 6); // roof
@@ -94,6 +94,8 @@ namespace NeptuneEvo.Fractions
             }
         }
 
+        /// <summary>Склад медикаментов у Humane Labs (EMS грузит аптечки в машину).</summary>
+        public static readonly Vector3 HumaneLabsMedkits = new Vector3(3595.796, 3661.733, 32.75175);
         public static Vector3[] emsCheckpoints = new Vector3[11]
         {
             new Vector3(297.672, -583.996, 43.26), // ems blip       0

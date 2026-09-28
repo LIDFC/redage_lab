@@ -1,4 +1,5 @@
 <script>
+    import { furnitureImage } from '@/views/house/furniture/props/index.js';
     import { translateText } from 'lang'
     import {currentPage} from '../../../stores'
 
@@ -43,6 +44,9 @@
 </script>
 {#if selectedFurniture === null}
     <div class="newphone__rent_list">
+        {#if houseFurnitures && typeof houseFurnitures === "object"}
+            <div class="gray box-center m-top10">Мебель в доме: {houseFurnitures.length} / 100 · расставлено: {houseFurnitures.filter((f) => f.IsSet).length}</div>
+        {/if}
         {#if houseFurnitures && typeof houseFurnitures === "object" && houseFurnitures.length > 0}
             {#each houseFurnitures as furniture, index}
             <div class="newphone__rent_none hover" on:click={() => onSelectedFurniture (index)}>
@@ -52,7 +56,7 @@
                     </div>
                     <div class="gray">{furniture.Name}</div>
                 </div>
-                <div class="newphone__rent_noneimage heal" style="background-image: url({document.cloud + `inventoryItems/furniture/${furniture.Model}.png`});"></div>
+                <div class="newphone__rent_noneimage heal" style="background-image: url({furnitureImage(furniture.Model)});"></div>
             </div>
             {/each}
         {:else}
@@ -77,10 +81,13 @@
                 </div>
                 <div class="gray">{houseFurnitures [selectedFurniture].Name}</div>
             </div>
-            <div class="newphone__rent_noneimage heal" style="background-image: url({document.cloud + `inventoryItems/furniture/${houseFurnitures [selectedFurniture].Model}.png`});"></div>
+            <div class="newphone__rent_noneimage heal" style="background-image: url({furnitureImage(houseFurnitures [selectedFurniture].Model)});"></div>
         </div>
 
         <div class="newphone__project_button" on:click={() => onFurnitureBuy (1)} class:auction={!houseFurnitures [selectedFurniture].IsSet} class:property={houseFurnitures [selectedFurniture].IsSet}>{!houseFurnitures [selectedFurniture].IsSet ? translateText('player2', 'Установить') : translateText('player2', 'Убрать')}</div>
+        {#if houseFurnitures [selectedFurniture].IsSet}
+            <div class="newphone__project_button auction" on:click={() => onFurnitureBuy (2)}>Переместить</div>
+        {/if}
         <div class="newphone__project_button" on:click={() => onFurnitureBuy (0)}>{translateText('player2', 'Продать')}</div>
         <div class="violet box-center m-top10" on:click={() => onSelectedFurniture (null)}>{translateText('player2', 'Назад')}</div>
     </div>

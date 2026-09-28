@@ -325,7 +325,7 @@ namespace NeptuneEvo.Players.Phone.Gps
             clubsCategory.Items.Add(new GpsItem("Семьи", -773.8519f, 312.5361f));
             clubsCategory.Items.Add(new GpsItem("Фейерверки", -602.0729f, -347.30234f));
             clubsCategory.Items.Add(new GpsItem("Амфитеатр", 679.7624f, 559.8024f));
-            clubsCategory.Items.Add(new GpsItem("Humane Labs", 3420.554f, 3758.799f));
+            clubsCategory.Items.Add(new GpsItem("Humane Labs", 3595.796f, 3661.733f));
             clubsCategory.Items.Add(new GpsItem("Маяк", 3320.067f, 5169.669f));
             clubsCategory.Items.Add(new GpsItem("Охотничий магазин", -827.79517f, -689.95886f));
             clubsCategory.Items.Add(new GpsItem("Главный рынок", Inventory.Tent.Models.TentList.PositionGps[0].X, Inventory.Tent.Models.TentList.PositionGps[0].Y));

@@ -52,7 +52,6 @@ namespace NeptuneEvo.Crime.Weed
             public bool Busy;
 
             public ExtObject Object;
-            public ExtTextLabel Label;
             public ExtColShape Shape;
             public int ShownStage = -1;
             public string ShownText;
@@ -76,6 +75,17 @@ namespace NeptuneEvo.Crime.Weed
         private static bool _loaded;
 
         private static WeedConfig Cfg => WeedConfig.Current;
+
+        /// <summary>После перечитывания weed.json (/cfg): покупатели на карте берут цены и лимиты из нового конфига.</summary>
+        public static void RebindConfig()
+        {
+            for (var i = 0; i < Buyers.Count && i < Cfg.Buyers.Count; i++)
+                Buyers[i].Config = Cfg.Buyers[i];
+            if (Fractions.Manager.FractionDataMats.ContainsKey(502))
+                Fractions.Manager.FractionDataMats[502].Price = $"{Cfg.SeedPrice}$";
+            if (Fractions.Manager.FractionDataMats.ContainsKey(503))
+                Fractions.Manager.FractionDataMats[503].Price = $"{Cfg.WaterPrice}$";
+        }
         private static long Unix(DateTime time) => new DateTimeOffset(time).ToUnixTimeSeconds();
         private static DateTime FromUnix(long value) => DateTimeOffset.FromUnixTimeSeconds(value).LocalDateTime;
 
@@ -186,15 +196,20 @@ namespace NeptuneEvo.Crime.Weed
             return false;
         }
 
+        /// <summary>За сколько минут до засыхания куст просит полив (и раньше этого поливать нельзя).</summary>
+        private static int WaterWarnMinutes => Math.Max(2, Cfg.WaterMinutes / 3);
+
         private static string StatusText(Plant plant)
         {
             var now = DateTime.Now;
             if (IsReady(plant))
                 return "~g~Конопля созрела~w~\n[E] Собрать урожай";
             var percent = (int)((now - plant.Planted).TotalMinutes * 100 / Math.Max(1, Cfg.GrowMinutes));
+            var ready = Math.Max(1, (int)Math.Ceiling((ReadyAt(plant) - now).TotalMinutes));
             var left = Cfg.WaterMinutes - (int)(now - plant.LastWater).TotalMinutes;
-            var water = left <= 5 ? $"~r~Нужен полив ({Math.Max(0, left)} мин)" : $"~b~Полито~w~, полив через {left - 5} мин";
-            return $"~y~Конопля {percent}%~w~\n{water}";
+            var warn = WaterWarnMinutes;
+            var water = left <= warn ? $"~r~Нужен полив! Засохнет через {Math.Max(0, left)} мин" : $"~b~Полито~w~, полить через {left - warn} мин";
+            return $"~y~Конопля {percent}%~w~ · созреет через {ready} мин\n{water}";
         }
 
         // ------------------------------------------------------------------ мир
@@ -205,10 +220,11 @@ namespace NeptuneEvo.Crime.Weed
             var stage = Stage(plant);
             plant.ShownStage = stage;
             plant.Object = (ExtObject)NAPI.Object.CreateObject(NAPI.Util.GetHashKey(Models[stage]), plant.Position, new Vector3(0, 0, (plant.Id * 53) % 360), 255, plant.Dimension);
-            // Клиент кладёт куст на землю (src_client/player/crime.js)
+            // Клиент кладёт куст на землю и сам рисует надпись над ним из "weedInfo" (src_client/player/crime.js):
+            // серверный TextLabel с обновлением текста иногда пропадал
             plant.Object.SetSharedData("weedPlant", plant.Id);
             plant.ShownText = StatusText(plant);
-            plant.Label = (ExtTextLabel)NAPI.TextLabel.CreateTextLabel(Main.StringToU16(plant.ShownText), plant.Position + new Vector3(0, 0, 1.3), 4f, 0.35f, 4, new Color(255, 255, 255), true, plant.Dimension);
+            plant.Object.SetSharedData("weedInfo", plant.ShownText);
             plant.Shape = CustomColShape.CreateCylinderColShape(plant.Position - new Vector3(0, 0, 1.5), 1.4f, 4f, plant.Dimension, ColShapeEnums.WeedPlant, plant.Id);
         }
 
@@ -216,12 +232,9 @@ namespace NeptuneEvo.Crime.Weed
         {
             if (plant.Object != null && plant.Object.Exists)
                 plant.Object.Delete();
-            if (plant.Label != null && plant.Label.Exists)
-                plant.Label.Delete();
             if (plant.Shape != null)
                 CustomColShape.DeleteColShape(plant.Shape);
             plant.Object = null;
-            plant.Label = null;
             plant.Shape = null;
         }
 
@@ -241,10 +254,10 @@ namespace NeptuneEvo.Crime.Weed
                 return;
             }
             var text = StatusText(plant);
-            if (text != plant.ShownText && plant.Label != null && plant.Label.Exists)
+            if (text != plant.ShownText)
             {
                 plant.ShownText = text;
-                plant.Label.Text = Main.StringToU16(text);
+                plant.Object.SetSharedData("weedInfo", text);
             }
         }
 
@@ -634,7 +647,7 @@ namespace NeptuneEvo.Crime.Weed
         private static void Water(ExtPlayer player, Plant plant)
         {
             var uuid = player.GetUUID();
-            if ((DateTime.Now - plant.LastWater).TotalMinutes < 5)
+            if ((DateTime.Now - plant.LastWater).TotalMinutes < Math.Max(1, Cfg.WaterMinutes / 5))
             {
                 Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Земля ещё влажная, полив не нужен", 3000);
                 return;

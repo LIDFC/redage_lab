@@ -439,6 +439,7 @@ namespace NeptuneEvo.Core
                     await Organizations.Manager.SaveOrganizations(db);
 
                     Houses.HouseManager.SavingHouses(true);
+                    await Houses.FurnitureManager.SaveFurnitureNow(db);
 
                     await Stocks.SaveFractions(db);
 

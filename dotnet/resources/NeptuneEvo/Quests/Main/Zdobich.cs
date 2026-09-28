@@ -607,12 +607,11 @@ namespace NeptuneEvo.Quests
                 case zdobich_quests.Stage8:
                     MoneySystem.Wallet.Change(player, 4500);
                     Chars.Repository.AddNewItem(player, $"char_{characterData.UUID}", "inventory", ItemId.Case0, 1, addInWarehouse:true); 
-                    return zdobich_quests.Stage9;
+                    // Этап 9 (рукопожатия с игроками) убран: на пустом сервере его не пройти
+                    return zdobich_quests.Stage10;
                 
                 case zdobich_quests.Stage9:
-                    UpdateData.Exp(player, 1);
-                    Chars.Repository.AddNewItem(player, $"char_{characterData.UUID}", "inventory", ItemId.Bear, 1, addInWarehouse:true); 
-                    Chars.Repository.AddNewItem(player, $"char_{characterData.UUID}", "inventory", ItemId.Note, 1, addInWarehouse:true); 
+                    // Оставлено для совместимости со старыми сохранениями — переход дальше без награды
                     return zdobich_quests.Stage10;
                 
                 case zdobich_quests.Stage10:
@@ -686,12 +685,12 @@ namespace NeptuneEvo.Quests
                     return zdobich_quests.Stage34;
                 
                 case zdobich_quests.Stage34:
-                    return zdobich_quests.NoMission;
-                /*case zdobich_quests.End:
-                    //Награды
+                    // Финальная награда за прохождение квеста новичка (выдаётся один раз — дальше линия -1)
                     UpdateData.Exp(player, 10);
                     MoneySystem.Wallet.Change(player, 50000);
-                    return zdobich_quests.NoMission;*/
+                    GameLog.Money("server", $"player({characterData.UUID})", 50000, "questZdobichFinal");
+                    Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, "Квест новичка пройден! +$50 000 и +10 опыта", 6000);
+                    return zdobich_quests.NoMission;
             }
             return zdobich_quests.Error;
         }
@@ -719,18 +718,6 @@ namespace NeptuneEvo.Quests
                         Timers.StartOnce(50, () =>
                         {
                             qMain.UpdateQuestsComplete(player, QuestName, (int)zdobich_quests.Stage7, true);
-                            OpenSuccess(player); 
-                        });
-                    }
-                    break;
-                case zdobich_quests.Stage9:
-                    characterData.Handshaked++;
-                    if (characterData.Handshaked >= 5)
-                    {
-                        Timers.StartOnce(50, () =>
-                        {
-                            qMain.UpdateQuestsStage(player, QuestName, (int)zdobich_quests.Stage9, 1, isUpdateHud: true);
-                            qMain.UpdateQuestsComplete(player, QuestName, (int) zdobich_quests.Stage9, true);
                             OpenSuccess(player); 
                         });
                     }
@@ -798,6 +785,8 @@ namespace NeptuneEvo.Quests
                             OpenSuccess(player); 
                         });
                     }
+                    else
+                        HintMavr(player, "мед. карту", Main.BlackMarketMedCard);
                     break;
                 case zdobich_quests.Stage33:
                     if (characterData.Licenses[6])
@@ -808,8 +797,18 @@ namespace NeptuneEvo.Quests
                             OpenSuccess(player); 
                         });
                     }
+                    else
+                        HintMavr(player, "лицензию на оружие", Main.BlackMarketGunLic);
                     break;
             }
+        }
+
+        /// <summary>Честная подсказка: если врачей/полиции нет на смене, мед. карту и лицензию продаёт Мавр (покупка засчитывает этап).</summary>
+        private static void HintMavr(ExtPlayer player, string what, int price)
+        {
+            var point = BlackMarket.Config.BlackMarketConfig.Current.CashoutPoint;
+            Trigger.ClientEvent(player, "createWaypoint", point.X, point.Y);
+            Trigger.SendChatMessage(player, $"!{{#f5a524}}[Дебич]!{{#ffffff}} Нет никого на смене? {what} можно купить у Мавра на чёрном рынке за ${price} — метка на карте. Покупка сразу засчитается.");
         }
 
         private static void OpenSuccess(ExtPlayer player)

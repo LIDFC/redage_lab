@@ -149,7 +149,8 @@
     addListernEvent ("table.crimeguide.flag", (json) => {
         try {
             const value = typeof json === "string" ? JSON.parse(json) : json;
-            crimeAllowed = !!(value && value.allowed);
+            // Только в панели криминальной группы: фракция-банда или криминальная организация
+            crimeAllowed = !!(value && value.allowed && (isOrganization() ? value.orgAllowed : value.fractionAllowed));
         } catch (e) {}
     });
     executeClient ("client.crime.guide.load");

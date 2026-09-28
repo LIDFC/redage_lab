@@ -351,8 +351,45 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Справка: вкладка «Криминал» в меню фракции/организации (CEF `fractions/elements/crime`, сервер `Crime/CrimeGuide.cs`, события `server.crime.guide.load/gps`) — показывается только криминалу. Поляны травы видны криминалу на карте и маркером на земле (`client.weed.spots`).
 - Коэффициент выплат `CrimeCore.PayoutFactor`: фракционные банды/мафия/байкеры ×1.0 (игроку объясняется «20% в общак банды», реально никуда не переводится), криминальные организации ×1.25. Применяется к скупке, NPC-покупателям травы и наличным при ограблении.
 - Угон: машина заказа заперта. Дешёвая — «Использовать» отмычку рядом (LockBreak), дорогая (~35%) — «Программатор» (ItemId 399, Мавр пункт 505, $3000; мини-игра `Crime/CyberHack.cs` + CEF `views/player/cyberhack` из присланного пакета cyber-hack; провал — программатор сгорает, сигнализация). Хук в `ItemsUse` → `CarTheftManager.OnUseTool`. Проп в руке: отвёртка `crime_lockpick` (LockBreak) и планшет `tablet` (CyberHack).
+- Угон, уровни машин (`CarTheftManager.Cars`): дешёвые (отмычка), дорогие ~30% (программатор), эксклюзив ~10% — кастомные `lx570`, `g636x6`, `mb63gls`, `bmwx6` (программатор 7×7, розыск 90% +3 звезды, 14–16 деталей и бонус Мавра `SuperBonus`). Взлом также через G → «Взломать транспорт» (перехват в `Selecting.cs vehicleSelected case 6` → `CarTheftManager.BreakIn`, прибор выбирается сам). В инвентаре «Использовать» для 393/394/399 — белый список `getItemsUse` в `inventory.svelte`.
 - Ограбление: в любое время, жильцы онлайн не мешают (им приходит тревога + метка).
 - Угон `Crime/CarTheft/CarTheftManager.cs`: заказ выдаёт NPC — Carter Scott (пункт банды «Угон автотранспорта») или Мавр (пункт 504, для любого криминала); кулдаун 5 мин на команду (банда / организация / игрок), зона разборки 20 м. Машина на случайной точке `dropPoints`, 30% сигнализация → звёзды, разборка в зоне `ColShapeEnums.ChopShop` у Мавра (или `chopPoint` в `blackmarket.json`) → `StolenCarParts`. Машины угона помечены `DeliveryGang`, но обычная сдача их не принимает.
+
+## 7p. Квест новичка (Виталий Дебич, `Quests/Main/Zdobich.cs`, CEF `json/quests/npc_zdobich.json`)
+- Этап 9 (рукопожатия) убран: 8 → 10; застрявшие на 9 переводятся на 10 при входе (`qMain.InitQuests`). `Handshaked` считается только для боевого пропуска.
+- Этапы 31/33: тексты честно говорят про покупку мед. карты / лицензии у Мавра (пункты 79/78 засчитывают этап), при взятии этапа — метка на Мавра и сообщение в чат (`Zdobich.HintMavr`).
+- Этап 34 выдаёт финальную награду: $50 000 и +10 опыта.
+
+## 7q. Мебель и маркетплейс
+- Мебель: `Houses/HouseFurniture.cs` `NameModels` — +117 позиций (диваны, кресла, столы, кровати, свет, техника/ТВ, шкафы, декор, картины, кухня/ванная, досуг). Цены первых 40 — из `settings/pricesSettings.json` (`FurtinurePrices`), у остальных — прямо в `NameModels` (`Main.cs` больше не падает на выходе за массив). Мебель без рецепта (`Items` пустой) только покупается. CEF `views/house/furniture`: вкладки по `type`, поиск, иконка категории, если картинки нет на CDN.
+- Сохранение мебели: `FurnitureManager.Create` теперь регистрирует дом в памяти (раньше новые дома не могли купить мебель до рестарта); при рестарте мебель дописывается сразу (`FurnitureManager.SaveFurnitureNow`), флаг больше не сбрасывается.
+- Маркетплейс (`src_client/EternalDev/marketPlace`): «Выйти» закрывает окно всегда (`close(true)`), смена раздела/открытие сбрасывают «залипшую» модалку, ESC при залипшей модалке сбрасывает её.
+
+- Свои картинки мебели: `src_cef/src/views/house/furniture/props/<модель>.png` (подхватываются `require.context`, приоритет над CDN; используется и в телефоне). В архиве CDN (cdn.zip) картинки есть только у 40 старых предметов.
+- Вкладка «Криминал» показывается только в панели криминальной группы (`fractionAllowed` / `orgAllowed` из `CrimeGuide`).
+- Загрузка аптечек EMS («Humane Labs») перенесена из порта к настоящему Humane Labs (`Ems.HumaneLabsMedkits`), GPS в телефоне туда же.
+
+## 7r. ESC-менеджер, предпросмотр и перенос мебели
+- `src_client/utils/escManager.js`: перехватывает `window.router.setView/setHud` (знает текущее окно `global.cefView`), стек `global.escManager.push/remove` для временных состояний, таблица «окно → событие закрытия». Вызывается из `bind.js c_globalEscape` (при смерти — `closeAll`). Если окно уже закрыто, а курсор остался — `unstick()` снимает блокировку.
+- Предпросмотр мебели: CEF «Посмотреть» → `client.furniture.preview` (house/index.js): модель перед игроком, камера облетает её 20 с, ESC — назад в магазин.
+- Перенос поставленной мебели: телефон → мебель → «Переместить» (`server.house.furniture.use` type 2): предмет прячется, открывается редактор; отмена (`cancelEdit`) возвращает всё на место.
+- Счётчик мебели: `client.furniture.count` (магазин), телефон считает сам; лимит `FurnitureManager.MaxFurniture = 100`.
+- Превью новой мебели: `tools/furniture_previews/previews.json` (адреса с Pleb Masters Forge) + `download.py` → `src_cef/.../house/furniture/props/*.jpg`. Домен `assets-gta.plebmasters.de` должен быть доступен.
+
+## 7s. История денег, напоминания о налогах, расположение HUD
+- История денег: `MoneySystem/MoneyHistory.cs` — таблица `money_history` (uuid, time, amount, code; индекс по uuid, хранение 30 дней), запись из `GameLog.Money` (разбор `player(N)` в from/to), подписи операций по коду в `Labels`. Fleeca → «История» (`Players/Phone/Fleeca`) показывает последние 50 операций.
+- Налоги: `MoneySystem/TaxReminder.cs`, вызывается в `Main.payDayTrigger` после списания: SMS банка (4386) и уведомление на порогах 24/12/3/1 ч.
+- Расположение HUD: поле `ChatData.HudLayout` (строка `блок:x,y,s;...`, без кавычек — её передают в CEF в одинарных кавычках), CEF `hudevo/elements/hudlayout.svelte` (CSS-переменные на корневых классах блоков, редактор перетаскиванием), клиент `player/hudlayout.js`, кнопка в Настройки → Настройки худа. Меню настроек отправляет `HudLayout` вместе со своими полями.
+
+## 7t. Админ-панель настроек (/cfg) и погода
+- `/cfg` (смотреть с 5 lvl; менять обычные вкладки с 8, «Экономика», «Сервер и налоги», «Зарплаты фракций» — с 9 или логин из `DirectorLogins`) → `Functions/ConfigPanel.cs`, CEF `views/admin/configpanel` (`AdminConfigPanel`), клиент `src_client/admin/cfgpanel.js`.
+- Вкладки: трава, ЧР, скупка, подряды (settings/*.json); экономика (таблица `economy`, UPDATE по колонкам, цены Мавра в `FractionDataMats`); сервер и налоги (`serverSettings` / `pricesSettings`: множители, налоги вкл/выкл, `HouseTaxPercent` — новое поле в SDK, применяется в `LoadServerSettings`); зарплаты гос. фракций (`fractionranks.payday`).
+- Типы полей: int, float, bool (переключатель), select. Новое поле = одна строка `Int/Float/Bool/Select/Eco(...)` в `BuildSections`.
+- Сохранение: права → диапазоны → бэкап (`settings/backup`, 10 последних на вкладку) → связанные поля (откат вкладки при ошибке) → Save/Persist/Apply → история (`settings/cfg_history.json`, 500 записей, откат по кнопке) → adminlog + чат админов `[CFG]`.
+- «Перечитать с диска» (`Reload`) — трава (с перепривязкой покупателей `WeedManager.RebindConfig`), ЧР, скупка, подряды, экономика (`Economy.Init`).
+- Пресеты — `settings/cfg_presets/<имя>.json` ({вкладка: {ключ: значение}}), применяются тем же путём, что и «Сохранить».
+- Подсказки «в деньгах» (`Section.Info`): доход с куста, потери при обнале, диапазон цен скупки, налог дома, сумма зарплат на ближайший PayDay.
+- Погода: в телефоне был захардкожен минус перед температурой; сервер (`World/Weather/Repository.cs`) сдвигает температуру по сезону (зима −10, весна −4, осень −7), минимум +2.
 
 ## 8. Что осталось или стоит проверить
 

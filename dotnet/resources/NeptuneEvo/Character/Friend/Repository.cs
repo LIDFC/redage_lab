@@ -88,19 +88,9 @@ namespace NeptuneEvo.Character.Friend
                     Notify.Send(target, NotifyType.Info, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.AlreadyHi), 5000);
                     return;
                 }
+                // Счётчик рукопожатий (задания боевого пропуска); этап 9 квеста новичка убран
                 characterData.Handshaked++;
-                if (characterData.Handshaked == 5)
-                {
-                    qMain.UpdateQuestsStage(player, Zdobich.QuestName, (int)zdobich_quests.Stage9, 1, isUpdateHud: true);
-                    qMain.UpdateQuestsComplete(player, Zdobich.QuestName, (int) zdobich_quests.Stage9, true);
-                }
-                        
                 targetCharacterData.Handshaked++;
-                if (targetCharacterData.Handshaked == 5)
-                {
-                    qMain.UpdateQuestsStage(target, Zdobich.QuestName, (int)zdobich_quests.Stage9, 1, isUpdateHud: true);
-                    qMain.UpdateQuestsComplete(target, Zdobich.QuestName, (int) zdobich_quests.Stage9, true);
-                }
                 
                 if (!characterData.Friends.ContainsKey(secondName) || !targetCharacterData.Friends.ContainsKey(firstName))
                 {

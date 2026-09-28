@@ -51,5 +51,7 @@ namespace NeptuneEvo.Character.Config.Models
         public byte notifCount { get; set; } = 2; // 0
         public float RadioVolume { get; set; } = 15; // 0player.GetSessionData();
         public bool hitPoint { get; set; } = false; // 0
+        /// <summary>Расположение блоков HUD (JSON {блок: {x, y, s}}, x/y в vw/vh, s — масштаб). Пусто — по умолчанию.</summary>
+        public string HudLayout { get; set; } = "";
     }
 }

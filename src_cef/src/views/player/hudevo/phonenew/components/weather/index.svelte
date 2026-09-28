@@ -39,7 +39,7 @@
             <div class="newphone__weather_image {getWeatherIdToName(currentWeather.weatherId, currentWeather.hour)}"></div>
         </div>
         <div class="newphone__weather_temp">
-            <div class="newphone__weather_number">-{currentWeather.temp}</div>
+            <div class="newphone__weather_number">{currentWeather.temp ?? ""}</div>
             <div class="box-column">
                 <div class="newphone__weather_gr">&#176;</div>
                 <div class="newphone__weather_type">{weatherName[getWeatherIdToName(currentWeather.weatherId, currentWeather.hour)]}</div>
@@ -50,7 +50,7 @@
                 <div class="newphone__weather_element">
                     <div class="newphone__weather_time">{formatTime(weather.hour)}:{formatTime(weather.minute)}</div>
                     <div class="newphone__weather_icon {getWeatherIdToName (weather.weatherId, weather.hour)}"></div>
-                    <div class="newphone__weather_temper">{weather.temp}</div>
+                    <div class="newphone__weather_temper">{weather.temp}&#176;</div>
                 </div>
             {/each}
         </div>

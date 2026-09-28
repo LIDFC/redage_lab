@@ -43,20 +43,26 @@ export default new class MarketPlace {
         this.callServer("openApp")
     }
 
-    // force — кнопка «Выйти» в меню: закрываем всегда, даже если модалка «залипла» или сервер не ответил
+    // force — кнопка «Выйти» в меню: закрываем всегда, даже если модалка «залипла» или сервер не ответил.
+    // ESC при открытой модалке сначала закрывает только её (модалка сама слушает ESC), но если модалка
+    // «залипла» (её компонент уже уничтожен при смене раздела), флаг сбрасывается — следующий ESC закроет окно.
     closeApp(force) {
-        if (this.modal && !force)
+        if (this.modal && !force) {
+            this.modal = null;
             return;
+        }
 
         this.modal = null;
         this.callServer("closeApp");
         if (force)
-            this.close();
+            this.close(true);
     }
 
     currentPage = null
     setPage(pageName) {
         this.currentPage = pageName;
+        // Смена раздела уничтожает открытые модалки — иначе флаг оставался и блокировал выход
+        this.modal = null;
         this.callServer("setPage", pageName);
     }
 
@@ -67,6 +73,7 @@ export default new class MarketPlace {
     opened = false
     open() {
         const viewData = {};
+        this.modal = null;
 
         mp.gui.emmit(`window.router.setView('${this.VIEW_NAME}', '${JSON.stringify(viewData)}')`);
         global.menuOpen();
@@ -74,8 +81,9 @@ export default new class MarketPlace {
         this.opened = true;
     }
 
-    close() {
-        if (!this.opened)
+    // force — закрыть окно даже если флаг opened сбился (кнопка «Выйти»)
+    close(force = false) {
+        if (!this.opened && !force)
             return;
 
         mp.gui.emmit(`window.router.setHud()`);

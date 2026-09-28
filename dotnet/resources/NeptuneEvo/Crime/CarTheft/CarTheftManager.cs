@@ -41,6 +41,9 @@ namespace NeptuneEvo.Crime.CarTheft
             public int Parts;
             /// <summary>Дорогая машина — электронный замок, только программатор.</summary>
             public bool Expensive;
+            /// <summary>Эксклюзив (кастомные элитные модели): программатор 7×7, розыск 90%, бонус Мавра.</summary>
+            public bool Super;
+            public string Name;
             public bool Unlocked;
             public bool Busy;
         }
@@ -65,13 +68,32 @@ namespace NeptuneEvo.Crime.CarTheft
         /// <summary>Программатор у Мавра.</summary>
         public const int ProgrammerPrice = 3000;
 
-        /// <summary>Дешёвые — обычный замок (отмычка), дорогие — электронный (программатор). Дорогие дают больше деталей.</summary>
-        private static readonly (string model, int parts, bool expensive)[] Cars =
+        private enum Tier { Cheap, Expensive, Super }
+
+        /// <summary>Шанс эксклюзивного и дорогого заказа, %. Остальное — дешёвые машины.</summary>
+        private const int SuperChance = 10;
+        private const int ExpensiveChance = 30;
+        /// <summary>Эксклюзив: шанс розыска при угоне и наличный бонус Мавра при разборке.</summary>
+        private const int SuperWantedChance = 90;
+        public const int SuperBonus = 12000;
+
+        /// <summary>
+        /// Дешёвые — обычный замок (отмычка), дорогие — электронный (программатор),
+        /// эксклюзив — кастомные элитные модели (лежат на сервере), программатор 7×7, деталей в разы больше.
+        /// </summary>
+        private static readonly (string model, string name, int parts, Tier tier)[] Cars =
         {
-            ("primo", 2, false), ("tailgater", 3, false), ("oracle", 3, false), ("felon", 3, false), ("jackal", 3, false),
-            ("buffalo", 3, false), ("fugitive", 2, false), ("washington", 2, false), ("sultan", 3, false), ("zion", 3, false),
-            ("schafter2", 5, true), ("exemplar", 5, true), ("f620", 6, true), ("cogcabrio", 6, true), ("cognoscenti", 5, true),
-            ("sentinel", 5, true), ("comet2", 6, true), ("feltzer2", 6, true), ("carbonizzare", 6, true),
+            ("primo", "Albany Primo", 2, Tier.Cheap), ("tailgater", "Obey Tailgater", 3, Tier.Cheap), ("oracle", "Ubermacht Oracle", 3, Tier.Cheap),
+            ("felon", "Lampadati Felon", 3, Tier.Cheap), ("jackal", "Ocelot Jackal", 3, Tier.Cheap), ("buffalo", "Bravado Buffalo", 3, Tier.Cheap),
+            ("fugitive", "Cheval Fugitive", 2, Tier.Cheap), ("washington", "Albany Washington", 2, Tier.Cheap), ("sultan", "Karin Sultan", 3, Tier.Cheap),
+            ("zion", "Ubermacht Zion", 3, Tier.Cheap),
+            ("schafter2", "Benefactor Schafter", 5, Tier.Expensive), ("exemplar", "Dewbauchee Exemplar", 5, Tier.Expensive),
+            ("f620", "Ocelot F620", 6, Tier.Expensive), ("cogcabrio", "Enus Cognoscenti Cabrio", 6, Tier.Expensive),
+            ("cognoscenti", "Enus Cognoscenti", 5, Tier.Expensive), ("sentinel", "Ubermacht Sentinel", 5, Tier.Expensive),
+            ("comet2", "Pfister Comet", 6, Tier.Expensive), ("feltzer2", "Benefactor Feltzer", 6, Tier.Expensive),
+            ("carbonizzare", "Grotti Carbonizzare", 6, Tier.Expensive),
+            ("lx570", "Lexus LX570", 14, Tier.Super), ("g636x6", "Mercedes G63 6x6", 16, Tier.Super),
+            ("mb63gls", "Mercedes GLS 63", 15, Tier.Super), ("bmwx6", "BMW X6M", 15, Tier.Super),
         };
 
         private static Vector3 ChopPoint => BlackMarket.Config.BlackMarketConfig.Current.ChopPoint ?? BlackMarket.Config.BlackMarketConfig.Current.CashoutPoint;
@@ -122,9 +144,12 @@ namespace NeptuneEvo.Crime.CarTheft
             if (points.Count == 0)
                 return;
             var point = points[CrimeCore.Rnd.Next(points.Count)];
-            // Примерно каждая третья машина — дорогая, с электронным замком
-            var pool = Cars.Where(c => c.expensive == CrimeCore.Roll(35)).ToArray();
+            var roll = CrimeCore.Rnd.Next(100);
+            var tier = roll < SuperChance ? Tier.Super : roll < SuperChance + ExpensiveChance ? Tier.Expensive : Tier.Cheap;
+            var pool = Cars.Where(c => c.tier == tier).ToArray();
             var car = pool.Length > 0 ? pool[CrimeCore.Rnd.Next(pool.Length)] : Cars[CrimeCore.Rnd.Next(Cars.Length)];
+            var expensive = car.tier != Tier.Cheap;
+            var super = car.tier == Tier.Super;
             var plate = $"{(char)('A' + CrimeCore.Rnd.Next(26))}{CrimeCore.Rnd.Next(100, 999)}{(char)('A' + CrimeCore.Rnd.Next(26))}{(char)('A' + CrimeCore.Rnd.Next(26))}";
             var vehicle = (ExtVehicle)VehicleStreaming.CreateVehicle(NAPI.Util.GetHashKey(car.model), point + new Vector3(0, 0, 0.3), CrimeCore.Rnd.Next(0, 360),
                 CrimeCore.Rnd.Next(0, 100), CrimeCore.Rnd.Next(0, 100), plate, locked: true, acc: VehicleAccess.DeliveryGang, petrol: 60);
@@ -138,20 +163,23 @@ namespace NeptuneEvo.Crime.CarTheft
                 vehicleLocalData.DeliveryData.JStage = false;
                 vehicleLocalData.DeliveryData.WhosVeh = player;
             }
-            Thefts[vehicle] = new Theft { Fraction = fracId, Crew = crew, PlayerUuid = player.GetUUID(), Parts = car.parts, Expensive = car.expensive };
+            Thefts[vehicle] = new Theft { Fraction = fracId, Crew = crew, PlayerUuid = player.GetUUID(), Parts = car.parts, Expensive = expensive, Super = super, Name = car.name };
             sessionData.DeliveryData.Vehicle = vehicle;
             sessionData.DeliveryData.Point = -1;
             NextTheft[crew] = DateTime.Now.AddMinutes(CooldownMinutes);
             Trigger.ClientEvent(player, "createWaypoint", point.X, point.Y);
+            Notify.Send(player, super ? NotifyType.Warning : NotifyType.Info, NotifyPosition.BottomCenter, super
+                ? $"ЭКСКЛЮЗИВНЫЙ ЗАКАЗ: {car.name} ({plate}). Только программатор, полиция почти наверняка узнает! Награда в разы выше"
+                : $"Заказ: {car.name} ({plate}). Машина отмечена в GPS — угоните её и пригоните к Мавру на разборку", 8000);
+            var tool = expensive ? "программатор (продаёт Мавр)" : "отмычка";
             Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter,
-                $"Заказ: {car.model.ToUpper()} ({plate}). Машина отмечена в GPS — угоните её и пригоните к Мавру на разборку", 7000);
-            Notify.Send(player, NotifyType.Warning, NotifyPosition.BottomCenter, car.expensive
-                ? "Дорогая машина с электронным замком: нужен ПРОГРАММАТОР (Мавр). У машины: инвентарь → «Программатор» → Использовать"
-                : "Обычный замок: у машины инвентарь → «Отмычка» → Использовать", 9000);
-            Trigger.SendChatMessage(player, car.expensive
-                ? "!{#f5a524}[Угон]!{#ffffff} Дорогая машина — нужен программатор (продаёт Мавр). Подойдите к двери, откройте инвентарь и используйте программатор."
-                : "!{#f5a524}[Угон]!{#ffffff} Замок обычный — подойдите к двери, откройте инвентарь и используйте отмычку.");
-            BlackMarket.Audit.AuditLog.Write("theft_start", player.GetUUID(), details: new { fraction = fracId, car = car.model, car.expensive, x = point.X, y = point.Y });
+                $"Нужна {tool}. У машины: G → «Взломать транспорт» (или инвентарь → Использовать)", 9000);
+            Trigger.SendChatMessage(player, "!{#f5a524}[Угон]!{#ffffff} " + (super
+                ? $"Эксклюзив {car.name}: электронный замок повышенной защиты — только программатор. При угоне 90% розыск. Бонус от Мавра ${SuperBonus} + много деталей."
+                : expensive
+                    ? $"{car.name}: электронный замок — нужен программатор (продаёт Мавр)."
+                    : $"{car.name}: обычный замок — хватит отмычки.") + " Подойдите к двери: G → «Взломать транспорт».");
+            BlackMarket.Audit.AuditLog.Write("theft_start", player.GetUUID(), details: new { fraction = fracId, car = car.model, tier = car.tier.ToString(), x = point.X, y = point.Y });
         }
 
         /// <summary>
@@ -167,42 +195,77 @@ namespace NeptuneEvo.Crime.CarTheft
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Выйдите из машины", 3000);
                 return programmer;
             }
-            var crew = CrewKey(player);
             var found = Thefts
                 .Where(t => t.Key != null && t.Key.Exists && t.Key.Dimension == player.Dimension && t.Key.Position.DistanceTo(player.Position) < 3.5f)
                 .OrderBy(t => t.Key.Position.DistanceTo(player.Position))
                 .FirstOrDefault();
             var vehicle = found.Key;
-            var theft = found.Value;
             if (vehicle == null)
             {
                 if (programmer)
                     Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Подойдите вплотную к машине из заказа на угон", 3000);
                 return programmer;
             }
+            StartBreak(player, vehicle, found.Value, programmer);
+            return true;
+        }
+
+        /// <summary>
+        /// G → «Взломать транспорт» у машины заказа (перехват в Core/Selecting.cs vehicleSelected case 6):
+        /// прибор выбирается сам — отмычка для обычного замка, программатор для электронного.
+        /// </summary>
+        public static void BreakIn(ExtPlayer player, ExtVehicle vehicle)
+        {
+            if (!Thefts.TryGetValue(vehicle, out var theft) || player.IsInVehicle)
+                return;
+            if (player.Position.DistanceTo(vehicle.Position) > 3.5f)
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Подойдите ближе к двери", 3000);
+                return;
+            }
+            var location = $"char_{player.GetUUID()}";
+            var hasProgrammer = Chars.Repository.getCountItem(location, ItemId.CarProgrammer, false) > 0;
+            var hasPick = Chars.Repository.getCountItem(location, ItemId.Lockpick, false) > 0;
+            if (theft.Expensive && !hasProgrammer)
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Электронный замок — нужен программатор (продаёт Мавр)", 4000);
+                return;
+            }
+            if (!theft.Expensive && !hasPick && !hasProgrammer)
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Нужна отмычка (продаёт Мавр)", 3500);
+                return;
+            }
+            StartBreak(player, vehicle, theft, theft.Expensive || !hasPick);
+        }
+
+        /// <summary>Общий запуск взлома: отмычка (LockBreak) или программатор (CyberHack).</summary>
+        private static void StartBreak(ExtPlayer player, ExtVehicle vehicle, Theft theft, bool programmer)
+        {
+            var crew = CrewKey(player);
             if (theft.Crew != crew)
             {
                 Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Это чужой заказ", 3000);
-                return true;
+                return;
             }
             if (theft.Unlocked || !VehicleStreaming.GetLockState(vehicle))
             {
                 Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Машина уже открыта — садитесь", 3000);
-                return true;
+                return;
             }
             if (theft.Busy || LockBreak.IsBusy(player) || CyberHack.IsBusy(player))
-                return true;
+                return;
             if (theft.Expensive && !programmer)
             {
                 Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Электронный замок — отмычка не поможет. Нужен программатор (Мавр)", 4000);
-                return true;
+                return;
             }
 
             theft.Busy = true;
             if (programmer)
             {
-                var size = vehicle.Model == NAPI.Util.GetHashKey("comet2") || vehicle.Model == NAPI.Util.GetHashKey("carbonizzare") ? 6 : 5;
-                if (!CyberHack.Start(player, size, 35, "Электронный замок",
+                var size = theft.Super ? 7 : vehicle.Model == NAPI.Util.GetHashKey("comet2") || vehicle.Model == NAPI.Util.GetHashKey("carbonizzare") ? 6 : 5;
+                if (!CyberHack.Start(player, size, theft.Super ? 30 : 35, theft.Super ? "Эксклюзивный замок" : "Электронный замок",
                     p => { theft.Busy = false; Unlock(p, vehicle, theft); },
                     (p, reason) =>
                     {
@@ -220,14 +283,14 @@ namespace NeptuneEvo.Crime.CarTheft
                         }
                     }))
                     theft.Busy = false;
-                return true;
+                return;
             }
 
             if (!LockBreak.Start(player, "car", vehicle.Value, 7, "Взлом замка машины",
                 p => { theft.Busy = false; Unlock(p, vehicle, theft); },
                 (p, reason) => theft.Busy = false))
                 theft.Busy = false;
-            return true;
+            return;
         }
 
         private static void Unlock(ExtPlayer player, ExtVehicle vehicle, Theft theft)
@@ -288,8 +351,14 @@ namespace NeptuneEvo.Crime.CarTheft
                 theft.Entered = true;
                 VehicleStreaming.SetEngineState(vehicle, true);
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, "Вы замкнули провода — двигатель заведён", 3000);
+                // Эксклюзив: владельцы таких машин следят за ними — почти всегда розыск
+                if (theft.Super && CrimeCore.Roll(SuperWantedChance))
+                {
+                    Trigger.ClientEventInRange(vehicle.Position, 80f, "client.crime.alarm", vehicle);
+                    CrimeCore.CallPolice(player, vehicle.Position, $"theft_{vehicle.Value}", $"Угнан элитный автомобиль {theft.Name} — трекер передаёт координаты", 3, "Угон элитного автомобиля");
+                }
                 // Программатор отключает сигнализацию; у дешёвых машин она может сработать
-                if (!theft.Expensive && CrimeCore.Roll(AlarmChance))
+                else if (!theft.Expensive && CrimeCore.Roll(AlarmChance))
                 {
                     Trigger.ClientEvent(player, "client.crime.alarm", vehicle);
                     CrimeCore.CallPolice(player, vehicle.Position, $"theft_{vehicle.Value}", "Сработала автосигнализация — угон автомобиля", 2, "Угон автомобиля");
@@ -366,9 +435,19 @@ namespace NeptuneEvo.Crime.CarTheft
                 if (sessionData.DeliveryData.Vehicle == vehicle)
                     sessionData.DeliveryData.Vehicle = null;
                 player.AddTableScore(TableTaskId.Item27);
-                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter,
-                    $"Машина разобрана: {parts} дет. Продайте их Мавру в «Скупке краденого»", 5000);
-                BlackMarket.Audit.AuditLog.Write("theft_chop", characterData.UUID, itemId: (int)ItemId.StolenCarParts, count: parts, details: new { fraction = theft.Fraction });
+                var bonus = 0;
+                if (theft.Super)
+                {
+                    // Эксклюзив: Мавр доплачивает наличными сразу (коэффициент — как у остальных криминальных выплат)
+                    bonus = CrimeCore.Payout(player, SuperBonus);
+                    MoneySystem.Wallet.Change(player, bonus);
+                    GameLog.Money("server", $"player({characterData.UUID})", bonus, $"theftSuper({theft.Name})");
+                }
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, bonus > 0
+                    ? $"Эксклюзив разобран: {parts} дет. и ${bonus} от Мавра{CrimeCore.FundSuffix(player)}. Детали продайте в «Скупке краденого»"
+                    : $"Машина разобрана: {parts} дет. Продайте их Мавру в «Скупке краденого»", 6000);
+                BlackMarket.Audit.AuditLog.Write("theft_chop", characterData.UUID, itemId: (int)ItemId.StolenCarParts, count: parts,
+                    amount: bonus, details: new { fraction = theft.Fraction, car = theft.Name, super = theft.Super });
             }
             catch (Exception e)
             {

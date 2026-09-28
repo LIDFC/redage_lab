@@ -66,6 +66,7 @@
 
 	//Администрации
 
+	import AdminConfigPanel from '@/views/admin/configpanel/index.svelte';
 	//import AdminPlayersView from '@/views/admin/playersView/index.svelte';
 	//import AdminReport from '@/views/admin/report/index.svelte';
 
@@ -195,6 +196,7 @@
 		CasinoJacpot,
 		CasinoRoullete,
 
+		AdminConfigPanel,//Настройки settings/*.json (/cfg, Functions/ConfigPanel.cs)
 		//AdminPlayersView,//Не работает
 		//AdminReport,
 

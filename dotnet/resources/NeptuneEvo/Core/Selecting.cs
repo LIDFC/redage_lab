@@ -509,6 +509,12 @@ namespace NeptuneEvo.Core
                         Ticket.OpenTicket(player, vehicle);
                         return;
                     case 6:
+                        // Машина из заказа на угон: свой взлом (отмычка / программатор), без старого взлома багажника
+                        if (Crime.CarTheft.CarTheftManager.IsTheft(vehicle))
+                        {
+                            Crime.CarTheft.CarTheftManager.BreakIn(player, vehicle);
+                            return;
+                        }
                         vehicleLocalData = vehicle.GetVehicleLocalData();
                         if (vehicleLocalData != null)
                         {

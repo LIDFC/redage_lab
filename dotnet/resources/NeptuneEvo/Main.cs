@@ -75,6 +75,8 @@ namespace NeptuneEvo
         {
             ServerSettings = Settings.ReadAsync("serverSettings", ServerSettings);
             ServerNumber = ServerSettings.ServerId;
+            if (ServerSettings.HouseTaxPercent > 0)
+                HouseManager.HouseTax = ServerSettings.HouseTaxPercent;
             DonateSettings = Settings.ReadAsync("donationsSettings", DonateSettings);
             Settings.ApplyMysqlEnv(DonateSettings, "REDAGE_DONATE_DB");
             MoneySettings = Settings.ReadAsync("moneySettings", MoneySettings);
@@ -93,7 +95,9 @@ namespace NeptuneEvo
             var index = 0;
             foreach (var shopFurniture in FurnitureManager.NameModels.Values)
             {
-                shopFurniture.Price = PricesSettings.FurtinurePrices[index];
+                // Цены из настроек есть только у первых позиций; у новой мебели — цена из FurnitureManager.NameModels
+                if (PricesSettings.FurtinurePrices != null && index < PricesSettings.FurtinurePrices.Length)
+                    shopFurniture.Price = PricesSettings.FurtinurePrices[index];
                 index++;
             }
             
@@ -3387,6 +3391,7 @@ namespace NeptuneEvo
                 HouseManager.Init();
                 Houses.Apartments.ApartmentManager.Init();
                 BlackMarket.BlackMarketManager.Init();
+                MoneySystem.MoneyHistory.Init();
                 Crime.Weed.WeedManager.Init();
                 Crime.CarTheft.CarTheftManager.Init();
 
@@ -4664,7 +4669,11 @@ namespace NeptuneEvo
 
                         GameLog.Money($"biz({biz.ID})", "frac(6)", tax, "bizTaxHour");
 
-                        if (bizBalance.Balance >= 0) continue;
+                        if (bizBalance.Balance >= 0)
+                        {
+                            MoneySystem.TaxReminder.Check(biz.Owner, $"бизнес #{biz.ID}", bizBalance.Balance, tax);
+                            continue;
+                        }
 
                         string owner = biz.Owner;
                         if (PlayerNames.Values.Contains(owner) && PlayerUUIDs.ContainsKey(owner))
@@ -4750,7 +4759,11 @@ namespace NeptuneEvo
                         if (house.Type != 7) GameLog.Money($"house({house.ID})", "frac(6)", tax, "houseTaxHour");
                         else GameLog.Money($"park({house.ID})", "frac(6)", tax, "parkTaxHour");
 
-                        if (houseBalance.Balance >= 0) continue;
+                        if (houseBalance.Balance >= 0)
+                        {
+                            MoneySystem.TaxReminder.Check(house.Owner, house.Type == 7 ? $"парковку #{house.ID}" : $"дом #{house.ID}", houseBalance.Balance, tax);
+                            continue;
+                        }
 
                         string owner = house.Owner;
                         var player = (ExtPlayer) NAPI.Player.GetPlayerFromName(owner);

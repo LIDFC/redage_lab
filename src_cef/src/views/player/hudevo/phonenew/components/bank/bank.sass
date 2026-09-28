@@ -288,6 +288,19 @@ $red: #F2555A
             @include fluid("font-size", 12)
             line-height: 1.35
 
+    .fleeca__history_row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        @include fluid("gap", 8)
+        b
+            white-space: nowrap
+            @include fluid("font-size", 13)
+            &.plus
+                color: #45c47a
+            &.minus
+                color: #e5645c
+
     .fleeca__empty
         text-align: center
         @include fluid("font-size", 13)

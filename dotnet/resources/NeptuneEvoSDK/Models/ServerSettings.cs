@@ -28,6 +28,8 @@ namespace Redage.SDK.Models
         /// Снимать ли на логи на дом
         /// </summary>
         public bool IsHouseTax = true;
+        /// <summary>Налог на дом в час, % от цены дома (меняется в /cfg).</summary>
+        public double HouseTaxPercent = 0.026;
         /// <summary>
         /// Минимальный уровень админов которым будет видно уведомления о репортах
         /// </summary>

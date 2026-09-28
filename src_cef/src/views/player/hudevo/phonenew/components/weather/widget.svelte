@@ -19,10 +19,10 @@
             Los Santos <span class="phoneicons-location"></span>
         </div>
         <div class="newphone__weather_gradus">
-            {#if currentWeather.temp}
-                -{currentWeather.temp}&#176;C
+            {#if currentWeather.temp !== undefined && currentWeather.temp !== null}
+                {currentWeather.temp}&#176;C
             {:else}
-                5&#176;C
+                —
             {/if}
         </div>
         <div class="box-flex">

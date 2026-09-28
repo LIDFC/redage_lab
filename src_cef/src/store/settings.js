@@ -55,6 +55,9 @@ export const storeSettings = writable({
     notifCount: 2,
 
     hitPoint: false,
+
+    // Расположение блоков HUD (редактор: Настройки → «Расположение HUD»)
+    HudLayout: "",
 });
 
 window.settingsStore.init = (json) => {

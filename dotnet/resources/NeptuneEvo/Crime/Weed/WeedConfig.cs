@@ -27,12 +27,12 @@ namespace NeptuneEvo.Crime.Weed
         [JsonProperty("seedPrice")] public int SeedPrice { get; set; } = 150;
         [JsonProperty("waterPrice")] public int WaterPrice { get; set; } = 30;
         /// <summary>Сколько минут растёт куст до урожая.</summary>
-        [JsonProperty("growMinutes")] public int GrowMinutes { get; set; } = 60;
+        [JsonProperty("growMinutes")] public int GrowMinutes { get; set; } = 20;
         /// <summary>Не поливали дольше — куст засыхает.</summary>
-        [JsonProperty("waterMinutes")] public int WaterMinutes { get; set; } = 25;
+        [JsonProperty("waterMinutes")] public int WaterMinutes { get; set; } = 10;
         /// <summary>Созревший куст гниёт, если не собрать за это время.</summary>
-        [JsonProperty("rotMinutes")] public int RotMinutes { get; set; } = 120;
-        [JsonProperty("dryMinutes")] public int DryMinutes { get; set; } = 20;
+        [JsonProperty("rotMinutes")] public int RotMinutes { get; set; } = 60;
+        [JsonProperty("dryMinutes")] public int DryMinutes { get; set; } = 10;
         [JsonProperty("yieldMin")] public int YieldMin { get; set; } = 10;
         [JsonProperty("yieldMax")] public int YieldMax { get; set; } = 16;
         [JsonProperty("homeMaxPlants")] public int HomeMaxPlants { get; set; } = 3;
@@ -72,6 +72,15 @@ namespace NeptuneEvo.Crime.Weed
                 save = true;
             }
             config.Buyers ??= new List<WeedBuyer>();
+            // Старые значения по умолчанию (рост 60 мин) — слишком долго, переводим на новые, если их не меняли вручную
+            if (config.GrowMinutes == 60 && config.WaterMinutes == 25 && config.RotMinutes == 120 && config.DryMinutes == 20)
+            {
+                config.GrowMinutes = 20;
+                config.WaterMinutes = 10;
+                config.RotMinutes = 60;
+                config.DryMinutes = 10;
+                save = true;
+            }
             Current = config;
             if (save)
                 Save();

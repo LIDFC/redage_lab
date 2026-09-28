@@ -851,6 +851,7 @@ namespace NeptuneEvo
                 Log.Write($"Fractions loaded.", nLog.Type.Success);
                 Organizations.Manager.onResourceStart();
                 Log.Write($"Organizations loaded.", nLog.Type.Success);
+                Organizations.Contracts.ContractsManager.Init();
 
                 Timers.Start("savedb", 1000 * (60 * 60), () => Admin.SaveServer(), true);
                 Timers.Start("ClearCollect", 1000 * (60 * 30), () => GarbageCollector(), true);

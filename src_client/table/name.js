@@ -69,6 +69,7 @@ export const accessKeyToId = {
     "FamilyZone": 60,
     "IsWar": 61,
     "StartLiveStream": 62,
+    "OrganizationContracts": 63,
 }
 
 export const accessIdToKey = {
@@ -136,6 +137,7 @@ export const accessIdToKey = {
     60: 'FamilyZone',
     61: 'IsWar',
     62: 'StartLiveStream',
+    63: 'OrganizationContracts',
 }
 
 
@@ -211,6 +213,7 @@ export const accessKeyToName = {
     "FamilyZone": "Захват зон",
     "IsWar": "Возможность зайти в зону захвата",
     "StartLiveStream":"Доступ к эфирам",
+    "OrganizationContracts": "Строительные подряды (принятие и закупка)",
 }
 
 export const accessType = {

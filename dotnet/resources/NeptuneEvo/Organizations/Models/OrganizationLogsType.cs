@@ -20,5 +20,12 @@
         BizWar,
         SellCar,
         BuyCar,
+        ContractAccept,
+        ContractCancel,
+        ContractComplete,
+        ContractFail,
+        ContractBuy,
+        ContractLoad,
+        ContractDeliver,
     }
 }

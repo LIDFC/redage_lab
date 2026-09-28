@@ -24,6 +24,8 @@ namespace NeptuneEvo.Organizations.Models
         public byte OfficeUpgrade { get; set; } = 0;
         public bool Stock { get; set; } = false;
         public bool CrimeOptions { get; set; } = false;
+        /// <summary>Репутация организации (строительные подряды). Хранится в organizations.reputation, пишется модулем Organizations/Contracts.</summary>
+        public int Reputation { get; set; } = 0;
         public Dictionary<string, bool> Schemes { get; set; } = new Dictionary<string, bool>()
         {
             {"Pistol", false},

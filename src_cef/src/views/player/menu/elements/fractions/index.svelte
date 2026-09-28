@@ -27,6 +27,7 @@
     import Weapons from './elements/weapons/weapons.svelte'
     import BizWar from './elements/bizwar/bizwar.svelte'
     import Online from './menu/online.svelte'
+    import Contracts from './elements/contracts/index.svelte'
 
     const Views = {
         Main,
@@ -41,7 +42,8 @@
         BestPlayers,
         Complaints,
         Weapons,
-        BizWar
+        BizWar,
+        Contracts
     }
 
     import Input from './popup/input/index.svelte'
@@ -240,6 +242,12 @@
             <span class="fractionsicon-parking"></span>
             <div class="fractions__menu_text">{translateText('player1', 'Парковка')}</div>
         </div>
+        {#if isOrganization()}
+        <div class="fractions__menu_element" class:active={selectedTableView === "Contracts"} on:click={() => setView ("Contracts")}>
+            <span class="fractionsicon-tasks"></span>
+            <div class="fractions__menu_text">Подряды</div>
+        </div>
+        {/if}
         <!--<div class="fractions__menu_element" class:active={selectedTableView === "Weapons"} on:click={() => setView ("Weapons")}>
             <span class="fractionsicon-stock"></span>
             <div class="fractions__menu_text">{translateText('player1', 'Наборы оружия')}</div>

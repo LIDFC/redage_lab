@@ -332,6 +332,136 @@ namespace NeptuneEvo.Houses
 			{
 				{ ItemId.Iron, 100 },
 			}) },
+
+			// ===== Мебель для обустройства квартиры (цены здесь; в settings/pricesSettings.json только первые 40 позиций). Только покупка, без крафта.
+			// Диваны
+			{ "Угловой диван «Лофт»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_01", "Диваны", 45000, new Dictionary<ItemId, int>()) },
+			{ "Угловой диван «Модерн»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_05", "Диваны", 50000, new Dictionary<ItemId, int>()) },
+			{ "Угловой диван «Бежевый»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_06", "Диваны", 48000, new Dictionary<ItemId, int>()) },
+			{ "Угловой диван «Графит»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_07", "Диваны", 52000, new Dictionary<ItemId, int>()) },
+			{ "Угловой диван «Бархат»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_08", "Диваны", 55000, new Dictionary<ItemId, int>()) },
+			{ "Угловой диван «Кожа»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_09", "Диваны", 60000, new Dictionary<ItemId, int>()) },
+			{ "Угловой диван «Премиум»", new ShopFurnitureBuy("apa_mp_h_stn_sofacorn_10", "Диваны", 65000, new Dictionary<ItemId, int>()) },
+			{ "Двухместный диван", new ShopFurnitureBuy("apa_mp_h_stn_sofa2seat_02", "Диваны", 25000, new Dictionary<ItemId, int>()) },
+			{ "Диван «Яхта»", new ShopFurnitureBuy("apa_mp_h_yacht_sofa_01", "Диваны", 40000, new Dictionary<ItemId, int>()) },
+			{ "Диван «Марина»", new ShopFurnitureBuy("apa_mp_h_yacht_sofa_02", "Диваны", 42000, new Dictionary<ItemId, int>()) },
+			// Кресла и стулья
+			{ "Кресло «Классика»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_01", "Кресла и стулья", 12000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Ракушка»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_02", "Кресла и стулья", 12000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Лаунж»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_03", "Кресла и стулья", 14000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Мягкое»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_09", "Кресла и стулья", 13000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Дизайнерское»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_11", "Кресла и стулья", 15000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Кожаное»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_12", "Кресла и стулья", 16000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Яйцо»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_13", "Кресла и стулья", 18000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Ретро»", new ShopFurnitureBuy("apa_mp_h_stn_chairarm_23", "Кресла и стулья", 14000, new Dictionary<ItemId, int>()) },
+			{ "Кресло «Яхта»", new ShopFurnitureBuy("apa_mp_h_yacht_armchair_01", "Кресла и стулья", 14000, new Dictionary<ItemId, int>()) },
+			{ "Шезлонг", new ShopFurnitureBuy("apa_mp_h_stn_chairstrip_01", "Кресла и стулья", 15000, new Dictionary<ItemId, int>()) },
+			{ "Пуф", new ShopFurnitureBuy("apa_mp_h_stn_foot_stool_01", "Кресла и стулья", 4000, new Dictionary<ItemId, int>()) },
+			{ "Барный стул", new ShopFurnitureBuy("apa_mp_h_stn_chairstool_12", "Кресла и стулья", 5000, new Dictionary<ItemId, int>()) },
+			{ "Стул «Лофт»", new ShopFurnitureBuy("apa_mp_h_din_chair_04", "Кресла и стулья", 4000, new Dictionary<ItemId, int>()) },
+			{ "Стул «Белый»", new ShopFurnitureBuy("apa_mp_h_din_chair_08", "Кресла и стулья", 4000, new Dictionary<ItemId, int>()) },
+			{ "Стул «Дерево»", new ShopFurnitureBuy("apa_mp_h_din_chair_09", "Кресла и стулья", 4500, new Dictionary<ItemId, int>()) },
+			{ "Стул «Мягкий»", new ShopFurnitureBuy("apa_mp_h_din_chair_12", "Кресла и стулья", 5000, new Dictionary<ItemId, int>()) },
+			// Столы
+			{ "Обеденный стол «Стекло»", new ShopFurnitureBuy("apa_mp_h_din_table_01", "Столы", 18000, new Dictionary<ItemId, int>()) },
+			{ "Обеденный стол «Дуб»", new ShopFurnitureBuy("apa_mp_h_din_table_04", "Столы", 20000, new Dictionary<ItemId, int>()) },
+			{ "Обеденный стол «Мрамор»", new ShopFurnitureBuy("apa_mp_h_din_table_05", "Столы", 24000, new Dictionary<ItemId, int>()) },
+			{ "Обеденный стол «Лофт»", new ShopFurnitureBuy("apa_mp_h_din_table_06", "Столы", 20000, new Dictionary<ItemId, int>()) },
+			{ "Обеденный стол «Круглый»", new ShopFurnitureBuy("apa_mp_h_din_table_11", "Столы", 16000, new Dictionary<ItemId, int>()) },
+			{ "Журнальный столик «Стекло»", new ShopFurnitureBuy("apa_mp_h_tab_coffee_05", "Столы", 8000, new Dictionary<ItemId, int>()) },
+			{ "Журнальный столик «Дерево»", new ShopFurnitureBuy("apa_mp_h_tab_coffee_07", "Столы", 8000, new Dictionary<ItemId, int>()) },
+			{ "Журнальный столик «Модерн»", new ShopFurnitureBuy("apa_mp_h_tab_coffee_08", "Столы", 9000, new Dictionary<ItemId, int>()) },
+			{ "Журнальный столик «Яхта»", new ShopFurnitureBuy("apa_mp_h_yacht_coffee_table_01", "Столы", 9000, new Dictionary<ItemId, int>()) },
+			{ "Приставной стол", new ShopFurnitureBuy("apa_mp_h_tab_sidelrg_01", "Столы", 6000, new Dictionary<ItemId, int>()) },
+			{ "Консоль", new ShopFurnitureBuy("apa_mp_h_tab_sidelrg_02", "Столы", 7000, new Dictionary<ItemId, int>()) },
+			{ "Консоль «Мрамор»", new ShopFurnitureBuy("apa_mp_h_tab_sidelrg_04", "Столы", 8000, new Dictionary<ItemId, int>()) },
+			{ "Консоль «Лофт»", new ShopFurnitureBuy("apa_mp_h_tab_sidelrg_07", "Столы", 7000, new Dictionary<ItemId, int>()) },
+			{ "Тумбочка", new ShopFurnitureBuy("apa_mp_h_tab_sidesml_01", "Столы", 3500, new Dictionary<ItemId, int>()) },
+			{ "Тумбочка «Белая»", new ShopFurnitureBuy("apa_mp_h_tab_sidesml_02", "Столы", 3500, new Dictionary<ItemId, int>()) },
+			// Кровати
+			{ "Кровать «Модерн»", new ShopFurnitureBuy("apa_mp_h_bed_double_08", "Кровати", 35000, new Dictionary<ItemId, int>()) },
+			{ "Кровать «Классика»", new ShopFurnitureBuy("apa_mp_h_bed_double_09", "Кровати", 35000, new Dictionary<ItemId, int>()) },
+			{ "Широкая кровать", new ShopFurnitureBuy("apa_mp_h_bed_wide_05", "Кровати", 45000, new Dictionary<ItemId, int>()) },
+			{ "Кровать с тумбами", new ShopFurnitureBuy("apa_mp_h_bed_with_table_02", "Кровати", 50000, new Dictionary<ItemId, int>()) },
+			{ "Кровать «Яхта»", new ShopFurnitureBuy("apa_mp_h_yacht_bed_01", "Кровати", 55000, new Dictionary<ItemId, int>()) },
+			{ "Кровать «Люкс»", new ShopFurnitureBuy("apa_mp_h_yacht_bed_02", "Кровати", 60000, new Dictionary<ItemId, int>()) },
+			// Свет
+			{ "Торшер «Дуга»", new ShopFurnitureBuy("apa_mp_h_floorlamp_a", "Свет", 5000, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Тренога»", new ShopFurnitureBuy("apa_mp_h_floorlamp_b", "Свет", 5000, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Шар»", new ShopFurnitureBuy("apa_mp_h_floorlamp_c", "Свет", 5500, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Модерн»", new ShopFurnitureBuy("apa_mp_h_lit_floorlamp_01", "Свет", 6000, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Цилиндр»", new ShopFurnitureBuy("apa_mp_h_lit_floorlamp_02", "Свет", 6000, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Лофт»", new ShopFurnitureBuy("apa_mp_h_lit_floorlamp_03", "Свет", 6000, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Тонкий»", new ShopFurnitureBuy("apa_mp_h_lit_floorlamp_05", "Свет", 6000, new Dictionary<ItemId, int>()) },
+			{ "Торшер «Яхта»", new ShopFurnitureBuy("apa_mp_h_yacht_floor_lamp_01", "Свет", 6000, new Dictionary<ItemId, int>()) },
+			{ "Настольная лампа", new ShopFurnitureBuy("apa_mp_h_lit_lamptable_005", "Свет", 2500, new Dictionary<ItemId, int>()) },
+			{ "Настольная лампа «Шар»", new ShopFurnitureBuy("apa_mp_h_lit_lamptable_02", "Свет", 2500, new Dictionary<ItemId, int>()) },
+			{ "Настольная лампа «Классика»", new ShopFurnitureBuy("apa_mp_h_lit_lamptable_04", "Свет", 2500, new Dictionary<ItemId, int>()) },
+			{ "Настольная лампа «Модерн»", new ShopFurnitureBuy("apa_mp_h_lit_lamptable_09", "Свет", 3000, new Dictionary<ItemId, int>()) },
+			{ "Подвесной светильник", new ShopFurnitureBuy("apa_mp_h_lit_lightpendant_01", "Свет", 4000, new Dictionary<ItemId, int>()) },
+			// Техника
+			{ "Большой телевизор", new ShopFurnitureBuy("prop_tv_flat_01", "Техника", 30000, new Dictionary<ItemId, int>()) },
+			{ "Телевизор", new ShopFurnitureBuy("prop_tv_flat_02", "Техника", 20000, new Dictionary<ItemId, int>()) },
+			{ "Небольшой телевизор", new ShopFurnitureBuy("prop_tv_flat_03", "Техника", 12000, new Dictionary<ItemId, int>()) },
+			{ "Плазма «Кинотеатр»", new ShopFurnitureBuy("prop_tv_flat_michael", "Техника", 45000, new Dictionary<ItemId, int>()) },
+			{ "Телевизор «Офис»", new ShopFurnitureBuy("ex_prop_ex_tv_flat_01", "Техника", 25000, new Dictionary<ItemId, int>()) },
+			{ "ТВ-тумба большая", new ShopFurnitureBuy("apa_mp_h_str_avunitl_01_b", "Техника", 18000, new Dictionary<ItemId, int>()) },
+			{ "ТВ-тумба средняя", new ShopFurnitureBuy("apa_mp_h_str_avunitm_01", "Техника", 14000, new Dictionary<ItemId, int>()) },
+			{ "ТВ-тумба малая", new ShopFurnitureBuy("apa_mp_h_str_avunits_01", "Техника", 10000, new Dictionary<ItemId, int>()) },
+			{ "Домашний кинотеатр", new ShopFurnitureBuy("hei_heist_str_avunitl_03", "Техника", 35000, new Dictionary<ItemId, int>()) },
+			{ "Музыкальный центр", new ShopFurnitureBuy("prop_hifi_01", "Техника", 8000, new Dictionary<ItemId, int>()) },
+			{ "Колонка", new ShopFurnitureBuy("prop_speaker_06", "Техника", 5000, new Dictionary<ItemId, int>()) },
+			{ "Ноутбук", new ShopFurnitureBuy("prop_laptop_01a", "Техника", 7000, new Dictionary<ItemId, int>()) },
+			// Шкафы и полки
+			{ "Стеллаж", new ShopFurnitureBuy("apa_mp_h_str_shelffloorm_02", "Шкафы и полки", 10000, new Dictionary<ItemId, int>()) },
+			{ "Настенная полка", new ShopFurnitureBuy("apa_mp_h_str_shelfwallm_01", "Шкафы и полки", 5000, new Dictionary<ItemId, int>()) },
+			{ "Комод «Дуб»", new ShopFurnitureBuy("apa_mp_h_str_sideboardl_06", "Шкафы и полки", 14000, new Dictionary<ItemId, int>()) },
+			{ "Комод «Белый»", new ShopFurnitureBuy("apa_mp_h_str_sideboardl_09", "Шкафы и полки", 14000, new Dictionary<ItemId, int>()) },
+			{ "Комод «Модерн»", new ShopFurnitureBuy("apa_mp_h_str_sideboardl_11", "Шкафы и полки", 15000, new Dictionary<ItemId, int>()) },
+			{ "Комод «Лофт»", new ShopFurnitureBuy("apa_mp_h_str_sideboardl_13", "Шкафы и полки", 15000, new Dictionary<ItemId, int>()) },
+			{ "Комод «Графит»", new ShopFurnitureBuy("apa_mp_h_str_sideboardl_14", "Шкафы и полки", 16000, new Dictionary<ItemId, int>()) },
+			{ "Буфет", new ShopFurnitureBuy("apa_mp_h_str_sideboardm_02", "Шкафы и полки", 12000, new Dictionary<ItemId, int>()) },
+			{ "Тумба «Минимал»", new ShopFurnitureBuy("apa_mp_h_str_sideboards_01", "Шкафы и полки", 8000, new Dictionary<ItemId, int>()) },
+			{ "Тумба «Дерево»", new ShopFurnitureBuy("apa_mp_h_str_sideboards_02", "Шкафы и полки", 8000, new Dictionary<ItemId, int>()) },
+			// Декор
+			{ "Ковёр средний", new ShopFurnitureBuy("apa_mp_h_acc_rugwoolm_01", "Декор", 6000, new Dictionary<ItemId, int>()) },
+			{ "Ковёр большой", new ShopFurnitureBuy("apa_mp_h_acc_rugwooll_04", "Декор", 9000, new Dictionary<ItemId, int>()) },
+			{ "Ковёр малый", new ShopFurnitureBuy("apa_mp_h_acc_rugwools_01", "Декор", 4000, new Dictionary<ItemId, int>()) },
+			{ "Свечи", new ShopFurnitureBuy("apa_mp_h_acc_candles_02", "Декор", 1500, new Dictionary<ItemId, int>()) },
+			{ "Свечи «Трио»", new ShopFurnitureBuy("apa_mp_h_acc_candles_04", "Декор", 1500, new Dictionary<ItemId, int>()) },
+			{ "Декоративная голова", new ShopFurnitureBuy("apa_mp_h_acc_dec_head_01", "Декор", 5000, new Dictionary<ItemId, int>()) },
+			{ "Декоративная тарелка", new ShopFurnitureBuy("apa_mp_h_acc_dec_plate_01", "Декор", 2000, new Dictionary<ItemId, int>()) },
+			{ "Скульптура", new ShopFurnitureBuy("apa_mp_h_acc_dec_sculpt_01", "Декор", 7000, new Dictionary<ItemId, int>()) },
+			{ "Цветы «Розы»", new ShopFurnitureBuy("apa_mp_h_acc_vase_flowers_01", "Декор", 3000, new Dictionary<ItemId, int>()) },
+			{ "Цветы «Лилии»", new ShopFurnitureBuy("apa_mp_h_acc_vase_flowers_02", "Декор", 3000, new Dictionary<ItemId, int>()) },
+			{ "Цветы «Орхидеи»", new ShopFurnitureBuy("apa_mp_h_acc_vase_flowers_03", "Декор", 3000, new Dictionary<ItemId, int>()) },
+			{ "Высокое растение", new ShopFurnitureBuy("apa_mp_h_acc_plant_tall_01", "Декор", 5000, new Dictionary<ItemId, int>()) },
+			{ "Пальма в кадке", new ShopFurnitureBuy("apa_mp_h_acc_plant_palm_01", "Декор", 6000, new Dictionary<ItemId, int>()) },
+			{ "Фруктовая ваза", new ShopFurnitureBuy("apa_mp_h_acc_fruitbowl_01", "Декор", 2000, new Dictionary<ItemId, int>()) },
+			{ "Керамическая чаша", new ShopFurnitureBuy("apa_mp_h_acc_bowl_ceramic_01", "Декор", 2000, new Dictionary<ItemId, int>()) },
+			{ "Шкатулка", new ShopFurnitureBuy("apa_mp_h_acc_box_trinket_01", "Декор", 2500, new Dictionary<ItemId, int>()) },
+			{ "Бюст", new ShopFurnitureBuy("hei_prop_hei_bust_01", "Декор", 12000, new Dictionary<ItemId, int>()) },
+			// Картины
+			{ "Абстракция", new ShopFurnitureBuy("apa_p_h_acc_artwalll_01", "Картины", 8000, new Dictionary<ItemId, int>()) },
+			{ "Закат", new ShopFurnitureBuy("apa_p_h_acc_artwalll_02", "Картины", 8000, new Dictionary<ItemId, int>()) },
+			{ "Минимализм", new ShopFurnitureBuy("apa_p_h_acc_artwallm_01", "Картины", 6000, new Dictionary<ItemId, int>()) },
+			{ "Этюд", new ShopFurnitureBuy("apa_p_h_acc_artwalls_03", "Картины", 4000, new Dictionary<ItemId, int>()) },
+			// Кухня и ванная
+			{ "Холодильник", new ShopFurnitureBuy("prop_fridge_01", "Кухня и ванная", 15000, new Dictionary<ItemId, int>()) },
+			{ "Холодильник двухдверный", new ShopFurnitureBuy("prop_fridge_03", "Кухня и ванная", 22000, new Dictionary<ItemId, int>()) },
+			{ "Микроволновка", new ShopFurnitureBuy("prop_micro_01", "Кухня и ванная", 3000, new Dictionary<ItemId, int>()) },
+			{ "Тостер", new ShopFurnitureBuy("prop_toaster_01", "Кухня и ванная", 1500, new Dictionary<ItemId, int>()) },
+			{ "Кофемашина", new ShopFurnitureBuy("prop_coffee_mac_02", "Кухня и ванная", 4000, new Dictionary<ItemId, int>()) },
+			{ "Стиральная машина", new ShopFurnitureBuy("prop_washer_02", "Кухня и ванная", 9000, new Dictionary<ItemId, int>()) },
+			{ "Унитаз", new ShopFurnitureBuy("prop_toilet_01", "Кухня и ванная", 4000, new Dictionary<ItemId, int>()) },
+			{ "Раковина", new ShopFurnitureBuy("prop_sink_06", "Кухня и ванная", 5000, new Dictionary<ItemId, int>()) },
+			// Досуг
+			{ "Бильярдный стол", new ShopFurnitureBuy("prop_pooltable_02", "Досуг", 40000, new Dictionary<ItemId, int>()) },
+			{ "Игровой автомат", new ShopFurnitureBuy("prop_arcade_01", "Досуг", 25000, new Dictionary<ItemId, int>()) },
+			{ "Музыкальный автомат", new ShopFurnitureBuy("prop_jukebox_01", "Досуг", 20000, new Dictionary<ItemId, int>()) },
+			{ "Дартс", new ShopFurnitureBuy("prop_dart_bd_cab_01", "Досуг", 6000, new Dictionary<ItemId, int>()) },
+			{ "Скамья для жима", new ShopFurnitureBuy("prop_muscle_bench_03", "Досуг", 10000, new Dictionary<ItemId, int>()) },
+			{ "Велотренажёр", new ShopFurnitureBuy("prop_exer_bike_01", "Досуг", 12000, new Dictionary<ItemId, int>()) },
 			/*{ "цветок", new ShopFurnitureBuy("apa_mp_h_acc_plant_tall_01", "Вазы", 41, new Dictionary<ItemId, int>()
 			{
 				{ ItemId.Iron, 100 },
@@ -394,6 +524,16 @@ namespace NeptuneEvo.Houses
                 Log.Write($"Save Exception: {e.ToString()}");
             }
         }
+        /// <summary>Сразу записать мебель всех домов с несохранёнными изменениями (при рестарте).</summary>
+        public static async Task SaveFurnitureNow(ServerBD db)
+        {
+            foreach (var house in HouseManager.Houses.Where(h => h.IsFurnitureSave).ToList())
+            {
+                house.IsFurnitureSave = false;
+                await Save(db, house.ID);
+            }
+        }
+
         public static void Create(int id)
         {
             try
@@ -408,6 +548,8 @@ namespace NeptuneEvo.Houses
                     cmd.Parameters.AddWithValue("@val1", JsonConvert.SerializeObject(new Dictionary<int, HouseFurniture>()));
                     cmd.Parameters.AddWithValue("@val3", JsonConvert.SerializeObject(new List<string>()));
                     MySQL.Query(cmd);
+                    // Без этого новый дом (купленный/созданный после старта) не мог купить мебель до рестарта
+                    HouseFurnitures[id] = new Dictionary<int, HouseFurniture>();
                 }
             }
             catch (Exception e)

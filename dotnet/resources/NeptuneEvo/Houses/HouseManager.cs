@@ -1016,9 +1016,8 @@ namespace NeptuneEvo.Houses
             foreach (var house in Houses)
             {
                 house.IsSave = true;
-                
-                if (isRestart)
-                    house.IsFurnitureSave = false;
+                // При рестарте флаг мебели раньше сбрасывался — изменения последних ~30 с терялись.
+                // Теперь мебель дописывается в Admin (SaveFurnitureNow) и фоновым сохранением.
             }
         }
         #endregion
@@ -1978,6 +1977,11 @@ namespace NeptuneEvo.Houses
                     }
                     else
                     {
+                        if (furnitureData.Value.Items.Count == 0)
+                        {
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Эту мебель нельзя скрафтить — только купить", 3000);
+                            return;
+                        }
                         foreach (var itemData in furnitureData.Value.Items)
                         {
                             var count = Chars.Repository.getCountItem($"char_{characterData.UUID}", itemData.Key, bagsToggled: false);

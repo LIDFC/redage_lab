@@ -93,7 +93,9 @@ namespace NeptuneEvo
             var index = 0;
             foreach (var shopFurniture in FurnitureManager.NameModels.Values)
             {
-                shopFurniture.Price = PricesSettings.FurtinurePrices[index];
+                // Цены из настроек есть только у первых позиций; у новой мебели — цена из FurnitureManager.NameModels
+                if (PricesSettings.FurtinurePrices != null && index < PricesSettings.FurtinurePrices.Length)
+                    shopFurniture.Price = PricesSettings.FurtinurePrices[index];
                 index++;
             }
             

@@ -25,6 +25,24 @@
         executeClient ("client.furniture.close");      
     }
 
+    // Категории — из поля type с сервера (Houses/HouseFurniture.cs), в порядке появления
+    const categoryIcons = {
+        "Хранилища": "🗄", "Диваны": "🛋", "Кресла и стулья": "🪑", "Столы": "🍽", "Кровати": "🛏", "Свет": "💡",
+        "Техника": "📺", "Шкафы и полки": "📚", "Декор": "🕯", "Картины": "🖼", "Кухня и ванная": "🍳", "Досуг": "🎱",
+        "Статуи": "🗿", "Фигурки": "🏆", "Растения": "🌿", "Ёлки": "🎄", "Драгоценности": "💰", "Алкоголь": "🍾", "Вазы": "🏺",
+    };
+    const iconOf = (type) => categoryIcons[type] || "🏠";
+
+    let category = "all";
+    let search = "";
+    let brokenImages = {};
+
+    $: categories = [...new Set((Array.isArray(viewData) ? viewData : []).map((f) => f.type))];
+    $: shown = (Array.isArray(viewData) ? viewData : []).filter((f) =>
+        (category === "all" || f.type === category) &&
+        (!search || String(f.name).toLowerCase().includes(search.toLowerCase())));
+    $: countOf = (type) => (Array.isArray(viewData) ? viewData : []).filter((f) => f.type === type).length;
+
     const onKeyUp = (event) => {
         switch(event.which) {
             case 27:
@@ -39,8 +57,15 @@
 -->
 <div id="furniture">
     <div class="house__header">Мебельный магазин</div>
-    <div class="house__furniture">
-        {#each viewData as furniture}
+    <div class="fcat">
+        <div class="fcat__tab" class:active={category === "all"} on:click={() => (category = "all")}>Всё <i>{Array.isArray(viewData) ? viewData.length : 0}</i></div>
+        {#each categories as type}
+            <div class="fcat__tab" class:active={category === type} on:click={() => (category = type)}>{iconOf(type)} {type} <i>{countOf(type)}</i></div>
+        {/each}
+        <input class="fcat__search" placeholder="Поиск…" bind:value={search} />
+    </div>
+    <div class="house__furniture fgrid">
+        {#each shown as furniture (furniture.name)}
             <div class="house__furniture_element">
                 <div class="box-between">
                     <div class="box-column">
@@ -67,19 +92,31 @@
                             <div class="house__furniture_text">10 сосны</div>
                         </div>-->
                     </div>
-                    <div class="house__furniture_image" style="background-image: url({document.cloud + "inventoryItems/furniture" + `/${furniture.model}.png`});"></div>
+                    <div class="house__furniture_image fimg">
+                        {#if brokenImages[furniture.model]}
+                            <span class="fimg__icon">{iconOf(furniture.type)}</span>
+                        {:else}
+                            <img src={document.cloud + "inventoryItems/furniture" + `/${furniture.model}.png`} alt="" on:error={() => (brokenImages = { ...brokenImages, [furniture.model]: true })} />
+                        {/if}
+                    </div>
                 </div>
                 <div class="box-between">
                     <div class="house__element_button" on:click={() => onBuy (furniture)}>
                         <div class="houseicon-safe house__furniture_icon"></div>
                         Купить
                     </div>
+                    {#if furniture.items && furniture.items.length}
                     <div class="house__element_button" on:click={() => onBuy (furniture, 1)}>
                         <div class="houseicon-garage house__furniture_icon"></div>
                         Скрафтить самому
                     </div>
+                    {:else}
+                    <div class="fcat__type">{iconOf(furniture.type)} {furniture.type}</div>
+                    {/if}
                 </div>
             </div>
+        {:else}
+            <div class="fcat__empty">Ничего не найдено</div>
         {/each}
     </div>
     <div class="box-between" style="margin-top: auto">
@@ -89,3 +126,17 @@
         </div>
     </div>
 </div>
+<style>
+    .fcat { display: flex; flex-wrap: wrap; gap: 0.8vh; align-items: center; width: 70.3vw; margin-top: 2.4vh; }
+    .fcat__tab { padding: 0.8vh 1.4vh; border-radius: 1vh; background: rgba(255, 255, 255, 0.06); font-size: 1.4vh; cursor: pointer; white-space: nowrap; }
+    .fcat__tab:hover { background: rgba(255, 255, 255, 0.12); }
+    .fcat__tab.active { background: #2BB6A8; color: #fff; }
+    .fcat__tab i { font-style: normal; opacity: 0.6; margin-left: 0.4vh; }
+    .fcat__search { margin-left: auto; width: 22vh; padding: 0.8vh 1.2vh; border-radius: 1vh; border: 1px solid rgba(255, 255, 255, 0.15); background: rgba(0, 0, 0, 0.25); color: #fff; font-size: 1.4vh; outline: none; }
+    .fcat__type { display: flex; align-items: center; font-size: 1.3vh; opacity: 0.6; }
+    .fcat__empty { grid-column: 1 / -1; text-align: center; opacity: 0.6; font-size: 1.6vh; padding: 4vh 0; }
+    :global(#furniture .house__furniture.fgrid) { margin-top: 2vh !important; grid-template-rows: none !important; grid-auto-rows: max-content; align-content: start; }
+    .fimg { display: flex; align-items: center; justify-content: center; }
+    .fimg img { max-width: 100%; max-height: 100%; object-fit: contain; }
+    .fimg__icon { font-size: 7vh; opacity: 0.85; }
+</style>

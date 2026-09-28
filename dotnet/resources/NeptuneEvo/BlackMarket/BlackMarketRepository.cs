@@ -156,6 +156,12 @@ namespace NeptuneEvo.BlackMarket
                     PRIMARY KEY (`id`),
                     KEY `buyer_uuid` (`buyer_uuid`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
+                @"CREATE TABLE IF NOT EXISTS `blackmarket_fence_demand` (
+                    `item` int(11) NOT NULL,
+                    `saturation` double NOT NULL,
+                    `updated` bigint(20) NOT NULL,
+                    PRIMARY KEY (`item`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4",
                 @"CREATE TABLE IF NOT EXISTS `crypto_p2p` (
                     `id` int(11) NOT NULL,
                     `owner_uuid` int(11) NOT NULL,

@@ -13,6 +13,32 @@ namespace NeptuneEvo.BlackMarket.Config
     /// whitelist при этом строится по метаданным предметов (Chars.Repository.ItemsInfo), а не вручную.
     /// Администратор меняет значения командой /bm cfg и /bm wl, файл перезаписывается.
     /// </summary>
+    public class FenceItem
+    {
+        [JsonProperty("itemId")] public int ItemId { get; set; }
+        [JsonProperty("basePrice")] public int BasePrice { get; set; }
+        /// <summary>Сколько штук «насыщают» рынок полностью (цена падает до minFactor).</summary>
+        [JsonProperty("capacity")] public int Capacity { get; set; }
+    }
+
+    /// <summary>Скупщик краденого у Мавра (BlackMarket/Fence).</summary>
+    public class FenceConfig
+    {
+        [JsonProperty("items")] public List<FenceItem> Items { get; set; } = new List<FenceItem>
+        {
+            new FenceItem { ItemId = (int)ItemId.Drugs, BasePrice = 180, Capacity = 500 },
+            new FenceItem { ItemId = (int)ItemId.StolenElectronics, BasePrice = 650, Capacity = 30 },
+            new FenceItem { ItemId = (int)ItemId.StolenJewelry, BasePrice = 420, Capacity = 60 },
+            new FenceItem { ItemId = (int)ItemId.StolenCarParts, BasePrice = 900, Capacity = 25 },
+        };
+        /// <summary>Ниже этой доли от базы цена не падает.</summary>
+        [JsonProperty("minFactor")] public double MinFactor { get; set; } = 0.35;
+        /// <summary>На сколько процентов в час восстанавливается спрос.</summary>
+        [JsonProperty("recoverPercentPerHour")] public double RecoverPercentPerHour { get; set; } = 4;
+        /// <summary>Бонус к цене при оплате в BTC, %.</summary>
+        [JsonProperty("btcBonusPercent")] public decimal BtcBonusPercent { get; set; } = 10m;
+    }
+
     public class BlackMarketConfig
     {
         private static string FilePath => Path.Combine("settings", "blackmarket.json");
@@ -56,6 +82,10 @@ namespace NeptuneEvo.BlackMarket.Config
         /// </summary>
         [JsonProperty("dropPoints")] public List<Vector3> DropPoints { get; set; } = new List<Vector3>();
 
+        [JsonProperty("fence")] public FenceConfig Fence { get; set; } = new FenceConfig();
+        /// <summary>Точка разборки угнанных машин (Crime/CarTheft). null — у Мавра (cashoutPoint).</summary>
+        [JsonProperty("chopPoint")] public Vector3 ChopPoint { get; set; }
+
         public static void Load()
         {
             BlackMarketConfig config = null;
@@ -80,6 +110,20 @@ namespace NeptuneEvo.BlackMarket.Config
                 config.Whitelist = DefaultWhitelist();
                 save = true;
             }
+            if (config.Fence?.Items == null || config.Fence.Items.Count == 0)
+            {
+                config.Fence = new FenceConfig();
+                save = true;
+            }
+            // Криминал 2.0: семена, свежая конопля и краденое тоже торгуются на P2P-рынке
+            foreach (var extra in CrimeItems)
+            {
+                if (!config.Whitelist.Contains((int)extra))
+                {
+                    config.Whitelist.Add((int)extra);
+                    save = true;
+                }
+            }
             if (config.DropPoints == null || config.DropPoints.Count == 0)
             {
                 config.DropPoints = DefaultDropPoints.ToList();
@@ -103,6 +147,9 @@ namespace NeptuneEvo.BlackMarket.Config
                 BlackMarketCore.Log.Write($"Не удалось сохранить {FilePath}: {e.Message}");
             }
         }
+
+        private static readonly ItemId[] CrimeItems =
+            { ItemId.WeedSeed, ItemId.WeedRaw, ItemId.StolenElectronics, ItemId.StolenJewelry, ItemId.StolenCarParts, ItemId.CarProgrammer };
 
         public bool IsAllowed(ItemId itemId) => Whitelist.Contains((int)itemId) && Chars.Repository.ItemsInfo.ContainsKey(itemId);
 

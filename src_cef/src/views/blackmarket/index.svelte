@@ -12,6 +12,7 @@
     import History from './pages/History.svelte'
     import Wallets from './pages/Wallets.svelte'
     import CashOut from './pages/CashOut.svelte'
+    import Fence from './pages/Fence.svelte'
 
     export let viewData;
 
@@ -39,6 +40,7 @@
         { key: "history", name: "История" },
         { key: "wallets", name: "Кошельки" },
         { key: "cashout", name: "Обнал" },
+        { key: "fence", name: "Скупка" },
     ];
 
     window.events.addEvent("blackmarket.result", (actionName, ok, message, json) => {
@@ -107,6 +109,8 @@
                 <Wallets {data} {lastResult} />
             {:else if page === "cashout"}
                 <CashOut {data} {lastResult} />
+            {:else if page === "fence"}
+                <Fence {data} {lastResult} />
             {/if}
         </div>
     </div>

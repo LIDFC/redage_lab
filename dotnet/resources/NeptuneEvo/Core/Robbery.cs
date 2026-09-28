@@ -676,7 +676,7 @@ namespace NeptuneEvo.Core
             {
                 if (!player.IsCharacterData()) return;
                 if (Manager.FractionDataMats.Count == 0) return;
-                List<int> ListItems = new List<int>() { 0, 500, 1, 2, 3, 4, 5, 6, 7, 69, 78, 79, 80, 81};
+                List<int> ListItems = new List<int>() { 0, 500, 501, 504, 505, 502, 503, 1, 2, 3, 4, 5, 6, 7, 69, 78, 79, 80, 81};
 
                 List<Manager.FracMatsData> _JsonData = new List<Manager.FracMatsData>();
 
@@ -711,6 +711,21 @@ namespace NeptuneEvo.Core
                     case 500:
                         // Обнал крипты — приложение Чёрного рынка на вкладке «Обнал» (у Мавра VPN не нужен)
                         NeptuneEvo.BlackMarket.Controller.OpenAt(player, "cashout");
+                        return;
+                    case 501:
+                        // Скупка краденого: трава, техника, украшения, детали угнанных машин (наличные или BTC)
+                        NeptuneEvo.BlackMarket.Controller.OpenAt(player, "fence");
+                        return;
+                    case 504:
+                        // Угон для любого криминала (банды берут и у Carter Scott); кулдаун общий на команду
+                        Crime.CarTheft.CarTheftManager.Start(player, player.GetFractionId());
+                        return;
+                    case 505:
+                        Crime.CarTheft.CarTheftManager.BuyProgrammer(player);
+                        return;
+                    case 502:
+                    case 503:
+                        Crime.Weed.WeedManager.BuyFromMavr(player, index == 502 ? ItemId.WeedSeed : ItemId.WaterBottle);
                         return;
                     case 1:
                         if (Chars.Repository.isFreeSlots(player, ItemId.BagWithDrill) != 0) return;

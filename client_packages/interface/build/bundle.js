@@ -9650,6 +9650,36 @@ module.exports = "/src/views/player/jobselector/assets/images/truck.svg";
 
 /***/ }),
 
+/***/ "./src/views/player/lockbreak/assets/keyhole.png":
+/*!*******************************************************!*\
+  !*** ./src/views/player/lockbreak/assets/keyhole.png ***!
+  \*******************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/lockbreak/assets/keyhole.png";
+
+/***/ }),
+
+/***/ "./src/views/player/lockbreak/assets/lock.png":
+/*!****************************************************!*\
+  !*** ./src/views/player/lockbreak/assets/lock.png ***!
+  \****************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/lockbreak/assets/lock.png";
+
+/***/ }),
+
+/***/ "./src/views/player/lockbreak/assets/lockpick.png":
+/*!********************************************************!*\
+  !*** ./src/views/player/lockbreak/assets/lockpick.png ***!
+  \********************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/lockbreak/assets/lockpick.png";
+
+/***/ }),
+
 /***/ "./src/views/player/menu/elements/fractions/elements/tasks/images/0.png":
 /*!******************************************************************************!*\
   !*** ./src/views/player/menu/elements/fractions/elements/tasks/images/0.png ***!
@@ -9717,6 +9747,76 @@ module.exports = "/src/views/player/menu/elements/fractions/elements/tasks/image
 /***/ ((module) => {
 
 module.exports = "/src/views/player/menu/elements/fractions/elements/tasks/images/6.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/393.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/393.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/393.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/394.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/394.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/394.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/395.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/395.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/395.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/396.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/396.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/396.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/397.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/397.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/397.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/398.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/398.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/398.png";
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/399.png":
+/*!*********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/399.png ***!
+  \*********************************************************************/
+/***/ ((module) => {
+
+module.exports = "/src/views/player/menu/elements/inventory/localitems/399.png";
 
 /***/ }),
 
@@ -9927,6 +10027,36 @@ module.exports = "/src/views/vehicle/hotwire/images/pin.png";
 /***/ ((module) => {
 
 module.exports = "/src/views/vehicle/hotwire/images/pineffect.png";
+
+/***/ }),
+
+/***/ "./src/views/player/lockbreak/assets/lockpickbreak.mp3":
+/*!*************************************************************!*\
+  !*** ./src/views/player/lockbreak/assets/lockpickbreak.mp3 ***!
+  \*************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "src/views/player/lockbreak/assets//lockpickbreak.mp3";
+
+/***/ }),
+
+/***/ "./src/views/player/lockbreak/assets/lockpickdamage.mp3":
+/*!**************************************************************!*\
+  !*** ./src/views/player/lockbreak/assets/lockpickdamage.mp3 ***!
+  \**************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "src/views/player/lockbreak/assets//lockpickdamage.mp3";
+
+/***/ }),
+
+/***/ "./src/views/player/lockbreak/assets/openlocksong.mp3":
+/*!************************************************************!*\
+  !*** ./src/views/player/lockbreak/assets/openlocksong.mp3 ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "src/views/player/lockbreak/assets//openlocksong.mp3";
 
 /***/ }),
 
@@ -42577,49 +42707,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! @/views/fractions/craft/index.svelte */ "./src/views/fractions/craft/index.svelte");
 /* harmony import */ var _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! @/views/fractions/create/index.svelte */ "./src/views/fractions/create/index.svelte");
 /* harmony import */ var _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! @/views/fractions/contractshop/index.svelte */ "./src/views/fractions/contractshop/index.svelte");
-/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
-/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
-/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
-/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
-/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
-/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
-/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
-/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
-/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
-/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
-/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
-/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
-/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
-/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
-/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
-/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
-/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
-/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
-/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
-/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
-/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
-/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
-/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
-/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
-/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
-/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
-/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
-/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_player_lockbreak_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/player/lockbreak/index.svelte */ "./src/views/player/lockbreak/index.svelte");
+/* harmony import */ var _views_player_cyberhack_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/player/cyberhack/index.svelte */ "./src/views/player/cyberhack/index.svelte");
+/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
+/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
+/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
+/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
+/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
+/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
+/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
+/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
+/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
+/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
+/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
+/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
+/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
+/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
+/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
+/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
+/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
+/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
+/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
+/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
+/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
+/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
+/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
+/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
+/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
+/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
+/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
+/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -42701,6 +42833,8 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 //Фракции
 // /import FractionsAdverts from '@/views/fractions/adverts/index.svelte';
+
+
 
 
 
@@ -42858,7 +42992,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (409:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (413:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -42879,7 +43013,7 @@ function create_default_slot_1(ctx) {
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
-	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_88__.default({
+	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_90__.default({
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
@@ -42964,7 +43098,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (422:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (426:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -43171,7 +43305,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -43211,64 +43345,66 @@ function instance($$self, $$props, $$invalidate) {
 		FractionsBSearch: _views_fractions_bsearch_index_svelte__WEBPACK_IMPORTED_MODULE_59__.default,
 		FractionsMats: _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_60__.default,
 		FractionsCraft: _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_61__.default,
-		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
-		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
-		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
-		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
-		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
-		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
+		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
+		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
+		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
+		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
+		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
 		FractionsCreate: _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_62__.default,
 		FractionsContractShop: _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
-		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
-		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
-		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
-		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
+		PlayerLockBreak: _views_player_lockbreak_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
+		PlayerCyberHack: _views_player_cyberhack_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
+		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
+		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
+		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
 		//AdminPlayersView,//Не работает
 		//AdminReport,
-		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
-		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
-		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
-		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
-		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
-		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
+		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
+		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
+		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
+		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
 		//DonateCards,
-		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
-		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
+		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
 		//QuestsDialog1,
 		//QuestsDialog2,
 		//QuestsDialog3,
-		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
-		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
-		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
-		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
-		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
-		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
-		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
-		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
-		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default
+		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
+		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
+		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
+		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
+		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
+		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
+		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
+		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
+		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_106__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_108__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -45974,8 +46110,8 @@ function instance($$self, $$props, $$invalidate) {
 	const handleKeyUp = event => {
 		const { keyCode } = event;
 
-		for (let i = 0; i < 8; i++) {
-			if (49 + i == keyCode) {
+		for (let i = 0; i < Math.min(8, popupData.length); i++) {
+			if (49 + i == keyCode && popupData[i]) {
 				onCircleClick(popupData[i].func, popupData[i].index);
 				return;
 			}
@@ -50010,10 +50146,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_History_svelte__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/History.svelte */ "./src/views/blackmarket/pages/History.svelte");
 /* harmony import */ var _pages_Wallets_svelte__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/Wallets.svelte */ "./src/views/blackmarket/pages/Wallets.svelte");
 /* harmony import */ var _pages_CashOut_svelte__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/CashOut.svelte */ "./src/views/blackmarket/pages/CashOut.svelte");
+/* harmony import */ var _pages_Fence_svelte__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/Fence.svelte */ "./src/views/blackmarket/pages/Fence.svelte");
 /* src/views/blackmarket/index.svelte generated by Svelte v3.59.2 */
 
 
 const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
 
 
 
@@ -50036,8 +50174,8 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (75:24) {#if p.key === "orders" && ordersCount > 0}
-function create_if_block_10(ctx) {
+// (77:24) {#if p.key === "orders" && ordersCount > 0}
+function create_if_block_11(ctx) {
 	let span;
 	let t;
 
@@ -50060,7 +50198,7 @@ function create_if_block_10(ctx) {
 	};
 }
 
-// (72:16) {#each pages as p}
+// (74:16) {#each pages as p}
 function create_each_block(ctx) {
 	let div;
 	let t0_value = /*p*/ ctx[11].name + "";
@@ -50069,7 +50207,7 @@ function create_each_block(ctx) {
 	let t2;
 	let mounted;
 	let dispose;
-	let if_block = /*p*/ ctx[11].key === "orders" && /*ordersCount*/ ctx[3] > 0 && create_if_block_10(ctx);
+	let if_block = /*p*/ ctx[11].key === "orders" && /*ordersCount*/ ctx[3] > 0 && create_if_block_11(ctx);
 
 	function click_handler() {
 		return /*click_handler*/ ctx[9](/*p*/ ctx[11]);
@@ -50104,7 +50242,7 @@ function create_each_block(ctx) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block_10(ctx);
+					if_block = create_if_block_11(ctx);
 					if_block.c();
 					if_block.m(div, t2);
 				}
@@ -50126,8 +50264,8 @@ function create_each_block(ctx) {
 	};
 }
 
-// (82:16) {#if data.wallet?.reserved > 0}
-function create_if_block_9(ctx) {
+// (84:16) {#if data.wallet?.reserved > 0}
+function create_if_block_10(ctx) {
 	let div;
 	let t0;
 	let t1_value = (0,_api__WEBPACK_IMPORTED_MODULE_3__.btc)(/*data*/ ctx[0].wallet.reserved) + "";
@@ -50154,8 +50292,8 @@ function create_if_block_9(ctx) {
 	};
 }
 
-// (85:16) {#if data.fraction}
-function create_if_block_8(ctx) {
+// (87:16) {#if data.fraction}
+function create_if_block_9(ctx) {
 	let div0;
 	let t0_value = /*data*/ ctx[0].fraction.name + "";
 	let t0;
@@ -50194,7 +50332,48 @@ function create_if_block_8(ctx) {
 	};
 }
 
-// (108:41) 
+// (112:39) 
+function create_if_block_8(ctx) {
+	let fence;
+	let current;
+
+	fence = new _pages_Fence_svelte__WEBPACK_IMPORTED_MODULE_12__.default({
+			props: {
+				data: /*data*/ ctx[0],
+				lastResult: /*lastResult*/ ctx[2]
+			}
+		});
+
+	return {
+		c() {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(fence.$$.fragment);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(fence, target, anchor);
+			current = true;
+		},
+		p(ctx, dirty) {
+			const fence_changes = {};
+			if (dirty & /*data*/ 1) fence_changes.data = /*data*/ ctx[0];
+			if (dirty & /*lastResult*/ 4) fence_changes.lastResult = /*lastResult*/ ctx[2];
+			fence.$set(fence_changes);
+		},
+		i(local) {
+			if (current) return;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(fence.$$.fragment, local);
+			current = true;
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(fence.$$.fragment, local);
+			current = false;
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(fence, detaching);
+		}
+	};
+}
+
+// (110:41) 
 function create_if_block_7(ctx) {
 	let cashout;
 	let current;
@@ -50235,7 +50414,7 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (106:41) 
+// (108:41) 
 function create_if_block_6(ctx) {
 	let wallets;
 	let current;
@@ -50276,7 +50455,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (104:41) 
+// (106:41) 
 function create_if_block_5(ctx) {
 	let history;
 	let current;
@@ -50310,7 +50489,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (102:42) 
+// (104:42) 
 function create_if_block_4(ctx) {
 	let transfer;
 	let current;
@@ -50351,7 +50530,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (100:37) 
+// (102:37) 
 function create_if_block_3(ctx) {
 	let p2p;
 	let current;
@@ -50392,7 +50571,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (98:40) 
+// (100:40) 
 function create_if_block_2(ctx) {
 	let orders;
 	let current;
@@ -50426,7 +50605,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (96:40) 
+// (98:40) 
 function create_if_block_1(ctx) {
 	let mylots;
 	let current;
@@ -50467,7 +50646,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (94:12) {#if page === "market"}
+// (96:12) {#if page === "market"}
 function create_if_block(ctx) {
 	let market;
 	let current;
@@ -50540,8 +50719,8 @@ function create_fragment(ctx) {
 		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
 	}
 
-	let if_block0 = /*data*/ ctx[0].wallet?.reserved > 0 && create_if_block_9(ctx);
-	let if_block1 = /*data*/ ctx[0].fraction && create_if_block_8(ctx);
+	let if_block0 = /*data*/ ctx[0].wallet?.reserved > 0 && create_if_block_10(ctx);
+	let if_block1 = /*data*/ ctx[0].fraction && create_if_block_9(ctx);
 
 	const if_block_creators = [
 		create_if_block,
@@ -50551,7 +50730,8 @@ function create_fragment(ctx) {
 		create_if_block_4,
 		create_if_block_5,
 		create_if_block_6,
-		create_if_block_7
+		create_if_block_7,
+		create_if_block_8
 	];
 
 	const if_blocks = [];
@@ -50565,6 +50745,7 @@ function create_fragment(ctx) {
 		if (/*page*/ ctx[1] === "history") return 5;
 		if (/*page*/ ctx[1] === "wallets") return 6;
 		if (/*page*/ ctx[1] === "cashout") return 7;
+		if (/*page*/ ctx[1] === "fence") return 8;
 		return -1;
 	}
 
@@ -50692,7 +50873,7 @@ function create_fragment(ctx) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_9(ctx);
+					if_block0 = create_if_block_10(ctx);
 					if_block0.c();
 					if_block0.m(div8, t11);
 				}
@@ -50705,7 +50886,7 @@ function create_fragment(ctx) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
-					if_block1 = create_if_block_8(ctx);
+					if_block1 = create_if_block_9(ctx);
 					if_block1.c();
 					if_block1.m(div8, null);
 				}
@@ -50813,7 +50994,8 @@ function instance($$self, $$props, $$invalidate) {
 		{ key: "transfer", name: "Перевод" },
 		{ key: "history", name: "История" },
 		{ key: "wallets", name: "Кошельки" },
-		{ key: "cashout", name: "Обнал" }
+		{ key: "cashout", name: "Обнал" },
+		{ key: "fence", name: "Скупка" }
 	];
 
 	window.events.addEvent("blackmarket.result", (actionName, ok, message, json) => {
@@ -51585,6 +51767,706 @@ class CashOut extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCompone
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CashOut);
+
+
+/***/ }),
+
+/***/ "./src/views/blackmarket/pages/Fence.svelte":
+/*!**************************************************!*\
+  !*** ./src/views/blackmarket/pages/Fence.svelte ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var _api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api */ "./src/views/blackmarket/api.js");
+/* src/views/blackmarket/pages/Fence.svelte generated by Svelte v3.59.2 */
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-tlsgtn", ".where.svelte-tlsgtn.svelte-tlsgtn{margin-bottom:1.4vh;border-color:rgba(216, 57, 75, 0.35);color:rgba(255, 255, 255, 0.8)}.where.ok.svelte-tlsgtn.svelte-tlsgtn{border-color:rgba(127, 211, 107, 0.45);color:#9fe08f}.note.svelte-tlsgtn.svelte-tlsgtn{margin:-0.4vh 0 1.2vh;color:#f5c060}.list.svelte-tlsgtn.svelte-tlsgtn{display:flex;flex-direction:column;gap:1vh}.item.svelte-tlsgtn.svelte-tlsgtn{display:flex;align-items:center;gap:1.6vh;padding:1.4vh 1.8vh}.icon.svelte-tlsgtn.svelte-tlsgtn{width:6vh;height:6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0}.icon.svelte-tlsgtn img.svelte-tlsgtn{max-width:80%;max-height:80%}.info.svelte-tlsgtn.svelte-tlsgtn{flex:1;min-width:0}.name.svelte-tlsgtn.svelte-tlsgtn{font-size:1.7vh;font-weight:600;margin-bottom:0.4vh}.demand.svelte-tlsgtn.svelte-tlsgtn{display:flex;align-items:center;gap:1vh;margin-top:0.6vh}.bar.svelte-tlsgtn.svelte-tlsgtn{width:14vh;height:0.6vh;border-radius:0.3vh;background:rgba(255, 255, 255, 0.08);overflow:hidden}.bar.svelte-tlsgtn div.svelte-tlsgtn{height:100%}.sell.svelte-tlsgtn.svelte-tlsgtn{display:flex;flex-direction:column;gap:0.8vh;align-items:flex-end}.qty.svelte-tlsgtn.svelte-tlsgtn{width:9vh}.buttons.svelte-tlsgtn .bm__btn.svelte-tlsgtn{min-width:12vh;text-align:center}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[16] = list[i];
+	const constants_0 = Math.min(Math.max(0, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(/*amounts*/ child_ctx[1][/*item*/ child_ctx[16].itemId] ?? /*item*/ child_ctx[16].have)), /*item*/ child_ctx[16].have);
+	child_ctx[17] = constants_0;
+	const constants_1 = /*quote*/ child_ctx[5](/*item*/ child_ctx[16], /*n*/ child_ctx[17]);
+	child_ctx[18] = constants_1;
+
+	const constants_2 = /*rate*/ child_ctx[4] > 0
+	? Math.floor(/*total*/ child_ctx[18] * (100 + /*bonus*/ child_ctx[3]) / 100 / /*rate*/ child_ctx[4])
+	: 0;
+
+	child_ctx[19] = constants_2;
+	return child_ctx;
+}
+
+// (42:8) {:else}
+function create_else_block_1(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Краденое принимает только Мавр лично. Приезжайте к нему.");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
+		}
+	};
+}
+
+// (40:8) {#if atPoint}
+function create_if_block_2(ctx) {
+	let t;
+
+	return {
+		c() {
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Мавр смотрит товар. Чем больше сдают — тем ниже цена; спрос восстанавливается со временем.");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
+		}
+	};
+}
+
+// (47:4) {#if !atPoint}
+function create_if_block_1(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Метка на карте";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__btn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_1*/ ctx[11]);
+				mounted = true;
+			}
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (52:0) {#if fence.payoutNote}
+function create_if_block(ctx) {
+	let div;
+	let t_value = /*fence*/ ctx[0].payoutNote + "";
+	let t;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__muted small note svelte-tlsgtn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*fence*/ 1 && t_value !== (t_value = /*fence*/ ctx[0].payoutNote + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (82:4) {:else}
+function create_else_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Мавр сейчас ничего не скупает";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__muted");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (56:4) {#each fence.items as item (item.itemId)}
+function create_each_block(key_1, ctx) {
+	let div12;
+	let div0;
+	let img;
+	let img_src_value;
+	let t0;
+	let div6;
+	let div1;
+	let t1_value = /*item*/ ctx[16].name + "";
+	let t1;
+	let t2;
+	let div2;
+	let t3;
+	let t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*item*/ ctx[16].price) + "";
+	let t4;
+	let t5;
+	let t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*item*/ ctx[16].basePrice) + "";
+	let t6;
+	let t7;
+	let div5;
+	let div4;
+	let div3;
+	let t8;
+	let span0;
+	let t9;
+	let t10_value = /*item*/ ctx[16].demand + "";
+	let t10;
+	let t11;
+	let t12;
+	let div11;
+	let div7;
+	let input;
+	let input_max_value;
+	let input_value_value;
+	let t13;
+	let span1;
+	let t14;
+	let t15_value = /*item*/ ctx[16].have + "";
+	let t15;
+	let t16;
+	let div10;
+	let div8;
+	let t17_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*total*/ ctx[18]) + "";
+	let t17;
+	let t18;
+	let div9;
+	let t19_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*totalBtc*/ ctx[19]) + "";
+	let t19;
+	let t20;
+	let mounted;
+	let dispose;
+
+	function input_handler(...args) {
+		return /*input_handler*/ ctx[12](/*item*/ ctx[16], ...args);
+	}
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[13](/*item*/ ctx[16]);
+	}
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[14](/*item*/ ctx[16]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Сейчас ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" за шт. · база ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("спрос ");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("из ");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t15_value);
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t19_value);
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*item*/ ctx[16].itemId))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "icon svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "width", /*item*/ ctx[16].demand + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background", /*demandColor*/ ctx[7](/*item*/ ctx[16].demand));
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bar svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "demand svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "info svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input qty svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*item*/ ctx[16].have);
+			input.value = input_value_value = /*n*/ ctx[17];
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__row");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__btn gold svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*atPoint*/ ctx[2] || /*n*/ ctx[17] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__btn primary svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", !/*atPoint*/ ctx[2] || /*n*/ ctx[17] <= 0 || /*totalBtc*/ ctx[19] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__row buttons svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "sell svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__card item svelte-tlsgtn");
+			this.first = div12;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div12, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, img);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t20);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", input_handler),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", click_handler_2),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", click_handler_3)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*fence*/ 1 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*item*/ ctx[16].itemId))) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			}
+
+			if (dirty & /*fence*/ 1 && t1_value !== (t1_value = /*item*/ ctx[16].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*fence*/ 1 && t4_value !== (t4_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*item*/ ctx[16].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty & /*fence*/ 1 && t6_value !== (t6_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*item*/ ctx[16].basePrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+
+			if (dirty & /*fence*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "width", /*item*/ ctx[16].demand + "%");
+			}
+
+			if (dirty & /*fence*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background", /*demandColor*/ ctx[7](/*item*/ ctx[16].demand));
+			}
+
+			if (dirty & /*fence*/ 1 && t10_value !== (t10_value = /*item*/ ctx[16].demand + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (dirty & /*fence*/ 1 && input_max_value !== (input_max_value = /*item*/ ctx[16].have)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value);
+			}
+
+			if (dirty & /*amounts, fence*/ 3 && input_value_value !== (input_value_value = /*n*/ ctx[17]) && input.value !== input_value_value) {
+				input.value = input_value_value;
+			}
+
+			if (dirty & /*fence*/ 1 && t15_value !== (t15_value = /*item*/ ctx[16].have + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t15, t15_value);
+			if (dirty & /*fence, amounts*/ 3 && t17_value !== (t17_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*total*/ ctx[18]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
+
+			if (dirty & /*atPoint, Math, toInt, amounts, fence*/ 7) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*atPoint*/ ctx[2] || /*n*/ ctx[17] <= 0);
+			}
+
+			if (dirty & /*rate, fence, amounts, bonus*/ 27 && t19_value !== (t19_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.btc)(/*totalBtc*/ ctx[19]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t19, t19_value);
+
+			if (dirty & /*atPoint, Math, toInt, amounts, fence, rate, quote, bonus*/ 63) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", !/*atPoint*/ ctx[2] || /*n*/ ctx[17] <= 0 || /*totalBtc*/ ctx[19] <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div12);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div0;
+	let t1;
+	let div3;
+	let div1;
+	let t2;
+	let div2;
+	let t4;
+	let t5;
+	let t6;
+	let div4;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let t7;
+	let div5;
+	let t8;
+	let t9;
+	let t10;
+	let t11_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[4]) + "";
+	let t11;
+	let t12;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (/*atPoint*/ ctx[2]) return create_if_block_2;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block0 = current_block_type(ctx);
+	let if_block1 = !/*atPoint*/ ctx[2] && create_if_block_1(ctx);
+	let if_block2 = /*fence*/ ctx[0].payoutNote && create_if_block(ctx);
+	let each_value = /*fence*/ ctx[0].items;
+	const get_key = ctx => /*item*/ ctx[16].itemId;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	let each_1_else = null;
+
+	if (!each_value.length) {
+		each_1_else = create_else_block(ctx);
+	}
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Скупка краденого";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block0.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Обновить";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block2) if_block2.c();
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			if (each_1_else) {
+				each_1_else.c();
+			}
+
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("В BTC Мавр платит на ");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*bonus*/ ctx[3]);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% больше (курс 1 BTC = ");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("). Краденое находят при ограблении домов, детали — при разборке угнанных машин у Мавра.");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "flex", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__btn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__card bm__row where svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "ok", /*atPoint*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "list svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__muted small");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "margin-top", "1.2vh");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			if_block0.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t4);
+			if (if_block1) if_block1.m(div3, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
+			if (if_block2) if_block2.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div4, null);
+				}
+			}
+
+			if (each_1_else) {
+				each_1_else.m(div4, null);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t12);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*click_handler*/ ctx[10]);
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (current_block_type !== (current_block_type = select_block_type(ctx, dirty))) {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div1, null);
+				}
+			}
+
+			if (!/*atPoint*/ ctx[2]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_1(ctx);
+					if_block1.c();
+					if_block1.m(div3, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty & /*atPoint*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "ok", /*atPoint*/ ctx[2]);
+			}
+
+			if (/*fence*/ ctx[0].payoutNote) {
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
+				} else {
+					if_block2 = create_if_block(ctx);
+					if_block2.c();
+					if_block2.m(t6.parentNode, t6);
+				}
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
+			}
+
+			if (dirty & /*atPoint, Math, toInt, amounts, fence, rate, quote, bonus, sell, btc, usd, demandColor, itemIcon*/ 255) {
+				each_value = /*fence*/ ctx[0].items;
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div4, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+
+				if (!each_value.length && each_1_else) {
+					each_1_else.p(ctx, dirty);
+				} else if (!each_value.length) {
+					each_1_else = create_else_block(ctx);
+					each_1_else.c();
+					each_1_else.m(div4, null);
+				} else if (each_1_else) {
+					each_1_else.d(1);
+					each_1_else = null;
+				}
+			}
+
+			if (dirty & /*bonus*/ 8) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, /*bonus*/ ctx[3]);
+			if (dirty & /*rate*/ 16 && t11_value !== (t11_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if_block0.d();
+			if (if_block1) if_block1.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
+			if (if_block2) if_block2.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t6);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (each_1_else) each_1_else.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let atPoint;
+	let fence;
+	let rate;
+	let bonus;
+	let { data } = $$props;
+	let { lastResult } = $$props;
+	let amounts = {};
+
+	// Оценка как на сервере: каждая следующая штука дешевле на шаг насыщения
+	const quote = (item, count) => {
+		const minFactor = Number(fence.minFactor) || 0.35;
+		let saturation = 1 - item.demand / 100;
+		let total = 0;
+
+		for (let i = 0; i < count; i++) {
+			total += Math.round(item.basePrice * Math.max(minFactor, 1 - saturation));
+			saturation = Math.min(1, saturation + (Number(item.step) || 0));
+		}
+
+		return total;
+	};
+
+	const count = item => Math.min(Math.max(0, (0,_api__WEBPACK_IMPORTED_MODULE_1__.toInt)(amounts[item.itemId] ?? item.have)), item.have);
+
+	const sell = (item, pay) => {
+		const n = count(item);
+		if (!atPoint || n <= 0) return;
+		(0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("fenceSell", { itemId: item.itemId, count: n, pay });
+	};
+
+	const demandColor = d => d >= 75 ? "#7fd36b" : d >= 50 ? "#f5a524" : "#ff6b6b";
+	const click_handler = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("refresh");
+	const click_handler_1 = () => (0,_api__WEBPACK_IMPORTED_MODULE_1__.action)("cashoutGps");
+
+	const input_handler = (item, e) => $$invalidate(1, amounts = {
+		...amounts,
+		[item.itemId]: e.target.value
+	});
+
+	const click_handler_2 = item => sell(item, "cash");
+	const click_handler_3 = item => sell(item, "btc");
+
+	$$self.$$set = $$props => {
+		if ('data' in $$props) $$invalidate(8, data = $$props.data);
+		if ('lastResult' in $$props) $$invalidate(9, lastResult = $$props.lastResult);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data*/ 256) {
+			$: $$invalidate(2, atPoint = !!data.cashout?.atPoint);
+		}
+
+		if ($$self.$$.dirty & /*data*/ 256) {
+			$: $$invalidate(0, fence = data.fence || { items: [], btcBonus: 0, rate: 0 });
+		}
+
+		if ($$self.$$.dirty & /*fence*/ 1) {
+			$: $$invalidate(4, rate = Number(fence.rate) || 0);
+		}
+
+		if ($$self.$$.dirty & /*fence*/ 1) {
+			$: $$invalidate(3, bonus = Number(fence.btcBonus) || 0);
+		}
+
+		if ($$self.$$.dirty & /*lastResult*/ 512) {
+			$: if (lastResult && lastResult.ok && lastResult.action === "fenceSell") $$invalidate(1, amounts = {});
+		}
+	};
+
+	return [
+		fence,
+		amounts,
+		atPoint,
+		bonus,
+		rate,
+		quote,
+		sell,
+		demandColor,
+		data,
+		lastResult,
+		click_handler,
+		click_handler_1,
+		input_handler,
+		click_handler_2,
+		click_handler_3
+	];
+}
+
+class Fence extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { data: 8, lastResult: 9 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Fence);
 
 
 /***/ }),
@@ -59823,21 +60705,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lang */ "./lang/index.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var _css_main_sass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/main.sass */ "./src/views/business/menu/css/main.sass");
-/* harmony import */ var _css_main_sass__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_css_main_sass__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/main.css */ "./src/views/business/menu/css/main.css");
-/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_main_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./fonts/Gilroy/stylesheet.css */ "./src/views/business/menu/fonts/Gilroy/stylesheet.css");
-/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fonts/SFPro/stylesheet.css */ "./src/views/business/menu/fonts/SFPro/stylesheet.css");
-/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! json/itemsInfo.js */ "./src/json/itemsInfo.js");
-/* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
-/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
-/* harmony import */ var _getPng_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./getPng.js */ "./src/views/business/menu/getPng.js");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/views/player/menu/elements/inventory/localitems/index.js */ "./src/views/player/menu/elements/inventory/localitems/index.js");
+/* harmony import */ var lang__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lang */ "./lang/index.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _css_main_sass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./css/main.sass */ "./src/views/business/menu/css/main.sass");
+/* harmony import */ var _css_main_sass__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_css_main_sass__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./css/main.css */ "./src/views/business/menu/css/main.css");
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_css_main_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./fonts/Gilroy/stylesheet.css */ "./src/views/business/menu/fonts/Gilroy/stylesheet.css");
+/* harmony import */ var _fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fonts_Gilroy_stylesheet_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./fonts/SFPro/stylesheet.css */ "./src/views/business/menu/fonts/SFPro/stylesheet.css");
+/* harmony import */ var _fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_fonts_SFPro_stylesheet_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! json/itemsInfo.js */ "./src/json/itemsInfo.js");
+/* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
+/* harmony import */ var api_formatter__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! api/formatter */ "./src/api/formatter.js");
+/* harmony import */ var _getPng_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./getPng.js */ "./src/views/business/menu/getPng.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/views/business/menu/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -59854,28 +60737,31 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 
+
+
+
 function get_each_context_2(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[23] = list[i];
-	child_ctx[25] = i;
+	child_ctx[24] = list[i];
+	child_ctx[26] = i;
 	return child_ctx;
 }
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[23] = list[i];
-	child_ctx[25] = i;
+	child_ctx[24] = list[i];
+	child_ctx[26] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[26] = list[i];
-	child_ctx[25] = i;
+	child_ctx[27] = list[i];
+	child_ctx[26] = i;
 	return child_ctx;
 }
 
-// (312:4) {:else}
+// (323:4) {:else}
 function create_else_block_1(ctx) {
 	let div7;
 	let div6;
@@ -59912,7 +60798,7 @@ function create_else_block_1(ctx) {
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('business', 'Выйти')}`;
+			div2.textContent = `${(0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('business', 'Выйти')}`;
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			ul = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("ul");
@@ -60001,7 +60887,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (238:0) {#if title == "Магазин" }
+// (249:0) {#if title == "Магазин" }
 function create_if_block(ctx) {
 	let div9;
 	let div8;
@@ -60014,7 +60900,7 @@ function create_if_block(ctx) {
 	let div2;
 	let p0;
 	let t5;
-	let t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_9__.format)("money", /*userData*/ ctx[0].Money) + "";
+	let t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", /*userData*/ ctx[0].Money) + "";
 	let t6;
 	let t7;
 	let svg0;
@@ -60027,7 +60913,7 @@ function create_if_block(ctx) {
 	let div3;
 	let p1;
 	let t9;
-	let t10_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_9__.format)("money", /*userData*/ ctx[0].Bank) + "";
+	let t10_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", /*userData*/ ctx[0].Bank) + "";
 	let t10;
 	let t11;
 	let svg1;
@@ -60250,8 +61136,8 @@ function create_if_block(ctx) {
 				each_blocks_1.length = each_value_1.length;
 			}
 
-			if (dirty & /*userData*/ 1 && t6_value !== (t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_9__.format)("money", /*userData*/ ctx[0].Money) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
-			if (dirty & /*userData*/ 1 && t10_value !== (t10_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_9__.format)("money", /*userData*/ ctx[0].Bank) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+			if (dirty & /*userData*/ 1 && t6_value !== (t6_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", /*userData*/ ctx[0].Money) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*userData*/ 1 && t10_value !== (t10_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", /*userData*/ ctx[0].Bank) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
 
 			if (dirty & /*elements, getCategory, currentCategory, getPrice, getDescription, executeClient, getOtherImageUrl, getPng, itemsInfo*/ 14544) {
 				each_value = /*elements*/ ctx[4].filter(/*func*/ ctx[16]);
@@ -60284,7 +61170,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (337:40) {:else}
+// (348:40) {:else}
 function create_else_block_2(ctx) {
 	let div;
 	let img;
@@ -60295,7 +61181,7 @@ function create_else_block_2(ctx) {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_10__.getPng)(/*value*/ ctx[23], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_7__.itemsInfo[/*value*/ ctx[23].ItemId]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_11__.getPng)(/*value*/ ctx[24], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_8__.itemsInfo[/*value*/ ctx[24].ItemId]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "item-img");
 		},
 		m(target, anchor) {
@@ -60303,7 +61189,7 @@ function create_else_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, img);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*elements*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_10__.getPng)(/*value*/ ctx[23], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_7__.itemsInfo[/*value*/ ctx[23].ItemId]))) {
+			if (dirty & /*elements*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_11__.getPng)(/*value*/ ctx[24], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_8__.itemsInfo[/*value*/ ctx[24].ItemId]))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 		},
@@ -60313,7 +61199,7 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (335:36) {#if value.ItemId == 0}
+// (346:36) {#if value.ItemId == 0}
 function create_if_block_3(ctx) {
 	let div;
 	let img;
@@ -60324,7 +61210,7 @@ function create_if_block_3(ctx) {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[23].Name))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[24].Name))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "item-img");
 		},
 		m(target, anchor) {
@@ -60332,7 +61218,7 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, img);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*elements*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[23].Name))) {
+			if (dirty & /*elements*/ 16 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[24].Name))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 		},
@@ -60342,14 +61228,14 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (341:36) {#if value.Price}
+// (352:36) {#if value.Price}
 function create_if_block_2(ctx) {
 	let div;
-	let t0_value = /*value*/ ctx[23].Price.replace(/[^\d]+/g, '') + "";
+	let t0_value = /*value*/ ctx[24].Price.replace(/[^\d]+/g, '') + "";
 	let t0;
 	let t1;
 	let span;
-	let t2_value = /*value*/ ctx[23].Price.replace(/[0-9]+/, '') + "";
+	let t2_value = /*value*/ ctx[24].Price.replace(/[0-9]+/, '') + "";
 	let t2;
 
 	return {
@@ -60370,8 +61256,8 @@ function create_if_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*elements*/ 16 && t0_value !== (t0_value = /*value*/ ctx[23].Price.replace(/[^\d]+/g, '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*elements*/ 16 && t2_value !== (t2_value = /*value*/ ctx[23].Price.replace(/[0-9]+/, '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*elements*/ 16 && t0_value !== (t0_value = /*value*/ ctx[24].Price.replace(/[^\d]+/g, '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*elements*/ 16 && t2_value !== (t2_value = /*value*/ ctx[24].Price.replace(/[0-9]+/, '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
@@ -60379,18 +61265,18 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (326:28) {#each elements as value, index}
+// (337:28) {#each elements as value, index}
 function create_each_block_2(ctx) {
 	let li;
 	let div1;
 	let div0;
-	let raw_value = /*value*/ ctx[23].Name + "";
+	let raw_value = /*value*/ ctx[24].Name + "";
 	let t0;
 	let t1;
 	let t2;
 	let div2;
 
-	let t3_value = /*getTypeName*/ ctx[8](/*value*/ ctx[23].Name.match(/Сдать/g)
+	let t3_value = /*getTypeName*/ ctx[8](/*value*/ ctx[24].Name.match(/Сдать/g)
 	? 2
 	: /*type*/ ctx[5]) + "";
 
@@ -60403,16 +61289,16 @@ function create_each_block_2(ctx) {
 	let dispose;
 
 	function select_block_type_2(ctx, dirty) {
-		if (/*value*/ ctx[23].ItemId == 0) return create_if_block_3;
+		if (/*value*/ ctx[24].ItemId == 0) return create_if_block_3;
 		return create_else_block_2;
 	}
 
 	let current_block_type = select_block_type_2(ctx, -1);
 	let if_block0 = current_block_type(ctx);
-	let if_block1 = /*value*/ ctx[23].Price && create_if_block_2(ctx);
+	let if_block1 = /*value*/ ctx[24].Price && create_if_block_2(ctx);
 
 	function click_handler_4() {
-		return /*click_handler_4*/ ctx[20](/*value*/ ctx[23]);
+		return /*click_handler_4*/ ctx[20](/*value*/ ctx[24]);
 	}
 
 	return {
@@ -60431,8 +61317,8 @@ function create_each_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "name");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "box");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value = "btn " + /*btn*/ ctx[3]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "id", li_id_value = /*value*/ ctx[23].id);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "key", li_key_value = /*index*/ ctx[25]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "id", li_id_value = /*value*/ ctx[24].id);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "key", li_key_value = /*index*/ ctx[26]);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "class", "block");
 		},
 		m(target, anchor) {
@@ -60460,7 +61346,7 @@ function create_each_block_2(ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*elements*/ 16 && raw_value !== (raw_value = /*value*/ ctx[23].Name + "")) div0.innerHTML = raw_value;;
+			if (dirty & /*elements*/ 16 && raw_value !== (raw_value = /*value*/ ctx[24].Name + "")) div0.innerHTML = raw_value;;
 
 			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block0) {
 				if_block0.p(ctx, dirty);
@@ -60474,7 +61360,7 @@ function create_each_block_2(ctx) {
 				}
 			}
 
-			if (/*value*/ ctx[23].Price) {
+			if (/*value*/ ctx[24].Price) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
@@ -60487,7 +61373,7 @@ function create_each_block_2(ctx) {
 				if_block1 = null;
 			}
 
-			if (dirty & /*elements, type*/ 48 && t3_value !== (t3_value = /*getTypeName*/ ctx[8](/*value*/ ctx[23].Name.match(/Сдать/g)
+			if (dirty & /*elements, type*/ 48 && t3_value !== (t3_value = /*getTypeName*/ ctx[8](/*value*/ ctx[24].Name.match(/Сдать/g)
 			? 2
 			: /*type*/ ctx[5]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 
@@ -60495,7 +61381,7 @@ function create_each_block_2(ctx) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", div2_class_value);
 			}
 
-			if (dirty & /*elements*/ 16 && li_id_value !== (li_id_value = /*value*/ ctx[23].id)) {
+			if (dirty & /*elements*/ 16 && li_id_value !== (li_id_value = /*value*/ ctx[24].id)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "id", li_id_value);
 			}
 		},
@@ -60509,7 +61395,7 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (244:20) {#each categories as item, index}
+// (255:20) {#each categories as item, index}
 function create_each_block_1(ctx) {
 	let div;
 	let svg;
@@ -60517,14 +61403,14 @@ function create_each_block_1(ctx) {
 	let path_d_value;
 	let t0;
 	let p;
-	let t1_value = /*item*/ ctx[26].Name + "";
+	let t1_value = /*item*/ ctx[27].Name + "";
 	let t1;
 	let t2;
 	let mounted;
 	let dispose;
 
 	function click_handler() {
-		return /*click_handler*/ ctx[15](/*item*/ ctx[26]);
+		return /*click_handler*/ ctx[15](/*item*/ ctx[27]);
 	}
 
 	return {
@@ -60536,7 +61422,7 @@ function create_each_block_1(ctx) {
 			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "d", path_d_value = /*item*/ ctx[26].Icon);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "d", path_d_value = /*item*/ ctx[27].Icon);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "caticon");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 24 24");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "fill", "none");
@@ -60545,7 +61431,7 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "stroke-linecap", "round");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "stroke-linejoin", "round");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "category");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*currentCategory*/ ctx[6] == /*item*/ ctx[26].Type);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*currentCategory*/ ctx[6] == /*item*/ ctx[27].Type);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -60569,7 +61455,7 @@ function create_each_block_1(ctx) {
 			ctx = new_ctx;
 
 			if (dirty & /*currentCategory, categories*/ 1088) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*currentCategory*/ ctx[6] == /*item*/ ctx[26].Type);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*currentCategory*/ ctx[6] == /*item*/ ctx[27].Type);
 			}
 		},
 		d(detaching) {
@@ -60580,7 +61466,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (294:32) {:else}
+// (305:32) {:else}
 function create_else_block(ctx) {
 	let img;
 	let img_src_value;
@@ -60590,13 +61476,13 @@ function create_else_block(ctx) {
 			img = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "item");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_10__.getPng)(/*value*/ ctx[23], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_7__.itemsInfo[/*value*/ ctx[23].ItemId]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_11__.getPng)(/*value*/ ctx[24], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_8__.itemsInfo[/*value*/ ctx[24].ItemId]))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, img, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*elements, currentCategory*/ 80 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_10__.getPng)(/*value*/ ctx[23], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_7__.itemsInfo[/*value*/ ctx[23].ItemId]))) {
+			if (dirty & /*elements, currentCategory*/ 80 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_11__.getPng)(/*value*/ ctx[24], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_8__.itemsInfo[/*value*/ ctx[24].ItemId]))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 		},
@@ -60606,7 +61492,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (292:28) {#if value.ItemId == 0 || value.ItemId == -5}
+// (303:28) {#if value.ItemId == 0 || value.ItemId == -5}
 function create_if_block_1(ctx) {
 	let img;
 	let img_src_value;
@@ -60617,17 +61503,17 @@ function create_if_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "item");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
 
-			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[23].ItemId == -5
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[24].ItemId == -5
 			? 'Сумка'
-			: /*value*/ ctx[23].Name))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
+			: /*value*/ ctx[24].Name))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, img, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*elements, currentCategory*/ 80 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[23].ItemId == -5
+			if (dirty & /*elements, currentCategory*/ 80 && !(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = /*getOtherImageUrl*/ ctx[7](/*value*/ ctx[24].ItemId == -5
 			? 'Сумка'
-			: /*value*/ ctx[23].Name))) {
+			: /*value*/ ctx[24].Name))) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			}
 		},
@@ -60637,7 +61523,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (288:16) {#each elements.filter(x => getCategory(x) === currentCategory) as value, index}
+// (299:16) {#each elements.filter(x => getCategory(x) === currentCategory) as value, index}
 function create_each_block(ctx) {
 	let div5;
 	let div3;
@@ -60651,15 +61537,15 @@ function create_each_block(ctx) {
 	let t6;
 	let div4;
 	let p;
-	let t7_value = /*value*/ ctx[23].Name + "";
+	let t7_value = /*value*/ ctx[24].Name + "";
 	let t7;
 	let t8;
 	let span1;
-	let t9_value = /*getDescription*/ ctx[12](/*value*/ ctx[23]) + "";
+	let t9_value = /*getDescription*/ ctx[12](/*value*/ ctx[24]) + "";
 	let t9;
 	let t10;
 	let b;
-	let t11_value = /*getPrice*/ ctx[13](/*value*/ ctx[23].Price) + "";
+	let t11_value = /*getPrice*/ ctx[13](/*value*/ ctx[24].Price) + "";
 	let t11;
 	let t12;
 	let div5_id_value;
@@ -60668,7 +61554,7 @@ function create_each_block(ctx) {
 	let dispose;
 
 	function select_block_type_1(ctx, dirty) {
-		if (/*value*/ ctx[23].ItemId == 0 || /*value*/ ctx[23].ItemId == -5) return create_if_block_1;
+		if (/*value*/ ctx[24].ItemId == 0 || /*value*/ ctx[24].ItemId == -5) return create_if_block_1;
 		return create_else_block;
 	}
 
@@ -60676,11 +61562,11 @@ function create_each_block(ctx) {
 	let if_block = current_block_type(ctx);
 
 	function click_handler_1() {
-		return /*click_handler_1*/ ctx[17](/*value*/ ctx[23]);
+		return /*click_handler_1*/ ctx[17](/*value*/ ctx[24]);
 	}
 
 	function click_handler_2() {
-		return /*click_handler_2*/ ctx[18](/*value*/ ctx[23]);
+		return /*click_handler_2*/ ctx[18](/*value*/ ctx[24]);
 	}
 
 	return {
@@ -60715,8 +61601,8 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "headblock");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "infoblock");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "itemblock");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "id", div5_id_value = /*value*/ ctx[23].id);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "key", div5_key_value = /*index*/ ctx[25]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "id", div5_id_value = /*value*/ ctx[24].id);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "key", div5_key_value = /*index*/ ctx[26]);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
@@ -60767,11 +61653,11 @@ function create_each_block(ctx) {
 				}
 			}
 
-			if (dirty & /*elements, currentCategory*/ 80 && t7_value !== (t7_value = /*value*/ ctx[23].Name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
-			if (dirty & /*elements, currentCategory*/ 80 && t9_value !== (t9_value = /*getDescription*/ ctx[12](/*value*/ ctx[23]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
-			if (dirty & /*elements, currentCategory*/ 80 && t11_value !== (t11_value = /*getPrice*/ ctx[13](/*value*/ ctx[23].Price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+			if (dirty & /*elements, currentCategory*/ 80 && t7_value !== (t7_value = /*value*/ ctx[24].Name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty & /*elements, currentCategory*/ 80 && t9_value !== (t9_value = /*getDescription*/ ctx[12](/*value*/ ctx[24]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+			if (dirty & /*elements, currentCategory*/ 80 && t11_value !== (t11_value = /*getPrice*/ ctx[13](/*value*/ ctx[24].Price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
 
-			if (dirty & /*elements, currentCategory*/ 80 && div5_id_value !== (div5_id_value = /*value*/ ctx[23].id)) {
+			if (dirty & /*elements, currentCategory*/ 80 && div5_id_value !== (div5_id_value = /*value*/ ctx[24].id)) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "id", div5_id_value);
 			}
 		},
@@ -60867,15 +61753,15 @@ function instance($$self, $$props, $$invalidate) {
 		Bank: 0
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_11__.onMount)(async () => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_12__.onMount)(async () => {
 		//bar.animate(1.0);
-		store_chars__WEBPACK_IMPORTED_MODULE_8__.charMoney.subscribe(value => {
+		store_chars__WEBPACK_IMPORTED_MODULE_9__.charMoney.subscribe(value => {
 			if (userData.Money !== value) {
 				CounterUpdate("Money", value);
 			}
 		});
 
-		store_chars__WEBPACK_IMPORTED_MODULE_8__.charBankMoney.subscribe(value => {
+		store_chars__WEBPACK_IMPORTED_MODULE_9__.charBankMoney.subscribe(value => {
 			if (userData.Bank !== value) {
 				CounterUpdate("Bank", value);
 			}
@@ -61262,7 +62148,17 @@ function instance($$self, $$props, $$invalidate) {
 		}
 	];
 
+	// Новые пункты Мавра (Crime/*): картинки лежат в интерфейсе, а не на CDN
+	const localImages = {
+		'Семена конопли': _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[393],
+		'Бутылка воды': _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[398],
+		'Скупка краденого': _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[396],
+		'Заказ на угон': _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[397],
+		'Программатор': _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[399]
+	};
+
 	const getOtherImageUrl = name => {
+		if (localImages[name]) return localImages[name];
 		const image = configImages.find(x => x.name === name);
 
 		return document.cloud + (image
@@ -61277,7 +62173,7 @@ function instance($$self, $$props, $$invalidate) {
 	const HandleKeyDown = event => {
 		const { keyCode } = event;
 		if (keyCode !== 27) return;
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.sm.exit');
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)('client.sm.exit');
 	};
 
 	// Раскладка товаров 24/7 по вкладкам. Всё, что не попало в список (в т.ч. новые товары,
@@ -61322,7 +62218,7 @@ function instance($$self, $$props, $$invalidate) {
 	const getDescription = value => {
 		if (value.Name === "Сим-карта") return "Новая сим-карта со случайным номером.";
 		if (value.Name === "Лотерейный билет") return "Билет на участие в розыгрыше лотереи.";
-		const info = json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_7__.itemsInfo[value.ItemId];
+		const info = json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_8__.itemsInfo[value.ItemId];
 		return info && info.Description ? info.Description : "";
 	};
 
@@ -61330,7 +62226,7 @@ function instance($$self, $$props, $$invalidate) {
 		const digits = String(price).replace(/[^\d]+/g, "");
 
 		return digits.length
-		? `$${(0,api_formatter__WEBPACK_IMPORTED_MODULE_9__.format)("money", Number(digits))}`
+		? `$${(0,api_formatter__WEBPACK_IMPORTED_MODULE_10__.format)("money", Number(digits))}`
 		: price;
 	};
 
@@ -61342,10 +62238,10 @@ function instance($$self, $$props, $$invalidate) {
 
 	const click_handler = item => selectCategory(item.Type);
 	const func = x => getCategory(x) === currentCategory;
-	const click_handler_1 = value => (0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.sm.click', value.Id, 1);
-	const click_handler_2 = value => (0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.sm.click', value.Id);
-	const click_handler_3 = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.sm.exit');
-	const click_handler_4 = value => (0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.sm.click', value.Id);
+	const click_handler_1 = value => (0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)('client.sm.click', value.Id, 1);
+	const click_handler_2 = value => (0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)('client.sm.click', value.Id);
+	const click_handler_3 = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)('client.sm.exit');
+	const click_handler_4 = value => (0,api_rage__WEBPACK_IMPORTED_MODULE_3__.executeClient)('client.sm.click', value.Id);
 
 	return [
 		userData,
@@ -134875,6 +135771,902 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/player/cyberhack/index.svelte":
+/*!*************************************************!*\
+  !*** ./src/views/player/cyberhack/index.svelte ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* src/views/player/cyberhack/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-iz7ak9", ".hack-wrapper.svelte-iz7ak9{--bg-color:rgba(10, 15, 10, 0.95);--neon-green:#22c55e;--neon-red:#ef4444;--neon-yellow:#eab308;--grid-bg:rgba(20, 30, 20, 0.8);--cell-border:rgba(34, 197, 94, 0.1);--glitch-text:#ffffff;--font-main:'Share Tech Mono', 'Consolas', 'Courier New', monospace;position:absolute;top:0;left:0;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center;background-color:rgba(0,0,0,0.5);font-family:var(--font-main);user-select:none}.hack-container.svelte-iz7ak9{width:900px;height:600px;background:var(--bg-color);border:2px solid var(--neon-green);box-shadow:0 0 50px rgba(34, 197, 94, 0.1) inset, 0 0 20px rgba(0,0,0,0.8);display:flex;padding:30px;gap:40px;position:relative}.hack-container.svelte-iz7ak9::after{content:\"\";position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px);background-size:100% 4px;pointer-events:none}.matrix-section.svelte-iz7ak9{flex:1;display:flex;flex-direction:column;gap:20px}.matrix-header.svelte-iz7ak9{color:var(--neon-green);font-size:24px;text-transform:uppercase;letter-spacing:2px;border-bottom:2px solid var(--neon-green);padding-bottom:10px;display:flex;justify-content:space-between}.timer-bar.svelte-iz7ak9{width:150px;height:10px;background:rgba(255, 255, 255, 0.1);margin-top:10px;position:relative}.timer-fill.svelte-iz7ak9{position:absolute;top:0;left:0;bottom:0;transition:width 1s linear, background 0.5s}.matrix-grid.svelte-iz7ak9{display:grid;gap:6px;background:var(--grid-bg);padding:10px;border:1px solid var(--cell-border)}.hex-cell.svelte-iz7ak9{aspect-ratio:1;display:flex;justify-content:center;align-items:center;font-size:22px;color:var(--glitch-text);cursor:pointer;transition:0.15s;position:relative;background:transparent}.hex-cell.svelte-iz7ak9::after{content:\"[]\";position:absolute;font-size:32px;color:transparent;font-weight:300}.hex-cell.is-active.svelte-iz7ak9,.hex-cell:hover.is-active.svelte-iz7ak9{color:#000;background:var(--neon-green);font-weight:bold}.hex-cell.is-disabled.svelte-iz7ak9{color:rgba(255,255,255,0.1);cursor:not-allowed;pointer-events:none}.hex-cell.is-highlighted.svelte-iz7ak9{background:rgba(34, 197, 94, 0.1)}.hex-cell.is-highlighted.svelte-iz7ak9::after{color:rgba(34, 197, 94, 0.3)}.hex-cell.is-selected.svelte-iz7ak9{color:rgba(255,255,255,0.2) !important;background:transparent !important;pointer-events:none}.hex-cell.is-selected.svelte-iz7ak9::after{color:rgba(255,255,255,0.2);content:\"[»]\";font-size:16px}.info-section.svelte-iz7ak9{width:320px;display:flex;flex-direction:column;gap:30px;z-index:2}.info-title.svelte-iz7ak9{color:var(--neon-green);font-size:14px;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}.buffer-container.svelte-iz7ak9{display:flex;gap:10px;flex-wrap:wrap}.buffer-slot.svelte-iz7ak9{width:45px;height:45px;border:2px solid rgba(255,255,255,0.2);display:flex;justify-content:center;align-items:center;color:var(--neon-green);font-size:18px;font-weight:bold;background:rgba(0,0,0,0.5);transition:0.2s}.buffer-slot.filled.svelte-iz7ak9{border-color:var(--neon-green);color:var(--glitch-text)}.daemon-container.svelte-iz7ak9{background:rgba(0, 0, 0, 0.3);border:1px solid var(--cell-border);padding:15px}.daemon-seq.svelte-iz7ak9{display:flex;gap:12px;margin-top:5px}.seq-hex.svelte-iz7ak9{font-size:20px;color:var(--glitch-text);transition:0.3s}.seq-hex.matched.svelte-iz7ak9{color:var(--neon-green);text-shadow:0 0 10px var(--neon-green)}.seq-hex.failed.svelte-iz7ak9{color:var(--neon-red);text-decoration:line-through}.overlay-msg.svelte-iz7ak9{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.9);display:flex;flex-direction:column;justify-content:center;align-items:center;z-index:10;display:none}.overlay-msg.show.svelte-iz7ak9{display:flex;animation:svelte-iz7ak9-fadeIn 0.3s}.msg-title.svelte-iz7ak9{font-size:48px;text-transform:uppercase;letter-spacing:4px;margin-bottom:20px}.msg-sub.svelte-iz7ak9{font-size:18px;color:var(--glitch-text)}.text-win.svelte-iz7ak9{color:var(--neon-green);text-shadow:0 0 15px var(--neon-green)}.text-fail.svelte-iz7ak9{color:var(--neon-red);text-shadow:0 0 15px var(--neon-red)}.btn-close.svelte-iz7ak9{background:transparent;border:1px solid var(--neon-red);color:var(--neon-red);padding:10px;cursor:pointer;font-family:inherit;text-transform:uppercase;transition:0.2s}.btn-close.svelte-iz7ak9:hover{background:rgba(239, 68, 68, 0.1)}@keyframes svelte-iz7ak9-fadeIn{from{opacity:0}to{opacity:1}}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[27] = list[i];
+	child_ctx[29] = i;
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[30] = list[i];
+	child_ctx[29] = i;
+	return child_ctx;
+}
+
+function get_each_context_2(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[32] = list[i];
+	child_ctx[34] = i;
+	return child_ctx;
+}
+
+function get_each_context_3(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[35] = list[i];
+	child_ctx[37] = i;
+	return child_ctx;
+}
+
+// (200:8) {#if endScreenVisible}
+function create_if_block(ctx) {
+	let div2;
+	let div0;
+	let t0_value = (/*isWin*/ ctx[4] ? "ДОСТУП ПОЛУЧЕН" : "ВЗЛОМ ПРОВАЛЕН") + "";
+	let t0;
+	let div0_class_value;
+	let t1;
+	let div1;
+
+	let t2_value = (/*isWin*/ ctx[4]
+	? "Замок отключён. Сигнализация подавлена."
+	: `Причина: ${/*failReason*/ ctx[5]}. Срабатывает защита…`) + "";
+
+	let t2;
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value = "" + ((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.null_to_empty)(/*isWin*/ ctx[4]
+			? "msg-title text-win"
+			: "msg-title text-fail") + " svelte-iz7ak9"));
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "msg-sub svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "overlay-msg show svelte-iz7ak9");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*isWin*/ 16 && t0_value !== (t0_value = (/*isWin*/ ctx[4] ? "ДОСТУП ПОЛУЧЕН" : "ВЗЛОМ ПРОВАЛЕН") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+
+			if (dirty[0] & /*isWin*/ 16 && div0_class_value !== (div0_class_value = "" + ((0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.null_to_empty)(/*isWin*/ ctx[4]
+			? "msg-title text-win"
+			: "msg-title text-fail") + " svelte-iz7ak9"))) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", div0_class_value);
+			}
+
+			if (dirty[0] & /*isWin, failReason*/ 48 && t2_value !== (t2_value = (/*isWin*/ ctx[4]
+			? "Замок отключён. Сигнализация подавлена."
+			: `Причина: ${/*failReason*/ ctx[5]}. Срабатывает защита…`) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+		}
+	};
+}
+
+// (223:20) {#each row as cell, c}
+function create_each_block_3(ctx) {
+	let div;
+	let t0_value = /*cell*/ ctx[35].val + "";
+	let t0;
+	let t1;
+	let div_class_value;
+	let mounted;
+	let dispose;
+
+	function mouseenter_handler() {
+		return /*mouseenter_handler*/ ctx[15](/*r*/ ctx[34], /*c*/ ctx[37]);
+	}
+
+	function click_handler() {
+		return /*click_handler*/ ctx[16](/*r*/ ctx[34], /*c*/ ctx[37]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value = "hex-cell " + (/*cell*/ ctx[35].selected ? 'is-selected' : '') + " " + (/*cell*/ ctx[35].disabled ? 'is-disabled' : 'is-active') + " " + (/*cell*/ ctx[35].highlighted ? 'is-highlighted' : '') + " svelte-iz7ak9");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "mouseenter", mouseenter_handler),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "mouseleave", /*clearHighlights*/ ctx[11]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*matrix*/ 1 && t0_value !== (t0_value = /*cell*/ ctx[35].val + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+
+			if (dirty[0] & /*matrix*/ 1 && div_class_value !== (div_class_value = "hex-cell " + (/*cell*/ ctx[35].selected ? 'is-selected' : '') + " " + (/*cell*/ ctx[35].disabled ? 'is-disabled' : 'is-active') + " " + (/*cell*/ ctx[35].highlighted ? 'is-highlighted' : '') + " svelte-iz7ak9")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (222:16) {#each matrix as row, r}
+function create_each_block_2(ctx) {
+	let each_1_anchor;
+	let each_value_3 = /*row*/ ctx[32];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_3.length; i += 1) {
+		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
+	}
+
+	return {
+		c() {
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+		},
+		m(target, anchor) {
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(target, anchor);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*matrix, hoverCell, clearHighlights, clickCell*/ 7169) {
+				each_value_3 = /*row*/ ctx[32];
+				let i;
+
+				for (i = 0; i < each_value_3.length; i += 1) {
+					const child_ctx = get_each_context_3(ctx, each_value_3, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_3(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_3.length;
+			}
+		},
+		d(detaching) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
+		}
+	};
+}
+
+// (240:20) {#each Array(bufSize) as _, i}
+function create_each_block_1(ctx) {
+	let div;
+
+	let t0_value = (/*buffer*/ ctx[2][/*i*/ ctx[29]]
+	? /*buffer*/ ctx[2][/*i*/ ctx[29]]
+	: '') + "";
+
+	let t0;
+	let t1;
+	let div_class_value;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value = "buffer-slot " + (/*buffer*/ ctx[2][/*i*/ ctx[29]] ? 'filled' : '') + " svelte-iz7ak9");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*buffer*/ 4 && t0_value !== (t0_value = (/*buffer*/ ctx[2][/*i*/ ctx[29]]
+			? /*buffer*/ ctx[2][/*i*/ ctx[29]]
+			: '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+
+			if (dirty[0] & /*buffer*/ 4 && div_class_value !== (div_class_value = "buffer-slot " + (/*buffer*/ ctx[2][/*i*/ ctx[29]] ? 'filled' : '') + " svelte-iz7ak9")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (253:24) {#each targetSeq as tHex, i}
+function create_each_block(ctx) {
+	let div;
+	let t0_value = /*tHex*/ ctx[27] + "";
+	let t0;
+	let t1;
+	let div_class_value;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value = "seq-hex " + (/*buffer*/ ctx[2][/*i*/ ctx[29]] === /*tHex*/ ctx[27]
+			? 'matched'
+			: /*buffer*/ ctx[2][/*i*/ ctx[29]] ? 'failed' : '') + " svelte-iz7ak9");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*targetSeq*/ 2 && t0_value !== (t0_value = /*tHex*/ ctx[27] + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+
+			if (dirty[0] & /*buffer, targetSeq*/ 6 && div_class_value !== (div_class_value = "seq-hex " + (/*buffer*/ ctx[2][/*i*/ ctx[29]] === /*tHex*/ ctx[27]
+			? 'matched'
+			: /*buffer*/ ctx[2][/*i*/ ctx[29]] ? 'failed' : '') + " svelte-iz7ak9")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", div_class_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div18;
+	let div17;
+	let t0;
+	let div6;
+	let div4;
+	let div0;
+	let t2;
+	let div3;
+	let span;
+	let t3_value = Math.floor(/*timeLeft*/ ctx[3] / 60).toString().padStart(2, '0') + "";
+	let t3;
+	let t4;
+	let t5_value = (/*timeLeft*/ ctx[3] % 60).toString().padStart(2, '0') + "";
+	let t5;
+	let t6;
+	let div2;
+	let div1;
+	let t7;
+	let div5;
+	let t8;
+	let div16;
+	let div9;
+	let div7;
+	let t9;
+	let t10_value = /*buffer*/ ctx[2].length + "";
+	let t10;
+	let t11;
+	let t12;
+	let t13;
+	let t14;
+	let div8;
+	let t15;
+	let div14;
+	let div10;
+	let t17;
+	let div13;
+	let div11;
+	let t19;
+	let div12;
+	let t20;
+	let div15;
+	let t28;
+	let button;
+	let mounted;
+	let dispose;
+	let if_block = /*endScreenVisible*/ ctx[6] && create_if_block(ctx);
+	let each_value_2 = /*matrix*/ ctx[0];
+	let each_blocks_2 = [];
+
+	for (let i = 0; i < each_value_2.length; i += 1) {
+		each_blocks_2[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
+	}
+
+	let each_value_1 = Array(bufSize);
+	let each_blocks_1 = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks_1[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	let each_value = /*targetSeq*/ ctx[1];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block) if_block.c();
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = `${/*title*/ ctx[9]}`;
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(":");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks_2.length; i += 1) {
+				each_blocks_2[i].c();
+			}
+
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Буфер (");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("/");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(bufSize);
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(")");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				each_blocks_1[i].c();
+			}
+
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10.textContent = "Нужная последовательность";
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div11.textContent = "immobilizer_bypass.exe";
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div15.innerHTML = `<p>1. Начните с подсвеченной СТРОКИ.</p> 
+                <p>2. Каждый выбор переключает СТРОКУ ↔ СТОЛБЕЦ.</p> 
+                <p>3. Соберите нужную последовательность по порядку, пока не кончилось время.</p> 
+                <p>Провал — программатор сгорит и сработает сигнализация.</p>`;
+
+			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			button = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
+			button.textContent = "Отключиться (ESC)";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(span, "font-size", "20px");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "timer-fill svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*timeLeft*/ ctx[3] / /*timeSeconds*/ ctx[8] * 100 + "%");
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background", /*timeLeft*/ ctx[3] / /*timeSeconds*/ ctx[8] * 100 <= 25
+			? 'var(--neon-red)'
+			: 'var(--neon-green)');
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "timer-bar svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "text-align", "right");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "matrix-header svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "matrix-grid svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "grid-template-columns", "repeat(" + /*difficulty*/ ctx[7] + ", 1fr)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "matrix-section svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "info-title svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "buffer-container svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "info-title svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div11, "font-size", "12px");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div11, "color", "rgba(255,255,255,0.4)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "daemon-seq svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "daemon-container svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div15, "margin-top", "auto");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div15, "font-size", "12px");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div15, "color", "rgba(255,255,255,0.3)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div15, "border-top", "1px solid rgba(255,255,255,0.1)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div15, "padding-top", "10px");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button, "class", "btn-close svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "info-section svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "hack-container svelte-iz7ak9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "hack-wrapper svelte-iz7ak9");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div18, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, div17);
+			if (if_block) if_block.m(div17, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+
+			for (let i = 0; i < each_blocks_2.length; i += 1) {
+				if (each_blocks_2[i]) {
+					each_blocks_2[i].m(div5, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, div16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				if (each_blocks_1[i]) {
+					each_blocks_1[i].m(div8, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div12, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, button);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button, "click", /*abortHack*/ ctx[13]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (/*endScreenVisible*/ ctx[6]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block(ctx);
+					if_block.c();
+					if_block.m(div17, t0);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+
+			if (dirty[0] & /*timeLeft*/ 8 && t3_value !== (t3_value = Math.floor(/*timeLeft*/ ctx[3] / 60).toString().padStart(2, '0') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty[0] & /*timeLeft*/ 8 && t5_value !== (t5_value = (/*timeLeft*/ ctx[3] % 60).toString().padStart(2, '0') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+
+			if (dirty[0] & /*timeLeft*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*timeLeft*/ ctx[3] / /*timeSeconds*/ ctx[8] * 100 + "%");
+			}
+
+			if (dirty[0] & /*timeLeft*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background", /*timeLeft*/ ctx[3] / /*timeSeconds*/ ctx[8] * 100 <= 25
+				? 'var(--neon-red)'
+				: 'var(--neon-green)');
+			}
+
+			if (dirty[0] & /*matrix, hoverCell, clearHighlights, clickCell*/ 7169) {
+				each_value_2 = /*matrix*/ ctx[0];
+				let i;
+
+				for (i = 0; i < each_value_2.length; i += 1) {
+					const child_ctx = get_each_context_2(ctx, each_value_2, i);
+
+					if (each_blocks_2[i]) {
+						each_blocks_2[i].p(child_ctx, dirty);
+					} else {
+						each_blocks_2[i] = create_each_block_2(child_ctx);
+						each_blocks_2[i].c();
+						each_blocks_2[i].m(div5, null);
+					}
+				}
+
+				for (; i < each_blocks_2.length; i += 1) {
+					each_blocks_2[i].d(1);
+				}
+
+				each_blocks_2.length = each_value_2.length;
+			}
+
+			if (dirty[0] & /*buffer*/ 4 && t10_value !== (t10_value = /*buffer*/ ctx[2].length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (dirty[0] & /*buffer*/ 4) {
+				each_value_1 = Array(bufSize);
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks_1[i]) {
+						each_blocks_1[i].p(child_ctx, dirty);
+					} else {
+						each_blocks_1[i] = create_each_block_1(child_ctx);
+						each_blocks_1[i].c();
+						each_blocks_1[i].m(div8, null);
+					}
+				}
+
+				for (; i < each_blocks_1.length; i += 1) {
+					each_blocks_1[i].d(1);
+				}
+
+				each_blocks_1.length = each_value_1.length;
+			}
+
+			if (dirty[0] & /*buffer, targetSeq*/ 6) {
+				each_value = /*targetSeq*/ ctx[1];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div12, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div18);
+			if (if_block) if_block.d();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_2, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks_1, detaching);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+let bufSize = 5;
+
+function instance($$self, $$props, $$invalidate) {
+	let { viewData } = $$props;
+
+	const params = (() => {
+		try {
+			return typeof viewData === "string"
+			? JSON.parse(viewData)
+			: viewData || {};
+		} catch(e) {
+			return {};
+		}
+	})();
+
+	let difficulty = Math.max(4, Math.min(7, Number(params.difficulty) || 5));
+	let timeSeconds = Math.max(10, Number(params.timeSeconds) || 30);
+	const title = params.title || "Взлом";
+	let hexDb = ['1C', 'E9', '55', 'BD', '7A'];
+	let matrix = [];
+	let targetSeq = [];
+	let buffer = [];
+	let mode = 'ROW';
+	let activeIndex = 0;
+	let timer = null;
+	let timeLeft = timeSeconds;
+	let isPlaying = true;
+	let isWin = false;
+	let failReason = "";
+	let endScreenVisible = false;
+
+	function initGame() {
+		$$invalidate(0, matrix = []);
+
+		for (let r = 0; r < difficulty; r++) {
+			let row = [];
+
+			for (let c = 0; c < difficulty; c++) {
+				row.push({
+					r,
+					c,
+					val: hexDb[Math.floor(Math.random() * hexDb.length)],
+					disabled: false,
+					selected: false,
+					highlighted: false
+				});
+			}
+
+			matrix.push(row);
+		}
+
+		$$invalidate(1, targetSeq = []);
+		let currRow = 0;
+		let currCol = Math.floor(Math.random() * difficulty);
+		let seqLen = 3;
+		targetSeq.push(matrix[currRow][currCol].val);
+
+		for (let i = 1; i < seqLen; i++) {
+			if (i % 2 !== 0) {
+				let nR = Math.floor(Math.random() * difficulty);
+				while (nR === currRow) nR = Math.floor(Math.random() * difficulty);
+				currRow = nR;
+			} else {
+				let nC = Math.floor(Math.random() * difficulty);
+				while (nC === currCol) nC = Math.floor(Math.random() * difficulty);
+				currCol = nC;
+			}
+
+			targetSeq.push(matrix[currRow][currCol].val);
+		}
+
+		updateMatrixState();
+
+		timer = setInterval(
+			() => {
+				if (!isPlaying) return;
+				$$invalidate(3, timeLeft--, timeLeft);
+
+				if (timeLeft <= 0) {
+					endGame(false, "время вышло");
+				}
+			},
+			1000
+		);
+	}
+
+	function updateMatrixState() {
+		for (let r = 0; r < difficulty; r++) {
+			for (let c = 0; c < difficulty; c++) {
+				$$invalidate(0, matrix[r][c].disabled = true, matrix);
+			}
+		}
+
+		if (mode === 'ROW') {
+			for (let c = 0; c < difficulty; c++) {
+				if (!matrix[activeIndex][c].selected) $$invalidate(0, matrix[activeIndex][c].disabled = false, matrix);
+			}
+		} else {
+			for (let r = 0; r < difficulty; r++) {
+				if (!matrix[r][activeIndex].selected) $$invalidate(0, matrix[r][activeIndex].disabled = false, matrix);
+			}
+		}
+
+		$$invalidate(0, matrix);
+	}
+
+	function hoverCell(r, c) {
+		if (!isPlaying) return;
+
+		for (let i = 0; i < difficulty; i++) {
+			for (let j = 0; j < difficulty; j++) {
+				$$invalidate(0, matrix[i][j].highlighted = false, matrix);
+			}
+		}
+
+		if (mode === 'ROW' && r === activeIndex) {
+			for (let j = 0; j < difficulty; j++) {
+				if (!matrix[r][j].selected) $$invalidate(0, matrix[r][j].highlighted = true, matrix);
+			}
+		} else if (mode === 'COL' && c === activeIndex) {
+			for (let i = 0; i < difficulty; i++) {
+				if (!matrix[i][c].selected) $$invalidate(0, matrix[i][c].highlighted = true, matrix);
+			}
+		}
+
+		$$invalidate(0, matrix);
+	}
+
+	function clearHighlights() {
+		for (let i = 0; i < difficulty; i++) {
+			for (let j = 0; j < difficulty; j++) {
+				$$invalidate(0, matrix[i][j].highlighted = false, matrix);
+			}
+		}
+
+		$$invalidate(0, matrix);
+	}
+
+	function clickCell(r, c) {
+		if (!isPlaying) return;
+		if (matrix[r][c].disabled || matrix[r][c].selected) return;
+		$$invalidate(2, buffer = [...buffer, matrix[r][c].val]);
+		$$invalidate(0, matrix[r][c].selected = true, matrix);
+		mode = mode === 'ROW' ? 'COL' : 'ROW';
+		activeIndex = mode === 'ROW' ? r : c;
+		updateMatrixState();
+		checkWinCond();
+		$$invalidate(0, matrix);
+	}
+
+	function checkWinCond() {
+		if (buffer.length >= targetSeq.length) {
+			let diff = true;
+
+			for (let i = 0; i < targetSeq.length; i++) {
+				if (buffer[i] !== targetSeq[i]) diff = false;
+			}
+
+			if (diff) {
+				endGame(true);
+				return;
+			}
+		}
+
+		if (buffer.length >= bufSize) {
+			endGame(false, "буфер переполнен");
+		}
+	}
+
+	function endGame(win, reason = "") {
+		isPlaying = false;
+		clearInterval(timer);
+		$$invalidate(4, isWin = win);
+		$$invalidate(5, failReason = reason);
+		$$invalidate(6, endScreenVisible = true);
+		setTimeout(() => (0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.cyberhack.finish', isWin), 1600);
+	}
+
+	// ESC — просто отключиться (без последствий), в отличие от провала взлома
+	function abortHack() {
+		if (!isPlaying) return;
+		isPlaying = false;
+		clearInterval(timer);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_2__.executeClient)('client.cyberhack.cancel');
+	}
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_1__.onMount)(() => {
+		initGame();
+
+		const handleKeys = e => {
+			if (e.key === 'Escape' && isPlaying) {
+				abortHack();
+			}
+		};
+
+		window.addEventListener('keydown', handleKeys);
+		return () => window.removeEventListener('keydown', handleKeys);
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_1__.onDestroy)(() => {
+		if (timer) clearInterval(timer);
+	});
+
+	const mouseenter_handler = (r, c) => hoverCell(r, c);
+	const click_handler = (r, c) => clickCell(r, c);
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(14, viewData = $$props.viewData);
+	};
+
+	return [
+		matrix,
+		targetSeq,
+		buffer,
+		timeLeft,
+		isWin,
+		failReason,
+		endScreenVisible,
+		difficulty,
+		timeSeconds,
+		title,
+		hoverCell,
+		clearHighlights,
+		clickCell,
+		abortHack,
+		viewData,
+		mouseenter_handler,
+		click_handler
+	];
+}
+
+class Cyberhack extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 14 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Cyberhack);
+
+
+/***/ }),
+
 /***/ "./src/views/player/documets/army/index.svelte":
 /*!*****************************************************!*\
   !*** ./src/views/player/documets/army/index.svelte ***!
@@ -184375,7 +186167,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (66:0) {#if visible}
+// (70:0) {#if visible}
 function create_if_block(ctx) {
 	let if_block_anchor;
 
@@ -184416,7 +186208,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (72:4) {:else}
+// (76:4) {:else}
 function create_else_block(ctx) {
 	let div;
 	let each_value = /*visible*/ ctx[0];
@@ -184476,7 +186268,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (67:4) {#if typeof visible == "string"}
+// (71:4) {#if typeof visible == "string"}
 function create_if_block_1(ctx) {
 	let div2;
 	let div0;
@@ -184516,7 +186308,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (74:12) {#each visible as item}
+// (78:12) {#each visible as item}
 function create_each_block(ctx) {
 	let div2;
 	let div0;
@@ -184610,6 +186402,10 @@ function instance($$self, $$props, $$invalidate) {
 		CargoPallet: 'Взять груз',
 		ContractDelivery: 'Разгрузить груз',
 		ContractNpc: 'Поговорить',
+		BurglaryLoot: 'Обыскать',
+		WeedPlant: 'Куст конопли',
+		WeedBuyer: 'Предложить товар',
+		ChopShop: 'Разобрать машину',
 		TankRoyale: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Регистрация Tank Royale'),
 		Casino: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'двери в казино'),
 		Atm: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть меню банкомата'),
@@ -242048,6 +243844,499 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/player/lockbreak/index.svelte":
+/*!*************************************************!*\
+  !*** ./src/views/player/lockbreak/index.svelte ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _assets_keyhole_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/keyhole.png */ "./src/views/player/lockbreak/assets/keyhole.png");
+/* harmony import */ var _assets_keyhole_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_assets_keyhole_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _assets_lock_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/lock.png */ "./src/views/player/lockbreak/assets/lock.png");
+/* harmony import */ var _assets_lock_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_assets_lock_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _assets_lockpick_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/lockpick.png */ "./src/views/player/lockbreak/assets/lockpick.png");
+/* harmony import */ var _assets_lockpick_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_assets_lockpick_png__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _assets_lockpickbreak_mp3__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/lockpickbreak.mp3 */ "./src/views/player/lockbreak/assets/lockpickbreak.mp3");
+/* harmony import */ var _assets_lockpickbreak_mp3__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_assets_lockpickbreak_mp3__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _assets_lockpickdamage_mp3__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./assets/lockpickdamage.mp3 */ "./src/views/player/lockbreak/assets/lockpickdamage.mp3");
+/* harmony import */ var _assets_lockpickdamage_mp3__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_assets_lockpickdamage_mp3__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _assets_openlocksong_mp3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./assets/openlocksong.mp3 */ "./src/views/player/lockbreak/assets/openlocksong.mp3");
+/* harmony import */ var _assets_openlocksong_mp3__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_assets_openlocksong_mp3__WEBPACK_IMPORTED_MODULE_9__);
+/* src/views/player/lockbreak/index.svelte generated by Svelte v3.59.2 */
+
+
+const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
+
+
+
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-a9xisc", ".lb.svelte-a9xisc.svelte-a9xisc{position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;user-select:none;background:radial-gradient(circle at 50% 50%, rgba(10, 12, 16, 0.35), rgba(5, 6, 9, 0.85));font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#e9edf3}.lb__lock.svelte-a9xisc.svelte-a9xisc{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:100%;height:100vh;background-repeat:no-repeat;background-position:center;background-size:50.3vh 42.1vh;display:flex;align-items:center;justify-content:center}.lb__keyhole.svelte-a9xisc.svelte-a9xisc{position:relative;display:flex;align-items:center;justify-content:center}.lb__screwdriver.svelte-a9xisc.svelte-a9xisc{width:111vh;height:111vh}.lb__pick.svelte-a9xisc.svelte-a9xisc{position:absolute;top:50%;left:50%;width:26.9vh;height:41.7vh;transform-origin:bottom right;transform:translate(-100%, -100%) rotateZ(0deg)}.lb__pick.broken.svelte-a9xisc.svelte-a9xisc{animation:svelte-a9xisc-lb-break 2s forwards}@keyframes svelte-a9xisc-lb-break{0%{transform:translate(-100%, -100%) scale(1) rotate(0deg)}100%{transform:translate(-30%, -30%) scale(0) rotate(360deg)}}.lb__panel.svelte-a9xisc.svelte-a9xisc{position:absolute;top:4vh;right:4vh;width:30vh;padding:2vh;border-radius:1.4vh;background:rgba(18, 21, 27, 0.92);border:1px solid rgba(255, 255, 255, 0.07);display:flex;flex-direction:column;gap:1.2vh}.lb__title.svelte-a9xisc.svelte-a9xisc{font-size:2vh;font-weight:700}.lb__row.svelte-a9xisc.svelte-a9xisc{display:flex;align-items:center;justify-content:space-between;gap:1.2vh;font-size:1.4vh;color:#8b93a1}.lb__row.svelte-a9xisc b.svelte-a9xisc{font-size:1.8vh;color:#f5a524}.lb__bar.svelte-a9xisc.svelte-a9xisc{flex:1;height:0.8vh;border-radius:0.4vh;background:rgba(255, 255, 255, 0.08);overflow:hidden}.lb__bar.svelte-a9xisc div.svelte-a9xisc{height:100%;background:#7ed321;transition:width 0.15s}.lb__bar.svelte-a9xisc div.low.svelte-a9xisc{background:#ff6b6b}.lb__state.svelte-a9xisc.svelte-a9xisc{font-size:1.4vh;font-weight:600}.lb__state.ok.svelte-a9xisc.svelte-a9xisc{color:#7ed321}.lb__state.bad.svelte-a9xisc.svelte-a9xisc{color:#ff6b6b}.lb__help.svelte-a9xisc.svelte-a9xisc{position:absolute;left:50%;bottom:5vh;transform:translate(-50%);display:flex;gap:2vh}.lb__help.svelte-a9xisc div.svelte-a9xisc{display:flex;align-items:center;padding:1vh 2.4vh;border-radius:5vh;font-size:1.4vh;font-weight:600;background:rgba(18, 21, 27, 0.9);border:1px solid rgba(255, 255, 255, 0.08)}.lb__help.svelte-a9xisc span.svelte-a9xisc{margin-right:1vh;padding:0.6vh 1.2vh;border-radius:1.2vh;background:#f5a524;color:#16181d;font-weight:700}");
+}
+
+// (180:26) 
+function create_if_block_1(ctx) {
+	let div;
+
+	let t_value = (/*picks*/ ctx[0] > 0
+	? "Отмычка сломалась…"
+	: "Отмычки закончились") + "";
+
+	let t;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "lb__state bad svelte-a9xisc");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*picks*/ 1 && t_value !== (t_value = (/*picks*/ ctx[0] > 0
+			? "Отмычка сломалась…"
+			: "Отмычки закончились") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (178:8) {#if opened}
+function create_if_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Замок открыт";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "lb__state ok svelte-a9xisc");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div12;
+	let div1;
+	let div0;
+	let img0;
+	let img0_src_value;
+	let t0;
+	let img1;
+	let img1_src_value;
+	let img1_style_value;
+	let t1;
+	let div7;
+	let div2;
+	let t3;
+	let div3;
+	let span0;
+	let b;
+	let t5;
+	let t6;
+	let div6;
+	let span1;
+	let t8;
+	let div5;
+	let div4;
+	let t9;
+	let t10;
+	let div11;
+	let div12_intro;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (/*opened*/ ctx[6]) return create_if_block;
+		if (/*waiting*/ ctx[7]) return create_if_block_1;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type && current_block_type(ctx);
+
+	return {
+		c() {
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			img0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			img1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("img");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = `${/*title*/ ctx[8]}`;
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Отмычки";
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*picks*/ ctx[0]);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "Прочность";
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div11.innerHTML = `<div class="svelte-a9xisc"><span class="svelte-a9xisc">A / D</span>Повернуть замок</div> 
+        <div class="svelte-a9xisc"><span class="svelte-a9xisc">← мышь →</span>Повернуть отмычку</div> 
+        <div class="svelte-a9xisc"><span class="svelte-a9xisc">ESC</span>Отменить</div>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img0, "class", "lb__screwdriver svelte-a9xisc");
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img0.src, img0_src_value = (_assets_keyhole_png__WEBPACK_IMPORTED_MODULE_4___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img0, "src", img0_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img0, "alt", "");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(img0, "transform", "rotateZ(" + /*keyholeRotation*/ ctx[1] + "deg)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img1, "class", "lb__pick svelte-a9xisc");
+			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img1.src, img1_src_value = (_assets_lockpick_png__WEBPACK_IMPORTED_MODULE_6___default()))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img1, "src", img1_src_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img1, "alt", "");
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img1, "style", img1_style_value = /*pickBroken*/ ctx[5]
+			? ""
+			: `transform: translate(-100%, -100%) rotateZ(${/*pickRotation*/ ctx[2]}deg)`);
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(img1, "broken", /*pickBroken*/ ctx[5]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "lb__keyhole svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "lb__lock svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background-image", "url(" + (_assets_lock_png__WEBPACK_IMPORTED_MODULE_5___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "lb__title svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "lb__row svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "width", /*strength*/ ctx[3] / /*maxStrength*/ ctx[4] * 100 + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "low", /*strength*/ ctx[3] / /*maxStrength*/ ctx[4] < 0.3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "lb__bar svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "lb__row svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "lb__panel svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "lb__help svelte-a9xisc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "lb svelte-a9xisc");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div12, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, img0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, img1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t9);
+			if (if_block) if_block.m(div7, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "mousemove", /*onMouseMove*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keydown", /*onKeyDown*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKeyUp*/ ctx[11])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*keyholeRotation*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(img0, "transform", "rotateZ(" + /*keyholeRotation*/ ctx[1] + "deg)");
+			}
+
+			if (dirty[0] & /*pickBroken, pickRotation*/ 36 && img1_style_value !== (img1_style_value = /*pickBroken*/ ctx[5]
+			? ""
+			: `transform: translate(-100%, -100%) rotateZ(${/*pickRotation*/ ctx[2]}deg)`)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img1, "style", img1_style_value);
+			}
+
+			if (dirty[0] & /*pickBroken*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(img1, "broken", /*pickBroken*/ ctx[5]);
+			}
+
+			if (dirty[0] & /*picks*/ 1) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, /*picks*/ ctx[0]);
+
+			if (dirty[0] & /*strength, maxStrength*/ 24) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "width", /*strength*/ ctx[3] / /*maxStrength*/ ctx[4] * 100 + "%");
+			}
+
+			if (dirty[0] & /*strength, maxStrength*/ 24) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "low", /*strength*/ ctx[3] / /*maxStrength*/ ctx[4] < 0.3);
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if (if_block) if_block.d(1);
+				if_block = current_block_type && current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div7, null);
+				}
+			}
+		},
+		i(local) {
+			if (!div12_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div12_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div12, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 200 });
+					div12_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div12);
+
+			if (if_block) {
+				if_block.d();
+			}
+
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+const latchMax = 110;
+
+// Замок (скважина)
+const rotateStep = 0.75;
+
+const restoreStep = 2.35;
+
+function instance($$self, $$props, $$invalidate) {
+	let { viewData } = $$props;
+
+	const params = (() => {
+		try {
+			return typeof viewData === "string"
+			? JSON.parse(viewData)
+			: viewData || {};
+		} catch(e) {
+			return {};
+		}
+	})();
+
+	const title = params.title || "Взлом замка";
+
+	// Точность угла защёлки в градусах: чем меньше, тем сложнее (оригинал — 5)
+	const inaccuracy = Math.max(2, Math.min(12, Number(params.difficulty) || 5)) + 0.001;
+
+	let picks = Math.max(0, Number(params.picks) || 1);
+	const random = (min, max) => Math.floor(min + Math.random() * (max + 1 - min));
+	const clamp = (n, min, max) => Math.min(Math.max(n, min), max);
+
+	const sound = (url, volume) => {
+		const audio = new Audio(url);
+		audio.volume = volume;
+		return audio;
+	};
+
+	const breakSound = sound((_assets_lockpickbreak_mp3__WEBPACK_IMPORTED_MODULE_7___default()), 0.2);
+	const damageSound = sound((_assets_lockpickdamage_mp3__WEBPACK_IMPORTED_MODULE_8___default()), 0.25);
+	const openSound = sound((_assets_openlocksong_mp3__WEBPACK_IMPORTED_MODULE_9___default()), 0.2);
+
+	const play = (audio, from = 0) => {
+		try {
+			audio.currentTime = from;
+			audio.play();
+		} catch(e) {
+			
+		}
+	};
+
+	// Защёлка
+	const latchMin = -50;
+
+	let latchRotation = random(latchMin, latchMax);
+	let defused = false;
+	const turnWay = Math.random() < 0.5 ? -1 : 1;
+	let keyholeRotation = 0;
+
+	// Отмычка
+	let pickRotation = 0;
+
+	let strength = 100;
+	let maxStrength = 100;
+	let pickBroken = false;
+	let lastMouseX = null;
+	let pressedKey = null;
+	let cooldown = null;
+	let frozen = false;
+	let opened = false;
+	let waiting = false;
+
+	const newPick = () => {
+		$$invalidate(4, maxStrength = $$invalidate(3, strength = random(50, 100)));
+		$$invalidate(2, pickRotation = 0);
+		lastMouseX = null;
+		$$invalidate(5, pickBroken = false);
+		frozen = false;
+		$$invalidate(7, waiting = false);
+	};
+
+	newPick();
+
+	// Сервер выдал новую отмычку после поломки
+	window.events.addEvent("cef.lockbreak.newpick", count => {
+		$$invalidate(0, picks = Number(count) || 0);
+		newPick();
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => window.events.removeEvent("cef.lockbreak.newpick"));
+
+	const wrongRotate = () => {
+		pressedKey = null;
+		if (!cooldown) cooldown = setTimeout(() => cooldown = null, 100);
+		$$invalidate(3, strength -= random(1, 5));
+
+		if (strength <= 0) {
+			$$invalidate(3, strength = 0);
+			$$invalidate(5, pickBroken = true);
+			frozen = true;
+			$$invalidate(7, waiting = true);
+			$$invalidate(0, picks = Math.max(0, picks - 1));
+			play(breakSound);
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.lockbreak.broken");
+		} else play(damageSound);
+	};
+
+	const tick = () => {
+		if (opened) return;
+
+		if (!pressedKey) {
+			$$invalidate(1, keyholeRotation -= Math.sign(keyholeRotation) * restoreStep);
+			if (Math.abs(keyholeRotation) < restoreStep - 0.001) $$invalidate(1, keyholeRotation = 0);
+			return;
+		}
+
+		if (pressedKey === 68) $$invalidate(1, keyholeRotation = Math.min(90, keyholeRotation + rotateStep * 2));
+		if (pressedKey === 65) $$invalidate(1, keyholeRotation = Math.max(-90, keyholeRotation - rotateStep * 2));
+
+		if (turnWay !== Math.sign(keyholeRotation) && Math.abs(keyholeRotation) > 15) {
+			wrongRotate();
+			return;
+		}
+
+		if (!defused) {
+			wrongRotate();
+			return;
+		}
+
+		if (Math.sign(keyholeRotation) === turnWay && Math.abs(keyholeRotation) >= 90 - 0.001) {
+			$$invalidate(6, opened = true);
+			frozen = true;
+			play(openSound, 0.2);
+			setTimeout(() => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.lockbreak.opened"), 450);
+		}
+	};
+
+	// 30 кадров в секунду, как в оригинале
+	let frameTimer;
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onMount)(() => frameTimer = setInterval(tick, 1000 / 30));
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => clearInterval(frameTimer));
+	const smoothness = () => window.innerWidth / 2 / (latchMax - latchMin);
+
+	const onMouseMove = e => {
+		if (frozen) return;
+		if (lastMouseX !== null) $$invalidate(2, pickRotation = clamp(pickRotation + (e.clientX - lastMouseX) / smoothness(), latchMin, latchMax));
+		defused = Math.abs(pickRotation - latchRotation) < inaccuracy;
+		lastMouseX = e.clientX;
+	};
+
+	const onKeyDown = e => {
+		if (frozen) return;
+
+		pressedKey = (e.keyCode === 68 || e.keyCode === 65) && !cooldown
+		? e.keyCode
+		: null;
+	};
+
+	const onKeyUp = e => {
+		if (e.keyCode === 27) {
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.lockbreak.cancel");
+			return;
+		}
+
+		if (!frozen) pressedKey = null;
+	};
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(12, viewData = $$props.viewData);
+	};
+
+	return [
+		picks,
+		keyholeRotation,
+		pickRotation,
+		strength,
+		maxStrength,
+		pickBroken,
+		opened,
+		waiting,
+		title,
+		onMouseMove,
+		onKeyDown,
+		onKeyUp,
+		viewData
+	];
+}
+
+class Lockbreak extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 12 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Lockbreak);
+
+
+/***/ }),
+
 /***/ "./src/views/player/menu/elements/events.svelte":
 /*!******************************************************!*\
   !*** ./src/views/player/menu/elements/events.svelte ***!
@@ -248566,6 +250855,1651 @@ class Contracts extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCompo
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contracts);
+
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/fractions/elements/crime/index.svelte":
+/*!******************************************************************************!*\
+  !*** ./src/views/player/menu/elements/fractions/elements/crime/index.svelte ***!
+  \******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* src/views/player/menu/elements/fractions/elements/crime/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-auda25", ".crg.svelte-auda25.svelte-auda25{width:100%;height:100%;display:flex;flex-direction:column;color:#fff;font-family:\"Gilroy\", sans-serif;overflow:hidden}.crg__empty.svelte-auda25.svelte-auda25{margin:auto;max-width:60vh;text-align:center;font-size:1.6vh;color:rgba(255, 255, 255, 0.6)}.crg__head.svelte-auda25.svelte-auda25{margin-bottom:1.6vh}.crg__title.svelte-auda25.svelte-auda25{font-size:2.6vh;font-weight:700}.crg__sub.svelte-auda25.svelte-auda25{font-size:1.4vh;color:rgba(255, 255, 255, 0.5);margin-top:0.4vh}.crg__fund.svelte-auda25.svelte-auda25{padding:1.1vh 1.4vh;border-radius:1vh;margin-bottom:1.4vh;font-size:1.35vh;line-height:1.4;color:rgba(255, 255, 255, 0.8);background:rgba(216, 57, 75, 0.1);border:1px solid rgba(216, 57, 75, 0.35)}.crg__fund.org.svelte-auda25.svelte-auda25{background:rgba(126, 211, 33, 0.08);border-color:rgba(126, 211, 33, 0.4)}.crg__fund.svelte-auda25 b.svelte-auda25{color:#fff}.crg__tabs.svelte-auda25.svelte-auda25{display:flex;gap:0.8vh;margin-bottom:1.6vh}.crg__tab.svelte-auda25.svelte-auda25{padding:1vh 1.8vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);font-size:1.4vh;cursor:pointer;color:rgba(255, 255, 255, 0.7)}.crg__tab.svelte-auda25.svelte-auda25:hover{background:rgba(255, 255, 255, 0.09)}.crg__tab.active.svelte-auda25.svelte-auda25{background:#d8394b;color:#fff;font-weight:600}.crg__body.svelte-auda25.svelte-auda25{flex:1;overflow-y:auto;padding-right:1vh}.crg__status.svelte-auda25.svelte-auda25{display:flex;flex-wrap:wrap;gap:1vh;margin-bottom:1.6vh}.crg__status.svelte-auda25 div.svelte-auda25{padding:1vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);border:1px solid rgba(255, 107, 107, 0.35);display:flex;flex-direction:column;gap:0.3vh;min-width:14vh}.crg__status.svelte-auda25 div.ok.svelte-auda25{border-color:rgba(126, 211, 33, 0.45)}.crg__status.svelte-auda25 span.svelte-auda25{font-size:1.2vh;color:rgba(255, 255, 255, 0.5)}.crg__status.svelte-auda25 b.svelte-auda25{font-size:1.6vh}.crg__steps.svelte-auda25.svelte-auda25{margin:0 0 1.4vh;padding-left:2.4vh;display:flex;flex-direction:column;gap:1vh}.crg__steps.svelte-auda25 li.svelte-auda25{list-style:decimal;font-size:1.45vh;line-height:1.45;color:rgba(255, 255, 255, 0.82)}.crg__steps.svelte-auda25 b.svelte-auda25{color:#fff}.crg__warn.svelte-auda25.svelte-auda25{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(245, 165, 36, 0.1);border:1px solid rgba(245, 165, 36, 0.35);color:#f5c060;font-size:1.35vh;line-height:1.4;margin-bottom:1.4vh}.crg__buttons.svelte-auda25.svelte-auda25{display:flex;flex-wrap:wrap;gap:1vh}.crg__btn.svelte-auda25.svelte-auda25{padding:1.1vh 1.8vh;border-radius:1vh;background:rgba(216, 57, 75, 0.18);border:1px solid rgba(216, 57, 75, 0.5);font-size:1.4vh;cursor:pointer}.crg__btn.svelte-auda25.svelte-auda25:hover{background:rgba(216, 57, 75, 0.35)}.crg__prices.svelte-auda25.svelte-auda25{display:grid;grid-template-columns:1fr 1fr;gap:1vh;margin-bottom:1.4vh}.crg__price.svelte-auda25.svelte-auda25{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;flex-direction:column;gap:0.3vh}.crg__price.svelte-auda25 span.svelte-auda25{font-size:1.4vh}.crg__price.svelte-auda25 b.svelte-auda25{font-size:1.8vh;color:#f5a524}.crg__price.svelte-auda25 i.svelte-auda25{font-style:normal;font-size:1.2vh;color:rgba(255, 255, 255, 0.5)}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[18] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[18] = list[i];
+	return child_ctx;
+}
+
+// (41:4) {:else}
+function create_else_block(ctx) {
+	let div2;
+	let t3;
+	let t4;
+	let div3;
+	let t5;
+	let div4;
+	let if_block0 = /*data*/ ctx[0].payoutNote && create_if_block_8(ctx);
+	let each_value_1 = /*tabs*/ ctx[8];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	function select_block_type_2(ctx, dirty) {
+		if (/*tab*/ ctx[1] === "burglary") return create_if_block_2;
+		if (/*tab*/ ctx[1] === "theft") return create_if_block_3;
+		if (/*tab*/ ctx[1] === "weed") return create_if_block_6;
+		if (/*tab*/ ctx[1] === "fence") return create_if_block_7;
+	}
+
+	let current_block_type = select_block_type_2(ctx, -1);
+	let if_block1 = current_block_type && current_block_type(ctx);
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div2.innerHTML = `<div class="crg__title svelte-auda25">Криминал</div> 
+            <div class="crg__sub svelte-auda25">Где брать работу, что нужно с собой и куда сбывать добычу</div>`;
+
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block1) if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__head svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__tabs svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__body svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div3, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			if (if_block1) if_block1.m(div4, null);
+		},
+		p(ctx, dirty) {
+			if (/*data*/ ctx[0].payoutNote) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_8(ctx);
+					if_block0.c();
+					if_block0.m(t4.parentNode, t4);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty & /*tab, tabs*/ 258) {
+				each_value_1 = /*tabs*/ ctx[8];
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div3, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_1.length;
+			}
+
+			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if (if_block1) if_block1.d(1);
+				if_block1 = current_block_type && current_block_type(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div4, null);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+
+			if (if_block1) {
+				if_block1.d();
+			}
+		}
+	};
+}
+
+// (39:28) 
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Криминальные заработки доступны бандам, мафии, байкерам и криминальным организациям.";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__empty svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (37:4) {#if !data}
+function create_if_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Загрузка…";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__empty svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (46:8) {#if data.payoutNote}
+function create_if_block_8(ctx) {
+	let div;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*data*/ ctx[0].isFraction) return create_if_block_9;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type_1(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__fund svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "org", !/*data*/ ctx[0].isFraction);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			if_block.m(div, null);
+		},
+		p(ctx, dirty) {
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div, null);
+				}
+			}
+
+			if (dirty & /*data*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "org", !/*data*/ ctx[0].isFraction);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if_block.d();
+		}
+	};
+}
+
+// (50:16) {:else}
+function create_else_block_1(ctx) {
+	let b_1;
+	let t1;
+	let t2_value = /*data*/ ctx[0].orgBonus + "";
+	let t2;
+	let t3;
+
+	return {
+		c() {
+			b_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b_1.textContent = "Без общака.";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Ваша организация не платит долю в общак банды, поэтому выплаты на ");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% выше, чем у фракционных банд. Цены в этом разделе уже с учётом этого.");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, b_1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*data*/ ctx[0].orgBonus + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(b_1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+		}
+	};
+}
+
+// (48:16) {#if data.isFraction}
+function create_if_block_9(ctx) {
+	let b_1;
+	let t1;
+	let t2_value = /*data*/ ctx[0].fundPercent + "";
+	let t2;
+	let t3;
+
+	return {
+		c() {
+			b_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b_1.textContent = "Общак банды.";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" С каждой продажи и найденных наличных ");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% автоматически уходит в общак банды — все цены в этом разделе уже указаны за вычетом общака.");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, b_1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*data*/ ctx[0].fundPercent + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(b_1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+		}
+	};
+}
+
+// (56:12) {#each tabs as item}
+function create_each_block_1(ctx) {
+	let div;
+	let t_1_value = /*item*/ ctx[18].name + "";
+	let t_1;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[9](/*item*/ ctx[18]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__tab svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*tab*/ ctx[1] === /*item*/ ctx[18].key);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t_1);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*tab, tabs*/ 258) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*tab*/ ctx[1] === /*item*/ ctx[18].key);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (122:38) 
+function create_if_block_7(ctx) {
+	let ol;
+	let li0;
+	let t2;
+	let li1;
+	let t5;
+	let li2;
+	let b2;
+	let t7;
+	let t8_value = /*f*/ ctx[2].btcBonus + "";
+	let t8;
+	let t9;
+	let t10;
+	let div0;
+	let t11;
+	let div2;
+	let div1;
+	let mounted;
+	let dispose;
+	let each_value = /*f*/ ctx[2].items;
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			ol = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("ol");
+			li0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li0.innerHTML = `<b class="svelte-auda25">Приезжайте к Мавру лично</b> и выберите «Скупка краденого».`;
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li1.innerHTML = `<b class="svelte-auda25">Выберите товар и количество.</b> Цена падает с каждой продажей и восстанавливается со временем — выгоднее продавать понемногу.`;
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b2.textContent = "Выберите оплату:";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" наличными или в BTC на криптокошелёк (в BTC Мавр платит на ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% больше).");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Мавр";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "crg__prices svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__buttons svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, ol, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t10, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div0, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t11, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_8*/ ctx[17]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*f*/ 4 && t8_value !== (t8_value = /*f*/ ctx[2].btcBonus + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (dirty & /*f, money*/ 132) {
+				each_value = /*f*/ ctx[2].items;
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div0, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(ol);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t10);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t11);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (99:37) 
+function create_if_block_6(ctx) {
+	let div5;
+	let div0;
+	let span0;
+	let b0;
+	let t1_value = (/*w*/ ctx[5].seeds || 0) + "";
+	let t1;
+	let t2;
+	let div1;
+	let span1;
+	let b1;
+	let t4_value = (/*w*/ ctx[5].bottles || 0) + "";
+	let t4;
+	let t5;
+	let div2;
+	let span2;
+	let b2;
+	let t7_value = (/*w*/ ctx[5].plants || 0) + "";
+	let t7;
+	let t8;
+	let t9_value = /*w*/ ctx[5].maxPlants + "";
+	let t9;
+
+	let t10_value = (/*w*/ ctx[5].ready
+	? ` · созрело ${/*w*/ ctx[5].ready}`
+	: "") + "";
+
+	let t10;
+	let t11;
+	let div3;
+	let span3;
+	let b3;
+	let t13_value = (/*w*/ ctx[5].raw || 0) + "";
+	let t13;
+	let t14;
+	let t15_value = (/*w*/ ctx[5].drugs || 0) + "";
+	let t15;
+	let t16;
+	let t17;
+	let div4;
+	let span4;
+	let b4;
+	let t19_value = /*w*/ ctx[5].spotsFree + "";
+	let t19;
+	let t20;
+	let t21_value = /*w*/ ctx[5].spots + "";
+	let t21;
+	let t22;
+	let ol;
+	let li0;
+	let b5;
+	let t24;
+	let t25_value = /*money*/ ctx[7](/*w*/ ctx[5].seedPrice) + "";
+	let t25;
+	let t26;
+	let t27_value = /*money*/ ctx[7](/*w*/ ctx[5].waterPrice) + "";
+	let t27;
+	let t28;
+	let t29;
+	let li1;
+	let b6;
+	let t31;
+	let t32_value = /*w*/ ctx[5].homeMax + "";
+	let t32;
+	let t33;
+	let t34;
+	let li2;
+	let b7;
+	let t36;
+	let t37_value = /*w*/ ctx[5].maxPlants + "";
+	let t37;
+	let t38;
+	let t39;
+	let li3;
+	let b8;
+	let t41;
+	let t42_value = /*w*/ ctx[5].water + "";
+	let t42;
+	let t43;
+	let t44;
+	let li4;
+	let b9;
+	let t46;
+	let t47_value = /*w*/ ctx[5].grow + "";
+	let t47;
+	let t48;
+	let t49_value = /*w*/ ctx[5].yieldMin + "";
+	let t49;
+	let t50;
+	let t51_value = /*w*/ ctx[5].yieldMax + "";
+	let t51;
+	let t52;
+	let t53_value = /*w*/ ctx[5].rot + "";
+	let t53;
+	let t54;
+	let t55;
+	let li5;
+	let b10;
+	let t57;
+	let t58_value = /*w*/ ctx[5].dry + "";
+	let t58;
+	let t59;
+	let t60;
+	let li6;
+	let b11;
+	let t62;
+	let t63_value = /*money*/ ctx[7](/*w*/ ctx[5].buyerPrice) + "";
+	let t63;
+	let t64;
+	let t65_value = /*money*/ ctx[7](/*w*/ ctx[5].buyerPriceMax) + "";
+	let t65;
+	let t66;
+	let t67;
+	let div6;
+	let t69;
+	let div10;
+	let div7;
+	let t71;
+	let div8;
+	let t73;
+	let div9;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Семена";
+			b0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "Вода";
+			b1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "Мои кусты";
+			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span3.textContent = "Свежая / готовая";
+			b3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t13_value);
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t15_value);
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" г");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span4.textContent = "Свободные поляны";
+			b4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t19_value);
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" из ");
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t21_value);
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			ol = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("ol");
+			li0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b5.textContent = "Купите семена и воду.";
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Семена — у Мавра (");
+			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t25_value);
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("), вода — у Мавра (");
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t27_value);
+			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(") или в любом магазине 24/7.");
+			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b6.textContent = "Найдите поляну.";
+			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Поляны отмечены на карте зелёными листьями (красные — заняты). Рядом на земле виден зелёный круг. Можно сажать и дома в горшке (свой дом или дом, где вы сожитель, до ");
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t32_value);
+			t33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кустов).");
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b7.textContent = "Посадите.";
+			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Встаньте в круг → инвентарь → «Семена конопли» → «Использовать». Всего у вас может быть до ");
+			t37 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t37_value);
+			t38 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кустов.");
+			t39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b8.textContent = "Поливайте.";
+			t41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Подойдите к кусту и нажмите E (нужна бутылка воды). Поливать нужно не реже, чем раз в ");
+			t42 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t42_value);
+			t43 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" мин, иначе куст засохнет. Над кустом написано, когда поливать.");
+			t44 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b9.textContent = "Соберите урожай.";
+			t46 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Через ");
+			t47 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t47_value);
+			t48 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" мин куст созреет — нажмите E. Получите ");
+			t49 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t49_value);
+			t50 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("–");
+			t51 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t51_value);
+			t52 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" «Свежей конопли». Не собрали за ");
+			t53 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t53_value);
+			t54 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" мин — сгниёт. Созревший куст может собрать кто угодно, так что не опаздывайте.");
+			t55 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b10.textContent = "Высушите и расфасуйте.";
+			t57 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Свежая конопля сохнет ");
+			t58 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t58_value);
+			t59 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" мин (просто лежит в инвентаре). Потом инвентарь → «Свежая конопля» → «Использовать» — вся высохшая конопля расфасуется в «Наркотики» (1 к 1).");
+			t60 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b11.textContent = "Продайте.";
+			t62 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" NPC-покупателям у задних дворов магазинов 24/7 в разных районах (");
+			t63 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t63_value);
+			t64 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("–");
+			t65 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t65_value);
+			t66 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" за грамм, у каждого дневной лимит) или Мавру в «Скупке краденого».");
+			t67 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6.textContent = "Полиция уничтожает кусты за награду. При сборе на поляне шанс 10%, что вас заметят, при продаже NPC — 12%, что покупатель сдаст. Это звёзды розыска.";
+			t69 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7.textContent = "Ближайшая свободная поляна";
+			t71 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8.textContent = "Ближайший покупатель";
+			t73 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9.textContent = "Мавр — семена и вода";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", /*w*/ ctx[5].seeds > 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "ok", /*w*/ ctx[5].bottles > 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "ok", /*w*/ ctx[5].spotsFree > 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__status svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b6, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b7, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b8, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b9, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b10, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b11, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li6, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "crg__warn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "crg__buttons svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, b0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, b1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, b2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, b4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b4, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b4, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b4, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t22, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, ol, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, b5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t25);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t27);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t29);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li1, b6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li1, t31);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li1, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li1, t33);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t36);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t37);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t38);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t39);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, b8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, t41);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, t42);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, t43);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t44);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, b9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t46);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t47);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t48);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t49);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t50);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t51);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t52);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t53);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li4, t54);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t55);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li5, b10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li5, t57);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li5, t58);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li5, t59);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t60);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li6, b11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li6, t62);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li6, t63);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li6, t64);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li6, t65);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li6, t66);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t67, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t69, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div10, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t71);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t73);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*click_handler_5*/ ctx[14]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "click", /*click_handler_6*/ ctx[15]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", /*click_handler_7*/ ctx[16])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*w*/ 32 && t1_value !== (t1_value = (/*w*/ ctx[5].seeds || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*w*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", /*w*/ ctx[5].seeds > 0);
+			}
+
+			if (dirty & /*w*/ 32 && t4_value !== (t4_value = (/*w*/ ctx[5].bottles || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+
+			if (dirty & /*w*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "ok", /*w*/ ctx[5].bottles > 0);
+			}
+
+			if (dirty & /*w*/ 32 && t7_value !== (t7_value = (/*w*/ ctx[5].plants || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty & /*w*/ 32 && t9_value !== (t9_value = /*w*/ ctx[5].maxPlants + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+
+			if (dirty & /*w*/ 32 && t10_value !== (t10_value = (/*w*/ ctx[5].ready
+			? ` · созрело ${/*w*/ ctx[5].ready}`
+			: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (dirty & /*w*/ 32 && t13_value !== (t13_value = (/*w*/ ctx[5].raw || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t13, t13_value);
+			if (dirty & /*w*/ 32 && t15_value !== (t15_value = (/*w*/ ctx[5].drugs || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t15, t15_value);
+			if (dirty & /*w*/ 32 && t19_value !== (t19_value = /*w*/ ctx[5].spotsFree + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t19, t19_value);
+			if (dirty & /*w*/ 32 && t21_value !== (t21_value = /*w*/ ctx[5].spots + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t21, t21_value);
+
+			if (dirty & /*w*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "ok", /*w*/ ctx[5].spotsFree > 0);
+			}
+
+			if (dirty & /*w*/ 32 && t25_value !== (t25_value = /*money*/ ctx[7](/*w*/ ctx[5].seedPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t25, t25_value);
+			if (dirty & /*w*/ 32 && t27_value !== (t27_value = /*money*/ ctx[7](/*w*/ ctx[5].waterPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t27, t27_value);
+			if (dirty & /*w*/ 32 && t32_value !== (t32_value = /*w*/ ctx[5].homeMax + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t32, t32_value);
+			if (dirty & /*w*/ 32 && t37_value !== (t37_value = /*w*/ ctx[5].maxPlants + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t37, t37_value);
+			if (dirty & /*w*/ 32 && t42_value !== (t42_value = /*w*/ ctx[5].water + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t42, t42_value);
+			if (dirty & /*w*/ 32 && t47_value !== (t47_value = /*w*/ ctx[5].grow + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t47, t47_value);
+			if (dirty & /*w*/ 32 && t49_value !== (t49_value = /*w*/ ctx[5].yieldMin + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t49, t49_value);
+			if (dirty & /*w*/ 32 && t51_value !== (t51_value = /*w*/ ctx[5].yieldMax + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t51, t51_value);
+			if (dirty & /*w*/ 32 && t53_value !== (t53_value = /*w*/ ctx[5].rot + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t53, t53_value);
+			if (dirty & /*w*/ 32 && t58_value !== (t58_value = /*w*/ ctx[5].dry + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t58, t58_value);
+			if (dirty & /*w*/ 32 && t63_value !== (t63_value = /*money*/ ctx[7](/*w*/ ctx[5].buyerPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t63, t63_value);
+			if (dirty & /*w*/ 32 && t65_value !== (t65_value = /*money*/ ctx[7](/*w*/ ctx[5].buyerPriceMax) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t65, t65_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t22);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(ol);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t67);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t69);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div10);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (79:38) 
+function create_if_block_3(ctx) {
+	let div1;
+	let div0;
+	let span;
+	let b0;
+
+	let t1_value = (/*t*/ ctx[3].cooldown
+	? `через ${/*t*/ ctx[3].cooldown} мин`
+	: "доступен") + "";
+
+	let t1;
+	let t2;
+	let ol;
+	let li0;
+	let b1;
+	let t4;
+	let t5;
+	let t6;
+	let li1;
+	let t9;
+	let li2;
+	let b3;
+	let t11;
+	let br0;
+	let t12;
+	let b4;
+	let t14;
+	let br1;
+	let t15;
+	let b5;
+	let t17;
+	let t18_value = /*money*/ ctx[7](/*data*/ ctx[0].programmerPrice) + "";
+	let t18;
+	let t19;
+	let t20;
+	let li3;
+	let t23;
+	let li4;
+	let t26;
+	let li5;
+	let t29;
+	let div2;
+	let t31;
+	let div5;
+	let t32;
+	let div3;
+	let t34;
+	let div4;
+	let mounted;
+	let dispose;
+	let if_block0 = /*data*/ ctx[0].isGang && create_if_block_5(ctx);
+	let if_block1 = /*data*/ ctx[0].isGang && create_if_block_4(ctx);
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "Новый заказ";
+			b0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			ol = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("ol");
+			li0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b1.textContent = "Возьмите заказ у NPC.";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("у Мавра → «Заказ на угон». Новый заказ на команду — раз в 5 минут.");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li1.innerHTML = `<b class="svelte-auda25">Найдите машину.</b> Она отмечена в GPS и стоит где-то на улице. Модель и номер пишутся в уведомлении.`;
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b3.textContent = "Вскройте замок.";
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" В уведомлении написано, какой замок у машины. Подойдите к двери, откройте инвентарь и «Использовать»:\n                        ");
+			br0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("— ");
+			b4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b4.textContent = "обычная машина";
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — «Отмычка» (та же мини-игра, что у домов: мышь + A/D);\n                        ");
+			br1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("— ");
+			b5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b5.textContent = "дорогая машина";
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — «Программатор» (Мавр, ");
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t18_value);
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("): соберите нужную последовательность кодов в матрице, пока не кончилось время. Провал — программатор сгорает и срабатывает сигнализация.");
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li3.innerHTML = `<b class="svelte-auda25">Угоните.</b> Садитесь за руль — провода замкнутся, двигатель заведётся. Сесть может только ваша команда. У дешёвых машин с шансом 30% сработает сигнализация — полиция получит метку, вы — звёзды.`;
+			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li4.innerHTML = `<b class="svelte-auda25">Пригоните к Мавру на разборку.</b> Заезжайте в зону разборки (20 м вокруг Мавра) и нажмите E за рулём. Через 10 секунд машину разберут на «Детали угнанного авто» — чем целее машина, тем больше деталей.`;
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li5.innerHTML = `<b class="svelte-auda25">Продайте детали</b> Мавру в «Скупке краденого».`;
+			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Полиция может отобрать машину и сдать её на штрафстоянку. Машину миссии «Перевозка» разобрать нельзя — её везут по адресу.";
+			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block1) if_block1.c();
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Мавр — заказ, отмычки, программатор";
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Разборка";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", !/*t*/ ctx[3].cooldown);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "crg__status svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__warn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__buttons svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, b0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, ol, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, b1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t4);
+			if (if_block0) if_block0.m(li0, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, br0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, br1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t29, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t31, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			if (if_block1) if_block1.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler_3*/ ctx[12]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*click_handler_4*/ ctx[13])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*t*/ 8 && t1_value !== (t1_value = (/*t*/ ctx[3].cooldown
+			? `через ${/*t*/ ctx[3].cooldown} мин`
+			: "доступен") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*t*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", !/*t*/ ctx[3].cooldown);
+			}
+
+			if (/*data*/ ctx[0].isGang) {
+				if (if_block0) {
+					
+				} else {
+					if_block0 = create_if_block_5(ctx);
+					if_block0.c();
+					if_block0.m(li0, t5);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty & /*data*/ 1 && t18_value !== (t18_value = /*money*/ ctx[7](/*data*/ ctx[0].programmerPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t18, t18_value);
+
+			if (/*data*/ ctx[0].isGang) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_4(ctx);
+					if_block1.c();
+					if_block1.m(div5, t32);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(ol);
+			if (if_block0) if_block0.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t29);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t31);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			if (if_block1) if_block1.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (62:12) {#if tab === "burglary"}
+function create_if_block_2(ctx) {
+	let div3;
+	let div0;
+	let span0;
+	let b0;
+	let t1_value = (/*b*/ ctx[4].picks || 0) + "";
+	let t1;
+	let t2;
+	let div1;
+	let span1;
+	let b1;
+	let t4_value = (/*b*/ ctx[4].mask ? "надета" : "не надета") + "";
+	let t4;
+	let t5;
+	let div2;
+	let span2;
+	let b2;
+
+	let t7_value = (/*b*/ ctx[4].cooldown
+	? `через ${/*b*/ ctx[4].cooldown} мин`
+	: "сейчас") + "";
+
+	let t7;
+	let t8;
+	let ol;
+	let li0;
+	let b3;
+	let t10;
+	let t11_value = /*money*/ ctx[7](/*b*/ ctx[4].lockpickPrice) + "";
+	let t11;
+	let t12;
+	let t13;
+	let li1;
+	let t16;
+	let li2;
+	let t19;
+	let li3;
+	let t22;
+	let li4;
+	let t25;
+	let div4;
+	let t27;
+	let div6;
+	let div5;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Отмычки";
+			b0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "Маска";
+			b1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "Можно грабить";
+			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			ol = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("ol");
+			li0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			b3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b3.textContent = "Подготовьтесь.";
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Купите отмычки у Мавра (");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" за штуку, лучше взять 2–3 — они ломаются) и наденьте маску.");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li1.innerHTML = `<b class="svelte-auda25">Выберите дом.</b> Подойдёт любой ничейный дом или запертый чужой дом (не квартира и не парковка). Грабить можно в любое время суток. Если хозяин или сожители в игре — им придёт тревога.`;
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li2.innerHTML = `<b class="svelte-auda25">Взломайте замок.</b> Нажмите E у двери → «Да». Мышью двигайте отмычку, клавишами A/D поворачивайте замок. Если замок упирается — отмычка гнётся, найдите другой угол. ESC — отменить.`;
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li3.innerHTML = `<b class="svelte-auda25">Обыщите дом.</b> Внутри отмечены 3 места — подойдите и нажмите E. На всё 5 минут, потом соседи точно позвонят в полицию.`;
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li4.innerHTML = `<b class="svelte-auda25">Сбудьте краденое.</b> Техника и украшения продаются Мавру в «Скупке краденого».`;
+			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Соседи вызывают полицию с шансом 35–50% при взломе и 15% при выходе с добычей — это всегда звёзды розыска. Один дом можно грабить раз в 6 часов, сами вы отдыхаете 15 минут.";
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5.textContent = "Мавр — отмычки и скупка";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", /*b*/ ctx[4].picks > 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "ok", /*b*/ ctx[4].mask);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "ok", !/*b*/ ctx[4].cooldown);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__status svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__warn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "crg__buttons svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, b0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, b1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, b2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, ol, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, b3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li0, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t19);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t25, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t27, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*click_handler_1*/ ctx[10]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*b*/ 16 && t1_value !== (t1_value = (/*b*/ ctx[4].picks || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*b*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", /*b*/ ctx[4].picks > 0);
+			}
+
+			if (dirty & /*b*/ 16 && t4_value !== (t4_value = (/*b*/ ctx[4].mask ? "надета" : "не надета") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+
+			if (dirty & /*b*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "ok", /*b*/ ctx[4].mask);
+			}
+
+			if (dirty & /*b*/ 16 && t7_value !== (t7_value = (/*b*/ ctx[4].cooldown
+			? `через ${/*b*/ ctx[4].cooldown} мин`
+			: "сейчас") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+
+			if (dirty & /*b*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "ok", !/*b*/ ctx[4].cooldown);
+			}
+
+			if (dirty & /*b*/ 16 && t11_value !== (t11_value = /*money*/ ctx[7](/*b*/ ctx[4].lockpickPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t8);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(ol);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t25);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t27);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (129:20) {#each f.items as item}
+function create_each_block(ctx) {
+	let div;
+	let span;
+	let t0_value = /*item*/ ctx[18].name + "";
+	let t0;
+	let t1;
+	let b_1;
+	let t2_value = /*money*/ ctx[7](/*item*/ ctx[18].price) + "";
+	let t2;
+	let t3;
+	let i;
+	let t4;
+	let t5_value = /*item*/ ctx[18].demand + "";
+	let t5;
+	let t6;
+
+	let t7_value = (/*item*/ ctx[18].have
+	? ` · у вас ${/*item*/ ctx[18].have}`
+	: "") + "";
+
+	let t7;
+	let t8;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			i = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("i");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("спрос ");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(i, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__price svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b_1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b_1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, i);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(i, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(i, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(i, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(i, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t8);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*f*/ 4 && t0_value !== (t0_value = /*item*/ ctx[18].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*f*/ 4 && t2_value !== (t2_value = /*money*/ ctx[7](/*item*/ ctx[18].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*f*/ 4 && t5_value !== (t5_value = /*item*/ ctx[18].demand + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+
+			if (dirty & /*f*/ 4 && t7_value !== (t7_value = (/*item*/ ctx[18].have
+			? ` · у вас ${/*item*/ ctx[18].have}`
+			: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (84:53) {#if data.isGang}
+function create_if_block_5(ctx) {
+	let t_1;
+
+	return {
+		c() {
+			t_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Банды — у Carter Scott (выдача миссий банды) → «Угон автотранспорта», или ");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t_1, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t_1);
+		}
+	};
+}
+
+// (95:20) {#if data.isGang}
+function create_if_block_4(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Carter Scott — заказы банды";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__btn svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_2*/ ctx[11]);
+				mounted = true;
+			}
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div;
+	let div_intro;
+
+	function select_block_type(ctx, dirty) {
+		if (!/*data*/ ctx[0]) return create_if_block;
+		if (!/*data*/ ctx[0].allowed) return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			if_block.m(div, null);
+		},
+		p(ctx, [dirty]) {
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div, null);
+				}
+			}
+		},
+		i(local) {
+			if (!div_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 150 });
+					div_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if_block.d();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let w;
+	let b;
+	let t;
+	let f;
+	let data = null;
+	let tab = "burglary";
+
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_2__.addListernEvent)("table.crimeguide", json => {
+		try {
+			$$invalidate(0, data = typeof json === "string" ? JSON.parse(json) : json);
+		} catch(e) {
+			$$invalidate(0, data = null);
+		}
+	});
+
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.crime.guide.load");
+	const gps = target => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.crime.guide.gps", target);
+	const money = v => "$" + Math.round(Number(v) || 0).toLocaleString("ru-RU");
+
+	const tabs = [
+		{
+			key: "burglary",
+			name: "Ограбление домов"
+		},
+		{ key: "theft", name: "Угон машин" },
+		{ key: "weed", name: "Трава" },
+		{ key: "fence", name: "Сбыт" }
+	];
+
+	const click_handler = item => $$invalidate(1, tab = item.key);
+	const click_handler_1 = () => gps("mavr");
+	const click_handler_2 = () => gps("carter");
+	const click_handler_3 = () => gps("mavr");
+	const click_handler_4 = () => gps("chop");
+	const click_handler_5 = () => gps("glade");
+	const click_handler_6 = () => gps("buyer");
+	const click_handler_7 = () => gps("mavr");
+	const click_handler_8 = () => gps("mavr");
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(5, w = data?.weed || {});
+		}
+
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(4, b = data?.burglary || {});
+		}
+
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(3, t = data?.theft || {});
+		}
+
+		if ($$self.$$.dirty & /*data*/ 1) {
+			$: $$invalidate(2, f = data?.fence || { items: [] });
+		}
+	};
+
+	return [
+		data,
+		tab,
+		f,
+		t,
+		b,
+		w,
+		gps,
+		money,
+		tabs,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4,
+		click_handler_5,
+		click_handler_6,
+		click_handler_7,
+		click_handler_8
+	];
+}
+
+class Crime extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {}, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Crime);
 
 
 /***/ }),
@@ -262437,17 +266371,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_bizwar_bizwar_svelte__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./elements/bizwar/bizwar.svelte */ "./src/views/player/menu/elements/fractions/elements/bizwar/bizwar.svelte");
 /* harmony import */ var _menu_online_svelte__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./menu/online.svelte */ "./src/views/player/menu/elements/fractions/menu/online.svelte");
 /* harmony import */ var _elements_contracts_index_svelte__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./elements/contracts/index.svelte */ "./src/views/player/menu/elements/fractions/elements/contracts/index.svelte");
-/* harmony import */ var _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./popup/input/index.svelte */ "./src/views/player/menu/elements/fractions/popup/input/index.svelte");
-/* harmony import */ var _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./popup/confirm/index.svelte */ "./src/views/player/menu/elements/fractions/popup/confirm/index.svelte");
-/* harmony import */ var _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./popup/list/index.svelte */ "./src/views/player/menu/elements/fractions/popup/list/index.svelte");
-/* harmony import */ var _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./popups/squadranks/index.svelte */ "./src/views/player/menu/elements/fractions/popups/squadranks/index.svelte");
-/* harmony import */ var _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./popups/bizinfo/index.svelte */ "./src/views/player/menu/elements/fractions/popups/bizinfo/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./popups/upgrade/index.svelte */ "./src/views/player/menu/elements/fractions/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./popups/weapons/index.svelte */ "./src/views/player/menu/elements/fractions/popups/weapons/index.svelte");
-/* harmony import */ var _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./popups/newleader/index.svelte */ "./src/views/player/menu/elements/fractions/popups/newleader/index.svelte");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./data */ "./src/views/player/menu/elements/fractions/data.js");
-/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _elements_crime_index_svelte__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./elements/crime/index.svelte */ "./src/views/player/menu/elements/fractions/elements/crime/index.svelte");
+/* harmony import */ var _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./popup/input/index.svelte */ "./src/views/player/menu/elements/fractions/popup/input/index.svelte");
+/* harmony import */ var _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./popup/confirm/index.svelte */ "./src/views/player/menu/elements/fractions/popup/confirm/index.svelte");
+/* harmony import */ var _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./popup/list/index.svelte */ "./src/views/player/menu/elements/fractions/popup/list/index.svelte");
+/* harmony import */ var _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./popups/squadranks/index.svelte */ "./src/views/player/menu/elements/fractions/popups/squadranks/index.svelte");
+/* harmony import */ var _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./popups/bizinfo/index.svelte */ "./src/views/player/menu/elements/fractions/popups/bizinfo/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./popups/upgrade/index.svelte */ "./src/views/player/menu/elements/fractions/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./popups/weapons/index.svelte */ "./src/views/player/menu/elements/fractions/popups/weapons/index.svelte");
+/* harmony import */ var _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./popups/newleader/index.svelte */ "./src/views/player/menu/elements/fractions/popups/newleader/index.svelte");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./data */ "./src/views/player/menu/elements/fractions/data.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/views/player/menu/elements/fractions/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -262486,11 +266421,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function create_if_block_10(ctx) {
+
+function create_if_block_11(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
 	let current;
-	var switch_value = /*Popups*/ ctx[6][/*selectedPopup*/ ctx[1]];
+	var switch_value = /*Popups*/ ctx[7][/*selectedPopup*/ ctx[1]];
 
 	function switch_props(ctx) {
 		return {};
@@ -262511,7 +266447,7 @@ function create_if_block_10(ctx) {
 			current = true;
 		},
 		p(ctx, dirty) {
-			if (dirty & /*selectedPopup*/ 2 && switch_value !== (switch_value = /*Popups*/ ctx[6][/*selectedPopup*/ ctx[1]])) {
+			if (dirty & /*selectedPopup*/ 2 && switch_value !== (switch_value = /*Popups*/ ctx[7][/*selectedPopup*/ ctx[1]])) {
 				if (switch_instance) {
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
 					const old_component = switch_instance;
@@ -262551,7 +266487,7 @@ function create_if_block_10(ctx) {
 	};
 }
 
-// (195:0) {#if isLoad}
+// (207:0) {#if isLoad}
 function create_if_block(ctx) {
 	let div12;
 	let div10;
@@ -262567,7 +266503,7 @@ function create_if_block(ctx) {
 	let t5;
 	let div2;
 	let t7;
-	let show_if_2 = (0,_data__WEBPACK_IMPORTED_MODULE_29__.isFraction)();
+	let show_if_2 = (0,_data__WEBPACK_IMPORTED_MODULE_30__.isFraction)();
 	let t8;
 	let div5;
 	let span1;
@@ -262587,36 +266523,38 @@ function create_if_block(ctx) {
 	let t18;
 	let div8;
 	let t20;
-	let show_if_1 = (0,_data__WEBPACK_IMPORTED_MODULE_29__.isOrganization)();
+	let show_if_1 = (0,_data__WEBPACK_IMPORTED_MODULE_30__.isOrganization)();
 	let t21;
 	let t22;
-	let show_if;
 	let t23;
-	let online;
+	let show_if;
 	let t24;
+	let online;
+	let t25;
 	let div11;
 	let switch_instance;
 	let current;
 	let mounted;
 	let dispose;
-	let if_block0 = /*settings*/ ctx[4].invite && create_if_block_9(ctx);
-	let if_block1 = show_if_2 && create_if_block_8(ctx);
-	let if_block2 = /*settings*/ ctx[4].isLeader && create_if_block_7(ctx);
-	let if_block3 = /*settings*/ ctx[4].clothesEdit && create_if_block_6(ctx);
-	let if_block4 = /*settings*/ ctx[4].isLeader && create_if_block_5(ctx);
-	let if_block5 = show_if_1 && create_if_block_4(ctx);
-	let if_block6 = /*settings*/ ctx[4].familyZone && create_if_block_3(ctx);
+	let if_block0 = /*settings*/ ctx[4].invite && create_if_block_10(ctx);
+	let if_block1 = show_if_2 && create_if_block_9(ctx);
+	let if_block2 = /*settings*/ ctx[4].isLeader && create_if_block_8(ctx);
+	let if_block3 = /*settings*/ ctx[4].clothesEdit && create_if_block_7(ctx);
+	let if_block4 = /*settings*/ ctx[4].isLeader && create_if_block_6(ctx);
+	let if_block5 = show_if_1 && create_if_block_5(ctx);
+	let if_block6 = /*crimeAllowed*/ ctx[5] && create_if_block_4(ctx);
+	let if_block7 = /*settings*/ ctx[4].familyZone && create_if_block_3(ctx);
 
 	function select_block_type(ctx, dirty) {
 		if (!/*settings*/ ctx[4].isLeader) return create_if_block_1;
-		if (show_if == null) show_if = !!(0,_data__WEBPACK_IMPORTED_MODULE_29__.isOrganization)();
+		if (show_if == null) show_if = !!(0,_data__WEBPACK_IMPORTED_MODULE_30__.isOrganization)();
 		if (show_if) return create_if_block_2;
 	}
 
 	let current_block_type = select_block_type(ctx, -1);
-	let if_block7 = current_block_type && current_block_type(ctx);
+	let if_block8 = current_block_type && current_block_type(ctx);
 	online = new _menu_online_svelte__WEBPACK_IMPORTED_MODULE_19__.default({});
-	var switch_value = /*Views*/ ctx[5][/*selectedTableView*/ ctx[2]];
+	var switch_value = /*Views*/ ctx[6][/*selectedTableView*/ ctx[2]];
 
 	function switch_props(ctx) {
 		return {};
@@ -262676,8 +266614,10 @@ function create_if_block(ctx) {
 			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block7) if_block7.c();
 			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(online.$$.fragment);
+			if (if_block8) if_block8.c();
 			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(online.$$.fragment);
+			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(switch_instance.$$.fragment);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fractions__left_title");
@@ -262747,18 +266687,20 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t22);
 			if (if_block7) if_block7.m(div10, null);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t23);
+			if (if_block8) if_block8.m(div10, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t24);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(online, div10, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t25);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
 			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(switch_instance, div11, null);
 			current = true;
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler*/ ctx[13]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*click_handler_2*/ ctx[15]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*click_handler_3*/ ctx[16]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", /*click_handler_7*/ ctx[20])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler*/ ctx[14]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*click_handler_2*/ ctx[16]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*click_handler_3*/ ctx[17]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div9, "click", /*click_handler_7*/ ctx[21])
 				];
 
 				mounted = true;
@@ -262771,7 +266713,7 @@ function create_if_block(ctx) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_9(ctx);
+					if_block0 = create_if_block_10(ctx);
 					if_block0.c();
 					if_block0.m(div10, t4);
 				}
@@ -262798,7 +266740,7 @@ function create_if_block(ctx) {
 				if (if_block2) {
 					if_block2.p(ctx, dirty);
 				} else {
-					if_block2 = create_if_block_7(ctx);
+					if_block2 = create_if_block_8(ctx);
 					if_block2.c();
 					if_block2.m(div10, t15);
 				}
@@ -262811,7 +266753,7 @@ function create_if_block(ctx) {
 				if (if_block3) {
 					if_block3.p(ctx, dirty);
 				} else {
-					if_block3 = create_if_block_6(ctx);
+					if_block3 = create_if_block_7(ctx);
 					if_block3.c();
 					if_block3.m(div10, t16);
 				}
@@ -262824,7 +266766,7 @@ function create_if_block(ctx) {
 				if (if_block4) {
 					if_block4.p(ctx, dirty);
 				} else {
-					if_block4 = create_if_block_5(ctx);
+					if_block4 = create_if_block_6(ctx);
 					if_block4.c();
 					if_block4.m(div10, t17);
 				}
@@ -262839,11 +266781,11 @@ function create_if_block(ctx) {
 
 			if (show_if_1) if_block5.p(ctx, dirty);
 
-			if (/*settings*/ ctx[4].familyZone) {
+			if (/*crimeAllowed*/ ctx[5]) {
 				if (if_block6) {
 					if_block6.p(ctx, dirty);
 				} else {
-					if_block6 = create_if_block_3(ctx);
+					if_block6 = create_if_block_4(ctx);
 					if_block6.c();
 					if_block6.m(div10, t22);
 				}
@@ -262852,19 +266794,32 @@ function create_if_block(ctx) {
 				if_block6 = null;
 			}
 
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block7) {
-				if_block7.p(ctx, dirty);
-			} else {
-				if (if_block7) if_block7.d(1);
-				if_block7 = current_block_type && current_block_type(ctx);
-
+			if (/*settings*/ ctx[4].familyZone) {
 				if (if_block7) {
+					if_block7.p(ctx, dirty);
+				} else {
+					if_block7 = create_if_block_3(ctx);
 					if_block7.c();
 					if_block7.m(div10, t23);
 				}
+			} else if (if_block7) {
+				if_block7.d(1);
+				if_block7 = null;
 			}
 
-			if (dirty & /*selectedTableView*/ 4 && switch_value !== (switch_value = /*Views*/ ctx[5][/*selectedTableView*/ ctx[2]])) {
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block8) {
+				if_block8.p(ctx, dirty);
+			} else {
+				if (if_block8) if_block8.d(1);
+				if_block8 = current_block_type && current_block_type(ctx);
+
+				if (if_block8) {
+					if_block8.c();
+					if_block8.m(div10, t24);
+				}
+			}
+
+			if (dirty & /*selectedTableView*/ 4 && switch_value !== (switch_value = /*Views*/ ctx[6][/*selectedTableView*/ ctx[2]])) {
 				if (switch_instance) {
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
 					const old_component = switch_instance;
@@ -262908,9 +266863,10 @@ function create_if_block(ctx) {
 			if (if_block4) if_block4.d();
 			if (if_block5) if_block5.d();
 			if (if_block6) if_block6.d();
+			if (if_block7) if_block7.d();
 
-			if (if_block7) {
-				if_block7.d();
+			if (if_block8) {
+				if_block8.d();
 			}
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(online);
@@ -262921,8 +266877,8 @@ function create_if_block(ctx) {
 	};
 }
 
-// (200:8) {#if settings.invite}
-function create_if_block_9(ctx) {
+// (212:8) {#if settings.invite}
+function create_if_block_10(ctx) {
 	let div;
 	let span;
 	let t_value = (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Пригласить') + "";
@@ -262944,7 +266900,7 @@ function create_if_block_9(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*onOpenPopupInvate*/ ctx[8]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*onOpenPopupInvate*/ ctx[9]);
 				mounted = true;
 			}
 		},
@@ -262957,8 +266913,8 @@ function create_if_block_9(ctx) {
 	};
 }
 
-// (209:8) {#if isFraction()}
-function create_if_block_8(ctx) {
+// (221:8) {#if isFraction()}
+function create_if_block_9(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -262985,7 +266941,7 @@ function create_if_block_8(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_1*/ ctx[14]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_1*/ ctx[15]);
 				mounted = true;
 			}
 		},
@@ -263002,8 +266958,8 @@ function create_if_block_8(ctx) {
 	};
 }
 
-// (223:8) {#if settings.isLeader}
-function create_if_block_7(ctx) {
+// (235:8) {#if settings.isLeader}
+function create_if_block_8(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -263030,7 +266986,7 @@ function create_if_block_7(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_4*/ ctx[17]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_4*/ ctx[18]);
 				mounted = true;
 			}
 		},
@@ -263047,8 +267003,8 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (229:8) {#if settings.clothesEdit}
-function create_if_block_6(ctx) {
+// (241:8) {#if settings.clothesEdit}
+function create_if_block_7(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -263075,7 +267031,7 @@ function create_if_block_6(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_5*/ ctx[18]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_5*/ ctx[19]);
 				mounted = true;
 			}
 		},
@@ -263092,8 +267048,8 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (235:8) {#if settings.isLeader}
-function create_if_block_5(ctx) {
+// (247:8) {#if settings.isLeader}
+function create_if_block_6(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -263120,7 +267076,7 @@ function create_if_block_5(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_6*/ ctx[19]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_6*/ ctx[20]);
 				mounted = true;
 			}
 		},
@@ -263137,8 +267093,8 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (245:8) {#if isOrganization()}
-function create_if_block_4(ctx) {
+// (257:8) {#if isOrganization()}
+function create_if_block_5(ctx) {
 	let div1;
 	let mounted;
 	let dispose;
@@ -263157,7 +267113,7 @@ function create_if_block_4(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_8*/ ctx[21]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_8*/ ctx[22]);
 				mounted = true;
 			}
 		},
@@ -263174,7 +267130,44 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (263:8) {#if settings.familyZone}
+// (275:8) {#if crimeAllowed}
+function create_if_block_4(ctx) {
+	let div1;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div1.innerHTML = `<span class="fractionsicon-warning"></span> 
+            <div class="fractions__menu_text">Криминал</div>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fractions__menu_element");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*selectedTableView*/ ctx[2] === "Crime");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_9*/ ctx[23]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*selectedTableView*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*selectedTableView*/ ctx[2] === "Crime");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (281:8) {#if settings.familyZone}
 function create_if_block_3(ctx) {
 	let div1;
 	let span;
@@ -263201,7 +267194,7 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onFamilyZone*/ ctx[11]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onFamilyZone*/ ctx[12]);
 				mounted = true;
 			}
 		},
@@ -263214,7 +267207,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (274:35) 
+// (292:35) 
 function create_if_block_2(ctx) {
 	let div1;
 	let span;
@@ -263241,7 +267234,7 @@ function create_if_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onDisolver*/ ctx[10]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onDisolver*/ ctx[11]);
 				mounted = true;
 			}
 		},
@@ -263254,7 +267247,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (269:8) {#if !settings.isLeader}
+// (287:8) {#if !settings.isLeader}
 function create_if_block_1(ctx) {
 	let div1;
 	let span;
@@ -263270,7 +267263,7 @@ function create_if_block_1(ctx) {
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div0.textContent = `${(0,_data__WEBPACK_IMPORTED_MODULE_29__.isOrganization)()
+			div0.textContent = `${(0,_data__WEBPACK_IMPORTED_MODULE_30__.isOrganization)()
 			? (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Покинуть организацию')
 			: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Покинуть фракцию')}`;
 
@@ -263285,7 +267278,7 @@ function create_if_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onLeave*/ ctx[9]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*onLeave*/ ctx[10]);
 				mounted = true;
 			}
 		},
@@ -263304,7 +267297,7 @@ function create_fragment(ctx) {
 	let current;
 	let mounted;
 	let dispose;
-	let if_block0 = /*Popups*/ ctx[6][/*selectedPopup*/ ctx[1]] && create_if_block_10(ctx);
+	let if_block0 = /*Popups*/ ctx[7][/*selectedPopup*/ ctx[1]] && create_if_block_11(ctx);
 	let if_block1 = /*isLoad*/ ctx[0] && create_if_block(ctx);
 
 	return {
@@ -263322,12 +267315,12 @@ function create_fragment(ctx) {
 			current = true;
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window, "keyup", /*HandleKeyDown*/ ctx[7]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window, "keyup", /*HandleKeyDown*/ ctx[8]);
 				mounted = true;
 			}
 		},
 		p(ctx, [dirty]) {
-			if (/*Popups*/ ctx[6][/*selectedPopup*/ ctx[1]]) {
+			if (/*Popups*/ ctx[7][/*selectedPopup*/ ctx[1]]) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 
@@ -263335,7 +267328,7 @@ function create_fragment(ctx) {
 						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
 					}
 				} else {
-					if_block0 = create_if_block_10(ctx);
+					if_block0 = create_if_block_11(ctx);
 					if_block0.c();
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
 					if_block0.m(t.parentNode, t);
@@ -263412,28 +267405,29 @@ function instance($$self, $$props, $$invalidate) {
 		Complaints: _elements_complaints_complaints_svelte__WEBPACK_IMPORTED_MODULE_16__.default,
 		Weapons: _elements_weapons_weapons_svelte__WEBPACK_IMPORTED_MODULE_17__.default,
 		BizWar: _elements_bizwar_bizwar_svelte__WEBPACK_IMPORTED_MODULE_18__.default,
-		Contracts: _elements_contracts_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default
+		Contracts: _elements_contracts_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
+		Crime: _elements_crime_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default
 	};
 
 	const Popups = {
-		Input: _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
-		Confirm: _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_22__.default,
-		List: _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_23__.default,
-		Upgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_26__.default,
-		SquadRanks: _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_24__.default,
-		BizInfo: _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
-		WeaponsPopup: _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
-		NewLeaderPopup: _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_28__.default
+		Input: _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_22__.default,
+		Confirm: _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_23__.default,
+		List: _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_24__.default,
+		Upgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
+		SquadRanks: _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
+		BizInfo: _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_26__.default,
+		WeaponsPopup: _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_28__.default,
+		NewLeaderPopup: _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_29__.default
 	};
 
 	let isLoad = false;
 
 	const onLoad = () => {
 		$$invalidate(0, isLoad = false);
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setTableType)(selectView);
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.setTableType)(selectView);
 		if (selectView === "Fractions") (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.setGroup)('.frac.main.'); else (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.setGroup)('.org.main.');
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Main");
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)();
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Main");
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.setPopup)();
 
 		setTimeout(
 			() => {
@@ -263445,7 +267439,7 @@ function instance($$self, $$props, $$invalidate) {
 
 	let selectedPopup = "";
 
-	_data__WEBPACK_IMPORTED_MODULE_29__.selectPopup.subscribe(value => {
+	_data__WEBPACK_IMPORTED_MODULE_30__.selectPopup.subscribe(value => {
 		$$invalidate(1, selectedPopup = value);
 	});
 
@@ -263453,13 +267447,13 @@ function instance($$self, $$props, $$invalidate) {
 		const { keyCode } = event;
 
 		if (keyCode === 27 && Popups[selectedPopup]) {
-			(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)();
+			(0,_data__WEBPACK_IMPORTED_MODULE_30__.setPopup)();
 		}
 	};
 
 	let selectedTableView = "";
 
-	_data__WEBPACK_IMPORTED_MODULE_29__.selectTableView.subscribe(value => {
+	_data__WEBPACK_IMPORTED_MODULE_30__.selectTableView.subscribe(value => {
 		$$invalidate(2, selectedTableView = value);
 	});
 
@@ -263468,7 +267462,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onOpenPopupInvate = () => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)("Input", {
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.setPopup)("Input", {
 			headerTitle: "Приглашение",
 			headerIcon: "fractionsicon-members",
 			input: {
@@ -263488,8 +267482,22 @@ function instance($$self, $$props, $$invalidate) {
 		getSettings();
 	};
 
-	(0,api_functions__WEBPACK_IMPORTED_MODULE_30__.addListernEvent)("table.tableInfo", onTableInfo);
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_31__.addListernEvent)("table.tableInfo", onTableInfo);
 	let settings = {};
+
+	// Вкладка «Криминал» — только если сервер считает игрока криминалом (Crime/CrimeGuide.cs)
+	let crimeAllowed = false;
+
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_31__.addListernEvent)("table.crimeguide.flag", json => {
+		try {
+			const value = typeof json === "string" ? JSON.parse(json) : json;
+			$$invalidate(5, crimeAllowed = !!(value && value.allowed));
+		} catch(e) {
+			
+		}
+	});
+
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.crime.guide.load");
 
 	const getSettings = () => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClientAsyncToGroup)("getSettings").then(result => {
@@ -263502,7 +267510,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onLeave = () => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)("Confirm", {
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.setPopup)("Confirm", {
 			headerTitle: "Увольнение",
 			headerIcon: "fractionsicon-members",
 			text: `Вы действительно хотите покинуть организацию?`,
@@ -263516,7 +267524,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onDisolver = () => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)("Confirm", {
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.setPopup)("Confirm", {
 			headerTitle: "Роспуск",
 			headerIcon: "fractionsicon-members",
 			text: `Вы действительно хотите распустить организацию?`,
@@ -263529,26 +267537,27 @@ function instance($$self, $$props, $$invalidate) {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.familyZoneOpen");
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_31__.onDestroy)(() => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_29__.onInputBlur)();
+	(0,svelte__WEBPACK_IMPORTED_MODULE_32__.onDestroy)(() => {
+		(0,_data__WEBPACK_IMPORTED_MODULE_30__.onInputBlur)();
 	});
 
-	const click_handler = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Main");
-	const click_handler_1 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Tasks");
-	const click_handler_2 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Members");
-	const click_handler_3 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Squads");
-	const click_handler_4 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Ranks");
-	const click_handler_5 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Form");
-	const click_handler_6 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Accesses");
-	const click_handler_7 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Parking");
-	const click_handler_8 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Contracts");
+	const click_handler = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Main");
+	const click_handler_1 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Tasks");
+	const click_handler_2 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Members");
+	const click_handler_3 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Squads");
+	const click_handler_4 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Ranks");
+	const click_handler_5 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Form");
+	const click_handler_6 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Accesses");
+	const click_handler_7 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Parking");
+	const click_handler_8 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Contracts");
+	const click_handler_9 = () => (0,_data__WEBPACK_IMPORTED_MODULE_30__.setView)("Crime");
 
 	$$self.$$set = $$props => {
-		if ('selectView' in $$props) $$invalidate(12, selectView = $$props.selectView);
+		if ('selectView' in $$props) $$invalidate(13, selectView = $$props.selectView);
 	};
 
 	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*selectView*/ 4096) {
+		if ($$self.$$.dirty & /*selectView*/ 8192) {
 			$: if (selectView) onLoad();
 		}
 	};
@@ -263559,6 +267568,7 @@ function instance($$self, $$props, $$invalidate) {
 		selectedTableView,
 		tableInfo,
 		settings,
+		crimeAllowed,
 		Views,
 		Popups,
 		HandleKeyDown,
@@ -263575,14 +267585,15 @@ function instance($$self, $$props, $$invalidate) {
 		click_handler_5,
 		click_handler_6,
 		click_handler_7,
-		click_handler_8
+		click_handler_8,
+		click_handler_9
 	];
 }
 
 class Fractions extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { selectView: 12 });
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { selectView: 13 });
 	}
 }
 
@@ -310111,6 +314122,13 @@ const ItemId = {
 	Giftcoin: 390,
 	CombatRifle: 391,
 	Glock: 392,
+	WeedSeed: 393,
+	WeedRaw: 394,
+	StolenElectronics: 395,
+	StolenJewelry: 396,
+	StolenCarParts: 397,
+	WaterBottle: 398,
+	CarProgrammer: 399,
 	Bracelets: -15,
 	Watches: -14,
 	Glasses: -13,
@@ -310449,7 +314467,14 @@ const itemsInfo = {
 	[ItemId.Glowstick]: {"Name":"Светящиеся палочки","Description":"Красивые светящиеся палочки, которые можно держать в руках.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":0},
 	[ItemId.Giftcoin]: {"Name":"Подарок","Description":"Подарок, который для тебя подготовил Санта!.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":2000,"functionType":0},
 	[ItemId.CombatRifle]: {"Name":"Combat Rifle","Description":"Оружие.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":2},
-	[ItemId.Glock]: {"Name":"Glock","Description":"Оружие.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":2}
+	[ItemId.Glock]: {"Name":"Glock","Description":"Оружие.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":2},
+	[ItemId.WeedSeed]: {"Name":"Семена конопли","Description":"Посадите в тихом месте в лесу или дома. Растению нужен полив.","Icon":"inv-item-marijuana","Type":"Остальное","Stack":20,"functionType":0},
+	[ItemId.WeedRaw]: {"Name":"Свежая конопля","Description":"Свежий урожай. После сушки (20 минут) используйте, чтобы расфасовать.","Icon":"inv-item-marijuana","Type":"Остальное","Stack":50,"functionType":0},
+	[ItemId.StolenElectronics]: {"Name":"Краденая техника","Description":"Ноутбуки, приставки, телефоны. Скупщик у Мавра заберёт.","Icon":"inv-item-camera","Type":"Остальное","Stack":5,"functionType":0},
+	[ItemId.StolenJewelry]: {"Name":"Краденые украшения","Description":"Кольца, цепочки, часы. Скупщик у Мавра заберёт.","Icon":"inv-item-gold","Type":"Остальное","Stack":20,"functionType":0},
+	[ItemId.StolenCarParts]: {"Name":"Детали угнанного авто","Description":"Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","Icon":"inv-item-car","Type":"Остальное","Stack":10,"functionType":0},
+	[ItemId.WaterBottle]: {"Name":"Бутылка воды","Description":"Нужна для полива растений.","Icon":"inv-item-eCola","Type":"Остальное","Stack":5,"functionType":0},
+	[ItemId.CarProgrammer]: {"Name":"Программатор","Description":"Взлом электронных замков дорогих машин. Подойдите к машине и используйте.","Icon":"inv-item-picklock","Type":"Инструмент","Stack":1,"functionType":0}
 
 }
 
@@ -313383,6 +317408,7 @@ const categories = [
     { key: "mods", name: "Обвесы" },
     { key: "armor", name: "Броня" },
     { key: "tools", name: "Инструменты" },
+    { key: "stolen", name: "Краденое" },
 ];
 
 const toInt = (value) => {
@@ -318136,6 +322162,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getPng": () => (/* binding */ getPng)
 /* harmony export */ });
 /* harmony import */ var json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! json/itemsInfo.js */ "./src/json/itemsInfo.js");
+/* harmony import */ var _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/views/player/menu/elements/inventory/localitems/index.js */ "./src/views/player/menu/elements/inventory/localitems/index.js");
+
 
 
 
@@ -318209,6 +322237,8 @@ const isPng = (url) => {
 
 const getPng = (localItem, iconInfo) => {
     try {
+        if (_views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[localItem.ItemId])
+            return _views_player_menu_elements_inventory_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[localItem.ItemId];
         if (localItem.ItemId !== json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_0__.ItemId.BodyArmor && iconInfo.functionType === json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_0__.ItemType.Clothes) {
             let pngDirectory = "inventoryItems/clothes";
             
@@ -330021,6 +334051,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "getPng": () => (/* binding */ getPng)
 /* harmony export */ });
 /* harmony import */ var json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! json/itemsInfo.js */ "./src/json/itemsInfo.js");
+/* harmony import */ var _localitems_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./localitems/index.js */ "./src/views/player/menu/elements/inventory/localitems/index.js");
+
 
 
 
@@ -330094,6 +334126,8 @@ const isPng = (url) => {
 
 const getPng = (localItem, iconInfo) => {
     try {
+        if (_localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[localItem.ItemId])
+            return _localitems_index_js__WEBPACK_IMPORTED_MODULE_1__.localItemIcons[localItem.ItemId];
         if (localItem.ItemId !== json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_0__.ItemId.BodyArmor && iconInfo.functionType === json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_0__.ItemType.Clothes) {
             let pngDirectory = "inventoryItems/clothes";
             
@@ -330169,6 +334203,53 @@ const getPng = (localItem, iconInfo) => {
         console.log("asdas - " + e.toString())
     }
 }
+
+/***/ }),
+
+/***/ "./src/views/player/menu/elements/inventory/localitems/index.js":
+/*!**********************************************************************!*\
+  !*** ./src/views/player/menu/elements/inventory/localitems/index.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "localItemIcons": () => (/* binding */ localItemIcons)
+/* harmony export */ });
+/* harmony import */ var _393_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./393.png */ "./src/views/player/menu/elements/inventory/localitems/393.png");
+/* harmony import */ var _393_png__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_393_png__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _394_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./394.png */ "./src/views/player/menu/elements/inventory/localitems/394.png");
+/* harmony import */ var _394_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_394_png__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _395_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./395.png */ "./src/views/player/menu/elements/inventory/localitems/395.png");
+/* harmony import */ var _395_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_395_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _396_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./396.png */ "./src/views/player/menu/elements/inventory/localitems/396.png");
+/* harmony import */ var _396_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_396_png__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _397_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./397.png */ "./src/views/player/menu/elements/inventory/localitems/397.png");
+/* harmony import */ var _397_png__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_397_png__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _398_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./398.png */ "./src/views/player/menu/elements/inventory/localitems/398.png");
+/* harmony import */ var _398_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_398_png__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _399_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./399.png */ "./src/views/player/menu/elements/inventory/localitems/399.png");
+/* harmony import */ var _399_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_399_png__WEBPACK_IMPORTED_MODULE_6__);
+// Иконки предметов, которых нет на CDN (новые id 393+): лежат в интерфейсе, путь подменяется в getPng.
+
+
+
+
+
+
+
+
+const localItemIcons = {
+    393: (_393_png__WEBPACK_IMPORTED_MODULE_0___default()),
+    394: (_394_png__WEBPACK_IMPORTED_MODULE_1___default()),
+    395: (_395_png__WEBPACK_IMPORTED_MODULE_2___default()),
+    396: (_396_png__WEBPACK_IMPORTED_MODULE_3___default()),
+    397: (_397_png__WEBPACK_IMPORTED_MODULE_4___default()),
+    398: (_398_png__WEBPACK_IMPORTED_MODULE_5___default()),
+    399: (_399_png__WEBPACK_IMPORTED_MODULE_6___default()),
+};
+
 
 /***/ }),
 
@@ -331498,6 +335579,26 @@ const reportsData = _reportsDataStore();
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	})();
 /******/ 	
 /************************************************************************/

@@ -123,6 +123,9 @@ namespace NeptuneEvo.Core
                 BusProductsData = busProductsData;
             }
             SetupTruckDealer();
+            // Бутылка воды для полива (Crime/Weed) — продаётся во всех 24/7, если нет своей строки в bus_products
+            if (!BusProductsData.ContainsKey("Бутылка воды"))
+                BusProductsData["Бутылка воды"] = new BusProductData(25, 8, 0, 200, (sbyte)BusProductToType.Market, (int)ItemId.WaterBottle, true);
         }
 
         /// <summary>Тип бизнеса «Грузовой автосалон».</summary>

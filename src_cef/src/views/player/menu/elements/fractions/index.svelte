@@ -28,6 +28,7 @@
     import BizWar from './elements/bizwar/bizwar.svelte'
     import Online from './menu/online.svelte'
     import Contracts from './elements/contracts/index.svelte'
+    import Crime from './elements/crime/index.svelte'
 
     const Views = {
         Main,
@@ -43,7 +44,8 @@
         Complaints,
         Weapons,
         BizWar,
-        Contracts
+        Contracts,
+        Crime
     }
 
     import Input from './popup/input/index.svelte'
@@ -141,6 +143,16 @@
     addListernEvent ("table.tableInfo", onTableInfo)
 
     let settings = {};
+
+    // Вкладка «Криминал» — только если сервер считает игрока криминалом (Crime/CrimeGuide.cs)
+    let crimeAllowed = false;
+    addListernEvent ("table.crimeguide.flag", (json) => {
+        try {
+            const value = typeof json === "string" ? JSON.parse(json) : json;
+            crimeAllowed = !!(value && value.allowed);
+        } catch (e) {}
+    });
+    executeClient ("client.crime.guide.load");
     const getSettings = () => {
         executeClientAsyncToGroup("getSettings").then((result) => {
             if (result && typeof result === "string")
@@ -260,6 +272,12 @@
             <span class="fractionsicon-warning"></span>
             <div class="fractions__menu_text">{translateText('player1', 'Список жалоб')}</div>
         </div>-->
+        {#if crimeAllowed}
+        <div class="fractions__menu_element" class:active={selectedTableView === "Crime"} on:click={() => setView ("Crime")}>
+            <span class="fractionsicon-warning"></span>
+            <div class="fractions__menu_text">Криминал</div>
+        </div>
+        {/if}
         {#if settings.familyZone}
         <div class="fractions__menu_element" on:click={onFamilyZone}>
             <span class="fractionsicon-gov"></span>

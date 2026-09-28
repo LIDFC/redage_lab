@@ -71,7 +71,7 @@ namespace NeptuneEvo.Fractions
             { (int) Models.Fractions.THELOST, DateTime.Now },
         };
 
-        private static Vector3 GangStartDelivery = new Vector3(480.9385, -1302.576, 28.12353);
+        public static Vector3 GangStartDelivery = new Vector3(480.9385, -1302.576, 28.12353);
 
         public static Vector3[] GangSpawnAutos = new Vector3[16]
         {
@@ -248,6 +248,7 @@ namespace NeptuneEvo.Fractions
                     ExtPlayer target = vehicleLocalData.DeliveryData.WhosVeh;
                     var targetSessionData = target.GetSessionData();
                     if (targetSessionData == null) return;
+                    Crime.CarTheft.CarTheftManager.Forget(vehicleDelivery);
                     VehicleStreaming.DeleteVehicle(vehicleDelivery);
                     targetSessionData.DeliveryData.Vehicle = null;
                     MoneySystem.Wallet.Change(player, 25);
@@ -279,6 +280,7 @@ namespace NeptuneEvo.Fractions
                 if (vehicleLocalData != null)
                 {
                     if (vehicleLocalData.Access != VehicleAccess.DeliveryGang) return;
+                    if (Crime.CarTheft.CarTheftManager.IsTheft(vehicleDelivery)) return;
                     if (vehicleLocalData.DeliveryData.End != index) return;
                     if (DateTime.Now < vehicleLocalData.DeliveryData.DataEnd)
                     {
@@ -358,6 +360,8 @@ namespace NeptuneEvo.Fractions
                     switch (vehicleLocalData.Access)
                     {
                         case VehicleAccess.DeliveryGang:
+                            if (Crime.CarTheft.CarTheftManager.OnEnter(player, vehicle))
+                                return;
                             if (Configs.IsFractionPolic(fracId))
                             {
                                 Trigger.ClientEvent(player, "createWaypoint", PoliceEndDelivery.X, PoliceEndDelivery.Y);
@@ -422,6 +426,7 @@ namespace NeptuneEvo.Fractions
                 var vehicleDelivery = sessionData.DeliveryData.Vehicle;
                 if (vehicleDelivery != null)
                 {
+                    Crime.CarTheft.CarTheftManager.Forget(vehicleDelivery);
                     VehicleStreaming.DeleteVehicle(vehicleDelivery);
                     sessionData.DeliveryData.Vehicle = null;
                 }
@@ -498,7 +503,8 @@ namespace NeptuneEvo.Fractions
                 switch (id)
                 {
                     case 0:
-                        Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Недоступно на данный момент", 3000);
+                        // Угон: машина на улице → разборка у Мавра → детали в «Скупку краденого» (Crime/CarTheft)
+                        Crime.CarTheft.CarTheftManager.Start(player, fracId);
                         return;
                     case 1:
                         if (DateTime.Now < NextDelivery[fracId])

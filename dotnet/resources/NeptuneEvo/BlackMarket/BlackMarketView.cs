@@ -56,6 +56,7 @@ namespace NeptuneEvo.BlackMarket
                     cashoutFee = config.CashoutFeePercent,
                     wantedChance = config.CashoutWantedChance,
                 },
+                fence = Fence.FenceManager.View(player),
                 cashout = new
                 {
                     atPoint = CashOut.AtPoint(player),
@@ -103,8 +104,10 @@ namespace NeptuneEvo.BlackMarket
         /// <summary>Категория для фильтров каталога — по метаданным предмета.</summary>
         public static string Category(ItemId itemId)
         {
-            if (itemId == ItemId.Drugs || itemId == ItemId.Cocaine)
+            if (itemId == ItemId.Drugs || itemId == ItemId.Cocaine || itemId == ItemId.WeedSeed || itemId == ItemId.WeedRaw)
                 return "drugs";
+            if (itemId == ItemId.StolenElectronics || itemId == ItemId.StolenJewelry || itemId == ItemId.StolenCarParts)
+                return "stolen";
             if (!Chars.Repository.ItemsInfo.TryGetValue(itemId, out var info))
                 return "other";
             switch (info.functionType)

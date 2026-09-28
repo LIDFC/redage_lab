@@ -5,7 +5,7 @@ global.cargoCarrying = false;
 gm.events.add("client.cargo.carry", (state, name, quantity) => {
     global.cargoCarrying = !!state;
     if (state)
-        mp.events.call('notify', 2, 9, `Вы несёте: ${name} ×${quantity}. Меню машины — «Положить груз в кузов», [E] — положить на землю`, 6000);
+        mp.events.call('notify', 2, 9, `Вы несёте: ${name} ×${quantity}. Меню машины → «Взаимодействие с багажником» → «Положить груз в кузов». [E] — положить на землю`, 6000);
 });
 
 let lastDrop = 0;

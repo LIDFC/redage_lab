@@ -360,6 +360,16 @@ namespace NeptuneEvo.Quests
                     var questData = characterData.QuestsData
                         .FirstOrDefault(qd => qd.ActorName == Zdobich.QuestName);
                     
+                    // Этап 9 (рукопожатия) убран — застрявших переводим на следующий
+                    if (questData != null && questData.Line == (int)zdobich_quests.Stage9)
+                    {
+                        questData.Line = (int)zdobich_quests.Stage10;
+                        questData.Status = 0;
+                        questData.Complete = false;
+                        questData.Stage = 0;
+                        questData.Data = "0";
+                    }
+
                     if (questData != null &&
                         new List<zdobich_quests> { zdobich_quests.Stage12, zdobich_quests.Stage13, zdobich_quests.Stage14, zdobich_quests.Stage15, zdobich_quests.Stage16, zdobich_quests.Stage17, zdobich_quests.Stage18, zdobich_quests.Stage19 }.Contains((zdobich_quests) questData.Line))
                     {

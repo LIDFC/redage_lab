@@ -34,7 +34,7 @@
         vmuted: "mute", whisper: "offer",
         embrace: "handshake", kiss: "handshake", paired_five: "handshake", paired_slap: "handshake",
         carry_0: "handshake", carry_1: "handshake", carry_2: "handshake", carry_3: "leadaway",
-        trunkAction: "trunk", healMenu: "heal",
+        trunkAction: "trunk", healMenu: "heal", cargo_put: "trunk", cargo_take: "trunk",
         epinephrine: "heal", ticketveh: "ticket", newnumber: "sellcar", pocket: "rob",
         leave_fraction: "acancel", leave_org: "acancel",
     };

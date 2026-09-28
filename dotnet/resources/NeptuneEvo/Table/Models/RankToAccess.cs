@@ -64,5 +64,6 @@
         FamilyZone,
         IsWar,
         StartLiveStream,
+        OrganizationContracts, // 63: строительные подряды (Organizations/Contracts)
     }
 }

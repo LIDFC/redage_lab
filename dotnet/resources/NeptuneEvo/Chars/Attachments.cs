@@ -53,6 +53,7 @@ namespace NeptuneEvo.Chars
 
             public static uint Pickaxe = NAPI.Util.GetHashKey("mine_pickaxe");
             public static uint MineRock = NAPI.Util.GetHashKey("mine_rock");
+            public static uint CargoBox = NAPI.Util.GetHashKey("cargo_box");
             public static uint WorkAxeProp = NAPI.Util.GetHashKey("work_axe");
 
             public static uint Ball = NAPI.Util.GetHashKey("ball");

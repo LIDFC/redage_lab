@@ -57,6 +57,7 @@ export const FractionRankToAccess = {
 
     "VehicleTicket": 53,
     "StartLiveStream": 62,
+    "OrganizationContracts": 63,
 
 }
 
@@ -101,6 +102,7 @@ export const FractionRankToAccessName = {
     "SetVehicleRank": "Изменение рангов т/с",
     "DoorControl": "Управление дверьми",
     "StartLiveStream":"Доступ к эфирам",
+    "OrganizationContracts": "Строительные подряды (принятие и закупка)",
     "TableWall": "Публикация объявлений в планшете",
     "EditAllTabletWall": "Управление объявлениями в планшете",
     "OrgTuning": "Тюнинг транспорта",

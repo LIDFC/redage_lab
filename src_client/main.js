@@ -235,6 +235,7 @@ global.binderFunctions.interactionPressed = () => {// E key
 		mp.events.call('client.seat');
 	} else {
 		if (global.isEnter === "buyMetro" || global.isEnter === "exitMetro") mp.events.call('metroEnter');
+		else if (global.cargoCarrying && !global.isEnter && !global.localplayer.vehicle) mp.events.callRemote('server.cargo.drop');
 		else mp.events.callRemote('server.useEvent');
 	}
 	global.lastCheck = new Date().getTime();

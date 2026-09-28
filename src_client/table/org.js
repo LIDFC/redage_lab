@@ -478,3 +478,18 @@ gm.events.add(clientName + "setLeader", (uuid) => {
     global.binderFunctions.GameMenuClose ();
     mp.events.callRemote(serverName + "setLeader", uuid);
 });
+// Подряды (Organizations/Contracts): данные раздела и действия — всё решает сервер
+gm.events.add(clientName + "contractsLoad", () => {
+    mp.events.callRemote(serverName + "contracts.load");
+});
+
+gm.events.add(clientName + "contractsData", (json) => {
+    mp.gui.emmit(`window.listernEvent ('table.contracts', ${JSON.stringify(json)});`);
+});
+
+gm.events.add(clientName + "contractsAction", (action, contractId) => {
+    if (!global.antiFlood("table_contractsAction", 700))
+        return;
+
+    mp.events.callRemote(serverName + "contracts.action", String(action), Number(contractId));
+});

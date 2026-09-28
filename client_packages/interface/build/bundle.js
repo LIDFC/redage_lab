@@ -42566,49 +42566,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! @/views/fractions/mats/index.svelte */ "./src/views/fractions/mats/index.svelte");
 /* harmony import */ var _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! @/views/fractions/craft/index.svelte */ "./src/views/fractions/craft/index.svelte");
 /* harmony import */ var _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! @/views/fractions/create/index.svelte */ "./src/views/fractions/create/index.svelte");
-/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
-/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
-/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
-/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
-/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
-/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
-/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
-/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
-/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
-/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
-/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
-/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
-/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
-/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
-/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
-/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
-/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
-/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
-/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
-/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
-/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
-/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
-/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
-/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
-/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
-/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
-/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
-/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! @/views/fractions/contractshop/index.svelte */ "./src/views/fractions/contractshop/index.svelte");
+/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
+/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
+/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
+/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
+/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
+/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
+/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
+/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
+/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
+/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
+/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
+/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
+/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
+/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
+/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
+/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
+/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
+/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
+/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
+/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
+/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
+/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
+/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
+/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
+/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
+/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
+/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
+/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -42690,6 +42691,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 //Фракции
 // /import FractionsAdverts from '@/views/fractions/adverts/index.svelte';
+
 
 
 
@@ -42846,7 +42848,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (407:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (409:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -42867,7 +42869,7 @@ function create_default_slot_1(ctx) {
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
-	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_87__.default({
+	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_88__.default({
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
@@ -42952,7 +42954,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (420:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (422:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -43159,7 +43161,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -43199,63 +43201,64 @@ function instance($$self, $$props, $$invalidate) {
 		FractionsBSearch: _views_fractions_bsearch_index_svelte__WEBPACK_IMPORTED_MODULE_59__.default,
 		FractionsMats: _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_60__.default,
 		FractionsCraft: _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_61__.default,
-		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
-		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
-		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
-		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
-		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
-		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
+		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
+		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
+		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
+		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
 		FractionsCreate: _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_62__.default,
-		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
-		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
-		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
-		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		FractionsContractShop: _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
+		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
+		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
+		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
 		//AdminPlayersView,//Не работает
 		//AdminReport,
-		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
-		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
-		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
-		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
-		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
-		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
+		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
+		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
+		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
+		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
+		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
 		//DonateCards,
-		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
-		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
 		//QuestsDialog1,
 		//QuestsDialog2,
 		//QuestsDialog3,
-		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
-		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
-		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
-		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
-		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
-		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
-		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
-		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
-		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default
+		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
+		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
+		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
+		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
+		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
+		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
+		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
+		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_105__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_106__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -45836,6 +45839,8 @@ function instance($$self, $$props, $$invalidate) {
 		carry_3: "leadaway",
 		trunkAction: "trunk",
 		healMenu: "heal",
+		cargo_put: "trunk",
+		cargo_take: "trunk",
 		epinephrine: "heal",
 		ticketveh: "ticket",
 		newnumber: "sellcar",
@@ -96829,6 +96834,1111 @@ class Bsearch extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCompone
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Bsearch);
+
+
+/***/ }),
+
+/***/ "./src/views/fractions/contractshop/index.svelte":
+/*!*******************************************************!*\
+  !*** ./src/views/fractions/contractshop/index.svelte ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_uiSound__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/uiSound */ "./src/api/uiSound.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _contracts_materials__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../contracts/materials */ "./src/views/fractions/contracts/materials.js");
+/* src/views/fractions/contractshop/index.svelte generated by Svelte v3.59.2 */
+
+
+const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-j0oab3", ".cshop.svelte-j0oab3.svelte-j0oab3{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, rgba(16, 18, 24, 0.75), rgba(5, 6, 9, 0.92));font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#e9edf3}.cshop__box.svelte-j0oab3.svelte-j0oab3{width:118vh;max-width:96vw;max-height:88vh;display:flex;flex-direction:column;background:#12151b;border:1px solid rgba(255, 255, 255, 0.07);border-radius:1.6vh;box-shadow:0 3vh 8vh rgba(0, 0, 0, 0.55);overflow:hidden}.cshop__head.svelte-j0oab3.svelte-j0oab3{display:flex;align-items:center;gap:1.6vh;padding:2.2vh 2.6vh;border-bottom:1px solid rgba(255, 255, 255, 0.06);background:linear-gradient(90deg, rgba(245, 165, 36, 0.12), rgba(245, 165, 36, 0) 60%)}.cshop__logo.svelte-j0oab3.svelte-j0oab3{width:5.2vh;height:5.2vh;border-radius:1.2vh;background:rgba(245, 165, 36, 0.14);display:flex;align-items:center;justify-content:center}.cshop__logo.svelte-j0oab3 svg.svelte-j0oab3,.cshop__icon.svelte-j0oab3 svg.svelte-j0oab3{width:60%;height:60%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.cshop__logo.svelte-j0oab3 svg.svelte-j0oab3{color:#f5a524}.cshop__title.svelte-j0oab3.svelte-j0oab3{flex:1}.cshop__eyebrow.svelte-j0oab3.svelte-j0oab3,.cshop__label.svelte-j0oab3.svelte-j0oab3{font-size:1.2vh;letter-spacing:0.12vh;text-transform:uppercase;color:#8b93a1}.cshop__title.svelte-j0oab3 h1.svelte-j0oab3{margin:0.3vh 0 0;font-size:2.6vh;font-weight:700}.cshop__budget.svelte-j0oab3.svelte-j0oab3{text-align:right;padding:1vh 1.6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04)}.cshop__budget.svelte-j0oab3 span.svelte-j0oab3{display:block;font-size:1.2vh;color:#8b93a1}.cshop__budget.svelte-j0oab3 b.svelte-j0oab3{font-size:2.2vh;color:#7ed321}.cshop__budget.debt.svelte-j0oab3 b.svelte-j0oab3{color:#ff5a5a}.cshop__close.svelte-j0oab3.svelte-j0oab3{width:4.2vh;height:4.2vh;border-radius:1vh;display:flex;align-items:center;justify-content:center;font-size:1.8vh;color:#8b93a1;background:rgba(255, 255, 255, 0.04);cursor:pointer}.cshop__close.svelte-j0oab3.svelte-j0oab3:hover{color:#fff;background:rgba(255, 255, 255, 0.1)}.cshop__body.svelte-j0oab3.svelte-j0oab3{display:flex;min-height:0;flex:1}.cshop__side.svelte-j0oab3.svelte-j0oab3{width:30vh;padding:2vh;border-right:1px solid rgba(255, 255, 255, 0.06);overflow-y:auto;display:flex;flex-direction:column;gap:1vh}.cshop__contract.svelte-j0oab3.svelte-j0oab3{padding:1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.03);border:1px solid transparent;cursor:pointer;display:flex;flex-direction:column;gap:0.4vh}.cshop__contract.svelte-j0oab3 b.svelte-j0oab3{font-size:1.5vh}.cshop__contract.svelte-j0oab3 span.svelte-j0oab3{font-size:1.3vh;color:#8b93a1}.cshop__contract.svelte-j0oab3 em.svelte-j0oab3{font-style:normal;font-size:1.2vh;color:#f5a524}.cshop__contract.active.svelte-j0oab3.svelte-j0oab3{border-color:rgba(245, 165, 36, 0.6);background:rgba(245, 165, 36, 0.08)}.cshop__main.svelte-j0oab3.svelte-j0oab3{flex:1;padding:2vh;overflow-y:auto;display:flex;flex-direction:column;gap:1.2vh}.cshop__row.svelte-j0oab3.svelte-j0oab3{display:flex;align-items:center;gap:1.6vh;padding:1.6vh;border-radius:1.2vh;background:rgba(255, 255, 255, 0.03);border:1px solid rgba(255, 255, 255, 0.05)}.cshop__row.done.svelte-j0oab3.svelte-j0oab3{opacity:0.6}.cshop__icon.svelte-j0oab3.svelte-j0oab3{width:5.6vh;height:5.6vh;flex:none;border-radius:1.2vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center}.cshop__info.svelte-j0oab3.svelte-j0oab3{flex:1;min-width:0;display:flex;flex-direction:column;gap:0.5vh}.cshop__info.svelte-j0oab3 b.svelte-j0oab3{font-size:1.8vh}.cshop__info.svelte-j0oab3 span.svelte-j0oab3,.cshop__info.svelte-j0oab3 small.svelte-j0oab3{font-size:1.25vh;color:#8b93a1}.cshop__bar.svelte-j0oab3.svelte-j0oab3{position:relative;height:0.7vh;border-radius:0.4vh;background:rgba(255, 255, 255, 0.07);overflow:hidden}.cshop__bar.svelte-j0oab3 div.svelte-j0oab3{position:absolute;left:0;top:0;bottom:0;border-radius:0.4vh}.cshop__bar.svelte-j0oab3 .bought.svelte-j0oab3{background:rgba(245, 165, 36, 0.45)}.cshop__bar.svelte-j0oab3 .delivered.svelte-j0oab3{background:#7ed321}.cshop__qty.svelte-j0oab3.svelte-j0oab3{display:flex;flex-direction:column;align-items:center;gap:0.6vh}.cshop__stepper.svelte-j0oab3.svelte-j0oab3{display:flex;align-items:center;border-radius:0.9vh;background:rgba(255, 255, 255, 0.05);overflow:hidden}.cshop__stepper.svelte-j0oab3 div.svelte-j0oab3{width:3.6vh;height:3.6vh;display:flex;align-items:center;justify-content:center;font-size:2vh;cursor:pointer;color:#c9ced6}.cshop__stepper.svelte-j0oab3 div.svelte-j0oab3:hover{background:rgba(255, 255, 255, 0.08)}.cshop__stepper.svelte-j0oab3 input.svelte-j0oab3{width:7vh;height:3.6vh;border:none;outline:none;background:transparent;color:#fff;text-align:center;font-size:1.6vh;font-family:inherit}.cshop__stepper.svelte-j0oab3 input.svelte-j0oab3::-webkit-inner-spin-button{-webkit-appearance:none}.cshop__max.svelte-j0oab3.svelte-j0oab3{font-size:1.2vh;color:#f5a524;cursor:pointer}.cshop__buy.svelte-j0oab3.svelte-j0oab3{width:19vh;display:flex;flex-direction:column;align-items:stretch;gap:0.6vh;text-align:center}.cshop__buy.svelte-j0oab3 span.svelte-j0oab3{font-size:1.2vh;color:#8b93a1}.cshop__btn.svelte-j0oab3.svelte-j0oab3{padding:1.2vh 1vh;border-radius:0.9vh;background:#f5a524;color:#16181d;font-weight:700;font-size:1.5vh;cursor:pointer;transition:filter 0.15s}.cshop__btn.svelte-j0oab3.svelte-j0oab3:hover{filter:brightness(1.1)}.cshop__btn.disabled.svelte-j0oab3.svelte-j0oab3{background:rgba(255, 255, 255, 0.08);color:#6b7280;pointer-events:none}.cshop__elsewhere.svelte-j0oab3.svelte-j0oab3{width:36vh;display:flex;flex-direction:column;gap:0.4vh;text-align:right}.cshop__elsewhere.svelte-j0oab3 span.svelte-j0oab3{font-size:1.2vh;color:#8b93a1}.cshop__elsewhere.svelte-j0oab3 b.svelte-j0oab3{font-size:1.4vh;color:#f5a524;font-weight:600}.cshop__ok.svelte-j0oab3.svelte-j0oab3{width:19vh;text-align:center;font-size:1.5vh;color:#7ed321}.cshop__empty.svelte-j0oab3.svelte-j0oab3{padding:6vh 4vh;text-align:center;display:flex;flex-direction:column;gap:1vh}.cshop__empty.svelte-j0oab3 b.svelte-j0oab3{font-size:2.2vh}.cshop__empty.svelte-j0oab3 span.svelte-j0oab3{font-size:1.5vh;color:#8b93a1}.cshop__foot.svelte-j0oab3.svelte-j0oab3{padding:1.4vh 2.6vh;border-top:1px solid rgba(255, 255, 255, 0.06);font-size:1.3vh;color:#8b93a1}.cshop__foot.svelte-j0oab3 .ok.svelte-j0oab3{color:#7ed321}.cshop__foot.svelte-j0oab3 .err.svelte-j0oab3{color:#ff6b6b}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[24] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[27] = list[i];
+	return child_ctx;
+}
+
+// (91:8) {:else}
+function create_else_block_1(ctx) {
+	let div3;
+	let div1;
+	let div0;
+	let t1;
+	let t2;
+	let div2;
+	let each_value_1 = /*data*/ ctx[0].contracts;
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	let if_block = /*contract*/ ctx[6] && create_if_block_2(ctx);
+
+	return {
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Подряды организации";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__label svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "cshop__side svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__main svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__body svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div1, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			if (if_block) if_block.m(div2, null);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data, selectedId, duration, now, opened*/ 163) {
+				each_value_1 = /*data*/ ctx[0].contracts;
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div1, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_1.length;
+			}
+
+			if (/*contract*/ ctx[6]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_2(ctx);
+					if_block.c();
+					if_block.m(div2, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+// (86:8) {#if !data.contracts.length}
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div.innerHTML = `<b class="svelte-j0oab3">Нет активных подрядов</b> 
+                <span class="svelte-j0oab3">Материалы продаются только под подряд организации. Примите подряд: планшет → Организация → Подряды.</span>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__empty svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (95:20) {#each data.contracts as item}
+function create_each_block_1(ctx) {
+	let div;
+	let b;
+	let t0;
+	let t1_value = /*item*/ ctx[27].id + "";
+	let t1;
+	let t2;
+	let t3_value = /*item*/ ctx[27].title + "";
+	let t3;
+	let t4;
+	let span;
+	let t5_value = /*item*/ ctx[27].point + "";
+	let t5;
+	let t6;
+	let em;
+	let t7;
+	let t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.duration)(/*item*/ ctx[27].deadline - (/*now*/ ctx[5] - /*opened*/ ctx[7]) / 1000) + "";
+	let t8;
+	let t9;
+	let sound_action;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[16](/*item*/ ctx[27]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("#");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			em = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("em");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Осталось ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__contract svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*item*/ ctx[27].id === /*selectedId*/ ctx[1]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, em);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t9);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*item*/ ctx[27].id + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*data*/ 1 && t3_value !== (t3_value = /*item*/ ctx[27].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*data*/ 1 && t5_value !== (t5_value = /*item*/ ctx[27].point + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty & /*data, now*/ 33 && t8_value !== (t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.duration)(/*item*/ ctx[27].deadline - (/*now*/ ctx[5] - /*opened*/ ctx[7]) / 1000) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (dirty & /*data, selectedId*/ 3) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*item*/ ctx[27].id === /*selectedId*/ ctx[1]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (105:20) {#if contract}
+function create_if_block_2(ctx) {
+	let div;
+	let t0;
+	let t1_value = /*contract*/ ctx[6].id + "";
+	let t1;
+	let t2;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_1_anchor;
+	let each_value = /*contract*/ ctx[6].materials;
+	const get_key = ctx => /*m*/ ctx[24].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Материалы по подряду #");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__label svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(target, anchor);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*contract*/ 64 && t1_value !== (t1_value = /*contract*/ ctx[6].id + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*contract, busy, getAmount, amounts, data, buy, money, number, pallets, setAmount, step, Math, materialIcon*/ 8013) {
+				each_value = /*contract*/ ctx[6].materials;
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, each_1_anchor, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d(detaching);
+			}
+
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
+		}
+	};
+}
+
+// (142:32) {:else}
+function create_else_block_2(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Закуплено";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__ok svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (126:53) 
+function create_if_block_4(ctx) {
+	let div4;
+	let div2;
+	let div0;
+	let sound_action;
+	let t1;
+	let input;
+	let input_max_value;
+	let input_value_value;
+	let t2;
+	let div1;
+	let sound_action_1;
+	let t4;
+	let div3;
+	let t5;
+	let t6_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].left) + "";
+	let t6;
+	let sound_action_2;
+	let t7;
+	let div6;
+	let span;
+	let t8_value = /*pallets*/ ctx[11](/*m*/ ctx[24], /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2])) + "";
+	let t8;
+	let t9;
+	let t10_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].kg) + "";
+	let t10;
+	let t11;
+	let t12;
+	let div5;
+	let t13;
+	let t14_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price) + "";
+	let t14;
+	let mounted;
+	let dispose;
+
+	function click_handler_1() {
+		return /*click_handler_1*/ ctx[17](/*m*/ ctx[24]);
+	}
+
+	function input_handler(...args) {
+		return /*input_handler*/ ctx[18](/*m*/ ctx[24], ...args);
+	}
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[19](/*m*/ ctx[24]);
+	}
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[20](/*m*/ ctx[24]);
+	}
+
+	function click_handler_4() {
+		return /*click_handler_4*/ ctx[21](/*m*/ ctx[24]);
+	}
+
+	return {
+		c() {
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "−";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "+";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Всё · ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" пал. · ");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить ");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t14_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*m*/ ctx[24].left);
+			input.value = input_value_value = /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__stepper svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__max svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__qty svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__btn svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "disabled", /*busy*/ ctx[3] || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) <= 0 || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price > /*data*/ ctx[0].money);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__buy svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t14);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div0, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler_1),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", input_handler),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action_1 = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div1, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler_2),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action_2 = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div3, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", click_handler_3),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", click_handler_4)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*contract*/ 64 && input_max_value !== (input_max_value = /*m*/ ctx[24].left)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value);
+			}
+
+			if (dirty & /*contract, amounts*/ 68 && input_value_value !== (input_value_value = /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2])) && input.value !== input_value_value) {
+				input.value = input_value_value;
+			}
+
+			if (dirty & /*contract*/ 64 && t6_value !== (t6_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].left) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*contract, amounts*/ 68 && t8_value !== (t8_value = /*pallets*/ ctx[11](/*m*/ ctx[24], /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+			if (dirty & /*contract, amounts*/ 68 && t10_value !== (t10_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].kg) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+			if (dirty & /*contract, amounts*/ 68 && t14_value !== (t14_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t14, t14_value);
+
+			if (dirty & /*busy, getAmount, contract, amounts, data*/ 333) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "disabled", /*busy*/ ctx[3] || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) <= 0 || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price > /*data*/ ctx[0].money);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (121:32) {#if m.left > 0 && m.sold === false}
+function create_if_block_3(ctx) {
+	let div;
+	let span;
+	let t1;
+	let b;
+
+	let t2_value = (/*m*/ ctx[24].where && /*m*/ ctx[24].where.length
+	? /*m*/ ctx[24].where.join(", ")
+	: "Нет на других складах") + "";
+
+	let t2;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "Здесь не продаётся";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__elsewhere svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*contract*/ 64 && t2_value !== (t2_value = (/*m*/ ctx[24].where && /*m*/ ctx[24].where.length
+			? /*m*/ ctx[24].where.join(", ")
+			: "Нет на других складах") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (107:24) {#each contract.materials as m (m.id)}
+function create_each_block(key_2, ctx) {
+	let div5;
+	let div0;
+	let svg;
+	let raw_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).svg + "";
+	let t0;
+	let div4;
+	let b;
+	let t1_value = /*m*/ ctx[24].name + "";
+	let t1;
+	let t2;
+	let span;
+	let t3_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*m*/ ctx[24].price) + "";
+	let t3;
+	let t4;
+	let t5_value = /*m*/ ctx[24].kg + "";
+	let t5;
+	let t6;
+	let t7_value = /*m*/ ctx[24].pallet + "";
+	let t7;
+	let t8;
+	let t9;
+	let div3;
+	let div1;
+	let t10;
+	let div2;
+	let t11;
+	let small;
+	let t12;
+	let t13_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].purchased) + "";
+	let t13;
+	let t14;
+	let t15_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].required) + "";
+	let t15;
+	let t16;
+	let t17_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].delivered) + "";
+	let t17;
+	let t18;
+	let t19;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*m*/ ctx[24].left > 0 && /*m*/ ctx[24].sold === false) return create_if_block_3;
+		if (/*m*/ ctx[24].left > 0) return create_if_block_4;
+		return create_else_block_2;
+	}
+
+	let current_block_type = select_block_type_1(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		key: key_2,
+		first: null,
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ед. · ");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг · паллета ");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" ед.");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			small = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("small");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Куплено ");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t13_value);
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t15_value);
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" · сдано ");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 24 24");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__icon svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).color);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bought svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[24].purchased / /*m*/ ctx[24].required * 100) + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "delivered svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", Math.min(100, /*m*/ ctx[24].delivered / /*m*/ ctx[24].required * 100) + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__bar svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(small, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__info svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__row svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "done", /*m*/ ctx[24].left <= 0);
+			this.first = div5;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, svg);
+			svg.innerHTML = raw_value;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, small);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t18);
+			if_block.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t19);
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*contract*/ 64 && raw_value !== (raw_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).svg + "")) svg.innerHTML = raw_value;;
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).color);
+			}
+
+			if (dirty & /*contract*/ 64 && t1_value !== (t1_value = /*m*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*contract*/ 64 && t3_value !== (t3_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*m*/ ctx[24].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*contract*/ 64 && t5_value !== (t5_value = /*m*/ ctx[24].kg + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty & /*contract*/ 64 && t7_value !== (t7_value = /*m*/ ctx[24].pallet + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[24].purchased / /*m*/ ctx[24].required * 100) + "%");
+			}
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", Math.min(100, /*m*/ ctx[24].delivered / /*m*/ ctx[24].required * 100) + "%");
+			}
+
+			if (dirty & /*contract*/ 64 && t13_value !== (t13_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].purchased) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t13, t13_value);
+			if (dirty & /*contract*/ 64 && t15_value !== (t15_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].required) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t15, t15_value);
+			if (dirty & /*contract*/ 64 && t17_value !== (t17_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].delivered) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
+
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div5, t19);
+				}
+			}
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "done", /*m*/ ctx[24].left <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			if_block.d();
+		}
+	};
+}
+
+// (155:12) {:else}
+function create_else_block(ctx) {
+	let span;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "Оплата — из бюджета организации. Паллеты появятся на площадке погрузки склада: погрузите их в грузовик организации.";
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (153:12) {#if lastResult}
+function create_if_block(ctx) {
+	let span;
+	let t_value = /*lastResult*/ ctx[4].message + "";
+	let t;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "ok", /*lastResult*/ ctx[4].ok);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "err", !/*lastResult*/ ctx[4].ok);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*lastResult*/ 16 && t_value !== (t_value = /*lastResult*/ ctx[4].message + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+
+			if (dirty & /*lastResult*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "ok", /*lastResult*/ ctx[4].ok);
+			}
+
+			if (dirty & /*lastResult*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "err", !/*lastResult*/ ctx[4].ok);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div8;
+	let div7;
+	let div5;
+	let div0;
+	let t0;
+	let div2;
+	let div1;
+	let t2;
+	let h1;
+	let t3_value = (/*data*/ ctx[0].shop || "Строительные материалы") + "";
+	let t3;
+	let t4;
+	let div3;
+	let span;
+	let t5;
+	let t6_value = /*data*/ ctx[0].org + "";
+	let t6;
+	let t7;
+	let b;
+	let t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*data*/ ctx[0].money) + "";
+	let t8;
+	let t9;
+	let div4;
+	let sound_action;
+	let t11;
+	let t12;
+	let div6;
+	let div7_intro;
+	let div8_intro;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (!/*data*/ ctx[0].contracts.length) return create_if_block_1;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block0 = current_block_type(ctx);
+
+	function select_block_type_2(ctx, dirty) {
+		if (/*lastResult*/ ctx[4]) return create_if_block;
+		return create_else_block;
+	}
+
+	let current_block_type_1 = select_block_type_2(ctx, -1);
+	let if_block1 = current_block_type_1(ctx);
+
+	return {
+		c() {
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.innerHTML = `<svg viewBox="0 0 24 24" class="svelte-j0oab3"><path d="M3 21h18M5 21V10l7-5 7 5v11"></path><path d="M9 21v-6h6v6"></path></svg>`;
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Государственный склад";
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Бюджет · ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "✕";
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block0.c();
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__logo svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "cshop__eyebrow svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__title svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__budget svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "debt", /*data*/ ctx[0].money < 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__close svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "title", "Закрыть (Esc)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__head svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__foot svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "cshop__box svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "cshop svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, h1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			if_block0.m(div7, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			if_block1.m(div6, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[14]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div4, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*close*/ ctx[13])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*data*/ 1 && t3_value !== (t3_value = (/*data*/ ctx[0].shop || "Строительные материалы") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].org + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*data*/ 1 && t8_value !== (t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*data*/ ctx[0].money) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (dirty & /*data*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "debt", /*data*/ ctx[0].money < 0);
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block0) {
+				if_block0.p(ctx, dirty);
+			} else {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div7, t12);
+				}
+			}
+
+			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if_block1.d(1);
+				if_block1 = current_block_type_1(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div6, null);
+				}
+			}
+		},
+		i(local) {
+			if (!div7_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div7_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div7, svelte_transition__WEBPACK_IMPORTED_MODULE_4__.scale, { start: 0.97, duration: 200 });
+					div7_intro.start();
+				});
+			}
+
+			if (!div8_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div8_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div8, svelte_transition__WEBPACK_IMPORTED_MODULE_4__.fade, { duration: 150 });
+					div8_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div8);
+			if_block0.d();
+			if_block1.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let contract;
+	let { viewData } = $$props;
+	let data = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.parseJson)(viewData, { org: "", money: 0, contracts: [] });
+	let selectedId = data.contracts.length ? data.contracts[0].id : 0;
+	let amounts = {};
+	let busy = false;
+	let lastResult = null;
+
+	window.events.addEvent("cef.orgcontracts.shop.update", (ok, message, json) => {
+		$$invalidate(3, busy = false);
+		$$invalidate(0, data = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.parseJson)(json, data));
+		$$invalidate(4, lastResult = { ok, message });
+		if (!data.contracts.find(c => c.id === selectedId)) $$invalidate(1, selectedId = data.contracts.length ? data.contracts[0].id : 0);
+		$$invalidate(2, amounts = {});
+		(0,api_uiSound__WEBPACK_IMPORTED_MODULE_2__.playSound)(ok ? "success" : "error");
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_3__.onDestroy)(() => window.events.removeEvent("cef.orgcontracts.shop.update"));
+	let now = Date.now();
+	const opened = Date.now();
+	const timer = setInterval(() => $$invalidate(5, now = Date.now()), 1000);
+	(0,svelte__WEBPACK_IMPORTED_MODULE_3__.onDestroy)(() => clearInterval(timer));
+	const key = m => `${selectedId}_${m.id}`;
+
+	const getAmount = (m, all) => {
+		const value = all[key(m)];
+		return value === undefined ? Math.min(m.left, m.pallet) : value;
+	};
+
+	const setAmount = (m, value) => {
+		value = Math.max(0, Math.min(m.left, Math.round(value) || 0));
+		$$invalidate(2, amounts = { ...amounts, [key(m)]: value });
+	};
+
+	const step = (m, dir) => {
+		const current = getAmount(m, amounts);
+
+		// шаг — паллета, «хвост» докупается точным количеством
+		const next = dir > 0
+		? Math.min(m.left, (Math.floor(current / m.pallet) + 1) * m.pallet)
+		: Math.max(0, (Math.ceil(current / m.pallet) - 1) * m.pallet);
+
+		setAmount(m, next);
+	};
+
+	const pallets = (m, units) => Math.ceil(units / Math.max(1, m.pallet));
+
+	const buy = m => {
+		const units = getAmount(m, amounts);
+		if (busy || units <= 0 || !contract) return;
+		$$invalidate(3, busy = true);
+		$$invalidate(4, lastResult = null);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.orgcontracts.shop.buy", contract.id, m.id, units);
+		setTimeout(() => $$invalidate(3, busy = false), 3000);
+	};
+
+	const close = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.orgcontracts.shop.close");
+
+	const onKey = e => {
+		if (e.keyCode === 27) close();
+	};
+
+	const click_handler = item => $$invalidate(1, selectedId = item.id);
+	const click_handler_1 = m => step(m, -1);
+	const input_handler = (m, e) => setAmount(m, e.target.value);
+	const click_handler_2 = m => step(m, 1);
+	const click_handler_3 = m => setAmount(m, m.left);
+	const click_handler_4 = m => buy(m);
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(15, viewData = $$props.viewData);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data, selectedId*/ 3) {
+			$: $$invalidate(6, contract = data.contracts.find(c => c.id === selectedId));
+		}
+	};
+
+	return [
+		data,
+		selectedId,
+		amounts,
+		busy,
+		lastResult,
+		now,
+		contract,
+		opened,
+		getAmount,
+		setAmount,
+		step,
+		pallets,
+		buy,
+		close,
+		onKey,
+		viewData,
+		click_handler,
+		click_handler_1,
+		input_handler,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4
+	];
+}
+
+class Contractshop extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 15 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contractshop);
 
 
 /***/ }),
@@ -182916,7 +184026,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (63:0) {#if visible}
+// (66:0) {#if visible}
 function create_if_block(ctx) {
 	let if_block_anchor;
 
@@ -182957,7 +184067,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (69:4) {:else}
+// (72:4) {:else}
 function create_else_block(ctx) {
 	let div;
 	let each_value = /*visible*/ ctx[0];
@@ -183017,7 +184127,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (64:4) {#if typeof visible == "string"}
+// (67:4) {#if typeof visible == "string"}
 function create_if_block_1(ctx) {
 	let div2;
 	let div0;
@@ -183057,7 +184167,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (71:12) {#each visible as item}
+// (74:12) {#each visible as item}
 function create_each_block(ctx) {
 	let div2;
 	let div0;
@@ -183148,6 +184258,9 @@ function instance($$self, $$props, $$invalidate) {
 		Festive: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть обмен Coin'),
 		SaluteShop: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть магазин фейерверков'),
 		BlackMarket: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть чёрный рынок'),
+		CargoPallet: 'Взять груз',
+		ContractDelivery: 'Разгрузить груз',
+		ContractNpc: 'Поговорить',
 		TankRoyale: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Регистрация Tank Royale'),
 		Casino: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'двери в казино'),
 		Atm: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть меню банкомата'),
@@ -243190,6 +244303,2206 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/player/menu/elements/fractions/elements/contracts/index.svelte":
+/*!**********************************************************************************!*\
+  !*** ./src/views/player/menu/elements/fractions/elements/contracts/index.svelte ***!
+  \**********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var api_uiSound__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! api/uiSound */ "./src/api/uiSound.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/views/fractions/contracts/materials */ "./src/views/fractions/contracts/materials.js");
+/* src/views/player/menu/elements/fractions/elements/contracts/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-kmt1yy", ".octr.svelte-kmt1yy.svelte-kmt1yy{width:100%;height:100%;display:flex;flex-direction:column;color:#e9edf3;font-family:\"Gilroy\", \"TTNorms-Regular\", sans-serif;min-height:0}.octr__head.svelte-kmt1yy.svelte-kmt1yy{display:flex;align-items:center;gap:1.2vh}.octr__title.svelte-kmt1yy.svelte-kmt1yy{flex:1}.octr__title.svelte-kmt1yy h2.svelte-kmt1yy{margin:0;font-size:2.6vh;font-weight:700}.octr__title.svelte-kmt1yy span.svelte-kmt1yy{font-size:1.3vh;color:#8b93a1}.octr__stat.svelte-kmt1yy.svelte-kmt1yy{padding:0.9vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04);border:1px solid rgba(255, 255, 255, 0.05);text-align:right;min-width:10vh}.octr__stat.svelte-kmt1yy span.svelte-kmt1yy{display:block;font-size:1.1vh;color:#8b93a1}.octr__stat.svelte-kmt1yy b.svelte-kmt1yy{font-size:1.8vh}.accent.svelte-kmt1yy.svelte-kmt1yy{color:#f5a524}.green.svelte-kmt1yy.svelte-kmt1yy{color:#7ed321}.red.svelte-kmt1yy.svelte-kmt1yy{color:#ff6b6b !important}.octr__tabs.svelte-kmt1yy.svelte-kmt1yy{display:flex;align-items:center;gap:0.8vh;margin:1.8vh 0 1.4vh}.octr__tab.svelte-kmt1yy.svelte-kmt1yy{padding:0.8vh 1.6vh;border-radius:0.9vh;font-size:1.4vh;color:#8b93a1;background:rgba(255, 255, 255, 0.03);cursor:pointer;display:flex;align-items:center;gap:0.6vh}.octr__tab.svelte-kmt1yy i.svelte-kmt1yy{font-style:normal;font-size:1.1vh;padding:0.1vh 0.6vh;border-radius:0.6vh;background:#f5a524;color:#16181d}.octr__tab.active.svelte-kmt1yy.svelte-kmt1yy{color:#fff;background:rgba(245, 165, 36, 0.14)}.octr__msg.svelte-kmt1yy.svelte-kmt1yy{margin-left:auto;font-size:1.3vh;color:#ff6b6b}.octr__msg.ok.svelte-kmt1yy.svelte-kmt1yy{color:#7ed321}.octr__body.svelte-kmt1yy.svelte-kmt1yy{flex:1;min-height:0;display:flex;gap:1.6vh}.octr__list.svelte-kmt1yy.svelte-kmt1yy{width:38%;overflow-y:auto;display:flex;flex-direction:column;gap:0.9vh;padding-right:0.4vh}.octr__card.svelte-kmt1yy.svelte-kmt1yy{padding:1.3vh 1.4vh;border-radius:1.1vh;background:rgba(255, 255, 255, 0.03);border:1px solid rgba(255, 255, 255, 0.05);display:flex;flex-direction:column;gap:0.5vh;cursor:pointer;transition:background 0.15s}.octr__card.svelte-kmt1yy.svelte-kmt1yy:hover{background:rgba(255, 255, 255, 0.06)}.octr__card.active.svelte-kmt1yy.svelte-kmt1yy{border-color:rgba(245, 165, 36, 0.6);background:rgba(245, 165, 36, 0.07)}.octr__card.taken.svelte-kmt1yy.svelte-kmt1yy{opacity:0.55}.octr__card.svelte-kmt1yy b.svelte-kmt1yy{font-size:1.5vh}.octr__card_top.svelte-kmt1yy.svelte-kmt1yy,.octr__card_bottom.svelte-kmt1yy.svelte-kmt1yy{display:flex;justify-content:space-between;align-items:center}.octr__tag.svelte-kmt1yy.svelte-kmt1yy{font-size:1vh;text-transform:uppercase;letter-spacing:0.1vh;color:#f5a524}.octr__id.svelte-kmt1yy.svelte-kmt1yy,.octr__point.svelte-kmt1yy.svelte-kmt1yy{font-size:1.2vh;color:#8b93a1}.octr__reward.svelte-kmt1yy.svelte-kmt1yy{font-size:1.6vh;font-weight:700;color:#7ed321}.octr__badge.svelte-kmt1yy.svelte-kmt1yy{font-size:1.15vh;padding:0.3vh 0.8vh;border-radius:0.6vh;background:rgba(245, 165, 36, 0.14);color:#f5a524}.octr__badge.grey.svelte-kmt1yy.svelte-kmt1yy{background:rgba(255, 255, 255, 0.06);color:#aab1bd}.octr__badge.red.svelte-kmt1yy.svelte-kmt1yy{background:rgba(255, 107, 107, 0.12)}.octr__bar.svelte-kmt1yy.svelte-kmt1yy{position:relative;height:0.5vh;border-radius:0.3vh;background:rgba(255, 255, 255, 0.07);overflow:hidden}.octr__bar.svelte-kmt1yy div.svelte-kmt1yy{position:absolute;left:0;top:0;bottom:0;background:#7ed321;border-radius:0.3vh}.octr__bar.two.svelte-kmt1yy.svelte-kmt1yy{height:0.6vh}.octr__bar.svelte-kmt1yy .bought.svelte-kmt1yy{background:rgba(245, 165, 36, 0.45)}.octr__details.svelte-kmt1yy.svelte-kmt1yy{flex:1;min-width:0;display:flex;flex-direction:column;border-radius:1.3vh;background:rgba(255, 255, 255, 0.025);border:1px solid rgba(255, 255, 255, 0.05);overflow:hidden}.octr__scroll.svelte-kmt1yy.svelte-kmt1yy{flex:1;overflow-y:auto;padding:2vh 2.2vh}.octr__eyebrow.svelte-kmt1yy.svelte-kmt1yy{font-size:1.1vh;text-transform:uppercase;letter-spacing:0.1vh;color:#8b93a1}.octr__scroll.svelte-kmt1yy h3.svelte-kmt1yy{margin:0.5vh 0 0.6vh;font-size:2.2vh}.octr__scroll.svelte-kmt1yy p.svelte-kmt1yy{margin:0;font-size:1.4vh;color:#aab1bd}.octr__notice.svelte-kmt1yy.svelte-kmt1yy{margin-top:1.2vh;padding:1vh 1.2vh;border-radius:0.9vh;background:rgba(255, 255, 255, 0.05);font-size:1.3vh;color:#aab1bd}.octr__grid.svelte-kmt1yy.svelte-kmt1yy{margin-top:1.6vh;display:grid;grid-template-columns:repeat(3, 1fr);gap:0.8vh}.octr__grid.svelte-kmt1yy div.svelte-kmt1yy{padding:1vh 1.2vh;border-radius:0.9vh;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column;gap:0.3vh;min-width:0}.octr__grid.svelte-kmt1yy span.svelte-kmt1yy{font-size:1.1vh;color:#8b93a1}.octr__grid.svelte-kmt1yy b.svelte-kmt1yy{font-size:1.5vh;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.octr__section.svelte-kmt1yy.svelte-kmt1yy{margin-top:1.8vh}.octr__section_title.svelte-kmt1yy.svelte-kmt1yy{display:flex;justify-content:space-between;font-size:1.2vh;text-transform:uppercase;letter-spacing:0.1vh;color:#8b93a1;margin-bottom:0.8vh}.octr__section_title.svelte-kmt1yy em.svelte-kmt1yy{font-style:normal;text-transform:none;letter-spacing:0;color:#f5a524}.octr__mat.svelte-kmt1yy.svelte-kmt1yy{display:flex;align-items:center;gap:1.2vh;padding:0.9vh 0;border-bottom:1px solid rgba(255, 255, 255, 0.04)}.octr__icon.svelte-kmt1yy.svelte-kmt1yy{width:4.2vh;height:4.2vh;flex:none;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center}.octr__icon.svelte-kmt1yy svg.svelte-kmt1yy{width:60%;height:60%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.octr__mat_info.svelte-kmt1yy.svelte-kmt1yy{flex:1;min-width:0;display:flex;flex-direction:column;gap:0.4vh}.octr__mat_row.svelte-kmt1yy.svelte-kmt1yy{display:flex;justify-content:space-between;font-size:1.45vh}.octr__mat_row.svelte-kmt1yy span.svelte-kmt1yy{font-weight:600}.octr__mat.svelte-kmt1yy small.svelte-kmt1yy{font-size:1.15vh;color:#8b93a1}.octr__transport.svelte-kmt1yy.svelte-kmt1yy{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column;gap:0.5vh}.octr__transport.svelte-kmt1yy>b.svelte-kmt1yy{font-size:1.45vh}.octr__transport.svelte-kmt1yy>span.svelte-kmt1yy{font-size:1.2vh;color:#8b93a1}.octr__models.svelte-kmt1yy.svelte-kmt1yy{margin-top:0.6vh;display:grid;grid-template-columns:repeat(3, 1fr);gap:0.6vh}.octr__models.svelte-kmt1yy div.svelte-kmt1yy{padding:0.7vh 0.9vh;border-radius:0.7vh;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column}.octr__models.svelte-kmt1yy b.svelte-kmt1yy{font-size:1.2vh;font-weight:600}.octr__models.svelte-kmt1yy span.svelte-kmt1yy{font-size:1.05vh;color:#8b93a1}.octr__actions.svelte-kmt1yy.svelte-kmt1yy{display:flex;align-items:center;gap:0.9vh;padding:1.4vh 2.2vh;border-top:1px solid rgba(255, 255, 255, 0.05);min-height:4vh}.octr__btn.svelte-kmt1yy.svelte-kmt1yy{padding:1.1vh 1.8vh;border-radius:0.9vh;font-size:1.4vh;font-weight:700;cursor:pointer;background:rgba(255, 255, 255, 0.07);color:#e9edf3;transition:filter 0.15s}.octr__btn.svelte-kmt1yy.svelte-kmt1yy:hover{filter:brightness(1.15)}.octr__btn.primary.svelte-kmt1yy.svelte-kmt1yy{background:#f5a524;color:#16181d}.octr__btn.danger.svelte-kmt1yy.svelte-kmt1yy{margin-left:auto;background:rgba(255, 107, 107, 0.14);color:#ff6b6b}.octr__btn.disabled.svelte-kmt1yy.svelte-kmt1yy{background:rgba(255, 255, 255, 0.06);color:#6b7280;cursor:default;filter:none}.octr__hint.svelte-kmt1yy.svelte-kmt1yy{font-size:1.25vh;color:#8b93a1}.octr__empty.svelte-kmt1yy.svelte-kmt1yy{margin:auto;text-align:center;display:flex;flex-direction:column;gap:1vh;max-width:60vh}.octr__empty.svelte-kmt1yy b.svelte-kmt1yy{font-size:2.2vh}.octr__empty.svelte-kmt1yy span.svelte-kmt1yy{font-size:1.5vh;color:#8b93a1}.octr__empty.small.svelte-kmt1yy.svelte-kmt1yy{margin:3vh auto;font-size:1.4vh;color:#8b93a1}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[27] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[30] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_2(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[33] = list[i];
+	return child_ctx;
+}
+
+// (92:4) {:else}
+function create_else_block(ctx) {
+	let div4;
+	let div0;
+	let h2;
+	let t1;
+	let span0;
+	let t2;
+	let t3_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.duration)(/*data*/ ctx[0].nextGen - /*elapsed*/ ctx[5]) + "";
+	let t3;
+	let t4;
+	let div1;
+	let span1;
+	let b0;
+	let t6_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*data*/ ctx[0].reputation) + "";
+	let t6;
+	let t7;
+	let div2;
+	let span2;
+	let b1;
+	let t9_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*data*/ ctx[0].money) + "";
+	let t9;
+	let t10;
+	let div3;
+	let span3;
+	let b2;
+	let t12_value = /*data*/ ctx[0].active + "";
+	let t12;
+	let t13;
+	let t14_value = /*data*/ ctx[0].maxActive + "";
+	let t14;
+	let t15;
+	let div7;
+	let div5;
+	let sound_action;
+	let t17;
+	let div6;
+	let t18;
+	let sound_action_1;
+	let t19;
+	let t20;
+	let div10;
+	let div8;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let t21;
+	let div9;
+	let mounted;
+	let dispose;
+	let if_block0 = /*mine*/ ctx[3].length && create_if_block_16(ctx);
+	let if_block1 = /*data*/ ctx[0].message && create_if_block_15(ctx);
+	let each_value_2 = /*list*/ ctx[7];
+	const get_key = ctx => /*c*/ ctx[33].id;
+
+	for (let i = 0; i < each_value_2.length; i += 1) {
+		let child_ctx = get_each_context_2(ctx, each_value_2, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_2(key, child_ctx));
+	}
+
+	let each_1_else = null;
+
+	if (!each_value_2.length) {
+		each_1_else = create_else_block_6(ctx);
+	}
+
+	function select_block_type_2(ctx, dirty) {
+		if (/*selected*/ ctx[6]) return create_if_block_2;
+		return create_else_block_4;
+	}
+
+	let current_block_type = select_block_type_2(ctx, [-1, -1]);
+	let if_block2 = current_block_type(ctx);
+
+	return {
+		c() {
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			h2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h2");
+			h2.textContent = "Строительные подряды";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Общие контракты сервера · новые через ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "Репутация";
+			b0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "Бюджет";
+			b1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span3.textContent = "В работе";
+			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t12_value);
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t14_value);
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5.textContent = "Доступные";
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Мои подряды");
+			if (if_block0) if_block0.c();
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			if (each_1_else) {
+				each_1_else.c();
+			}
+
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block2.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h2, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "octr__title svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "accent svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "octr__stat svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(b1, "red", /*data*/ ctx[0].money < 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "octr__stat svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "octr__stat svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "octr__head svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "octr__tab svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "active", /*tab*/ ctx[1] === "list");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "octr__tab svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div6, "active", /*tab*/ ctx[1] === "mine");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "octr__tabs svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "octr__list svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "octr__details svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "octr__body svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, h2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, b0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b0, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, b1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b1, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t15, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t18);
+			if (if_block0) if_block0.m(div6, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t19);
+			if (if_block1) if_block1.m(div7, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t20, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div10, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div8, null);
+				}
+			}
+
+			if (each_1_else) {
+				each_1_else.m(div8, null);
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
+			if_block2.m(div9, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_3__.sound.call(null, div5, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*click_handler*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action_1 = api_uiSound__WEBPACK_IMPORTED_MODULE_3__.sound.call(null, div6, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "click", /*click_handler_1*/ ctx[20])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*data, elapsed*/ 33 && t3_value !== (t3_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.duration)(/*data*/ ctx[0].nextGen - /*elapsed*/ ctx[5]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty[0] & /*data*/ 1 && t6_value !== (t6_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*data*/ ctx[0].reputation) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty[0] & /*data*/ 1 && t9_value !== (t9_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*data*/ ctx[0].money) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+
+			if (dirty[0] & /*data*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(b1, "red", /*data*/ ctx[0].money < 0);
+			}
+
+			if (dirty[0] & /*data*/ 1 && t12_value !== (t12_value = /*data*/ ctx[0].active + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t12, t12_value);
+			if (dirty[0] & /*data*/ 1 && t14_value !== (t14_value = /*data*/ ctx[0].maxActive + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t14, t14_value);
+
+			if (dirty[0] & /*tab*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "active", /*tab*/ ctx[1] === "list");
+			}
+
+			if (/*mine*/ ctx[3].length) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_16(ctx);
+					if_block0.c();
+					if_block0.m(div6, null);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty[0] & /*tab*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div6, "active", /*tab*/ ctx[1] === "mine");
+			}
+
+			if (/*data*/ ctx[0].message) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_15(ctx);
+					if_block1.c();
+					if_block1.m(div7, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty[0] & /*list, selectedId, select, elapsed, data, types, tab*/ 935) {
+				each_value_2 = /*list*/ ctx[7];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value_2, each_1_lookup, div8, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_2, null, get_each_context_2);
+
+				if (!each_value_2.length && each_1_else) {
+					each_1_else.p(ctx, dirty);
+				} else if (!each_value_2.length) {
+					each_1_else = create_else_block_6(ctx);
+					each_1_else.c();
+					each_1_else.m(div8, null);
+				} else if (each_1_else) {
+					each_1_else.d(1);
+					each_1_else = null;
+				}
+			}
+
+			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block2) {
+				if_block2.p(ctx, dirty);
+			} else {
+				if_block2.d(1);
+				if_block2 = current_block_type(ctx);
+
+				if (if_block2) {
+					if_block2.c();
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2, 1);
+					if_block2.m(div9, null);
+				}
+			}
+		},
+		i(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block2);
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t15);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t20);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div10);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+
+			if (each_1_else) each_1_else.d();
+			if_block2.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (87:26) 
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div.innerHTML = `<b class="svelte-kmt1yy">Подряды недоступны</b> 
+            <span class="svelte-kmt1yy">Строительные подряды берут только законные организации («Сообщество»). Криминальные группировки к ним не допускаются.</span>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__empty svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (85:4) {#if !data}
+function create_if_block(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Загрузка…";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__empty svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (105:126) {#if mine.length}
+function create_if_block_16(ctx) {
+	let i;
+	let t_value = /*mine*/ ctx[3].length + "";
+	let t;
+
+	return {
+		c() {
+			i = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("i");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(i, "class", "svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, i, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(i, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*mine*/ 8 && t_value !== (t_value = /*mine*/ ctx[3].length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(i);
+		}
+	};
+}
+
+// (106:12) {#if data.message}
+function create_if_block_15(ctx) {
+	let div;
+	let t_value = /*data*/ ctx[0].message + "";
+	let t;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__msg svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "ok", /*data*/ ctx[0].ok);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*data*/ 1 && t_value !== (t_value = /*data*/ ctx[0].message + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+
+			if (dirty[0] & /*data*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "ok", /*data*/ ctx[0].ok);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (135:16) {:else}
+function create_else_block_6(ctx) {
+	let div;
+
+	let t0_value = (/*tab*/ ctx[1] === "mine"
+	? "У организации нет активных подрядов"
+	: "Свободных подрядов нет — дождитесь следующего набора") + "";
+
+	let t0;
+	let t1;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__empty small svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*tab*/ 2 && t0_value !== (t0_value = (/*tab*/ ctx[1] === "mine"
+			? "У организации нет активных подрядов"
+			: "Свободных подрядов нет — дождитесь следующего набора") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (127:28) {:else}
+function create_else_block_5(ctx) {
+	let span;
+	let t0;
+	let t1_value = /*c*/ ctx[33].requiredRep + "";
+	let t1;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Реп. ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "octr__badge svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "red", /*data*/ ctx[0].reputation < /*c*/ ctx[33].requiredRep);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*list*/ 128 && t1_value !== (t1_value = /*c*/ ctx[33].requiredRep + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty[0] & /*data, list*/ 129) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "red", /*data*/ ctx[0].reputation < /*c*/ ctx[33].requiredRep);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (125:58) 
+function create_if_block_14(ctx) {
+	let span;
+	let t0_value = /*c*/ ctx[33].progress + "";
+	let t0;
+	let t1;
+	let t2_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.duration)(/*c*/ ctx[33].deadlineLeft - /*elapsed*/ ctx[5]) + "";
+	let t2;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% · ");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "octr__badge svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*list*/ 128 && t0_value !== (t0_value = /*c*/ ctx[33].progress + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*list, elapsed*/ 160 && t2_value !== (t2_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.duration)(/*c*/ ctx[33].deadlineLeft - /*elapsed*/ ctx[5]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (123:28) {#if c.status === "taken"}
+function create_if_block_13(ctx) {
+	let span;
+	let t0;
+	let t1_value = /*c*/ ctx[33].takenBy + "";
+	let t1;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Взят: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "octr__badge grey svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*list*/ 128 && t1_value !== (t1_value = /*c*/ ctx[33].takenBy + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (131:24) {#if c.status === "mine"}
+function create_if_block_12(ctx) {
+	let div1;
+	let div0;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", /*c*/ ctx[33].progress + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "octr__bar svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*list*/ 128) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", /*c*/ ctx[33].progress + "%");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (113:16) {#each list as c (c.id)}
+function create_each_block_2(key_1, ctx) {
+	let div2;
+	let div0;
+	let span0;
+	let t0_value = (/*types*/ ctx[8][/*c*/ ctx[33].type] || "Подряд") + "";
+	let t0;
+	let t1;
+	let span1;
+	let t2;
+	let t3_value = /*c*/ ctx[33].id + "";
+	let t3;
+	let t4;
+	let b;
+	let t5_value = /*c*/ ctx[33].title + "";
+	let t5;
+	let t6;
+	let span2;
+	let t7_value = /*c*/ ctx[33].point + "";
+	let t7;
+	let t8;
+	let div1;
+	let span3;
+	let t9_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*c*/ ctx[33].reward) + "";
+	let t9;
+	let t10;
+	let t11;
+	let t12;
+	let sound_action;
+	let mounted;
+	let dispose;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*c*/ ctx[33].status === "taken") return create_if_block_13;
+		if (/*c*/ ctx[33].status === "mine") return create_if_block_14;
+		return create_else_block_5;
+	}
+
+	let current_block_type = select_block_type_1(ctx, [-1, -1]);
+	let if_block0 = current_block_type(ctx);
+	let if_block1 = /*c*/ ctx[33].status === "mine" && create_if_block_12(ctx);
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[21](/*c*/ ctx[33]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("#");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block0.c();
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "octr__tag svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "octr__id svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "octr__card_top svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "octr__point svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "octr__reward svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "octr__card_bottom svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "octr__card svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "active", /*c*/ ctx[33].id === /*selectedId*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "taken", /*c*/ ctx[33].status === "taken");
+			this.first = div2;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span2, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t10);
+			if_block0.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t11);
+			if (if_block1) if_block1.m(div2, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t12);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_3__.sound.call(null, div2, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler_2)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*list*/ 128 && t0_value !== (t0_value = (/*types*/ ctx[8][/*c*/ ctx[33].type] || "Подряд") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*list*/ 128 && t3_value !== (t3_value = /*c*/ ctx[33].id + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty[0] & /*list*/ 128 && t5_value !== (t5_value = /*c*/ ctx[33].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty[0] & /*list*/ 128 && t7_value !== (t7_value = /*c*/ ctx[33].point + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty[0] & /*list*/ 128 && t9_value !== (t9_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*c*/ ctx[33].reward) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block0) {
+				if_block0.p(ctx, dirty);
+			} else {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div1, null);
+				}
+			}
+
+			if (/*c*/ ctx[33].status === "mine") {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_12(ctx);
+					if_block1.c();
+					if_block1.m(div2, t12);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty[0] & /*list, selectedId*/ 132) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "active", /*c*/ ctx[33].id === /*selectedId*/ ctx[2]);
+			}
+
+			if (dirty[0] & /*list*/ 128) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "taken", /*c*/ ctx[33].status === "taken");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if_block0.d();
+			if (if_block1) if_block1.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (231:16) {:else}
+function create_else_block_4(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Выберите подряд слева";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__empty small svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (143:16) {#if selected}
+function create_if_block_2(ctx) {
+	let previous_key = /*selected*/ ctx[6].id;
+	let key_block_anchor;
+	let key_block = create_key_block(ctx);
+
+	return {
+		c() {
+			key_block.c();
+			key_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+		},
+		m(target, anchor) {
+			key_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, key_block_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal)(previous_key, previous_key = /*selected*/ ctx[6].id)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(key_block, 1, 1, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
+				key_block = create_key_block(ctx);
+				key_block.c();
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(key_block, 1);
+				key_block.m(key_block_anchor.parentNode, key_block_anchor);
+			} else {
+				key_block.p(ctx, dirty);
+			}
+		},
+		i(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(key_block);
+		},
+		o(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(key_block);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(key_block_anchor);
+			key_block.d(detaching);
+		}
+	};
+}
+
+// (150:28) {#if selected.status === "taken"}
+function create_if_block_11(ctx) {
+	let div;
+	let t0;
+	let t1_value = /*selected*/ ctx[6].takenBy + "";
+	let t1;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Контракт уже взят другой организацией: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__notice svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = /*selected*/ ctx[6].takenBy + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (171:106) {:else}
+function create_else_block_3(ctx) {
+	let em;
+	let t0;
+	let t1_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].cost) + "";
+	let t1;
+
+	return {
+		c() {
+			em = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("em");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Закупка ≈ ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, em, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].cost) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(em);
+		}
+	};
+}
+
+// (171:36) {#if selected.status === "mine"}
+function create_if_block_10(ctx) {
+	let em;
+	let t0;
+	let t1_value = /*selected*/ ctx[6].progress + "";
+	let t1;
+	let t2;
+
+	return {
+		c() {
+			em = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("em");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Прогресс ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, em, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = /*selected*/ ctx[6].progress + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(em);
+		}
+	};
+}
+
+// (181:130) {:else}
+function create_else_block_2(ctx) {
+	let t_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].required) + "";
+	let t;
+
+	return {
+		c() {
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t_value !== (t_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].required) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
+		}
+	};
+}
+
+// (181:54) {#if selected.status === "mine"}
+function create_if_block_9(ctx) {
+	let t0_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].delivered) + "";
+	let t0;
+	let t1;
+	let t2_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].required) + "";
+	let t2;
+
+	return {
+		c() {
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t0_value !== (t0_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].delivered) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*selected*/ 64 && t2_value !== (t2_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].required) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+		}
+	};
+}
+
+// (183:44) {#if selected.status === "mine"}
+function create_if_block_8(ctx) {
+	let div2;
+	let div0;
+	let t;
+	let div1;
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bought svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", Math.min(100, /*m*/ ctx[30].purchased / /*m*/ ctx[30].required * 100) + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[30].delivered / /*m*/ ctx[30].required * 100) + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "octr__bar two svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", Math.min(100, /*m*/ ctx[30].purchased / /*m*/ ctx[30].required * 100) + "%");
+			}
+
+			if (dirty[0] & /*selected*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[30].delivered / /*m*/ ctx[30].required * 100) + "%");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+		}
+	};
+}
+
+// (190:78) {#if selected.status === "mine"}
+function create_if_block_7(ctx) {
+	let t0;
+	let t1_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].purchased) + "";
+	let t1;
+
+	return {
+		c() {
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("· куплено ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].purchased) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+		}
+	};
+}
+
+// (173:32) {#each selected.materials as m (m.id)}
+function create_each_block_1(key_1, ctx) {
+	let div3;
+	let div0;
+	let svg;
+	let raw_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.materialIcon)(/*m*/ ctx[30].icon).svg + "";
+	let t0;
+	let div2;
+	let div1;
+	let b;
+	let t1_value = /*m*/ ctx[30].name + "";
+	let t1;
+	let t2;
+	let span;
+	let t3;
+	let t4;
+	let small;
+	let t5_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].required * /*m*/ ctx[30].kg) + "";
+	let t5;
+	let t6;
+	let t7;
+
+	let t8_value = (/*m*/ ctx[30].shops && /*m*/ ctx[30].shops.length
+	? /*m*/ ctx[30].shops.join(", ")
+	: "нет складов") + "";
+
+	let t8;
+	let t9;
+
+	function select_block_type_4(ctx, dirty) {
+		if (/*selected*/ ctx[6].status === "mine") return create_if_block_9;
+		return create_else_block_2;
+	}
+
+	let current_block_type = select_block_type_4(ctx, [-1, -1]);
+	let if_block0 = current_block_type(ctx);
+	let if_block1 = /*selected*/ ctx[6].status === "mine" && create_if_block_8(ctx);
+	let if_block2 = /*selected*/ ctx[6].status === "mine" && create_if_block_7(ctx);
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			if_block0.c();
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			small = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("small");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг");
+			if (if_block2) if_block2.c();
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("\n                                                · ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 24 24");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "octr__icon svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.materialIcon)(/*m*/ ctx[30].icon).color);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "octr__mat_row svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(small, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "octr__mat_info svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "octr__mat svelte-kmt1yy");
+			this.first = div3;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, svg);
+			svg.innerHTML = raw_value;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span);
+			if_block0.m(span, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			if (if_block1) if_block1.m(div2, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, small);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t6);
+			if (if_block2) if_block2.m(small, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*selected*/ 64 && raw_value !== (raw_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.materialIcon)(/*m*/ ctx[30].icon).svg + "")) svg.innerHTML = raw_value;;
+
+			if (dirty[0] & /*selected*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.materialIcon)(/*m*/ ctx[30].icon).color);
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = /*m*/ ctx[30].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (current_block_type === (current_block_type = select_block_type_4(ctx, dirty)) && if_block0) {
+				if_block0.p(ctx, dirty);
+			} else {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(span, null);
+				}
+			}
+
+			if (/*selected*/ ctx[6].status === "mine") {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_8(ctx);
+					if_block1.c();
+					if_block1.m(div2, t4);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t5_value !== (t5_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*m*/ ctx[30].required * /*m*/ ctx[30].kg) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+
+			if (/*selected*/ ctx[6].status === "mine") {
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
+				} else {
+					if_block2 = create_if_block_7(ctx);
+					if_block2.c();
+					if_block2.m(small, t7);
+				}
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t8_value !== (t8_value = (/*m*/ ctx[30].shops && /*m*/ ctx[30].shops.length
+			? /*m*/ ctx[30].shops.join(", ")
+			: "нет складов") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if_block0.d();
+			if (if_block1) if_block1.d();
+			if (if_block2) if_block2.d();
+		}
+	};
+}
+
+// (204:40) {#each data.vehicles as v}
+function create_each_block(ctx) {
+	let div;
+	let b;
+	let t0_value = /*v*/ ctx[27].name + "";
+	let t0;
+	let span;
+	let t1_value = /*v*/ ctx[27].slots + "";
+	let t1;
+	let t2;
+	let t3_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*v*/ ctx[27].kg) + "";
+	let t3;
+	let t4;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" пал. · ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t4);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*data*/ 1 && t0_value !== (t0_value = /*v*/ ctx[27].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*data*/ 1 && t1_value !== (t1_value = /*v*/ ctx[27].slots + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*data*/ 1 && t3_value !== (t3_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*v*/ ctx[27].kg) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (218:65) 
+function create_if_block_5(ctx) {
+	let div0;
+	let sound_action;
+	let t1;
+	let div1;
+	let sound_action_1;
+	let t3;
+	let if_block_anchor;
+	let mounted;
+	let dispose;
+
+	function select_block_type_6(ctx, dirty) {
+		if (/*selected*/ ctx[6].isAcceptor) return create_if_block_6;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type_6(ctx, [-1, -1]);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Маршрут к точке";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Ближайший склад";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "octr__btn primary svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "octr__btn svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_3__.sound.call(null, div0, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*click_handler_4*/ ctx[23]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action_1 = api_uiSound__WEBPACK_IMPORTED_MODULE_3__.sound.call(null, div1, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_5*/ ctx[24])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (current_block_type === (current_block_type = select_block_type_6(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (213:28) {#if selected.status === "available"}
+function create_if_block_3(ctx) {
+	let div;
+	let t1;
+	let show_if = !/*canAccept*/ ctx[13](/*selected*/ ctx[6]);
+	let if_block_anchor;
+	let mounted;
+	let dispose;
+	let if_block = show_if && create_if_block_4(ctx);
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Принять подряд";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__btn primary svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "disabled", !/*canAccept*/ ctx[13](/*selected*/ ctx[6]));
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_3*/ ctx[22]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*canAccept, selected*/ 8256) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "disabled", !/*canAccept*/ ctx[13](/*selected*/ ctx[6]));
+			}
+
+			if (dirty[0] & /*selected*/ 64) show_if = !/*canAccept*/ ctx[13](/*selected*/ ctx[6]);
+
+			if (show_if) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_4(ctx);
+					if_block.c();
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (225:32) {:else}
+function create_else_block_1(ctx) {
+	let span;
+	let t0;
+	let t1_value = /*selected*/ ctx[6].acceptedBy + "";
+	let t1;
+	let t2;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Принял: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(". Отменить может только он.");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "octr__hint svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = /*selected*/ ctx[6].acceptedBy + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (221:32) {#if selected.isAcceptor}
+function create_if_block_6(ctx) {
+	let div;
+
+	let t_value = (/*confirmCancel*/ ctx[4] === /*selected*/ ctx[6].id
+	? `Точно? Неустойка ${(0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].penalty)}`
+	: "Отменить") + "";
+
+	let t;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr__btn danger svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*click_handler_6*/ ctx[25]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*confirmCancel, selected*/ 80 && t_value !== (t_value = (/*confirmCancel*/ ctx[4] === /*selected*/ ctx[6].id
+			? `Точно? Неустойка ${(0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].penalty)}`
+			: "Отменить") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (217:32) {#if !canAccept(selected)}
+function create_if_block_4(ctx) {
+	let span;
+	let t_value = /*acceptHint*/ ctx[14](/*selected*/ ctx[6]) + "";
+	let t;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "octr__hint svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t_value !== (t_value = /*acceptHint*/ ctx[14](/*selected*/ ctx[6]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (144:20) {#key selected.id}
+function create_key_block(ctx) {
+	let div14;
+	let div0;
+	let t0;
+	let t1_value = /*selected*/ ctx[6].id + "";
+	let t1;
+	let t2;
+	let t3_value = (/*types*/ ctx[8][/*selected*/ ctx[6].type] || /*selected*/ ctx[6].type) + "";
+	let t3;
+	let t4;
+	let h3;
+	let t5_value = /*selected*/ ctx[6].title + "";
+	let t5;
+	let t6;
+	let p;
+	let t7_value = /*selected*/ ctx[6].description + "";
+	let t7;
+	let t8;
+	let t9;
+	let div7;
+	let div1;
+	let span0;
+	let b0;
+	let t11_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].reward) + "";
+	let t11;
+	let t12;
+	let div2;
+	let span1;
+	let b1;
+	let t14_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].penalty) + "";
+	let t14;
+	let t15;
+	let div3;
+	let span2;
+	let b2;
+	let t17_value = /*selected*/ ctx[6].requiredRep + "";
+	let t17;
+	let t18;
+	let div4;
+	let span3;
+	let b3;
+	let t20;
+	let t21_value = /*selected*/ ctx[6].repReward + "";
+	let t21;
+	let t22;
+	let t23_value = /*selected*/ ctx[6].repPenalty + "";
+	let t23;
+	let t24;
+	let div5;
+	let span4;
+
+	let t25_value = (/*selected*/ ctx[6].status === "mine"
+	? "Осталось"
+	: "Срок") + "";
+
+	let t25;
+	let t26;
+	let b4;
+
+	let t27_value = (/*selected*/ ctx[6].status === "mine"
+	? (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.duration)(/*selected*/ ctx[6].deadlineLeft - /*elapsed*/ ctx[5])
+	: /*minutes*/ ctx[15](/*selected*/ ctx[6].deadlineMinutes)) + "";
+
+	let t27;
+	let t28;
+	let div6;
+	let span5;
+	let b5;
+	let t30_value = /*selected*/ ctx[6].point + "";
+	let t30;
+	let t31;
+	let div9;
+	let div8;
+	let t32;
+	let t33;
+	let each_blocks_1 = [];
+	let each0_lookup = new Map();
+	let t34;
+	let div13;
+	let div10;
+	let t35;
+	let em;
+	let t36;
+	let t37_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*selected*/ ctx[6].totalKg) + "";
+	let t37;
+	let t38;
+	let t39;
+	let div12;
+	let b6;
+	let t41;
+	let span6;
+	let t43;
+	let div11;
+	let div14_intro;
+	let t44;
+	let div15;
+	let if_block0 = /*selected*/ ctx[6].status === "taken" && create_if_block_11(ctx);
+
+	function select_block_type_3(ctx, dirty) {
+		if (/*selected*/ ctx[6].status === "mine") return create_if_block_10;
+		return create_else_block_3;
+	}
+
+	let current_block_type = select_block_type_3(ctx, [-1, -1]);
+	let if_block1 = current_block_type(ctx);
+	let each_value_1 = /*selected*/ ctx[6].materials;
+	const get_key = ctx => /*m*/ ctx[30].id;
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		let child_ctx = get_each_context_1(ctx, each_value_1, i);
+		let key = get_key(child_ctx);
+		each0_lookup.set(key, each_blocks_1[i] = create_each_block_1(key, child_ctx));
+	}
+
+	let each_value = /*data*/ ctx[0].vehicles;
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	function select_block_type_5(ctx, dirty) {
+		if (/*selected*/ ctx[6].status === "available") return create_if_block_3;
+		if (/*selected*/ ctx[6].status === "mine") return create_if_block_5;
+	}
+
+	let current_block_type_1 = select_block_type_5(ctx, [-1, -1]);
+	let if_block2 = current_block_type_1 && current_block_type_1(ctx);
+
+	return {
+		c() {
+			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Строительный подряд #");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" · ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			h3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h3");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Награда";
+			b0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "Неустойка";
+			b1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t14_value);
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "Мин. репутация";
+			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span3.textContent = "Репутация";
+			b3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("+");
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t21_value);
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / −");
+			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t23_value);
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t25_value);
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t27_value);
+			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span5.textContent = "Место сдачи";
+			b5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t30_value);
+			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Необходимые материалы\n                                    ");
+			if_block1.c();
+			t33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				each_blocks_1[i].c();
+			}
+
+			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t35 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Транспорт ");
+			em = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("em");
+			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Общий вес ");
+			t37 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t37_value);
+			t38 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг");
+			t39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b6.textContent = "Организационный грузовой автомобиль";
+			t41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span6.textContent = "Личные машины не подходят — только транспорт из гаража организации. Груз можно возить несколькими рейсами.";
+			t43 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t44 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block2) if_block2.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "octr__eyebrow svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h3, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(p, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "green svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "red svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(b2, "red", /*data*/ ctx[0].reputation < /*selected*/ ctx[6].requiredRep);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b4, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(b4, "red", /*selected*/ ctx[6].status === "mine" && /*selected*/ ctx[6].deadlineLeft - /*elapsed*/ ctx[5] < 900);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span5, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b5, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "octr__grid svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "octr__section_title svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "octr__section svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "octr__section_title svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b6, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span6, "class", "svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "octr__models svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "octr__transport svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "octr__section svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "octr__scroll svelte-kmt1yy");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "octr__actions svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div14, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, h3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, p);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t8);
+			if (if_block0) if_block0.m(div14, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, b0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b0, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, b1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b1, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b2, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, b3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t22);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b3, t23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, span4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span4, t25);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, b4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b4, t27);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t28);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, b5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b5, t30);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t31);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t32);
+			if_block1.m(div8, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t33);
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				if (each_blocks_1[i]) {
+					each_blocks_1[i].m(div9, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, div13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t35);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, em);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t36);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t37);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t38);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t39);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, b6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t41);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, span6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t43);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div11, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t44, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div15, anchor);
+			if (if_block2) if_block2.m(div15, null);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*selected*/ 64 && t1_value !== (t1_value = /*selected*/ ctx[6].id + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*selected*/ 64 && t3_value !== (t3_value = (/*types*/ ctx[8][/*selected*/ ctx[6].type] || /*selected*/ ctx[6].type) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty[0] & /*selected*/ 64 && t5_value !== (t5_value = /*selected*/ ctx[6].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty[0] & /*selected*/ 64 && t7_value !== (t7_value = /*selected*/ ctx[6].description + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+
+			if (/*selected*/ ctx[6].status === "taken") {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_11(ctx);
+					if_block0.c();
+					if_block0.m(div14, t9);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t11_value !== (t11_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].reward) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+			if (dirty[0] & /*selected*/ 64 && t14_value !== (t14_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.money)(/*selected*/ ctx[6].penalty) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t14, t14_value);
+			if (dirty[0] & /*selected*/ 64 && t17_value !== (t17_value = /*selected*/ ctx[6].requiredRep + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
+
+			if (dirty[0] & /*data, selected*/ 65) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(b2, "red", /*data*/ ctx[0].reputation < /*selected*/ ctx[6].requiredRep);
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t21_value !== (t21_value = /*selected*/ ctx[6].repReward + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t21, t21_value);
+			if (dirty[0] & /*selected*/ 64 && t23_value !== (t23_value = /*selected*/ ctx[6].repPenalty + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t23, t23_value);
+
+			if (dirty[0] & /*selected*/ 64 && t25_value !== (t25_value = (/*selected*/ ctx[6].status === "mine"
+			? "Осталось"
+			: "Срок") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t25, t25_value);
+
+			if (dirty[0] & /*selected, elapsed*/ 96 && t27_value !== (t27_value = (/*selected*/ ctx[6].status === "mine"
+			? (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.duration)(/*selected*/ ctx[6].deadlineLeft - /*elapsed*/ ctx[5])
+			: /*minutes*/ ctx[15](/*selected*/ ctx[6].deadlineMinutes)) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t27, t27_value);
+
+			if (dirty[0] & /*selected, elapsed*/ 96) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(b4, "red", /*selected*/ ctx[6].status === "mine" && /*selected*/ ctx[6].deadlineLeft - /*elapsed*/ ctx[5] < 900);
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t30_value !== (t30_value = /*selected*/ ctx[6].point + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t30, t30_value);
+
+			if (current_block_type === (current_block_type = select_block_type_3(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if_block1.d(1);
+				if_block1 = current_block_type(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div8, null);
+				}
+			}
+
+			if (dirty[0] & /*selected*/ 64) {
+				each_value_1 = /*selected*/ ctx[6].materials;
+				each_blocks_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks_1, dirty, get_key, 1, ctx, each_value_1, each0_lookup, div9, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_1, null, get_each_context_1);
+			}
+
+			if (dirty[0] & /*selected*/ 64 && t37_value !== (t37_value = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.number)(/*selected*/ ctx[6].totalKg) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t37, t37_value);
+
+			if (dirty[0] & /*data*/ 1) {
+				each_value = /*data*/ ctx[0].vehicles;
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div11, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+
+			if (current_block_type_1 === (current_block_type_1 = select_block_type_5(ctx, dirty)) && if_block2) {
+				if_block2.p(ctx, dirty);
+			} else {
+				if (if_block2) if_block2.d(1);
+				if_block2 = current_block_type_1 && current_block_type_1(ctx);
+
+				if (if_block2) {
+					if_block2.c();
+					if_block2.m(div15, null);
+				}
+			}
+		},
+		i(local) {
+			if (!div14_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div14_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div14, svelte_transition__WEBPACK_IMPORTED_MODULE_5__.fade, { duration: 120 });
+					div14_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div14);
+			if (if_block0) if_block0.d();
+			if_block1.d();
+
+			for (let i = 0; i < each_blocks_1.length; i += 1) {
+				each_blocks_1[i].d();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t44);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div15);
+
+			if (if_block2) {
+				if_block2.d();
+			}
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div;
+	let div_intro;
+
+	function select_block_type(ctx, dirty) {
+		if (!/*data*/ ctx[0]) return create_if_block;
+		if (!/*data*/ ctx[0].legal) return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "octr svelte-kmt1yy");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			if_block.m(div, null);
+		},
+		p(ctx, dirty) {
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
+					if_block.m(div, null);
+				}
+			}
+		},
+		i(local) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
+
+			if (!div_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div, svelte_transition__WEBPACK_IMPORTED_MODULE_5__.fade, { duration: 150 });
+					div_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if_block.d();
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let contracts;
+	let mine;
+	let list;
+	let selected;
+	let elapsed;
+	let data = null;
+	let tab = "list";
+	let selectedId = 0;
+	let confirmCancel = 0;
+	let loadedAt = Date.now();
+	let now = Date.now();
+	const timer = setInterval(() => $$invalidate(17, now = Date.now()), 1000);
+	(0,svelte__WEBPACK_IMPORTED_MODULE_4__.onDestroy)(() => clearInterval(timer));
+
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_2__.addListernEvent)("table.contracts", json => {
+		const previous = data;
+		$$invalidate(0, data = (0,_views_fractions_contracts_materials__WEBPACK_IMPORTED_MODULE_6__.parseJson)(json, null));
+		$$invalidate(16, loadedAt = Date.now());
+		$$invalidate(4, confirmCancel = 0);
+		if (!data) return;
+		if (data.message) (0,api_uiSound__WEBPACK_IMPORTED_MODULE_3__.playSound)(data.ok ? "success" : "error"); else if (previous && data.ok === false) (0,api_uiSound__WEBPACK_IMPORTED_MODULE_3__.playSound)("error");
+
+		// после принятия — сразу во вкладку «Мои подряды»
+		if (data.ok && data.message && previous && data.contracts.find(c => c.status === "mine" && c.id === selectedId)) $$invalidate(1, tab = "mine");
+
+		if (!selectedId || !data.contracts.find(c => c.id === selectedId)) {
+			const source = data.contracts.filter(c => tab === "mine" === (c.status === "mine"));
+			const first = source[0] || data.contracts[0];
+			$$invalidate(2, selectedId = first ? first.id : 0);
+		}
+	});
+
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClientToGroup)("contractsLoad");
+
+	const types = {
+		RoadConstruction: "Дороги",
+		BuildingConstruction: "Строительство",
+		BridgeConstruction: "Мосты",
+		InfrastructureRepair: "Инфраструктура",
+		WarehouseConstruction: "Склады"
+	};
+
+	const select = c => {
+		$$invalidate(2, selectedId = c.id);
+		$$invalidate(4, confirmCancel = 0);
+	};
+
+	const setTab = value => {
+		$$invalidate(1, tab = value);
+
+		const source = value === "mine"
+		? mine
+		: contracts.filter(c => c.status !== "mine");
+
+		if (!source.find(c => c.id === selectedId)) $$invalidate(2, selectedId = source.length ? source[0].id : 0);
+	};
+
+	const action = (name, id) => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClientToGroup)("contractsAction", name, id);
+
+	const onCancel = c => {
+		if (confirmCancel !== c.id) {
+			$$invalidate(4, confirmCancel = c.id);
+			return;
+		}
+
+		action("cancel", c.id);
+	};
+
+	const canAccept = c => data && data.legal && data.canManage && c.status === "available" && data.reputation >= c.requiredRep && data.active < data.maxActive && data.money >= 0;
+
+	const acceptHint = c => {
+		if (!data.legal) return "Только для законных организаций";
+		if (!data.canManage) return "Нужно право «Строительные подряды»";
+		if (data.money < 0) return "Бюджет организации в минусе";
+		if (data.reputation < c.requiredRep) return `Нужна репутация ${c.requiredRep}`;
+		if (data.active >= data.maxActive) return `Уже ${data.active} из ${data.maxActive} активных`;
+		return "";
+	};
+
+	const minutes = m => m >= 60
+	? `${Math.floor(m / 60)} ч ${m % 60 ? m % 60 + " мин" : ""}`
+	: `${m} мин`;
+
+	const click_handler = () => setTab("list");
+	const click_handler_1 = () => setTab("mine");
+	const click_handler_2 = c => select(c);
+	const click_handler_3 = () => canAccept(selected) && action("accept", selected.id);
+	const click_handler_4 = () => action("route", selected.id);
+	const click_handler_5 = () => action("shop", selected.id);
+	const click_handler_6 = () => onCancel(selected);
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*data*/ 1) {
+			$: $$invalidate(18, contracts = data ? data.contracts : []);
+		}
+
+		if ($$self.$$.dirty[0] & /*contracts*/ 262144) {
+			$: $$invalidate(3, mine = contracts.filter(c => c.status === "mine"));
+		}
+
+		if ($$self.$$.dirty[0] & /*tab, mine, contracts*/ 262154) {
+			$: $$invalidate(7, list = tab === "mine"
+			? mine
+			: contracts.filter(c => c.status !== "mine"));
+		}
+
+		if ($$self.$$.dirty[0] & /*contracts, selectedId*/ 262148) {
+			$: $$invalidate(6, selected = contracts.find(c => c.id === selectedId));
+		}
+
+		if ($$self.$$.dirty[0] & /*now, loadedAt*/ 196608) {
+			$: $$invalidate(5, elapsed = (now - loadedAt) / 1000);
+		}
+	};
+
+	return [
+		data,
+		tab,
+		selectedId,
+		mine,
+		confirmCancel,
+		elapsed,
+		selected,
+		list,
+		types,
+		select,
+		setTab,
+		action,
+		onCancel,
+		canAccept,
+		acceptHint,
+		minutes,
+		loadedAt,
+		now,
+		contracts,
+		click_handler,
+		click_handler_1,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4,
+		click_handler_5,
+		click_handler_6
+	];
+}
+
+class Contracts extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {}, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contracts);
+
+
+/***/ }),
+
 /***/ "./src/views/player/menu/elements/fractions/elements/form/form.svelte":
 /*!****************************************************************************!*\
   !*** ./src/views/player/menu/elements/fractions/elements/form/form.svelte ***!
@@ -257056,17 +260369,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _elements_weapons_weapons_svelte__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./elements/weapons/weapons.svelte */ "./src/views/player/menu/elements/fractions/elements/weapons/weapons.svelte");
 /* harmony import */ var _elements_bizwar_bizwar_svelte__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./elements/bizwar/bizwar.svelte */ "./src/views/player/menu/elements/fractions/elements/bizwar/bizwar.svelte");
 /* harmony import */ var _menu_online_svelte__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./menu/online.svelte */ "./src/views/player/menu/elements/fractions/menu/online.svelte");
-/* harmony import */ var _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./popup/input/index.svelte */ "./src/views/player/menu/elements/fractions/popup/input/index.svelte");
-/* harmony import */ var _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./popup/confirm/index.svelte */ "./src/views/player/menu/elements/fractions/popup/confirm/index.svelte");
-/* harmony import */ var _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./popup/list/index.svelte */ "./src/views/player/menu/elements/fractions/popup/list/index.svelte");
-/* harmony import */ var _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./popups/squadranks/index.svelte */ "./src/views/player/menu/elements/fractions/popups/squadranks/index.svelte");
-/* harmony import */ var _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./popups/bizinfo/index.svelte */ "./src/views/player/menu/elements/fractions/popups/bizinfo/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./popups/upgrade/index.svelte */ "./src/views/player/menu/elements/fractions/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./popups/weapons/index.svelte */ "./src/views/player/menu/elements/fractions/popups/weapons/index.svelte");
-/* harmony import */ var _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./popups/newleader/index.svelte */ "./src/views/player/menu/elements/fractions/popups/newleader/index.svelte");
-/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./data */ "./src/views/player/menu/elements/fractions/data.js");
-/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _elements_contracts_index_svelte__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./elements/contracts/index.svelte */ "./src/views/player/menu/elements/fractions/elements/contracts/index.svelte");
+/* harmony import */ var _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./popup/input/index.svelte */ "./src/views/player/menu/elements/fractions/popup/input/index.svelte");
+/* harmony import */ var _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./popup/confirm/index.svelte */ "./src/views/player/menu/elements/fractions/popup/confirm/index.svelte");
+/* harmony import */ var _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./popup/list/index.svelte */ "./src/views/player/menu/elements/fractions/popup/list/index.svelte");
+/* harmony import */ var _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./popups/squadranks/index.svelte */ "./src/views/player/menu/elements/fractions/popups/squadranks/index.svelte");
+/* harmony import */ var _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./popups/bizinfo/index.svelte */ "./src/views/player/menu/elements/fractions/popups/bizinfo/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./popups/upgrade/index.svelte */ "./src/views/player/menu/elements/fractions/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./popups/weapons/index.svelte */ "./src/views/player/menu/elements/fractions/popups/weapons/index.svelte");
+/* harmony import */ var _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./popups/newleader/index.svelte */ "./src/views/player/menu/elements/fractions/popups/newleader/index.svelte");
+/* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./data */ "./src/views/player/menu/elements/fractions/data.js");
+/* harmony import */ var api_functions__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! api/functions */ "./src/api/functions.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/views/player/menu/elements/fractions/index.svelte generated by Svelte v3.59.2 */
 
 
@@ -257104,7 +260418,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function create_if_block_9(ctx) {
+
+function create_if_block_10(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
 	let current;
@@ -257169,7 +260484,7 @@ function create_if_block_9(ctx) {
 	};
 }
 
-// (193:0) {#if isLoad}
+// (195:0) {#if isLoad}
 function create_if_block(ctx) {
 	let div12;
 	let div10;
@@ -257185,7 +260500,7 @@ function create_if_block(ctx) {
 	let t5;
 	let div2;
 	let t7;
-	let show_if_1 = (0,_data__WEBPACK_IMPORTED_MODULE_28__.isFraction)();
+	let show_if_2 = (0,_data__WEBPACK_IMPORTED_MODULE_29__.isFraction)();
 	let t8;
 	let div5;
 	let span1;
@@ -257205,31 +260520,34 @@ function create_if_block(ctx) {
 	let t18;
 	let div8;
 	let t20;
+	let show_if_1 = (0,_data__WEBPACK_IMPORTED_MODULE_29__.isOrganization)();
 	let t21;
-	let show_if;
 	let t22;
-	let online;
+	let show_if;
 	let t23;
+	let online;
+	let t24;
 	let div11;
 	let switch_instance;
 	let current;
 	let mounted;
 	let dispose;
-	let if_block0 = /*settings*/ ctx[4].invite && create_if_block_8(ctx);
-	let if_block1 = show_if_1 && create_if_block_7(ctx);
-	let if_block2 = /*settings*/ ctx[4].isLeader && create_if_block_6(ctx);
-	let if_block3 = /*settings*/ ctx[4].clothesEdit && create_if_block_5(ctx);
-	let if_block4 = /*settings*/ ctx[4].isLeader && create_if_block_4(ctx);
-	let if_block5 = /*settings*/ ctx[4].familyZone && create_if_block_3(ctx);
+	let if_block0 = /*settings*/ ctx[4].invite && create_if_block_9(ctx);
+	let if_block1 = show_if_2 && create_if_block_8(ctx);
+	let if_block2 = /*settings*/ ctx[4].isLeader && create_if_block_7(ctx);
+	let if_block3 = /*settings*/ ctx[4].clothesEdit && create_if_block_6(ctx);
+	let if_block4 = /*settings*/ ctx[4].isLeader && create_if_block_5(ctx);
+	let if_block5 = show_if_1 && create_if_block_4(ctx);
+	let if_block6 = /*settings*/ ctx[4].familyZone && create_if_block_3(ctx);
 
 	function select_block_type(ctx, dirty) {
 		if (!/*settings*/ ctx[4].isLeader) return create_if_block_1;
-		if (show_if == null) show_if = !!(0,_data__WEBPACK_IMPORTED_MODULE_28__.isOrganization)();
+		if (show_if == null) show_if = !!(0,_data__WEBPACK_IMPORTED_MODULE_29__.isOrganization)();
 		if (show_if) return create_if_block_2;
 	}
 
 	let current_block_type = select_block_type(ctx, -1);
-	let if_block6 = current_block_type && current_block_type(ctx);
+	let if_block7 = current_block_type && current_block_type(ctx);
 	online = new _menu_online_svelte__WEBPACK_IMPORTED_MODULE_19__.default({});
 	var switch_value = /*Views*/ ctx[5][/*selectedTableView*/ ctx[2]];
 
@@ -257289,8 +260607,10 @@ function create_if_block(ctx) {
 			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block6) if_block6.c();
 			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(online.$$.fragment);
+			if (if_block7) if_block7.c();
 			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(online.$$.fragment);
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_component)(switch_instance.$$.fragment);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fractions__left_title");
@@ -257358,8 +260678,10 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t21);
 			if (if_block6) if_block6.m(div10, null);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t22);
+			if (if_block7) if_block7.m(div10, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t23);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(online, div10, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t24);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
 			if (switch_instance) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.mount_component)(switch_instance, div11, null);
 			current = true;
@@ -257382,7 +260704,7 @@ function create_if_block(ctx) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_8(ctx);
+					if_block0 = create_if_block_9(ctx);
 					if_block0.c();
 					if_block0.m(div10, t4);
 				}
@@ -257395,7 +260717,7 @@ function create_if_block(ctx) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*selectedTableView*/ ctx[2] === "Main");
 			}
 
-			if (show_if_1) if_block1.p(ctx, dirty);
+			if (show_if_2) if_block1.p(ctx, dirty);
 
 			if (!current || dirty & /*selectedTableView*/ 4) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "active", /*selectedTableView*/ ctx[2] === "Members");
@@ -257409,7 +260731,7 @@ function create_if_block(ctx) {
 				if (if_block2) {
 					if_block2.p(ctx, dirty);
 				} else {
-					if_block2 = create_if_block_6(ctx);
+					if_block2 = create_if_block_7(ctx);
 					if_block2.c();
 					if_block2.m(div10, t15);
 				}
@@ -257422,7 +260744,7 @@ function create_if_block(ctx) {
 				if (if_block3) {
 					if_block3.p(ctx, dirty);
 				} else {
-					if_block3 = create_if_block_5(ctx);
+					if_block3 = create_if_block_6(ctx);
 					if_block3.c();
 					if_block3.m(div10, t16);
 				}
@@ -257435,7 +260757,7 @@ function create_if_block(ctx) {
 				if (if_block4) {
 					if_block4.p(ctx, dirty);
 				} else {
-					if_block4 = create_if_block_4(ctx);
+					if_block4 = create_if_block_5(ctx);
 					if_block4.c();
 					if_block4.m(div10, t17);
 				}
@@ -257448,28 +260770,30 @@ function create_if_block(ctx) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "active", /*selectedTableView*/ ctx[2] === "Parking");
 			}
 
+			if (show_if_1) if_block5.p(ctx, dirty);
+
 			if (/*settings*/ ctx[4].familyZone) {
-				if (if_block5) {
-					if_block5.p(ctx, dirty);
-				} else {
-					if_block5 = create_if_block_3(ctx);
-					if_block5.c();
-					if_block5.m(div10, t21);
-				}
-			} else if (if_block5) {
-				if_block5.d(1);
-				if_block5 = null;
-			}
-
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block6) {
-				if_block6.p(ctx, dirty);
-			} else {
-				if (if_block6) if_block6.d(1);
-				if_block6 = current_block_type && current_block_type(ctx);
-
 				if (if_block6) {
+					if_block6.p(ctx, dirty);
+				} else {
+					if_block6 = create_if_block_3(ctx);
 					if_block6.c();
 					if_block6.m(div10, t22);
+				}
+			} else if (if_block6) {
+				if_block6.d(1);
+				if_block6 = null;
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block7) {
+				if_block7.p(ctx, dirty);
+			} else {
+				if (if_block7) if_block7.d(1);
+				if_block7 = current_block_type && current_block_type(ctx);
+
+				if (if_block7) {
+					if_block7.c();
+					if_block7.m(div10, t23);
 				}
 			}
 
@@ -257516,9 +260840,10 @@ function create_if_block(ctx) {
 			if (if_block3) if_block3.d();
 			if (if_block4) if_block4.d();
 			if (if_block5) if_block5.d();
+			if (if_block6) if_block6.d();
 
-			if (if_block6) {
-				if_block6.d();
+			if (if_block7) {
+				if_block7.d();
 			}
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_component)(online);
@@ -257529,8 +260854,8 @@ function create_if_block(ctx) {
 	};
 }
 
-// (198:8) {#if settings.invite}
-function create_if_block_8(ctx) {
+// (200:8) {#if settings.invite}
+function create_if_block_9(ctx) {
 	let div;
 	let span;
 	let t_value = (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Пригласить') + "";
@@ -257565,8 +260890,8 @@ function create_if_block_8(ctx) {
 	};
 }
 
-// (207:8) {#if isFraction()}
-function create_if_block_7(ctx) {
+// (209:8) {#if isFraction()}
+function create_if_block_8(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -257610,8 +260935,8 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (221:8) {#if settings.isLeader}
-function create_if_block_6(ctx) {
+// (223:8) {#if settings.isLeader}
+function create_if_block_7(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -257655,8 +260980,8 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (227:8) {#if settings.clothesEdit}
-function create_if_block_5(ctx) {
+// (229:8) {#if settings.clothesEdit}
+function create_if_block_6(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -257700,8 +261025,8 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (233:8) {#if settings.isLeader}
-function create_if_block_4(ctx) {
+// (235:8) {#if settings.isLeader}
+function create_if_block_5(ctx) {
 	let div1;
 	let span;
 	let t0;
@@ -257745,7 +261070,44 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (255:8) {#if settings.familyZone}
+// (245:8) {#if isOrganization()}
+function create_if_block_4(ctx) {
+	let div1;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div1.innerHTML = `<span class="fractionsicon-tasks"></span> 
+            <div class="fractions__menu_text">Подряды</div>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fractions__menu_element");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*selectedTableView*/ ctx[2] === "Contracts");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*click_handler_8*/ ctx[21]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*selectedTableView*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", /*selectedTableView*/ ctx[2] === "Contracts");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (263:8) {#if settings.familyZone}
 function create_if_block_3(ctx) {
 	let div1;
 	let span;
@@ -257785,7 +261147,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (266:35) 
+// (274:35) 
 function create_if_block_2(ctx) {
 	let div1;
 	let span;
@@ -257825,7 +261187,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (261:8) {#if !settings.isLeader}
+// (269:8) {#if !settings.isLeader}
 function create_if_block_1(ctx) {
 	let div1;
 	let span;
@@ -257841,7 +261203,7 @@ function create_if_block_1(ctx) {
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div0.textContent = `${(0,_data__WEBPACK_IMPORTED_MODULE_28__.isOrganization)()
+			div0.textContent = `${(0,_data__WEBPACK_IMPORTED_MODULE_29__.isOrganization)()
 			? (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Покинуть организацию')
 			: (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Покинуть фракцию')}`;
 
@@ -257875,7 +261237,7 @@ function create_fragment(ctx) {
 	let current;
 	let mounted;
 	let dispose;
-	let if_block0 = /*Popups*/ ctx[6][/*selectedPopup*/ ctx[1]] && create_if_block_9(ctx);
+	let if_block0 = /*Popups*/ ctx[6][/*selectedPopup*/ ctx[1]] && create_if_block_10(ctx);
 	let if_block1 = /*isLoad*/ ctx[0] && create_if_block(ctx);
 
 	return {
@@ -257906,7 +261268,7 @@ function create_fragment(ctx) {
 						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
 					}
 				} else {
-					if_block0 = create_if_block_9(ctx);
+					if_block0 = create_if_block_10(ctx);
 					if_block0.c();
 					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block0, 1);
 					if_block0.m(t.parentNode, t);
@@ -257982,28 +261344,29 @@ function instance($$self, $$props, $$invalidate) {
 		BestPlayers: _elements_bestplayers_bestplayers_svelte__WEBPACK_IMPORTED_MODULE_15__.default,
 		Complaints: _elements_complaints_complaints_svelte__WEBPACK_IMPORTED_MODULE_16__.default,
 		Weapons: _elements_weapons_weapons_svelte__WEBPACK_IMPORTED_MODULE_17__.default,
-		BizWar: _elements_bizwar_bizwar_svelte__WEBPACK_IMPORTED_MODULE_18__.default
+		BizWar: _elements_bizwar_bizwar_svelte__WEBPACK_IMPORTED_MODULE_18__.default,
+		Contracts: _elements_contracts_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default
 	};
 
 	const Popups = {
-		Input: _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_20__.default,
-		Confirm: _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
-		List: _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_22__.default,
-		Upgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
-		SquadRanks: _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_23__.default,
-		BizInfo: _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_24__.default,
-		WeaponsPopup: _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_26__.default,
-		NewLeaderPopup: _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default
+		Input: _popup_input_index_svelte__WEBPACK_IMPORTED_MODULE_21__.default,
+		Confirm: _popup_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_22__.default,
+		List: _popup_list_index_svelte__WEBPACK_IMPORTED_MODULE_23__.default,
+		Upgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_26__.default,
+		SquadRanks: _popups_squadranks_index_svelte__WEBPACK_IMPORTED_MODULE_24__.default,
+		BizInfo: _popups_bizinfo_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
+		WeaponsPopup: _popups_weapons_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
+		NewLeaderPopup: _popups_newleader_index_svelte__WEBPACK_IMPORTED_MODULE_28__.default
 	};
 
 	let isLoad = false;
 
 	const onLoad = () => {
 		$$invalidate(0, isLoad = false);
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.setTableType)(selectView);
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setTableType)(selectView);
 		if (selectView === "Fractions") (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.setGroup)('.frac.main.'); else (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.setGroup)('.org.main.');
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Main");
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.setPopup)();
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Main");
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)();
 
 		setTimeout(
 			() => {
@@ -258015,7 +261378,7 @@ function instance($$self, $$props, $$invalidate) {
 
 	let selectedPopup = "";
 
-	_data__WEBPACK_IMPORTED_MODULE_28__.selectPopup.subscribe(value => {
+	_data__WEBPACK_IMPORTED_MODULE_29__.selectPopup.subscribe(value => {
 		$$invalidate(1, selectedPopup = value);
 	});
 
@@ -258023,13 +261386,13 @@ function instance($$self, $$props, $$invalidate) {
 		const { keyCode } = event;
 
 		if (keyCode === 27 && Popups[selectedPopup]) {
-			(0,_data__WEBPACK_IMPORTED_MODULE_28__.setPopup)();
+			(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)();
 		}
 	};
 
 	let selectedTableView = "";
 
-	_data__WEBPACK_IMPORTED_MODULE_28__.selectTableView.subscribe(value => {
+	_data__WEBPACK_IMPORTED_MODULE_29__.selectTableView.subscribe(value => {
 		$$invalidate(2, selectedTableView = value);
 	});
 
@@ -258038,7 +261401,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onOpenPopupInvate = () => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.setPopup)("Input", {
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)("Input", {
 			headerTitle: "Приглашение",
 			headerIcon: "fractionsicon-members",
 			input: {
@@ -258058,7 +261421,7 @@ function instance($$self, $$props, $$invalidate) {
 		getSettings();
 	};
 
-	(0,api_functions__WEBPACK_IMPORTED_MODULE_29__.addListernEvent)("table.tableInfo", onTableInfo);
+	(0,api_functions__WEBPACK_IMPORTED_MODULE_30__.addListernEvent)("table.tableInfo", onTableInfo);
 	let settings = {};
 
 	const getSettings = () => {
@@ -258072,7 +261435,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onLeave = () => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.setPopup)("Confirm", {
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)("Confirm", {
 			headerTitle: "Увольнение",
 			headerIcon: "fractionsicon-members",
 			text: `Вы действительно хотите покинуть организацию?`,
@@ -258086,7 +261449,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	const onDisolver = () => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.setPopup)("Confirm", {
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.setPopup)("Confirm", {
 			headerTitle: "Роспуск",
 			headerIcon: "fractionsicon-members",
 			text: `Вы действительно хотите распустить организацию?`,
@@ -258099,18 +261462,19 @@ function instance($$self, $$props, $$invalidate) {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.familyZoneOpen");
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_30__.onDestroy)(() => {
-		(0,_data__WEBPACK_IMPORTED_MODULE_28__.onInputBlur)();
+	(0,svelte__WEBPACK_IMPORTED_MODULE_31__.onDestroy)(() => {
+		(0,_data__WEBPACK_IMPORTED_MODULE_29__.onInputBlur)();
 	});
 
-	const click_handler = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Main");
-	const click_handler_1 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Tasks");
-	const click_handler_2 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Members");
-	const click_handler_3 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Squads");
-	const click_handler_4 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Ranks");
-	const click_handler_5 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Form");
-	const click_handler_6 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Accesses");
-	const click_handler_7 = () => (0,_data__WEBPACK_IMPORTED_MODULE_28__.setView)("Parking");
+	const click_handler = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Main");
+	const click_handler_1 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Tasks");
+	const click_handler_2 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Members");
+	const click_handler_3 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Squads");
+	const click_handler_4 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Ranks");
+	const click_handler_5 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Form");
+	const click_handler_6 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Accesses");
+	const click_handler_7 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Parking");
+	const click_handler_8 = () => (0,_data__WEBPACK_IMPORTED_MODULE_29__.setView)("Contracts");
 
 	$$self.$$set = $$props => {
 		if ('selectView' in $$props) $$invalidate(12, selectView = $$props.selectView);
@@ -258143,7 +261507,8 @@ function instance($$self, $$props, $$invalidate) {
 		click_handler_4,
 		click_handler_5,
 		click_handler_6,
-		click_handler_7
+		click_handler_7,
+		click_handler_8
 	];
 }
 
@@ -305963,6 +309328,7 @@ const businessType = [
     "CarWash",
     "PetShop",
     "Elite Autoroom", // 15
+    "Строительные материалы", // 16 (государственный)
 ]
 
 /***/ }),
@@ -314311,6 +317677,60 @@ const convertSecondsToString = (totalSeconds, timezone = true) => {
 
     return timeParts.slice(0, 2).join(" ");
 };
+
+/***/ }),
+
+/***/ "./src/views/fractions/contracts/materials.js":
+/*!****************************************************!*\
+  !*** ./src/views/fractions/contracts/materials.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "materialIcon": () => (/* binding */ materialIcon),
+/* harmony export */   "money": () => (/* binding */ money),
+/* harmony export */   "number": () => (/* binding */ number),
+/* harmony export */   "duration": () => (/* binding */ duration),
+/* harmony export */   "parseJson": () => (/* binding */ parseJson)
+/* harmony export */ });
+// Общие данные для UI подрядов: иконки материалов, форматирование денег и времени.
+
+const icons = {
+    concrete: { color: "#9AA4B2", svg: '<path d="M5 9l7-4 7 4v8l-7 4-7-4z"/><path d="M5 9l7 4 7-4M12 13v8"/>' },
+    brick: { color: "#E0714F", svg: '<rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 12h18M9 6v6M15 12v6"/>' },
+    steel: { color: "#7FB2E5", svg: '<path d="M4 7h16M4 17h16M7 7v10M17 7v10"/><path d="M7 12h10"/>' },
+    asphalt: { color: "#5C6370", svg: '<ellipse cx="12" cy="6" rx="7" ry="2.5"/><path d="M5 6v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6"/><path d="M5 11.5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/>' },
+    wood: { color: "#C8964F", svg: '<circle cx="7" cy="16" r="3"/><circle cx="17" cy="16" r="3"/><circle cx="12" cy="8" r="3"/>' },
+};
+
+const materialIcon = (id) => icons[id] || { color: "#F5A524", svg: '<rect x="4" y="4" width="16" height="16" rx="2"/>' };
+
+const money = (value) => {
+    const sign = value < 0 ? "-" : "";
+    return `${sign}$${Math.abs(Math.round(value || 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}`;
+};
+
+const number = (value) => Math.round(value || 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+const duration = (seconds) => {
+    seconds = Math.max(0, Math.floor(seconds || 0));
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    const pad = (v) => (v < 10 ? "0" : "") + v;
+    return `${pad(h)}:${pad(m)}:${pad(s)}`;
+};
+
+const parseJson = (value, fallback) => {
+    try {
+        return typeof value === "string" ? JSON.parse(value) : value || fallback;
+    } catch (e) {
+        return fallback;
+    }
+};
+
 
 /***/ }),
 

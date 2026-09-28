@@ -395,6 +395,7 @@ namespace NeptuneEvo.Organizations
                         organizationData.DefaultAccess.Add(RankToAccess.FamilyZone);
                         organizationData.DefaultAccess.Add(RankToAccess.IsWar);
                     }
+                    Contracts.ContractsCore.ApplyTypeAccess(organizationData);
 
                     if (status)
                     {
@@ -685,7 +686,8 @@ namespace NeptuneEvo.Organizations
                     organizationData.DefaultAccess.Add(RankToAccess.FamilyZone);
                     organizationData.DefaultAccess.Add(RankToAccess.IsWar);
                     
-                    organizationData.SaveCrimeOptions();
+                    Contracts.ContractsCore.ApplyTypeAccess(organizationData);
+                organizationData.SaveCrimeOptions();
                     
                     Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, $"Вы включили нелегальные возможности для семьи #{orgId}.", 3000);
                 }
@@ -705,7 +707,8 @@ namespace NeptuneEvo.Organizations
                     organizationData.DefaultAccess.Remove(RankToAccess.FamilyZone);
                     organizationData.DefaultAccess.Remove(RankToAccess.IsWar);
 
-                    organizationData.SaveCrimeOptions();
+                    Contracts.ContractsCore.ApplyTypeAccess(organizationData);
+                organizationData.SaveCrimeOptions();
                     
                     Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, $"Вы отключили нелегальные возможности для семьи #{orgId}.", 3000);
                 }
@@ -1182,6 +1185,7 @@ namespace NeptuneEvo.Organizations
                     organizationData.DefaultAccess.Remove(RankToAccess.IsWar);
                 }
                 
+                Contracts.ContractsCore.ApplyTypeAccess(organizationData);
                 organizationData.SaveCrimeOptions();
                 
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы сменили тип организации!", 3000);
@@ -1583,6 +1587,7 @@ namespace NeptuneEvo.Organizations
                                     organizationData.DefaultAccess.Add(RankToAccess.FamilyZone);
                                     organizationData.DefaultAccess.Add(RankToAccess.IsWar);
                                 }
+                                Contracts.ContractsCore.ApplyTypeAccess(organizationData);
 
 
                                 CustomColShape.CreateCylinderColShape(new Vector3(-1396.274, -480.7186, 57.100), 2f, 2f, organizationData.GetDimension(), ColShapeEnums.Organizations, 4);

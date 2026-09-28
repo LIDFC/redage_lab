@@ -211,6 +211,10 @@ namespace NeptuneEvo.Functions
         ApartmentHallExit,
         ApartmentElevator,
         BlackMarketDrop,
+
+        CargoPallet,
+        ContractDelivery,
+        ContractNpc,
     }
     class CustomColShape : Script
     {

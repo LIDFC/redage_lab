@@ -51777,7 +51777,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function add_css(target) {
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-e0wdpj", ".where.svelte-e0wdpj.svelte-e0wdpj{margin-bottom:1.4vh;border-color:rgba(216, 57, 75, 0.35);color:rgba(255, 255, 255, 0.8)}.where.ok.svelte-e0wdpj.svelte-e0wdpj{border-color:rgba(127, 211, 107, 0.45);color:#9fe08f}.list.svelte-e0wdpj.svelte-e0wdpj{display:flex;flex-direction:column;gap:1vh}.item.svelte-e0wdpj.svelte-e0wdpj{display:flex;align-items:center;gap:1.6vh;padding:1.4vh 1.8vh}.icon.svelte-e0wdpj.svelte-e0wdpj{width:6vh;height:6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0}.icon.svelte-e0wdpj img.svelte-e0wdpj{max-width:80%;max-height:80%}.info.svelte-e0wdpj.svelte-e0wdpj{flex:1;min-width:0}.name.svelte-e0wdpj.svelte-e0wdpj{font-size:1.7vh;font-weight:600;margin-bottom:0.4vh}.demand.svelte-e0wdpj.svelte-e0wdpj{display:flex;align-items:center;gap:1vh;margin-top:0.6vh}.bar.svelte-e0wdpj.svelte-e0wdpj{width:14vh;height:0.6vh;border-radius:0.3vh;background:rgba(255, 255, 255, 0.08);overflow:hidden}.bar.svelte-e0wdpj div.svelte-e0wdpj{height:100%}.sell.svelte-e0wdpj.svelte-e0wdpj{display:flex;flex-direction:column;gap:0.8vh;align-items:flex-end}.qty.svelte-e0wdpj.svelte-e0wdpj{width:9vh}.buttons.svelte-e0wdpj .bm__btn.svelte-e0wdpj{min-width:12vh;text-align:center}");
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-tlsgtn", ".where.svelte-tlsgtn.svelte-tlsgtn{margin-bottom:1.4vh;border-color:rgba(216, 57, 75, 0.35);color:rgba(255, 255, 255, 0.8)}.where.ok.svelte-tlsgtn.svelte-tlsgtn{border-color:rgba(127, 211, 107, 0.45);color:#9fe08f}.note.svelte-tlsgtn.svelte-tlsgtn{margin:-0.4vh 0 1.2vh;color:#f5c060}.list.svelte-tlsgtn.svelte-tlsgtn{display:flex;flex-direction:column;gap:1vh}.item.svelte-tlsgtn.svelte-tlsgtn{display:flex;align-items:center;gap:1.6vh;padding:1.4vh 1.8vh}.icon.svelte-tlsgtn.svelte-tlsgtn{width:6vh;height:6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center;flex-shrink:0}.icon.svelte-tlsgtn img.svelte-tlsgtn{max-width:80%;max-height:80%}.info.svelte-tlsgtn.svelte-tlsgtn{flex:1;min-width:0}.name.svelte-tlsgtn.svelte-tlsgtn{font-size:1.7vh;font-weight:600;margin-bottom:0.4vh}.demand.svelte-tlsgtn.svelte-tlsgtn{display:flex;align-items:center;gap:1vh;margin-top:0.6vh}.bar.svelte-tlsgtn.svelte-tlsgtn{width:14vh;height:0.6vh;border-radius:0.3vh;background:rgba(255, 255, 255, 0.08);overflow:hidden}.bar.svelte-tlsgtn div.svelte-tlsgtn{height:100%}.sell.svelte-tlsgtn.svelte-tlsgtn{display:flex;flex-direction:column;gap:0.8vh;align-items:flex-end}.qty.svelte-tlsgtn.svelte-tlsgtn{width:9vh}.buttons.svelte-tlsgtn .bm__btn.svelte-tlsgtn{min-width:12vh;text-align:center}");
 }
 
 function get_each_context(ctx, list, i) {
@@ -51814,7 +51814,7 @@ function create_else_block_1(ctx) {
 }
 
 // (40:8) {#if atPoint}
-function create_if_block_1(ctx) {
+function create_if_block_2(ctx) {
 	let t;
 
 	return {
@@ -51831,7 +51831,7 @@ function create_if_block_1(ctx) {
 }
 
 // (47:4) {#if !atPoint}
-function create_if_block(ctx) {
+function create_if_block_1(ctx) {
 	let div;
 	let mounted;
 	let dispose;
@@ -51859,7 +51859,32 @@ function create_if_block(ctx) {
 	};
 }
 
-// (79:4) {:else}
+// (52:0) {#if fence.payoutNote}
+function create_if_block(ctx) {
+	let div;
+	let t_value = /*fence*/ ctx[0].payoutNote + "";
+	let t;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "bm__muted small note svelte-tlsgtn");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*fence*/ 1 && t_value !== (t_value = /*fence*/ ctx[0].payoutNote + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (82:4) {:else}
 function create_else_block(ctx) {
 	let div;
 
@@ -51879,7 +51904,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (53:4) {#each fence.items as item (item.itemId)}
+// (56:4) {#each fence.items as item (item.itemId)}
 function create_each_block(key_1, ctx) {
 	let div12;
 	let div0;
@@ -51988,31 +52013,31 @@ function create_each_block(key_1, ctx) {
 			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (!(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.src_url_equal)(img.src, img_src_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.itemIcon)(/*item*/ ctx[16].itemId))) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "src", img_src_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "alt", "");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "icon svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(img, "class", "svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "icon svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "name svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__muted small");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "width", /*item*/ ctx[16].demand + "%");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background", /*demandColor*/ ctx[7](/*item*/ ctx[16].demand));
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bar svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "bar svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "bm__muted small");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "demand svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "info svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input qty svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "demand svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "info svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "bm__input qty svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "0");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*item*/ ctx[16].have);
 			input.value = input_value_value = /*n*/ ctx[17];
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "bm__muted small");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "bm__row");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__btn gold svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "bm__btn gold svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", !/*atPoint*/ ctx[2] || /*n*/ ctx[17] <= 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__btn primary svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "bm__btn primary svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div9, "disabled", !/*atPoint*/ ctx[2] || /*n*/ ctx[17] <= 0 || /*totalBtc*/ ctx[19] <= 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__row buttons svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "sell svelte-e0wdpj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__card item svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "bm__row buttons svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "sell svelte-tlsgtn");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "bm__card item svelte-tlsgtn");
 			this.first = div12;
 		},
 		m(target, anchor) {
@@ -52124,28 +52149,30 @@ function create_fragment(ctx) {
 	let div2;
 	let t4;
 	let t5;
+	let t6;
 	let div4;
 	let each_blocks = [];
 	let each_1_lookup = new Map();
-	let t6;
-	let div5;
 	let t7;
+	let div5;
 	let t8;
 	let t9;
-	let t10_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[4]) + "";
 	let t10;
+	let t11_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[4]) + "";
 	let t11;
+	let t12;
 	let mounted;
 	let dispose;
 
 	function select_block_type(ctx, dirty) {
-		if (/*atPoint*/ ctx[2]) return create_if_block_1;
+		if (/*atPoint*/ ctx[2]) return create_if_block_2;
 		return create_else_block_1;
 	}
 
 	let current_block_type = select_block_type(ctx, -1);
 	let if_block0 = current_block_type(ctx);
-	let if_block1 = !/*atPoint*/ ctx[2] && create_if_block(ctx);
+	let if_block1 = !/*atPoint*/ ctx[2] && create_if_block_1(ctx);
+	let if_block2 = /*fence*/ ctx[0].payoutNote && create_if_block(ctx);
 	let each_value = /*fence*/ ctx[0].items;
 	const get_key = ctx => /*item*/ ctx[16].itemId;
 
@@ -52175,6 +52202,8 @@ function create_fragment(ctx) {
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block1) if_block1.c();
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block2) if_block2.c();
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -52185,19 +52214,19 @@ function create_fragment(ctx) {
 				each_1_else.c();
 			}
 
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("В BTC Мавр платит на ");
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*bonus*/ ctx[3]);
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% больше (курс 1 BTC = ");
-			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
-			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("). Краденое находят при ограблении домов, детали — при разборке угнанных машин у Мавра.");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("В BTC Мавр платит на ");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*bonus*/ ctx[3]);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% больше (курс 1 BTC = ");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("). Краденое находят при ограблении домов, детали — при разборке угнанных машин у Мавра.");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "bm__h1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "flex", "1");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bm__btn");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__card bm__row where svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "bm__card bm__row where svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "ok", /*atPoint*/ ctx[2]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "list svelte-e0wdpj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "list svelte-tlsgtn");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "bm__muted small");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "margin-top", "1.2vh");
 		},
@@ -52212,6 +52241,8 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t4);
 			if (if_block1) if_block1.m(div3, null);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
+			if (if_block2) if_block2.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t6, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -52224,13 +52255,13 @@ function create_fragment(ctx) {
 				each_1_else.m(div4, null);
 			}
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t7);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t8);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t12);
 
 			if (!mounted) {
 				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*click_handler*/ ctx[10]);
@@ -52252,7 +52283,7 @@ function create_fragment(ctx) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
-					if_block1 = create_if_block(ctx);
+					if_block1 = create_if_block_1(ctx);
 					if_block1.c();
 					if_block1.m(div3, null);
 				}
@@ -52263,6 +52294,19 @@ function create_fragment(ctx) {
 
 			if (dirty & /*atPoint*/ 4) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "ok", /*atPoint*/ ctx[2]);
+			}
+
+			if (/*fence*/ ctx[0].payoutNote) {
+				if (if_block2) {
+					if_block2.p(ctx, dirty);
+				} else {
+					if_block2 = create_if_block(ctx);
+					if_block2.c();
+					if_block2.m(t6.parentNode, t6);
+				}
+			} else if (if_block2) {
+				if_block2.d(1);
+				if_block2 = null;
 			}
 
 			if (dirty & /*atPoint, Math, toInt, amounts, fence, rate, quote, bonus, sell, btc, usd, demandColor, itemIcon*/ 255) {
@@ -52281,8 +52325,8 @@ function create_fragment(ctx) {
 				}
 			}
 
-			if (dirty & /*bonus*/ 8) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, /*bonus*/ ctx[3]);
-			if (dirty & /*rate*/ 16 && t10_value !== (t10_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+			if (dirty & /*bonus*/ 8) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, /*bonus*/ ctx[3]);
+			if (dirty & /*rate*/ 16 && t11_value !== (t11_value = (0,_api__WEBPACK_IMPORTED_MODULE_1__.usd)(/*rate*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
 		},
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
@@ -52293,6 +52337,8 @@ function create_fragment(ctx) {
 			if_block0.d();
 			if (if_block1) if_block1.d();
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
+			if (if_block2) if_block2.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t6);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -52300,7 +52346,7 @@ function create_fragment(ctx) {
 			}
 
 			if (each_1_else) each_1_else.d();
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t6);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
 			mounted = false;
 			dispose();
@@ -249926,7 +249972,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function add_css(target) {
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1ehojzw", ".crg.svelte-1ehojzw.svelte-1ehojzw{width:100%;height:100%;display:flex;flex-direction:column;color:#fff;font-family:\"Gilroy\", sans-serif;overflow:hidden}.crg__empty.svelte-1ehojzw.svelte-1ehojzw{margin:auto;max-width:60vh;text-align:center;font-size:1.6vh;color:rgba(255, 255, 255, 0.6)}.crg__head.svelte-1ehojzw.svelte-1ehojzw{margin-bottom:1.6vh}.crg__title.svelte-1ehojzw.svelte-1ehojzw{font-size:2.6vh;font-weight:700}.crg__sub.svelte-1ehojzw.svelte-1ehojzw{font-size:1.4vh;color:rgba(255, 255, 255, 0.5);margin-top:0.4vh}.crg__tabs.svelte-1ehojzw.svelte-1ehojzw{display:flex;gap:0.8vh;margin-bottom:1.6vh}.crg__tab.svelte-1ehojzw.svelte-1ehojzw{padding:1vh 1.8vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);font-size:1.4vh;cursor:pointer;color:rgba(255, 255, 255, 0.7)}.crg__tab.svelte-1ehojzw.svelte-1ehojzw:hover{background:rgba(255, 255, 255, 0.09)}.crg__tab.active.svelte-1ehojzw.svelte-1ehojzw{background:#d8394b;color:#fff;font-weight:600}.crg__body.svelte-1ehojzw.svelte-1ehojzw{flex:1;overflow-y:auto;padding-right:1vh}.crg__status.svelte-1ehojzw.svelte-1ehojzw{display:flex;flex-wrap:wrap;gap:1vh;margin-bottom:1.6vh}.crg__status.svelte-1ehojzw div.svelte-1ehojzw{padding:1vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);border:1px solid rgba(255, 107, 107, 0.35);display:flex;flex-direction:column;gap:0.3vh;min-width:14vh}.crg__status.svelte-1ehojzw div.ok.svelte-1ehojzw{border-color:rgba(126, 211, 33, 0.45)}.crg__status.svelte-1ehojzw span.svelte-1ehojzw{font-size:1.2vh;color:rgba(255, 255, 255, 0.5)}.crg__status.svelte-1ehojzw b.svelte-1ehojzw{font-size:1.6vh}.crg__steps.svelte-1ehojzw.svelte-1ehojzw{margin:0 0 1.4vh;padding-left:2.4vh;display:flex;flex-direction:column;gap:1vh}.crg__steps.svelte-1ehojzw li.svelte-1ehojzw{list-style:decimal;font-size:1.45vh;line-height:1.45;color:rgba(255, 255, 255, 0.82)}.crg__steps.svelte-1ehojzw b.svelte-1ehojzw{color:#fff}.crg__warn.svelte-1ehojzw.svelte-1ehojzw{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(245, 165, 36, 0.1);border:1px solid rgba(245, 165, 36, 0.35);color:#f5c060;font-size:1.35vh;line-height:1.4;margin-bottom:1.4vh}.crg__buttons.svelte-1ehojzw.svelte-1ehojzw{display:flex;flex-wrap:wrap;gap:1vh}.crg__btn.svelte-1ehojzw.svelte-1ehojzw{padding:1.1vh 1.8vh;border-radius:1vh;background:rgba(216, 57, 75, 0.18);border:1px solid rgba(216, 57, 75, 0.5);font-size:1.4vh;cursor:pointer}.crg__btn.svelte-1ehojzw.svelte-1ehojzw:hover{background:rgba(216, 57, 75, 0.35)}.crg__prices.svelte-1ehojzw.svelte-1ehojzw{display:grid;grid-template-columns:1fr 1fr;gap:1vh;margin-bottom:1.4vh}.crg__price.svelte-1ehojzw.svelte-1ehojzw{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;flex-direction:column;gap:0.3vh}.crg__price.svelte-1ehojzw span.svelte-1ehojzw{font-size:1.4vh}.crg__price.svelte-1ehojzw b.svelte-1ehojzw{font-size:1.8vh;color:#f5a524}.crg__price.svelte-1ehojzw i.svelte-1ehojzw{font-style:normal;font-size:1.2vh;color:rgba(255, 255, 255, 0.5)}");
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-auda25", ".crg.svelte-auda25.svelte-auda25{width:100%;height:100%;display:flex;flex-direction:column;color:#fff;font-family:\"Gilroy\", sans-serif;overflow:hidden}.crg__empty.svelte-auda25.svelte-auda25{margin:auto;max-width:60vh;text-align:center;font-size:1.6vh;color:rgba(255, 255, 255, 0.6)}.crg__head.svelte-auda25.svelte-auda25{margin-bottom:1.6vh}.crg__title.svelte-auda25.svelte-auda25{font-size:2.6vh;font-weight:700}.crg__sub.svelte-auda25.svelte-auda25{font-size:1.4vh;color:rgba(255, 255, 255, 0.5);margin-top:0.4vh}.crg__fund.svelte-auda25.svelte-auda25{padding:1.1vh 1.4vh;border-radius:1vh;margin-bottom:1.4vh;font-size:1.35vh;line-height:1.4;color:rgba(255, 255, 255, 0.8);background:rgba(216, 57, 75, 0.1);border:1px solid rgba(216, 57, 75, 0.35)}.crg__fund.org.svelte-auda25.svelte-auda25{background:rgba(126, 211, 33, 0.08);border-color:rgba(126, 211, 33, 0.4)}.crg__fund.svelte-auda25 b.svelte-auda25{color:#fff}.crg__tabs.svelte-auda25.svelte-auda25{display:flex;gap:0.8vh;margin-bottom:1.6vh}.crg__tab.svelte-auda25.svelte-auda25{padding:1vh 1.8vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);font-size:1.4vh;cursor:pointer;color:rgba(255, 255, 255, 0.7)}.crg__tab.svelte-auda25.svelte-auda25:hover{background:rgba(255, 255, 255, 0.09)}.crg__tab.active.svelte-auda25.svelte-auda25{background:#d8394b;color:#fff;font-weight:600}.crg__body.svelte-auda25.svelte-auda25{flex:1;overflow-y:auto;padding-right:1vh}.crg__status.svelte-auda25.svelte-auda25{display:flex;flex-wrap:wrap;gap:1vh;margin-bottom:1.6vh}.crg__status.svelte-auda25 div.svelte-auda25{padding:1vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);border:1px solid rgba(255, 107, 107, 0.35);display:flex;flex-direction:column;gap:0.3vh;min-width:14vh}.crg__status.svelte-auda25 div.ok.svelte-auda25{border-color:rgba(126, 211, 33, 0.45)}.crg__status.svelte-auda25 span.svelte-auda25{font-size:1.2vh;color:rgba(255, 255, 255, 0.5)}.crg__status.svelte-auda25 b.svelte-auda25{font-size:1.6vh}.crg__steps.svelte-auda25.svelte-auda25{margin:0 0 1.4vh;padding-left:2.4vh;display:flex;flex-direction:column;gap:1vh}.crg__steps.svelte-auda25 li.svelte-auda25{list-style:decimal;font-size:1.45vh;line-height:1.45;color:rgba(255, 255, 255, 0.82)}.crg__steps.svelte-auda25 b.svelte-auda25{color:#fff}.crg__warn.svelte-auda25.svelte-auda25{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(245, 165, 36, 0.1);border:1px solid rgba(245, 165, 36, 0.35);color:#f5c060;font-size:1.35vh;line-height:1.4;margin-bottom:1.4vh}.crg__buttons.svelte-auda25.svelte-auda25{display:flex;flex-wrap:wrap;gap:1vh}.crg__btn.svelte-auda25.svelte-auda25{padding:1.1vh 1.8vh;border-radius:1vh;background:rgba(216, 57, 75, 0.18);border:1px solid rgba(216, 57, 75, 0.5);font-size:1.4vh;cursor:pointer}.crg__btn.svelte-auda25.svelte-auda25:hover{background:rgba(216, 57, 75, 0.35)}.crg__prices.svelte-auda25.svelte-auda25{display:grid;grid-template-columns:1fr 1fr;gap:1vh;margin-bottom:1.4vh}.crg__price.svelte-auda25.svelte-auda25{padding:1.2vh 1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.05);display:flex;flex-direction:column;gap:0.3vh}.crg__price.svelte-auda25 span.svelte-auda25{font-size:1.4vh}.crg__price.svelte-auda25 b.svelte-auda25{font-size:1.8vh;color:#f5a524}.crg__price.svelte-auda25 i.svelte-auda25{font-style:normal;font-size:1.2vh;color:rgba(255, 255, 255, 0.5)}");
 }
 
 function get_each_context(ctx, list, i) {
@@ -249945,9 +249991,11 @@ function get_each_context_1(ctx, list, i) {
 function create_else_block(ctx) {
 	let div2;
 	let t3;
-	let div3;
 	let t4;
+	let div3;
+	let t5;
 	let div4;
+	let if_block0 = /*data*/ ctx[0].payoutNote && create_if_block_8(ctx);
 	let each_value_1 = /*tabs*/ ctx[8];
 	let each_blocks = [];
 
@@ -249955,40 +250003,44 @@ function create_else_block(ctx) {
 		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
 	}
 
-	function select_block_type_1(ctx, dirty) {
+	function select_block_type_2(ctx, dirty) {
 		if (/*tab*/ ctx[1] === "burglary") return create_if_block_2;
 		if (/*tab*/ ctx[1] === "theft") return create_if_block_3;
 		if (/*tab*/ ctx[1] === "weed") return create_if_block_6;
 		if (/*tab*/ ctx[1] === "fence") return create_if_block_7;
 	}
 
-	let current_block_type = select_block_type_1(ctx, -1);
-	let if_block = current_block_type && current_block_type(ctx);
+	let current_block_type = select_block_type_2(ctx, -1);
+	let if_block1 = current_block_type && current_block_type(ctx);
 
 	return {
 		c() {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div2.innerHTML = `<div class="crg__title svelte-1ehojzw">Криминал</div> 
-            <div class="crg__sub svelte-1ehojzw">Где брать работу, что нужно с собой и куда сбывать добычу</div>`;
+			div2.innerHTML = `<div class="crg__title svelte-auda25">Криминал</div> 
+            <div class="crg__sub svelte-auda25">Где брать работу, что нужно с собой и куда сбывать добычу</div>`;
 
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].c();
 			}
 
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			if (if_block) if_block.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__head svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__tabs svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__body svelte-1ehojzw");
+			if (if_block1) if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__head svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__tabs svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__body svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -249997,11 +250049,24 @@ function create_else_block(ctx) {
 				}
 			}
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
-			if (if_block) if_block.m(div4, null);
+			if (if_block1) if_block1.m(div4, null);
 		},
 		p(ctx, dirty) {
+			if (/*data*/ ctx[0].payoutNote) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_8(ctx);
+					if_block0.c();
+					if_block0.m(t4.parentNode, t4);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
 			if (dirty & /*tab, tabs*/ 258) {
 				each_value_1 = /*tabs*/ ctx[8];
 				let i;
@@ -250025,28 +250090,30 @@ function create_else_block(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
-				if_block.p(ctx, dirty);
+			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
 			} else {
-				if (if_block) if_block.d(1);
-				if_block = current_block_type && current_block_type(ctx);
+				if (if_block1) if_block1.d(1);
+				if_block1 = current_block_type && current_block_type(ctx);
 
-				if (if_block) {
-					if_block.c();
-					if_block.m(div4, null);
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div4, null);
 				}
 			}
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
 
-			if (if_block) {
-				if_block.d();
+			if (if_block1) {
+				if_block1.d();
 			}
 		}
 	};
@@ -250060,7 +250127,7 @@ function create_if_block_1(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Криминальные заработки доступны бандам, мафии, байкерам и криминальным организациям.";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__empty svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__empty svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -250080,7 +250147,7 @@ function create_if_block(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Загрузка…";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__empty svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__empty svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -250092,7 +250159,124 @@ function create_if_block(ctx) {
 	};
 }
 
-// (47:12) {#each tabs as item}
+// (46:8) {#if data.payoutNote}
+function create_if_block_8(ctx) {
+	let div;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*data*/ ctx[0].isFraction) return create_if_block_9;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type_1(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__fund svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "org", !/*data*/ ctx[0].isFraction);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			if_block.m(div, null);
+		},
+		p(ctx, dirty) {
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div, null);
+				}
+			}
+
+			if (dirty & /*data*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "org", !/*data*/ ctx[0].isFraction);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if_block.d();
+		}
+	};
+}
+
+// (50:16) {:else}
+function create_else_block_1(ctx) {
+	let b_1;
+	let t1;
+	let t2_value = /*data*/ ctx[0].orgBonus + "";
+	let t2;
+	let t3;
+
+	return {
+		c() {
+			b_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b_1.textContent = "Без общака.";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Ваша организация не платит долю в общак банды, поэтому выплаты на ");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% выше, чем у фракционных банд. Цены в этом разделе уже с учётом этого.");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, b_1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*data*/ ctx[0].orgBonus + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(b_1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+		}
+	};
+}
+
+// (48:16) {#if data.isFraction}
+function create_if_block_9(ctx) {
+	let b_1;
+	let t1;
+	let t2_value = /*data*/ ctx[0].fundPercent + "";
+	let t2;
+	let t3;
+
+	return {
+		c() {
+			b_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b_1.textContent = "Общак банды.";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" С каждой продажи и найденных наличных ");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("% автоматически уходит в общак банды — все цены в этом разделе уже указаны за вычетом общака.");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-auda25");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, b_1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t3, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*data*/ ctx[0].fundPercent + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(b_1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t3);
+		}
+	};
+}
+
+// (56:12) {#each tabs as item}
 function create_each_block_1(ctx) {
 	let div;
 	let t_1_value = /*item*/ ctx[18].name + "";
@@ -250108,7 +250292,7 @@ function create_each_block_1(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t_1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_1_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__tab svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__tab svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*tab*/ ctx[1] === /*item*/ ctx[18].key);
 		},
 		m(target, anchor) {
@@ -250135,7 +250319,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (110:38) 
+// (119:38) 
 function create_if_block_7(ctx) {
 	let ol;
 	let li0;
@@ -250166,10 +250350,10 @@ function create_if_block_7(ctx) {
 		c() {
 			ol = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("ol");
 			li0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li0.innerHTML = `<b class="svelte-1ehojzw">Приезжайте к Мавру лично</b> и выберите «Скупка краденого».`;
+			li0.innerHTML = `<b class="svelte-auda25">Приезжайте к Мавру лично</b> и выберите «Скупка краденого».`;
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li1.innerHTML = `<b class="svelte-1ehojzw">Выберите товар и количество.</b> Цена падает с каждой продажей и восстанавливается со временем — выгоднее продавать понемногу.`;
+			li1.innerHTML = `<b class="svelte-auda25">Выберите товар и количество.</b> Цена падает с каждой продажей и восстанавливается со временем — выгоднее продавать понемногу.`;
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
 			b2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
@@ -250188,14 +250372,14 @@ function create_if_block_7(ctx) {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1.textContent = "Мавр";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "crg__prices svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__buttons svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "crg__prices svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__buttons svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, ol, anchor);
@@ -250265,7 +250449,7 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (87:37) 
+// (96:37) 
 function create_if_block_6(ctx) {
 	let div5;
 	let div0;
@@ -250503,45 +250687,45 @@ function create_if_block_6(ctx) {
 			t73 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div9.textContent = "Мавр — семена и вода";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", /*w*/ ctx[5].seeds > 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "ok", /*w*/ ctx[5].bottles > 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b4, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "ok", /*w*/ ctx[5].spotsFree > 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__status svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b5, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b6, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b7, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b8, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b9, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b10, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li5, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b11, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li6, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "crg__warn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "crg__buttons svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__status svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b6, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b7, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b8, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b9, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b10, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b11, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li6, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "crg__warn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "crg__buttons svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
@@ -250706,7 +250890,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (70:38) 
+// (79:38) 
 function create_if_block_3(ctx) {
 	let div1;
 	let div0;
@@ -250763,16 +250947,16 @@ function create_if_block_3(ctx) {
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("у Мавра → «Заказ на угон». Новый заказ на команду — раз в 5 минут.");
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li1.innerHTML = `<b class="svelte-1ehojzw">Найдите машину.</b> Она отмечена в GPS и стоит где-то на улице. Модель и номер пишутся в уведомлении.`;
+			li1.innerHTML = `<b class="svelte-auda25">Найдите машину.</b> Она отмечена в GPS и стоит где-то на улице. Модель и номер пишутся в уведомлении.`;
 			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li2.innerHTML = `<b class="svelte-1ehojzw">Угоните.</b> Сесть может только ваша команда. С шансом 30% сработает сигнализация — полиция получит метку, вы — звёзды.`;
+			li2.innerHTML = `<b class="svelte-auda25">Угоните.</b> Сесть может только ваша команда. С шансом 30% сработает сигнализация — полиция получит метку, вы — звёзды.`;
 			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li3.innerHTML = `<b class="svelte-1ehojzw">Пригоните к Мавру на разборку.</b> Заезжайте в зону разборки (20 м вокруг Мавра) и нажмите E за рулём. Через 10 секунд машину разберут на «Детали угнанного авто» — чем целее машина, тем больше деталей.`;
+			li3.innerHTML = `<b class="svelte-auda25">Пригоните к Мавру на разборку.</b> Заезжайте в зону разборки (20 м вокруг Мавра) и нажмите E за рулём. Через 10 секунд машину разберут на «Детали угнанного авто» — чем целее машина, тем больше деталей.`;
 			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li4.innerHTML = `<b class="svelte-1ehojzw">Продайте детали</b> Мавру в «Скупке краденого».`;
+			li4.innerHTML = `<b class="svelte-auda25">Продайте детали</b> Мавру в «Скупке краденого».`;
 			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2.textContent = "Полиция может отобрать машину и сдать её на штрафстоянку. Машину миссии «Перевозка» разобрать нельзя — её везут по адресу.";
@@ -250785,22 +250969,22 @@ function create_if_block_3(ctx) {
 			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div4.textContent = "Разборка";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", !/*t*/ ctx[3].cooldown);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "crg__status svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__warn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__buttons svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "crg__status svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__warn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__buttons svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
@@ -250893,7 +251077,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (53:12) {#if tab === "burglary"}
+// (62:12) {#if tab === "burglary"}
 function create_if_block_2(ctx) {
 	let div3;
 	let div0;
@@ -250971,16 +251155,16 @@ function create_if_block_2(ctx) {
 			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" за штуку, лучше взять 2–3 — они ломаются) и наденьте маску.");
 			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li1.innerHTML = `<b class="svelte-1ehojzw">Выберите дом.</b> Подойдёт любой ничейный дом или запертый чужой дом (не квартира и не парковка). Грабить можно в любое время суток. Если хозяин или сожители в игре — им придёт тревога.`;
+			li1.innerHTML = `<b class="svelte-auda25">Выберите дом.</b> Подойдёт любой ничейный дом или запертый чужой дом (не квартира и не парковка). Грабить можно в любое время суток. Если хозяин или сожители в игре — им придёт тревога.`;
 			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li2.innerHTML = `<b class="svelte-1ehojzw">Взломайте замок.</b> Нажмите E у двери → «Да». Мышью двигайте отмычку, клавишами A/D поворачивайте замок. Если замок упирается — отмычка гнётся, найдите другой угол. ESC — отменить.`;
+			li2.innerHTML = `<b class="svelte-auda25">Взломайте замок.</b> Нажмите E у двери → «Да». Мышью двигайте отмычку, клавишами A/D поворачивайте замок. Если замок упирается — отмычка гнётся, найдите другой угол. ESC — отменить.`;
 			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li3.innerHTML = `<b class="svelte-1ehojzw">Обыщите дом.</b> Внутри отмечены 3 места — подойдите и нажмите E. На всё 5 минут, потом соседи точно позвонят в полицию.`;
+			li3.innerHTML = `<b class="svelte-auda25">Обыщите дом.</b> Внутри отмечены 3 места — подойдите и нажмите E. На всё 5 минут, потом соседи точно позвонят в полицию.`;
 			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li4.innerHTML = `<b class="svelte-1ehojzw">Сбудьте краденое.</b> Техника и украшения продаются Мавру в «Скупке краденого».`;
+			li4.innerHTML = `<b class="svelte-auda25">Сбудьте краденое.</b> Техника и украшения продаются Мавру в «Скупке краденого».`;
 			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div4.textContent = "Соседи вызывают полицию с шансом 35–50% при взломе и 15% при выходе с добычей — это всегда звёзды розыска. Один дом можно грабить раз в 6 часов, сами вы отдыхаете 15 минут.";
@@ -250988,29 +251172,29 @@ function create_if_block_2(ctx) {
 			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div5.textContent = "Мавр — отмычки и скупка";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div0, "ok", /*b*/ ctx[4].picks > 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "ok", /*b*/ ctx[4].mask);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "ok", !/*b*/ ctx[4].cooldown);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__status svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__warn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__btn svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "crg__buttons svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__status svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li0, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "crg__warn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "crg__btn svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "crg__buttons svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
@@ -251091,7 +251275,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (117:20) {#each f.items as item}
+// (126:20) {#each f.items as item}
 function create_each_block(ctx) {
 	let div;
 	let span;
@@ -251130,10 +251314,10 @@ function create_each_block(ctx) {
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
 			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
 			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(i, "class", "svelte-1ehojzw");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__price svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b_1, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(i, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__price svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -251165,7 +251349,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (75:53) {#if data.isGang}
+// (84:53) {#if data.isGang}
 function create_if_block_5(ctx) {
 	let t_1;
 
@@ -251182,7 +251366,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (83:20) {#if data.isGang}
+// (92:20) {#if data.isGang}
 function create_if_block_4(ctx) {
 	let div;
 	let mounted;
@@ -251192,7 +251376,7 @@ function create_if_block_4(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Carter Scott — заказы банды";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__btn svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg__btn svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -251228,7 +251412,7 @@ function create_fragment(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if_block.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg svelte-1ehojzw");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "crg svelte-auda25");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);

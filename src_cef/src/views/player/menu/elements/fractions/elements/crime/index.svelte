@@ -43,6 +43,15 @@
             <div class="crg__title">Криминал</div>
             <div class="crg__sub">Где брать работу, что нужно с собой и куда сбывать добычу</div>
         </div>
+        {#if data.payoutNote}
+            <div class="crg__fund" class:org={!data.isFraction}>
+                {#if data.isFraction}
+                    <b>Общак банды.</b> С каждой продажи и найденных наличных {data.fundPercent}% автоматически уходит в общак банды — все цены в этом разделе уже указаны за вычетом общака.
+                {:else}
+                    <b>Без общака.</b> Ваша организация не платит долю в общак банды, поэтому выплаты на {data.orgBonus}% выше, чем у фракционных банд. Цены в этом разделе уже с учётом этого.
+                {/if}
+            </div>
+        {/if}
         <div class="crg__tabs">
             {#each tabs as item}
                 <div class="crg__tab" class:active={tab === item.key} on:click={() => (tab = item.key)}>{item.name}</div>
@@ -136,6 +145,9 @@
     .crg__head { margin-bottom: 1.6vh; }
     .crg__title { font-size: 2.6vh; font-weight: 700; }
     .crg__sub { font-size: 1.4vh; color: rgba(255, 255, 255, 0.5); margin-top: 0.4vh; }
+    .crg__fund { padding: 1.1vh 1.4vh; border-radius: 1vh; margin-bottom: 1.4vh; font-size: 1.35vh; line-height: 1.4; color: rgba(255, 255, 255, 0.8); background: rgba(216, 57, 75, 0.1); border: 1px solid rgba(216, 57, 75, 0.35); }
+    .crg__fund.org { background: rgba(126, 211, 33, 0.08); border-color: rgba(126, 211, 33, 0.4); }
+    .crg__fund b { color: #fff; }
     .crg__tabs { display: flex; gap: 0.8vh; margin-bottom: 1.6vh; }
     .crg__tab { padding: 1vh 1.8vh; border-radius: 1vh; background: rgba(255, 255, 255, 0.05); font-size: 1.4vh; cursor: pointer; color: rgba(255, 255, 255, 0.7); }
     .crg__tab:hover { background: rgba(255, 255, 255, 0.09); }

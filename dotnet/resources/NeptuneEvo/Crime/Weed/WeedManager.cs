@@ -347,8 +347,8 @@ namespace NeptuneEvo.Crime.Weed
                 spots = Cfg.Spots.Count,
                 spotsFree = Cfg.Spots.Where((s, i) => !Plants.Values.Any(p => p.SpotIndex == i)).Count(),
                 buyers = Buyers.Count,
-                buyerPrice = Buyers.Count > 0 ? Buyers.Min(b => b.Config.Price) : 0,
-                buyerPriceMax = Buyers.Count > 0 ? Buyers.Max(b => b.Config.Price) : 0,
+                buyerPrice = Buyers.Count > 0 ? CrimeCore.Payout(player, Buyers.Min(b => b.Config.Price)) : 0,
+                buyerPriceMax = Buyers.Count > 0 ? CrimeCore.Payout(player, Buyers.Max(b => b.Config.Price)) : 0,
             };
         }
 
@@ -815,7 +815,7 @@ namespace NeptuneEvo.Crime.Weed
                 var have = Chars.Repository.getCountItem($"char_{player.GetUUID()}", ItemId.Drugs, false);
                 if (have <= 0)
                 {
-                    Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, $"— Есть трава? Беру по ${buyer.Config.Price} за грамм.", 4000);
+                    Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, $"— Есть трава? Беру по ${CrimeCore.Payout(player, buyer.Config.Price)} за грамм.", 4000);
                     return;
                 }
                 var left = Remaining(buyer);
@@ -825,7 +825,7 @@ namespace NeptuneEvo.Crime.Weed
                     return;
                 }
                 SellTarget[player.GetUUID()] = index;
-                Trigger.ClientEvent(player, "openInput", $"Продать траву по ${buyer.Config.Price}",
+                Trigger.ClientEvent(player, "openInput", $"Продать траву по ${CrimeCore.Payout(player, buyer.Config.Price)}",
                     $"У вас {have} г, покупатель возьмёт до {left} г", 4, "weed_sell");
             }
             catch (Exception e)
@@ -861,11 +861,11 @@ namespace NeptuneEvo.Crime.Weed
                 }
                 Chars.Repository.Remove(player, location, "inventory", ItemId.Drugs, amount);
                 buyer.SoldToday += amount;
-                var money = amount * buyer.Config.Price;
+                var money = CrimeCore.Payout(player, (long)amount * buyer.Config.Price);
                 MoneySystem.Wallet.Change(player, money);
                 GameLog.Money("server", $"player({characterData.UUID})", money, $"weedSell({index},{amount})");
                 BlackMarket.Audit.AuditLog.Write("weed_sell_npc", characterData.UUID, details: new { buyer = index, amount, money });
-                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Продано {amount} г за ${money}", 4000);
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Продано {amount} г за ${money}{CrimeCore.FundSuffix(player)}", 4000);
                 if (CrimeCore.Roll(Cfg.SellPoliceChance))
                     CrimeCore.CallPolice(player, player.Position, $"weedsell_{index}", "Поступил звонок: на улице торгуют наркотиками", StarsSell, "Сбыт наркотиков");
             }

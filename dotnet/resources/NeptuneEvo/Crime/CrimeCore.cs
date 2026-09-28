@@ -24,15 +24,39 @@ namespace NeptuneEvo.Crime
         public static readonly Random Rnd = new Random();
 
         /// <summary>Банды, байкеры, мафия или организация с криминальными возможностями.</summary>
-        public static bool IsCriminal(ExtPlayer player)
+        public static bool IsCriminal(ExtPlayer player) =>
+            IsCriminalFraction(player) || (player.GetOrganizationData()?.CrimeOptions ?? false);
+
+        /// <summary>Член государственной криминальной фракции (банда, байкеры, мафия).</summary>
+        public static bool IsCriminalFraction(ExtPlayer player)
         {
             var fraction = player.GetFractionMemberData();
-            if (fraction != null && Fractions.Manager.FractionTypes.TryGetValue(fraction.Id, out var type)
-                && (type == FractionsType.Gangs || type == FractionsType.Bikers || type == FractionsType.Mafia))
-                return true;
-            var organization = player.GetOrganizationData();
-            return organization != null && organization.CrimeOptions;
+            return fraction != null && Fractions.Manager.FractionTypes.TryGetValue(fraction.Id, out var type)
+                && (type == FractionsType.Gangs || type == FractionsType.Bikers || type == FractionsType.Mafia);
         }
+
+        /// <summary>
+        /// Денежный коэффициент криминальных заработков (скупка, покупатели травы, наличные при ограблении).
+        /// Фракционные банды получают обычную цену — для игрока это объясняется долей «в общак банды»
+        /// (реально никуда не переводится); криминальные организации работают «без общака» и получают больше.
+        /// </summary>
+        public const double OrgPayoutFactor = 1.25;
+        public const int GangCommonFundPercent = 20;
+
+        public static double PayoutFactor(ExtPlayer player) =>
+            IsCriminalFraction(player) ? 1.0 : IsCriminal(player) ? OrgPayoutFactor : 1.0;
+
+        public static int Payout(ExtPlayer player, long amount) => (int)Math.Round(amount * PayoutFactor(player));
+
+        /// <summary>Хвост к уведомлению о выплате: « (20% — в общак банды)» для фракционных банд.</summary>
+        public static string FundSuffix(ExtPlayer player) =>
+            IsCriminalFraction(player) ? $" ({GangCommonFundPercent}% ушло в общак банды)" : "";
+
+        /// <summary>Пояснение к цене для игрока.</summary>
+        public static string PayoutNote(ExtPlayer player) =>
+            IsCriminalFraction(player)
+                ? $"{GangCommonFundPercent}% с каждой сделки уходит в общак банды"
+                : IsCriminal(player) ? $"Организация работает без общака банды — выплаты на {(int)Math.Round((OrgPayoutFactor - 1) * 100)}% выше" : "";
 
         /// <summary>Игровой час: время сервера или замороженное администратором.</summary>
         public static int Hour => Admin.TimeChanged ? Admin.SetTime[0] : DateTime.Now.Hour;

@@ -49,6 +49,9 @@
     {/if}
 </div>
 
+{#if fence.payoutNote}
+    <div class="bm__muted small note">{fence.payoutNote}</div>
+{/if}
 <div class="list">
     {#each fence.items as item (item.itemId)}
         {@const n = Math.min(Math.max(0, toInt(amounts[item.itemId] ?? item.have)), item.have)}
@@ -91,6 +94,7 @@
         color: rgba(255, 255, 255, 0.8);
     }
     .where.ok { border-color: rgba(127, 211, 107, 0.45); color: #9fe08f; }
+    .note { margin: -0.4vh 0 1.2vh; color: #f5c060; }
     .list { display: flex; flex-direction: column; gap: 1vh; }
     .item { display: flex; align-items: center; gap: 1.6vh; padding: 1.4vh 1.8vh; }
     .icon { width: 6vh; height: 6vh; border-radius: 1vh; background: rgba(255, 255, 255, 0.05); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }

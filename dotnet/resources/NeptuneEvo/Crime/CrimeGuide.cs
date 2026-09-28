@@ -35,6 +35,10 @@ namespace NeptuneEvo.Crime
                     {
                         allowed = true,
                         isGang,
+                        isFraction = CrimeCore.IsCriminalFraction(player),
+                        payoutNote = CrimeCore.PayoutNote(player),
+                        fundPercent = CrimeCore.GangCommonFundPercent,
+                        orgBonus = (int)Math.Round((CrimeCore.OrgPayoutFactor - 1) * 100),
                         burglary = new
                         {
                             picks = LockBreak.CountPicks(player),

@@ -56,18 +56,19 @@ namespace NeptuneEvo.BlackMarket.Fence
             return Math.Max(0, demand.Saturation - hours * Cfg.RecoverPercentPerHour / 100.0);
         }
 
-        private static int UnitPrice(FenceItem item, double saturation) =>
-            (int)Math.Round(item.BasePrice * Math.Max(Cfg.MinFactor, 1 - saturation));
+        /// <summary>Цена штуки. factor — коэффициент игрока (Crime.CrimeCore.PayoutFactor: банда 1.0, криминальная организация выше).</summary>
+        private static int UnitPrice(FenceItem item, double saturation, double factor) =>
+            (int)Math.Round(item.BasePrice * factor * Math.Max(Cfg.MinFactor, 1 - saturation));
 
         /// <summary>Сколько $ дадут за count штук (каждая следующая штука уже с новым насыщением).</summary>
-        private static long Quote(FenceItem item, int count, out double saturationAfter)
+        private static long Quote(FenceItem item, int count, double factor, out double saturationAfter)
         {
             var saturation = Saturation(item.ItemId);
             long total = 0;
             var step = 1.0 / Math.Max(1, item.Capacity);
             for (var i = 0; i < count; i++)
             {
-                total += UnitPrice(item, saturation);
+                total += UnitPrice(item, saturation, factor);
                 saturation = Math.Min(1, saturation + step);
             }
             saturationAfter = saturation;
@@ -78,8 +79,10 @@ namespace NeptuneEvo.BlackMarket.Fence
         {
             var config = BlackMarketConfig.Current;
             var location = $"char_{player.GetUUID()}";
+            var factor = Crime.CrimeCore.PayoutFactor(player);
             return new
             {
+                payoutNote = Crime.CrimeCore.PayoutNote(player),
                 btcBonus = Cfg.BtcBonusPercent,
                 minFactor = Cfg.MinFactor,
                 rate = config.ExchangeUsdPerBtc,
@@ -91,8 +94,8 @@ namespace NeptuneEvo.BlackMarket.Fence
                         itemId = i.ItemId,
                         name = Methods.Lots.ItemName((ItemId)i.ItemId),
                         have = Chars.Repository.getCountItem(location, (ItemId)i.ItemId, false),
-                        price = UnitPrice(i, saturation),
-                        basePrice = i.BasePrice,
+                        price = UnitPrice(i, saturation, factor),
+                        basePrice = i.BasePrice * factor,
                         demand = (int)Math.Round(Math.Max(Cfg.MinFactor, 1 - saturation) * 100),
                         step = 1.0 / Math.Max(1, i.Capacity),
                     };
@@ -124,7 +127,7 @@ namespace NeptuneEvo.BlackMarket.Fence
                 if (Chars.Repository.getCountItem(location, (ItemId)itemId, false) < count)
                     return OpResult.Fail("У вас нет столько в инвентаре");
 
-                var usd = Quote(item, count, out var saturationAfter);
+                var usd = Quote(item, count, Crime.CrimeCore.PayoutFactor(player), out var saturationAfter);
                 if (usd <= 0)
                     return OpResult.Fail("Слишком мало");
                 long btc = 0;
@@ -159,8 +162,8 @@ namespace NeptuneEvo.BlackMarket.Fence
                     source: toBtc ? Source.Personal : Source.Cash, details: new { usd, btc });
 
                 return OpResult.Success(toBtc
-                    ? $"Мавр забрал товар: +{BlackMarketCore.Btc(btc)}"
-                    : $"Мавр забрал товар: +{MoneySystem.Wallet.Format(usd)}$");
+                    ? $"Мавр забрал товар: +{BlackMarketCore.Btc(btc)}{Crime.CrimeCore.FundSuffix(player)}"
+                    : $"Мавр забрал товар: +{MoneySystem.Wallet.Format(usd)}${Crime.CrimeCore.FundSuffix(player)}");
             }
         }
     }

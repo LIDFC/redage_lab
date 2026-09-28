@@ -269,10 +269,10 @@ namespace NeptuneEvo.Crime.Burglary
                 }
                 else
                 {
-                    var cash = (int)(CrimeCore.Rnd.Next(200, 901) * mult);
+                    var cash = CrimeCore.Payout(player, (long)(CrimeCore.Rnd.Next(200, 901) * mult));
                     MoneySystem.Wallet.Change(player, cash);
                     GameLog.Money("server", $"player({characterData.UUID})", cash, $"burglary({session.HouseId})");
-                    found = $"Наличные ${cash}";
+                    found = $"Наличные ${cash}{CrimeCore.FundSuffix(player)}";
                 }
                 if (found == null)
                     return; // инвентарь полон — точку можно обыскать ещё раз

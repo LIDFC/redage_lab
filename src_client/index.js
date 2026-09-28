@@ -319,6 +319,7 @@ require('./admin/noclip.js');
 require('./admin/modelCheck.js');
 require("./admin/spectate.js");
 require("./admin/cinematiccamera.js");
+require("./admin/cfgpanel.js");
 
 require("./inventory/attachments.js");
 require("./inventory/dropEditor.js");

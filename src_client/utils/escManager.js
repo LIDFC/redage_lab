@@ -16,6 +16,7 @@ const viewClose = {
     HouseRielt: () => mp.events.call("client.rieltagency.close"),
     PlayerLockBreak: () => mp.events.call("client.lockbreak.cancel"),
     PlayerCyberHack: () => mp.events.call("client.cyberhack.cancel"),
+    AdminConfigPanel: () => mp.events.call("client.cfgpanel.close"),
     PlayerWarehouse: () => mp.events.call("client.warehouse.close"),
     QuestsDialog: () => mp.events.call("client.quest.close"),
     BusinessPetShop: () => mp.events.call("closePetshop"),

@@ -45,6 +45,27 @@ namespace NeptuneEvo.World.Weather
             {13, new List<int>{10, 15}},
         };
         
+        /// <summary>
+        /// Температура с учётом сезона (по реальному месяцу): таблица WeatherTemp — летняя,
+        /// весной и осенью прохладнее, зимой ещё прохладнее, но без минуса — это Лос-Сантос.
+        /// </summary>
+        private static int SeasonShift()
+        {
+            switch (DateTime.Now.Month)
+            {
+                case 12: case 1: case 2: return -10;
+                case 3: case 4: case 5: return -4;
+                case 9: case 10: case 11: return -7;
+                default: return 0;
+            }
+        }
+
+        private static int RandomTemp(Random rand, int weatherId)
+        {
+            var temp = WeatherTemp.TryGetValue(weatherId, out var range) ? range : WeatherTemp[1];
+            return Math.Max(2, rand.Next(temp[0], temp[1]) + SeasonShift());
+        }
+
         private static List<WeatherData> WeatherRandom = new List<WeatherData>();
         
         public static string WeatherJson = "";
@@ -86,14 +107,12 @@ namespace NeptuneEvo.World.Weather
                 var weather = WeatherList[defaultWeather];
                 defaultWeather = GetRandomWeatherId(weather);
                 
-                var temp = WeatherTemp[defaultWeather];
-                
                 weatherRandom.Add(new WeatherData
                 {
                     WeatherId = defaultWeather,
                     Hour = hour,
                     Minute = minute,
-                    Temp = rand.Next(temp[0], temp[1])
+                    Temp = RandomTemp(rand, defaultWeather)
                 });
                 minute += 30;
                 
@@ -213,8 +232,8 @@ namespace NeptuneEvo.World.Weather
                     var weather = WeatherList[lastWeatherData.WeatherId];
                     var weatherId = GetRandomWeatherId(weather);
                     
-                    var temp = WeatherTemp[lastWeatherData.WeatherId];
-                    var tempCount = rand.Next(temp[0], temp[1]);
+                    // Температура — по погоде нового интервала (раньше бралась по предыдущему)
+                    var tempCount = RandomTemp(rand, weatherId);
                     Trigger.ClientEventForAll("client.phone.addWeather", weatherId, hour, minute, tempCount);
                     
                     WeatherRandom.Add(new WeatherData

@@ -380,6 +380,7 @@ function addItems()
 
 
 	mp.attachments.register('mine_pickaxe', 'prop_tool_pickaxe', 6286, new mp.Vector3(0.048031863, -0.025162484, -0.023895439), new mp.Vector3(-77.863785, 0, -5.8967414), true);
+	mp.attachments.register('cargo_box', 'hei_prop_heist_box', 28422, new mp.Vector3(0.0, -0.03, 0.0), new mp.Vector3(5.0, 0.0, 0.0), true);
 	mp.attachments.register('mine_rock', 'prop_rock_5_smash2', 6286, new mp.Vector3(0.12810344, 0.0496148, -0.24910454), new mp.Vector3(-85.96926, -111.396194, 11.526477), true);
 	mp.attachments.register('work_axe', 'prop_ld_fireaxe', 6286, new mp.Vector3(0.063695654, 0.038963683, 0), new mp.Vector3(74.704636, -7.9448185, -172.23056), true);
 	

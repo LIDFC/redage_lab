@@ -12,7 +12,7 @@ const categoryData = {
 	[translateText("Парные анимации")]: [ "embrace", "kiss", "paired_five", "paired_slap", "carry_0", "carry_1", "carry_2", "carry_3" ],
 	[translateText("Вылечить")]: [ "heal", "epinephrine" ],
 	//
-	[translateText("Машина")]: ["hood", "trunk", "doors", "carinv", "trunkAction", "ticketveh", "breaking_trunk", "veh_fix"],
+	[translateText("Машина")]: ["hood", "trunk", "doors", "carinv", "trunkAction", "ticketveh", "breaking_trunk", "veh_fix", "cargo_put", "cargo_take"],
 	[translateText("Взаимодействие с багажником")]: [ "intrunk", "fromtrunk", "newnumber" ],
 	[translateText("В машине")]: ["belt", "hood", "trunk", "doors", "streetrace"],
 	[translateText("Недвижимость")]: ["sellcar", "sellhouse", "roommate", "invitehouse"],
@@ -62,6 +62,8 @@ const categoryDesc = {
 	"fraction_mayormenu": translateText("Управление казной"),
 
 	"veh_fix": translateText("Починить машину"),
+	"cargo_put": "Положить груз в кузов",
+	"cargo_take": "Взять груз из кузова",
 	"breaking_trunk": translateText("Взломать транспорт"),
 	"belt": translateText("Ремень безопасности"),
 	"sell": translateText("Взаимодействия"),
@@ -200,6 +202,13 @@ const getCircleName = (func, title) => {
 
 	if (func === "doors" && selectEntity !== null && selectEntity.doesExist())
 		return selectEntity.getVariable("vLock") ? translateText("Открыть дверной замок") : translateText("Закрыть дверной замок");
+
+	// Груз подрядов (Organizations/Contracts/Cargo): «положить» — когда груз в руках, «взять» — когда в кузове есть паллеты
+	if (func === "cargo_put" && !global.cargoCarrying)
+		return false;
+
+	if (func === "cargo_take" && (global.cargoCarrying || selectEntity === null || !selectEntity.doesExist() || !(selectEntity.getVariable("CARGO_COUNT") > 0)))
+		return false;
 
 	if (func === "fraction" && (global.fractionId == 0 || global.fractionId == 15))
 		return false;
@@ -544,6 +553,12 @@ gm.events.add('client.circle.events', (func, index) => {
 					case 6:
 					case 7:
 						mp.events.callRemote('vehicleSelected', global.entity, index);
+						return;
+					case 8:
+						mp.events.callRemote('server.cargo.vehicle', global.entity, 'put');
+						return;
+					case 9:
+						mp.events.callRemote('server.cargo.vehicle', global.entity, 'take');
 						return;
 				}
 				return;

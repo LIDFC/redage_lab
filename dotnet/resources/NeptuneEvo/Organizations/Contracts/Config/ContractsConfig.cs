@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using GTANetworkAPI;
 using Newtonsoft.Json;
 
 namespace NeptuneEvo.Organizations.Contracts.Config
@@ -34,6 +35,27 @@ namespace NeptuneEvo.Organizations.Contracts.Config
     }
 
     /// <summary>
+    /// Государственный склад стройматериалов (бизнес типа 16) и его ассортимент.
+    /// Точки — «в полный рост» (как позиция игрока); при старте сервер сам создаёт бизнес, если его ещё нет.
+    /// </summary>
+    public class MaterialShopSpot
+    {
+        [JsonProperty("id")] public string Id { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
+        [JsonProperty("enter")] public Vector3 Enter { get; set; }
+        /// <summary>Площадка погрузки: здесь появляются купленные паллеты.</summary>
+        [JsonProperty("unload")] public Vector3 Unload { get; set; }
+        /// <summary>Какие материалы продаёт склад (id из materials). Пусто — все.</summary>
+        [JsonProperty("materials")] public List<string> Materials { get; set; } = new List<string>();
+        /// <summary>Id созданного бизнеса (заполняется сервером).</summary>
+        [JsonProperty("businessId")] public int BusinessId { get; set; }
+        /// <summary>Создавать бизнес автоматически, если его нет.</summary>
+        [JsonProperty("autoCreate")] public bool AutoCreate { get; set; } = true;
+
+        public bool Sells(string material) => Materials == null || Materials.Count == 0 || Materials.Contains(material);
+    }
+
+    /// <summary>
     /// Настройки строительных подрядов: settings/org_contracts.json. Если файла нет — создаётся со значениями по умолчанию.
     /// Админ меняет значения командой /orgc cfg, файл перезаписывается.
     /// </summary>
@@ -59,6 +81,7 @@ namespace NeptuneEvo.Organizations.Contracts.Config
 
         [JsonProperty("materials")] public List<MaterialDefinition> Materials { get; set; } = new List<MaterialDefinition>();
         [JsonProperty("vehicles")] public List<CargoVehicleDefinition> Vehicles { get; set; } = new List<CargoVehicleDefinition>();
+        [JsonProperty("shops")] public List<MaterialShopSpot> Shops { get; set; } = new List<MaterialShopSpot>();
 
         public MaterialDefinition GetMaterial(string id) =>
             Materials.FirstOrDefault(m => m.Id == id);
@@ -104,6 +127,11 @@ namespace NeptuneEvo.Organizations.Contracts.Config
                 config.Vehicles = DefaultVehicles();
                 save = true;
             }
+            if (config.Shops == null || config.Shops.Count == 0)
+            {
+                config.Shops = DefaultShops();
+                save = true;
+            }
             if (config.GetGenerationMinutes().Count == 0)
             {
                 config.GenerationTimes = new List<string> { "08:00", "16:00", "00:00" };
@@ -135,6 +163,32 @@ namespace NeptuneEvo.Organizations.Contracts.Config
             new MaterialDefinition { Id = "steel", Name = "Металлоконструкции", Icon = "steel", KgPerUnit = 4f, UnitsPerPallet = 50, Prop = "prop_pipes_01a", Price = 90 },
             new MaterialDefinition { Id = "asphalt", Name = "Асфальтовая смесь", Icon = "asphalt", KgPerUnit = 3f, UnitsPerPallet = 100, Prop = "prop_barrel_pile_02", Price = 35 },
             new MaterialDefinition { Id = "wood", Name = "Пиломатериалы", Icon = "wood", KgPerUnit = 1.5f, UnitsPerPallet = 100, Prop = "prop_woodpile_01a", Price = 25 },
+        };
+
+        /// <summary>
+        /// Склады в промзонах, рядом с точками сдачи подрядов (проверенные уличные места).
+        /// Ассортимент разнесён: для большинства подрядов нужно заехать на два склада.
+        /// </summary>
+        private static List<MaterialShopSpot> DefaultShops() => new List<MaterialShopSpot>
+        {
+            new MaterialShopSpot
+            {
+                Id = "lamesa", Name = "Стройбаза La Mesa",
+                Enter = new Vector3(863.8128, -868.2756, 25.62753), Unload = new Vector3(881.6852, -880.0532, 27.724),
+                Materials = new List<string> { "concrete", "brick", "wood" },
+            },
+            new MaterialShopSpot
+            {
+                Id = "elysian", Name = "Металлобаза Elysian Island",
+                Enter = new Vector3(1150.489, -3282.368, 5.900809), Unload = new Vector3(1164.095, -3309.951, 5.924438),
+                Materials = new List<string> { "steel", "wood", "concrete" },
+            },
+            new MaterialShopSpot
+            {
+                Id = "lsia", Name = "Асфальтобетонный завод LSIA",
+                Enter = new Vector3(-879.1289, -2523.5586, 14.857651), Unload = new Vector3(-841.52, -2500.98, 13.830637),
+                Materials = new List<string> { "asphalt", "concrete" },
+            },
         };
 
         private static List<CargoVehicleDefinition> DefaultVehicles() => new List<CargoVehicleDefinition>

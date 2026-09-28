@@ -3140,6 +3140,50 @@ namespace NeptuneEvo.Core
             }
         }
 
+        /// <summary>
+        /// Создать государственный бизнес из кода (без администратора) — автосид складов стройматериалов.
+        /// enterPoint — уровень земли (как у /createbusiness), unloadPoint — «в полный рост» (как у /createunloadpoint).
+        /// Вызывать из главного потока; готовый бизнес передаётся в onCreated тоже в главном потоке.
+        /// </summary>
+        public static async void CreateStateBusiness(int type, Vector3 enterPoint, Vector3 unloadPoint, int govPrice, Action<Business> onCreated)
+        {
+            try
+            {
+                var products = fillProductList(type);
+                var id = ++lastBizID;
+                var bankId = await Bank.Create("", 3, 0);
+
+                using MySqlCommand cmd = new MySqlCommand
+                {
+                    CommandText = "INSERT INTO businesses (id, owner, sellprice, type, products, enterpoint, unloadpoint, money, mafia, orders, tax) VALUES (@val0,@val1,@val2,@val3,@val4,@val5,@val6,@val7,@val8,@val9,@val10)"
+                };
+                cmd.Parameters.AddWithValue("@val0", id);
+                cmd.Parameters.AddWithValue("@val1", "Государство");
+                cmd.Parameters.AddWithValue("@val2", govPrice);
+                cmd.Parameters.AddWithValue("@val3", type);
+                cmd.Parameters.AddWithValue("@val4", JsonConvert.SerializeObject(products));
+                cmd.Parameters.AddWithValue("@val5", JsonConvert.SerializeObject(enterPoint));
+                cmd.Parameters.AddWithValue("@val6", JsonConvert.SerializeObject(unloadPoint));
+                cmd.Parameters.AddWithValue("@val7", bankId);
+                cmd.Parameters.AddWithValue("@val8", -1);
+                cmd.Parameters.AddWithValue("@val9", JsonConvert.SerializeObject(new List<Order>()));
+                cmd.Parameters.AddWithValue("@val10", 0.026);
+                await MySQL.QueryAsync(cmd);
+
+                NAPI.Task.Run(() =>
+                {
+                    var biz = new Business(id, "Государство", govPrice, type, products, enterPoint, unloadPoint, bankId, -1, new List<Order>(), 0.026);
+                    BizList.TryAdd(id, biz);
+                    biz.UpdateLabel();
+                    onCreated?.Invoke(biz);
+                });
+            }
+            catch (Exception e)
+            {
+                Log.Write($"CreateStateBusiness Exception: {e}");
+            }
+        }
+
         public static void createBusinessUnloadpoint(ExtPlayer player, int bizid)
         {
             try
@@ -4138,6 +4182,7 @@ namespace NeptuneEvo.Core
             float range;
             if (Type == 1) range = 10f;
             else if (Type == 12) range = 5f;
+            else if (BusinessManager.IsStateOnly(Type)) range = 2f;
             else range = 1f;
             shape = CustomColShape.CreateCylinderColShape(EnterPoint, range, 3, 0, ColShapeEnums.BusinessAction, ID);
 
@@ -4160,7 +4205,7 @@ namespace NeptuneEvo.Core
 
                     if (BusinessManager.IsStateOnly(Type))
                     {
-                        label.Text = $"~w~{BusinessManager.BusinessTypeNames[Type]}\n~y~Государственный склад\n~c~Для организаций-подрядчиков · ID{ID}";
+                        label.Text = Organizations.Contracts.Methods.MaterialShop.LabelText(ID);
                         mafiaLabel.Text = "";
                         return;
                     }

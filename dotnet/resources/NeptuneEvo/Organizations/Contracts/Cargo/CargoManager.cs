@@ -99,6 +99,9 @@ namespace NeptuneEvo.Organizations.Contracts.Cargo
         public static List<CargoUnit> GetInVehicle(string number) =>
             Units.Values.Where(u => u.State == CargoState.InVehicle && u.VehicleNumber == number).OrderBy(u => u.Id).ToList();
 
+        public static List<CargoUnit> GetAllInVehicles() =>
+            Units.Values.Where(u => u.State == CargoState.InVehicle && !string.IsNullOrEmpty(u.VehicleNumber)).ToList();
+
         public static CargoUnit GetCarried(int uuid) =>
             Units.Values.FirstOrDefault(u => u.State == CargoState.Carried && u.CarrierUuid == uuid);
 
@@ -204,6 +207,8 @@ namespace NeptuneEvo.Organizations.Contracts.Cargo
             ownerLabel ??= OwnerName(unit);
             var text = $"~y~{type?.Name ?? unit.CargoType} ~w~×{unit.Quantity}" + (string.IsNullOrEmpty(ownerLabel) ? "" : $"\n~c~{ownerLabel}");
             unit.Label = (ExtTextLabel)NAPI.TextLabel.CreateTextLabel(Main.StringToU16(text), unit.Position + new Vector3(0, 0, 0.4), 8f, 0.4f, 4, new Color(255, 255, 255), true, unit.Dimension);
+            // Колшейп «[E] Взять груз» — Index = id паллеты
+            unit.Shape = CustomColShape.CreateCylinderColShape(unit.Position - new Vector3(0, 0, 1.2), 1.6f, 2.6f, unit.Dimension, ColShapeEnums.CargoPallet, unit.Id);
             OnSpawned?.Invoke(unit);
         }
 

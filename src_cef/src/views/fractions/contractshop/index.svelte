@@ -74,7 +74,7 @@
             </div>
             <div class="cshop__title">
                 <div class="cshop__eyebrow">Государственный склад</div>
-                <h1>Строительные материалы</h1>
+                <h1>{data.shop || "Строительные материалы"}</h1>
             </div>
             <div class="cshop__budget" class:debt={data.money < 0}>
                 <span>Бюджет · {data.org}</span>
@@ -118,7 +118,12 @@
                                     </div>
                                     <small>Куплено {number(m.purchased)} / {number(m.required)} · сдано {number(m.delivered)}</small>
                                 </div>
-                                {#if m.left > 0}
+                                {#if m.left > 0 && m.sold === false}
+                                    <div class="cshop__elsewhere">
+                                        <span>Здесь не продаётся</span>
+                                        <b>{m.where && m.where.length ? m.where.join(", ") : "Нет на других складах"}</b>
+                                    </div>
+                                {:else if m.left > 0}
                                     <div class="cshop__qty">
                                         <div class="cshop__stepper">
                                             <div use:sound={"tap"} on:click={() => step(m, -1)}>−</div>
@@ -438,6 +443,22 @@
         background: rgba(255, 255, 255, 0.08);
         color: #6b7280;
         pointer-events: none;
+    }
+    .cshop__elsewhere {
+        width: 36vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4vh;
+        text-align: right;
+    }
+    .cshop__elsewhere span {
+        font-size: 1.2vh;
+        color: #8b93a1;
+    }
+    .cshop__elsewhere b {
+        font-size: 1.4vh;
+        color: #f5a524;
+        font-weight: 600;
     }
     .cshop__ok {
         width: 19vh;

@@ -60,6 +60,11 @@ namespace NeptuneEvo.Organizations.Contracts
                 }
 
                 Cargo.CargoManager.Load();
+                MaterialShop.Seed();
+                Cargo.CargoInteraction.LoadValidator = ValidateLoad;
+                Cargo.CargoInteraction.OnLoaded = (player, unit, number) =>
+                    ContractAudit.OrgLog(unit.OwnerId, player.GetUUID(), player.Name, OrganizationLogsType.ContractLoad,
+                        $"Загрузил: {Cargo.CargoManager.TypeName(unit.CargoType)} ×{unit.Quantity}{(unit.ContractId > 0 ? $" (подряд #{unit.ContractId})" : "")} в машину {number}");
 
                 Ready = true;
                 ContractsCore.Log.Write($"Loaded {Contracts.Count} contracts, slot {CurrentSlot ?? "-"}", nLog.Type.Success);
@@ -72,6 +77,19 @@ namespace NeptuneEvo.Organizations.Contracts
             {
                 ContractsCore.Log.Write($"Init Exception: {e}");
             }
+        }
+
+        /// <summary>Грузить можно только то, что нужно активному подряду организации (свой контракт или свободный груз под недостающий материал).</summary>
+        private static string ValidateLoad(Cargo.CargoUnit unit)
+        {
+            if (unit.OwnerType != Cargo.CargoOwner.Organization)
+                return null;
+            var active = GetActive(unit.OwnerId);
+            if (unit.ContractId > 0 && active.Any(c => c.Id == unit.ContractId))
+                return null;
+            if (active.Any(c => c.GetMaterial(unit.CargoType) is ContractMaterial m && m.Delivered < m.Required))
+                return null;
+            return "Этот груз не нужен ни одному активному подряду организации";
         }
 
         /// <summary>Материалы подрядов — типы груза универсального модуля Cargo.</summary>
@@ -99,6 +117,8 @@ namespace NeptuneEvo.Organizations.Contracts
             {
                 CheckGeneration();
                 CheckDeadlines();
+                lock (ContractsCore.Sync)
+                    Cargo.CargoVehicle.Sync();
             }
             catch (Exception e)
             {

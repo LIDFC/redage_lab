@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using GTANetworkAPI;
@@ -9,6 +10,7 @@ using NeptuneEvo.Handles;
 using NeptuneEvo.Organizations.Contracts.Config;
 using NeptuneEvo.Organizations.Contracts.Generators;
 using NeptuneEvo.Organizations.Contracts.Logs;
+using NeptuneEvo.Organizations.Contracts.Methods;
 using NeptuneEvo.Organizations.Contracts.Models;
 
 namespace NeptuneEvo.Organizations.Contracts.Admin
@@ -159,6 +161,9 @@ namespace NeptuneEvo.Organizations.Contracts.Admin
                 case "cfg":
                     Config(player, parts, uuid);
                     return;
+                case "shop":
+                    Shop(player, parts, uuid);
+                    return;
                 case "reload":
                     ContractsConfig.Load();
                     ContractTemplates.Load();
@@ -169,8 +174,64 @@ namespace NeptuneEvo.Organizations.Contracts.Admin
             }
 
             Chat(player, "/orgc list | taken | info id | tpl | rep orgId | logs [c:id|o:id]");
+            Chat(player, "/orgc shop list|add|mat|seed — склады стройматериалов");
             Chat(player, "/orgc create [шаблон|*] [кол-во] | gen | delete id | complete id | fail id | setrep/addrep orgId N | point шаблон [название] | times a,b,c | cfg [ключ значение] | reload");
         }
+
+        /// <summary>/orgc shop list | add материалы|* название | mat bizId материалы | seed</summary>
+        private static void Shop(ExtPlayer player, string[] parts, int uuid)
+        {
+            var action = parts.Length > 1 ? parts[1].ToLower() : "list";
+            List<string> ParseMaterials(string value)
+            {
+                if (string.IsNullOrEmpty(value) || value == "*")
+                    return new List<string>();
+                var list = value.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(m => m.Trim().ToLower()).ToList();
+                return list.All(m => ContractsConfig.Current.GetMaterial(m) != null) ? list : null;
+            }
+
+            switch (action)
+            {
+                case "list":
+                    foreach (var spot in ContractsConfig.Current.Shops)
+                        Chat(player, $"{spot.Id}: «{spot.Name}» бизнес #{spot.BusinessId}{(spot.AutoCreate ? "" : " (без автосоздания)")} — {(spot.Materials.Count == 0 ? "все материалы" : string.Join(", ", spot.Materials))}");
+                    Chat(player, "Материалы: " + string.Join(", ", ContractsConfig.Current.Materials.Select(m => $"{m.Id} ({m.Name})")));
+                    return;
+                case "add":
+                    {
+                        var materials = ParseMaterials(parts.Length > 2 ? parts[2] : "*");
+                        if (materials == null) { Chat(player, "/orgc shop add concrete,brick|* Название склада"); return; }
+                        var name = string.Join(" ", parts.Skip(3));
+                        MaterialShop.AddByAdmin(player, name, materials, biz =>
+                        {
+                            GameLog.Admin(player.Name, $"orgc shop add {biz.ID}", "");
+                            ContractAudit.Write("admin_shop_add", actorUuid: uuid, details: new { biz.ID, name, materials });
+                            Chat(player, $"Склад создан: бизнес #{biz.ID}. Площадка погрузки — ваша позиция; поменять: /createunloadpoint {biz.ID}");
+                        });
+                    }
+                    return;
+                case "mat":
+                    {
+                        var spot = MaterialShop.GetSpot(Arg(parts, 2));
+                        var materials = ParseMaterials(parts.Length > 3 ? parts[3] : "");
+                        if (spot == null || materials == null) { Chat(player, "/orgc shop mat bizId concrete,steel|*"); return; }
+                        spot.Materials = materials;
+                        ContractsConfig.Save();
+                        if (BusinessManager.BizList.TryGetValue(spot.BusinessId, out var biz))
+                            biz.UpdateLabel();
+                        GameLog.Admin(player.Name, $"orgc shop mat {spot.BusinessId} {parts[3]}", "");
+                        Chat(player, $"«{spot.Name}»: {(materials.Count == 0 ? "все материалы" : string.Join(", ", materials))}");
+                    }
+                    return;
+                case "seed":
+                    MaterialShop.Seed();
+                    Chat(player, "Проверка складов запущена (/orgc shop list)");
+                    return;
+            }
+            Chat(player, "/orgc shop list | add материалы|* название | mat bizId материалы|* | seed");
+        }
+
+        private static int Arg(string[] parts, int i) => parts.Length > i && int.TryParse(parts[i], out var v) ? v : 0;
 
         private static void Config(ExtPlayer player, string[] parts, int uuid)
         {

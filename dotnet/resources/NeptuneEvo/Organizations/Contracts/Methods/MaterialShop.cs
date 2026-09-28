@@ -31,6 +31,88 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
         /// <summary>Какой магазин открыт у игрока (uuid → id бизнеса).</summary>
         private static readonly Dictionary<int, int> Opened = new Dictionary<int, int>();
 
+        // ------------------------------------------------------------------ склады на карте
+
+        public static MaterialShopSpot GetSpot(int bizId) =>
+            ContractsConfig.Current.Shops.FirstOrDefault(s => s.BusinessId == bizId && bizId > 0);
+
+        public static string ShopName(int bizId) => GetSpot(bizId)?.Name ?? "Строительные материалы";
+
+        /// <summary>Подпись над входом (Business.UpdateLabel для типа 16).</summary>
+        public static string LabelText(int bizId)
+        {
+            var spot = GetSpot(bizId);
+            var materials = ContractsConfig.Current.Materials.Where(m => spot == null || spot.Sells(m.Id)).Select(m => m.Name);
+            return $"~w~{ShopName(bizId)}\n~y~Государственный склад\n~c~{string.Join(" · ", materials)}\n~c~Для организаций-подрядчиков · ID{bizId}";
+        }
+
+        /// <summary>
+        /// Автосоздание складов из конфига: для каждой точки без живого бизнеса типа 16 ищется существующий
+        /// рядом (привязка), иначе создаётся новый государственный бизнес. Повторный старт ничего не дублирует.
+        /// </summary>
+        public static void Seed()
+        {
+            var config = ContractsConfig.Current;
+            var changed = false;
+            foreach (var spot in config.Shops)
+            {
+                if (spot.Enter == null)
+                    continue;
+                if (spot.BusinessId > 0 && BusinessManager.BizList.TryGetValue(spot.BusinessId, out var bound) && bound.Type == BusinessType)
+                {
+                    bound.UpdateLabel();
+                    continue;
+                }
+
+                var ground = spot.Enter - new Vector3(0, 0, 1.12);
+                var near = BusinessManager.BizList.Values.FirstOrDefault(b => b.Type == BusinessType && b.EnterPoint.DistanceTo(ground) < 25f
+                    && config.Shops.All(o => o == spot || o.BusinessId != b.ID));
+                if (near != null)
+                {
+                    spot.BusinessId = near.ID;
+                    changed = true;
+                    near.UpdateLabel();
+                    continue;
+                }
+                if (!spot.AutoCreate)
+                    continue;
+
+                BusinessManager.CreateStateBusiness(BusinessType, ground, spot.Unload ?? spot.Enter, 0, biz =>
+                {
+                    spot.BusinessId = biz.ID;
+                    ContractsConfig.Save();
+                    biz.UpdateLabel();
+                    ContractsCore.Log.Write($"Создан склад стройматериалов «{spot.Name}» (бизнес #{biz.ID})", nLog.Type.Success);
+                    ContractAudit.Write("shop_seed", details: new { spot.Id, biz.ID });
+                });
+            }
+            if (changed)
+                ContractsConfig.Save();
+        }
+
+        /// <summary>Админ: новый склад на позиции администратора (площадка погрузки — там же, поменять: /createunloadpoint).</summary>
+        public static void AddByAdmin(ExtPlayer player, string name, List<string> materials, Action<Business> onCreated)
+        {
+            var spot = new MaterialShopSpot
+            {
+                Id = "shop" + DateTime.Now.ToString("MMddHHmmss"),
+                Name = string.IsNullOrWhiteSpace(name) ? "Склад стройматериалов" : name,
+                Enter = player.Position,
+                Unload = player.Position,
+                Materials = materials ?? new List<string>(),
+            };
+            ContractsConfig.Current.Shops.Add(spot);
+            BusinessManager.CreateStateBusiness(BusinessType, player.Position - new Vector3(0, 0, 1.12), player.Position, 0, biz =>
+            {
+                spot.BusinessId = biz.ID;
+                ContractsConfig.Save();
+                biz.UpdateLabel();
+                onCreated?.Invoke(biz);
+            });
+        }
+
+        // ------------------------------------------------------------------ окно склада
+
         public static void Open(ExtPlayer player, Business biz)
         {
             if (!ContractsManager.Ready || biz == null)
@@ -42,7 +124,7 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
             }
             lock (ContractsCore.Sync)
                 Opened[player.GetUUID()] = biz.ID;
-            Trigger.ClientEvent(player, "client.orgcontracts.shop.open", BuildJson(organizationData));
+            Trigger.ClientEvent(player, "client.orgcontracts.shop.open", BuildJson(organizationData, biz.ID));
         }
 
         private static bool CanUse(ExtPlayer player, out OrganizationData organizationData, out string error)
@@ -58,9 +140,10 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
             return error == null;
         }
 
-        private static string BuildJson(OrganizationData organizationData)
+        private static string BuildJson(OrganizationData organizationData, int bizId)
         {
             var config = ContractsConfig.Current;
+            var spot = GetSpot(bizId);
             var contracts = ContractsManager.GetActive(organizationData.Id).Select(c => new
             {
                 id = c.Id,
@@ -82,11 +165,14 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
                         purchased = m.Purchased,
                         delivered = m.Delivered,
                         left = Math.Max(0, m.Required - m.Purchased),
+                        sold = spot == null || spot.Sells(m.Material),
+                        where = config.Shops.Where(o => o != spot && o.BusinessId > 0 && o.Sells(m.Material)).Select(o => o.Name),
                     };
                 }),
             });
             return JsonConvert.SerializeObject(new
             {
+                shop = ShopName(bizId),
                 org = organizationData.Name,
                 money = organizationData.Money,
                 contracts,
@@ -128,8 +214,9 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
                         Finance.ChangeMoney(organizationData, -cost);
                         material.Purchased += units;
 
-                        var point = biz.UnloadPoint != null && biz.UnloadPoint.DistanceTo(biz.EnterPoint) > 0.5f && biz.UnloadPoint.DistanceTo(biz.EnterPoint) < 80f
-                            ? biz.UnloadPoint : biz.EnterPoint;
+                        // Площадка погрузки (UnloadPoint «в полный рост»), иначе — вход (он на уровне земли)
+                        var point = biz.UnloadPoint != null && biz.UnloadPoint.DistanceTo(biz.EnterPoint) > 0.5f && biz.UnloadPoint.DistanceTo(biz.EnterPoint) < 120f
+                            ? biz.UnloadPoint : biz.EnterPoint + new Vector3(0, 0, 1.12);
                         var commands = new List<MySqlCommand>
                         {
                             ContractsRepository.SaveCommand(contract),
@@ -193,6 +280,9 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
             definition = ContractsConfig.Current.GetMaterial(materialId);
             if (material == null || definition == null)
                 return "Этот материал не нужен по подряду";
+            var spot = GetSpot(biz.ID);
+            if (spot != null && !spot.Sells(materialId))
+                return $"{definition.Name} на этом складе не продаётся";
             if (units <= 0)
                 return "Укажите количество";
             var left = material.Required - material.Purchased;
@@ -211,8 +301,11 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
         private static void Result(ExtPlayer player, bool ok, string message, OrganizationData organizationData)
         {
             Notify.Send(player, ok ? NotifyType.Success : NotifyType.Error, NotifyPosition.BottomCenter, message, 4000);
+            int bizId;
+            lock (ContractsCore.Sync)
+                Opened.TryGetValue(player.GetUUID(), out bizId);
             if (organizationData != null)
-                Trigger.ClientEvent(player, "client.orgcontracts.shop.update", ok, message, BuildJson(organizationData));
+                Trigger.ClientEvent(player, "client.orgcontracts.shop.update", ok, message, BuildJson(organizationData, bizId));
         }
     }
 }

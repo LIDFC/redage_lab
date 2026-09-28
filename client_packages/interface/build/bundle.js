@@ -45839,6 +45839,8 @@ function instance($$self, $$props, $$invalidate) {
 		carry_3: "leadaway",
 		trunkAction: "trunk",
 		healMenu: "heal",
+		cargo_put: "trunk",
+		cargo_take: "trunk",
 		epinephrine: "heal",
 		ticketveh: "ticket",
 		newnumber: "sellcar",
@@ -96865,7 +96867,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 function add_css(target) {
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-7dwjvj", ".cshop.svelte-7dwjvj.svelte-7dwjvj{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, rgba(16, 18, 24, 0.75), rgba(5, 6, 9, 0.92));font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#e9edf3}.cshop__box.svelte-7dwjvj.svelte-7dwjvj{width:118vh;max-width:96vw;max-height:88vh;display:flex;flex-direction:column;background:#12151b;border:1px solid rgba(255, 255, 255, 0.07);border-radius:1.6vh;box-shadow:0 3vh 8vh rgba(0, 0, 0, 0.55);overflow:hidden}.cshop__head.svelte-7dwjvj.svelte-7dwjvj{display:flex;align-items:center;gap:1.6vh;padding:2.2vh 2.6vh;border-bottom:1px solid rgba(255, 255, 255, 0.06);background:linear-gradient(90deg, rgba(245, 165, 36, 0.12), rgba(245, 165, 36, 0) 60%)}.cshop__logo.svelte-7dwjvj.svelte-7dwjvj{width:5.2vh;height:5.2vh;border-radius:1.2vh;background:rgba(245, 165, 36, 0.14);display:flex;align-items:center;justify-content:center}.cshop__logo.svelte-7dwjvj svg.svelte-7dwjvj,.cshop__icon.svelte-7dwjvj svg.svelte-7dwjvj{width:60%;height:60%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.cshop__logo.svelte-7dwjvj svg.svelte-7dwjvj{color:#f5a524}.cshop__title.svelte-7dwjvj.svelte-7dwjvj{flex:1}.cshop__eyebrow.svelte-7dwjvj.svelte-7dwjvj,.cshop__label.svelte-7dwjvj.svelte-7dwjvj{font-size:1.2vh;letter-spacing:0.12vh;text-transform:uppercase;color:#8b93a1}.cshop__title.svelte-7dwjvj h1.svelte-7dwjvj{margin:0.3vh 0 0;font-size:2.6vh;font-weight:700}.cshop__budget.svelte-7dwjvj.svelte-7dwjvj{text-align:right;padding:1vh 1.6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04)}.cshop__budget.svelte-7dwjvj span.svelte-7dwjvj{display:block;font-size:1.2vh;color:#8b93a1}.cshop__budget.svelte-7dwjvj b.svelte-7dwjvj{font-size:2.2vh;color:#7ed321}.cshop__budget.debt.svelte-7dwjvj b.svelte-7dwjvj{color:#ff5a5a}.cshop__close.svelte-7dwjvj.svelte-7dwjvj{width:4.2vh;height:4.2vh;border-radius:1vh;display:flex;align-items:center;justify-content:center;font-size:1.8vh;color:#8b93a1;background:rgba(255, 255, 255, 0.04);cursor:pointer}.cshop__close.svelte-7dwjvj.svelte-7dwjvj:hover{color:#fff;background:rgba(255, 255, 255, 0.1)}.cshop__body.svelte-7dwjvj.svelte-7dwjvj{display:flex;min-height:0;flex:1}.cshop__side.svelte-7dwjvj.svelte-7dwjvj{width:30vh;padding:2vh;border-right:1px solid rgba(255, 255, 255, 0.06);overflow-y:auto;display:flex;flex-direction:column;gap:1vh}.cshop__contract.svelte-7dwjvj.svelte-7dwjvj{padding:1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.03);border:1px solid transparent;cursor:pointer;display:flex;flex-direction:column;gap:0.4vh}.cshop__contract.svelte-7dwjvj b.svelte-7dwjvj{font-size:1.5vh}.cshop__contract.svelte-7dwjvj span.svelte-7dwjvj{font-size:1.3vh;color:#8b93a1}.cshop__contract.svelte-7dwjvj em.svelte-7dwjvj{font-style:normal;font-size:1.2vh;color:#f5a524}.cshop__contract.active.svelte-7dwjvj.svelte-7dwjvj{border-color:rgba(245, 165, 36, 0.6);background:rgba(245, 165, 36, 0.08)}.cshop__main.svelte-7dwjvj.svelte-7dwjvj{flex:1;padding:2vh;overflow-y:auto;display:flex;flex-direction:column;gap:1.2vh}.cshop__row.svelte-7dwjvj.svelte-7dwjvj{display:flex;align-items:center;gap:1.6vh;padding:1.6vh;border-radius:1.2vh;background:rgba(255, 255, 255, 0.03);border:1px solid rgba(255, 255, 255, 0.05)}.cshop__row.done.svelte-7dwjvj.svelte-7dwjvj{opacity:0.6}.cshop__icon.svelte-7dwjvj.svelte-7dwjvj{width:5.6vh;height:5.6vh;flex:none;border-radius:1.2vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center}.cshop__info.svelte-7dwjvj.svelte-7dwjvj{flex:1;min-width:0;display:flex;flex-direction:column;gap:0.5vh}.cshop__info.svelte-7dwjvj b.svelte-7dwjvj{font-size:1.8vh}.cshop__info.svelte-7dwjvj span.svelte-7dwjvj,.cshop__info.svelte-7dwjvj small.svelte-7dwjvj{font-size:1.25vh;color:#8b93a1}.cshop__bar.svelte-7dwjvj.svelte-7dwjvj{position:relative;height:0.7vh;border-radius:0.4vh;background:rgba(255, 255, 255, 0.07);overflow:hidden}.cshop__bar.svelte-7dwjvj div.svelte-7dwjvj{position:absolute;left:0;top:0;bottom:0;border-radius:0.4vh}.cshop__bar.svelte-7dwjvj .bought.svelte-7dwjvj{background:rgba(245, 165, 36, 0.45)}.cshop__bar.svelte-7dwjvj .delivered.svelte-7dwjvj{background:#7ed321}.cshop__qty.svelte-7dwjvj.svelte-7dwjvj{display:flex;flex-direction:column;align-items:center;gap:0.6vh}.cshop__stepper.svelte-7dwjvj.svelte-7dwjvj{display:flex;align-items:center;border-radius:0.9vh;background:rgba(255, 255, 255, 0.05);overflow:hidden}.cshop__stepper.svelte-7dwjvj div.svelte-7dwjvj{width:3.6vh;height:3.6vh;display:flex;align-items:center;justify-content:center;font-size:2vh;cursor:pointer;color:#c9ced6}.cshop__stepper.svelte-7dwjvj div.svelte-7dwjvj:hover{background:rgba(255, 255, 255, 0.08)}.cshop__stepper.svelte-7dwjvj input.svelte-7dwjvj{width:7vh;height:3.6vh;border:none;outline:none;background:transparent;color:#fff;text-align:center;font-size:1.6vh;font-family:inherit}.cshop__stepper.svelte-7dwjvj input.svelte-7dwjvj::-webkit-inner-spin-button{-webkit-appearance:none}.cshop__max.svelte-7dwjvj.svelte-7dwjvj{font-size:1.2vh;color:#f5a524;cursor:pointer}.cshop__buy.svelte-7dwjvj.svelte-7dwjvj{width:19vh;display:flex;flex-direction:column;align-items:stretch;gap:0.6vh;text-align:center}.cshop__buy.svelte-7dwjvj span.svelte-7dwjvj{font-size:1.2vh;color:#8b93a1}.cshop__btn.svelte-7dwjvj.svelte-7dwjvj{padding:1.2vh 1vh;border-radius:0.9vh;background:#f5a524;color:#16181d;font-weight:700;font-size:1.5vh;cursor:pointer;transition:filter 0.15s}.cshop__btn.svelte-7dwjvj.svelte-7dwjvj:hover{filter:brightness(1.1)}.cshop__btn.disabled.svelte-7dwjvj.svelte-7dwjvj{background:rgba(255, 255, 255, 0.08);color:#6b7280;pointer-events:none}.cshop__ok.svelte-7dwjvj.svelte-7dwjvj{width:19vh;text-align:center;font-size:1.5vh;color:#7ed321}.cshop__empty.svelte-7dwjvj.svelte-7dwjvj{padding:6vh 4vh;text-align:center;display:flex;flex-direction:column;gap:1vh}.cshop__empty.svelte-7dwjvj b.svelte-7dwjvj{font-size:2.2vh}.cshop__empty.svelte-7dwjvj span.svelte-7dwjvj{font-size:1.5vh;color:#8b93a1}.cshop__foot.svelte-7dwjvj.svelte-7dwjvj{padding:1.4vh 2.6vh;border-top:1px solid rgba(255, 255, 255, 0.06);font-size:1.3vh;color:#8b93a1}.cshop__foot.svelte-7dwjvj .ok.svelte-7dwjvj{color:#7ed321}.cshop__foot.svelte-7dwjvj .err.svelte-7dwjvj{color:#ff6b6b}");
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-j0oab3", ".cshop.svelte-j0oab3.svelte-j0oab3{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, rgba(16, 18, 24, 0.75), rgba(5, 6, 9, 0.92));font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#e9edf3}.cshop__box.svelte-j0oab3.svelte-j0oab3{width:118vh;max-width:96vw;max-height:88vh;display:flex;flex-direction:column;background:#12151b;border:1px solid rgba(255, 255, 255, 0.07);border-radius:1.6vh;box-shadow:0 3vh 8vh rgba(0, 0, 0, 0.55);overflow:hidden}.cshop__head.svelte-j0oab3.svelte-j0oab3{display:flex;align-items:center;gap:1.6vh;padding:2.2vh 2.6vh;border-bottom:1px solid rgba(255, 255, 255, 0.06);background:linear-gradient(90deg, rgba(245, 165, 36, 0.12), rgba(245, 165, 36, 0) 60%)}.cshop__logo.svelte-j0oab3.svelte-j0oab3{width:5.2vh;height:5.2vh;border-radius:1.2vh;background:rgba(245, 165, 36, 0.14);display:flex;align-items:center;justify-content:center}.cshop__logo.svelte-j0oab3 svg.svelte-j0oab3,.cshop__icon.svelte-j0oab3 svg.svelte-j0oab3{width:60%;height:60%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.cshop__logo.svelte-j0oab3 svg.svelte-j0oab3{color:#f5a524}.cshop__title.svelte-j0oab3.svelte-j0oab3{flex:1}.cshop__eyebrow.svelte-j0oab3.svelte-j0oab3,.cshop__label.svelte-j0oab3.svelte-j0oab3{font-size:1.2vh;letter-spacing:0.12vh;text-transform:uppercase;color:#8b93a1}.cshop__title.svelte-j0oab3 h1.svelte-j0oab3{margin:0.3vh 0 0;font-size:2.6vh;font-weight:700}.cshop__budget.svelte-j0oab3.svelte-j0oab3{text-align:right;padding:1vh 1.6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04)}.cshop__budget.svelte-j0oab3 span.svelte-j0oab3{display:block;font-size:1.2vh;color:#8b93a1}.cshop__budget.svelte-j0oab3 b.svelte-j0oab3{font-size:2.2vh;color:#7ed321}.cshop__budget.debt.svelte-j0oab3 b.svelte-j0oab3{color:#ff5a5a}.cshop__close.svelte-j0oab3.svelte-j0oab3{width:4.2vh;height:4.2vh;border-radius:1vh;display:flex;align-items:center;justify-content:center;font-size:1.8vh;color:#8b93a1;background:rgba(255, 255, 255, 0.04);cursor:pointer}.cshop__close.svelte-j0oab3.svelte-j0oab3:hover{color:#fff;background:rgba(255, 255, 255, 0.1)}.cshop__body.svelte-j0oab3.svelte-j0oab3{display:flex;min-height:0;flex:1}.cshop__side.svelte-j0oab3.svelte-j0oab3{width:30vh;padding:2vh;border-right:1px solid rgba(255, 255, 255, 0.06);overflow-y:auto;display:flex;flex-direction:column;gap:1vh}.cshop__contract.svelte-j0oab3.svelte-j0oab3{padding:1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.03);border:1px solid transparent;cursor:pointer;display:flex;flex-direction:column;gap:0.4vh}.cshop__contract.svelte-j0oab3 b.svelte-j0oab3{font-size:1.5vh}.cshop__contract.svelte-j0oab3 span.svelte-j0oab3{font-size:1.3vh;color:#8b93a1}.cshop__contract.svelte-j0oab3 em.svelte-j0oab3{font-style:normal;font-size:1.2vh;color:#f5a524}.cshop__contract.active.svelte-j0oab3.svelte-j0oab3{border-color:rgba(245, 165, 36, 0.6);background:rgba(245, 165, 36, 0.08)}.cshop__main.svelte-j0oab3.svelte-j0oab3{flex:1;padding:2vh;overflow-y:auto;display:flex;flex-direction:column;gap:1.2vh}.cshop__row.svelte-j0oab3.svelte-j0oab3{display:flex;align-items:center;gap:1.6vh;padding:1.6vh;border-radius:1.2vh;background:rgba(255, 255, 255, 0.03);border:1px solid rgba(255, 255, 255, 0.05)}.cshop__row.done.svelte-j0oab3.svelte-j0oab3{opacity:0.6}.cshop__icon.svelte-j0oab3.svelte-j0oab3{width:5.6vh;height:5.6vh;flex:none;border-radius:1.2vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center}.cshop__info.svelte-j0oab3.svelte-j0oab3{flex:1;min-width:0;display:flex;flex-direction:column;gap:0.5vh}.cshop__info.svelte-j0oab3 b.svelte-j0oab3{font-size:1.8vh}.cshop__info.svelte-j0oab3 span.svelte-j0oab3,.cshop__info.svelte-j0oab3 small.svelte-j0oab3{font-size:1.25vh;color:#8b93a1}.cshop__bar.svelte-j0oab3.svelte-j0oab3{position:relative;height:0.7vh;border-radius:0.4vh;background:rgba(255, 255, 255, 0.07);overflow:hidden}.cshop__bar.svelte-j0oab3 div.svelte-j0oab3{position:absolute;left:0;top:0;bottom:0;border-radius:0.4vh}.cshop__bar.svelte-j0oab3 .bought.svelte-j0oab3{background:rgba(245, 165, 36, 0.45)}.cshop__bar.svelte-j0oab3 .delivered.svelte-j0oab3{background:#7ed321}.cshop__qty.svelte-j0oab3.svelte-j0oab3{display:flex;flex-direction:column;align-items:center;gap:0.6vh}.cshop__stepper.svelte-j0oab3.svelte-j0oab3{display:flex;align-items:center;border-radius:0.9vh;background:rgba(255, 255, 255, 0.05);overflow:hidden}.cshop__stepper.svelte-j0oab3 div.svelte-j0oab3{width:3.6vh;height:3.6vh;display:flex;align-items:center;justify-content:center;font-size:2vh;cursor:pointer;color:#c9ced6}.cshop__stepper.svelte-j0oab3 div.svelte-j0oab3:hover{background:rgba(255, 255, 255, 0.08)}.cshop__stepper.svelte-j0oab3 input.svelte-j0oab3{width:7vh;height:3.6vh;border:none;outline:none;background:transparent;color:#fff;text-align:center;font-size:1.6vh;font-family:inherit}.cshop__stepper.svelte-j0oab3 input.svelte-j0oab3::-webkit-inner-spin-button{-webkit-appearance:none}.cshop__max.svelte-j0oab3.svelte-j0oab3{font-size:1.2vh;color:#f5a524;cursor:pointer}.cshop__buy.svelte-j0oab3.svelte-j0oab3{width:19vh;display:flex;flex-direction:column;align-items:stretch;gap:0.6vh;text-align:center}.cshop__buy.svelte-j0oab3 span.svelte-j0oab3{font-size:1.2vh;color:#8b93a1}.cshop__btn.svelte-j0oab3.svelte-j0oab3{padding:1.2vh 1vh;border-radius:0.9vh;background:#f5a524;color:#16181d;font-weight:700;font-size:1.5vh;cursor:pointer;transition:filter 0.15s}.cshop__btn.svelte-j0oab3.svelte-j0oab3:hover{filter:brightness(1.1)}.cshop__btn.disabled.svelte-j0oab3.svelte-j0oab3{background:rgba(255, 255, 255, 0.08);color:#6b7280;pointer-events:none}.cshop__elsewhere.svelte-j0oab3.svelte-j0oab3{width:36vh;display:flex;flex-direction:column;gap:0.4vh;text-align:right}.cshop__elsewhere.svelte-j0oab3 span.svelte-j0oab3{font-size:1.2vh;color:#8b93a1}.cshop__elsewhere.svelte-j0oab3 b.svelte-j0oab3{font-size:1.4vh;color:#f5a524;font-weight:600}.cshop__ok.svelte-j0oab3.svelte-j0oab3{width:19vh;text-align:center;font-size:1.5vh;color:#7ed321}.cshop__empty.svelte-j0oab3.svelte-j0oab3{padding:6vh 4vh;text-align:center;display:flex;flex-direction:column;gap:1vh}.cshop__empty.svelte-j0oab3 b.svelte-j0oab3{font-size:2.2vh}.cshop__empty.svelte-j0oab3 span.svelte-j0oab3{font-size:1.5vh;color:#8b93a1}.cshop__foot.svelte-j0oab3.svelte-j0oab3{padding:1.4vh 2.6vh;border-top:1px solid rgba(255, 255, 255, 0.06);font-size:1.3vh;color:#8b93a1}.cshop__foot.svelte-j0oab3 .ok.svelte-j0oab3{color:#7ed321}.cshop__foot.svelte-j0oab3 .err.svelte-j0oab3{color:#ff6b6b}");
 }
 
 function get_each_context(ctx, list, i) {
@@ -96912,10 +96914,10 @@ function create_else_block_1(ctx) {
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if (if_block) if_block.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__label svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "cshop__side svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__main svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__body svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__label svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "cshop__side svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__main svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__body svelte-j0oab3");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
@@ -96986,10 +96988,10 @@ function create_if_block_1(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div.innerHTML = `<b class="svelte-7dwjvj">Нет активных подрядов</b> 
-                <span class="svelte-7dwjvj">Материалы продаются только под подряд организации. Примите подряд: планшет → Организация → Подряды.</span>`;
+			div.innerHTML = `<b class="svelte-j0oab3">Нет активных подрядов</b> 
+                <span class="svelte-j0oab3">Материалы продаются только под подряд организации. Примите подряд: планшет → Организация → Подряды.</span>`;
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__empty svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__empty svelte-j0oab3");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -97045,10 +97047,10 @@ function create_each_block_1(ctx) {
 			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Осталось ");
 			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
 			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__contract svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__contract svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*item*/ ctx[27].id === /*selectedId*/ ctx[1]);
 		},
 		m(target, anchor) {
@@ -97126,7 +97128,7 @@ function create_if_block_2(ctx) {
 			}
 
 			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__label svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__label svelte-j0oab3");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -97163,7 +97165,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (137:32) {:else}
+// (142:32) {:else}
 function create_else_block_2(ctx) {
 	let div;
 
@@ -97171,7 +97173,7 @@ function create_else_block_2(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Закуплено";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__ok svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__ok svelte-j0oab3");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -97183,8 +97185,8 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (121:32) {#if m.left > 0}
-function create_if_block_3(ctx) {
+// (126:53) 
+function create_if_block_4(ctx) {
 	let div4;
 	let div2;
 	let div0;
@@ -97265,20 +97267,20 @@ function create_if_block_3(ctx) {
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить ");
 			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t14_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "0");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*m*/ ctx[24].left);
 			input.value = input_value_value = /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__stepper svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__max svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__qty svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__btn svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__stepper svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__max svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__qty svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__btn svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "disabled", /*busy*/ ctx[3] || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) <= 0 || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price > /*data*/ ctx[0].money);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__buy svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__buy svelte-j0oab3");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
@@ -97349,6 +97351,49 @@ function create_if_block_3(ctx) {
 	};
 }
 
+// (121:32) {#if m.left > 0 && m.sold === false}
+function create_if_block_3(ctx) {
+	let div;
+	let span;
+	let t1;
+	let b;
+
+	let t2_value = (/*m*/ ctx[24].where && /*m*/ ctx[24].where.length
+	? /*m*/ ctx[24].where.join(", ")
+	: "Нет на других складах") + "";
+
+	let t2;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "Здесь не продаётся";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__elsewhere svelte-j0oab3");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t2);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*contract*/ 64 && t2_value !== (t2_value = (/*m*/ ctx[24].where && /*m*/ ctx[24].where.length
+			? /*m*/ ctx[24].where.join(", ")
+			: "Нет на других складах") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
 // (107:24) {#each contract.materials as m (m.id)}
 function create_each_block(key_2, ctx) {
 	let div5;
@@ -97391,7 +97436,8 @@ function create_each_block(key_2, ctx) {
 	let t19;
 
 	function select_block_type_1(ctx, dirty) {
-		if (/*m*/ ctx[24].left > 0) return create_if_block_3;
+		if (/*m*/ ctx[24].left > 0 && /*m*/ ctx[24].sold === false) return create_if_block_3;
+		if (/*m*/ ctx[24].left > 0) return create_if_block_4;
 		return create_else_block_2;
 	}
 
@@ -97434,19 +97480,19 @@ function create_each_block(key_2, ctx) {
 			if_block.c();
 			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 24 24");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__icon svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__icon svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).color);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bought svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bought svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[24].purchased / /*m*/ ctx[24].required * 100) + "%");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "delivered svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "delivered svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", Math.min(100, /*m*/ ctx[24].delivered / /*m*/ ctx[24].required * 100) + "%");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__bar svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(small, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__info svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__row svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__bar svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(small, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__info svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__row svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "done", /*m*/ ctx[24].left <= 0);
 			this.first = div5;
 		},
@@ -97532,7 +97578,7 @@ function create_each_block(key_2, ctx) {
 	};
 }
 
-// (150:12) {:else}
+// (155:12) {:else}
 function create_else_block(ctx) {
 	let span;
 
@@ -97551,7 +97597,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (148:12) {#if lastResult}
+// (153:12) {#if lastResult}
 function create_if_block(ctx) {
 	let span;
 	let t_value = /*lastResult*/ ctx[4].message + "";
@@ -97561,7 +97607,7 @@ function create_if_block(ctx) {
 		c() {
 			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
 			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "ok", /*lastResult*/ ctx[4].ok);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "err", !/*lastResult*/ ctx[4].ok);
 		},
@@ -97593,6 +97639,11 @@ function create_fragment(ctx) {
 	let div0;
 	let t0;
 	let div2;
+	let div1;
+	let t2;
+	let h1;
+	let t3_value = (/*data*/ ctx[0].shop || "Строительные материалы") + "";
+	let t3;
 	let t4;
 	let div3;
 	let span;
@@ -97636,13 +97687,14 @@ function create_fragment(ctx) {
 			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.innerHTML = `<svg viewBox="0 0 24 24" class="svelte-7dwjvj"><path d="M3 21h18M5 21V10l7-5 7 5v11"></path><path d="M9 21v-6h6v6"></path></svg>`;
+			div0.innerHTML = `<svg viewBox="0 0 24 24" class="svelte-j0oab3"><path d="M3 21h18M5 21V10l7-5 7 5v11"></path><path d="M9 21v-6h6v6"></path></svg>`;
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			div2.innerHTML = `<div class="cshop__eyebrow svelte-7dwjvj">Государственный склад</div> 
-                <h1 class="svelte-7dwjvj">Строительные материалы</h1>`;
-
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Государственный склад";
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
@@ -97659,18 +97711,20 @@ function create_fragment(ctx) {
 			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if_block1.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__logo svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__title svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__budget svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__logo svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "cshop__eyebrow svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__title svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__budget svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "debt", /*data*/ ctx[0].money < 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__close svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__close svelte-j0oab3");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "title", "Закрыть (Esc)");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__head svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__foot svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "cshop__box svelte-7dwjvj");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "cshop svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__head svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__foot svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "cshop__box svelte-j0oab3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "cshop svelte-j0oab3");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div8, anchor);
@@ -97679,6 +97733,10 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, h1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t4);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span);
@@ -97706,6 +97764,7 @@ function create_fragment(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
+			if (dirty & /*data*/ 1 && t3_value !== (t3_value = (/*data*/ ctx[0].shop || "Строительные материалы") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].org + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
 			if (dirty & /*data*/ 1 && t8_value !== (t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*data*/ ctx[0].money) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
 
@@ -183967,7 +184026,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (63:0) {#if visible}
+// (66:0) {#if visible}
 function create_if_block(ctx) {
 	let if_block_anchor;
 
@@ -184008,7 +184067,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (69:4) {:else}
+// (72:4) {:else}
 function create_else_block(ctx) {
 	let div;
 	let each_value = /*visible*/ ctx[0];
@@ -184068,7 +184127,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (64:4) {#if typeof visible == "string"}
+// (67:4) {#if typeof visible == "string"}
 function create_if_block_1(ctx) {
 	let div2;
 	let div0;
@@ -184108,7 +184167,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (71:12) {#each visible as item}
+// (74:12) {#each visible as item}
 function create_each_block(ctx) {
 	let div2;
 	let div0;
@@ -184199,6 +184258,9 @@ function instance($$self, $$props, $$invalidate) {
 		Festive: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть обмен Coin'),
 		SaluteShop: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть магазин фейерверков'),
 		BlackMarket: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть чёрный рынок'),
+		CargoPallet: 'Взять груз',
+		ContractDelivery: 'Разгрузить груз',
+		ContractNpc: 'Поговорить',
 		TankRoyale: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Регистрация Tank Royale'),
 		Casino: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'двери в казино'),
 		Atm: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Открыть меню банкомата'),

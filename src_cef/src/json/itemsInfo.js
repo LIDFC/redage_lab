@@ -324,6 +324,7 @@ export const ItemId = {
 	StolenJewelry: 396,
 	StolenCarParts: 397,
 	WaterBottle: 398,
+	CarProgrammer: 399,
 	Bracelets: -15,
 	Watches: -14,
 	Glasses: -13,
@@ -668,6 +669,7 @@ export const itemsInfo = {
 	[ItemId.StolenElectronics]: {"Name":"Краденая техника","Description":"Ноутбуки, приставки, телефоны. Скупщик у Мавра заберёт.","Icon":"inv-item-camera","Type":"Остальное","Stack":5,"functionType":0},
 	[ItemId.StolenJewelry]: {"Name":"Краденые украшения","Description":"Кольца, цепочки, часы. Скупщик у Мавра заберёт.","Icon":"inv-item-gold","Type":"Остальное","Stack":20,"functionType":0},
 	[ItemId.StolenCarParts]: {"Name":"Детали угнанного авто","Description":"Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","Icon":"inv-item-car","Type":"Остальное","Stack":10,"functionType":0},
-	[ItemId.WaterBottle]: {"Name":"Бутылка воды","Description":"Нужна для полива растений.","Icon":"inv-item-eCola","Type":"Остальное","Stack":5,"functionType":0}
+	[ItemId.WaterBottle]: {"Name":"Бутылка воды","Description":"Нужна для полива растений.","Icon":"inv-item-eCola","Type":"Остальное","Stack":5,"functionType":0},
+	[ItemId.CarProgrammer]: {"Name":"Программатор","Description":"Взлом электронных замков дорогих машин. Подойдите к машине и используйте.","Icon":"inv-item-picklock","Type":"Инструмент","Stack":1,"functionType":0}
 
 }

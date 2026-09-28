@@ -28,6 +28,8 @@ namespace NeptuneEvo.Crime
         }
 
         private static readonly Dictionary<int, Session> Sessions = new Dictionary<int, Session>();
+        /// <summary>Отвёртка-отмычка в руке (src_client/inventory/attachments.js "crime_lockpick").</summary>
+        private static readonly uint LockpickProp = NAPI.Util.GetHashKey("crime_lockpick");
         private const double MinSeconds = 2.5;
         private const float MaxDistance = 3.5f;
 
@@ -49,7 +51,7 @@ namespace NeptuneEvo.Crime
                 Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Нужна отмычка", 3000);
                 return false;
             }
-            if (IsBusy(player))
+            if (IsBusy(player) || CyberHack.IsBusy(player))
                 return false;
 
             Sessions[player.GetUUID()] = new Session
@@ -62,7 +64,9 @@ namespace NeptuneEvo.Crime
                 OnSuccess = onSuccess,
                 OnFail = onFail,
             };
-            Trigger.PlayAnimation(player, "mini@safe_cracking", "idle_base", 1);
+            // Возня с замком двери/машины на уровне груди + отвёртка в руке
+            Trigger.PlayAnimation(player, "anim@amb@clubhouse@tutorial@bkr_tut_ig3@", "machinic_loop_mechandplayer", 1);
+            Chars.Attachments.AddAttachment(player, LockpickProp);
             Trigger.ClientEvent(player, "client.lockbreak.open", JsonConvert.SerializeObject(new { difficulty, picks, title }));
             return true;
         }
@@ -72,6 +76,7 @@ namespace NeptuneEvo.Crime
             Sessions.Remove(player.GetUUID());
             Trigger.ClientEvent(player, "client.lockbreak.close");
             Trigger.StopAnimation(player);
+            Chars.Attachments.RemoveAttachment(player, LockpickProp);
         }
 
         private static bool TryGet(ExtPlayer player, out Session session)

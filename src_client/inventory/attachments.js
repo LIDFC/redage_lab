@@ -363,6 +363,8 @@ function addItems()
 	mp.attachments.register("phonecall", "redagephone",  6286, new mp.Vector3(0.06, 0.01, -0.02), new mp.Vector3(80, -10, 110), true);
 	mp.attachments.register("carkey", "lr_prop_carkey_fob", 57005, new mp.Vector3(0.14, 0.03, -0.01), new mp.Vector3(-110.0, 105.0, -15.0), true);
 	mp.attachments.register("tablet", "prop_cs_tablet", 60309, new mp.Vector3(0.03, 0.002, -0.0), new mp.Vector3(10.0, 160.0, 0.0), true);
+	// Отмычка-отвёртка в правой руке при взломе замков (Crime/LockBreak.cs)
+	mp.attachments.register("crime_lockpick", "prop_tool_screwdvr01", 57005, new mp.Vector3(0.12, 0.03, -0.02), new mp.Vector3(-80.0, 0.0, 0.0), true);
 	mp.attachments.register('microphone', 'prop_microphone_02', 60309, new mp.Vector3(0.06715794, 0.03628302, -0.00216622), new mp.Vector3(243.8641, -12.80466, 10.23078), true);
 	mp.attachments.register('vape', 'ba_prop_battle_vape_01', 18905, new mp.Vector3(0.11999999999989086, 0, 0.030000000000654836), new mp.Vector3(-180, 90, -20), true);
 

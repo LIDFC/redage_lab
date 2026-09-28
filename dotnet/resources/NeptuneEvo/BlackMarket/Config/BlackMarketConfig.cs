@@ -149,7 +149,7 @@ namespace NeptuneEvo.BlackMarket.Config
         }
 
         private static readonly ItemId[] CrimeItems =
-            { ItemId.WeedSeed, ItemId.WeedRaw, ItemId.StolenElectronics, ItemId.StolenJewelry, ItemId.StolenCarParts };
+            { ItemId.WeedSeed, ItemId.WeedRaw, ItemId.StolenElectronics, ItemId.StolenJewelry, ItemId.StolenCarParts, ItemId.CarProgrammer };
 
         public bool IsAllowed(ItemId itemId) => Whitelist.Contains((int)itemId) && Chars.Repository.ItemsInfo.ContainsKey(itemId);
 

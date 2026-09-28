@@ -345,6 +345,7 @@ require('./player/crosshair.js');
 require('./player/death.js');
 require('./player/dial.js');
 require('./player/lockbreak.js');
+require('./player/cyberhack.js');
 require('./player/crime.js');
 require('./player/docs.js');
 require('./player/donatemenu.js');

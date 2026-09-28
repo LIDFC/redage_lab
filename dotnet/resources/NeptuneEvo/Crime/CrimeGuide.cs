@@ -47,6 +47,7 @@ namespace NeptuneEvo.Crime
                             lockpickPrice = Main.BlackMarketLockPick,
                         },
                         theft = new { cooldown = CarTheft.CarTheftManager.CooldownLeft(player) },
+                        programmerPrice = CarTheft.CarTheftManager.ProgrammerPrice,
                         weed = Weed.WeedManager.GuideInfo(player),
                         fence = BlackMarket.Fence.FenceManager.View(player),
                     };

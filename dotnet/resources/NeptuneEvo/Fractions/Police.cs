@@ -757,6 +757,7 @@ namespace NeptuneEvo.Fractions
             { ItemId.StolenElectronics, 20 },
             { ItemId.StolenJewelry, 20 },
             { ItemId.StolenCarParts, 20 },
+            { ItemId.CarProgrammer, 1 },
             { ItemId.BagWithDrill, 1000 },
             { ItemId.Lockpick, 15 },
             { ItemId.ArmyLockpick, 75 },

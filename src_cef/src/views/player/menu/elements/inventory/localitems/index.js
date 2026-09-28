@@ -5,6 +5,7 @@ import i395 from './395.png';
 import i396 from './396.png';
 import i397 from './397.png';
 import i398 from './398.png';
+import i399 from './399.png';
 
 export const localItemIcons = {
     393: i393,
@@ -13,4 +14,5 @@ export const localItemIcons = {
     396: i396,
     397: i397,
     398: i398,
+    399: i399,
 };

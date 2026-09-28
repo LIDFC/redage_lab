@@ -2753,6 +2753,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
             { ItemId.StolenJewelry, new ItemsInfo("Краденые украшения", "Кольца, цепочки, часы. Скупщик у Мавра заберёт.","inv-item-gold", "Остальное", NAPI.Util.GetHashKey("prop_paper_bag_small"), 20, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
             { ItemId.StolenCarParts, new ItemsInfo("Детали угнанного авто", "Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","inv-item-car", "Остальное", NAPI.Util.GetHashKey("prop_toolchest_01"), 10, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
             { ItemId.WaterBottle, new ItemsInfo("Бутылка воды", "Нужна для полива растений.","inv-item-eCola", "Остальное", NAPI.Util.GetHashKey("prop_ld_flow_bottle"), 5, new Vector3(0.0,0.0,-0.97), new Vector3(), newItemType.None) },
+            { ItemId.CarProgrammer, new ItemsInfo("Программатор", "Взлом электронных замков дорогих машин. Подойдите к машине и используйте.","inv-item-picklock", "Инструмент", NAPI.Util.GetHashKey("prop_cs_tablet"), 1, new Vector3(0.0,0.0,-0.98), new Vector3(), newItemType.None) },
 
         };
 
@@ -5325,6 +5326,9 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
                 bool gender = characterData.Gender;
 
                 bool success = false;
+
+                if ((Item.ItemId == ItemId.Lockpick || Item.ItemId == ItemId.CarProgrammer) && Crime.CarTheft.CarTheftManager.OnUseTool(player, Item.ItemId))
+                    return;
 
                 if (Item.ItemId == ItemId.WeedSeed || Item.ItemId == ItemId.WeedRaw)
                 {

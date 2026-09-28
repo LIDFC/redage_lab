@@ -85,6 +85,7 @@
 	import FractionsCreate from '@/views/fractions/create/index.svelte';
 	import FractionsContractShop from '@/views/fractions/contractshop/index.svelte';
 	import PlayerLockBreak from '@/views/player/lockbreak/index.svelte';
+	import PlayerCyberHack from '@/views/player/cyberhack/index.svelte';
 	import FractionsStock from '@/views/fractions/stock/index.svelte';
 	import FractionsPolicecomputer from '@/views/fractions/policecomputer/index.svelte';
 	import FractionsTicket from '@/views/fractions/ticket/index.svelte';
@@ -187,6 +188,7 @@
 		FractionsCreate,
 		FractionsContractShop,//Склад стройматериалов (подряды)
 		PlayerLockBreak,//Взлом замка отмычкой (Crime/LockBreak)
+		PlayerCyberHack,//Программатор для электронных замков (Crime/CyberHack)
 
 		CasinoBlackjack,
 		CasinoHorse,

@@ -118,6 +118,8 @@ namespace NeptuneEvo.Organizations.Contracts
                 CheckGeneration();
                 CheckDeadlines();
                 lock (ContractsCore.Sync)
+                    Delivery.Reconcile();
+                lock (ContractsCore.Sync)
                     Cargo.CargoVehicle.Sync();
             }
             catch (Exception e)
@@ -326,6 +328,9 @@ namespace NeptuneEvo.Organizations.Contracts
                 $"Принял подряд #{contract.Id} «{contract.Title}» (награда {ContractsCore.Money(contract.Reward)}, неустойка {ContractsCore.Money(contract.Penalty)})");
             ContractAudit.Write("accept", contract.Id, organizationData.Id, player.GetUUID(), contract.Reward);
             Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Подряд #{contract.Id} принят. Срок: {FormatDuration(contract.DeadlineMinutes)}", 4000);
+            lock (ContractsCore.Sync)
+                Delivery.Reconcile();
+            Delivery.ShowBlipsForOrganization(contract);
             NotifyOrganization(organizationData.Id, $"{player.Name} принял подряд #{contract.Id}: {contract.Title}", player);
             return true;
         }
@@ -397,6 +402,14 @@ namespace NeptuneEvo.Organizations.Contracts
                 Contracts.Remove(contractId);
             }
             ContractAudit.Write("admin_delete", contract.Id, contract.OrganizationId, adminUuid);
+            lock (ContractsCore.Sync)
+            {
+                foreach (var unit in Cargo.CargoManager.GetByContract(contract.Id))
+                    ContractsRepository.Enqueue(Cargo.CargoManager.Unbind(unit));
+                Delivery.Reconcile();
+            }
+            if (contract.OrganizationId > 0)
+                Delivery.HideBlip(contract.OrganizationId, contract.Id);
             if (contract.OrganizationId > 0)
             {
                 ContractAudit.OrgLog(contract.OrganizationId, 0, "Администрация", OrganizationLogsType.ContractCancel, $"Подряд #{contract.Id} снят администрацией (без неустойки)");
@@ -446,6 +459,9 @@ namespace NeptuneEvo.Organizations.Contracts
             }
             else
                 ContractsRepository.Save(contract);
+
+            Delivery.HideBlip(contract.OrganizationId, contract.Id);
+            Delivery.Reconcile();
 
             var action = status == ContractStatus.Completed ? "complete" : status == ContractStatus.Failed ? "fail" : "cancel";
             ContractAudit.Write(action, contract.Id, contract.OrganizationId, actorUuid, money,

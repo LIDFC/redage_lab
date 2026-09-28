@@ -172,6 +172,9 @@ namespace NeptuneEvo.Organizations.Contracts.Cargo
             return SaveCommand(unit);
         }
 
+        /// <summary>Сохранить изменённую паллету (количество/привязку) — команда для транзакции.</summary>
+        public static MySqlCommand Touch(CargoUnit unit) => SaveCommand(unit);
+
         /// <summary>Отвязать груз от контракта (контракт закрыт) — груз остаётся владельцу.</summary>
         public static MySqlCommand Unbind(CargoUnit unit)
         {

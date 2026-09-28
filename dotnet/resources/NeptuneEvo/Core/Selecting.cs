@@ -123,6 +123,9 @@ namespace NeptuneEvo.Core
                         if (house == null) return;
                         if (!house.Owner.Equals(player.Name) && (!house.Roommates.ContainsKey(player.Name) || !house.Roommates[player.Name].isFurniture) && characterData.AdminLVL < 6)
                         {
+                            // Старый обыск мебели заменён ограблением домов (Crime/Burglary): лут — на отмеченных точках
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Мебель заперта. Ищите ценности на отмеченных точках дома", 3000);
+                            if (odata != null) return;
                             var lockpick = Chars.Repository.isItem(player, "inventory", ItemId.Lockpick);
                             int count = (lockpick == null) ? 0 : lockpick.Item.Count;
                             if (count == 0)

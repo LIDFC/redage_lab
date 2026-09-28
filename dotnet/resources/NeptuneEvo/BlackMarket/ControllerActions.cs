@@ -55,7 +55,7 @@ namespace NeptuneEvo.BlackMarket
 
         /// <summary>Действия обнала работают у Мавра и без VPN — там игрок стоит лично.</summary>
         private static bool AllowedWithoutVpn(ExtPlayer player, string action) =>
-            (action == "launder" || action == "cashout" || action == "cashoutGps" || action == "refresh") && CashOut.AtPoint(player);
+            (action == "launder" || action == "cashout" || action == "cashoutGps" || action == "fenceSell" || action == "refresh") && CashOut.AtPoint(player);
 
         /// <summary>
         /// Все действия приложения. Из CEF приходят только идентификаторы и введённые числа —
@@ -130,6 +130,9 @@ namespace NeptuneEvo.BlackMarket
                         break;
                     case "cashout":
                         result = CashOut.Cashout(player, Long(args, "btc"));
+                        break;
+                    case "fenceSell":
+                        result = Fence.FenceManager.Sell(player, Int(args, "itemId"), Int(args, "count"), (string)args["pay"] == "btc");
                         break;
                     case "cashoutGps":
                         {

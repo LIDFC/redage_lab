@@ -215,6 +215,11 @@ namespace NeptuneEvo.Functions
         CargoPallet,
         ContractDelivery,
         ContractNpc,
+
+        BurglaryLoot,
+        WeedPlant,
+        WeedBuyer,
+        ChopShop,
     }
     class CustomColShape : Script
     {

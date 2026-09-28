@@ -161,8 +161,8 @@
     const handleKeyUp = (event) => {
         const { keyCode } = event;
 
-        for(let i = 0; i < 8; i++) {
-            if (49 + i == keyCode) {
+        for(let i = 0; i < Math.min(8, popupData.length); i++) {
+            if (49 + i == keyCode && popupData [i]) {
                 onCircleClick (popupData [i].func, popupData [i].index)
                 return;
             }

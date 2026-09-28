@@ -26,6 +26,7 @@ namespace NeptuneEvo.BlackMarket
                 Lots.Load();
                 DropManager.Load();
                 P2PManager.Load();
+                Fence.FenceManager.Load();
                 Ready = true;
 
                 // В главном потоке: объекты мира и инвентарь трогаем только оттуда

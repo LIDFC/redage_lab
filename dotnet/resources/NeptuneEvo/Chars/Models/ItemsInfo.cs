@@ -422,6 +422,13 @@ namespace NeptuneEvo.Chars.Models
         Giftcoin = 390,
         CombatRifle = 391,
         Glock = 392,
+        // Криминал (Crime/Burglary, Crime/Weed, BlackMarket/Fence)
+        WeedSeed = 393,
+        WeedRaw = 394,
+        StolenElectronics = 395,
+        StolenJewelry = 396,
+        StolenCarParts = 397,
+        WaterBottle = 398,
 
     }
     #endregion

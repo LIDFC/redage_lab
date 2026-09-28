@@ -2746,6 +2746,13 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
             { ItemId.CombatRifle, new ItemsInfo("Combat Rifle", "Сносящая все на своем пути винтовка","inv-item-Carbine-Rifle", "Оружие", 2379721761, 1, new Vector3(0.0,0.0,-0.99), new Vector3(90, 0, 0), newItemType.Weapons) },
 
             { ItemId.Glock, new ItemsInfo("Banana Glock", "Банана Глок топ","inv-item-Carbine-Rifle", "Оружие", 651271362, 1, new Vector3(0.0,0.0,-0.99), new Vector3(90, 0, 0), newItemType.Weapons) },
+            // Криминал: трава, краденое, детали угнанных машин
+            { ItemId.WeedSeed, new ItemsInfo("Семена конопли", "Посадите в тихом месте в лесу или дома. Растению нужен полив.","inv-item-marijuana", "Остальное", 4293279169, 20, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
+            { ItemId.WeedRaw, new ItemsInfo("Свежая конопля", "Свежий урожай. После сушки (20 минут) используйте, чтобы расфасовать.","inv-item-marijuana", "Остальное", 4293279169, 50, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
+            { ItemId.StolenElectronics, new ItemsInfo("Краденая техника", "Ноутбуки, приставки, телефоны. Скупщик у Мавра заберёт.","inv-item-camera", "Остальное", NAPI.Util.GetHashKey("prop_laptop_01a"), 5, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
+            { ItemId.StolenJewelry, new ItemsInfo("Краденые украшения", "Кольца, цепочки, часы. Скупщик у Мавра заберёт.","inv-item-gold", "Остальное", NAPI.Util.GetHashKey("prop_paper_bag_small"), 20, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
+            { ItemId.StolenCarParts, new ItemsInfo("Детали угнанного авто", "Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","inv-item-car", "Остальное", NAPI.Util.GetHashKey("prop_toolchest_01"), 10, new Vector3(0.0,0.0,-0.95), new Vector3(), newItemType.None) },
+            { ItemId.WaterBottle, new ItemsInfo("Бутылка воды", "Нужна для полива растений.","inv-item-eCola", "Остальное", NAPI.Util.GetHashKey("prop_ld_flow_bottle"), 5, new Vector3(0.0,0.0,-0.97), new Vector3(), newItemType.None) },
 
         };
 
@@ -5318,6 +5325,12 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
                 bool gender = characterData.Gender;
 
                 bool success = false;
+
+                if (Item.ItemId == ItemId.WeedSeed || Item.ItemId == ItemId.WeedRaw)
+                {
+                    Crime.Weed.WeedManager.OnUseItem(player, Item.ItemId);
+                    return;
+                }
 
                 if (ItemInfo.functionType == newItemType.Clothes/* && Item.ItemId != ItemId.BodyArmor && Item.ItemId != ItemId.Mask*/)
                 {                        

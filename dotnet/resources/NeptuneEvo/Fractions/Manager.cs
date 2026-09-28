@@ -1268,6 +1268,10 @@ namespace NeptuneEvo.Fractions
             { 80, new FracMatsData(80, "QR-код", Chars.Repository.ItemsInfo[ItemId.Note].Icon, $"{Main.BlackQrFake}$") },
             { 81, new FracMatsData(81, "Радиоперехватчик", Chars.Repository.ItemsInfo[ItemId.RadioInterceptor].Icon, $"{Main.BlackRadioInterceptord}$") },
             { 500, new FracMatsData(500, "Обнал крипты", Chars.Repository.ItemsInfo[ItemId.BagWithMoney].Icon, "BTC ⇄ $") },
+            { 501, new FracMatsData(501, "Скупка краденого", Chars.Repository.ItemsInfo[ItemId.StolenJewelry].Icon, "$ / BTC") },
+            // 502/503 — цены из settings/weed.json, пересоздаются в Crime.Weed.WeedManager.Init
+            { 502, new FracMatsData(502, "Семена конопли", Chars.Repository.ItemsInfo[ItemId.WeedSeed].Icon, "150$") },
+            { 503, new FracMatsData(503, "Бутылка воды", Chars.Repository.ItemsInfo[ItemId.WaterBottle].Icon, "30$") },
 
             //Для фракций
             { 8, new FracMatsData(8, Chars.Repository.ItemsInfo[ItemId.Nightstick].Name, Chars.Repository.ItemsInfo[ItemId.Nightstick].Icon, null) },

@@ -342,6 +342,14 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Склад организации/фракции (`FractionsStock`) переписан, события прежние (`stockTake/stockPut/stockExit`).
 - В `.gitignore` есть `[Ll]ogs/` — не называть папки с кодом `Logs`.
 
+## 7o. Криминал: ограбление домов, трава, скупка у Мавра, угон (`NeptuneEvo/Crime`)
+- Общее: `Crime/CrimeCore.cs` (`IsCriminal` — банды/байкеры/мафия или орг. с `CrimeOptions`; `IsNight` 22–06 с учётом `Admin.SetTime`; `CallPolice` — [F] сообщение POLICE/SHERIFF/FIB, метка на 5 мин, всегда звёзды). Новые предметы 393–398 (`WeedSeed`, `WeedRaw`, `StolenElectronics`, `StolenJewelry`, `StolenCarParts`, `WaterBottle`), иконки лежат локально в CEF `inventory/localitems`.
+- Мини-игра взлома: CEF `views/player/lockbreak` (порт rage-lock-break, Apache-2.0, NOTICE в папке), клиент `player/lockbreak.js`, сервер `Crime/LockBreak.cs` (`LockBreak.Start(...)`, сломанная отмычка снимается из инвентаря, открытие проверяется по времени/дистанции).
+- Ограбление домов `Crime/Burglary/BurglaryManager.cs`: заменило старый взлом ломом (`HouseManager.OnEnterHouse`, мебель в `Selecting.cs` закрыта). Диалог `BURGLARY_START`, 3 точки лута (`ColShapeEnums.BurglaryLoot`), кулдауны дом 6 ч / игрок 15 мин.
+- Трава `Crime/Weed/` (`settings/weed.json`, таблица `weed_plants`): семена/вода — меню Мавра 502/503 (+ вода в 24/7), посадка — «Использовать» семена у точек `spots` (±4 м) или в своём доме; полив/сбор/уничтожение полицией — `ColShapeEnums.WeedPlant`; «Использовать» свежую коноплю через `dryMinutes` → `ItemId.Drugs`. Покупатели (`WeedBuyer`, ввод `weed_sell`) автоматически ставятся у точек разгрузки 24/7 и сохраняются в конфиг.
+- Скупка краденого `BlackMarket/Fence/FenceManager.cs`: меню Мавра 501 → приложение ЧР, вкладка «Скупка» (`Fence.svelte`), действие `fenceSell` работает без VPN у Мавра. Цена падает от насыщения (`fence.items[].capacity`), восстановление `recoverPercentPerHour`, таблица `blackmarket_fence_demand`, BTC с бонусом `btcBonusPercent`.
+- Угон `Crime/CarTheft/CarTheftManager.cs`: пункт банды «Угон автотранспорта» (раньше был выключен). Машина на случайной точке `dropPoints`, 30% сигнализация → звёзды, разборка в зоне `ColShapeEnums.ChopShop` у Мавра (или `chopPoint` в `blackmarket.json`) → `StolenCarParts`. Машины угона помечены `DeliveryGang`, но обычная сдача их не принимает.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

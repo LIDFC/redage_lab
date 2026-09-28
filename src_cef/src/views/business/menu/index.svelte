@@ -1,4 +1,5 @@
 <script>
+    import { localItemIcons } from '@/views/player/menu/elements/inventory/localitems/index.js'
     import { translateText } from 'lang'
     import { executeClient } from 'api/rage'
     import './css/main.sass'
@@ -159,7 +160,15 @@
 
     ];
 
+    // Новые пункты Мавра (Crime/*): картинки лежат в интерфейсе, а не на CDN
+    const localImages = {
+        'Семена конопли': localItemIcons[393],
+        'Бутылка воды': localItemIcons[398],
+        'Скупка краденого': localItemIcons[396],
+    };
+
     const getOtherImageUrl = (name) => {
+        if (localImages[name]) return localImages[name];
         const image = configImages.find(x => x.name === name);
         return document.cloud + (image ? image.url : 'inventoryItems/items/sm-icon-sim.png');
     }

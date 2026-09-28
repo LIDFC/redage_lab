@@ -1219,6 +1219,9 @@ namespace NeptuneEvo.Houses
             if (house == null) return;
             if (string.IsNullOrEmpty(house.Owner))
             {
+                // Ничейный (NPC) дом: криминал ночью в маске и с отмычкой может его ограбить (Crime/Burglary)
+                if (Crime.Burglary.BurglaryManager.TryOffer(player, house, false))
+                    return;
                 OpenHouseBuyMenu(player);
                 return;
             }
@@ -1241,73 +1244,12 @@ namespace NeptuneEvo.Houses
                         var playerHouse = GetHouse(player);
                         if (playerHouse != null && playerHouse.ID == house.ID) house.SendPlayer(player);
                         else if (sessionData.HouseData.InvitedHouseID == house.ID) house.SendPlayer(player);
+                        else if (characterData.AdminLVL >= 5)
+                            house.SendPlayer(player);
                         else
                         {
-                            if (!FunctionsAccess.IsWorking("crowbar"))
-                            {
-                                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.FunctionOffByAdmins), 3000);
-                                return;
-                            }
-                            if (characterData.AdminLVL < 5)
-                            {
-                                if (house.Price == 0) return;
-                                if (house.HijackTime > DateTime.Now)
-                                {
-                                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NedavnoGrabili), 3000);
-                                    return;
-                                }
-                                if (sessionData.ActiveWeap.Item != null)
-                                {
-                                    if (sessionData.ActiveWeap.Index == -1) return;
-                                    var itemData = Chars.Repository.GetItemData(player, "fastSlots", sessionData.ActiveWeap.Index);
-                                    if (itemData.ItemId == ItemId.Debug)
-                                    {
-                                        sessionData.ActiveWeap = new ItemStruct("", -1, null);
-                                        return;
-                                    }
-                                    if (itemData.ItemId == ItemId.Crowbar)
-                                    {
-                                        var memberFractionData = player.GetFractionMemberData();
-                                        if (memberFractionData != null)
-                                        {
-                                            switch (Fractions.Manager.FractionTypes[memberFractionData.Id])
-                                            {
-                                                case FractionsType.Mafia: // Mafia
-                                                case FractionsType.Gangs: // Gangs
-                                                case FractionsType.Bikers: // Bikers
-                                                    if (memberFractionData.Rank < 3)
-                                                    {
-                                                        Notify.Send(player, NotifyType.Error,
-                                                            NotifyPosition.BottomCenter,
-                                                            LangFunc.GetText(LangType.Ru, DataName.HomeGrabit3Rank),
-                                                            3000);
-                                                        return;
-                                                    }
-
-                                                    break;
-                                                default: // Организации с улучшением крайм-принадлежностей
-                                                    if (!player.IsOrganizationAccess(RankToAccess.OrgCrime)) return;
-                                                    break;
-                                            }
-                                        }
-
-                                        if (sessionData.IsHicjacking) return;
-                                        sessionData.IsHicjacking = true;
-                                        if (house.Alarm) 
-                                            Selecting.CallPoliceHijack(player, 0, house.Owner);
-                                        
-                                        Trigger.PlayAnimation(player, "mini@safe_cracking", "idle_base", 39);
-                                        // Trigger.ClientEventInRange(player.Position, 250f, "PlayAnimToKey", player, false, "vzlomhouse");
-                                        Trigger.ClientEvent(player, "fullblockMove", true);
-                                        Trigger.ClientEvent(player, "freeze", true);
-                                        sessionData.CurrentStage = 0;
-                                        Trigger.ClientEvent(player, "dial", "open", house.LockAngles[0]);
-                                        Commands.RPChat("sme", player, LangFunc.GetText(LangType.Ru, DataName.HackingHome));
-                                    }
-                                }
-                            }
-                            else 
-                                house.SendPlayer(player);
+                            // Взлом чужого дома — ограбление отмычкой с мини-игрой (Crime/Burglary), старый лом убран
+                            Crime.Burglary.BurglaryManager.TryOffer(player, house, true);
                         }
                     }
                     else 

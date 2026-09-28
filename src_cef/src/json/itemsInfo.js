@@ -318,6 +318,12 @@ export const ItemId = {
 	Giftcoin: 390,
 	CombatRifle: 391,
 	Glock: 392,
+	WeedSeed: 393,
+	WeedRaw: 394,
+	StolenElectronics: 395,
+	StolenJewelry: 396,
+	StolenCarParts: 397,
+	WaterBottle: 398,
 	Bracelets: -15,
 	Watches: -14,
 	Glasses: -13,
@@ -656,6 +662,12 @@ export const itemsInfo = {
 	[ItemId.Glowstick]: {"Name":"Светящиеся палочки","Description":"Красивые светящиеся палочки, которые можно держать в руках.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":0},
 	[ItemId.Giftcoin]: {"Name":"Подарок","Description":"Подарок, который для тебя подготовил Санта!.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":2000,"functionType":0},
 	[ItemId.CombatRifle]: {"Name":"Combat Rifle","Description":"Оружие.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":2},
-	[ItemId.Glock]: {"Name":"Glock","Description":"Оружие.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":2}
+	[ItemId.Glock]: {"Name":"Glock","Description":"Оружие.","Icon":"inv-item-Assault-Rifle","Type":"Особое","Stack":1,"functionType":2},
+	[ItemId.WeedSeed]: {"Name":"Семена конопли","Description":"Посадите в тихом месте в лесу или дома. Растению нужен полив.","Icon":"inv-item-marijuana","Type":"Остальное","Stack":20,"functionType":0},
+	[ItemId.WeedRaw]: {"Name":"Свежая конопля","Description":"Свежий урожай. После сушки (20 минут) используйте, чтобы расфасовать.","Icon":"inv-item-marijuana","Type":"Остальное","Stack":50,"functionType":0},
+	[ItemId.StolenElectronics]: {"Name":"Краденая техника","Description":"Ноутбуки, приставки, телефоны. Скупщик у Мавра заберёт.","Icon":"inv-item-camera","Type":"Остальное","Stack":5,"functionType":0},
+	[ItemId.StolenJewelry]: {"Name":"Краденые украшения","Description":"Кольца, цепочки, часы. Скупщик у Мавра заберёт.","Icon":"inv-item-gold","Type":"Остальное","Stack":20,"functionType":0},
+	[ItemId.StolenCarParts]: {"Name":"Детали угнанного авто","Description":"Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","Icon":"inv-item-car","Type":"Остальное","Stack":10,"functionType":0},
+	[ItemId.WaterBottle]: {"Name":"Бутылка воды","Description":"Нужна для полива растений.","Icon":"inv-item-eCola","Type":"Остальное","Stack":5,"functionType":0}
 
 }

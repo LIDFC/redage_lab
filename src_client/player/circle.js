@@ -12,8 +12,8 @@ const categoryData = {
 	[translateText("Парные анимации")]: [ "embrace", "kiss", "paired_five", "paired_slap", "carry_0", "carry_1", "carry_2", "carry_3" ],
 	[translateText("Вылечить")]: [ "heal", "epinephrine" ],
 	//
-	[translateText("Машина")]: ["hood", "trunk", "doors", "carinv", "trunkAction", "ticketveh", "breaking_trunk", "veh_fix", "cargo_put", "cargo_take"],
-	[translateText("Взаимодействие с багажником")]: [ "intrunk", "fromtrunk", "newnumber" ],
+	[translateText("Машина")]: ["hood", "trunk", "doors", "carinv", "trunkAction", "ticketveh", "breaking_trunk", "veh_fix"],
+	[translateText("Взаимодействие с багажником")]: [ "intrunk", "fromtrunk", "newnumber", "cargo_put", "cargo_take" ],
 	[translateText("В машине")]: ["belt", "hood", "trunk", "doors", "streetrace"],
 	[translateText("Недвижимость")]: ["sellcar", "sellhouse", "roommate", "invitehouse"],
 	[translateText("Фракция")]:
@@ -540,6 +540,13 @@ gm.events.add('client.circle.events', (func, index) => {
 					case 2:
 						mp.events.callRemote('vehicleSelected', global.entity, index + 10);
 						return;
+					// Груз подрядов (Organizations/Contracts/Cargo)
+					case 3:
+						mp.events.callRemote('server.cargo.vehicle', global.entity, 'put');
+						return;
+					case 4:
+						mp.events.callRemote('server.cargo.vehicle', global.entity, 'take');
+						return;
 				}
 				return;
 			case translateText("Машина"):
@@ -554,12 +561,7 @@ gm.events.add('client.circle.events', (func, index) => {
 					case 7:
 						mp.events.callRemote('vehicleSelected', global.entity, index);
 						return;
-					case 8:
-						mp.events.callRemote('server.cargo.vehicle', global.entity, 'put');
-						return;
-					case 9:
-						mp.events.callRemote('server.cargo.vehicle', global.entity, 'take');
-						return;
+
 				}
 				return;
 			case translateText("Вылечить"):

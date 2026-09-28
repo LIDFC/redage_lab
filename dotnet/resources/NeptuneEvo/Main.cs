@@ -1880,6 +1880,9 @@ namespace NeptuneEvo
                             return;
                         }
                         return;
+                    case "weed_sell":
+                        Crime.Weed.WeedManager.OnSellInput(player, text);
+                        return;
                     case "extend_hotel_rent":
                         limit = 0;
                         if (text.Contains('.')) text = text.Replace(".", null);
@@ -2691,6 +2694,9 @@ namespace NeptuneEvo
                         case "ORG_CONTRACT_NPC":
                             Organizations.Contracts.Npc.ContractNpc.OnConfirm(player);
                             return;
+                        case "BURGLARY_START":
+                            Crime.Burglary.BurglaryManager.OnConfirm(player);
+                            return;
                         case "BIZ_SELL_TOGOV":
                             Players.Phone.Property.Businesses.Repository.OnSellConfirm(player);
                             return;
@@ -3381,6 +3387,8 @@ namespace NeptuneEvo
                 HouseManager.Init();
                 Houses.Apartments.ApartmentManager.Init();
                 BlackMarket.BlackMarketManager.Init();
+                Crime.Weed.WeedManager.Init();
+                Crime.CarTheft.CarTheftManager.Init();
 
                 VehicleManager.Init();
                 

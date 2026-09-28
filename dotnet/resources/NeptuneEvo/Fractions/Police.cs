@@ -752,6 +752,11 @@ namespace NeptuneEvo.Fractions
         public static readonly Dictionary<ItemId, int> IllegalsItems = new Dictionary<ItemId, int>
         {
             { ItemId.Drugs, 2 },
+            { ItemId.WeedSeed, 1 },
+            { ItemId.WeedRaw, 2 },
+            { ItemId.StolenElectronics, 20 },
+            { ItemId.StolenJewelry, 20 },
+            { ItemId.StolenCarParts, 20 },
             { ItemId.BagWithDrill, 1000 },
             { ItemId.Lockpick, 15 },
             { ItemId.ArmyLockpick, 75 },

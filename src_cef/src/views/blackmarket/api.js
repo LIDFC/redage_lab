@@ -34,6 +34,7 @@ export const categories = [
     { key: "mods", name: "Обвесы" },
     { key: "armor", name: "Броня" },
     { key: "tools", name: "Инструменты" },
+    { key: "stolen", name: "Краденое" },
 ];
 
 export const toInt = (value) => {

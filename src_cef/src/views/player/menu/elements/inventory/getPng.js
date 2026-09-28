@@ -1,5 +1,6 @@
 
 import { ItemType, ItemId } from 'json/itemsInfo.js'
+import { localItemIcons } from './localitems/index.js'
 
 const Bool = (text) => {
     return String(text).toLowerCase() === "true";
@@ -71,6 +72,8 @@ export const isPng = (url) => {
 
 export const getPng = (localItem, iconInfo) => {
     try {
+        if (localItemIcons[localItem.ItemId])
+            return localItemIcons[localItem.ItemId];
         if (localItem.ItemId !== ItemId.BodyArmor && iconInfo.functionType === ItemType.Clothes) {
             let pngDirectory = "inventoryItems/clothes";
             

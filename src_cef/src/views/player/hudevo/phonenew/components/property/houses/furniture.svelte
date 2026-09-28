@@ -1,4 +1,5 @@
 <script>
+    import { furnitureImage } from '@/views/house/furniture/props/index.js';
     import { translateText } from 'lang'
     import {currentPage} from '../../../stores'
 
@@ -52,7 +53,7 @@
                     </div>
                     <div class="gray">{furniture.Name}</div>
                 </div>
-                <div class="newphone__rent_noneimage heal" style="background-image: url({document.cloud + `inventoryItems/furniture/${furniture.Model}.png`});"></div>
+                <div class="newphone__rent_noneimage heal" style="background-image: url({furnitureImage(furniture.Model)});"></div>
             </div>
             {/each}
         {:else}
@@ -77,7 +78,7 @@
                 </div>
                 <div class="gray">{houseFurnitures [selectedFurniture].Name}</div>
             </div>
-            <div class="newphone__rent_noneimage heal" style="background-image: url({document.cloud + `inventoryItems/furniture/${houseFurnitures [selectedFurniture].Model}.png`});"></div>
+            <div class="newphone__rent_noneimage heal" style="background-image: url({furnitureImage(houseFurnitures [selectedFurniture].Model)});"></div>
         </div>
 
         <div class="newphone__project_button" on:click={() => onFurnitureBuy (1)} class:auction={!houseFurnitures [selectedFurniture].IsSet} class:property={houseFurnitures [selectedFurniture].IsSet}>{!houseFurnitures [selectedFurniture].IsSet ? translateText('player2', 'Установить') : translateText('player2', 'Убрать')}</div>

@@ -5,6 +5,7 @@ using NeptuneEvo.Character;
 using NeptuneEvo.Fractions.Models;
 using NeptuneEvo.Fractions.Player;
 using NeptuneEvo.Handles;
+using NeptuneEvo.Organizations.Player;
 using Newtonsoft.Json;
 using Redage.SDK;
 
@@ -24,9 +25,13 @@ namespace NeptuneEvo.Crime
                 if (!player.IsCharacterData())
                     return;
                 var allowed = CrimeCore.IsCriminal(player);
+                // Вкладка видна в панели той группы, которая криминальная: банда/мафия/байкеры — в панели фракции,
+                // криминальная организация — в панели организации (у гос. фракции вкладки нет, даже если игрок в крайм-орге)
+                var fractionAllowed = CrimeCore.IsCriminalFraction(player);
+                var orgAllowed = player.GetOrganizationData()?.CrimeOptions ?? false;
                 object data;
                 if (!allowed)
-                    data = new { allowed = false };
+                    data = new { allowed = false, fractionAllowed = false, orgAllowed = false };
                 else
                 {
                     var fracId = player.GetFractionId();
@@ -34,6 +39,8 @@ namespace NeptuneEvo.Crime
                     data = new
                     {
                         allowed = true,
+                        fractionAllowed,
+                        orgAllowed,
                         isGang,
                         isFraction = CrimeCore.IsCriminalFraction(player),
                         payoutNote = CrimeCore.PayoutNote(player),

@@ -4,6 +4,7 @@
     import './main.sass'
     import './fonts/style.css'
     import { ItemType, itemsInfo } from 'json/itemsInfo.js'
+    import { furnitureImage } from './props/index.js'
 
     export let viewData;
 
@@ -96,7 +97,7 @@
                         {#if brokenImages[furniture.model]}
                             <span class="fimg__icon">{iconOf(furniture.type)}</span>
                         {:else}
-                            <img src={document.cloud + "inventoryItems/furniture" + `/${furniture.model}.png`} alt="" on:error={() => (brokenImages = { ...brokenImages, [furniture.model]: true })} />
+                            <img src={furnitureImage(furniture.model)} alt="" on:error={() => (brokenImages = { ...brokenImages, [furniture.model]: true })} />
                         {/if}
                     </div>
                 </div>

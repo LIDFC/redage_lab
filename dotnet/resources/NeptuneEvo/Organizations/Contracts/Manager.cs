@@ -5,7 +5,7 @@ using NeptuneEvo.Core;
 using NeptuneEvo.Handles;
 using NeptuneEvo.Organizations.Contracts.Config;
 using NeptuneEvo.Organizations.Contracts.Generators;
-using NeptuneEvo.Organizations.Contracts.Logs;
+using NeptuneEvo.Organizations.Contracts.Audit;
 using NeptuneEvo.Organizations.Contracts.Methods;
 using NeptuneEvo.Organizations.Contracts.Models;
 using NeptuneEvo.Organizations.Models;

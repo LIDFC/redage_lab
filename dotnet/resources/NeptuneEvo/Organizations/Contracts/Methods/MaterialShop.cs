@@ -8,7 +8,7 @@ using NeptuneEvo.Core;
 using NeptuneEvo.Handles;
 using NeptuneEvo.Organizations.Contracts.Cargo;
 using NeptuneEvo.Organizations.Contracts.Config;
-using NeptuneEvo.Organizations.Contracts.Logs;
+using NeptuneEvo.Organizations.Contracts.Audit;
 using NeptuneEvo.Organizations.Models;
 using NeptuneEvo.Organizations.Player;
 using NeptuneEvo.Table.Models;

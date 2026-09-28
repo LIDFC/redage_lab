@@ -1647,7 +1647,10 @@
             case 15:
             case 248:
             case 229:
-            case ItemId.SimCard:return true;
+            case ItemId.SimCard:
+            case ItemId.WeedSeed:
+            case ItemId.WeedRaw:
+            case ItemId.CarProgrammer:return true;
             //case 249: return true;
         }
         return false;
@@ -1824,7 +1827,7 @@
                     <div class="type">{itemsInfo [selectItem.ItemId].Type}</div>
                 </div>
                 <div class="title left">{translateText('player1', 'Описание')}</div>
-                <div class="desc left">{itemsInfo [selectItem.ItemId].Description} [DEBUG-INFO: {getPng(selectItem, itemsInfo [selectItem.ItemId]).replace(document.cloud, '').replace(".png", '')}]</div>
+                <div class="desc left">{itemsInfo [selectItem.ItemId].Description}</div>
                 {#if itemsInfo [selectItem.ItemId].functionType === ItemType.Weapons && inventoryWeapons [selectItem.ItemId]}
                     <div class="title left">{translateText('player1', 'Характеристики')}</div>
                     {#if wMaxHP [selectItem.ItemId] && selectItem.Data && selectItem.Data.split("_") && selectItem.Data.split("_").length > 1 && selectItem.Data.split("_")[1] != undefined}

@@ -48,6 +48,7 @@ namespace NeptuneEvo.Crime
                         },
                         theft = new { cooldown = CarTheft.CarTheftManager.CooldownLeft(player) },
                         programmerPrice = CarTheft.CarTheftManager.ProgrammerPrice,
+                        superBonus = CrimeCore.Payout(player, CarTheft.CarTheftManager.SuperBonus),
                         weed = Weed.WeedManager.GuideInfo(player),
                         fence = BlackMarket.Fence.FenceManager.View(player),
                     };

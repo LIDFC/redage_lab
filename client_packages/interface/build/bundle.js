@@ -251229,7 +251229,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (122:38) 
+// (123:38) 
 function create_if_block_7(ctx) {
 	let ol;
 	let li0;
@@ -251359,7 +251359,7 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (99:37) 
+// (100:37) 
 function create_if_block_6(ctx) {
 	let div5;
 	let div0;
@@ -251824,30 +251824,39 @@ function create_if_block_3(ctx) {
 	let li2;
 	let b3;
 	let t11;
-	let br0;
-	let t12;
 	let b4;
+	let t13;
+	let br0;
 	let t14;
-	let br1;
-	let t15;
 	let b5;
+	let t16;
+	let br1;
 	let t17;
-	let t18_value = /*money*/ ctx[7](/*data*/ ctx[0].programmerPrice) + "";
-	let t18;
+	let b6;
 	let t19;
+	let t20_value = /*money*/ ctx[7](/*data*/ ctx[0].programmerPrice) + "";
 	let t20;
+	let t21;
+	let t22;
 	let li3;
-	let t23;
-	let li4;
+	let b7;
+	let t24;
+	let t25_value = /*money*/ ctx[7](/*data*/ ctx[0].superBonus) + "";
+	let t25;
 	let t26;
+	let t27;
+	let li4;
+	let t30;
 	let li5;
-	let t29;
+	let t33;
+	let li6;
+	let t36;
 	let div2;
-	let t31;
+	let t38;
 	let div5;
-	let t32;
+	let t39;
 	let div3;
-	let t34;
+	let t41;
 	let div4;
 	let mounted;
 	let dispose;
@@ -251877,38 +251886,48 @@ function create_if_block_3(ctx) {
 			li2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
 			b3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
 			b3.textContent = "Вскройте замок.";
-			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" В уведомлении написано, какой замок у машины. Подойдите к двери, откройте инвентарь и «Использовать»:\n                        ");
-			br0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
-			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("— ");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" В уведомлении написано, какой замок у машины. Подойдите к двери и нажмите ");
 			b4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
-			b4.textContent = "обычная машина";
-			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — «Отмычка» (та же мини-игра, что у домов: мышь + A/D);\n                        ");
-			br1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
-			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("— ");
+			b4.textContent = "G → «Взломать транспорт»";
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — нужный прибор выберется сам (или инвентарь → прибор → «Использовать»):\n                        ");
+			br0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("— ");
 			b5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
-			b5.textContent = "дорогая машина";
-			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — «Программатор» (Мавр, ");
-			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t18_value);
-			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("): соберите нужную последовательность кодов в матрице, пока не кончилось время. Провал — программатор сгорает и срабатывает сигнализация.");
-			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b5.textContent = "обычная машина";
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — «Отмычка» (та же мини-игра, что у домов: мышь + A/D);\n                        ");
+			br1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("br");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("— ");
+			b6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b6.textContent = "дорогая машина";
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" — «Программатор» (Мавр, ");
+			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t20_value);
+			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("): соберите нужную последовательность кодов в матрице, пока не кончилось время. Провал — программатор сгорает и срабатывает сигнализация.");
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li3.innerHTML = `<b class="svelte-auda25">Угоните.</b> Садитесь за руль — провода замкнутся, двигатель заведётся. Сесть может только ваша команда. У дешёвых машин с шансом 30% сработает сигнализация — полиция получит метку, вы — звёзды.`;
-			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			b7.textContent = "Эксклюзивные заказы";
+			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" (примерно каждый десятый): Lexus LX570, Mercedes G63 6×6, Mercedes GLS 63, BMW X6M. Только программатор с усиленной защитой, при угоне с шансом 90% полиция получит сигнал трекера и вы — 3 звезды. Зато 14–16 деталей и ");
+			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t25_value);
+			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" наличными от Мавра сразу при разборке.");
+			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li4.innerHTML = `<b class="svelte-auda25">Пригоните к Мавру на разборку.</b> Заезжайте в зону разборки (20 м вокруг Мавра) и нажмите E за рулём. Через 10 секунд машину разберут на «Детали угнанного авто» — чем целее машина, тем больше деталей.`;
-			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li4.innerHTML = `<b class="svelte-auda25">Угоните.</b> Садитесь за руль — провода замкнутся, двигатель заведётся. Сесть может только ваша команда. У дешёвых машин с шансом 30% сработает сигнализация — полиция получит метку, вы — звёзды.`;
+			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			li5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
-			li5.innerHTML = `<b class="svelte-auda25">Продайте детали</b> Мавру в «Скупке краденого».`;
-			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li5.innerHTML = `<b class="svelte-auda25">Пригоните к Мавру на разборку.</b> Заезжайте в зону разборки (20 м вокруг Мавра) и нажмите E за рулём. Через 10 секунд машину разберут на «Детали угнанного авто» — чем целее машина, тем больше деталей.`;
+			t33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			li6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("li");
+			li6.innerHTML = `<b class="svelte-auda25">Продайте детали</b> Мавру в «Скупке краденого».`;
+			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2.textContent = "Полиция может отобрать машину и сдать её на штрафстоянку. Машину миссии «Перевозка» разобрать нельзя — её везут по адресу.";
-			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t38 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			if (if_block1) if_block1.c();
-			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div3.textContent = "Мавр — заказ, отмычки, программатор";
-			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div4.textContent = "Разборка";
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-auda25");
@@ -251922,10 +251941,13 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b3, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b4, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b6, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li2, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b7, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li3, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li4, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li5, "class", "svelte-auda25");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li6, "class", "svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ol, "class", "crg__steps svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "crg__warn svelte-auda25");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "crg__btn svelte-auda25");
@@ -251951,30 +251973,38 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li2);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, br0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t12);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, br0);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t14);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, br1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t15);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, br1);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t18);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, b6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t19);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t20);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li2, t21);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t22);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t23);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, b7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, t24);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, t25);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(li3, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t27);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t26);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t30);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t29, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, t33);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(ol, li6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t36, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t31, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t38, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
 			if (if_block1) if_block1.m(div5, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t32);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t39);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t34);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t41);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
 
 			if (!mounted) {
@@ -252008,7 +252038,8 @@ function create_if_block_3(ctx) {
 				if_block0 = null;
 			}
 
-			if (dirty & /*data*/ 1 && t18_value !== (t18_value = /*money*/ ctx[7](/*data*/ ctx[0].programmerPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t18, t18_value);
+			if (dirty & /*data*/ 1 && t20_value !== (t20_value = /*money*/ ctx[7](/*data*/ ctx[0].programmerPrice) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t20, t20_value);
+			if (dirty & /*data*/ 1 && t25_value !== (t25_value = /*money*/ ctx[7](/*data*/ ctx[0].superBonus) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t25, t25_value);
 
 			if (/*data*/ ctx[0].isGang) {
 				if (if_block1) {
@@ -252016,7 +252047,7 @@ function create_if_block_3(ctx) {
 				} else {
 					if_block1 = create_if_block_4(ctx);
 					if_block1.c();
-					if_block1.m(div5, t32);
+					if_block1.m(div5, t39);
 				}
 			} else if (if_block1) {
 				if_block1.d(1);
@@ -252028,9 +252059,9 @@ function create_if_block_3(ctx) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(ol);
 			if (if_block0) if_block0.d();
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t29);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t36);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t31);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t38);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
 			if (if_block1) if_block1.d();
 			mounted = false;
@@ -252237,7 +252268,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (129:20) {#each f.items as item}
+// (130:20) {#each f.items as item}
 function create_each_block(ctx) {
 	let div;
 	let span;
@@ -252328,7 +252359,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (95:20) {#if data.isGang}
+// (96:20) {#if data.isGang}
 function create_if_block_4(ctx) {
 	let div;
 	let mounted;
@@ -271741,7 +271772,7 @@ function get_each_context_5(ctx, list, i) {
 	return child_ctx;
 }
 
-// (1765:0) {#if visible}
+// (1768:0) {#if visible}
 function create_if_block(ctx) {
 	let div27;
 	let t0;
@@ -272699,7 +272730,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (1767:4) {#if (selectItem.use === stageItem.move)}
+// (1770:4) {#if (selectItem.use === stageItem.move)}
 function create_if_block_29(ctx) {
 	let div;
 	let slot;
@@ -272765,7 +272796,7 @@ function create_if_block_29(ctx) {
 	};
 }
 
-// (1776:4) {#if (infoItem !== defaulHoverItem && selectItem.use !== stageItem.move)}
+// (1779:4) {#if (infoItem !== defaulHoverItem && selectItem.use !== stageItem.move)}
 function create_if_block_26(ctx) {
 	let div2;
 	let div1;
@@ -272850,7 +272881,7 @@ function create_if_block_26(ctx) {
 	};
 }
 
-// (1780:16) {#if wMaxHP [infoItem.ItemId] && infoItem.Data && infoItem.Data.split("_") && infoItem.Data.split("_").length > 1 && infoItem.Data.split("_")[1] != undefined}
+// (1783:16) {#if wMaxHP [infoItem.ItemId] && infoItem.Data && infoItem.Data.split("_") && infoItem.Data.split("_").length > 1 && infoItem.Data.split("_")[1] != undefined}
 function create_if_block_28(ctx) {
 	let div;
 	let t0;
@@ -272882,7 +272913,7 @@ function create_if_block_28(ctx) {
 	};
 }
 
-// (1786:16) {#if OtherInfo.Id == otherType.Tent && infoItem.Price}
+// (1789:16) {#if OtherInfo.Id == otherType.Tent && infoItem.Price}
 function create_if_block_27(ctx) {
 	let div;
 	let t0;
@@ -272911,7 +272942,7 @@ function create_if_block_27(ctx) {
 	};
 }
 
-// (1915:71) 
+// (1918:71) 
 function create_if_block_24(ctx) {
 	let div5;
 	let div0;
@@ -273052,7 +273083,7 @@ function create_if_block_24(ctx) {
 	};
 }
 
-// (1811:71) 
+// (1814:71) 
 function create_if_block_10(ctx) {
 	let div9;
 	let div8;
@@ -273075,12 +273106,8 @@ function create_if_block_10(ctx) {
 	let t7_value = json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId].Description + "";
 	let t7;
 	let t8;
-	let t9_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_15__.getPng)(/*selectItem*/ ctx[9], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId]).replace(document.cloud, '').replace(".png", '') + "";
 	let t9;
 	let t10;
-	let t11;
-	let t12;
-	let t13;
 	let mounted;
 	let dispose;
 	let if_block0 = json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId].functionType === json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.ItemType.Weapons && json_inventoryweapons_js__WEBPACK_IMPORTED_MODULE_16__.default[/*selectItem*/ ctx[9].ItemId] && create_if_block_20(ctx);
@@ -273121,14 +273148,11 @@ function create_if_block_10(ctx) {
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" [DEBUG-INFO: ");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
-			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("]");
-			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block0) if_block0.c();
-			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block1) if_block1.c();
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if_block2.c();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "box-item-weapon__image");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + (0,_getPng_js__WEBPACK_IMPORTED_MODULE_15__.getPng)(/*selectItem*/ ctx[9], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId]) + ")");
@@ -273163,14 +273187,11 @@ function create_if_block_10(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t9);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t8);
 			if (if_block0) if_block0.m(div7, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t9);
 			if (if_block1) if_block1.m(div8, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t10);
 			if_block2.m(div9, null);
 			/*div9_binding*/ ctx[64](div9);
 
@@ -273191,7 +273212,6 @@ function create_if_block_10(ctx) {
 			if (dirty[0] & /*selectItem*/ 512 && raw_value !== (raw_value = /*getName*/ ctx[46](/*selectItem*/ ctx[9], /*selectItem*/ ctx[9].arrayName) + "")) div2.innerHTML = raw_value;;
 			if (dirty[0] & /*selectItem*/ 512 && t3_value !== (t3_value = json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId].Type + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 			if (dirty[0] & /*selectItem*/ 512 && t7_value !== (t7_value = json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId].Description + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
-			if (dirty[0] & /*selectItem*/ 512 && t9_value !== (t9_value = (0,_getPng_js__WEBPACK_IMPORTED_MODULE_15__.getPng)(/*selectItem*/ ctx[9], json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId]).replace(document.cloud, '').replace(".png", '') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
 
 			if (json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.itemsInfo[/*selectItem*/ ctx[9].ItemId].functionType === json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.ItemType.Weapons && json_inventoryweapons_js__WEBPACK_IMPORTED_MODULE_16__.default[/*selectItem*/ ctx[9].ItemId]) {
 				if (if_block0) {
@@ -273254,7 +273274,7 @@ function create_if_block_10(ctx) {
 	};
 }
 
-// (1793:4) {#if selectItem.use === stageItem.useItem && selectItem.tent && !OtherInfo.IsMyTent}
+// (1796:4) {#if selectItem.use === stageItem.useItem && selectItem.tent && !OtherInfo.IsMyTent}
 function create_if_block_8(ctx) {
 	let div4;
 	let div0;
@@ -273386,7 +273406,7 @@ function create_if_block_8(ctx) {
 	};
 }
 
-// (1925:8) {#if selectItem.Count > 2}
+// (1928:8) {#if selectItem.Count > 2}
 function create_if_block_25(ctx) {
 	let div;
 
@@ -273405,7 +273425,7 @@ function create_if_block_25(ctx) {
 	};
 }
 
-// (1828:16) {#if itemsInfo [selectItem.ItemId].functionType === ItemType.Weapons && inventoryWeapons [selectItem.ItemId]}
+// (1831:16) {#if itemsInfo [selectItem.ItemId].functionType === ItemType.Weapons && inventoryWeapons [selectItem.ItemId]}
 function create_if_block_20(ctx) {
 	let div0;
 	let t1;
@@ -273582,7 +273602,7 @@ function create_if_block_20(ctx) {
 	};
 }
 
-// (1830:20) {#if wMaxHP [selectItem.ItemId] && selectItem.Data && selectItem.Data.split("_") && selectItem.Data.split("_").length > 1 && selectItem.Data.split("_")[1] != undefined}
+// (1833:20) {#if wMaxHP [selectItem.ItemId] && selectItem.Data && selectItem.Data.split("_") && selectItem.Data.split("_").length > 1 && selectItem.Data.split("_")[1] != undefined}
 function create_if_block_23(ctx) {
 	let div3;
 	let div0;
@@ -273621,7 +273641,7 @@ function create_if_block_23(ctx) {
 	};
 }
 
-// (1850:20) {#if inventoryWeapons [selectItem.ItemId].accuracy}
+// (1853:20) {#if inventoryWeapons [selectItem.ItemId].accuracy}
 function create_if_block_22(ctx) {
 	let div3;
 	let div0;
@@ -273660,7 +273680,7 @@ function create_if_block_22(ctx) {
 	};
 }
 
-// (1864:20) {#if inventoryWeapons [selectItem.ItemId].ammo}
+// (1867:20) {#if inventoryWeapons [selectItem.ItemId].ammo}
 function create_if_block_21(ctx) {
 	let div2;
 	let div0;
@@ -273695,7 +273715,7 @@ function create_if_block_21(ctx) {
 	};
 }
 
-// (1883:73) 
+// (1886:73) 
 function create_if_block_19(ctx) {
 	let div2;
 	let div0;
@@ -273735,7 +273755,7 @@ function create_if_block_19(ctx) {
 	};
 }
 
-// (1878:12) {#if itemsInfo [selectItem.ItemId].functionType === ItemType.Weapons}
+// (1881:12) {#if itemsInfo [selectItem.ItemId].functionType === ItemType.Weapons}
 function create_if_block_18(ctx) {
 	let div2;
 	let div0;
@@ -273772,7 +273792,7 @@ function create_if_block_18(ctx) {
 	};
 }
 
-// (1892:8) {:else}
+// (1895:8) {:else}
 function create_else_block_2(ctx) {
 	let show_if_2 = /*getItemsUse*/ ctx[49](/*selectItem*/ ctx[9]) !== false;
 	let t0;
@@ -273910,7 +273930,7 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (1890:8) {#if OtherInfo.Id == otherType.Tent && OtherInfo.IsMyTent && selectItem.arrayName === "other"}
+// (1893:8) {#if OtherInfo.Id == otherType.Tent && OtherInfo.IsMyTent && selectItem.arrayName === "other"}
 function create_if_block_11(ctx) {
 	let div;
 	let span;
@@ -273946,7 +273966,7 @@ function create_if_block_11(ctx) {
 	};
 }
 
-// (1893:12) {#if getItemsUse (selectItem) !== false}
+// (1896:12) {#if getItemsUse (selectItem) !== false}
 function create_if_block_17(ctx) {
 	let div;
 	let raw_value = /*getItemsClickInfo*/ ctx[50](/*selectItem*/ ctx[9]) + "";
@@ -273978,7 +273998,7 @@ function create_if_block_17(ctx) {
 	};
 }
 
-// (1896:12) {#if getToPut (selectItem.ItemId) !== false && getDropItem (selectItem.arrayName, selectItem.ItemId) !== false && selectItem.arrayName === "inventory"}
+// (1899:12) {#if getToPut (selectItem.ItemId) !== false && getDropItem (selectItem.arrayName, selectItem.ItemId) !== false && selectItem.arrayName === "inventory"}
 function create_if_block_16(ctx) {
 	let div;
 	let span;
@@ -274014,7 +274034,7 @@ function create_if_block_16(ctx) {
 	};
 }
 
-// (1901:157) 
+// (1904:157) 
 function create_if_block_15(ctx) {
 	let div;
 	let span;
@@ -274050,7 +274070,7 @@ function create_if_block_15(ctx) {
 	};
 }
 
-// (1899:12) {#if OtherInfo.Id != otherType.Tent && (OtherInfo.Id > otherType.None || (maxSlotBackpack > 0 && ItemsData["backpack"].length) || tradeInfo.Active === true) && selectItem.arrayName !== "fastSlots" && selectItem.arrayName !== "accessories"}
+// (1902:12) {#if OtherInfo.Id != otherType.Tent && (OtherInfo.Id > otherType.None || (maxSlotBackpack > 0 && ItemsData["backpack"].length) || tradeInfo.Active === true) && selectItem.arrayName !== "fastSlots" && selectItem.arrayName !== "accessories"}
 function create_if_block_14(ctx) {
 	let div;
 	let span;
@@ -274094,7 +274114,7 @@ function create_if_block_14(ctx) {
 	};
 }
 
-// (1904:12) {#if selectItem.Count > 1 && selectItem.arrayName !== "fastSlots"}
+// (1907:12) {#if selectItem.Count > 1 && selectItem.arrayName !== "fastSlots"}
 function create_if_block_13(ctx) {
 	let div;
 	let span;
@@ -274130,7 +274150,7 @@ function create_if_block_13(ctx) {
 	};
 }
 
-// (1910:12) {#if getDropItem (selectItem.arrayName, selectItem.ItemId) !== false}
+// (1913:12) {#if getDropItem (selectItem.arrayName, selectItem.ItemId) !== false}
 function create_if_block_12(ctx) {
 	let div;
 	let span;
@@ -274166,7 +274186,7 @@ function create_if_block_12(ctx) {
 	};
 }
 
-// (1803:12) {#if selectItem.Count > 1}
+// (1806:12) {#if selectItem.Count > 1}
 function create_if_block_9(ctx) {
 	let div;
 
@@ -274185,7 +274205,7 @@ function create_if_block_9(ctx) {
 	};
 }
 
-// (2107:20) {#each ItemsData["inventory"] as item, index}
+// (2110:20) {#each ItemsData["inventory"] as item, index}
 function create_each_block_5(ctx) {
 	let slot;
 	let current;
@@ -274241,7 +274261,7 @@ function create_each_block_5(ctx) {
 	};
 }
 
-// (2118:16) {#if maxSlotBackpack > 0 && ItemsData["backpack"].length && ItemsData["backpack"][0] !== undefined && ItemsData["backpack"][0].use !== undefined}
+// (2121:16) {#if maxSlotBackpack > 0 && ItemsData["backpack"].length && ItemsData["backpack"][0] !== undefined && ItemsData["backpack"][0].use !== undefined}
 function create_if_block_7(ctx) {
 	let div5;
 	let div2;
@@ -274390,7 +274410,7 @@ function create_if_block_7(ctx) {
 	};
 }
 
-// (2126:28) {#each ItemsData["backpack"] as item, index}
+// (2129:28) {#each ItemsData["backpack"] as item, index}
 function create_each_block_4(ctx) {
 	let slot;
 	let current;
@@ -274446,7 +274466,7 @@ function create_each_block_4(ctx) {
 	};
 }
 
-// (2194:8) {:else}
+// (2197:8) {:else}
 function create_else_block(ctx) {
 	let div19;
 	let div18;
@@ -274908,7 +274928,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (2142:8) {#if tradeInfo.Active === false}
+// (2145:8) {#if tradeInfo.Active === false}
 function create_if_block_2(ctx) {
 	let div1;
 	let div0;
@@ -274969,7 +274989,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (2211:20) {#each ItemsData["trade"] as item, index}
+// (2214:20) {#each ItemsData["trade"] as item, index}
 function create_each_block_3(ctx) {
 	let slot;
 	let current;
@@ -275025,7 +275045,7 @@ function create_each_block_3(ctx) {
 	};
 }
 
-// (2243:20) {#each ItemsData["with_trade"] as item, index}
+// (2246:20) {#each ItemsData["with_trade"] as item, index}
 function create_each_block_2(ctx) {
 	let slot;
 	let current;
@@ -275075,7 +275095,7 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (2258:16) {#if tradeInfo.Active}
+// (2261:16) {#if tradeInfo.Active}
 function create_if_block_5(ctx) {
 	let div1;
 	let t0;
@@ -275153,7 +275173,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (2262:24) {:else}
+// (2265:24) {:else}
 function create_else_block_1(ctx) {
 	let div;
 	let t_value = (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Готов') + "";
@@ -275190,7 +275210,7 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (2260:24) {#if tradeInfo.YourStatus === true && tradeInfo.WithStatus === true}
+// (2263:24) {#if tradeInfo.YourStatus === true && tradeInfo.WithStatus === true}
 function create_if_block_6(ctx) {
 	let div;
 	let t_value = (0,lang__WEBPACK_IMPORTED_MODULE_2__.translateText)('player1', 'Подтвердить') + "";
@@ -275227,7 +275247,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (2146:20) {#if OtherInfo.Id > otherType.None}
+// (2149:20) {#if OtherInfo.Id > otherType.None}
 function create_if_block_3(ctx) {
 	let div5;
 	let div3;
@@ -275396,7 +275416,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (2167:32) {#if OtherInfo.Id === otherType.PublicWarehouse && ItemsData["other"] && ItemsData["other"].length}
+// (2170:32) {#if OtherInfo.Id === otherType.PublicWarehouse && ItemsData["other"] && ItemsData["other"].length}
 function create_if_block_4(ctx) {
 	let div3;
 	let div0;
@@ -275458,7 +275478,7 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (2179:32) {#each ItemsData["other"] as item, index}
+// (2182:32) {#each ItemsData["other"] as item, index}
 function create_each_block_1(ctx) {
 	let slot;
 	let current;
@@ -275514,7 +275534,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (2278:24) {#if index != -1}
+// (2281:24) {#if index != -1}
 function create_if_block_1(ctx) {
 	let div;
 	let t_value = /*index*/ ctx[186] + 1 + "";
@@ -275536,7 +275556,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (2276:16) {#each ItemsData["fastSlots"] as item, index}
+// (2279:16) {#each ItemsData["fastSlots"] as item, index}
 function create_each_block(ctx) {
 	let div;
 	let t0;
@@ -277377,6 +277397,9 @@ else */
 			case 248:
 			case 229:
 			case json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.ItemId.SimCard:
+			case json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.ItemId.WeedSeed:
+			case json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.ItemId.WeedRaw:
+			case json_itemsInfo_js__WEBPACK_IMPORTED_MODULE_5__.ItemId.CarProgrammer:
 				return true;
 		} //case 249: return true;
 

@@ -87,9 +87,8 @@ namespace NeptuneEvo.Core
                 if (!player.IsCharacterData()) return;
                 if (sessionData.TempBizID == -1 || !BusinessManager.BizList.ContainsKey(sessionData.TempBizID)) return;
 
-                var biztype = biz.Type;
-                if (biztype == 15) biztype = 4;
-                else biztype -= 2;
+                var biztype = BusinessManager.CarsIndex(biz.Type);
+                if (biztype < 0) return;
                 
                 var prices = new List<int>();
                 var gosPrices = new List<int>();

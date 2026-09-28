@@ -1,3 +1,16 @@
+// Автосалон: для длинных машин (грузовики) камера отодвигается по габаритам модели
+global.fitAutoshopCamera = (entity) => {
+	try {
+		if (!entity || !global.cameraInfo) return;
+		const dims = mp.game.gameplay.getModelDimensions(entity.model);
+		const length = Math.max(dims.max.y - dims.min.y, dims.max.x - dims.min.x, dims.max.z - dims.min.z);
+		const far = -Math.max(6.5, length * 1.15 + 2.5);
+		global.cameraInfo.radiusMin = far;
+		global.cameraInfo.radiusMax = Math.min(-2.25, far / 2.6);
+		global.cameraInfo.radius = far;
+	} catch (e) {}
+};
+
 global.fixRotation = 180;
 global.speedCamera = undefined;
 
@@ -45,6 +58,7 @@ global.createCamera = (name, entity = null) => {
 			global.cameraInfo.radius = -6.5;
 			global.cameraInfo.radiusMax = -2.25;
 			global.cameraInfo.radiusMin = -6.5;
+			global.fitAutoshopCamera(entity);
 			global.cameraInfo.overlayToggled = true;//Возможность регулировать отдаленгие
 			//
 			global.cameraPosition.poistionPoint = entity.position;

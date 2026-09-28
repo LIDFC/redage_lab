@@ -60,6 +60,9 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
                     continue;
                 if (spot.BusinessId > 0 && BusinessManager.BizList.TryGetValue(spot.BusinessId, out var bound) && bound.Type == BusinessType)
                 {
+                    // Конфиг — источник истины для площадки погрузки
+                    if (spot.Unload != null && (bound.UnloadPoint == null || bound.UnloadPoint.DistanceTo(spot.Unload) > 0.5f))
+                        SetUnloadPoint(bound, spot.Unload);
                     bound.UpdateLabel();
                     continue;
                 }
@@ -88,6 +91,22 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
             }
             if (changed)
                 ContractsConfig.Save();
+        }
+
+        /// <summary>Площадка погрузки склада: бизнес (память и БД) + конфиг.</summary>
+        public static void SetUnloadPoint(Business biz, Vector3 point)
+        {
+            biz.UnloadPoint = point;
+            using var command = new MySqlCommand("UPDATE `businesses` SET `unloadpoint`=@point WHERE `id`=@id");
+            command.Parameters.AddWithValue("@point", Newtonsoft.Json.JsonConvert.SerializeObject(point));
+            command.Parameters.AddWithValue("@id", biz.ID);
+            MySQL.Query(command);
+            var spot = GetSpot(biz.ID);
+            if (spot != null && (spot.Unload == null || spot.Unload.DistanceTo(point) > 0.1f))
+            {
+                spot.Unload = point;
+                ContractsConfig.Save();
+            }
         }
 
         /// <summary>Админ: новый склад на позиции администратора (площадка погрузки — там же, поменять: /createunloadpoint).</summary>
@@ -243,6 +262,14 @@ namespace NeptuneEvo.Organizations.Contracts.Methods
                 GameLog.Money($"org({organizationData.Id})", $"biz({info.BizId})", cost, $"orgContractBuy({info.ContractId},{materialId}x{units})");
 
                 Trigger.ClientEvent(player, "createWaypoint", info.Point.X, info.Point.Y);
+                // Временная метка площадки с купленными паллетами (3 минуты)
+                var blipId = $"orgcargo_{info.BizId}";
+                Trigger.ClientEvent(player, "createBlip", blipId, "Ваш груз", 478, info.Point, 0.9f, 47);
+                Timers.StartOnce(3 * 60 * 1000, () =>
+                {
+                    if (player != null && player.Exists)
+                        Trigger.ClientEvent(player, "deleteBlip", blipId);
+                }, true);
                 Result(player, true, $"{text}. Паллет: {created.Count} — они у площадки погрузки", organizationData);
             }
             catch (Exception e)

@@ -27,8 +27,24 @@ namespace NeptuneEvo.Organizations.Contracts.Cargo
             return ContractsConfig.Current.Vehicles.FirstOrDefault(v => NAPI.Util.GetHashKey(v.Model) == model);
         }
 
+        /// <summary>Список моделей для игрока: одинаковые названия (bison/bison2/bison3) показываются один раз.</summary>
         public static string ModelsText() =>
-            string.Join(", ", ContractsConfig.Current.Vehicles.Select(v => v.Name));
+            string.Join(", ", ContractsConfig.Current.Vehicles.Select(v => v.Name).Distinct());
+
+        /// <summary>Почему машина не подходит под груз организации orgId (null — подходит по принадлежности).</summary>
+        public static string OwnershipError(ExtVehicle vehicle, int orgId)
+        {
+            var localData = vehicle?.GetVehicleLocalData();
+            if (localData == null)
+                return "Машина не найдена";
+            if (localData.Access == VehicleAccess.OrganizationGarage)
+                return "Сначала выгоните машину из гаража организации";
+            if (localData.Access != VehicleAccess.Organization)
+                return "Это не машина организации. Грузовик для организации покупается в «Грузовом автосалоне» кнопкой «Купить (ОРГ)»";
+            if (localData.Fraction != orgId)
+                return "Это машина другой организации";
+            return null;
+        }
 
         public static CargoCapacity GetCapacity(string number, CargoVehicleDefinition definition)
         {

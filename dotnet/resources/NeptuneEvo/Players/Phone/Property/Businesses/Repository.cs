@@ -79,7 +79,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
                 {
                     var count = 0;
 
-                    if (biz.Type >= 2 && biz.Type <= 5)
+                    if (BusinessManager.IsOrderCarShowroom(biz.Type))
                         count = 3;
                     else
                     {
@@ -149,7 +149,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
             return Convert.ToInt32(maxPrice);
         }
         
-        internal static int CountMinOrder(int bizType) => (bizType == 14 || (bizType >= 2 && bizType <= 5)) ? 1 : 10;
+        internal static int CountMinOrder(int bizType) => (bizType == 14 || BusinessManager.IsOrderCarShowroom(bizType)) ? 1 : 10;
 
         public static void AddOrder(ExtPlayer player, string name, int value)
         {
@@ -265,7 +265,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
                 
                 var count = 0;
                 
-                if (biz.Type >= 2 && biz.Type <= 5) 
+                if (BusinessManager.IsOrderCarShowroom(biz.Type)) 
                     count = 3;
                 else
                 {
@@ -330,7 +330,7 @@ namespace NeptuneEvo.Players.Phone.Property.Businesses
                 
                 var count = 0;
                 
-                if (biz.Type >= 2 && biz.Type <= 5) 
+                if (BusinessManager.IsOrderCarShowroom(biz.Type)) 
                     count = 3;
                 else
                 {

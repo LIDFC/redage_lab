@@ -91,6 +91,7 @@
 .atm__icon.home { -webkit-mask-image: url(../images/home-fill.svg); }
 .atm__icon.store { -webkit-mask-image: url(../images/store-fill.svg); }
 .atm__icon.article { -webkit-mask-image: url(../images/article-fill.svg); }
+.atm__icon.org { -webkit-mask-image: url(../images/org-fill.svg); }
 .atm__icon.exit {
     background: #F2555A;
     -webkit-mask-image: none;

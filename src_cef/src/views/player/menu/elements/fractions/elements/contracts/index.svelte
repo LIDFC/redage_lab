@@ -199,7 +199,7 @@
                                 <div class="octr__section_title">Транспорт <em>Общий вес {number(selected.totalKg)} кг</em></div>
                                 <div class="octr__transport">
                                     <b>Организационный грузовой автомобиль</b>
-                                    <span>Личные машины не подходят — только транспорт из гаража организации. Груз можно возить несколькими рейсами.</span>
+                                    <span>Только транспорт из гаража организации — купить его можно в «Грузовом автосалоне» кнопкой «Купить (ОРГ)». Груз можно возить несколькими рейсами.</span>
                                     <div class="octr__models">
                                         {#each data.vehicles as v}
                                             <div><b>{v.name}</b><span>{v.slots} пал. · {number(v.kg)} кг</span></div>

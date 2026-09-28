@@ -206,6 +206,8 @@ namespace NeptuneEvo.Organizations.Contracts.Cargo
             var prop = type?.Prop ?? "prop_boxpile_07d";
             var ground = unit.Position - new Vector3(0, 0, 0.98);
             unit.Object = (ExtObject)NAPI.Object.CreateObject(NAPI.Util.GetHashKey(prop), ground, new Vector3(0, 0, (unit.Id * 37) % 360), 255, unit.Dimension);
+            // Клиент по этим данным кладёт паллету на землю и подсвечивает «свой» груз (src_client/table/cargo.js)
+            unit.Object.SetSharedData("cargoPallet", $"{unit.OwnerType}:{unit.OwnerId}:{unit.Quantity}:{type?.Name ?? unit.CargoType}");
 
             ownerLabel ??= OwnerName(unit);
             var text = $"~y~{type?.Name ?? unit.CargoType} ~w~×{unit.Quantity}" + (string.IsNullOrEmpty(ownerLabel) ? "" : $"\n~c~{ownerLabel}");

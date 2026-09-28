@@ -32,6 +32,7 @@ require('./cars.js')
 require("./forbes");
 require("./notify");
 require("./auction");
+require("./bank");
 
 require('./camera/index');
 require("./phoneAnim");

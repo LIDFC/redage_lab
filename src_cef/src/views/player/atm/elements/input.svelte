@@ -19,8 +19,10 @@
     $: maxLength = isAccount ? 10 : 7;
     // Для дома/бизнеса сервер присылает "баланс/максимум$"
     $: target = typeof subdata === "string" && subdata.includes('/') ? subdata.replace('$', '').split('/') : null;
-    $: title = isAccount ? 'Перевод на счёт' : placeholder === 'Сумма для перевода' ? 'Сумма перевода' : (menuItem[activeMain] ? menuItem[activeMain].title : 'Операция');
-    $: quick = !isAccount && (activeMain === 0 || activeMain === 1) ? [100, 500, 1000, 5000] : [];
+    // Счёт организации: сервер присылает "org:баланс:название"
+    $: org = typeof subdata === "string" && subdata.startsWith('org:') ? subdata.split(':') : null;
+    $: title = org ? placeholder : isAccount ? 'Перевод на счёт' : placeholder === 'Сумма для перевода' ? 'Сумма перевода' : (menuItem[activeMain] ? menuItem[activeMain].title : 'Операция');
+    $: quick = !isAccount && (activeMain === 0 || activeMain === 1) ? [100, 500, 1000, 5000] : org ? [1000, 5000, 10000, 50000] : [];
 
     const onHandleInput = () => {
         value = String(value).replace(/\D+/g, "").replace(/^0+/, "").slice(0, maxLength);
@@ -52,7 +54,13 @@
     onMount(() => input && input.focus());
 </script>
 <h1>{title}</h1>
-{#if target}
+{#if org}
+    <div class="atm__sub">Организация «{org.slice(2).join(':')}»</div>
+    <div class="atm__stats">
+        <div><p>Счёт организации</p><b>${format("money", org[1])}</b></div>
+        <div><p>{placeholder === 'Пополнение с карты' ? 'На карте' : 'Источник'}</p><b>{placeholder === 'Пополнение с карты' ? '$' + format("money", $charBankMoney) : 'Наличные'}</b></div>
+    </div>
+{:else if target}
     <div class="atm__sub">{holder}</div>
     <div class="atm__stats">
         <div><p>На счету</p><b>${format("money", target[0])}</b></div>

@@ -61,6 +61,7 @@ namespace NeptuneEvo.Organizations.Contracts
 
                 Cargo.CargoManager.Load();
                 MaterialShop.Seed();
+                NeptuneEvo.Businesses.TruckDealer.Seed();
                 Npc.ContractNpc.Init();
                 Cargo.CargoInteraction.LoadValidator = ValidateLoad;
                 Cargo.CargoInteraction.OnLoaded = (player, unit, number) =>

@@ -29,4 +29,5 @@ export const businessType = [
     "PetShop",
     "Elite Autoroom", // 15
     "Строительные материалы", // 16 (государственный)
+    "Грузовой автосалон", // 17
 ]

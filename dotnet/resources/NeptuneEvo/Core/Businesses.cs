@@ -122,6 +122,48 @@ namespace NeptuneEvo.Core
                 }
                 BusProductsData = busProductsData;
             }
+            SetupTruckDealer();
+        }
+
+        /// <summary>Тип бизнеса «Грузовой автосалон».</summary>
+        public const int TruckDealerType = 17;
+
+        /// <summary>
+        /// Коммерческий транспорт грузового автосалона (подходит для грузов подрядов организаций) и госцены
+        /// по умолчанию — если модели нет в mainconfig.bus_products (строки в БД важнее).
+        /// </summary>
+        public static readonly (string Model, int Price)[] TruckModels =
+        {
+            ("Bison3", 60000), ("bison", 45000), ("bison2", 50000),
+            ("rumpo", 55000), ("speedo", 55000), ("boxville", 90000),
+            ("mule", 140000), ("mule3", 150000), ("benson", 220000),
+            ("flatbed", 260000), ("pounder", 350000),
+        };
+
+        /// <summary>Индекс списка CarsNames для автосалона типа type (-1 — не автосалон).</summary>
+        public static int CarsIndex(int type) => type switch { 2 => 0, 3 => 1, 4 => 2, 5 => 3, 15 => 4, TruckDealerType => 5, _ => -1 };
+
+        /// <summary>Автосалоны с заказом машин по 3 шт (2–5 и грузовой).</summary>
+        public static bool IsOrderCarShowroom(int type) => (type >= 2 && type <= 5) || type == TruckDealerType;
+
+        public static bool IsTruckModel(string model) =>
+            model != null && TruckModels.Any(t => string.Equals(t.Model, model, StringComparison.OrdinalIgnoreCase));
+
+        /// <summary>
+        /// Грузовики продаются только в грузовом автосалоне: убрать их из списков остальных салонов,
+        /// собрать список грузового салона и добавить недостающие цены в BusProductsData.
+        /// </summary>
+        private static void SetupTruckDealer()
+        {
+            for (var i = 0; i < 5; i++)
+                CarsNames[i]?.RemoveAll(IsTruckModel);
+            CarsNames[5] = TruckModels.Select(t => t.Model).ToList();
+            foreach (var (model, price) in TruckModels)
+            {
+                if (BusProductsData.Keys.Any(k => string.Equals(k, model, StringComparison.OrdinalIgnoreCase)))
+                    continue;
+                BusProductsData[model] = new BusProductData(price, 0, 0, 10, (sbyte)BusProductToType.None, 0, true);
+            }
         }
 
         public static BusProductData GetBusProductData(string name)
@@ -171,6 +213,10 @@ namespace NeptuneEvo.Core
                         }
                     }
                 }
+                // Грузовики — только в грузовом автосалоне: убрать их из товаров остальных автосалонов
+                if (CarsIndex(data.Type) >= 0 && data.Type != TruckDealerType && data.Products.RemoveAll(p => IsTruckModel(p.Name)) > 0)
+                    changed = true;
+
                 // UNCOMMENT
                 switch (data.Type)
                 {
@@ -251,6 +297,18 @@ namespace NeptuneEvo.Core
                         break;
                     case 5:
                         foreach (string name in CarsNames[3])
+                        {
+                            if (!BusProductsData.ContainsKey(name)) continue;
+                            else if (BusProductsData[name].Price == 0) continue;
+                            if (data.Products.FirstOrDefault(x => x.Name == name) == null)
+                            {
+                                data.Products.Add(new Product(BusProductsData[name].Price, 0, 0, name, false));
+                                changed = true;
+                            }
+                        }
+                        break;
+                    case TruckDealerType:
+                        foreach (string name in CarsNames[5])
                         {
                             if (!BusProductsData.ContainsKey(name)) continue;
                             else if (BusProductsData[name].Price == 0) continue;
@@ -393,7 +451,7 @@ namespace NeptuneEvo.Core
         public static ConcurrentDictionary<int, Business> BizList = new ConcurrentDictionary<int, Business>();
         public static ConcurrentDictionary<int, int> Orders = new ConcurrentDictionary<int, int>(); // key - ID заказа, value - ID бизнеса
 
-        public static string[] BusinessTypeNames = new string[17]
+        public static string[] BusinessTypeNames = new string[18]
         {
             "24/7", // 0
             "Petrol Station", // 1
@@ -412,8 +470,9 @@ namespace NeptuneEvo.Core
             "PetShop", // 14
             "Elite Autoroom", // 15
             "Строительные материалы", // 16 — государственный склад для подрядов (Organizations/Contracts)
+            "Грузовой автосалон", // 17 — коммерческий транспорт (подходит для грузов организаций)
         };
-        public static int[] BlipByType = new int[17]
+        public static int[] BlipByType = new int[18]
         {
             52, // 24/7
             361, // petrol station
@@ -432,8 +491,9 @@ namespace NeptuneEvo.Core
             273, // Petshop
             669, // Rare Autoroom
             478, // стройматериалы
+            477, // грузовой автосалон
         };
-        public static int[] BlipColorByType = new int[17]
+        public static int[] BlipColorByType = new int[18]
         {
             4, // 24/7
             35, //76, // petrol station
@@ -452,6 +512,7 @@ namespace NeptuneEvo.Core
             4, // petshop
             4, // showroom
             47, // стройматериалы
+            47, // грузовой автосалон
         };
 
         /// <summary>Государственные бизнесы без владельца (не покупаются): склад стройматериалов для подрядов.</summary>
@@ -481,7 +542,7 @@ namespace NeptuneEvo.Core
             1462895032,
             -541762431,
         };
-        public static List<string>[] CarsNames = new List<string>[5]
+        public static List<string>[] CarsNames = new List<string>[6]
         {
             new List<string>() // premium
             {
@@ -928,7 +989,8 @@ namespace NeptuneEvo.Core
                 "cadctsv",
                 "quad1",
                 "vapidse"
-            } // elite
+            }, // elite
+            new List<string>() // грузовой автосалон — заполняется в SetupTruckDealer из TruckModels
         };
 
         public static List<Product> fillProductList(int type)
@@ -993,6 +1055,16 @@ namespace NeptuneEvo.Core
                             if (productsData.Price == 0) continue;
                             Product product = new Product(productsData.Price, 0, 0, name, false);
                             _ProductsList.Add(product);
+                        }
+                        break;
+                    case TruckDealerType:
+                        foreach (string name in CarsNames[5])
+                        {
+                            if (!BusProductsData.ContainsKey(name)) continue;
+                            var productsData = BusProductsData[name];
+                            if (!productsData.Toggled) continue;
+                            if (productsData.Price == 0) continue;
+                            _ProductsList.Add(new Product(productsData.Price, 0, 0, name, false));
                         }
                         break;
                     case 6:
@@ -1088,6 +1160,7 @@ namespace NeptuneEvo.Core
                     case 4:
                     case 5:
                     case 15:
+                    case TruckDealerType:
                         if (sessionData.Follower != null)
                         {
                             Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.OtpustiteChela), 3000);

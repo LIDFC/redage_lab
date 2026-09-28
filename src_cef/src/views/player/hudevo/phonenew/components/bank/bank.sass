@@ -1,0 +1,305 @@
+@import '@/views/assets/css/main.sass'
+
+// Приложение Fleeca — тёмная тема, фирменный зелёный Fleeca.
+// fluid() принимает только одно число, поэтому отступы расписаны по сторонам.
+
+$bg: #0C100E
+$card: #141A17
+$card2: #1A221E
+$line: rgba(255, 255, 255, 0.06)
+$text: #E8EDEA
+$muted: #88958E
+$green: #00A650
+$green2: #16C172
+$green-soft: rgba(0, 166, 80, 0.14)
+$red: #F2555A
+
+@mixin pad($v, $h)
+    @include fluid("padding-top", $v)
+    @include fluid("padding-bottom", $v)
+    @include fluid("padding-left", $h)
+    @include fluid("padding-right", $h)
+
+#newphone .newphone__rent.fleeca
+    background: radial-gradient(circle at 50% -10%, rgba(0, 166, 80, 0.18), rgba(0, 0, 0, 0) 55%), $bg
+    color: $text
+    .newphone__header
+        color: #fff
+    .newphone__homebutton_button
+        background: rgba(255, 255, 255, 0.55)
+
+    .fleeca__head
+        @include pad(10, 20)
+    .fleeca__brand
+        display: flex
+        align-items: baseline
+        @include fluid("gap", 8)
+        b
+            @include fluid("font-size", 26)
+            font-weight: 900
+            font-style: italic
+            letter-spacing: 1px
+            color: $green2
+        span
+            @include fluid("font-size", 12)
+            color: $muted
+
+    .fleeca__tabs
+        display: flex
+        overflow-x: auto
+        @include fluid("gap", 6)
+        @include fluid("padding-left", 16)
+        @include fluid("padding-right", 16)
+        @include fluid("padding-bottom", 10)
+        &::-webkit-scrollbar
+            display: none
+    .fleeca__tab
+        flex: none
+        @include pad(6, 11)
+        @include fluid("border-radius", 20)
+        @include fluid("font-size", 12)
+        font-weight: 600
+        color: $muted
+        background: $card
+        border: 1px solid $line
+        cursor: pointer
+        &.active
+            color: #fff
+            background: $green
+            border-color: $green
+
+    .fleeca__body
+        flex: 1
+        overflow-y: auto
+        @include fluid("padding-left", 16)
+        @include fluid("padding-right", 16)
+        @include fluid("padding-bottom", 60)
+        display: flex
+        flex-direction: column
+        @include fluid("gap", 10)
+        &::-webkit-scrollbar
+            display: none
+
+    .fleeca__card
+        position: relative
+        overflow: hidden
+        @include pad(16, 18)
+        @include fluid("border-radius", 18)
+        @include fluid("min-height", 150)
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: linear-gradient(135deg, #0B8F4A 0%, #00733A 55%, #04512B 100%)
+        box-shadow: 0 10px 30px rgba(0, 115, 58, 0.35)
+        &::after
+            content: ""
+            position: absolute
+            right: -30%
+            top: -40%
+            width: 90%
+            height: 140%
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0) 60%)
+    .fleeca__card_top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        b
+            @include fluid("font-size", 20)
+            font-weight: 900
+            font-style: italic
+            letter-spacing: 1px
+    .fleeca__chip
+        @include fluid("width", 34)
+        @include fluid("height", 26)
+        @include fluid("border-radius", 5)
+        background: linear-gradient(135deg, #F5D77E, #B8903A)
+    .fleeca__card_number
+        @include fluid("font-size", 19)
+        font-weight: 600
+        letter-spacing: 2px
+        @include fluid("margin-top", 14)
+    .fleeca__card_bottom
+        display: flex
+        justify-content: space-between
+        @include fluid("margin-top", 12)
+        span
+            display: block
+            @include fluid("font-size", 10)
+            opacity: 0.7
+        b
+            @include fluid("font-size", 15)
+        .right
+            text-align: right
+
+    .fleeca__stats
+        display: grid
+        grid-template-columns: 1fr 1fr
+        @include fluid("gap", 8)
+        div
+            background: $card
+            border: 1px solid $line
+            @include fluid("border-radius", 12)
+            @include pad(10, 12)
+        span
+            display: block
+            @include fluid("font-size", 11)
+            color: $muted
+        b
+            @include fluid("font-size", 15)
+
+    .fleeca__actions
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        @include fluid("gap", 8)
+        div
+            display: flex
+            flex-direction: column
+            align-items: center
+            @include fluid("gap", 6)
+            @include fluid("font-size", 11)
+            color: $muted
+            cursor: pointer
+        i
+            font-style: normal
+            display: flex
+            align-items: center
+            justify-content: center
+            @include fluid("width", 46)
+            @include fluid("height", 46)
+            @include fluid("border-radius", 14)
+            @include fluid("font-size", 20)
+            color: $green2
+            background: $green-soft
+
+    .fleeca__hint, .fleeca__small
+        @include fluid("font-size", 11)
+        color: $muted
+    .fleeca__hint
+        text-align: center
+
+    .fleeca__panel
+        background: $card
+        border: 1px solid $line
+        @include fluid("border-radius", 14)
+        @include pad(14, 14)
+        display: flex
+        flex-direction: column
+        @include fluid("gap", 8)
+        label
+            @include fluid("font-size", 11)
+            color: $muted
+    .fleeca__title
+        @include fluid("font-size", 16)
+        font-weight: 700
+    .fleeca__input
+        width: 100%
+        box-sizing: border-box
+        @include pad(10, 12)
+        @include fluid("border-radius", 10)
+        @include fluid("font-size", 15)
+        background: $card2
+        border: 1px solid $line
+        color: #fff
+        outline: none
+        &:focus
+            border-color: $green
+    .fleeca__chips
+        display: flex
+        flex-wrap: wrap
+        @include fluid("gap", 6)
+        div
+            @include pad(5, 10)
+            @include fluid("border-radius", 16)
+            @include fluid("font-size", 11)
+            background: $green-soft
+            color: $green2
+            cursor: pointer
+    .fleeca__btn
+        text-align: center
+        @include pad(11, 12)
+        @include fluid("border-radius", 12)
+        @include fluid("font-size", 14)
+        font-weight: 700
+        background: $green
+        color: #fff
+        cursor: pointer
+        &.disabled
+            background: $card2
+            color: $muted
+            pointer-events: none
+
+    .fleeca__tax
+        background: $card
+        border: 1px solid $line
+        @include fluid("border-radius", 12)
+        @include pad(10, 12)
+        cursor: pointer
+        &.active
+            border-color: $green
+    .fleeca__tax_row
+        display: flex
+        justify-content: space-between
+        @include fluid("font-size", 13)
+        @include fluid("margin-bottom", 6)
+        span
+            color: $muted
+            @include fluid("font-size", 11)
+    .fleeca__bar
+        @include fluid("height", 5)
+        @include fluid("border-radius", 3)
+        background: $card2
+        overflow: hidden
+        div
+            height: 100%
+            background: $green2
+
+    .fleeca__org
+        background: linear-gradient(135deg, rgba(0, 166, 80, 0.22), rgba(0, 166, 80, 0.06))
+        border: 1px solid rgba(0, 166, 80, 0.3)
+        @include fluid("border-radius", 14)
+        @include pad(14, 14)
+        display: flex
+        flex-direction: column
+        @include fluid("gap", 3)
+        span
+            @include fluid("font-size", 11)
+            color: $muted
+        b
+            @include fluid("font-size", 16)
+        em
+            font-style: normal
+            @include fluid("font-size", 22)
+            font-weight: 800
+            color: $green2
+            &.red
+                color: $red
+
+    .fleeca__history
+        background: $card
+        border: 1px solid $line
+        @include fluid("border-radius", 12)
+        @include pad(9, 12)
+        span
+            @include fluid("font-size", 10)
+            color: $muted
+        p
+            margin: 0
+            @include fluid("margin-top", 3)
+            @include fluid("font-size", 12)
+            line-height: 1.35
+
+    .fleeca__empty
+        text-align: center
+        @include fluid("font-size", 13)
+        color: $muted
+        @include pad(30, 10)
+
+    .fleeca__result
+        @include pad(10, 12)
+        @include fluid("border-radius", 10)
+        @include fluid("font-size", 12)
+        background: rgba(242, 85, 90, 0.12)
+        color: $red
+        &.ok
+            background: $green-soft
+            color: $green2

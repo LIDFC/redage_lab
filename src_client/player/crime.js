@@ -88,3 +88,67 @@ gm.events.add("client.crime.alarm", (vehicle) => {
         vehicle.startAlarm();
     } catch (e) {}
 });
+
+// Поляны для посадки конопли (видят только криминальные): метки на карте + маркер на земле рядом
+let weedSpots = [];
+let weedSpotBlips = [];
+gm.events.add("client.weed.spots", (json) => {
+    let list = [];
+    try {
+        list = JSON.parse(json) || [];
+    } catch (e) {}
+    weedSpotBlips.forEach((blip) => {
+        try {
+            if (mp.blips.exists(blip)) blip.destroy();
+        } catch (e) {}
+    });
+    weedSpotBlips = [];
+    weedSpots = list;
+    list.forEach((p) => {
+        weedSpotBlips.push(
+            mp.blips.new(496, new mp.Vector3(p.x, p.y, p.z), {
+                name: p.free ? "Поляна конопли (свободна)" : "Поляна конопли (занята)",
+                color: p.free ? 2 : 1,
+                scale: 0.55,
+                shortRange: true,
+                dimension: 0,
+            })
+        );
+    });
+});
+
+gm.events.add("render", () => {
+    if (!weedSpots.length || global.localplayer.dimension !== 0) return;
+    const player = global.localplayer.position;
+    weedSpots.forEach((p) => {
+        if (!p.free) return;
+        const dist = mp.game.system.vdist(p.x, p.y, p.z, player.x, player.y, player.z);
+        if (dist > 30) return;
+        const z = player.z - 0.95;
+        mp.game.graphics.drawMarker(25, p.x, p.y, z + 0.05, 0, 0, 0, 0, 0, 0, 8.0, 8.0, 1.0, 126, 211, 33, 90, false, false, 2, false, null, null, false);
+        if (dist < 10)
+            mp.game.graphics.drawText("Поляна конопли\nИнвентарь → «Семена конопли» → Использовать", [p.x, p.y, z + 1.2], {
+                font: 4,
+                color: [126, 211, 33, 230],
+                scale: [0.35, 0.35],
+                outline: true,
+                centre: true,
+            });
+    });
+});
+
+// Вкладка «Криминал» в меню фракции (CEF fractions/elements/crime)
+gm.events.add("client.crime.guide.load", () => {
+    if (!global.antiFlood("crime.guide.load", 300)) return;
+    mp.events.callRemote("server.crime.guide.load");
+});
+
+gm.events.add("client.crime.guide.data", (json) => {
+    mp.gui.emmit(`window.listernEvent ('table.crimeguide.flag', ${JSON.stringify(json)});`);
+    mp.gui.emmit(`window.listernEvent ('table.crimeguide', ${JSON.stringify(json)});`);
+});
+
+gm.events.add("client.crime.guide.gps", (target) => {
+    if (!global.antiFlood("crime.guide.gps", 700)) return;
+    mp.events.callRemote("server.crime.guide.gps", String(target));
+});

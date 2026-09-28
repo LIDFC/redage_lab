@@ -8,6 +8,7 @@ using NeptuneEvo.Character;
 using NeptuneEvo.Core;
 using NeptuneEvo.Functions;
 using NeptuneEvo.Handles;
+using NeptuneEvo.Organizations.Player;
 using NeptuneEvo.Players;
 using NeptuneEvo.Fractions.Player;
 using NeptuneEvo.Table.Tasks.Models;
@@ -28,11 +29,12 @@ namespace NeptuneEvo.Crime.CarTheft
         private const int CooldownMinutes = 5;
         private const int AlarmChance = 30;
         private const int ChopSeconds = 10;
-        private const float ChopRadius = 12f;
+        private const float ChopRadius = 20f;
 
         private class Theft
         {
             public int Fraction;
+            public string Crew;
             public int PlayerUuid;
             public bool Entered;
             public bool Chopping;
@@ -40,7 +42,21 @@ namespace NeptuneEvo.Crime.CarTheft
         }
 
         private static readonly Dictionary<ExtVehicle, Theft> Thefts = new Dictionary<ExtVehicle, Theft>();
-        private static readonly Dictionary<int, DateTime> NextTheft = new Dictionary<int, DateTime>();
+        private static readonly Dictionary<string, DateTime> NextTheft = new Dictionary<string, DateTime>();
+
+        /// <summary>«Команда» угонщика: банда/мафия/байкеры, иначе криминальная организация, иначе сам игрок.</summary>
+        private static string CrewKey(ExtPlayer player)
+        {
+            var fracId = player.GetFractionId();
+            if (fracId > 0)
+                return $"f{fracId}";
+            var orgId = player.GetOrganizationMemberData()?.Id ?? 0;
+            return orgId > 0 ? $"o{orgId}" : $"p{player.GetUUID()}";
+        }
+
+        /// <summary>Минут до следующего заказа для команды игрока (0 — можно брать).</summary>
+        public static int CooldownLeft(ExtPlayer player) =>
+            NextTheft.TryGetValue(CrewKey(player), out var next) && next > DateTime.Now ? (int)Math.Ceiling((next - DateTime.Now).TotalMinutes) : 0;
 
         private static readonly (string model, int parts)[] Cars =
         {
@@ -72,7 +88,13 @@ namespace NeptuneEvo.Crime.CarTheft
             var sessionData = player.GetSessionData();
             if (sessionData == null)
                 return;
-            if (NextTheft.TryGetValue(fracId, out var next) && DateTime.Now < next)
+            if (!CrimeCore.IsCriminal(player))
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "— Я с тобой не работаю.", 3000);
+                return;
+            }
+            var crew = CrewKey(player);
+            if (NextTheft.TryGetValue(crew, out var next) && DateTime.Now < next)
             {
                 Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Следующий заказ через {Math.Ceiling((next - DateTime.Now).TotalMinutes)} мин", 3000);
                 return;
@@ -102,10 +124,10 @@ namespace NeptuneEvo.Crime.CarTheft
                 vehicleLocalData.DeliveryData.JStage = false;
                 vehicleLocalData.DeliveryData.WhosVeh = player;
             }
-            Thefts[vehicle] = new Theft { Fraction = fracId, PlayerUuid = player.GetUUID(), Parts = car.parts };
+            Thefts[vehicle] = new Theft { Fraction = fracId, Crew = crew, PlayerUuid = player.GetUUID(), Parts = car.parts };
             sessionData.DeliveryData.Vehicle = vehicle;
             sessionData.DeliveryData.Point = -1;
-            NextTheft[fracId] = DateTime.Now.AddMinutes(CooldownMinutes);
+            NextTheft[crew] = DateTime.Now.AddMinutes(CooldownMinutes);
             Trigger.ClientEvent(player, "createWaypoint", point.X, point.Y);
             Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter,
                 $"Заказ: {car.model.ToUpper()} ({plate}). Машина отмечена в GPS — угоните её и пригоните к Мавру на разборку", 6000);
@@ -117,13 +139,12 @@ namespace NeptuneEvo.Crime.CarTheft
         {
             if (!Thefts.TryGetValue(vehicle, out var theft))
                 return false;
-            var fracId = player.GetFractionId();
             if (CrimeCore.IsPolice(player))
             {
                 Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Машина в угоне. Отвезите её в участок", 3000);
                 return true;
             }
-            if (fracId != theft.Fraction)
+            if (CrewKey(player) != theft.Crew)
             {
                 Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Это не ваш заказ", 3000);
                 VehicleManager.WarpPlayerOutOfVehicle(player);
@@ -169,7 +190,7 @@ namespace NeptuneEvo.Crime.CarTheft
                         Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "— Разбираю только то, что заказал.", 3000);
                     return;
                 }
-                if (player.VehicleSeat != (int)VehicleSeat.Driver || player.GetFractionId() != theft.Fraction || theft.Chopping)
+                if (player.VehicleSeat != (int)VehicleSeat.Driver || CrewKey(player) != theft.Crew || theft.Chopping)
                     return;
                 theft.Chopping = true;
                 Trigger.ClientEvent(player, "blockMove", true);

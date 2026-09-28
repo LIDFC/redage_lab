@@ -18,7 +18,7 @@ namespace NeptuneEvo.Crime.Burglary
     /// <summary>
     /// Ограбление жилых домов (заменяет старый взлом ломом).
     /// Кто: криминал (банды, байкеры, мафия, криминальные организации), можно в одиночку.
-    /// Когда: ночью (22:00–06:00), в маске, с отмычкой. Куда: ничейные (NPC) дома или дома, чей хозяин и сожители офлайн.
+    /// Когда: в любое время, в маске, с отмычкой. Куда: любой запертый чужой или ничейный (NPC) дом; жильцы в игре получают тревогу.
     /// Взлом — мини-игра LockBreak, внутри 3 точки обыска (техника, украшения, наличные), соседи могут вызвать полицию.
     /// </summary>
     public class BurglaryManager : Script
@@ -56,17 +56,29 @@ namespace NeptuneEvo.Crime.Burglary
 
         // ------------------------------------------------------------------ проверки
 
-        private static bool OwnerOnline(House house)
+        /// <summary>Хозяин и сожители, которые сейчас в игре (им приходит тревога о взломе).</summary>
+        private static List<ExtPlayer> OnlineResidents(House house)
         {
+            var result = new List<ExtPlayer>();
             if (string.IsNullOrEmpty(house.Owner))
-                return false;
+                return result;
             var names = new List<string> { house.Owner };
             names.AddRange(house.Roommates.Keys);
-            return names.Any(name => Main.PlayerUUIDs.TryGetValue(name, out var uuid) && Main.GetPlayerByUUID(uuid) != null);
+            foreach (var name in names)
+            {
+                if (Main.PlayerUUIDs.TryGetValue(name, out var uuid))
+                {
+                    var resident = Main.GetPlayerByUUID(uuid);
+                    if (resident != null)
+                        result.Add(resident);
+                }
+            }
+            return result;
         }
 
-        private static bool SomebodyInside(House house) =>
-            Character.Repository.GetPlayers().Any(p => p.GetCharacterData()?.InsideHouseID == house.ID);
+        /// <summary>Сколько минут игроку ещё «лежать на дне» (для справки в меню фракции).</summary>
+        public static int CooldownMinutes(int uuid) =>
+            PlayerCooldown.TryGetValue(uuid, out var time) && time > DateTime.Now ? (int)Math.Ceiling((time - DateTime.Now).TotalMinutes) : 0;
 
         /// <summary>Причина, по которой нельзя грабить (null — можно).</summary>
         private static string Check(ExtPlayer player, House house)
@@ -77,8 +89,6 @@ namespace NeptuneEvo.Crime.Burglary
                 return "Функция временно отключена";
             if (!CrimeCore.IsCriminal(player))
                 return "Дверь заперта";
-            if (!CrimeCore.IsNight)
-                return "Грабить дома можно только ночью (22:00–06:00)";
             if (!CrimeCore.HasMask(player))
                 return "Наденьте маску, иначе соседи вас узнают";
             if (LockBreak.CountPicks(player) <= 0)
@@ -89,10 +99,6 @@ namespace NeptuneEvo.Crime.Burglary
                 return $"Залягте на дно ещё {Math.Ceiling((playerTime - DateTime.Now).TotalMinutes)} мин";
             if (Busy.Contains(house.ID) || Sessions.Values.Any(s => s.HouseId == house.ID))
                 return "Этот дом уже кто-то вскрывает";
-            if (OwnerOnline(house))
-                return "Хозяева дома — слишком рискованно";
-            if (SomebodyInside(house))
-                return "Внутри кто-то есть";
             if (LockBreak.IsBusy(player) || Sessions.ContainsKey(player.GetUUID()))
                 return "Вы уже заняты";
             return null;
@@ -144,6 +150,14 @@ namespace NeptuneEvo.Crime.Burglary
             }
 
             Commands.RPChat("sme", player, "ковыряется в дверном замке");
+            // Жильцы в игре узнают о взломе сразу — могут успеть вернуться или вызвать полицию
+            foreach (var resident in OnlineResidents(house))
+            {
+                if (resident == player)
+                    continue;
+                Notify.Send(resident, NotifyType.Warning, NotifyPosition.BottomCenter, $"Сигнализация: кто-то взламывает ваш дом #{house.ID}!", 8000);
+                Trigger.ClientEvent(resident, "createWaypoint", house.Position.X, house.Position.Y);
+            }
             // Соседи: у дорогих домов бдительнее
             var chance = house.Type >= 6 ? 50 : 35;
             if (CrimeCore.Roll(chance))

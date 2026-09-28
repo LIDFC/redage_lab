@@ -165,6 +165,7 @@
         'Семена конопли': localItemIcons[393],
         'Бутылка воды': localItemIcons[398],
         'Скупка краденого': localItemIcons[396],
+        'Заказ на угон': localItemIcons[397],
     };
 
     const getOtherImageUrl = (name) => {

@@ -1272,6 +1272,7 @@ namespace NeptuneEvo.Fractions
             // 502/503 — цены из settings/weed.json, пересоздаются в Crime.Weed.WeedManager.Init
             { 502, new FracMatsData(502, "Семена конопли", Chars.Repository.ItemsInfo[ItemId.WeedSeed].Icon, "150$") },
             { 503, new FracMatsData(503, "Бутылка воды", Chars.Repository.ItemsInfo[ItemId.WaterBottle].Icon, "30$") },
+            { 504, new FracMatsData(504, "Заказ на угон", "sm-icon-hijacking", "детали") },
 
             //Для фракций
             { 8, new FracMatsData(8, Chars.Repository.ItemsInfo[ItemId.Nightstick].Name, Chars.Repository.ItemsInfo[ItemId.Nightstick].Icon, null) },

@@ -676,7 +676,7 @@ namespace NeptuneEvo.Core
             {
                 if (!player.IsCharacterData()) return;
                 if (Manager.FractionDataMats.Count == 0) return;
-                List<int> ListItems = new List<int>() { 0, 500, 501, 502, 503, 1, 2, 3, 4, 5, 6, 7, 69, 78, 79, 80, 81};
+                List<int> ListItems = new List<int>() { 0, 500, 501, 504, 502, 503, 1, 2, 3, 4, 5, 6, 7, 69, 78, 79, 80, 81};
 
                 List<Manager.FracMatsData> _JsonData = new List<Manager.FracMatsData>();
 
@@ -715,6 +715,10 @@ namespace NeptuneEvo.Core
                     case 501:
                         // Скупка краденого: трава, техника, украшения, детали угнанных машин (наличные или BTC)
                         NeptuneEvo.BlackMarket.Controller.OpenAt(player, "fence");
+                        return;
+                    case 504:
+                        // Угон для любого криминала (банды берут и у Carter Scott); кулдаун общий на команду
+                        Crime.CarTheft.CarTheftManager.Start(player, player.GetFractionId());
                         return;
                     case 502:
                     case 503:

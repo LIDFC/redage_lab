@@ -71,7 +71,7 @@ namespace NeptuneEvo.Fractions
             { (int) Models.Fractions.THELOST, DateTime.Now },
         };
 
-        private static Vector3 GangStartDelivery = new Vector3(480.9385, -1302.576, 28.12353);
+        public static Vector3 GangStartDelivery = new Vector3(480.9385, -1302.576, 28.12353);
 
         public static Vector3[] GangSpawnAutos = new Vector3[16]
         {

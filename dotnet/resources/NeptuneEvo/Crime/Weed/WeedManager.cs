@@ -280,7 +280,77 @@ namespace NeptuneEvo.Crime.Weed
             }
         }
 
-        public static void OnCharacterLoaded(ExtPlayer player) => SendBlips(player);
+        public static void OnCharacterLoaded(ExtPlayer player)
+        {
+            SendBlips(player);
+            if (CrimeCore.IsCriminal(player))
+            {
+                SendSpots(player);
+                Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Криминальные заработки: M → меню фракции → «Криминал»", 6000);
+            }
+        }
+
+        /// <summary>Поляны для посадки: метки на карте и маркеры на земле у криминала (src_client/player/crime.js).</summary>
+        public static void SendSpots(ExtPlayer player)
+        {
+            try
+            {
+                var list = Cfg.Spots.Select((s, i) => new { x = s.X, y = s.Y, z = s.Z, free = !Plants.Values.Any(p => p.SpotIndex == i) }).ToList();
+                Trigger.ClientEvent(player, "client.weed.spots", JsonConvert.SerializeObject(list));
+            }
+            catch (Exception e)
+            {
+                CrimeCore.Log.Write($"Weed SendSpots Exception: {e}");
+            }
+        }
+
+        /// <summary>Ближайшая свободная поляна (null — все заняты).</summary>
+        public static Vector3 NearestFreeSpot(Vector3 from)
+        {
+            Vector3 best = null;
+            for (var i = 0; i < Cfg.Spots.Count; i++)
+            {
+                if (Plants.Values.Any(p => p.SpotIndex == i))
+                    continue;
+                if (best == null || Cfg.Spots[i].DistanceTo(from) < best.DistanceTo(from))
+                    best = Cfg.Spots[i];
+            }
+            return best;
+        }
+
+        public static Vector3 NearestBuyer(Vector3 from) =>
+            Buyers.Select(b => b.Config.Position).Where(p => p != null).OrderBy(p => p.DistanceTo(from)).FirstOrDefault();
+
+        /// <summary>Сводка для вкладки «Криминал» в меню фракции.</summary>
+        public static object GuideInfo(ExtPlayer player)
+        {
+            var uuid = player.GetUUID();
+            var location = $"char_{uuid}";
+            return new
+            {
+                plants = Plants.Values.Count(p => p.OwnerUuid == uuid),
+                ready = Plants.Values.Count(p => p.OwnerUuid == uuid && IsReady(p)),
+                maxPlants = Cfg.PlayerMaxPlants,
+                homeMax = Cfg.HomeMaxPlants,
+                seedPrice = Cfg.SeedPrice,
+                waterPrice = Cfg.WaterPrice,
+                grow = Cfg.GrowMinutes,
+                water = Cfg.WaterMinutes,
+                rot = Cfg.RotMinutes,
+                dry = Cfg.DryMinutes,
+                yieldMin = Cfg.YieldMin,
+                yieldMax = Cfg.YieldMax,
+                seeds = Chars.Repository.getCountItem(location, ItemId.WeedSeed, false),
+                bottles = Chars.Repository.getCountItem(location, ItemId.WaterBottle, false),
+                raw = Chars.Repository.getCountItem(location, ItemId.WeedRaw, false),
+                drugs = Chars.Repository.getCountItem(location, ItemId.Drugs, false),
+                spots = Cfg.Spots.Count,
+                spotsFree = Cfg.Spots.Where((s, i) => !Plants.Values.Any(p => p.SpotIndex == i)).Count(),
+                buyers = Buyers.Count,
+                buyerPrice = Buyers.Count > 0 ? Buyers.Min(b => b.Config.Price) : 0,
+                buyerPriceMax = Buyers.Count > 0 ? Buyers.Max(b => b.Config.Price) : 0,
+            };
+        }
 
         // ------------------------------------------------------------------ предметы
 
@@ -405,6 +475,8 @@ namespace NeptuneEvo.Crime.Weed
                     ("@x", position.X), ("@y", position.Y), ("@z", position.Z), ("@dim", (int)dimension),
                     ("@planted", Unix(now)), ("@watered", Unix(now)));
                 SendBlips(player);
+                if (spotIndex != -1)
+                    SendSpots(player);
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter,
                     $"Посажено. Созреет через {Cfg.GrowMinutes} мин, поливайте бутылкой воды не реже чем раз в {Cfg.WaterMinutes} мин", 6000);
                 BlackMarket.Audit.AuditLog.Write("weed_plant", uuid, details: new { plant = plant.Id, house = houseId, spot = spotIndex });
@@ -602,6 +674,8 @@ namespace NeptuneEvo.Crime.Weed
                 if (Chars.Repository.AddNewItem(player, location, "inventory", ItemId.WeedRaw, amount, Unix(DateTime.Now).ToString(), stack: false) == -1)
                     return;
                 Remove(plant);
+                if (plant.SpotIndex != -1)
+                    SendSpots(player);
                 var owner = Main.GetPlayerByUUID(plant.OwnerUuid);
                 if (owner != null)
                 {

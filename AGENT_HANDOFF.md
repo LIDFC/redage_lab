@@ -376,6 +376,11 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Счётчик мебели: `client.furniture.count` (магазин), телефон считает сам; лимит `FurnitureManager.MaxFurniture = 100`.
 - Превью новой мебели: `tools/furniture_previews/previews.json` (адреса с Pleb Masters Forge) + `download.py` → `src_cef/.../house/furniture/props/*.jpg`. Домен `assets-gta.plebmasters.de` должен быть доступен.
 
+## 7s. История денег, напоминания о налогах, расположение HUD
+- История денег: `MoneySystem/MoneyHistory.cs` — таблица `money_history` (uuid, time, amount, code; индекс по uuid, хранение 30 дней), запись из `GameLog.Money` (разбор `player(N)` в from/to), подписи операций по коду в `Labels`. Fleeca → «История» (`Players/Phone/Fleeca`) показывает последние 50 операций.
+- Налоги: `MoneySystem/TaxReminder.cs`, вызывается в `Main.payDayTrigger` после списания: SMS банка (4386) и уведомление на порогах 24/12/3/1 ч.
+- Расположение HUD: поле `ChatData.HudLayout` (строка `блок:x,y,s;...`, без кавычек — её передают в CEF в одинарных кавычках), CEF `hudevo/elements/hudlayout.svelte` (CSS-переменные на корневых классах блоков, редактор перетаскиванием), клиент `player/hudlayout.js`, кнопка в Настройки → Настройки худа. Меню настроек отправляет `HudLayout` вместе со своими полями.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

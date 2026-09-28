@@ -52,6 +52,8 @@ namespace NeptuneEvo.Core
             cmd.Add("`time`,`from`,`to`,`amount`,`comment`");
             cmd.Add($"'{DateTime.Now.ToString("s")}','{From}','{To}',{Amount.ToString()},'{Comment}'");
             CmdQueue.Add(cmd);
+            // История денег игрока для телефона (Fleeca → «История»)
+            MoneySystem.MoneyHistory.Record(From, To, Amount, Comment);
         }
         public static void Kills(string Killer, string Weapon, string Victim, string Pos)
         {

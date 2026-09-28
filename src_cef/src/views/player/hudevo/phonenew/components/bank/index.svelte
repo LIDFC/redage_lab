@@ -201,10 +201,16 @@
                 {:else if !history.length}
                     <div class="fleeca__empty">Операций пока нет</div>
                 {:else}
+                    <div class="fleeca__hint">Последние {history.length} операций наличными и по карте</div>
                     {#each history as item}
-                        <div class="fleeca__history">
-                            <span>{formatDate(item.date)}</span>
-                            <p>{item.text}</p>
+                        <div class="fleeca__history fleeca__history_row">
+                            <div>
+                                <span>{formatDate(item.date)}</span>
+                                <p>{item.text}</p>
+                            </div>
+                            {#if item.amount !== undefined}
+                                <b class:plus={item.amount > 0} class:minus={item.amount < 0}>{item.amount > 0 ? "+" : "−"}{money(Math.abs(item.amount))}</b>
+                            {/if}
                         </div>
                     {/each}
                 {/if}

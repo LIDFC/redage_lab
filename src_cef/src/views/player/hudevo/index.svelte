@@ -40,6 +40,7 @@
     import Restart from './elements/restart.svelte'
     import QuestComplite from './elements/questcomplite.svelte'
     import AdminInfo from './elements/admininfo.svelte'
+    import HudLayout from './elements/hudlayout.svelte'
 
     import Walkietalkie from './walkietalkie/index.svelte'
     import Phone from './phonenew/index.svelte';
@@ -161,6 +162,7 @@
     }
 </script>
 <Notification night={isDay(hour)} />
+<HudLayout />
 <div id="hudevo" class:hudevo__hide={!(visible && isHudVisible)} class:night={isDay(hour)}>
     <Chat {SafeSone} />
     <div class="hudevo__left">

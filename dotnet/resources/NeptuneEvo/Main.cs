@@ -3389,6 +3389,7 @@ namespace NeptuneEvo
                 HouseManager.Init();
                 Houses.Apartments.ApartmentManager.Init();
                 BlackMarket.BlackMarketManager.Init();
+                MoneySystem.MoneyHistory.Init();
                 Crime.Weed.WeedManager.Init();
                 Crime.CarTheft.CarTheftManager.Init();
 
@@ -4666,7 +4667,11 @@ namespace NeptuneEvo
 
                         GameLog.Money($"biz({biz.ID})", "frac(6)", tax, "bizTaxHour");
 
-                        if (bizBalance.Balance >= 0) continue;
+                        if (bizBalance.Balance >= 0)
+                        {
+                            MoneySystem.TaxReminder.Check(biz.Owner, $"бизнес #{biz.ID}", bizBalance.Balance, tax);
+                            continue;
+                        }
 
                         string owner = biz.Owner;
                         if (PlayerNames.Values.Contains(owner) && PlayerUUIDs.ContainsKey(owner))
@@ -4752,7 +4757,11 @@ namespace NeptuneEvo
                         if (house.Type != 7) GameLog.Money($"house({house.ID})", "frac(6)", tax, "houseTaxHour");
                         else GameLog.Money($"park({house.ID})", "frac(6)", tax, "parkTaxHour");
 
-                        if (houseBalance.Balance >= 0) continue;
+                        if (houseBalance.Balance >= 0)
+                        {
+                            MoneySystem.TaxReminder.Check(house.Owner, house.Type == 7 ? $"парковку #{house.ID}" : $"дом #{house.ID}", houseBalance.Balance, tax);
+                            continue;
+                        }
 
                         string owner = house.Owner;
                         var player = (ExtPlayer) NAPI.Player.GetPlayerFromName(owner);

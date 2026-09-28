@@ -135,20 +135,8 @@ namespace NeptuneEvo.Players.Phone.Fleeca
             Trigger.ClientEvent(player, "client.phone.bank.result", error == null, error ?? success, BuildJson(player));
         }
 
-        /// <summary>История: последние SMS банка (4386) — асинхронно из БД сообщений.</summary>
-        public static void History(ExtPlayer player)
-        {
-            Trigger.SetTask(async () =>
-            {
-                var messages = await Messages.Repository.getMessage(player, (int)DefaultNumber.Bank);
-                var list = messages.AsEnumerable().Reverse().Take(40).Select(m => new { text = m[1], date = m[2] });
-                var json = JsonConvert.SerializeObject(list);
-                NAPI.Task.Run(() =>
-                {
-                    if (player.IsCharacterData())
-                        Trigger.ClientEvent(player, "client.phone.bank.history", json);
-                });
-            });
-        }
+        /// <summary>История: последние 50 операций с деньгами (наличные и карта) — MoneySystem.MoneyHistory.</summary>
+        public static void History(ExtPlayer player) =>
+            MoneySystem.MoneyHistory.Send(player, "client.phone.bank.history");
     }
 }

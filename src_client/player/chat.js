@@ -56,6 +56,8 @@ global.DistanceVehicle = 100;
 const UpdateSettingsData = (params) => {
     try
     {
+        // Последние полные настройки — редактор расположения HUD (player/hudlayout.js) сохраняет их с новым HudLayout
+        global.lastSettingsRaw = params;
         mp.gui.emmit(`window.chat.updateConfig('${params}')`)
         mp.gui.emmit(`window.settingsStore.init ('${params}')`);
         params = JSON.parse (params);

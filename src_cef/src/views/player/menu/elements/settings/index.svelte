@@ -508,8 +508,13 @@
             else if (item.toggled !== undefined) saveData[item.type] = item.toggled;
             else if (item.min !== undefined && item.max !== undefined) saveData[item.type] = item.value;
         })
+        // Расположение HUD меняется в своём редакторе — сохраняем как есть, иначе настройки его затирали бы
+        saveData.HudLayout = $storeSettings.HudLayout || "";
         executeClient("chatconfig", JSON.stringify (saveData));
     }
+
+    // Редактор расположения HUD (src_client/player/hudlayout.js)
+    const onHudLayout = () => executeClient("client.hudlayout.edit");
 
     const onDefaultButton = () => {
         const DefaultAllAccess = {
@@ -664,6 +669,17 @@
                 </div>
                 {/if}
             {:else}
+                {#if SelectCategorie == "Hud"}
+                    <div class="sound__element">
+                        <div class="sound__description">
+                            <div class="sound__title">Расположение HUD</div>
+                            <div class="sound__text_small">Перетащите мышью деньги и статистику, подсказки клавиш, место и время, задание и спидометр. Колёсико мыши — размер блока.</div>
+                        </div>
+                        <div class="sound__input-block box-center">
+                            <div class="main__button_square box-center" style="width: auto; padding: 0 1.6vh; white-space: nowrap;" on:click={onHudLayout}>Настроить</div>
+                        </div>
+                    </div>
+                {/if}
                 {#each Object.values (SettingsList) as item, index}
                     {#if item.categorie == SelectCategorie}
                         {#if item.title}<div class="sound__header">{item.title}</div>{/if}

@@ -162,6 +162,7 @@ namespace NeptuneEvo.Organizations.Contracts.Admin
                 case "reload":
                     ContractsConfig.Load();
                     ContractTemplates.Load();
+                    ContractsManager.RegisterCargoTypes();
                     GameLog.Admin(player.Name, "orgc reload", "");
                     Chat(player, $"Конфиг перечитан: шаблонов {ContractTemplates.All.Count}, материалов {ContractsConfig.Current.Materials.Count}, машин {ContractsConfig.Current.Vehicles.Count}");
                     return;

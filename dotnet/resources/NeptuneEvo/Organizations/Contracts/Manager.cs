@@ -38,6 +38,7 @@ namespace NeptuneEvo.Organizations.Contracts
             {
                 ContractsConfig.Load();
                 ContractTemplates.Load();
+                RegisterCargoTypes();
                 ContractsRepository.Init();
 
                 foreach (var (orgId, reputation) in ContractsRepository.LoadReputations())
@@ -58,6 +59,8 @@ namespace NeptuneEvo.Organizations.Contracts
                     _lastScheduledSlot = ContractsRepository.LoadLastSlot(true);
                 }
 
+                Cargo.CargoManager.Load();
+
                 Ready = true;
                 ContractsCore.Log.Write($"Loaded {Contracts.Count} contracts, slot {CurrentSlot ?? "-"}", nLog.Type.Success);
 
@@ -68,6 +71,23 @@ namespace NeptuneEvo.Organizations.Contracts
             catch (Exception e)
             {
                 ContractsCore.Log.Write($"Init Exception: {e}");
+            }
+        }
+
+        /// <summary>Материалы подрядов — типы груза универсального модуля Cargo.</summary>
+        public static void RegisterCargoTypes()
+        {
+            foreach (var material in ContractsConfig.Current.Materials)
+            {
+                Cargo.CargoManager.RegisterType(new Cargo.CargoType
+                {
+                    Id = material.Id,
+                    Name = material.Name,
+                    Icon = material.Icon,
+                    KgPerUnit = material.KgPerUnit,
+                    UnitsPerPallet = Math.Max(1, material.UnitsPerPallet),
+                    Prop = material.Prop,
+                });
             }
         }
 
@@ -376,6 +396,11 @@ namespace NeptuneEvo.Organizations.Contracts
             contract.Status = status;
             contract.FinishedAt = DateTime.Now;
             Contracts.Remove(contract.Id);
+
+            // Купленные материалы остаются организации (без возврата денег): груз отвязывается от контракта
+            // и может быть сдан в другой активный подряд организации с тем же материалом.
+            foreach (var unit in Cargo.CargoManager.GetByContract(contract.Id))
+                ContractsRepository.Enqueue(Cargo.CargoManager.Unbind(unit));
 
             long money = 0;
             var reputation = 0;

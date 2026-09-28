@@ -42566,49 +42566,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! @/views/fractions/mats/index.svelte */ "./src/views/fractions/mats/index.svelte");
 /* harmony import */ var _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! @/views/fractions/craft/index.svelte */ "./src/views/fractions/craft/index.svelte");
 /* harmony import */ var _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! @/views/fractions/create/index.svelte */ "./src/views/fractions/create/index.svelte");
-/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
-/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
-/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
-/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
-/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
-/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
-/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
-/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
-/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
-/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
-/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
-/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
-/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
-/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
-/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
-/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
-/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
-/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
-/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
-/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
-/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
-/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
-/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
-/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
-/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
-/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
-/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
-/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! @/views/fractions/contractshop/index.svelte */ "./src/views/fractions/contractshop/index.svelte");
+/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
+/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
+/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
+/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
+/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
+/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
+/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
+/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
+/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
+/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
+/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
+/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
+/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
+/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
+/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
+/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
+/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
+/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
+/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
+/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
+/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
+/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
+/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
+/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
+/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
+/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
+/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
+/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -42690,6 +42691,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 //Фракции
 // /import FractionsAdverts from '@/views/fractions/adverts/index.svelte';
+
 
 
 
@@ -42846,7 +42848,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (407:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (409:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -42867,7 +42869,7 @@ function create_default_slot_1(ctx) {
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
-	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_87__.default({
+	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_88__.default({
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
@@ -42952,7 +42954,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (420:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (422:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -43159,7 +43161,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -43199,63 +43201,64 @@ function instance($$self, $$props, $$invalidate) {
 		FractionsBSearch: _views_fractions_bsearch_index_svelte__WEBPACK_IMPORTED_MODULE_59__.default,
 		FractionsMats: _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_60__.default,
 		FractionsCraft: _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_61__.default,
-		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
-		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
-		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
-		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
-		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
-		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
+		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
+		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
+		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
+		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
 		FractionsCreate: _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_62__.default,
-		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
-		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
-		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
-		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		FractionsContractShop: _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
+		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
+		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
+		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
 		//AdminPlayersView,//Не работает
 		//AdminReport,
-		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
-		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
-		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
-		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
-		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
-		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
+		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
+		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
+		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
+		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
+		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
 		//DonateCards,
-		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
-		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
 		//QuestsDialog1,
 		//QuestsDialog2,
 		//QuestsDialog3,
-		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
-		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
-		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
-		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
-		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
-		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
-		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
-		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
-		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default
+		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
+		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
+		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
+		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
+		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
+		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
+		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
+		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_105__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_106__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -96829,6 +96832,1054 @@ class Bsearch extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCompone
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Bsearch);
+
+
+/***/ }),
+
+/***/ "./src/views/fractions/contractshop/index.svelte":
+/*!*******************************************************!*\
+  !*** ./src/views/fractions/contractshop/index.svelte ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var api_uiSound__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! api/uiSound */ "./src/api/uiSound.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _contracts_materials__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../contracts/materials */ "./src/views/fractions/contracts/materials.js");
+/* src/views/fractions/contractshop/index.svelte generated by Svelte v3.59.2 */
+
+
+const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-7dwjvj", ".cshop.svelte-7dwjvj.svelte-7dwjvj{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%, rgba(16, 18, 24, 0.75), rgba(5, 6, 9, 0.92));font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#e9edf3}.cshop__box.svelte-7dwjvj.svelte-7dwjvj{width:118vh;max-width:96vw;max-height:88vh;display:flex;flex-direction:column;background:#12151b;border:1px solid rgba(255, 255, 255, 0.07);border-radius:1.6vh;box-shadow:0 3vh 8vh rgba(0, 0, 0, 0.55);overflow:hidden}.cshop__head.svelte-7dwjvj.svelte-7dwjvj{display:flex;align-items:center;gap:1.6vh;padding:2.2vh 2.6vh;border-bottom:1px solid rgba(255, 255, 255, 0.06);background:linear-gradient(90deg, rgba(245, 165, 36, 0.12), rgba(245, 165, 36, 0) 60%)}.cshop__logo.svelte-7dwjvj.svelte-7dwjvj{width:5.2vh;height:5.2vh;border-radius:1.2vh;background:rgba(245, 165, 36, 0.14);display:flex;align-items:center;justify-content:center}.cshop__logo.svelte-7dwjvj svg.svelte-7dwjvj,.cshop__icon.svelte-7dwjvj svg.svelte-7dwjvj{width:60%;height:60%;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.cshop__logo.svelte-7dwjvj svg.svelte-7dwjvj{color:#f5a524}.cshop__title.svelte-7dwjvj.svelte-7dwjvj{flex:1}.cshop__eyebrow.svelte-7dwjvj.svelte-7dwjvj,.cshop__label.svelte-7dwjvj.svelte-7dwjvj{font-size:1.2vh;letter-spacing:0.12vh;text-transform:uppercase;color:#8b93a1}.cshop__title.svelte-7dwjvj h1.svelte-7dwjvj{margin:0.3vh 0 0;font-size:2.6vh;font-weight:700}.cshop__budget.svelte-7dwjvj.svelte-7dwjvj{text-align:right;padding:1vh 1.6vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04)}.cshop__budget.svelte-7dwjvj span.svelte-7dwjvj{display:block;font-size:1.2vh;color:#8b93a1}.cshop__budget.svelte-7dwjvj b.svelte-7dwjvj{font-size:2.2vh;color:#7ed321}.cshop__budget.debt.svelte-7dwjvj b.svelte-7dwjvj{color:#ff5a5a}.cshop__close.svelte-7dwjvj.svelte-7dwjvj{width:4.2vh;height:4.2vh;border-radius:1vh;display:flex;align-items:center;justify-content:center;font-size:1.8vh;color:#8b93a1;background:rgba(255, 255, 255, 0.04);cursor:pointer}.cshop__close.svelte-7dwjvj.svelte-7dwjvj:hover{color:#fff;background:rgba(255, 255, 255, 0.1)}.cshop__body.svelte-7dwjvj.svelte-7dwjvj{display:flex;min-height:0;flex:1}.cshop__side.svelte-7dwjvj.svelte-7dwjvj{width:30vh;padding:2vh;border-right:1px solid rgba(255, 255, 255, 0.06);overflow-y:auto;display:flex;flex-direction:column;gap:1vh}.cshop__contract.svelte-7dwjvj.svelte-7dwjvj{padding:1.4vh;border-radius:1vh;background:rgba(255, 255, 255, 0.03);border:1px solid transparent;cursor:pointer;display:flex;flex-direction:column;gap:0.4vh}.cshop__contract.svelte-7dwjvj b.svelte-7dwjvj{font-size:1.5vh}.cshop__contract.svelte-7dwjvj span.svelte-7dwjvj{font-size:1.3vh;color:#8b93a1}.cshop__contract.svelte-7dwjvj em.svelte-7dwjvj{font-style:normal;font-size:1.2vh;color:#f5a524}.cshop__contract.active.svelte-7dwjvj.svelte-7dwjvj{border-color:rgba(245, 165, 36, 0.6);background:rgba(245, 165, 36, 0.08)}.cshop__main.svelte-7dwjvj.svelte-7dwjvj{flex:1;padding:2vh;overflow-y:auto;display:flex;flex-direction:column;gap:1.2vh}.cshop__row.svelte-7dwjvj.svelte-7dwjvj{display:flex;align-items:center;gap:1.6vh;padding:1.6vh;border-radius:1.2vh;background:rgba(255, 255, 255, 0.03);border:1px solid rgba(255, 255, 255, 0.05)}.cshop__row.done.svelte-7dwjvj.svelte-7dwjvj{opacity:0.6}.cshop__icon.svelte-7dwjvj.svelte-7dwjvj{width:5.6vh;height:5.6vh;flex:none;border-radius:1.2vh;background:rgba(255, 255, 255, 0.05);display:flex;align-items:center;justify-content:center}.cshop__info.svelte-7dwjvj.svelte-7dwjvj{flex:1;min-width:0;display:flex;flex-direction:column;gap:0.5vh}.cshop__info.svelte-7dwjvj b.svelte-7dwjvj{font-size:1.8vh}.cshop__info.svelte-7dwjvj span.svelte-7dwjvj,.cshop__info.svelte-7dwjvj small.svelte-7dwjvj{font-size:1.25vh;color:#8b93a1}.cshop__bar.svelte-7dwjvj.svelte-7dwjvj{position:relative;height:0.7vh;border-radius:0.4vh;background:rgba(255, 255, 255, 0.07);overflow:hidden}.cshop__bar.svelte-7dwjvj div.svelte-7dwjvj{position:absolute;left:0;top:0;bottom:0;border-radius:0.4vh}.cshop__bar.svelte-7dwjvj .bought.svelte-7dwjvj{background:rgba(245, 165, 36, 0.45)}.cshop__bar.svelte-7dwjvj .delivered.svelte-7dwjvj{background:#7ed321}.cshop__qty.svelte-7dwjvj.svelte-7dwjvj{display:flex;flex-direction:column;align-items:center;gap:0.6vh}.cshop__stepper.svelte-7dwjvj.svelte-7dwjvj{display:flex;align-items:center;border-radius:0.9vh;background:rgba(255, 255, 255, 0.05);overflow:hidden}.cshop__stepper.svelte-7dwjvj div.svelte-7dwjvj{width:3.6vh;height:3.6vh;display:flex;align-items:center;justify-content:center;font-size:2vh;cursor:pointer;color:#c9ced6}.cshop__stepper.svelte-7dwjvj div.svelte-7dwjvj:hover{background:rgba(255, 255, 255, 0.08)}.cshop__stepper.svelte-7dwjvj input.svelte-7dwjvj{width:7vh;height:3.6vh;border:none;outline:none;background:transparent;color:#fff;text-align:center;font-size:1.6vh;font-family:inherit}.cshop__stepper.svelte-7dwjvj input.svelte-7dwjvj::-webkit-inner-spin-button{-webkit-appearance:none}.cshop__max.svelte-7dwjvj.svelte-7dwjvj{font-size:1.2vh;color:#f5a524;cursor:pointer}.cshop__buy.svelte-7dwjvj.svelte-7dwjvj{width:19vh;display:flex;flex-direction:column;align-items:stretch;gap:0.6vh;text-align:center}.cshop__buy.svelte-7dwjvj span.svelte-7dwjvj{font-size:1.2vh;color:#8b93a1}.cshop__btn.svelte-7dwjvj.svelte-7dwjvj{padding:1.2vh 1vh;border-radius:0.9vh;background:#f5a524;color:#16181d;font-weight:700;font-size:1.5vh;cursor:pointer;transition:filter 0.15s}.cshop__btn.svelte-7dwjvj.svelte-7dwjvj:hover{filter:brightness(1.1)}.cshop__btn.disabled.svelte-7dwjvj.svelte-7dwjvj{background:rgba(255, 255, 255, 0.08);color:#6b7280;pointer-events:none}.cshop__ok.svelte-7dwjvj.svelte-7dwjvj{width:19vh;text-align:center;font-size:1.5vh;color:#7ed321}.cshop__empty.svelte-7dwjvj.svelte-7dwjvj{padding:6vh 4vh;text-align:center;display:flex;flex-direction:column;gap:1vh}.cshop__empty.svelte-7dwjvj b.svelte-7dwjvj{font-size:2.2vh}.cshop__empty.svelte-7dwjvj span.svelte-7dwjvj{font-size:1.5vh;color:#8b93a1}.cshop__foot.svelte-7dwjvj.svelte-7dwjvj{padding:1.4vh 2.6vh;border-top:1px solid rgba(255, 255, 255, 0.06);font-size:1.3vh;color:#8b93a1}.cshop__foot.svelte-7dwjvj .ok.svelte-7dwjvj{color:#7ed321}.cshop__foot.svelte-7dwjvj .err.svelte-7dwjvj{color:#ff6b6b}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[24] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[27] = list[i];
+	return child_ctx;
+}
+
+// (91:8) {:else}
+function create_else_block_1(ctx) {
+	let div3;
+	let div1;
+	let div0;
+	let t1;
+	let t2;
+	let div2;
+	let each_value_1 = /*data*/ ctx[0].contracts;
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	let if_block = /*contract*/ ctx[6] && create_if_block_2(ctx);
+
+	return {
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Подряды организации";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__label svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "cshop__side svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__main svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__body svelte-7dwjvj");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div1, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			if (if_block) if_block.m(div2, null);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data, selectedId, duration, now, opened*/ 163) {
+				each_value_1 = /*data*/ ctx[0].contracts;
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div1, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_1.length;
+			}
+
+			if (/*contract*/ ctx[6]) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_2(ctx);
+					if_block.c();
+					if_block.m(div2, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+// (86:8) {#if !data.contracts.length}
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div.innerHTML = `<b class="svelte-7dwjvj">Нет активных подрядов</b> 
+                <span class="svelte-7dwjvj">Материалы продаются только под подряд организации. Примите подряд: планшет → Организация → Подряды.</span>`;
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__empty svelte-7dwjvj");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (95:20) {#each data.contracts as item}
+function create_each_block_1(ctx) {
+	let div;
+	let b;
+	let t0;
+	let t1_value = /*item*/ ctx[27].id + "";
+	let t1;
+	let t2;
+	let t3_value = /*item*/ ctx[27].title + "";
+	let t3;
+	let t4;
+	let span;
+	let t5_value = /*item*/ ctx[27].point + "";
+	let t5;
+	let t6;
+	let em;
+	let t7;
+	let t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.duration)(/*item*/ ctx[27].deadline - (/*now*/ ctx[5] - /*opened*/ ctx[7]) / 1000) + "";
+	let t8;
+	let t9;
+	let sound_action;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[16](/*item*/ ctx[27]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("#");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			em = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("em");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Осталось ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(em, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__contract svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*item*/ ctx[27].id === /*selectedId*/ ctx[1]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, em);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(em, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t9);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*item*/ ctx[27].id + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*data*/ 1 && t3_value !== (t3_value = /*item*/ ctx[27].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*data*/ 1 && t5_value !== (t5_value = /*item*/ ctx[27].point + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty & /*data, now*/ 33 && t8_value !== (t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.duration)(/*item*/ ctx[27].deadline - (/*now*/ ctx[5] - /*opened*/ ctx[7]) / 1000) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (dirty & /*data, selectedId*/ 3) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*item*/ ctx[27].id === /*selectedId*/ ctx[1]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (105:20) {#if contract}
+function create_if_block_2(ctx) {
+	let div;
+	let t0;
+	let t1_value = /*contract*/ ctx[6].id + "";
+	let t1;
+	let t2;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_1_anchor;
+	let each_value = /*contract*/ ctx[6].materials;
+	const get_key = ctx => /*m*/ ctx[24].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Материалы по подряду #");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			each_1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__label svelte-7dwjvj");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(target, anchor);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*contract*/ 64 && t1_value !== (t1_value = /*contract*/ ctx[6].id + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+
+			if (dirty & /*contract, busy, getAmount, amounts, data, buy, money, number, pallets, setAmount, step, Math, materialIcon*/ 8013) {
+				each_value = /*contract*/ ctx[6].materials;
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, each_1_anchor, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d(detaching);
+			}
+
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(each_1_anchor);
+		}
+	};
+}
+
+// (137:32) {:else}
+function create_else_block_2(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Закуплено";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "cshop__ok svelte-7dwjvj");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (121:32) {#if m.left > 0}
+function create_if_block_3(ctx) {
+	let div4;
+	let div2;
+	let div0;
+	let sound_action;
+	let t1;
+	let input;
+	let input_max_value;
+	let input_value_value;
+	let t2;
+	let div1;
+	let sound_action_1;
+	let t4;
+	let div3;
+	let t5;
+	let t6_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].left) + "";
+	let t6;
+	let sound_action_2;
+	let t7;
+	let div6;
+	let span;
+	let t8_value = /*pallets*/ ctx[11](/*m*/ ctx[24], /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2])) + "";
+	let t8;
+	let t9;
+	let t10_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].kg) + "";
+	let t10;
+	let t11;
+	let t12;
+	let div5;
+	let t13;
+	let t14_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price) + "";
+	let t14;
+	let mounted;
+	let dispose;
+
+	function click_handler_1() {
+		return /*click_handler_1*/ ctx[17](/*m*/ ctx[24]);
+	}
+
+	function input_handler(...args) {
+		return /*input_handler*/ ctx[18](/*m*/ ctx[24], ...args);
+	}
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[19](/*m*/ ctx[24]);
+	}
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[20](/*m*/ ctx[24]);
+	}
+
+	function click_handler_4() {
+		return /*click_handler_4*/ ctx[21](/*m*/ ctx[24]);
+	}
+
+	return {
+		c() {
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "−";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "+";
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Всё · ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" пал. · ");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить ");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t14_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*m*/ ctx[24].left);
+			input.value = input_value_value = /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__stepper svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__max svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__qty svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__btn svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "disabled", /*busy*/ ctx[3] || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) <= 0 || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price > /*data*/ ctx[0].money);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__buy svelte-7dwjvj");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t14);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div0, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler_1),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", input_handler),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action_1 = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div1, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler_2),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action_2 = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div3, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", click_handler_3),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", click_handler_4)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+
+			if (dirty & /*contract*/ 64 && input_max_value !== (input_max_value = /*m*/ ctx[24].left)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value);
+			}
+
+			if (dirty & /*contract, amounts*/ 68 && input_value_value !== (input_value_value = /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2])) && input.value !== input_value_value) {
+				input.value = input_value_value;
+			}
+
+			if (dirty & /*contract*/ 64 && t6_value !== (t6_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].left) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*contract, amounts*/ 68 && t8_value !== (t8_value = /*pallets*/ ctx[11](/*m*/ ctx[24], /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2])) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+			if (dirty & /*contract, amounts*/ 68 && t10_value !== (t10_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].kg) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+			if (dirty & /*contract, amounts*/ 68 && t14_value !== (t14_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t14, t14_value);
+
+			if (dirty & /*busy, getAmount, contract, amounts, data*/ 333) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "disabled", /*busy*/ ctx[3] || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) <= 0 || /*getAmount*/ ctx[8](/*m*/ ctx[24], /*amounts*/ ctx[2]) * /*m*/ ctx[24].price > /*data*/ ctx[0].money);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t7);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (107:24) {#each contract.materials as m (m.id)}
+function create_each_block(key_2, ctx) {
+	let div5;
+	let div0;
+	let svg;
+	let raw_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).svg + "";
+	let t0;
+	let div4;
+	let b;
+	let t1_value = /*m*/ ctx[24].name + "";
+	let t1;
+	let t2;
+	let span;
+	let t3_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*m*/ ctx[24].price) + "";
+	let t3;
+	let t4;
+	let t5_value = /*m*/ ctx[24].kg + "";
+	let t5;
+	let t6;
+	let t7_value = /*m*/ ctx[24].pallet + "";
+	let t7;
+	let t8;
+	let t9;
+	let div3;
+	let div1;
+	let t10;
+	let div2;
+	let t11;
+	let small;
+	let t12;
+	let t13_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].purchased) + "";
+	let t13;
+	let t14;
+	let t15_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].required) + "";
+	let t15;
+	let t16;
+	let t17_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].delivered) + "";
+	let t17;
+	let t18;
+	let t19;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*m*/ ctx[24].left > 0) return create_if_block_3;
+		return create_else_block_2;
+	}
+
+	let current_block_type = select_block_type_1(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		key: key_2,
+		first: null,
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ед. · ");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" кг · паллета ");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" ед.");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			small = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("small");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Куплено ");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t13_value);
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" / ");
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t15_value);
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" · сдано ");
+			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
+			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 24 24");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__icon svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).color);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "bought svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[24].purchased / /*m*/ ctx[24].required * 100) + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "delivered svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", Math.min(100, /*m*/ ctx[24].delivered / /*m*/ ctx[24].required * 100) + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__bar svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(small, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__info svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__row svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "done", /*m*/ ctx[24].left <= 0);
+			this.first = div5;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, svg);
+			svg.innerHTML = raw_value;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, small);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(small, t17);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t18);
+			if_block.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t19);
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*contract*/ 64 && raw_value !== (raw_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).svg + "")) svg.innerHTML = raw_value;;
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "color", (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.materialIcon)(/*m*/ ctx[24].icon || /*m*/ ctx[24].id).color);
+			}
+
+			if (dirty & /*contract*/ 64 && t1_value !== (t1_value = /*m*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*contract*/ 64 && t3_value !== (t3_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*m*/ ctx[24].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty & /*contract*/ 64 && t5_value !== (t5_value = /*m*/ ctx[24].kg + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty & /*contract*/ 64 && t7_value !== (t7_value = /*m*/ ctx[24].pallet + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", Math.min(100, /*m*/ ctx[24].purchased / /*m*/ ctx[24].required * 100) + "%");
+			}
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", Math.min(100, /*m*/ ctx[24].delivered / /*m*/ ctx[24].required * 100) + "%");
+			}
+
+			if (dirty & /*contract*/ 64 && t13_value !== (t13_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].purchased) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t13, t13_value);
+			if (dirty & /*contract*/ 64 && t15_value !== (t15_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].required) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t15, t15_value);
+			if (dirty & /*contract*/ 64 && t17_value !== (t17_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.number)(/*m*/ ctx[24].delivered) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
+
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div5, t19);
+				}
+			}
+
+			if (dirty & /*contract*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div5, "done", /*m*/ ctx[24].left <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			if_block.d();
+		}
+	};
+}
+
+// (150:12) {:else}
+function create_else_block(ctx) {
+	let span;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "Оплата — из бюджета организации. Паллеты появятся на площадке погрузки склада: погрузите их в грузовик организации.";
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (148:12) {#if lastResult}
+function create_if_block(ctx) {
+	let span;
+	let t_value = /*lastResult*/ ctx[4].message + "";
+	let t;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "ok", /*lastResult*/ ctx[4].ok);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "err", !/*lastResult*/ ctx[4].ok);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*lastResult*/ 16 && t_value !== (t_value = /*lastResult*/ ctx[4].message + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+
+			if (dirty & /*lastResult*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "ok", /*lastResult*/ ctx[4].ok);
+			}
+
+			if (dirty & /*lastResult*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span, "err", !/*lastResult*/ ctx[4].ok);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div8;
+	let div7;
+	let div5;
+	let div0;
+	let t0;
+	let div2;
+	let t4;
+	let div3;
+	let span;
+	let t5;
+	let t6_value = /*data*/ ctx[0].org + "";
+	let t6;
+	let t7;
+	let b;
+	let t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*data*/ ctx[0].money) + "";
+	let t8;
+	let t9;
+	let div4;
+	let sound_action;
+	let t11;
+	let t12;
+	let div6;
+	let div7_intro;
+	let div8_intro;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (!/*data*/ ctx[0].contracts.length) return create_if_block_1;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block0 = current_block_type(ctx);
+
+	function select_block_type_2(ctx, dirty) {
+		if (/*lastResult*/ ctx[4]) return create_if_block;
+		return create_else_block;
+	}
+
+	let current_block_type_1 = select_block_type_2(ctx, -1);
+	let if_block1 = current_block_type_1(ctx);
+
+	return {
+		c() {
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.innerHTML = `<svg viewBox="0 0 24 24" class="svelte-7dwjvj"><path d="M3 21h18M5 21V10l7-5 7 5v11"></path><path d="M9 21v-6h6v6"></path></svg>`;
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div2.innerHTML = `<div class="cshop__eyebrow svelte-7dwjvj">Государственный склад</div> 
+                <h1 class="svelte-7dwjvj">Строительные материалы</h1>`;
+
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Бюджет · ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "✕";
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block0.c();
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "cshop__logo svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "cshop__title svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "cshop__budget svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "debt", /*data*/ ctx[0].money < 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "cshop__close svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "title", "Закрыть (Esc)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "cshop__head svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "cshop__foot svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "cshop__box svelte-7dwjvj");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "cshop svelte-7dwjvj");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div8, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, b);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t11);
+			if_block0.m(div7, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			if_block1.m(div6, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[14]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.action_destroyer)(sound_action = api_uiSound__WEBPACK_IMPORTED_MODULE_2__.sound.call(null, div4, "tap")),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*close*/ ctx[13])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].org + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*data*/ 1 && t8_value !== (t8_value = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.money)(/*data*/ ctx[0].money) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (dirty & /*data*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "debt", /*data*/ ctx[0].money < 0);
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block0) {
+				if_block0.p(ctx, dirty);
+			} else {
+				if_block0.d(1);
+				if_block0 = current_block_type(ctx);
+
+				if (if_block0) {
+					if_block0.c();
+					if_block0.m(div7, t12);
+				}
+			}
+
+			if (current_block_type_1 === (current_block_type_1 = select_block_type_2(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if_block1.d(1);
+				if_block1 = current_block_type_1(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div6, null);
+				}
+			}
+		},
+		i(local) {
+			if (!div7_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div7_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div7, svelte_transition__WEBPACK_IMPORTED_MODULE_4__.scale, { start: 0.97, duration: 200 });
+					div7_intro.start();
+				});
+			}
+
+			if (!div8_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div8_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div8, svelte_transition__WEBPACK_IMPORTED_MODULE_4__.fade, { duration: 150 });
+					div8_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div8);
+			if_block0.d();
+			if_block1.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let contract;
+	let { viewData } = $$props;
+	let data = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.parseJson)(viewData, { org: "", money: 0, contracts: [] });
+	let selectedId = data.contracts.length ? data.contracts[0].id : 0;
+	let amounts = {};
+	let busy = false;
+	let lastResult = null;
+
+	window.events.addEvent("cef.orgcontracts.shop.update", (ok, message, json) => {
+		$$invalidate(3, busy = false);
+		$$invalidate(0, data = (0,_contracts_materials__WEBPACK_IMPORTED_MODULE_5__.parseJson)(json, data));
+		$$invalidate(4, lastResult = { ok, message });
+		if (!data.contracts.find(c => c.id === selectedId)) $$invalidate(1, selectedId = data.contracts.length ? data.contracts[0].id : 0);
+		$$invalidate(2, amounts = {});
+		(0,api_uiSound__WEBPACK_IMPORTED_MODULE_2__.playSound)(ok ? "success" : "error");
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_3__.onDestroy)(() => window.events.removeEvent("cef.orgcontracts.shop.update"));
+	let now = Date.now();
+	const opened = Date.now();
+	const timer = setInterval(() => $$invalidate(5, now = Date.now()), 1000);
+	(0,svelte__WEBPACK_IMPORTED_MODULE_3__.onDestroy)(() => clearInterval(timer));
+	const key = m => `${selectedId}_${m.id}`;
+
+	const getAmount = (m, all) => {
+		const value = all[key(m)];
+		return value === undefined ? Math.min(m.left, m.pallet) : value;
+	};
+
+	const setAmount = (m, value) => {
+		value = Math.max(0, Math.min(m.left, Math.round(value) || 0));
+		$$invalidate(2, amounts = { ...amounts, [key(m)]: value });
+	};
+
+	const step = (m, dir) => {
+		const current = getAmount(m, amounts);
+
+		// шаг — паллета, «хвост» докупается точным количеством
+		const next = dir > 0
+		? Math.min(m.left, (Math.floor(current / m.pallet) + 1) * m.pallet)
+		: Math.max(0, (Math.ceil(current / m.pallet) - 1) * m.pallet);
+
+		setAmount(m, next);
+	};
+
+	const pallets = (m, units) => Math.ceil(units / Math.max(1, m.pallet));
+
+	const buy = m => {
+		const units = getAmount(m, amounts);
+		if (busy || units <= 0 || !contract) return;
+		$$invalidate(3, busy = true);
+		$$invalidate(4, lastResult = null);
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.orgcontracts.shop.buy", contract.id, m.id, units);
+		setTimeout(() => $$invalidate(3, busy = false), 3000);
+	};
+
+	const close = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.orgcontracts.shop.close");
+
+	const onKey = e => {
+		if (e.keyCode === 27) close();
+	};
+
+	const click_handler = item => $$invalidate(1, selectedId = item.id);
+	const click_handler_1 = m => step(m, -1);
+	const input_handler = (m, e) => setAmount(m, e.target.value);
+	const click_handler_2 = m => step(m, 1);
+	const click_handler_3 = m => setAmount(m, m.left);
+	const click_handler_4 = m => buy(m);
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(15, viewData = $$props.viewData);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*data, selectedId*/ 3) {
+			$: $$invalidate(6, contract = data.contracts.find(c => c.id === selectedId));
+		}
+	};
+
+	return [
+		data,
+		selectedId,
+		amounts,
+		busy,
+		lastResult,
+		now,
+		contract,
+		opened,
+		getAmount,
+		setAmount,
+		step,
+		pallets,
+		buy,
+		close,
+		onKey,
+		viewData,
+		click_handler,
+		click_handler_1,
+		input_handler,
+		click_handler_2,
+		click_handler_3,
+		click_handler_4
+	];
+}
+
+class Contractshop extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 15 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contractshop);
 
 
 /***/ }),
@@ -305963,6 +307014,7 @@ const businessType = [
     "CarWash",
     "PetShop",
     "Elite Autoroom", // 15
+    "Строительные материалы", // 16 (государственный)
 ]
 
 /***/ }),
@@ -314311,6 +315363,60 @@ const convertSecondsToString = (totalSeconds, timezone = true) => {
 
     return timeParts.slice(0, 2).join(" ");
 };
+
+/***/ }),
+
+/***/ "./src/views/fractions/contracts/materials.js":
+/*!****************************************************!*\
+  !*** ./src/views/fractions/contracts/materials.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "materialIcon": () => (/* binding */ materialIcon),
+/* harmony export */   "money": () => (/* binding */ money),
+/* harmony export */   "number": () => (/* binding */ number),
+/* harmony export */   "duration": () => (/* binding */ duration),
+/* harmony export */   "parseJson": () => (/* binding */ parseJson)
+/* harmony export */ });
+// Общие данные для UI подрядов: иконки материалов, форматирование денег и времени.
+
+const icons = {
+    concrete: { color: "#9AA4B2", svg: '<path d="M5 9l7-4 7 4v8l-7 4-7-4z"/><path d="M5 9l7 4 7-4M12 13v8"/>' },
+    brick: { color: "#E0714F", svg: '<rect x="3" y="6" width="18" height="12" rx="1"/><path d="M3 12h18M9 6v6M15 12v6"/>' },
+    steel: { color: "#7FB2E5", svg: '<path d="M4 7h16M4 17h16M7 7v10M17 7v10"/><path d="M7 12h10"/>' },
+    asphalt: { color: "#5C6370", svg: '<ellipse cx="12" cy="6" rx="7" ry="2.5"/><path d="M5 6v11c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6"/><path d="M5 11.5c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5"/>' },
+    wood: { color: "#C8964F", svg: '<circle cx="7" cy="16" r="3"/><circle cx="17" cy="16" r="3"/><circle cx="12" cy="8" r="3"/>' },
+};
+
+const materialIcon = (id) => icons[id] || { color: "#F5A524", svg: '<rect x="4" y="4" width="16" height="16" rx="2"/>' };
+
+const money = (value) => {
+    const sign = value < 0 ? "-" : "";
+    return `${sign}$${Math.abs(Math.round(value || 0)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}`;
+};
+
+const number = (value) => Math.round(value || 0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+const duration = (seconds) => {
+    seconds = Math.max(0, Math.floor(seconds || 0));
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    const pad = (v) => (v < 10 ? "0" : "") + v;
+    return `${pad(h)}:${pad(m)}:${pad(s)}`;
+};
+
+const parseJson = (value, fallback) => {
+    try {
+        return typeof value === "string" ? JSON.parse(value) : value || fallback;
+    } catch (e) {
+        return fallback;
+    }
+};
+
 
 /***/ }),
 

@@ -28,4 +28,5 @@ export const businessType = [
     "CarWash",
     "PetShop",
     "Elite Autoroom", // 15
+    "Строительные материалы", // 16 (государственный)
 ]

@@ -83,6 +83,7 @@
 	import FractionsMats from '@/views/fractions/mats/index.svelte';
 	import FractionsCraft from '@/views/fractions/craft/index.svelte';
 	import FractionsCreate from '@/views/fractions/create/index.svelte';
+	import FractionsContractShop from '@/views/fractions/contractshop/index.svelte';
 	import FractionsStock from '@/views/fractions/stock/index.svelte';
 	import FractionsPolicecomputer from '@/views/fractions/policecomputer/index.svelte';
 	import FractionsTicket from '@/views/fractions/ticket/index.svelte';
@@ -183,6 +184,7 @@
 		FractionsWeazelNews,
 		FractionsWar,
 		FractionsCreate,
+		FractionsContractShop,//Склад стройматериалов (подряды)
 
 		CasinoBlackjack,
 		CasinoHorse,

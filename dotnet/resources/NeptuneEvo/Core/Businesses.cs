@@ -393,7 +393,7 @@ namespace NeptuneEvo.Core
         public static ConcurrentDictionary<int, Business> BizList = new ConcurrentDictionary<int, Business>();
         public static ConcurrentDictionary<int, int> Orders = new ConcurrentDictionary<int, int>(); // key - ID заказа, value - ID бизнеса
 
-        public static string[] BusinessTypeNames = new string[16]
+        public static string[] BusinessTypeNames = new string[17]
         {
             "24/7", // 0
             "Petrol Station", // 1
@@ -411,8 +411,9 @@ namespace NeptuneEvo.Core
             "CarWash", // 13
             "PetShop", // 14
             "Elite Autoroom", // 15
+            "Строительные материалы", // 16 — государственный склад для подрядов (Organizations/Contracts)
         };
-        public static int[] BlipByType = new int[16]
+        public static int[] BlipByType = new int[17]
         {
             52, // 24/7
             361, // petrol station
@@ -430,8 +431,9 @@ namespace NeptuneEvo.Core
             524, // carwash
             273, // Petshop
             669, // Rare Autoroom
+            478, // стройматериалы
         };
-        public static int[] BlipColorByType = new int[16]
+        public static int[] BlipColorByType = new int[17]
         {
             4, // 24/7
             35, //76, // petrol station
@@ -449,7 +451,11 @@ namespace NeptuneEvo.Core
             3, // carwash
             4, // petshop
             4, // showroom
+            47, // стройматериалы
         };
+
+        /// <summary>Государственные бизнесы без владельца (не покупаются): склад стройматериалов для подрядов.</summary>
+        public static bool IsStateOnly(int type) => type == Organizations.Contracts.Methods.MaterialShop.BusinessType;
 
         public static string[] PetNames = new string[9]
         {
@@ -1068,6 +1074,9 @@ namespace NeptuneEvo.Core
                 {
                     case 0:
                         OpenBizShopMenu(player);
+                        return;
+                    case Organizations.Contracts.Methods.MaterialShop.BusinessType:
+                        Organizations.Contracts.Methods.MaterialShop.Open(player, biz);
                         return;
                     case 1:
                         if (!player.IsInVehicle) return;
@@ -3007,6 +3016,11 @@ namespace NeptuneEvo.Core
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.BizAuc), 3000);
                     return;
                 }
+                if (IsStateOnly(biz.Type))
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Этот бизнес принадлежит государству и не продаётся", 3000);
+                    return;
+                }
 
                 if (Players.Phone.Auction.Repository.IsBet(characterData.UUID, AuctionType.Biz))
                 {
@@ -4144,6 +4158,12 @@ namespace NeptuneEvo.Core
                 {
                     string text = $"~w~{BusinessManager.BusinessTypeNames[Type]}\n";
 
+                    if (BusinessManager.IsStateOnly(Type))
+                    {
+                        label.Text = $"~w~{BusinessManager.BusinessTypeNames[Type]}\n~y~Государственный склад\n~c~Для организаций-подрядчиков · ID{ID}";
+                        mafiaLabel.Text = "";
+                        return;
+                    }
                     if (IsAuction) text += $"~w~Выставлен на аукцион\n";
                     else if (IsOwner()) text += $"~p~{Owner}\n";
                     else text += $"~w~Цена: ~g~{Wallet.Format(SellPrice)}$\n";

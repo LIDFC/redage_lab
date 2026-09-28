@@ -38,19 +38,46 @@ gm.events.add("render", () => {
     });
 });
 
-// Трава: сервер помечает куст shared-данными "weedPlant" — кладём его на землю (как паллеты грузов).
+// Трава: сервер помечает куст shared-данными "weedPlant" — кладём его на землю (как паллеты грузов),
+// а надпись над кустом ("weedInfo": рост, полив) рисуем сами каждый кадр.
 let lastWeedScan = 0;
+let weedObjects = [];
 gm.events.add("render", () => {
     const now = Date.now();
-    if (now - lastWeedScan < 1000) return;
-    lastWeedScan = now;
-    mp.objects.forEachInStreamRange((object) => {
-        if (!object || !mp.objects.exists(object) || !object.handle || object.weedGrounded) return;
-        if (object.getVariable("weedPlant") === undefined || object.getVariable("weedPlant") === null) return;
-        object.weedGrounded = true;
-        try {
-            object.placeOnGroundProperly();
-        } catch (e) {}
+    if (now - lastWeedScan >= 1000) {
+        lastWeedScan = now;
+        const found = [];
+        mp.objects.forEachInStreamRange((object) => {
+            if (!object || !mp.objects.exists(object) || !object.handle) return;
+            const id = object.getVariable("weedPlant");
+            if (id === undefined || id === null) return;
+            if (!object.weedGrounded) {
+                object.weedGrounded = true;
+                try {
+                    object.placeOnGroundProperly();
+                } catch (e) {}
+            }
+            found.push(object);
+        });
+        weedObjects = found;
+    }
+    if (!weedObjects.length) return;
+    const player = global.localplayer.position;
+    weedObjects.forEach((object) => {
+        if (!mp.objects.exists(object) || !object.handle) return;
+        const text = object.getVariable("weedInfo");
+        if (typeof text !== "string" || !text.length) return;
+        const pos = object.position;
+        const dist = mp.game.system.vdist(pos.x, pos.y, pos.z, player.x, player.y, player.z);
+        if (dist > 10) return;
+        const scale = dist < 4 ? 0.36 : 0.3;
+        mp.game.graphics.drawText(text, [pos.x, pos.y, pos.z + 1.5], {
+            font: 4,
+            color: [255, 255, 255, 235],
+            scale: [scale, scale],
+            outline: true,
+            centre: true,
+        });
     });
 });
 

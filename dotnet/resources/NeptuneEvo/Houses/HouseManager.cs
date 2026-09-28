@@ -1847,6 +1847,11 @@ namespace NeptuneEvo.Houses
                 
                 Trigger.ClientEvent(player, "client.furniture.open", 
                     JsonConvert.SerializeObject(houseFurnitures));
+
+                // Счётчик мебели в доме игрока (лимит — MaxFurniture)
+                var myHouse = GetHouse(player, true);
+                var count = myHouse != null && FurnitureManager.HouseFurnitures.TryGetValue(myHouse.ID, out var mine) ? mine.Count : -1;
+                Trigger.ClientEvent(player, "client.furniture.count", count, FurnitureManager.MaxFurniture);
                 
             }
             catch (Exception e)
@@ -1951,7 +1956,7 @@ namespace NeptuneEvo.Houses
                 
                 var houseFurniture = FurnitureManager.HouseFurnitures[house.ID];
                 
-                if (houseFurniture.Count() >= 100)
+                if (houseFurniture.Count() >= FurnitureManager.MaxFurniture)
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "В Вашей квартире уже слишком много мебели, продайте что-то", 3000);
                     return;
@@ -2000,6 +2005,7 @@ namespace NeptuneEvo.Houses
                     
                     FurnitureManager.NewFurniture(house.ID, name);
                     house.IsFurnitureSave = true;
+                    Trigger.ClientEvent(player, "client.furniture.count", houseFurniture.Count, FurnitureManager.MaxFurniture);
                     qMain.UpdateQuestsStage(player, Zdobich.QuestName, (int)zdobich_quests.Stage25, 1, isUpdateHud: true);
                     qMain.UpdateQuestsComplete(player, Zdobich.QuestName, (int) zdobich_quests.Stage25, true);
                 } 
@@ -2122,6 +2128,25 @@ namespace NeptuneEvo.Houses
                             sessionData.HouseData.EditID = furniture.Id;
                             Trigger.ClientEvent(player, "startEditing", furniture.Model);
                         }
+                        break;
+                    case 2:
+                        // Переместить уже поставленную мебель: прячем её и открываем тот же редактор.
+                        // «Принять» — acceptEdit ставит на новое место, отмена — cancelEdit возвращает на старое.
+                        if (!furniture.IsSet)
+                        {
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Сначала установите мебель", 3000);
+                            return;
+                        }
+                        if (sessionData.HouseData.Editing)
+                        {
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Вы должны закончить редактирование", 3000);
+                            return;
+                        }
+                        sessionData.HouseData.Editing = true;
+                        sessionData.HouseData.EditID = furniture.Id;
+                        house.DestroyFurniture(furniture.Id);
+                        Trigger.ClientEvent(player, "startEditing", furniture.Model);
+                        Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Поставьте мебель на новое место. ESC — оставить как было", 4000);
                         break;
                 }
             }

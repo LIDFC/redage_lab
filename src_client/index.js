@@ -296,6 +296,7 @@ global.pAdmin = 0;
 
 require('./configs/natives.js');
 require('./utils/cef.js');
+require('./utils/escManager.js');
 require('./constants/controls.js');
 require('./constants/keys.js');
 require('./camera/index.js');

@@ -623,8 +623,16 @@ global.binderFunctions.openReportInput = () => {
 }
 //Закрытие интерфейса при ESC
 global.binderFunctions.c_globalEscape = (isDeath = false) => {
-    if (marketPlace.opened)
-        return marketPlace.closeApp();
+    // Общий ESC-менеджер (utils/escManager.js): сначала закрываем верхнее окно/состояние
+    if (isDeath)
+        global.escManager.closeAll();
+    else {
+        if (marketPlace.opened)
+            return marketPlace.closeApp();
+        if (global.escManager.handle())
+            return;
+        global.escManager.unstick();
+    }
     if (global.circleOpen) global.CloseCircle (true);
     if (global.reportactive) global.binderFunctions.c_reports ();
     if (global.BinderStatus) CloseBinder ();

@@ -88,6 +88,8 @@ namespace NeptuneEvo.Houses
         public static readonly nLog Log = new nLog("Houses.HouseFurniture");
         public static Dictionary<int, Dictionary<int, HouseFurniture>> HouseFurnitures = new Dictionary<int, Dictionary<int, HouseFurniture>>();
         public static string QuestName = "npc_furniture";
+        /// <summary>Сколько мебели можно держать в одном доме.</summary>
+        public const int MaxFurniture = 100;
         public static Vector3 FurnitureBuyPos = new Vector3(-591.12317, -285.2158, 35.45478);
         public static void Init()
         {
@@ -614,7 +616,8 @@ namespace NeptuneEvo.Houses
                 var furnitures = HouseFurnitures[house.ID];
                 foreach (HouseFurniture p in furnitures.Values)
                 {
-                    if (p != null && p.IsSet && p.Position != null && p.Position.DistanceTo(pos) <= 0.5f)
+                    // Сам переносимый предмет не мешает поставить его рядом со старым местом
+                    if (p != null && p.IsSet && p.Id != sessionData.HouseData.EditID && p.Position != null && p.Position.DistanceTo(pos) <= 0.5f)
                     {
                         Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MebelTooNear), 3000);
                         return;
@@ -642,7 +645,15 @@ namespace NeptuneEvo.Houses
             {
                 var sessionData = player.GetSessionData();
                 if (sessionData == null) return;
+                var wasEditing = sessionData.HouseData.Editing;
                 sessionData.HouseData.Editing = false;
+                // Отмена переноса: мебель была спрятана — возвращаем всё как было
+                var house = wasEditing ? HouseManager.GetHouse(player, true) : null;
+                if (house != null)
+                {
+                    house.DestroyFurnitures();
+                    house.CreateAllFurnitures();
+                }
             }
             catch (Exception e)
             {

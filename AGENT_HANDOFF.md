@@ -369,6 +369,13 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Вкладка «Криминал» показывается только в панели криминальной группы (`fractionAllowed` / `orgAllowed` из `CrimeGuide`).
 - Загрузка аптечек EMS («Humane Labs») перенесена из порта к настоящему Humane Labs (`Ems.HumaneLabsMedkits`), GPS в телефоне туда же.
 
+## 7r. ESC-менеджер, предпросмотр и перенос мебели
+- `src_client/utils/escManager.js`: перехватывает `window.router.setView/setHud` (знает текущее окно `global.cefView`), стек `global.escManager.push/remove` для временных состояний, таблица «окно → событие закрытия». Вызывается из `bind.js c_globalEscape` (при смерти — `closeAll`). Если окно уже закрыто, а курсор остался — `unstick()` снимает блокировку.
+- Предпросмотр мебели: CEF «Посмотреть» → `client.furniture.preview` (house/index.js): модель перед игроком, камера облетает её 20 с, ESC — назад в магазин.
+- Перенос поставленной мебели: телефон → мебель → «Переместить» (`server.house.furniture.use` type 2): предмет прячется, открывается редактор; отмена (`cancelEdit`) возвращает всё на место.
+- Счётчик мебели: `client.furniture.count` (магазин), телефон считает сам; лимит `FurnitureManager.MaxFurniture = 100`.
+- Превью новой мебели: `tools/furniture_previews/previews.json` (адреса с Pleb Masters Forge) + `download.py` → `src_cef/.../house/furniture/props/*.jpg`. Домен `assets-gta.plebmasters.de` должен быть доступен.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

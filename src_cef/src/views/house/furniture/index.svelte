@@ -22,6 +22,23 @@
         executeClient ("client.furniture.buy", furniture.name, type);
     }
 
+    // Предпросмотр: модель ставится перед игроком, камера облетает её (src_client/house/index.js)
+    const onPreview = (furniture) => {
+        if (!window.loaderData.delay ("furniture.preview", 1))
+            return;
+        executeClient ("client.furniture.preview", furniture.model, furniture.name);
+    }
+
+    // Счётчик мебели в доме игрока
+    import { addListernEvent } from 'api/functions'
+    let furnitureCount = -1;
+    let furnitureMax = 100;
+    addListernEvent ("furniture.count", (count, max) => {
+        furnitureCount = Number(count);
+        furnitureMax = Number(max) || 100;
+    });
+    executeClient ("client.furniture.getCount");
+
     const onExit = () => {        
         executeClient ("client.furniture.close");      
     }
@@ -58,6 +75,11 @@
 -->
 <div id="furniture">
     <div class="house__header">Мебельный магазин</div>
+    {#if furnitureCount >= 0}
+        <div class="fcount" class:full={furnitureCount >= furnitureMax}>Мебели в вашем доме: {furnitureCount} / {furnitureMax}</div>
+    {:else}
+        <div class="fcount">У вас нет дома — мебель ставится только в своём доме</div>
+    {/if}
     <div class="fcat">
         <div class="fcat__tab" class:active={category === "all"} on:click={() => (category = "all")}>Всё <i>{Array.isArray(viewData) ? viewData.length : 0}</i></div>
         {#each categories as type}
@@ -106,13 +128,12 @@
                         <div class="houseicon-safe house__furniture_icon"></div>
                         Купить
                     </div>
+                    <div class="house__element_button fpreview" on:click={() => onPreview (furniture)}>👁 Посмотреть</div>
                     {#if furniture.items && furniture.items.length}
                     <div class="house__element_button" on:click={() => onBuy (furniture, 1)}>
                         <div class="houseicon-garage house__furniture_icon"></div>
                         Скрафтить самому
                     </div>
-                    {:else}
-                    <div class="fcat__type">{iconOf(furniture.type)} {furniture.type}</div>
                     {/if}
                 </div>
             </div>
@@ -134,6 +155,11 @@
     .fcat__tab.active { background: #2BB6A8; color: #fff; }
     .fcat__tab i { font-style: normal; opacity: 0.6; margin-left: 0.4vh; }
     .fcat__search { margin-left: auto; width: 22vh; padding: 0.8vh 1.2vh; border-radius: 1vh; border: 1px solid rgba(255, 255, 255, 0.15); background: rgba(0, 0, 0, 0.25); color: #fff; font-size: 1.4vh; outline: none; }
+    .fcount { margin-top: 1vh; font-size: 1.5vh; color: #2BB6A8; }
+    .fcount.full { color: #ff6b6b; }
+    .fpreview { justify-content: center; }
+    :global(#furniture .fgrid .house__furniture_element > .box-between:last-child) { gap: 0.8vh; }
+    :global(#furniture .fgrid .house__furniture_element > .box-between:last-child .house__element_button) { flex: 1; width: auto; justify-content: center; text-align: center; font-size: 1.3vh; }
     .fcat__type { display: flex; align-items: center; font-size: 1.3vh; opacity: 0.6; }
     .fcat__empty { grid-column: 1 / -1; text-align: center; opacity: 0.6; font-size: 1.6vh; padding: 4vh 0; }
     :global(#furniture .house__furniture.fgrid) { margin-top: 2vh !important; grid-template-rows: none !important; grid-auto-rows: max-content; align-content: start; }

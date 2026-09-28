@@ -93,6 +93,7 @@ gm.events.add('auto', async (act, index) => {
 							auto.entity.setRotation(0, 0, spawnCar [selectSpawn] [3], 2, true);
 							auto.entity.setOnGroundProperly();
 							auto.entity.setForwardSpeed(0);
+							global.fitAutoshopCamera(auto.entity);
 							//if (isUpdate) {
 							//	global.cameraManager.stopCamera ();
 							//	global.createCamera ("autoshop", auto.entity);

@@ -141,9 +141,26 @@ namespace NeptuneEvo.Organizations.Contracts.Config
                 config.Vehicles = DefaultVehicles();
                 save = true;
             }
+            else
+            {
+                // Новые модели из списка по умолчанию дописываются в уже сохранённый конфиг (настройки старых не трогаем)
+                foreach (var vehicle in DefaultVehicles())
+                {
+                    if (config.Vehicles.Any(v => string.Equals(v.Model, vehicle.Model, StringComparison.OrdinalIgnoreCase)))
+                        continue;
+                    config.Vehicles.Add(vehicle);
+                    save = true;
+                }
+            }
             if (config.Shops == null || config.Shops.Count == 0)
             {
                 config.Shops = DefaultShops();
+                save = true;
+            }
+            // Старая точка La Mesa стояла на прицепе (Z на 2 м выше земли) — перенос на землю ближе ко входу
+            foreach (var spot in config.Shops.Where(o => o.Id == "lamesa" && o.Unload != null && o.Unload.DistanceTo(new Vector3(881.6852, -880.0532, 27.724)) < 1f))
+            {
+                spot.Unload = LaMesaUnload;
                 save = true;
             }
             if (config.Npcs == null || config.Npcs.Count == 0)
@@ -188,12 +205,14 @@ namespace NeptuneEvo.Organizations.Contracts.Config
         /// Склады в промзонах, рядом с точками сдачи подрядов (проверенные уличные места).
         /// Ассортимент разнесён: для большинства подрядов нужно заехать на два склада.
         /// </summary>
+        private static Vector3 LaMesaUnload => new Vector3(877.5, -877.3, 25.63);
+
         private static List<MaterialShopSpot> DefaultShops() => new List<MaterialShopSpot>
         {
             new MaterialShopSpot
             {
                 Id = "lamesa", Name = "Стройбаза La Mesa",
-                Enter = new Vector3(863.8128, -868.2756, 25.62753), Unload = new Vector3(881.6852, -880.0532, 27.724),
+                Enter = new Vector3(863.8128, -868.2756, 25.62753), Unload = LaMesaUnload,
                 Materials = new List<string> { "concrete", "brick", "wood" },
             },
             new MaterialShopSpot
@@ -231,6 +250,16 @@ namespace NeptuneEvo.Organizations.Contracts.Config
         private static List<CargoVehicleDefinition> DefaultVehicles() => new List<CargoVehicleDefinition>
         {
             new CargoVehicleDefinition { Model = "bison", Name = "Bravado Bison (пикап)", Slots = 2, MaxKg = 500 },
+            new CargoVehicleDefinition { Model = "bison2", Name = "Bravado Bison (пикап)", Slots = 2, MaxKg = 500 },
+            new CargoVehicleDefinition { Model = "bison3", Name = "Bravado Bison (пикап)", Slots = 2, MaxKg = 500 },
+            new CargoVehicleDefinition { Model = "rumpo2", Name = "Bravado Rumpo (фургон)", Slots = 3, MaxKg = 700 },
+            new CargoVehicleDefinition { Model = "speedo4", Name = "Vapid Speedo (фургон)", Slots = 3, MaxKg = 700 },
+            new CargoVehicleDefinition { Model = "boxville2", Name = "Brute Boxville", Slots = 5, MaxKg = 1200 },
+            new CargoVehicleDefinition { Model = "boxville3", Name = "Brute Boxville", Slots = 5, MaxKg = 1200 },
+            new CargoVehicleDefinition { Model = "boxville4", Name = "Brute Boxville", Slots = 5, MaxKg = 1200 },
+            new CargoVehicleDefinition { Model = "mule2", Name = "Maibatsu Mule", Slots = 8, MaxKg = 2000 },
+            new CargoVehicleDefinition { Model = "mule4", Name = "Maibatsu Mule", Slots = 8, MaxKg = 2000 },
+            new CargoVehicleDefinition { Model = "pounder2", Name = "MTL Pounder", Slots = 14, MaxKg = 5000 },
             new CargoVehicleDefinition { Model = "rumpo", Name = "Bravado Rumpo (фургон)", Slots = 3, MaxKg = 700 },
             new CargoVehicleDefinition { Model = "speedo", Name = "Vapid Speedo (фургон)", Slots = 3, MaxKg = 700 },
             new CargoVehicleDefinition { Model = "boxville", Name = "Brute Boxville", Slots = 5, MaxKg = 1200 },

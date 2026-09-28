@@ -336,6 +336,12 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - CEF: раздел «Подряды» в меню организации (`fractions/elements/contracts`), события `server.org.main.contracts.load/action`.
 - NPC-бонус: `Npc/ContractNpc.cs`, диалог через `openDialog` → `dialogCallback` case `ORG_CONTRACT_NPC`.
 
+## 7n. Грузовой автосалон, банк Fleeca, пополнение счёта организации
+- Бизнес типа 17 «Грузовой автосалон» (`BusinessManager.TruckDealerType`, модели `TruckModels`): грузовики убраны из остальных салонов (`SetupTruckDealer` + `UpdateBusProd`), недостающие цены добавляются в `BusProductsData` в памяти. Автосоздание одного салона — `Businesses/TruckDealer.cs`. Индекс списка машин салона — `BusinessManager.CarsIndex(type)`.
+- Банк: общие операции в `MoneySystem/BankOps.cs` (лимиты налогов по VIP, `PrepareTransfer` → диалог `AcceptBankTransfer`, `PayTaxFromCard`, `OrgDeposit`). Банкомат: пункты 5/6 (счёт организации с карты / наличными). Телефон: приложение Fleeca — сервер `Players/Phone/Fleeca` (не `Bank`: namespace `...Phone.Bank` перекрыл бы класс `MoneySystem.Bank`), клиент `src_client/phone/bank.js`, CEF `phonenew/components/bank`.
+- Склад организации/фракции (`FractionsStock`) переписан, события прежние (`stockTake/stockPut/stockExit`).
+- В `.gitignore` есть `[Ll]ogs/` — не называть папки с кодом `Logs`.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

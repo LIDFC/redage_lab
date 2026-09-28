@@ -168,10 +168,12 @@ namespace NeptuneEvo.Organizations.Contracts.Cargo
                 var orgId = CargoVehicle.GetOrganizationId(vehicle);
                 if (unit == null)
                     error = "У вас нет груза в руках";
-                else if (orgId == 0 || orgId != player.GetOrganizationMemberData()?.Id || (unit.OwnerType == CargoOwner.Organization && unit.OwnerId != orgId))
-                    error = "Нужна машина вашей организации (из гаража организации)";
+                else if (CargoVehicle.OwnershipError(vehicle, player.GetOrganizationMemberData()?.Id ?? -1) is string ownership)
+                    error = ownership;
+                else if (unit.OwnerType == CargoOwner.Organization && unit.OwnerId != orgId)
+                    error = "Это груз другой организации";
                 else if (definition == null)
-                    error = $"Эта машина не подходит для груза. Подходят: {CargoVehicle.ModelsText()}";
+                    error = $"{VehicleModel.vMain.GetName(vehicle.Model) ?? "Эта машина"} не подходит для груза. Подходят: {CargoVehicle.ModelsText()}";
                 else
                 {
                     capacity = CargoVehicle.GetCapacity(number, definition);

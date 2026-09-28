@@ -79,7 +79,7 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
         public static bool IsNearAutoshop(Vector3 position, float range)
         {
             var positions = new List<Vector3>();
-            positions.AddRange(BusinessManager.BizList.Values.Where(x => new int[] { 2, 3, 4, 5, 15 }.Contains(x.Type)).Select(x => x.EnterPoint));
+            positions.AddRange(BusinessManager.BizList.Values.Where(x => new int[] { 2, 3, 4, 5, 15, BusinessManager.TruckDealerType }.Contains(x.Type)).Select(x => x.EnterPoint));
             positions.AddRange(Manager.Config.AuctionPositions.Select(x => x.Position));
 
             var result = positions.OrderBy(pos

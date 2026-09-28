@@ -25,3 +25,55 @@ gm.events.add("render", () => {
         }
     }
 });
+
+// ---------------------------------------------------------------- паллеты в мире
+// Сервер помечает объект паллеты shared-данными "cargoPallet" = "org:<id>:<кол-во>:<название>".
+// Раз в секунду собираем паллеты в зоне стрима: новые кладём на землю, свои подсвечиваем стрелкой.
+let pallets = [];
+let lastScan = 0;
+
+const scanPallets = () => {
+    const found = [];
+    mp.objects.forEachInStreamRange((object) => {
+        if (!object || !mp.objects.exists(object) || !object.handle) return;
+        const value = object.getVariable("cargoPallet");
+        if (typeof value !== "string") return;
+        const [ownerType, ownerId, quantity, name] = value.split(":");
+        if (!object.cargoGrounded) {
+            object.cargoGrounded = true;
+            try {
+                object.placeOnGroundProperly();
+            } catch (e) {}
+        }
+        found.push({ object, own: ownerType === "org" && Number(ownerId) === Number(global.organizationId) && global.organizationId > 0, quantity, name });
+    });
+    pallets = found;
+};
+
+gm.events.add("render", () => {
+    const now = Date.now();
+    if (now - lastScan > 1000) {
+        lastScan = now;
+        scanPallets();
+    }
+    if (!pallets.length || global.cargoCarrying) return;
+
+    const player = global.localplayer.position;
+    pallets.forEach((pallet) => {
+        if (!pallet.own || !mp.objects.exists(pallet.object)) return;
+        const pos = pallet.object.position;
+        const dist = mp.game.system.vdist(pos.x, pos.y, pos.z, player.x, player.y, player.z);
+        if (dist > 60) return;
+        const bounce = Math.sin(now / 300) * 0.12;
+        // Стрелка над своей паллетой
+        mp.game.graphics.drawMarker(2, pos.x, pos.y, pos.z + 2.2 + bounce, 0, 0, 0, 180, 0, 0, 0.6, 0.6, 0.6, 245, 165, 36, 210, false, true, 2, false, null, null, false);
+        if (dist < 20)
+            mp.game.graphics.drawText(`Ваш груз · ${pallet.name} ×${pallet.quantity}${dist < 3 ? " · [E] взять" : ""}`, [pos.x, pos.y, pos.z + 2.8], {
+                font: 4,
+                color: [245, 165, 36, 230],
+                scale: [0.35, 0.35],
+                outline: true,
+                centre: true,
+            });
+    });
+});

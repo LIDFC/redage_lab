@@ -39,6 +39,7 @@
 
     import taxi from './components/taxi/index.svelte'
     import cars from './components/cars/index.svelte'
+    import bank from './components/bank/index.svelte'
     import mech from './components/mech/index.svelte'
 /*     import avito from './components/avito.svelte' */
     import radio from './components/radio/radio.svelte'
@@ -72,6 +73,7 @@
         gallery,
         taxi,
         cars,
+        bank,
         news,
         mech,
         property,

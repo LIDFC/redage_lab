@@ -223,12 +223,24 @@ namespace NeptuneEvo.Organizations.Contracts.Admin
                         Chat(player, $"«{spot.Name}»: {(materials.Count == 0 ? "все материалы" : string.Join(", ", materials))}");
                     }
                     return;
+                case "unload":
+                    {
+                        if (!BusinessManager.BizList.TryGetValue(Arg(parts, 2), out var biz) || biz.Type != MaterialShop.BusinessType)
+                        {
+                            Chat(player, "/orgc shop unload bizId — площадка погрузки склада на вашу позицию");
+                            return;
+                        }
+                        MaterialShop.SetUnloadPoint(biz, player.Position);
+                        GameLog.Admin(player.Name, $"orgc shop unload {biz.ID}", "");
+                        Chat(player, $"Площадка погрузки склада #{biz.ID} перенесена на вашу позицию (новые паллеты появятся здесь)");
+                    }
+                    return;
                 case "seed":
                     MaterialShop.Seed();
                     Chat(player, "Проверка складов запущена (/orgc shop list)");
                     return;
             }
-            Chat(player, "/orgc shop list | add материалы|* название | mat bizId материалы|* | seed");
+            Chat(player, "/orgc shop list | add материалы|* название | mat bizId материалы|* | unload bizId | seed");
         }
 
         private static int Arg(string[] parts, int i) => parts.Length > i && int.TryParse(parts[i], out var v) ? v : 0;

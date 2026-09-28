@@ -19,6 +19,7 @@
     import ForbesIcon from '../assets/images/forbes.png'
     import TruckerIcon from '../assets/images/trucker.png'
     import AucIcon from '../assets/images/auction.png'
+    import FleecaIcon from '../assets/images/fleeca.svg'
     import CallIcon from '../assets/images/call.png'
     import MessagesIcon from '../assets/images/messages.png'
     import CameraIcon from '../assets/images/camera.png'
@@ -40,6 +41,11 @@
             name: "Имущество",
             icon: PropertyIcon,
             link: "property"
+        },
+        {
+            name: "Fleeca",
+            icon: FleecaIcon,
+            link: "bank"
         },
         {
             name: "Авто",

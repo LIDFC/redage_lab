@@ -28,6 +28,8 @@
         { title: 'Налог за дом', icon: 'home' },
         { title: 'Налог за бизнес', icon: 'store' },
         { title: 'Перевод на счёт', icon: 'article' },
+        { title: 'Орг. счёт с карты', icon: 'org' },
+        { title: 'Орг. счёт наличными', icon: 'org' },
     ];
 
     let

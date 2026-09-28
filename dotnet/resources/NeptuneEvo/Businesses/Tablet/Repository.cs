@@ -101,7 +101,7 @@ namespace NeptuneEvo.Businesses.Tablet
                     whCount += product.Lefts;
                     whMax += data.MaxCount;
                     if (!product.Ordered && product.Lefts < data.MaxCount)
-                        orderAllPrice += (biz.Type >= 2 && biz.Type <= 5 ? 3 : data.MaxCount - product.Lefts) * unitPrice;
+                        orderAllPrice += (BusinessManager.IsOrderCarShowroom(biz.Type) ? 3 : data.MaxCount - product.Lefts) * unitPrice;
                 }
 
                 var taxBalance = Bank.GetBalance(biz.BankID);

@@ -168,7 +168,7 @@ namespace NeptuneEvo.Organizations.Table.Contracts
                 active,
                 maxActive = config.MaxActivePerOrganization,
                 nextGen = (long)Math.Max(0, ((ContractGenerator.NextSlot(now) ?? now) - now).TotalSeconds),
-                vehicles = config.Vehicles.Select(v => new { name = v.Name, slots = v.Slots, kg = v.MaxKg }),
+                vehicles = config.Vehicles.GroupBy(v => v.Name).Select(g => g.First()).Select(v => new { name = v.Name, slots = v.Slots, kg = v.MaxKg }),
                 contracts,
                 message,
                 ok,

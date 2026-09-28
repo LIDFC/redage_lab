@@ -664,6 +664,20 @@ namespace NeptuneEvo.MoneySystem
                                 break;
                         }
                         break;
+                    case 5:
+                    case 6:
+                        {
+                            var error = BankOps.OrgDeposit(player, amount, type == 5);
+                            if (error != null)
+                            {
+                                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, error, 3000);
+                                return;
+                            }
+                            player.Eval($"mp.game.audio.playSoundFrontend(-1, \"Bus_Schedule_Pickup\", \"DLC_PRISON_BREAK_HEIST_SOUNDS\", true);");
+                            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Счёт организации пополнен на ${Wallet.Format(Math.Abs(amount))}", 3000);
+                            OpenOrgDeposit(player, type == 5);
+                        }
+                        break;
                     case 4:
                         if (!Bank.Accounts.ContainsKey(amount) || amount <= 0)
                         {
@@ -738,6 +752,20 @@ namespace NeptuneEvo.MoneySystem
                 Bank.Log.Write($"ClientEvent_ATMVAL Exception: {e.ToString()}");
             }
         }
+        /// <summary>Экран пополнения счёта организации: subdata "org:баланс:название".</summary>
+        private static bool OpenOrgDeposit(ExtPlayer player, bool fromCard)
+        {
+            var organizationData = Organizations.Player.Repository.GetOrganizationData(player);
+            if (organizationData == null || !organizationData.Status)
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Вы не состоите в организации", 3000);
+                return false;
+            }
+            var name = (organizationData.Name ?? "").Replace("'", "").Replace("\\", "").Replace(":", " ");
+            Trigger.ClientEvent(player, "atmOpen", $"[2,'org:{organizationData.Money}:{name}','{(fromCard ? "Пополнение с карты" : "Пополнение наличными")}']");
+            return true;
+        }
+
         public static void AcceptTransfer(ExtPlayer player)
         {
             try
@@ -860,6 +888,12 @@ namespace NeptuneEvo.MoneySystem
                                 break;
                             case 4:
                                 Trigger.ClientEvent(player, "atmOpen", "[2,0,'Счет зачисления']");
+                                sessionData.ATMData.Type = index;
+                                break;
+                            case 5: // счёт организации с карты
+                            case 6: // счёт организации наличными
+                                if (!OpenOrgDeposit(player, index == 5))
+                                    return;
                                 sessionData.ATMData.Type = index;
                                 break;
                             default:

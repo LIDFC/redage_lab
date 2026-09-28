@@ -2688,6 +2688,9 @@ namespace NeptuneEvo
                         case "HOUSE_SELL_TOGOV":
                             Houses.HouseManager.acceptHouseSellToGov(player);
                             return;
+                        case "ORG_CONTRACT_NPC":
+                            Organizations.Contracts.Npc.ContractNpc.OnConfirm(player);
+                            return;
                         case "BIZ_SELL_TOGOV":
                             Players.Phone.Property.Businesses.Repository.OnSellConfirm(player);
                             return;

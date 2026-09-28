@@ -326,6 +326,16 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Бизнес: `Businesses/Tablet/*` (`server.tablet.business.load/history/action`). Касса `businesses.cash` и себестоимость `businesshistory.cost` — колонки создаются при старте (`BusinessManager.Init`). Выручка из `takeProd` идёт в кассу; при смене владельца касса выплачивается прежнему.
 - Из телефона убраны: бизнес в «Имуществе», Маркетплейс, Forbes. Новое меню создания организации — `views/fractions/create/index.svelte`.
 
+## 7m. Строительные подряды для законных организаций (`Organizations/Contracts`)
+- Законная организация = `CrimeOptions == false`. Право `RankToAccess.OrganizationContracts` (63) добавляется в `DefaultAccess` только законным (`ContractsCore.ApplyTypeAccess`), остальным выдаётся рангами.
+- Конфиг `settings/org_contracts.json` (время генерации, лимиты, материалы, грузовики, склады, NPC) и шаблоны `settings/org_contract_templates.json` создаются при первом старте. Админ: `/orgc` (5 ур. просмотр, 8 ур. изменения).
+- Жизненный цикл: `Manager.cs` под `ContractsCore.Sync`; статус контракта + `organizations.Money/reputation` пишутся одной транзакцией (`ContractsRepository.EnqueueTransaction`). Таблицы: `org_contracts`, `org_contract_gen`, `org_contract_npc`, `org_cargo`, `org_contract_audit` + колонка `organizations.reputation`.
+- Склады: бизнес типа 16 (государственный, не продаётся), автосоздание по `shops` из конфига (`MaterialShop.Seed`), ассортимент на склад. Окно — CEF `FractionsContractShop`.
+- Груз: `Cargo/*` — универсальный модуль (1 объект = паллета), груз в кузове привязан к номеру машины (`org_cargo.vehicle_number`), `CARGO_COUNT` shared data для кругового меню. Взять — E у паллеты, положить в кузов/взять — круговое меню машины.
+- Сдача: `Methods/Delivery.cs` — зона у точки подряда, разгрузка по паллете каждые 3 с, завершение → `ContractsManager.Complete`.
+- CEF: раздел «Подряды» в меню организации (`fractions/elements/contracts`), события `server.org.main.contracts.load/action`.
+- NPC-бонус: `Npc/ContractNpc.cs`, диалог через `openDialog` → `dialogCallback` case `ORG_CONTRACT_NPC`.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

@@ -55,6 +55,19 @@ namespace NeptuneEvo.Organizations.Contracts.Config
         public bool Sells(string material) => Materials == null || Materials.Count == 0 || Materials.Contains(material);
     }
 
+    /// <summary>NPC на стройке: раз в сутки на организацию с шансом передаёт существующий подряд подходящего типа.</summary>
+    public class ContractNpcDefinition
+    {
+        [JsonProperty("id")] public string Id { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
+        [JsonProperty("model")] public string Model { get; set; }
+        [JsonProperty("position")] public Vector3 Position { get; set; }
+        [JsonProperty("heading")] public float Heading { get; set; }
+        /// <summary>Какие типы подрядов (ContractType шаблонов) он может передать.</summary>
+        [JsonProperty("types")] public List<string> Types { get; set; } = new List<string>();
+        [JsonProperty("phrase")] public string Phrase { get; set; }
+    }
+
     /// <summary>
     /// Настройки строительных подрядов: settings/org_contracts.json. Если файла нет — создаётся со значениями по умолчанию.
     /// Админ меняет значения командой /orgc cfg, файл перезаписывается.
@@ -82,6 +95,7 @@ namespace NeptuneEvo.Organizations.Contracts.Config
         [JsonProperty("materials")] public List<MaterialDefinition> Materials { get; set; } = new List<MaterialDefinition>();
         [JsonProperty("vehicles")] public List<CargoVehicleDefinition> Vehicles { get; set; } = new List<CargoVehicleDefinition>();
         [JsonProperty("shops")] public List<MaterialShopSpot> Shops { get; set; } = new List<MaterialShopSpot>();
+        [JsonProperty("npcs")] public List<ContractNpcDefinition> Npcs { get; set; } = new List<ContractNpcDefinition>();
 
         public MaterialDefinition GetMaterial(string id) =>
             Materials.FirstOrDefault(m => m.Id == id);
@@ -130,6 +144,11 @@ namespace NeptuneEvo.Organizations.Contracts.Config
             if (config.Shops == null || config.Shops.Count == 0)
             {
                 config.Shops = DefaultShops();
+                save = true;
+            }
+            if (config.Npcs == null || config.Npcs.Count == 0)
+            {
+                config.Npcs = DefaultNpcs();
                 save = true;
             }
             if (config.GetGenerationMinutes().Count == 0)
@@ -188,6 +207,24 @@ namespace NeptuneEvo.Organizations.Contracts.Config
                 Id = "lsia", Name = "Асфальтобетонный завод LSIA",
                 Enter = new Vector3(-879.1289, -2523.5586, 14.857651), Unload = new Vector3(-841.52, -2500.98, 13.830637),
                 Materials = new List<string> { "asphalt", "concrete" },
+            },
+        };
+
+        private static List<ContractNpcDefinition> DefaultNpcs() => new List<ContractNpcDefinition>
+        {
+            new ContractNpcDefinition
+            {
+                Id = "foreman_mirror", Name = "Прораб Виктор", Model = "s_m_y_construct_01",
+                Position = new Vector3(1070.7666, -712.1477, 58.49874), Heading = 180f,
+                Types = new List<string> { "BuildingConstruction", "WarehouseConstruction" },
+                Phrase = "Оооо, у меня как раз друг на стройке бригадир и ищет, кто ему кое-что привезёт…",
+            },
+            new ContractNpcDefinition
+            {
+                Id = "roadmaster_lamesa", Name = "Дорожный мастер Грег", Model = "s_m_y_construct_02",
+                Position = new Vector3(836.23175, -875.3281, 25.22759), Heading = 90f,
+                Types = new List<string> { "RoadConstruction", "InfrastructureRepair", "BridgeConstruction" },
+                Phrase = "Слушай, у нас тут дорожники зашиваются — им срочно нужен подрядчик с грузовиками…",
             },
         };
 

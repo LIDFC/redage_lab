@@ -75,6 +75,8 @@ namespace NeptuneEvo
         {
             ServerSettings = Settings.ReadAsync("serverSettings", ServerSettings);
             ServerNumber = ServerSettings.ServerId;
+            if (ServerSettings.HouseTaxPercent > 0)
+                HouseManager.HouseTax = ServerSettings.HouseTaxPercent;
             DonateSettings = Settings.ReadAsync("donationsSettings", DonateSettings);
             Settings.ApplyMysqlEnv(DonateSettings, "REDAGE_DONATE_DB");
             MoneySettings = Settings.ReadAsync("moneySettings", MoneySettings);

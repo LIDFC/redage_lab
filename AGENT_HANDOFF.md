@@ -382,9 +382,13 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Расположение HUD: поле `ChatData.HudLayout` (строка `блок:x,y,s;...`, без кавычек — её передают в CEF в одинарных кавычках), CEF `hudevo/elements/hudlayout.svelte` (CSS-переменные на корневых классах блоков, редактор перетаскиванием), клиент `player/hudlayout.js`, кнопка в Настройки → Настройки худа. Меню настроек отправляет `HudLayout` вместе со своими полями.
 
 ## 7t. Админ-панель настроек (/cfg) и погода
-- `/cfg` (8 lvl, `AdminCommands.cfgpanel`) → `Functions/ConfigPanel.cs` строит схему полей (трава, ЧР, скупка, подряды), CEF `views/admin/configpanel` (`AdminConfigPanel`), клиент `src_client/admin/cfgpanel.js`.
-- Сохранение `server.cfgpanel.save` {секция: {ключ: число}}: проверка min/max, связанные поля (урожай от/до, срок лота, новички ≤ генерация) — откат секции; затем `XxxConfig.Save()` + `Apply` (цены Мавра 502/503); каждое изменение в adminlog.
-- Новое поле = одна строка `Int(...)`/`Float(...)` в `BuildSections`.
+- `/cfg` (смотреть с 5 lvl; менять обычные вкладки с 8, «Экономика», «Сервер и налоги», «Зарплаты фракций» — с 9 или логин из `DirectorLogins`) → `Functions/ConfigPanel.cs`, CEF `views/admin/configpanel` (`AdminConfigPanel`), клиент `src_client/admin/cfgpanel.js`.
+- Вкладки: трава, ЧР, скупка, подряды (settings/*.json); экономика (таблица `economy`, UPDATE по колонкам, цены Мавра в `FractionDataMats`); сервер и налоги (`serverSettings` / `pricesSettings`: множители, налоги вкл/выкл, `HouseTaxPercent` — новое поле в SDK, применяется в `LoadServerSettings`); зарплаты гос. фракций (`fractionranks.payday`).
+- Типы полей: int, float, bool (переключатель), select. Новое поле = одна строка `Int/Float/Bool/Select/Eco(...)` в `BuildSections`.
+- Сохранение: права → диапазоны → бэкап (`settings/backup`, 10 последних на вкладку) → связанные поля (откат вкладки при ошибке) → Save/Persist/Apply → история (`settings/cfg_history.json`, 500 записей, откат по кнопке) → adminlog + чат админов `[CFG]`.
+- «Перечитать с диска» (`Reload`) — трава (с перепривязкой покупателей `WeedManager.RebindConfig`), ЧР, скупка, подряды, экономика (`Economy.Init`).
+- Пресеты — `settings/cfg_presets/<имя>.json` ({вкладка: {ключ: значение}}), применяются тем же путём, что и «Сохранить».
+- Подсказки «в деньгах» (`Section.Info`): доход с куста, потери при обнале, диапазон цен скупки, налог дома, сумма зарплат на ближайший PayDay.
 - Погода: в телефоне был захардкожен минус перед температурой; сервер (`World/Weather/Repository.cs`) сдвигает температуру по сезону (зима −10, весна −4, осень −7), минимум +2.
 
 ## 8. Что осталось или стоит проверить

@@ -75,6 +75,17 @@ namespace NeptuneEvo.Crime.Weed
         private static bool _loaded;
 
         private static WeedConfig Cfg => WeedConfig.Current;
+
+        /// <summary>После перечитывания weed.json (/cfg): покупатели на карте берут цены и лимиты из нового конфига.</summary>
+        public static void RebindConfig()
+        {
+            for (var i = 0; i < Buyers.Count && i < Cfg.Buyers.Count; i++)
+                Buyers[i].Config = Cfg.Buyers[i];
+            if (Fractions.Manager.FractionDataMats.ContainsKey(502))
+                Fractions.Manager.FractionDataMats[502].Price = $"{Cfg.SeedPrice}$";
+            if (Fractions.Manager.FractionDataMats.ContainsKey(503))
+                Fractions.Manager.FractionDataMats[503].Price = $"{Cfg.WaterPrice}$";
+        }
         private static long Unix(DateTime time) => new DateTimeOffset(time).ToUnixTimeSeconds();
         private static DateTime FromUnix(long value) => DateTimeOffset.FromUnixTimeSeconds(value).LocalDateTime;
 

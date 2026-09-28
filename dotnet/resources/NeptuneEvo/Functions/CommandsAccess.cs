@@ -515,7 +515,7 @@ namespace NeptuneEvo.Functions
             { AdminCommands.fcrypto, 5 },
             { AdminCommands.blackmarket, 5 },
             { AdminCommands.orgcontracts, 5 },
-            { AdminCommands.cfgpanel, 8 },
+            { AdminCommands.cfgpanel, 5 },
             { AdminCommands.setbliporg, 8 },
             { AdminCommands.delbliporg, 8 },
             { AdminCommands.setmicrophone, 8 },

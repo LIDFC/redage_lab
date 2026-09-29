@@ -67,7 +67,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
             if (!_ready)
                 return;
             var better = kind == "course" ? "LEAST" : "GREATEST";
-            BlackMarket.BlackMarketRepository.Enqueue(
+            NeptuneEvo.Database.DbQueue.Enqueue(
                 $@"INSERT INTO `army_training` (`uuid`,`kind`,`best`,`passes`,`attempts`,`last`) VALUES (@u,@k,@v,@p,1,@t)
                    ON DUPLICATE KEY UPDATE `best` = IF(`best` = 0, VALUES(`best`), {better}(`best`, VALUES(`best`))),
                    `passes` = `passes` + VALUES(`passes`), `attempts` = `attempts` + 1, `last` = VALUES(`last`)",
@@ -77,7 +77,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
         private static Dictionary<string, (double best, int passes, int attempts, DateTime last)> ReadFile(int uuid)
         {
             var result = new Dictionary<string, (double, int, int, DateTime)>();
-            using var table = BlackMarket.BlackMarketRepository.Read("SELECT `kind`,`best`,`passes`,`attempts`,`last` FROM `army_training` WHERE `uuid` = @u", ("@u", uuid));
+            using var table = NeptuneEvo.Database.DbQueue.Read("SELECT `kind`,`best`,`passes`,`attempts`,`last` FROM `army_training` WHERE `uuid` = @u", ("@u", uuid));
             if (table == null)
                 return result;
             foreach (DataRow row in table.Rows)

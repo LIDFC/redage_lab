@@ -16,7 +16,7 @@ namespace NeptuneEvo.MoneySystem
     /// История денег игрока для телефона (Fleeca → «История»): последние операции наличными и по карте.
     /// Записи берутся из GameLog.Money (там уже есть «откуда → куда» и код операции), складываются
     /// в компактную таблицу `money_history` с индексом по игроку (moneylog в базе логов слишком большой
-    /// и без индекса). Храним 30 дней. Пишем через общую очередь записи (BlackMarketRepository).
+    /// и без индекса). Храним 30 дней. Пишем через общую очередь записи (Database/DbQueue).
     /// </summary>
     public static class MoneyHistory
     {
@@ -39,7 +39,7 @@ namespace NeptuneEvo.MoneySystem
                     KEY `uuid_time` (`uuid`, `time`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;"))
                     MySQL.Query(create);
-                BlackMarket.BlackMarketRepository.Enqueue("DELETE FROM `money_history` WHERE `time` < @t", ("@t", DateTime.Now.AddDays(-30)));
+                NeptuneEvo.Database.DbQueue.Enqueue("DELETE FROM `money_history` WHERE `time` < @t", ("@t", DateTime.Now.AddDays(-30)));
                 _ready = true;
             }
             catch (Exception e)
@@ -71,7 +71,7 @@ namespace NeptuneEvo.MoneySystem
         }
 
         private static void Add(int uuid, DateTime time, long amount, string code) =>
-            BlackMarket.BlackMarketRepository.Enqueue(
+            NeptuneEvo.Database.DbQueue.Enqueue(
                 "INSERT INTO `money_history` (`uuid`,`time`,`amount`,`code`) VALUES (@u,@t,@a,@c)",
                 ("@u", uuid), ("@t", time), ("@a", amount), ("@c", code));
 
@@ -84,7 +84,7 @@ namespace NeptuneEvo.MoneySystem
                 string json = "[]";
                 try
                 {
-                    var table = BlackMarket.BlackMarketRepository.Read(
+                    var table = NeptuneEvo.Database.DbQueue.Read(
                         "SELECT `time`,`amount`,`code` FROM `money_history` WHERE `uuid`=@u ORDER BY `id` DESC LIMIT " + Limit, ("@u", uuid));
                     var list = new List<object>();
                     if (table != null)

@@ -362,6 +362,7 @@ namespace NeptuneEvo.Core
                         await Players.Phone.Tinder.Repository.Saves(db);
                         EternalDev.MarketPlace.Manager.Save();
                         BlackMarket.BlackMarketManager.Save();
+                        NeptuneEvo.Database.DbQueue.Flush();
                         Organizations.Contracts.ContractsManager.Save();
                         //
                         Ban.Delete();
@@ -450,6 +451,7 @@ namespace NeptuneEvo.Core
                     await Players.Phone.Tinder.Repository.Saves(db);
                     EternalDev.MarketPlace.Manager.Save();
                         BlackMarket.BlackMarketManager.Save();
+                        NeptuneEvo.Database.DbQueue.Flush();
                         Organizations.Contracts.ContractsManager.Save();
 
                     //Log.Write($"[{DateTime.Now - speedSave}] Save property", nLog.Type.Success);

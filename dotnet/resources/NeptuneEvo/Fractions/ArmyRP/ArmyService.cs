@@ -412,7 +412,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
         {
             if (!_logReady)
                 return;
-            BlackMarket.BlackMarketRepository.Enqueue(
+            NeptuneEvo.Database.DbQueue.Enqueue(
                 "INSERT INTO `army_weapon_log` (`time`,`uuid`,`name`,`item`,`serial`,`action`) VALUES (@t,@u,@n,@i,@s,@a)",
                 ("@t", DateTime.Now), ("@u", player.GetUUID()), ("@n", player.Name), ("@i", item ?? ""), ("@s", serial ?? ""), ("@a", action));
         }
@@ -474,7 +474,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
                     ArmyUtil.Say(player, "Журнал оружия доступен офицерам", false);
                     return;
                 }
-                using var table = BlackMarket.BlackMarketRepository.Read(
+                using var table = NeptuneEvo.Database.DbQueue.Read(
                     "SELECT `time`,`name`,`item`,`serial`,`action` FROM `army_weapon_log` WHERE `time` > @since ORDER BY `id` DESC LIMIT 500",
                     ("@since", DateTime.Now.AddDays(-7)));
                 if (table == null)

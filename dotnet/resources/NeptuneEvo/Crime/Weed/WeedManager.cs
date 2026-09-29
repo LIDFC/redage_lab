@@ -110,7 +110,7 @@ namespace NeptuneEvo.Crime.Weed
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;"))
                     MySQL.Query(create);
 
-                var table = BlackMarket.BlackMarketRepository.Read("SELECT * FROM `weed_plants`");
+                var table = NeptuneEvo.Database.DbQueue.Read("SELECT * FROM `weed_plants`");
                 // Рестарт — не вина игрока: у растущих кустов «полив» сдвигается, чтобы не засохли за время простоя
                 var now = DateTime.Now;
                 if (table != null)
@@ -242,7 +242,7 @@ namespace NeptuneEvo.Crime.Weed
         {
             Despawn(plant);
             Plants.Remove(plant.Id);
-            BlackMarket.BlackMarketRepository.Enqueue("DELETE FROM `weed_plants` WHERE `id`=@id", ("@id", plant.Id));
+            NeptuneEvo.Database.DbQueue.Enqueue("DELETE FROM `weed_plants` WHERE `id`=@id", ("@id", plant.Id));
         }
 
         private static void Refresh(Plant plant)
@@ -482,7 +482,7 @@ namespace NeptuneEvo.Crime.Weed
                 };
                 Plants[plant.Id] = plant;
                 Spawn(plant);
-                BlackMarket.BlackMarketRepository.Enqueue(
+                NeptuneEvo.Database.DbQueue.Enqueue(
                     "INSERT INTO `weed_plants` (`id`,`owner`,`owner_name`,`house`,`spot`,`x`,`y`,`z`,`dim`,`planted`,`watered`) VALUES (@id,@owner,@name,@house,@spot,@x,@y,@z,@dim,@planted,@watered)",
                     ("@id", plant.Id), ("@owner", uuid), ("@name", plant.OwnerName), ("@house", houseId), ("@spot", spotIndex),
                     ("@x", position.X), ("@y", position.Y), ("@z", position.Z), ("@dim", (int)dimension),
@@ -665,7 +665,7 @@ namespace NeptuneEvo.Crime.Weed
                     return;
                 Chars.Repository.Remove(player, $"char_{uuid}", "inventory", ItemId.WaterBottle, 1);
                 plant.LastWater = DateTime.Now;
-                BlackMarket.BlackMarketRepository.Enqueue("UPDATE `weed_plants` SET `watered`=@w WHERE `id`=@id", ("@w", Unix(plant.LastWater)), ("@id", plant.Id));
+                NeptuneEvo.Database.DbQueue.Enqueue("UPDATE `weed_plants` SET `watered`=@w WHERE `id`=@id", ("@w", Unix(plant.LastWater)), ("@id", plant.Id));
                 Refresh(plant);
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Полито. Следующий полив — в течение {Cfg.WaterMinutes} мин", 3500);
             }, onCancel: () => plant.Busy = false);

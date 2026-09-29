@@ -114,15 +114,4 @@ json/          # Данные
 ---
 
 ---
-
-## 💬 История проекта
-
-Когда-то это начиналось с:
-
-> “почему MongoDB не подключается на localhost?”
-> "Этим кстати и закончилось))"
-
-## Автор
-
-вчерашний школьник со сломанной MongoDB
 INT https://drive.google.com/file/d/1dzBjvkB5d6V9hH2Pafza_D14NGDZBxb8/view

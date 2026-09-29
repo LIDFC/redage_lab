@@ -760,7 +760,7 @@ async function countForModel(modelName) {
 	try {
 		for (let i = 0; i < 100 && (!ped.handle || ped.handle === 0); i++) await mp.game.waitAsync(50);
 		if (!ped.handle) throw new Error(`ped ${modelName} не создан`);
-		ped.setAlpha(0);
+		try { ped.setAlpha(0, false); } catch (e) {} // не обязательно: NPC и так под землёй
 		const result = { c: {}, p: {} };
 		for (let id = 0; id <= 11; id++)
 			result.c[id] = mp.game.ped.getNumberOfPedDrawableVariations(ped.handle, id);

@@ -43880,49 +43880,50 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/contractshop/index.svelte */ "./src/views/fractions/contractshop/index.svelte");
 /* harmony import */ var _views_player_lockbreak_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/player/lockbreak/index.svelte */ "./src/views/player/lockbreak/index.svelte");
 /* harmony import */ var _views_player_cyberhack_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/player/cyberhack/index.svelte */ "./src/views/player/cyberhack/index.svelte");
-/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
-/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
-/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
-/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
-/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
-/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
-/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
-/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
-/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
-/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
-/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
-/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
-/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
-/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
-/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
-/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
-/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
-/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
-/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
-/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
-/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
-/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
-/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
-/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
-/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
-/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
-/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
-/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_player_armyrepair_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/player/armyrepair/index.svelte */ "./src/views/player/armyrepair/index.svelte");
+/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
+/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
+/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
+/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
+/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
+/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
+/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
+/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
+/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
+/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
+/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
+/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
+/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
+/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
+/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
+/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
+/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
+/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
+/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
+/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
+/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
+/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
+/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
+/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
+/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
+/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
+/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
+/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -44006,6 +44007,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 //Фракции
 // /import FractionsAdverts from '@/views/fractions/adverts/index.svelte';
+
 
 
 
@@ -44165,7 +44167,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (415:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (417:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -44186,7 +44188,7 @@ function create_default_slot_1(ctx) {
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
-	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_91__.default({
+	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_92__.default({
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
@@ -44271,7 +44273,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (428:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (430:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -44478,7 +44480,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -44518,67 +44520,68 @@ function instance($$self, $$props, $$invalidate) {
 		FractionsBSearch: _views_fractions_bsearch_index_svelte__WEBPACK_IMPORTED_MODULE_60__.default,
 		FractionsMats: _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_61__.default,
 		FractionsCraft: _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_62__.default,
-		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
-		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
-		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
-		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
-		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
-		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
+		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
+		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
+		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
 		FractionsCreate: _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
 		FractionsContractShop: _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
 		PlayerLockBreak: _views_player_lockbreak_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
 		PlayerCyberHack: _views_player_cyberhack_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
-		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
-		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
-		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
-		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		ArmyRepair: _views_player_armyrepair_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
+		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
+		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
+		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
 		AdminConfigPanel: _views_admin_configpanel_index_svelte__WEBPACK_IMPORTED_MODULE_53__.default,
 		//AdminPlayersView,//Не работает
 		//AdminReport,
-		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
-		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
-		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
-		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
-		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
-		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
+		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
+		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
+		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
 		//DonateCards,
-		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
-		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
+		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
+		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
 		//QuestsDialog1,
 		//QuestsDialog2,
 		//QuestsDialog3,
-		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
-		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
-		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
-		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
-		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
-		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
-		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
-		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
-		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default
+		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
+		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
+		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
+		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
+		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
+		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
+		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
+		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
+		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_108__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_108__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_109__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_109__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_110__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -131152,6 +131155,723 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/player/armyrepair/index.svelte":
+/*!**************************************************!*\
+  !*** ./src/views/player/armyrepair/index.svelte ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* src/views/player/armyrepair/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-7efrkq", ".repair.svelte-7efrkq.svelte-7efrkq{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(0, 0, 0, 0.5);font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#fff}.repair__window.svelte-7efrkq.svelte-7efrkq{width:640px;max-width:94vw;background:#16181d;border:1px solid rgba(255, 255, 255, 0.08);border-radius:12px;padding:20px 24px}.repair__head.svelte-7efrkq.svelte-7efrkq{display:flex;align-items:center;gap:16px;margin-bottom:18px}.repair__title.svelte-7efrkq.svelte-7efrkq{font-size:20px;font-weight:700}.repair__steps.svelte-7efrkq.svelte-7efrkq{display:flex;gap:10px;margin-left:auto;font-size:12px;opacity:0.8}.repair__steps.svelte-7efrkq span.svelte-7efrkq{white-space:nowrap;padding:4px 8px;border-radius:6px;background:rgba(255, 255, 255, 0.05)}.repair__steps.svelte-7efrkq span.active.svelte-7efrkq{background:#4b6b2a}.repair__steps.svelte-7efrkq span.done.svelte-7efrkq{opacity:0.5}.repair__close.svelte-7efrkq.svelte-7efrkq{cursor:pointer;opacity:0.7;padding:4px 8px}.repair__body.svelte-7efrkq.svelte-7efrkq{display:flex;flex-direction:column;align-items:center;gap:16px;min-height:170px;justify-content:center}.repair__hint.svelte-7efrkq.svelte-7efrkq{font-size:14px;opacity:0.8;text-align:center}.repair__bar.svelte-7efrkq.svelte-7efrkq,.repair__track.svelte-7efrkq.svelte-7efrkq{position:relative;width:100%;height:16px;border-radius:8px;background:rgba(255, 255, 255, 0.08);overflow:hidden}.repair__fill.svelte-7efrkq.svelte-7efrkq{height:100%;background:#6b8e23}.repair__zone.svelte-7efrkq.svelte-7efrkq{position:absolute;top:0;height:100%;background:rgba(47, 163, 107, 0.7)}.repair__runner.svelte-7efrkq.svelte-7efrkq{position:absolute;top:-2px;width:4px;height:20px;margin-left:-2px;background:#fff}.repair__btn.svelte-7efrkq.svelte-7efrkq{padding:10px 26px;border-radius:8px;background:#4b6b2a;font-weight:600;cursor:pointer;user-select:none}.repair__grid.svelte-7efrkq.svelte-7efrkq{display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;width:100%}.repair__part.svelte-7efrkq.svelte-7efrkq{padding:12px;border-radius:8px;background:rgba(255, 255, 255, 0.05);cursor:pointer;border:1px solid transparent}.repair__part.svelte-7efrkq.svelte-7efrkq:hover{border-color:rgba(255, 255, 255, 0.2)}.repair__part.found.svelte-7efrkq.svelte-7efrkq{border-color:#2fa36b;background:rgba(47, 163, 107, 0.15)}.repair__part.wrong.svelte-7efrkq.svelte-7efrkq{border-color:#e5484d}.repair__pname.svelte-7efrkq.svelte-7efrkq{font-size:14px;font-weight:600}.repair__wear.svelte-7efrkq.svelte-7efrkq{font-size:12px;opacity:0.7;margin-top:4px}.repair__wear.bad.svelte-7efrkq.svelte-7efrkq{color:#ff8a65;opacity:1}.repair__msg.svelte-7efrkq.svelte-7efrkq{margin-top:14px;min-height:18px;font-size:13px;color:#b5d77b;text-align:center}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[29] = list[i];
+	return child_ctx;
+}
+
+// (168:8) {:else}
+function create_else_block(ctx) {
+	let div1;
+	let div0;
+	let t0;
+
+	let t1_value = (/*waiting*/ ctx[7] > 0
+	? ` — ${/*waiting*/ ctx[7]} сек`
+	: "") + "";
+
+	let t1;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Проверка систем");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*waiting*/ 128 && t1_value !== (t1_value = (/*waiting*/ ctx[7] > 0
+			? ` — ${/*waiting*/ ctx[7]} сек`
+			: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (159:29) 
+function create_if_block_2(ctx) {
+	let div5;
+	let div0;
+	let t1;
+	let div3;
+	let div1;
+	let t2;
+	let div2;
+	let t3;
+	let div4;
+	let t4;
+	let t5;
+	let t6;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Нажмите «Затянуть» или пробел, когда бегунок в зелёной зоне";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Затянуть (");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*hits*/ ctx[6]);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("/3)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__zone svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "left", /*zoneStart*/ ctx[5] + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", zoneWidth + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__runner svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "left", /*slider*/ ctx[4] + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "repair__track svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "repair__btn svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*tighten*/ ctx[12]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*zoneStart*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "left", /*zoneStart*/ ctx[5] + "%");
+			}
+
+			if (dirty[0] & /*slider*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "left", /*slider*/ ctx[4] + "%");
+			}
+
+			if (dirty[0] & /*hits*/ 64) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, /*hits*/ ctx[6]);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (147:29) 
+function create_if_block_1(ctx) {
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*parts*/ ctx[0];
+	const get_key = ctx => /*part*/ ctx[29].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Диагностика показала износ узлов. Выберите неисправные (износ выше 75%)";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__grid svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div1, null);
+				}
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*parts, pick*/ 2049) {
+				each_value = /*parts*/ ctx[0];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div1, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+// (141:8) {#if step === 1}
+function create_if_block(ctx) {
+	let div4;
+	let div0;
+	let t1;
+	let div2;
+	let div1;
+	let t2;
+	let div3;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Удерживайте кнопку, чтобы осмотреть технику";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Осматривать";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__fill svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*holdProgress*/ ctx[3] + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__bar svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "repair__btn svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "mousedown", /*holdStart*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "mouseup", /*holdStop*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "mouseleave", /*holdStop*/ ctx[10])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*holdProgress*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*holdProgress*/ ctx[3] + "%");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (151:20) {#each parts as part (part.id)}
+function create_each_block(key_1, ctx) {
+	let div2;
+	let div0;
+	let t0_value = /*part*/ ctx[29].name + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2;
+	let t3_value = /*part*/ ctx[29].wear + "";
+	let t3;
+	let t4;
+	let t5;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[15](/*part*/ ctx[29]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("износ ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__pname svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__wear svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "bad", /*part*/ ctx[29].wear > 75);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__part svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "found", /*part*/ ctx[29].found);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "wrong", /*part*/ ctx[29].wrong);
+			this.first = div2;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*parts*/ 1 && t0_value !== (t0_value = /*part*/ ctx[29].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*parts*/ 1 && t3_value !== (t3_value = /*part*/ ctx[29].wear + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+
+			if (dirty[0] & /*parts*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "bad", /*part*/ ctx[29].wear > 75);
+			}
+
+			if (dirty[0] & /*parts*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "found", /*part*/ ctx[29].found);
+			}
+
+			if (dirty[0] & /*parts*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "wrong", /*part*/ ctx[29].wrong);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div6;
+	let div5;
+	let div3;
+	let div0;
+	let t1;
+	let div1;
+	let span0;
+	let t3;
+	let span1;
+	let t5;
+	let span2;
+	let t7;
+	let div2;
+	let t9;
+	let t10;
+	let div4;
+	let t11;
+	let div6_intro;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (/*step*/ ctx[1] === 1) return create_if_block;
+		if (/*step*/ ctx[1] === 2) return create_if_block_1;
+		if (/*step*/ ctx[1] === 3) return create_if_block_2;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = `${/*title*/ ctx[8]}`;
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "1. Осмотр";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "2. Неисправности";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "3. Затяжка";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "✕";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*message*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__title svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "active", /*step*/ ctx[1] === 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "done", /*step*/ ctx[1] > 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "active", /*step*/ ctx[1] === 2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "done", /*step*/ ctx[1] > 2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "active", /*step*/ ctx[1] === 3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "done", /*step*/ ctx[1] > 3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__steps svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__close svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "repair__head svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "repair__msg svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "repair__window svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "repair svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			if_block.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*cancel*/ ctx[13]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "active", /*step*/ ctx[1] === 1);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "done", /*step*/ ctx[1] > 1);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "active", /*step*/ ctx[1] === 2);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "done", /*step*/ ctx[1] > 2);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "active", /*step*/ ctx[1] === 3);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "done", /*step*/ ctx[1] > 3);
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div5, t10);
+				}
+			}
+
+			if (dirty[0] & /*message*/ 4) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, /*message*/ ctx[2]);
+		},
+		i(local) {
+			if (!div6_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div6_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div6, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 150 });
+					div6_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if_block.d();
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+const zoneWidth = 16;
+
+function instance($$self, $$props, $$invalidate) {
+	let { viewData } = $$props;
+
+	const data = (() => {
+		try {
+			return typeof viewData === "string"
+			? JSON.parse(viewData)
+			: viewData || {};
+		} catch(e) {
+			return {};
+		}
+	})();
+
+	const title = data.title || "Ремонт техники";
+	const parts = (data.parts || []).map((p, i) => ({ ...p, id: i, found: false, wrong: false }));
+	const brokenCount = parts.filter(p => p.wear > 75).length;
+	const minSeconds = Math.max(5, Number(data.seconds) || 20);
+	const started = Date.now();
+	let step = 1;
+	let message = "";
+
+	// --- шаг 1: осмотр
+	let holdProgress = 0;
+
+	let holdTimer = null;
+
+	const holdStart = () => {
+		if (step !== 1 || holdTimer) return;
+
+		holdTimer = setInterval(
+			() => {
+				$$invalidate(3, holdProgress = Math.min(100, holdProgress + 100 / 30));
+
+				if (holdProgress >= 100) {
+					holdStop();
+					$$invalidate(1, step = 2);
+					$$invalidate(2, message = "Найдите изношенные узлы");
+				}
+			},
+			100
+		);
+	};
+
+	const holdStop = () => {
+		if (holdTimer) clearInterval(holdTimer);
+		holdTimer = null;
+		if (step === 1 && holdProgress < 100) $$invalidate(3, holdProgress = 0);
+	};
+
+	// --- шаг 2: неисправности
+	let penaltyUntil = 0;
+
+	const pick = part => {
+		if (step !== 2 || part.found || Date.now() < penaltyUntil) return;
+
+		if (part.wear > 75) {
+			part.found = true;
+			$$invalidate(2, message = `${part.name}: заменить`);
+		} else {
+			part.wrong = true;
+			penaltyUntil = Date.now() + 3000;
+			$$invalidate(2, message = `«${part.name}» в норме — перепроверка 3 сек`);
+
+			setTimeout(
+				() => {
+					part.wrong = false;
+					$$invalidate(0, parts[part.id] = part, parts);
+				},
+				3000
+			);
+		}
+
+		$$invalidate(0, parts[part.id] = part, parts);
+
+		if (parts.filter(p => p.found).length >= Math.max(1, brokenCount)) {
+			$$invalidate(1, step = 3);
+			$$invalidate(2, message = "Затяните крепления: жмите, когда бегунок в зелёной зоне");
+			startSlider();
+		}
+	};
+
+	// --- шаг 3: затяжка
+	let slider = 0;
+
+	let direction = 1;
+	let zoneStart = 40;
+	let hits = 0;
+	let misses = 0;
+	let sliderTimer = null;
+
+	const startSlider = () => {
+		$$invalidate(5, zoneStart = 15 + Math.random() * 65);
+
+		sliderTimer = setInterval(
+			() => {
+				$$invalidate(4, slider += direction * 2.2);
+
+				if (slider >= 100) {
+					$$invalidate(4, slider = 100);
+					direction = -1;
+				}
+
+				if (slider <= 0) {
+					$$invalidate(4, slider = 0);
+					direction = 1;
+				}
+			},
+			16
+		);
+	};
+
+	const tighten = () => {
+		if (step !== 3) return;
+
+		if (slider >= zoneStart && slider <= zoneStart + zoneWidth) {
+			$$invalidate(6, hits++, hits);
+			$$invalidate(2, message = `Затянуто ${hits}/3`);
+			$$invalidate(5, zoneStart = 15 + Math.random() * 65);
+			if (hits >= 3) finish();
+		} else {
+			misses++;
+			$$invalidate(2, message = "Сорвалось — ещё раз");
+		}
+	};
+
+	let waiting = 0;
+
+	const finish = () => {
+		if (sliderTimer) clearInterval(sliderTimer);
+		$$invalidate(1, step = 4);
+		const left = minSeconds * 1000 - (Date.now() - started);
+		if (left <= 0) return done();
+		$$invalidate(7, waiting = Math.ceil(left / 1000));
+		$$invalidate(2, message = "Проверка систем...");
+
+		const t = setInterval(
+			() => {
+				$$invalidate(7, waiting--, waiting);
+
+				if (waiting <= 0) {
+					clearInterval(t);
+					done();
+				}
+			},
+			1000
+		);
+	};
+
+	const done = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.repair.done");
+	const cancel = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.repair.cancel");
+
+	const onKey = e => {
+		if (e.code === "Space") tighten(); else if (e.key === "Escape") cancel();
+	};
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onMount)(() => window.addEventListener("keydown", onKey));
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => {
+		window.removeEventListener("keydown", onKey);
+		holdStop();
+		if (sliderTimer) clearInterval(sliderTimer);
+	});
+
+	const click_handler = part => pick(part);
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(14, viewData = $$props.viewData);
+	};
+
+	return [
+		parts,
+		step,
+		message,
+		holdProgress,
+		slider,
+		zoneStart,
+		hits,
+		waiting,
+		title,
+		holdStart,
+		holdStop,
+		pick,
+		tighten,
+		cancel,
+		viewData,
+		click_handler
+	];
+}
+
+class Armyrepair extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 14 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Armyrepair);
+
+
+/***/ }),
+
 /***/ "./src/views/player/atm/elements/business.svelte":
 /*!*******************************************************!*\
   !*** ./src/views/player/atm/elements/business.svelte ***!
@@ -190565,7 +191285,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (70:0) {#if visible}
+// (72:0) {#if visible}
 function create_if_block(ctx) {
 	let if_block_anchor;
 
@@ -190606,7 +191326,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (76:4) {:else}
+// (78:4) {:else}
 function create_else_block(ctx) {
 	let div;
 	let each_value = /*visible*/ ctx[0];
@@ -190666,7 +191386,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (71:4) {#if typeof visible == "string"}
+// (73:4) {#if typeof visible == "string"}
 function create_if_block_1(ctx) {
 	let div2;
 	let div0;
@@ -190706,7 +191426,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (78:12) {#each visible as item}
+// (80:12) {#each visible as item}
 function create_each_block(ctx) {
 	let div2;
 	let div0;
@@ -190840,7 +191560,9 @@ function instance($$self, $$props, $$invalidate) {
 		buyMetro: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Купить билет'),
 		exitMetro: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Для выхода'),
 		Seating: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Чтобы сесть'),
-		SeatingUp: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Встать')
+		SeatingUp: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Встать'),
+		Gym: 'Позаниматься',
+		GymStop: 'Закончить'
 	};
 
 	let visible = false;
@@ -319166,6 +319888,7 @@ const ItemId = {
 	StolenCarParts: 397,
 	WaterBottle: 398,
 	CarProgrammer: 399,
+	ArmyPass: 400,
 	Bracelets: -15,
 	Watches: -14,
 	Glasses: -13,
@@ -319511,6 +320234,7 @@ const itemsInfo = {
 	[ItemId.StolenJewelry]: {"Name":"Краденые украшения","Description":"Кольца, цепочки, часы. Скупщик у Мавра заберёт.","Icon":"inv-item-gold","Type":"Остальное","Stack":20,"functionType":0},
 	[ItemId.StolenCarParts]: {"Name":"Детали угнанного авто","Description":"Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","Icon":"inv-item-car","Type":"Остальное","Stack":10,"functionType":0},
 	[ItemId.WaterBottle]: {"Name":"Бутылка воды","Description":"Нужна для полива растений.","Icon":"inv-item-eCola","Type":"Остальное","Stack":5,"functionType":0},
+	[ItemId.ArmyPass]: {"Name":"Пропуск на базу","Description":"Пропуск на территорию Форт Занкудо. Действует только для владельца и до указанного срока.","Icon":"inv-item-Note","Type":"Документ","Stack":1,"functionType":0},
 	[ItemId.CarProgrammer]: {"Name":"Программатор","Description":"Взлом электронных замков дорогих машин. Подойдите к машине и используйте.","Icon":"inv-item-picklock","Type":"Инструмент","Stack":1,"functionType":0}
 
 }

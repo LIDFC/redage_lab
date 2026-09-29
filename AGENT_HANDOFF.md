@@ -397,6 +397,15 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - `/clothoff` (6 lvl, `AdminCommands.Tsc`): клиент (`src_client/index.js`, `getOffsets`) на временных NPC считает всего моделей в игре → сервер вычитает кастомные, показывает разницу; `/clothoff apply` пишет `settings/clothesOffsets.json` и вызывает `OnResourceStart` (перечитать одежду без рестарта); `/clothoff reset` — отключить файл.
 - Дамп DurtyFree (pedComponentVariations) для этого не годится — в нём нет DLC после mpchristmas3.
 
+## 7v. Уличная качалка и RP-армия
+- Качалка: `World/Gym/GymManager.cs` + `src_client/world/gym.js`. Тренажёр рядом (объекты мира Muscle Beach/тюрьма + свои из `settings/gym.json`) → E → анимация через shared data `AnimToKey` (ключи `gym_*` в `synchronization/animation.js`). `/gym add chinup|bench|weights|mat`, `/gym del`, `/gym list` (6 lvl).
+- Армия — `Fractions/ArmyRP/*`, настройки `settings/army.json`, точки ставятся в игре `/armyset` (6 lvl): parade, post add/del, zone clear/add, barrier add/del, range, course clear/add, info, reload.
+- А: `/salute` `/attention` `/atease`, `/formation` (офицер = доступ Invite), `/post`, `/guardhouse id мин причина` (ArrestType 3: копия камер КПЗ в измерении 3244600, выход у штаба в порту), `/unguardhouse`, `/returnguns` (армейский серийник 1014xxxxx), `/armylog`. Таблица `army_weapon_log` создаётся сама.
+- Б: предмет `ArmyPass` (400), `/basepass id часы`, режимная зона (многоугольник) → предупреждение → метка военным + розыск, шлагбаумы `/gate`.
+- В: `/convoy lspd|sheriff|ems|fib|city` после погрузки, метки у армии, премия при разгрузке (хук в `Manager.cs` unload_mats), тревога при уничтожении, `/robconvoy` через LockBreak.
+- Г: `/range`, `/course`, `/armyfile`, `/drill`; ремонт на точках — CEF `ArmyRepair` (3 шага), подсказка при повышении (`SetFracRank`). Таблица `army_training` создаётся сама.
+- Клиент армии: `src_client/fractions/army.js` (сирена Zancudo, метки, тир, полоса, ремонт).
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

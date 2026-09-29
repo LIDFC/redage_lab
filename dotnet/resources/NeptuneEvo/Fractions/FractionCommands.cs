@@ -588,6 +588,8 @@ namespace NeptuneEvo.Fractions
                 else Table.Logs.Repository.AddLogs(player, FractionLogsType.SetRank, $"Повысил {target.Name} ({targetMemberFractionData.UUID}) в должности ({targetMemberFractionData.Rank} -> {newRank})");
                 
                 Player.Repository.SetRank(fractionData.Id, target.GetUUID(), newRank);
+                if (fractionData.Id == (int) Models.Fractions.ARMY)
+                    ArmyRP.ArmyTraining.PromotionHint(player, target);
                     
                 Notify.Send(target, NotifyType.Success, NotifyPosition.BottomCenter, $"Теперь вы {Manager.GetFractionRankName (memberFractionData.Id, newRank)} во фракции", 6000);
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы изменили ранг игрока {target.Name} на {Manager.GetFractionRankName(memberFractionData.Id, newRank)}", 6000);

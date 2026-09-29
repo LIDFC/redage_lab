@@ -407,10 +407,8 @@ namespace NeptuneEvo.Fractions
                         {
                             if (vehicleLocalData.Access == VehicleAccess.Fraction && vehicleLocalData.Fraction == (int) Models.Fractions.ARMY)
                             {
-                                Main.NextFixcarVeh = DateTime.Now.AddMinutes(3);
-                                VehicleManager.RepairCar(vehicle);
-                                Commands.RPChat("sme", player, LangFunc.GetText(LangType.Ru, DataName.RepairedVeh));
-                                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.SucRepairVeh), 3000);
+                                // Ремонт — мини-игра (ArmyRP/ArmyTraining.cs), кулдаун ставится после успешного ремонта
+                                ArmyRP.ArmyTraining.StartRepair(player, vehicle, false);
                             }
                             else
                             {
@@ -455,10 +453,7 @@ namespace NeptuneEvo.Fractions
                         {
                             if (vehicleLocalData.Access == VehicleAccess.Fraction && vehicleLocalData.Fraction == (int) Models.Fractions.ARMY)
                             {
-                                Main.NextFixcarPlane = DateTime.Now.AddMinutes(3);
-                                VehicleManager.RepairCar(vehicle);
-                                Commands.RPChat("sme", player, LangFunc.GetText(LangType.Ru, DataName.RepairedVeh));
-                                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.SucRepairVeh), 3000);
+                                ArmyRP.ArmyTraining.StartRepair(player, vehicle, true);
                             }
                             else
                             {
@@ -631,6 +626,8 @@ namespace NeptuneEvo.Fractions
                 if (sessionData.TimersData.LoadMatsTimer != null) Timers.Stop(sessionData.TimersData.LoadMatsTimer);
                 sessionData.TimersData.LoadMatsTimer = null;
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MatSucLoading), 3000);
+                if (!ArmyRP.ArmyConvoy.IsConvoy(vehicle))
+                    player.SendChatMessage("Оформите рейс: /convoy lspd | sheriff | ems | fib | city — конвой увидят военные, за доставку премия экипажу");
             }
             catch (Exception e)
             {

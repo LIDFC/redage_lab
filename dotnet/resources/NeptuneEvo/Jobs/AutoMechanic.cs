@@ -12,6 +12,7 @@ using NeptuneEvo.Jobs.Models;
 using NeptuneEvo.Quests;
 using NeptuneEvo.VehicleData.LocalData;
 using NeptuneEvo.VehicleData.LocalData.Models;
+using NeptuneEvo.VehicleModel;
 
 namespace NeptuneEvo.Jobs
 {
@@ -24,6 +25,24 @@ namespace NeptuneEvo.Jobs
         /// </summary>
         public const int MinRepairPrice = 1000;
         public const int MaxRepairPrice = 1500;
+
+        /// <summary>
+        /// Принятый клиентом ремонт: механик выходит, у открытого капота выбирает «Починить машину» (G → Машина)
+        /// и проходит мини-игру HotWire с ключом в руках (Core/VehicleRepair.cs). Оплата — только после успешного ремонта.
+        /// </summary>
+        private class RepairOrder
+        {
+            public ExtPlayer Client;
+            public ExtVehicle Vehicle;
+            public int Price;
+            public DateTime Until;
+        }
+
+        private const int RepairOrderMinutes = 10;
+        private static readonly System.Collections.Generic.Dictionary<ExtPlayer, RepairOrder> RepairOrders = new System.Collections.Generic.Dictionary<ExtPlayer, RepairOrder>();
+
+        public static bool HasRepairOrder(ExtPlayer mechanic, ExtVehicle vehicle) =>
+            mechanic != null && vehicle != null && RepairOrders.TryGetValue(mechanic, out var order) && order.Vehicle == vehicle && order.Until > DateTime.Now;
 
         public static void mechanicRepair(ExtPlayer player, ExtPlayer target, int price)
         {
@@ -174,17 +193,55 @@ namespace NeptuneEvo.Jobs
                     return;
                 }
                 sessionData.WorkData.Player = null;
-                VehicleManager.RepairCar((ExtVehicle) player.Vehicle);
-                NAPI.Entity.SetEntityPosition(player.Vehicle, player.Vehicle.Position + new Vector3(0, 0, 0.5f));
-                NAPI.Entity.SetEntityRotation(player.Vehicle, new Vector3(0, 0, player.Vehicle.Rotation.Z));
+                var vehicle = (ExtVehicle) player.Vehicle;
+                RepairOrders[driver] = new RepairOrder { Client = player, Vehicle = vehicle, Price = price, Until = DateTime.Now.AddMinutes(RepairOrderMinutes) };
+                driverSessionData.SellItemData = new SellItemData();
+                sessionData.SellItemData = new SellItemData();
+                VehicleStreaming.SetDoorState(vehicle, DoorId.DoorHood, DoorState.DoorOpen);
+                Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Механик осмотрит машину под капотом. Оплата — после ремонта", 5000);
+                Notify.Send(driver, NotifyType.Info, NotifyPosition.BottomCenter, "Клиент согласен. Выйдите, подойдите к открытому капоту: G → Машина → «Починить машину»", 7000);
+                Trigger.ClientEvent(driver, "createWaypoint", vehicle.Position.X, vehicle.Position.Y);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"mechanicPay Exception: {e}");
+            }
+        }
+
+        /// <summary>Механик прошёл мини-игру у машины клиента: ремонт и оплата (вызывается из VehicleRepair).</summary>
+        public static void CompleteRepairOrder(ExtPlayer driver, ExtVehicle vehicle)
+        {
+            try
+            {
+                if (!RepairOrders.Remove(driver, out var order) || order.Vehicle != vehicle)
+                    return;
+                var driverSessionData = driver.GetSessionData();
+                var driverCharacterData = driver.GetCharacterData();
+                if (driverSessionData == null || driverCharacterData == null) return;
+                var player = order.Client;
+                var price = order.Price;
+                var sessionData = player.GetSessionData();
+                var characterData = player.GetCharacterData();
+                if (sessionData == null || characterData == null)
+                {
+                    Notify.Send(driver, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.SellerNotOnline), 3000);
+                    return;
+                }
+                if (Chars.UpdateData.CanIChange(player, price, true) != 255)
+                {
+                    Notify.Send(driver, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.PlayerNotEnoughMoney), 3000);
+                    return;
+                }
+                VehicleManager.RepairCar(vehicle);
+                NAPI.Entity.SetEntityPosition(vehicle, vehicle.Position + new Vector3(0, 0, 0.5f));
+                NAPI.Entity.SetEntityRotation(vehicle, new Vector3(0, 0, vehicle.Rotation.Z));
+                VehicleStreaming.SetDoorState(vehicle, DoorId.DoorHood, DoorState.DoorClosed);
                 MoneySystem.Wallet.Change(player, -price);
                 MoneySystem.Wallet.Change(driver, price);
                 GameLog.Money($"player({characterData.UUID})", $"player({driverCharacterData.UUID})", price, $"mechanicRepair");
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.RepairPayed), 3000);
                 Notify.Send(driver, NotifyType.Info, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.PlayerPayedRepair, player.Value), 3000);
                 Commands.RPChat("sme", driver, LangFunc.GetText(LangType.Ru, DataName.RepairVehi));
-                driverSessionData.SellItemData = new SellItemData();
-                sessionData.SellItemData = new SellItemData();
 
                 if (qMain.GetQuestsLine(driver, Zdobich.QuestName) == (int)zdobich_quests.Stage11)
                 {
@@ -220,7 +277,7 @@ namespace NeptuneEvo.Jobs
             }
             catch (Exception e)
             {
-                Log.Write($"mechanicPay Exception: {e}");
+                Log.Write($"CompleteRepairOrder Exception: {e}");
             }
         }
         

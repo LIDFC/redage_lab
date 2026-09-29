@@ -402,6 +402,7 @@ require('./vehicle/mileage.js');
 require('./fractions/advert.js')
 require('./fractions/policecomputer.js')
 require('./fractions/stock.js');
+require('./fractions/army.js');
 require('./fractions/policepc.js');
 require('./fractions/mats.js');
 require('./fractions/menu.js');
@@ -441,6 +442,8 @@ require('./shop/custom/index.js');
 require('./synchronization/state.js');
 require('./synchronization/particleFx.js');
 require('./synchronization/sit.js');
+require('./world/gym.js');
+require('./jobs/daylabor.js');
 
 require('./shop/newshop/index.js');
 require('./events/eventsMenu.js');
@@ -760,7 +763,7 @@ async function countForModel(modelName) {
 	try {
 		for (let i = 0; i < 100 && (!ped.handle || ped.handle === 0); i++) await mp.game.waitAsync(50);
 		if (!ped.handle) throw new Error(`ped ${modelName} не создан`);
-		ped.setAlpha(0);
+		try { ped.setAlpha(0, false); } catch (e) {} // не обязательно: NPC и так под землёй
 		const result = { c: {}, p: {} };
 		for (let id = 0; id <= 11; id++)
 			result.c[id] = mp.game.ped.getNumberOfPedDrawableVariations(ped.handle, id);

@@ -8,6 +8,19 @@ gm.events.add('client.weapon.give', (weaponHash, ammo, isReload = false, ItemId 
 		const player = global.localplayer.handle;
 		if (!isReload) mp.game.invoke(getNative("REMOVE_ALL_PED_WEAPONS"), player, true);
 		else ammo += global.weaponData.ammo;
+
+		// Перезарядка того же оружия: не обнуляем патроны и не выдаём оружие заново —
+		// иначе анимация перезарядки сбивается и R приходилось жать дважды
+		if (isReload && global.weaponData.weapon == weaponHash) {
+			global.weaponData.ammo = ammo;
+			mp.game.invoke(getNative("SET_PED_AMMO"), player, weaponHash, ammo);
+			mp.game.invoke(getNative("MAKE_PED_RELOAD"), player);
+			setTimeout(() => {
+				if (global.weaponData.weapon != weaponHash) return;
+				mp.gui.emmit(`window.hudStore.ammo (${global.weaponData.ammo})`);
+			}, 1000);
+			return;
+		}
 		//
 		mp.game.invoke(getNative("SET_PED_AMMO"), player, weaponHash, 0);
 		//

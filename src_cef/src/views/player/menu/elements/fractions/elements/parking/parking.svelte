@@ -83,6 +83,7 @@
                 </div>
                {#if isVehicleUpdateRank}
                     <div on:click={() => onUpdateRank("Список рангов", "fractionsicon-parking", "Выберите ранг, с которого будет доступен этот транспорт.", 'updateVehicleRank', item.number)} class="fractions__main_button w-100 mt-8">Настроить доступы</div>
+                    <div on:click={() => onUpdateRank("Ранг для всей модели", "fractionsicon-parking", `Ранг доступа сразу для всех ${vehicleName(item.model)} фракции.`, 'updateVehicleRankModel', item.number)} class="fractions__main_button w-100 mt-8">Для всех этой модели</div>
                {/if}
                {#if isSellVehicle}
                     <div on:click={() => onSellCar(item.number)} class="fractions__main_button w-100 mt-8">Продать</div>

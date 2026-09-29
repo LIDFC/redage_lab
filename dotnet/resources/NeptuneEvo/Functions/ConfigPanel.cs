@@ -393,7 +393,7 @@ namespace NeptuneEvo.Functions
                 {
                     var fields = s.AllFields.Where(f => f.Column != null).ToList();
                     var sql = "UPDATE `economy` SET " + string.Join(", ", fields.Select(f => $"`{f.Column}`=@{f.Column}"));
-                    BlackMarketRepository.Enqueue(sql, fields.Select(f => ("@" + f.Column, (object)(int)Math.Round(f.Get()))).ToArray());
+                    NeptuneEvo.Database.DbQueue.Enqueue(sql, fields.Select(f => ("@" + f.Column, (object)(int)Math.Round(f.Get()))).ToArray());
                 };
                 s.Apply = ApplyMavrPrices;
                 s.Reload = () =>
@@ -466,7 +466,7 @@ namespace NeptuneEvo.Functions
                         var fid = fractionId;
                         var rid = rank;
                         var field = Int($"{fid}.{rid}", $"{rid}. {rankData.Name}", 0, 1_000_000, () => rankData.Salary, v => rankData.Salary = v);
-                        field.Persist = v => BlackMarketRepository.Enqueue(
+                        field.Persist = v => NeptuneEvo.Database.DbQueue.Enqueue(
                             "UPDATE `fractionranks` SET `payday`=@payday WHERE `fraction`=@fraction AND `rank`=@rank",
                             ("@payday", (int)Math.Round(v)), ("@fraction", fid), ("@rank", rid));
                         group.Fields.Add(field);

@@ -430,6 +430,7 @@ namespace NeptuneEvo.Chars.Models
         StolenCarParts = 397,
         WaterBottle = 398,
         CarProgrammer = 399,
+        ArmyPass = 400,
 
     }
     #endregion

@@ -203,6 +203,7 @@ namespace NeptuneEvo.Chars
         {
             // Сдвиг кастомной одежды под текущую версию GTA (settings/clothesOffsets.json, /clothoff)
             LoadClothesOffsets();
+            LoadClothesNames();
             LoadBarber();
             LoadTattoo();
             using (var db = new ConfigBD("ConfigDB"))
@@ -831,6 +832,9 @@ namespace NeptuneEvo.Chars
                     data.Add("Variation", clothes.Value.Variation);
                     data.Add("TName", clothes.Value.TName);
                     data.Add("Textures", clothes.Value.Textures);
+                    var customName = ClothesName(name, clothes.Key);
+                    if (customName != null)
+                        data.Add("Name", customName);
 
                     if (IsHair)
                         data.Add("IsHair", clothes.Value.IsHair);

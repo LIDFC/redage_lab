@@ -1311,6 +1311,11 @@ namespace NeptuneEvo
                         sessionData.TimersData.ArrestTimer = Timers.Start(1000, () => FractionCommands.arrestTimer(player));
                         if (characterData.ArrestType == 1) player.Position = Sheriff.FirstPrisonPosition;
                         else if (characterData.ArrestType == 2) player.Position = Sheriff.SecondPrisonPosition;
+                        else if (characterData.ArrestType == Fractions.ArmyRP.ArmyService.GuardhouseArrestType)
+                        {
+                            player.Position = Fractions.ArmyRP.ArmyService.GuardhouseCell;
+                            Trigger.Dimension(player, Fractions.ArmyRP.ArmyService.GuardhouseDimension);
+                        }
                         else player.Position = Police.PrisonPosition;
                     }
                 }
@@ -2422,6 +2427,12 @@ namespace NeptuneEvo
                     int fractionId;
                     switch (callback)
                     {
+                        case "DayLabor":
+                            Jobs.DayLabor.DayLabor.OnDialogYes(player);
+                            return;
+                        case "GymMembership":
+                            World.Gym.Fitness.BuyMembership(player);
+                            return;
                         case "RepairMyVeh":
                             if (!player.IsInVehicle) return;
                             if (characterData.Money < 500)

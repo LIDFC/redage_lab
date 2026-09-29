@@ -87,6 +87,8 @@
 	import FractionsContractShop from '@/views/fractions/contractshop/index.svelte';
 	import PlayerLockBreak from '@/views/player/lockbreak/index.svelte';
 	import PlayerCyberHack from '@/views/player/cyberhack/index.svelte';
+	import ArmyRepair from '@/views/player/armyrepair/index.svelte';
+	import ArmyDuty from '@/views/fractions/armyduty/index.svelte';
 	import FractionsStock from '@/views/fractions/stock/index.svelte';
 	import FractionsPolicecomputer from '@/views/fractions/policecomputer/index.svelte';
 	import FractionsTicket from '@/views/fractions/ticket/index.svelte';
@@ -132,6 +134,7 @@
 	import VehicleHotWire from '@/views/vehicle/hotwire/index.svelte';
 	import BlackMarket from '@/views/blackmarket/index.svelte';
 	import JobElectricianGame from '@/views/jobs/electrician/index.svelte';
+	import JobFarmGame from '@/views/jobs/farm/index.svelte';
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
@@ -190,6 +193,8 @@
 		FractionsContractShop,//Склад стройматериалов (подряды)
 		PlayerLockBreak,//Взлом замка отмычкой (Crime/LockBreak)
 		PlayerCyberHack,//Программатор для электронных замков (Crime/CyberHack)
+		ArmyRepair,//Ремонт армейской техники мини-игрой (Fractions/ArmyRP/ArmyTraining.cs)
+		ArmyDuty,//Доска нарядов армии (Fractions/ArmyRP/ArmyDuty.cs)
 
 		CasinoBlackjack,
 		CasinoHorse,
@@ -225,6 +230,7 @@
 		VehicleHotWire,
 		BlackMarket,
 		JobElectricianGame,
+		JobFarmGame,
 		HouseFurniture
 	}
 	

@@ -378,6 +378,8 @@ function addItems()
 	mp.attachments.register("clipboard", "p_amb_clipboard_01", 60309, new mp.Vector3(0, 0, 0), new mp.Vector3(0, 0, 0), true),
 	mp.attachments.register("bong", "prop_bong_01", 28422, new mp.Vector3(0.04849681, -0.044438273, -0.057797566), new mp.Vector3(-73.746086, 42.461754, 0.12613341), true),
 	mp.attachments.register("teddy", "v_ilev_mr_rasberryclean", 24817, new mp.Vector3(-0.2, 0.46, -0.016), new mp.Vector3(-180, 90, 0), true);
+	mp.attachments.register('broom', 'prop_tool_broom', 28422, new mp.Vector3(-0.01, 0.04, -0.03), new mp.Vector3(0, 0, 0), true);
+	mp.attachments.register('wrench', 'prop_tool_wrench', 57005, new mp.Vector3(0.12, 0.03, -0.02), new mp.Vector3(-90, 0, 0), true);
 	mp.attachments.register('barbell', 'prop_barbell_02', 57005, new mp.Vector3(0.07116705, -0.12621467, -0.22997302), new mp.Vector3(17.429564, 124.60293, 84.8938), true);
 
 

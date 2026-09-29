@@ -1897,6 +1897,8 @@ namespace NeptuneEvo.Fractions
                 fractionData.Materials -= matsForGun[gun];
                 fractionData.UpdateLabel();
                 Table.Logs.Repository.AddLogs(player, FractionLogsType.TakeMats, LangFunc.GetText(LangType.Ru, DataName.YouVzyalItem, gun.ToString(), serial));
+                if (frac == (int) Models.Fractions.ARMY)
+                    ArmyRP.ArmyService.LogWeapon(player, gun.ToString(), serial, "выдано");
                 int minutes = 5;
                 if (memberFractionData.Id == (int) Models.Fractions.POLICE || memberFractionData.Id == (int) Models.Fractions.SHERIFF) minutes = 10;
                 player.SetData($"GET_{gun.ToString()}", DateTime.Now.AddMinutes(minutes));
@@ -2638,6 +2640,7 @@ namespace NeptuneEvo.Fractions
                                 GameLog.Stock(fractionData.Id, characterData.UUID, player.Name, "mats", amount, "in");
                                 Fractions.Table.Logs.Repository.AddLogs(player, FractionLogsType.TakeMedkits, LangFunc.GetText(LangType.Ru, DataName.LoadedMats, Manager.GetName(fractionId), amount));
                                 player.AddTableScore(TableTaskId.Item16);
+                                ArmyRP.ArmyConvoy.OnUnloaded(player, vehicle, fractionId, amount);
                                 return;
                             case "load_drugs":
                                 if (!vehicleLocalData.CanDrugs) return;

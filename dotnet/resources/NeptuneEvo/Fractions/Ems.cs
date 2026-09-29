@@ -524,6 +524,11 @@ namespace NeptuneEvo.Fractions
                     {
                         if (characterData.ArrestType == 1) spawnPos = Sheriff.FirstPrisonPosition;
                         else if (characterData.ArrestType == 2) spawnPos = Sheriff.SecondPrisonPosition;
+                        else if (characterData.ArrestType == ArmyRP.ArmyService.GuardhouseArrestType)
+                        {
+                            spawnPos = ArmyRP.ArmyService.GuardhouseCell;
+                            spawnDimension = (int) ArmyRP.ArmyService.GuardhouseDimension;
+                        }
                         else spawnPos = Police.PrisonPosition;
                     }
                     else if (fracId == (int) Models.Fractions.ARMY) 

@@ -217,68 +217,105 @@ namespace NeptuneEvo.Jobs
                     return;
                 }
 
-                sessionData.WorkData.Packages -= 1;
-
-                int payment = Convert.ToInt32(coef * Main.CollectorPayment * Group.GroupPayAdd[accountData.VipLvl] * Main.ServerSettings.MoneyMultiplier);
-
-                int maxpayment = 4000 * Main.ServerSettings.MoneyMultiplier;
-                if (payment > maxpayment) payment = maxpayment;
-
-                (byte, float) jobLevelInfo = characterData.JobSkills.ContainsKey((int)JobsId.CashCollector) ? Main.GetPlayerJobLevelBonus((int)JobsId.CashCollector, characterData.JobSkills[(int)JobsId.CashCollector]) : (0, 1);
-                if (jobLevelInfo.Item1 >= 1) payment = Convert.ToInt32(payment * jobLevelInfo.Item2);
-                
-                MoneySystem.Wallet.Change(player, payment);
-                GameLog.Money($"server", $"player({characterData.UUID})", payment, $"collectorCheck");
-                BattlePass.Repository.UpdateReward(player, 92);
-                BattlePass.Repository.UpdateReward(player, 157);
-                
+                if (!AtmBusy.Add(player)) return;
+                // Инкассация у банкомата: ~4 с анимации, затем выплата
                 Attachments.RemoveAttachment(player, Attachments.AttachmentsName.MoneyBag);
-                if (sessionData.WorkData.Packages == 0)
+                Trigger.StopAnimation(player);
+                player.SetSharedData("AnimToKey", "collector_atm");
+                Trigger.ClientEvent(player, "blockMove", true);
+                Timers.StartOnce(AtmAnimMs, () =>
                 {
-                    Notify.Send(player, NotifyType.Alert, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.BackToBaza), 3000);
-                    Trigger.ClientEvent(player, "createWaypoint", TakeMoneyPos.X, TakeMoneyPos.Y);
-                    Trigger.ClientEvent(player, "deleteCheckpoint", 16);
-                    Trigger.ClientEvent(player, "deleteWorkBlip");
-                }
-                else
-                {
-                    SetAtmPoint(player);
-                    Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.GoNextAtm), 3000);
-                }
-                
-                //
-                
-                if (qMain.GetQuestsLine(player, Zdobich.QuestName) == (int)zdobich_quests.Stage11)
-                {
-                    sessionData.WorkData.PointsCount += payment;
-                    if (sessionData.WorkData.PointsCount < qMain.GetQuestsData(player, Zdobich.QuestName, (int) zdobich_quests.Stage11))
-                        sessionData.WorkData.PointsCount = qMain.GetQuestsData(player, Zdobich.QuestName, (int) zdobich_quests.Stage11) + payment;
-                    
-                    if (sessionData.WorkData.PointsCount >= 500)
+                    try
                     {
-                        qMain.UpdateQuestsStage(player, Zdobich.QuestName, (int)zdobich_quests.Stage11, 1, isUpdateHud: true);
-                        qMain.UpdateQuestsComplete(player, Zdobich.QuestName, (int) zdobich_quests.Stage11, true);
-                        Trigger.SendChatMessage(player, "!{#fc0}" + LangFunc.GetText(LangType.Ru, DataName.QuestPartComplete));
+                        AtmBusy.Remove(player);
+                        if (!player.IsCharacterData()) return;
+                        player.SetSharedData("AnimToKey", 0);
+                        Trigger.ClientEvent(player, "blockMove", false);
+                        FinishAtm(player, Index, coef);
                     }
-                    else
+                    catch (Exception e)
                     {
-                        qMain.UpdateQuestsData(player, Zdobich.QuestName, (int)zdobich_quests.Stage11, sessionData.WorkData.PointsCount.ToString());
-                        //todo translate (было DataName.PointsQuestGot)
-                        Trigger.SendChatMessage(player, LangFunc.GetText(LangType.Ru, DataName.YouEarnedJob, sessionData.WorkData.PointsCount, 500 - sessionData.WorkData.PointsCount));
+                        Log.Write($"CollectorAtm Timer Exception: {e}");
                     }
-                }
-
-                if (characterData.JobSkills.ContainsKey((int)JobsId.CashCollector))
-                {
-                    if (characterData.JobSkills[(int)JobsId.CashCollector] < 3000)
-                        characterData.JobSkills[(int)JobsId.CashCollector] += 1;
-                }
-                else characterData.JobSkills.Add((int)JobsId.CashCollector, 1);
+                }, true);
             }
             catch (Exception e)
             {
                 Log.Write($"CollectorEnterATM Exception: {e}");
             }
+        }
+
+
+        private const int AtmAnimMs = 4000;
+        private static readonly System.Collections.Generic.HashSet<ExtPlayer> AtmBusy = new System.Collections.Generic.HashSet<ExtPlayer>();
+
+        private static void FinishAtm(ExtPlayer player, int Index, int coef)
+        {
+            var sessionData = player.GetSessionData();
+            if (sessionData == null) return;
+            var accountData = player.GetAccountData();
+            if (accountData == null) return;
+            var characterData = player.GetCharacterData();
+            if (characterData == null) return;
+            if (characterData.WorkID != (int)JobsId.CashCollector || !sessionData.WorkData.OnWork || sessionData.WorkData.WorkCheck != Index || sessionData.WorkData.Packages <= 0) return;
+
+            sessionData.WorkData.Packages -= 1;
+
+            int payment = Convert.ToInt32(coef * Main.CollectorPayment * Group.GroupPayAdd[accountData.VipLvl] * Main.ServerSettings.MoneyMultiplier);
+
+            int maxpayment = 4000 * Main.ServerSettings.MoneyMultiplier;
+            if (payment > maxpayment) payment = maxpayment;
+
+            (byte, float) jobLevelInfo = characterData.JobSkills.ContainsKey((int)JobsId.CashCollector) ? Main.GetPlayerJobLevelBonus((int)JobsId.CashCollector, characterData.JobSkills[(int)JobsId.CashCollector]) : (0, 1);
+            if (jobLevelInfo.Item1 >= 1) payment = Convert.ToInt32(payment * jobLevelInfo.Item2);
+            
+            MoneySystem.Wallet.Change(player, payment);
+            GameLog.Money($"server", $"player({characterData.UUID})", payment, $"collectorCheck");
+            BattlePass.Repository.UpdateReward(player, 92);
+            BattlePass.Repository.UpdateReward(player, 157);
+            
+            Attachments.RemoveAttachment(player, Attachments.AttachmentsName.MoneyBag);
+            if (sessionData.WorkData.Packages == 0)
+            {
+                Notify.Send(player, NotifyType.Alert, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.BackToBaza), 3000);
+                Trigger.ClientEvent(player, "createWaypoint", TakeMoneyPos.X, TakeMoneyPos.Y);
+                Trigger.ClientEvent(player, "deleteCheckpoint", 16);
+                Trigger.ClientEvent(player, "deleteWorkBlip");
+            }
+            else
+            {
+                SetAtmPoint(player);
+                Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.GoNextAtm), 3000);
+            }
+            
+            //
+            
+            if (qMain.GetQuestsLine(player, Zdobich.QuestName) == (int)zdobich_quests.Stage11)
+            {
+                sessionData.WorkData.PointsCount += payment;
+                if (sessionData.WorkData.PointsCount < qMain.GetQuestsData(player, Zdobich.QuestName, (int) zdobich_quests.Stage11))
+                    sessionData.WorkData.PointsCount = qMain.GetQuestsData(player, Zdobich.QuestName, (int) zdobich_quests.Stage11) + payment;
+                
+                if (sessionData.WorkData.PointsCount >= 500)
+                {
+                    qMain.UpdateQuestsStage(player, Zdobich.QuestName, (int)zdobich_quests.Stage11, 1, isUpdateHud: true);
+                    qMain.UpdateQuestsComplete(player, Zdobich.QuestName, (int) zdobich_quests.Stage11, true);
+                    Trigger.SendChatMessage(player, "!{#fc0}" + LangFunc.GetText(LangType.Ru, DataName.QuestPartComplete));
+                }
+                else
+                {
+                    qMain.UpdateQuestsData(player, Zdobich.QuestName, (int)zdobich_quests.Stage11, sessionData.WorkData.PointsCount.ToString());
+                    //todo translate (было DataName.PointsQuestGot)
+                    Trigger.SendChatMessage(player, LangFunc.GetText(LangType.Ru, DataName.YouEarnedJob, sessionData.WorkData.PointsCount, 500 - sessionData.WorkData.PointsCount));
+                }
+            }
+
+            if (characterData.JobSkills.ContainsKey((int)JobsId.CashCollector))
+            {
+                if (characterData.JobSkills[(int)JobsId.CashCollector] < 3000)
+                    characterData.JobSkills[(int)JobsId.CashCollector] += 1;
+            }
+            else characterData.JobSkills.Add((int)JobsId.CashCollector, 1);
         }
     }
 }

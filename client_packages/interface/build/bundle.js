@@ -43880,49 +43880,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! @/views/fractions/contractshop/index.svelte */ "./src/views/fractions/contractshop/index.svelte");
 /* harmony import */ var _views_player_lockbreak_index_svelte__WEBPACK_IMPORTED_MODULE_65__ = __webpack_require__(/*! @/views/player/lockbreak/index.svelte */ "./src/views/player/lockbreak/index.svelte");
 /* harmony import */ var _views_player_cyberhack_index_svelte__WEBPACK_IMPORTED_MODULE_66__ = __webpack_require__(/*! @/views/player/cyberhack/index.svelte */ "./src/views/player/cyberhack/index.svelte");
-/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
-/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
-/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
-/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
-/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
-/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
-/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
-/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
-/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
-/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
-/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
-/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
-/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
-/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
-/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
-/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
-/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
-/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
-/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
-/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
-/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
-/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
-/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
-/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
-/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
-/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
-/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
-/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_player_armyrepair_index_svelte__WEBPACK_IMPORTED_MODULE_67__ = __webpack_require__(/*! @/views/player/armyrepair/index.svelte */ "./src/views/player/armyrepair/index.svelte");
+/* harmony import */ var _views_fractions_armyduty_index_svelte__WEBPACK_IMPORTED_MODULE_68__ = __webpack_require__(/*! @/views/fractions/armyduty/index.svelte */ "./src/views/fractions/armyduty/index.svelte");
+/* harmony import */ var _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_69__ = __webpack_require__(/*! @/views/fractions/stock/index.svelte */ "./src/views/fractions/stock/index.svelte");
+/* harmony import */ var _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_70__ = __webpack_require__(/*! @/views/fractions/policecomputer/index.svelte */ "./src/views/fractions/policecomputer/index.svelte");
+/* harmony import */ var _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_71__ = __webpack_require__(/*! @/views/fractions/ticket/index.svelte */ "./src/views/fractions/ticket/index.svelte");
+/* harmony import */ var _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_72__ = __webpack_require__(/*! @/views/fractions/bortovoi/index.svelte */ "./src/views/fractions/bortovoi/index.svelte");
+/* harmony import */ var _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_73__ = __webpack_require__(/*! @/views/fractions/weazelnews/index.svelte */ "./src/views/fractions/weazelnews/index.svelte");
+/* harmony import */ var _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_74__ = __webpack_require__(/*! @/views/fractions/war/index.svelte */ "./src/views/fractions/war/index.svelte");
+/* harmony import */ var _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_75__ = __webpack_require__(/*! @/views/casino/blackjack/index.svelte */ "./src/views/casino/blackjack/index.svelte");
+/* harmony import */ var _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_76__ = __webpack_require__(/*! @/views/casino/horse/index.svelte */ "./src/views/casino/horse/index.svelte");
+/* harmony import */ var _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_77__ = __webpack_require__(/*! @/views/casino/jacpot/index.svelte */ "./src/views/casino/jacpot/index.svelte");
+/* harmony import */ var _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_78__ = __webpack_require__(/*! @/views/casino/roullete/index.svelte */ "./src/views/casino/roullete/index.svelte");
+/* harmony import */ var _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_79__ = __webpack_require__(/*! @/views/vehicle/air/index.svelte */ "./src/views/vehicle/air/index.svelte");
+/* harmony import */ var _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_80__ = __webpack_require__(/*! @/views/vehicle/lscustom/index.svelte */ "./src/views/vehicle/lscustom/index.svelte");
+/* harmony import */ var _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_81__ = __webpack_require__(/*! @/views/games/other/index.svelte */ "./src/views/games/other/index.svelte");
+/* harmony import */ var _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(/*! @/views/games/other/mafia/index.svelte */ "./src/views/games/other/mafia/index.svelte");
+/* harmony import */ var _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(/*! @/views/games/other/lobby/index.svelte */ "./src/views/games/other/lobby/index.svelte");
+/* harmony import */ var _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(/*! @/views/donate/main/index.svelte */ "./src/views/donate/main/index.svelte");
+/* harmony import */ var _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(/*! @/views/donate/sapper/index.svelte */ "./src/views/donate/sapper/index.svelte");
+/* harmony import */ var _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(/*! @/views/quests/dialog/index.svelte */ "./src/views/quests/dialog/index.svelte");
+/* harmony import */ var _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(/*! @/views/events/valentine/index.svelte */ "./src/views/events/valentine/index.svelte");
+/* harmony import */ var _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(/*! @/views/house/menu/index.svelte */ "./src/views/house/menu/index.svelte");
+/* harmony import */ var _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(/*! @/views/house/rieltagency/index.svelte */ "./src/views/house/rieltagency/index.svelte");
+/* harmony import */ var _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(/*! @/views/house/buymenu/index.svelte */ "./src/views/house/buymenu/index.svelte");
+/* harmony import */ var _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(/*! @/views/house/apartments/index.svelte */ "./src/views/house/apartments/index.svelte");
+/* harmony import */ var _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(/*! @/views/player/drivingschool/index.svelte */ "./src/views/player/drivingschool/index.svelte");
+/* harmony import */ var _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(/*! @/views/player/drivingschool/practiceHud.svelte */ "./src/views/player/drivingschool/practiceHud.svelte");
+/* harmony import */ var _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(/*! @/views/vehicle/hotwire/index.svelte */ "./src/views/vehicle/hotwire/index.svelte");
+/* harmony import */ var _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(/*! @/views/blackmarket/index.svelte */ "./src/views/blackmarket/index.svelte");
+/* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
+/* harmony import */ var _views_jobs_farm_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/views/jobs/farm/index.svelte */ "./src/views/jobs/farm/index.svelte");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -44021,6 +44024,8 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 
+
+
 //Казино
 
 
@@ -44050,6 +44055,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 //House
+
 
 
 
@@ -44165,7 +44171,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (415:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (421:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -44186,7 +44192,7 @@ function create_default_slot_1(ctx) {
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
-	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_91__.default({
+	drivingpracticehud = new _views_player_drivingschool_practiceHud_svelte__WEBPACK_IMPORTED_MODULE_93__.default({
 			props: { visible: /*$router*/ ctx[0].PlayerHud }
 		});
 
@@ -44271,7 +44277,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (428:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (434:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -44478,7 +44484,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -44518,67 +44524,70 @@ function instance($$self, $$props, $$invalidate) {
 		FractionsBSearch: _views_fractions_bsearch_index_svelte__WEBPACK_IMPORTED_MODULE_60__.default,
 		FractionsMats: _views_fractions_mats_index_svelte__WEBPACK_IMPORTED_MODULE_61__.default,
 		FractionsCraft: _views_fractions_craft_index_svelte__WEBPACK_IMPORTED_MODULE_62__.default,
-		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
-		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
-		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
-		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
-		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
-		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		FractionsStock: _views_fractions_stock_index_svelte__WEBPACK_IMPORTED_MODULE_69__.default,
+		FractionsPolicecomputer: _views_fractions_policecomputer_index_svelte__WEBPACK_IMPORTED_MODULE_70__.default,
+		FractionsTicket: _views_fractions_ticket_index_svelte__WEBPACK_IMPORTED_MODULE_71__.default,
+		FractionsBortovoi: _views_fractions_bortovoi_index_svelte__WEBPACK_IMPORTED_MODULE_72__.default,
+		FractionsWeazelNews: _views_fractions_weazelnews_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
+		FractionsWar: _views_fractions_war_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
 		FractionsCreate: _views_fractions_create_index_svelte__WEBPACK_IMPORTED_MODULE_63__.default,
 		FractionsContractShop: _views_fractions_contractshop_index_svelte__WEBPACK_IMPORTED_MODULE_64__.default,
 		PlayerLockBreak: _views_player_lockbreak_index_svelte__WEBPACK_IMPORTED_MODULE_65__.default,
 		PlayerCyberHack: _views_player_cyberhack_index_svelte__WEBPACK_IMPORTED_MODULE_66__.default,
-		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_73__.default,
-		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_74__.default,
-		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
-		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		ArmyRepair: _views_player_armyrepair_index_svelte__WEBPACK_IMPORTED_MODULE_67__.default,
+		ArmyDuty: _views_fractions_armyduty_index_svelte__WEBPACK_IMPORTED_MODULE_68__.default,
+		CasinoBlackjack: _views_casino_blackjack_index_svelte__WEBPACK_IMPORTED_MODULE_75__.default,
+		CasinoHorse: _views_casino_horse_index_svelte__WEBPACK_IMPORTED_MODULE_76__.default,
+		CasinoJacpot: _views_casino_jacpot_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
+		CasinoRoullete: _views_casino_roullete_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
 		AdminConfigPanel: _views_admin_configpanel_index_svelte__WEBPACK_IMPORTED_MODULE_53__.default,
 		//AdminPlayersView,//Не работает
 		//AdminReport,
-		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_77__.default,
-		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_78__.default,
-		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
-		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
-		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
-		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		VehicleAir: _views_vehicle_air_index_svelte__WEBPACK_IMPORTED_MODULE_79__.default,
+		VehicleLsCustom: _views_vehicle_lscustom_index_svelte__WEBPACK_IMPORTED_MODULE_80__.default,
+		GamesOtherMain: _views_games_other_index_svelte__WEBPACK_IMPORTED_MODULE_81__.default,
+		GamesOtherMafia: _views_games_other_mafia_index_svelte__WEBPACK_IMPORTED_MODULE_82__.default,
+		GamesOtherLobby: _views_games_other_lobby_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
+		DonateMain: _views_donate_main_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
 		//DonateCards,
-		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_83__.default,
-		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_84__.default,
+		DonateSapper: _views_donate_sapper_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
+		QuestsDialog: _views_quests_dialog_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
 		//QuestsDialog1,
 		//QuestsDialog2,
 		//QuestsDialog3,
-		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_85__.default,
-		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
-		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_86__.default,
-		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
-		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
-		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
-		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
-		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_93__.default,
-		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default
+		EventsValentine: _views_events_valentine_index_svelte__WEBPACK_IMPORTED_MODULE_87__.default,
+		HouseBuy: _views_house_buymenu_index_svelte__WEBPACK_IMPORTED_MODULE_90__.default,
+		HouseMenu: _views_house_menu_index_svelte__WEBPACK_IMPORTED_MODULE_88__.default,
+		HouseRielt: _views_house_rieltagency_index_svelte__WEBPACK_IMPORTED_MODULE_89__.default,
+		HouseApartments: _views_house_apartments_index_svelte__WEBPACK_IMPORTED_MODULE_91__.default,
+		PlayerDrivingSchool: _views_player_drivingschool_index_svelte__WEBPACK_IMPORTED_MODULE_92__.default,
+		VehicleHotWire: _views_vehicle_hotwire_index_svelte__WEBPACK_IMPORTED_MODULE_94__.default,
+		BlackMarket: _views_blackmarket_index_svelte__WEBPACK_IMPORTED_MODULE_95__.default,
+		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
+		JobFarmGame: _views_jobs_farm_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_108__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_109__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_108__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_110__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_111__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_109__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_112__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -95620,6 +95629,872 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/fractions/armyduty/index.svelte":
+/*!***************************************************!*\
+  !*** ./src/views/fractions/armyduty/index.svelte ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* src/views/fractions/armyduty/index.svelte generated by Svelte v3.59.2 */
+
+
+const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-hfoo9w", ".duty.svelte-hfoo9w{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(0, 0, 0, 0.5);font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#fff}.duty__window.svelte-hfoo9w{width:760px;max-width:94vw;max-height:90vh;overflow-y:auto;background:#16181d;border:1px solid rgba(255, 255, 255, 0.08);border-radius:12px;padding:20px 24px}.duty__head.svelte-hfoo9w{display:flex;align-items:center;margin-bottom:16px}.duty__title.svelte-hfoo9w{font-size:20px;font-weight:700;margin-right:auto}.duty__close.svelte-hfoo9w{cursor:pointer;opacity:0.7;padding:4px 8px}.duty__order.svelte-hfoo9w{padding:12px 14px;border-radius:10px;background:rgba(107, 142, 35, 0.15);border:1px solid rgba(107, 142, 35, 0.5);margin-bottom:16px}.duty__order_title.svelte-hfoo9w{font-weight:700;margin-bottom:4px}.duty__order_text.svelte-hfoo9w,.duty__hint.svelte-hfoo9w{font-size:13px;opacity:0.85;line-height:1.5}.duty__bad.svelte-hfoo9w{color:#ff8a65}.duty__cards.svelte-hfoo9w{display:grid;grid-template-columns:1fr 1fr;gap:12px}.duty__card.svelte-hfoo9w{padding:14px;border-radius:10px;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column;gap:8px}.duty__icon.svelte-hfoo9w{font-size:28px}.duty__card_title.svelte-hfoo9w{font-size:16px;font-weight:700}.duty__card_text.svelte-hfoo9w,.duty__meta.svelte-hfoo9w{font-size:13px;opacity:0.75;line-height:1.4}.duty__btn.svelte-hfoo9w{padding:9px 16px;border-radius:8px;background:#4b6b2a;font-weight:600;cursor:pointer;text-align:center;user-select:none;white-space:nowrap}.duty__btn.small.svelte-hfoo9w{padding:6px 10px;font-size:12px}.duty__btn.disabled.svelte-hfoo9w{opacity:0.4;cursor:default}.duty__section.svelte-hfoo9w{margin-top:18px}.duty__section_head.svelte-hfoo9w{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.duty__section_title.svelte-hfoo9w{font-weight:700}.duty__check.svelte-hfoo9w{font-size:13px;opacity:0.85;display:flex;align-items:center;gap:6px}.duty__list.svelte-hfoo9w{display:flex;flex-direction:column;gap:6px}.duty__row.svelte-hfoo9w{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255, 255, 255, 0.03)}.duty__name.svelte-hfoo9w{flex:1;font-size:14px}.duty__rank.svelte-hfoo9w{opacity:0.55;font-size:12px;margin-left:6px}.duty__busy.svelte-hfoo9w{font-size:12px;opacity:0.6}.duty__empty.svelte-hfoo9w{opacity:0.5;font-size:13px}.duty__msg.svelte-hfoo9w{margin-top:14px;min-height:18px;font-size:13px;color:#b5d77b}.duty__msg.bad.svelte-hfoo9w{color:#ff6b6f}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[15] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[18] = list[i];
+	return child_ctx;
+}
+
+// (53:8) {#if data.order}
+function create_if_block_3(ctx) {
+	let div3;
+	let div0;
+	let t0;
+	let t1_value = /*data*/ ctx[0].order.name + "";
+	let t1;
+	let t2;
+	let div1;
+	let t3;
+	let t4_value = /*data*/ ctx[0].order.step + "";
+	let t4;
+	let t5;
+	let t6_value = /*data*/ ctx[0].order.total + "";
+	let t6;
+	let t7;
+	let t8_value = /*data*/ ctx[0].order.minutesLeft + "";
+	let t8;
+	let t9;
+	let t10;
+	let t11;
+	let div2;
+	let if_block0 = /*data*/ ctx[0].order.officer && create_if_block_5(ctx);
+	let if_block1 = /*data*/ ctx[0].order.punishment && create_if_block_4(ctx);
+
+	return {
+		c() {
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Ваш наряд: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Выполнено точек: ");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" из ");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(". Осталось ");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" мин онлайна.\n                    ");
+			if (if_block0) if_block0.c();
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "Идите к метке на карте и нажмите E на точке.";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__order_title svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__order_text svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__hint svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__order svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t9);
+			if (if_block0) if_block0.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t10);
+			if (if_block1) if_block1.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].order.name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty & /*data*/ 1 && t4_value !== (t4_value = /*data*/ ctx[0].order.step + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].order.total + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty & /*data*/ 1 && t8_value !== (t8_value = /*data*/ ctx[0].order.minutesLeft + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+
+			if (/*data*/ ctx[0].order.officer) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_5(ctx);
+					if_block0.c();
+					if_block0.m(div1, t10);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*data*/ ctx[0].order.punishment) {
+				if (if_block1) {
+					
+				} else {
+					if_block1 = create_if_block_4(ctx);
+					if_block1.c();
+					if_block1.m(div1, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
+		}
+	};
+}
+
+// (58:20) {#if data.order.officer}
+function create_if_block_5(ctx) {
+	let t0;
+	let t1_value = /*data*/ ctx[0].order.officer + "";
+	let t1;
+	let t2;
+
+	return {
+		c() {
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Назначил: ");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(".");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].order.officer + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+		}
+	};
+}
+
+// (59:20) {#if data.order.punishment}
+function create_if_block_4(ctx) {
+	let span;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span.textContent = "Взыскание — без премии.";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__bad svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (66:12) {#each cards as card}
+function create_each_block_1(ctx) {
+	let div5;
+	let div0;
+	let t0_value = /*card*/ ctx[18].icon + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2_value = /*card*/ ctx[18].title + "";
+	let t2;
+	let t3;
+	let div2;
+	let t4_value = /*card*/ ctx[18].text + "";
+	let t4;
+	let t5;
+	let div3;
+	let t6;
+	let t7_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points || 0) + "";
+	let t7;
+	let t8;
+	let t9_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].reward || 0) + "";
+	let t9;
+	let t10;
+	let div4;
+	let t11_value = (/*data*/ ctx[0].order ? "Вы уже в наряде" : "Заступить") + "";
+	let t11;
+	let t12;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[10](/*card*/ ctx[18]);
+	}
+
+	return {
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Точек: ");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" · Премия: $");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__icon svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__card_title svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__card_text svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__meta svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__btn svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", !!/*data*/ ctx[0].order || !(/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points));
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__card svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t12);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*data*/ 1 && t7_value !== (t7_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty & /*data*/ 1 && t9_value !== (t9_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].reward || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+			if (dirty & /*data*/ 1 && t11_value !== (t11_value = (/*data*/ ctx[0].order ? "Вы уже в наряде" : "Заступить") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+
+			if (dirty & /*data, cards*/ 17) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", !!/*data*/ ctx[0].order || !(/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points));
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (81:8) {#if data.isOfficer}
+function create_if_block(ctx) {
+	let div2;
+	let div1;
+	let div0;
+	let t1;
+	let label;
+	let input;
+	let t2;
+	let t3;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (!/*data*/ ctx[0].soldiers || !/*data*/ ctx[0].soldiers.length) return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Назначить военнослужащего";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			label = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("label");
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Взыскание (без премии)");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__section_title svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "checkbox");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label, "class", "duty__check svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__section_head svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__section svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, label);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label, input);
+			input.checked = /*punishment*/ ctx[3];
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(label, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			if_block.m(div2, null);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "change", /*input_change_handler*/ ctx[11]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*punishment*/ 8) {
+				input.checked = /*punishment*/ ctx[3];
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div2, null);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			if_block.d();
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (89:16) {:else}
+function create_else_block(ctx) {
+	let div;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*data*/ ctx[0].soldiers;
+	const get_key = ctx => /*soldier*/ ctx[15].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__list svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div, null);
+				}
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty & /*data, assign*/ 65) {
+				each_value = /*data*/ ctx[0].soldiers;
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+// (87:16) {#if !data.soldiers || !data.soldiers.length}
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Нет военных на смене";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__empty svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (96:32) {:else}
+function create_else_block_1(ctx) {
+	let div0;
+	let t1;
+	let div1;
+	let mounted;
+	let dispose;
+
+	function click_handler_1() {
+		return /*click_handler_1*/ ctx[12](/*soldier*/ ctx[15]);
+	}
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[13](/*soldier*/ ctx[15]);
+	}
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "На кухню";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "На уборку";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__btn small svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__btn small svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler_1),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler_2)
+				];
+
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (94:32) {#if soldier.busy}
+function create_if_block_2(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "в наряде";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__busy svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (91:24) {#each data.soldiers as soldier (soldier.id)}
+function create_each_block(key_1, ctx) {
+	let div1;
+	let div0;
+	let t0_value = /*soldier*/ ctx[15].name + "";
+	let t0;
+	let t1;
+	let span;
+	let t2_value = /*soldier*/ ctx[15].rank + "";
+	let t2;
+	let t3;
+	let t4;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*soldier*/ ctx[15].busy) return create_if_block_2;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type_1(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__rank svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__name svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__row svelte-hfoo9w");
+			this.first = div1;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			if_block.m(div1, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty & /*data*/ 1 && t0_value !== (t0_value = /*soldier*/ ctx[15].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*soldier*/ ctx[15].rank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div1, t4);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+			if_block.d();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div6;
+	let div5;
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let t3;
+	let t4;
+	let div3;
+	let t5;
+	let t6;
+	let div4;
+	let t7;
+	let div6_intro;
+	let mounted;
+	let dispose;
+	let if_block0 = /*data*/ ctx[0].order && create_if_block_3(ctx);
+	let each_value_1 = /*cards*/ ctx[4];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_1.length; i += 1) {
+		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	let if_block1 = /*data*/ ctx[0].isOfficer && create_if_block(ctx);
+
+	return {
+		c() {
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Доска нарядов";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "✕";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*message*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__title svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__close svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__head svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__cards svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__msg svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "bad", !/*ok*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__window svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "duty svelte-hfoo9w");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t3);
+			if (if_block0) if_block0.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div3, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
+			if (if_block1) if_block1.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*close*/ ctx[7])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (/*data*/ ctx[0].order) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_3(ctx);
+					if_block0.c();
+					if_block0.m(div5, t4);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty & /*data, cards, take*/ 49) {
+				each_value_1 = /*cards*/ ctx[4];
+				let i;
+
+				for (i = 0; i < each_value_1.length; i += 1) {
+					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_1(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div3, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_1.length;
+			}
+
+			if (/*data*/ ctx[0].isOfficer) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					if_block1.m(div5, t6);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty & /*message*/ 2) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, /*message*/ ctx[1]);
+
+			if (dirty & /*ok*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "bad", !/*ok*/ ctx[2]);
+			}
+		},
+		i(local) {
+			if (!div6_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div6_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div6, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 150 });
+					div6_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if (if_block0) if_block0.d();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block1) if_block1.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+function instance($$self, $$props, $$invalidate) {
+	let { viewData } = $$props;
+
+	const parse = d => {
+		try {
+			return typeof d === "string" ? JSON.parse(d) : d || {};
+		} catch(e) {
+			return {};
+		}
+	};
+
+	let data = parse(viewData);
+	let message = "";
+	let ok = true;
+	let punishment = false;
+
+	const cards = [
+		{
+			type: "kitchen",
+			title: "Кухня",
+			text: "Мытьё посуды и помощь повару. Обойти точки кухни и отработать на каждой.",
+			icon: "🍳"
+		},
+		{
+			type: "clean",
+			title: "Уборка",
+			text: "Подмести плац и территорию базы. Обойти точки уборки с метлой.",
+			icon: "🧹"
+		}
+	];
+
+	const take = type => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.duty.take", type);
+	const assign = (soldier, type) => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.duty.assign", soldier.id, type, punishment);
+	const close = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.duty.close");
+
+	window.events.addEvent("cef.army.duty.update", (json, text, success) => {
+		$$invalidate(0, data = parse(json));
+		$$invalidate(1, message = text || "");
+		$$invalidate(2, ok = !!success);
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => window.events.removeEvent("cef.army.duty.update"));
+
+	const onKey = e => {
+		if (e.key === "Escape") close();
+	};
+
+	const click_handler = card => !data.order && take(card.type);
+
+	function input_change_handler() {
+		punishment = this.checked;
+		$$invalidate(3, punishment);
+	}
+
+	const click_handler_1 = soldier => assign(soldier, "kitchen");
+	const click_handler_2 = soldier => assign(soldier, "clean");
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(9, viewData = $$props.viewData);
+	};
+
+	return [
+		data,
+		message,
+		ok,
+		punishment,
+		cards,
+		take,
+		assign,
+		close,
+		onKey,
+		viewData,
+		click_handler,
+		input_change_handler,
+		click_handler_1,
+		click_handler_2
+	];
+}
+
+class Armyduty extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 9 }, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Armyduty);
+
+
+/***/ }),
+
 /***/ "./src/views/fractions/bortovoi/elements/calls/calls.svelte":
 /*!******************************************************************!*\
   !*** ./src/views/fractions/bortovoi/elements/calls/calls.svelte ***!
@@ -128889,6 +129764,1137 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./src/views/jobs/farm/index.svelte":
+/*!******************************************!*\
+  !*** ./src/views/jobs/farm/index.svelte ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* src/views/jobs/farm/index.svelte generated by Svelte v3.59.2 */
+
+
+const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-8vpebz", ".fm.svelte-8vpebz.svelte-8vpebz{position:absolute;inset:0;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:'TTNorms-Regular';color:white;user-select:none;overflow:hidden}.fm__title.svelte-8vpebz.svelte-8vpebz{text-align:center;text-shadow:0 0.2vh 0.8vh rgba(0, 0, 0, 0.9);margin-bottom:2.6vh}.fm__caption.svelte-8vpebz.svelte-8vpebz{text-transform:uppercase;letter-spacing:0.15em;font-size:1.3vh;color:#8bd36b}.fm__heading.svelte-8vpebz.svelte-8vpebz{font-family:'TTNorms-Bold';font-size:3vh;margin:0.4vh 0 1vh}.fm__steps.svelte-8vpebz.svelte-8vpebz{display:flex;gap:1vh;justify-content:center}.fm__steps.svelte-8vpebz span.svelte-8vpebz{padding:0.5vh 1.2vh;border-radius:2vh;background:rgba(0, 0, 0, 0.6);font-size:1.3vh;color:rgba(255, 255, 255, 0.6)}.fm__steps.svelte-8vpebz span.active.svelte-8vpebz{color:white;box-shadow:inset 0 0 0 1px rgba(139, 211, 107, 0.6)}.fm__steps.svelte-8vpebz span.done.svelte-8vpebz{background:rgba(20, 90, 30, 0.75);color:#6ef07a}.fm__layout.svelte-8vpebz.svelte-8vpebz{display:flex;align-items:flex-start}.fm__sidebar.svelte-8vpebz.svelte-8vpebz{display:flex;flex-direction:column;align-items:center;padding:1.3vh 1.1vh;min-width:12vh;margin-top:2.6vh;background:rgba(0, 0, 0, 0.55);border:1px solid rgba(255, 255, 255, 0.07);border-right:none;border-radius:0.9vh 0 0 0.9vh}.fm__label.svelte-8vpebz.svelte-8vpebz{font-family:'TTNorms-Bold';font-size:1vh;letter-spacing:0.25em;text-transform:uppercase}.fm__sublabel.svelte-8vpebz.svelte-8vpebz{font-size:1vh;color:rgba(255, 255, 255, 0.4);margin:0.2vh 0 1.3vh;max-width:10vh;text-align:center}.fm__tool.svelte-8vpebz.svelte-8vpebz{cursor:grab;filter:drop-shadow(0 0.3vh 0.6vh rgba(0, 0, 0, 0.7));transition:transform 0.12s, opacity 0.15s}.fm__tool.svelte-8vpebz.svelte-8vpebz:hover{transform:translateY(-0.2vh) scale(1.06)}.fm__tool.disabled.svelte-8vpebz.svelte-8vpebz{opacity:0.25;cursor:default;transform:none}.fm__tool.dragging.svelte-8vpebz.svelte-8vpebz{opacity:0}.fm__divider.svelte-8vpebz.svelte-8vpebz{width:80%;height:1px;background:rgba(255, 255, 255, 0.1);margin:1.3vh 0}.fm__panel.svelte-8vpebz.svelte-8vpebz{position:relative;width:62vh;height:40vh;border-radius:0 0.9vh 0.9vh 0;border:1px solid rgba(255, 255, 255, 0.1);box-shadow:0 0.8vh 4vh rgba(0, 0, 0, 0.9);overflow:hidden;background:repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.12) 0 0.4vh, transparent 0.4vh 3vh),\n            radial-gradient(ellipse at 50% 30%, #7a5230 0%, #5a3a1f 60%, #3d2714 100%)}.fm__rows.svelte-8vpebz.svelte-8vpebz{position:absolute;inset:0;display:flex;justify-content:space-evenly;align-items:center;padding:0 2vh}.fm__cell.svelte-8vpebz.svelte-8vpebz{display:flex;flex-direction:column;align-items:center;gap:2.4vh}.fm__hole.svelte-8vpebz.svelte-8vpebz{position:relative;width:8vh;height:8vh;border-radius:50%;background:#3a2412;box-shadow:inset 0 0.6vh 1.2vh rgba(0, 0, 0, 0.8);overflow:visible;transition:box-shadow 0.15s}.fm__hole.highlight.svelte-8vpebz.svelte-8vpebz{box-shadow:inset 0 0.6vh 1.2vh rgba(0, 0, 0, 0.8), 0 0 0 0.3vh rgba(139, 211, 107, 0.8)}.fm__clip.svelte-8vpebz.svelte-8vpebz{position:absolute;inset:0;border-radius:50%;overflow:hidden}.fm__pit.svelte-8vpebz.svelte-8vpebz{position:absolute;inset:0.8vh;border-radius:50%;background:#1c1008;transition:opacity 0.2s}.fm__soil.svelte-8vpebz.svelte-8vpebz{position:absolute;left:0;right:0;bottom:0;background:radial-gradient(ellipse at 50% 20%, #6d4526, #4e311a);transition:height 0.2s}.fm__sprout.svelte-8vpebz.svelte-8vpebz{position:absolute;left:50%;bottom:2.4vh;width:4.4vh;height:5.5vh;transform-origin:50% 100%;pointer-events:none;transition:transform 0.2s, filter 0.2s}.fm__drops.svelte-8vpebz.svelte-8vpebz{position:absolute;left:0;right:0;top:-3vh;height:6vh;pointer-events:none}.fm__drops.svelte-8vpebz span.svelte-8vpebz{position:absolute;top:0;width:0.5vh;height:1.1vh;border-radius:50%;background:#6ec6ff;animation:svelte-8vpebz-drop 0.5s linear infinite}@keyframes svelte-8vpebz-drop{from{transform:translateY(0);opacity:1}to{transform:translateY(5vh);opacity:0}}.fm__mound.svelte-8vpebz.svelte-8vpebz{width:8vh;height:5vh;display:flex;align-items:flex-end;justify-content:center;border-radius:1vh;transition:box-shadow 0.15s}.fm__mound.highlight.svelte-8vpebz.svelte-8vpebz{box-shadow:0 0 0 0.3vh rgba(245, 196, 0, 0.7)}.fm__mound.empty.svelte-8vpebz.svelte-8vpebz{opacity:0.3}.fm__mound-body.svelte-8vpebz.svelte-8vpebz{width:7vh;height:4vh;border-radius:50% 50% 0.6vh 0.6vh;background:radial-gradient(ellipse at 40% 30%, #8a5a33, #5b3a1e);box-shadow:0 0.4vh 0.8vh rgba(0, 0, 0, 0.5);transform-origin:50% 100%;transition:transform 0.15s}.fm__water.svelte-8vpebz.svelte-8vpebz{width:8vh;height:0.9vh;margin:2vh 0;border-radius:1vh;background:rgba(0, 0, 0, 0.5);overflow:hidden}.fm__water-fill.svelte-8vpebz.svelte-8vpebz{height:100%;background:linear-gradient(90deg, #3a9fff, #6ec6ff)}.fm__overlay.svelte-8vpebz.svelte-8vpebz{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1vh;font-family:'TTNorms-Bold';font-size:2.4vh;background:rgba(20, 60, 25, 0.75);color:#6ef07a;z-index:20}.fm__overlay-icon.svelte-8vpebz.svelte-8vpebz{font-size:6vh}.fm__hints.svelte-8vpebz.svelte-8vpebz{display:flex;gap:2.4vh;margin-top:2vh;font-size:1.3vh;color:rgba(255, 255, 255, 0.7);text-shadow:0 0.2vh 0.6vh rgba(0, 0, 0, 0.9)}.fm__hints.svelte-8vpebz span.svelte-8vpebz{display:inline-block;padding:0.3vh 0.8vh;margin-right:0.7vh;border-radius:0.5vh;background:rgba(0, 0, 0, 0.7);font-family:'TTNorms-Bold'}.fm__ghost.svelte-8vpebz.svelte-8vpebz{position:fixed;pointer-events:none;z-index:2000;transform:translate(-50%, -85%);filter:drop-shadow(0 0.6vh 1vh rgba(0, 0, 0, 0.7))}.fm__ghost.can.svelte-8vpebz.svelte-8vpebz{transform:translate(-90%, -40%) rotate(-25deg)}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[22] = list[i];
+	child_ctx[24] = i;
+	return child_ctx;
+}
+
+function get_each_context_1(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[25] = list[i];
+	return child_ctx;
+}
+
+// (196:28) {#if drag.type === 'can' && hoverHole === i && hole.water < 100}
+function create_if_block_5(ctx) {
+	let div;
+	let each_value_1 = [0, 1, 2, 3];
+	let each_blocks = [];
+
+	for (let i = 0; i < 4; i += 1) {
+		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < 4; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "fm__drops svelte-8vpebz");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			for (let i = 0; i < 4; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div, null);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+		}
+	};
+}
+
+// (198:36) {#each [0, 1, 2, 3] as d}
+function create_each_block_1(ctx) {
+	let span;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(span, "left", 20 + /*d*/ ctx[25] * 18 + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(span, "animation-delay", /*d*/ ctx[25] * 0.12 + "s");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-8vpebz");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (207:24) {:else}
+function create_else_block_1(ctx) {
+	let div1;
+	let div0;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fm__water-fill svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", /*hole*/ ctx[22].water + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fm__water svelte-8vpebz");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", /*hole*/ ctx[22].water + "%");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (202:24) {#if state.phase === 'dig'}
+function create_if_block_4(ctx) {
+	let div1;
+	let div0;
+	let div1_data_mound_idx_value;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fm__mound-body svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "transform", "scale(" + (0.35 + /*state*/ ctx[0].mounds[/*i*/ ctx[24]] / SCOOPS * 0.65) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fm__mound svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "data-mound-idx", div1_data_mound_idx_value = /*i*/ ctx[24]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "highlight", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'shovel' && !/*loaded*/ ctx[2] && /*state*/ ctx[0].mounds[/*i*/ ctx[24]] > 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "empty", /*state*/ ctx[0].mounds[/*i*/ ctx[24]] === 0);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "transform", "scale(" + (0.35 + /*state*/ ctx[0].mounds[/*i*/ ctx[24]] / SCOOPS * 0.65) + ")");
+			}
+
+			if (dirty & /*drag, loaded, state*/ 7) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "highlight", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'shovel' && !/*loaded*/ ctx[2] && /*state*/ ctx[0].mounds[/*i*/ ctx[24]] > 0);
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "empty", /*state*/ ctx[0].mounds[/*i*/ ctx[24]] === 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (182:16) {#each state.holes as hole, i}
+function create_each_block(ctx) {
+	let div4;
+	let div3;
+	let div2;
+	let div0;
+	let t0;
+	let div1;
+	let t1;
+	let svg;
+	let path0;
+	let path1;
+	let path2;
+	let t2;
+	let div3_data_hole_idx_value;
+	let t3;
+	let t4;
+	let if_block0 = /*drag*/ ctx[1].type === 'can' && /*hoverHole*/ ctx[3] === /*i*/ ctx[24] && /*hole*/ ctx[22].water < 100 && create_if_block_5(ctx);
+
+	function select_block_type(ctx, dirty) {
+		if (/*state*/ ctx[0].phase === 'dig') return create_if_block_4;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type(ctx, -1);
+	let if_block1 = current_block_type(ctx);
+
+	return {
+		c() {
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block1.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fm__pit svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "opacity", 1 - /*hole*/ ctx[22].fill / SCOOPS * 0.85);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fm__soil svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "height", /*hole*/ ctx[22].fill / SCOOPS * 100 + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "fm__clip svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M20 50 V20");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke", "#4caf50");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke-width", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke-linecap", "round");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M20 26 C8 26 2 16 4 8 C14 8 20 16 20 26 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#66bb6a");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "d", "M20 22 C30 22 38 12 36 4 C26 4 20 12 20 22 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "fill", "#81c784");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "fm__sprout svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 40 50");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(svg, "transform", "translateX(-50%) scale(" + (0.8 + /*hole*/ ctx[22].water / 100 * 0.45) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(svg, "filter", "saturate(" + (0.55 + /*hole*/ ctx[22].water / 100 * 0.6) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "fm__hole svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "data-hole-idx", div3_data_hole_idx_value = /*i*/ ctx[24]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "highlight", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'shovel' && /*loaded*/ ctx[2] && /*hole*/ ctx[22].fill < SCOOPS || /*drag*/ ctx[1].type === 'can' && /*hoverHole*/ ctx[3] === /*i*/ ctx[24]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "fm__cell svelte-8vpebz");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, svg);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			if (if_block0) if_block0.m(div3, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t3);
+			if_block1.m(div4, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "opacity", 1 - /*hole*/ ctx[22].fill / SCOOPS * 0.85);
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "height", /*hole*/ ctx[22].fill / SCOOPS * 100 + "%");
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(svg, "transform", "translateX(-50%) scale(" + (0.8 + /*hole*/ ctx[22].water / 100 * 0.45) + ")");
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(svg, "filter", "saturate(" + (0.55 + /*hole*/ ctx[22].water / 100 * 0.6) + ")");
+			}
+
+			if (/*drag*/ ctx[1].type === 'can' && /*hoverHole*/ ctx[3] === /*i*/ ctx[24] && /*hole*/ ctx[22].water < 100) {
+				if (if_block0) {
+					
+				} else {
+					if_block0 = create_if_block_5(ctx);
+					if_block0.c();
+					if_block0.m(div3, null);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty & /*drag, loaded, state, SCOOPS, hoverHole*/ 15) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "highlight", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'shovel' && /*loaded*/ ctx[2] && /*hole*/ ctx[22].fill < SCOOPS || /*drag*/ ctx[1].type === 'can' && /*hoverHole*/ ctx[3] === /*i*/ ctx[24]);
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if_block1.d(1);
+				if_block1 = current_block_type(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div4, t4);
+				}
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (if_block0) if_block0.d();
+			if_block1.d();
+		}
+	};
+}
+
+// (215:12) {#if state.phase === 'success'}
+function create_if_block_3(ctx) {
+	let div2;
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.innerHTML = `<div class="fm__overlay-icon svelte-8vpebz">✓</div><div>Грядка засажена!</div>`;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "fm__overlay svelte-8vpebz");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+		}
+	};
+}
+
+// (226:4) {#if drag.active}
+function create_if_block(ctx) {
+	let div;
+
+	function select_block_type_1(ctx, dirty) {
+		if (/*drag*/ ctx[1].type === 'shovel') return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type_1(ctx, -1);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "fm__ghost svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div, "left", /*drag*/ ctx[1].x + "px");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div, "top", /*drag*/ ctx[1].y + "px");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "can", /*drag*/ ctx[1].type === 'can');
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			if_block.m(div, null);
+		},
+		p(ctx, dirty) {
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div, null);
+				}
+			}
+
+			if (dirty & /*drag*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div, "left", /*drag*/ ctx[1].x + "px");
+			}
+
+			if (dirty & /*drag*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div, "top", /*drag*/ ctx[1].y + "px");
+			}
+
+			if (dirty & /*drag*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "can", /*drag*/ ctx[1].type === 'can');
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if_block.d();
+		}
+	};
+}
+
+// (235:12) {:else}
+function create_else_block(ctx) {
+	let svg;
+	let path0;
+	let path1;
+	let path2;
+	let path3;
+	let svg_width_value;
+	let svg_height_value;
+
+	return {
+		c() {
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M18 22 H58 V62 Q58 68 52 68 H24 Q18 68 18 62 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#2f8f4e");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke-width", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M58 30 L84 12 L88 16 L60 42 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#2f8f4e");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "stroke-width", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "d", "M26 22 Q38 2 50 22");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "stroke-width", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "d", "M18 34 Q4 40 18 54");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "stroke-width", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 90 70");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", svg_width_value = 80 * /*scale*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", svg_height_value = 62 * /*scale*/ ctx[4]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, svg, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path3);
+		},
+		p(ctx, dirty) {
+			if (dirty & /*scale*/ 16 && svg_width_value !== (svg_width_value = 80 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", svg_width_value);
+			}
+
+			if (dirty & /*scale*/ 16 && svg_height_value !== (svg_height_value = 62 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", svg_height_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(svg);
+		}
+	};
+}
+
+// (228:12) {#if drag.type === 'shovel'}
+function create_if_block_1(ctx) {
+	let svg;
+	let rect0;
+	let rect1;
+	let path;
+	let svg_width_value;
+	let svg_height_value;
+	let if_block = /*loaded*/ ctx[2] && create_if_block_2(ctx);
+
+	return {
+		c() {
+			svg = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			rect0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			rect1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			path = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			if (if_block) if_block.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "x", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "y", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "width", "6");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "height", "40");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "rx", "3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "fill", "#9b6a3c");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "x", "14");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "y", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "width", "12");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "height", "10");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "rx", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "fill", "#3b3b3b");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "d", "M20 40 C4 44 4 70 20 88 C36 70 36 44 20 40 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "fill", "#b8c2cc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "stroke", "#6d7780");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "stroke-width", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 40 90");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", svg_width_value = 40 * /*scale*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", svg_height_value = 90 * /*scale*/ ctx[4]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, svg, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, rect0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, rect1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg, path);
+			if (if_block) if_block.m(svg, null);
+		},
+		p(ctx, dirty) {
+			if (/*loaded*/ ctx[2]) {
+				if (if_block) {
+					
+				} else {
+					if_block = create_if_block_2(ctx);
+					if_block.c();
+					if_block.m(svg, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+
+			if (dirty & /*scale*/ 16 && svg_width_value !== (svg_width_value = 40 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "width", svg_width_value);
+			}
+
+			if (dirty & /*scale*/ 16 && svg_height_value !== (svg_height_value = 90 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "height", svg_height_value);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(svg);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+// (233:20) {#if loaded}
+function create_if_block_2(ctx) {
+	let ellipse;
+
+	return {
+		c() {
+			ellipse = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("ellipse");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ellipse, "cx", "20");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ellipse, "cy", "66");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ellipse, "rx", "12");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ellipse, "ry", "9");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(ellipse, "fill", "#5b3a1e");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, ellipse, anchor);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(ellipse);
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div16;
+	let div3;
+	let div0;
+	let t1;
+	let div1;
+	let t3;
+	let div2;
+	let span0;
+	let t5;
+	let span1;
+	let t7;
+	let div12;
+	let div9;
+	let div4;
+	let t9;
+	let div5;
+
+	let t10_value = (/*state*/ ctx[0].phase === 'dig'
+	? 'Земля из кучки → в ямку'
+	: 'Держите над ростком') + "";
+
+	let t10;
+	let t11;
+	let div6;
+	let svg0;
+	let rect0;
+	let rect1;
+	let path0;
+	let svg0_width_value;
+	let svg0_height_value;
+	let t12;
+	let div7;
+	let t13;
+	let div8;
+	let svg1;
+	let path1;
+	let path2;
+	let path3;
+	let path4;
+	let svg1_width_value;
+	let svg1_height_value;
+	let t14;
+	let div11;
+	let div10;
+	let t15;
+	let t16;
+	let div15;
+	let t22;
+	let mounted;
+	let dispose;
+	let each_value = /*state*/ ctx[0].holes;
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	let if_block0 = /*state*/ ctx[0].phase === 'success' && create_if_block_3(ctx);
+	let if_block1 = /*drag*/ ctx[1].active && create_if_block(ctx);
+
+	return {
+		c() {
+			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Ферма · подработка";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Посадите рассаду";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "1. Закопайте ростки лопаткой";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "2. Полейте из лейки";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div4.textContent = "Инструменты";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t10_value);
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			svg0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			rect0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			rect1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("rect");
+			path0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			svg1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("svg");
+			path1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			path4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.svg_element)("path");
+			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block0) if_block0.c();
+			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			div15.innerHTML = `<div><span class="svelte-8vpebz">Тащить</span>Лопатку и лейку</div> 
+        <div><span class="svelte-8vpebz">Esc</span>Бросить работу</div>`;
+
+			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fm__caption svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fm__heading svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "active", /*state*/ ctx[0].phase === 'dig');
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "done", /*buried*/ ctx[6]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "active", /*state*/ ctx[0].phase === 'water');
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "done", /*watered*/ ctx[5]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "fm__steps svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "fm__title svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "fm__label svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "fm__sublabel svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "x", "17");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "y", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "width", "6");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "height", "40");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "rx", "3");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect0, "fill", "#9b6a3c");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "x", "14");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "y", "0");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "width", "12");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "height", "10");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "rx", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(rect1, "fill", "#3b3b3b");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "d", "M20 40 C4 44 4 70 20 88 C36 70 36 44 20 40 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "fill", "#b8c2cc");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke", "#6d7780");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path0, "stroke-width", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "viewBox", "0 0 40 90");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "width", svg0_width_value = 40 * /*scale*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "height", svg0_height_value = 90 * /*scale*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "fm__tool svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "title", "Лопатка");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div6, "disabled", /*state*/ ctx[0].phase !== 'dig');
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div6, "dragging", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'shovel');
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "fm__divider svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "d", "M18 22 H58 V62 Q58 68 52 68 H24 Q18 68 18 62 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "fill", "#2f8f4e");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path1, "stroke-width", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "d", "M58 30 L84 12 L88 16 L60 42 Z");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "fill", "#2f8f4e");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path2, "stroke-width", "2");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "d", "M26 22 Q38 2 50 22");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path3, "stroke-width", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path4, "d", "M18 34 Q4 40 18 54");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path4, "fill", "none");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path4, "stroke", "#1c5d31");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path4, "stroke-width", "4");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "viewBox", "0 0 90 70");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "width", svg1_width_value = 80 * /*scale*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "height", svg1_height_value = 62 * /*scale*/ ctx[4]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "fm__tool svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "title", "Лейка");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", /*state*/ ctx[0].phase !== 'water');
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "dragging", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'can');
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "fm__sidebar svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "fm__rows svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "fm__panel svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "fm__layout svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "fm__hints svelte-8vpebz");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "fm svelte-8vpebz");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div16, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, svg0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, rect0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, rect1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg0, path0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t12);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t13);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, svg1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg1, path1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg1, path2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg1, path3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(svg1, path4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, t14);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div12, div11);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div10);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div10, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t15);
+			if (if_block0) if_block0.m(div11, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, div15);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div16, t22);
+			if (if_block1) if_block1.m(div16, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "mousemove", /*onMove*/ ctx[8]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "mouseup", /*onUp*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div6, "mousedown", /*mousedown_handler*/ ctx[11]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div8, "mousedown", /*mousedown_handler_1*/ ctx[12])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, [dirty]) {
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "active", /*state*/ ctx[0].phase === 'dig');
+			}
+
+			if (dirty & /*buried*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "done", /*buried*/ ctx[6]);
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "active", /*state*/ ctx[0].phase === 'water');
+			}
+
+			if (dirty & /*watered*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "done", /*watered*/ ctx[5]);
+			}
+
+			if (dirty & /*state*/ 1 && t10_value !== (t10_value = (/*state*/ ctx[0].phase === 'dig'
+			? 'Земля из кучки → в ямку'
+			: 'Держите над ростком') + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t10, t10_value);
+
+			if (dirty & /*scale*/ 16 && svg0_width_value !== (svg0_width_value = 40 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "width", svg0_width_value);
+			}
+
+			if (dirty & /*scale*/ 16 && svg0_height_value !== (svg0_height_value = 90 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg0, "height", svg0_height_value);
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div6, "disabled", /*state*/ ctx[0].phase !== 'dig');
+			}
+
+			if (dirty & /*drag*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div6, "dragging", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'shovel');
+			}
+
+			if (dirty & /*scale*/ 16 && svg1_width_value !== (svg1_width_value = 80 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "width", svg1_width_value);
+			}
+
+			if (dirty & /*scale*/ 16 && svg1_height_value !== (svg1_height_value = 62 * /*scale*/ ctx[4])) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg1, "height", svg1_height_value);
+			}
+
+			if (dirty & /*state*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "disabled", /*state*/ ctx[0].phase !== 'water');
+			}
+
+			if (dirty & /*drag*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div8, "dragging", /*drag*/ ctx[1].active && /*drag*/ ctx[1].type === 'can');
+			}
+
+			if (dirty & /*drag, loaded, state, SCOOPS, hoverHole*/ 15) {
+				each_value = /*state*/ ctx[0].holes;
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div10, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+
+			if (/*state*/ ctx[0].phase === 'success') {
+				if (if_block0) {
+					
+				} else {
+					if_block0 = create_if_block_3(ctx);
+					if_block0.c();
+					if_block0.m(div11, null);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*drag*/ ctx[1].active) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block(ctx);
+					if_block1.c();
+					if_block1.m(div16, null);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+		},
+		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div16);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block0) if_block0.d();
+			if (if_block1) if_block1.d();
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+const COUNT = 5;
+const SCOOPS = 3; // сколько лопат земли нужно на ямку
+const WATER_TIME = 1300; // мс полива одного ростка
+
+function instance($$self, $$props, $$invalidate) {
+	let buried;
+	let watered;
+
+	const createState = () => ({
+		holes: Array.from({ length: COUNT }, (_, id) => ({ id, fill: 0, water: 0 })),
+		mounds: Array.from({ length: COUNT }, () => SCOOPS),
+		phase: 'dig', // dig → water → success
+		
+	});
+
+	let state = createState();
+	let drag = { active: false, type: null, x: 0, y: 0 };
+	let loaded = false; // на лопатке есть земля
+	let hoverHole = -1;
+	let scale = window.innerHeight / 1080;
+
+	// ---- звуки ----
+	let audio = null;
+
+	const tone = ({ type, freq, freqEnd, startOffset = 0, duration = 0.3, gainPeak = 0.2 }) => {
+		try {
+			if (!audio) audio = new (window.AudioContext || window.webkitAudioContext)();
+			const t = audio.currentTime + startOffset;
+			const osc = audio.createOscillator(), gain = audio.createGain();
+			osc.connect(gain);
+			gain.connect(audio.destination);
+			osc.type = type;
+			osc.frequency.setValueAtTime(freq, t);
+			if (freqEnd !== undefined) osc.frequency.exponentialRampToValueAtTime(freqEnd, t + duration * 0.6);
+			gain.gain.setValueAtTime(0, t);
+			gain.gain.linearRampToValueAtTime(gainPeak * 0.6, t + 0.02);
+			gain.gain.exponentialRampToValueAtTime(0.001, t + duration);
+			osc.start(t);
+			osc.stop(t + duration + 0.05);
+		} catch(e) {
+			
+		}
+	};
+
+	const sounds = {
+		dig: () => tone({
+			type: 'triangle',
+			freq: 180,
+			freqEnd: 90,
+			duration: 0.12,
+			gainPeak: 0.25
+		}),
+		plop: () => tone({
+			type: 'sine',
+			freq: 140,
+			freqEnd: 70,
+			duration: 0.18,
+			gainPeak: 0.3
+		}),
+		done: () => tone({
+			type: 'sine',
+			freq: 660,
+			freqEnd: 880,
+			duration: 0.2,
+			gainPeak: 0.18
+		}),
+		success: () => [523.25, 659.25, 783.99].forEach((f, i) => tone({
+			type: 'sine',
+			freq: f,
+			startOffset: i * 0.13,
+			gainPeak: 0.25
+		}))
+	};
+
+	// ---- логика ----
+	const hitIndex = (x, y, attr) => {
+		for (const el of document.elementsFromPoint(x, y)) {
+			const found = el.closest(`[data-${attr}]`);
+			if (found) return parseInt(found.getAttribute(`data-${attr}`), 10);
+		}
+
+		return NaN;
+	};
+
+	const startDrag = (type, e) => {
+		if (e.button !== 0) return;
+		if (type === 'shovel' && state.phase !== 'dig') return;
+		if (type === 'can' && state.phase !== 'water') return;
+		e.preventDefault();
+
+		$$invalidate(1, drag = {
+			active: true,
+			type,
+			x: e.clientX,
+			y: e.clientY
+		});
+	};
+
+	const onMove = e => {
+		if (!drag.active) return;
+		$$invalidate(1, drag = { ...drag, x: e.clientX, y: e.clientY });
+
+		if (drag.type === 'shovel') {
+			if (!loaded) {
+				const m = hitIndex(e.clientX, e.clientY, 'mound-idx');
+
+				if (!isNaN(m) && state.mounds[m] > 0) {
+					$$invalidate(0, state.mounds[m]--, state);
+					$$invalidate(2, loaded = true);
+					$$invalidate(0, state);
+					sounds.dig();
+				}
+			} else {
+				const h = hitIndex(e.clientX, e.clientY, 'hole-idx');
+				const hole = state.holes[h];
+
+				if (hole && hole.fill < SCOOPS) {
+					hole.fill++;
+					$$invalidate(2, loaded = false);
+					$$invalidate(0, state);
+					sounds.plop();
+
+					if (state.holes.every(x => x.fill >= SCOOPS)) {
+						sounds.done();
+						$$invalidate(1, drag = { active: false, type: null, x: 0, y: 0 });
+
+						setTimeout(
+							() => {
+								$$invalidate(0, state.phase = 'water', state);
+								$$invalidate(0, state);
+							},
+							400
+						);
+					}
+				}
+			}
+		} else if (drag.type === 'can') {
+			const h = hitIndex(e.clientX, e.clientY, 'hole-idx');
+			$$invalidate(3, hoverHole = isNaN(h) ? -1 : h);
+		}
+	};
+
+	const onUp = () => {
+		if (!drag.active) return;
+		$$invalidate(1, drag = { active: false, type: null, x: 0, y: 0 });
+		$$invalidate(3, hoverHole = -1);
+	};
+
+	// Полив: пока лейка над ростком — растёт влажность
+	let raf = null, last = 0;
+
+	const tick = now => {
+		raf = requestAnimationFrame(tick);
+		const dt = last ? Math.min(100, now - last) : 0;
+		last = now;
+		if (state.phase !== 'water' || !drag.active || drag.type !== 'can' || hoverHole < 0) return;
+		const hole = state.holes[hoverHole];
+		if (!hole || hole.water >= 100) return;
+		hole.water = Math.min(100, hole.water + dt / WATER_TIME * 100);
+		if (hole.water >= 100) sounds.done();
+		$$invalidate(0, state);
+
+		if (state.holes.every(x => x.water >= 100)) {
+			$$invalidate(1, drag = { active: false, type: null, x: 0, y: 0 });
+			$$invalidate(3, hoverHole = -1);
+			$$invalidate(0, state.phase = 'success', state);
+			sounds.success();
+			setTimeout(() => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.daylabor.farm.finished"), 1200);
+		}
+	};
+
+	const onKey = e => {
+		if (e.keyCode === 27) (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.daylabor.farm.exit");
+	};
+
+	const onResize = () => $$invalidate(4, scale = window.innerHeight / 1080);
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onMount)(() => {
+		raf = requestAnimationFrame(tick);
+		window.addEventListener('resize', onResize);
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => {
+		cancelAnimationFrame(raf);
+		window.removeEventListener('resize', onResize);
+
+		try {
+			audio && audio.close();
+		} catch(e) {
+			
+		}
+	});
+
+	const mousedown_handler = e => startDrag('shovel', e);
+	const mousedown_handler_1 = e => startDrag('can', e);
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty & /*state*/ 1) {
+			$: $$invalidate(6, buried = state.holes.every(h => h.fill >= SCOOPS));
+		}
+
+		if ($$self.$$.dirty & /*state*/ 1) {
+			$: $$invalidate(5, watered = state.holes.every(h => h.water >= 100));
+		}
+	};
+
+	return [
+		state,
+		drag,
+		loaded,
+		hoverHole,
+		scale,
+		watered,
+		buried,
+		startDrag,
+		onMove,
+		onUp,
+		onKey,
+		mousedown_handler,
+		mousedown_handler_1
+	];
+}
+
+class Farm extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, {}, add_css);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Farm);
+
+
+/***/ }),
+
 /***/ "./src/views/player/animations/element.svelte":
 /*!****************************************************!*\
   !*** ./src/views/player/animations/element.svelte ***!
@@ -131148,6 +133154,723 @@ class Animations_1 extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCo
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Animations_1);
+
+
+/***/ }),
+
+/***/ "./src/views/player/armyrepair/index.svelte":
+/*!**************************************************!*\
+  !*** ./src/views/player/armyrepair/index.svelte ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* src/views/player/armyrepair/index.svelte generated by Svelte v3.59.2 */
+
+
+
+
+
+
+function add_css(target) {
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-7efrkq", ".repair.svelte-7efrkq.svelte-7efrkq{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(0, 0, 0, 0.5);font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#fff}.repair__window.svelte-7efrkq.svelte-7efrkq{width:640px;max-width:94vw;background:#16181d;border:1px solid rgba(255, 255, 255, 0.08);border-radius:12px;padding:20px 24px}.repair__head.svelte-7efrkq.svelte-7efrkq{display:flex;align-items:center;gap:16px;margin-bottom:18px}.repair__title.svelte-7efrkq.svelte-7efrkq{font-size:20px;font-weight:700}.repair__steps.svelte-7efrkq.svelte-7efrkq{display:flex;gap:10px;margin-left:auto;font-size:12px;opacity:0.8}.repair__steps.svelte-7efrkq span.svelte-7efrkq{white-space:nowrap;padding:4px 8px;border-radius:6px;background:rgba(255, 255, 255, 0.05)}.repair__steps.svelte-7efrkq span.active.svelte-7efrkq{background:#4b6b2a}.repair__steps.svelte-7efrkq span.done.svelte-7efrkq{opacity:0.5}.repair__close.svelte-7efrkq.svelte-7efrkq{cursor:pointer;opacity:0.7;padding:4px 8px}.repair__body.svelte-7efrkq.svelte-7efrkq{display:flex;flex-direction:column;align-items:center;gap:16px;min-height:170px;justify-content:center}.repair__hint.svelte-7efrkq.svelte-7efrkq{font-size:14px;opacity:0.8;text-align:center}.repair__bar.svelte-7efrkq.svelte-7efrkq,.repair__track.svelte-7efrkq.svelte-7efrkq{position:relative;width:100%;height:16px;border-radius:8px;background:rgba(255, 255, 255, 0.08);overflow:hidden}.repair__fill.svelte-7efrkq.svelte-7efrkq{height:100%;background:#6b8e23}.repair__zone.svelte-7efrkq.svelte-7efrkq{position:absolute;top:0;height:100%;background:rgba(47, 163, 107, 0.7)}.repair__runner.svelte-7efrkq.svelte-7efrkq{position:absolute;top:-2px;width:4px;height:20px;margin-left:-2px;background:#fff}.repair__btn.svelte-7efrkq.svelte-7efrkq{padding:10px 26px;border-radius:8px;background:#4b6b2a;font-weight:600;cursor:pointer;user-select:none}.repair__grid.svelte-7efrkq.svelte-7efrkq{display:grid;grid-template-columns:repeat(3, 1fr);gap:10px;width:100%}.repair__part.svelte-7efrkq.svelte-7efrkq{padding:12px;border-radius:8px;background:rgba(255, 255, 255, 0.05);cursor:pointer;border:1px solid transparent}.repair__part.svelte-7efrkq.svelte-7efrkq:hover{border-color:rgba(255, 255, 255, 0.2)}.repair__part.found.svelte-7efrkq.svelte-7efrkq{border-color:#2fa36b;background:rgba(47, 163, 107, 0.15)}.repair__part.wrong.svelte-7efrkq.svelte-7efrkq{border-color:#e5484d}.repair__pname.svelte-7efrkq.svelte-7efrkq{font-size:14px;font-weight:600}.repair__wear.svelte-7efrkq.svelte-7efrkq{font-size:12px;opacity:0.7;margin-top:4px}.repair__wear.bad.svelte-7efrkq.svelte-7efrkq{color:#ff8a65;opacity:1}.repair__msg.svelte-7efrkq.svelte-7efrkq{margin-top:14px;min-height:18px;font-size:13px;color:#b5d77b;text-align:center}");
+}
+
+function get_each_context(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[29] = list[i];
+	return child_ctx;
+}
+
+// (168:8) {:else}
+function create_else_block(ctx) {
+	let div1;
+	let div0;
+	let t0;
+
+	let t1_value = (/*waiting*/ ctx[7] > 0
+	? ` — ${/*waiting*/ ctx[7]} сек`
+	: "") + "";
+
+	let t1;
+
+	return {
+		c() {
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Проверка систем");
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t1_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*waiting*/ 128 && t1_value !== (t1_value = (/*waiting*/ ctx[7] > 0
+			? ` — ${/*waiting*/ ctx[7]} сек`
+			: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (159:29) 
+function create_if_block_2(ctx) {
+	let div5;
+	let div0;
+	let t1;
+	let div3;
+	let div1;
+	let t2;
+	let div2;
+	let t3;
+	let div4;
+	let t4;
+	let t5;
+	let t6;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Нажмите «Затянуть» или пробел, когда бегунок в зелёной зоне";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Затянуть (");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*hits*/ ctx[6]);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("/3)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__zone svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "left", /*zoneStart*/ ctx[5] + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", zoneWidth + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__runner svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "left", /*slider*/ ctx[4] + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "repair__track svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "repair__btn svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*tighten*/ ctx[12]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*zoneStart*/ 32) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "left", /*zoneStart*/ ctx[5] + "%");
+			}
+
+			if (dirty[0] & /*slider*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "left", /*slider*/ ctx[4] + "%");
+			}
+
+			if (dirty[0] & /*hits*/ 64) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, /*hits*/ ctx[6]);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (147:29) 
+function create_if_block_1(ctx) {
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*parts*/ ctx[0];
+	const get_key = ctx => /*part*/ ctx[29].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Диагностика показала износ узлов. Выберите неисправные (износ выше 75%)";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__grid svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div1, null);
+				}
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*parts, pick*/ 2049) {
+				each_value = /*parts*/ ctx[0];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div1, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+// (141:8) {#if step === 1}
+function create_if_block(ctx) {
+	let div4;
+	let div0;
+	let t1;
+	let div2;
+	let div1;
+	let t2;
+	let div3;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Удерживайте кнопку, чтобы осмотреть технику";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Осматривать";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__hint svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__fill svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*holdProgress*/ ctx[3] + "%");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__bar svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "repair__btn svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "repair__body svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "mousedown", /*holdStart*/ ctx[9]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "mouseup", /*holdStop*/ ctx[10]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "mouseleave", /*holdStop*/ ctx[10])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*holdProgress*/ 8) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*holdProgress*/ ctx[3] + "%");
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (151:20) {#each parts as part (part.id)}
+function create_each_block(key_1, ctx) {
+	let div2;
+	let div0;
+	let t0_value = /*part*/ ctx[29].name + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2;
+	let t3_value = /*part*/ ctx[29].wear + "";
+	let t3;
+	let t4;
+	let t5;
+	let mounted;
+	let dispose;
+
+	function click_handler() {
+		return /*click_handler*/ ctx[15](/*part*/ ctx[29]);
+	}
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("износ ");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("%");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__pname svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__wear svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "bad", /*part*/ ctx[29].wear > 75);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__part svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "found", /*part*/ ctx[29].found);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "wrong", /*part*/ ctx[29].wrong);
+			this.first = div2;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", click_handler);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*parts*/ 1 && t0_value !== (t0_value = /*part*/ ctx[29].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*parts*/ 1 && t3_value !== (t3_value = /*part*/ ctx[29].wear + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+
+			if (dirty[0] & /*parts*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "bad", /*part*/ ctx[29].wear > 75);
+			}
+
+			if (dirty[0] & /*parts*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "found", /*part*/ ctx[29].found);
+			}
+
+			if (dirty[0] & /*parts*/ 1) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "wrong", /*part*/ ctx[29].wrong);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div6;
+	let div5;
+	let div3;
+	let div0;
+	let t1;
+	let div1;
+	let span0;
+	let t3;
+	let span1;
+	let t5;
+	let span2;
+	let t7;
+	let div2;
+	let t9;
+	let t10;
+	let div4;
+	let t11;
+	let div6_intro;
+	let mounted;
+	let dispose;
+
+	function select_block_type(ctx, dirty) {
+		if (/*step*/ ctx[1] === 1) return create_if_block;
+		if (/*step*/ ctx[1] === 2) return create_if_block_1;
+		if (/*step*/ ctx[1] === 3) return create_if_block_2;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block = current_block_type(ctx);
+
+	return {
+		c() {
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = `${/*title*/ ctx[8]}`;
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "1. Осмотр";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span1.textContent = "2. Неисправности";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span2.textContent = "3. Затяжка";
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2.textContent = "✕";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block.c();
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*message*/ ctx[2]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "repair__title svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "active", /*step*/ ctx[1] === 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "done", /*step*/ ctx[1] > 1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "active", /*step*/ ctx[1] === 2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "done", /*step*/ ctx[1] > 2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "active", /*step*/ ctx[1] === 3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "done", /*step*/ ctx[1] > 3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "repair__steps svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "repair__close svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "repair__head svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "repair__msg svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "repair__window svelte-7efrkq");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "repair svelte-7efrkq");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t9);
+			if_block.m(div5, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t11);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*cancel*/ ctx[13]);
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "active", /*step*/ ctx[1] === 1);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span0, "done", /*step*/ ctx[1] > 1);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "active", /*step*/ ctx[1] === 2);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span1, "done", /*step*/ ctx[1] > 2);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "active", /*step*/ ctx[1] === 3);
+			}
+
+			if (dirty[0] & /*step*/ 2) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(span2, "done", /*step*/ ctx[1] > 3);
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+				if_block.p(ctx, dirty);
+			} else {
+				if_block.d(1);
+				if_block = current_block_type(ctx);
+
+				if (if_block) {
+					if_block.c();
+					if_block.m(div5, t10);
+				}
+			}
+
+			if (dirty[0] & /*message*/ 4) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, /*message*/ ctx[2]);
+		},
+		i(local) {
+			if (!div6_intro) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
+					div6_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div6, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 150 });
+					div6_intro.start();
+				});
+			}
+		},
+		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if_block.d();
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+const zoneWidth = 16;
+
+function instance($$self, $$props, $$invalidate) {
+	let { viewData } = $$props;
+
+	const data = (() => {
+		try {
+			return typeof viewData === "string"
+			? JSON.parse(viewData)
+			: viewData || {};
+		} catch(e) {
+			return {};
+		}
+	})();
+
+	const title = data.title || "Ремонт техники";
+	const parts = (data.parts || []).map((p, i) => ({ ...p, id: i, found: false, wrong: false }));
+	const brokenCount = parts.filter(p => p.wear > 75).length;
+	const minSeconds = Math.max(5, Number(data.seconds) || 20);
+	const started = Date.now();
+	let step = 1;
+	let message = "";
+
+	// --- шаг 1: осмотр
+	let holdProgress = 0;
+
+	let holdTimer = null;
+
+	const holdStart = () => {
+		if (step !== 1 || holdTimer) return;
+
+		holdTimer = setInterval(
+			() => {
+				$$invalidate(3, holdProgress = Math.min(100, holdProgress + 100 / 30));
+
+				if (holdProgress >= 100) {
+					holdStop();
+					$$invalidate(1, step = 2);
+					$$invalidate(2, message = "Найдите изношенные узлы");
+				}
+			},
+			100
+		);
+	};
+
+	const holdStop = () => {
+		if (holdTimer) clearInterval(holdTimer);
+		holdTimer = null;
+		if (step === 1 && holdProgress < 100) $$invalidate(3, holdProgress = 0);
+	};
+
+	// --- шаг 2: неисправности
+	let penaltyUntil = 0;
+
+	const pick = part => {
+		if (step !== 2 || part.found || Date.now() < penaltyUntil) return;
+
+		if (part.wear > 75) {
+			part.found = true;
+			$$invalidate(2, message = `${part.name}: заменить`);
+		} else {
+			part.wrong = true;
+			penaltyUntil = Date.now() + 3000;
+			$$invalidate(2, message = `«${part.name}» в норме — перепроверка 3 сек`);
+
+			setTimeout(
+				() => {
+					part.wrong = false;
+					$$invalidate(0, parts[part.id] = part, parts);
+				},
+				3000
+			);
+		}
+
+		$$invalidate(0, parts[part.id] = part, parts);
+
+		if (parts.filter(p => p.found).length >= Math.max(1, brokenCount)) {
+			$$invalidate(1, step = 3);
+			$$invalidate(2, message = "Затяните крепления: жмите, когда бегунок в зелёной зоне");
+			startSlider();
+		}
+	};
+
+	// --- шаг 3: затяжка
+	let slider = 0;
+
+	let direction = 1;
+	let zoneStart = 40;
+	let hits = 0;
+	let misses = 0;
+	let sliderTimer = null;
+
+	const startSlider = () => {
+		$$invalidate(5, zoneStart = 15 + Math.random() * 65);
+
+		sliderTimer = setInterval(
+			() => {
+				$$invalidate(4, slider += direction * 2.2);
+
+				if (slider >= 100) {
+					$$invalidate(4, slider = 100);
+					direction = -1;
+				}
+
+				if (slider <= 0) {
+					$$invalidate(4, slider = 0);
+					direction = 1;
+				}
+			},
+			16
+		);
+	};
+
+	const tighten = () => {
+		if (step !== 3) return;
+
+		if (slider >= zoneStart && slider <= zoneStart + zoneWidth) {
+			$$invalidate(6, hits++, hits);
+			$$invalidate(2, message = `Затянуто ${hits}/3`);
+			$$invalidate(5, zoneStart = 15 + Math.random() * 65);
+			if (hits >= 3) finish();
+		} else {
+			misses++;
+			$$invalidate(2, message = "Сорвалось — ещё раз");
+		}
+	};
+
+	let waiting = 0;
+
+	const finish = () => {
+		if (sliderTimer) clearInterval(sliderTimer);
+		$$invalidate(1, step = 4);
+		const left = minSeconds * 1000 - (Date.now() - started);
+		if (left <= 0) return done();
+		$$invalidate(7, waiting = Math.ceil(left / 1000));
+		$$invalidate(2, message = "Проверка систем...");
+
+		const t = setInterval(
+			() => {
+				$$invalidate(7, waiting--, waiting);
+
+				if (waiting <= 0) {
+					clearInterval(t);
+					done();
+				}
+			},
+			1000
+		);
+	};
+
+	const done = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.repair.done");
+	const cancel = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.repair.cancel");
+
+	const onKey = e => {
+		if (e.code === "Space") tighten(); else if (e.key === "Escape") cancel();
+	};
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onMount)(() => window.addEventListener("keydown", onKey));
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => {
+		window.removeEventListener("keydown", onKey);
+		holdStop();
+		if (sliderTimer) clearInterval(sliderTimer);
+	});
+
+	const click_handler = part => pick(part);
+
+	$$self.$$set = $$props => {
+		if ('viewData' in $$props) $$invalidate(14, viewData = $$props.viewData);
+	};
+
+	return [
+		parts,
+		step,
+		message,
+		holdProgress,
+		slider,
+		zoneStart,
+		hits,
+		waiting,
+		title,
+		holdStart,
+		holdStop,
+		pick,
+		tighten,
+		cancel,
+		viewData,
+		click_handler
+	];
+}
+
+class Armyrepair extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
+	constructor(options) {
+		super();
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 14 }, add_css, [-1, -1]);
+	}
+}
+
+
+if (false) {}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Armyrepair);
 
 
 /***/ }),
@@ -190565,7 +193288,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (70:0) {#if visible}
+// (80:0) {#if visible}
 function create_if_block(ctx) {
 	let if_block_anchor;
 
@@ -190606,7 +193329,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (76:4) {:else}
+// (86:4) {:else}
 function create_else_block(ctx) {
 	let div;
 	let each_value = /*visible*/ ctx[0];
@@ -190666,7 +193389,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (71:4) {#if typeof visible == "string"}
+// (81:4) {#if typeof visible == "string"}
 function create_if_block_1(ctx) {
 	let div2;
 	let div0;
@@ -190706,7 +193429,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (78:12) {#each visible as item}
+// (88:12) {#each visible as item}
 function create_each_block(ctx) {
 	let div2;
 	let div0;
@@ -190840,7 +193563,17 @@ function instance($$self, $$props, $$invalidate) {
 		buyMetro: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Купить билет'),
 		exitMetro: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Для выхода'),
 		Seating: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Чтобы сесть'),
-		SeatingUp: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Встать')
+		SeatingUp: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Встать'),
+		Gym: 'Позаниматься',
+		GymStop: 'Закончить',
+		ArmyDutyBoard: 'Доска нарядов',
+		ArmyDutyPoint: 'Наряд: работать',
+		GymTrainer: 'Абонемент в спортзал',
+		PortForeman: 'Прораб порта: смена',
+		PortPickup: 'Взять ящик',
+		PortDrop: 'Положить ящик в контейнер',
+		FarmForeman: 'Бригадир фермы: смена',
+		FarmBed: 'Посадить и полить'
 	};
 
 	let visible = false;
@@ -264211,8 +266944,8 @@ __webpack_require__.r(__webpack_exports__);
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[11] = list[i];
-	child_ctx[13] = i;
+	child_ctx[12] = list[i];
+	child_ctx[14] = i;
 	return child_ctx;
 }
 
@@ -264223,7 +266956,7 @@ function create_if_block_3(ctx) {
 	let dispose;
 
 	function click_handler() {
-		return /*click_handler*/ ctx[6](/*item*/ ctx[11]);
+		return /*click_handler*/ ctx[6](/*item*/ ctx[12]);
 	}
 
 	return {
@@ -264258,7 +266991,7 @@ function create_if_block_2(ctx) {
 	let dispose;
 
 	function click_handler_1() {
-		return /*click_handler_1*/ ctx[7](/*item*/ ctx[11]);
+		return /*click_handler_1*/ ctx[7](/*item*/ ctx[12]);
 	}
 
 	return {
@@ -264288,25 +267021,41 @@ function create_if_block_2(ctx) {
 
 // (84:15) {#if isVehicleUpdateRank}
 function create_if_block_1(ctx) {
-	let div;
+	let div0;
+	let t1;
+	let div1;
 	let mounted;
 	let dispose;
 
 	function click_handler_2() {
-		return /*click_handler_2*/ ctx[8](/*item*/ ctx[11]);
+		return /*click_handler_2*/ ctx[8](/*item*/ ctx[12]);
+	}
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[9](/*item*/ ctx[12]);
 	}
 
 	return {
 		c() {
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div.textContent = "Настроить доступы";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "fractions__main_button w-100 mt-8");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Настроить доступы";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "Для всех этой модели";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "fractions__main_button w-100 mt-8");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "fractions__main_button w-100 mt-8");
 		},
 		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_2);
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler_2),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler_3)
+				];
+
 				mounted = true;
 			}
 		},
@@ -264314,21 +267063,23 @@ function create_if_block_1(ctx) {
 			ctx = new_ctx;
 		},
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
 			mounted = false;
-			dispose();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
 	};
 }
 
-// (87:15) {#if isSellVehicle}
+// (88:15) {#if isSellVehicle}
 function create_if_block(ctx) {
 	let div;
 	let mounted;
 	let dispose;
 
-	function click_handler_3() {
-		return /*click_handler_3*/ ctx[9](/*item*/ ctx[11]);
+	function click_handler_4() {
+		return /*click_handler_4*/ ctx[10](/*item*/ ctx[12]);
 	}
 
 	return {
@@ -264341,7 +267092,7 @@ function create_if_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_3);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_4);
 				mounted = true;
 			}
 		},
@@ -264362,15 +267113,15 @@ function create_each_block(ctx) {
 	let div5;
 	let div3;
 	let div0;
-	let t0_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[11].model) + "";
+	let t0_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[12].model) + "";
 	let t0;
 	let t1;
 	let div1;
-	let t2_value = /*item*/ ctx[11].number + "";
+	let t2_value = /*item*/ ctx[12].number + "";
 	let t2;
 	let t3;
 	let div2;
-	let t4_value = /*item*/ ctx[11].rankName + "";
+	let t4_value = /*item*/ ctx[12].rankName + "";
 	let t4;
 	let t5;
 	let div4;
@@ -264380,8 +267131,8 @@ function create_each_block(ctx) {
 	let t8;
 	let t9;
 	let t10;
-	let if_block0 = /*item*/ ctx[11].isEvacuation && create_if_block_3(ctx);
-	let if_block1 = /*item*/ ctx[11].isGps && create_if_block_2(ctx);
+	let if_block0 = /*item*/ ctx[12].isEvacuation && create_if_block_3(ctx);
+	let if_block1 = /*item*/ ctx[12].isGps && create_if_block_2(ctx);
 	let if_block2 = /*isVehicleUpdateRank*/ ctx[0] && create_if_block_1(ctx);
 	let if_block3 = /*isSellVehicle*/ ctx[1] && create_if_block(ctx);
 
@@ -264415,7 +267166,7 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "fractions__black_title gray mb-18");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "box-column");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "fractions__black_img");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url(" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[11].model.toLowerCase() + ".png)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url(" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[12].model.toLowerCase() + ".png)");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "fractions__element_black newparams");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "box-flex mt-8");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "box-column");
@@ -264446,15 +267197,15 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t10);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*vehicles*/ 4 && t0_value !== (t0_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[11].model) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*vehicles*/ 4 && t2_value !== (t2_value = /*item*/ ctx[11].number + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-			if (dirty & /*vehicles*/ 4 && t4_value !== (t4_value = /*item*/ ctx[11].rankName + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty & /*vehicles*/ 4 && t0_value !== (t0_value = (0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(/*item*/ ctx[12].model) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty & /*vehicles*/ 4 && t2_value !== (t2_value = /*item*/ ctx[12].number + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty & /*vehicles*/ 4 && t4_value !== (t4_value = /*item*/ ctx[12].rankName + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
 
 			if (dirty & /*vehicles*/ 4) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url(" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[11].model.toLowerCase() + ".png)");
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div4, "background-image", "url(" + document.cloud + "inventoryItems/vehicle/" + /*item*/ ctx[12].model.toLowerCase() + ".png)");
 			}
 
-			if (/*item*/ ctx[11].isEvacuation) {
+			if (/*item*/ ctx[12].isEvacuation) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
@@ -264467,7 +267218,7 @@ function create_each_block(ctx) {
 				if_block0 = null;
 			}
 
-			if (/*item*/ ctx[11].isGps) {
+			if (/*item*/ ctx[12].isGps) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
@@ -264648,7 +267399,7 @@ function create_fragment(ctx) {
 			}
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*onSellCar, vehicles, isSellVehicle, onUpdateRank, isVehicleUpdateRank, onGps, onEvacuation, document, vehicleName*/ 63) {
+			if (dirty & /*onSellCar, vehicles, isSellVehicle, onUpdateRank, vehicleName, isVehicleUpdateRank, onGps, onEvacuation, document*/ 63) {
 				each_value = /*vehicles*/ ctx[2];
 				let i;
 
@@ -264721,7 +267472,8 @@ function instance($$self, $$props, $$invalidate) {
 	const click_handler = item => onEvacuation(item.number);
 	const click_handler_1 = item => onGps(item.number);
 	const click_handler_2 = item => (0,_views_player_menu_elements_fractions_data_js__WEBPACK_IMPORTED_MODULE_4__.onUpdateRank)("Список рангов", "fractionsicon-parking", "Выберите ранг, с которого будет доступен этот транспорт.", 'updateVehicleRank', item.number);
-	const click_handler_3 = item => onSellCar(item.number);
+	const click_handler_3 = item => (0,_views_player_menu_elements_fractions_data_js__WEBPACK_IMPORTED_MODULE_4__.onUpdateRank)("Ранг для всей модели", "fractionsicon-parking", `Ранг доступа сразу для всех ${(0,_api_vehicleName__WEBPACK_IMPORTED_MODULE_1__.vehicleName)(item.model)} фракции.`, 'updateVehicleRankModel', item.number);
+	const click_handler_4 = item => onSellCar(item.number);
 
 	return [
 		isVehicleUpdateRank,
@@ -264733,7 +267485,8 @@ function instance($$self, $$props, $$invalidate) {
 		click_handler,
 		click_handler_1,
 		click_handler_2,
-		click_handler_3
+		click_handler_3,
+		click_handler_4
 	];
 }
 
@@ -317737,7 +320490,7 @@ module.exports = JSON.parse("{\"0\":{\"Id\":0,\"Variation\":0,\"TName\":\"F_FMM_
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse("{\"2\":{\"Id\":2,\"Variation\":2,\"TName\":\"U_FMM_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":114},\"3\":{\"Id\":3,\"Variation\":3,\"TName\":\"U_FMM_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"4\":{\"Id\":4,\"Variation\":4,\"TName\":\"U_FMM_4_\",\"Textures\":[0,1,2,3,11,14],\"Torso\":14},\"6\":{\"Id\":6,\"Variation\":6,\"TName\":\"U_FMM_6_\",\"Textures\":[0,1,3,4,5,6,8,9,10,11],\"Torso\":14},\"7\":{\"Id\":7,\"Variation\":7,\"TName\":\"U_FMM_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"8\":{\"Id\":8,\"Variation\":8,\"TName\":\"U_FMM_8_\",\"Textures\":[0,10,13,14],\"Torso\":8},\"10\":{\"Id\":10,\"Variation\":10,\"TName\":\"U_FMM_10_\",\"Textures\":[0,1,2],\"Torso\":14},\"11\":{\"Id\":11,\"Variation\":11,\"TName\":\"U_FMM_11_\",\"Textures\":[0,1,7,14],\"Torso\":114},\"15\":{\"Id\":15,\"Variation\":15,\"TName\":\"\",\"Textures\":[0],\"Torso\":15},\"19\":{\"Id\":19,\"Variation\":19,\"TName\":\"CLO_XMASM_U_1_\",\"Textures\":[0,1],\"Torso\":14},\"20\":{\"Id\":20,\"Variation\":20,\"TName\":\"CLO_VALM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"21\":{\"Id\":21,\"Variation\":21,\"TName\":\"CLO_VALM_U_1_\",\"Textures\":[0,1,2,3],\"Torso\":114},\"23\":{\"Id\":23,\"Variation\":23,\"TName\":\"CLO_BUSM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"24\":{\"Id\":24,\"Variation\":24,\"TName\":\"CLO_BUSM_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":14},\"25\":{\"Id\":25,\"Variation\":25,\"TName\":\"CLO_BUSM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":114},\"27\":{\"Id\":27,\"Variation\":27,\"TName\":\"CLO_BUSM_U_4_\",\"Textures\":[0,1,2],\"Torso\":14},\"28\":{\"Id\":28,\"Variation\":28,\"TName\":\"CLO_BUSM_U_5_\",\"Textures\":[0,1,2],\"Torso\":14},\"29\":{\"Id\":29,\"Variation\":29,\"TName\":\"CLO_HILF_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"30\":{\"Id\":30,\"Variation\":30,\"TName\":\"CLO_HILF_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"31\":{\"Id\":31,\"Variation\":31,\"TName\":\"CLO_HILF_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"32\":{\"Id\":32,\"Variation\":32,\"TName\":\"CLO_HILF_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"35\":{\"Id\":35,\"Variation\":35,\"TName\":\"CLO_HP_U_2_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"37\":{\"Id\":37,\"Variation\":37,\"TName\":\"CLO_HP_U_4_\",\"Textures\":[0,1,2],\"Torso\":14},\"40\":{\"Id\":40,\"Variation\":40,\"TName\":\"CLO_HP_U_7_\",\"Textures\":[0,1],\"Torso\":114},\"45\":{\"Id\":45,\"Variation\":45,\"TName\":\"CLO_INDM_U_0_\",\"Textures\":[0,1,2],\"Torso\":114},\"46\":{\"Id\":46,\"Variation\":46,\"TName\":\"CLO_INDM_U_1_\",\"Textures\":[0,1,2],\"Torso\":14},\"48\":{\"Id\":48,\"Variation\":48,\"TName\":\"CLO_PIM_U_0_\",\"Textures\":[0],\"Torso\":4},\"49\":{\"Id\":49,\"Variation\":49,\"TName\":\"CLO_LTSMU_0_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"50\":{\"Id\":50,\"Variation\":50,\"TName\":\"CLO_LTSMU_1_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"51\":{\"Id\":51,\"Variation\":51,\"TName\":\"CLO_X2M_U_0_\",\"Textures\":[0,1,2],\"Torso\":4},\"52\":{\"Id\":52,\"Variation\":52,\"TName\":\"CLO_X2M_U_1_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"53\":{\"Id\":53,\"Variation\":53,\"TName\":\"CLO_HSTM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"54\":{\"Id\":54,\"Variation\":54,\"TName\":\"CLO_HSTM_U_1_\",\"Textures\":[0],\"Torso\":1},\"55\":{\"Id\":55,\"Variation\":55,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"56\":{\"Id\":56,\"Variation\":56,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"57\":{\"Id\":57,\"Variation\":57,\"TName\":\"CLO_HSTM_U_4_\",\"Textures\":[0],\"Torso\":1},\"58\":{\"Id\":58,\"Variation\":58,\"TName\":\"CLO_HSTM_U_5_\",\"Textures\":[0],\"Torso\":14},\"59\":{\"Id\":59,\"Variation\":59,\"TName\":\"CLO_HSTM_U_6_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"60\":{\"Id\":60,\"Variation\":60,\"TName\":\"CLO_HSTM_U_7_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"61\":{\"Id\":61,\"Variation\":61,\"TName\":\"CLO_HSTM_U_8_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"62\":{\"Id\":62,\"Variation\":62,\"TName\":\"CLO_HSTM_U_9_\",\"Textures\":[0],\"Torso\":14},\"63\":{\"Id\":63,\"Variation\":63,\"TName\":\"CLO_HSTM_U_10_\",\"Textures\":[0],\"Torso\":5},\"64\":{\"Id\":64,\"Variation\":64,\"TName\":\"CLO_HSTM_U_11_\",\"Textures\":[0],\"Torso\":14},\"65\":{\"Id\":65,\"Variation\":65,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":4},\"66\":{\"Id\":66,\"Variation\":66,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":15},\"67\":{\"Id\":67,\"Variation\":67,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"68\":{\"Id\":68,\"Variation\":68,\"TName\":\"CLO_HSTM_U_15_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"69\":{\"Id\":69,\"Variation\":69,\"TName\":\"CLO_HSTM_U_15_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"70\":{\"Id\":70,\"Variation\":70,\"TName\":\"CLO_LXM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"72\":{\"Id\":72,\"Variation\":72,\"TName\":\"CLO_LXM_U_2_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"74\":{\"Id\":74,\"Variation\":74,\"TName\":\"CLO_LXM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"75\":{\"Id\":75,\"Variation\":75,\"TName\":\"CLO_LXM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"76\":{\"Id\":76,\"Variation\":76,\"TName\":\"CLO_L2M_U_3_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"77\":{\"Id\":77,\"Variation\":77,\"TName\":\"CLO_L2M_U_4_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"78\":{\"Id\":78,\"Variation\":78,\"TName\":\"CLO_L2M_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"79\":{\"Id\":79,\"Variation\":79,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"80\":{\"Id\":80,\"Variation\":80,\"TName\":\"CLO_S1M_U_0_\",\"Textures\":[0,1,2],\"Torso\":0},\"81\":{\"Id\":81,\"Variation\":81,\"TName\":\"CLO_S1M_U_1_\",\"Textures\":[0,1,2],\"Torso\":0},\"82\":{\"Id\":82,\"Variation\":82,\"TName\":\"CLO_S1M_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":0},\"83\":{\"Id\":83,\"Variation\":83,\"TName\":\"CLO_S1M_U_3_\",\"Textures\":[0,1,2,3,4],\"Torso\":0},\"84\":{\"Id\":84,\"Variation\":84,\"TName\":\"CLO_S1M_U_4_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"85\":{\"Id\":85,\"Variation\":85,\"TName\":\"CLO_S1M_U_5_\",\"Textures\":[0],\"Torso\":1},\"86\":{\"Id\":86,\"Variation\":86,\"TName\":\"CLO_S1M_U_6_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"87\":{\"Id\":87,\"Variation\":87,\"TName\":\"CLO_S1M_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"88\":{\"Id\":88,\"Variation\":88,\"TName\":\"CLO_S1M_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"89\":{\"Id\":89,\"Variation\":89,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":4},\"90\":{\"Id\":90,\"Variation\":90,\"TName\":\"CLO_S1M_U_10_\",\"Textures\":[0],\"Torso\":4},\"91\":{\"Id\":91,\"Variation\":91,\"TName\":\"\",\"Textures\":[0],\"Torso\":15},\"92\":{\"Id\":92,\"Variation\":92,\"TName\":\"CLO_APM_U_1_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":6},\"93\":{\"Id\":93,\"Variation\":93,\"TName\":\"CLO_EXM_AU_2_\",\"Textures\":[0,1,2],\"Torso\":0},\"94\":{\"Id\":94,\"Variation\":94,\"TName\":\"CLO_EXM_AU_3_\",\"Textures\":[0,1,2],\"Torso\":0},\"96\":{\"Id\":96,\"Variation\":96,\"TName\":\"CLO_EXM_AU_5_\",\"Textures\":[0],\"Torso\":4},\"97\":{\"Id\":97,\"Variation\":97,\"TName\":\"CLO_EXM_AU_6_\",\"Textures\":[0,1],\"Torso\":0},\"98\":{\"Id\":98,\"Variation\":98,\"TName\":\"CLO_EXM_AU_7_\",\"Textures\":[0,1],\"Torso\":4},\"99\":{\"Id\":99,\"Variation\":99,\"TName\":\"CLO_EXM_AU_8_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"100\":{\"Id\":100,\"Variation\":100,\"TName\":\"CLO_EXM_AU_9_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"101\":{\"Id\":101,\"Variation\":101,\"TName\":\"CLO_EXM_AU_10_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"102\":{\"Id\":102,\"Variation\":102,\"TName\":\"CLO_EXM_AU_11_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"103\":{\"Id\":103,\"Variation\":103,\"TName\":\"CLO_EXM_AU_12_\",\"Textures\":[0],\"Torso\":14},\"104\":{\"Id\":104,\"Variation\":104,\"TName\":\"CLO_EXM_AU_13_\",\"Textures\":[0],\"Torso\":14},\"105\":{\"Id\":105,\"Variation\":105,\"TName\":\"CLO_EXM_AU_14_\",\"Textures\":[0],\"Torso\":11},\"106\":{\"Id\":106,\"Variation\":106,\"TName\":\"CLO_EXM_AU_15_\",\"Textures\":[0],\"Torso\":14},\"107\":{\"Id\":107,\"Variation\":107,\"TName\":\"CLO_EXM_AU_16_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"108\":{\"Id\":108,\"Variation\":108,\"TName\":\"CLO_APM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"109\":{\"Id\":109,\"Variation\":109,\"TName\":\"CLO_EXM_AU_18_\",\"Textures\":[0],\"Torso\":114},\"110\":{\"Id\":110,\"Variation\":110,\"TName\":\"CLO_EXM_AU_19_\",\"Textures\":[0],\"Torso\":4},\"111\":{\"Id\":111,\"Variation\":111,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"112\":{\"Id\":112,\"Variation\":112,\"TName\":\"CLO_EXM_AU_21_\",\"Textures\":[0],\"Torso\":14},\"113\":{\"Id\":113,\"Variation\":113,\"TName\":\"CLO_EXM_AU_22_\",\"Textures\":[0,1,2,3],\"Torso\":6},\"114\":{\"Id\":114,\"Variation\":114,\"TName\":\"CLO_APM_U_23_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"115\":{\"Id\":115,\"Variation\":115,\"TName\":\"CLO_EXM_AU_24_\",\"Textures\":[0],\"Torso\":14},\"116\":{\"Id\":116,\"Variation\":116,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":14},\"117\":{\"Id\":117,\"Variation\":117,\"TName\":\"CLO_X3M_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"118\":{\"Id\":118,\"Variation\":118,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"119\":{\"Id\":119,\"Variation\":119,\"TName\":\"CLO_V2M_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"120\":{\"Id\":120,\"Variation\":120,\"TName\":\"CLO_V2M_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":15},\"121\":{\"Id\":121,\"Variation\":121,\"TName\":\"CLO_S2M_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"122\":{\"Id\":122,\"Variation\":122,\"TName\":\"CLO_S2M_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":14},\"123\":{\"Id\":123,\"Variation\":123,\"TName\":\"CLO_S2M_U_2_\",\"Textures\":[0,1,2],\"Torso\":11},\"124\":{\"Id\":124,\"Variation\":124,\"TName\":\"CLO_S2M_U_3_\",\"Textures\":[0],\"Torso\":14},\"125\":{\"Id\":125,\"Variation\":125,\"TName\":\"CLO_S2M_U_4_\",\"Textures\":[0],\"Torso\":4},\"126\":{\"Id\":126,\"Variation\":126,\"TName\":\"CLO_S2M_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":4},\"127\":{\"Id\":127,\"Variation\":127,\"TName\":\"CLO_S2M_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":14},\"128\":{\"Id\":128,\"Variation\":128,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":0},\"129\":{\"Id\":129,\"Variation\":129,\"TName\":\"CLO_EXM_EU_0_\",\"Textures\":[0],\"Torso\":4},\"130\":{\"Id\":130,\"Variation\":130,\"TName\":\"CLO_EXM_EU_1_\",\"Textures\":[0],\"Torso\":14},\"131\":{\"Id\":131,\"Variation\":131,\"TName\":\"CLO_EXM_EU_2_\",\"Textures\":[0],\"Torso\":0},\"132\":{\"Id\":132,\"Variation\":132,\"TName\":\"CLO_EXM_EU_3_\",\"Textures\":[0],\"Torso\":0},\"133\":{\"Id\":133,\"Variation\":133,\"TName\":\"CLO_EXM_EU_4_\",\"Textures\":[0],\"Torso\":11},\"134\":{\"Id\":134,\"Variation\":134,\"TName\":\"CLO_EXM_EU_5_\",\"Textures\":[0,1,2],\"Torso\":4},\"135\":{\"Id\":135,\"Variation\":135,\"TName\":\"CLO_EXM_EU_6_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":114},\"136\":{\"Id\":136,\"Variation\":136,\"TName\":\"CLO_EXM_EU_7_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"137\":{\"Id\":137,\"Variation\":137,\"TName\":\"CLO_EXM_EU_8_\",\"Textures\":[0,1,2],\"Torso\":114},\"138\":{\"Id\":138,\"Variation\":138,\"TName\":\"CLO_EXM_EU_9_\",\"Textures\":[0,1,2],\"Torso\":4},\"140\":{\"Id\":140,\"Variation\":140,\"TName\":\"CLO_EXM_EU_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":14},\"141\":{\"Id\":141,\"Variation\":141,\"TName\":\"CLO_EXM_EU_12_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":6},\"142\":{\"Id\":142,\"Variation\":142,\"TName\":\"CLO_EXM_EU_13_\",\"Textures\":[0,1,2],\"Torso\":14},\"143\":{\"Id\":143,\"Variation\":143,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"144\":{\"Id\":144,\"Variation\":144,\"TName\":\"CLO_EXM_EU_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":6},\"145\":{\"Id\":145,\"Variation\":145,\"TName\":\"CLO_EXM_EU_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":14},\"146\":{\"Id\":146,\"Variation\":146,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":0},\"147\":{\"Id\":147,\"Variation\":147,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"148\":{\"Id\":148,\"Variation\":148,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"149\":{\"Id\":149,\"Variation\":149,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"150\":{\"Id\":150,\"Variation\":150,\"TName\":\"CLO_STM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"151\":{\"Id\":151,\"Variation\":151,\"TName\":\"CLO_STM_U_4_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"152\":{\"Id\":152,\"Variation\":152,\"TName\":\"CLO_STM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":4},\"153\":{\"Id\":153,\"Variation\":153,\"TName\":\"CLO_STM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"154\":{\"Id\":154,\"Variation\":154,\"TName\":\"CLO_STM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"155\":{\"Id\":155,\"Variation\":155,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":14},\"156\":{\"Id\":156,\"Variation\":156,\"TName\":\"CLO_STM_U_9_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"157\":{\"Id\":157,\"Variation\":157,\"TName\":\"CLO_BIM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"158\":{\"Id\":158,\"Variation\":158,\"TName\":\"CLO_BIM_U_1_\",\"Textures\":[0,1,2],\"Torso\":113},\"159\":{\"Id\":159,\"Variation\":159,\"TName\":\"CLO_BIM_U_2_\",\"Textures\":[0,1],\"Torso\":114},\"160\":{\"Id\":160,\"Variation\":160,\"TName\":\"CLO_BIM_U_3_\",\"Textures\":[0,1],\"Torso\":112},\"161\":{\"Id\":161,\"Variation\":161,\"TName\":\"CLO_BIM_U_4_\",\"Textures\":[0,1,2,3],\"Torso\":6},\"162\":{\"Id\":162,\"Variation\":162,\"TName\":\"CLO_BIM_U_5_\",\"Textures\":[0,1,2,3],\"Torso\":114},\"163\":{\"Id\":163,\"Variation\":163,\"TName\":\"CLO_BIM_U_6_\",\"Textures\":[0],\"Torso\":14},\"164\":{\"Id\":164,\"Variation\":164,\"TName\":\"CLO_BIM_U_7_\",\"Textures\":[0,1,2],\"Torso\":11},\"165\":{\"Id\":165,\"Variation\":165,\"TName\":\"CLO_BIM_U_8_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"166\":{\"Id\":166,\"Variation\":166,\"TName\":\"CLO_BIM_U_9_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"167\":{\"Id\":167,\"Variation\":167,\"TName\":\"CLO_BIM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"168\":{\"Id\":168,\"Variation\":168,\"TName\":\"CLO_BIM_U_11_\",\"Textures\":[0,1,2],\"Torso\":6},\"169\":{\"Id\":169,\"Variation\":169,\"TName\":\"CLO_BIM_U_12_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"170\":{\"Id\":170,\"Variation\":170,\"TName\":\"CLO_BIM_U_13_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"171\":{\"Id\":171,\"Variation\":171,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"172\":{\"Id\":172,\"Variation\":172,\"TName\":\"CLO_BIM_U_15_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"173\":{\"Id\":173,\"Variation\":173,\"TName\":\"CLO_BIM_U_16_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"174\":{\"Id\":174,\"Variation\":174,\"TName\":\"CLO_BIM_U_17_\",\"Textures\":[0,1,2,3],\"Torso\":6},\"175\":{\"Id\":175,\"Variation\":175,\"TName\":\"CLO_BIM_U_18_\",\"Textures\":[0,1,2,3],\"Torso\":114},\"176\":{\"Id\":176,\"Variation\":176,\"TName\":\"CLO_BIM_U_19_\",\"Textures\":[0],\"Torso\":114},\"177\":{\"Id\":177,\"Variation\":177,\"TName\":\"CLO_BIM_U_20_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":113},\"178\":{\"Id\":178,\"Variation\":178,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":4},\"179\":{\"Id\":179,\"Variation\":179,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":112},\"180\":{\"Id\":180,\"Variation\":180,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":113},\"181\":{\"Id\":181,\"Variation\":181,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"182\":{\"Id\":182,\"Variation\":182,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"183\":{\"Id\":183,\"Variation\":183,\"TName\":\"CLO_BIM_U_26_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"184\":{\"Id\":184,\"Variation\":184,\"TName\":\"CLO_BIM_U_27_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"185\":{\"Id\":185,\"Variation\":185,\"TName\":\"CLO_BIM_U_28_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"186\":{\"Id\":186,\"Variation\":186,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":4},\"187\":{\"Id\":187,\"Variation\":187,\"TName\":\"CLO_IEM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":6},\"188\":{\"Id\":188,\"Variation\":188,\"TName\":\"CLO_IEM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":4},\"189\":{\"Id\":189,\"Variation\":189,\"TName\":\"CLO_IEM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"190\":{\"Id\":190,\"Variation\":190,\"TName\":\"CLO_IEM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"191\":{\"Id\":191,\"Variation\":191,\"TName\":\"CLO_IEM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"192\":{\"Id\":192,\"Variation\":192,\"TName\":\"CLO_IEM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"193\":{\"Id\":193,\"Variation\":193,\"TName\":\"CLO_IEM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"194\":{\"Id\":194,\"Variation\":194,\"TName\":\"CLO_X4M_U_8_\",\"Textures\":[0,1,2],\"Torso\":4},\"195\":{\"Id\":195,\"Variation\":195,\"TName\":\"CLO_X4M_U_9_\",\"Textures\":[0,1,2],\"Torso\":4},\"196\":{\"Id\":196,\"Variation\":196,\"TName\":\"CLO_X4M_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"197\":{\"Id\":197,\"Variation\":197,\"TName\":\"CLO_X4M_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"198\":{\"Id\":198,\"Variation\":198,\"TName\":\"CLO_X4M_U_12_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"199\":{\"Id\":199,\"Variation\":199,\"TName\":\"CLO_X4M_U_13_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"200\":{\"Id\":200,\"Variation\":200,\"TName\":\"CLO_IEM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":1},\"201\":{\"Id\":201,\"Variation\":201,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":3},\"202\":{\"Id\":202,\"Variation\":202,\"TName\":\"CLO_IEM_U_16_\",\"Textures\":[0,1,2,3,4],\"Torso\":113},\"203\":{\"Id\":203,\"Variation\":203,\"TName\":\"CLO_IEM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":1},\"204\":{\"Id\":204,\"Variation\":204,\"TName\":\"CLO_IEM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":6},\"205\":{\"Id\":205,\"Variation\":205,\"TName\":\"CLO_IEM_U_16_\",\"Textures\":[0,1,2,3,4],\"Torso\":114},\"206\":{\"Id\":206,\"Variation\":206,\"TName\":\"CLO_GRM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":114},\"207\":{\"Id\":207,\"Variation\":207,\"TName\":\"CLO_GRM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":114},\"209\":{\"Id\":209,\"Variation\":209,\"TName\":\"CLO_GRM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"210\":{\"Id\":210,\"Variation\":210,\"TName\":\"CLO_GRM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"211\":{\"Id\":211,\"Variation\":211,\"TName\":\"CLO_GRM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"212\":{\"Id\":212,\"Variation\":212,\"TName\":\"CLO_GRM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":14},\"213\":{\"Id\":213,\"Variation\":213,\"TName\":\"CLO_GRM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":113},\"214\":{\"Id\":214,\"Variation\":214,\"TName\":\"CLO_GRM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"215\":{\"Id\":215,\"Variation\":215,\"TName\":\"CLO_GRM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":14},\"216\":{\"Id\":216,\"Variation\":216,\"TName\":\"CLO_GRM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":112},\"217\":{\"Id\":217,\"Variation\":217,\"TName\":\"CLO_GRM_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":1},\"218\":{\"Id\":218,\"Variation\":218,\"TName\":\"CLO_BIM_U_27_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":1},\"219\":{\"Id\":219,\"Variation\":219,\"TName\":\"CLO_GRM_U_13_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":114},\"220\":{\"Id\":220,\"Variation\":220,\"TName\":\"CLO_GRM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"221\":{\"Id\":221,\"Variation\":221,\"TName\":\"CLO_GRM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"222\":{\"Id\":222,\"Variation\":222,\"TName\":\"CLO_GRM_U_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"223\":{\"Id\":223,\"Variation\":223,\"TName\":\"CLO_GRM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":113},\"224\":{\"Id\":224,\"Variation\":224,\"TName\":\"CLO_GRM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"225\":{\"Id\":225,\"Variation\":225,\"TName\":\"CLO_GRM_U_19_\",\"Textures\":[0,1],\"Torso\":8},\"227\":{\"Id\":227,\"Variation\":227,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":4},\"228\":{\"Id\":228,\"Variation\":228,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"229\":{\"Id\":229,\"Variation\":229,\"TName\":\"CLO_ARM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":1},\"230\":{\"Id\":230,\"Variation\":230,\"TName\":\"CLO_ARM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"231\":{\"Id\":231,\"Variation\":231,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"232\":{\"Id\":232,\"Variation\":232,\"TName\":\"CLO_SMM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"233\":{\"Id\":233,\"Variation\":233,\"TName\":\"CLO_SMM_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"234\":{\"Id\":234,\"Variation\":234,\"TName\":\"CLO_SMM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"240\":{\"Id\":240,\"Variation\":240,\"TName\":\"CLO_SMM_U_8_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"241\":{\"Id\":241,\"Variation\":241,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":0},\"242\":{\"Id\":242,\"Variation\":242,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":0},\"243\":{\"Id\":243,\"Variation\":243,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"244\":{\"Id\":244,\"Variation\":244,\"TName\":\"CLO_H2M_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"245\":{\"Id\":245,\"Variation\":245,\"TName\":\"CLO_X17M_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":6},\"246\":{\"Id\":246,\"Variation\":246,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":3},\"247\":{\"Id\":247,\"Variation\":247,\"TName\":\"CLO_H2M_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":113},\"248\":{\"Id\":248,\"Variation\":248,\"TName\":\"CLO_H2M_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"249\":{\"Id\":249,\"Variation\":249,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":6},\"250\":{\"Id\":250,\"Variation\":250,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":0},\"251\":{\"Id\":251,\"Variation\":251,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"252\":{\"Id\":252,\"Variation\":252,\"TName\":\"\",\"Textures\":[0],\"Torso\":15},\"253\":{\"Id\":253,\"Variation\":253,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"254\":{\"Id\":254,\"Variation\":254,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"255\":{\"Id\":255,\"Variation\":255,\"TName\":\"CLO_BHM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"256\":{\"Id\":256,\"Variation\":256,\"TName\":\"CLO_BHM_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":1},\"257\":{\"Id\":257,\"Variation\":257,\"TName\":\"CLO_BHM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"258\":{\"Id\":258,\"Variation\":258,\"TName\":\"CLO_BHM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":6},\"259\":{\"Id\":259,\"Variation\":259,\"TName\":\"CLO_BHM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"260\":{\"Id\":260,\"Variation\":260,\"TName\":\"CLO_BHM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"261\":{\"Id\":261,\"Variation\":261,\"TName\":\"CLO_BHM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"262\":{\"Id\":262,\"Variation\":262,\"TName\":\"CLO_BHM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":4},\"263\":{\"Id\":263,\"Variation\":263,\"TName\":\"CLO_BHM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":3},\"264\":{\"Id\":264,\"Variation\":264,\"TName\":\"CLO_BHM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":6},\"265\":{\"Id\":265,\"Variation\":265,\"TName\":\"CLO_BHM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"266\":{\"Id\":266,\"Variation\":266,\"TName\":\"CLO_BHM_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":14},\"267\":{\"Id\":267,\"Variation\":267,\"TName\":\"CLO_BHM_U_12_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"268\":{\"Id\":268,\"Variation\":268,\"TName\":\"CLO_BHM_U_13_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"269\":{\"Id\":269,\"Variation\":269,\"TName\":\"CLO_BHM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"270\":{\"Id\":270,\"Variation\":270,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"272\":{\"Id\":272,\"Variation\":272,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"274\":{\"Id\":274,\"Variation\":274,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":7},\"275\":{\"Id\":275,\"Variation\":275,\"TName\":\"CLO_AWM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":4},\"276\":{\"Id\":276,\"Variation\":276,\"TName\":\"CLO_AWM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"277\":{\"Id\":277,\"Variation\":277,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":164},\"278\":{\"Id\":278,\"Variation\":278,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":165},\"279\":{\"Id\":279,\"Variation\":279,\"TName\":\"CLO_AWM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"280\":{\"Id\":280,\"Variation\":280,\"TName\":\"CLO_AWM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"281\":{\"Id\":281,\"Variation\":281,\"TName\":\"CLO_AWM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"282\":{\"Id\":282,\"Variation\":282,\"TName\":\"CLO_AWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":0},\"283\":{\"Id\":283,\"Variation\":283,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":166},\"284\":{\"Id\":284,\"Variation\":284,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"285\":{\"Id\":285,\"Variation\":285,\"TName\":\"\",\"Textures\":[0],\"Torso\":6},\"286\":{\"Id\":286,\"Variation\":286,\"TName\":\"\",\"Textures\":[0],\"Torso\":167},\"287\":{\"Id\":287,\"Variation\":287,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":3},\"288\":{\"Id\":288,\"Variation\":288,\"TName\":\"CLO_X5M_U_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":6},\"289\":{\"Id\":289,\"Variation\":289,\"TName\":\"CLO_AWM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":113},\"290\":{\"Id\":290,\"Variation\":290,\"TName\":\"\",\"Textures\":[0],\"Torso\":114},\"291\":{\"Id\":291,\"Variation\":291,\"TName\":\"\",\"Textures\":[0],\"Torso\":168},\"292\":{\"Id\":292,\"Variation\":292,\"TName\":\"CLO_VWM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"293\":{\"Id\":293,\"Variation\":293,\"TName\":\"CLO_VWM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"294\":{\"Id\":294,\"Variation\":294,\"TName\":\"CLO_VWM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"295\":{\"Id\":295,\"Variation\":295,\"TName\":\"CLO_VWM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"296\":{\"Id\":296,\"Variation\":296,\"TName\":\"CLO_VWM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"297\":{\"Id\":297,\"Variation\":297,\"TName\":\"CLO_VWM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"298\":{\"Id\":298,\"Variation\":298,\"TName\":\"CLO_VWM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],\"Torso\":4},\"299\":{\"Id\":299,\"Variation\":299,\"TName\":\"CLO_VWM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"300\":{\"Id\":300,\"Variation\":300,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"301\":{\"Id\":301,\"Variation\":301,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"302\":{\"Id\":302,\"Variation\":302,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"303\":{\"Id\":303,\"Variation\":303,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"304\":{\"Id\":304,\"Variation\":304,\"TName\":\"CLO_VWM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"305\":{\"Id\":305,\"Variation\":305,\"TName\":\"CLO_VWM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"306\":{\"Id\":306,\"Variation\":306,\"TName\":\"CLO_VWM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"307\":{\"Id\":307,\"Variation\":307,\"TName\":\"CLO_VWM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"308\":{\"Id\":308,\"Variation\":308,\"TName\":\"CLO_VWM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"309\":{\"Id\":309,\"Variation\":309,\"TName\":\"CLO_VWM_U_19_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":14},\"310\":{\"Id\":310,\"Variation\":310,\"TName\":\"CLO_VWM_U_20_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"311\":{\"Id\":311,\"Variation\":311,\"TName\":\"CLO_VWM_U_21_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"312\":{\"Id\":312,\"Variation\":312,\"TName\":\"CLO_VWM_U_21_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"313\":{\"Id\":313,\"Variation\":313,\"TName\":\"CLO_VWM_U_23_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],\"Torso\":0},\"314\":{\"Id\":314,\"Variation\":314,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"315\":{\"Id\":315,\"Variation\":315,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"316\":{\"Id\":316,\"Variation\":316,\"TName\":\"CLO_H3M_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"317\":{\"Id\":317,\"Variation\":317,\"TName\":\"CLO_H3M_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"318\":{\"Id\":318,\"Variation\":318,\"TName\":\"CLO_H3M_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":11},\"319\":{\"Id\":319,\"Variation\":319,\"TName\":\"CLO_H3M_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":11},\"320\":{\"Id\":320,\"Variation\":320,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"321\":{\"Id\":321,\"Variation\":321,\"TName\":\"CLO_H3M_U_7_\",\"Textures\":[0],\"Torso\":4},\"322\":{\"Id\":322,\"Variation\":322,\"TName\":\"CLO_H3M_U_7_\",\"Textures\":[0],\"Torso\":4},\"323\":{\"Id\":323,\"Variation\":323,\"TName\":\"CLO_H3M_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"324\":{\"Id\":324,\"Variation\":324,\"TName\":\"CLO_H3M_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"325\":{\"Id\":325,\"Variation\":325,\"TName\":\"CLO_H3M_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":0},\"326\":{\"Id\":326,\"Variation\":326,\"TName\":\"CLO_H3M_U_12_\",\"Textures\":[0],\"Torso\":6},\"327\":{\"Id\":327,\"Variation\":327,\"TName\":\"CLO_H3M_U_13_\",\"Textures\":[0],\"Torso\":113},\"328\":{\"Id\":328,\"Variation\":328,\"TName\":\"CLO_H3M_U_14_\",\"Textures\":[0],\"Torso\":4},\"329\":{\"Id\":329,\"Variation\":329,\"TName\":\"CLO_H3M_U_15_\",\"Textures\":[0],\"Torso\":4},\"330\":{\"Id\":330,\"Variation\":330,\"TName\":\"CLO_H3M_U_16_\",\"Textures\":[0],\"Torso\":4},\"331\":{\"Id\":331,\"Variation\":331,\"TName\":\"CLO_H3M_U_16_\",\"Textures\":[0],\"Torso\":4},\"332\":{\"Id\":332,\"Variation\":332,\"TName\":\"CLO_SUM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"333\":{\"Id\":333,\"Variation\":333,\"TName\":\"\",\"Textures\":[0],\"Torso\":169},\"334\":{\"Id\":334,\"Variation\":334,\"TName\":\"CLO_SUM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":11},\"335\":{\"Id\":335,\"Variation\":335,\"TName\":\"CLO_SUM_U_3_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":11},\"336\":{\"Id\":336,\"Variation\":336,\"TName\":\"CLO_SUM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"337\":{\"Id\":337,\"Variation\":337,\"TName\":\"CLO_SUM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":0},\"338\":{\"Id\":338,\"Variation\":338,\"TName\":\"CLO_SUM_U_6_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"339\":{\"Id\":339,\"Variation\":339,\"TName\":\"CLO_SUM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":14},\"340\":{\"Id\":340,\"Variation\":340,\"TName\":\"CLO_SUM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":14},\"341\":{\"Id\":341,\"Variation\":341,\"TName\":\"CLO_SUM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"342\":{\"Id\":342,\"Variation\":342,\"TName\":\"CLO_SUM_U_10_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"343\":{\"Id\":343,\"Variation\":343,\"TName\":\"CLO_SUM_U_11_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"344\":{\"Id\":344,\"Variation\":344,\"TName\":\"CLO_SUM_U_12_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"346\":{\"Id\":346,\"Variation\":346,\"TName\":\"CLO_SUM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":112},\"347\":{\"Id\":347,\"Variation\":347,\"TName\":\"CLO_SUM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":112},\"348\":{\"Id\":348,\"Variation\":348,\"TName\":\"CLO_SUM_U_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"349\":{\"Id\":349,\"Variation\":349,\"TName\":\"CLO_SUM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"350\":{\"Id\":350,\"Variation\":350,\"TName\":\"CLO_SUM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":0},\"351\":{\"Id\":351,\"Variation\":612,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":1},\"352\":{\"Id\":352,\"Variation\":613,\"TName\":\"CMT_CUSTOM_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":0},\"353\":{\"Id\":353,\"Variation\":614,\"TName\":\"CMT_CUSTOM_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":4},\"354\":{\"Id\":354,\"Variation\":615,\"TName\":\"CMT_CUSTOM_4_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":4},\"355\":{\"Id\":355,\"Variation\":616,\"TName\":\"CMT_CUSTOM_5_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":114},\"356\":{\"Id\":356,\"Variation\":617,\"TName\":\"CMT_CUSTOM_6_\",\"Textures\":[0,1,2,3],\"Torso\":0},\"357\":{\"Id\":357,\"Variation\":618,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":1},\"358\":{\"Id\":358,\"Variation\":619,\"TName\":\"CMT_CUSTOM_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],\"Torso\":0},\"359\":{\"Id\":359,\"Variation\":620,\"TName\":\"CMT_CUSTOM_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":0},\"360\":{\"Id\":360,\"Variation\":621,\"TName\":\"CMT_CUSTOM_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":0},\"361\":{\"Id\":361,\"Variation\":622,\"TName\":\"CMT_CUSTOM_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":0},\"362\":{\"Id\":362,\"Variation\":623,\"TName\":\"CMT_CUSTOM_12_\",\"Textures\":[0,1],\"Torso\":6},\"363\":{\"Id\":363,\"Variation\":624,\"TName\":\"CMT_CUSTOM_13_\",\"Textures\":[0],\"Torso\":4},\"364\":{\"Id\":364,\"Variation\":625,\"TName\":\"CMT_CUSTOM_14_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":6},\"365\":{\"Id\":365,\"Variation\":626,\"TName\":\"CMT_CUSTOM_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":6},\"366\":{\"Id\":366,\"Variation\":627,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"367\":{\"Id\":367,\"Variation\":628,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":1},\"368\":{\"Id\":368,\"Variation\":629,\"TName\":\"CMT_CUSTOM_18_\",\"Textures\":[0,1,2],\"Torso\":6},\"369\":{\"Id\":369,\"Variation\":630,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],\"Torso\":4},\"370\":{\"Id\":370,\"Variation\":631,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":14},\"371\":{\"Id\":371,\"Variation\":632,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"372\":{\"Id\":372,\"Variation\":633,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":8},\"373\":{\"Id\":373,\"Variation\":634,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"374\":{\"Id\":374,\"Variation\":635,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":11},\"375\":{\"Id\":375,\"Variation\":636,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":8},\"376\":{\"Id\":376,\"Variation\":637,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"380\":{\"Id\":380,\"Variation\":641,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":1},\"381\":{\"Id\":381,\"Variation\":642,\"TName\":\"CMT_CUSTOM_31_\",\"Textures\":[0,1,2,3,4],\"Torso\":0},\"383\":{\"Id\":383,\"Variation\":644,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":1},\"384\":{\"Id\":384,\"Variation\":645,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"385\":{\"Id\":385,\"Variation\":646,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"386\":{\"Id\":386,\"Variation\":647,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":1},\"387\":{\"Id\":387,\"Variation\":648,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":1},\"388\":{\"Id\":388,\"Variation\":649,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":6},\"390\":{\"Id\":390,\"Variation\":352,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"391\":{\"Id\":391,\"Variation\":353,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":6},\"392\":{\"Id\":392,\"Variation\":354,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"393\":{\"Id\":393,\"Variation\":355,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":15},\"394\":{\"Id\":394,\"Variation\":356,\"TName\":\"\",\"Textures\":[0],\"Torso\":8},\"395\":{\"Id\":395,\"Variation\":357,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":114},\"396\":{\"Id\":396,\"Variation\":358,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"397\":{\"Id\":397,\"Variation\":359,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"398\":{\"Id\":398,\"Variation\":360,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"399\":{\"Id\":399,\"Variation\":361,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"400\":{\"Id\":400,\"Variation\":650,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"401\":{\"Id\":401,\"Variation\":651,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"402\":{\"Id\":402,\"Variation\":652,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"403\":{\"Id\":403,\"Variation\":653,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"404\":{\"Id\":404,\"Variation\":654,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"405\":{\"Id\":405,\"Variation\":655,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"406\":{\"Id\":406,\"Variation\":656,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":6},\"407\":{\"Id\":407,\"Variation\":657,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":0},\"408\":{\"Id\":408,\"Variation\":658,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"409\":{\"Id\":409,\"Variation\":659,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":0},\"410\":{\"Id\":410,\"Variation\":660,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"411\":{\"Id\":411,\"Variation\":661,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"412\":{\"Id\":412,\"Variation\":662,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"413\":{\"Id\":413,\"Variation\":663,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],\"Torso\":0},\"414\":{\"Id\":414,\"Variation\":664,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":1},\"415\":{\"Id\":415,\"Variation\":665,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":0},\"416\":{\"Id\":416,\"Variation\":666,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":1},\"417\":{\"Id\":417,\"Variation\":667,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":14},\"418\":{\"Id\":418,\"Variation\":668,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"419\":{\"Id\":419,\"Variation\":669,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"420\":{\"Id\":420,\"Variation\":670,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],\"Torso\":0},\"421\":{\"Id\":421,\"Variation\":671,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"422\":{\"Id\":422,\"Variation\":672,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"423\":{\"Id\":423,\"Variation\":673,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"424\":{\"Id\":424,\"Variation\":674,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"425\":{\"Id\":425,\"Variation\":675,\"TName\":\"\",\"Textures\":[0],\"Torso\":5},\"426\":{\"Id\":426,\"Variation\":676,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":0},\"427\":{\"Id\":427,\"Variation\":677,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"428\":{\"Id\":428,\"Variation\":678,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"429\":{\"Id\":429,\"Variation\":679,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"430\":{\"Id\":430,\"Variation\":680,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"431\":{\"Id\":431,\"Variation\":681,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"432\":{\"Id\":432,\"Variation\":682,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"433\":{\"Id\":433,\"Variation\":683,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":1},\"434\":{\"Id\":434,\"Variation\":684,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"435\":{\"Id\":435,\"Variation\":685,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"436\":{\"Id\":436,\"Variation\":686,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"437\":{\"Id\":437,\"Variation\":687,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":0},\"438\":{\"Id\":438,\"Variation\":688,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":0},\"439\":{\"Id\":439,\"Variation\":689,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":0},\"440\":{\"Id\":440,\"Variation\":690,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":1},\"441\":{\"Id\":441,\"Variation\":691,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":1},\"442\":{\"Id\":442,\"Variation\":692,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"443\":{\"Id\":443,\"Variation\":693,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"444\":{\"Id\":444,\"Variation\":694,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":0},\"445\":{\"Id\":445,\"Variation\":695,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"446\":{\"Id\":446,\"Variation\":696,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"447\":{\"Id\":447,\"Variation\":697,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"448\":{\"Id\":448,\"Variation\":698,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"449\":{\"Id\":449,\"Variation\":699,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":184},\"450\":{\"Id\":450,\"Variation\":700,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"451\":{\"Id\":451,\"Variation\":701,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"452\":{\"Id\":452,\"Variation\":702,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"453\":{\"Id\":453,\"Variation\":703,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":4},\"454\":{\"Id\":454,\"Variation\":704,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"455\":{\"Id\":455,\"Variation\":705,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"456\":{\"Id\":456,\"Variation\":706,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":184},\"457\":{\"Id\":457,\"Variation\":707,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":11},\"458\":{\"Id\":458,\"Variation\":708,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"459\":{\"Id\":459,\"Variation\":709,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"460\":{\"Id\":460,\"Variation\":710,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"461\":{\"Id\":461,\"Variation\":711,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"462\":{\"Id\":462,\"Variation\":712,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":11},\"463\":{\"Id\":463,\"Variation\":713,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":14},\"464\":{\"Id\":464,\"Variation\":714,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"465\":{\"Id\":465,\"Variation\":715,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"466\":{\"Id\":466,\"Variation\":716,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"467\":{\"Id\":467,\"Variation\":717,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":0},\"468\":{\"Id\":468,\"Variation\":718,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"469\":{\"Id\":469,\"Variation\":719,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":1},\"471\":{\"Id\":471,\"Variation\":721,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"472\":{\"Id\":472,\"Variation\":722,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"473\":{\"Id\":473,\"Variation\":723,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"474\":{\"Id\":474,\"Variation\":724,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"475\":{\"Id\":475,\"Variation\":725,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"476\":{\"Id\":476,\"Variation\":726,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"477\":{\"Id\":477,\"Variation\":727,\"TName\":\"\",\"Textures\":[0,1,2,3,4,6],\"Torso\":4},\"478\":{\"Id\":478,\"Variation\":728,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":4},\"479\":{\"Id\":479,\"Variation\":729,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"480\":{\"Id\":480,\"Variation\":730,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"481\":{\"Id\":481,\"Variation\":731,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"482\":{\"Id\":482,\"Variation\":732,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"483\":{\"Id\":483,\"Variation\":733,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"484\":{\"Id\":484,\"Variation\":734,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":8},\"485\":{\"Id\":485,\"Variation\":735,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"486\":{\"Id\":486,\"Variation\":736,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"487\":{\"Id\":487,\"Variation\":737,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"488\":{\"Id\":488,\"Variation\":738,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"489\":{\"Id\":489,\"Variation\":739,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"490\":{\"Id\":490,\"Variation\":740,\"TName\":\"\",\"Textures\":[0],\"Torso\":11},\"491\":{\"Id\":491,\"Variation\":741,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"492\":{\"Id\":492,\"Variation\":742,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"493\":{\"Id\":493,\"Variation\":743,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"494\":{\"Id\":494,\"Variation\":744,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":4},\"495\":{\"Id\":495,\"Variation\":745,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"496\":{\"Id\":496,\"Variation\":746,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"497\":{\"Id\":497,\"Variation\":747,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"503\":{\"Id\":503,\"Variation\":753,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":4},\"505\":{\"Id\":505,\"Variation\":755,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"506\":{\"Id\":506,\"Variation\":756,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"507\":{\"Id\":507,\"Variation\":757,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"509\":{\"Id\":509,\"Variation\":759,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"510\":{\"Id\":510,\"Variation\":760,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"511\":{\"Id\":511,\"Variation\":761,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"512\":{\"Id\":512,\"Variation\":762,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"513\":{\"Id\":513,\"Variation\":763,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":5},\"514\":{\"Id\":514,\"Variation\":764,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":8},\"515\":{\"Id\":515,\"Variation\":765,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"516\":{\"Id\":516,\"Variation\":766,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"518\":{\"Id\":518,\"Variation\":768,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"519\":{\"Id\":519,\"Variation\":769,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"520\":{\"Id\":520,\"Variation\":770,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"521\":{\"Id\":521,\"Variation\":771,\"TName\":\"\",\"Textures\":[1,2,4,5],\"Torso\":4},\"522\":{\"Id\":522,\"Variation\":772,\"TName\":\"\",\"Textures\":[0,6,7,8,9,10,11,12,13,14,18,19,22,23],\"Torso\":4},\"523\":{\"Id\":523,\"Variation\":773,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":8},\"524\":{\"Id\":524,\"Variation\":774,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"525\":{\"Id\":525,\"Variation\":775,\"TName\":\"\",\"Textures\":[1,4,5,6,7,8,9,16,19,20],\"Torso\":4},\"526\":{\"Id\":526,\"Variation\":776,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":5},\"527\":{\"Id\":527,\"Variation\":777,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":8},\"528\":{\"Id\":528,\"Variation\":778,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"529\":{\"Id\":529,\"Variation\":779,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"530\":{\"Id\":530,\"Variation\":780,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"531\":{\"Id\":531,\"Variation\":781,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"532\":{\"Id\":532,\"Variation\":782,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"533\":{\"Id\":533,\"Variation\":783,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"534\":{\"Id\":534,\"Variation\":784,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"535\":{\"Id\":535,\"Variation\":785,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"537\":{\"Id\":537,\"Variation\":787,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"538\":{\"Id\":538,\"Variation\":788,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4}}");
+module.exports = JSON.parse("{\"2\":{\"Id\":2,\"Variation\":2,\"TName\":\"U_FMM_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":114},\"3\":{\"Id\":3,\"Variation\":3,\"TName\":\"U_FMM_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"4\":{\"Id\":4,\"Variation\":4,\"TName\":\"U_FMM_4_\",\"Textures\":[0,1,2,3,11,14],\"Torso\":14},\"6\":{\"Id\":6,\"Variation\":6,\"TName\":\"U_FMM_6_\",\"Textures\":[0,1,3,4,5,6,8,9,10,11],\"Torso\":14},\"7\":{\"Id\":7,\"Variation\":7,\"TName\":\"U_FMM_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"8\":{\"Id\":8,\"Variation\":8,\"TName\":\"U_FMM_8_\",\"Textures\":[0,10,13,14],\"Torso\":8},\"10\":{\"Id\":10,\"Variation\":10,\"TName\":\"U_FMM_10_\",\"Textures\":[0,1,2],\"Torso\":14},\"11\":{\"Id\":11,\"Variation\":11,\"TName\":\"U_FMM_11_\",\"Textures\":[0,1,7,14],\"Torso\":114},\"15\":{\"Id\":15,\"Variation\":15,\"TName\":\"\",\"Textures\":[0],\"Torso\":15},\"19\":{\"Id\":19,\"Variation\":19,\"TName\":\"CLO_XMASM_U_1_\",\"Textures\":[0,1],\"Torso\":14},\"20\":{\"Id\":20,\"Variation\":20,\"TName\":\"CLO_VALM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"21\":{\"Id\":21,\"Variation\":21,\"TName\":\"CLO_VALM_U_1_\",\"Textures\":[0,1,2,3],\"Torso\":114},\"23\":{\"Id\":23,\"Variation\":23,\"TName\":\"CLO_BUSM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"24\":{\"Id\":24,\"Variation\":24,\"TName\":\"CLO_BUSM_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":14},\"25\":{\"Id\":25,\"Variation\":25,\"TName\":\"CLO_BUSM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":114},\"27\":{\"Id\":27,\"Variation\":27,\"TName\":\"CLO_BUSM_U_4_\",\"Textures\":[0,1,2],\"Torso\":14},\"28\":{\"Id\":28,\"Variation\":28,\"TName\":\"CLO_BUSM_U_5_\",\"Textures\":[0,1,2],\"Torso\":14},\"29\":{\"Id\":29,\"Variation\":29,\"TName\":\"CLO_HILF_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"30\":{\"Id\":30,\"Variation\":30,\"TName\":\"CLO_HILF_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"31\":{\"Id\":31,\"Variation\":31,\"TName\":\"CLO_HILF_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"32\":{\"Id\":32,\"Variation\":32,\"TName\":\"CLO_HILF_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"35\":{\"Id\":35,\"Variation\":35,\"TName\":\"CLO_HP_U_2_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"37\":{\"Id\":37,\"Variation\":37,\"TName\":\"CLO_HP_U_4_\",\"Textures\":[0,1,2],\"Torso\":14},\"40\":{\"Id\":40,\"Variation\":40,\"TName\":\"CLO_HP_U_7_\",\"Textures\":[0,1],\"Torso\":114},\"45\":{\"Id\":45,\"Variation\":45,\"TName\":\"CLO_INDM_U_0_\",\"Textures\":[0,1,2],\"Torso\":114},\"46\":{\"Id\":46,\"Variation\":46,\"TName\":\"CLO_INDM_U_1_\",\"Textures\":[0,1,2],\"Torso\":14},\"48\":{\"Id\":48,\"Variation\":48,\"TName\":\"CLO_PIM_U_0_\",\"Textures\":[0],\"Torso\":4},\"49\":{\"Id\":49,\"Variation\":49,\"TName\":\"CLO_LTSMU_0_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"50\":{\"Id\":50,\"Variation\":50,\"TName\":\"CLO_LTSMU_1_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"51\":{\"Id\":51,\"Variation\":51,\"TName\":\"CLO_X2M_U_0_\",\"Textures\":[0,1,2],\"Torso\":4},\"52\":{\"Id\":52,\"Variation\":52,\"TName\":\"CLO_X2M_U_1_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"53\":{\"Id\":53,\"Variation\":53,\"TName\":\"CLO_HSTM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"54\":{\"Id\":54,\"Variation\":54,\"TName\":\"CLO_HSTM_U_1_\",\"Textures\":[0],\"Torso\":1},\"55\":{\"Id\":55,\"Variation\":55,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"56\":{\"Id\":56,\"Variation\":56,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"57\":{\"Id\":57,\"Variation\":57,\"TName\":\"CLO_HSTM_U_4_\",\"Textures\":[0],\"Torso\":1},\"58\":{\"Id\":58,\"Variation\":58,\"TName\":\"CLO_HSTM_U_5_\",\"Textures\":[0],\"Torso\":14},\"59\":{\"Id\":59,\"Variation\":59,\"TName\":\"CLO_HSTM_U_6_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"60\":{\"Id\":60,\"Variation\":60,\"TName\":\"CLO_HSTM_U_7_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"61\":{\"Id\":61,\"Variation\":61,\"TName\":\"CLO_HSTM_U_8_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"62\":{\"Id\":62,\"Variation\":62,\"TName\":\"CLO_HSTM_U_9_\",\"Textures\":[0],\"Torso\":14},\"63\":{\"Id\":63,\"Variation\":63,\"TName\":\"CLO_HSTM_U_10_\",\"Textures\":[0],\"Torso\":5},\"64\":{\"Id\":64,\"Variation\":64,\"TName\":\"CLO_HSTM_U_11_\",\"Textures\":[0],\"Torso\":14},\"65\":{\"Id\":65,\"Variation\":65,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":4},\"66\":{\"Id\":66,\"Variation\":66,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":15},\"67\":{\"Id\":67,\"Variation\":67,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"68\":{\"Id\":68,\"Variation\":68,\"TName\":\"CLO_HSTM_U_15_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"69\":{\"Id\":69,\"Variation\":69,\"TName\":\"CLO_HSTM_U_15_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"70\":{\"Id\":70,\"Variation\":70,\"TName\":\"CLO_LXM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"72\":{\"Id\":72,\"Variation\":72,\"TName\":\"CLO_LXM_U_2_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"74\":{\"Id\":74,\"Variation\":74,\"TName\":\"CLO_LXM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"75\":{\"Id\":75,\"Variation\":75,\"TName\":\"CLO_LXM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"76\":{\"Id\":76,\"Variation\":76,\"TName\":\"CLO_L2M_U_3_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"77\":{\"Id\":77,\"Variation\":77,\"TName\":\"CLO_L2M_U_4_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"78\":{\"Id\":78,\"Variation\":78,\"TName\":\"CLO_L2M_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"79\":{\"Id\":79,\"Variation\":79,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"80\":{\"Id\":80,\"Variation\":80,\"TName\":\"CLO_S1M_U_0_\",\"Textures\":[0,1,2],\"Torso\":0},\"81\":{\"Id\":81,\"Variation\":81,\"TName\":\"CLO_S1M_U_1_\",\"Textures\":[0,1,2],\"Torso\":0},\"82\":{\"Id\":82,\"Variation\":82,\"TName\":\"CLO_S1M_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":0},\"83\":{\"Id\":83,\"Variation\":83,\"TName\":\"CLO_S1M_U_3_\",\"Textures\":[0,1,2,3,4],\"Torso\":0},\"84\":{\"Id\":84,\"Variation\":84,\"TName\":\"CLO_S1M_U_4_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"85\":{\"Id\":85,\"Variation\":85,\"TName\":\"CLO_S1M_U_5_\",\"Textures\":[0],\"Torso\":1},\"86\":{\"Id\":86,\"Variation\":86,\"TName\":\"CLO_S1M_U_6_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"87\":{\"Id\":87,\"Variation\":87,\"TName\":\"CLO_S1M_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"88\":{\"Id\":88,\"Variation\":88,\"TName\":\"CLO_S1M_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"89\":{\"Id\":89,\"Variation\":89,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":4},\"90\":{\"Id\":90,\"Variation\":90,\"TName\":\"CLO_S1M_U_10_\",\"Textures\":[0],\"Torso\":4},\"91\":{\"Id\":91,\"Variation\":91,\"TName\":\"\",\"Textures\":[0],\"Torso\":15},\"92\":{\"Id\":92,\"Variation\":92,\"TName\":\"CLO_APM_U_1_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":6},\"93\":{\"Id\":93,\"Variation\":93,\"TName\":\"CLO_EXM_AU_2_\",\"Textures\":[0,1,2],\"Torso\":0},\"94\":{\"Id\":94,\"Variation\":94,\"TName\":\"CLO_EXM_AU_3_\",\"Textures\":[0,1,2],\"Torso\":0},\"96\":{\"Id\":96,\"Variation\":96,\"TName\":\"CLO_EXM_AU_5_\",\"Textures\":[0],\"Torso\":4},\"97\":{\"Id\":97,\"Variation\":97,\"TName\":\"CLO_EXM_AU_6_\",\"Textures\":[0,1],\"Torso\":0},\"98\":{\"Id\":98,\"Variation\":98,\"TName\":\"CLO_EXM_AU_7_\",\"Textures\":[0,1],\"Torso\":4},\"99\":{\"Id\":99,\"Variation\":99,\"TName\":\"CLO_EXM_AU_8_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"100\":{\"Id\":100,\"Variation\":100,\"TName\":\"CLO_EXM_AU_9_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"101\":{\"Id\":101,\"Variation\":101,\"TName\":\"CLO_EXM_AU_10_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"102\":{\"Id\":102,\"Variation\":102,\"TName\":\"CLO_EXM_AU_11_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"103\":{\"Id\":103,\"Variation\":103,\"TName\":\"CLO_EXM_AU_12_\",\"Textures\":[0],\"Torso\":14},\"104\":{\"Id\":104,\"Variation\":104,\"TName\":\"CLO_EXM_AU_13_\",\"Textures\":[0],\"Torso\":14},\"105\":{\"Id\":105,\"Variation\":105,\"TName\":\"CLO_EXM_AU_14_\",\"Textures\":[0],\"Torso\":11},\"106\":{\"Id\":106,\"Variation\":106,\"TName\":\"CLO_EXM_AU_15_\",\"Textures\":[0],\"Torso\":14},\"107\":{\"Id\":107,\"Variation\":107,\"TName\":\"CLO_EXM_AU_16_\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"108\":{\"Id\":108,\"Variation\":108,\"TName\":\"CLO_APM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"109\":{\"Id\":109,\"Variation\":109,\"TName\":\"CLO_EXM_AU_18_\",\"Textures\":[0],\"Torso\":114},\"110\":{\"Id\":110,\"Variation\":110,\"TName\":\"CLO_EXM_AU_19_\",\"Textures\":[0],\"Torso\":4},\"111\":{\"Id\":111,\"Variation\":111,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"112\":{\"Id\":112,\"Variation\":112,\"TName\":\"CLO_EXM_AU_21_\",\"Textures\":[0],\"Torso\":14},\"113\":{\"Id\":113,\"Variation\":113,\"TName\":\"CLO_EXM_AU_22_\",\"Textures\":[0,1,2,3],\"Torso\":6},\"114\":{\"Id\":114,\"Variation\":114,\"TName\":\"CLO_APM_U_23_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"115\":{\"Id\":115,\"Variation\":115,\"TName\":\"CLO_EXM_AU_24_\",\"Textures\":[0],\"Torso\":14},\"116\":{\"Id\":116,\"Variation\":116,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":14},\"117\":{\"Id\":117,\"Variation\":117,\"TName\":\"CLO_X3M_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"118\":{\"Id\":118,\"Variation\":118,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"119\":{\"Id\":119,\"Variation\":119,\"TName\":\"CLO_V2M_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"120\":{\"Id\":120,\"Variation\":120,\"TName\":\"CLO_V2M_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":15},\"121\":{\"Id\":121,\"Variation\":121,\"TName\":\"CLO_S2M_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"122\":{\"Id\":122,\"Variation\":122,\"TName\":\"CLO_S2M_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":14},\"123\":{\"Id\":123,\"Variation\":123,\"TName\":\"CLO_S2M_U_2_\",\"Textures\":[0,1,2],\"Torso\":11},\"124\":{\"Id\":124,\"Variation\":124,\"TName\":\"CLO_S2M_U_3_\",\"Textures\":[0],\"Torso\":14},\"125\":{\"Id\":125,\"Variation\":125,\"TName\":\"CLO_S2M_U_4_\",\"Textures\":[0],\"Torso\":4},\"126\":{\"Id\":126,\"Variation\":126,\"TName\":\"CLO_S2M_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":4},\"127\":{\"Id\":127,\"Variation\":127,\"TName\":\"CLO_S2M_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":14},\"128\":{\"Id\":128,\"Variation\":128,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":0},\"129\":{\"Id\":129,\"Variation\":129,\"TName\":\"CLO_EXM_EU_0_\",\"Textures\":[0],\"Torso\":4},\"130\":{\"Id\":130,\"Variation\":130,\"TName\":\"CLO_EXM_EU_1_\",\"Textures\":[0],\"Torso\":14},\"131\":{\"Id\":131,\"Variation\":131,\"TName\":\"CLO_EXM_EU_2_\",\"Textures\":[0],\"Torso\":0},\"132\":{\"Id\":132,\"Variation\":132,\"TName\":\"CLO_EXM_EU_3_\",\"Textures\":[0],\"Torso\":0},\"133\":{\"Id\":133,\"Variation\":133,\"TName\":\"CLO_EXM_EU_4_\",\"Textures\":[0],\"Torso\":11},\"134\":{\"Id\":134,\"Variation\":134,\"TName\":\"CLO_EXM_EU_5_\",\"Textures\":[0,1,2],\"Torso\":4},\"135\":{\"Id\":135,\"Variation\":135,\"TName\":\"CLO_EXM_EU_6_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":114},\"136\":{\"Id\":136,\"Variation\":136,\"TName\":\"CLO_EXM_EU_7_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"137\":{\"Id\":137,\"Variation\":137,\"TName\":\"CLO_EXM_EU_8_\",\"Textures\":[0,1,2],\"Torso\":114},\"138\":{\"Id\":138,\"Variation\":138,\"TName\":\"CLO_EXM_EU_9_\",\"Textures\":[0,1,2],\"Torso\":4},\"140\":{\"Id\":140,\"Variation\":140,\"TName\":\"CLO_EXM_EU_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":14},\"141\":{\"Id\":141,\"Variation\":141,\"TName\":\"CLO_EXM_EU_12_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":6},\"142\":{\"Id\":142,\"Variation\":142,\"TName\":\"CLO_EXM_EU_13_\",\"Textures\":[0,1,2],\"Torso\":14},\"143\":{\"Id\":143,\"Variation\":143,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"144\":{\"Id\":144,\"Variation\":144,\"TName\":\"CLO_EXM_EU_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":6},\"145\":{\"Id\":145,\"Variation\":145,\"TName\":\"CLO_EXM_EU_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":14},\"146\":{\"Id\":146,\"Variation\":146,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":0},\"147\":{\"Id\":147,\"Variation\":147,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"148\":{\"Id\":148,\"Variation\":148,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"149\":{\"Id\":149,\"Variation\":149,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"150\":{\"Id\":150,\"Variation\":150,\"TName\":\"CLO_STM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"151\":{\"Id\":151,\"Variation\":151,\"TName\":\"CLO_STM_U_4_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"152\":{\"Id\":152,\"Variation\":152,\"TName\":\"CLO_STM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":4},\"153\":{\"Id\":153,\"Variation\":153,\"TName\":\"CLO_STM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"154\":{\"Id\":154,\"Variation\":154,\"TName\":\"CLO_STM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"155\":{\"Id\":155,\"Variation\":155,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":14},\"156\":{\"Id\":156,\"Variation\":156,\"TName\":\"CLO_STM_U_9_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"157\":{\"Id\":157,\"Variation\":157,\"TName\":\"CLO_BIM_U_0_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"158\":{\"Id\":158,\"Variation\":158,\"TName\":\"CLO_BIM_U_1_\",\"Textures\":[0,1,2],\"Torso\":113},\"159\":{\"Id\":159,\"Variation\":159,\"TName\":\"CLO_BIM_U_2_\",\"Textures\":[0,1],\"Torso\":114},\"160\":{\"Id\":160,\"Variation\":160,\"TName\":\"CLO_BIM_U_3_\",\"Textures\":[0,1],\"Torso\":112},\"161\":{\"Id\":161,\"Variation\":161,\"TName\":\"CLO_BIM_U_4_\",\"Textures\":[0,1,2,3],\"Torso\":6},\"162\":{\"Id\":162,\"Variation\":162,\"TName\":\"CLO_BIM_U_5_\",\"Textures\":[0,1,2,3],\"Torso\":114},\"163\":{\"Id\":163,\"Variation\":163,\"TName\":\"CLO_BIM_U_6_\",\"Textures\":[0],\"Torso\":14},\"164\":{\"Id\":164,\"Variation\":164,\"TName\":\"CLO_BIM_U_7_\",\"Textures\":[0,1,2],\"Torso\":11},\"165\":{\"Id\":165,\"Variation\":165,\"TName\":\"CLO_BIM_U_8_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"166\":{\"Id\":166,\"Variation\":166,\"TName\":\"CLO_BIM_U_9_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"167\":{\"Id\":167,\"Variation\":167,\"TName\":\"CLO_BIM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"168\":{\"Id\":168,\"Variation\":168,\"TName\":\"CLO_BIM_U_11_\",\"Textures\":[0,1,2],\"Torso\":6},\"169\":{\"Id\":169,\"Variation\":169,\"TName\":\"CLO_BIM_U_12_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"170\":{\"Id\":170,\"Variation\":170,\"TName\":\"CLO_BIM_U_13_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"171\":{\"Id\":171,\"Variation\":171,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"172\":{\"Id\":172,\"Variation\":172,\"TName\":\"CLO_BIM_U_15_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"173\":{\"Id\":173,\"Variation\":173,\"TName\":\"CLO_BIM_U_16_\",\"Textures\":[0,1,2,3],\"Torso\":112},\"174\":{\"Id\":174,\"Variation\":174,\"TName\":\"CLO_BIM_U_17_\",\"Textures\":[0,1,2,3],\"Torso\":6},\"175\":{\"Id\":175,\"Variation\":175,\"TName\":\"CLO_BIM_U_18_\",\"Textures\":[0,1,2,3],\"Torso\":114},\"176\":{\"Id\":176,\"Variation\":176,\"TName\":\"CLO_BIM_U_19_\",\"Textures\":[0],\"Torso\":114},\"177\":{\"Id\":177,\"Variation\":177,\"TName\":\"CLO_BIM_U_20_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":113},\"178\":{\"Id\":178,\"Variation\":178,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":4},\"179\":{\"Id\":179,\"Variation\":179,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":112},\"180\":{\"Id\":180,\"Variation\":180,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":113},\"181\":{\"Id\":181,\"Variation\":181,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"182\":{\"Id\":182,\"Variation\":182,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"183\":{\"Id\":183,\"Variation\":183,\"TName\":\"CLO_BIM_U_26_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"184\":{\"Id\":184,\"Variation\":184,\"TName\":\"CLO_BIM_U_27_\",\"Textures\":[0,1,2,3],\"Torso\":4},\"185\":{\"Id\":185,\"Variation\":185,\"TName\":\"CLO_BIM_U_28_\",\"Textures\":[0,1,2,3],\"Torso\":14},\"186\":{\"Id\":186,\"Variation\":186,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":4},\"187\":{\"Id\":187,\"Variation\":187,\"TName\":\"CLO_IEM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":6},\"188\":{\"Id\":188,\"Variation\":188,\"TName\":\"CLO_IEM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":4},\"189\":{\"Id\":189,\"Variation\":189,\"TName\":\"CLO_IEM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"190\":{\"Id\":190,\"Variation\":190,\"TName\":\"CLO_IEM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"191\":{\"Id\":191,\"Variation\":191,\"TName\":\"CLO_IEM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"192\":{\"Id\":192,\"Variation\":192,\"TName\":\"CLO_IEM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"193\":{\"Id\":193,\"Variation\":193,\"TName\":\"CLO_IEM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"194\":{\"Id\":194,\"Variation\":194,\"TName\":\"CLO_X4M_U_8_\",\"Textures\":[0,1,2],\"Torso\":4},\"195\":{\"Id\":195,\"Variation\":195,\"TName\":\"CLO_X4M_U_9_\",\"Textures\":[0,1,2],\"Torso\":4},\"196\":{\"Id\":196,\"Variation\":196,\"TName\":\"CLO_X4M_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"197\":{\"Id\":197,\"Variation\":197,\"TName\":\"CLO_X4M_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"198\":{\"Id\":198,\"Variation\":198,\"TName\":\"CLO_X4M_U_12_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"199\":{\"Id\":199,\"Variation\":199,\"TName\":\"CLO_X4M_U_13_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"200\":{\"Id\":200,\"Variation\":200,\"TName\":\"CLO_IEM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":1},\"201\":{\"Id\":201,\"Variation\":201,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":3},\"202\":{\"Id\":202,\"Variation\":202,\"TName\":\"CLO_IEM_U_16_\",\"Textures\":[0,1,2,3,4],\"Torso\":113},\"203\":{\"Id\":203,\"Variation\":203,\"TName\":\"CLO_IEM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":1},\"204\":{\"Id\":204,\"Variation\":204,\"TName\":\"CLO_IEM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":6},\"205\":{\"Id\":205,\"Variation\":205,\"TName\":\"CLO_IEM_U_16_\",\"Textures\":[0,1,2,3,4],\"Torso\":114},\"206\":{\"Id\":206,\"Variation\":206,\"TName\":\"CLO_GRM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":114},\"207\":{\"Id\":207,\"Variation\":207,\"TName\":\"CLO_GRM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":114},\"209\":{\"Id\":209,\"Variation\":209,\"TName\":\"CLO_GRM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"210\":{\"Id\":210,\"Variation\":210,\"TName\":\"CLO_GRM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"211\":{\"Id\":211,\"Variation\":211,\"TName\":\"CLO_GRM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"212\":{\"Id\":212,\"Variation\":212,\"TName\":\"CLO_GRM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":14},\"213\":{\"Id\":213,\"Variation\":213,\"TName\":\"CLO_GRM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":113},\"214\":{\"Id\":214,\"Variation\":214,\"TName\":\"CLO_GRM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"215\":{\"Id\":215,\"Variation\":215,\"TName\":\"CLO_GRM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":14},\"216\":{\"Id\":216,\"Variation\":216,\"TName\":\"CLO_GRM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":112},\"217\":{\"Id\":217,\"Variation\":217,\"TName\":\"CLO_GRM_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":1},\"218\":{\"Id\":218,\"Variation\":218,\"TName\":\"CLO_BIM_U_27_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":1},\"219\":{\"Id\":219,\"Variation\":219,\"TName\":\"CLO_GRM_U_13_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":114},\"220\":{\"Id\":220,\"Variation\":220,\"TName\":\"CLO_GRM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"221\":{\"Id\":221,\"Variation\":221,\"TName\":\"CLO_GRM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"222\":{\"Id\":222,\"Variation\":222,\"TName\":\"CLO_GRM_U_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"223\":{\"Id\":223,\"Variation\":223,\"TName\":\"CLO_GRM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":113},\"224\":{\"Id\":224,\"Variation\":224,\"TName\":\"CLO_GRM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"225\":{\"Id\":225,\"Variation\":225,\"TName\":\"CLO_GRM_U_19_\",\"Textures\":[0,1],\"Torso\":8},\"227\":{\"Id\":227,\"Variation\":227,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":4},\"228\":{\"Id\":228,\"Variation\":228,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"229\":{\"Id\":229,\"Variation\":229,\"TName\":\"CLO_ARM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":1},\"230\":{\"Id\":230,\"Variation\":230,\"TName\":\"CLO_ARM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":14},\"231\":{\"Id\":231,\"Variation\":231,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"232\":{\"Id\":232,\"Variation\":232,\"TName\":\"CLO_SMM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"233\":{\"Id\":233,\"Variation\":233,\"TName\":\"CLO_SMM_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"234\":{\"Id\":234,\"Variation\":234,\"TName\":\"CLO_SMM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"240\":{\"Id\":240,\"Variation\":240,\"TName\":\"CLO_SMM_U_8_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"241\":{\"Id\":241,\"Variation\":241,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":0},\"242\":{\"Id\":242,\"Variation\":242,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":0},\"243\":{\"Id\":243,\"Variation\":243,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"244\":{\"Id\":244,\"Variation\":244,\"TName\":\"CLO_H2M_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"245\":{\"Id\":245,\"Variation\":245,\"TName\":\"CLO_X17M_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":6},\"246\":{\"Id\":246,\"Variation\":246,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":3},\"247\":{\"Id\":247,\"Variation\":247,\"TName\":\"CLO_H2M_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":113},\"248\":{\"Id\":248,\"Variation\":248,\"TName\":\"CLO_H2M_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"249\":{\"Id\":249,\"Variation\":249,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":6},\"250\":{\"Id\":250,\"Variation\":250,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":0},\"251\":{\"Id\":251,\"Variation\":251,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"252\":{\"Id\":252,\"Variation\":252,\"TName\":\"\",\"Textures\":[0],\"Torso\":15},\"253\":{\"Id\":253,\"Variation\":253,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"254\":{\"Id\":254,\"Variation\":254,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"255\":{\"Id\":255,\"Variation\":255,\"TName\":\"CLO_BHM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"256\":{\"Id\":256,\"Variation\":256,\"TName\":\"CLO_BHM_U_1_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":1},\"257\":{\"Id\":257,\"Variation\":257,\"TName\":\"CLO_BHM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"258\":{\"Id\":258,\"Variation\":258,\"TName\":\"CLO_BHM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":6},\"259\":{\"Id\":259,\"Variation\":259,\"TName\":\"CLO_BHM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":6},\"260\":{\"Id\":260,\"Variation\":260,\"TName\":\"CLO_BHM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"261\":{\"Id\":261,\"Variation\":261,\"TName\":\"CLO_BHM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"262\":{\"Id\":262,\"Variation\":262,\"TName\":\"CLO_BHM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":4},\"263\":{\"Id\":263,\"Variation\":263,\"TName\":\"CLO_BHM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":3},\"264\":{\"Id\":264,\"Variation\":264,\"TName\":\"CLO_BHM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":6},\"265\":{\"Id\":265,\"Variation\":265,\"TName\":\"CLO_BHM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"266\":{\"Id\":266,\"Variation\":266,\"TName\":\"CLO_BHM_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":14},\"267\":{\"Id\":267,\"Variation\":267,\"TName\":\"CLO_BHM_U_12_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"268\":{\"Id\":268,\"Variation\":268,\"TName\":\"CLO_BHM_U_13_\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"269\":{\"Id\":269,\"Variation\":269,\"TName\":\"CLO_BHM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"270\":{\"Id\":270,\"Variation\":270,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"272\":{\"Id\":272,\"Variation\":272,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"274\":{\"Id\":274,\"Variation\":274,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":7},\"275\":{\"Id\":275,\"Variation\":275,\"TName\":\"CLO_AWM_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":4},\"276\":{\"Id\":276,\"Variation\":276,\"TName\":\"CLO_AWM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"277\":{\"Id\":277,\"Variation\":277,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":164},\"278\":{\"Id\":278,\"Variation\":278,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":165},\"279\":{\"Id\":279,\"Variation\":279,\"TName\":\"CLO_AWM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"280\":{\"Id\":280,\"Variation\":280,\"TName\":\"CLO_AWM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"281\":{\"Id\":281,\"Variation\":281,\"TName\":\"CLO_AWM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"282\":{\"Id\":282,\"Variation\":282,\"TName\":\"CLO_AWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":0},\"283\":{\"Id\":283,\"Variation\":283,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":166},\"284\":{\"Id\":284,\"Variation\":284,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"285\":{\"Id\":285,\"Variation\":285,\"TName\":\"\",\"Textures\":[0],\"Torso\":6},\"286\":{\"Id\":286,\"Variation\":286,\"TName\":\"\",\"Textures\":[0],\"Torso\":167},\"287\":{\"Id\":287,\"Variation\":287,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":3},\"288\":{\"Id\":288,\"Variation\":288,\"TName\":\"CLO_X5M_U_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":6},\"289\":{\"Id\":289,\"Variation\":289,\"TName\":\"CLO_AWM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":113},\"290\":{\"Id\":290,\"Variation\":290,\"TName\":\"\",\"Textures\":[0],\"Torso\":114},\"291\":{\"Id\":291,\"Variation\":291,\"TName\":\"\",\"Textures\":[0],\"Torso\":168},\"292\":{\"Id\":292,\"Variation\":292,\"TName\":\"CLO_VWM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"293\":{\"Id\":293,\"Variation\":293,\"TName\":\"CLO_VWM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"294\":{\"Id\":294,\"Variation\":294,\"TName\":\"CLO_VWM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"295\":{\"Id\":295,\"Variation\":295,\"TName\":\"CLO_VWM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"296\":{\"Id\":296,\"Variation\":296,\"TName\":\"CLO_VWM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"297\":{\"Id\":297,\"Variation\":297,\"TName\":\"CLO_VWM_U_6_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"298\":{\"Id\":298,\"Variation\":298,\"TName\":\"CLO_VWM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24],\"Torso\":4},\"299\":{\"Id\":299,\"Variation\":299,\"TName\":\"CLO_VWM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":11},\"300\":{\"Id\":300,\"Variation\":300,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"301\":{\"Id\":301,\"Variation\":301,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"302\":{\"Id\":302,\"Variation\":302,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"303\":{\"Id\":303,\"Variation\":303,\"TName\":\"CLO_VWM_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"304\":{\"Id\":304,\"Variation\":304,\"TName\":\"CLO_VWM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"305\":{\"Id\":305,\"Variation\":305,\"TName\":\"CLO_VWM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"306\":{\"Id\":306,\"Variation\":306,\"TName\":\"CLO_VWM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"307\":{\"Id\":307,\"Variation\":307,\"TName\":\"CLO_VWM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":6},\"308\":{\"Id\":308,\"Variation\":308,\"TName\":\"CLO_VWM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"309\":{\"Id\":309,\"Variation\":309,\"TName\":\"CLO_VWM_U_19_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":14},\"310\":{\"Id\":310,\"Variation\":310,\"TName\":\"CLO_VWM_U_20_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":14},\"311\":{\"Id\":311,\"Variation\":311,\"TName\":\"CLO_VWM_U_21_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"312\":{\"Id\":312,\"Variation\":312,\"TName\":\"CLO_VWM_U_21_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":14},\"313\":{\"Id\":313,\"Variation\":313,\"TName\":\"CLO_VWM_U_23_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],\"Torso\":0},\"314\":{\"Id\":314,\"Variation\":314,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"315\":{\"Id\":315,\"Variation\":315,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"316\":{\"Id\":316,\"Variation\":316,\"TName\":\"CLO_H3M_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"317\":{\"Id\":317,\"Variation\":317,\"TName\":\"CLO_H3M_U_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"318\":{\"Id\":318,\"Variation\":318,\"TName\":\"CLO_H3M_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":11},\"319\":{\"Id\":319,\"Variation\":319,\"TName\":\"CLO_H3M_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":11},\"320\":{\"Id\":320,\"Variation\":320,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"321\":{\"Id\":321,\"Variation\":321,\"TName\":\"CLO_H3M_U_7_\",\"Textures\":[0],\"Torso\":4},\"322\":{\"Id\":322,\"Variation\":322,\"TName\":\"CLO_H3M_U_7_\",\"Textures\":[0],\"Torso\":4},\"323\":{\"Id\":323,\"Variation\":323,\"TName\":\"CLO_H3M_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"324\":{\"Id\":324,\"Variation\":324,\"TName\":\"CLO_H3M_U_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"325\":{\"Id\":325,\"Variation\":325,\"TName\":\"CLO_H3M_U_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":0},\"326\":{\"Id\":326,\"Variation\":326,\"TName\":\"CLO_H3M_U_12_\",\"Textures\":[0],\"Torso\":6},\"327\":{\"Id\":327,\"Variation\":327,\"TName\":\"CLO_H3M_U_13_\",\"Textures\":[0],\"Torso\":113},\"328\":{\"Id\":328,\"Variation\":328,\"TName\":\"CLO_H3M_U_14_\",\"Textures\":[0],\"Torso\":4},\"329\":{\"Id\":329,\"Variation\":329,\"TName\":\"CLO_H3M_U_15_\",\"Textures\":[0],\"Torso\":4},\"330\":{\"Id\":330,\"Variation\":330,\"TName\":\"CLO_H3M_U_16_\",\"Textures\":[0],\"Torso\":4},\"331\":{\"Id\":331,\"Variation\":331,\"TName\":\"CLO_H3M_U_16_\",\"Textures\":[0],\"Torso\":4},\"332\":{\"Id\":332,\"Variation\":332,\"TName\":\"CLO_SUM_U_0_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":4},\"333\":{\"Id\":333,\"Variation\":333,\"TName\":\"\",\"Textures\":[0],\"Torso\":169},\"334\":{\"Id\":334,\"Variation\":334,\"TName\":\"CLO_SUM_U_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":11},\"335\":{\"Id\":335,\"Variation\":335,\"TName\":\"CLO_SUM_U_3_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":11},\"336\":{\"Id\":336,\"Variation\":336,\"TName\":\"CLO_SUM_U_4_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"337\":{\"Id\":337,\"Variation\":337,\"TName\":\"CLO_SUM_U_5_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":0},\"338\":{\"Id\":338,\"Variation\":338,\"TName\":\"CLO_SUM_U_6_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":14},\"339\":{\"Id\":339,\"Variation\":339,\"TName\":\"CLO_SUM_U_7_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":14},\"340\":{\"Id\":340,\"Variation\":340,\"TName\":\"CLO_SUM_U_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":14},\"341\":{\"Id\":341,\"Variation\":341,\"TName\":\"CLO_SUM_U_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"342\":{\"Id\":342,\"Variation\":342,\"TName\":\"CLO_SUM_U_10_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"343\":{\"Id\":343,\"Variation\":343,\"TName\":\"CLO_SUM_U_11_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"344\":{\"Id\":344,\"Variation\":344,\"TName\":\"CLO_SUM_U_12_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"346\":{\"Id\":346,\"Variation\":346,\"TName\":\"CLO_SUM_U_14_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":112},\"347\":{\"Id\":347,\"Variation\":347,\"TName\":\"CLO_SUM_U_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":112},\"348\":{\"Id\":348,\"Variation\":348,\"TName\":\"CLO_SUM_U_16_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"349\":{\"Id\":349,\"Variation\":349,\"TName\":\"CLO_SUM_U_17_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],\"Torso\":4},\"350\":{\"Id\":350,\"Variation\":350,\"TName\":\"CLO_SUM_U_18_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":0},\"351\":{\"Id\":351,\"Variation\":612,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":1},\"352\":{\"Id\":352,\"Variation\":613,\"TName\":\"CMT_CUSTOM_2_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":0},\"353\":{\"Id\":353,\"Variation\":614,\"TName\":\"CMT_CUSTOM_3_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":4},\"354\":{\"Id\":354,\"Variation\":615,\"TName\":\"CMT_CUSTOM_4_\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":4},\"355\":{\"Id\":355,\"Variation\":616,\"TName\":\"CMT_CUSTOM_5_\",\"Textures\":[0,1,2,3,4,5],\"Torso\":114},\"356\":{\"Id\":356,\"Variation\":617,\"TName\":\"CMT_CUSTOM_6_\",\"Textures\":[0,1,2,3],\"Torso\":0},\"357\":{\"Id\":357,\"Variation\":618,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":1},\"358\":{\"Id\":358,\"Variation\":619,\"TName\":\"CMT_CUSTOM_8_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],\"Torso\":0},\"359\":{\"Id\":359,\"Variation\":620,\"TName\":\"CMT_CUSTOM_9_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":0},\"360\":{\"Id\":360,\"Variation\":621,\"TName\":\"CMT_CUSTOM_10_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14],\"Torso\":0},\"361\":{\"Id\":361,\"Variation\":622,\"TName\":\"CMT_CUSTOM_11_\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":0},\"362\":{\"Id\":362,\"Variation\":623,\"TName\":\"CMT_CUSTOM_12_\",\"Textures\":[0,1],\"Torso\":6},\"363\":{\"Id\":363,\"Variation\":624,\"TName\":\"CMT_CUSTOM_13_\",\"Textures\":[0],\"Torso\":4},\"364\":{\"Id\":364,\"Variation\":625,\"TName\":\"CMT_CUSTOM_14_\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":6},\"365\":{\"Id\":365,\"Variation\":626,\"TName\":\"CMT_CUSTOM_15_\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":6},\"366\":{\"Id\":366,\"Variation\":627,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"367\":{\"Id\":367,\"Variation\":628,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":1},\"368\":{\"Id\":368,\"Variation\":629,\"TName\":\"CMT_CUSTOM_18_\",\"Textures\":[0,1,2],\"Torso\":6},\"369\":{\"Id\":369,\"Variation\":630,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],\"Torso\":4},\"370\":{\"Id\":370,\"Variation\":631,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":14},\"371\":{\"Id\":371,\"Variation\":632,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"372\":{\"Id\":372,\"Variation\":633,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":8},\"373\":{\"Id\":373,\"Variation\":634,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"374\":{\"Id\":374,\"Variation\":635,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":11},\"375\":{\"Id\":375,\"Variation\":636,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":8},\"376\":{\"Id\":376,\"Variation\":637,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"380\":{\"Id\":380,\"Variation\":641,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],\"Torso\":1},\"381\":{\"Id\":381,\"Variation\":642,\"TName\":\"CMT_CUSTOM_31_\",\"Textures\":[0,1,2,3,4],\"Torso\":0},\"383\":{\"Id\":383,\"Variation\":644,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":1},\"384\":{\"Id\":384,\"Variation\":645,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"385\":{\"Id\":385,\"Variation\":646,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"386\":{\"Id\":386,\"Variation\":647,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":1},\"387\":{\"Id\":387,\"Variation\":648,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":1},\"388\":{\"Id\":388,\"Variation\":649,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":6},\"390\":{\"Id\":390,\"Variation\":352,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"391\":{\"Id\":391,\"Variation\":353,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":6},\"392\":{\"Id\":392,\"Variation\":354,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"393\":{\"Id\":393,\"Variation\":355,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":15},\"394\":{\"Id\":394,\"Variation\":356,\"TName\":\"\",\"Textures\":[0],\"Torso\":8},\"395\":{\"Id\":395,\"Variation\":357,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":114},\"396\":{\"Id\":396,\"Variation\":358,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"397\":{\"Id\":397,\"Variation\":359,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"398\":{\"Id\":398,\"Variation\":360,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"399\":{\"Id\":399,\"Variation\":361,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"400\":{\"Id\":400,\"Variation\":650,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"401\":{\"Id\":401,\"Variation\":651,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"402\":{\"Id\":402,\"Variation\":652,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"403\":{\"Id\":403,\"Variation\":653,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"404\":{\"Id\":404,\"Variation\":654,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"405\":{\"Id\":405,\"Variation\":655,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"406\":{\"Id\":406,\"Variation\":656,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":6},\"407\":{\"Id\":407,\"Variation\":657,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":0},\"408\":{\"Id\":408,\"Variation\":658,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"409\":{\"Id\":409,\"Variation\":659,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":0},\"410\":{\"Id\":410,\"Variation\":660,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"411\":{\"Id\":411,\"Variation\":661,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"412\":{\"Id\":412,\"Variation\":662,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"413\":{\"Id\":413,\"Variation\":663,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],\"Torso\":0},\"414\":{\"Id\":414,\"Variation\":664,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":1},\"415\":{\"Id\":415,\"Variation\":665,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":0},\"416\":{\"Id\":416,\"Variation\":666,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10],\"Torso\":1},\"417\":{\"Id\":417,\"Variation\":667,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":14},\"418\":{\"Id\":418,\"Variation\":668,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"419\":{\"Id\":419,\"Variation\":669,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"420\":{\"Id\":420,\"Variation\":670,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],\"Torso\":0},\"421\":{\"Id\":421,\"Variation\":671,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"422\":{\"Id\":422,\"Variation\":672,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"423\":{\"Id\":423,\"Variation\":673,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"424\":{\"Id\":424,\"Variation\":674,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"425\":{\"Id\":425,\"Variation\":675,\"TName\":\"\",\"Textures\":[0],\"Torso\":5},\"426\":{\"Id\":426,\"Variation\":676,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":0},\"427\":{\"Id\":427,\"Variation\":677,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"428\":{\"Id\":428,\"Variation\":678,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"429\":{\"Id\":429,\"Variation\":679,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":1},\"430\":{\"Id\":430,\"Variation\":680,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"431\":{\"Id\":431,\"Variation\":681,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"432\":{\"Id\":432,\"Variation\":682,\"TName\":\"\",\"Textures\":[0],\"Torso\":0},\"433\":{\"Id\":433,\"Variation\":683,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":1},\"434\":{\"Id\":434,\"Variation\":684,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"435\":{\"Id\":435,\"Variation\":685,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"436\":{\"Id\":436,\"Variation\":686,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"437\":{\"Id\":437,\"Variation\":687,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":0},\"438\":{\"Id\":438,\"Variation\":688,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":0},\"439\":{\"Id\":439,\"Variation\":689,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":0},\"440\":{\"Id\":440,\"Variation\":690,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":1},\"441\":{\"Id\":441,\"Variation\":691,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":1},\"442\":{\"Id\":442,\"Variation\":692,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"443\":{\"Id\":443,\"Variation\":693,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"444\":{\"Id\":444,\"Variation\":694,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":0},\"445\":{\"Id\":445,\"Variation\":695,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"446\":{\"Id\":446,\"Variation\":696,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"447\":{\"Id\":447,\"Variation\":697,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"448\":{\"Id\":448,\"Variation\":698,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"449\":{\"Id\":449,\"Variation\":699,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":184},\"450\":{\"Id\":450,\"Variation\":700,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],\"Torso\":4},\"451\":{\"Id\":451,\"Variation\":701,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"452\":{\"Id\":452,\"Variation\":702,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],\"Torso\":0},\"453\":{\"Id\":453,\"Variation\":703,\"TName\":\"\",\"Name\":\"Куртка Highway Patrol\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":4},\"454\":{\"Id\":454,\"Variation\":704,\"TName\":\"\",\"Name\":\"Футболка U.S. Army\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":6},\"455\":{\"Id\":455,\"Variation\":705,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"456\":{\"Id\":456,\"Variation\":706,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":184},\"457\":{\"Id\":457,\"Variation\":707,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":11},\"458\":{\"Id\":458,\"Variation\":708,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":14},\"459\":{\"Id\":459,\"Variation\":709,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"460\":{\"Id\":460,\"Variation\":710,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"461\":{\"Id\":461,\"Variation\":711,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":14},\"462\":{\"Id\":462,\"Variation\":712,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":11},\"463\":{\"Id\":463,\"Variation\":713,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":14},\"464\":{\"Id\":464,\"Variation\":714,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"465\":{\"Id\":465,\"Variation\":715,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"466\":{\"Id\":466,\"Variation\":716,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"467\":{\"Id\":467,\"Variation\":717,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":0},\"468\":{\"Id\":468,\"Variation\":718,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"469\":{\"Id\":469,\"Variation\":719,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":1},\"471\":{\"Id\":471,\"Variation\":721,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"472\":{\"Id\":472,\"Variation\":722,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"473\":{\"Id\":473,\"Variation\":723,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"474\":{\"Id\":474,\"Variation\":724,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"475\":{\"Id\":475,\"Variation\":725,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23],\"Torso\":4},\"476\":{\"Id\":476,\"Variation\":726,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"477\":{\"Id\":477,\"Variation\":727,\"TName\":\"\",\"Textures\":[0,1,2,3,4,6],\"Torso\":4},\"478\":{\"Id\":478,\"Variation\":728,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":4},\"479\":{\"Id\":479,\"Variation\":729,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"480\":{\"Id\":480,\"Variation\":730,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"481\":{\"Id\":481,\"Variation\":731,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"482\":{\"Id\":482,\"Variation\":732,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"483\":{\"Id\":483,\"Variation\":733,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"484\":{\"Id\":484,\"Variation\":734,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":8},\"485\":{\"Id\":485,\"Variation\":735,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"486\":{\"Id\":486,\"Variation\":736,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":1},\"487\":{\"Id\":487,\"Variation\":737,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"488\":{\"Id\":488,\"Variation\":738,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"489\":{\"Id\":489,\"Variation\":739,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"490\":{\"Id\":490,\"Variation\":740,\"TName\":\"\",\"Textures\":[0],\"Torso\":11},\"491\":{\"Id\":491,\"Variation\":741,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"492\":{\"Id\":492,\"Variation\":742,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"493\":{\"Id\":493,\"Variation\":743,\"TName\":\"\",\"Textures\":[0],\"Torso\":1},\"494\":{\"Id\":494,\"Variation\":744,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12],\"Torso\":4},\"495\":{\"Id\":495,\"Variation\":745,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"496\":{\"Id\":496,\"Variation\":746,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":4},\"497\":{\"Id\":497,\"Variation\":747,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11],\"Torso\":4},\"503\":{\"Id\":503,\"Variation\":753,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":4},\"505\":{\"Id\":505,\"Variation\":755,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7],\"Torso\":14},\"506\":{\"Id\":506,\"Variation\":756,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"507\":{\"Id\":507,\"Variation\":757,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":4},\"509\":{\"Id\":509,\"Variation\":759,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5],\"Torso\":4},\"510\":{\"Id\":510,\"Variation\":760,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":6},\"511\":{\"Id\":511,\"Variation\":761,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":14},\"512\":{\"Id\":512,\"Variation\":762,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":14},\"513\":{\"Id\":513,\"Variation\":763,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":5},\"514\":{\"Id\":514,\"Variation\":764,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":8},\"515\":{\"Id\":515,\"Variation\":765,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],\"Torso\":14},\"516\":{\"Id\":516,\"Variation\":766,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"518\":{\"Id\":518,\"Variation\":768,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"519\":{\"Id\":519,\"Variation\":769,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"520\":{\"Id\":520,\"Variation\":770,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"521\":{\"Id\":521,\"Variation\":771,\"TName\":\"\",\"Textures\":[1,2,4,5],\"Torso\":4},\"522\":{\"Id\":522,\"Variation\":772,\"TName\":\"\",\"Textures\":[0,6,7,8,9,10,11,12,13,14,18,19,22,23],\"Torso\":4},\"523\":{\"Id\":523,\"Variation\":773,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":8},\"524\":{\"Id\":524,\"Variation\":774,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8,9],\"Torso\":4},\"525\":{\"Id\":525,\"Variation\":775,\"TName\":\"\",\"Textures\":[1,4,5,6,7,8,9,16,19,20],\"Torso\":4},\"526\":{\"Id\":526,\"Variation\":776,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6,7,8],\"Torso\":5},\"527\":{\"Id\":527,\"Variation\":777,\"TName\":\"\",\"Textures\":[0,1,2,3,4],\"Torso\":8},\"528\":{\"Id\":528,\"Variation\":778,\"TName\":\"\",\"Textures\":[0,1],\"Torso\":4},\"529\":{\"Id\":529,\"Variation\":779,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4},\"530\":{\"Id\":530,\"Variation\":780,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"531\":{\"Id\":531,\"Variation\":781,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"532\":{\"Id\":532,\"Variation\":782,\"TName\":\"\",\"Textures\":[0,1,2,3,4,5,6],\"Torso\":4},\"533\":{\"Id\":533,\"Variation\":783,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"534\":{\"Id\":534,\"Variation\":784,\"TName\":\"\",\"Textures\":[0,1,2,3],\"Torso\":1},\"535\":{\"Id\":535,\"Variation\":785,\"TName\":\"\",\"Textures\":[0],\"Torso\":4},\"537\":{\"Id\":537,\"Variation\":787,\"TName\":\"\",\"Textures\":[0],\"Torso\":14},\"538\":{\"Id\":538,\"Variation\":788,\"TName\":\"\",\"Textures\":[0,1,2],\"Torso\":4}}");
 
 /***/ }),
 
@@ -319166,6 +321919,7 @@ const ItemId = {
 	StolenCarParts: 397,
 	WaterBottle: 398,
 	CarProgrammer: 399,
+	ArmyPass: 400,
 	Bracelets: -15,
 	Watches: -14,
 	Glasses: -13,
@@ -319511,6 +322265,7 @@ const itemsInfo = {
 	[ItemId.StolenJewelry]: {"Name":"Краденые украшения","Description":"Кольца, цепочки, часы. Скупщик у Мавра заберёт.","Icon":"inv-item-gold","Type":"Остальное","Stack":20,"functionType":0},
 	[ItemId.StolenCarParts]: {"Name":"Детали угнанного авто","Description":"Снятые с угнанной машины детали. Скупщик у Мавра заберёт.","Icon":"inv-item-car","Type":"Остальное","Stack":10,"functionType":0},
 	[ItemId.WaterBottle]: {"Name":"Бутылка воды","Description":"Нужна для полива растений.","Icon":"inv-item-eCola","Type":"Остальное","Stack":5,"functionType":0},
+	[ItemId.ArmyPass]: {"Name":"Пропуск на базу","Description":"Пропуск на территорию Форт Занкудо. Действует только для владельца и до указанного срока.","Icon":"inv-item-Note","Type":"Документ","Stack":1,"functionType":0},
 	[ItemId.CarProgrammer]: {"Name":"Программатор","Description":"Взлом электронных замков дорогих машин. Подойдите к машине и используйте.","Icon":"inv-item-picklock","Type":"Инструмент","Stack":1,"functionType":0}
 
 }

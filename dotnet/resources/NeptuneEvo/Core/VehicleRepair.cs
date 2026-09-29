@@ -18,6 +18,7 @@ namespace NeptuneEvo.Core
     ///  - есть ключ (Wrench, в руке или в инвентаре) — 15 секунд анимации, ключ расходуется;
     ///  - ключа нет — мини-игра HotWire «соедините провода» (CEF PlayerHotWire, клиент src_client/vehicle/hotwire.js,
     ///    источник: github.com/NikaKondr/hotwire, MIT). Прошёл — машина починена.
+    ///  - механик с принятым заказом (Jobs/AutoMechanic.cs) — всегда мини-игра, с гаечным ключом в руках; успех — ремонт и оплата заказа.
     /// </summary>
     public class VehicleRepair : Script
     {
@@ -32,6 +33,10 @@ namespace NeptuneEvo.Core
         {
             public ExtVehicle Vehicle;
             public DateTime StartedAt;
+            /// <summary>Что сделать при успехе (по умолчанию — починить машину).</summary>
+            public Action<ExtPlayer, ExtVehicle> OnSuccess;
+            /// <summary>Анимация через AnimToKey (с предметом в руке), а не PlayAnimation.</summary>
+            public bool AnimKey;
         }
 
         private static readonly Dictionary<ExtPlayer, HotWireSession> Sessions = new Dictionary<ExtPlayer, HotWireSession>();
@@ -59,6 +64,12 @@ namespace NeptuneEvo.Core
 
                 if (Sessions.ContainsKey(player))
                     return;
+
+                if (Jobs.AutoMechanic.HasRepairOrder(player, vehicle))
+                {
+                    StartMechanicRepair(player, vehicle);
+                    return;
+                }
 
                 var wrench = Chars.Repository.isItem(player, "inventory", ItemId.Wrench);
                 if (wrench != null)
@@ -140,13 +151,33 @@ namespace NeptuneEvo.Core
             Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Ключа нет — попробуйте починить проводку вручную", 4000);
         }
 
+        /// <summary>Механик по заказу: та же мини-игра, но с ключом в руках, без кулдауна; успех — оплата заказа.</summary>
+        private static void StartMechanicRepair(ExtPlayer player, ExtVehicle vehicle)
+        {
+            Sessions[player] = new HotWireSession
+            {
+                Vehicle = vehicle,
+                StartedAt = DateTime.Now,
+                OnSuccess = Jobs.AutoMechanic.CompleteRepairOrder,
+                AnimKey = true,
+            };
+            Main.OnAntiAnim(player);
+            Trigger.ClientEvent(player, "blockMove", true);
+            Trigger.StopAnimation(player);
+            player.SetSharedData("AnimToKey", "mech_repair");
+            Trigger.ClientEvent(player, "client.hotwire.open");
+        }
+
         private static void StopHotWire(ExtPlayer player)
         {
-            Sessions.Remove(player);
+            Sessions.Remove(player, out var session);
             if (!player.IsCharacterData()) return;
             Main.OffAntiAnim(player);
             Trigger.ClientEvent(player, "blockMove", false);
-            Trigger.StopAnimation(player);
+            if (session != null && session.AnimKey)
+                player.SetSharedData("AnimToKey", 0);
+            else
+                Trigger.StopAnimation(player);
         }
 
         [RemoteEvent("server.hotwire.exit")]
@@ -175,7 +206,10 @@ namespace NeptuneEvo.Core
                     return;
                 }
 
-                FinishRepair(player, vehicle);
+                if (session.OnSuccess != null)
+                    session.OnSuccess(player, vehicle);
+                else
+                    FinishRepair(player, vehicle);
             }
             catch (Exception e)
             {

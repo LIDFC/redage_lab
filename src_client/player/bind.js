@@ -631,6 +631,9 @@ global.binderFunctions.c_globalEscape = (isDeath = false) => {
             return marketPlace.closeApp();
         if (global.escManager.handle())
             return;
+        // Планшет открыт поверх HUD (окно CEF не меняется) — закрываем отдельно
+        if (global.isTabletOpen)
+            return mp.events.call("client.tablet.close");
         global.escManager.unstick();
     }
     if (global.circleOpen) global.CloseCircle (true);

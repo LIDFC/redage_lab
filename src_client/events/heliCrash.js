@@ -96,7 +96,7 @@ const createHeli = async (entity, isStream = false) => {
             const hidden = mp.peds.newLegacy(mp.game.joaat('s_m_y_fireman_01'), new mp.Vector3(position.x, position.y, position.z - 20), 0, ped => {
                 ped.freezePosition(false);
                 ped.setVisible(false, false);
-                ped.setAlpha(0);
+                ped.setAlpha(0, false);
                 updateType (type, position);
             }, mp.players.local.dimension);
             heliData.hidden = hidden;

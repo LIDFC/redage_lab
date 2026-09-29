@@ -220,6 +220,15 @@ namespace NeptuneEvo.Functions
         WeedPlant,
         WeedBuyer,
         ChopShop,
+
+        ArmyDutyBoard,
+        ArmyDutyPoint,
+        GymTrainer,
+        PortForeman,
+        PortPickup,
+        PortDrop,
+        FarmForeman,
+        FarmBed,
     }
     class CustomColShape : Script
     {

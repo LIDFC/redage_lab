@@ -183,8 +183,10 @@
                     <div class="fm__cell">
                         <div class="fm__hole" class:highlight={(drag.active && drag.type === 'shovel' && loaded && hole.fill < SCOOPS) || (drag.type === 'can' && hoverHole === i)}
                              data-hole-idx={i}>
-                            <div class="fm__pit" style="opacity: {1 - hole.fill / SCOOPS * 0.85}"></div>
-                            <div class="fm__soil" style="height: {hole.fill / SCOOPS * 100}%"></div>
+                            <div class="fm__clip">
+                                <div class="fm__pit" style="opacity: {1 - hole.fill / SCOOPS * 0.85}"></div>
+                                <div class="fm__soil" style="height: {hole.fill / SCOOPS * 100}%"></div>
+                            </div>
                             <svg class="fm__sprout" viewBox="0 0 40 50"
                                  style="transform: translateX(-50%) scale({0.8 + hole.water / 100 * 0.45}); filter: saturate({0.55 + hole.water / 100 * 0.6})">
                                 <path d="M20 50 V20" stroke="#4caf50" stroke-width="4" stroke-linecap="round" />
@@ -382,6 +384,12 @@
     .fm__hole.highlight {
         box-shadow: inset 0 0.6vh 1.2vh rgba(0, 0, 0, 0.8), 0 0 0 0.3vh rgba(139, 211, 107, 0.8);
     }
+    .fm__clip {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
     .fm__pit {
         position: absolute;
         inset: 0.8vh;
@@ -394,7 +402,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-        border-radius: 0 0 4vh 4vh;
         background: radial-gradient(ellipse at 50% 20%, #6d4526, #4e311a);
         transition: height 0.2s;
     }

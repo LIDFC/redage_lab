@@ -406,6 +406,15 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Г: `/range`, `/course`, `/armyfile`, `/drill`; ремонт на точках — CEF `ArmyRepair` (3 шага), подсказка при повышении (`SetFracRank`). Таблица `army_training` создаётся сама.
 - Клиент армии: `src_client/fractions/army.js` (сирена Zancudo, метки, тир, полоса, ремонт).
 
+- Наряды: `ArmyDuty.cs` + CEF `ArmyDuty` (доска нарядов по E, офицер назначает, срок — 1 ч онлайна, таблица `army_duty_orders`); точки `/armyset board|kitchen add|clear|clean add|clear`.
+- Техника по рангам: в планшете «Парковка» кнопка «Для всех этой модели» (`server.frac.main.updateVehicleRankModel`).
+- Форма: верхи 453/454 в армейском наборе; названия кастомной одежды — `settings/clothesNames.json` (`Chars/ClothesNames.cs`).
+- Общая очередь записи в БД: `Database/DbQueue.cs` (ЧР остаётся на своей). Везде полное имя `NeptuneEvo.Database.DbQueue`.
+- Качалка: `World/Gym/Fitness.cs` — сила/выносливость (`player_fitness`, лимит прироста в час, спад без тренировок), shared `fitStr` → урон кулаком (`player/damage/index.js`); платные зоны и тренер-NPC — `settings/gym_fitness.json`, `/gym zone add цена дни [радиус]|del`; абонемент — диалог `GymMembership` в `Main.cs`.
+- Подработки: `Jobs/DayLabor/DayLabor.cs` (порт — ящики, ферма — CEF `JobFarmGame`), `settings/daylabor.json`, `/daylabor port foreman|pickup|drop [clear]`, `farm foreman|bed [clear]`; диалог `DayLabor` в `Main.cs`; клиент `src_client/jobs/daylabor.js`.
+- Механик: после согласия клиента заказ ждёт механика (10 мин), капот открывается сам; механик G → Машина → «Починить машину» → HotWire с ключом (`mech_repair`), оплата после успеха (`AutoMechanic.CompleteRepairOrder`).
+- Инкассатор: 4 с анимации у банкомата (`collector_atm`) перед выплатой.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

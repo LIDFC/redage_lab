@@ -393,7 +393,7 @@ namespace NeptuneEvo.Core
                 {
                     case 0:
                         if (characterData.DemorganTime >= 1 || characterData.ArrestTime >= 1) return;
-                        access = VehicleManager.canAccessByNumber(player, vehicle.NumberPlate);
+                        access = VehicleManager.canAccessByNumber(player, vehicle.NumberPlate) || Jobs.AutoMechanic.HasRepairOrder(player, vehicle);
                         if (!access && characterData.AdminLVL < 3)
                         {
                             Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.NoKeysFromVeh), 3000);

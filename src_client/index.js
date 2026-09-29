@@ -744,88 +744,41 @@ gm.events.add("test.test", () => {
 
 });
 
+// /clothoff: сколько моделей одежды в игре (стандартные + dlcpacks сервера) — для сдвига кастомной одежды
+// (сервер Chars/ClothesOffsets.cs). Считаем на временных невидимых NPC, модель игрока не трогаем.
 mp.events.add("clothes.getOffsets", () => {
-	getOffsets();
+	getOffsets().catch((e) => mp.console.logError(`clothes.getOffsets: ${e}`, true));
 });
 
-function getOffsets() {
-    let data = {
-		male: {},
-		female: {}
+async function countForModel(modelName) {
+	const model = mp.game.joaat(modelName);
+	mp.game.streaming.requestModel(model);
+	for (let i = 0; i < 100 && !mp.game.streaming.hasModelLoaded(model); i++) await mp.game.waitAsync(50);
+
+	const pos = global.localplayer.position;
+	const ped = mp.peds.new(model, new mp.Vector3(pos.x, pos.y, pos.z - 30), 0, global.localplayer.dimension);
+	try {
+		for (let i = 0; i < 100 && (!ped.handle || ped.handle === 0); i++) await mp.game.waitAsync(50);
+		if (!ped.handle) throw new Error(`ped ${modelName} не создан`);
+		ped.setAlpha(0);
+		const result = { c: {}, p: {} };
+		for (let id = 0; id <= 11; id++)
+			result.c[id] = mp.game.ped.getNumberOfPedDrawableVariations(ped.handle, id);
+		for (const id of [0, 1, 2, 6, 7])
+			result.p[id] = mp.game.ped.getNumberOfPedPropDrawableVariations(ped.handle, id);
+		return result;
+	} finally {
+		if (mp.peds.exists(ped)) ped.destroy();
 	}
-
-	/*set male model first */
-	mp.players.local.model = mp.game.joaat('mp_m_freemode_01')
-	mp.game.wait(500)
-
-	// clothes
-	let i = 0;
-	for (let key in clothesTypes) {
-		let type = clothesTypes[key]
-		data.male[key] = mp.players.local.getNumberOfDrawableVariations(type)
-		i++;
-	}
-
-	// props
-	i = 0;
-	for (let key in propsTypes) {
-		let type = propsTypes[key]
-		data.male[key] = mp.players.local.getNumberOfPropDrawableVariations(type)
-		i++;
-	}
-
-	/* set female model */
-	mp.players.local.model = mp.game.joaat('mp_f_freemode_01')
-	mp.game.wait(500)
-
-	// clothes
-	i = 0;
-	for (let key in clothesTypes) {
-		let type = clothesTypes[key]
-		data.female[key] = mp.players.local.getNumberOfDrawableVariations(type)
-		i++;
-	}
-
-	// props
-	i = 0;
-	for (let key in propsTypes) {
-		let type = propsTypes[key]
-		data.female[key] = mp.players.local.getNumberOfPropDrawableVariations(type)
-		i++;
-	}
-
-	mp.console.logInfo("MALE::", true)
-	for (let key in data.male) {
-		mp.console.logInfo(`{ ClothesCategory.ClothesType.${key} , ${data.male[key]},`, true)
-	}
-	mp.console.logInfo("FEMALE::", true)
-	for (let key in data.female) {
-		mp.console.logInfo(`{ ClothesCategory.ClothesType.${key} , ${data.female[key]},`, true)
-
-	}    
 }
 
-const clothesTypes = {
-	Head: 0,
-	Masks: 1,
-	HairStyles: 2,
-	Torsos: 3,
-	Legs: 4,
-	BagsAndParachutes: 5,
-	Shoes: 6,
-	Accessories: 7,
-	Undershirts: 8,
-	BodyArmors: 9,
-	Decals: 10,
-	Tops: 11
-}
-
-const propsTypes = {
-	Hats: 0,
-	Glasses: 1,
-	Ears: 2,
-	Watches: 6,
-	Bracelets: 7
+async function getOffsets() {
+	const data = {
+		male: await countForModel('mp_m_freemode_01'),
+		female: await countForModel('mp_f_freemode_01'),
+	};
+	mp.console.logInfo(`clothes offsets: ${JSON.stringify(data)}`, true);
+	mp.events.callRemote("server.clothes.offsets", JSON.stringify(data));
 }
 
 // Торговая площадка (EternalDev MarketPlace)

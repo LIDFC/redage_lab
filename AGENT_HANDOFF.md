@@ -391,6 +391,12 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Подсказки «в деньгах» (`Section.Info`): доход с куста, потери при обнале, диапазон цен скупки, налог дома, сумма зарплат на ближайший PayDay.
 - Погода: в телефоне был захардкожен минус перед температурой; сервер (`World/Weather/Repository.cs`) сдвигает температуру по сезону (зима −10, весна −4, осень −7), минимум +2.
 
+## 7u. Сдвиг кастомной одежды под версию GTA (/clothoff)
+- Кастомная вещь в `mainconfig.clothes_*` — `variation = -1`, номер в игре = `MaxClothesComponent + cvariation − 1` (причёски `barber_*_hair`: `MaxBarberComponent + cvariation`). После обновления GTA стандартной одежды больше → кастомное съезжает.
+- Наши модели — одна коллекция `mp_m/mp_f_clothespack` (ymt в `clothespack`, модели в `clothespack2…47`). Число моделей по слотам — `CustomClothesCount` в `Chars/ClothesOffsets.cs`, пересчёт: `python tools/clothes_offsets/count_custom.py <dlcpacks>`.
+- `/clothoff` (6 lvl, `AdminCommands.Tsc`): клиент (`src_client/index.js`, `getOffsets`) на временных NPC считает всего моделей в игре → сервер вычитает кастомные, показывает разницу; `/clothoff apply` пишет `settings/clothesOffsets.json` и вызывает `OnResourceStart` (перечитать одежду без рестарта); `/clothoff reset` — отключить файл.
+- Дамп DurtyFree (pedComponentVariations) для этого не годится — в нём нет DLC после mpchristmas3.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

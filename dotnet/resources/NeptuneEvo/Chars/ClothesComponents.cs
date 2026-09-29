@@ -140,7 +140,7 @@ namespace NeptuneEvo.Chars
     }
 
 
-    class ClothesComponents : Script
+    partial class ClothesComponents : Script
     {
         private static readonly nLog Log = new nLog("Chars.ClothesComponents");
 
@@ -201,6 +201,8 @@ namespace NeptuneEvo.Chars
         [ServerEvent(Event.ResourceStart)]
         public void OnResourceStart()
         {
+            // Сдвиг кастомной одежды под текущую версию GTA (settings/clothesOffsets.json, /clothoff)
+            LoadClothesOffsets();
             LoadBarber();
             LoadTattoo();
             using (var db = new ConfigBD("ConfigDB"))
@@ -896,7 +898,7 @@ namespace NeptuneEvo.Chars
             return !IsTopUp(cloth);
         }
         
-        public static IReadOnlyDictionary<bool, Dictionary<ClothesComponent, int>> MaxClothesComponent = new Dictionary<bool, Dictionary<ClothesComponent, int>>() 
+        public static Dictionary<bool, Dictionary<ClothesComponent, int>> MaxClothesComponent = new Dictionary<bool, Dictionary<ClothesComponent, int>>() 
         { 
             { true, new Dictionary<ClothesComponent, int>() 
                 {//Man 
@@ -1548,22 +1550,6 @@ namespace NeptuneEvo.Chars
             }
         }
 
-        [Command("clothoff")]
-        public static void CMD_clothesOffsets(ExtPlayer player)
-        {
-            try
-            {
-                if (!player.IsCharacterData()) return;
-                else if (!CommandsAccess.CanUseCmd(player, AdminCommands.Tsc)) return;
-
-                Trigger.ClientEvent(player, "clothes.getOffsets");
-            }
-            catch (Exception e)
-            {
-                Log.Write($"CMD_clothesOffsets Exception: {e.ToString()}");
-            }
-
-        }
 
         [Command(AdminCommands.Tsc)]
         public static void CMD_clothesEditor(ExtPlayer player)
@@ -1703,7 +1689,7 @@ namespace NeptuneEvo.Chars
             Palette
         }
 
-        public static IReadOnlyDictionary<bool, Dictionary<BarberComponent, int>> MaxBarberComponent = new Dictionary<bool, Dictionary<BarberComponent, int>>() 
+        public static Dictionary<bool, Dictionary<BarberComponent, int>> MaxBarberComponent = new Dictionary<bool, Dictionary<BarberComponent, int>>() 
         { 
             { true, new Dictionary<BarberComponent, int>() 
                 {//Man 

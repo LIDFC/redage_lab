@@ -626,7 +626,28 @@ const PlayerAnimList = {
 		playbackRate: 0,
 		freeze: true,
 		collision: true,
-    },	// Уличная качалка (world/gym.js, сервер World/Gym/GymManager.cs)
+    },	// Строй армии: /salute /attention /atease (сервер Fractions/ArmyRP/ArmyService.cs)
+	"army_salute": {
+		animDictionary: "anim@mp_player_intincarsalutestd@ds@",
+		animationName: "idle_a",
+		flag: 49,
+		playbackRate: 0,
+	},
+	"army_attention": {
+		animDictionary: "amb@world_human_stand_guard@male@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"army_atease": {
+		animDictionary: "anim@heists@heist_corona@team_idles@male_a",
+		animationName: "idle",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	// Уличная качалка (world/gym.js, сервер World/Gym/GymManager.cs)
 	"gym_chinup": {
 		animDictionary: "amb@prop_human_muscle_chin_ups@male@base",
 		animationName: "base",

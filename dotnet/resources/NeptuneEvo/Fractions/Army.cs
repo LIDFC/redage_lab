@@ -631,6 +631,8 @@ namespace NeptuneEvo.Fractions
                 if (sessionData.TimersData.LoadMatsTimer != null) Timers.Stop(sessionData.TimersData.LoadMatsTimer);
                 sessionData.TimersData.LoadMatsTimer = null;
                 Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.MatSucLoading), 3000);
+                if (!ArmyRP.ArmyConvoy.IsConvoy(vehicle))
+                    player.SendChatMessage("Оформите рейс: /convoy lspd | sheriff | ems | fib | city — конвой увидят военные, за доставку премия экипажу");
             }
             catch (Exception e)
             {

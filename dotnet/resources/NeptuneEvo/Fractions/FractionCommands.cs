@@ -1009,6 +1009,7 @@ namespace NeptuneEvo.Fractions
                             
                             if (characterData.ArrestType == 1) player.Position = Sheriff.FirstExitPrisonPosition;
                             else if (characterData.ArrestType == 2) player.Position = Sheriff.SecondExitPrisonPosition;
+                            else if (characterData.ArrestType == ArmyRP.ArmyService.GuardhouseArrestType) player.Position = ArmyRP.ArmyService.GuardhouseExit;
                             else player.Position = Police.ExitPrisonPosition;
                             
                             characterData.ArrestTime = 0;
@@ -1042,6 +1043,11 @@ namespace NeptuneEvo.Fractions
                 
                 if (characterData.ArrestType == 1) player.Position = Sheriff.FirstPrisonPosition;
                 else if (characterData.ArrestType == 2) player.Position = Sheriff.SecondPrisonPosition;
+                else if (characterData.ArrestType == ArmyRP.ArmyService.GuardhouseArrestType)
+                {
+                    player.Position = ArmyRP.ArmyService.GuardhouseCell;
+                    Trigger.Dimension(player, ArmyRP.ArmyService.GuardhouseDimension);
+                }
                 else player.Position = Police.PrisonPosition;
                 
                 Police.setPlayerWantedLevel(player, null);

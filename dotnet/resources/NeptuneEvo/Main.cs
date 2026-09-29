@@ -2427,6 +2427,9 @@ namespace NeptuneEvo
                     int fractionId;
                     switch (callback)
                     {
+                        case "DayLabor":
+                            Jobs.DayLabor.DayLabor.OnDialogYes(player);
+                            return;
                         case "GymMembership":
                             World.Gym.Fitness.BuyMembership(player);
                             return;

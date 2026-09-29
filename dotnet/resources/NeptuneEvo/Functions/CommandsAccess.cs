@@ -260,6 +260,7 @@ namespace NeptuneEvo.Functions
         public const string orgcontracts = "orgc";
         public const string cfgpanel = "cfg";
         public const string gym = "gym";
+        public const string daylabor = "daylabor";
         public const string armyset = "armyset";
         public const string removegarage = "removegarage";
         public const string createhouse = "createhouse";
@@ -519,6 +520,7 @@ namespace NeptuneEvo.Functions
             { AdminCommands.orgcontracts, 5 },
             { AdminCommands.cfgpanel, 5 },
             { AdminCommands.gym, 6 },
+            { AdminCommands.daylabor, 6 },
             { AdminCommands.armyset, 6 },
             { AdminCommands.setbliporg, 8 },
             { AdminCommands.delbliporg, 8 },

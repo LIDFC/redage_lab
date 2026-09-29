@@ -663,6 +663,36 @@ const PlayerAnimList = {
 		freeze: true,
 		attachmentName: "broom",
 	},
+	// Подработки (сервер Jobs/DayLabor/DayLabor.cs) и анимации работ
+	"labor_box": {
+		animDictionary: "anim@heists@box_carry@",
+		animationName: "idle",
+		flag: 49,
+		playbackRate: 0,
+		attachmentName: "cargo_box",
+	},
+	"labor_plant": {
+		animDictionary: "amb@world_human_gardener_plant@male@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"mech_repair": {
+		animDictionary: "mini@repair",
+		animationName: "fixing_a_player",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+		attachmentName: "wrench",
+	},
+	"collector_atm": {
+		animDictionary: "amb@prop_human_atm@male@idle_a",
+		animationName: "idle_b",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
 	// Уличная качалка (world/gym.js, сервер World/Gym/GymManager.cs)
 	"gym_chinup": {
 		animDictionary: "amb@prop_human_muscle_chin_ups@male@base",

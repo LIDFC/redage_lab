@@ -443,6 +443,7 @@ require('./synchronization/state.js');
 require('./synchronization/particleFx.js');
 require('./synchronization/sit.js');
 require('./world/gym.js');
+require('./jobs/daylabor.js');
 
 require('./shop/newshop/index.js');
 require('./events/eventsMenu.js');

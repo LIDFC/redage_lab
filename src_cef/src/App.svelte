@@ -134,6 +134,7 @@
 	import VehicleHotWire from '@/views/vehicle/hotwire/index.svelte';
 	import BlackMarket from '@/views/blackmarket/index.svelte';
 	import JobElectricianGame from '@/views/jobs/electrician/index.svelte';
+	import JobFarmGame from '@/views/jobs/farm/index.svelte';
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
@@ -229,6 +230,7 @@
 		VehicleHotWire,
 		BlackMarket,
 		JobElectricianGame,
+		JobFarmGame,
 		HouseFurniture
 	}
 	

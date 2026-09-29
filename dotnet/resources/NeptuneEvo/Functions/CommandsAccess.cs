@@ -259,6 +259,7 @@ namespace NeptuneEvo.Functions
         public const string blackmarket = "bm";
         public const string orgcontracts = "orgc";
         public const string cfgpanel = "cfg";
+        public const string gym = "gym";
         public const string removegarage = "removegarage";
         public const string createhouse = "createhouse";
         public const string tphouse = "tphouse";
@@ -516,6 +517,7 @@ namespace NeptuneEvo.Functions
             { AdminCommands.blackmarket, 5 },
             { AdminCommands.orgcontracts, 5 },
             { AdminCommands.cfgpanel, 5 },
+            { AdminCommands.gym, 6 },
             { AdminCommands.setbliporg, 8 },
             { AdminCommands.delbliporg, 8 },
             { AdminCommands.setmicrophone, 8 },

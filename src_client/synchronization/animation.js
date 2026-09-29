@@ -626,7 +626,53 @@ const PlayerAnimList = {
 		playbackRate: 0,
 		freeze: true,
 		collision: true,
-    },
+    },	// Уличная качалка (world/gym.js, сервер World/Gym/GymManager.cs)
+	"gym_chinup": {
+		animDictionary: "amb@prop_human_muscle_chin_ups@male@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+		collision: true,
+	},
+	"gym_bench": {
+		animDictionary: "amb@prop_human_seat_muscle_bench_press@idle_a",
+		animationName: "idle_a",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+		collision: true,
+		attachmentName: "press1",
+	},
+	"gym_weights": {
+		animDictionary: "amb@world_human_muscle_free_weights@male@barbell@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+		attachmentName: "barbell",
+	},
+	"gym_situps": {
+		animDictionary: "amb@world_human_sit_ups@male@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"gym_pushups": {
+		animDictionary: "amb@world_human_push_ups@male@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"gym_yoga": {
+		animDictionary: "amb@world_human_yoga@male@base",
+		animationName: "base_a",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
 }
 
 gm.events.add('PlayAnimToKey', (entity, status, key) => {

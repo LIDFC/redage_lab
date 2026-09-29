@@ -57,6 +57,8 @@
         exitMetro: translateText('player2', 'Для выхода'),
         Seating: translateText('player2', 'Чтобы сесть'),
         SeatingUp: translateText('player2', 'Встать'),
+        Gym: 'Позаниматься',
+        GymStop: 'Закончить',
     }
 
     let visible = false;

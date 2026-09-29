@@ -17,6 +17,7 @@ const viewClose = {
     PlayerLockBreak: () => mp.events.call("client.lockbreak.cancel"),
     PlayerCyberHack: () => mp.events.call("client.cyberhack.cancel"),
     ArmyRepair: () => mp.events.call("client.army.repair.cancel"),
+    ArmyDuty: () => mp.events.call("client.army.duty.close"),
     AdminConfigPanel: () => mp.events.call("client.cfgpanel.close"),
     PlayerWarehouse: () => mp.events.call("client.warehouse.close"),
     QuestsDialog: () => mp.events.call("client.quest.close"),

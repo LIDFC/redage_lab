@@ -59,6 +59,14 @@
         SeatingUp: translateText('player2', 'Встать'),
         Gym: 'Позаниматься',
         GymStop: 'Закончить',
+        ArmyDutyBoard: 'Доска нарядов',
+        ArmyDutyPoint: 'Наряд: работать',
+        GymTrainer: 'Абонемент в спортзал',
+        PortForeman: 'Прораб порта: смена',
+        PortPickup: 'Взять ящик',
+        PortDrop: 'Положить ящик в контейнер',
+        FarmForeman: 'Бригадир фермы: смена',
+        FarmBed: 'Посадить и полить',
     }
 
     let visible = false;

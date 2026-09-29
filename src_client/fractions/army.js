@@ -191,3 +191,35 @@ gm.events.add("client.army.repair.cancel", () => {
     repairClose();
     mp.events.callRemote("server.army.repair.cancel");
 });
+
+// ---------------------------------------------------------------- наряды (доска нарядов)
+let dutyOpen = false;
+
+gm.events.add("client.army.duty.open", (json) => {
+    if (dutyOpen) return;
+    dutyOpen = true;
+    global.menuOpen();
+    mp.gui.emmit(`window.router.setView("ArmyDuty", ${JSON.stringify(json)})`);
+});
+
+gm.events.add("client.army.duty.update", (json, message, ok) => {
+    if (!dutyOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.army.duty.update", ${JSON.stringify(json)}, ${JSON.stringify(message)}, ${!!ok})`);
+});
+
+gm.events.add("client.army.duty.close", () => {
+    if (!dutyOpen) return;
+    dutyOpen = false;
+    global.menuClose();
+    mp.gui.emmit("window.router.setHud()");
+});
+
+gm.events.add("client.army.duty.take", (type) => {
+    if (!dutyOpen || !global.antiFlood("army.duty", 1000)) return;
+    mp.events.callRemote("server.army.duty.take", String(type));
+});
+
+gm.events.add("client.army.duty.assign", (targetId, type, punishment) => {
+    if (!dutyOpen || !global.antiFlood("army.duty", 1000)) return;
+    mp.events.callRemote("server.army.duty.assign", Number(targetId), String(type), !!punishment);
+});

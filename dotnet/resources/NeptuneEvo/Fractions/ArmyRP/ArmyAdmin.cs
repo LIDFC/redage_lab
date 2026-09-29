@@ -11,7 +11,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
     /// <summary>
     /// /armyset — расстановка точек армии в игре (сохраняется в settings/army.json):
     ///  parade | post add Название | post del | zone clear | zone add | barrier add | barrier del |
-    ///  range | course clear | course add | info | reload
+    ///  range | course clear | course add | board | kitchen add|clear | clean add|clear | info | reload
     /// </summary>
     class ArmyAdmin : Script
     {
@@ -88,17 +88,43 @@ namespace NeptuneEvo.Fractions.ArmyRP
                         Cfg.Course.Add(pos);
                         result = $"Точка полосы {Cfg.Course.Count} добавлена";
                         break;
+                    case "board":
+                        Cfg.DutyBoard = pos;
+                        ArmyDuty.CreatePoints();
+                        result = "Доска нарядов перенесена сюда";
+                        break;
+                    case "kitchen" when action == "add":
+                        Cfg.KitchenPoints.Add(pos);
+                        ArmyDuty.CreatePoints();
+                        result = $"Точка кухни {Cfg.KitchenPoints.Count} добавлена (по порядку обхода)";
+                        break;
+                    case "kitchen" when action == "clear":
+                        Cfg.KitchenPoints.Clear();
+                        ArmyDuty.CreatePoints();
+                        result = "Точки кухни очищены";
+                        break;
+                    case "clean" when action == "add":
+                        Cfg.CleanPoints.Add(pos);
+                        ArmyDuty.CreatePoints();
+                        result = $"Точка уборки {Cfg.CleanPoints.Count} добавлена (по порядку обхода)";
+                        break;
+                    case "clean" when action == "clear":
+                        Cfg.CleanPoints.Clear();
+                        ArmyDuty.CreatePoints();
+                        result = "Точки уборки очищены — добавьте новые: /armyset clean add";
+                        break;
                     case "reload":
                         ArmyConfig.Load();
                         ArmyService.CreatePostLabels();
                         ArmyBase.SpawnBarriers();
+                        ArmyDuty.CreatePoints();
                         result = "settings/army.json перечитан";
                         break;
                     case "info":
                         player.SendChatMessage($"Плац {Cfg.ParadePoint}, постов {Cfg.Posts.Count}, точек периметра {Cfg.Zone.Count}, шлагбаумов {Cfg.Barriers.Count}, точек полосы {Cfg.Course.Count}, рубеж {Cfg.RangePoint}");
                         return;
                     default:
-                        player.SendChatMessage("/armyset parade | post add Название | post del | zone clear | zone add | barrier add | barrier del | range | course clear | course add | info | reload");
+                        player.SendChatMessage("/armyset parade | post add Название | post del | zone clear | zone add | barrier add | barrier del | range | course clear | course add | board | kitchen add|clear | clean add|clear | info | reload");
                         return;
                 }
                 ArmyConfig.Save();

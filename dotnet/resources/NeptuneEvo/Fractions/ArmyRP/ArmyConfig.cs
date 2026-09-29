@@ -41,6 +41,18 @@ namespace NeptuneEvo.Fractions.ArmyRP
         [JsonProperty("postReward")] public int PostReward { get; set; } = 500;
         [JsonProperty("guardhouseMaxMinutes")] public int GuardhouseMaxMinutes { get; set; } = 60;
 
+        // --- Наряды (Fractions/ArmyRP/ArmyDuty.cs)
+        /// <summary>Доска нарядов: E — окно нарядов.</summary>
+        [JsonProperty("dutyBoard")] public Vector3 DutyBoard { get; set; }
+        [JsonProperty("kitchenPoints")] public List<Vector3> KitchenPoints { get; set; } = new List<Vector3>();
+        [JsonProperty("cleanPoints")] public List<Vector3> CleanPoints { get; set; } = new List<Vector3>();
+        /// <summary>Сколько секунд работать на одной точке.</summary>
+        [JsonProperty("dutyActionSeconds")] public int DutyActionSeconds { get; set; } = 8;
+        /// <summary>Премия за добровольный наряд (по наказанию — без премии).</summary>
+        [JsonProperty("dutyReward")] public int DutyReward { get; set; } = 700;
+        /// <summary>Срок наряда — минут онлайна игрока.</summary>
+        [JsonProperty("dutyOnlineMinutes")] public int DutyOnlineMinutes { get; set; } = 60;
+
         // --- Б. Режимная зона и КПП
         /// <summary>Периметр Форт Занкудо (многоугольник, по порядку обхода).</summary>
         [JsonProperty("zone")] public List<Vector3> Zone { get; set; } = new List<Vector3>();
@@ -94,6 +106,23 @@ namespace NeptuneEvo.Fractions.ArmyRP
             if (config.Zone == null || config.Zone.Count < 3)
             {
                 config.Zone = DefaultZone();
+                save = true;
+            }
+            config.KitchenPoints ??= new List<Vector3>();
+            if (config.CleanPoints == null || config.CleanPoints.Count == 0)
+            {
+                // Уборка плаца: точки вокруг места построения
+                var c = config.ParadePoint;
+                config.CleanPoints = new List<Vector3>
+                {
+                    new Vector3(c.X + 8, c.Y, c.Z), new Vector3(c.X, c.Y + 8, c.Z),
+                    new Vector3(c.X - 8, c.Y, c.Z), new Vector3(c.X, c.Y - 8, c.Z),
+                };
+                save = true;
+            }
+            if (config.DutyBoard == null)
+            {
+                config.DutyBoard = new Vector3(config.ParadePoint.X + 4, config.ParadePoint.Y + 4, config.ParadePoint.Z);
                 save = true;
             }
             if (config.Course == null || config.Course.Count < 2)

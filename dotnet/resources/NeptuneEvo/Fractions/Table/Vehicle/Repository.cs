@@ -96,6 +96,55 @@ namespace NeptuneEvo.Fractions.Table.Vehicle
                 Debugs.Repository.Exception(e);
             }
         }
+        /// <summary>Ранг доступа сразу для всех машин фракции той же модели, что и выбранная (планшет → Парковка).</summary>
+        public static void UpdateRankModel(ExtPlayer player, string number, int rank)
+        {
+            try
+            {
+                if (!player.IsFractionAccess(RankToAccess.SetVehicleRank)) return;
+                var memberFractionData = player.GetFractionMemberData();
+                if (memberFractionData == null)
+                    return;
+                var fractionData = Manager.GetFractionData(memberFractionData.Id);
+                if (fractionData == null || !fractionData.Vehicles.TryGetValue(number, out var selected))
+                    return;
+                if (rank > memberFractionData.Rank)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.YouCantUpVehicleRank), 3000);
+                    return;
+                }
+                if (rank < 0)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.CantSetNullRank), 3000);
+                    return;
+                }
+                int changed = 0, skipped = 0;
+                foreach (var (vehNumber, vData) in fractionData.Vehicles.ToList())
+                {
+                    if (!string.Equals(vData.model, selected.model, StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    // Машины с рангом выше своего не трогаем — как и при настройке по одной
+                    if (vData.rank > memberFractionData.Rank)
+                    {
+                        skipped++;
+                        continue;
+                    }
+                    var vehicle = VehicleData.LocalData.Repository.GetVehicleToNumber(VehicleAccess.Fraction, vehNumber);
+                    if (vehicle == null)
+                        continue;
+                    Commands.SetFracVehRank(player, vehicle, rank);
+                    changed++;
+                }
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter,
+                    $"Ранг {rank} для всех «{selected.model}»: изменено {changed}{(skipped > 0 ? $", пропущено {skipped} (ранг выше вашего)" : "")}", 5000);
+                GetVehicles(player);
+            }
+            catch (Exception e)
+            {
+                Debugs.Repository.Exception(e);
+            }
+        }
+
         public static void Evacuation(ExtPlayer player, string number) 
         {
             try

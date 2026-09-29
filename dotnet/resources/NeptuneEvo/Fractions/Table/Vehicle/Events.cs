@@ -17,6 +17,10 @@ namespace NeptuneEvo.Fractions.Table.Vehicle
         public void Gps(ExtPlayer player, string number) => 
             Repository.Gps(player, number);
         
+        [RemoteEvent("server.frac.main.updateVehicleRankModel")]
+        public void UpdateRankModel(ExtPlayer player, string number, int rank) =>
+            Repository.UpdateRankModel(player, number, rank);
+
         [RemoteEvent("server.frac.main.updateVehicleRank")]
         public void UpdateRank(ExtPlayer player, string number, int rank) => 
             Repository.UpdateRank(player, number, rank);

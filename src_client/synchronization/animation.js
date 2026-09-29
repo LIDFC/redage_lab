@@ -647,6 +647,22 @@ const PlayerAnimList = {
 		playbackRate: 0,
 		freeze: true,
 	},
+	// Наряды армии (сервер Fractions/ArmyRP/ArmyDuty.cs)
+	"army_kitchen": {
+		animDictionary: "timetable@floyd@clean_kitchen@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"army_broom": {
+		animDictionary: "amb@world_human_janitor@male@base",
+		animationName: "base",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+		attachmentName: "broom",
+	},
 	// Уличная качалка (world/gym.js, сервер World/Gym/GymManager.cs)
 	"gym_chinup": {
 		animDictionary: "amb@prop_human_muscle_chin_ups@male@base",

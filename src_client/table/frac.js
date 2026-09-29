@@ -459,6 +459,13 @@ gm.events.add(clientName + "gps", (number) => {
     mp.events.callRemote(serverName + "gps", number);
 });
 
+gm.events.add(clientName + "updateVehicleRankModel", (number, rank) => {
+    if (!global.antiFlood("table.updateVehicleRank", 1000))
+        return;
+
+    mp.events.callRemote(serverName + "updateVehicleRankModel", number, rank);
+});
+
 gm.events.add(clientName + "updateVehicleRank", (number, rank) => {
     if (!global.antiFlood("table.updateVehicleRank", 1000))
         return;

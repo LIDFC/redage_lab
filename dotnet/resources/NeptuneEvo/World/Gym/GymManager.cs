@@ -18,7 +18,7 @@ namespace NeptuneEvo.World.Gym
     /// Клиент (src_client/world/gym.js) сам находит тренажёр рядом (объекты мира Muscle Beach и тюрьмы + наши из settings/gym.json)
     /// и просит начать упражнение; сервер проверяет и включает анимацию через shared data AnimToKey (видят все).
     /// /gym add chinup|bench|weights|mat — поставить тренажёр перед собой, /gym del — убрать ближайший, /gym list.
-    /// Пока только анимации, без прокачки характеристик.
+    /// Прокачка силы/выносливости и платные зоны (абонемент) — World/Gym/Fitness.cs.
     /// </summary>
     class GymManager : Script
     {
@@ -145,7 +145,15 @@ namespace NeptuneEvo.World.Gym
                     return;
                 }
 
+                var paidZone = Fitness.PaidZoneAt(position);
+                if (paidZone != null && !Fitness.HasMembership(player))
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Здесь нужен абонемент — купите его у тренера ({paidZone.Name})", 4000);
+                    return;
+                }
+
                 Busy[player] = position;
+                Fitness.OnTrainingStart(player, exercise);
                 Trigger.ClientEvent(player, "client.gym.yes", x, y, z, heading);
                 Trigger.StopAnimation(player);
                 player.SetSharedData("AnimToKey", animKey);
@@ -163,6 +171,7 @@ namespace NeptuneEvo.World.Gym
             {
                 if (!Busy.Remove(player))
                     return;
+                Fitness.OnTrainingStop(player);
                 if (player.IsCharacterData())
                     player.SetSharedData("AnimToKey", 0);
             }
@@ -242,11 +251,53 @@ namespace NeptuneEvo.World.Gym
                             player.SendChatMessage($"Тренажёр «{nearest.s.Type}» убран");
                             return;
                         }
+                    case "zone":
+                        {
+                            // /gym zone add цена дни [радиус] — платная зона с центром и тренером на месте админа; /gym zone del — ближайшую
+                            var action = parts.Length > 1 ? parts[1].ToLower() : "";
+                            if (action == "add" && parts.Length >= 4 && int.TryParse(parts[2], out var price) && int.TryParse(parts[3], out var days) && price >= 0 && days > 0)
+                            {
+                                var radius = parts.Length > 4 && float.TryParse(parts[4], out var r) ? r : 25f;
+                                Fitness.Cfg.PaidZones.Add(new GymPaidZone
+                                {
+                                    Name = $"Зал {Fitness.Cfg.PaidZones.Count + 1}",
+                                    Center = player.Position,
+                                    Radius = radius,
+                                    Price = price,
+                                    Days = days,
+                                    NpcPosition = player.Position,
+                                    NpcHeading = player.Heading,
+                                });
+                                Fitness.SaveConfig();
+                                Fitness.SpawnTrainers();
+                                GameLog.Admin(player.Name, $"gym zone add {price} {days} {radius}", "");
+                                player.SendChatMessage($"Платная зона добавлена: ${price} за {days} дн., радиус {radius} м, тренер на твоём месте. Отойди — NPC появится.");
+                                return;
+                            }
+                            if (action == "del")
+                            {
+                                var zone = Fitness.Cfg.PaidZones.OrderBy(z => z.Center.DistanceTo(player.Position)).FirstOrDefault();
+                                if (zone == null || zone.Center.DistanceTo(player.Position) > zone.Radius + 10)
+                                {
+                                    player.SendChatMessage("Рядом нет платной зоны");
+                                    return;
+                                }
+                                Fitness.Cfg.PaidZones.Remove(zone);
+                                Fitness.SaveConfig();
+                                Fitness.SpawnTrainers();
+                                GameLog.Admin(player.Name, $"gym zone del {zone.Name}", "");
+                                player.SendChatMessage($"Платная зона «{zone.Name}» удалена — тренажёры там теперь бесплатные");
+                                return;
+                            }
+                            player.SendChatMessage("/gym zone add цена дни [радиус], /gym zone del. Зоны: " +
+                                                   string.Join(", ", Fitness.Cfg.PaidZones.Select(z => $"{z.Name} ${z.Price}/{z.Days}д")));
+                            return;
+                        }
                     case "list":
                         player.SendChatMessage($"Своих тренажёров: {_spots.Count}. Типы: " + string.Join(", ", _spots.GroupBy(s => s.Type).Select(g => $"{g.Key} {g.Count()}")));
                         return;
                     default:
-                        player.SendChatMessage("/gym add chinup|bench|weights|mat, /gym del, /gym list");
+                        player.SendChatMessage("/gym add chinup|bench|weights|mat, /gym del, /gym list, /gym zone");
                         return;
                 }
             }

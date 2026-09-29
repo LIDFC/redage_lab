@@ -175,6 +175,12 @@ mp._events.add('incomingDamage', (sourceEntity, sourcePlayer, targetEntity, weap
         const boneDamageMultiplier = damageController.getBoneDamageMultiplier(rageBoneId);
 
         let customDamage = global.clamp(damageData.damage, damageData.damage / 2, damageData.damage) * boneDamageMultiplier / damageData.shotCount;
+        // Сила атакующего из качалки (World/Gym/Fitness.cs): выше базовых 30 — до +fitnessMeleeBonus к удару
+        if (damageData.isMelee && sourcePlayer && mp.players.exists(sourcePlayer)) {
+            const fitStr = Number(sourcePlayer.getVariable("fitStr")) || 0;
+            if (fitStr > 30)
+                customDamage *= 1 + Math.min(1, (fitStr - 30) / 70) * (global.fitnessMeleeBonus || 0.25);
+        }
         customDamage = Math.round(customDamage);
 
         const healthAndArmour = mp.players.local.getHealth() + mp.players.local.getArmour();

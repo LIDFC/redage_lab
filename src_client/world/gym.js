@@ -132,3 +132,15 @@ gm.events.add("render", () => {
         || mp.game.controls.isControlJustPressed(0, 34) || mp.game.controls.isControlJustPressed(0, 35))
         stop();
 });
+
+// Форма игрока (сервер World/Gym/Fitness.cs): выносливость — дольше бег, сила — чуть сильнее удар (см. player/damage).
+global.fitnessMeleeBonus = 0.25;
+gm.events.add("client.fitness.apply", (stamina, strength, meleeBonus) => {
+    try {
+        global.fitnessMeleeBonus = typeof meleeBonus === "number" ? meleeBonus : 0.25;
+        for (const prefix of ["SP0_", "SP1_", "SP2_", "MP0_"]) {
+            mp.game.stats.statSetInt(mp.game.joaat(prefix + "STAMINA"), stamina, true);
+            mp.game.stats.statSetInt(mp.game.joaat(prefix + "STRENGTH"), strength, true);
+        }
+    } catch (e) {}
+});

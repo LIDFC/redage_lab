@@ -1,0 +1,388 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.IO;
+using System.Linq;
+using GTANetworkAPI;
+using MySqlConnector;
+using NeptuneEvo.Character;
+using NeptuneEvo.Core;
+using NeptuneEvo.Functions;
+using NeptuneEvo.Handles;
+using NeptuneEvo.Players;
+using Newtonsoft.Json;
+using Redage.SDK;
+
+namespace NeptuneEvo.World.Gym
+{
+    public class GymPaidZone
+    {
+        [JsonProperty("name")] public string Name { get; set; } = "Muscle Beach";
+        [JsonProperty("center")] public Vector3 Center { get; set; }
+        [JsonProperty("radius")] public float Radius { get; set; } = 30f;
+        [JsonProperty("price")] public int Price { get; set; } = 2500;
+        [JsonProperty("days")] public int Days { get; set; } = 7;
+        [JsonProperty("npcPosition")] public Vector3 NpcPosition { get; set; }
+        [JsonProperty("npcHeading")] public float NpcHeading { get; set; }
+        [JsonProperty("npcModel")] public string NpcModel { get; set; } = "a_m_y_musclbeac_01";
+    }
+
+    /// <summary>Настройки фитнеса и платных залов: settings/gym_fitness.json (отдельно от списка тренажёров gym.json).</summary>
+    public class FitnessConfig
+    {
+        [JsonProperty("tickSeconds")] public int TickSeconds { get; set; } = 30;
+        /// <summary>Сколько очков показателя можно получить за час (на каждый показатель).</summary>
+        [JsonProperty("hourLimit")] public int HourLimit { get; set; } = 2;
+        [JsonProperty("decayPerDay")] public int DecayPerDay { get; set; } = 1;
+        [JsonProperty("decayFloor")] public int DecayFloor { get; set; } = 30;
+        /// <summary>Максимальная прибавка к урону кулаком/холодным при силе 100 (0.25 = +25%).</summary>
+        [JsonProperty("meleeMaxBonus")] public double MeleeMaxBonus { get; set; } = 0.25;
+        [JsonProperty("paidZones")] public List<GymPaidZone> PaidZones { get; set; } = new List<GymPaidZone>();
+    }
+
+    /// <summary>
+    /// Сила и выносливость от тренировок + абонемент в платные залы.
+    ///  Пока игрок занимается (GymManager), каждые tickSeconds +1 к показателю упражнения (не больше hourLimit в час на показатель).
+    ///  Турник/скамья/штанга — сила, йога — выносливость, пресс/отжимания — по очереди, полоса армии — выносливость.
+    ///  Без тренировок показатели медленно падают (decayPerDay в сутки, не ниже decayFloor).
+    ///  Выносливость → статистика SP0/MP0_STAMINA (дольше бег), сила → STRENGTH и shared data fitStr (урон кулаком чуть выше).
+    ///  Платные зоны (по умолчанию Muscle Beach): заниматься можно с абонементом, его продаёт тренер-NPC.
+    /// </summary>
+    class Fitness : Script
+    {
+        private static readonly nLog Log = new nLog("World.Fitness");
+        private static string ConfigPath => Path.Combine("settings", "gym_fitness.json");
+        public static FitnessConfig Cfg { get; private set; } = new FitnessConfig();
+
+        private class Data
+        {
+            public int Stamina = 30;
+            public int Strength = 30;
+            public int HourGainStamina;
+            public int HourGainStrength;
+            public DateTime HourKey = DateTime.MinValue;
+            public DateTime LastTraining = DateTime.Now;
+            public DateTime MemberUntil = DateTime.MinValue;
+            public bool Dirty;
+        }
+
+        private static readonly Dictionary<int, Data> Players = new Dictionary<int, Data>();
+        /// <summary>Кто сейчас тренируется: игрок → упражнение, счётчик для чередования.</summary>
+        private static readonly Dictionary<ExtPlayer, (string exercise, int counter)> Training = new Dictionary<ExtPlayer, (string, int)>();
+        private static readonly List<ExtPed> Trainers = new List<ExtPed>();
+        private static bool _ready;
+
+        [ServerEvent(Event.ResourceStart)]
+        public void OnResourceStart()
+        {
+            try
+            {
+                LoadConfig();
+                using (var create = new MySqlCommand(@"CREATE TABLE IF NOT EXISTS `player_fitness` (
+                    `uuid` INT NOT NULL,
+                    `stamina` INT NOT NULL DEFAULT 30,
+                    `strength` INT NOT NULL DEFAULT 30,
+                    `last_training` DATETIME NOT NULL,
+                    `member_until` DATETIME NULL,
+                    PRIMARY KEY (`uuid`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;"))
+                    MySQL.Query(create);
+                _ready = true;
+                SpawnTrainers();
+                Timers.Start("gym.fitness", Math.Max(10, Cfg.TickSeconds) * 1000, Tick, true);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"Fitness start Exception: {e}");
+            }
+        }
+
+        private static void LoadConfig()
+        {
+            try
+            {
+                if (File.Exists(ConfigPath))
+                    Cfg = JsonConvert.DeserializeObject<FitnessConfig>(File.ReadAllText(ConfigPath)) ?? new FitnessConfig();
+                if (Cfg.PaidZones == null || Cfg.PaidZones.Count == 0 && !File.Exists(ConfigPath))
+                {
+                    // Muscle Beach (Веспуччи): открытый зал у пляжа
+                    Cfg.PaidZones = new List<GymPaidZone>
+                    {
+                        new GymPaidZone
+                        {
+                            Name = "Muscle Beach",
+                            Center = new Vector3(-1203.5, -1567.5, 4.6),
+                            Radius = 28f,
+                            NpcPosition = new Vector3(-1195.9, -1576.6, 4.6),
+                            NpcHeading = 40f,
+                        },
+                    };
+                }
+                SaveConfig();
+            }
+            catch (Exception e)
+            {
+                Log.Write($"LoadConfig Exception: {e.Message}");
+            }
+        }
+
+        public static void SaveConfig()
+        {
+            try
+            {
+                Directory.CreateDirectory("settings");
+                File.WriteAllText(ConfigPath, JsonConvert.SerializeObject(Cfg, Formatting.Indented));
+            }
+            catch (Exception e)
+            {
+                Log.Write($"SaveConfig Exception: {e.Message}");
+            }
+        }
+
+        public static void SpawnTrainers()
+        {
+            foreach (var ped in Trainers)
+                if (ped != null && ped.Exists) ped.Delete();
+            Trainers.Clear();
+            for (var i = 0; i < Cfg.PaidZones.Count; i++)
+            {
+                var zone = Cfg.PaidZones[i];
+                if (zone.NpcPosition == null)
+                    continue;
+                Trainers.Add(PedSystem.Repository.CreateQuest(zone.NpcModel ?? "a_m_y_musclbeac_01", zone.NpcPosition, zone.NpcHeading, 0, null,
+                    ColShapeEnums.GymTrainer, $"~g~Тренер\n~w~{zone.Name}", false));
+            }
+        }
+
+        // ------------------------------------------------------------------ данные
+
+        private static Data Get(ExtPlayer player)
+        {
+            var uuid = player.GetUUID();
+            if (Players.TryGetValue(uuid, out var data))
+                return data;
+            data = new Data();
+            if (_ready)
+            {
+                using var table = NeptuneEvo.Database.DbQueue.Read("SELECT `stamina`,`strength`,`last_training`,`member_until` FROM `player_fitness` WHERE `uuid`=@u", ("@u", uuid));
+                if (table != null && table.Rows.Count > 0)
+                {
+                    var row = table.Rows[0];
+                    data.Stamina = Convert.ToInt32(row["stamina"]);
+                    data.Strength = Convert.ToInt32(row["strength"]);
+                    data.LastTraining = Convert.ToDateTime(row["last_training"]);
+                    data.MemberUntil = row["member_until"] == DBNull.Value ? DateTime.MinValue : Convert.ToDateTime(row["member_until"]);
+                    // Без тренировок форма уходит: за каждые полные сутки простоя (после первых) — минус decayPerDay
+                    var idleDays = (int) (DateTime.Now - data.LastTraining).TotalDays - 1;
+                    if (idleDays > 0 && Cfg.DecayPerDay > 0)
+                    {
+                        data.Stamina = Decay(data.Stamina, idleDays * Cfg.DecayPerDay);
+                        data.Strength = Decay(data.Strength, idleDays * Cfg.DecayPerDay);
+                        data.LastTraining = DateTime.Now.AddDays(-1);
+                        data.Dirty = true;
+                    }
+                }
+                else
+                    data.Dirty = true;
+            }
+            Players[uuid] = data;
+            return data;
+        }
+
+        private static int Decay(int value, int by) => value <= Cfg.DecayFloor ? value : Math.Max(Cfg.DecayFloor, value - by);
+
+        private static void Save(int uuid, Data data)
+        {
+            if (!_ready || !data.Dirty)
+                return;
+            data.Dirty = false;
+            NeptuneEvo.Database.DbQueue.Enqueue(
+                @"INSERT INTO `player_fitness` (`uuid`,`stamina`,`strength`,`last_training`,`member_until`) VALUES (@u,@s,@st,@l,@m)
+                  ON DUPLICATE KEY UPDATE `stamina`=VALUES(`stamina`),`strength`=VALUES(`strength`),`last_training`=VALUES(`last_training`),`member_until`=VALUES(`member_until`)",
+                ("@u", uuid), ("@s", data.Stamina), ("@st", data.Strength), ("@l", data.LastTraining),
+                ("@m", data.MemberUntil == DateTime.MinValue ? (object) DBNull.Value : data.MemberUntil));
+        }
+
+        private static void Apply(ExtPlayer player, Data data)
+        {
+            Trigger.ClientEvent(player, "client.fitness.apply", data.Stamina, data.Strength, Cfg.MeleeMaxBonus);
+            player.SetSharedData("fitStr", data.Strength);
+        }
+
+        /// <summary>+1 к показателю с учётом часового лимита. stat: "stamina" | "strength".</summary>
+        public static void Gain(ExtPlayer player, string stat)
+        {
+            var data = Get(player);
+            var hour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, 0, 0);
+            if (data.HourKey != hour)
+            {
+                data.HourKey = hour;
+                data.HourGainStamina = 0;
+                data.HourGainStrength = 0;
+            }
+            data.LastTraining = DateTime.Now;
+            data.Dirty = true;
+            if (stat == "stamina")
+            {
+                if (data.HourGainStamina >= Cfg.HourLimit || data.Stamina >= 100)
+                    return;
+                data.HourGainStamina++;
+                data.Stamina++;
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Выносливость +1 ({data.Stamina}/100)", 2500);
+            }
+            else
+            {
+                if (data.HourGainStrength >= Cfg.HourLimit || data.Strength >= 100)
+                    return;
+                data.HourGainStrength++;
+                data.Strength++;
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Сила +1 ({data.Strength}/100)", 2500);
+            }
+            Apply(player, data);
+        }
+
+        // ------------------------------------------------------------------ тренировки (из GymManager)
+
+        public static GymPaidZone PaidZoneAt(Vector3 position) =>
+            Cfg.PaidZones.FirstOrDefault(z => z.Center != null && z.Center.DistanceTo2D(position) <= z.Radius);
+
+        public static bool HasMembership(ExtPlayer player) => Get(player).MemberUntil > DateTime.Now;
+
+        public static void OnTrainingStart(ExtPlayer player, string exercise) => Training[player] = (exercise, 0);
+
+        public static void OnTrainingStop(ExtPlayer player) => Training.Remove(player);
+
+        private static void Tick()
+        {
+            try
+            {
+                foreach (var (player, (exercise, counter)) in Training.ToList())
+                {
+                    if (player == null || !player.IsCharacterData())
+                    {
+                        Training.Remove(player);
+                        continue;
+                    }
+                    Training[player] = (exercise, counter + 1);
+                    switch (exercise)
+                    {
+                        case "chinup":
+                        case "bench":
+                        case "weights":
+                            Gain(player, "strength");
+                            break;
+                        case "yoga":
+                            Gain(player, "stamina");
+                            break;
+                        default: // пресс, отжимания — по очереди
+                            Gain(player, counter % 2 == 0 ? "strength" : "stamina");
+                            break;
+                    }
+                }
+                // Новым игрокам в сети — применить показатели; изменённое — сохранить
+                foreach (var player in Character.Repository.GetPlayers())
+                {
+                    if (!player.IsCharacterData())
+                        continue;
+                    var uuid = player.GetUUID();
+                    var isNew = !Players.ContainsKey(uuid);
+                    var data = Get(player);
+                    if (isNew)
+                        Apply(player, data);
+                    Save(uuid, data);
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Write($"Fitness Tick Exception: {e}");
+            }
+        }
+
+        [ServerEvent(Event.PlayerDisconnected)]
+        public void OnPlayerDisconnected(ExtPlayer player, DisconnectionType type, string reason)
+        {
+            try
+            {
+                Training.Remove(player);
+                var uuid = player.GetUUID();
+                if (Players.TryGetValue(uuid, out var data))
+                {
+                    Save(uuid, data);
+                    Players.Remove(uuid);
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Write($"Fitness disconnect Exception: {e}");
+            }
+        }
+
+        // ------------------------------------------------------------------ абонемент
+
+        private static readonly Dictionary<ExtPlayer, GymPaidZone> PendingPurchase = new Dictionary<ExtPlayer, GymPaidZone>();
+
+        [Interaction(ColShapeEnums.GymTrainer)]
+        public static void OnTrainer(ExtPlayer player, int _)
+        {
+            try
+            {
+                if (!player.IsCharacterData())
+                    return;
+                var zone = PaidZoneAt(player.Position) ?? Cfg.PaidZones.OrderBy(z => z.NpcPosition?.DistanceTo(player.Position) ?? 9999).FirstOrDefault();
+                if (zone == null)
+                    return;
+                var data = Get(player);
+                var active = data.MemberUntil > DateTime.Now;
+                PendingPurchase[player] = zone;
+                var text = active
+                    ? $"Абонемент в {zone.Name} действует до {data.MemberUntil:dd.MM HH:mm}. Продлить на {zone.Days} дн. за ${zone.Price}?"
+                    : $"Абонемент в {zone.Name} на {zone.Days} дн. стоит ${zone.Price}. Купить?\nСила {data.Strength}/100, выносливость {data.Stamina}/100";
+                Trigger.ClientEvent(player, "openDialog", "GymMembership", text);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnTrainer Exception: {e}");
+            }
+        }
+
+        /// <summary>Из Main.dialogCallback, case "GymMembership".</summary>
+        public static void BuyMembership(ExtPlayer player)
+        {
+            try
+            {
+                if (!PendingPurchase.Remove(player, out var zone))
+                    return;
+                var characterData = player.GetCharacterData();
+                if (characterData == null)
+                    return;
+                if (characterData.Money < zone.Price)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Недостаточно денег", 3000);
+                    return;
+                }
+                MoneySystem.Wallet.Change(player, -zone.Price);
+                GameLog.Money($"player({characterData.UUID})", "server", zone.Price, "gymMembership");
+                var data = Get(player);
+                var from = data.MemberUntil > DateTime.Now ? data.MemberUntil : DateTime.Now;
+                data.MemberUntil = from.AddDays(zone.Days);
+                data.Dirty = true;
+                Save(characterData.UUID, data);
+                Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Абонемент в {zone.Name} до {data.MemberUntil:dd.MM HH:mm}", 5000);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"BuyMembership Exception: {e}");
+            }
+        }
+
+        [Command("fitness")]
+        public static void CMD_Fitness(ExtPlayer player)
+        {
+            if (!player.IsCharacterData())
+                return;
+            var data = Get(player);
+            player.SendChatMessage($"~y~[Форма] ~w~Сила {data.Strength}/100, выносливость {data.Stamina}/100. " +
+                                   (data.MemberUntil > DateTime.Now ? $"Абонемент до {data.MemberUntil:dd.MM HH:mm}" : "Абонемента нет"));
+        }
+    }
+}

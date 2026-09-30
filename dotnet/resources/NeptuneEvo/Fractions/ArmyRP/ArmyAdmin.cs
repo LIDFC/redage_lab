@@ -11,7 +11,8 @@ namespace NeptuneEvo.Fractions.ArmyRP
     /// <summary>
     /// /armyset — расстановка точек армии в игре (сохраняется в settings/army.json):
     ///  parade | post add Название | post del | zone clear | zone add | barrier add | barrier del |
-    ///  range | course clear | course add | board | kitchen add|clear | clean add|clear | info | reload
+    ///  range | course clear | course add | board | kitchen add|clear | clean add|clear | info | reload |
+    ///  point groundrepair|airrepair|alarm|recruiter|guardhouse | vehmove ground|air
     /// </summary>
     class ArmyAdmin : Script
     {
@@ -113,6 +114,29 @@ namespace NeptuneEvo.Fractions.ArmyRP
                         ArmyDuty.CreatePoints();
                         result = "Точки уборки очищены — добавьте новые: /armyset clean add";
                         break;
+                    case "point":
+                        switch (action)
+                        {
+                            case "groundrepair": Cfg.GroundRepairPoint = pos; break;
+                            case "airrepair": Cfg.AirRepairPoint = pos; break;
+                            case "alarm": Cfg.AlarmPoint = pos; break;
+                            case "recruiter": Cfg.RecruiterPoint = pos; Cfg.RecruiterHeading = player.Heading; break;
+                            case "guardhouse": Cfg.GuardhouseExit = pos; break;
+                            default:
+                                player.SendChatMessage("/armyset point groundrepair|airrepair|alarm|recruiter|guardhouse — точка встанет на твоё место");
+                                return;
+                        }
+                        result = action == "guardhouse"
+                            ? "Выход с гауптвахты перенесён сюда"
+                            : "Точка сохранена, на карте появится после рестарта сервера";
+                        break;
+                    case "vehmove" when action == "ground" || action == "air":
+                        {
+                            var moved = ArmyVehicles.MoveFromPlayer(player, action == "air");
+                            Cfg.VehiclesMoved = true;
+                            result = $"{(action == "air" ? "Авиация" : "Наземная техника")}: {moved} шт. выстроены рядом вправо от тебя (лицом туда же, куда смотришь ты)";
+                            break;
+                        }
                     case "reload":
                         ArmyConfig.Load();
                         ArmyService.CreatePostLabels();
@@ -124,7 +148,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
                         player.SendChatMessage($"Плац {Cfg.ParadePoint}, постов {Cfg.Posts.Count}, точек периметра {Cfg.Zone.Count}, шлагбаумов {Cfg.Barriers.Count}, точек полосы {Cfg.Course.Count}, рубеж {Cfg.RangePoint}");
                         return;
                     default:
-                        player.SendChatMessage("/armyset parade | post add Название | post del | zone clear | zone add | barrier add | barrier del | range | course clear | course add | board | kitchen add|clear | clean add|clear | info | reload");
+                        player.SendChatMessage("/armyset parade | post add Название | post del | zone clear | zone add | barrier add | barrier del | range | course clear | course add | board | kitchen add|clear | clean add|clear | point ... | vehmove ground|air | info | reload");
                         return;
                 }
                 ArmyConfig.Save();

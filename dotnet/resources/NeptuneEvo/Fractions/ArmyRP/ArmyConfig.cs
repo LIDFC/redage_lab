@@ -41,6 +41,21 @@ namespace NeptuneEvo.Fractions.ArmyRP
         [JsonProperty("postReward")] public int PostReward { get; set; } = 500;
         [JsonProperty("guardhouseMaxMinutes")] public int GuardhouseMaxMinutes { get; set; } = 60;
 
+        // --- База в Форт Занкудо (Fractions/Army.cs). Точки меняются /armyset point ..., применяются после рестарта.
+        /// <summary>Ремонт наземной техники — у ангаров.</summary>
+        [JsonProperty("groundRepairPoint")] public Vector3 GroundRepairPoint { get; set; } = new Vector3(-1850.0, 3082.0, 32.81);
+        /// <summary>Ремонт воздушной техники — на рулёжке.</summary>
+        [JsonProperty("airRepairPoint")] public Vector3 AirRepairPoint { get; set; } = new Vector3(-1866.3154, 3210.4468, 33.255733);
+        /// <summary>Кнопка общей тревоги — на плацу.</summary>
+        [JsonProperty("alarmPoint")] public Vector3 AlarmPoint { get; set; } = new Vector3(-2250.3242, 3344.5566, 33.251175);
+        /// <summary>NPC «Рекрут — вызвать сотрудника» у главного КПП (со стороны трассы 68).</summary>
+        [JsonProperty("recruiterPoint")] public Vector3 RecruiterPoint { get; set; } = new Vector3(-1589.5, 2795.0, 17.0);
+        [JsonProperty("recruiterHeading")] public float RecruiterHeading { get; set; } = 225f;
+        /// <summary>Куда выпускают с гауптвахты — у штаба.</summary>
+        [JsonProperty("guardhouseExit")] public Vector3 GuardhouseExit { get; set; } = new Vector3(-2361.488, 3208.3765, 30.2);
+        /// <summary>Машины армии один раз переставлены на стоянки Занкудо (ArmyVehicles.cs).</summary>
+        [JsonProperty("vehiclesMoved")] public bool VehiclesMoved { get; set; }
+
         // --- Наряды (Fractions/ArmyRP/ArmyDuty.cs)
         /// <summary>Доска нарядов: E — окно нарядов.</summary>
         [JsonProperty("dutyBoard")] public Vector3 DutyBoard { get; set; }

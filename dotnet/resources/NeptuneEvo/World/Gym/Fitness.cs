@@ -142,7 +142,7 @@ namespace NeptuneEvo.World.Gym
         public static void SpawnTrainers()
         {
             foreach (var ped in Trainers)
-                if (ped != null && ped.Exists) ped.Delete();
+                PedSystem.Repository.DestroyQuest(ped);
             Trainers.Clear();
             for (var i = 0; i < Cfg.PaidZones.Count; i++)
             {
@@ -336,7 +336,7 @@ namespace NeptuneEvo.World.Gym
                 PendingPurchase[player] = zone;
                 var text = active
                     ? $"Абонемент в {zone.Name} действует до {data.MemberUntil:dd.MM HH:mm}. Продлить на {zone.Days} дн. за ${zone.Price}?"
-                    : $"Абонемент в {zone.Name} на {zone.Days} дн. стоит ${zone.Price}. Купить?\nСила {data.Strength}/100, выносливость {data.Stamina}/100";
+                    : $"Абонемент в {zone.Name} на {zone.Days} дн. стоит ${zone.Price}. Купить? Сила {data.Strength}/100, выносливость {data.Stamina}/100";
                 Trigger.ClientEvent(player, "openDialog", "GymMembership", text);
             }
             catch (Exception e)

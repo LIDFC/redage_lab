@@ -534,7 +534,7 @@ namespace NeptuneEvo.Fractions
                     else if (fracId == (int) Models.Fractions.ARMY) 
                     {
                         spawnPos = Manager.FractionSpawns[14] + new Vector3(0, 0, 1.12);
-                        spawnDimension = 3244522;
+                        spawnDimension = 0;
                     }
                     else if (fracId == (int) Models.Fractions.SHERIFF) spawnPos = Manager.FractionSpawns[18] + new Vector3(0, 0, 1.12);
                     else if (fracId == (int) Models.Fractions.FIB) spawnPos = Manager.FractionSpawns[(int) Models.Fractions.FIB] + new Vector3(0, 0, 1.12);

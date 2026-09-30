@@ -32,13 +32,25 @@ namespace NeptuneEvo.Fractions
         {
             try
             {
-                NAPI.TextLabel.CreateTextLabel("Ketrin Kellerman", new Vector3(-2348.598, 3210.923, 29.224812), 5f, 0.3f, 4, new Color(255, 255, 255), false, 3244522);
-                
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[0], 1, 2, 3244522, ColShapeEnums.FractionArmy, 0);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[0].X, ArmyCheckpoints[0].Y, ArmyCheckpoints[0].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 3244522);
+                // База армии — Форт Занкудо, всё в обычном измерении (0). Штаб — реальное здание форта, без телепортов из порта.
+                // Точки ремонта, тревоги, рекрута — settings/army.json (/armyset point ...). Причал матов [2] — в порту.
+                var cfg = ArmyRP.ArmyConfig.Current;
+                if (cfg.GroundRepairPoint == null)
+                {
+                    ArmyRP.ArmyConfig.Load();
+                    cfg = ArmyRP.ArmyConfig.Current;
+                }
+                ArmyCheckpoints[6] = cfg.GroundRepairPoint;
+                ArmyCheckpoints[7] = cfg.AirRepairPoint;
+                ArmyCheckpoints[8] = cfg.AlarmPoint;
 
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[1], 1, 2, 3244522, ColShapeEnums.FractionArmy, 1);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[1].X, ArmyCheckpoints[1].Y, ArmyCheckpoints[1].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 3244522);
+                NAPI.TextLabel.CreateTextLabel("Ketrin Kellerman", new Vector3(-2348.598, 3210.923, 29.224812), 5f, 0.3f, 4, new Color(255, 255, 255), false, 0);
+
+                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[0], 1, 2, 0, ColShapeEnums.FractionArmy, 0);
+                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Оружейная\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[0].X, ArmyCheckpoints[0].Y, ArmyCheckpoints[0].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 0);
+
+                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[1], 1, 2, 0, ColShapeEnums.FractionArmy, 1);
+                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Раздевалка\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[1].X, ArmyCheckpoints[1].Y, ArmyCheckpoints[1].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 0);
 
                 CustomColShape.CreateCylinderColShape(ArmyCheckpoints[2], 5, 6, 0, ColShapeEnums.FractionArmy, 2);
 
@@ -48,8 +60,8 @@ namespace NeptuneEvo.Fractions
                 CustomColShape.CreateCylinderColShape(ArmyCheckpoints[4], 1, 2, 0, ColShapeEnums.FractionArmy, 3);
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Лифт"), new Vector3(ArmyCheckpoints[4].X, ArmyCheckpoints[4].Y, ArmyCheckpoints[4].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255));
 
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[5], 1, 2, 3244522, ColShapeEnums.FractionArmy, 4);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Открыть оружейный склад"), new Vector3(ArmyCheckpoints[5].X, ArmyCheckpoints[5].Y, ArmyCheckpoints[5].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 3244522);
+                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[5], 1, 2, 0, ColShapeEnums.FractionArmy, 4);
+                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Открыть оружейный склад"), new Vector3(ArmyCheckpoints[5].X, ArmyCheckpoints[5].Y, ArmyCheckpoints[5].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 0);
 
                 CustomColShape.CreateCylinderColShape(ArmyCheckpoints[6], 3, 3, 0, ColShapeEnums.FractionArmy, 5);
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Ремонт наземного транспорта"), new Vector3(ArmyCheckpoints[6].X, ArmyCheckpoints[6].Y, ArmyCheckpoints[6].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255));
@@ -59,18 +71,6 @@ namespace NeptuneEvo.Fractions
 
                 CustomColShape.CreateCylinderColShape(ArmyCheckpoints[8], 1, 2, 0, ColShapeEnums.FractionArmy, 7);
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Кнопка общей тревоги"), new Vector3(ArmyCheckpoints[8].X, ArmyCheckpoints[8].Y, ArmyCheckpoints[8].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), true);
-                                
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[9], 1, 2, 0, ColShapeEnums.FractionArmy, 8);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[9].X, ArmyCheckpoints[9].Y, ArmyCheckpoints[9].Z), 5F, 0.3F, 0, new Color(255, 255, 255));
-
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[10], 1, 2, 3244522, ColShapeEnums.FractionArmy, 9);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[10].X, ArmyCheckpoints[10].Y, ArmyCheckpoints[10].Z), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 3244522);
-
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[11], 1, 2, 0, ColShapeEnums.FractionArmy, 10);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[11].X, ArmyCheckpoints[11].Y, ArmyCheckpoints[11].Z), 5F, 0.3F, 0, new Color(255, 255, 255));
-
-                CustomColShape.CreateCylinderColShape(ArmyCheckpoints[12], 1, 2, 4566544, ColShapeEnums.FractionArmy, 11);
-                NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Нажмите\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[12].X, ArmyCheckpoints[12].Y, ArmyCheckpoints[12].Z), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 4566544);
 
                 NAPI.Marker.CreateMarker(1, ArmyCheckpoints[0] - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
                 NAPI.Marker.CreateMarker(1, ArmyCheckpoints[1] - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
@@ -81,14 +81,11 @@ namespace NeptuneEvo.Fractions
                 NAPI.Marker.CreateMarker(1, ArmyCheckpoints[6] - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 3f, new Color(255, 255, 255, 220));
                 NAPI.Marker.CreateMarker(1, ArmyCheckpoints[7] - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 5f, new Color(255, 255, 255, 220));
                 NAPI.Marker.CreateMarker(1, ArmyCheckpoints[8] - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
-                NAPI.Marker.CreateMarker(21, ArmyCheckpoints[9] , new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
-                NAPI.Marker.CreateMarker(21, ArmyCheckpoints[10], new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220), dimension:3244522);
-                NAPI.Marker.CreateMarker(21, ArmyCheckpoints[11], new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
-                NAPI.Marker.CreateMarker(21, ArmyCheckpoints[12], new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220), dimension:4566544);
+                // [9]–[12] — старые телепорты порт ↔ штаб: больше не создаются
 
-                //Main.CreateBlip(new Main.BlipData(305, "National Guard", new Vector3(-2062.0103, 3196.759, 32.795883), 2, true));
+                Main.CreateBlip(new Main.BlipData(421, "Армия — Форт Занкудо", Manager.FractionSpawns[(int) Models.Fractions.ARMY], 52, true));
 
-                PedSystem.Repository.CreateQuest("s_m_m_marine_01", new Vector3(-276.09488, -2636.1191, 6.0462055), -50.05095f, title: "~y~NPC~w~ Рекрут Астраханский\nВызвать сотрудника", colShapeEnums: ColShapeEnums.CallArmyMember);
+                PedSystem.Repository.CreateQuest("s_m_m_marine_01", cfg.RecruiterPoint, cfg.RecruiterHeading, title: "~y~NPC~w~ Рекрут Астраханский\nВызвать сотрудника", colShapeEnums: ColShapeEnums.CallArmyMember);
             }
             catch (Exception e) { Log.Write("ResourceStart: " + e.Message, nLog.Type.Error); }
         }

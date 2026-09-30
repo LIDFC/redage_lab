@@ -55,7 +55,7 @@ namespace NeptuneEvo.Fractions.ArmyRP
         /// <summary>Гауптвахта: отдельная копия камер КПЗ Mission Row (своё измерение), выход — у штаба армии в порту.</summary>
         public const uint GuardhouseDimension = 3244600;
         public static Vector3 GuardhouseCell => Police.PrisonPosition;
-        public static Vector3 GuardhouseExit => Army.ArmyCheckpoints[9] + new Vector3(0, 0, 1);
+        public static Vector3 GuardhouseExit => ArmyConfig.Current.GuardhouseExit ?? Manager.FractionSpawns[(int) Models.Fractions.ARMY];
         public const sbyte GuardhouseArrestType = 3;
 
         private static bool _logReady;

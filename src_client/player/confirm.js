@@ -3,7 +3,10 @@ var canback = "";
 
 let isInterface = false;
 global.openDialog = () => {
-    mp.gui.emmit(`window.router.setPopUp("PopupConfirm", {title: "${translateText("Подтверждение")}", text: "${text}"});`);
+    // Через JSON.stringify: переносы строк и кавычки в тексте не ломают вызов в CEF
+    const safeTitle = JSON.stringify(String(translateText("Подтверждение")));
+    const safeText = JSON.stringify(String(text ?? ""));
+    mp.gui.emmit(`window.router.setPopUp("PopupConfirm", {title: ${safeTitle}, text: ${safeText}});`);
     mp.gui.cursor.visible = true;
     isInterface = false;    
     if (!global.menuOpened) {

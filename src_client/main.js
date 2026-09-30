@@ -51,7 +51,7 @@ var Peds = [
 	//{ Hash: -265970301, Pos: new mp.Vector3(-244.0758, -2028.765, 29.90606), Angle: 230.1622 }, // Worldof Tankist
 	//{ Hash: 1535236204, Pos: new mp.Vector3(-773.945, 313.0294, 85.70606), Angle: 177.9122 }, // Family Register
 	//{ Hash: -2063996617, Pos: new mp.Vector3(-696.4318, -1386.611, 5.495), Angle: 77.821 }, // Racing NPC
-	{ Hash: mp.game.joaat("s_f_y_ranger_01"), Pos: new mp.Vector3(-2348.598, 3210.923, 29.224812), Angle: 146.52292, PedId: 1, Dimension: 3244522}, // Ketrin Kellerman
+	{ Hash: mp.game.joaat("s_f_y_ranger_01"), Pos: new mp.Vector3(-2348.598, 3210.923, 29.224812), Angle: 146.52292, PedId: 1, Dimension: 0}, // Ketrin Kellerman
 
 	//{ Hash: mp.game.joaat("ig_ramp_hic"), Pos: new mp.Vector3(-521.6952, -244.57239, 36.07903), Angle: -60.142956 }, // Devid Parks
 ];

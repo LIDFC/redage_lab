@@ -134,13 +134,33 @@ namespace NeptuneEvo.Jobs.DayLabor
         {
             foreach (var shape in Shapes) CustomColShape.DeleteColShape(shape);
             foreach (var marker in Markers) if (marker != null && marker.Exists) marker.Delete();
-            foreach (var ped in Peds) if (ped != null && ped.Exists) ped.Delete();
+            foreach (var ped in Peds) PedSystem.Repository.DestroyQuest(ped);
             foreach (var blip in Blips) if (blip != null && blip.Exists) blip.Delete();
             Shapes.Clear();
             Markers.Clear();
             Peds.Clear();
             Blips.Clear();
 
+            try
+            {
+                CreatePortPoints();
+            }
+            catch (Exception e)
+            {
+                Log.Write($"CreatePortPoints Exception: {e}");
+            }
+            try
+            {
+                CreateFarmPoints();
+            }
+            catch (Exception e)
+            {
+                Log.Write($"CreateFarmPoints Exception: {e}");
+            }
+        }
+
+        private static void CreatePortPoints()
+        {
             Peds.Add(PedSystem.Repository.CreateQuest("s_m_m_dockwork_01", Cfg.PortForeman.Position, Cfg.PortForeman.Heading, 0, null, ColShapeEnums.PortForeman, "~y~Прораб порта\n~w~Подработка грузчиком", false));
             Blips.Add(NAPI.Blip.CreateBlip(478, Cfg.PortForeman.Position, 0.8f, 46, "Подработка: грузчик", 255, 0, true, 0, 0));
             for (var i = 0; i < Cfg.PortPickups.Count; i++)
@@ -150,7 +170,10 @@ namespace NeptuneEvo.Jobs.DayLabor
             }
             for (var i = 0; i < Cfg.PortDrops.Count; i++)
                 Shapes.Add(CustomColShape.CreateCylinderColShape(Cfg.PortDrops[i], 1.8f, 2, 0, ColShapeEnums.PortDrop, i));
+        }
 
+        private static void CreateFarmPoints()
+        {
             Peds.Add(PedSystem.Repository.CreateQuest("a_m_m_farmer_01", Cfg.FarmForeman.Position, Cfg.FarmForeman.Heading, 0, null, ColShapeEnums.FarmForeman, "~g~Фермер\n~w~Подработка на ферме", false));
             Blips.Add(NAPI.Blip.CreateBlip(85, Cfg.FarmForeman.Position, 0.8f, 25, "Подработка: ферма", 255, 0, true, 0, 0));
             for (var i = 0; i < Cfg.FarmBeds.Count; i++)

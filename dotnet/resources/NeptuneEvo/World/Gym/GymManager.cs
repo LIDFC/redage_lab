@@ -155,6 +155,11 @@ namespace NeptuneEvo.World.Gym
                 }
 
                 var paidZone = Fitness.PaidZoneAt(position);
+                if (paidZone != null && !Fitness.IsLoaded(player))
+                {
+                    Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Секунду, загружаем ваш абонемент — нажмите ещё раз", 2500);
+                    return;
+                }
                 if (paidZone != null && !Fitness.HasMembership(player))
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Здесь нужен абонемент — купите его у тренера ({paidZone.Name})", 4000);

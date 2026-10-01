@@ -27,6 +27,28 @@ namespace Redage.SDK
         /// </summary>
         public static bool Debug = false;
 
+        /// <summary>Id игрового (главного) потока — задаёт сервер при старте. Синхронный запрос в нём = фриз у всех.</summary>
+        public static int MainThreadId = -1;
+        /// <summary>Синхронный запрос дольше этого (мс) пишется в лог.</summary>
+        public static int SlowMs = 50;
+        private static readonly System.Collections.Concurrent.ConcurrentDictionary<string, DateTime> SlowReported =
+            new System.Collections.Concurrent.ConcurrentDictionary<string, DateTime>();
+
+        private static void ReportSlow(string kind, string sql, long ms)
+        {
+            if (ms < SlowMs)
+                return;
+            var onMain = System.Threading.Thread.CurrentThread.ManagedThreadId == MainThreadId;
+            var text = (sql ?? "").Replace("\n", " ").Replace("\r", " ");
+            if (text.Length > 140) text = text.Substring(0, 140) + "…";
+            var key = text.Length > 60 ? text.Substring(0, 60) : text;
+            var now = DateTime.Now;
+            if (SlowReported.TryGetValue(key, out var last) && (now - last).TotalSeconds < 60)
+                return;
+            SlowReported[key] = now;
+            Log.Write($"Медленный {kind} {ms} мс{(onMain ? " [ИГРОВОЙ ПОТОК — фриз]" : "")}: {text}", nLog.Type.Warn);
+        }
+
         //private static StreamWriter qlog = new StreamWriter("QueryLog.txt", true, Encoding.UTF8);
         /// <summary>
         /// 
@@ -103,6 +125,7 @@ namespace Redage.SDK
                 {
                     if (Debug) Log.Debug("Query to DB:\n" + command.CommandText);
                     //qlog.Write($"{DateTime.Now} | Query: {command.CommandText}\n");
+                    var sw = System.Diagnostics.Stopwatch.StartNew();
                     using (MySqlConnection connection = new MySqlConnection(Connection))
                     {
                         connection.Open();
@@ -112,6 +135,7 @@ namespace Redage.SDK
                         command.ExecuteNonQuery();
 
                     }
+                    ReportSlow("Query", command.CommandText, sw.ElapsedMilliseconds);
                 }
             }
             catch (Exception e)
@@ -221,6 +245,7 @@ namespace Redage.SDK
                 {
                     if (Debug) Log.Debug("Query to DB:\n" + command.CommandText);
                     //qlog.Write($"{DateTime.Now} | Query: {command.CommandText}\n");
+                    var sw = System.Diagnostics.Stopwatch.StartNew();
                     using (MySqlConnection connection = new MySqlConnection(Connection))
                     {
                         connection.Open();
@@ -232,6 +257,7 @@ namespace Redage.SDK
                             using (DataTable result = new DataTable())
                             {
                                 result.Load(reader);
+                                ReportSlow("QueryRead", command.CommandText, sw.ElapsedMilliseconds);
 
                                 return result;
                             }

@@ -174,15 +174,41 @@ namespace NeptuneEvo.World.Gym
 
         // ------------------------------------------------------------------ данные
 
-        private static Data Get(ExtPlayer player)
+        private static readonly HashSet<int> Loading = new HashSet<int>();
+
+        /// <summary>Данные игрока, если уже загружены. Иначе запускает фоновую загрузку и возвращает false.</summary>
+        private static bool TryGet(ExtPlayer player, out Data data)
+        {
+            if (Players.TryGetValue(player.GetUUID(), out data))
+                return true;
+            StartLoad(player);
+            return false;
+        }
+
+        /// <summary>Для чтения: загруженные данные или временные значения по умолчанию (загрузка идёт в фоне).</summary>
+        private static Data Get(ExtPlayer player) => TryGet(player, out var data) ? data : new Data();
+
+        public static bool IsLoaded(ExtPlayer player) => TryGet(player, out _);
+
+        /// <summary>Загрузка из БД в фоне — игровой поток не ждёт MySQL.</summary>
+        private static void StartLoad(ExtPlayer player)
         {
             var uuid = player.GetUUID();
-            if (Players.TryGetValue(uuid, out var data))
-                return data;
-            data = new Data();
-            if (_ready)
+            if (uuid <= 0 || Players.ContainsKey(uuid))
+                return;
+            if (!_ready)
             {
-                using var table = NeptuneEvo.Database.DbQueue.Read("SELECT `stamina`,`strength`,`last_training`,`member_until` FROM `player_fitness` WHERE `uuid`=@u", ("@u", uuid));
+                Players[uuid] = new Data { Dirty = true };
+                return;
+            }
+            if (!Loading.Add(uuid))
+                return;
+            NeptuneEvo.Database.DbQueue.ReadThen("SELECT `stamina`,`strength`,`last_training`,`member_until` FROM `player_fitness` WHERE `uuid`=@u", table =>
+            {
+                Loading.Remove(uuid);
+                if (Players.ContainsKey(uuid) || !player.IsCharacterData() || player.GetUUID() != uuid)
+                    return; // игрок уже вышел
+                var data = new Data();
                 if (table != null && table.Rows.Count > 0)
                 {
                     var row = table.Rows[0];
@@ -202,9 +228,9 @@ namespace NeptuneEvo.World.Gym
                 }
                 else
                     data.Dirty = true;
-            }
-            Players[uuid] = data;
-            return data;
+                Players[uuid] = data;
+                Apply(player, data);
+            }, ("@u", uuid));
         }
 
         private static int Decay(int value, int by) => value <= Cfg.DecayFloor ? value : Math.Max(Cfg.DecayFloor, value - by);
@@ -230,7 +256,9 @@ namespace NeptuneEvo.World.Gym
         /// <summary>+1 к показателю с учётом часового лимита. stat: "stamina" | "strength".</summary>
         public static void Gain(ExtPlayer player, string stat)
         {
-            var data = Get(player);
+            if (!TryGet(player, out var data))
+                return; // ещё загружается
+
             var hour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, 0, 0);
             if (data.HourKey != hour)
             {
@@ -309,12 +337,9 @@ namespace NeptuneEvo.World.Gym
                 {
                     if (!player.IsCharacterData())
                         continue;
-                    var uuid = player.GetUUID();
-                    var isNew = !Players.ContainsKey(uuid);
-                    var data = Get(player);
-                    if (isNew)
-                        Apply(player, data);
-                    Save(uuid, data);
+                    // Новые — загрузятся в фоне и применятся сами (StartLoad); загруженные — сохранить изменения
+                    if (TryGet(player, out var data))
+                        Save(player.GetUUID(), data);
                 }
             }
             catch (Exception e)
@@ -357,8 +382,11 @@ namespace NeptuneEvo.World.Gym
                 var zone = PaidZoneAt(player.Position) ?? Cfg.PaidZones.OrderBy(z => z.NpcPosition?.DistanceTo(player.Position) ?? 9999).FirstOrDefault();
                 if (zone == null)
                     return;
-                var data = Get(player);
-                ResetHourIfNeeded(data);
+                if (!IsLoaded(player))
+                {
+                    Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Тренер: секунду, загружаем ваши данные — нажмите ещё раз", 2500);
+                    return;
+                }
                 PendingPurchase[player] = zone;
                 Log.Write($"Fitness: trainer open {player.Name} zone={zone.Name}");
                 // Окно в стиле «Центра занятости» (CEF GymTrainer, клиент world/gym.js)
@@ -414,9 +442,13 @@ namespace NeptuneEvo.World.Gym
                     Reply("Недостаточно наличных", false);
                     return;
                 }
+                if (!TryGet(player, out var data))
+                {
+                    Reply("Данные ещё загружаются — попробуйте через секунду", false);
+                    return;
+                }
                 MoneySystem.Wallet.Change(player, -plan.Price);
                 GameLog.Money($"player({characterData.UUID})", "server", plan.Price, $"gymMembership({plan.Days}d)");
-                var data = Get(player);
                 var from = data.MemberUntil > DateTime.Now ? data.MemberUntil : DateTime.Now;
                 data.MemberUntil = from.AddDays(plan.Days);
                 data.Dirty = true;
@@ -467,9 +499,10 @@ namespace NeptuneEvo.World.Gym
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Недостаточно денег", 3000);
                     return;
                 }
+                if (!TryGet(player, out var data))
+                    return;
                 MoneySystem.Wallet.Change(player, -zone.Price);
                 GameLog.Money($"player({characterData.UUID})", "server", zone.Price, "gymMembership");
-                var data = Get(player);
                 var from = data.MemberUntil > DateTime.Now ? data.MemberUntil : DateTime.Now;
                 data.MemberUntil = from.AddDays(zone.Days);
                 data.Dirty = true;

@@ -98,27 +98,43 @@ namespace NeptuneEvo.Fractions.Wardrobe
 
         // ------------------------------------------------------------------ хранение
 
-        private static Outfit GetOutfit(int uuid, int fraction, bool gender)
+        /// <summary>Образ из памяти (загружается в фоне при первом открытии гардероба — LoadOutfits).</summary>
+        private static Outfit GetOutfit(int uuid, int fraction, bool gender) =>
+            Outfits.TryGetValue((uuid, fraction, gender), out var result) ? result : null;
+
+        private static readonly HashSet<int> LoadingOutfits = new HashSet<int>();
+
+        /// <summary>Образы игрока из БД — в фоне, затем onDone в игровом потоке. true — уже в памяти.</summary>
+        private static bool LoadOutfits(ExtPlayer player, int uuid, Action onDone)
         {
-            if (_ready && Loaded.Add(uuid))
+            if (!_ready || Loaded.Contains(uuid))
+                return true;
+            if (!LoadingOutfits.Add(uuid))
+                return false;
+            NeptuneEvo.Database.DbQueue.ReadThen("SELECT `fraction`,`gender`,`outfit` FROM `fraction_outfits` WHERE `uuid`=@u", table =>
             {
-                try
-                {
-                    using var table = NeptuneEvo.Database.DbQueue.Read("SELECT `fraction`,`gender`,`outfit` FROM `fraction_outfits` WHERE `uuid`=@u", ("@u", uuid));
-                    if (table != null)
-                        foreach (System.Data.DataRow row in table.Rows)
+                LoadingOutfits.Remove(uuid);
+                if (!player.IsCharacterData() || player.GetUUID() != uuid)
+                    return;
+                Loaded.Add(uuid);
+                if (table != null)
+                    foreach (System.Data.DataRow row in table.Rows)
+                    {
+                        try
                         {
                             var outfit = JsonConvert.DeserializeObject<Outfit>(row["outfit"].ToString());
-                            if (outfit != null)
-                                Outfits[(uuid, Convert.ToInt32(row["fraction"]), Convert.ToInt32(row["gender"]) == 1)] = outfit;
+                            var key = (uuid, Convert.ToInt32(row["fraction"]), Convert.ToInt32(row["gender"]) == 1);
+                            if (outfit != null && !Outfits.ContainsKey(key))
+                                Outfits[key] = outfit;
                         }
-                }
-                catch (Exception e)
-                {
-                    Log.Write($"GetOutfit Exception: {e.Message}");
-                }
-            }
-            return Outfits.TryGetValue((uuid, fraction, gender), out var result) ? result : null;
+                        catch (Exception e)
+                        {
+                            Log.Write($"LoadOutfits row Exception: {e.Message}");
+                        }
+                    }
+                onDone?.Invoke();
+            }, ("@u", uuid));
+            return false;
         }
 
         private static void SaveOutfit(int uuid, int fraction, bool gender, Outfit outfit)
@@ -157,6 +173,9 @@ namespace NeptuneEvo.Fractions.Wardrobe
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.TooFar), 3000);
                     return;
                 }
+                // Сохранённый образ — из БД в фоне; как загрузится, окно откроется само
+                if (!LoadOutfits(player, characterData.UUID, () => Open(player)))
+                    return;
                 var gender = characterData.Gender;
                 var allowed = Allowed(memberFractionData.Id, gender);
                 var categories = new List<object>();

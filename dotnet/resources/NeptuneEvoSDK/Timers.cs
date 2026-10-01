@@ -23,6 +23,42 @@ namespace Redage.SDK
         public static nLog Log = new nLog("nTimer");
         private static Thread thread;
 
+        /// <summary>Обработчик таймера дольше этого (мс) — пишем в лог «долгий таймер» с именем.</summary>
+        public static int SlowMs = 50;
+        private static readonly ConcurrentDictionary<string, DateTime> SlowReported = new ConcurrentDictionary<string, DateTime>();
+
+        /// <summary>Понятное имя таймера для лога: свой ID или класс.метод обработчика.</summary>
+        internal static string NameOf(nTimer timer)
+        {
+            var method = timer.action?.Method;
+            var where = method == null ? "?" : $"{method.DeclaringType?.FullName?.Replace("NeptuneEvo.", "")}.{method.Name}";
+            return Guid.TryParse(timer.ID, out _) ? where : $"{timer.ID} ({where})";
+        }
+
+        /// <summary>Не чаще раза в минуту на один таймер, чтобы лог не забивался.</summary>
+        internal static void ReportSlow(nTimer timer, long ms, string thread)
+        {
+            var name = NameOf(timer);
+            var now = DateTime.Now;
+            if (SlowReported.TryGetValue(name, out var last) && (now - last).TotalSeconds < 60)
+                return;
+            SlowReported[name] = now;
+            Log.Write($"Долгий таймер {ms} мс [{thread}]: {name}", nLog.Type.Warn);
+        }
+
+        private static readonly Random Jitter = new Random();
+        /// <summary>
+        /// Разнос повторяющихся таймеров: первый запуск сдвигается на случайные 0–10% интервала (не больше 3 с),
+        /// чтобы таймеры с одинаковым интервалом, созданные при старте, не срабатывали в один момент.
+        /// </summary>
+        internal static int StartJitter(int ms)
+        {
+            if (ms < 1000)
+                return 0;
+            lock (Jitter)
+                return Jitter.Next(0, Math.Min(3000, ms / 10) + 1);
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -41,14 +77,13 @@ namespace Redage.SDK
                 {
                     try
                     {
-                        foreach (string TimerId in TimersData.Keys.ToList())
+                        foreach (var pair in TimersData)
                         {
                             try
                             {
-                                if (!TimersData.ContainsKey(TimerId)) continue;
-                                nTimer timer = TimersData[TimerId];
+                                nTimer timer = pair.Value;
                                 if (timer != null && !timer.isFinished) timer.Elapsed();
-                                else if (timer != null && timer.isFinished && TimersData.ContainsKey(timer.ID)) TimersData.TryRemove(timer.ID, out _);
+                                else if (timer != null && timer.isFinished) TimersData.TryRemove(pair.Key, out _);
                             }
                             catch (Exception e)
                             {
@@ -350,6 +385,16 @@ namespace Redage.SDK
     /// </summary>
     public class nTimer
     {
+        /// <summary>Выполнить обработчик с замером времени (долгие — в лог).</summary>
+        private void Run(string thread)
+        {
+            var sw = System.Diagnostics.Stopwatch.StartNew();
+            action.Invoke();
+            sw.Stop();
+            if (sw.ElapsedMilliseconds >= Timers.SlowMs)
+                Timers.ReportSlow(this, sw.ElapsedMilliseconds, thread);
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -397,7 +442,7 @@ namespace Redage.SDK
 
             ID = id_;
             MS = ms_;
-            Next = DateTime.Now.AddMilliseconds(MS);
+            Next = DateTime.Now.AddMilliseconds(MS + (isonce_ ? 0 : Timers.StartJitter(ms_)));
 
             isOnce = isonce_;
             isTask = istask_;
@@ -411,7 +456,8 @@ namespace Redage.SDK
         {
             try
             {
-                if (this == null || !Timers.TimersData.Values.Contains(this)) return;
+                // Раньше здесь был перебор всех таймеров (Values.Contains) — на каждом таймере каждые 100 мс
+                if (!Timers.TimersData.TryGetValue(ID, out var current) || !ReferenceEquals(current, this)) return;
                 if (isFinished) return;
                 if (Next <= DateTime.Now)
                 {
@@ -425,7 +471,7 @@ namespace Redage.SDK
                         {
                             try
                             {
-                                action.Invoke();
+                                Run("task");
                             }
                             catch (Exception e)
                             {
@@ -439,7 +485,7 @@ namespace Redage.SDK
                         {
                             try
                             {
-                                action.Invoke();
+                                Run("main");
                             }
                             catch (Exception e)
                             {
@@ -447,7 +493,7 @@ namespace Redage.SDK
                             }
                         });
                     }
-                    else action.Invoke();
+                    else Run("timer");
 
                     Timers.Log.Debug($"Timer.{ID}.Completed", nLog.Type.Success);
                 }

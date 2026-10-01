@@ -223,6 +223,7 @@ namespace NeptuneEvo.Functions
 
         ArmyDutyBoard,
         ArmyDutyPoint,
+        ArmyFuel,
         GymTrainer,
         PortForeman,
         PortPickup,

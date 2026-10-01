@@ -3,7 +3,7 @@
     import './main.sass';
     import './fonts/style.css';
 
-    import { getQuest, getActors } from 'json/quests/quests.js';
+    import { getQuest, getActors, setQuestVars } from 'json/quests/quests.js';
 	import { fade, fly } from 'svelte/transition';
     import { executeClient } from 'api/rage';
     import Achivment from '@/views/quests/achivment/index.svelte';   
@@ -225,6 +225,8 @@
     }
 
     if (viewData && viewData.aName !== undefined && viewData.qId !== undefined && viewData.status !== undefined && viewData.compility !== undefined) {
+        // Живые значения в тексте ({price}, {str} …) — передаёт сервер 7-м аргументом client.quest.open
+        setQuestVars(viewData.vars);
         showDialogQuests (viewData.aName, viewData.qId, viewData.status, viewData.compility);
     }
     

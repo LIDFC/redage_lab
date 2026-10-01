@@ -2942,6 +2942,8 @@ namespace NeptuneEvo.Core
                 if (sessionData == null) return;
                 var characterData = player.GetCharacterData();
                 if (characterData == null) return;
+                // Армейская колонка в Занкудо (Fractions/ArmyRP/ArmyFuel.cs) — своя заправка за счёт штата
+                if (Fractions.ArmyRP.ArmyFuel.TryFill(player)) return;
                 if (sessionData.BizID == -1 || !BizList.ContainsKey(sessionData.BizID) || !player.IsInVehicle) return;
                 var vehicle = (ExtVehicle) player.Vehicle;
                 if (vehicle == null) return;
@@ -3002,8 +3004,17 @@ namespace NeptuneEvo.Core
                             Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.GosGosZapravit), 6000);
                             return;
                         }
-                        if (lvl > fractionData.FuelLeft) 
-                            lvl = fractionData.FuelLeft;
+                        // Лимит фракции хранится в долларах: льём столько литров, сколько он покрывает
+                        var unitPrice = Math.Max(1, biz.Products[0].Price);
+                        if (lvl * unitPrice > fractionData.FuelLeft)
+                            lvl = fractionData.FuelLeft / unitPrice;
+                        if (lvl <= 0)
+                        {
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Дневной лимит топлива фракции исчерпан — обратитесь к мэрии", 5000);
+                            return;
+                        }
+                        price = lvl * unitPrice;
+                        tfuel = fuel + lvl;
                         //if (lvl <= 0 || Fractions.Stocks.fracStocks[frac].FuelLeft < lvl * biz.Products[0].Price)
                         //{
                         //    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Лимит на заправку гос. транспорта за день исчерпан", 3000);

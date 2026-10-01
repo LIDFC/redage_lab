@@ -61,6 +61,7 @@
         GymStop: 'Закончить',
         ArmyDutyBoard: 'Доска нарядов',
         ArmyDutyPoint: 'Наряд: работать',
+        ArmyFuel: 'Армейская заправка',
         GymTrainer: 'Абонемент в спортзал',
         PortForeman: 'Прораб порта: смена',
         PortPickup: 'Взять ящик',

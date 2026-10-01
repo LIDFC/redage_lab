@@ -53,6 +53,10 @@ namespace NeptuneEvo.Fractions.ArmyRP
         [JsonProperty("recruiterHeading")] public float RecruiterHeading { get; set; } = 225f;
         /// <summary>Куда выпускают с гауптвахты — у штаба.</summary>
         [JsonProperty("guardhouseExit")] public Vector3 GuardhouseExit { get; set; } = new Vector3(-2361.488, 3208.3765, 30.2);
+        /// <summary>Армейская заправка: гос. транспорт заправляется за счёт штата.</summary>
+        [JsonProperty("fuelPoint")] public Vector3 FuelPoint { get; set; } = new Vector3(-1890.0, 3070.0, 32.81);
+        /// <summary>Цена литра для списания с лимита фракции (как на обычной АЗС).</summary>
+        [JsonProperty("fuelPrice")] public int FuelPrice { get; set; } = 3;
         /// <summary>Машины армии один раз переставлены на стоянки Занкудо (ArmyVehicles.cs).</summary>
         [JsonProperty("vehiclesMoved")] public bool VehiclesMoved { get; set; }
 

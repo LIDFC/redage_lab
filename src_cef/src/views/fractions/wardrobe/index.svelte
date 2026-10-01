@@ -266,6 +266,7 @@
         width: 13vh;
         padding: 1vh 0.8vh;
         overflow-y: auto;
+        overflow-x: hidden;
         border-right: 1px solid rgba(255, 255, 255, 0.06);
     }
     .wr__tab {
@@ -363,15 +364,32 @@
     }
     .wr__grid {
         flex: 1;
+        min-height: 0;
         overflow-y: auto;
+        overflow-x: hidden;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* minmax(0, 1fr): длинное название не растягивает колонку — иначе снизу появляется горизонтальная полоса */
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 0.8vh;
         align-content: start;
         padding-right: 0.4vh;
+        box-sizing: border-box;
+    }
+    .wr__grid::-webkit-scrollbar, .wr__tabs::-webkit-scrollbar, .wr__card::-webkit-scrollbar {
+        width: 0.5vh;
+        height: 0;
+    }
+    .wr__grid::-webkit-scrollbar-track, .wr__tabs::-webkit-scrollbar-track, .wr__card::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .wr__grid::-webkit-scrollbar-thumb, .wr__tabs::-webkit-scrollbar-thumb, .wr__card::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 0.5vh;
     }
     .wr__item {
         position: relative;
+        min-width: 0;
+        box-sizing: border-box;
         padding: 1vh 1.1vh;
         border-radius: 1vh;
         background: rgba(255, 255, 255, 0.04);

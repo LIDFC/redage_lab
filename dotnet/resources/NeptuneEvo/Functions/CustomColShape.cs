@@ -230,6 +230,7 @@ namespace NeptuneEvo.Functions
         PortDrop,
         FarmForeman,
         FarmBed,
+        ArmyNpc,
     }
     class CustomColShape : Script
     {

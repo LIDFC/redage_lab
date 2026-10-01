@@ -44,7 +44,7 @@ namespace NeptuneEvo.Fractions
                 ArmyCheckpoints[7] = cfg.AirRepairPoint;
                 ArmyCheckpoints[8] = cfg.AlarmPoint;
 
-                NAPI.TextLabel.CreateTextLabel("Ketrin Kellerman", new Vector3(-2348.598, 3210.923, 29.224812), 5f, 0.3f, 4, new Color(255, 255, 255), false, 0);
+                ArmyRP.ArmyNpc.Create();
 
                 CustomColShape.CreateCylinderColShape(ArmyCheckpoints[0], 1, 2, 0, ColShapeEnums.FractionArmy, 0);
                 NAPI.TextLabel.CreateTextLabel(Main.StringToU16("~w~Оружейная\n~r~'Взаимодействие'"), new Vector3(ArmyCheckpoints[0].X, ArmyCheckpoints[0].Y, ArmyCheckpoints[0].Z + 1), 5F, 0.3F, 0, new Color(255, 255, 255), dimension: 0);

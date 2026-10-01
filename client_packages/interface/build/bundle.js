@@ -10500,16 +10500,6 @@ module.exports = "/src/views/player/help/images/zoo2.jpg";
 
 /***/ }),
 
-/***/ "./src/views/player/hudevo/phonenew/assets/images/auction.png":
-/*!********************************************************************!*\
-  !*** ./src/views/player/hudevo/phonenew/assets/images/auction.png ***!
-  \********************************************************************/
-/***/ ((module) => {
-
-module.exports = "/src/views/player/hudevo/phonenew/assets/images/auction.png";
-
-/***/ }),
-
 /***/ "./src/views/player/hudevo/phonenew/assets/images/call.png":
 /*!*****************************************************************!*\
   !*** ./src/views/player/hudevo/phonenew/assets/images/call.png ***!
@@ -95656,23 +95646,266 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 function add_css(target) {
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-hfoo9w", ".duty.svelte-hfoo9w{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(0, 0, 0, 0.5);font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#fff}.duty__window.svelte-hfoo9w{width:760px;max-width:94vw;max-height:90vh;overflow-y:auto;background:#16181d;border:1px solid rgba(255, 255, 255, 0.08);border-radius:12px;padding:20px 24px}.duty__head.svelte-hfoo9w{display:flex;align-items:center;margin-bottom:16px}.duty__title.svelte-hfoo9w{font-size:20px;font-weight:700;margin-right:auto}.duty__close.svelte-hfoo9w{cursor:pointer;opacity:0.7;padding:4px 8px}.duty__order.svelte-hfoo9w{padding:12px 14px;border-radius:10px;background:rgba(107, 142, 35, 0.15);border:1px solid rgba(107, 142, 35, 0.5);margin-bottom:16px}.duty__order_title.svelte-hfoo9w{font-weight:700;margin-bottom:4px}.duty__order_text.svelte-hfoo9w,.duty__hint.svelte-hfoo9w{font-size:13px;opacity:0.85;line-height:1.5}.duty__bad.svelte-hfoo9w{color:#ff8a65}.duty__cards.svelte-hfoo9w{display:grid;grid-template-columns:1fr 1fr;gap:12px}.duty__card.svelte-hfoo9w{padding:14px;border-radius:10px;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column;gap:8px}.duty__icon.svelte-hfoo9w{font-size:28px}.duty__card_title.svelte-hfoo9w{font-size:16px;font-weight:700}.duty__card_text.svelte-hfoo9w,.duty__meta.svelte-hfoo9w{font-size:13px;opacity:0.75;line-height:1.4}.duty__btn.svelte-hfoo9w{padding:9px 16px;border-radius:8px;background:#4b6b2a;font-weight:600;cursor:pointer;text-align:center;user-select:none;white-space:nowrap}.duty__btn.small.svelte-hfoo9w{padding:6px 10px;font-size:12px}.duty__btn.disabled.svelte-hfoo9w{opacity:0.4;cursor:default}.duty__section.svelte-hfoo9w{margin-top:18px}.duty__section_head.svelte-hfoo9w{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.duty__section_title.svelte-hfoo9w{font-weight:700}.duty__check.svelte-hfoo9w{font-size:13px;opacity:0.85;display:flex;align-items:center;gap:6px}.duty__list.svelte-hfoo9w{display:flex;flex-direction:column;gap:6px}.duty__row.svelte-hfoo9w{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255, 255, 255, 0.03)}.duty__name.svelte-hfoo9w{flex:1;font-size:14px}.duty__rank.svelte-hfoo9w{opacity:0.55;font-size:12px;margin-left:6px}.duty__busy.svelte-hfoo9w{font-size:12px;opacity:0.6}.duty__empty.svelte-hfoo9w{opacity:0.5;font-size:13px}.duty__msg.svelte-hfoo9w{margin-top:14px;min-height:18px;font-size:13px;color:#b5d77b}.duty__msg.bad.svelte-hfoo9w{color:#ff6b6f}");
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1yv69ji", ".duty.svelte-1yv69ji{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:rgba(0, 0, 0, 0.5);font-family:\"Gilroy\", \"Montserrat\", sans-serif;color:#fff}.duty__window.svelte-1yv69ji{width:760px;max-width:94vw;max-height:90vh;overflow-y:auto;background:#16181d;border:1px solid rgba(255, 255, 255, 0.08);border-radius:12px;padding:20px 24px}.duty__head.svelte-1yv69ji{display:flex;align-items:center;margin-bottom:16px}.duty__title.svelte-1yv69ji{font-size:20px;font-weight:700;margin-right:auto}.duty__close.svelte-1yv69ji{cursor:pointer;opacity:0.7;padding:4px 8px}.duty__order.svelte-1yv69ji{padding:12px 14px;border-radius:10px;background:rgba(107, 142, 35, 0.15);border:1px solid rgba(107, 142, 35, 0.5);margin-bottom:16px}.duty__order_title.svelte-1yv69ji{font-weight:700;margin-bottom:4px}.duty__order_text.svelte-1yv69ji,.duty__hint.svelte-1yv69ji{font-size:13px;opacity:0.85;line-height:1.5}.duty__bad.svelte-1yv69ji{color:#ff8a65}.duty__cards.svelte-1yv69ji{display:grid;grid-template-columns:1fr 1fr;gap:12px}.duty__card.svelte-1yv69ji{padding:14px;border-radius:10px;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column;gap:8px}.duty__icon.svelte-1yv69ji{font-size:28px}.duty__card_title.svelte-1yv69ji{font-size:16px;font-weight:700}.duty__card_text.svelte-1yv69ji,.duty__meta.svelte-1yv69ji{font-size:13px;opacity:0.75;line-height:1.4}.duty__btn.svelte-1yv69ji{padding:9px 16px;border-radius:8px;background:#4b6b2a;font-weight:600;cursor:pointer;text-align:center;user-select:none;white-space:nowrap}.duty__btn.small.svelte-1yv69ji{padding:6px 10px;font-size:12px}.duty__btn.disabled.svelte-1yv69ji{opacity:0.4;cursor:default}.duty__section.svelte-1yv69ji{margin-top:18px}.duty__section_head.svelte-1yv69ji{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}.duty__section_title.svelte-1yv69ji{font-weight:700}.duty__check.svelte-1yv69ji{font-size:13px;opacity:0.85;display:flex;align-items:center;gap:6px}.duty__list.svelte-1yv69ji{display:flex;flex-direction:column;gap:6px}.duty__row.svelte-1yv69ji{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;background:rgba(255, 255, 255, 0.03)}.duty__name.svelte-1yv69ji{flex:1;font-size:14px}.duty__rank.svelte-1yv69ji{opacity:0.55;font-size:12px;margin-left:6px}.duty__busy.svelte-1yv69ji{font-size:12px;opacity:0.6}.duty__empty.svelte-1yv69ji{opacity:0.5;font-size:13px}.duty__msg.svelte-1yv69ji{margin-top:14px;min-height:18px;font-size:13px;color:#b5d77b}.duty__msg.bad.svelte-1yv69ji{color:#ff6b6f}.duty__tabs.svelte-1yv69ji{display:flex;gap:6px;margin-bottom:16px;border-bottom:1px solid rgba(255, 255, 255, 0.08)}.duty__tab.svelte-1yv69ji{padding:8px 14px;font-weight:600;font-size:14px;opacity:0.6;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;display:flex;align-items:center;gap:6px}.duty__tab.active.svelte-1yv69ji{opacity:1;border-bottom-color:#7ea53f}.duty__count.svelte-1yv69ji{font-size:11px;background:#4b6b2a;border-radius:8px;padding:1px 6px}.duty__form.svelte-1yv69ji{padding:12px 14px;border-radius:10px;background:rgba(255, 255, 255, 0.04);display:flex;flex-direction:column;gap:8px;margin-bottom:12px}.duty__templates.svelte-1yv69ji{display:flex;gap:6px;flex-wrap:wrap}.duty__chip.svelte-1yv69ji{font-size:12px;padding:4px 10px;border-radius:12px;background:rgba(107, 142, 35, 0.2);border:1px solid rgba(107, 142, 35, 0.5);cursor:pointer}.duty__input.svelte-1yv69ji{width:100%;box-sizing:border-box;padding:8px 10px;border-radius:8px;border:1px solid rgba(255, 255, 255, 0.1);background:rgba(0, 0, 0, 0.25);color:#fff;font-family:inherit;font-size:13px;outline:none}.duty__input.svelte-1yv69ji:focus{border-color:#7ea53f}.duty__textarea.svelte-1yv69ji{min-height:80px;resize:none}.duty__form_foot.svelte-1yv69ji{display:flex;align-items:center;justify-content:space-between}.duty__counter.svelte-1yv69ji{font-size:12px;opacity:0.5}.duty__empty_news.svelte-1yv69ji{padding:20px 0;text-align:center}.duty__news.svelte-1yv69ji{display:flex;flex-direction:column;gap:8px}.duty__news_item.svelte-1yv69ji{padding:12px 14px;border-radius:10px;background:rgba(255, 255, 255, 0.04);border-left:3px solid #6b8e23}.duty__news_head.svelte-1yv69ji{display:flex;align-items:center;gap:10px}.duty__news_title.svelte-1yv69ji{font-weight:700;font-size:15px;flex:1;min-width:0;overflow-wrap:anywhere}.duty__news_date.svelte-1yv69ji{font-size:12px;opacity:0.5}.duty__news_del.svelte-1yv69ji{cursor:pointer;opacity:0.5;font-size:12px;padding:2px 6px}.duty__news_del.svelte-1yv69ji:hover{opacity:1;color:#ff6b6f}.duty__news_text.svelte-1yv69ji{margin-top:6px;font-size:13px;line-height:1.5;opacity:0.9;white-space:pre-wrap;overflow-wrap:anywhere}.duty__news_author.svelte-1yv69ji{margin-top:6px;font-size:12px;opacity:0.55}");
+}
+
+function get_each_context_2(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[38] = list[i];
+	return child_ctx;
+}
+
+function get_each_context_3(ctx, list, i) {
+	const child_ctx = ctx.slice();
+	child_ctx[41] = list[i];
+	return child_ctx;
 }
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[15] = list[i];
+	child_ctx[32] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[18] = list[i];
+	child_ctx[35] = list[i];
 	return child_ctx;
 }
 
-// (53:8) {#if data.order}
-function create_if_block_3(ctx) {
+// (100:26) {#if announcements.length}
+function create_if_block_11(ctx) {
+	let span;
+	let t_value = /*announcements*/ ctx[9].length + "";
+	let t;
+
+	return {
+		c() {
+			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__count svelte-1yv69ji");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*announcements*/ 512 && t_value !== (t_value = /*announcements*/ ctx[9].length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, t_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
+		}
+	};
+}
+
+// (140:8) {:else}
+function create_else_block_1(ctx) {
+	let t0;
+	let div0;
+	let t1;
+	let t2;
+	let div1;
+	let t3;
+	let if_block0 = /*data*/ ctx[0].order && create_if_block_8(ctx);
+	let each_value_3 = /*cards*/ ctx[10];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value_3.length; i += 1) {
+		each_blocks[i] = create_each_block_3(get_each_context_3(ctx, each_value_3, i));
+	}
+
+	let if_block1 = /*data*/ ctx[0].isOfficer && create_if_block_5(ctx);
+
+	return {
+		c() {
+			if (if_block0) if_block0.c();
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*message*/ ctx[1]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__cards svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__msg svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "bad", !/*ok*/ ctx[2]);
+		},
+		m(target, anchor) {
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div0, null);
+				}
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			if (if_block1) if_block1.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+		},
+		p(ctx, dirty) {
+			if (/*data*/ ctx[0].order) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_8(ctx);
+					if_block0.c();
+					if_block0.m(t0.parentNode, t0);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty[0] & /*data, cards, take*/ 3073) {
+				each_value_3 = /*cards*/ ctx[10];
+				let i;
+
+				for (i = 0; i < each_value_3.length; i += 1) {
+					const child_ctx = get_each_context_3(ctx, each_value_3, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block_3(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div0, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value_3.length;
+			}
+
+			if (/*data*/ ctx[0].isOfficer) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_5(ctx);
+					if_block1.c();
+					if_block1.m(t2.parentNode, t2);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (dirty[0] & /*message*/ 2) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, /*message*/ ctx[1]);
+
+			if (dirty[0] & /*ok*/ 4) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "bad", !/*ok*/ ctx[2]);
+			}
+		},
+		d(detaching) {
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (if_block1) if_block1.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div1);
+		}
+	};
+}
+
+// (104:8) {#if tab === "news"}
+function create_if_block(ctx) {
+	let t0;
+	let t1;
+	let if_block2_anchor;
+	let if_block0 = /*data*/ ctx[0].canPost && create_if_block_4(ctx);
+	let if_block1 = /*annMessage*/ ctx[7] && create_if_block_3(ctx);
+
+	function select_block_type_1(ctx, dirty) {
+		if (!/*announcements*/ ctx[9].length) return create_if_block_1;
+		return create_else_block;
+	}
+
+	let current_block_type = select_block_type_1(ctx, [-1, -1]);
+	let if_block2 = current_block_type(ctx);
+
+	return {
+		c() {
+			if (if_block0) if_block0.c();
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block1) if_block1.c();
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block2.c();
+			if_block2_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+		},
+		m(target, anchor) {
+			if (if_block0) if_block0.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t0, anchor);
+			if (if_block1) if_block1.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			if_block2.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block2_anchor, anchor);
+		},
+		p(ctx, dirty) {
+			if (/*data*/ ctx[0].canPost) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_4(ctx);
+					if_block0.c();
+					if_block0.m(t0.parentNode, t0);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (/*annMessage*/ ctx[7]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_3(ctx);
+					if_block1.c();
+					if_block1.m(t1.parentNode, t1);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
+			}
+
+			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block2) {
+				if_block2.p(ctx, dirty);
+			} else {
+				if_block2.d(1);
+				if_block2 = current_block_type(ctx);
+
+				if (if_block2) {
+					if_block2.c();
+					if_block2.m(if_block2_anchor.parentNode, if_block2_anchor);
+				}
+			}
+		},
+		d(detaching) {
+			if (if_block0) if_block0.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
+			if (if_block1) if_block1.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if_block2.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block2_anchor);
+		}
+	};
+}
+
+// (142:8) {#if data.order}
+function create_if_block_8(ctx) {
 	let div3;
 	let div0;
 	let t0;
@@ -95693,8 +95926,8 @@ function create_if_block_3(ctx) {
 	let t10;
 	let t11;
 	let div2;
-	let if_block0 = /*data*/ ctx[0].order.officer && create_if_block_5(ctx);
-	let if_block1 = /*data*/ ctx[0].order.punishment && create_if_block_4(ctx);
+	let if_block0 = /*data*/ ctx[0].order.officer && create_if_block_10(ctx);
+	let if_block1 = /*data*/ ctx[0].order.punishment && create_if_block_9(ctx);
 
 	return {
 		c() {
@@ -95717,10 +95950,10 @@ function create_if_block_3(ctx) {
 			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div2.textContent = "Идите к метке на карте и нажмите E на точке.";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__order_title svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__order_text svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__hint svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__order svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__order_title svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__order_text svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__hint svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__order svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
@@ -95743,16 +95976,16 @@ function create_if_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].order.name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
-			if (dirty & /*data*/ 1 && t4_value !== (t4_value = /*data*/ ctx[0].order.step + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
-			if (dirty & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].order.total + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
-			if (dirty & /*data*/ 1 && t8_value !== (t8_value = /*data*/ ctx[0].order.minutesLeft + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
+			if (dirty[0] & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].order.name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*data*/ 1 && t4_value !== (t4_value = /*data*/ ctx[0].order.step + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*data*/ 1 && t6_value !== (t6_value = /*data*/ ctx[0].order.total + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
+			if (dirty[0] & /*data*/ 1 && t8_value !== (t8_value = /*data*/ ctx[0].order.minutesLeft + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
 
 			if (/*data*/ ctx[0].order.officer) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_5(ctx);
+					if_block0 = create_if_block_10(ctx);
 					if_block0.c();
 					if_block0.m(div1, t10);
 				}
@@ -95765,7 +95998,7 @@ function create_if_block_3(ctx) {
 				if (if_block1) {
 					
 				} else {
-					if_block1 = create_if_block_4(ctx);
+					if_block1 = create_if_block_9(ctx);
 					if_block1.c();
 					if_block1.m(div1, null);
 				}
@@ -95782,8 +96015,8 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (58:20) {#if data.order.officer}
-function create_if_block_5(ctx) {
+// (147:20) {#if data.order.officer}
+function create_if_block_10(ctx) {
 	let t0;
 	let t1_value = /*data*/ ctx[0].order.officer + "";
 	let t1;
@@ -95801,7 +96034,7 @@ function create_if_block_5(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t2, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].order.officer + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*data*/ 1 && t1_value !== (t1_value = /*data*/ ctx[0].order.officer + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
 		},
 		d(detaching) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t0);
@@ -95811,15 +96044,15 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (59:20) {#if data.order.punishment}
-function create_if_block_4(ctx) {
+// (148:20) {#if data.order.punishment}
+function create_if_block_9(ctx) {
 	let span;
 
 	return {
 		c() {
 			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
 			span.textContent = "Взыскание — без премии.";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__bad svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__bad svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
@@ -95830,27 +96063,27 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (66:12) {#each cards as card}
-function create_each_block_1(ctx) {
+// (155:12) {#each cards as card}
+function create_each_block_3(ctx) {
 	let div5;
 	let div0;
-	let t0_value = /*card*/ ctx[18].icon + "";
+	let t0_value = /*card*/ ctx[41].icon + "";
 	let t0;
 	let t1;
 	let div1;
-	let t2_value = /*card*/ ctx[18].title + "";
+	let t2_value = /*card*/ ctx[41].title + "";
 	let t2;
 	let t3;
 	let div2;
-	let t4_value = /*card*/ ctx[18].text + "";
+	let t4_value = /*card*/ ctx[41].text + "";
 	let t4;
 	let t5;
 	let div3;
 	let t6;
-	let t7_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points || 0) + "";
+	let t7_value = (/*data*/ ctx[0][/*card*/ ctx[41].type] && /*data*/ ctx[0][/*card*/ ctx[41].type].points || 0) + "";
 	let t7;
 	let t8;
-	let t9_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].reward || 0) + "";
+	let t9_value = (/*data*/ ctx[0][/*card*/ ctx[41].type] && /*data*/ ctx[0][/*card*/ ctx[41].type].reward || 0) + "";
 	let t9;
 	let t10;
 	let div4;
@@ -95860,8 +96093,8 @@ function create_each_block_1(ctx) {
 	let mounted;
 	let dispose;
 
-	function click_handler() {
-		return /*click_handler*/ ctx[10](/*card*/ ctx[18]);
+	function click_handler_4() {
+		return /*click_handler_4*/ ctx[27](/*card*/ ctx[41]);
 	}
 
 	return {
@@ -95885,13 +96118,13 @@ function create_each_block_1(ctx) {
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
 			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__icon svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__card_title svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__card_text svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__meta svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__btn svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", !!/*data*/ ctx[0].order || !(/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points));
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__card svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__icon svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__card_title svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__card_text svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__meta svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__btn svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", !!/*data*/ ctx[0].order || !(/*data*/ ctx[0][/*card*/ ctx[41].type] && /*data*/ ctx[0][/*card*/ ctx[41].type].points));
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__card svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
@@ -95915,18 +96148,18 @@ function create_each_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t12);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", click_handler);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", click_handler_4);
 				mounted = true;
 			}
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*data*/ 1 && t7_value !== (t7_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
-			if (dirty & /*data*/ 1 && t9_value !== (t9_value = (/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].reward || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
-			if (dirty & /*data*/ 1 && t11_value !== (t11_value = (/*data*/ ctx[0].order ? "Вы уже в наряде" : "Заступить") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
+			if (dirty[0] & /*data*/ 1 && t7_value !== (t7_value = (/*data*/ ctx[0][/*card*/ ctx[41].type] && /*data*/ ctx[0][/*card*/ ctx[41].type].points || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty[0] & /*data*/ 1 && t9_value !== (t9_value = (/*data*/ ctx[0][/*card*/ ctx[41].type] && /*data*/ ctx[0][/*card*/ ctx[41].type].reward || 0) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+			if (dirty[0] & /*data*/ 1 && t11_value !== (t11_value = (/*data*/ ctx[0].order ? "Вы уже в наряде" : "Заступить") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
 
-			if (dirty & /*data, cards*/ 17) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", !!/*data*/ ctx[0].order || !(/*data*/ ctx[0][/*card*/ ctx[18].type] && /*data*/ ctx[0][/*card*/ ctx[18].type].points));
+			if (dirty[0] & /*data, cards*/ 1025) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "disabled", !!/*data*/ ctx[0].order || !(/*data*/ ctx[0][/*card*/ ctx[41].type] && /*data*/ ctx[0][/*card*/ ctx[41].type].points));
 			}
 		},
 		d(detaching) {
@@ -95937,8 +96170,8 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (81:8) {#if data.isOfficer}
-function create_if_block(ctx) {
+// (170:8) {#if data.isOfficer}
+function create_if_block_5(ctx) {
 	let div2;
 	let div1;
 	let div0;
@@ -95950,12 +96183,12 @@ function create_if_block(ctx) {
 	let mounted;
 	let dispose;
 
-	function select_block_type(ctx, dirty) {
-		if (!/*data*/ ctx[0].soldiers || !/*data*/ ctx[0].soldiers.length) return create_if_block_1;
-		return create_else_block;
+	function select_block_type_2(ctx, dirty) {
+		if (!/*data*/ ctx[0].soldiers || !/*data*/ ctx[0].soldiers.length) return create_if_block_6;
+		return create_else_block_2;
 	}
 
-	let current_block_type = select_block_type(ctx, -1);
+	let current_block_type = select_block_type_2(ctx, [-1, -1]);
 	let if_block = current_block_type(ctx);
 
 	return {
@@ -95970,11 +96203,11 @@ function create_if_block(ctx) {
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" Взыскание (без премии)");
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if_block.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__section_title svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__section_title svelte-1yv69ji");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "checkbox");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label, "class", "duty__check svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__section_head svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__section svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(label, "class", "duty__check svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__section_head svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__section svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
@@ -95989,16 +96222,16 @@ function create_if_block(ctx) {
 			if_block.m(div2, null);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "change", /*input_change_handler*/ ctx[11]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "change", /*input_change_handler*/ ctx[28]);
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*punishment*/ 8) {
+			if (dirty[0] & /*punishment*/ 8) {
 				input.checked = /*punishment*/ ctx[3];
 			}
 
-			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block) {
+			if (current_block_type === (current_block_type = select_block_type_2(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
 			} else {
 				if_block.d(1);
@@ -96019,18 +96252,18 @@ function create_if_block(ctx) {
 	};
 }
 
-// (89:16) {:else}
-function create_else_block(ctx) {
+// (178:16) {:else}
+function create_else_block_2(ctx) {
 	let div;
 	let each_blocks = [];
 	let each_1_lookup = new Map();
-	let each_value = /*data*/ ctx[0].soldiers;
-	const get_key = ctx => /*soldier*/ ctx[15].id;
+	let each_value_2 = /*data*/ ctx[0].soldiers;
+	const get_key = ctx => /*soldier*/ ctx[38].id;
 
-	for (let i = 0; i < each_value.length; i += 1) {
-		let child_ctx = get_each_context(ctx, each_value, i);
+	for (let i = 0; i < each_value_2.length; i += 1) {
+		let child_ctx = get_each_context_2(ctx, each_value_2, i);
 		let key = get_key(child_ctx);
-		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+		each_1_lookup.set(key, each_blocks[i] = create_each_block_2(key, child_ctx));
 	}
 
 	return {
@@ -96041,7 +96274,7 @@ function create_else_block(ctx) {
 				each_blocks[i].c();
 			}
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__list svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__list svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -96053,9 +96286,9 @@ function create_else_block(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*data, assign*/ 65) {
-				each_value = /*data*/ ctx[0].soldiers;
-				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+			if (dirty[0] & /*data, assign*/ 4097) {
+				each_value_2 = /*data*/ ctx[0].soldiers;
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value_2, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_2, null, get_each_context_2);
 			}
 		},
 		d(detaching) {
@@ -96068,15 +96301,15 @@ function create_else_block(ctx) {
 	};
 }
 
-// (87:16) {#if !data.soldiers || !data.soldiers.length}
-function create_if_block_1(ctx) {
+// (176:16) {#if !data.soldiers || !data.soldiers.length}
+function create_if_block_6(ctx) {
 	let div;
 
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Нет военных на смене";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__empty svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__empty svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -96088,20 +96321,20 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (96:32) {:else}
-function create_else_block_1(ctx) {
+// (185:32) {:else}
+function create_else_block_3(ctx) {
 	let div0;
 	let t1;
 	let div1;
 	let mounted;
 	let dispose;
 
-	function click_handler_1() {
-		return /*click_handler_1*/ ctx[12](/*soldier*/ ctx[15]);
+	function click_handler_5() {
+		return /*click_handler_5*/ ctx[29](/*soldier*/ ctx[38]);
 	}
 
-	function click_handler_2() {
-		return /*click_handler_2*/ ctx[13](/*soldier*/ ctx[15]);
+	function click_handler_6() {
+		return /*click_handler_6*/ ctx[30](/*soldier*/ ctx[38]);
 	}
 
 	return {
@@ -96111,8 +96344,8 @@ function create_else_block_1(ctx) {
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1.textContent = "На уборку";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__btn small svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__btn small svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__btn small svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__btn small svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
@@ -96121,8 +96354,8 @@ function create_else_block_1(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler_1),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler_2)
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", click_handler_5),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", click_handler_6)
 				];
 
 				mounted = true;
@@ -96141,15 +96374,15 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (94:32) {#if soldier.busy}
-function create_if_block_2(ctx) {
+// (183:32) {#if soldier.busy}
+function create_if_block_7(ctx) {
 	let div;
 
 	return {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "в наряде";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__busy svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__busy svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -96161,25 +96394,25 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (91:24) {#each data.soldiers as soldier (soldier.id)}
-function create_each_block(key_1, ctx) {
+// (180:24) {#each data.soldiers as soldier (soldier.id)}
+function create_each_block_2(key_1, ctx) {
 	let div1;
 	let div0;
-	let t0_value = /*soldier*/ ctx[15].name + "";
+	let t0_value = /*soldier*/ ctx[38].name + "";
 	let t0;
 	let t1;
 	let span;
-	let t2_value = /*soldier*/ ctx[15].rank + "";
+	let t2_value = /*soldier*/ ctx[38].rank + "";
 	let t2;
 	let t3;
 	let t4;
 
-	function select_block_type_1(ctx, dirty) {
-		if (/*soldier*/ ctx[15].busy) return create_if_block_2;
-		return create_else_block_1;
+	function select_block_type_3(ctx, dirty) {
+		if (/*soldier*/ ctx[38].busy) return create_if_block_7;
+		return create_else_block_3;
 	}
 
-	let current_block_type = select_block_type_1(ctx, -1);
+	let current_block_type = select_block_type_3(ctx, [-1, -1]);
 	let if_block = current_block_type(ctx);
 
 	return {
@@ -96195,9 +96428,9 @@ function create_each_block(key_1, ctx) {
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if_block.c();
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__rank svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__name svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__row svelte-hfoo9w");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "duty__rank svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__name svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__row svelte-1yv69ji");
 			this.first = div1;
 		},
 		m(target, anchor) {
@@ -96213,10 +96446,10 @@ function create_each_block(key_1, ctx) {
 		},
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
-			if (dirty & /*data*/ 1 && t0_value !== (t0_value = /*soldier*/ ctx[15].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*data*/ 1 && t2_value !== (t2_value = /*soldier*/ ctx[15].rank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+			if (dirty[0] & /*data*/ 1 && t0_value !== (t0_value = /*soldier*/ ctx[38].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*data*/ 1 && t2_value !== (t2_value = /*soldier*/ ctx[38].rank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
 
-			if (current_block_type === (current_block_type = select_block_type_1(ctx, dirty)) && if_block) {
+			if (current_block_type === (current_block_type = select_block_type_3(ctx, dirty)) && if_block) {
 				if_block.p(ctx, dirty);
 			} else {
 				if_block.d(1);
@@ -96235,115 +96468,121 @@ function create_each_block(key_1, ctx) {
 	};
 }
 
-function create_fragment(ctx) {
+// (105:12) {#if data.canPost}
+function create_if_block_4(ctx) {
 	let div6;
-	let div5;
-	let div2;
 	let div0;
 	let t1;
 	let div1;
+	let t2;
+	let input;
 	let t3;
+	let textarea;
 	let t4;
-	let div3;
+	let div4;
+	let div2;
+	let t5_value = /*annText*/ ctx[6].length + "";
 	let t5;
 	let t6;
-	let div4;
 	let t7;
-	let div6_intro;
+	let div3;
+	let t9;
+	let div5;
 	let mounted;
 	let dispose;
-	let if_block0 = /*data*/ ctx[0].order && create_if_block_3(ctx);
-	let each_value_1 = /*cards*/ ctx[4];
+	let each_value_1 = /*templates*/ ctx[14];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
 	}
 
-	let if_block1 = /*data*/ ctx[0].isOfficer && create_if_block(ctx);
-
 	return {
 		c() {
 			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0.textContent = "Доска нарядов";
+			div0.textContent = "Новое объявление";
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1.textContent = "✕";
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block0) if_block0.c();
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				each_blocks[i].c();
 			}
 
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block1) if_block1.c();
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			textarea = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("textarea");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*message*/ ctx[1]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__title svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__close svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__head svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__cards svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__msg svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "bad", !/*ok*/ ctx[2]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__window svelte-hfoo9w");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "duty svelte-hfoo9w");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("/600");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Опубликовать";
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div5.textContent = "Все военнослужащие в сети получат оповещение по рации.";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__section_title svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__templates svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "duty__input svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "maxlength", "60");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", "Заголовок (например: Построение в 20:00)");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(textarea, "class", "duty__input duty__textarea svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(textarea, "maxlength", "600");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(textarea, "placeholder", "Текст объявления: что, где, когда, форма одежды");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__counter svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__btn svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__form_foot svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__hint svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "duty__form svelte-1yv69ji");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div6, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t3);
-			if (if_block0) if_block0.m(div5, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div1);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
 				if (each_blocks[i]) {
-					each_blocks[i].m(div3, null);
+					each_blocks[i].m(div1, null);
 				}
 			}
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
-			if (if_block1) if_block1.m(div5, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*annTitle*/ ctx[5]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, textarea);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(textarea, /*annText*/ ctx[6]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[8]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*close*/ ctx[7])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[24]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "keyup", /*stop*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "keydown", /*stop*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(textarea, "input", /*textarea_input_handler*/ ctx[25]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(textarea, "keyup", /*stop*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(textarea, "keydown", /*stop*/ ctx[19]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*post*/ ctx[16])
 				];
 
 				mounted = true;
 			}
 		},
-		p(ctx, [dirty]) {
-			if (/*data*/ ctx[0].order) {
-				if (if_block0) {
-					if_block0.p(ctx, dirty);
-				} else {
-					if_block0 = create_if_block_3(ctx);
-					if_block0.c();
-					if_block0.m(div5, t4);
-				}
-			} else if (if_block0) {
-				if_block0.d(1);
-				if_block0 = null;
-			}
-
-			if (dirty & /*data, cards, take*/ 49) {
-				each_value_1 = /*cards*/ ctx[4];
+		p(ctx, dirty) {
+			if (dirty[0] & /*useTemplate, templates*/ 49152) {
+				each_value_1 = /*templates*/ ctx[14];
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -96354,7 +96593,7 @@ function create_fragment(ctx) {
 					} else {
 						each_blocks[i] = create_each_block_1(child_ctx);
 						each_blocks[i].c();
-						each_blocks[i].m(div3, null);
+						each_blocks[i].m(div1, null);
 					}
 				}
 
@@ -96365,39 +96604,435 @@ function create_fragment(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if (/*data*/ ctx[0].isOfficer) {
-				if (if_block1) {
-					if_block1.p(ctx, dirty);
-				} else {
-					if_block1 = create_if_block(ctx);
-					if_block1.c();
-					if_block1.m(div5, t6);
-				}
-			} else if (if_block1) {
-				if_block1.d(1);
-				if_block1 = null;
+			if (dirty[0] & /*annTitle*/ 32 && input.value !== /*annTitle*/ ctx[5]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*annTitle*/ ctx[5]);
 			}
 
-			if (dirty & /*message*/ 2) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, /*message*/ ctx[1]);
+			if (dirty[0] & /*annText*/ 64) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(textarea, /*annText*/ ctx[6]);
+			}
 
-			if (dirty & /*ok*/ 4) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "bad", !/*ok*/ ctx[2]);
+			if (dirty[0] & /*annText*/ 64 && t5_value !== (t5_value = /*annText*/ ctx[6].length + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (109:24) {#each templates as t}
+function create_each_block_1(ctx) {
+	let div;
+	let t_value = /*t*/ ctx[35].title + "";
+	let t;
+	let mounted;
+	let dispose;
+
+	function click_handler_2() {
+		return /*click_handler_2*/ ctx[23](/*t*/ ctx[35]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__chip svelte-1yv69ji");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_2);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (122:12) {#if annMessage}
+function create_if_block_3(ctx) {
+	let div;
+	let t;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*annMessage*/ ctx[7]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__msg svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "bad", !/*annOk*/ ctx[8]);
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div, t);
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*annMessage*/ 128) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t, /*annMessage*/ ctx[7]);
+
+			if (dirty[0] & /*annOk*/ 256) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "bad", !/*annOk*/ ctx[8]);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (125:12) {:else}
+function create_else_block(ctx) {
+	let div;
+	let each_blocks = [];
+	let each_1_lookup = new Map();
+	let each_value = /*announcements*/ ctx[9];
+	const get_key = ctx => /*a*/ ctx[32].id;
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		let child_ctx = get_each_context(ctx, each_value, i);
+		let key = get_key(child_ctx);
+		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__news svelte-1yv69ji");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div, null);
+				}
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*announcements, remove*/ 131584) {
+				each_value = /*announcements*/ ctx[9];
+				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].d();
+			}
+		}
+	};
+}
+
+// (123:12) {#if !announcements.length}
+function create_if_block_1(ctx) {
+	let div;
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "Объявлений пока нет";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__empty duty__empty_news svelte-1yv69ji");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+		},
+		p: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+		}
+	};
+}
+
+// (132:32) {#if a.canDelete}
+function create_if_block_2(ctx) {
+	let div;
+	let mounted;
+	let dispose;
+
+	function click_handler_3() {
+		return /*click_handler_3*/ ctx[26](/*a*/ ctx[32]);
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div.textContent = "✕";
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "duty__news_del svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "title", "Удалить");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			if (!mounted) {
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", click_handler_3);
+				mounted = true;
+			}
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			mounted = false;
+			dispose();
+		}
+	};
+}
+
+// (127:20) {#each announcements as a (a.id)}
+function create_each_block(key_1, ctx) {
+	let div5;
+	let div2;
+	let div0;
+	let t0_value = /*a*/ ctx[32].title + "";
+	let t0;
+	let t1;
+	let div1;
+	let t2_value = /*a*/ ctx[32].date + "";
+	let t2;
+	let t3;
+	let t4;
+	let div3;
+	let t5_value = /*a*/ ctx[32].text + "";
+	let t5;
+	let t6;
+	let div4;
+	let t7_value = /*a*/ ctx[32].rank + "";
+	let t7;
+	let t8;
+	let t9_value = /*a*/ ctx[32].author + "";
+	let t9;
+	let t10;
+	let if_block = /*a*/ ctx[32].canDelete && create_if_block_2(ctx);
+
+	return {
+		key: key_1,
+		first: null,
+		c() {
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if (if_block) if_block.c();
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t5_value);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__news_title svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__news_date svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__news_head svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__news_text svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__news_author svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__news_item svelte-1yv69ji");
+			this.first = div5;
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
+			if (if_block) if_block.m(div2, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t9);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t10);
+		},
+		p(new_ctx, dirty) {
+			ctx = new_ctx;
+			if (dirty[0] & /*announcements*/ 512 && t0_value !== (t0_value = /*a*/ ctx[32].title + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*announcements*/ 512 && t2_value !== (t2_value = /*a*/ ctx[32].date + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
+
+			if (/*a*/ ctx[32].canDelete) {
+				if (if_block) {
+					if_block.p(ctx, dirty);
+				} else {
+					if_block = create_if_block_2(ctx);
+					if_block.c();
+					if_block.m(div2, null);
+				}
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
+			}
+
+			if (dirty[0] & /*announcements*/ 512 && t5_value !== (t5_value = /*a*/ ctx[32].text + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, t5_value);
+			if (dirty[0] & /*announcements*/ 512 && t7_value !== (t7_value = /*a*/ ctx[32].rank + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
+			if (dirty[0] & /*announcements*/ 512 && t9_value !== (t9_value = /*a*/ ctx[32].author + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
+			if (if_block) if_block.d();
+		}
+	};
+}
+
+function create_fragment(ctx) {
+	let div7;
+	let div6;
+	let div2;
+	let div0;
+	let t1;
+	let div1;
+	let t3;
+	let div5;
+	let div3;
+	let t5;
+	let div4;
+	let t6;
+	let t7;
+	let div7_intro;
+	let mounted;
+	let dispose;
+	let if_block0 = /*announcements*/ ctx[9].length && create_if_block_11(ctx);
+
+	function select_block_type(ctx, dirty) {
+		if (/*tab*/ ctx[4] === "news") return create_if_block;
+		return create_else_block_1;
+	}
+
+	let current_block_type = select_block_type(ctx, [-1, -1]);
+	let if_block1 = current_block_type(ctx);
+
+	return {
+		c() {
+			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Доска нарядов";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1.textContent = "✕";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3.textContent = "Наряды";
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Объявления");
+			if (if_block0) if_block0.c();
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			if_block1.c();
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "duty__title svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "duty__close svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "duty__head svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "duty__tab svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*tab*/ ctx[4] === "duty");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "duty__tab svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "active", /*tab*/ ctx[4] === "news");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "duty__tabs svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "duty__window svelte-1yv69ji");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "duty svelte-1yv69ji");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, div5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
+			if (if_block0) if_block0.m(div4, null);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t7);
+			if_block1.m(div6, null);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[18]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div1, "click", /*close*/ ctx[13]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*click_handler*/ ctx[21]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*click_handler_1*/ ctx[22])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*tab*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*tab*/ ctx[4] === "duty");
+			}
+
+			if (/*announcements*/ ctx[9].length) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_11(ctx);
+					if_block0.c();
+					if_block0.m(div4, null);
+				}
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
+			}
+
+			if (dirty[0] & /*tab*/ 16) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div4, "active", /*tab*/ ctx[4] === "news");
+			}
+
+			if (current_block_type === (current_block_type = select_block_type(ctx, dirty)) && if_block1) {
+				if_block1.p(ctx, dirty);
+			} else {
+				if_block1.d(1);
+				if_block1 = current_block_type(ctx);
+
+				if (if_block1) {
+					if_block1.c();
+					if_block1.m(div6, null);
+				}
 			}
 		},
 		i(local) {
-			if (!div6_intro) {
+			if (!div7_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div6_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div6, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 150 });
-					div6_intro.start();
+					div7_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div7, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 150 });
+					div7_intro.start();
 				});
 			}
 		},
 		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
 		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div6);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
 			if (if_block0) if_block0.d();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-			if (if_block1) if_block1.d();
+			if_block1.d();
 			mounted = false;
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
 		}
@@ -96405,6 +97040,7 @@ function create_fragment(ctx) {
 }
 
 function instance($$self, $$props, $$invalidate) {
+	let announcements;
 	let { viewData } = $$props;
 
 	const parse = d => {
@@ -96445,24 +97081,104 @@ function instance($$self, $$props, $$invalidate) {
 		$$invalidate(2, ok = !!success);
 	});
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => window.events.removeEvent("cef.army.duty.update"));
+	// ---- Объявления
+	let tab = "duty";
+
+	let annTitle = "";
+	let annText = "";
+	let annMessage = "";
+	let annOk = true;
+
+	const templates = [
+		{
+			title: "Построение",
+			text: "Общее построение на плацу сегодня в __:__. Форма — полевая, при оружии. Опоздавшим — наряд."
+		},
+		{
+			title: "Тренировка",
+			text: "Тренировка в тире и на полосе препятствий в __:__. Сбор у штаба."
+		},
+		{
+			title: "Учения",
+			text: "Плановые учения в __:__. Подробности — у командиров подразделений. Явка обязательна."
+		}
+	];
+
+	const useTemplate = t => {
+		$$invalidate(5, annTitle = t.title);
+		$$invalidate(6, annText = t.text);
+	};
+
+	const post = () => {
+		if (annTitle.trim().length < 3 || annText.trim().length < 5) {
+			$$invalidate(7, annMessage = "Заполните заголовок (от 3 символов) и текст (от 5 символов)");
+			$$invalidate(8, annOk = false);
+			return;
+		}
+
+		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.board.post", annTitle.trim(), annText.trim());
+	};
+
+	const remove = a => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.army.board.delete", a.id);
+
+	window.events.addEvent("cef.army.board.list", json => {
+		$$invalidate(0, data = { ...data, announcements: parse(json) });
+	});
+
+	window.events.addEvent("cef.army.board.result", (text, success) => {
+		$$invalidate(7, annMessage = text || "");
+		$$invalidate(8, annOk = !!success);
+
+		if (success && text === "Объявление опубликовано") {
+			$$invalidate(5, annTitle = "");
+			$$invalidate(6, annText = "");
+		}
+	});
+
+	(0,svelte__WEBPACK_IMPORTED_MODULE_2__.onDestroy)(() => {
+		window.events.removeEvent("cef.army.duty.update");
+		window.events.removeEvent("cef.army.board.list");
+		window.events.removeEvent("cef.army.board.result");
+	});
 
 	const onKey = e => {
 		if (e.key === "Escape") close();
 	};
 
-	const click_handler = card => !data.order && take(card.type);
+	const stop = e => e.stopPropagation();
+	const click_handler = () => $$invalidate(4, tab = "duty");
+	const click_handler_1 = () => $$invalidate(4, tab = "news");
+	const click_handler_2 = t => useTemplate(t);
+
+	function input_input_handler() {
+		annTitle = this.value;
+		$$invalidate(5, annTitle);
+	}
+
+	function textarea_input_handler() {
+		annText = this.value;
+		$$invalidate(6, annText);
+	}
+
+	const click_handler_3 = a => remove(a);
+	const click_handler_4 = card => !data.order && take(card.type);
 
 	function input_change_handler() {
 		punishment = this.checked;
 		$$invalidate(3, punishment);
 	}
 
-	const click_handler_1 = soldier => assign(soldier, "kitchen");
-	const click_handler_2 = soldier => assign(soldier, "clean");
+	const click_handler_5 = soldier => assign(soldier, "kitchen");
+	const click_handler_6 = soldier => assign(soldier, "clean");
 
 	$$self.$$set = $$props => {
-		if ('viewData' in $$props) $$invalidate(9, viewData = $$props.viewData);
+		if ('viewData' in $$props) $$invalidate(20, viewData = $$props.viewData);
+	};
+
+	$$self.$$.update = () => {
+		if ($$self.$$.dirty[0] & /*data*/ 1) {
+			$: $$invalidate(9, announcements = data && data.announcements || []);
+		}
 	};
 
 	return [
@@ -96470,23 +97186,40 @@ function instance($$self, $$props, $$invalidate) {
 		message,
 		ok,
 		punishment,
+		tab,
+		annTitle,
+		annText,
+		annMessage,
+		annOk,
+		announcements,
 		cards,
 		take,
 		assign,
 		close,
+		templates,
+		useTemplate,
+		post,
+		remove,
 		onKey,
+		stop,
 		viewData,
 		click_handler,
-		input_change_handler,
 		click_handler_1,
-		click_handler_2
+		click_handler_2,
+		input_input_handler,
+		textarea_input_handler,
+		click_handler_3,
+		click_handler_4,
+		input_change_handler,
+		click_handler_5,
+		click_handler_6
 	];
 }
 
 class Armyduty extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
 	constructor(options) {
 		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 9 }, add_css);
+		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 20 }, add_css, [-1, -1]);
 	}
 }
 
@@ -114037,7 +114770,7 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 function add_css(target) {
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-1pnmb88", ".wr.svelte-1pnmb88.svelte-1pnmb88{position:absolute;inset:0;display:flex;justify-content:space-between;padding:3vh 2.4vh;font-family:'Gilroy', 'Montserrat', sans-serif;color:#fff;user-select:none;background:linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7) 100%)}.wr__left.svelte-1pnmb88.svelte-1pnmb88{width:54vh;display:flex;flex-direction:column;background:rgba(18, 20, 24, 0.92);border:1px solid rgba(255, 255, 255, 0.08);border-radius:1.6vh;overflow:hidden}.wr__head.svelte-1pnmb88.svelte-1pnmb88{padding:2.2vh 2.4vh 1.6vh;border-bottom:1px solid rgba(255, 255, 255, 0.06);background:linear-gradient(135deg, rgba(var(--accent-rgb), 0.35), transparent 70%)}.wr__caption.svelte-1pnmb88.svelte-1pnmb88{font-size:1.2vh;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);filter:brightness(1.4)}.wr__title.svelte-1pnmb88.svelte-1pnmb88{font-size:3vh;font-weight:800}.wr__sub.svelte-1pnmb88.svelte-1pnmb88{font-size:1.35vh;opacity:0.6}.wr__body.svelte-1pnmb88.svelte-1pnmb88{flex:1;display:flex;min-height:0}.wr__tabs.svelte-1pnmb88.svelte-1pnmb88{width:13vh;padding:1vh 0.8vh;overflow-y:auto;border-right:1px solid rgba(255, 255, 255, 0.06)}.wr__tab.svelte-1pnmb88.svelte-1pnmb88{position:relative;display:flex;flex-direction:column;align-items:center;gap:0.5vh;padding:1vh 0.4vh;margin-bottom:0.5vh;border-radius:1vh;font-size:1.2vh;text-align:center;opacity:0.65;cursor:pointer;transition:background 0.15s, opacity 0.15s}.wr__tab.svelte-1pnmb88 svg.svelte-1pnmb88{width:2.6vh;height:2.6vh;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.wr__tab.svelte-1pnmb88.svelte-1pnmb88:hover{opacity:1;background:rgba(255, 255, 255, 0.05)}.wr__tab.active.svelte-1pnmb88.svelte-1pnmb88{opacity:1;background:rgba(var(--accent-rgb), 0.3)}.wr__tab.has.svelte-1pnmb88.svelte-1pnmb88::after{content:\"\";position:absolute;top:0.7vh;right:0.9vh;width:0.7vh;height:0.7vh;border-radius:50%;background:var(--accent);filter:brightness(1.5)}.wr__items.svelte-1pnmb88.svelte-1pnmb88{flex:1;display:flex;flex-direction:column;padding:1.4vh 1.6vh;min-width:0}.wr__items_head.svelte-1pnmb88.svelte-1pnmb88{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1vh;font-size:1.8vh}.wr__items_head.svelte-1pnmb88 span.svelte-1pnmb88{font-size:1.3vh;opacity:0.5}.wr__hint.svelte-1pnmb88.svelte-1pnmb88{font-size:1.25vh;opacity:0.6;margin-bottom:0.8vh;line-height:1.4}.wr__auto.svelte-1pnmb88.svelte-1pnmb88{padding:0.9vh;margin-bottom:1vh;border-radius:0.9vh;text-align:center;font-size:1.35vh;background:rgba(255, 255, 255, 0.05);border:1px solid transparent;cursor:pointer}.wr__auto.active.svelte-1pnmb88.svelte-1pnmb88{border-color:var(--accent);background:rgba(var(--accent-rgb), 0.2)}.wr__search.svelte-1pnmb88.svelte-1pnmb88{width:100%;padding:0.9vh 1.2vh;margin-bottom:1vh;border-radius:0.9vh;border:1px solid rgba(255, 255, 255, 0.1);background:rgba(255, 255, 255, 0.04);color:#fff;font-size:1.35vh;outline:none;box-sizing:border-box}.wr__grid.svelte-1pnmb88.svelte-1pnmb88{flex:1;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;gap:0.8vh;align-content:start;padding-right:0.4vh}.wr__item.svelte-1pnmb88.svelte-1pnmb88{position:relative;padding:1vh 1.1vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04);border:1px solid rgba(255, 255, 255, 0.06);cursor:pointer;transition:border-color 0.15s, background 0.15s, transform 0.12s}.wr__item.svelte-1pnmb88.svelte-1pnmb88:hover{background:rgba(255, 255, 255, 0.08);transform:translateY(-0.1vh)}.wr__item.active.svelte-1pnmb88.svelte-1pnmb88{border-color:var(--accent);background:rgba(var(--accent-rgb), 0.22)}.wr__item_num.svelte-1pnmb88.svelte-1pnmb88{font-size:1.1vh;opacity:0.45}.wr__item_name.svelte-1pnmb88.svelte-1pnmb88{font-size:1.4vh;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wr__item_colors.svelte-1pnmb88.svelte-1pnmb88{font-size:1.1vh;opacity:0.5}.wr__colors.svelte-1pnmb88.svelte-1pnmb88{display:flex;flex-wrap:wrap;align-items:center;gap:0.6vh;padding-top:1.2vh;margin-top:1vh;border-top:1px solid rgba(255, 255, 255, 0.06);font-size:1.3vh}.wr__colors.svelte-1pnmb88 span.svelte-1pnmb88{opacity:0.6;margin-right:0.4vh}.wr__color.svelte-1pnmb88.svelte-1pnmb88{min-width:3vh;height:3vh;line-height:3vh;text-align:center;border-radius:0.8vh;background:rgba(255, 255, 255, 0.06);cursor:pointer}.wr__color.active.svelte-1pnmb88.svelte-1pnmb88{background:var(--accent)}.wr__center.svelte-1pnmb88.svelte-1pnmb88{flex:1;display:flex;align-items:flex-end;justify-content:center}.wr__rotate.svelte-1pnmb88.svelte-1pnmb88{padding:0.8vh 1.6vh;border-radius:2vh;background:rgba(0, 0, 0, 0.5);font-size:1.25vh;opacity:0.75}.wr__right.svelte-1pnmb88.svelte-1pnmb88{width:38vh;display:flex;flex-direction:column;gap:1.2vh;justify-content:flex-end}.wr__card.svelte-1pnmb88.svelte-1pnmb88{padding:2vh 2.2vh;border-radius:1.6vh;background:rgba(18, 20, 24, 0.92);border:1px solid rgba(255, 255, 255, 0.08);max-height:55vh;overflow-y:auto}.wr__card_title.svelte-1pnmb88.svelte-1pnmb88{font-size:2vh;font-weight:800;margin-bottom:1.2vh}.wr__chosen_row.svelte-1pnmb88.svelte-1pnmb88{display:flex;align-items:center;gap:1vh;padding:0.8vh 0;border-bottom:1px solid rgba(255, 255, 255, 0.06)}.wr__chosen_info.svelte-1pnmb88.svelte-1pnmb88{flex:1;min-width:0;cursor:pointer}.wr__chosen_info.svelte-1pnmb88 span.svelte-1pnmb88{display:block;font-size:1.15vh;opacity:0.55}.wr__chosen_info.svelte-1pnmb88 b.svelte-1pnmb88{display:block;font-size:1.45vh;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wr__remove.svelte-1pnmb88.svelte-1pnmb88{width:2.8vh;height:2.8vh;line-height:2.8vh;text-align:center;border-radius:0.8vh;background:rgba(255, 255, 255, 0.06);font-size:1.2vh;cursor:pointer}.wr__remove.svelte-1pnmb88.svelte-1pnmb88:hover{background:rgba(239, 68, 68, 0.4)}.wr__empty.svelte-1pnmb88.svelte-1pnmb88{font-size:1.35vh;opacity:0.5;padding:1vh 0}.wr__msg.svelte-1pnmb88.svelte-1pnmb88{min-height:2vh;font-size:1.35vh;color:#b5d77b;text-shadow:0 0.2vh 0.6vh rgba(0, 0, 0, 0.9)}.wr__msg.bad.svelte-1pnmb88.svelte-1pnmb88{color:#ff8a8d}.wr__buttons.svelte-1pnmb88.svelte-1pnmb88{display:grid;gap:0.8vh}.wr__btn.svelte-1pnmb88.svelte-1pnmb88{padding:1.3vh;border-radius:1vh;text-align:center;font-size:1.5vh;font-weight:700;background:rgba(255, 255, 255, 0.08);cursor:pointer;transition:filter 0.15s}.wr__btn.svelte-1pnmb88.svelte-1pnmb88:hover{filter:brightness(1.2)}.wr__btn.primary.svelte-1pnmb88.svelte-1pnmb88{background:var(--accent)}.wr__btn.danger.svelte-1pnmb88.svelte-1pnmb88{background:rgba(239, 68, 68, 0.75)}.wr__btn.ghost.svelte-1pnmb88.svelte-1pnmb88{background:rgba(0, 0, 0, 0.55)}.wr__btn.svelte-1pnmb88 span.svelte-1pnmb88{margin-left:0.6vh;font-size:1.1vh;opacity:0.6}");
+	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-vavqro", ".wr.svelte-vavqro.svelte-vavqro{position:absolute;inset:0;display:flex;justify-content:space-between;padding:3vh 2.4vh;font-family:'Gilroy', 'Montserrat', sans-serif;color:#fff;user-select:none;background:linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.7) 100%)}.wr__left.svelte-vavqro.svelte-vavqro{width:54vh;display:flex;flex-direction:column;background:rgba(18, 20, 24, 0.92);border:1px solid rgba(255, 255, 255, 0.08);border-radius:1.6vh;overflow:hidden}.wr__head.svelte-vavqro.svelte-vavqro{padding:2.2vh 2.4vh 1.6vh;border-bottom:1px solid rgba(255, 255, 255, 0.06);background:linear-gradient(135deg, rgba(var(--accent-rgb), 0.35), transparent 70%)}.wr__caption.svelte-vavqro.svelte-vavqro{font-size:1.2vh;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);filter:brightness(1.4)}.wr__title.svelte-vavqro.svelte-vavqro{font-size:3vh;font-weight:800}.wr__sub.svelte-vavqro.svelte-vavqro{font-size:1.35vh;opacity:0.6}.wr__body.svelte-vavqro.svelte-vavqro{flex:1;display:flex;min-height:0}.wr__tabs.svelte-vavqro.svelte-vavqro{width:13vh;padding:1vh 0.8vh;overflow-y:auto;overflow-x:hidden;border-right:1px solid rgba(255, 255, 255, 0.06)}.wr__tab.svelte-vavqro.svelte-vavqro{position:relative;display:flex;flex-direction:column;align-items:center;gap:0.5vh;padding:1vh 0.4vh;margin-bottom:0.5vh;border-radius:1vh;font-size:1.2vh;text-align:center;opacity:0.65;cursor:pointer;transition:background 0.15s, opacity 0.15s}.wr__tab.svelte-vavqro svg.svelte-vavqro{width:2.6vh;height:2.6vh;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}.wr__tab.svelte-vavqro.svelte-vavqro:hover{opacity:1;background:rgba(255, 255, 255, 0.05)}.wr__tab.active.svelte-vavqro.svelte-vavqro{opacity:1;background:rgba(var(--accent-rgb), 0.3)}.wr__tab.has.svelte-vavqro.svelte-vavqro::after{content:\"\";position:absolute;top:0.7vh;right:0.9vh;width:0.7vh;height:0.7vh;border-radius:50%;background:var(--accent);filter:brightness(1.5)}.wr__items.svelte-vavqro.svelte-vavqro{flex:1;display:flex;flex-direction:column;padding:1.4vh 1.6vh;min-width:0}.wr__items_head.svelte-vavqro.svelte-vavqro{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1vh;font-size:1.8vh}.wr__items_head.svelte-vavqro span.svelte-vavqro{font-size:1.3vh;opacity:0.5}.wr__hint.svelte-vavqro.svelte-vavqro{font-size:1.25vh;opacity:0.6;margin-bottom:0.8vh;line-height:1.4}.wr__auto.svelte-vavqro.svelte-vavqro{padding:0.9vh;margin-bottom:1vh;border-radius:0.9vh;text-align:center;font-size:1.35vh;background:rgba(255, 255, 255, 0.05);border:1px solid transparent;cursor:pointer}.wr__auto.active.svelte-vavqro.svelte-vavqro{border-color:var(--accent);background:rgba(var(--accent-rgb), 0.2)}.wr__search.svelte-vavqro.svelte-vavqro{width:100%;padding:0.9vh 1.2vh;margin-bottom:1vh;border-radius:0.9vh;border:1px solid rgba(255, 255, 255, 0.1);background:rgba(255, 255, 255, 0.04);color:#fff;font-size:1.35vh;outline:none;box-sizing:border-box}.wr__grid.svelte-vavqro.svelte-vavqro{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;display:grid;grid-template-columns:minmax(0, 1fr) minmax(0, 1fr);gap:0.8vh;align-content:start;padding-right:0.4vh;box-sizing:border-box}.wr__grid.svelte-vavqro.svelte-vavqro::-webkit-scrollbar,.wr__tabs.svelte-vavqro.svelte-vavqro::-webkit-scrollbar,.wr__card.svelte-vavqro.svelte-vavqro::-webkit-scrollbar{width:0.5vh;height:0}.wr__grid.svelte-vavqro.svelte-vavqro::-webkit-scrollbar-track,.wr__tabs.svelte-vavqro.svelte-vavqro::-webkit-scrollbar-track,.wr__card.svelte-vavqro.svelte-vavqro::-webkit-scrollbar-track{background:transparent}.wr__grid.svelte-vavqro.svelte-vavqro::-webkit-scrollbar-thumb,.wr__tabs.svelte-vavqro.svelte-vavqro::-webkit-scrollbar-thumb,.wr__card.svelte-vavqro.svelte-vavqro::-webkit-scrollbar-thumb{background:rgba(255, 255, 255, 0.18);border-radius:0.5vh}.wr__item.svelte-vavqro.svelte-vavqro{position:relative;min-width:0;box-sizing:border-box;padding:1vh 1.1vh;border-radius:1vh;background:rgba(255, 255, 255, 0.04);border:1px solid rgba(255, 255, 255, 0.06);cursor:pointer;transition:border-color 0.15s, background 0.15s, transform 0.12s}.wr__item.svelte-vavqro.svelte-vavqro:hover{background:rgba(255, 255, 255, 0.08);transform:translateY(-0.1vh)}.wr__item.active.svelte-vavqro.svelte-vavqro{border-color:var(--accent);background:rgba(var(--accent-rgb), 0.22)}.wr__item_num.svelte-vavqro.svelte-vavqro{font-size:1.1vh;opacity:0.45}.wr__item_name.svelte-vavqro.svelte-vavqro{font-size:1.4vh;font-weight:600;line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wr__item_colors.svelte-vavqro.svelte-vavqro{font-size:1.1vh;opacity:0.5}.wr__colors.svelte-vavqro.svelte-vavqro{display:flex;flex-wrap:wrap;align-items:center;gap:0.6vh;padding-top:1.2vh;margin-top:1vh;border-top:1px solid rgba(255, 255, 255, 0.06);font-size:1.3vh}.wr__colors.svelte-vavqro span.svelte-vavqro{opacity:0.6;margin-right:0.4vh}.wr__color.svelte-vavqro.svelte-vavqro{min-width:3vh;height:3vh;line-height:3vh;text-align:center;border-radius:0.8vh;background:rgba(255, 255, 255, 0.06);cursor:pointer}.wr__color.active.svelte-vavqro.svelte-vavqro{background:var(--accent)}.wr__center.svelte-vavqro.svelte-vavqro{flex:1;display:flex;align-items:flex-end;justify-content:center}.wr__rotate.svelte-vavqro.svelte-vavqro{padding:0.8vh 1.6vh;border-radius:2vh;background:rgba(0, 0, 0, 0.5);font-size:1.25vh;opacity:0.75}.wr__right.svelte-vavqro.svelte-vavqro{width:38vh;display:flex;flex-direction:column;gap:1.2vh;justify-content:flex-end}.wr__card.svelte-vavqro.svelte-vavqro{padding:2vh 2.2vh;border-radius:1.6vh;background:rgba(18, 20, 24, 0.92);border:1px solid rgba(255, 255, 255, 0.08);max-height:55vh;overflow-y:auto}.wr__card_title.svelte-vavqro.svelte-vavqro{font-size:2vh;font-weight:800;margin-bottom:1.2vh}.wr__chosen_row.svelte-vavqro.svelte-vavqro{display:flex;align-items:center;gap:1vh;padding:0.8vh 0;border-bottom:1px solid rgba(255, 255, 255, 0.06)}.wr__chosen_info.svelte-vavqro.svelte-vavqro{flex:1;min-width:0;cursor:pointer}.wr__chosen_info.svelte-vavqro span.svelte-vavqro{display:block;font-size:1.15vh;opacity:0.55}.wr__chosen_info.svelte-vavqro b.svelte-vavqro{display:block;font-size:1.45vh;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.wr__remove.svelte-vavqro.svelte-vavqro{width:2.8vh;height:2.8vh;line-height:2.8vh;text-align:center;border-radius:0.8vh;background:rgba(255, 255, 255, 0.06);font-size:1.2vh;cursor:pointer}.wr__remove.svelte-vavqro.svelte-vavqro:hover{background:rgba(239, 68, 68, 0.4)}.wr__empty.svelte-vavqro.svelte-vavqro{font-size:1.35vh;opacity:0.5;padding:1vh 0}.wr__msg.svelte-vavqro.svelte-vavqro{min-height:2vh;font-size:1.35vh;color:#b5d77b;text-shadow:0 0.2vh 0.6vh rgba(0, 0, 0, 0.9)}.wr__msg.bad.svelte-vavqro.svelte-vavqro{color:#ff8a8d}.wr__buttons.svelte-vavqro.svelte-vavqro{display:grid;gap:0.8vh}.wr__btn.svelte-vavqro.svelte-vavqro{padding:1.3vh;border-radius:1vh;text-align:center;font-size:1.5vh;font-weight:700;background:rgba(255, 255, 255, 0.08);cursor:pointer;transition:filter 0.15s}.wr__btn.svelte-vavqro.svelte-vavqro:hover{filter:brightness(1.2)}.wr__btn.primary.svelte-vavqro.svelte-vavqro{background:var(--accent)}.wr__btn.danger.svelte-vavqro.svelte-vavqro{background:rgba(239, 68, 68, 0.75)}.wr__btn.ghost.svelte-vavqro.svelte-vavqro{background:rgba(0, 0, 0, 0.55)}.wr__btn.svelte-vavqro span.svelte-vavqro{margin-left:0.6vh;font-size:1.1vh;opacity:0.6}");
 }
 
 function get_each_context(ctx, list, i) {
@@ -114093,8 +114826,8 @@ function create_each_block_3(ctx) {
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(path, "d", path_d_value = /*ICONS*/ ctx[13][/*tab*/ ctx[51].key] || /*ICONS*/ ctx[13].Accessories);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "viewBox", "0 0 24 24");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__tab svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(svg, "class", "svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__tab svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*tab*/ ctx[51].key === /*current*/ ctx[1]);
 
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "has", /*tab*/ ctx[51].key === "Torso"
@@ -114151,8 +114884,8 @@ function create_if_block_4(ctx) {
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1.textContent = "Авто (по верху)";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "wr__hint svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "wr__auto svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "wr__hint svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "wr__auto svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div1, "active", !/*outfit*/ ctx[0].torso);
 		},
 		m(target, anchor) {
@@ -114188,7 +114921,7 @@ function create_else_block_1(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Ничего не найдено";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__empty svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__empty svelte-vavqro");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -114212,7 +114945,7 @@ function create_if_block_3(ctx) {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" цв.");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__item_colors svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__item_colors svelte-vavqro");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -114265,9 +114998,9 @@ function create_each_block_2(key_1, ctx) {
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			if (if_block) if_block.c();
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "wr__item_num svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "wr__item_name svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "wr__item svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "wr__item_num svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "wr__item_name svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "wr__item svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "active", /*selected*/ ctx[4] && /*selected*/ ctx[4][0] === /*item*/ ctx[48].id);
 			this.first = div2;
 		},
@@ -114345,8 +115078,8 @@ function create_if_block_2(ctx) {
 				each_blocks[i].c();
 			}
 
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__colors svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__colors svelte-vavqro");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -114406,7 +115139,7 @@ function create_each_block_1(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__color svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__color svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*selected*/ ctx[4][1] === /*texture*/ ctx[45]);
 		},
 		m(target, anchor) {
@@ -114491,7 +115224,7 @@ function create_if_block_1(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Пока ничего не выбрано — выберите вещи слева";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__empty svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__empty svelte-vavqro");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -114550,12 +115283,12 @@ function create_each_block(key_1, ctx) {
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div1.textContent = "✕";
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "wr__chosen_info svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "wr__remove svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(b, "class", "svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "wr__chosen_info svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "wr__remove svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "title", "Убрать");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "wr__chosen_row svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "wr__chosen_row svelte-vavqro");
 			this.first = div2;
 		},
 		m(target, anchor) {
@@ -114607,7 +115340,7 @@ function create_if_block(ctx) {
 		c() {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div.textContent = "Снять форму";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__btn danger svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "wr__btn danger svelte-vavqro");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -114720,9 +115453,9 @@ function create_fragment(ctx) {
 			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 
-			div3.innerHTML = `<div class="wr__caption svelte-1pnmb88">Раздевалка</div> 
-            <div class="wr__title svelte-1pnmb88">Гардероб</div> 
-            <div class="wr__sub svelte-1pnmb88">Соберите свою форму из вещей фракции</div>`;
+			div3.innerHTML = `<div class="wr__caption svelte-vavqro">Раздевалка</div> 
+            <div class="wr__title svelte-vavqro">Гардероб</div> 
+            <div class="wr__sub svelte-vavqro">Соберите свою форму из вещей фракции</div>`;
 
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
@@ -114759,7 +115492,7 @@ function create_fragment(ctx) {
 			if (if_block1) if_block1.c();
 			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div11.innerHTML = `<div class="wr__rotate svelte-1pnmb88">Зажмите мышь над персонажем, чтобы повернуть камеру · колесо — приблизить</div>`;
+			div11.innerHTML = `<div class="wr__rotate svelte-vavqro">Зажмите мышь над персонажем, чтобы повернуть камеру · колесо — приблизить</div>`;
 			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
@@ -114781,28 +115514,28 @@ function create_fragment(ctx) {
 			if (if_block3) if_block3.c();
 			t26 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div17.innerHTML = `Выйти <span class="svelte-1pnmb88">ESC</span>`;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "wr__head svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "wr__tabs svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "wr__items_head svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "wr__search svelte-1pnmb88");
+			div17.innerHTML = `Выйти <span class="svelte-vavqro">ESC</span>`;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "wr__head svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "wr__tabs svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "wr__items_head svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "wr__search svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", "Поиск по названию или номеру");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "wr__grid svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "wr__items svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "wr__body svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "wr__left svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "wr__center svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "wr__card_title svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "wr__card svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "wr__msg svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "wr__grid svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "wr__items svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "wr__body svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "wr__left svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "wr__center svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "wr__card_title svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "wr__card svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "wr__msg svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div14, "bad", !/*ok*/ ctx[7]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "wr__btn primary svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "wr__btn svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "wr__btn ghost svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "wr__buttons svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "wr__right svelte-1pnmb88");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "wr svelte-1pnmb88");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "wr__btn primary svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "wr__btn svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "wr__btn ghost svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "wr__buttons svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "wr__right svelte-vavqro");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "wr svelte-vavqro");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div20, "--accent", /*accent*/ ctx[11]);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div20, "--accent-rgb", /*accentRgb*/ ctx[12]);
 		},
@@ -219911,24 +220644,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_assets_images_forbes_png__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var _assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../assets/images/trucker.png */ "./src/views/player/hudevo/phonenew/assets/images/trucker.png");
 /* harmony import */ var _assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_assets_images_trucker_png__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/images/auction.png */ "./src/views/player/hudevo/phonenew/assets/images/auction.png");
-/* harmony import */ var _assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/images/fleeca.svg */ "./src/views/player/hudevo/phonenew/assets/images/fleeca.svg");
-/* harmony import */ var _assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/images/call.png */ "./src/views/player/hudevo/phonenew/assets/images/call.png");
-/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_assets_images_call_png__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/images/messages.png */ "./src/views/player/hudevo/phonenew/assets/images/messages.png");
-/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/images/camera.png */ "./src/views/player/hudevo/phonenew/assets/images/camera.png");
-/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_21__);
-/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/images/settings.png */ "./src/views/player/hudevo/phonenew/assets/images/settings.png");
-/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_22__);
-/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../assets/images/gift.png */ "./src/views/player/hudevo/phonenew/assets/images/gift.png");
-/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_23___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_23__);
-/* harmony import */ var _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./weather/widget.svelte */ "./src/views/player/hudevo/phonenew/components/weather/widget.svelte");
-/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
-/* harmony import */ var _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/data */ "./src/views/player/hudevo/phonenew/data.js");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
+/* harmony import */ var _assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../assets/images/fleeca.svg */ "./src/views/player/hudevo/phonenew/assets/images/fleeca.svg");
+/* harmony import */ var _assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../assets/images/call.png */ "./src/views/player/hudevo/phonenew/assets/images/call.png");
+/* harmony import */ var _assets_images_call_png__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_assets_images_call_png__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../assets/images/messages.png */ "./src/views/player/hudevo/phonenew/assets/images/messages.png");
+/* harmony import */ var _assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/images/camera.png */ "./src/views/player/hudevo/phonenew/assets/images/camera.png");
+/* harmony import */ var _assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/images/settings.png */ "./src/views/player/hudevo/phonenew/assets/images/settings.png");
+/* harmony import */ var _assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21___default = /*#__PURE__*/__webpack_require__.n(_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21__);
+/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/images/gift.png */ "./src/views/player/hudevo/phonenew/assets/images/gift.png");
+/* harmony import */ var _assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22__);
+/* harmony import */ var _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./weather/widget.svelte */ "./src/views/player/hudevo/phonenew/components/weather/widget.svelte");
+/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
+/* harmony import */ var _views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @/views/player/hudevo/phonenew/data */ "./src/views/player/hudevo/phonenew/data.js");
+/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
 /* src/views/player/hudevo/phonenew/components/mainmenu.svelte generated by Svelte v3.59.2 */
 
 
@@ -219949,6 +220680,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+// Старый аукцион телефона скрыт — вместо него маркетплейс (eternal-dev/marketPlace)
+// import AucIcon from '../assets/images/auction.png'
+
 
 
 
@@ -219967,7 +220701,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (170:12) {#if item.jobId === undefined || item.jobId === $charWorkID}
+// (173:12) {#if item.jobId === undefined || item.jobId === $charWorkID}
 function create_if_block(ctx) {
 	let div2;
 	let div0;
@@ -220026,7 +220760,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (169:8) {#each shownMenu as item}
+// (172:8) {#each shownMenu as item}
 function create_each_block(ctx) {
 	let if_block_anchor;
 	let if_block = (/*item*/ ctx[11].jobId === undefined || /*item*/ ctx[11].jobId === /*$charWorkID*/ ctx[2]) && create_if_block(ctx);
@@ -220086,7 +220820,7 @@ function create_fragment(ctx) {
 	let mounted;
 	let dispose;
 	header = new _header_svelte__WEBPACK_IMPORTED_MODULE_2__.default({});
-	weatherwidget = new _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_24__.default({});
+	weatherwidget = new _weather_widget_svelte__WEBPACK_IMPORTED_MODULE_23__.default({});
 	let each_value = /*shownMenu*/ ctx[1];
 	let each_blocks = [];
 
@@ -220122,16 +220856,16 @@ function create_fragment(ctx) {
 			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "newphone__mainmenu_grid");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background-image", "url(" + (_assets_images_call_png__WEBPACK_IMPORTED_MODULE_19___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "background-image", "url(" + (_assets_images_call_png__WEBPACK_IMPORTED_MODULE_18___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background-image", "url(" + (_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_20___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div3, "background-image", "url(" + (_assets_images_messages_png__WEBPACK_IMPORTED_MODULE_19___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "background-image", "url(" + (_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_21___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div5, "background-image", "url(" + (_assets_images_camera_png__WEBPACK_IMPORTED_MODULE_20___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "newphone__mainmenu_icon");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div7, "background-image", "url(" + (_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_22___default()) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div7, "background-image", "url(" + (_assets_images_settings_png__WEBPACK_IMPORTED_MODULE_21___default()) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "newphone__mainmenu_element");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "newphone__mainmenu_bottom");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "newphone__background");
@@ -220212,7 +220946,7 @@ function create_fragment(ctx) {
 
 			if (!div10_intro) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div10_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div10, svelte_transition__WEBPACK_IMPORTED_MODULE_25__.fade, { duration: 200 });
+					div10_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div10, svelte_transition__WEBPACK_IMPORTED_MODULE_24__.fade, { duration: 200 });
 					div10_intro.start();
 				});
 			}
@@ -220258,7 +220992,7 @@ function instance($$self, $$props, $$invalidate) {
 		},
 		{
 			name: "Fleeca",
-			icon: (_assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_18___default()),
+			icon: (_assets_images_fleeca_svg__WEBPACK_IMPORTED_MODULE_17___default()),
 			link: "bank"
 		},
 		{
@@ -220308,14 +221042,16 @@ function instance($$self, $$props, $$invalidate) {
      icon: DarknetIcon,
      link: "darknet"
  }, */
-		{
-			name: "Аукцион",
-			icon: (_assets_images_auction_png__WEBPACK_IMPORTED_MODULE_17___default()),
-			link: "auction"
-		},
+		/* Старый аукцион скрыт (код страницы и сервера оставлен — им пользуются дома/бизнесы)
+{
+    name: "Аукцион",
+    icon: AucIcon,
+    link: "auction"
+},
+*/
 		{
 			name: "Подарок",
-			icon: (_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_23___default()),
+			icon: (_assets_images_gift_png__WEBPACK_IMPORTED_MODULE_22___default()),
 			link: 101
 		},
 		{
@@ -220328,25 +221064,25 @@ function instance($$self, $$props, $$invalidate) {
 	// «Чёрный рынок» виден только при включённом VPN (настройки телефона); доступ всё равно проверяет сервер
 	let isVpn = false;
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClientAsyncToGroup)("settings.isVpn").then(result => $$invalidate(4, isVpn = !!result));
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientAsyncToGroup)("settings.isVpn").then(result => $$invalidate(4, isVpn = !!result));
 	window.events.addEvent("phone.vpn", value => $$invalidate(4, isVpn = !!value));
 
 	const onSelectPage = pageName => {
 		if (typeof pageName === "string") {
 			if (pageName === "blackMarket") {
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClientToGroup)("close");
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClient)("client.blackmarket.openApp");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientToGroup)("close");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClient)("client.blackmarket.openApp");
 				return;
 			}
 
 			if (pageName === "marketPlace") {
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClientToGroup)("close");
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClient)("client.marketPlace.openApp");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientToGroup)("close");
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClient)("client.marketPlace.openApp");
 				return;
 			}
 
 			if (pageName === "camera") {
-				(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClientAsyncToGroup)("getGallery").then(result => {
+				(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientAsyncToGroup)("getGallery").then(result => {
 					result = JSON.parse(result);
 
 					if (result.length >= 25) {
@@ -220356,14 +221092,14 @@ function instance($$self, $$props, $$invalidate) {
 				});
 			} else _stores__WEBPACK_IMPORTED_MODULE_3__.currentPage.set(pageName);
 		} else if (typeof pageName === "number") {
-			(0,_views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_26__.onMessage)(pageName);
-			(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClientToGroup)("messageDefault", pageName);
+			(0,_views_player_hudevo_phonenew_data__WEBPACK_IMPORTED_MODULE_25__.onMessage)(pageName);
+			(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientToGroup)("messageDefault", pageName);
 		}
 	};
 
 	let background = "";
 
-	(0,api_rage__WEBPACK_IMPORTED_MODULE_27__.executeClientAsyncToGroup)("settings.wallpaper").then(result => {
+	(0,api_rage__WEBPACK_IMPORTED_MODULE_26__.executeClientAsyncToGroup)("settings.wallpaper").then(result => {
 		$$invalidate(0, background = result);
 	});
 
@@ -325142,6 +325878,17 @@ module.exports = {};
 
 /***/ }),
 
+/***/ "./src/json/quests/fraction/npc_army.json":
+/*!************************************************!*\
+  !*** ./src/json/quests/fraction/npc_army.json ***!
+  \************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse("{\"0\":{\"buttons\":[{\"name\":\"Как попасть на службу?\",\"questId\":3},{\"name\":\"Что это за место?\",\"questId\":4},{\"name\":\"Извините, ухожу.\"}],\"text\":\"Стоять. Это территория Форта Занкудо, гражданским здесь находиться нельзя без пропуска. Я Кэтрин Келлерман, дежурная штаба. Что вам нужно?\"},\"1\":{\"buttons\":[{\"name\":\"Напомните устав.\",\"questId\":10},{\"name\":\"Как себя вести на базе?\",\"questId\":11},{\"name\":\"Где взять форму и наряд?\",\"questId\":12},{\"name\":\"Что будет за нарушения?\",\"questId\":13},{\"name\":\"Как получить повышение?\",\"questId\":14},{\"name\":\"Так точно, разрешите идти.\"}],\"text\":\"Боец, смирно! Вольно. Я Кэтрин Келлерман, дежурная штаба. Если не знаешь, чем заняться, — спрашивай, а не слоняйся по базе.\"},\"2\":{\"buttons\":[{\"name\":\"Гауптвахта: порядок.\",\"questId\":20},{\"name\":\"Наряды и доска.\",\"questId\":21},{\"name\":\"Построения и тренировки.\",\"questId\":22},{\"name\":\"Форма и раздевалка.\",\"questId\":23},{\"name\":\"Приём новобранцев и пропуска.\",\"questId\":24},{\"name\":\"Сводка по базе.\",\"questId\":25},{\"name\":\"Вольно, Келлерман.\"}],\"text\":\"Здравия желаю, товарищ командир! Дежурная Келлерман. Происшествий нет, личный состав на местах. Какие будут указания?\"},\"3\":{\"buttons\":[{\"name\":\"Понял, спасибо.\",\"style\":\"medium\"}],\"text\":\"Набор идёт через вербовщика и командование. Нужны паспорт, чистая история без розыска и готовность подчиняться приказам. Следите за объявлениями армии на портале штата и приходите на собеседование к КПП.\"},\"4\":{\"buttons\":[{\"name\":\"Уже ухожу.\",\"style\":\"medium\"}],\"text\":\"Военная база Национальной гвардии. Режимная зона: без пропуска сюда нельзя, нарушителей задерживают и передают полиции. Пропуск выдаёт командование.\"},\"10\":{\"buttons\":[{\"name\":\"Дальше.\",\"questId\":15},{\"name\":\"Назад.\",\"questId\":1}],\"text\":\"Главное: приказ командира выполняется без пререканий, обсуждать его можно после. К старшим по званию — «Товарищ» и звание, отвечаем «Так точно», «Никак нет», «Есть». При встрече со старшим — отдать честь (/salute), при построении — команда «Смирно» (/attention) и «Вольно» (/atease).\"},\"11\":{\"buttons\":[{\"name\":\"Понял.\",\"questId\":1}],\"text\":\"На базе не бегаем без причины, не стреляем вне тира, не садимся в технику без разрешения. Гражданских без пропуска — останавливаем и выясняем цель визита, вежливо. Никакого мата в эфире и оскорблений. Помни: ты — лицо армии штата.\"},\"12\":{\"buttons\":[{\"name\":\"Понял.\",\"questId\":1}],\"text\":\"Форма — в раздевалке штаба: там же готовые комплекты, которые утвердило командование. Наряды берёшь на доске нарядов у плаца: кухня, уборка и другие поручения, за них полагается премия. Там же вкладка «Объявления» — командиры пишут о строях и тренировках.\"},\"13\":{\"buttons\":[{\"name\":\"Понял.\",\"questId\":1}],\"text\":\"За нарушение устава — выговор, наряд вне очереди или гауптвахта. Гауптвахта — это камера на срок, назначенный командиром, без права выхода. За грубые нарушения — понижение или увольнение. Лучше не доводи.\"},\"14\":{\"buttons\":[{\"name\":\"Буду стараться.\",\"questId\":1}],\"text\":\"Командование смотрит на дисциплину и активность: построения, наряды, посты, зачёты в тире и на полосе препятствий. Результаты идут в личное дело. Служи честно — и звание придёт.\"},\"15\":{\"buttons\":[{\"name\":\"Ясно.\",\"questId\":1}],\"text\":\"На службе ты в форме и с рацией. Оружие только служебное, выдаётся в оружейной под запись и сдаётся после смены. Покидать пост без смены запрещено. Опоздал на построение — доложи причину старшему.\"},\"20\":{\"buttons\":[{\"name\":\"Принято.\",\"questId\":2}],\"text\":\"Гауптвахта назначается командой /guardhouse с указанием срока и причины, досрочно освободить — /unguardhouse. Причину пишите внятно: она попадает в журнал, его видно в планшете в разделе «Гауптвахта». Не злоупотребляйте — это крайняя мера после выговора и наряда.\"},\"21\":{\"buttons\":[{\"name\":\"Принято.\",\"questId\":2}],\"text\":\"Доска нарядов у плаца. Офицеры могут назначать наряды бойцам, срок — час онлайна. На доске есть вкладка «Объявления»: пишите туда о строях, тренировках и учениях — личный состав получит оповещение по рации.\"},\"22\":{\"buttons\":[{\"name\":\"Принято.\",\"questId\":2}],\"text\":\"Построение — /formation, после — расставьте посты (/post). Тренировки: тир (/range), полоса препятствий (/course), строевая (/drill). Результаты попадают в личные дела. Перед учениями дайте объявление на доске заранее.\"},\"23\":{\"buttons\":[{\"name\":\"Принято.\",\"questId\":2}],\"text\":\"В раздевалке с 9 ранга можно сохранять готовые образы формы для всей фракции — их сможет надеть любой военнослужащий. Следите, чтобы комплекты соответствовали званиям.\"},\"24\":{\"buttons\":[{\"name\":\"Принято.\",\"questId\":2}],\"text\":\"Новобранцев принимают офицеры через планшет. Гражданским, которым нужно на базу, выдаётся временный пропуск командой /basepass с указанием часов. Без пропуска в режимной зоне — задержание.\"},\"25\":{\"buttons\":[{\"name\":\"Вольно.\",\"questId\":2}],\"text\":\"Техника на стоянках, заправка армейская — только для служебного транспорта. Конвои снабжения отправляются после погрузки (/convoy). Если тревога — сирена базы и общий сбор у штаба.\"}}");
+
+/***/ }),
+
 /***/ "./src/json/quests/fraction/npc_fracems.json":
 /*!***************************************************!*\
   !*** ./src/json/quests/fraction/npc_fracems.json ***!
@@ -325363,34 +326110,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _npc_airdrop_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./npc_airdrop.json */ "./src/json/quests/npc_airdrop.json");
 /* harmony import */ var _npc_oressale_json__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./npc_oressale.json */ "./src/json/quests/npc_oressale.json");
 /* harmony import */ var _fraction_npc_fracpolic_json__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./fraction/npc_fracpolic.json */ "./src/json/quests/fraction/npc_fracpolic.json");
-/* harmony import */ var _fraction_npc_fracsheriff_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./fraction/npc_fracsheriff.json */ "./src/json/quests/fraction/npc_fracsheriff.json");
-/* harmony import */ var _fraction_npc_fracnews_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./fraction/npc_fracnews.json */ "./src/json/quests/fraction/npc_fracnews.json");
-/* harmony import */ var _fraction_npc_fracems_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./fraction/npc_fracems.json */ "./src/json/quests/fraction/npc_fracems.json");
-/* harmony import */ var _biz_npc_premium_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./biz/npc_premium.json */ "./src/json/quests/biz/npc_premium.json");
-/* harmony import */ var _npc_huntingshop_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./npc_huntingshop.json */ "./src/json/quests/npc_huntingshop.json");
-/* harmony import */ var _npc_treessell_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./npc_treessell.json */ "./src/json/quests/npc_treessell.json");
-/* harmony import */ var _npc_stock_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./npc_stock.json */ "./src/json/quests/npc_stock.json");
-/* harmony import */ var _npc_donateautoroom_json__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./npc_donateautoroom.json */ "./src/json/quests/npc_donateautoroom.json");
-/* harmony import */ var _npc_cityhall_json__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./npc_cityhall.json */ "./src/json/quests/npc_cityhall.json");
-/* harmony import */ var _npc_wedding_json__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./npc_wedding.json */ "./src/json/quests/npc_wedding.json");
-/* harmony import */ var _biz_npc_pet_json__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./biz/npc_pet.json */ "./src/json/quests/biz/npc_pet.json");
-/* harmony import */ var _biz_npc_petshop_json__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./biz/npc_petshop.json */ "./src/json/quests/biz/npc_petshop.json");
-/* harmony import */ var _biz_npc_rieltor_json__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./biz/npc_rieltor.json */ "./src/json/quests/biz/npc_rieltor.json");
-/* harmony import */ var _biz_npc_furniture_json__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./biz/npc_furniture.json */ "./src/json/quests/biz/npc_furniture.json");
-/* harmony import */ var _npc_carevac_json__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./npc_carevac.json */ "./src/json/quests/npc_carevac.json");
-/* harmony import */ var _npc_airshop_json__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./npc_airshop.json */ "./src/json/quests/npc_airshop.json");
-/* harmony import */ var _npc_eliteroom_json__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./npc_eliteroom.json */ "./src/json/quests/npc_eliteroom.json");
-/* harmony import */ var _npc_zdobich_json__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./npc_zdobich.json */ "./src/json/quests/npc_zdobich.json");
-/* harmony import */ var _work_npc_automechanic_json__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./work/npc_automechanic.json */ "./src/json/quests/work/npc_automechanic.json");
-/* harmony import */ var _work_npc_bus_json__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./work/npc_bus.json */ "./src/json/quests/work/npc_bus.json");
-/* harmony import */ var _work_npc_collector_json__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./work/npc_collector.json */ "./src/json/quests/work/npc_collector.json");
-/* harmony import */ var _work_npc_electrician_json__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./work/npc_electrician.json */ "./src/json/quests/work/npc_electrician.json");
-/* harmony import */ var _work_npc_gopostal_json__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./work/npc_gopostal.json */ "./src/json/quests/work/npc_gopostal.json");
-/* harmony import */ var _work_npc_lawnmower_json__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./work/npc_lawnmower.json */ "./src/json/quests/work/npc_lawnmower.json");
-/* harmony import */ var _work_npc_taxi_json__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./work/npc_taxi.json */ "./src/json/quests/work/npc_taxi.json");
-/* harmony import */ var _work_npc_truckers_json__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./work/npc_truckers.json */ "./src/json/quests/work/npc_truckers.json");
-/* harmony import */ var _npc_org_json__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./npc_org.json */ "./src/json/quests/npc_org.json");
-/* harmony import */ var _npc_birthday_json__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./npc_birthday.json */ "./src/json/quests/npc_birthday.json");
+/* harmony import */ var _fraction_npc_army_json__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./fraction/npc_army.json */ "./src/json/quests/fraction/npc_army.json");
+/* harmony import */ var _fraction_npc_fracsheriff_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./fraction/npc_fracsheriff.json */ "./src/json/quests/fraction/npc_fracsheriff.json");
+/* harmony import */ var _fraction_npc_fracnews_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./fraction/npc_fracnews.json */ "./src/json/quests/fraction/npc_fracnews.json");
+/* harmony import */ var _fraction_npc_fracems_json__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./fraction/npc_fracems.json */ "./src/json/quests/fraction/npc_fracems.json");
+/* harmony import */ var _biz_npc_premium_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./biz/npc_premium.json */ "./src/json/quests/biz/npc_premium.json");
+/* harmony import */ var _npc_huntingshop_json__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./npc_huntingshop.json */ "./src/json/quests/npc_huntingshop.json");
+/* harmony import */ var _npc_treessell_json__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./npc_treessell.json */ "./src/json/quests/npc_treessell.json");
+/* harmony import */ var _npc_stock_json__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./npc_stock.json */ "./src/json/quests/npc_stock.json");
+/* harmony import */ var _npc_donateautoroom_json__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./npc_donateautoroom.json */ "./src/json/quests/npc_donateautoroom.json");
+/* harmony import */ var _npc_cityhall_json__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./npc_cityhall.json */ "./src/json/quests/npc_cityhall.json");
+/* harmony import */ var _npc_wedding_json__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./npc_wedding.json */ "./src/json/quests/npc_wedding.json");
+/* harmony import */ var _biz_npc_pet_json__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./biz/npc_pet.json */ "./src/json/quests/biz/npc_pet.json");
+/* harmony import */ var _biz_npc_petshop_json__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./biz/npc_petshop.json */ "./src/json/quests/biz/npc_petshop.json");
+/* harmony import */ var _biz_npc_rieltor_json__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./biz/npc_rieltor.json */ "./src/json/quests/biz/npc_rieltor.json");
+/* harmony import */ var _biz_npc_furniture_json__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./biz/npc_furniture.json */ "./src/json/quests/biz/npc_furniture.json");
+/* harmony import */ var _npc_carevac_json__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./npc_carevac.json */ "./src/json/quests/npc_carevac.json");
+/* harmony import */ var _npc_airshop_json__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./npc_airshop.json */ "./src/json/quests/npc_airshop.json");
+/* harmony import */ var _npc_eliteroom_json__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./npc_eliteroom.json */ "./src/json/quests/npc_eliteroom.json");
+/* harmony import */ var _npc_zdobich_json__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./npc_zdobich.json */ "./src/json/quests/npc_zdobich.json");
+/* harmony import */ var _work_npc_automechanic_json__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./work/npc_automechanic.json */ "./src/json/quests/work/npc_automechanic.json");
+/* harmony import */ var _work_npc_bus_json__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./work/npc_bus.json */ "./src/json/quests/work/npc_bus.json");
+/* harmony import */ var _work_npc_collector_json__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./work/npc_collector.json */ "./src/json/quests/work/npc_collector.json");
+/* harmony import */ var _work_npc_electrician_json__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./work/npc_electrician.json */ "./src/json/quests/work/npc_electrician.json");
+/* harmony import */ var _work_npc_gopostal_json__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./work/npc_gopostal.json */ "./src/json/quests/work/npc_gopostal.json");
+/* harmony import */ var _work_npc_lawnmower_json__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./work/npc_lawnmower.json */ "./src/json/quests/work/npc_lawnmower.json");
+/* harmony import */ var _work_npc_taxi_json__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./work/npc_taxi.json */ "./src/json/quests/work/npc_taxi.json");
+/* harmony import */ var _work_npc_truckers_json__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./work/npc_truckers.json */ "./src/json/quests/work/npc_truckers.json");
+/* harmony import */ var _npc_org_json__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./npc_org.json */ "./src/json/quests/npc_org.json");
+/* harmony import */ var _npc_birthday_json__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./npc_birthday.json */ "./src/json/quests/npc_birthday.json");
+
 
 
 
@@ -325455,40 +326204,41 @@ const list = {
     npc_airdrop: _npc_airdrop_json__WEBPACK_IMPORTED_MODULE_6__,
     npc_oressale: _npc_oressale_json__WEBPACK_IMPORTED_MODULE_7__,
     npc_fracpolic: _fraction_npc_fracpolic_json__WEBPACK_IMPORTED_MODULE_8__,
-    npc_fracsheriff: _fraction_npc_fracsheriff_json__WEBPACK_IMPORTED_MODULE_9__,
-    npc_fracnews: _fraction_npc_fracnews_json__WEBPACK_IMPORTED_MODULE_10__,
-    npc_fracems: _fraction_npc_fracems_json__WEBPACK_IMPORTED_MODULE_11__,
+    npc_army: _fraction_npc_army_json__WEBPACK_IMPORTED_MODULE_9__,
+    npc_fracsheriff: _fraction_npc_fracsheriff_json__WEBPACK_IMPORTED_MODULE_10__,
+    npc_fracnews: _fraction_npc_fracnews_json__WEBPACK_IMPORTED_MODULE_11__,
+    npc_fracems: _fraction_npc_fracems_json__WEBPACK_IMPORTED_MODULE_12__,
     
-    npc_premium: _biz_npc_premium_json__WEBPACK_IMPORTED_MODULE_12__,
+    npc_premium: _biz_npc_premium_json__WEBPACK_IMPORTED_MODULE_13__,
 
-    npc_stock: _npc_stock_json__WEBPACK_IMPORTED_MODULE_15__,
-    npc_huntingshop: _npc_huntingshop_json__WEBPACK_IMPORTED_MODULE_13__,
-    npc_treessell: _npc_treessell_json__WEBPACK_IMPORTED_MODULE_14__,
+    npc_stock: _npc_stock_json__WEBPACK_IMPORTED_MODULE_16__,
+    npc_huntingshop: _npc_huntingshop_json__WEBPACK_IMPORTED_MODULE_14__,
+    npc_treessell: _npc_treessell_json__WEBPACK_IMPORTED_MODULE_15__,
 
-    npc_donateautoroom: _npc_donateautoroom_json__WEBPACK_IMPORTED_MODULE_16__,
-    npc_cityhall: _npc_cityhall_json__WEBPACK_IMPORTED_MODULE_17__,
-    npc_wedding: _npc_wedding_json__WEBPACK_IMPORTED_MODULE_18__,
+    npc_donateautoroom: _npc_donateautoroom_json__WEBPACK_IMPORTED_MODULE_17__,
+    npc_cityhall: _npc_cityhall_json__WEBPACK_IMPORTED_MODULE_18__,
+    npc_wedding: _npc_wedding_json__WEBPACK_IMPORTED_MODULE_19__,
 
-    npc_pet: _biz_npc_pet_json__WEBPACK_IMPORTED_MODULE_19__,
-    npc_petshop: _biz_npc_petshop_json__WEBPACK_IMPORTED_MODULE_20__,
-    npc_furniture: _biz_npc_furniture_json__WEBPACK_IMPORTED_MODULE_22__,
-    npc_rieltor: _biz_npc_rieltor_json__WEBPACK_IMPORTED_MODULE_21__,
-    npc_carevac: _npc_carevac_json__WEBPACK_IMPORTED_MODULE_23__,
-    npc_airshop: _npc_airshop_json__WEBPACK_IMPORTED_MODULE_24__,
-    npc_eliteroom: _npc_eliteroom_json__WEBPACK_IMPORTED_MODULE_25__,
+    npc_pet: _biz_npc_pet_json__WEBPACK_IMPORTED_MODULE_20__,
+    npc_petshop: _biz_npc_petshop_json__WEBPACK_IMPORTED_MODULE_21__,
+    npc_furniture: _biz_npc_furniture_json__WEBPACK_IMPORTED_MODULE_23__,
+    npc_rieltor: _biz_npc_rieltor_json__WEBPACK_IMPORTED_MODULE_22__,
+    npc_carevac: _npc_carevac_json__WEBPACK_IMPORTED_MODULE_24__,
+    npc_airshop: _npc_airshop_json__WEBPACK_IMPORTED_MODULE_25__,
+    npc_eliteroom: _npc_eliteroom_json__WEBPACK_IMPORTED_MODULE_26__,
 
-    npc_zdobich: _npc_zdobich_json__WEBPACK_IMPORTED_MODULE_26__,
+    npc_zdobich: _npc_zdobich_json__WEBPACK_IMPORTED_MODULE_27__,
 
-    npc_automechanic: _work_npc_automechanic_json__WEBPACK_IMPORTED_MODULE_27__,
-    npc_bus: _work_npc_bus_json__WEBPACK_IMPORTED_MODULE_28__,
-    npc_collector: _work_npc_collector_json__WEBPACK_IMPORTED_MODULE_29__,
-    npc_electrician: _work_npc_electrician_json__WEBPACK_IMPORTED_MODULE_30__,
-    npc_gopostal: _work_npc_gopostal_json__WEBPACK_IMPORTED_MODULE_31__,
-    npc_lawnmower: _work_npc_lawnmower_json__WEBPACK_IMPORTED_MODULE_32__,
-    npc_taxi: _work_npc_taxi_json__WEBPACK_IMPORTED_MODULE_33__,
-    npc_truckers: _work_npc_truckers_json__WEBPACK_IMPORTED_MODULE_34__,
-    npc_org: _npc_org_json__WEBPACK_IMPORTED_MODULE_35__,
-    npc_birthday: _npc_birthday_json__WEBPACK_IMPORTED_MODULE_36__,
+    npc_automechanic: _work_npc_automechanic_json__WEBPACK_IMPORTED_MODULE_28__,
+    npc_bus: _work_npc_bus_json__WEBPACK_IMPORTED_MODULE_29__,
+    npc_collector: _work_npc_collector_json__WEBPACK_IMPORTED_MODULE_30__,
+    npc_electrician: _work_npc_electrician_json__WEBPACK_IMPORTED_MODULE_31__,
+    npc_gopostal: _work_npc_gopostal_json__WEBPACK_IMPORTED_MODULE_32__,
+    npc_lawnmower: _work_npc_lawnmower_json__WEBPACK_IMPORTED_MODULE_33__,
+    npc_taxi: _work_npc_taxi_json__WEBPACK_IMPORTED_MODULE_34__,
+    npc_truckers: _work_npc_truckers_json__WEBPACK_IMPORTED_MODULE_35__,
+    npc_org: _npc_org_json__WEBPACK_IMPORTED_MODULE_36__,
+    npc_birthday: _npc_birthday_json__WEBPACK_IMPORTED_MODULE_37__,
 }
 
 const actorData = {
@@ -325603,6 +326353,9 @@ const actorData = {
     },
     npc_birthday: {
         name: "Праздничная обезьянка"
+    },
+    npc_army: {
+        name: "Кэтрин Келлерман"
     },
 }
 

@@ -11,6 +11,7 @@ import npc_fd_zakJson from './defenderFatherlandDay/npc_zak.json';
 import npc_airdrop from './npc_airdrop.json';
 import npc_oressale from './npc_oressale.json';
 import npc_fracpolic from './fraction/npc_fracpolic.json';
+import npc_army from './fraction/npc_army.json';
 import npc_fracsheriff from './fraction/npc_fracsheriff.json';
 import npc_fracnews from './fraction/npc_fracnews.json';
 import npc_fracems from './fraction/npc_fracems.json';
@@ -62,6 +63,7 @@ const list = {
     npc_airdrop: npc_airdrop,
     npc_oressale: npc_oressale,
     npc_fracpolic: npc_fracpolic,
+    npc_army: npc_army,
     npc_fracsheriff: npc_fracsheriff,
     npc_fracnews: npc_fracnews,
     npc_fracems: npc_fracems,
@@ -210,6 +212,9 @@ const actorData = {
     },
     npc_birthday: {
         name: "Праздничная обезьянка"
+    },
+    npc_army: {
+        name: "Кэтрин Келлерман"
     },
 }
 

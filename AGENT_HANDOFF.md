@@ -398,7 +398,12 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Дамп DurtyFree (pedComponentVariations) для этого не годится — в нём нет DLC после mpchristmas3.
 
 ## 7v. RP-армия
-- Качалка и выносливость удалены целиком (сервер, клиент, CEF); бег снова бесконечный (`restoreStamina` в `render.js`), пропы турников/скамеек снова для сидения. Таблицы `player_fitness`/`settings/gym*.json` больше не читаются. `/mousetest` — `Core/DebugCommands.cs`.
+- Качалка и выносливость удалены целиком (сервер, клиент, CEF); бег снова бесконечный (`restoreStamina` в `render.js`), пропы турников/скамеек снова для сидения. Таблицы `player_fitness`/`settings/gym*.json` больше не читаются. `/mousetest` — `Core/DebugCommands.cs` (пишет, что назначено на кнопки мыши и почему бинд сработал/пропущен).
+- Кэтрин Келлерман (стойка штаба) — серверный NPC `ArmyRP/ArmyNpc.cs`, диалог `json/quests/fraction/npc_army.json`: узел 0 — гражданский, 1 — рядовой, 2 — офицер (`IsOfficer`).
+- Машины армии по номерам — `ArmyVehicles.FixedSpots` (применяются при старте, если машина не на месте).
+- Доска нарядов → вкладка «Объявления»: `ArmyRP/ArmyBoard.cs`, таблица `army_announcements`; пишут офицеры, удаляют автор или ранг 9+, рация всем военным.
+- Старый аукцион телефона скрыт (закомментирован пункт в `phonenew/components/mainmenu.svelte`).
+- Биндер мыши: только опрос `mp.keys.isDown` (bind.js `runMouseBinds`).
 - Армия — `Fractions/ArmyRP/*`, настройки `settings/army.json`, точки ставятся в игре `/armyset` (6 lvl): parade, post add/del, zone clear/add, barrier add/del, range, course clear/add, info, reload.
 - А: `/salute` `/attention` `/atease`, `/formation` (офицер = доступ Invite), `/post`, `/guardhouse id мин причина` (ArrestType 3: копия камер КПЗ в измерении 3244600, выход у штаба в порту), `/unguardhouse`, `/returnguns` (армейский серийник 1014xxxxx), `/armylog`. Таблица `army_weapon_log` создаётся сама.
 - Б: предмет `ArmyPass` (400), `/basepass id часы`, режимная зона (многоугольник) → предупреждение → метка военным + розыск, шлагбаумы `/gate`.

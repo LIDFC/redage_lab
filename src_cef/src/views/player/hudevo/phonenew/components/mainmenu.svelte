@@ -18,7 +18,8 @@
     import RadioIcon from '../assets/images/radio.png'
     import ForbesIcon from '../assets/images/forbes.png'
     import TruckerIcon from '../assets/images/trucker.png'
-    import AucIcon from '../assets/images/auction.png'
+    // Старый аукцион телефона скрыт — вместо него маркетплейс (eternal-dev/marketPlace)
+    // import AucIcon from '../assets/images/auction.png'
     import FleecaIcon from '../assets/images/fleeca.svg'
     import CallIcon from '../assets/images/call.png'
     import MessagesIcon from '../assets/images/messages.png'
@@ -94,11 +95,13 @@
             icon: DarknetIcon,
             link: "darknet"
         }, */
+        /* Старый аукцион скрыт (код страницы и сервера оставлен — им пользуются дома/бизнесы)
         {
             name: "Аукцион",
             icon: AucIcon,
             link: "auction"
         },
+        */
         {
             name: "Подарок",
             icon: GiftIcon,

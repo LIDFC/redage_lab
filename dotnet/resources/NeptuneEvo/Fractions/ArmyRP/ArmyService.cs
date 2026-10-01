@@ -365,12 +365,72 @@ namespace NeptuneEvo.Fractions.ArmyRP
                 Commands.RPChat("sme", player, " отправил {name} на гауптвахту", target);
                 ArmyUtil.Radio($"{player.Name} отправил {target.Name} на гауптвахту на {minutes} мин: {reason}");
                 Fractions.Table.Logs.Repository.AddLogs(player, FractionLogsType.Arrest, $"Гауптвахта {target.Name} ({target.GetUUID()}) на {minutes} мин: {reason}");
-                Notify.Send(target, NotifyType.Warning, NotifyPosition.Center, $"Гауптвахта {minutes} мин: {reason}", 8000);
+                // Крупное уведомление (как у КПЗ); срок, причина и кто посадил — в планшете → «Гауптвахта»
+                target.Eval("mp.game.audio.playSoundFrontend(-1, \"Mission_Pass_Notify\", \"DLC_HEISTS_GENERAL_FRONTEND_SOUNDS\", true);");
+                EventSys.SendCoolMsg(target, "WASTED", "Гауптвахта", $"{player.Name} отправил вас на гауптвахту: {reason}. Подробности — в планшете", "", 15000);
+                EventSys.SendCoolMsg(player, "WASTED", "Гауптвахта", $"Вы отправили {target.Name} на гауптвахту на {minutes} мин", "", 8000);
+                SaveGuardhouseInfo(targetCharacter.UUID, player.Name, reason, minutes);
             }
             catch (Exception e)
             {
                 Log.Write($"CMD_Guardhouse Exception: {e}");
             }
+        }
+
+        private static bool _guardhouseTable;
+        private static readonly Dictionary<int, (string officer, string reason, int minutes, string date)> GuardhouseInfo =
+            new Dictionary<int, (string, string, int, string)>();
+
+        private static void EnsureGuardhouseTable()
+        {
+            if (_guardhouseTable)
+                return;
+            _guardhouseTable = true;
+            using var create = new MySqlCommand(@"CREATE TABLE IF NOT EXISTS `army_guardhouse_log` (
+                `id` INT NOT NULL AUTO_INCREMENT,
+                `uuid` INT NOT NULL,
+                `officer` VARCHAR(64) NOT NULL,
+                `reason` VARCHAR(255) NOT NULL,
+                `minutes` INT NOT NULL,
+                `created` DATETIME NOT NULL,
+                PRIMARY KEY (`id`), KEY `uuid` (`uuid`)
+            ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+            MySQL.Query(create);
+        }
+
+        private static void SaveGuardhouseInfo(int uuid, string officer, string reason, int minutes)
+        {
+            EnsureGuardhouseTable();
+            var date = DateTime.Now;
+            GuardhouseInfo[uuid] = (officer, reason, minutes, date.ToString("dd.MM HH:mm"));
+            NeptuneEvo.Database.DbQueue.Enqueue(
+                "INSERT INTO `army_guardhouse_log` (`uuid`,`officer`,`reason`,`minutes`,`created`) VALUES (@u,@o,@r,@m,@c)",
+                ("@u", uuid), ("@o", officer), ("@r", reason.Length > 250 ? reason.Substring(0, 250) : reason), ("@m", minutes), ("@c", date));
+        }
+
+        /// <summary>Последнее отправление на гауптвахту (для планшета).</summary>
+        public static (string officer, string reason, int minutes, string date) GetGuardhouseInfo(int uuid)
+        {
+            if (GuardhouseInfo.TryGetValue(uuid, out var info))
+                return info;
+            try
+            {
+                EnsureGuardhouseTable();
+                using var table = NeptuneEvo.Database.DbQueue.Read(
+                    "SELECT `officer`,`reason`,`minutes`,`created` FROM `army_guardhouse_log` WHERE `uuid`=@u ORDER BY `id` DESC LIMIT 1", ("@u", uuid));
+                if (table != null && table.Rows.Count > 0)
+                {
+                    var row = table.Rows[0];
+                    info = (row["officer"].ToString(), row["reason"].ToString(), Convert.ToInt32(row["minutes"]), Convert.ToDateTime(row["created"]).ToString("dd.MM HH:mm"));
+                    GuardhouseInfo[uuid] = info;
+                    return info;
+                }
+            }
+            catch (Exception e)
+            {
+                Log.Write($"GetGuardhouseInfo Exception: {e.Message}");
+            }
+            return ("—", "—", 0, "");
         }
 
         [Command("unguardhouse")]

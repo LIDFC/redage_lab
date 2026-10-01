@@ -85,3 +85,16 @@ gm.events.add("client.tablet.business.data", (json) => {
 gm.events.add("client.tablet.business.history", (json) => {
     mp.gui.emmit(`window.events.callEvent("cef.tablet.business.history", ${JSON.stringify(json)})`);
 });
+
+// ─── Гауптвахта (армия: арест и наряды) ─────────────────────────────────────
+gm.events.add(clientName + "guardhouse.load", () => {
+    if (!global.antiFlood("tablet.guardhouse", 500))
+        return;
+    mp.events.callRemote("server.tablet.guardhouse.load");
+});
+gm.events.add(clientName + "guardhouse.waypoint", () => {
+    mp.events.callRemote("server.tablet.guardhouse.waypoint");
+});
+gm.events.add("client.tablet.guardhouse.data", (json) => {
+    mp.gui.emmit(`window.events.callEvent("cef.tablet.guardhouse.data", ${JSON.stringify(json)})`);
+});

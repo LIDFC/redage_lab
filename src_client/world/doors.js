@@ -3190,3 +3190,46 @@ setTimeout(() => {
             DoorData.toggled, 0.0, 0.0, 0.0);
     });
 }, 500);
+// ---- Двери, открытые администратором навсегда (сервер World/DoorsOpen.cs, settings/doors_open.json).
+// /dooropen — посмотреть на дверь и открыть её для всех; /doorclose — вернуть ближайшую.
+let openedDoors = [];
+
+const applyOpenedDoors = (onlyNear) => {
+    const p = mp.players.local.position;
+    openedDoors.forEach((d) => {
+        if (onlyNear && mp.game.gameplay.getDistanceBetweenCoords(p.x, p.y, p.z, d.x, d.y, d.z, true) > 60) return;
+        mp.game.object.doorControl(d.hash, d.x, d.y, d.z, false, 0.0, 0.0, 0.0);
+    });
+};
+
+gm.events.add("client.doors.opened", (json) => {
+    try {
+        openedDoors = JSON.parse(json) || [];
+        applyOpenedDoors(false);
+    } catch (e) {}
+});
+
+// Дверь в интерьере подгружается, когда игрок рядом, — повторяем открытие для дверей поблизости
+setInterval(() => {
+    if (openedDoors.length) applyOpenedDoors(true);
+}, 3000);
+
+gm.events.add("client.doors.pick", () => {
+    try {
+        const cam = global.cameraManager.gameplayCam();
+        const from = cam.getCoord();
+        const dir = cam.getDirection();
+        const to = new mp.Vector3(from.x + dir.x * 10, from.y + dir.y * 10, from.z + dir.z * 10);
+        const hit = mp.raycasting.testPointToPoint(from, to, mp.players.local.handle, 16);
+        if (!hit || hit.entity === undefined || hit.entity === null) {
+            mp.events.callRemote("server.doors.picked", 0, 0, 0, 0);
+            return;
+        }
+        const handle = typeof hit.entity === "object" ? hit.entity.handle : hit.entity;
+        const model = Natives.GET_ENTITY_MODEL(handle) >>> 0;
+        const pos = Natives.GET_ENTITY_COORDS(handle, false);
+        mp.events.callRemote("server.doors.picked", String(model), pos.x, pos.y, pos.z);
+    } catch (e) {
+        mp.events.callRemote("client_trycatch", "world/doors", "client.doors.pick", e.toString());
+    }
+});

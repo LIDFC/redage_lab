@@ -6,5 +6,6 @@ export const icons = {
     organization: svg('<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.3"/><path d="M3.5 19c.6-3.2 2.8-5 5.5-5s4.9 1.8 5.5 5"/><path d="M15 14.5c2.6-.3 4.8 1.2 5.5 4"/>'),
     business: svg('<path d="M4 20V10l8-5 8 5v10"/><path d="M9 20v-6h6v6"/><path d="M3 20h18"/>'),
     marketplace: svg('<path d="M4 7h16l-1.5 11a2 2 0 0 1-2 1.7h-9a2 2 0 0 1-2-1.7L4 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/>'),
+    guardhouse: svg('<rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 4v16M15 4v16"/>'),
     forbes: svg('<path d="M5 20V10"/><path d="M12 20V4"/><path d="M19 20v-7"/><path d="M3 20h18"/>'),
 };

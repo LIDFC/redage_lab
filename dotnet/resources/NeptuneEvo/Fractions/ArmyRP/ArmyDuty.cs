@@ -144,11 +144,73 @@ namespace NeptuneEvo.Fractions.ArmyRP
         {
             order.LastReminder = DateTime.Now;
             var points = Points(order.Type);
-            var left = Math.Max(1, order.SecondsLeft / 60);
+            // Срок (час онлайна) хранится в записи наряда и виден в планшете → «Гауптвахта», в тексте не пишем
             Notify.Send(player, NotifyType.Warning, NotifyPosition.Center,
-                $"Вам назначен наряд: {TypeName(order.Type)}{(string.IsNullOrEmpty(order.Officer) ? "" : $" (назначил {order.Officer})")}. Осталось {left} мин онлайна", 8000);
+                $"{(order.Punishment ? "Взыскание: наряд" : "Вам назначен наряд")} — {TypeName(order.Type)}{(string.IsNullOrEmpty(order.Officer) ? "" : $" (назначил {order.Officer})")}. Подробности — в планшете → Гауптвахта", 8000);
             if (withWaypoint && order.Step < points.Count)
                 Trigger.ClientEvent(player, "createWaypoint", points[order.Step].X, points[order.Step].Y);
+        }
+
+        // ------------------------------------------------------------------ планшет → «Гауптвахта»
+
+        [RemoteEvent("server.tablet.guardhouse.load")]
+        public static void OnTabletLoad(ExtPlayer player)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                if (characterData == null)
+                    return;
+                LoadFor(player);
+                object duty = null;
+                if (Orders.TryGetValue(player.GetUUID(), out var order))
+                    duty = new
+                    {
+                        type = order.Type,
+                        name = TypeName(order.Type),
+                        step = order.Step,
+                        total = Points(order.Type).Count,
+                        minutesLeft = Math.Max(1, order.SecondsLeft / 60),
+                        officer = order.Officer ?? "",
+                        punishment = order.Punishment,
+                    };
+                object arrest = null;
+                if (characterData.ArrestType == ArmyService.GuardhouseArrestType && characterData.ArrestTime > 0)
+                {
+                    var info = ArmyService.GetGuardhouseInfo(characterData.UUID);
+                    arrest = new
+                    {
+                        minutesLeft = Math.Max(1, (characterData.ArrestTime + 59) / 60),
+                        reason = info.reason,
+                        officer = info.officer,
+                        minutes = info.minutes,
+                        date = info.date,
+                    };
+                }
+                Trigger.ClientEvent(player, "client.tablet.guardhouse.data", JsonConvert.SerializeObject(new
+                {
+                    isArmy = ArmyUtil.IsArmy(player),
+                    duty,
+                    arrest,
+                }));
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnTabletLoad Exception: {e}");
+            }
+        }
+
+        [RemoteEvent("server.tablet.guardhouse.waypoint")]
+        public static void OnTabletWaypoint(ExtPlayer player)
+        {
+            if (!Orders.TryGetValue(player.GetUUID(), out var order))
+                return;
+            var points = Points(order.Type);
+            if (order.Step < points.Count)
+            {
+                Trigger.ClientEvent(player, "createWaypoint", points[order.Step].X, points[order.Step].Y);
+                Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Точка наряда отмечена на карте", 3000);
+            }
         }
 
         // ------------------------------------------------------------------ окно

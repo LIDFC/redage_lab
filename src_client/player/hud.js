@@ -191,6 +191,7 @@ const getStatsData = (json) => {
 		//
 		Licenses: json[39],
 		Wanted: json[40],
+		Fitness: json[41],
 	}
 }
 

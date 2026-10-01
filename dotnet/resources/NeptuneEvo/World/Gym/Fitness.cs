@@ -271,9 +271,12 @@ namespace NeptuneEvo.World.Gym
                         case "chinup":
                         case "bench":
                         case "weights":
+                        case "curls":
                             Gain(player, "strength");
                             break;
                         case "yoga":
+                        case "stretch":
+                        case "jog":
                             Gain(player, "stamina");
                             break;
                         default: // пресс, отжимания — по очереди

@@ -51,6 +51,10 @@ namespace NeptuneEvo.World.Gym
             { "situps", "gym_situps" },
             { "pushups", "gym_pushups" },
             { "yoga", "gym_yoga" },
+            { "curls", "gym_curls" },
+            { "stretch", "gym_stretch" },
+            { "flex", "gym_flex" },
+            { "jog", "gym_jog" },
         };
 
         private static List<GymSpot> _spots = new List<GymSpot>();
@@ -161,6 +165,26 @@ namespace NeptuneEvo.World.Gym
             catch (Exception e)
             {
                 Log.Write($"Start Exception: {e}");
+            }
+        }
+
+        /// <summary>Стрелки ← → во время упражнения: другое упражнение на том же снаряде.</summary>
+        [RemoteEvent("server.gym.switch")]
+        public static void Switch(ExtPlayer player, string exercise)
+        {
+            try
+            {
+                if (!Busy.ContainsKey(player) || !player.IsCharacterData())
+                    return;
+                if (!Exercises.TryGetValue(exercise ?? "", out var animKey))
+                    return;
+                Fitness.OnTrainingStart(player, exercise);
+                Trigger.StopAnimation(player);
+                player.SetSharedData("AnimToKey", animKey);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"Switch Exception: {e}");
             }
         }
 

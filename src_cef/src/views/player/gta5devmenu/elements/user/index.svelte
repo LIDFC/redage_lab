@@ -70,6 +70,16 @@
 {#if selectView === "Osnovnoe"}
     <div class="list1">
         <div class="block">
+            <h1>Имя Фамилия</h1>
+            <p>{selectCharData.Name || "—"}</p>
+            <span>Статус<b>{selectCharData.isAdmin ? "Админ" : "Игрок"}</b></span>
+        </div>
+        <div class="block">
+            <h1>Аккаунт</h1>
+            <p>{selectCharData.Login || "—"}</p>
+            <span></span>
+        </div>
+        <div class="block">
             <h1>Денежные средства</h1>
             <p>${selectCharData.BankMoney}</p>
             <span>Наличные<b>${format("money", selectCharData.Money)}</b></span>
@@ -164,6 +174,9 @@
                 {#if onSelectedView2 === "Page2"}
                     {moment.duration(selectCharData.MonthTime, "minutes").format("w[нед.] d[д.] h[ч.] m[м.]")}
                 {/if}
+                {#if onSelectedView2 === "Page4"}
+                    {moment.duration(selectCharData.YearTime, "minutes").format("M[мес.] w[нед.] d[д.] h[ч.] m[м.]")}
+                {/if}
                 {#if onSelectedView2 === "Page3"}
                     {moment.duration(selectCharData.TotalTime, "minutes").format("y[г.] M[мес.] w[nнед.] d[д.] h[ч.] m[м.]")}
                 {/if}
@@ -171,13 +184,14 @@
             <span>
                 <div class="timeblock" on:keypress={() => {}} on:click={() => onSelectedView2 = "Page1"} class:active={onSelectedView2 == "Page1"}>День</div>
                 <div class="timeblock" on:keypress={() => {}} on:click={() => onSelectedView2 = "Page2"} class:active={onSelectedView2 == "Page2"}>Месяц</div>
+                <div class="timeblock" on:keypress={() => {}} on:click={() => onSelectedView2 = "Page4"} class:active={onSelectedView2 == "Page4"}>Год</div>
                 <div class="timeblock" on:keypress={() => {}} on:click={() => onSelectedView2 = "Page3"} class:active={onSelectedView2 == "Page3"}>Всего</div>
             </span>
         </div>
         <div class="block">
             <h1>Предупреждения</h1>
             <p>{selectCharData.Warns > 0 ? `${selectCharData.Warns}` : 0}</p>
-            <span>Активные<b>{selectCharData.Warns > 0 ? `${selectCharData.Warns}` : 0} / 3</b></span>
+            <span>{selectCharData.Warns > 0 && selectCharData.Unwarn ? `Снимутся ${moment(selectCharData.Unwarn).format('DD.MM.YYYY HH:mm')}` : "Активные"}<b>{selectCharData.Warns > 0 ? `${selectCharData.Warns}` : 0} / 3</b></span>
         </div>
         <div class="block" class:active={Boolean(selectCharData.Licenses[0]) == true}>
             <h1>Лицензия на мотоцикл</h1>
@@ -237,6 +251,29 @@
 {/if}
 
 {#if selectView === "Skills"}
+    {#if selectCharData.Fitness}
+        <!-- Физическая форма: сила и выносливость растут в качалке (World/Gym/Fitness.cs) -->
+        <div class="list1">
+            {#each [
+                { name: "Сила", value: selectCharData.Fitness.str, left: selectCharData.Fitness.strLeft, hint: "Сильнее удар кулаком" },
+                { name: "Выносливость", value: selectCharData.Fitness.sta, left: selectCharData.Fitness.staLeft, hint: "Дольше бег без падения" },
+            ] as stat}
+                <div class="blockskill">
+                    <h1>{stat.name}</h1>
+                    <p>{stat.hint}</p>
+                    <div class="progskill">
+                        <div class="headskill">
+                            <p>{stat.value >= 100 ? "Максимум" : (stat.left > 0 ? `За этот час ещё +${stat.left}` : "На этот час прирост исчерпан")}</p>
+                            <b>{stat.value}<p>/ 100</p></b>
+                        </div>
+                        <div class="bgprog">
+                            <div class="progbar" style="width: {stat.value}%"></div>
+                        </div>
+                    </div>
+                </div>
+            {/each}
+        </div>
+    {/if}
     {#if selectCharData.jobSkillsInfo}
         <div class="list1">
             {#each selectCharData.jobSkillsInfo as job, index}
@@ -302,6 +339,7 @@
                             <p>Гаражных мест:<b>{selectCharData.maxcars}</b></p>
                             <p>Класс дома:<b>{selectCharData.houseType}</b></p>
                             <p>На счету дома:<b>{selectCharData.houseCash}</b></p>
+                            <p>Оплачено на:<b>{selectCharData.housePaid}</b></p>
                         </div>
                     </div>
                 </div>
@@ -318,6 +356,7 @@
                         </div>
                         <div class="righthouse">
                             <p>На счету бизнеса:<b>{selectCharData.BizCash}</b></p>
+                            <p>Оплачено на:<b>{selectCharData.BizPaid}</b></p>
                         </div>
                     </div>
                 </div>

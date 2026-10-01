@@ -206,7 +206,7 @@ gm.events.add("render", () => {
 		global.ToggleMovementControls();
 	}
 
-	mp.game.player.restoreStamina(100);
+	// Выносливость считает player/stamina.js (бег ограничен, растёт от качалки) — здесь больше не восстанавливаем
 	global.localplayer.setRagdollFlag(2);
 	global.localplayer.setAccuracy(0);
 	mp.game.player.setHealthRechargeMultiplier(0.0);

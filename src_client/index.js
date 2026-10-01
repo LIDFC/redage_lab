@@ -364,6 +364,7 @@ require('./player/lift.js');
 require('./player/menus.js');
 require('./player/petshop.js');
 require('./player/render.js');
+require('./player/stamina.js');
 require('./player/report.js');
 require('./player/screen.js');
 require('./player/simplemenu.js');

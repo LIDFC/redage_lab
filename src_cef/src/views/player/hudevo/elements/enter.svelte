@@ -59,6 +59,7 @@
         SeatingUp: translateText('player2', 'Встать'),
         Gym: 'Позаниматься',
         GymStop: 'Закончить',
+        GymSwitch: '← → другое упражнение · E — закончить',
         ArmyDutyBoard: 'Доска нарядов',
         ArmyDutyPoint: 'Наряд: работать',
         ArmyFuel: 'Армейская заправка',

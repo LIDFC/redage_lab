@@ -44,6 +44,7 @@ import npc_taxi from './work/npc_taxi.json';
 import npc_truckers from './work/npc_truckers.json';
 import npc_org from './npc_org.json';
 import npc_birthday from './npc_birthday.json';
+import npc_gym from './work/npc_gym.json';
 
 /* type
     quest - Обычный квест который только в меню
@@ -96,6 +97,7 @@ const list = {
     npc_truckers: npc_truckers,
     npc_org: npc_org,
     npc_birthday: npc_birthday,
+    npc_gym: npc_gym,
 }
 
 const actorData = {
@@ -211,14 +213,36 @@ const actorData = {
     npc_birthday: {
         name: "Праздничная обезьянка"
     },
+    npc_gym: {
+        name: "Тренер"
+    },
 }
 
 export const getQuests = () => {
     return questsnpc_tailerJsonJson;
 }
 
+// Подстановка живых значений в текст диалога: "{price}" → vars.price (vars приходят из client.quest.open)
+let questVars = {};
+export const setQuestVars = (vars) => {
+    try {
+        questVars = typeof vars === "string" ? JSON.parse(vars) : (vars || {});
+    } catch (e) {
+        questVars = {};
+    }
+};
+const fillVars = (text) => typeof text !== "string" ? text : text.replace(/\{(\w+)\}/g, (m, key) => questVars[key] !== undefined ? questVars[key] : m);
+
 export const getQuest = (name, questId) => {
-    return list[name][questId];
+    const quest = list[name][questId];
+    if (!quest) return quest;
+    return {
+        ...quest,
+        text: fillVars(quest.text),
+        textError: fillVars(quest.textError),
+        textSuccess: fillVars(quest.textSuccess),
+        buttons: Array.isArray(quest.buttons) ? quest.buttons.map((b) => ({ ...b, name: fillVars(b.name) })) : quest.buttons,
+    };
 }
 
 export const getActors = (name) => {

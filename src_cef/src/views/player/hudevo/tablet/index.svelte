@@ -11,6 +11,7 @@
     import FractionTable from '@/views/player/menu/elements/fractions/index.svelte'
     import Business from './apps/business/index.svelte'
     import Forbes from './apps/forbes.svelte'
+    import Guardhouse from './apps/guardhouse.svelte'
     import { icons } from './icons'
     import './tablet.sass'
 
@@ -21,6 +22,7 @@
 
     $: apps = [
         $charFractionID > 0 && { id: "Fractions", name: fractionNames[$charFractionID] || "Фракция", icon: "fraction", color: "#3B82F6" },
+        $charFractionID === 14 && { id: "guardhouse", name: "Гауптвахта", icon: "guardhouse", color: "#6B7F3A" },
         $charOrganizationID > 0 && { id: "Organization", name: "Организация", icon: "organization", color: "#8B5CF6" },
         { id: "business", name: "Бизнес", icon: "business", color: "#7ED321" },
         { id: "marketplace", name: "Маркетплейс", icon: "marketplace", color: "#F59E0B" },
@@ -111,6 +113,8 @@
                         <Business onClose={close} />
                     {:else if app === "forbes"}
                         <Forbes />
+                    {:else if app === "guardhouse"}
+                        <Guardhouse />
                     {/if}
                 </div>
             {/if}

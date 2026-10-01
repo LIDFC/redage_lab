@@ -239,7 +239,8 @@
             <div class="fractions__menu_text">{translateText('player1', 'Ранги')}</div>
         </div>
         {/if}
-        {#if settings.clothesEdit}
+        <!-- Наборы формы больше не выдаются: каждый собирает форму сам в гардеробе раздевалки (Fractions/Wardrobe) -->
+        {#if false && settings.clothesEdit}
         <div class="fractions__menu_element" class:active={selectedTableView === "Form"} on:click={() => setView ("Form")}>
             <span class="fractionsicon-form"></span>
             <div class="fractions__menu_text">{translateText('player1', 'Форма')}</div>

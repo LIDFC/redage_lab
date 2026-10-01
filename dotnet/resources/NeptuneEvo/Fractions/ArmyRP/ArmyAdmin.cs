@@ -122,12 +122,13 @@ namespace NeptuneEvo.Fractions.ArmyRP
                             case "alarm": Cfg.AlarmPoint = pos; break;
                             case "recruiter": Cfg.RecruiterPoint = pos; Cfg.RecruiterHeading = player.Heading; break;
                             case "guardhouse": Cfg.GuardhouseExit = pos; break;
+                            case "fuel": Cfg.FuelPoint = pos; ArmyFuel.CreatePoint(); break;
                             default:
-                                player.SendChatMessage("/armyset point groundrepair|airrepair|alarm|recruiter|guardhouse — точка встанет на твоё место");
+                                player.SendChatMessage("/armyset point groundrepair|airrepair|alarm|recruiter|guardhouse|fuel — точка встанет на твоё место");
                                 return;
                         }
-                        result = action == "guardhouse"
-                            ? "Выход с гауптвахты перенесён сюда"
+                        result = action == "guardhouse" || action == "fuel"
+                            ? (action == "fuel" ? "Армейская заправка перенесена сюда" : "Выход с гауптвахты перенесён сюда")
                             : "Точка сохранена, на карте появится после рестарта сервера";
                         break;
                     case "vehmove" when action == "ground" || action == "air":

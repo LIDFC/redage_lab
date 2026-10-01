@@ -135,6 +135,7 @@
 	import BlackMarket from '@/views/blackmarket/index.svelte';
 	import JobElectricianGame from '@/views/jobs/electrician/index.svelte';
 	import JobFarmGame from '@/views/jobs/farm/index.svelte';
+	import FractionWardrobe from '@/views/fractions/wardrobe/index.svelte';
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
@@ -231,6 +232,7 @@
 		BlackMarket,
 		JobElectricianGame,
 		JobFarmGame,
+		FractionWardrobe,
 		HouseFurniture
 	}
 	

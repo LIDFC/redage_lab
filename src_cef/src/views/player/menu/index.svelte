@@ -34,9 +34,10 @@
         selectView = wiew;
         timerView = wiew;
     }
-    const defaultSorted = ["Inventory", "Stats", "Settings", "Quests", "RewardsList", "Fractions", "Organization", "Events"];
-    let _pagesSorted = ["Inventory", "Stats", "Settings", "Quests", "RewardsList"];
-    let PagesSorted = ["Inventory", "Stats", "Settings", "Quests", "RewardsList"];
+    // «Статистика» убрана из меню I — вся статистика в F3 (gta5devmenu → user)
+    const defaultSorted = ["Inventory", "Settings", "Quests", "RewardsList", "Fractions", "Organization", "Events"];
+    let _pagesSorted = ["Inventory", "Settings", "Quests", "RewardsList"];
+    let PagesSorted = ["Inventory", "Settings", "Quests", "RewardsList"];
 
     const updatePage = (name, value) => {
 
@@ -142,10 +143,6 @@
                 <div class="item" class:active={selectView === "Inventory"} on:click={() => window.gameMenuView ("Inventory")}>
                     {translateText('player1', 'Инвентарь')}
                     <span class="gamemenu-inventory gamemenu__item_absolute"></span>
-                </div>
-                <div class="item" class:active={selectView === "Stats"} on:click={() => window.gameMenuView ("Stats")}>
-                    {translateText('player1', 'Статистика')}
-                    <span class="gamemenu-stats gamemenu__item_absolute"></span>
                 </div>
                 <div class="item" class:active={selectView === "Settings"} on:click={() => window.gameMenuView ("Settings")}>
                     {translateText('player1', 'Настройки')}

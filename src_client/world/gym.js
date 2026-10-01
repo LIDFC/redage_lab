@@ -21,11 +21,36 @@ const GYM_MODELS = [
     { model: "prop_yoga_mat_01", type: "mat", offset: [0, 0, 0], heading: 0 },
     { model: "prop_yoga_mat_02", type: "mat", offset: [0, 0, 0], heading: 0 },
     { model: "prop_yoga_mat_03", type: "mat", offset: [0, 0, 0], heading: 0 },
+    // Гантели и штанги, лежащие у тренажёров (Muscle Beach и др.)
+    { model: "prop_barbell_01", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_barbell_02", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_barbell_10kg", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_barbell_20kg", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_barbell_30kg", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_barbell_40kg", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_barbell_50kg", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_curl_bar_01", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_weight_10k", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_weight_15k", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_weight_20k", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_freeweight_01", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
+    { model: "prop_freeweight_02", type: "dumbbells", offset: [0, -0.6, 0], heading: 0 },
 ].map((item) => ({ ...item, hash: mp.game.joaat(item.model) }));
 
-// На коврике — по очереди: пресс, отжимания, йога (повторное E на коврике меняет упражнение не нужно — выходим)
-const MAT_EXERCISES = ["situps", "pushups", "yoga"];
-let matIndex = 0;
+// Упражнения на снаряде: E — первое, во время занятия стрелки ← → переключают на следующее (без отдельных окон)
+const VARIANTS = {
+    chinup: ["chinup"],
+    bench: ["bench"],
+    weights: ["weights", "curls"],
+    dumbbells: ["curls", "weights"],
+    mat: ["situps", "pushups", "yoga", "stretch", "flex", "jog"],
+};
+let variants = [];
+const EXERCISE_NAMES = {
+    chinup: "Подтягивания", bench: "Жим лёжа", weights: "Штанга", curls: "Гантели (бицепс)",
+    situps: "Пресс", pushups: "Отжимания", yoga: "Йога", stretch: "Растяжка", flex: "Позирование", jog: "Бег на месте",
+};
+let variantIndex = 0;
 
 const SEARCH_RADIUS = 2.2;
 let near = null;
@@ -61,7 +86,7 @@ const standPoint = (target) => {
 const setHint = (show) => {
     if (show === lastHint) return;
     lastHint = show;
-    if (show) mp.events.call("hud.oEnter", busy ? "GymStop" : "Gym");
+    if (show) mp.events.call("hud.oEnter", busy ? (variants.length > 1 ? "GymSwitch" : "GymStop") : "Gym");
     else mp.events.call("hud.cEnter");
 };
 
@@ -92,13 +117,10 @@ const stop = () => {
 
 const start = () => {
     if (busy || !near || global.ANTIANIM || global.isSeat || global.localplayer.vehicle) return;
-    let type = near.item.type;
-    if (type === "mat") {
-        type = MAT_EXERCISES[matIndex % MAT_EXERCISES.length];
-        matIndex++;
-    }
+    variants = VARIANTS[near.item.type] || [near.item.type];
+    variantIndex = 0;
     const point = standPoint(near);
-    mp.events.callRemote("server.gym.start", type, point.x, point.y, point.z, point.heading);
+    mp.events.callRemote("server.gym.start", variants[0], point.x, point.y, point.z, point.heading);
 };
 
 gm.events.add("client.gym.toggle", () => {
@@ -125,9 +147,20 @@ gm.events.add("client.gym.stopped", () => {
     setHint(false);
 });
 
-// Шаг в сторону — закончить
+// Шаг в сторону — закончить; стрелки ← → — другое упражнение на этом снаряде
+let lastSwitch = 0;
 gm.events.add("render", () => {
     if (!busy) return;
+    if (variants.length > 1 && Date.now() - lastSwitch > 600) {
+        const left = mp.game.controls.isDisabledControlJustPressed(0, 174) || mp.game.controls.isControlJustPressed(0, 174);
+        const right = mp.game.controls.isDisabledControlJustPressed(0, 175) || mp.game.controls.isControlJustPressed(0, 175);
+        if (left || right) {
+            lastSwitch = Date.now();
+            variantIndex = (variantIndex + (right ? 1 : variants.length - 1)) % variants.length;
+            mp.events.callRemote("server.gym.switch", variants[variantIndex]);
+            mp.events.call("notify", 0, 9, EXERCISE_NAMES[variants[variantIndex]] || variants[variantIndex], 1500);
+        }
+    }
     if (mp.game.controls.isControlJustPressed(0, 32) || mp.game.controls.isControlJustPressed(0, 33)
         || mp.game.controls.isControlJustPressed(0, 34) || mp.game.controls.isControlJustPressed(0, 35))
         stop();
@@ -138,6 +171,7 @@ global.fitnessMeleeBonus = 0.25;
 gm.events.add("client.fitness.apply", (stamina, strength, meleeBonus) => {
     try {
         global.fitnessMeleeBonus = typeof meleeBonus === "number" ? meleeBonus : 0.25;
+        global.fitStamina = Number(stamina) || 30; // player/stamina.js — длительность бега
         for (const prefix of ["SP0_", "SP1_", "SP2_", "MP0_"]) {
             mp.game.stats.statSetInt(mp.game.joaat(prefix + "STAMINA"), stamina, true);
             mp.game.stats.statSetInt(mp.game.joaat(prefix + "STRENGTH"), strength, true);

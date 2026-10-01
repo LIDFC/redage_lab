@@ -740,6 +740,36 @@ const PlayerAnimList = {
 		playbackRate: 0,
 		freeze: true,
 	},
+	// Дополнительные упражнения (переключаются стрелками на том же снаряде, world/gym.js)
+	"gym_curls": {
+		animDictionary: "amb@world_human_muscle_free_weights@male@barbell@idle_a",
+		animationName: "idle_d",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+		attachmentName: "press2",
+	},
+	"gym_stretch": {
+		animDictionary: "amb@world_human_yoga@male@base",
+		animationName: "base_b",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"gym_flex": {
+		animDictionary: "amb@world_human_muscle_flex@arms_at_side@idle_a",
+		animationName: "idle_a",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
+	"gym_jog": {
+		animDictionary: "amb@world_human_jog_standing@male@fitidle_a",
+		animationName: "idle_a",
+		flag: 1,
+		playbackRate: 0,
+		freeze: true,
+	},
 }
 
 gm.events.add('PlayAnimToKey', (entity, status, key) => {

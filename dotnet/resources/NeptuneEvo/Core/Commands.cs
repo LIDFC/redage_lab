@@ -1552,6 +1552,7 @@ namespace NeptuneEvo.Core
                     charData.Add(JsonConvert.DeserializeObject<List<bool>>(charRow["licenses"].ToString()));//38
                     charData.Add(null);//39
                     charData.Add(null);//40
+                    charData.Add(null);//41
 
                     var statsData = JsonConvert.SerializeObject(charData);
                     

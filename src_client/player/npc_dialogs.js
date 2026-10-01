@@ -2479,7 +2479,7 @@ const actorData = {
     npc_eliteroom: translateText("Продавцом элитного транспорта")
 }
 
-gm.events.add('client.quest.open', (pedId, questName, qId, status, compility, speed) => {
+gm.events.add('client.quest.open', (pedId, questName, qId, status, compility, speed, vars) => {
     if (global.menuCheck()) return;
     else if (isQuestOpen)
         return;
@@ -2494,7 +2494,9 @@ gm.events.add('client.quest.open', (pedId, questName, qId, status, compility, sp
         mp.events.call('client.quest.startSpeech');
         if (actorData[pedData.questName]) 
             gm.discord(translateText("Болтает с {0}", actorData[pedData.questName]));
-        mp.gui.emmit(`window.router.setView("QuestsDialog", { aName: '${questName}', qId: ${qId}, status: ${status}, compility: ${compility} })`);
+        // vars — живые значения для текста диалога (JSON-строка), например цена и показатели у тренера
+        const safeVars = JSON.stringify(typeof vars === "string" ? vars : "{}");
+        mp.gui.emmit(`window.router.setView("QuestsDialog", { aName: '${questName}', qId: ${qId}, status: ${status}, compility: ${compility}, vars: ${safeVars} })`);
         isQuestOpen = true;
         global.menuOpen();
     }

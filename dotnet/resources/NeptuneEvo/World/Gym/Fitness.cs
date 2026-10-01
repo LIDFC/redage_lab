@@ -10,6 +10,8 @@ using NeptuneEvo.Core;
 using NeptuneEvo.Functions;
 using NeptuneEvo.Handles;
 using NeptuneEvo.Players;
+using NeptuneEvo.Quests;
+using NeptuneEvo.Quests.Models;
 using Newtonsoft.Json;
 using Redage.SDK;
 
@@ -149,7 +151,7 @@ namespace NeptuneEvo.World.Gym
                 var zone = Cfg.PaidZones[i];
                 if (zone.NpcPosition == null)
                     continue;
-                Trainers.Add(PedSystem.Repository.CreateQuest(zone.NpcModel ?? "a_m_y_musclbeac_01", zone.NpcPosition, zone.NpcHeading, 0, null,
+                Trainers.Add(PedSystem.Repository.CreateQuest(zone.NpcModel ?? "a_m_y_musclbeac_01", zone.NpcPosition, zone.NpcHeading, 0, QuestName,
                     ColShapeEnums.GymTrainer, $"~g~Тренер\n~w~{zone.Name}", false));
             }
         }
@@ -269,9 +271,12 @@ namespace NeptuneEvo.World.Gym
                         case "chinup":
                         case "bench":
                         case "weights":
+                        case "curls":
                             Gain(player, "strength");
                             break;
                         case "yoga":
+                        case "stretch":
+                        case "jog":
                             Gain(player, "stamina");
                             break;
                         default: // пресс, отжимания — по очереди
@@ -322,22 +327,33 @@ namespace NeptuneEvo.World.Gym
         private static readonly Dictionary<ExtPlayer, GymPaidZone> PendingPurchase = new Dictionary<ExtPlayer, GymPaidZone>();
 
         [Interaction(ColShapeEnums.GymTrainer)]
-        public static void OnTrainer(ExtPlayer player, int _)
+        public static void OnTrainer(ExtPlayer player, int pedIndex)
         {
             try
             {
-                if (!player.IsCharacterData())
+                var sessionData = player.GetSessionData();
+                if (sessionData == null || !player.IsCharacterData() || sessionData.CuffedData.Cuffed || sessionData.DeathData.InDeath)
                     return;
                 var zone = PaidZoneAt(player.Position) ?? Cfg.PaidZones.OrderBy(z => z.NpcPosition?.DistanceTo(player.Position) ?? 9999).FirstOrDefault();
                 if (zone == null)
                     return;
                 var data = Get(player);
-                var active = data.MemberUntil > DateTime.Now;
+                ResetHourIfNeeded(data);
                 PendingPurchase[player] = zone;
-                var text = active
-                    ? $"Абонемент в {zone.Name} действует до {data.MemberUntil:dd.MM HH:mm}. Продлить на {zone.Days} дн. за ${zone.Price}?"
-                    : $"Абонемент в {zone.Name} на {zone.Days} дн. стоит ${zone.Price}. Купить? Сила {data.Strength}/100, выносливость {data.Stamina}/100";
-                Trigger.ClientEvent(player, "openDialog", "GymMembership", text);
+                // Окно как у NPC-работодателей (CEF QuestsDialog, json/quests/work/npc_gym.json), значения подставляются в текст
+                var vars = JsonConvert.SerializeObject(new
+                {
+                    zone = zone.Name,
+                    price = $"${zone.Price:N0}".Replace(",", " "),
+                    days = zone.Days,
+                    member = data.MemberUntil > DateTime.Now ? $"Ваш абонемент действует до {data.MemberUntil:dd.MM HH:mm} — можно продлить." : "Абонемента у вас пока нет.",
+                    str = data.Strength,
+                    sta = data.Stamina,
+                    strLeft = data.Strength >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStrength),
+                    staLeft = data.Stamina >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStamina),
+                });
+                player.SelectQuest(new PlayerQuestModel(QuestName, 0, 0, false, DateTime.Now));
+                Trigger.ClientEvent(player, "client.quest.open", pedIndex, QuestName, 0, 0, 0, 0, vars);
             }
             catch (Exception e)
             {
@@ -345,7 +361,29 @@ namespace NeptuneEvo.World.Gym
             }
         }
 
-        /// <summary>Из Main.dialogCallback, case "GymMembership".</summary>
+        public const string QuestName = "npc_gym";
+
+        private static void ResetHourIfNeeded(Data data)
+        {
+            var hour = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, DateTime.Now.Hour, 0, 0);
+            if (data.HourKey == hour)
+                return;
+            data.HourKey = hour;
+            data.HourGainStamina = 0;
+            data.HourGainStrength = 0;
+        }
+
+        /// <summary>Показатели для F3 → Навыки: сила, выносливость и сколько ещё можно прибавить в этот час.</summary>
+        public static (int strength, int stamina, int strengthLeft, int staminaLeft) GetStats(ExtPlayer player)
+        {
+            var data = Get(player);
+            ResetHourIfNeeded(data);
+            return (data.Strength, data.Stamina,
+                data.Strength >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStrength),
+                data.Stamina >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStamina));
+        }
+
+        /// <summary>Кнопка «Купить абонемент» в окне тренера (qMain → server.quest.perform).</summary>
         public static void BuyMembership(ExtPlayer player)
         {
             try

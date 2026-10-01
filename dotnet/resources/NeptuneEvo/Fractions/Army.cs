@@ -83,7 +83,6 @@ namespace NeptuneEvo.Fractions
                 NAPI.Marker.CreateMarker(1, ArmyCheckpoints[8] - new Vector3(0, 0, 0.7), new Vector3(), new Vector3(), 1f, new Color(255, 255, 255, 220));
                 // [9]–[12] — старые телепорты порт ↔ штаб: больше не создаются
 
-                Main.CreateBlip(new Main.BlipData(421, "Армия — Форт Занкудо", Manager.FractionSpawns[(int) Models.Fractions.ARMY], 52, true));
 
                 PedSystem.Repository.CreateQuest("s_m_m_marine_01", cfg.RecruiterPoint, cfg.RecruiterHeading, title: "~y~NPC~w~ Рекрут Астраханский\nВызвать сотрудника", colShapeEnums: ColShapeEnums.CallArmyMember);
             }

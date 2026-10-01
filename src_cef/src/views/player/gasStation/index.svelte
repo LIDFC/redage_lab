@@ -7,7 +7,7 @@
 
     export let viewData;
 
-    let data = { id: 0, price: 0, stock: 0, fuel: 0, tank: 0, money: 0, canGov: false, govLeft: 0, noFuel: false };
+    let data = { id: 0, price: 0, stock: 0, fuel: 0, tank: 0, money: 0, canGov: false, govLeft: 0, noFuel: false, govOnly: false, title: "" };
     $: if (viewData && typeof viewData === "string")
         data = { ...data, ...JSON.parse(viewData) };
     else if (viewData && typeof viewData === "object")
@@ -42,7 +42,7 @@
 
     const onKey = (e) => {
         if (e.keyCode === 27) close();
-        else if (e.keyCode === 13) fill();
+        else if (e.keyCode === 13) data.govOnly ? (data.canGov && !noVehicle && gov()) : fill();
     }
 
     window.petrol = { reset: () => liters = 0 };
@@ -57,12 +57,22 @@
                 <svg viewBox="0 0 24 24"><path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16M3 21h13M4 10h11M15 8h2a2 2 0 0 1 2 2v7a1.5 1.5 0 0 0 3 0V8l-3-3" /></svg>
             </div>
             <div class="gs__heading">
-                <div class="gs__title">Заправочная станция</div>
-                <div class="gs__subtitle">АЗС №{data.id} · в резервуаре {format("money", data.stock)} л</div>
+                <div class="gs__title">{data.title || "Заправочная станция"}</div>
+                {#if data.govOnly}
+                    <div class="gs__subtitle">Только гос. транспорт · за счёт бюджета штата</div>
+                {:else}
+                    <div class="gs__subtitle">АЗС №{data.id} · в резервуаре {format("money", data.stock)} л</div>
+                {/if}
             </div>
-            <div class="gs__price">
-                <span>${format("money", data.price)}</span>за литр
-            </div>
+            {#if data.govOnly}
+                <div class="gs__price">
+                    <span>${format("money", data.govLeft)}</span>лимит на сегодня
+                </div>
+            {:else}
+                <div class="gs__price">
+                    <span>${format("money", data.price)}</span>за литр
+                </div>
+            {/if}
         </div>
 
         {#if noVehicle}
@@ -84,6 +94,13 @@
                 </div>
             </div>
 
+            {#if data.govOnly}
+                {#if !data.canGov}
+                    <div class="gs__warn">Здесь заправляют только служебный транспорт вашей фракции</div>
+                {:else}
+                    <div class="gs__label">Бак заправится полностью, оплата — из бюджета штата (лимит фракции на сутки задаёт мэрия).</div>
+                {/if}
+            {:else}
             <div class="gs__amount">
                 <div class="gs__label">Сколько литров залить</div>
                 <div class="gs__amount-row">
@@ -113,14 +130,19 @@
             {#if notEnough}
                 <div class="gs__warn">Не хватает наличных — уменьшите количество литров</div>
             {/if}
+            {/if}
         {/if}
 
         <div class="gs__buttons">
             <div class="gs__btn" on:click={close}>Отмена <span>ESC</span></div>
-            {#if data.canGov && !noVehicle}
-                <div class="gs__btn gov" on:click={gov}>За счёт штата</div>
+            {#if data.govOnly}
+                <div class="gs__btn primary" class:disabled={!data.canGov || noVehicle || data.noFuel} on:click={() => data.canGov && !noVehicle && gov()}>Заправить за счёт штата <span>Enter</span></div>
+            {:else}
+                {#if data.canGov && !noVehicle}
+                    <div class="gs__btn gov" on:click={gov}>За счёт штата</div>
+                {/if}
+                <div class="gs__btn primary" class:disabled={!liters || notEnough || noVehicle || data.noFuel} on:click={fill}>Заправить <span>Enter</span></div>
             {/if}
-            <div class="gs__btn primary" class:disabled={!liters || notEnough || noVehicle || data.noFuel} on:click={fill}>Заправить <span>Enter</span></div>
         </div>
     </div>
 </div>

@@ -46,6 +46,10 @@ namespace NeptuneEvo.Chars
             }
         }
 
+        /// <summary>Название вещи для интерфейса (гардероб фракций и т.п.) или null.</summary>
+        public static string GetClothesName(bool gender, ClothesComponent component, int id) =>
+            ClothesName($"{(gender ? "Male" : "Female")}_{component}", id);
+
         private static string ClothesName(string jsonName, int id) =>
             _clothesNames.TryGetValue(jsonName, out var names) && names.TryGetValue(id, out var name) ? name : null;
     }

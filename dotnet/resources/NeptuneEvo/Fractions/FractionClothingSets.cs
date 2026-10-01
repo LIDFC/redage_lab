@@ -156,7 +156,11 @@ namespace NeptuneEvo.Fractions
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, LangFunc.GetText(LangType.Ru, DataName.YouCantGetForm), 3000);
                     return;
                 }
-                
+
+                // Гардероб: сотрудник сам собирает форму из разрешённых вещей (Fractions/Wardrobe/Wardrobe.cs)
+                Wardrobe.Wardrobe.Open(player);
+                return;
+#pragma warning disable CS0162
                 var frameList = new FrameListData();
                 frameList.Header = LangFunc.GetText(LangType.Ru, DataName.WorkClothes);
                 frameList.Callback = callback_fraction_clothing_sets_menu;
@@ -182,6 +186,7 @@ namespace NeptuneEvo.Fractions
                     frameList.List.Add(new ListData(LangFunc.GetText(LangType.Ru, DataName.UnwearForm), "takeoff"));
 
                 Players.Popup.List.Repository.Open(player, frameList);   
+#pragma warning restore CS0162
             }
             catch (Exception e)
             {
@@ -223,6 +228,7 @@ namespace NeptuneEvo.Fractions
                                 LangFunc.GetText(LangType.Ru, DataName.EndWorkDay), 3000);
                             sessionData.WorkData.OnDuty = false;
                             sessionData.WorkData.OnDutyName = String.Empty;  
+                            Wardrobe.Wardrobe.ClearTorso(player);
                             player.ClearAccessories();
                             Customization.ApplyCharacter(player);
                             return;
@@ -304,8 +310,12 @@ namespace NeptuneEvo.Fractions
                 if (memberFractionData == null)
                     return false;
 
+                // Свой образ из гардероба
+                if (setname == Wardrobe.Wardrobe.DutyName)
+                    return Wardrobe.Wardrobe.Apply(player, fracid, gender, isDutySet);
+
                 if (FractionSets.ContainsKey((Models.Fractions) fracid) &&
-                    FractionSets[(Models.Fractions) memberFractionData.Id].ContainsKey(gender))
+                    FractionSets[(Models.Fractions) fracid].ContainsKey(gender))
                 {
                     
                     var clothingList = FractionSets[(Models.Fractions) fracid][gender]

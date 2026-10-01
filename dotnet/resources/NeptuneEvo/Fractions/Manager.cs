@@ -3170,7 +3170,8 @@ namespace NeptuneEvo.Fractions
             {
                 CustomColShape.CreateCylinderColShape(warPosition, 6, 2, 0, ColShapeEnums.War);
 
-                warblip = (ExtBlip) NAPI.Blip.CreateBlip(556, warPosition, 1, 4, Main.StringToU16("National Guard"), 255, 0, true, 0, 0);
+                // Блип армии — на штабе в Форт Занкудо. Война за маты (в порту) получает свой блип только на время войны.
+                NAPI.Blip.CreateBlip(556, Manager.FractionSpawns[(int) Models.Fractions.ARMY], 1, 4, Main.StringToU16("National Guard"), 255, 0, true, 0, 0);
             }
             catch (Exception e)
             {
@@ -3234,7 +3235,9 @@ namespace NeptuneEvo.Fractions
                 
                 //
                 
-                warblip.Color = 49;
+                if (warblip != null && warblip.Exists)
+                    warblip.Delete();
+                warblip = (ExtBlip) NAPI.Blip.CreateBlip(556, warPosition, 1, 49, Main.StringToU16("Война за материалы"), 255, 0, false, 0, 0);
                 
             }
             catch (Exception e)
@@ -3255,8 +3258,9 @@ namespace NeptuneEvo.Fractions
                         SafeZones.ChangeDamageState((int) SafeZones.ZoneName.MatWarZone, true);
                         if (warMarker != null && warMarker.Exists) 
                             warMarker.Delete();
-                        if (warblip != null && warblip.Exists) 
-                            warblip.Color = 4;
+                        if (warblip != null && warblip.Exists)
+                            warblip.Delete();
+                        warblip = null;
                     }
                     catch (Exception e)
                     {

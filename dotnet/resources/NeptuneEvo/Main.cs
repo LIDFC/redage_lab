@@ -1280,6 +1280,7 @@ namespace NeptuneEvo
                 if (!characterData.IsSpawned)
                 {
                     Trigger.ClientEvent(player, "doorsControl", JsonConvert.SerializeObject(DoorsControl));
+                    World.DoorsOpen.SendTo(player);
 
                     if (Army.is_warg)
                         Trigger.ClientEvent(player, "alarm", "PORT_OF_LS_HEIST_FORT_ZANCUDO_ALARMS", true);

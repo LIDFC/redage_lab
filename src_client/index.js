@@ -364,6 +364,7 @@ require('./player/lift.js');
 require('./player/menus.js');
 require('./player/petshop.js');
 require('./player/render.js');
+require('./player/stamina.js');
 require('./player/report.js');
 require('./player/screen.js');
 require('./player/simplemenu.js');
@@ -403,6 +404,7 @@ require('./fractions/advert.js')
 require('./fractions/policecomputer.js')
 require('./fractions/stock.js');
 require('./fractions/army.js');
+require('./fractions/wardrobe.js');
 require('./fractions/policepc.js');
 require('./fractions/mats.js');
 require('./fractions/menu.js');

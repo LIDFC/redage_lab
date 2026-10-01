@@ -415,6 +415,15 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Механик: после согласия клиента заказ ждёт механика (10 мин), капот открывается сам; механик G → Машина → «Починить машину» → HotWire с ключом (`mech_repair`), оплата после успеха (`AutoMechanic.CompleteRepairOrder`).
 - Инкассатор: 4 с анимации у банкомата (`collector_atm`) перед выплатой.
 
+- Армия в Форт Занкудо: штаб/раздевалка/склад в измерении 0, точки — `settings/army.json` (`/armyset point groundrepair|airrepair|alarm|recruiter|guardhouse|fuel`), машины — `/armyset vehmove ground|air` (`ArmyRP/ArmyVehicles.cs`). Блип «National Guard» — на штабе (`MatsWar` в `Manager.cs`), у войны за маты свой временный блип.
+- `/dooropen` / `/doorclose` (`World/DoorsOpen.cs`, `settings/doors_open.json`) — открыть дверь, на которую смотрит админ, навсегда для всех.
+- Гауптвахта: крупное уведомление, `army_guardhouse_log`; планшет → «Гауптвахта» (`hudevo/tablet/apps/guardhouse.svelte`, `server.tablet.guardhouse.load` в `ArmyDuty.cs`).
+- Тренер качалки — окно `QuestsDialog` (`json/quests/work/npc_gym.json`); `QuestsDialog` умеет `{переменные}` из 7-го аргумента `client.quest.open`.
+- Армейская заправка `ArmyRP/ArmyFuel.cs` (окно АЗС в режиме `govOnly`), лимит гос. заправки на АЗС теперь в долларах.
+- Выносливость: `src_client/player/stamina.js` (свой запас бега, падение), `restoreStamina` из `render.js` убран; сила: −15%…+25% урона кулаком. Упражнения переключаются стрелками (`server.gym.switch`). F3 → Навыки: сила/выносливость (`PlayerStats` //41). Вкладка «Статистика» в меню I убрана.
+- Гардероб фракций: `Fractions/Wardrobe/Wardrobe.cs` + CEF `FractionWardrobe` + `src_client/fractions/wardrobe.js`; образ в `fraction_outfits`, торс — переопределение в `ClothesComponents.SetTop`; `OnDutyName = "outfit"`. Наборы лидера скрыты в планшете.
+- Биндер: колесо и боковые кнопки мыши (коды 4/5/6).
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

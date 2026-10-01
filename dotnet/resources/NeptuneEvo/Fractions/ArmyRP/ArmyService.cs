@@ -409,28 +409,33 @@ namespace NeptuneEvo.Fractions.ArmyRP
         }
 
         /// <summary>Последнее отправление на гауптвахту (для планшета).</summary>
-        public static (string officer, string reason, int minutes, string date) GetGuardhouseInfo(int uuid)
+        /// <summary>Последнее отправление на гауптвахту из памяти (для планшета).</summary>
+        public static bool TryGetGuardhouseInfo(int uuid, out (string officer, string reason, int minutes, string date) info) =>
+            GuardhouseInfo.TryGetValue(uuid, out info);
+
+        /// <summary>Подгрузить из БД в фоне (игровой поток не ждёт), затем onDone в игровом потоке.</summary>
+        public static void LoadGuardhouseInfo(int uuid, Action onDone)
         {
-            if (GuardhouseInfo.TryGetValue(uuid, out var info))
-                return info;
             try
             {
                 EnsureGuardhouseTable();
-                using var table = NeptuneEvo.Database.DbQueue.Read(
-                    "SELECT `officer`,`reason`,`minutes`,`created` FROM `army_guardhouse_log` WHERE `uuid`=@u ORDER BY `id` DESC LIMIT 1", ("@u", uuid));
-                if (table != null && table.Rows.Count > 0)
-                {
-                    var row = table.Rows[0];
-                    info = (row["officer"].ToString(), row["reason"].ToString(), Convert.ToInt32(row["minutes"]), Convert.ToDateTime(row["created"]).ToString("dd.MM HH:mm"));
-                    GuardhouseInfo[uuid] = info;
-                    return info;
-                }
             }
             catch (Exception e)
             {
-                Log.Write($"GetGuardhouseInfo Exception: {e.Message}");
+                Log.Write($"EnsureGuardhouseTable Exception: {e.Message}");
             }
-            return ("—", "—", 0, "");
+            NeptuneEvo.Database.DbQueue.ReadThen(
+                "SELECT `officer`,`reason`,`minutes`,`created` FROM `army_guardhouse_log` WHERE `uuid`=@u ORDER BY `id` DESC LIMIT 1", table =>
+                {
+                    if (table != null && table.Rows.Count > 0)
+                    {
+                        var row = table.Rows[0];
+                        GuardhouseInfo[uuid] = (row["officer"].ToString(), row["reason"].ToString(), Convert.ToInt32(row["minutes"]), Convert.ToDateTime(row["created"]).ToString("dd.MM HH:mm"));
+                    }
+                    else
+                        GuardhouseInfo[uuid] = ("—", "—", 0, "");
+                    onDone?.Invoke();
+                }, ("@u", uuid));
         }
 
         [Command("unguardhouse")]

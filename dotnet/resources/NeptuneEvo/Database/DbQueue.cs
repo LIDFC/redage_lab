@@ -78,6 +78,41 @@ namespace NeptuneEvo.Database
             return MySQL.QueryRead(command);
         }
 
+        /// <summary>
+        /// Чтение без фриза: запрос выполняется в фоне, onMain вызывается в игровом потоке с результатом
+        /// (null при ошибке). Использовать вместо Read во всём, что срабатывает во время игры.
+        /// </summary>
+        public static void ReadThen(string sql, Action<DataTable> onMain, params (string name, object value)[] parameters)
+        {
+            System.Threading.Tasks.Task.Run(() =>
+            {
+                DataTable table = null;
+                try
+                {
+                    table = Read(sql, parameters);
+                }
+                catch (Exception e)
+                {
+                    Log.Write($"ReadThen Exception: {e.Message}");
+                }
+                GTANetworkAPI.NAPI.Task.Run(() =>
+                {
+                    try
+                    {
+                        onMain(table);
+                    }
+                    catch (Exception e)
+                    {
+                        Log.Write($"ReadThen callback Exception: {e}");
+                    }
+                    finally
+                    {
+                        table?.Dispose();
+                    }
+                });
+            });
+        }
+
         /// <summary>Дождаться записи всей очереди (перед рестартом/сохранением сервера).</summary>
         public static void Flush(int timeoutMs = 15000)
         {

@@ -119,26 +119,44 @@ namespace NeptuneEvo.Fractions.ArmyRP
                 ("@u", uuid), ("@t", order.Type), ("@o", order.Officer ?? ""), ("@p", order.Punishment ? 1 : 0), ("@s", order.SecondsLeft), ("@st", order.Step));
         }
 
-        private static void LoadFor(ExtPlayer player)
+        private static readonly HashSet<int> LoadingOrders = new HashSet<int>();
+
+        /// <summary>
+        /// Наряд игрока из БД — в фоне, игровой поток не ждёт MySQL. true — данные уже в памяти.
+        /// Тик раз в 10 с подгружает всех военных в сети, так что к моменту действий игрока всё загружено.
+        /// </summary>
+        private static bool LoadFor(ExtPlayer player)
         {
             var uuid = player.GetUUID();
-            if (!Loaded.Add(uuid) || !_ready)
-                return;
-            using var table = NeptuneEvo.Database.DbQueue.Read("SELECT `type`,`officer`,`punishment`,`seconds_left`,`step` FROM `army_duty_orders` WHERE `uuid`=@u", ("@u", uuid));
-            if (table == null || table.Rows.Count == 0)
-                return;
-            var row = table.Rows[0];
-            var order = new Order
+            if (!_ready || Loaded.Contains(uuid))
+                return true;
+            if (!LoadingOrders.Add(uuid))
+                return false;
+            NeptuneEvo.Database.DbQueue.ReadThen("SELECT `type`,`officer`,`punishment`,`seconds_left`,`step` FROM `army_duty_orders` WHERE `uuid`=@u", table =>
             {
-                Type = row["type"].ToString(),
-                Officer = row["officer"].ToString(),
-                Punishment = Convert.ToInt32(row["punishment"]) == 1,
-                SecondsLeft = Convert.ToInt32(row["seconds_left"]),
-                Step = Convert.ToInt32(row["step"]),
-            };
-            Orders[uuid] = order;
-            Remind(player, order, true);
+                LoadingOrders.Remove(uuid);
+                if (!player.IsCharacterData() || player.GetUUID() != uuid)
+                    return; // вышел — загрузим при следующем входе
+                Loaded.Add(uuid);
+                if (table == null || table.Rows.Count == 0 || Orders.ContainsKey(uuid))
+                    return;
+                var row = table.Rows[0];
+                var order = new Order
+                {
+                    Type = row["type"].ToString(),
+                    Officer = row["officer"].ToString(),
+                    Punishment = Convert.ToInt32(row["punishment"]) == 1,
+                    SecondsLeft = Convert.ToInt32(row["seconds_left"]),
+                    Step = Convert.ToInt32(row["step"]),
+                };
+                Orders[uuid] = order;
+                Remind(player, order, true);
+            }, ("@u", uuid));
+            return false;
         }
+
+        private static void Wait(ExtPlayer player) =>
+            Notify.Send(player, NotifyType.Info, NotifyPosition.BottomCenter, "Секунду, загружаем данные — повторите", 2500);
 
         private static void Remind(ExtPlayer player, Order order, bool withWaypoint)
         {
@@ -161,7 +179,12 @@ namespace NeptuneEvo.Fractions.ArmyRP
                 var characterData = player.GetCharacterData();
                 if (characterData == null)
                     return;
-                LoadFor(player);
+                if (!LoadFor(player))
+                {
+                    // данные грузятся в фоне — ответим, как только появятся
+                    Timers.StartOnce(700, () => { if (player.IsCharacterData()) OnTabletLoad(player); }, true);
+                    return;
+                }
                 object duty = null;
                 if (Orders.TryGetValue(player.GetUUID(), out var order))
                     duty = new
@@ -177,7 +200,11 @@ namespace NeptuneEvo.Fractions.ArmyRP
                 object arrest = null;
                 if (characterData.ArrestType == ArmyService.GuardhouseArrestType && characterData.ArrestTime > 0)
                 {
-                    var info = ArmyService.GetGuardhouseInfo(characterData.UUID);
+                    if (!ArmyService.TryGetGuardhouseInfo(characterData.UUID, out var info))
+                    {
+                        ArmyService.LoadGuardhouseInfo(characterData.UUID, () => { if (player.IsCharacterData()) OnTabletLoad(player); });
+                        return;
+                    }
                     arrest = new
                     {
                         minutesLeft = Math.Max(1, (characterData.ArrestTime + 59) / 60),
@@ -225,7 +252,11 @@ namespace NeptuneEvo.Fractions.ArmyRP
                     ArmyUtil.Say(player, "Доска нарядов только для военнослужащих", false);
                     return;
                 }
-                LoadFor(player);
+                if (!LoadFor(player))
+                {
+                    Wait(player);
+                    return;
+                }
                 Trigger.ClientEvent(player, "client.army.duty.open", BuildJson(player));
             }
             catch (Exception e)
@@ -284,7 +315,11 @@ namespace NeptuneEvo.Fractions.ArmyRP
                 return false;
             }
             var uuid = target.GetUUID();
-            LoadFor(target);
+            if (!LoadFor(target))
+            {
+                error = "Данные военнослужащего ещё загружаются — повторите через секунду";
+                return false;
+            }
             if (Orders.ContainsKey(uuid))
             {
                 error = $"{target.Name} уже в наряде";
@@ -366,7 +401,11 @@ namespace NeptuneEvo.Fractions.ArmyRP
             {
                 if (!ArmyUtil.IsArmy(player))
                     return;
-                LoadFor(player);
+                if (!LoadFor(player))
+                {
+                    Wait(player);
+                    return;
+                }
                 var uuid = player.GetUUID();
                 if (!Orders.TryGetValue(uuid, out var order))
                 {

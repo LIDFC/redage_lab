@@ -751,29 +751,57 @@ gm.events.add("test.test", () => {
 
 // /clothoff: сколько моделей одежды в игре (стандартные + dlcpacks сервера) — для сдвига кастомной одежды
 // (сервер Chars/ClothesOffsets.cs). Считаем на временных невидимых NPC, модель игрока не трогаем.
+const clothesOffsetsError = (where, e) => {
+	const text = String(e && e.message ? e.message : e);
+	try { mp.gui.chat.push(`!{#ff6b6b}[/clothoff] Замер не удался (${where}): ${text}`); } catch (err) {}
+	try { mp.events.callRemote("client_trycatch", "index/clothoff", where, text); } catch (err) {}
+};
+
 mp.events.add("clothes.getOffsets", () => {
-	getOffsets().catch((e) => mp.console.logError(`clothes.getOffsets: ${e}`, true));
+	try {
+		getOffsets().catch((e) => clothesOffsetsError("getOffsets", e));
+	} catch (e) {
+		clothesOffsetsError("start", e);
+	}
 });
 
+// Число вариантов компонента/пропа у ped: пробуем разные имена функций RAGE
+const countDrawables = (ped, id) => {
+	try { return mp.game.ped.getNumberOfPedDrawableVariations(ped.handle, id); } catch (e) {}
+	try { return ped.getNumberOfDrawableVariations(id); } catch (e) {}
+	return -1;
+};
+const countProps = (ped, id) => {
+	try { return mp.game.ped.getNumberOfPedPropDrawableVariations(ped.handle, id); } catch (e) {}
+	try { return ped.getNumberOfPropDrawableVariations(id); } catch (e) {}
+	return -1;
+};
+
+const countFor = (ped) => {
+	const result = { c: {}, p: {} };
+	for (let id = 0; id <= 11; id++) result.c[id] = countDrawables(ped, id);
+	for (const id of [0, 1, 2, 6, 7]) result.p[id] = countProps(ped, id);
+	return result;
+};
+
 async function countForModel(modelName) {
+	// Свой пол считаем по самому игроку — без временного NPC
 	const model = mp.game.joaat(modelName);
+	if ((global.localplayer.model >>> 0) === (model >>> 0))
+		return countFor(global.localplayer);
+
 	mp.game.streaming.requestModel(model);
-	for (let i = 0; i < 100 && !mp.game.streaming.hasModelLoaded(model); i++) await mp.game.waitAsync(50);
+	for (let i = 0; i < 100 && !mp.game.streaming.hasModelLoaded(model); i++) await global.wait(50);
+	if (!mp.game.streaming.hasModelLoaded(model)) throw new Error(`модель ${modelName} не загрузилась`);
 
 	const pos = global.localplayer.position;
 	const ped = mp.peds.new(model, new mp.Vector3(pos.x, pos.y, pos.z - 30), 0, global.localplayer.dimension);
 	try {
-		for (let i = 0; i < 100 && (!ped.handle || ped.handle === 0); i++) await mp.game.waitAsync(50);
-		if (!ped.handle) throw new Error(`ped ${modelName} не создан`);
-		try { ped.setAlpha(0, false); } catch (e) {} // не обязательно: NPC и так под землёй
-		const result = { c: {}, p: {} };
-		for (let id = 0; id <= 11; id++)
-			result.c[id] = mp.game.ped.getNumberOfPedDrawableVariations(ped.handle, id);
-		for (const id of [0, 1, 2, 6, 7])
-			result.p[id] = mp.game.ped.getNumberOfPedPropDrawableVariations(ped.handle, id);
-		return result;
+		for (let i = 0; i < 100 && (!ped.handle || ped.handle === 0); i++) await global.wait(50);
+		if (!ped.handle) throw new Error(`NPC ${modelName} не создан`);
+		return countFor(ped);
 	} finally {
-		if (mp.peds.exists(ped)) ped.destroy();
+		try { if (mp.peds.exists(ped)) ped.destroy(); } catch (e) {}
 	}
 }
 
@@ -782,7 +810,6 @@ async function getOffsets() {
 		male: await countForModel('mp_m_freemode_01'),
 		female: await countForModel('mp_f_freemode_01'),
 	};
-	mp.console.logInfo(`clothes offsets: ${JSON.stringify(data)}`, true);
 	mp.events.callRemote("server.clothes.offsets", JSON.stringify(data));
 }
 

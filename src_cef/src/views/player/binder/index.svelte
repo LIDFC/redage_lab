@@ -49,6 +49,14 @@
         executeClient ("client:binder", "update", index);
     }
 
+    // Колесо и боковые кнопки мыши: пока ждём новую клавишу, ловим их здесь (mp.keys мышь не видит)
+    const MOUSE_CODES = { 1: 4, 3: 5, 4: 6 };
+    const onMouseDown = (e) => {
+        if (indexId === -1 || !MOUSE_CODES[e.button]) return;
+        e.preventDefault();
+        executeClient ("client:binder", "mouse", MOUSE_CODES[e.button]);
+    }
+
     const setTitle = () => {
         let title = "";
         listPage.forEach((value) => {
@@ -59,6 +67,8 @@
         return title;
     }
 </script>
+
+<svelte:window on:mousedown={onMouseDown} on:auxclick|preventDefault={() => {}} />
 <div class="rd-body-inventory-donate">
     <div class="universal_menu module_binder">
         <div class="wrap" >

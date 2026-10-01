@@ -182,31 +182,41 @@ namespace NeptuneEvo.Fractions.Wardrobe
                         {
                             ClothesData clothes = null;
                             data?.TryGetValue(item.DrawableId, out clothes);
-                            return new
+                            // Компактно: [id, drawable, torso, [текстуры], название|null, tname] — у армии сотни вещей
+                            return new object[]
                             {
-                                id = item.DrawableId,
-                                drawable = clothes?.Variation ?? item.DrawableId,
-                                torso = clothes?.Torso ?? -1,
-                                tname = clothes?.TName ?? "",
-                                name = ClothesComponents.GetClothesName(gender, component, item.DrawableId),
-                                textures = item.Textures.Distinct().OrderBy(t => t).ToList(),
+                                item.DrawableId,
+                                clothes?.Variation ?? item.DrawableId,
+                                clothes?.Torso ?? -1,
+                                item.Textures.Distinct().OrderBy(t => t).ToList(),
+                                ClothesComponents.GetClothesName(gender, component, item.DrawableId),
+                                string.IsNullOrEmpty(clothes?.TName) ? null : clothes.TName,
                             };
                         }).ToList(),
                     });
                 }
 
                 var outfit = GetOutfit(characterData.UUID, memberFractionData.Id, gender) ?? new Outfit();
-                Trigger.ClientEvent(player, "client.wardrobe.open", JsonConvert.SerializeObject(new
+                var json = JsonConvert.SerializeObject(new
                 {
                     fraction = memberFractionData.Id,
                     gender,
                     onDuty = sessionData.WorkData.OnDuty,
                     categories,
                     outfit,
-                }));
+                });
+                // Частями по 16 КБ — большие события клиент может не принять
+                const int chunk = 16000;
+                var total = (json.Length + chunk - 1) / chunk;
+                for (var i = 0; i < total; i++)
+                    Trigger.ClientEvent(player, "client.wardrobe.part", i, total, json.Substring(i * chunk, Math.Min(chunk, json.Length - i * chunk)));
+                Log.Write($"Wardrobe.Open: {player.Name}, фракция {memberFractionData.Id}, категорий {categories.Count}, размер {json.Length} ({total} ч.)");
+                if (categories.Count == 0)
+                    Notify.Send(player, NotifyType.Warning, NotifyPosition.BottomCenter, "Для вашей фракции не задан список формы — доступен только торс", 5000);
             }
             catch (Exception e)
             {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Гардероб: ошибка сервера ({e.GetType().Name})", 5000);
                 Log.Write($"Open Exception: {e}");
             }
         }

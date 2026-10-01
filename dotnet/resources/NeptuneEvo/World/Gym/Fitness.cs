@@ -27,6 +27,14 @@ namespace NeptuneEvo.World.Gym
         [JsonProperty("npcPosition")] public Vector3 NpcPosition { get; set; }
         [JsonProperty("npcHeading")] public float NpcHeading { get; set; }
         [JsonProperty("npcModel")] public string NpcModel { get; set; } = "a_m_y_musclbeac_01";
+        /// <summary>Тарифы абонемента в окне тренера (CEF GymTrainer).</summary>
+        [JsonProperty("plans")] public List<GymPlan> Plans { get; set; } = new List<GymPlan>();
+    }
+
+    public class GymPlan
+    {
+        [JsonProperty("days")] public int Days { get; set; }
+        [JsonProperty("price")] public int Price { get; set; }
     }
 
     /// <summary>Настройки фитнеса и платных залов: settings/gym_fitness.json (отдельно от списка тренажёров gym.json).</summary>
@@ -120,6 +128,14 @@ namespace NeptuneEvo.World.Gym
                         },
                     };
                 }
+                foreach (var zone in Cfg.PaidZones)
+                    if (zone.Plans == null || zone.Plans.Count == 0)
+                        zone.Plans = new List<GymPlan>
+                        {
+                            new GymPlan { Days = 1, Price = 500 },
+                            new GymPlan { Days = 7, Price = 2500 },
+                            new GymPlan { Days = 30, Price = 8000 },
+                        };
                 SaveConfig();
             }
             catch (Exception e)
@@ -269,6 +285,10 @@ namespace NeptuneEvo.World.Gym
                     switch (exercise)
                     {
                         case "chinup":
+                            // Подтягивания тяжелее: 1 очко силы за 3 подхода (тика)
+                            if ((counter + 1) % 3 == 0)
+                                Gain(player, "strength");
+                            break;
                         case "bench":
                         case "weights":
                         case "curls":
@@ -340,20 +360,8 @@ namespace NeptuneEvo.World.Gym
                 var data = Get(player);
                 ResetHourIfNeeded(data);
                 PendingPurchase[player] = zone;
-                // Окно как у NPC-работодателей (CEF QuestsDialog, json/quests/work/npc_gym.json), значения подставляются в текст
-                var vars = JsonConvert.SerializeObject(new
-                {
-                    zone = zone.Name,
-                    price = $"${zone.Price:N0}".Replace(",", " "),
-                    days = zone.Days,
-                    member = data.MemberUntil > DateTime.Now ? $"Ваш абонемент действует до {data.MemberUntil:dd.MM HH:mm} — можно продлить." : "Абонемента у вас пока нет.",
-                    str = data.Strength,
-                    sta = data.Stamina,
-                    strLeft = data.Strength >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStrength),
-                    staLeft = data.Stamina >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStamina),
-                });
-                player.SelectQuest(new PlayerQuestModel(QuestName, 0, 0, false, DateTime.Now));
-                Trigger.ClientEvent(player, "client.quest.open", pedIndex, QuestName, 0, 0, 0, 0, vars);
+                // Окно в стиле «Центра занятости» (CEF GymTrainer, клиент world/gym.js)
+                Trigger.ClientEvent(player, "client.gym.trainer.open", TrainerJson(player, zone));
             }
             catch (Exception e)
             {
@@ -362,6 +370,66 @@ namespace NeptuneEvo.World.Gym
         }
 
         public const string QuestName = "npc_gym";
+
+        private static string TrainerJson(ExtPlayer player, GymPaidZone zone)
+        {
+            var data = Get(player);
+            ResetHourIfNeeded(data);
+            return JsonConvert.SerializeObject(new
+            {
+                zone = zone.Name,
+                member = data.MemberUntil > DateTime.Now ? data.MemberUntil.ToString("dd.MM.yyyy HH:mm") : "",
+                plans = zone.Plans,
+                str = data.Strength,
+                sta = data.Stamina,
+                strLeft = data.Strength >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStrength),
+                staLeft = data.Stamina >= 100 ? 0 : Math.Max(0, Cfg.HourLimit - data.HourGainStamina),
+                hourLimit = Cfg.HourLimit,
+                money = player.GetCharacterData()?.Money ?? 0,
+            });
+        }
+
+        /// <summary>Окно тренера → «Купить»/«Продлить» выбранный тариф.</summary>
+        [RemoteEvent("server.gym.buy")]
+        public static void OnBuyPlan(ExtPlayer player, int planIndex)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                if (characterData == null || !PendingPurchase.TryGetValue(player, out var zone))
+                    return;
+                void Reply(string text, bool ok) =>
+                    Trigger.ClientEvent(player, "client.gym.trainer.update", TrainerJson(player, zone), text, ok);
+                if (zone.NpcPosition != null && player.Position.DistanceTo(zone.NpcPosition) > 6f)
+                {
+                    Reply("Подойдите ближе к тренеру", false);
+                    return;
+                }
+                if (planIndex < 0 || planIndex >= zone.Plans.Count)
+                    return;
+                var plan = zone.Plans[planIndex];
+                if (characterData.Money < plan.Price)
+                {
+                    Reply("Недостаточно наличных", false);
+                    return;
+                }
+                MoneySystem.Wallet.Change(player, -plan.Price);
+                GameLog.Money($"player({characterData.UUID})", "server", plan.Price, $"gymMembership({plan.Days}d)");
+                var data = Get(player);
+                var from = data.MemberUntil > DateTime.Now ? data.MemberUntil : DateTime.Now;
+                data.MemberUntil = from.AddDays(plan.Days);
+                data.Dirty = true;
+                Save(characterData.UUID, data);
+                Reply($"Абонемент действует до {data.MemberUntil:dd.MM.yyyy HH:mm}", true);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnBuyPlan Exception: {e}");
+            }
+        }
+
+        [RemoteEvent("server.gym.trainer.close")]
+        public static void OnTrainerClose(ExtPlayer player) => PendingPurchase.Remove(player);
 
         private static void ResetHourIfNeeded(Data data)
         {

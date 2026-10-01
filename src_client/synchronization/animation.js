@@ -791,6 +791,9 @@ gm.events.add("playerStreamIn", (entity) => {
 const setAnimToKey = (entity, status, key) => {
     try {
         if (entity && mp.players.exists(entity) && entity.type === 'player' && entity.handle !== 0 && !entity.vehicle) {
+			// Свой персонаж в качалке занимается сценарием GTA (world/gym.js) — анимацию gym_* ему не включаем
+			if (entity.handle === global.localplayer.handle && global.gymScenario && typeof key === "string" && key.indexOf("gym_") === 0)
+				return;
 			if (!PlayerAnimList [key] && !PlayerAnimList [entity.AnimToKey])
 				return;
 

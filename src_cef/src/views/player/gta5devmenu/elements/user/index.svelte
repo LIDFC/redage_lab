@@ -251,29 +251,6 @@
 {/if}
 
 {#if selectView === "Skills"}
-    {#if selectCharData.Fitness}
-        <!-- Физическая форма: сила и выносливость растут в качалке (World/Gym/Fitness.cs) -->
-        <div class="list1">
-            {#each [
-                { name: "Сила", value: selectCharData.Fitness.str, left: selectCharData.Fitness.strLeft, hint: "Сильнее удар кулаком" },
-                { name: "Выносливость", value: selectCharData.Fitness.sta, left: selectCharData.Fitness.staLeft, hint: "Дольше бег без падения" },
-            ] as stat}
-                <div class="blockskill">
-                    <h1>{stat.name}</h1>
-                    <p>{stat.hint}</p>
-                    <div class="progskill">
-                        <div class="headskill">
-                            <p>{stat.value >= 100 ? "Максимум" : (stat.left > 0 ? `За этот час ещё +${stat.left}` : "На этот час прирост исчерпан")}</p>
-                            <b>{stat.value}<p>/ 100</p></b>
-                        </div>
-                        <div class="bgprog">
-                            <div class="progbar" style="width: {stat.value}%"></div>
-                        </div>
-                    </div>
-                </div>
-            {/each}
-        </div>
-    {/if}
     {#if selectCharData.jobSkillsInfo}
         <div class="list1">
             {#each selectCharData.jobSkillsInfo as job, index}

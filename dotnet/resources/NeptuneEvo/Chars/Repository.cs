@@ -8024,9 +8024,7 @@ public static IReadOnlyDictionary<ClothesComponent, ItemId> ClothesComponentToIt
                     charData.Add(targetCharacterData.WantedLVL.Level);//40
                 else
                     charData.Add(0);//40          
-                // Физическая форма (World/Gym/Fitness.cs): сила, выносливость, сколько ещё можно прибавить в этот час
-                var fitness = World.Gym.Fitness.GetStats(getPlayer);
-                charData.Add(new { str = fitness.strength, sta = fitness.stamina, strLeft = fitness.strengthLeft, staLeft = fitness.staminaLeft });//41
+                charData.Add(null);//41
                 
                 var statsData = JsonConvert.SerializeObject(charData);
 

@@ -259,7 +259,6 @@ namespace NeptuneEvo.Functions
         public const string blackmarket = "bm";
         public const string orgcontracts = "orgc";
         public const string cfgpanel = "cfg";
-        public const string gym = "gym";
         public const string dooropen = "dooropen";
         public const string daylabor = "daylabor";
         public const string armyset = "armyset";
@@ -520,7 +519,6 @@ namespace NeptuneEvo.Functions
             { AdminCommands.blackmarket, 5 },
             { AdminCommands.orgcontracts, 5 },
             { AdminCommands.cfgpanel, 5 },
-            { AdminCommands.gym, 6 },
             { AdminCommands.dooropen, 6 },
             { AdminCommands.daylabor, 6 },
             { AdminCommands.armyset, 6 },

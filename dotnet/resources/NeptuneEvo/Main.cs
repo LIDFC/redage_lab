@@ -2432,9 +2432,6 @@ namespace NeptuneEvo
                         case "DayLabor":
                             Jobs.DayLabor.DayLabor.OnDialogYes(player);
                             return;
-                        case "GymMembership":
-                            World.Gym.Fitness.BuyMembership(player);
-                            return;
                         case "RepairMyVeh":
                             if (!player.IsInVehicle) return;
                             if (characterData.Money < 500)

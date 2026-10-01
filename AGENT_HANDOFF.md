@@ -397,8 +397,8 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - `/clothoff` (6 lvl, `AdminCommands.Tsc`): клиент (`src_client/index.js`, `getOffsets`) на временных NPC считает всего моделей в игре → сервер вычитает кастомные, показывает разницу; `/clothoff apply` пишет `settings/clothesOffsets.json` и вызывает `OnResourceStart` (перечитать одежду без рестарта); `/clothoff reset` — отключить файл.
 - Дамп DurtyFree (pedComponentVariations) для этого не годится — в нём нет DLC после mpchristmas3.
 
-## 7v. Уличная качалка и RP-армия
-- Качалка: `World/Gym/GymManager.cs` + `src_client/world/gym.js`. Тренажёр рядом (объекты мира Muscle Beach/тюрьма + свои из `settings/gym.json`) → E → анимация через shared data `AnimToKey` (ключи `gym_*` в `synchronization/animation.js`). `/gym add chinup|bench|weights|mat`, `/gym del`, `/gym list` (6 lvl).
+## 7v. RP-армия
+- Качалка и выносливость удалены целиком (сервер, клиент, CEF); бег снова бесконечный (`restoreStamina` в `render.js`), пропы турников/скамеек снова для сидения. Таблицы `player_fitness`/`settings/gym*.json` больше не читаются. `/mousetest` — `Core/DebugCommands.cs`.
 - Армия — `Fractions/ArmyRP/*`, настройки `settings/army.json`, точки ставятся в игре `/armyset` (6 lvl): parade, post add/del, zone clear/add, barrier add/del, range, course clear/add, info, reload.
 - А: `/salute` `/attention` `/atease`, `/formation` (офицер = доступ Invite), `/post`, `/guardhouse id мин причина` (ArrestType 3: копия камер КПЗ в измерении 3244600, выход у штаба в порту), `/unguardhouse`, `/returnguns` (армейский серийник 1014xxxxx), `/armylog`. Таблица `army_weapon_log` создаётся сама.
 - Б: предмет `ArmyPass` (400), `/basepass id часы`, режимная зона (многоугольник) → предупреждение → метка военным + розыск, шлагбаумы `/gate`.
@@ -410,7 +410,6 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Техника по рангам: в планшете «Парковка» кнопка «Для всех этой модели» (`server.frac.main.updateVehicleRankModel`).
 - Форма: верхи 453/454 в армейском наборе; названия кастомной одежды — `settings/clothesNames.json` (`Chars/ClothesNames.cs`).
 - Общая очередь записи в БД: `Database/DbQueue.cs` (ЧР остаётся на своей). Везде полное имя `NeptuneEvo.Database.DbQueue`.
-- Качалка: `World/Gym/Fitness.cs` — сила/выносливость (`player_fitness`, лимит прироста в час, спад без тренировок), shared `fitStr` → урон кулаком (`player/damage/index.js`); платные зоны и тренер-NPC — `settings/gym_fitness.json`, `/gym zone add цена дни [радиус]|del`; абонемент — диалог `GymMembership` в `Main.cs`.
 - Подработки: `Jobs/DayLabor/DayLabor.cs` (порт — ящики, ферма — CEF `JobFarmGame`), `settings/daylabor.json`, `/daylabor port foreman|pickup|drop [clear]`, `farm foreman|bed [clear]`; диалог `DayLabor` в `Main.cs`; клиент `src_client/jobs/daylabor.js`.
 - Механик: после согласия клиента заказ ждёт механика (10 мин), капот открывается сам; механик G → Машина → «Починить машину» → HotWire с ключом (`mech_repair`), оплата после успеха (`AutoMechanic.CompleteRepairOrder`).
 - Инкассатор: 4 с анимации у банкомата (`collector_atm`) перед выплатой.
@@ -418,18 +417,14 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Армия в Форт Занкудо: штаб/раздевалка/склад в измерении 0, точки — `settings/army.json` (`/armyset point groundrepair|airrepair|alarm|recruiter|guardhouse|fuel`), машины — `/armyset vehmove ground|air` (`ArmyRP/ArmyVehicles.cs`). Блип «National Guard» — на штабе (`MatsWar` в `Manager.cs`), у войны за маты свой временный блип.
 - `/dooropen` / `/doorclose` (`World/DoorsOpen.cs`, `settings/doors_open.json`) — открыть дверь, на которую смотрит админ, навсегда для всех.
 - Гауптвахта: крупное уведомление, `army_guardhouse_log`; планшет → «Гауптвахта» (`hudevo/tablet/apps/guardhouse.svelte`, `server.tablet.guardhouse.load` в `ArmyDuty.cs`).
-- Тренер качалки — окно `QuestsDialog` (`json/quests/work/npc_gym.json`); `QuestsDialog` умеет `{переменные}` из 7-го аргумента `client.quest.open`.
 - Армейская заправка `ArmyRP/ArmyFuel.cs` (окно АЗС в режиме `govOnly`), лимит гос. заправки на АЗС теперь в долларах.
-- Выносливость: `src_client/player/stamina.js` (свой запас бега, падение), `restoreStamina` из `render.js` убран; сила: −15%…+25% урона кулаком. Упражнения переключаются стрелками (`server.gym.switch`). F3 → Навыки: сила/выносливость (`PlayerStats` //41). Вкладка «Статистика» в меню I убрана.
 - Гардероб фракций: `Fractions/Wardrobe/Wardrobe.cs` + CEF `FractionWardrobe` + `src_client/fractions/wardrobe.js`; образ в `fraction_outfits`, торс — переопределение в `ClothesComponents.SetTop`; `OnDutyName = "outfit"`. Наборы лидера скрыты в планшете.
 - Биндер: колесо и боковые кнопки мыши (коды 4/5/6).
 
-- Качалка: в Занкудо 4 тренажёра (`GymManager.DefaultSpots`), упражнения своего персонажа — сценарии GTA (`world/gym.js`, флаг `global.gymScenario`, `animation.js` пропускает gym_* для себя). Турник — 1 очко силы за 3 тика.
-- Тренер: CEF `GymTrainer` (стиль jobselector), тарифы `plans` в `settings/gym_fitness.json`, `server.gym.buy`.
 - Гардероб отправляется частями `client.wardrobe.part` (компактный формат), ошибки — уведомлением.
 - Биндер: кнопки мыши 4/5/6 ловит окно биндера (`client:binder mouse`), в игре — опрос `mp.keys.isDown`.
 
-- Стабильность: `Functions/LagMonitor.cs` (сторож игрового потока, «Фриз игрового потока: N мс»), `Timers` в SDK меряют каждый обработчик («Долгий таймер N мс [поток]: имя», порог `Timers.SlowMs`), разносят первый запуск повторяющихся таймеров и больше не перебирают все таймеры на каждом. `MySQL.Query/QueryRead` пишут «Медленный … N мс [ИГРОВОЙ ПОТОК — фриз]». Для чтения во время игры — `DbQueue.ReadThen(sql, table => …)` (фон → игровой поток); переведены Fitness, наряды, планшет-гауптвахта, гардероб.
+- Стабильность: `Functions/LagMonitor.cs` (сторож игрового потока, «Фриз игрового потока: N мс»), `Timers` в SDK меряют каждый обработчик («Долгий таймер N мс [поток]: имя», порог `Timers.SlowMs`), разносят первый запуск повторяющихся таймеров и больше не перебирают все таймеры на каждом. `MySQL.Query/QueryRead` пишут «Медленный … N мс [ИГРОВОЙ ПОТОК — фриз]». Для чтения во время игры — `DbQueue.ReadThen(sql, table => …)` (фон → игровой поток); переведены наряды, планшет-гауптвахта, гардероб.
 
 ## 8. Что осталось или стоит проверить
 

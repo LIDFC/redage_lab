@@ -43912,22 +43912,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(/*! @/views/jobs/electrician/index.svelte */ "./src/views/jobs/electrician/index.svelte");
 /* harmony import */ var _views_jobs_farm_index_svelte__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(/*! @/views/jobs/farm/index.svelte */ "./src/views/jobs/farm/index.svelte");
 /* harmony import */ var _views_fractions_wardrobe_index_svelte__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(/*! @/views/fractions/wardrobe/index.svelte */ "./src/views/fractions/wardrobe/index.svelte");
-/* harmony import */ var _views_player_gymtrainer_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/views/player/gymtrainer/index.svelte */ "./src/views/player/gymtrainer/index.svelte");
-/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
-/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
-/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
-/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
-/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
-/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
-/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
-/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
-/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
-/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
-/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
-/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
-/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
-/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
+/* harmony import */ var _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(/*! @/views/house/furniture/index.svelte */ "./src/views/house/furniture/index.svelte");
+/* harmony import */ var _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(/*! @/views/eternal-dev/marketPlace/index.svelte */ "./src/views/eternal-dev/marketPlace/index.svelte");
+/* harmony import */ var _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(/*! @/popups/input/index.svelte */ "./src/popups/input/index.svelte");
+/* harmony import */ var _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(/*! @/popups/confirm/index.svelte */ "./src/popups/confirm/index.svelte");
+/* harmony import */ var _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(/*! @/popups/confirm/hospital_index.svelte */ "./src/popups/confirm/hospital_index.svelte");
+/* harmony import */ var _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! @/popups/donate/index.svelte */ "./src/popups/donate/index.svelte");
+/* harmony import */ var _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! @/popups/death/index.svelte */ "./src/popups/death/index.svelte");
+/* harmony import */ var _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! @/popups/circle/index.svelte */ "./src/popups/circle/index.svelte");
+/* harmony import */ var _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! @/popups/main/index.svelte */ "./src/popups/main/index.svelte");
+/* harmony import */ var _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! @/popups/select/index.svelte */ "./src/popups/select/index.svelte");
+/* harmony import */ var _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(/*! @/popups/roulette/index.svelte */ "./src/popups/roulette/index.svelte");
+/* harmony import */ var _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(/*! @/popups/upgrade/index.svelte */ "./src/popups/upgrade/index.svelte");
+/* harmony import */ var _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(/*! @/popups/camera/index.svelte */ "./src/popups/camera/index.svelte");
+/* harmony import */ var _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_112__ = __webpack_require__(/*! @/popups/war/index.svelte */ "./src/popups/war/index.svelte");
+/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
 /* src/App.svelte generated by Svelte v3.59.2 */
 
 
@@ -44072,7 +44071,6 @@ const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.global
 
 
 
-
 //window.router.setView("FractionsCreate")
 //window.router.close()
 //window.router.updateStatic("PlayerGameMenu");
@@ -44175,7 +44173,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (425:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
+// (423:0) <ViewContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity && $router.popup !== "PopupCamera" ? 1 : 0}>
 function create_default_slot_1(ctx) {
 	let t0;
 	let playergamemenu;
@@ -44281,7 +44279,7 @@ function create_default_slot_1(ctx) {
 	};
 }
 
-// (438:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
+// (436:0) <PopusContainer visible={Popus[$router.popup] ? true : false} opacity={$router.opacity}>
 function create_default_slot(ctx) {
 	let switch_instance;
 	let switch_instance_anchor;
@@ -44488,7 +44486,7 @@ function instance($$self, $$props, $$invalidate) {
 	document.imgurClientId = "ec243f05d2bc44b";
 
 	const Views = {
-		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		MajesticMarketplace: _views_eternal_dev_marketPlace_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default,
 		PlayerBattlePass: _views_player_battlepass_index_svelte__WEBPACK_IMPORTED_MODULE_25__.default,
 		//PlayerNewAuthentication,
 		PlayerAuthentication: _views_player_newauthentication_index_svelte__WEBPACK_IMPORTED_MODULE_27__.default,
@@ -44570,30 +44568,29 @@ function instance($$self, $$props, $$invalidate) {
 		JobElectricianGame: _views_jobs_electrician_index_svelte__WEBPACK_IMPORTED_MODULE_96__.default,
 		JobFarmGame: _views_jobs_farm_index_svelte__WEBPACK_IMPORTED_MODULE_97__.default,
 		FractionWardrobe: _views_fractions_wardrobe_index_svelte__WEBPACK_IMPORTED_MODULE_98__.default,
-		GymTrainer: _views_player_gymtrainer_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default,
-		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_100__.default
+		HouseFurniture: _views_house_furniture_index_svelte__WEBPACK_IMPORTED_MODULE_99__.default
 	};
 
 	//window.router.setView("PlayerAuthentication")
 	window.router.setHud();
 
 	const Popus = {
-		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
-		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
-		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
-		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
-		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
-		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default,
-		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_109__.default,
+		PopupConfirm: _popups_confirm_index_svelte__WEBPACK_IMPORTED_MODULE_102__.default,
+		HospitalPopupConfirm: _popups_confirm_hospital_index_svelte__WEBPACK_IMPORTED_MODULE_103__.default,
+		PopupInput: _popups_input_index_svelte__WEBPACK_IMPORTED_MODULE_101__.default,
+		PopupDeath: _popups_death_index_svelte__WEBPACK_IMPORTED_MODULE_105__.default,
+		PopupDonate: _popups_donate_index_svelte__WEBPACK_IMPORTED_MODULE_104__.default,
+		CircleMenu: _popups_circle_index_svelte__WEBPACK_IMPORTED_MODULE_106__.default,
+		PopupSelect: _popups_select_index_svelte__WEBPACK_IMPORTED_MODULE_108__.default,
 		//PopupAuth,
-		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_108__.default,
-		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_111__.default,
-		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_110__.default,
-		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_112__.default,
-		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_113__.default
+		PopupMain: _popups_main_index_svelte__WEBPACK_IMPORTED_MODULE_107__.default,
+		PopupUpgrade: _popups_upgrade_index_svelte__WEBPACK_IMPORTED_MODULE_110__.default,
+		PopupRoulette: _popups_roulette_index_svelte__WEBPACK_IMPORTED_MODULE_109__.default,
+		PopupCamera: _popups_camera_index_svelte__WEBPACK_IMPORTED_MODULE_111__.default,
+		PopupWar: _popups_war_index_svelte__WEBPACK_IMPORTED_MODULE_112__.default
 	};
 
-	(0,svelte__WEBPACK_IMPORTED_MODULE_114__.onMount)(() => {
+	(0,svelte__WEBPACK_IMPORTED_MODULE_113__.onMount)(() => {
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_19__.executeClient)("client:OnBrowserInit");
 
 		if (!isMultiplayer) {
@@ -179180,14 +179177,8 @@ function get_each_context_1(ctx, list, i) {
 	return child_ctx;
 }
 
-function get_each_context_2(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[24] = list[i];
-	return child_ctx;
-}
-
 // (70:0) {#if selectView === "Osnovnoe"}
-function create_if_block_16(ctx) {
+function create_if_block_15(ctx) {
 	let div11;
 	let div0;
 	let h10;
@@ -179314,8 +179305,8 @@ function create_if_block_16(ctx) {
 	let t64;
 	let t65;
 	let span10;
-	let if_block0 = /*selectCharData*/ ctx[2].FractionID > 0 && create_if_block_18(ctx);
-	let if_block1 = /*selectCharData*/ ctx[2].OrganizationID > 0 && create_if_block_17(ctx);
+	let if_block0 = /*selectCharData*/ ctx[2].FractionID > 0 && create_if_block_17(ctx);
+	let if_block1 = /*selectCharData*/ ctx[2].OrganizationID > 0 && create_if_block_16(ctx);
 
 	return {
 		c() {
@@ -179565,7 +179556,7 @@ function create_if_block_16(ctx) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_18(ctx);
+					if_block0 = create_if_block_17(ctx);
 					if_block0.c();
 					if_block0.m(div11, t41);
 				}
@@ -179578,7 +179569,7 @@ function create_if_block_16(ctx) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
-					if_block1 = create_if_block_17(ctx);
+					if_block1 = create_if_block_16(ctx);
 					if_block1.c();
 					if_block1.m(div11, t42);
 				}
@@ -179612,7 +179603,7 @@ function create_if_block_16(ctx) {
 }
 
 // (107:8) {#if selectCharData.FractionID > 0}
-function create_if_block_18(ctx) {
+function create_if_block_17(ctx) {
 	let div;
 	let h1;
 	let t1;
@@ -179664,7 +179655,7 @@ function create_if_block_18(ctx) {
 }
 
 // (114:8) {#if selectCharData.OrganizationID > 0}
-function create_if_block_17(ctx) {
+function create_if_block_16(ctx) {
 	let div;
 	let h1;
 	let t1;
@@ -179716,7 +179707,7 @@ function create_if_block_17(ctx) {
 }
 
 // (144:0) {#if selectView === "Statiskic"}
-function create_if_block_7(ctx) {
+function create_if_block_6(ctx) {
 	let div17;
 	let div0;
 	let h10;
@@ -179810,19 +179801,19 @@ function create_if_block_7(ctx) {
 	let dispose;
 
 	function select_block_type(ctx, dirty) {
-		if (/*diff*/ ctx[4].years > 0) return create_if_block_12;
-		if (/*diff*/ ctx[4].months > 0) return create_if_block_13;
-		if (/*diff*/ ctx[4].days > 0) return create_if_block_14;
-		if (/*diff*/ ctx[4].hours > 0) return create_if_block_15;
+		if (/*diff*/ ctx[4].years > 0) return create_if_block_11;
+		if (/*diff*/ ctx[4].months > 0) return create_if_block_12;
+		if (/*diff*/ ctx[4].days > 0) return create_if_block_13;
+		if (/*diff*/ ctx[4].hours > 0) return create_if_block_14;
 		return create_else_block;
 	}
 
 	let current_block_type = select_block_type(ctx, -1);
 	let if_block0 = current_block_type(ctx);
-	let if_block1 = /*onSelectedView2*/ ctx[3] === "Page1" && create_if_block_11(ctx);
-	let if_block2 = /*onSelectedView2*/ ctx[3] === "Page2" && create_if_block_10(ctx);
-	let if_block3 = /*onSelectedView2*/ ctx[3] === "Page4" && create_if_block_9(ctx);
-	let if_block4 = /*onSelectedView2*/ ctx[3] === "Page3" && create_if_block_8(ctx);
+	let if_block1 = /*onSelectedView2*/ ctx[3] === "Page1" && create_if_block_10(ctx);
+	let if_block2 = /*onSelectedView2*/ ctx[3] === "Page2" && create_if_block_9(ctx);
+	let if_block3 = /*onSelectedView2*/ ctx[3] === "Page4" && create_if_block_8(ctx);
+	let if_block4 = /*onSelectedView2*/ ctx[3] === "Page3" && create_if_block_7(ctx);
 
 	return {
 		c() {
@@ -180109,7 +180100,7 @@ function create_if_block_7(ctx) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
-					if_block1 = create_if_block_11(ctx);
+					if_block1 = create_if_block_10(ctx);
 					if_block1.c();
 					if_block1.m(p2, t17);
 				}
@@ -180122,7 +180113,7 @@ function create_if_block_7(ctx) {
 				if (if_block2) {
 					if_block2.p(ctx, dirty);
 				} else {
-					if_block2 = create_if_block_10(ctx);
+					if_block2 = create_if_block_9(ctx);
 					if_block2.c();
 					if_block2.m(p2, t18);
 				}
@@ -180135,7 +180126,7 @@ function create_if_block_7(ctx) {
 				if (if_block3) {
 					if_block3.p(ctx, dirty);
 				} else {
-					if_block3 = create_if_block_9(ctx);
+					if_block3 = create_if_block_8(ctx);
 					if_block3.c();
 					if_block3.m(p2, t19);
 				}
@@ -180148,7 +180139,7 @@ function create_if_block_7(ctx) {
 				if (if_block4) {
 					if_block4.p(ctx, dirty);
 				} else {
-					if_block4 = create_if_block_8(ctx);
+					if_block4 = create_if_block_7(ctx);
 					if_block4.c();
 					if_block4.m(p2, null);
 				}
@@ -180260,7 +180251,7 @@ function create_else_block(ctx) {
 }
 
 // (155:45) 
-function create_if_block_15(ctx) {
+function create_if_block_14(ctx) {
 	let t0_value = /*diff*/ ctx[4].hours + "";
 	let t0;
 	let t1;
@@ -180285,7 +180276,7 @@ function create_if_block_15(ctx) {
 }
 
 // (153:44) 
-function create_if_block_14(ctx) {
+function create_if_block_13(ctx) {
 	let t0_value = /*diff*/ ctx[4].days + "";
 	let t0;
 	let t1;
@@ -180310,7 +180301,7 @@ function create_if_block_14(ctx) {
 }
 
 // (151:46) 
-function create_if_block_13(ctx) {
+function create_if_block_12(ctx) {
 	let t0_value = /*diff*/ ctx[4].months + "";
 	let t0;
 	let t1;
@@ -180335,7 +180326,7 @@ function create_if_block_13(ctx) {
 }
 
 // (149:16) {#if diff.years > 0}
-function create_if_block_12(ctx) {
+function create_if_block_11(ctx) {
 	let t0_value = /*diff*/ ctx[4].years + "";
 	let t0;
 	let t1;
@@ -180360,7 +180351,7 @@ function create_if_block_12(ctx) {
 }
 
 // (171:16) {#if onSelectedView2 === "Page1"}
-function create_if_block_11(ctx) {
+function create_if_block_10(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].TodayTime, "minutes").format("h[ч.] m[м.]") + "";
 	let t;
 
@@ -180381,7 +180372,7 @@ function create_if_block_11(ctx) {
 }
 
 // (174:16) {#if onSelectedView2 === "Page2"}
-function create_if_block_10(ctx) {
+function create_if_block_9(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].MonthTime, "minutes").format("w[нед.] d[д.] h[ч.] m[м.]") + "";
 	let t;
 
@@ -180402,7 +180393,7 @@ function create_if_block_10(ctx) {
 }
 
 // (177:16) {#if onSelectedView2 === "Page4"}
-function create_if_block_9(ctx) {
+function create_if_block_8(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].YearTime, "minutes").format("M[мес.] w[нед.] d[д.] h[ч.] m[м.]") + "";
 	let t;
 
@@ -180423,7 +180414,7 @@ function create_if_block_9(ctx) {
 }
 
 // (180:16) {#if onSelectedView2 === "Page3"}
-function create_if_block_8(ctx) {
+function create_if_block_7(ctx) {
 	let t_value = moment__WEBPACK_IMPORTED_MODULE_5___default().duration(/*selectCharData*/ ctx[2].TotalTime, "minutes").format("y[г.] M[мес.] w[nнед.] d[д.] h[ч.] m[м.]") + "";
 	let t;
 
@@ -180445,252 +180436,40 @@ function create_if_block_8(ctx) {
 
 // (253:0) {#if selectView === "Skills"}
 function create_if_block_4(ctx) {
-	let t;
-	let if_block1_anchor;
-	let if_block0 = /*selectCharData*/ ctx[2].Fitness && create_if_block_6(ctx);
-	let if_block1 = /*selectCharData*/ ctx[2].jobSkillsInfo && create_if_block_5(ctx);
+	let if_block_anchor;
+	let if_block = /*selectCharData*/ ctx[2].jobSkillsInfo && create_if_block_5(ctx);
 
 	return {
 		c() {
-			if (if_block0) if_block0.c();
-			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block1) if_block1.c();
-			if_block1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
+			if (if_block) if_block.c();
+			if_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 		},
 		m(target, anchor) {
-			if (if_block0) if_block0.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t, anchor);
-			if (if_block1) if_block1.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block1_anchor, anchor);
+			if (if_block) if_block.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (/*selectCharData*/ ctx[2].Fitness) {
-				if (if_block0) {
-					if_block0.p(ctx, dirty);
-				} else {
-					if_block0 = create_if_block_6(ctx);
-					if_block0.c();
-					if_block0.m(t.parentNode, t);
-				}
-			} else if (if_block0) {
-				if_block0.d(1);
-				if_block0 = null;
-			}
-
 			if (/*selectCharData*/ ctx[2].jobSkillsInfo) {
-				if (if_block1) {
-					if_block1.p(ctx, dirty);
+				if (if_block) {
+					if_block.p(ctx, dirty);
 				} else {
-					if_block1 = create_if_block_5(ctx);
-					if_block1.c();
-					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+					if_block = create_if_block_5(ctx);
+					if_block.c();
+					if_block.m(if_block_anchor.parentNode, if_block_anchor);
 				}
-			} else if (if_block1) {
-				if_block1.d(1);
-				if_block1 = null;
+			} else if (if_block) {
+				if_block.d(1);
+				if_block = null;
 			}
 		},
 		d(detaching) {
-			if (if_block0) if_block0.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t);
-			if (if_block1) if_block1.d(detaching);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block1_anchor);
+			if (if_block) if_block.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block_anchor);
 		}
 	};
 }
 
-// (254:4) {#if selectCharData.Fitness}
-function create_if_block_6(ctx) {
-	let div;
-
-	let each_value_2 = [
-		{
-			name: "Сила",
-			value: /*selectCharData*/ ctx[2].Fitness.str,
-			left: /*selectCharData*/ ctx[2].Fitness.strLeft,
-			hint: "Сильнее удар кулаком"
-		},
-		{
-			name: "Выносливость",
-			value: /*selectCharData*/ ctx[2].Fitness.sta,
-			left: /*selectCharData*/ ctx[2].Fitness.staLeft,
-			hint: "Дольше бег без падения"
-		}
-	];
-
-	let each_blocks = [];
-
-	for (let i = 0; i < 2; i += 1) {
-		each_blocks[i] = create_each_block_2(get_each_context_2(ctx, each_value_2, i));
-	}
-
-	return {
-		c() {
-			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < 2; i += 1) {
-				each_blocks[i].c();
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "list1");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
-
-			for (let i = 0; i < 2; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div, null);
-				}
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selectCharData*/ 4) {
-				each_value_2 = [
-					{
-						name: "Сила",
-						value: /*selectCharData*/ ctx[2].Fitness.str,
-						left: /*selectCharData*/ ctx[2].Fitness.strLeft,
-						hint: "Сильнее удар кулаком"
-					},
-					{
-						name: "Выносливость",
-						value: /*selectCharData*/ ctx[2].Fitness.sta,
-						left: /*selectCharData*/ ctx[2].Fitness.staLeft,
-						hint: "Дольше бег без падения"
-					}
-				];
-
-				let i;
-
-				for (i = 0; i < 2; i += 1) {
-					const child_ctx = get_each_context_2(ctx, each_value_2, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block_2(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div, null);
-					}
-				}
-
-				for (; i < 2; i += 1) {
-					each_blocks[i].d(1);
-				}
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
-		}
-	};
-}
-
-// (257:12) {#each [                 { name: "Сила", value: selectCharData.Fitness.str, left: selectCharData.Fitness.strLeft, hint: "Сильнее удар кулаком" },                 { name: "Выносливость", value: selectCharData.Fitness.sta, left: selectCharData.Fitness.staLeft, hint: "Дольше бег без падения" },             ] as stat}
-function create_each_block_2(ctx) {
-	let div4;
-	let h1;
-	let t0_value = /*stat*/ ctx[24].name + "";
-	let t0;
-	let t1;
-	let p0;
-	let t2_value = /*stat*/ ctx[24].hint + "";
-	let t2;
-	let t3;
-	let div3;
-	let div0;
-	let p1;
-
-	let t4_value = (/*stat*/ ctx[24].value >= 100
-	? "Максимум"
-	: /*stat*/ ctx[24].left > 0
-		? `За этот час ещё +${/*stat*/ ctx[24].left}`
-		: "На этот час прирост исчерпан") + "";
-
-	let t4;
-	let t5;
-	let b;
-	let t6_value = /*stat*/ ctx[24].value + "";
-	let t6;
-	let p2;
-	let t8;
-	let div2;
-	let div1;
-	let t9;
-
-	return {
-		c() {
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			p0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t2_value);
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			b = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("b");
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
-			p2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			p2.textContent = "/ 100";
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "headskill");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "progbar");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*stat*/ ctx[24].value + "%");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "bgprog");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "progskill");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "blockskill");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h1, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, p0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p0, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, p1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p1, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, b);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(b, p2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t9);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selectCharData*/ 4 && t0_value !== (t0_value = /*stat*/ ctx[24].name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*selectCharData*/ 4 && t2_value !== (t2_value = /*stat*/ ctx[24].hint + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t2, t2_value);
-
-			if (dirty & /*selectCharData*/ 4 && t4_value !== (t4_value = (/*stat*/ ctx[24].value >= 100
-			? "Максимум"
-			: /*stat*/ ctx[24].left > 0
-				? `За этот час ещё +${/*stat*/ ctx[24].left}`
-				: "На этот час прирост исчерпан") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
-
-			if (dirty & /*selectCharData*/ 4 && t6_value !== (t6_value = /*stat*/ ctx[24].value + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
-
-			if (dirty & /*selectCharData*/ 4) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div1, "width", /*stat*/ ctx[24].value + "%");
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
-		}
-	};
-}
-
-// (277:4) {#if selectCharData.jobSkillsInfo}
+// (254:4) {#if selectCharData.jobSkillsInfo}
 function create_if_block_5(ctx) {
 	let div;
 	let each_value_1 = /*selectCharData*/ ctx[2].jobSkillsInfo;
@@ -180750,7 +180529,7 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (279:12) {#each selectCharData.jobSkillsInfo as job, index}
+// (256:12) {#each selectCharData.jobSkillsInfo as job, index}
 function create_each_block_1(ctx) {
 	let div4;
 	let h1;
@@ -180854,7 +180633,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (298:0) {#if selectView === "Carsuser"}
+// (275:0) {#if selectView === "Carsuser"}
 function create_if_block_3(ctx) {
 	let div;
 	let each_value = (/*carsList*/ ctx[1] || []).filter(/*func*/ ctx[14]);
@@ -180914,7 +180693,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (300:8) {#each (carsList || []).filter((item) => Array.isArray(item) && item[1]) as item}
+// (277:8) {#each (carsList || []).filter((item) => Array.isArray(item) && item[1]) as item}
 function create_each_block(ctx) {
 	let div3;
 	let div0;
@@ -180994,7 +180773,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (327:0) {#if selectView === "Housebiz"}
+// (304:0) {#if selectView === "Housebiz"}
 function create_if_block(ctx) {
 	let div;
 	let t;
@@ -181050,7 +180829,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (329:8) {#if selectCharData.houseId}
+// (306:8) {#if selectCharData.houseId}
 function create_if_block_2(ctx) {
 	let div4;
 	let div3;
@@ -181185,7 +180964,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (348:8) {#if selectCharData.BizId}
+// (325:8) {#if selectCharData.BizId}
 function create_if_block_1(ctx) {
 	let div4;
 	let div3;
@@ -181292,8 +181071,8 @@ function create_fragment(ctx) {
 	let t2;
 	let t3;
 	let if_block4_anchor;
-	let if_block0 = /*selectView*/ ctx[0] === "Osnovnoe" && create_if_block_16(ctx);
-	let if_block1 = /*selectView*/ ctx[0] === "Statiskic" && create_if_block_7(ctx);
+	let if_block0 = /*selectView*/ ctx[0] === "Osnovnoe" && create_if_block_15(ctx);
+	let if_block1 = /*selectView*/ ctx[0] === "Statiskic" && create_if_block_6(ctx);
 	let if_block2 = /*selectView*/ ctx[0] === "Skills" && create_if_block_4(ctx);
 	let if_block3 = /*selectView*/ ctx[0] === "Carsuser" && create_if_block_3(ctx);
 	let if_block4 = /*selectView*/ ctx[0] === "Housebiz" && create_if_block(ctx);
@@ -181328,7 +181107,7 @@ function create_fragment(ctx) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_16(ctx);
+					if_block0 = create_if_block_15(ctx);
 					if_block0.c();
 					if_block0.m(t0.parentNode, t0);
 				}
@@ -181341,7 +181120,7 @@ function create_fragment(ctx) {
 				if (if_block1) {
 					if_block1.p(ctx, dirty);
 				} else {
-					if_block1 = create_if_block_7(ctx);
+					if_block1 = create_if_block_6(ctx);
 					if_block1.c();
 					if_block1.m(t1.parentNode, t1);
 				}
@@ -183846,987 +183625,6 @@ class Gta5devmenu extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteCom
 if (false) {}
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Gta5devmenu);
-
-
-/***/ }),
-
-/***/ "./src/views/player/gymtrainer/index.svelte":
-/*!**************************************************!*\
-  !*** ./src/views/player/gymtrainer/index.svelte ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var svelte_internal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! svelte/internal */ "./node_modules/svelte/internal/index.mjs");
-/* harmony import */ var api_rage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! api/rage */ "./src/api/rage.js");
-/* harmony import */ var store_chars__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! store/chars */ "./src/store/chars.js");
-/* harmony import */ var svelte_transition__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! svelte/transition */ "./node_modules/svelte/transition/index.mjs");
-/* harmony import */ var svelte__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! svelte */ "./node_modules/svelte/index.mjs");
-/* src/views/player/gymtrainer/index.svelte generated by Svelte v3.59.2 */
-
-
-const { window: window_1 } = svelte_internal__WEBPACK_IMPORTED_MODULE_0__.globals;
-
-
-
-
-
-function add_css(target) {
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append_styles)(target, "svelte-nl060m", ".jobcenter.svelte-nl060m.svelte-nl060m.svelte-nl060m{--bg:rgba(12, 13, 16, 0.94);--panel:rgba(255, 255, 255, 0.035);--line:rgba(255, 255, 255, 0.08);--text:#f3f1ec;--muted:rgba(243, 241, 236, 0.55);--accent:#ffb400;--accent-dark:#1a1405;--ok:#58d68d;--bad:#ff5d52;position:absolute;top:0;right:0;bottom:0;left:0;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.7));font-family:'TTNorms-Medium', 'UniNeue', sans-serif;color:var(--text);user-select:none}@media(max-width: 1400px){.jobcenter__panel.svelte-nl060m.svelte-nl060m.svelte-nl060m{zoom:80%}}@media(min-width: 2400px){.jobcenter__panel.svelte-nl060m.svelte-nl060m.svelte-nl060m{zoom:125%}}.jobcenter__panel.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:relative;display:grid;grid-template-columns:600px 420px;width:1020px;height:640px;background:var(--bg);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 30px 80px rgba(0, 0, 0, 0.55)}.jobcenter__panel.svelte-nl060m.svelte-nl060m.svelte-nl060m::before{content:\"\";position:absolute;left:0;top:0;right:0;height:4px;background:repeating-linear-gradient(-45deg, var(--accent) 0 14px, #111 14px 28px);opacity:0.9}.jobcenter__board.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:flex;flex-direction:column;padding:28px 24px 18px 28px;min-height:0}.jobcenter__head.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:20px}.jobcenter__eyebrow.svelte-nl060m.svelte-nl060m.svelte-nl060m{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}.jobcenter__title.svelte-nl060m.svelte-nl060m.svelte-nl060m{margin:0;font-family:'RF Dewi Expanded', 'TTNorms-Bold', sans-serif;font-weight:800;font-size:24px;line-height:1;white-space:nowrap;text-transform:uppercase}.jobcenter__me.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:flex;text-align:right}.jobcenter__me.svelte-nl060m>div.svelte-nl060m+div.svelte-nl060m{margin-left:18px}.jobcenter__me.svelte-nl060m>div.svelte-nl060m.svelte-nl060m{display:flex;flex-direction:column}.jobcenter__me-label.svelte-nl060m.svelte-nl060m.svelte-nl060m{white-space:nowrap;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.08em}.jobcenter__me-value.svelte-nl060m.svelte-nl060m.svelte-nl060m{font-family:'RF Dewi Expanded', sans-serif;font-weight:700;font-size:22px;margin-top:2px}.jobcenter__me-value.small.svelte-nl060m.svelte-nl060m.svelte-nl060m{font-family:'TTNorms-Bold', sans-serif;font-size:15px;margin-top:6px}.jobcenter__grid.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:10px;flex:1;min-height:0}.tile.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:relative;border:1px solid var(--line);border-radius:10px;background-color:#16171b;background-size:cover;background-position:center;overflow:hidden;cursor:pointer;padding:0;color:inherit;font:inherit;text-align:left;outline:none;transition:transform 0.15s ease, border-color 0.15s ease, filter 0.15s ease}.tile.svelte-nl060m.svelte-nl060m.svelte-nl060m:hover{transform:translateY(-2px);border-color:rgba(255, 180, 0, 0.45)}.tile--active.svelte-nl060m.svelte-nl060m.svelte-nl060m{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent), 0 10px 24px rgba(255, 180, 0, 0.18)}.tile__shade.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg, rgba(0, 0, 0, 0.05) 20%, rgba(0, 0, 0, 0.85) 100%)}.tile__lvl.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;top:8px;right:8px;padding:3px 7px;border-radius:5px;font-size:11px;font-family:'TTNorms-Bold', sans-serif;background:rgba(0, 0, 0, 0.6);border:1px solid var(--line)}.tile__badge.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;top:8px;left:8px;padding:3px 8px;border-radius:5px;font-size:11px;font-family:'TTNorms-Bold', sans-serif;text-transform:uppercase;letter-spacing:0.05em;background:var(--accent);color:var(--accent-dark)}.tile__name.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;left:12px;bottom:22px;font-family:'TTNorms-Bold', sans-serif;font-size:16px}.jobcenter__hint.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:flex;margin-top:14px;font-size:12px;color:var(--muted)}.jobcenter__hint.svelte-nl060m span.svelte-nl060m+span.svelte-nl060m{margin-left:18px}.jobcenter__hint.svelte-nl060m b.svelte-nl060m.svelte-nl060m{font-family:'TTNorms-Bold', sans-serif;font-weight:normal;color:var(--text);padding:1px 6px;margin-right:4px;border:1px solid var(--line);border-radius:4px}.details.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:flex;flex-direction:column;background:var(--panel);border-left:1px solid var(--line);min-height:0}.details__hero.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:relative;height:190px;flex-shrink:0;background-size:cover;background-position:center}.details__hero-shade.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;top:0;right:0;bottom:0;left:0;background:linear-gradient(180deg, rgba(12, 13, 16, 0) 30%, rgba(12, 13, 16, 0.96) 100%)}.details__close.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:8px;border:1px solid var(--line);background:rgba(0, 0, 0, 0.55);color:var(--text);font-size:14px;cursor:pointer}.details__close.svelte-nl060m.svelte-nl060m.svelte-nl060m:hover{border-color:var(--accent);color:var(--accent)}.details__name.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;left:24px;bottom:12px;margin:0;font-family:'RF Dewi Expanded', 'TTNorms-Bold', sans-serif;font-weight:800;font-size:22px;text-transform:uppercase}.details__body.svelte-nl060m.svelte-nl060m.svelte-nl060m{flex:1;padding:6px 24px 0;overflow-y:auto;min-height:0}.details__text.svelte-nl060m.svelte-nl060m.svelte-nl060m{margin:0 0 16px;font-size:14px;line-height:1.45;color:rgba(243, 241, 236, 0.8)}.row.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:grid;grid-template-columns:1fr 1fr;gap:10px}.block.svelte-nl060m.svelte-nl060m.svelte-nl060m{padding:12px 14px;margin-bottom:10px;border:1px solid var(--line);border-radius:10px;background:rgba(0, 0, 0, 0.25)}.block__title.svelte-nl060m.svelte-nl060m.svelte-nl060m{font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted);margin-bottom:8px}.block__note.svelte-nl060m.svelte-nl060m.svelte-nl060m{font-size:11px;color:var(--muted);margin-top:6px}.pay.svelte-nl060m.svelte-nl060m.svelte-nl060m{font-family:'TTNorms-Bold', sans-serif;font-size:14px;line-height:1.35;color:var(--accent)}.skill.svelte-nl060m.svelte-nl060m.svelte-nl060m{height:8px;border-radius:4px;background:rgba(255, 255, 255, 0.08);overflow:hidden;margin-top:4px}.skill__bar.svelte-nl060m.svelte-nl060m.svelte-nl060m{height:100%;border-radius:4px;background:linear-gradient(90deg, #ff8a00, var(--accent));transition:width 0.3s ease}.details__actions.svelte-nl060m.svelte-nl060m.svelte-nl060m{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;padding:14px 24px 6px}.btn.svelte-nl060m.svelte-nl060m.svelte-nl060m{height:46px;border-radius:10px;border:none;background:var(--accent);color:var(--accent-dark);font-family:'TTNorms-Bold', sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:0.06em;cursor:pointer;transition:filter 0.15s ease, transform 0.1s ease}.btn.svelte-nl060m.svelte-nl060m.svelte-nl060m:hover{filter:brightness(1.1)}.btn.svelte-nl060m.svelte-nl060m.svelte-nl060m:active{transform:scale(0.98)}.btn--ghost.svelte-nl060m.svelte-nl060m.svelte-nl060m{background:transparent;color:var(--text);border:1px solid var(--line)}.btn--ghost.svelte-nl060m.svelte-nl060m.svelte-nl060m:hover{border-color:var(--accent);color:var(--accent);filter:none}.btn--disabled.svelte-nl060m.svelte-nl060m.svelte-nl060m,.btn--disabled.svelte-nl060m.svelte-nl060m.svelte-nl060m:hover{background:rgba(255, 255, 255, 0.08);color:var(--muted);cursor:not-allowed;filter:none;transform:none}.details__status.svelte-nl060m.svelte-nl060m.svelte-nl060m{padding:2px 24px 18px;font-size:12px;color:var(--muted);text-align:right}.details__status.warn.svelte-nl060m.svelte-nl060m.svelte-nl060m{color:var(--bad)}.tile__perday.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;left:12px;bottom:6px;font-size:11px;color:var(--muted);z-index:2}.pay--bad.svelte-nl060m.svelte-nl060m.svelte-nl060m{color:var(--bad) !important}.tile__icon.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;right:14%;top:22%;width:44%;color:var(--accent);opacity:0.85;z-index:1}.details__icon.svelte-nl060m.svelte-nl060m.svelte-nl060m{position:absolute;right:10%;top:14%;width:34%;color:var(--accent);opacity:0.8}.tile__icon.svelte-nl060m svg,.details__icon.svelte-nl060m svg{width:100%;height:auto;display:block}");
-}
-
-function get_each_context(ctx, list, i) {
-	const child_ctx = ctx.slice();
-	child_ctx[20] = list[i];
-	return child_ctx;
-}
-
-// (91:24) {#if plan.index === bestIndex && plans.length > 1}
-function create_if_block_1(ctx) {
-	let span;
-
-	return {
-		c() {
-			span = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span.textContent = "Выгодно";
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span, "class", "tile__badge svelte-nl060m");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, span, anchor);
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(span);
-		}
-	};
-}
-
-// (83:16) {#each plans as plan (plan.index)}
-function create_each_block(key_1, ctx) {
-	let button;
-	let span0;
-	let t0;
-	let span1;
-	let t1;
-	let span2;
-	let t2;
-	let t3_value = /*fmt*/ ctx[10](/*plan*/ ctx[20].price) + "";
-	let t3;
-	let t4;
-	let t5;
-	let span3;
-	let t6_value = /*plan*/ ctx[20].days + "";
-	let t6;
-	let t7;
-	let t8_value = /*daysName*/ ctx[9](/*plan*/ ctx[20].days) + "";
-	let t8;
-	let t9;
-	let span4;
-	let t10;
-	let t11_value = /*fmt*/ ctx[10](/*plan*/ ctx[20].perDay) + "";
-	let t11;
-	let t12;
-	let t13;
-	let mounted;
-	let dispose;
-	let if_block = /*plan*/ ctx[20].index === /*bestIndex*/ ctx[8] && /*plans*/ ctx[2].length > 1 && create_if_block_1(ctx);
-
-	function click_handler() {
-		return /*click_handler*/ ctx[17](/*plan*/ ctx[20]);
-	}
-
-	return {
-		key: key_1,
-		first: null,
-		c() {
-			button = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
-			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block) if_block.c();
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t8_value);
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
-			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
-			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" в день");
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "tile__icon svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "tile__shade svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "tile__lvl svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "tile__name svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span4, "class", "tile__perday svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button, "class", "tile svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(button, "tile--active", /*plan*/ ctx[20].index === /*selectedIndex*/ ctx[1]);
-			this.first = button;
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, button, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, span0);
-			span0.innerHTML = /*dumbbell*/ ctx[14];
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, span1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, span2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span2, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span2, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t4);
-			if (if_block) if_block.m(button, null);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, span3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t9);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, span4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span4, t10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span4, t11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span4, t12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button, t13);
-
-			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button, "click", click_handler);
-				mounted = true;
-			}
-		},
-		p(new_ctx, dirty) {
-			ctx = new_ctx;
-			if (dirty & /*plans*/ 4 && t3_value !== (t3_value = /*fmt*/ ctx[10](/*plan*/ ctx[20].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
-
-			if (/*plan*/ ctx[20].index === /*bestIndex*/ ctx[8] && /*plans*/ ctx[2].length > 1) {
-				if (if_block) {
-					
-				} else {
-					if_block = create_if_block_1(ctx);
-					if_block.c();
-					if_block.m(button, t5);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-
-			if (dirty & /*plans*/ 4 && t6_value !== (t6_value = /*plan*/ ctx[20].days + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
-			if (dirty & /*plans*/ 4 && t8_value !== (t8_value = /*daysName*/ ctx[9](/*plan*/ ctx[20].days) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t8, t8_value);
-			if (dirty & /*plans*/ 4 && t11_value !== (t11_value = /*fmt*/ ctx[10](/*plan*/ ctx[20].perDay) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
-
-			if (dirty & /*plans, selectedIndex*/ 6) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(button, "tile--active", /*plan*/ ctx[20].index === /*selectedIndex*/ ctx[1]);
-			}
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(button);
-			if (if_block) if_block.d();
-			mounted = false;
-			dispose();
-		}
-	};
-}
-
-// (108:8) {#if selected}
-function create_if_block(ctx) {
-	let previous_key = /*selected*/ ctx[3].index;
-	let key_block_anchor;
-	let key_block = create_key_block(ctx);
-
-	return {
-		c() {
-			key_block.c();
-			key_block_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
-		},
-		m(target, anchor) {
-			key_block.m(target, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, key_block_anchor, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected*/ 8 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal)(previous_key, previous_key = /*selected*/ ctx[3].index)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.group_outros)();
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(key_block, 1, 1, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop);
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.check_outros)();
-				key_block = create_key_block(ctx);
-				key_block.c();
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(key_block, 1);
-				key_block.m(key_block_anchor.parentNode, key_block_anchor);
-			} else {
-				key_block.p(ctx, dirty);
-			}
-		},
-		i(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(key_block);
-		},
-		o(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_out)(key_block);
-		},
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(key_block_anchor);
-			key_block.d(detaching);
-		}
-	};
-}
-
-// (109:12) {#key selected.index}
-function create_key_block(ctx) {
-	let section;
-	let div0;
-	let span0;
-	let t0;
-	let span1;
-	let t1;
-	let button0;
-	let t3;
-	let h2;
-	let t4_value = /*selected*/ ctx[3].days + "";
-	let t4;
-	let t5;
-	let t6_value = /*daysName*/ ctx[9](/*selected*/ ctx[3].days) + "";
-	let t6;
-	let t7;
-	let div21;
-	let p;
-	let t8;
-	let t9_value = /*data*/ ctx[0].zone + "";
-	let t9;
-	let t10;
-	let t11;
-	let div11;
-	let div5;
-	let div1;
-	let t12;
-	let t13_value = /*data*/ ctx[0].str + "";
-	let t13;
-	let t14;
-	let t15;
-	let div3;
-	let div2;
-	let t16;
-	let div4;
-
-	let t17_value = (/*data*/ ctx[0].str >= 100
-	? "максимум"
-	: `за этот час ещё +${/*data*/ ctx[0].strLeft}`) + "";
-
-	let t17;
-	let t18;
-	let div10;
-	let div6;
-	let t19;
-	let t20_value = /*data*/ ctx[0].sta + "";
-	let t20;
-	let t21;
-	let t22;
-	let div8;
-	let div7;
-	let t23;
-	let div9;
-
-	let t24_value = (/*data*/ ctx[0].sta >= 100
-	? "максимум"
-	: `за этот час ещё +${/*data*/ ctx[0].staLeft}`) + "";
-
-	let t24;
-	let t25;
-	let div20;
-	let div15;
-	let div12;
-	let t27;
-	let div13;
-	let t28;
-	let t29_value = /*fmt*/ ctx[10](/*selected*/ ctx[3].price) + "";
-	let t29;
-	let t30;
-	let div14;
-	let t31;
-	let t32_value = /*fmt*/ ctx[10](/*selected*/ ctx[3].perDay) + "";
-	let t32;
-	let t33;
-	let t34;
-	let div19;
-	let div16;
-	let t36;
-	let div17;
-	let t37;
-	let t38_value = /*fmt*/ ctx[10](/*money*/ ctx[4]) + "";
-	let t38;
-	let t39;
-	let div18;
-
-	let t40_value = (/*data*/ ctx[0].member
-	? "срок прибавится к текущему"
-	: "начнёт действовать сразу") + "";
-
-	let t40;
-	let t41;
-	let div22;
-	let button1;
-	let t43;
-	let button2;
-	let t44_value = (/*data*/ ctx[0].member ? "Продлить" : "Купить") + "";
-	let t44;
-	let t45;
-	let div23;
-
-	let t46_value = (/*message*/ ctx[5] || (/*notEnough*/ ctx[7]
-	? "Не хватает наличных"
-	: "Без тренировок форма понемногу уходит")) + "";
-
-	let t46;
-	let section_intro;
-	let mounted;
-	let dispose;
-
-	return {
-		c() {
-			section = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("section");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			button0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
-			button0.textContent = "✕";
-			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			h2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h2");
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
-			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t6_value);
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			p = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("p");
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Доступ ко всем тренажёрам ");
-			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
-			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(": турники, скамьи, штанги и коврики. В остальных местах города качаться можно бесплатно.");
-			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Сила · ");
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t13_value);
-			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("/100");
-			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t17_value);
-			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Выносливость · ");
-			t20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t20_value);
-			t21 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("/100");
-			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t24 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t24_value);
-			t25 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div20 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div12.textContent = "Стоимость";
-			t27 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t28 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
-			t29 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t29_value);
-			t30 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t31 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
-			t32 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t32_value);
-			t33 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" в день");
-			t34 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div19 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div16.textContent = "Наличные";
-			t36 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t37 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("$");
-			t38 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t38_value);
-			t39 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t40 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t40_value);
-			t41 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			button1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
-			button1.textContent = "Закрыть";
-			t43 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			button2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("button");
-			t44 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t44_value);
-			t45 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div23 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t46 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t46_value);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "details__icon svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "details__hero-shade svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button0, "class", "details__close svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button0, "aria-label", "Закрыть");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h2, "class", "details__name svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "details__hero svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(p, "class", "details__text svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "block__title svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "skill__bar svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", /*data*/ ctx[0].str + "%");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "skill svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "block__note svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "block svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "block__title svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "skill__bar svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div7, "width", /*data*/ ctx[0].sta + "%");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "skill svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "block__note svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div10, "class", "block svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div11, "class", "row svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div12, "class", "block__title svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div13, "class", "pay svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div14, "class", "block__note svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div15, "class", "block svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div16, "class", "block__title svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div17, "class", "pay svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div17, "pay--bad", /*notEnough*/ ctx[7]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div18, "class", "block__note svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div19, "class", "block svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div20, "class", "row svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div21, "class", "details__body svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button1, "class", "btn btn--ghost svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(button2, "class", "btn svelte-nl060m");
-			button2.disabled = /*notEnough*/ ctx[7];
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(button2, "btn--disabled", /*notEnough*/ ctx[7]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div22, "class", "details__actions svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div23, "class", "details__status svelte-nl060m");
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div23, "warn", /*message*/ ctx[5]
-			? !/*ok*/ ctx[6]
-			: /*notEnough*/ ctx[7]);
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(section, "class", "details svelte-nl060m");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, section, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span0);
-			span0.innerHTML = /*dumbbell*/ ctx[14];
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, span1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, button0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, h2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h2, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h2, t5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(h2, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, div21);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, p);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t9);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(p, t10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, t11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, div11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div5);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t14);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, t16);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div5, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, t18);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div11, div10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t19);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t20);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t21);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t22);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, t23);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div10, div9);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t24);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, t25);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div21, div20);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, div12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, t27);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, div13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t28);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div13, t29);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, t30);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div15, div14);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t31);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t32);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div14, t33);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, t34);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div20, div19);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div16);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, t36);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, t37);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div17, t38);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, t39);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div19, div18);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div18, t40);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, t41);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, div22);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, button1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, t43);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div22, button2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(button2, t44);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, t45);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, div23);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div23, t46);
-
-			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button0, "click", /*close*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button1, "click", /*close*/ ctx[12]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(button2, "click", /*buy*/ ctx[11])
-				];
-
-				mounted = true;
-			}
-		},
-		p(ctx, dirty) {
-			if (dirty & /*selected*/ 8 && t4_value !== (t4_value = /*selected*/ ctx[3].days + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
-			if (dirty & /*selected*/ 8 && t6_value !== (t6_value = /*daysName*/ ctx[9](/*selected*/ ctx[3].days) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t6, t6_value);
-			if (dirty & /*data*/ 1 && t9_value !== (t9_value = /*data*/ ctx[0].zone + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
-			if (dirty & /*data*/ 1 && t13_value !== (t13_value = /*data*/ ctx[0].str + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t13, t13_value);
-
-			if (dirty & /*data*/ 1) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div2, "width", /*data*/ ctx[0].str + "%");
-			}
-
-			if (dirty & /*data*/ 1 && t17_value !== (t17_value = (/*data*/ ctx[0].str >= 100
-			? "максимум"
-			: `за этот час ещё +${/*data*/ ctx[0].strLeft}`) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t17, t17_value);
-
-			if (dirty & /*data*/ 1 && t20_value !== (t20_value = /*data*/ ctx[0].sta + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t20, t20_value);
-
-			if (dirty & /*data*/ 1) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div7, "width", /*data*/ ctx[0].sta + "%");
-			}
-
-			if (dirty & /*data*/ 1 && t24_value !== (t24_value = (/*data*/ ctx[0].sta >= 100
-			? "максимум"
-			: `за этот час ещё +${/*data*/ ctx[0].staLeft}`) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t24, t24_value);
-
-			if (dirty & /*selected*/ 8 && t29_value !== (t29_value = /*fmt*/ ctx[10](/*selected*/ ctx[3].price) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t29, t29_value);
-			if (dirty & /*selected*/ 8 && t32_value !== (t32_value = /*fmt*/ ctx[10](/*selected*/ ctx[3].perDay) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t32, t32_value);
-			if (dirty & /*money*/ 16 && t38_value !== (t38_value = /*fmt*/ ctx[10](/*money*/ ctx[4]) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t38, t38_value);
-
-			if (dirty & /*notEnough*/ 128) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div17, "pay--bad", /*notEnough*/ ctx[7]);
-			}
-
-			if (dirty & /*data*/ 1 && t40_value !== (t40_value = (/*data*/ ctx[0].member
-			? "срок прибавится к текущему"
-			: "начнёт действовать сразу") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t40, t40_value);
-
-			if (dirty & /*data*/ 1 && t44_value !== (t44_value = (/*data*/ ctx[0].member ? "Продлить" : "Купить") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t44, t44_value);
-
-			if (dirty & /*notEnough*/ 128) {
-				button2.disabled = /*notEnough*/ ctx[7];
-			}
-
-			if (dirty & /*notEnough*/ 128) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(button2, "btn--disabled", /*notEnough*/ ctx[7]);
-			}
-
-			if (dirty & /*message, notEnough*/ 160 && t46_value !== (t46_value = (/*message*/ ctx[5] || (/*notEnough*/ ctx[7]
-			? "Не хватает наличных"
-			: "Без тренировок форма понемногу уходит")) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t46, t46_value);
-
-			if (dirty & /*message, ok, notEnough*/ 224) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div23, "warn", /*message*/ ctx[5]
-				? !/*ok*/ ctx[6]
-				: /*notEnough*/ ctx[7]);
-			}
-		},
-		i(local) {
-			if (!section_intro) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					section_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(section, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 160 });
-					section_intro.start();
-				});
-			}
-		},
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(section);
-			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
-		}
-	};
-}
-
-function create_fragment(ctx) {
-	let div7;
-	let div6;
-	let section;
-	let header;
-	let div1;
-	let div0;
-	let t0_value = /*data*/ ctx[0].zone + "";
-	let t0;
-	let t1;
-	let t2;
-	let h1;
-	let t4;
-	let div4;
-	let div2;
-	let span0;
-	let t6;
-	let span1;
-	let t7_value = /*data*/ ctx[0].str + "";
-	let t7;
-	let t8;
-	let div3;
-	let span2;
-	let t10;
-	let span3;
-
-	let t11_value = (/*data*/ ctx[0].member
-	? `до ${/*data*/ ctx[0].member}`
-	: "Нет") + "";
-
-	let t11;
-	let t12;
-	let div5;
-	let each_blocks = [];
-	let each_1_lookup = new Map();
-	let t13;
-	let footer;
-	let t22;
-	let div6_intro;
-	let div7_intro;
-	let mounted;
-	let dispose;
-	let each_value = /*plans*/ ctx[2];
-	const get_key = ctx => /*plan*/ ctx[20].index;
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		let child_ctx = get_each_context(ctx, each_value, i);
-		let key = get_key(child_ctx);
-		each_1_lookup.set(key, each_blocks[i] = create_each_block(key, child_ctx));
-	}
-
-	let if_block = /*selected*/ ctx[3] && create_if_block(ctx);
-
-	return {
-		c() {
-			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			section = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("section");
-			header = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("header");
-			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
-			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(" · тренер");
-			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			h1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("h1");
-			h1.textContent = "Абонемент";
-			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span0.textContent = "Сила";
-			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
-			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			span2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span2.textContent = "Абонемент";
-			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t11 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t11_value);
-			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			footer = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("footer");
-
-			footer.innerHTML = `<span class="svelte-nl060m"><b class="svelte-nl060m">←→</b> выбор</span> 
-                <span class="svelte-nl060m"><b class="svelte-nl060m">Enter</b> купить</span> 
-                <span class="svelte-nl060m"><b class="svelte-nl060m">Esc</b> закрыть</span>`;
-
-			t22 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			if (if_block) if_block.c();
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "jobcenter__eyebrow svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(h1, "class", "jobcenter__title svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span0, "class", "jobcenter__me-label svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "jobcenter__me-value svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "jobcenter__me-lvl svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span2, "class", "jobcenter__me-label svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span3, "class", "jobcenter__me-value small svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "jobcenter__me-job svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "jobcenter__me svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(header, "class", "jobcenter__head svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "jobcenter__grid svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(footer, "class", "jobcenter__hint svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(section, "class", "jobcenter__board svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "jobcenter__panel svelte-nl060m");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "jobcenter svelte-nl060m");
-		},
-		m(target, anchor) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div7, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, div6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, section);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, header);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(header, div1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, div0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div0, t1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, h1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(header, t4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(header, div4);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, span1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span2);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t10);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, span3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span3, t11);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, t12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, div5);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div5, null);
-				}
-			}
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, t13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(section, footer);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t22);
-			if (if_block) if_block.m(div6, null);
-
-			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keydown", /*onKeyDown*/ ctx[13]);
-				mounted = true;
-			}
-		},
-		p(ctx, [dirty]) {
-			if (dirty & /*data*/ 1 && t0_value !== (t0_value = /*data*/ ctx[0].zone + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
-			if (dirty & /*data*/ 1 && t7_value !== (t7_value = /*data*/ ctx[0].str + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
-
-			if (dirty & /*data*/ 1 && t11_value !== (t11_value = (/*data*/ ctx[0].member
-			? `до ${/*data*/ ctx[0].member}`
-			: "Нет") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t11, t11_value);
-
-			if (dirty & /*plans, selectedIndex, fmt, daysName, bestIndex, dumbbell*/ 18182) {
-				each_value = /*plans*/ ctx[2];
-				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div5, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block, null, get_each_context);
-			}
-
-			if (/*selected*/ ctx[3]) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-
-					if (dirty & /*selected*/ 8) {
-						(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
-					}
-				} else {
-					if_block = create_if_block(ctx);
-					if_block.c();
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block, 1);
-					if_block.m(div6, null);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
-		},
-		i(local) {
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.transition_in)(if_block);
-
-			if (!div6_intro) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div6_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div6, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fly, { y: 24, duration: 260 });
-					div6_intro.start();
-				});
-			}
-
-			if (!div7_intro) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.add_render_callback)(() => {
-					div7_intro = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.create_in_transition)(div7, svelte_transition__WEBPACK_IMPORTED_MODULE_3__.fade, { duration: 180 });
-					div7_intro.start();
-				});
-			}
-		},
-		o: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,
-		d(detaching) {
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div7);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].d();
-			}
-
-			if (if_block) if_block.d();
-			mounted = false;
-			dispose();
-		}
-	};
-}
-
-function instance($$self, $$props, $$invalidate) {
-	let plans;
-	let bestIndex;
-	let selected;
-	let money;
-	let notEnough;
-	let $charMoney;
-	(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.component_subscribe)($$self, store_chars__WEBPACK_IMPORTED_MODULE_2__.charMoney, $$value => $$invalidate(16, $charMoney = $$value));
-	let { viewData } = $$props;
-
-	const parse = d => {
-		try {
-			return typeof d === "string" ? JSON.parse(d) : d || {};
-		} catch(e) {
-			return {};
-		}
-	};
-
-	let data = {
-		zone: "Muscle Beach",
-		member: "",
-		plans: [],
-		str: 30,
-		sta: 30,
-		strLeft: 0,
-		staLeft: 0,
-		hourLimit: 2,
-		money: 0,
-		...parse(viewData)
-	};
-
-	let selectedIndex = data.plans.length > 1 ? 1 : 0;
-	let message = "";
-	let ok = true;
-
-	const daysName = n => n % 10 === 1 && n % 100 !== 11
-	? "день"
-	: n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)
-		? "дня"
-		: "дней";
-
-	const fmt = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-
-	const buy = () => {
-		if (!selected || notEnough) return;
-		(0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.gym.trainer.buy", selected.index);
-	};
-
-	const close = () => (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)("client.gym.trainer.close");
-
-	const onUpdate = (json, text, success) => {
-		$$invalidate(0, data = { ...data, ...parse(json) });
-		$$invalidate(5, message = text || "");
-		$$invalidate(6, ok = !!success);
-	};
-
-	window.events.addEvent("cef.gym.trainer.update", onUpdate);
-	(0,svelte__WEBPACK_IMPORTED_MODULE_4__.onDestroy)(() => window.events.removeEvent("cef.gym.trainer.update"));
-
-	const onKeyDown = event => {
-		if (event.key === "Escape") return close();
-		if (event.key === "ArrowLeft" || event.key === "ArrowUp") $$invalidate(1, selectedIndex = (selectedIndex + plans.length - 1) % plans.length);
-		if (event.key === "ArrowRight" || event.key === "ArrowDown") $$invalidate(1, selectedIndex = (selectedIndex + 1) % plans.length);
-		if (event.key === "Enter") buy();
-	};
-
-	// Иконка гантели (встроенный SVG)
-	const dumbbell = `<svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"><path d="M30 60h60"/><rect x="14" y="38" width="14" height="44" rx="4"/><rect x="92" y="38" width="14" height="44" rx="4"/><path d="M8 48v24M112 48v24"/></svg>`;
-
-	const click_handler = plan => $$invalidate(1, selectedIndex = plan.index);
-
-	$$self.$$set = $$props => {
-		if ('viewData' in $$props) $$invalidate(15, viewData = $$props.viewData);
-	};
-
-	$$self.$$.update = () => {
-		if ($$self.$$.dirty & /*data*/ 1) {
-			$: $$invalidate(2, plans = (data.plans || []).map((p, i) => ({
-				...p,
-				index: i,
-				perDay: Math.round(p.price / Math.max(1, p.days))
-			})));
-		}
-
-		if ($$self.$$.dirty & /*plans*/ 4) {
-			$: $$invalidate(8, bestIndex = plans.length
-			? plans.reduce((b, p) => p.perDay < plans[b].perDay ? p.index : b, 0)
-			: -1);
-		}
-
-		if ($$self.$$.dirty & /*plans, selectedIndex*/ 6) {
-			$: $$invalidate(3, selected = plans[selectedIndex] || plans[0]);
-		}
-
-		if ($$self.$$.dirty & /*$charMoney, data*/ 65537) {
-			$: $$invalidate(4, money = $charMoney || data.money);
-		}
-
-		if ($$self.$$.dirty & /*selected, money*/ 24) {
-			$: $$invalidate(7, notEnough = selected && selected.price > money);
-		}
-	};
-
-	return [
-		data,
-		selectedIndex,
-		plans,
-		selected,
-		money,
-		message,
-		ok,
-		notEnough,
-		bestIndex,
-		daysName,
-		fmt,
-		buy,
-		close,
-		onKeyDown,
-		dumbbell,
-		viewData,
-		$charMoney,
-		click_handler
-	];
-}
-
-class Gymtrainer extends svelte_internal__WEBPACK_IMPORTED_MODULE_0__.SvelteComponent {
-	constructor(options) {
-		super();
-		(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.init)(this, options, instance, create_fragment, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.safe_not_equal, { viewData: 15 }, add_css);
-	}
-}
-
-
-if (false) {}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Gymtrainer);
 
 
 /***/ }),
@@ -196321,7 +195119,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (82:0) {#if visible}
+// (78:0) {#if visible}
 function create_if_block(ctx) {
 	let if_block_anchor;
 
@@ -196362,7 +195160,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (88:4) {:else}
+// (84:4) {:else}
 function create_else_block(ctx) {
 	let div;
 	let each_value = /*visible*/ ctx[0];
@@ -196422,7 +195220,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (83:4) {#if typeof visible == "string"}
+// (79:4) {#if typeof visible == "string"}
 function create_if_block_1(ctx) {
 	let div2;
 	let div0;
@@ -196462,7 +195260,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (90:12) {#each visible as item}
+// (86:12) {#each visible as item}
 function create_each_block(ctx) {
 	let div2;
 	let div0;
@@ -196597,13 +195395,9 @@ function instance($$self, $$props, $$invalidate) {
 		exitMetro: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Для выхода'),
 		Seating: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Чтобы сесть'),
 		SeatingUp: (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('player2', 'Встать'),
-		Gym: 'Позаниматься',
-		GymStop: 'Закончить',
-		GymSwitch: '← → другое упражнение · E — закончить',
 		ArmyDutyBoard: 'Доска нарядов',
 		ArmyDutyPoint: 'Наряд: работать',
 		ArmyFuel: 'Армейская заправка',
-		GymTrainer: 'Абонемент в спортзал',
 		PortForeman: 'Прораб порта: смена',
 		PortPickup: 'Взять ящик',
 		PortDrop: 'Положить ящик в контейнер',
@@ -326597,8 +325391,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _work_npc_truckers_json__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./work/npc_truckers.json */ "./src/json/quests/work/npc_truckers.json");
 /* harmony import */ var _npc_org_json__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./npc_org.json */ "./src/json/quests/npc_org.json");
 /* harmony import */ var _npc_birthday_json__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./npc_birthday.json */ "./src/json/quests/npc_birthday.json");
-/* harmony import */ var _work_npc_gym_json__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./work/npc_gym.json */ "./src/json/quests/work/npc_gym.json");
-
 
 
 
@@ -326697,7 +325489,6 @@ const list = {
     npc_truckers: _work_npc_truckers_json__WEBPACK_IMPORTED_MODULE_34__,
     npc_org: _npc_org_json__WEBPACK_IMPORTED_MODULE_35__,
     npc_birthday: _npc_birthday_json__WEBPACK_IMPORTED_MODULE_36__,
-    npc_gym: _work_npc_gym_json__WEBPACK_IMPORTED_MODULE_37__,
 }
 
 const actorData = {
@@ -326813,9 +325604,6 @@ const actorData = {
     npc_birthday: {
         name: "Праздничная обезьянка"
     },
-    npc_gym: {
-        name: "Тренер"
-    },
 }
 
 const getQuests = () => {
@@ -326903,17 +325691,6 @@ module.exports = JSON.parse("{\"0\":{\"buttons\":[{\"name\":\"Устроитьс
 
 "use strict";
 module.exports = JSON.parse("{\"0\":{\"buttons\":[{\"name\":\"Устроиться на работу.\",\"type\":\"perform\"},{\"name\":\"Арендовать фургон.\",\"type\":\"action\"},{\"name\":\"Неинтересно.\"}],\"text\":\"Здравствуйте! Почте нужны курьеры: развозить посылки по домам. Чем дальше адрес, тем выше оплата. Нужны права категории B.\"}}");
-
-/***/ }),
-
-/***/ "./src/json/quests/work/npc_gym.json":
-/*!*******************************************!*\
-  !*** ./src/json/quests/work/npc_gym.json ***!
-  \*******************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse("{\"0\":{\"buttons\":[{\"name\":\"Купить абонемент — {price}.\",\"type\":\"perform\"},{\"name\":\"Как мои показатели?\",\"questId\":1},{\"name\":\"Неинтересно.\"}],\"text\":\"Привет! Это {zone} — тренажёры здесь по абонементу: {price} на {days} дн. {member} В остальных местах качаться можно бесплатно.\"},\"1\":{\"buttons\":[{\"name\":\"Купить абонемент — {price}.\",\"type\":\"perform\"},{\"name\":\"Спасибо, понял.\"}],\"text\":\"Сила: {str} из 100, выносливость: {sta} из 100. За этот час ещё можно прибавить: сила +{strLeft}, выносливость +{staLeft}. Чем выше выносливость — тем дольше бежишь, чем выше сила — тем крепче удар. Без тренировок форма понемногу уходит.\"}}");
 
 /***/ }),
 

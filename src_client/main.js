@@ -230,9 +230,6 @@ global.binderFunctions.interactionPressed = () => {// E key
 		if (global.ANTIANIM) return; 
 		mp.events.call('client.update.npc_dfday_mission');
 		return;
-	} else if (global.gymBusy || global.gymNear) {
-		if (global.localplayer.vehicle) return;
-		mp.events.call('client.gym.toggle');
 	} else if (global.isSeat) {
 		if (global.localplayer.vehicle) return; 
 		mp.events.call('client.seat');

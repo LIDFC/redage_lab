@@ -224,7 +224,7 @@ namespace NeptuneEvo.Functions
         ArmyDutyBoard,
         ArmyDutyPoint,
         ArmyFuel,
-        GymTrainer,
+        GymTrainer, // не используется (качалка удалена) — оставлен, чтобы не сдвигать значения
         PortForeman,
         PortPickup,
         PortDrop,

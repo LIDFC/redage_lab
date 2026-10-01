@@ -44,7 +44,6 @@ import npc_taxi from './work/npc_taxi.json';
 import npc_truckers from './work/npc_truckers.json';
 import npc_org from './npc_org.json';
 import npc_birthday from './npc_birthday.json';
-import npc_gym from './work/npc_gym.json';
 
 /* type
     quest - Обычный квест который только в меню
@@ -97,7 +96,6 @@ const list = {
     npc_truckers: npc_truckers,
     npc_org: npc_org,
     npc_birthday: npc_birthday,
-    npc_gym: npc_gym,
 }
 
 const actorData = {
@@ -212,9 +210,6 @@ const actorData = {
     },
     npc_birthday: {
         name: "Праздничная обезьянка"
-    },
-    npc_gym: {
-        name: "Тренер"
     },
 }
 

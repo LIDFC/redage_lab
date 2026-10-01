@@ -364,7 +364,6 @@ require('./player/lift.js');
 require('./player/menus.js');
 require('./player/petshop.js');
 require('./player/render.js');
-require('./player/stamina.js');
 require('./player/report.js');
 require('./player/screen.js');
 require('./player/simplemenu.js');
@@ -444,7 +443,6 @@ require('./shop/custom/index.js');
 require('./synchronization/state.js');
 require('./synchronization/particleFx.js');
 require('./synchronization/sit.js');
-require('./world/gym.js');
 require('./jobs/daylabor.js');
 
 require('./shop/newshop/index.js');

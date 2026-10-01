@@ -347,8 +347,6 @@ namespace NeptuneEvo.Jobs.DayLabor
                 player.SetSharedData("AnimToKey", 0);
                 Trigger.ClientEvent(player, "client.daylabor.carry", false);
                 Pay(player, shift, Cfg.PortPayPerBox, "dayLaborPort");
-                if (shift.Done % 5 == 0)
-                    World.Gym.Fitness.Gain(player, "strength");
                 SetTarget(player, shift, Cfg.PortPickups);
             }
             catch (Exception e)

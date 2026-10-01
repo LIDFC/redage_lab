@@ -1189,7 +1189,10 @@ namespace NeptuneEvo.Chars
                 
                 
                 var torsosData = ClothesComponentData[gender][ClothesComponent.Torsos];
-                if (playerTorsos.ItemId == ItemId.Debug || playerTorsosData["Variation"] == -1 || !torsosData.ContainsKey(playerTorsosData["Variation"]) || !torsosData[playerTorsosData["Variation"]].Torsos.ContainsKey(torsosVariation))
+                // Торс, выбранный в гардеробе фракции (Fractions/Wardrobe), — поверх расчёта по верху
+                if (Fractions.Wardrobe.Wardrobe.TryGetTorso(player, out var wardrobeTorso, out var wardrobeTorsoTexture))
+                    SetClothes(player, 3, wardrobeTorso, wardrobeTorsoTexture);
+                else if (playerTorsos.ItemId == ItemId.Debug || playerTorsosData["Variation"] == -1 || !torsosData.ContainsKey(playerTorsosData["Variation"]) || !torsosData[playerTorsosData["Variation"]].Torsos.ContainsKey(torsosVariation))
                     SetClothes(player, 3, torsosVariation, 0);
                 else
                     SetClothes(player, 3, torsosData[playerTorsosData["Variation"]].Torsos[torsosVariation], playerTorsosData["Texture"]);

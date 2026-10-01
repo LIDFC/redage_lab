@@ -404,6 +404,7 @@ require('./fractions/advert.js')
 require('./fractions/policecomputer.js')
 require('./fractions/stock.js');
 require('./fractions/army.js');
+require('./fractions/wardrobe.js');
 require('./fractions/policepc.js');
 require('./fractions/mats.js');
 require('./fractions/menu.js');

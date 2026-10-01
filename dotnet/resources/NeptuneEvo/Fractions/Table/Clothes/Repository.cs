@@ -150,7 +150,7 @@ namespace NeptuneEvo.Fractions.Table.Clothes
                             realClothes.Add(name);
                         }
                         
-                        Trigger.ClientEvent(player, "client.shop.open", "clothes", characterData.Gender, JsonConvert.SerializeObject(realClothes), JsonConvert.SerializeObject(dataJson), 2);
+                        Trigger.ClientEvent(player, "client.shop.open", "clothes", gender, JsonConvert.SerializeObject(realClothes), JsonConvert.SerializeObject(dataJson), 2);
                         return;
                     }
                 }

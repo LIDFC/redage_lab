@@ -404,6 +404,7 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Доска нарядов → вкладка «Объявления»: `ArmyRP/ArmyBoard.cs`, таблица `army_announcements`; пишут офицеры, удаляют автор или ранг 9+, рация всем военным.
 - Старый аукцион телефона скрыт (закомментирован пункт в `phonenew/components/mainmenu.svelte`).
 - Образы фракции в гардеробе: таблица `fraction_presets` (Wardrobe.cs `Presets`), сохранить/удалить — ранг 9+, примерить — все; события `server.wardrobe.presetSave/presetDelete`, обновление `client.wardrobe.presets`.
+- Каталог одежды в гардеробе (AdminLVL 9, у раздевалки своей фракции): `server.wardrobe.catalog(key, page, search)` — страница 60 вещей из `ClothesComponentData`; `catalogToggle` — добавить/убрать вещь в форму фракции; таблица `fraction_clothes_extra` дописывается в `FractionAvailableSets` при старте (`Wardrobe.AddExtra`). Убрать можно только добавленные из каталога.
 - Маркетплейс: «Создать лот» показывает вещи из инвентаря (`Players.GetMarketPlaceInventory`, `source:"inv"`, ключ лота `inv:id^data`) и со склада; запрещённые — `InventoryBlocked`. Покупка: цена × количество, количество в пределах лота. Проверка и списание предметов — по одним данным (раньше расходились).
 - Биндер мыши: только опрос `mp.keys.isDown` (bind.js `runMouseBinds`).
 - Армия — `Fractions/ArmyRP/*`, настройки `settings/army.json`, точки ставятся в игре `/armyset` (6 lvl): parade, post add/del, zone clear/add, barrier add/del, range, course clear/add, info, reload.

@@ -204,6 +204,39 @@ gm.events.add("client.wardrobe.presets", (json) => {
     mp.gui.emmit(`window.events.callEvent("cef.wardrobe.presets", ${JSON.stringify(json)})`);
 });
 
+// Каталог всей одежды (только админ 9): страницы по 60 вещей запрашиваются по одной
+gm.events.add("client.wardrobe.catalog", (key, page, search) => {
+    if (!isOpen || !global.antiFlood("wardrobe.catalog", 250)) return;
+    mp.events.callRemote("server.wardrobe.catalog", String(key), Number(page) || 0, String(search || ""));
+});
+
+gm.events.add("client.wardrobe.catalogPage", (json) => {
+    if (!isOpen) return;
+    try {
+        const data = JSON.parse(json);
+        data.items = (data.items || []).map((a) => {
+            const item = unpackItem(a);
+            item.inForm = !!a[6];
+            item.extra = !!a[7];
+            item.title = itemName(item);
+            return item;
+        });
+        mp.gui.emmit(`window.events.callEvent("cef.wardrobe.catalogPage", ${JSON.stringify(JSON.stringify(data))})`);
+    } catch (e) {
+        fail("client.wardrobe.catalogPage", e);
+    }
+});
+
+gm.events.add("client.wardrobe.catalogToggle", (key, id, add) => {
+    if (!isOpen || !global.antiFlood("wardrobe.catalogToggle", 600)) return;
+    mp.events.callRemote("server.wardrobe.catalogToggle", String(key), Number(id), !!add);
+});
+
+gm.events.add("client.wardrobe.catalogChanged", (key, id, add) => {
+    if (!isOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.wardrobe.catalogChanged", ${JSON.stringify(String(key))}, ${Number(id)}, ${!!add})`);
+});
+
 gm.events.add("client.wardrobe.exit", () => close(false));
 
 // Сервер надел/снял форму — окно закрываем без отката

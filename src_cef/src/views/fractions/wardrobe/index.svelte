@@ -107,6 +107,49 @@
     ];
 
     const payload = () => JSON.stringify({ items: outfit.items, torso: outfit.torso });
+
+    // ---- Образы фракции: примерить может любой, сохранить/удалить — с 9 ранга (сервер перепроверяет)
+    let presets = data.presets || [];
+    let presetName = "";
+    const wearPreset = (preset) => {
+        const src = (preset && preset.outfit) || {};
+        const items = src.items || {};
+        tabs.filter((t) => t.key !== "Torso").forEach((cat) => {
+            const value = items[cat.key];
+            const item = value && cat.items.find((i) => i.id === value[0]);
+            if (item) {
+                outfit.items[cat.key] = [value[0], value[1] || 0];
+            } else if (outfit.items[cat.key]) {
+                delete outfit.items[cat.key];
+                executeClient("client.wardrobe.clear", cat.slot, cat.isProp);
+            }
+        });
+        outfit.torso = src.torso ? [...src.torso] : null;
+        if (!outfit.torso) executeClient("client.wardrobe.clear", 3, false);
+        outfit = outfit;
+        // Предпросмотр всех частей; торс — последним, чтобы верх его не перебил
+        tabs.filter((t) => t.key !== "Torso" && outfit.items[t.key]).forEach((cat) => {
+            const value = outfit.items[cat.key];
+            const item = cat.items.find((i) => i.id === value[0]);
+            if (item) preview(cat, item, value[1]);
+        });
+        if (outfit.torso) executeClient("client.wardrobe.previewTorso", outfit.torso[0], outfit.torso[1]);
+        message = `Образ «${preset.name}» примерен. «${data.onDuty ? "Переодеться" : "Заступить на смену"}» — надеть`;
+        ok = true;
+    };
+    const savePreset = () => {
+        if (presetName.trim().length < 2) {
+            message = "Введите название образа (от 2 символов)";
+            ok = false;
+            return;
+        }
+        executeClient("client.wardrobe.presetSave", presetName.trim(), payload());
+    };
+    const deletePreset = (preset) => executeClient("client.wardrobe.presetDelete", preset.id);
+    window.events.addEvent("cef.wardrobe.presets", (json) => {
+        presets = parse(json) || [];
+        if (!Array.isArray(presets)) presets = [];
+    });
     const duty = () => executeClient("client.wardrobe.save", payload(), true);
     const save = () => executeClient("client.wardrobe.save", payload(), false);
     const takeoff = () => executeClient("client.wardrobe.takeoff");
@@ -119,6 +162,7 @@
     window.events.addEvent("cef.wardrobe.result", onResult);
     onDestroy(() => {
         window.events.removeEvent("cef.wardrobe.result");
+        window.events.removeEvent("cef.wardrobe.presets");
         executeClient("client.camera.toggled", false);
     });
 
@@ -186,6 +230,35 @@
     </div>
 
     <div class="wr__right" in:fly={{ x: 40, duration: 220 }}>
+        {#if presets.length || data.canPreset}
+            <div class="wr__card wr__presets">
+                <div class="wr__card_title">Образы фракции</div>
+                {#if !presets.length}
+                    <div class="wr__empty">Пока нет — соберите форму и сохраните её для всех сотрудников</div>
+                {:else}
+                    <div class="wr__chosen">
+                        {#each presets as preset (preset.id)}
+                            <div class="wr__chosen_row">
+                                <div class="wr__chosen_info" on:click={() => wearPreset(preset)}>
+                                    <b>{preset.name}</b>
+                                    <span>{preset.author ? `сохранил ${preset.author}` : ""}</span>
+                                </div>
+                                <div class="wr__try" on:click={() => wearPreset(preset)}>Примерить</div>
+                                {#if data.canPreset}
+                                    <div class="wr__remove" title="Удалить образ фракции" on:click={() => deletePreset(preset)}>✕</div>
+                                {/if}
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
+                {#if data.canPreset}
+                    <div class="wr__preset_save">
+                        <input class="wr__search" maxlength="40" placeholder="Название (например: Полевая форма)" bind:value={presetName} on:keyup|stopPropagation />
+                        <div class="wr__btn small" on:click={savePreset}>Сохранить текущий для фракции</div>
+                    </div>
+                {/if}
+            </div>
+        {/if}
         <div class="wr__card">
             <div class="wr__card_title">Мой образ</div>
             {#if !chosen.length}
@@ -516,6 +589,37 @@
     }
     .wr__remove:hover {
         background: rgba(239, 68, 68, 0.4);
+    }
+    .wr__presets {
+        max-height: 34vh;
+    }
+    .wr__try {
+        padding: 0 1vh;
+        height: 2.8vh;
+        line-height: 2.8vh;
+        border-radius: 0.8vh;
+        font-size: 1.2vh;
+        font-weight: 600;
+        background: rgba(var(--accent-rgb), 0.25);
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .wr__try:hover {
+        background: rgba(var(--accent-rgb), 0.45);
+    }
+    .wr__preset_save {
+        margin-top: 1.2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6vh;
+    }
+    .wr__preset_save .wr__search {
+        margin-bottom: 0;
+    }
+    .wr__btn.small {
+        padding: 0.9vh;
+        font-size: 1.3vh;
+        background: rgba(var(--accent-rgb), 0.35);
     }
     .wr__empty {
         font-size: 1.35vh;

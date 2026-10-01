@@ -188,6 +188,22 @@ gm.events.add("client.wardrobe.takeoff", () => {
     mp.events.callRemote("server.wardrobe.takeoff");
 });
 
+// Образы фракции (ранг 9+ сохраняет и удаляет, примеряют все)
+gm.events.add("client.wardrobe.presetSave", (name, json) => {
+    if (!isOpen || !global.antiFlood("wardrobe.preset", 1000)) return;
+    mp.events.callRemote("server.wardrobe.presetSave", String(name || ""), json);
+});
+
+gm.events.add("client.wardrobe.presetDelete", (id) => {
+    if (!isOpen || !global.antiFlood("wardrobe.preset", 800)) return;
+    mp.events.callRemote("server.wardrobe.presetDelete", String(id));
+});
+
+gm.events.add("client.wardrobe.presets", (json) => {
+    if (!isOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.wardrobe.presets", ${JSON.stringify(json)})`);
+});
+
 gm.events.add("client.wardrobe.exit", () => close(false));
 
 // Сервер надел/снял форму — окно закрываем без отката

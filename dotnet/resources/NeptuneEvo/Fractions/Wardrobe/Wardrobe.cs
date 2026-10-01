@@ -19,6 +19,8 @@ namespace NeptuneEvo.Fractions.Wardrobe
     /// <summary>
     /// Гардероб фракций: сотрудник сам собирает форму из разрешённых вещей своей фракции (FractionClothingSetsData)
     /// и выбирает торс (компонент 3 — отображение рук/тела). Образ хранится за игроком (fraction_outfits).
+    /// Образы фракции (fraction_presets): с 9 ранга сохраняются готовые комплекты для всех членов фракции,
+    /// любой сотрудник примеряет их в окне и надевает как свой образ.
     /// Окно — CEF FractionWardrobe (src_cef/src/views/fractions/wardrobe), клиент — src_client/fractions/wardrobe.js.
     /// Надевается теми же «спец-вещами», что и старые наборы (SetSpecialClothes/SetSpecialAccessories), инвентарь не трогается.
     /// </summary>
@@ -62,6 +64,22 @@ namespace NeptuneEvo.Fractions.Wardrobe
         private static readonly Dictionary<ExtPlayer, (int drawable, int texture)> TorsoOverride = new Dictionary<ExtPlayer, (int, int)>();
         private static bool _ready;
 
+        /// <summary>Образ фракции — общий комплект, сохранённый рангом 9+.</summary>
+        private class Preset
+        {
+            public long Id;
+            public int Fraction;
+            public bool Gender;
+            public string Name;
+            public string Author;
+            public Outfit Outfit;
+        }
+
+        private const int PresetRank = 9;
+        private const int PresetMax = 30;
+        private static readonly List<Preset> Presets = new List<Preset>();
+        private static bool _presetsReady;
+
         [ServerEvent(Event.ResourceStart)]
         public void OnResourceStart()
         {
@@ -76,6 +94,45 @@ namespace NeptuneEvo.Fractions.Wardrobe
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
                 MySQL.Query(create);
                 _ready = true;
+
+                using var createPresets = new MySqlCommand(@"CREATE TABLE IF NOT EXISTS `fraction_presets` (
+                    `id` BIGINT NOT NULL,
+                    `fraction` INT NOT NULL,
+                    `gender` TINYINT(1) NOT NULL,
+                    `name` VARCHAR(40) NOT NULL,
+                    `author` VARCHAR(64) NOT NULL DEFAULT '',
+                    `outfit` TEXT NOT NULL,
+                    PRIMARY KEY (`id`),
+                    KEY `fraction` (`fraction`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+                MySQL.Query(createPresets);
+                NeptuneEvo.Database.DbQueue.ReadThen("SELECT * FROM `fraction_presets` ORDER BY `id`", table =>
+                {
+                    if (table != null)
+                        foreach (System.Data.DataRow row in table.Rows)
+                        {
+                            try
+                            {
+                                var outfit = JsonConvert.DeserializeObject<Outfit>(row["outfit"].ToString());
+                                if (outfit == null)
+                                    continue;
+                                Presets.Add(new Preset
+                                {
+                                    Id = Convert.ToInt64(row["id"]),
+                                    Fraction = Convert.ToInt32(row["fraction"]),
+                                    Gender = Convert.ToInt32(row["gender"]) == 1,
+                                    Name = row["name"].ToString(),
+                                    Author = row["author"].ToString(),
+                                    Outfit = outfit,
+                                });
+                            }
+                            catch (Exception e)
+                            {
+                                Log.Write($"Presets row Exception: {e.Message}");
+                            }
+                        }
+                    _presetsReady = true;
+                });
             }
             catch (Exception e)
             {
@@ -223,6 +280,8 @@ namespace NeptuneEvo.Fractions.Wardrobe
                     onDuty = sessionData.WorkData.OnDuty,
                     categories,
                     outfit,
+                    presets = PresetsFor(memberFractionData.Id, gender),
+                    canPreset = memberFractionData.Rank >= PresetRank,
                 });
                 // Частями по 16 КБ — большие события клиент может не принять
                 const int chunk = 16000;
@@ -388,6 +447,114 @@ namespace NeptuneEvo.Fractions.Wardrobe
             catch (Exception e)
             {
                 Log.Write($"OnTakeoff Exception: {e}");
+            }
+        }
+
+        // ------------------------------------------------------------------ образы фракции (ранг 9+)
+
+        private static List<object> PresetsFor(int fraction, bool gender) =>
+            Presets.Where(p => p.Fraction == fraction && p.Gender == gender)
+                .Select(p => (object) new { id = p.Id.ToString(), name = p.Name, author = p.Author.Replace('_', ' '), outfit = p.Outfit })
+                .ToList();
+
+        private static void SendPresets(int fraction, bool gender)
+        {
+            var json = JsonConvert.SerializeObject(PresetsFor(fraction, gender));
+            foreach (var p in Character.Repository.GetPlayers())
+            {
+                var member = p.GetFractionMemberData();
+                var character = p.GetCharacterData();
+                if (member != null && character != null && member.Id == fraction && character.Gender == gender)
+                    Trigger.ClientEvent(p, "client.wardrobe.presets", json);
+            }
+        }
+
+        [RemoteEvent("server.wardrobe.presetSave")]
+        public static void OnPresetSave(ExtPlayer player, string name, string json)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                var memberFractionData = player.GetFractionMemberData();
+                if (characterData == null || memberFractionData == null)
+                    return;
+                if (memberFractionData.Rank < PresetRank)
+                {
+                    Reply(player, $"Образы фракции сохраняются с {PresetRank} ранга", false);
+                    return;
+                }
+                if (!_presetsReady)
+                {
+                    Reply(player, "Образы ещё загружаются — повторите через секунду", false);
+                    return;
+                }
+                if (!NearCloakroom(player, memberFractionData.Id))
+                {
+                    Reply(player, "Вы отошли от раздевалки", false);
+                    return;
+                }
+                name = new string((name ?? "").Where(c => !char.IsControl(c)).ToArray()).Trim();
+                if (name.Length < 2 || name.Length > 40)
+                {
+                    Reply(player, "Название образа — от 2 до 40 символов", false);
+                    return;
+                }
+                var outfit = Validate(json, memberFractionData.Id, characterData.Gender, out var error);
+                if (outfit == null || error != null)
+                {
+                    Reply(player, error ?? "Ошибка данных образа", false);
+                    return;
+                }
+                var gender = characterData.Gender;
+                var same = Presets.FirstOrDefault(p => p.Fraction == memberFractionData.Id && p.Gender == gender && string.Equals(p.Name, name, StringComparison.OrdinalIgnoreCase));
+                if (same == null && Presets.Count(p => p.Fraction == memberFractionData.Id && p.Gender == gender) >= PresetMax)
+                {
+                    Reply(player, $"Не больше {PresetMax} образов — удалите ненужный", false);
+                    return;
+                }
+                var preset = same ?? new Preset { Id = DateTime.UtcNow.Ticks, Fraction = memberFractionData.Id, Gender = gender };
+                preset.Name = name;
+                preset.Author = player.Name;
+                preset.Outfit = outfit;
+                if (same == null)
+                    Presets.Add(preset);
+                NeptuneEvo.Database.DbQueue.Enqueue(
+                    @"INSERT INTO `fraction_presets` (`id`,`fraction`,`gender`,`name`,`author`,`outfit`) VALUES (@i,@f,@g,@n,@a,@o)
+                      ON DUPLICATE KEY UPDATE `name`=VALUES(`name`),`author`=VALUES(`author`),`outfit`=VALUES(`outfit`)",
+                    ("@i", preset.Id), ("@f", preset.Fraction), ("@g", gender ? 1 : 0), ("@n", name), ("@a", preset.Author), ("@o", JsonConvert.SerializeObject(outfit)));
+                Reply(player, same == null ? $"Образ фракции «{name}» сохранён — его видят все сотрудники" : $"Образ фракции «{name}» обновлён", true);
+                SendPresets(memberFractionData.Id, gender);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnPresetSave Exception: {e}");
+            }
+        }
+
+        [RemoteEvent("server.wardrobe.presetDelete")]
+        public static void OnPresetDelete(ExtPlayer player, string idText)
+        {
+            try
+            {
+                var memberFractionData = player.GetFractionMemberData();
+                if (memberFractionData == null || !long.TryParse(idText, out var id))
+                    return;
+                if (memberFractionData.Rank < PresetRank)
+                {
+                    Reply(player, $"Удалять образы фракции можно с {PresetRank} ранга", false);
+                    return;
+                }
+                var preset = Presets.FirstOrDefault(p => p.Id == id && p.Fraction == memberFractionData.Id);
+                if (preset == null)
+                    return;
+                Presets.Remove(preset);
+                NeptuneEvo.Database.DbQueue.Enqueue("DELETE FROM `fraction_presets` WHERE `id`=@i", ("@i", id));
+                Reply(player, $"Образ «{preset.Name}» удалён", true);
+                SendPresets(preset.Fraction, preset.Gender);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnPresetDelete Exception: {e}");
             }
         }
 

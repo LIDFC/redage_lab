@@ -41,16 +41,79 @@ const GYM_MODELS = [
 const VARIANTS = {
     chinup: ["chinup"],
     bench: ["bench"],
-    weights: ["weights", "curls"],
-    dumbbells: ["curls", "weights"],
+    weights: ["weights"],
+    dumbbells: ["weights"],
     mat: ["situps", "pushups", "yoga", "stretch", "flex", "jog"],
 };
 let variants = [];
 const EXERCISE_NAMES = {
-    chinup: "Подтягивания", bench: "Жим лёжа", weights: "Штанга", curls: "Гантели (бицепс)",
+    chinup: "Подтягивания", bench: "Жим лёжа", weights: "Штанга",
     situps: "Пресс", pushups: "Отжимания", yoga: "Йога", stretch: "Растяжка", flex: "Позирование", jog: "Бег на месте",
 };
 let variantIndex = 0;
+
+// Свой персонаж занимается штатными сценариями GTA — игра сама ставит его ровно на снаряд и даёт штангу в руки.
+// Остальные игроки видят ту же анимацию через AnimToKey (synchronization/animation.js пропускает её для себя, пока идёт сценарий).
+const SCENARIOS = {
+    chinup: "PROP_HUMAN_MUSCLE_CHIN_UPS",
+    bench: "PROP_HUMAN_SEAT_MUSCLE_BENCH_PRESS",
+    weights: "WORLD_HUMAN_MUSCLE_FREE_WEIGHTS",
+    situps: "WORLD_HUMAN_SIT_UPS",
+    pushups: "WORLD_HUMAN_PUSH_UPS",
+    yoga: "WORLD_HUMAN_YOGA",
+    flex: "WORLD_HUMAN_MUSCLE_FLEX",
+    jog: "WORLD_HUMAN_JOG_STANDING",
+};
+// Снаряды, на которых важно точное место: сначала ищем точку сценария у самого объекта
+const PROP_SCENARIOS = ["chinup", "bench"];
+global.gymScenario = false;
+let target = null;
+let standAt = null;
+
+const usingScenario = () => {
+    try {
+        return !!global.localplayer.isUsingAnyScenario();
+    } catch (e) {
+        return false;
+    }
+};
+
+const startScenario = (exercise) => {
+    const scenario = SCENARIOS[exercise];
+    const p = global.localplayer;
+    if (!scenario) {
+        // растяжка — обычной анимацией через AnimToKey
+        if (global.gymScenario) {
+            global.gymScenario = false;
+            try { p.clearTasksImmediately(); } catch (e) {}
+        }
+        return;
+    }
+    global.gymScenario = true;
+    try {
+        p.clearTasksImmediately();
+        if (PROP_SCENARIOS.includes(exercise) && target) {
+            p.taskUseNearestScenarioToCoordWarp(target.x, target.y, target.z, 2.5, 0);
+            setTimeout(() => {
+                if (busy && global.gymScenario && !usingScenario() && standAt)
+                    p.taskStartScenarioAtPosition(scenario, standAt.x, standAt.y, standAt.z - 1.0, standAt.heading, 0, true, true);
+            }, 700);
+        } else {
+            p.taskStartScenarioInPlace(scenario, 0, true);
+        }
+    } catch (e) {
+        global.gymScenario = false;
+        mp.events.callRemote("client_trycatch", "world/gym", "startScenario", e.toString());
+    }
+};
+
+const stopScenario = () => {
+    if (!global.gymScenario) return;
+    global.gymScenario = false;
+    try {
+        global.localplayer.clearTasks();
+    } catch (e) {}
+};
 
 const SEARCH_RADIUS = 2.2;
 let near = null;
@@ -107,6 +170,7 @@ setInterval(() => {
 
 const stop = () => {
     if (!busy) return;
+    stopScenario();
     busy = false;
     global.gymBusy = false;
     global.escManager && global.escManager.remove("gym");
@@ -120,6 +184,8 @@ const start = () => {
     variants = VARIANTS[near.item.type] || [near.item.type];
     variantIndex = 0;
     const point = standPoint(near);
+    target = near.coords;
+    standAt = point;
     mp.events.callRemote("server.gym.start", variants[0], point.x, point.y, point.z, point.heading);
 };
 
@@ -134,12 +200,15 @@ gm.events.add("client.gym.yes", (x, y, z, heading) => {
     global.gymBusy = true;
     global.localplayer.setCoordsNoOffset(x, y, z, false, false, false);
     global.localplayer.setHeading(heading);
+    standAt = { x, y, z, heading };
+    startScenario(variants[variantIndex] || variants[0]);
     global.escManager && global.escManager.push("gym", stop);
     lastHint = null;
     setHint(true);
 });
 
 gm.events.add("client.gym.stopped", () => {
+    stopScenario();
     busy = false;
     global.gymBusy = false;
     global.escManager && global.escManager.remove("gym");
@@ -158,6 +227,7 @@ gm.events.add("render", () => {
             lastSwitch = Date.now();
             variantIndex = (variantIndex + (right ? 1 : variants.length - 1)) % variants.length;
             mp.events.callRemote("server.gym.switch", variants[variantIndex]);
+            startScenario(variants[variantIndex]);
             mp.events.call("notify", 0, 9, EXERCISE_NAMES[variants[variantIndex]] || variants[variantIndex], 1500);
         }
     }

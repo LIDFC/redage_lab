@@ -269,6 +269,10 @@ namespace NeptuneEvo.World.Gym
                     switch (exercise)
                     {
                         case "chinup":
+                            // Подтягивания тяжелее: 1 очко силы за 3 подхода (тика)
+                            if ((counter + 1) % 3 == 0)
+                                Gain(player, "strength");
+                            break;
                         case "bench":
                         case "weights":
                         case "curls":

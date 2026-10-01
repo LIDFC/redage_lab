@@ -51,7 +51,6 @@ namespace NeptuneEvo.World.Gym
             { "situps", "gym_situps" },
             { "pushups", "gym_pushups" },
             { "yoga", "gym_yoga" },
-            { "curls", "gym_curls" },
             { "stretch", "gym_stretch" },
             { "flex", "gym_flex" },
             { "jog", "gym_jog" },
@@ -68,7 +67,16 @@ namespace NeptuneEvo.World.Gym
             try
             {
                 if (File.Exists(FilePath))
+                {
                     _spots = JsonConvert.DeserializeObject<List<GymSpot>>(File.ReadAllText(FilePath)) ?? new List<GymSpot>();
+                    // Старая площадка у плаца (-2290, 3290) заменена на 4 тренажёра у казарм — переносим автоматически
+                    var oldCenter = new Vector3(-2290.0, 3290.0, 32.2);
+                    if (_spots.RemoveAll(s => s.Position != null && s.Position.DistanceTo2D(oldCenter) < 15f) > 0)
+                    {
+                        _spots.AddRange(DefaultSpots());
+                        Save();
+                    }
+                }
                 else
                 {
                     _spots = DefaultSpots();
@@ -83,20 +91,17 @@ namespace NeptuneEvo.World.Gym
             }
         }
 
-        /// <summary>Площадка у плаца Форт Занкудо (рядом с маршрутом патруля армии).</summary>
+        /// <summary>Форт Занкудо: 2 турника, скамья и стойка со штангой (точки от администрации, z — земля = позиция игрока − 1).</summary>
         private static List<GymSpot> DefaultSpots()
         {
-            var baseX = -2290.0;
-            var baseY = 3290.0;
-            var z = 32.2;
+            GymSpot Spot(string type, double x, double y, float heading) =>
+                new GymSpot { Type = type, Model = Models[type], Position = new Vector3(x, y, 32.96023 - 1.0), Heading = heading };
             return new List<GymSpot>
             {
-                new GymSpot { Type = "chinup", Model = Models["chinup"], Position = new Vector3(baseX, baseY, z), Heading = 150f },
-                new GymSpot { Type = "chinup", Model = Models["chinup"], Position = new Vector3(baseX + 3, baseY + 1.5, z), Heading = 150f },
-                new GymSpot { Type = "bench", Model = Models["bench"], Position = new Vector3(baseX + 6, baseY + 3, z), Heading = 150f },
-                new GymSpot { Type = "weights", Model = Models["weights"], Position = new Vector3(baseX + 9, baseY + 4.5, z), Heading = 150f },
-                new GymSpot { Type = "mat", Model = Models["mat"], Position = new Vector3(baseX + 2, baseY - 3, z), Heading = 150f },
-                new GymSpot { Type = "mat", Model = Models["mat"], Position = new Vector3(baseX + 4, baseY - 2, z), Heading = 150f },
+                Spot("chinup", -1930.082, 3300.6873, 58.528038f),
+                Spot("chinup", -1926.9496, 3305.2122, 55.852325f),
+                Spot("bench", -1924.4175, 3308.5217, 52.93026f),
+                Spot("weights", -1922.2251, 3311.5046, 56.035675f),
             };
         }
 

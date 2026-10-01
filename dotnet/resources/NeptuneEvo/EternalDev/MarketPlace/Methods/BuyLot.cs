@@ -36,8 +36,25 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             if (marketItem.Owner == player.GetUUID() || !IsPossibleToGet(player, marketItem.Type))
                 return;
 
-            if (paymentType == "Wallet" ? !MoneySystem.Wallet.Change(player, -marketItem.Cost)
-              : paymentType == "Card" ? !MoneySystem.Bank.Change(player.CharacterData.Bank, -marketItem.Cost) : true)
+            // Цена лота вещей — за штуку: берём количество в пределах лота и платим за каждую
+            var isGrouped = marketItem.Type == LotType.Clothes || marketItem.Type == LotType.Item;
+            if (isGrouped)
+            {
+                var available = Convert.ToInt32(marketItem.Data.Split("@@")[1]);
+                if (count < 1 || count > available)
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"В лоте только {available} шт.", 3000);
+                    return;
+                }
+            }
+            else
+                count = 1;
+            var total = marketItem.Cost * (long) count;
+            if (total > int.MaxValue)
+                return;
+
+            if (paymentType == "Wallet" ? !MoneySystem.Wallet.Change(player, -(int) total)
+              : paymentType == "Card" ? !MoneySystem.Bank.Change(player.CharacterData.Bank, -(int) total) : true)
             {
                 Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У вас недостаточно средств!", 3000);
                 return;
@@ -46,7 +63,7 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             SetToEstate(player.GetUUID(), marketItem.Type, marketItem.Data, count,
                 moveStorage: true);
 
-            Manager.AddMoney(marketItem.Owner, marketItem.Cost, $"Лот #{marketItem.Id} был куплен и вы получили {MoneySystem.Wallet.Format(marketItem.Cost)}$");
+            Manager.AddMoney(marketItem.Owner, (int) total, $"Лот #{marketItem.Id} был куплен{(isGrouped ? $" ({count} шт.)" : "")} и вы получили {MoneySystem.Wallet.Format((int) total)}$");
 
             bool deleteLot = true;
             if (marketItem.Type == LotType.Clothes || marketItem.Type == LotType.Item)
@@ -66,7 +83,7 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             if (deleteLot)
                 Manager.DeleteLot(marketItem);
 
-            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы успешно купили лот #{marketItem.Id} за {MoneySystem.Wallet.Format(marketItem.Cost)}$", 3000);
+            Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы успешно купили лот #{marketItem.Id}{(isGrouped ? $" ({count} шт.)" : "")} за {MoneySystem.Wallet.Format((int) total)}$. Покупка — на складе маркетплейса", 3000);
             Trigger.ClientEvent(player, "client.marketPlace.setMarketPage", "storage");
         }                                                                                                
 

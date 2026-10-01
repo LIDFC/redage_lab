@@ -22,10 +22,12 @@
         itemInfo = data && data.type == "item" ? itemsInfo[data.params.itemId] : null;
         
     $: total = getPrice(data.type, count, price, time)
+    // Сколько таких же вещей в том же месте (инвентарь или склад) — одежда и предметы с данными считаются по данным
     $: countInStorage = $marketStorage.filter(x => 
         x.type == data.type 
+        && (x.source || "storage") == (data.source || "storage")
         && x.params.itemId == data.params.itemId
-        && (data == "clothes" ? x.params.itemData == data.params.itemData : true)).reduce((acc, data) => acc + data.params.count, 0);
+        && (data.type == "clothes" || data.params.itemData ? x.params.itemData == data.params.itemData : true)).reduce((acc, data) => acc + data.params.count, 0);
 
     const handleMousedown = (event) => {
         if (event.target.className.includes("market-modal-container"))

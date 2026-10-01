@@ -93,7 +93,9 @@ export default new class MarketPlace {
     }
 
     createLot(type, id, comment, title, price, hours, count, paymentType) {
-        this.callServer("create_lot", type, id, comment, title, price, hours, count, paymentType);
+        // Цена из поля ввода приходит строкой ("$1 000") — сервер ждёт целые числа
+        const toInt = (v) => Math.max(0, parseInt(String(v === undefined || v === null ? 0 : v).replace(/\D/g, ""), 10) || 0);
+        this.callServer("create_lot", String(type), String(id), String(comment || ""), String(title || ""), toInt(price), toInt(hours), Math.max(1, toInt(count)), String(paymentType));
     }
 
     editLot(id, comment, title, price) {

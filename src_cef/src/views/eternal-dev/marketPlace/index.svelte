@@ -36,7 +36,8 @@
     let items = [];
     $: items = currentCategory == "auction" ? $acutionLots 
         : currentCategory == "item" || currentCategory == "clothes" ? $marketInventoryItems 
-        : currentCategory == "create" || currentCategory == "storage" ? $marketStorage 
+        : currentCategory == "create" ? $marketStorage
+        : currentCategory == "storage" ? $marketStorage.filter(x => x.source != "inv")
         : currentCategory == "favourites" ? $favourites 
         : $marketItems;
 

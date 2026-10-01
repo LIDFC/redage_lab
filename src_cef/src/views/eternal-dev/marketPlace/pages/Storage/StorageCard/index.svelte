@@ -27,6 +27,9 @@
 <button on:click={click} class="storage-card">
     <div class={ `storage-card__header storage-card__header-${data.type}`}>
         <div class="storage-card__header__badges">
+            {#if data.source == "inv"}
+                <div class="badge">Инвентарь</div>
+            {/if}
             {#if data.type == "item"}
                 <div class="badge">
                     <svg id="box" xmlns="http://www.w3.org/2000/svg" width="1.2962962962962963vh" height="1.2867592592592592vh" viewBox="0 0 14 13.897" > <path id="Контур_12670" data-name="Контур 12670" fill="none" ></path> <path id="Контур_12671" data-name="Контур 12671" fill="none" ></path> <path id="Контур_12672" data-name="Контур 12672" d="M6.479,6.483.19,3.835A.137.137,0,0,0,0,3.961v7.079a.437.437,0,0,0,.275.406l6.1,2.44a.137.137,0,0,0,.187-.127V6.609a.137.137,0,0,0-.084-.126Z" fill="#3d82d5" ></path> <path id="Контур_12673" data-name="Контур 12673" d="M7.053,5.731l6.079-2.56a.137.137,0,0,0,0-.25L7.185.144a.438.438,0,0,0-.37,0L.863,2.922a.137.137,0,0,0,0,.25l6.079,2.56a.137.137,0,0,0,.106,0Z" fill="#3d82d5" ></path> <path id="Контур_12674" data-name="Контур 12674" d="M7.438,6.609V13.76a.137.137,0,0,0,.187.127l6.1-2.44A.438.438,0,0,0,14,11.041V3.961a.137.137,0,0,0-.19-.126L7.521,6.483a.137.137,0,0,0-.084.126Z" fill="#3d82d5" ></path> </svg> 
@@ -81,7 +84,7 @@
                 </div>
             {:else}
                 <div class="state state-inStorage">
-                    На складе
+                    {data.source == "inv" ? "В инвентаре" : "На складе"}
                 </div>
             {/if}
         {/if}

@@ -45,17 +45,27 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             return millisecondsSinceEpoch;
         }
 
-        public static List<StorageItemDTO> FormatStorage(ExtPlayer player, Dictionary<LotType, List<string>> storageData, Dictionary<LotType, List<string>> estate)
+        public static List<StorageItemDTO> FormatStorage(ExtPlayer player, Dictionary<LotType, List<string>> storageData, Dictionary<LotType, List<string>> estate, Dictionary<LotType, List<string>> inventory = null)
         {
             var result = new List<StorageItemDTO>();
 
-            void ProcessData(Dictionary<LotType, List<string>> data, bool isEsate)
+            void ProcessData(Dictionary<LotType, List<string>> data, bool isEsate, string source = "storage")
             {
                 foreach (var pair in data)
                 {
                     foreach (var id in pair.Value)
                     {
-                        var dto = CreateStorageDto(player, pair.Key, id, isEsate);
+                        // Одна битая вещь (нестандартные данные одежды и т.п.) не должна ломать весь список
+                        StorageItemDTO dto;
+                        try
+                        {
+                            dto = CreateStorageDto(player, pair.Key, id, isEsate, source);
+                        }
+                        catch (Exception e)
+                        {
+                            MarketLog.Write($"CreateStorageDto {pair.Key} {id} ({source}) Exception: {e.Message}");
+                            continue;
+                        }
                         if (dto is null)
                             continue;
 
@@ -73,11 +83,13 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
 
             ProcessData(storageData, false);
             ProcessData(estate, true);
+            if (inventory != null)
+                ProcessData(inventory, false, "inv");
 
             return result;
         }
 
-        public static StorageItemDTO CreateStorageDto(ExtPlayer player, LotType type, string id, bool isEastate)
+        public static StorageItemDTO CreateStorageDto(ExtPlayer player, LotType type, string id, bool isEastate, string source = "storage")
         {
             var storageId = isEastate || !id.Contains("__") ? 0 : Convert.ToInt32(id.Split("__")[0]);
             var data = isEastate || !id.Contains("__") ? id : id.Split("__")[1];
@@ -86,7 +98,8 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             {
                 Id = storageId,
                 OnEstate = isEastate,
-                EndDate = DateTimeToMilliseconds(DateTime.Now)
+                EndDate = DateTimeToMilliseconds(DateTime.Now),
+                Source = source,
             };
 
             switch (type)
@@ -103,7 +116,9 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
                 case LotType.Clothes:
                 case LotType.Item:
                     {
-                        var itemData = GetItemDataBySqlId($"marketStorage_{player.GetUUID()}", "marketStorage", Convert.ToInt32(data));
+                        var itemData = source == "inv"
+                            ? GetItemDataBySqlId($"char_{player.GetUUID()}", "inventory", Convert.ToInt32(data))
+                            : GetItemDataBySqlId($"marketStorage_{player.GetUUID()}", "marketStorage", Convert.ToInt32(data));
                         if (itemData == null) 
                             return null;
 
@@ -166,22 +181,23 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
         public static List<MarketItemGroupDTO> CreateMarketGroupDTO(List<MarketItem> marketItems)
         {
             var groupItems = marketItems
-                .GroupBy(g => new string[] { g.Data.Split("@@")[0], g.Data.Split("@@")[2], g.Type.ToString().ToLower() })
+                // Ключ группы — кортеж (массив сравнивался по ссылке, и одинаковые вещи не группировались)
+                .GroupBy(g => (g.Data.Split("@@")[0], g.Data.Split("@@")[2], g.Type.ToString().ToLower()))
                 .Select(g =>
                 {
-                    var itemData = $"{g.Key[0]}@@1@@{g.Key[1]}";
+                    var itemData = $"{g.Key.Item1}@@1@@{g.Key.Item2}";
                     var dto = new MarketItemGroupDTO
                     {
                         Id = g.First().Id,
-                        Type = g.Key[2],
+                        Type = g.Key.Item3,
                         MinPrice = g.Min(x => x.Cost),
                         Count = g.Sum(x => Convert.ToInt32(x.Data.Split("@@")[1])),
                     };
 
-                    if (g.Key[2] == "clothes")
+                    if (g.Key.Item3 == "clothes")
                         dto.Params = new ClothesParams(itemData);
 
-                    if (g.Key[2] == "item")
+                    if (g.Key.Item3 == "item")
                         dto.Params = new ItemParams(itemData);
 
                     return dto;

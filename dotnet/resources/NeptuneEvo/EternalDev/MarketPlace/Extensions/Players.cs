@@ -55,6 +55,40 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Extensions
             return result;
         }
 
+        /// <summary>Вещи, которые нельзя выставить из инвентаря: ключи, документы, сумки с содержимым и т.п.</summary>
+        private static readonly HashSet<Chars.Models.ItemId> InventoryBlocked = new HashSet<Chars.Models.ItemId>
+        {
+            Chars.Models.ItemId.CarKey,
+            Chars.Models.ItemId.KeyRing,
+            Chars.Models.ItemId.BagWithMoney,
+            Chars.Models.ItemId.BagWithDrill,
+            Chars.Models.ItemId.Bag,
+            Chars.Models.ItemId.SimCard,
+            Chars.Models.ItemId.ArmyPass,
+        };
+
+        public static bool CanSellFromInventory(Chars.Models.ItemId itemId) =>
+            !InventoryBlocked.Contains(itemId) && Chars.Repository.ItemsInfo.ContainsKey(itemId);
+
+        /// <summary>Инвентарь игрока для «Создать лот»: одежда/аксессуары — Clothes, остальное — Item (SqlId вещей).</summary>
+        public static Dictionary<LotType, List<string>> GetMarketPlaceInventory(this ExtPlayer player)
+        {
+            var result = new Dictionary<LotType, List<string>>();
+            var locationName = $"char_{player.GetUUID()}";
+            if (!Chars.Repository.ItemsData.TryGetValue(locationName, out var locations) || !locations.TryGetValue("inventory", out var items))
+                return result;
+            foreach (var itemData in items.Values)
+            {
+                if (itemData == null || !CanSellFromInventory(itemData.ItemId))
+                    continue;
+                var lotType = Chars.Repository.ItemsInfo[itemData.ItemId].functionType == Chars.Models.newItemType.Clothes && itemData.ItemId != Chars.Models.ItemId.BodyArmor ? LotType.Clothes : LotType.Item;
+                if (!result.ContainsKey(lotType))
+                    result[lotType] = new List<string>();
+                result[lotType].Add(itemData.SqlId.ToString());
+            }
+            return result;
+        }
+
         public static Dictionary<LotType, List<string>> GetPropertyOnEstate(this ExtPlayer player)
         {
             var result = new Dictionary<LotType, List<string>>();

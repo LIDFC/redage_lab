@@ -424,6 +424,11 @@ SQL на VPS: `mysql -u root -p <база> < database/systems/<файл>.sql` (�
 - Гардероб фракций: `Fractions/Wardrobe/Wardrobe.cs` + CEF `FractionWardrobe` + `src_client/fractions/wardrobe.js`; образ в `fraction_outfits`, торс — переопределение в `ClothesComponents.SetTop`; `OnDutyName = "outfit"`. Наборы лидера скрыты в планшете.
 - Биндер: колесо и боковые кнопки мыши (коды 4/5/6).
 
+- Качалка: в Занкудо 4 тренажёра (`GymManager.DefaultSpots`), упражнения своего персонажа — сценарии GTA (`world/gym.js`, флаг `global.gymScenario`, `animation.js` пропускает gym_* для себя). Турник — 1 очко силы за 3 тика.
+- Тренер: CEF `GymTrainer` (стиль jobselector), тарифы `plans` в `settings/gym_fitness.json`, `server.gym.buy`.
+- Гардероб отправляется частями `client.wardrobe.part` (компактный формат), ошибки — уведомлением.
+- Биндер: кнопки мыши 4/5/6 ловит окно биндера (`client:binder mouse`), в игре — опрос `mp.keys.isDown`.
+
 ## 8. Что осталось или стоит проверить
 
 - В игре не проверены (проверены только в стенде или сборкой):

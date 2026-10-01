@@ -248,3 +248,39 @@ gm.events.add("client.fitness.apply", (stamina, strength, meleeBonus) => {
         }
     } catch (e) {}
 });
+
+// ---- Окно тренера платной качалки (CEF GymTrainer, сервер World/Gym/Fitness.cs)
+let trainerOpen = false;
+
+gm.events.add("client.gym.trainer.open", (json) => {
+    try {
+        if (trainerOpen) return;
+        if (global.menuCheck()) {
+            mp.events.call("notify", 4, 9, "Закройте другие окна и попробуйте снова", 3000);
+            return;
+        }
+        trainerOpen = true;
+        global.menuOpen();
+        mp.gui.emmit(`window.router.setView("GymTrainer", ${JSON.stringify(json)});`);
+    } catch (e) {
+        mp.events.callRemote("client_trycatch", "world/gym", "client.gym.trainer.open", e.toString());
+    }
+});
+
+gm.events.add("client.gym.trainer.update", (json, text, ok) => {
+    if (!trainerOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.gym.trainer.update", ${JSON.stringify(json)}, ${JSON.stringify(String(text || ""))}, ${!!ok})`);
+});
+
+gm.events.add("client.gym.trainer.buy", (planIndex) => {
+    if (!trainerOpen || !global.antiFlood("gym.trainer.buy", 800)) return;
+    mp.events.callRemote("server.gym.buy", Number(planIndex));
+});
+
+gm.events.add("client.gym.trainer.close", () => {
+    if (!trainerOpen) return;
+    trainerOpen = false;
+    global.menuClose();
+    mp.gui.emmit(`window.router.setHud();`);
+    mp.events.callRemote("server.gym.trainer.close");
+});

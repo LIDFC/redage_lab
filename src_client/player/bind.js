@@ -2,8 +2,8 @@ import marketPlace from "../EternalDev/marketPlace";
 // TODO Запретить F1, выписать все возможные кнопки для бинда
 global.BinderStatus = false;
 global.indexUpdate = -1;
-// 4, 5, 6 — колесо и боковые кнопки мыши (ЛКМ/ПКМ нельзя: клик по строке биндера сам стал бы биндом)
-const binderAvailable = [4,5,6,27,113,114,115,116,117,118,119,120,121,122,123,145,19,192,49,50,51,52,53,54,55,56,57,48,189,187,8,45,36,33,144,111,106,109,144,9,81,69,82,84,89,85,73,79,219,221,220,46,35,34,36,38,33,107,20,71,72,74,75,76,186,222,13,37,12,39,16,90,88,67,86,66,78,77,188,190,191,16,35,40,34,13,17,18,18,93,17,37,40,39,45,46,38];
+// Колесо и боковые кнопки мыши (4, 5, 6) ловит окно биндера и опрос ниже — mp.keys.bind мышь не видит
+const binderAvailable = [27,113,114,115,116,117,118,119,120,121,122,123,145,19,192,49,50,51,52,53,54,55,56,57,48,189,187,8,45,36,33,144,111,106,109,144,9,81,69,82,84,89,85,73,79,219,221,220,46,35,34,36,38,33,107,20,71,72,74,75,76,186,222,13,37,12,39,16,90,88,67,86,66,78,77,188,190,191,16,35,40,34,13,17,18,18,93,17,37,40,39,45,46,38];
 
 const binderType = {
     all: "all", //В случаи если этот тип то кнопка будет использоватся под одно действие
@@ -811,7 +811,9 @@ class Binder {
             mp.gui.emmit(`window.binder.setBindData('${JSON.stringify(binderActions.bind())}');`);
         }
         // Создаем клавишу биндера
-        if (!bindStatus [`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] ||
+        if (keyCode >= 4 && keyCode <= 6) {
+            // кнопки мыши — без mp.keys.bind, срабатывают через опрос в render
+        } else if (!bindStatus [`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] ||
             bindStatus [`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] === undefined) {
             bindStatus[`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] = true;
             mp.keys.bind(keyCode,
@@ -967,6 +969,28 @@ gm.events.add("client:binder", (type, index, keyCode) => {
 		mp.events.callRemote('bindConfigSave', 0, 0);
     } else if (type === "close") {
         CloseBinder ();
+    } else if (type === "mouse") {// колесо/боковые кнопки мыши, пойманные окном биндера
+        if (global.indexUpdate !== -1)
+            binderActions.getControllBind (Number (index), true);
+    }
+});
+
+// Срабатывание биндов на кнопках мыши в игре: mp.keys.bind мышь не ловит — опрашиваем состояние
+const mouseBindState = { 4: false, 5: false, 6: false };
+gm.events.add("render", () => {
+    if (!global.loggedin || global.indexUpdate !== -1) return;
+    for (const code of [4, 5, 6]) {
+        let down = false;
+        try {
+            down = !!mp.keys.isDown(code);
+        } catch (e) {
+            return;
+        }
+        if (down !== mouseBindState[code]) {
+            mouseBindState[code] = down;
+            if (binderListeners[code] && binderListeners[code].length)
+                binderActions.getControllBind (code, down);
+        }
     }
 });
 

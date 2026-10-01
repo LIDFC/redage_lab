@@ -63,29 +63,79 @@ const close = (applied) => {
     mp.gui.emmit(`window.router.setHud();`);
 };
 
-gm.events.add("client.wardrobe.open", (json) => {
+const fail = (where, e) => {
+    mp.events.call("notify", 1, 9, `Гардероб: ${String(e && e.message ? e.message : e)}`, 6000);
+    try { mp.events.callRemote("client_trycatch", "fractions/wardrobe", where, String(e)); } catch (err) {}
+};
+
+// Число вариантов: разные сборки RAGE называют функции по-разному — пробуем все
+const drawableCount = (p, component) => {
+    try { return mp.game.ped.getNumberOfPedDrawableVariations(p.handle, component); } catch (e) {}
+    try { return p.getNumberOfDrawableVariations(component); } catch (e) {}
+    return 0;
+};
+const textureCount = (p, component, drawable) => {
+    try { return mp.game.ped.getNumberOfPedTextureVariations(p.handle, component, drawable); } catch (e) {}
+    try { return p.getNumberOfTextureVariations(component, drawable); } catch (e) {}
+    return 1;
+};
+
+// Компактный формат вещи с сервера: [id, drawable, torso, [текстуры], название|null, tname]
+const unpackItem = (a) => ({ id: a[0], drawable: a[1], torso: a[2], textures: a[3] || [0], name: a[4], tname: a[5] || "" });
+
+const openWardrobe = (json) => {
     try {
-        if (isOpen || global.menuCheck()) return;
+        if (isOpen) return;
+        if (global.menuCheck()) {
+            mp.events.call("notify", 4, 9, "Закройте другие окна и попробуйте снова", 3000);
+            return;
+        }
         const data = JSON.parse(json);
-        data.categories.forEach((c) => c.items.forEach((item) => (item.title = itemName(item))));
-        // Торс — все варианты компонента 3 из игры
+        data.categories.forEach((c) => {
+            c.items = (c.items || []).map((x) => (Array.isArray(x) ? unpackItem(x) : x));
+            c.items.forEach((item) => (item.title = itemName(item)));
+        });
+        // Торс (компонент 3 — руки и тело под одеждой): все варианты из игры
         const p = global.localplayer;
-        const count = mp.game.ped.getNumberOfPedDrawableVariations(p.handle, 3);
+        const count = drawableCount(p, 3);
         const torsos = [];
         for (let d = 0; d < count; d++)
-            torsos.push({ id: d, drawable: d, textures: Math.max(1, mp.game.ped.getNumberOfPedTextureVariations(p.handle, 3, d)) });
+            torsos.push({ id: d, drawable: d, textures: Math.max(1, textureCount(p, 3, d)) });
         data.torsos = torsos;
 
         original = remember();
         isOpen = true;
         global.menuOpen();
         p.freezePosition(true);
-        global.createCamera("char", p);
+        try {
+            global.createCamera("char", p);
+        } catch (e) {
+            fail("camera", e);
+        }
         mp.gui.emmit(`window.router.setView("FractionWardrobe", ${JSON.stringify(JSON.stringify(data))});`);
     } catch (e) {
-        mp.events.callRemote("client_trycatch", "fractions/wardrobe", "client.wardrobe.open", e.toString());
+        fail("client.wardrobe.open", e);
+        if (isOpen) close(false);
+    }
+};
+
+// Данные приходят частями (у армии сотни вещей) — собираем и открываем
+let parts = [];
+gm.events.add("client.wardrobe.part", (index, total, chunk) => {
+    try {
+        if (index === 0) parts = [];
+        parts[index] = chunk;
+        if (parts.filter((x) => typeof x === "string").length === total) {
+            const json = parts.join("");
+            parts = [];
+            openWardrobe(json);
+        }
+    } catch (e) {
+        fail("client.wardrobe.part", e);
     }
 });
+
+gm.events.add("client.wardrobe.open", (json) => openWardrobe(json));
 
 gm.events.add("client.wardrobe.preview", (slot, isProp, drawable, texture, torso) => {
     if (!isOpen) return;

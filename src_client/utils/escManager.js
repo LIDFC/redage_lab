@@ -19,6 +19,7 @@ const viewClose = {
     ArmyRepair: () => mp.events.call("client.army.repair.cancel"),
     ArmyDuty: () => mp.events.call("client.army.duty.close"),
     FractionWardrobe: () => mp.events.call("client.wardrobe.exit"),
+    GymTrainer: () => mp.events.call("client.gym.trainer.close"),
     JobFarmGame: () => mp.events.call("client.daylabor.farm.exit"),
     AdminConfigPanel: () => mp.events.call("client.cfgpanel.close"),
     PlayerWarehouse: () => mp.events.call("client.warehouse.close"),

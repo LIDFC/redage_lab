@@ -105,19 +105,35 @@ const openWardrobe = (json) => {
 
         original = remember();
         isOpen = true;
+        lockHeading = p.getHeading();
         global.menuOpen();
-        p.freezePosition(true);
+        // Окно — сразу, камера — следом (её плавный переезд и давал задержку)
+        mp.gui.emmit(`window.router.setView("FractionWardrobe", ${JSON.stringify(JSON.stringify(data))});`);
         try {
+            p.clearTasksImmediately();
+            p.freezePosition(true);
             global.createCamera("char", p);
         } catch (e) {
             fail("camera", e);
         }
-        mp.gui.emmit(`window.router.setView("FractionWardrobe", ${JSON.stringify(JSON.stringify(data))});`);
     } catch (e) {
         fail("client.wardrobe.open", e);
         if (isOpen) close(false);
     }
 };
+
+// Пока выбираем одежду, персонаж стоит смирно: всё управление выключено, кроме мыши для камеры,
+// направление зафиксировано (иначе он поворачивается за мышью)
+let lockHeading = 0;
+gm.events.add("render", () => {
+    if (!isOpen) return;
+    try {
+        mp.game.controls.disableAllControlActions(0);
+        [1, 2, 237, 238, 239, 240, 241, 242].forEach((c) => mp.game.controls.enableControlAction(0, c, true));
+        const p = global.localplayer;
+        if (Math.abs(p.getHeading() - lockHeading) > 0.5) p.setHeading(lockHeading);
+    } catch (e) {}
+});
 
 // Данные приходят частями (у армии сотни вещей) — собираем и открываем
 let parts = [];

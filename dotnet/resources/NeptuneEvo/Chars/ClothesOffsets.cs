@@ -87,8 +87,42 @@ namespace NeptuneEvo.Chars
         /// <summary>Результат последнего замера по админу (uuid) — ждёт /clothoff apply.</summary>
         private static readonly Dictionary<int, OffsetsFile> PendingOffsets = new Dictionary<int, OffsetsFile>();
 
+        /// <summary>Номера из кода (до сдвига) — с ними собраны json одежды в интерфейсе.</summary>
+        private static Dictionary<bool, Dictionary<string, int>> _baseVanilla;
+        private static string _shiftJson;
+
+        /// <summary>При входе: сдвиг номеров кастомной одежды для магазина в CEF (src_cef/src/json/clothes.js).</summary>
+        public static void SendClothesShift(ExtPlayer player)
+        {
+            if (!string.IsNullOrEmpty(_shiftJson))
+                Trigger.ClientEvent(player, "client.clothes.shift", _shiftJson);
+        }
+
+        private static void BuildShift()
+        {
+            var shift = new Dictionary<string, Dictionary<string, int[]>>();
+            foreach (var gender in new[] { true, false })
+            {
+                var name = gender ? "Male" : "Female";
+                var current = CurrentVanilla(gender);
+                foreach (var (key, baseValue) in _baseVanilla[gender])
+                {
+                    if (!current.TryGetValue(key, out var value) || value == baseValue)
+                        continue;
+                    if (!shift.ContainsKey(name))
+                        shift[name] = new Dictionary<string, int[]>();
+                    shift[name][key] = new[] { baseValue, value - baseValue };
+                }
+            }
+            _shiftJson = shift.Count > 0 ? JsonConvert.SerializeObject(shift) : null;
+            if (_shiftJson != null)
+                Log.Write($"Сдвиг одежды для интерфейса: {_shiftJson}");
+        }
+
         private static void LoadClothesOffsets()
         {
+            if (_baseVanilla == null)
+                _baseVanilla = new Dictionary<bool, Dictionary<string, int>> { { true, CurrentVanilla(true) }, { false, CurrentVanilla(false) } };
             try
             {
                 if (!File.Exists(OffsetsPath))
@@ -98,6 +132,7 @@ namespace NeptuneEvo.Chars
                     return;
                 ApplyOffsets(true, file.Male, file.CustomMale);
                 ApplyOffsets(false, file.Female, file.CustomFemale);
+                BuildShift();
                 Log.Write($"Сдвиг кастомной одежды из {OffsetsPath} (замер {file.Updated}, {file.Admin})", nLog.Type.Success);
             }
             catch (Exception e)

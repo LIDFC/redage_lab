@@ -3233,3 +3233,8 @@ gm.events.add("client.doors.pick", () => {
         mp.events.callRemote("client_trycatch", "world/doors", "client.doors.pick", e.toString());
     }
 });
+
+// Сдвиг номеров кастомной одежды после /clothoff (сервер Chars/ClothesOffsets.cs) — для магазина и гардероба в CEF
+gm.events.add("client.clothes.shift", (json) => {
+    mp.gui.emmit(`window.clothesShift && window.clothesShift(${JSON.stringify(String(json))});`);
+});

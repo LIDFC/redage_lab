@@ -812,7 +812,7 @@ class Binder {
         }
         // Создаем клавишу биндера
         if (keyCode >= 4 && keyCode <= 6) {
-            // кнопки мыши — без mp.keys.bind, срабатывают через опрос в render
+            // кнопки мыши — свои обработчики (mouseFire), здесь только список биндов
         } else if (!bindStatus [`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] ||
             bindStatus [`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] === undefined) {
             bindStatus[`${keyCode}_${global.userBinder [index].trigges === undefined ? true : global.userBinder [index].trigges}`] = true;
@@ -975,23 +975,51 @@ gm.events.add("client:binder", (type, index, keyCode) => {
     }
 });
 
-// Срабатывание биндов на кнопках мыши в игре: mp.keys.bind мышь не ловит — опрашиваем состояние
+// Срабатывание биндов на кнопках мыши в игре. Какой способ RAGE поддерживает, зависит от версии,
+// поэтому слушаем сразу несколько; нажатие учитывается не чаще раза в 150 мс на кнопку.
+const MOUSE_CODES = [4, 5, 6];
 const mouseBindState = { 4: false, 5: false, 6: false };
+const mouseLastFire = { 4: 0, 5: 0, 6: 0 };
+let mouseTestUntil = 0;
+
+const mouseFire = (code, down, source) => {
+    if (mouseTestUntil > Date.now() && down)
+        mp.gui.chat.push(`!{#8bd36b}[mousetest] кнопка ${code} — видна через ${source}`);
+    if (global.indexUpdate !== -1 || mouseBindState[code] === down) return;
+    mouseBindState[code] = down;
+    if (down) {
+        if (Date.now() - mouseLastFire[code] < 150) return;
+        mouseLastFire[code] = Date.now();
+    }
+    if (binderListeners[code] && binderListeners[code].length)
+        binderActions.getControllBind (code, down);
+};
+
+MOUSE_CODES.forEach((code) => {
+    try {
+        mp.keys.bind(code, true, () => mouseFire(code, true, "keys.bind"));
+        mp.keys.bind(code, false, () => mouseFire(code, false, "keys.bind"));
+    } catch (e) {}
+});
+
 gm.events.add("render", () => {
-    if (!global.loggedin || global.indexUpdate !== -1) return;
-    for (const code of [4, 5, 6]) {
-        let down = false;
+    if (!global.loggedin) return;
+    for (const code of MOUSE_CODES) {
+        let down;
         try {
             down = !!mp.keys.isDown(code);
         } catch (e) {
             return;
         }
-        if (down !== mouseBindState[code]) {
-            mouseBindState[code] = down;
-            if (binderListeners[code] && binderListeners[code].length)
-                binderActions.getControllBind (code, down);
-        }
+        if (down !== mouseBindState[code]) mouseFire(code, down, "keys.isDown");
     }
+});
+
+// /mousetest — 10 секунд показывает в чате, видит ли игра колесо и боковые кнопки мыши
+gm.events.add("client.mousetest", () => {
+    mouseTestUntil = Date.now() + 10000;
+    mp.gui.chat.push("!{#ffb400}[mousetest] 10 секунд: нажимайте колесо и боковые кнопки мыши");
+    setTimeout(() => mp.gui.chat.push("!{#ffb400}[mousetest] Готово. Нет строк выше — RAGE не передаёт эти кнопки"), 10000);
 });
 
 global.isBind = false;

@@ -69,6 +69,38 @@ const jsonClothesData = {
     }
 }
 
+// Сдвиг номеров кастомной одежды после /clothoff (сервер Chars/ClothesOffsets.cs → client.clothes.shift).
+// Данные вшиты в сборку со «старыми» номерами: у записей с Variation >= base номер увеличивается на delta.
+// shift = { Male: { Tops: [base, delta], Hair: [base, delta], ... }, Female: {...} }
+const SHIFT_TARGETS = { Tops: ["Tops", "Undershort"] };
+let appliedShift = {};
+window.clothesShift = (json) => {
+    try {
+        const shift = typeof json === "string" ? JSON.parse(json) : json || {};
+        Object.keys(shift).forEach((gender) => {
+            Object.keys(shift[gender] || {}).forEach((key) => {
+                const [base, delta] = shift[gender][key];
+                const id = `${gender}_${key}`;
+                const change = delta - (appliedShift[id] || 0); // повторный вызов не сдвигает дважды
+                if (!change) return;
+                const isHair = key === "Hair";
+                const names = isHair ? ["Hair"] : SHIFT_TARGETS[key] || [key];
+                names.forEach((name) => {
+                    const dict = isHair ? (jsonBarberData[gender] || {})[name] : (jsonClothesData[gender] || {})[name];
+                    if (!dict) return;
+                    Object.values(dict).forEach((item) => {
+                        if (item && typeof item.Variation === "number" && item.Variation >= base + (appliedShift[id] || 0))
+                            item.Variation += change;
+                    });
+                });
+                appliedShift[id] = delta;
+            });
+        });
+    } catch (e) {
+        console.log("clothesShift", e);
+    }
+};
+
 export const getClothesDictionary = (gender, name) => {
     return JSON.stringify (jsonClothesData[gender][name]);
 }

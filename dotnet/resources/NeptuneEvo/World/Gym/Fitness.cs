@@ -360,6 +360,7 @@ namespace NeptuneEvo.World.Gym
                 var data = Get(player);
                 ResetHourIfNeeded(data);
                 PendingPurchase[player] = zone;
+                Log.Write($"Fitness: trainer open {player.Name} zone={zone.Name}");
                 // Окно в стиле «Центра занятости» (CEF GymTrainer, клиент world/gym.js)
                 Trigger.ClientEvent(player, "client.gym.trainer.open", TrainerJson(player, zone));
             }
@@ -479,6 +480,14 @@ namespace NeptuneEvo.World.Gym
             {
                 Log.Write($"BuyMembership Exception: {e}");
             }
+        }
+
+        /// <summary>Проверка, видит ли игра колесо и боковые кнопки мыши (для биндера), — src_client/player/bind.js.</summary>
+        [Command("mousetest")]
+        public static void CMD_MouseTest(ExtPlayer player)
+        {
+            if (player.IsCharacterData())
+                Trigger.ClientEvent(player, "client.mousetest");
         }
 
         [Command("fitness")]

@@ -3,7 +3,6 @@
 //    30 (без качалки) — около 12 с, 100 — около 60 с; при ходьбе и стоянии восстанавливается;
 //  - кончился запас на бегу — персонаж падает (ragdoll), встаёт и теряет немного здоровья (не ниже 10 HP);
 //  - пока запас не восстановится до 30%, бежать нельзя (одышка);
-//  - тонкая полоска внизу экрана видна, пока запас не полный.
 // Спринт определяем по зажатому Shift и скорости (у ped нет надёжного isSprinting в RAGE).
 global.fitStamina = 30;
 
@@ -12,6 +11,7 @@ let exhaustedUntil = 0;
 let tired = false;
 let last = Date.now();
 let lastErrorReport = 0;
+let notifiedFall = false;
 
 const runSeconds = () => 12 + Math.max(0, Math.min(1, (global.fitStamina - 30) / 70)) * 48;
 
@@ -48,7 +48,10 @@ const fall = (p) => {
     } catch (e) {
         reportError("damage", e);
     }
-    mp.events.call("notify", 4, 9, "Вы выдохлись и упали. Тренируйте выносливость в качалке", 3500);
+    if (!notifiedFall) {
+        notifiedFall = true; // подсказка — один раз за сессию
+        mp.events.call("notify", 4, 9, "Вы выдохлись и упали. Тренируйте выносливость в качалке", 3500);
+    }
 };
 
 gm.events.add("render", () => {
@@ -79,14 +82,6 @@ gm.events.add("render", () => {
             stamina = Math.min(100, stamina + dt * (p.getSpeed() > 2.5 ? 6 : 14));
         }
 
-        if (stamina < 99.5) {
-            const w = 0.12, h = 0.006, x = 0.5, y = 0.965;
-            mp.game.graphics.drawRect(x, y, w, h, 0, 0, 0, 140);
-            const fill = w * stamina / 100;
-            const red = stamina < 25 || tired;
-            if (fill > 0)
-                mp.game.graphics.drawRect(x - w / 2 + fill / 2, y, fill, h, red ? 230 : 120, red ? 80 : 200, red ? 80 : 255, 220);
-        }
     } catch (e) {
         reportError("render", e);
     }

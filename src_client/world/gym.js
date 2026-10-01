@@ -93,11 +93,19 @@ const startScenario = (exercise) => {
     try {
         p.clearTasksImmediately();
         if (PROP_SCENARIOS.includes(exercise) && target) {
-            p.taskUseNearestScenarioToCoordWarp(target.x, target.y, target.z, 2.5, 0);
-            setTimeout(() => {
-                if (busy && global.gymScenario && !usingScenario() && standAt)
-                    p.taskStartScenarioAtPosition(scenario, standAt.x, standAt.y, standAt.z - 1.0, standAt.heading, 0, true, true);
-            }, 700);
+            // У тренажёров карты (Muscle Beach и др.) есть точка сценария — игра ставит персонажа сама.
+            // У поставленных сервером её нет: запускаем сценарий в точке стойки (z — центр персонажа, не земля).
+            let hasPoint = false;
+            try {
+                hasPoint = !!mp.game.ai.doesScenarioExistInArea(target.x, target.y, target.z, 1.5, true);
+            } catch (e) {}
+            if (hasPoint) {
+                p.taskUseNearestScenarioToCoordWarp(target.x, target.y, target.z, 1.5, 0);
+            } else if (standAt) {
+                p.setCoordsNoOffset(standAt.x, standAt.y, standAt.z, false, false, false);
+                p.setHeading(standAt.heading);
+                p.taskStartScenarioAtPosition(scenario, standAt.x, standAt.y, standAt.z, standAt.heading, 0, true, true);
+            }
         } else {
             p.taskStartScenarioInPlace(scenario, 0, true);
         }
@@ -254,16 +262,21 @@ let trainerOpen = false;
 
 gm.events.add("client.gym.trainer.open", (json) => {
     try {
+        // флаг мог «залипнуть» (смерть, телепорт) — если окна нет на экране, открываем заново
+        if (trainerOpen && global.cefView !== "GymTrainer") trainerOpen = false;
         if (trainerOpen) return;
         if (global.menuCheck()) {
-            mp.events.call("notify", 4, 9, "Закройте другие окна и попробуйте снова", 3000);
+            mp.events.call("notify", 4, 9, "Тренер: закройте другие окна и попробуйте снова", 3000);
             return;
         }
         trainerOpen = true;
         global.menuOpen();
-        mp.gui.emmit(`window.router.setView("GymTrainer", ${JSON.stringify(json)});`);
+        mp.gui.cursor.visible = true;
+        mp.gui.emmit(`window.router.setView("GymTrainer", ${JSON.stringify(String(json))});`);
     } catch (e) {
-        mp.events.callRemote("client_trycatch", "world/gym", "client.gym.trainer.open", e.toString());
+        trainerOpen = false;
+        mp.events.call("notify", 1, 9, `Тренер: ${String(e && e.message ? e.message : e)}`, 5000);
+        mp.events.callRemote("client_trycatch", "world/gym", "client.gym.trainer.open", String(e));
     }
 });
 
@@ -281,6 +294,7 @@ gm.events.add("client.gym.trainer.close", () => {
     if (!trainerOpen) return;
     trainerOpen = false;
     global.menuClose();
+    mp.gui.cursor.visible = false;
     mp.gui.emmit(`window.router.setHud();`);
     mp.events.callRemote("server.gym.trainer.close");
 });

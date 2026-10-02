@@ -57,8 +57,6 @@ namespace NeptuneEvo.Fractions.ArmyRP
         [JsonProperty("fuelPoint")] public Vector3 FuelPoint { get; set; } = new Vector3(-1890.0, 3070.0, 32.81);
         /// <summary>Цена литра для списания с лимита фракции (как на обычной АЗС).</summary>
         [JsonProperty("fuelPrice")] public int FuelPrice { get; set; } = 3;
-        /// <summary>Машины армии один раз переставлены на стоянки Занкудо (ArmyVehicles.cs).</summary>
-        [JsonProperty("vehiclesMoved")] public bool VehiclesMoved { get; set; }
 
         // --- Наряды (Fractions/ArmyRP/ArmyDuty.cs)
         /// <summary>Доска нарядов: E — окно нарядов.</summary>

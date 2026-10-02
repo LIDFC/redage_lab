@@ -134,7 +134,6 @@ namespace NeptuneEvo.Fractions.ArmyRP
                     case "vehmove" when action == "ground" || action == "air":
                         {
                             var moved = ArmyVehicles.MoveFromPlayer(player, action == "air");
-                            Cfg.VehiclesMoved = true;
                             result = $"{(action == "air" ? "Авиация" : "Наземная техника")}: {moved} шт. выстроены рядом вправо от тебя (лицом туда же, куда смотришь ты)";
                             break;
                         }

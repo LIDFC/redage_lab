@@ -2,8 +2,10 @@
     // Админ-панель настроек: /cfg → client.cfgpanel.open (сервер Functions/ConfigPanel.cs).
     // Отправляются только изменённые поля; сервер проверяет права и диапазоны, делает бэкап, применяет сразу и сохраняет.
     // Вкладки настроек + «История» (откат) + «Пресеты» (наборы изменений, например «Выходные x2»).
+    // «Команды» — справочник админ-команд по уровню (Docs/admin_commands.md, сервер Functions/AdminCommandsDoc.cs):
+    // открыта всем админам с 1 уровня, настройки — с 5-го (canView).
     import { executeClient } from "api/rage";
-    import { onDestroy } from "svelte";
+    import { onDestroy, onMount } from "svelte";
     import { fade } from "svelte/transition";
 
     export let viewData;
@@ -11,21 +13,96 @@
     const parse = (data) => {
         try {
             const result = typeof data === "string" ? JSON.parse(data) : data;
-            if (Array.isArray(result)) return { sections: result, history: [], presets: [], canPresets: false };
+            if (Array.isArray(result)) return { sections: result, history: [], presets: [], canPresets: false, canView: true, adminLevel: 9, canReloadDoc: false };
             return {
                 sections: Array.isArray(result && result.sections) ? result.sections : [],
                 history: Array.isArray(result && result.history) ? result.history : [],
                 presets: Array.isArray(result && result.presets) ? result.presets : [],
                 canPresets: !!(result && result.canPresets),
+                canView: result && result.canView !== undefined ? !!result.canView : true,
+                adminLevel: Number(result && result.adminLevel) || 0,
+                canReloadDoc: !!(result && result.canReloadDoc),
             };
         } catch (e) {
-            return { sections: [], history: [], presets: [], canPresets: false };
+            return { sections: [], history: [], presets: [], canPresets: false, canView: false, adminLevel: 0, canReloadDoc: false };
         }
     };
 
     let data = parse(viewData);
     $: sections = data.sections;
-    let activeId = data.sections.length ? data.sections[0].id : "history";
+    let activeId = "commands";
+
+    // ---- Справочник команд
+    let cmd = { loaded: false, source: "", commands: [], received: false };
+    let cmdSearch = "";
+    let cmdLevel = 0; // 0 — все доступные уровни
+    let tip = null; // { text, x, y, up }
+    let copied = "";
+    $: cmdLevels = [...new Set(cmd.commands.map((c) => c.level))].sort((a, b) => a - b);
+    $: cmdShown = cmd.commands.filter((c) => {
+        if (cmdLevel && c.level !== cmdLevel) return false;
+        const q = cmdSearch.trim().toLowerCase().replace(/^\//, "");
+        if (!q) return true;
+        return `${c.name} ${c.short} ${c.details} ${c.syntax}`.toLowerCase().includes(q);
+    });
+    $: cmdGroups = cmdLevels
+        .map((level) => ({ level, items: cmdShown.filter((c) => c.level === level) }))
+        .filter((g) => g.items.length);
+
+    const showTip = (event, c) => {
+        const text = [c.syntax, c.details || (c.documented ? "" : "Описание не заполнено")].filter(Boolean).join("\n");
+        if (!text) return;
+        const rect = event.currentTarget.getBoundingClientRect();
+        const width = 380;
+        const x = Math.max(8, Math.min(rect.left - 12, window.innerWidth - width - 8));
+        const up = rect.bottom + 220 > window.innerHeight;
+        tip = { text, x, y: up ? rect.top - 8 : rect.bottom + 8, up };
+    };
+    const hideTip = () => (tip = null);
+
+    const copyCmd = (c) => {
+        const text = `/${c.name}`;
+        const done = () => {
+            copied = c.name;
+            setTimeout(() => copied === c.name && (copied = ""), 1500);
+        };
+        try {
+            if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, () => (status = "Скопировать не удалось"));
+            else {
+                const area = document.createElement("textarea");
+                area.value = text;
+                document.body.appendChild(area);
+                area.select();
+                document.execCommand("copy");
+                area.remove();
+                done();
+            }
+        } catch (e) {
+            status = "Скопировать не удалось";
+            statusOk = false;
+        }
+    };
+
+    const docReload = () => {
+        busy("Перечитываю справочник...");
+        executeClient("client.cfgpanel.docReload");
+    };
+
+    window.events.addEvent("cef.cfgpanel.commands", (json) => {
+        try {
+            const result = typeof json === "string" ? JSON.parse(json) : json;
+            cmd = {
+                loaded: !!result.loaded,
+                source: result.source || "",
+                commands: Array.isArray(result.commands) ? result.commands : [],
+                received: true,
+            };
+            if (cmdLevel && !cmd.commands.some((c) => c.level === cmdLevel)) cmdLevel = 0;
+        } catch (e) {
+            cmd = { loaded: false, source: "", commands: [], received: true };
+        }
+    });
+    onMount(() => executeClient("client.cfgpanel.commandsReady"));
     // values[sectionId][key] — текущее значение в поле ввода (строка)
     let values = {};
     let search = "";
@@ -191,8 +268,9 @@
         saving = false;
         const previous = values;
         data = parse(json);
-        if (activeId !== "history" && activeId !== "presets" && !data.sections.find((s) => s.id === activeId))
-            activeId = data.sections.length ? data.sections[0].id : "history";
+        if (activeId !== "commands" && activeId !== "history" && activeId !== "presets" && !data.sections.find((s) => s.id === activeId))
+            activeId = "commands";
+        if (!data.canView && activeId !== "commands") activeId = "commands";
         reset();
         // При ошибке поля остаются как ввёл админ, чтобы поправить; при успехе — свежие значения сервера
         if (!ok) {
@@ -207,7 +285,10 @@
         status = message || "";
         statusOk = !!ok;
     });
-    onDestroy(() => window.events.removeEvent("cef.cfgpanel.update"));
+    onDestroy(() => {
+        window.events.removeEvent("cef.cfgpanel.update");
+        window.events.removeEvent("cef.cfgpanel.commands");
+    });
 
     const onKey = (event) => {
         if (event.key === "Escape") close();
@@ -220,8 +301,10 @@
 <div class="cfgpanel" in:fade={{ duration: 150 }}>
     <div class="cfgpanel__window">
         <div class="cfgpanel__header">
-            <div class="cfgpanel__title">Настройки сервера</div>
-            {#if activeId === "history"}
+            <div class="cfgpanel__title">Админ-панель <span>уровень {data.adminLevel || "—"}</span></div>
+            {#if activeId === "commands"}
+                <input class="cfgpanel__search" placeholder="Поиск команды или описания" bind:value={cmdSearch} />
+            {:else if activeId === "history"}
                 <input class="cfgpanel__search" placeholder="Фильтр: админ, вкладка, поле" bind:value={historyFilter} />
             {:else if activeId !== "presets"}
                 <input class="cfgpanel__search" placeholder="Поиск по названию" bind:value={search} />
@@ -231,23 +314,75 @@
 
         <div class="cfgpanel__body">
             <div class="cfgpanel__tabs">
+                <div class="cfgpanel__tab" class:active={activeId === "commands"} on:click={() => (activeId = "commands")}>
+                    <span>⌘ Команды</span><span class="cfgpanel__count">{cmd.commands.length || ""}</span>
+                </div>
+                {#if data.canView}
+                    <div class="cfgpanel__sep" />
+                    <div class="cfgpanel__tabcap">Настройки</div>
+                {/if}
                 {#each sections as section (section.id)}
                     <div class="cfgpanel__tab" class:active={activeId === section.id} on:click={() => (activeId = section.id)}>
                         <span>{section.title}{#if !section.canEdit} 🔒{/if}</span>
                         {#if sectionChanged(section, values)}<span class="cfgpanel__dot" />{/if}
                     </div>
                 {/each}
-                <div class="cfgpanel__sep" />
-                <div class="cfgpanel__tab" class:active={activeId === "history"} on:click={() => (activeId = "history")}>
-                    <span>История</span><span class="cfgpanel__count">{data.history.length}</span>
-                </div>
-                <div class="cfgpanel__tab" class:active={activeId === "presets"} on:click={() => (activeId = "presets")}>
-                    <span>Пресеты</span><span class="cfgpanel__count">{data.presets.length}</span>
-                </div>
+                {#if data.canView}
+                    <div class="cfgpanel__sep" />
+                    <div class="cfgpanel__tab" class:active={activeId === "history"} on:click={() => (activeId = "history")}>
+                        <span>История</span><span class="cfgpanel__count">{data.history.length}</span>
+                    </div>
+                    <div class="cfgpanel__tab" class:active={activeId === "presets"} on:click={() => (activeId = "presets")}>
+                        <span>Пресеты</span><span class="cfgpanel__count">{data.presets.length}</span>
+                    </div>
+                {/if}
             </div>
 
-            <div class="cfgpanel__content">
-                {#if activeId === "history"}
+            <div class="cfgpanel__content" on:scroll={hideTip}>
+                {#if activeId === "commands"}
+                    <div class="cfgpanel__cmdhead">
+                        <div class="cfgpanel__file">
+                            Команды вашего уровня и ниже. Наведите на <b class="cfgpanel__q static">?</b> — пояснение и синтаксис. Клик по команде — скопировать.
+                        </div>
+                        {#if data.canReloadDoc}
+                            <div class="cfgpanel__btn small secondary" on:click={docReload} title="Если правили settings/admin_commands.md">Перечитать справочник</div>
+                        {/if}
+                    </div>
+                    {#if cmd.received && !cmd.loaded}
+                        <div class="cfgpanel__warnbox">Справочник не загружен — показаны команды без описаний (только синтаксис).</div>
+                    {/if}
+                    <div class="cfgpanel__chips">
+                        <div class="cfgpanel__chip" class:active={cmdLevel === 0} on:click={() => (cmdLevel = 0)}>Все</div>
+                        {#each cmdLevels as level}
+                            <div class="cfgpanel__chip" class:active={cmdLevel === level} on:click={() => (cmdLevel = level)}>{level} ур.</div>
+                        {/each}
+                    </div>
+                    {#if !cmd.received}
+                        <div class="cfgpanel__empty">Загрузка списка команд…</div>
+                    {:else if !cmdGroups.length}
+                        <div class="cfgpanel__empty">Ничего не найдено</div>
+                    {/if}
+                    {#each cmdGroups as group (group.level)}
+                        <div class="cfgpanel__card">
+                            <div class="cfgpanel__group">Уровень {group.level} <span>{group.items.length}</span></div>
+                            {#each group.items as c (c.name)}
+                                <div class="cfgpanel__cmd">
+                                    <div class="cfgpanel__cmdname" class:copied={copied === c.name} on:click={() => copyCmd(c)} title="Скопировать /{c.name}">
+                                        {copied === c.name ? "скопировано" : `/${c.name}`}
+                                    </div>
+                                    <div class="cfgpanel__q" tabindex="0"
+                                        on:mouseenter={(e) => showTip(e, c)} on:mouseleave={hideTip}
+                                        on:focus={(e) => showTip(e, c)} on:blur={hideTip}>?</div>
+                                    <div class="cfgpanel__cmdtext">
+                                        <div class="cfgpanel__cmdshort" class:muted={!c.short}>{c.short || "Описание не заполнено"}</div>
+                                        <div class="cfgpanel__cmdsyntax">{c.syntax}</div>
+                                    </div>
+                                    <div class="cfgpanel__lvl">{c.level}</div>
+                                </div>
+                            {/each}
+                        </div>
+                    {/each}
+                {:else if activeId === "history"}
                     <div class="cfgpanel__file">Последние изменения (новые сверху). «Вернуть» ставит старое значение — это тоже попадает в историю.</div>
                     {#if !historyShown.length}
                         <div class="cfgpanel__empty">Изменений пока не было</div>
@@ -335,6 +470,7 @@
                     {/if}
                     {#each active.groups as group}
                         {#if group.fields.some((f) => matches(f, search))}
+                            <div class="cfgpanel__card">
                             <div class="cfgpanel__group">{group.title}</div>
                             {#each group.fields.filter((f) => matches(f, search)) as field (field.key)}
                                 <div class="cfgpanel__row" class:changed={isChanged(field, values[active.id][field.key])}>
@@ -369,6 +505,7 @@
                                     </div>
                                 </div>
                             {/each}
+                            </div>
                         {/if}
                     {/each}
                 {:else}
@@ -379,12 +516,19 @@
 
         <div class="cfgpanel__footer">
             <div class="cfgpanel__status" class:bad={!statusOk}>{status}</div>
-            <div class="cfgpanel__btn secondary" on:click={() => { reset(); status = ""; confirmKey = null; }}>Сбросить</div>
-            <div class="cfgpanel__btn" class:disabled={saving || !changedCount || hasErrors} on:click={save}>
-                Сохранить{changedCount ? ` (${changedCount})` : ""}
-            </div>
+            {#if data.canView && activeId !== "commands"}
+                <div class="cfgpanel__btn secondary" on:click={() => { reset(); status = ""; confirmKey = null; }}>Сбросить</div>
+                <div class="cfgpanel__btn" class:disabled={saving || !changedCount || hasErrors} on:click={save}>
+                    Сохранить{changedCount ? ` (${changedCount})` : ""}
+                </div>
+            {:else}
+                <div class="cfgpanel__btn secondary" on:click={close}>Закрыть <span class="cfgpanel__kbd">Esc</span></div>
+            {/if}
         </div>
     </div>
+    {#if tip}
+        <div class="cfgpanel__tip" class:up={tip.up} style="left: {tip.x}px; top: {tip.y}px">{tip.text}</div>
+    {/if}
 </div>
 
 <style>
@@ -397,43 +541,62 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.55);
+        background: rgba(5, 7, 10, 0.62);
         font-family: "Gilroy", "Montserrat", sans-serif;
-        color: #fff;
+        color: #e9ecf1;
+        font-size: 14px;
+        line-height: 1.45;
     }
     .cfgpanel__window {
-        width: 1040px;
-        max-width: 94vw;
-        height: 760px;
-        max-height: 92vh;
+        width: 1200px;
+        max-width: 95vw;
+        height: 840px;
+        max-height: 93vh;
         display: flex;
         flex-direction: column;
-        background: #16181d;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 12px;
+        background: #14171c;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
         overflow: hidden;
     }
     .cfgpanel__header {
         display: flex;
         align-items: center;
         gap: 16px;
-        padding: 16px 20px;
+        padding: 18px 24px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        background: #181c22;
     }
     .cfgpanel__title {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 21px;
+        font-weight: 800;
         margin-right: auto;
+        display: flex;
+        align-items: baseline;
+        gap: 10px;
+    }
+    .cfgpanel__title span {
+        font-size: 13px;
+        font-weight: 600;
+        color: #9aa3b2;
+        padding: 2px 8px;
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.06);
     }
     .cfgpanel__search,
     .cfgpanel__presetnew input {
-        width: 260px;
-        padding: 8px 12px;
+        width: 300px;
+        padding: 9px 12px;
         border-radius: 8px;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        background: #0f1115;
-        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: #0e1014;
+        color: #e9ecf1;
+        font-size: 14px;
         outline: none;
+    }
+    .cfgpanel__search:focus {
+        border-color: #4c8dff;
     }
     .cfgpanel__close {
         cursor: pointer;
@@ -450,30 +613,42 @@
         min-height: 0;
     }
     .cfgpanel__tabs {
-        width: 200px;
-        padding: 12px;
+        width: 230px;
+        padding: 14px 12px;
         border-right: 1px solid rgba(255, 255, 255, 0.08);
+        background: #111418;
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 4px;
         overflow-y: auto;
     }
     .cfgpanel__tab {
         padding: 10px 12px;
         border-radius: 8px;
         cursor: pointer;
-        opacity: 0.75;
+        color: #b8c0cc;
+        font-size: 14px;
+        font-weight: 600;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 8px;
     }
     .cfgpanel__tab:hover {
-        background: rgba(255, 255, 255, 0.05);
-        opacity: 1;
+        background: rgba(255, 255, 255, 0.06);
+        color: #fff;
     }
     .cfgpanel__tab.active {
         background: #2d6cdf;
-        opacity: 1;
+        color: #fff;
+    }
+    .cfgpanel__tabcap {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #6f7988;
+        padding: 4px 12px 2px;
     }
     .cfgpanel__sep {
         height: 1px;
@@ -482,7 +657,10 @@
     }
     .cfgpanel__count {
         font-size: 12px;
-        opacity: 0.6;
+        color: #9aa3b2;
+    }
+    .cfgpanel__tab.active .cfgpanel__count {
+        color: #dce6ff;
     }
     .cfgpanel__dot {
         width: 8px;
@@ -493,7 +671,7 @@
     .cfgpanel__content {
         flex: 1;
         overflow-y: auto;
-        padding: 12px 20px 20px;
+        padding: 16px 24px 24px;
     }
     .cfgpanel__sectionhead {
         display: flex;
@@ -502,10 +680,10 @@
         gap: 12px;
     }
     .cfgpanel__file {
-        font-size: 12px;
-        opacity: 0.55;
-        margin-bottom: 6px;
-        line-height: 1.5;
+        font-size: 13px;
+        color: #9aa3b2;
+        margin-bottom: 8px;
+        line-height: 1.55;
     }
     .cfgpanel__ro {
         display: block;
@@ -522,39 +700,60 @@
         line-height: 1.6;
     }
     .cfgpanel__empty {
-        opacity: 0.5;
+        color: #8a93a3;
         padding: 24px 0;
         text-align: center;
     }
+    .cfgpanel__card {
+        margin-top: 14px;
+        padding: 6px 8px 8px;
+        border-radius: 10px;
+        background: #191d23;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+    }
     .cfgpanel__group {
-        margin: 18px 0 8px;
+        padding: 8px 8px 6px;
         font-size: 13px;
-        font-weight: 700;
+        font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.06em;
         color: #8fb4ff;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .cfgpanel__group span {
+        font-size: 12px;
+        color: #6f7988;
+        letter-spacing: 0;
     }
     .cfgpanel__row {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 16px;
-        padding: 8px 10px;
+        gap: 20px;
+        padding: 10px 10px 10px 12px;
         border-radius: 8px;
+        border-left: 3px solid transparent;
     }
-    .cfgpanel__row:nth-child(even) {
-        background: rgba(255, 255, 255, 0.02);
+    .cfgpanel__row + .cfgpanel__row {
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
     }
     .cfgpanel__row.changed {
-        background: rgba(245, 184, 61, 0.1);
+        background: rgba(245, 184, 61, 0.08);
+        border-left-color: #f5b83d;
     }
     .cfgpanel__label {
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #e9ecf1;
     }
     .cfgpanel__hint {
-        font-size: 11px;
-        opacity: 0.5;
-        margin-top: 2px;
+        font-size: 12.5px;
+        font-weight: 500;
+        color: #9aa3b2;
+        margin-top: 3px;
+        line-height: 1.45;
     }
     .cfgpanel__input {
         display: flex;
@@ -564,14 +763,15 @@
     }
     .cfgpanel__input input,
     .cfgpanel__input select {
-        width: 150px;
-        padding: 7px 10px;
-        border-radius: 6px;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        background: #0f1115;
+        width: 160px;
+        padding: 8px 10px;
+        border-radius: 7px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        background: #0e1014;
         color: #fff;
         text-align: right;
-        font-size: 14px;
+        font-size: 15px;
+        font-weight: 600;
         outline: none;
     }
     .cfgpanel__input input:disabled,
@@ -614,12 +814,12 @@
         left: 25px;
     }
     .cfgpanel__error {
-        font-size: 11px;
+        font-size: 12px;
         color: #ff6b6f;
         margin-top: 3px;
     }
     .cfgpanel__was {
-        font-size: 11px;
+        font-size: 12px;
         color: #f5b83d;
         margin-top: 3px;
         cursor: pointer;
@@ -631,7 +831,7 @@
         gap: 14px;
         padding: 9px 10px;
         border-radius: 8px;
-        font-size: 13px;
+        font-size: 14px;
     }
     .cfgpanel__hrow:nth-child(even),
     .cfgpanel__preset {
@@ -674,12 +874,13 @@
         display: flex;
         align-items: center;
         gap: 12px;
-        padding: 14px 20px;
+        padding: 14px 24px;
         border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: #181c22;
     }
     .cfgpanel__status {
         flex: 1;
-        font-size: 13px;
+        font-size: 14px;
         color: #7ee2a8;
     }
     .cfgpanel__status.bad {
@@ -707,5 +908,166 @@
     .cfgpanel__btn.disabled {
         opacity: 0.4;
         cursor: default;
+    }
+    .cfgpanel__kbd {
+        font-size: 11px;
+        padding: 1px 6px;
+        margin-left: 6px;
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #b8c0cc;
+    }
+
+    /* ---- Команды */
+    .cfgpanel__cmdhead {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .cfgpanel__warnbox {
+        margin: 6px 0 10px;
+        padding: 10px 12px;
+        border-radius: 8px;
+        background: rgba(245, 184, 61, 0.1);
+        border: 1px solid rgba(245, 184, 61, 0.4);
+        color: #f5d38a;
+        font-size: 13px;
+    }
+    .cfgpanel__chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 6px 0 2px;
+    }
+    .cfgpanel__chip {
+        padding: 6px 12px;
+        border-radius: 16px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #b8c0cc;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid transparent;
+        cursor: pointer;
+        user-select: none;
+    }
+    .cfgpanel__chip:hover {
+        color: #fff;
+    }
+    .cfgpanel__chip.active {
+        color: #fff;
+        background: rgba(45, 108, 223, 0.35);
+        border-color: #4c8dff;
+    }
+    .cfgpanel__cmd {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 10px 10px 10px 12px;
+        border-radius: 8px;
+    }
+    .cfgpanel__cmd + .cfgpanel__cmd {
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .cfgpanel__cmd:hover {
+        background: rgba(255, 255, 255, 0.03);
+    }
+    .cfgpanel__cmdname {
+        width: 170px;
+        flex-shrink: 0;
+        font-family: "JetBrains Mono", "Consolas", monospace;
+        font-size: 14px;
+        font-weight: 700;
+        color: #9cc2ff;
+        cursor: pointer;
+        overflow-wrap: anywhere;
+    }
+    .cfgpanel__cmdname:hover {
+        color: #fff;
+    }
+    .cfgpanel__cmdname.copied {
+        color: #7ee2a8;
+        font-family: inherit;
+        font-size: 13px;
+    }
+    .cfgpanel__q {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        display: inline-grid;
+        place-items: center;
+        font-size: 12px;
+        font-weight: 800;
+        color: #c9d3e3;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: help;
+        outline: none;
+    }
+    .cfgpanel__q:hover,
+    .cfgpanel__q:focus {
+        background: #2d6cdf;
+        color: #fff;
+    }
+    .cfgpanel__q.static {
+        display: inline-grid;
+        vertical-align: middle;
+        cursor: default;
+    }
+    .cfgpanel__cmdtext {
+        flex: 1;
+        min-width: 0;
+    }
+    .cfgpanel__cmdshort {
+        font-size: 14.5px;
+        font-weight: 600;
+        color: #e9ecf1;
+    }
+    .cfgpanel__cmdshort.muted {
+        color: #8a93a3;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .cfgpanel__cmdsyntax {
+        margin-top: 3px;
+        font-family: "JetBrains Mono", "Consolas", monospace;
+        font-size: 12.5px;
+        color: #8a93a3;
+        overflow-wrap: anywhere;
+    }
+    .cfgpanel__lvl {
+        flex-shrink: 0;
+        min-width: 26px;
+        padding: 2px 7px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #b8c0cc;
+        background: rgba(255, 255, 255, 0.06);
+    }
+    .cfgpanel__tip {
+        position: fixed;
+        z-index: 50;
+        width: 380px;
+        max-width: calc(100vw - 16px);
+        padding: 12px 14px;
+        border-radius: 10px;
+        background: #0b0d11;
+        border: 1px solid rgba(76, 141, 255, 0.45);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55);
+        color: #dfe5ee;
+        font-size: 13.5px;
+        line-height: 1.55;
+        white-space: pre-line;
+        pointer-events: none;
+    }
+    .cfgpanel__tip.up {
+        transform: translateY(-100%);
+    }
+    .cfgpanel__tip::first-line {
+        font-family: "JetBrains Mono", "Consolas", monospace;
+        color: #9cc2ff;
+        font-weight: 700;
     }
 </style>

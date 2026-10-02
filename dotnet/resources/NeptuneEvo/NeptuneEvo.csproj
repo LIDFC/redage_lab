@@ -28,6 +28,9 @@
       <LastGenOutput>ServerStruct.cs</LastGenOutput>
       <Generator>TextTemplatingFileGenerator</Generator>
     </None>
+    <None Update="Docs\admin_commands.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="meta.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

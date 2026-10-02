@@ -11,6 +11,32 @@ gm.events.add("client.cfgpanel.open", (json) => {
     mp.gui.emmit(`window.router.setView("AdminConfigPanel", ${JSON.stringify(json)})`);
 });
 
+// Справочник команд приходит частями (client.cfgpanel.commands) — собираем и отдаём окну.
+// Окно может ещё не успеть открыться, поэтому оно само просит данные (client.cfgpanel.commandsReady).
+let commandParts = [];
+let commandsJson = null;
+const sendCommands = () => {
+    if (!isOpenCfgPanel || commandsJson === null) return;
+    mp.gui.emmit(`window.events.callEvent("cef.cfgpanel.commands", ${JSON.stringify(commandsJson)})`);
+};
+
+gm.events.add("client.cfgpanel.commands", (index, total, chunk) => {
+    if (index === 0) commandParts = [];
+    commandParts[index] = chunk;
+    if (commandParts.filter((x) => typeof x === "string").length === total) {
+        commandsJson = commandParts.join("");
+        commandParts = [];
+        sendCommands();
+    }
+});
+
+gm.events.add("client.cfgpanel.commandsReady", () => sendCommands());
+
+gm.events.add("client.cfgpanel.docReload", () => {
+    if (!isOpenCfgPanel) return;
+    mp.events.callRemote("server.cfgpanel.docReload");
+});
+
 gm.events.add("client.cfgpanel.close", () => {
     if (!isOpenCfgPanel) return;
     isOpenCfgPanel = false;

@@ -680,7 +680,7 @@ namespace NeptuneEvo.Functions
                         })
                     })
                 }),
-                history = History.AsEnumerable().Reverse().Take(HistorySend).Select(h => new
+                history = (CanView(player) ? History.AsEnumerable().Reverse().Take(HistorySend) : Enumerable.Empty<HistoryEntry>()).Select(h => new
                 {
                     id = h.Id,
                     time = h.Time,
@@ -692,8 +692,12 @@ namespace NeptuneEvo.Functions
                     old = h.Old,
                     @new = h.New,
                 }),
-                presets = Presets(),
+                presets = CanView(player) ? Presets() : new List<object>(),
                 canPresets = CanManagePresets(player),
+                // Справочник команд (вкладка «Команды» — список приходит отдельно, client.cfgpanel.commands)
+                canView = CanView(player),
+                adminLevel = AdminLevel(player),
+                canReloadDoc = AdminLevel(player) >= EditLevel || IsDirector(player),
             });
         }
 
@@ -843,9 +847,11 @@ namespace NeptuneEvo.Functions
             {
                 if (!player.IsCharacterData())
                     return;
-                if (!CanView(player) && !CommandsAccess.CanUseCmd(player, AdminCommands.cfgpanel))
+                // С 1 уровня — справочник команд; настройки, история и пресеты — только при CanView
+                if (AdminLevel(player) < 1 && !IsDirector(player))
                     return;
-                Trigger.ClientEvent(player, "client.cfgpanel.open", BuildJson(player, BuildSections()));
+                Trigger.ClientEvent(player, "client.cfgpanel.open", BuildJson(player, CanView(player) ? BuildSections() : new List<Section>()));
+                SendCommands(player);
             }
             catch (Exception e)
             {
@@ -867,6 +873,43 @@ namespace NeptuneEvo.Functions
             catch (Exception e)
             {
                 Log.Write($"Save Exception: {e}");
+            }
+        }
+
+        // ------------------------------------------------------------------ справочник команд
+
+        /// <summary>Список команд по уровню админа — частями по 16 КБ (описания длинные).</summary>
+        private static void SendCommands(ExtPlayer player)
+        {
+            if (!AdminCommandsDoc.Loaded)
+                AdminCommandsDoc.Load();
+            var level = IsDirector(player) ? Math.Max(AdminLevel(player), 9) : AdminLevel(player);
+            var json = JsonConvert.SerializeObject(new
+            {
+                loaded = AdminCommandsDoc.Loaded,
+                source = AdminCommandsDoc.Source,
+                commands = AdminCommandsDoc.For(level),
+            });
+            const int chunk = 16000;
+            var total = (json.Length + chunk - 1) / chunk;
+            for (var i = 0; i < total; i++)
+                Trigger.ClientEvent(player, "client.cfgpanel.commands", i, total, json.Substring(i * chunk, Math.Min(chunk, json.Length - i * chunk)));
+        }
+
+        [RemoteEvent("server.cfgpanel.docReload")]
+        public static void DocReload(ExtPlayer player)
+        {
+            try
+            {
+                if (!player.IsCharacterData() || AdminLevel(player) < EditLevel && !IsDirector(player))
+                    return;
+                var text = AdminCommandsDoc.Load();
+                SendCommands(player);
+                Trigger.ClientEvent(player, "client.cfgpanel.result", AdminCommandsDoc.Loaded, text, BuildJson(player, CanView(player) ? BuildSections() : new List<Section>()));
+            }
+            catch (Exception e)
+            {
+                Log.Write($"DocReload Exception: {e}");
             }
         }
 

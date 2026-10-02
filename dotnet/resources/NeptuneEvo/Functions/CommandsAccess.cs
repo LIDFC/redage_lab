@@ -518,7 +518,7 @@ namespace NeptuneEvo.Functions
             { AdminCommands.fcrypto, 5 },
             { AdminCommands.blackmarket, 5 },
             { AdminCommands.orgcontracts, 5 },
-            { AdminCommands.cfgpanel, 5 },
+            { AdminCommands.cfgpanel, 1 }, // окно открывается всем админам (вкладка «Команды»), настройки — с ConfigPanel.ViewLevel
             { AdminCommands.dooropen, 6 },
             { AdminCommands.daylabor, 6 },
             { AdminCommands.armyset, 6 },
@@ -699,6 +699,9 @@ namespace NeptuneEvo.Functions
             
             //Notify.Send(player, NotifyType.Success, NotifyPosition.BottomCenter, $"Вы успешно обновили ресурсы! 2", 10000);
         }
+
+        /// <summary>Реальные уровни админ-команд (код + таблица adminaccess) — для справочника в /cfg.</summary>
+        public static Dictionary<string, sbyte> GetAdminLevels() => new Dictionary<string, sbyte>(AdminAccess);
 
         public static bool CanUseCmd(ExtPlayer player, string cmd, string args = "")
         {

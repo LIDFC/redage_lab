@@ -975,32 +975,75 @@ gm.events.add("client:binder", (type, index, keyCode) => {
     }
 });
 
-// Срабатывание биндов на кнопках мыши в игре. Какой способ RAGE поддерживает, зависит от версии,
-// поэтому слушаем сразу несколько; нажатие учитывается не чаще раза в 150 мс на кнопку.
+// Срабатывание биндов на кнопках мыши в игре (колесо — 4, боковые — 5 и 6).
+// Единственный источник — опрос mp.keys.isDown каждый кадр (/mousetest показал, что RAGE так их видит).
+// Нажатие учитывается не чаще раза в 150 мс на кнопку.
 const MOUSE_CODES = [4, 5, 6];
 const mouseBindState = { 4: false, 5: false, 6: false };
 const mouseLastFire = { 4: 0, 5: 0, 6: 0 };
+// Кнопку только что назначили в окне биндера — пока её не отпустят, бинд не запускаем
+const mouseSkipUntilUp = { 4: false, 5: false, 6: false };
 let mouseTestUntil = 0;
 
-const mouseFire = (code, down, source) => {
-    if (mouseTestUntil > Date.now() && down)
-        mp.gui.chat.push(`!{#8bd36b}[mousetest] кнопка ${code} — видна через ${source}`);
-    if (global.indexUpdate !== -1 || mouseBindState[code] === down) return;
+const mouseTestLog = (text) => {
+    if (mouseTestUntil > Date.now())
+        mp.gui.chat.push(`!{#8bd36b}[mousetest] ${text}`);
+};
+
+// То же, что getControllBind для обычной клавиши, но с объяснением для /mousetest
+const runMouseBinds = (code, down) => {
+    const list = binderListeners[code];
+    if (!list || !list.length) {
+        if (down) mouseTestLog(`кнопка ${code}: на неё ничего не назначено`);
+        return;
+    }
+    list.forEach((index) => {
+        const item = global.userBinder[index];
+        if (!item) return;
+        const wantDown = item.trigges === undefined ? true : item.trigges;
+        if (wantDown !== down) return;
+        const title = item.title || item.function;
+        if (!binderActions.getIsBinder(item.type)) {
+            mouseTestLog(`кнопка ${code}: «${title}» пропущено — работает только ${item.type === binderType.inVehicle ? "в машине" : "пешком"}`);
+            return;
+        }
+        const fn = global.binderFunctions[item.function];
+        if (!fn) {
+            mouseTestLog(`кнопка ${code}: «${title}» пропущено — нет функции ${item.function}`);
+            return;
+        }
+        try {
+            fn();
+            mouseTestLog(`кнопка ${code}: выполнено «${title}»`);
+        } catch (e) {
+            mouseTestLog(`кнопка ${code}: «${title}» — ошибка ${e}`);
+        }
+    });
+};
+
+const mouseFire = (code, down) => {
+    if (down) mouseTestLog(`кнопка ${code} нажата (видна через keys.isDown)`);
     mouseBindState[code] = down;
+    if (global.indexUpdate !== -1) { // идёт назначение клавиши в окне биндера
+        if (down) mouseSkipUntilUp[code] = true;
+        return;
+    }
+    if (mouseSkipUntilUp[code]) {
+        if (!down) mouseSkipUntilUp[code] = false;
+        return;
+    }
     if (down) {
         if (Date.now() - mouseLastFire[code] < 150) return;
         mouseLastFire[code] = Date.now();
     }
-    if (binderListeners[code] && binderListeners[code].length)
-        binderActions.getControllBind (code, down);
+    if (!global.loggedin) return;
+    if (global.chatActive) {
+        if (down) mouseTestLog(`кнопка ${code}: открыт чат — бинды не срабатывают`);
+        return;
+    }
+    global.updateAfkStatus (false);
+    runMouseBinds(code, down);
 };
-
-MOUSE_CODES.forEach((code) => {
-    try {
-        mp.keys.bind(code, true, () => mouseFire(code, true, "keys.bind"));
-        mp.keys.bind(code, false, () => mouseFire(code, false, "keys.bind"));
-    } catch (e) {}
-});
 
 gm.events.add("render", () => {
     if (!global.loggedin) return;
@@ -1011,14 +1054,18 @@ gm.events.add("render", () => {
         } catch (e) {
             return;
         }
-        if (down !== mouseBindState[code]) mouseFire(code, down, "keys.isDown");
+        if (down !== mouseBindState[code]) mouseFire(code, down);
     }
 });
 
-// /mousetest — 10 секунд показывает в чате, видит ли игра колесо и боковые кнопки мыши
+// /mousetest — 10 секунд пишет в чат, видит ли игра колесо и боковые кнопки мыши и что делают бинды на них
 gm.events.add("client.mousetest", () => {
     mouseTestUntil = Date.now() + 10000;
-    mp.gui.chat.push("!{#ffb400}[mousetest] 10 секунд: нажимайте колесо и боковые кнопки мыши");
+    const assigned = MOUSE_CODES
+        .map((code) => `${code}: ${(binderListeners[code] || []).map((i) => global.userBinder[i] && global.userBinder[i].title).filter(Boolean).join(", ") || "—"}`)
+        .join(" | ");
+    mp.gui.chat.push(`!{#ffb400}[mousetest] Назначено: ${assigned}`);
+    mp.gui.chat.push("!{#ffb400}[mousetest] 10 секунд: нажимайте колесо и боковые кнопки мыши (чат закройте)");
     setTimeout(() => mp.gui.chat.push("!{#ffb400}[mousetest] Готово. Нет строк выше — RAGE не передаёт эти кнопки"), 10000);
 });
 

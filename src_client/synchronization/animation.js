@@ -693,83 +693,6 @@ const PlayerAnimList = {
 		playbackRate: 0,
 		freeze: true,
 	},
-	// Уличная качалка (world/gym.js, сервер World/Gym/GymManager.cs)
-	"gym_chinup": {
-		animDictionary: "amb@prop_human_muscle_chin_ups@male@base",
-		animationName: "base",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-		collision: true,
-	},
-	"gym_bench": {
-		animDictionary: "amb@prop_human_seat_muscle_bench_press@idle_a",
-		animationName: "idle_a",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-		collision: true,
-		attachmentName: "press1",
-	},
-	"gym_weights": {
-		animDictionary: "amb@world_human_muscle_free_weights@male@barbell@base",
-		animationName: "base",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-		attachmentName: "barbell",
-	},
-	"gym_situps": {
-		animDictionary: "amb@world_human_sit_ups@male@base",
-		animationName: "base",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-	},
-	"gym_pushups": {
-		animDictionary: "amb@world_human_push_ups@male@base",
-		animationName: "base",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-	},
-	"gym_yoga": {
-		animDictionary: "amb@world_human_yoga@male@base",
-		animationName: "base_a",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-	},
-	// Дополнительные упражнения (переключаются стрелками на том же снаряде, world/gym.js)
-	"gym_curls": {
-		animDictionary: "amb@world_human_muscle_free_weights@male@barbell@idle_a",
-		animationName: "idle_d",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-		attachmentName: "press2",
-	},
-	"gym_stretch": {
-		animDictionary: "amb@world_human_yoga@male@base",
-		animationName: "base_b",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-	},
-	"gym_flex": {
-		animDictionary: "amb@world_human_muscle_flex@arms_at_side@idle_a",
-		animationName: "idle_a",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-	},
-	"gym_jog": {
-		animDictionary: "amb@world_human_jog_standing@male@fitidle_a",
-		animationName: "idle_a",
-		flag: 1,
-		playbackRate: 0,
-		freeze: true,
-	},
 }
 
 gm.events.add('PlayAnimToKey', (entity, status, key) => {
@@ -791,9 +714,6 @@ gm.events.add("playerStreamIn", (entity) => {
 const setAnimToKey = (entity, status, key) => {
     try {
         if (entity && mp.players.exists(entity) && entity.type === 'player' && entity.handle !== 0 && !entity.vehicle) {
-			// Свой персонаж в качалке занимается сценарием GTA (world/gym.js) — анимацию gym_* ему не включаем
-			if (entity.handle === global.localplayer.handle && global.gymScenario && typeof key === "string" && key.indexOf("gym_") === 0)
-				return;
 			if (!PlayerAnimList [key] && !PlayerAnimList [entity.AnimToKey])
 				return;
 

@@ -136,7 +136,6 @@
 	import JobElectricianGame from '@/views/jobs/electrician/index.svelte';
 	import JobFarmGame from '@/views/jobs/farm/index.svelte';
 	import FractionWardrobe from '@/views/fractions/wardrobe/index.svelte';
-	import GymTrainer from '@/views/player/gymtrainer/index.svelte';
 	import HouseFurniture from '@/views/house/furniture/index.svelte';
 
 
@@ -234,7 +233,6 @@
 		JobElectricianGame,
 		JobFarmGame,
 		FractionWardrobe,
-		GymTrainer,
 		HouseFurniture
 	}
 	

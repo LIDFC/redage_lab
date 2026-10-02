@@ -37,7 +37,8 @@ gm.events.add("payday", (exp, level, cash) => {
 gm.events.add("pedStreamIn", (entity) => {
 	//entity.taskLookAt(global.localplayer.handle, -1, 2048, 3);
 
-	if (entity.PedId == 1 && entity.getModel() == mp.game.joaat("s_f_y_ranger_01")) { // Ketrin Kellerman
+	// Кэтрин Келлерман на стойке штаба армии (сервер ArmyRP/ArmyNpc.cs) — отдаёт честь
+	if (entity.getModel() == mp.game.joaat("s_f_y_ranger_01") && mp.game.system.vdist(entity.position.x, entity.position.y, entity.position.z, -2348.598, 3210.923, 29.224812) < 2) {
 		entity.taskPlayAnim("anim@mp_player_intuppersalute", "idle_a", 8.0, 1.0, -1, 49, 0.0, false, false, false);
 	}
 });

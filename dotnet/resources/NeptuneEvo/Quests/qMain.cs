@@ -73,7 +73,6 @@ namespace NeptuneEvo.Quests
                 else if (questData.ActorName == Fractions.Ticket.QuestName) Fractions.Ticket.OpenTickets(player);
                 else if (questData.ActorName == "npc_org") Organizations.Manager.Perform(player);
                 else if (questData.ActorName == "npc_birthday") Wedding.OpenBonus(player, 0);
-                else if (questData.ActorName == World.Gym.Fitness.QuestName) World.Gym.Fitness.BuyMembership(player);
                 else Jobs.JobEmployers.TryPerform(player, questData.ActorName);
                 
                 

@@ -29,9 +29,28 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
                 return;
             }
 
+            if (price < 1 || hours < Manager.Config.App.MinHours || hours > Manager.Config.App.MaxHours)
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Укажите цену и срок размещения", 3000);
+                return;
+            }
+
+            // Вещь из инвентаря — ключ с префиксом "inv:" (без него — склад маркетплейса, как раньше)
+            var fromInventory = key != null && key.StartsWith("inv:");
+            if (fromInventory)
+                key = key.Substring(4);
+            if ((lotType == LotType.Item || lotType == LotType.Clothes) && count < 1)
+                return;
+
             FormatKey(lotType, key, out var id, out var extraData);
 
-            if (!Check(player, lotType, id, extraData, count))
+            if (fromInventory && (lotType == LotType.Item || lotType == LotType.Clothes) && !Extensions.Players.CanSellFromInventory((ItemId)id))
+            {
+                Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Эту вещь нельзя продать на маркетплейсе", 3000);
+                return;
+            }
+
+            if (!Check(player, lotType, id, extraData, count, fromInventory))
                 return;
 
             var commission = Commission.Get(lotType, price, hours, count);
@@ -43,7 +62,14 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             }
 
             if (lotType == LotType.Item || lotType == LotType.Clothes)
-                Chars.Repository.Remove(null, $"marketStorage_{player.GetUUID()}", "marketStorage", (ItemId)id, count, extraData);
+            {
+                // Те же данные, что в Check: пустые — любая вещь этого типа (иначе проверка и списание расходились — дюп)
+                var matchData = string.IsNullOrEmpty(extraData) ? null : extraData;
+                if (fromInventory)
+                    Chars.Repository.Remove(player, $"char_{player.GetUUID()}", "inventory", (ItemId)id, count, matchData);
+                else
+                    Chars.Repository.Remove(null, $"marketStorage_{player.GetUUID()}", "marketStorage", (ItemId)id, count, matchData);
+            }
 
             var marketItem = new MarketItem()
             {
@@ -68,9 +94,10 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
 
         private static void FormatKey(LotType type, string key, out int id, out string data)
         {
-            if (type == LotType.Clothes)
+            // Одежда и предметы: "itemId^данные" (данные предмета — серийник оружия и т.п.)
+            if (type == LotType.Clothes || type == LotType.Item && key.Contains("^"))
             {
-                var split = key.Split("^");
+                var split = key.Split("^", 2);
 
                 if (split.Length == 2)
                 {
@@ -84,7 +111,7 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
             data = string.Empty;
         }
 
-        private static bool Check(ExtPlayer player, LotType type, int id, string extraData, int count)
+        private static bool Check(ExtPlayer player, LotType type, int id, string extraData, int count, bool fromInventory = false)
         {
             if (!player.GetMarketPlaceProfile(out var profile))
                 return false;
@@ -94,9 +121,13 @@ namespace NeptuneEvo.EternalDev.MarketPlace.Methods
                 case LotType.Clothes:
                 case LotType.Item:
                     {
-                        if (Chars.Repository.getCountToLacationItem($"marketStorage_{player.GetUUID()}", "marketStorage", (ItemId)id, type == LotType.Clothes ? extraData : null) < count)
+                        var matchData = string.IsNullOrEmpty(extraData) ? null : extraData;
+                        var have = fromInventory
+                            ? Chars.Repository.getCountToLacationItem($"char_{player.GetUUID()}", "inventory", (ItemId)id, matchData)
+                            : Chars.Repository.getCountToLacationItem($"marketStorage_{player.GetUUID()}", "marketStorage", (ItemId)id, matchData);
+                        if (have < count)
                         {
-                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У вас нет столько {Chars.Repository.ItemsInfo[(ItemId)id].Name} на складе маркетплейса", 3000);
+                            Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У вас нет столько {Chars.Repository.ItemsInfo[(ItemId)id].Name} {(fromInventory ? "в инвентаре" : "на складе маркетплейса")}", 3000);
                             return false;
                         }
                     }

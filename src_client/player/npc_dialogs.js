@@ -2458,6 +2458,7 @@ const actorData = {
     npc_airdrop:translateText("Хуаном Де Картелем"),
     npc_oressale:"Марком",
     npc_fracpolic:translateText("Работником полиции"),
+    npc_army: "Кэтрин Келлерман",
     npc_fracsheriff:translateText("Шерифом"),
     npc_fracnews:translateText("Дженнифер"),
     npc_fracems:translateText("Эммануэлем"),

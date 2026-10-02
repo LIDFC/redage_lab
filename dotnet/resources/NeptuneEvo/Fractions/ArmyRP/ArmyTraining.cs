@@ -202,7 +202,6 @@ namespace NeptuneEvo.Fractions.ArmyRP
                     return;
                 var passed = seconds <= Cfg.CoursePassSeconds;
                 SaveResult(player, "course", Math.Round(seconds, 1), passed);
-                World.Gym.Fitness.Gain(player, "stamina");
                 ArmyUtil.Say(player, $"Полоса: {(int) seconds / 60}:{(int) seconds % 60:00} — {(passed ? "ЗАЧЁТ" : $"незачёт (норматив {Cfg.CoursePassSeconds / 60}:{Cfg.CoursePassSeconds % 60:00})")}", passed);
                 ArmyUtil.Radio($"{player.Name}: полоса препятствий за {(int) seconds / 60}:{(int) seconds % 60:00}{(passed ? " — зачёт" : "")}");
             }

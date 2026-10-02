@@ -284,6 +284,9 @@ namespace NeptuneEvo.Fractions.ArmyRP
                     total = Points(order.Type).Count,
                 },
                 isOfficer = officer,
+                // Вкладка «Объявления» (ArmyBoard.cs)
+                announcements = ArmyBoard.ListFor(player),
+                canPost = officer,
                 soldiers = officer
                     ? ArmyUtil.ArmyOnDuty().Where(p => p != player).Select(p => new
                     {

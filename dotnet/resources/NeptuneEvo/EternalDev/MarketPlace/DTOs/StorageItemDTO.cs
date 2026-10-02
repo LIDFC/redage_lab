@@ -15,5 +15,9 @@ namespace NeptuneEvo.EternalDev.MarketPlace.DTOs
 
         [JsonProperty("endDate")]
         public long EndDate { get; set; }
+
+        /// <summary>Откуда вещь: "storage" — склад маркетплейса, "inv" — инвентарь игрока (только для «Создать лот»).</summary>
+        [JsonProperty("source")]
+        public string Source { get; set; } = "storage";
     }
 }

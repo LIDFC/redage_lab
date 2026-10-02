@@ -11,6 +11,7 @@ import npc_fd_zakJson from './defenderFatherlandDay/npc_zak.json';
 import npc_airdrop from './npc_airdrop.json';
 import npc_oressale from './npc_oressale.json';
 import npc_fracpolic from './fraction/npc_fracpolic.json';
+import npc_army from './fraction/npc_army.json';
 import npc_fracsheriff from './fraction/npc_fracsheriff.json';
 import npc_fracnews from './fraction/npc_fracnews.json';
 import npc_fracems from './fraction/npc_fracems.json';
@@ -44,7 +45,6 @@ import npc_taxi from './work/npc_taxi.json';
 import npc_truckers from './work/npc_truckers.json';
 import npc_org from './npc_org.json';
 import npc_birthday from './npc_birthday.json';
-import npc_gym from './work/npc_gym.json';
 
 /* type
     quest - Обычный квест который только в меню
@@ -63,6 +63,7 @@ const list = {
     npc_airdrop: npc_airdrop,
     npc_oressale: npc_oressale,
     npc_fracpolic: npc_fracpolic,
+    npc_army: npc_army,
     npc_fracsheriff: npc_fracsheriff,
     npc_fracnews: npc_fracnews,
     npc_fracems: npc_fracems,
@@ -97,7 +98,6 @@ const list = {
     npc_truckers: npc_truckers,
     npc_org: npc_org,
     npc_birthday: npc_birthday,
-    npc_gym: npc_gym,
 }
 
 const actorData = {
@@ -213,8 +213,8 @@ const actorData = {
     npc_birthday: {
         name: "Праздничная обезьянка"
     },
-    npc_gym: {
-        name: "Тренер"
+    npc_army: {
+        name: "Кэтрин Келлерман"
     },
 }
 

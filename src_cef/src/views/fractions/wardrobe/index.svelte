@@ -63,6 +63,10 @@
     const selectTab = (key) => {
         current = key;
         search = "";
+        if (key === "Catalog") {
+            if (!catPage) loadCatalog(catKey, 0);
+            return;
+        }
         executeClient("client.wardrobe.camera", CAMERA[key] || "top");
     };
 
@@ -107,6 +111,94 @@
     ];
 
     const payload = () => JSON.stringify({ items: outfit.items, torso: outfit.torso });
+
+    // ---- Образы фракции: примерить может любой, сохранить/удалить — с 9 ранга (сервер перепроверяет)
+    let presets = data.presets || [];
+    let presetName = "";
+    const wearPreset = (preset) => {
+        const src = (preset && preset.outfit) || {};
+        const items = src.items || {};
+        tabs.filter((t) => t.key !== "Torso").forEach((cat) => {
+            const value = items[cat.key];
+            const item = value && cat.items.find((i) => i.id === value[0]);
+            if (item) {
+                outfit.items[cat.key] = [value[0], value[1] || 0];
+            } else if (outfit.items[cat.key]) {
+                delete outfit.items[cat.key];
+                executeClient("client.wardrobe.clear", cat.slot, cat.isProp);
+            }
+        });
+        outfit.torso = src.torso ? [...src.torso] : null;
+        if (!outfit.torso) executeClient("client.wardrobe.clear", 3, false);
+        outfit = outfit;
+        // Предпросмотр всех частей; торс — последним, чтобы верх его не перебил
+        tabs.filter((t) => t.key !== "Torso" && outfit.items[t.key]).forEach((cat) => {
+            const value = outfit.items[cat.key];
+            const item = cat.items.find((i) => i.id === value[0]);
+            if (item) preview(cat, item, value[1]);
+        });
+        if (outfit.torso) executeClient("client.wardrobe.previewTorso", outfit.torso[0], outfit.torso[1]);
+        message = `Образ «${preset.name}» примерен. «${data.onDuty ? "Переодеться" : "Заступить на смену"}» — надеть`;
+        ok = true;
+    };
+    const savePreset = () => {
+        if (presetName.trim().length < 2) {
+            message = "Введите название образа (от 2 символов)";
+            ok = false;
+            return;
+        }
+        executeClient("client.wardrobe.presetSave", presetName.trim(), payload());
+    };
+    const deletePreset = (preset) => executeClient("client.wardrobe.presetDelete", preset.id);
+
+    // ---- Каталог всей одежды сервера (только админ 9): по одной категории, страницами по 60 — меню не грузит всё сразу
+    const catalogCats = data.catalog || [];
+    let catKey = catalogCats.length ? catalogCats[0].key : null;
+    let catPage = null;
+    let catSearch = "";
+    let catLoading = false;
+    let catSelected = null;
+    let catTimer = null;
+    const loadCatalog = (key, page = 0) => {
+        if (!key) return;
+        if (key !== catKey) catSelected = null;
+        catKey = key;
+        catLoading = true;
+        executeClient("client.wardrobe.catalog", key, page, catSearch.trim());
+    };
+    const onCatSearch = () => {
+        clearTimeout(catTimer);
+        catTimer = setTimeout(() => loadCatalog(catKey, 0), 400);
+    };
+    const catPreview = (item, texture) => {
+        if (!catPage) return;
+        executeClient("client.wardrobe.preview", catPage.slot, catPage.isProp, item.drawable, texture, item.torso === undefined ? -1 : item.torso);
+    };
+    const catPick = (item) => {
+        catSelected = { item, texture: item.textures[0] || 0 };
+        catPreview(item, catSelected.texture);
+    };
+    const catTexture = (texture) => {
+        if (!catSelected) return;
+        catSelected = { ...catSelected, texture };
+        catPreview(catSelected.item, texture);
+    };
+    const catToggle = (item, add) => executeClient("client.wardrobe.catalogToggle", catKey, item.id, add);
+    window.events.addEvent("cef.wardrobe.catalogPage", (json) => {
+        const page = parse(json);
+        catLoading = false;
+        if (page.key !== catKey) return;
+        catPage = page;
+    });
+    window.events.addEvent("cef.wardrobe.catalogChanged", (key, id, add) => {
+        if (!catPage || catPage.key !== key) return;
+        catPage.items = catPage.items.map((i) => (i.id === id ? { ...i, inForm: add, extra: add } : i));
+        if (catSelected && catSelected.item.id === id) catSelected = { ...catSelected, item: { ...catSelected.item, inForm: add, extra: add } };
+    });
+    window.events.addEvent("cef.wardrobe.presets", (json) => {
+        presets = parse(json) || [];
+        if (!Array.isArray(presets)) presets = [];
+    });
     const duty = () => executeClient("client.wardrobe.save", payload(), true);
     const save = () => executeClient("client.wardrobe.save", payload(), false);
     const takeoff = () => executeClient("client.wardrobe.takeoff");
@@ -119,6 +211,10 @@
     window.events.addEvent("cef.wardrobe.result", onResult);
     onDestroy(() => {
         window.events.removeEvent("cef.wardrobe.result");
+        window.events.removeEvent("cef.wardrobe.presets");
+        window.events.removeEvent("cef.wardrobe.catalogPage");
+        window.events.removeEvent("cef.wardrobe.catalogChanged");
+        clearTimeout(catTimer);
         executeClient("client.camera.toggled", false);
     });
 
@@ -147,7 +243,69 @@
                         <span>{tab.title}</span>
                     </div>
                 {/each}
+                {#if catalogCats.length}
+                    <div class="wr__tab wr__tab_catalog" class:active={current === "Catalog"} on:click={() => selectTab("Catalog")}>
+                        <svg viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h10M18 17l3 3m-1.5-4.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" /></svg>
+                        <span>Каталог</span>
+                    </div>
+                {/if}
             </div>
+            {#if current === "Catalog"}
+                <div class="wr__items">
+                    <div class="wr__items_head">
+                        <b>Каталог одежды</b>
+                        <span>{catPage ? catPage.total : ""}</span>
+                    </div>
+                    <div class="wr__hint">Вся одежда сервера. Примерка — на себе; «В форму» — вещь станет доступна всей фракции этой раздевалки.</div>
+                    <div class="wr__cat_chips">
+                        {#each catalogCats as c}
+                            <div class="wr__cat_chip" class:active={c.key === catKey} on:click={() => { catSearch = ""; loadCatalog(c.key, 0); }}>{c.title}</div>
+                        {/each}
+                    </div>
+                    <input class="wr__search" placeholder="Поиск по названию или номеру" bind:value={catSearch} on:input={onCatSearch} on:keyup|stopPropagation />
+                    <div class="wr__grid">
+                        {#if catPage}
+                            {#each catPage.items as item (item.id)}
+                                <div class="wr__item" class:active={catSelected && catSelected.item.id === item.id} class:inform={item.inForm} on:click={() => catPick(item)}>
+                                    <div class="wr__item_num">#{item.id}{#if item.inForm}<span class="wr__inform">{item.extra ? "добавлено" : "в форме"}</span>{/if}</div>
+                                    <div class="wr__item_name">{item.title}</div>
+                                    {#if item.textures.length > 1}<div class="wr__item_colors">{item.textures.length} цв.</div>{/if}
+                                </div>
+                            {:else}
+                                <div class="wr__empty">{catLoading ? "Загрузка…" : "Ничего не найдено"}</div>
+                            {/each}
+                        {:else}
+                            <div class="wr__empty">Загрузка…</div>
+                        {/if}
+                    </div>
+                    {#if catPage && catPage.pages > 1}
+                        <div class="wr__pager">
+                            <div class="wr__color" class:disabled={catPage.page <= 0} on:click={() => catPage.page > 0 && loadCatalog(catKey, catPage.page - 1)}>‹</div>
+                            <span>Стр. {catPage.page + 1} из {catPage.pages}</span>
+                            <div class="wr__color" class:disabled={catPage.page >= catPage.pages - 1} on:click={() => catPage.page < catPage.pages - 1 && loadCatalog(catKey, catPage.page + 1)}>›</div>
+                        </div>
+                    {/if}
+                    {#if catSelected}
+                        <div class="wr__colors">
+                            {#if catSelected.item.textures.length > 1}
+                                <span>Цвет</span>
+                                {#each catSelected.item.textures as texture}
+                                    <div class="wr__color" class:active={catSelected.texture === texture} on:click={() => catTexture(texture)}>{texture + 1}</div>
+                                {/each}
+                            {/if}
+                            <div class="wr__cat_action">
+                                {#if !catSelected.item.inForm}
+                                    <div class="wr__btn small" on:click={() => catToggle(catSelected.item, true)}>В форму фракции</div>
+                                {:else if catSelected.item.extra}
+                                    <div class="wr__btn small danger" on:click={() => catToggle(catSelected.item, false)}>Убрать из формы</div>
+                                {:else}
+                                    <span class="wr__cat_note">Уже в форме (стандартный список)</span>
+                                {/if}
+                            </div>
+                        </div>
+                    {/if}
+                </div>
+            {:else}
             <div class="wr__items">
                 <div class="wr__items_head">
                     <b>{category ? category.title : ""}</b>
@@ -178,6 +336,7 @@
                     </div>
                 {/if}
             </div>
+            {/if}
         </div>
     </div>
 
@@ -186,6 +345,35 @@
     </div>
 
     <div class="wr__right" in:fly={{ x: 40, duration: 220 }}>
+        {#if presets.length || data.canPreset}
+            <div class="wr__card wr__presets">
+                <div class="wr__card_title">Образы фракции</div>
+                {#if !presets.length}
+                    <div class="wr__empty">Пока нет — соберите форму и сохраните её для всех сотрудников</div>
+                {:else}
+                    <div class="wr__chosen">
+                        {#each presets as preset (preset.id)}
+                            <div class="wr__chosen_row">
+                                <div class="wr__chosen_info" on:click={() => wearPreset(preset)}>
+                                    <b>{preset.name}</b>
+                                    <span>{preset.author ? `сохранил ${preset.author}` : ""}</span>
+                                </div>
+                                <div class="wr__try" on:click={() => wearPreset(preset)}>Примерить</div>
+                                {#if data.canPreset}
+                                    <div class="wr__remove" title="Удалить образ фракции" on:click={() => deletePreset(preset)}>✕</div>
+                                {/if}
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
+                {#if data.canPreset}
+                    <div class="wr__preset_save">
+                        <input class="wr__search" maxlength="40" placeholder="Название (например: Полевая форма)" bind:value={presetName} on:keyup|stopPropagation />
+                        <div class="wr__btn small" on:click={savePreset}>Сохранить текущий для фракции</div>
+                    </div>
+                {/if}
+            </div>
+        {/if}
         <div class="wr__card">
             <div class="wr__card_title">Мой образ</div>
             {#if !chosen.length}
@@ -266,6 +454,7 @@
         width: 13vh;
         padding: 1vh 0.8vh;
         overflow-y: auto;
+        overflow-x: hidden;
         border-right: 1px solid rgba(255, 255, 255, 0.06);
     }
     .wr__tab {
@@ -363,15 +552,32 @@
     }
     .wr__grid {
         flex: 1;
+        min-height: 0;
         overflow-y: auto;
+        overflow-x: hidden;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        /* minmax(0, 1fr): длинное название не растягивает колонку — иначе снизу появляется горизонтальная полоса */
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 0.8vh;
         align-content: start;
         padding-right: 0.4vh;
+        box-sizing: border-box;
+    }
+    .wr__grid::-webkit-scrollbar, .wr__tabs::-webkit-scrollbar, .wr__card::-webkit-scrollbar {
+        width: 0.5vh;
+        height: 0;
+    }
+    .wr__grid::-webkit-scrollbar-track, .wr__tabs::-webkit-scrollbar-track, .wr__card::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    .wr__grid::-webkit-scrollbar-thumb, .wr__tabs::-webkit-scrollbar-thumb, .wr__card::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 0.5vh;
     }
     .wr__item {
         position: relative;
+        min-width: 0;
+        box-sizing: border-box;
         padding: 1vh 1.1vh;
         border-radius: 1vh;
         background: rgba(255, 255, 255, 0.04);
@@ -498,6 +704,88 @@
     }
     .wr__remove:hover {
         background: rgba(239, 68, 68, 0.4);
+    }
+    .wr__presets {
+        max-height: 34vh;
+    }
+    .wr__cat_chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5vh;
+        margin-bottom: 1vh;
+    }
+    .wr__cat_chip {
+        padding: 0.5vh 0.9vh;
+        border-radius: 0.8vh;
+        font-size: 1.15vh;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+    .wr__cat_chip.active {
+        border-color: var(--accent);
+        background: rgba(var(--accent-rgb), 0.2);
+    }
+    .wr__item.inform {
+        border-color: rgba(var(--accent-rgb), 0.45);
+    }
+    .wr__inform {
+        margin-left: 0.6vh;
+        padding: 0 0.5vh;
+        border-radius: 0.5vh;
+        background: rgba(var(--accent-rgb), 0.35);
+        opacity: 1;
+        font-size: 1vh;
+    }
+    .wr__pager {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        padding-top: 0.8vh;
+        font-size: 1.25vh;
+    }
+    .wr__pager .disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+    .wr__cat_action {
+        margin-left: auto;
+    }
+    .wr__cat_note {
+        font-size: 1.2vh;
+        opacity: 0.6;
+    }
+    .wr__btn.small.danger {
+        background: rgba(239, 68, 68, 0.45);
+    }
+    .wr__try {
+        padding: 0 1vh;
+        height: 2.8vh;
+        line-height: 2.8vh;
+        border-radius: 0.8vh;
+        font-size: 1.2vh;
+        font-weight: 600;
+        background: rgba(var(--accent-rgb), 0.25);
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .wr__try:hover {
+        background: rgba(var(--accent-rgb), 0.45);
+    }
+    .wr__preset_save {
+        margin-top: 1.2vh;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6vh;
+    }
+    .wr__preset_save .wr__search {
+        margin-bottom: 0;
+    }
+    .wr__btn.small {
+        padding: 0.9vh;
+        font-size: 1.3vh;
+        background: rgba(var(--accent-rgb), 0.35);
     }
     .wr__empty {
         font-size: 1.35vh;

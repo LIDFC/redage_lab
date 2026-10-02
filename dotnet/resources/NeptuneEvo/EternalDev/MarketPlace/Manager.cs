@@ -228,7 +228,8 @@ namespace NeptuneEvo.EternalDev.MarketPlace
                 Methods.Formatter.FormatStorage(
                     player,
                     player.GetMarketPlaceStorage(),
-                    player.GetPropertyOnEstate()
+                    player.GetPropertyOnEstate(),
+                    player.GetMarketPlaceInventory()
                 )
             ));
         }

@@ -219,6 +219,27 @@ gm.events.add("client.army.duty.take", (type) => {
     mp.events.callRemote("server.army.duty.take", String(type));
 });
 
+// Объявления на доске нарядов (сервер ArmyRP/ArmyBoard.cs)
+gm.events.add("client.army.board.list", (json) => {
+    if (!dutyOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.army.board.list", ${JSON.stringify(json)})`);
+});
+
+gm.events.add("client.army.board.result", (text, ok) => {
+    if (!dutyOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.army.board.result", ${JSON.stringify(String(text || ""))}, ${!!ok})`);
+});
+
+gm.events.add("client.army.board.post", (title, text) => {
+    if (!dutyOpen || !global.antiFlood("army.board", 1500)) return;
+    mp.events.callRemote("server.army.board.post", String(title || ""), String(text || ""));
+});
+
+gm.events.add("client.army.board.delete", (id) => {
+    if (!dutyOpen || !global.antiFlood("army.board", 800)) return;
+    mp.events.callRemote("server.army.board.delete", String(id));
+});
+
 gm.events.add("client.army.duty.assign", (targetId, type, punishment) => {
     if (!dutyOpen || !global.antiFlood("army.duty", 1000)) return;
     mp.events.callRemote("server.army.duty.assign", Number(targetId), String(type), !!punishment);

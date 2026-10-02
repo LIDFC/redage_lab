@@ -19,6 +19,8 @@ namespace NeptuneEvo.Fractions.Wardrobe
     /// <summary>
     /// Гардероб фракций: сотрудник сам собирает форму из разрешённых вещей своей фракции (FractionClothingSetsData)
     /// и выбирает торс (компонент 3 — отображение рук/тела). Образ хранится за игроком (fraction_outfits).
+    /// Образы фракции (fraction_presets): с 9 ранга сохраняются готовые комплекты для всех членов фракции,
+    /// любой сотрудник примеряет их в окне и надевает как свой образ.
     /// Окно — CEF FractionWardrobe (src_cef/src/views/fractions/wardrobe), клиент — src_client/fractions/wardrobe.js.
     /// Надевается теми же «спец-вещами», что и старые наборы (SetSpecialClothes/SetSpecialAccessories), инвентарь не трогается.
     /// </summary>
@@ -62,6 +64,29 @@ namespace NeptuneEvo.Fractions.Wardrobe
         private static readonly Dictionary<ExtPlayer, (int drawable, int texture)> TorsoOverride = new Dictionary<ExtPlayer, (int, int)>();
         private static bool _ready;
 
+        /// <summary>Образ фракции — общий комплект, сохранённый рангом 9+.</summary>
+        private class Preset
+        {
+            public long Id;
+            public int Fraction;
+            public bool Gender;
+            public string Name;
+            public string Author;
+            public Outfit Outfit;
+        }
+
+        private const int PresetRank = 9;
+        private const int PresetMax = 30;
+        private static readonly List<Preset> Presets = new List<Preset>();
+        private static bool _presetsReady;
+
+        // ------------------------------------------------------------------ каталог (только AdminLVL 9)
+        private const int CatalogAdmin = 9;
+        private const int CatalogPage = 60;
+        /// <summary>Вещи, добавленные из каталога (fraction, gender, component, id) — их можно убрать; вещи из кода — нет.</summary>
+        private static readonly HashSet<(int, bool, ClothesComponent, int)> Extras = new HashSet<(int, bool, ClothesComponent, int)>();
+        private static bool _extraReady;
+
         [ServerEvent(Event.ResourceStart)]
         public void OnResourceStart()
         {
@@ -76,6 +101,70 @@ namespace NeptuneEvo.Fractions.Wardrobe
                 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
                 MySQL.Query(create);
                 _ready = true;
+
+                using var createPresets = new MySqlCommand(@"CREATE TABLE IF NOT EXISTS `fraction_presets` (
+                    `id` BIGINT NOT NULL,
+                    `fraction` INT NOT NULL,
+                    `gender` TINYINT(1) NOT NULL,
+                    `name` VARCHAR(40) NOT NULL,
+                    `author` VARCHAR(64) NOT NULL DEFAULT '',
+                    `outfit` TEXT NOT NULL,
+                    PRIMARY KEY (`id`),
+                    KEY `fraction` (`fraction`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+                MySQL.Query(createPresets);
+
+                using var createExtra = new MySqlCommand(@"CREATE TABLE IF NOT EXISTS `fraction_clothes_extra` (
+                    `fraction` INT NOT NULL,
+                    `gender` TINYINT(1) NOT NULL,
+                    `component` VARCHAR(32) NOT NULL,
+                    `clothes_id` INT NOT NULL,
+                    PRIMARY KEY (`fraction`, `gender`, `component`, `clothes_id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;");
+                MySQL.Query(createExtra);
+                // Читаем после старта: к этому времени FractionClothingSets уже собрал базовые списки
+                NeptuneEvo.Database.DbQueue.ReadThen("SELECT * FROM `fraction_clothes_extra`", table =>
+                {
+                    var count = 0;
+                    if (table != null)
+                        foreach (System.Data.DataRow row in table.Rows)
+                        {
+                            if (!Enum.TryParse<ClothesComponent>(row["component"].ToString(), out var component))
+                                continue;
+                            if (AddExtra(Convert.ToInt32(row["fraction"]), Convert.ToInt32(row["gender"]) == 1, component, Convert.ToInt32(row["clothes_id"])))
+                                count++;
+                        }
+                    _extraReady = true;
+                    if (count > 0)
+                        Log.Write($"Каталог: добавлено вещей в формы фракций из БД — {count}");
+                });
+                NeptuneEvo.Database.DbQueue.ReadThen("SELECT * FROM `fraction_presets` ORDER BY `id`", table =>
+                {
+                    if (table != null)
+                        foreach (System.Data.DataRow row in table.Rows)
+                        {
+                            try
+                            {
+                                var outfit = JsonConvert.DeserializeObject<Outfit>(row["outfit"].ToString());
+                                if (outfit == null)
+                                    continue;
+                                Presets.Add(new Preset
+                                {
+                                    Id = Convert.ToInt64(row["id"]),
+                                    Fraction = Convert.ToInt32(row["fraction"]),
+                                    Gender = Convert.ToInt32(row["gender"]) == 1,
+                                    Name = row["name"].ToString(),
+                                    Author = row["author"].ToString(),
+                                    Outfit = outfit,
+                                });
+                            }
+                            catch (Exception e)
+                            {
+                                Log.Write($"Presets row Exception: {e.Message}");
+                            }
+                        }
+                    _presetsReady = true;
+                });
             }
             catch (Exception e)
             {
@@ -223,6 +312,12 @@ namespace NeptuneEvo.Fractions.Wardrobe
                     onDuty = sessionData.WorkData.OnDuty,
                     categories,
                     outfit,
+                    presets = PresetsFor(memberFractionData.Id, gender),
+                    canPreset = memberFractionData.Rank >= PresetRank,
+                    // Каталог всей одежды сервера — только высший уровень админки (страницами, по запросу)
+                    catalog = characterData.AdminLVL >= CatalogAdmin
+                        ? Categories.Select(c => new { key = c.component.ToString(), title = c.title }).ToList<object>()
+                        : null,
                 });
                 // Частями по 16 КБ — большие события клиент может не принять
                 const int chunk = 16000;
@@ -388,6 +483,264 @@ namespace NeptuneEvo.Fractions.Wardrobe
             catch (Exception e)
             {
                 Log.Write($"OnTakeoff Exception: {e}");
+            }
+        }
+
+        // ------------------------------------------------------------------ образы фракции (ранг 9+)
+
+        private static List<object> PresetsFor(int fraction, bool gender) =>
+            Presets.Where(p => p.Fraction == fraction && p.Gender == gender)
+                .Select(p => (object) new { id = p.Id.ToString(), name = p.Name, author = p.Author.Replace('_', ' '), outfit = p.Outfit })
+                .ToList();
+
+        private static void SendPresets(int fraction, bool gender)
+        {
+            var json = JsonConvert.SerializeObject(PresetsFor(fraction, gender));
+            foreach (var p in Character.Repository.GetPlayers())
+            {
+                var member = p.GetFractionMemberData();
+                var character = p.GetCharacterData();
+                if (member != null && character != null && member.Id == fraction && character.Gender == gender)
+                    Trigger.ClientEvent(p, "client.wardrobe.presets", json);
+            }
+        }
+
+        [RemoteEvent("server.wardrobe.presetSave")]
+        public static void OnPresetSave(ExtPlayer player, string name, string json)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                var memberFractionData = player.GetFractionMemberData();
+                if (characterData == null || memberFractionData == null)
+                    return;
+                if (memberFractionData.Rank < PresetRank)
+                {
+                    Reply(player, $"Образы фракции сохраняются с {PresetRank} ранга", false);
+                    return;
+                }
+                if (!_presetsReady)
+                {
+                    Reply(player, "Образы ещё загружаются — повторите через секунду", false);
+                    return;
+                }
+                if (!NearCloakroom(player, memberFractionData.Id))
+                {
+                    Reply(player, "Вы отошли от раздевалки", false);
+                    return;
+                }
+                name = new string((name ?? "").Where(c => !char.IsControl(c)).ToArray()).Trim();
+                if (name.Length < 2 || name.Length > 40)
+                {
+                    Reply(player, "Название образа — от 2 до 40 символов", false);
+                    return;
+                }
+                var outfit = Validate(json, memberFractionData.Id, characterData.Gender, out var error);
+                if (outfit == null || error != null)
+                {
+                    Reply(player, error ?? "Ошибка данных образа", false);
+                    return;
+                }
+                var gender = characterData.Gender;
+                var same = Presets.FirstOrDefault(p => p.Fraction == memberFractionData.Id && p.Gender == gender && string.Equals(p.Name, name, StringComparison.OrdinalIgnoreCase));
+                if (same == null && Presets.Count(p => p.Fraction == memberFractionData.Id && p.Gender == gender) >= PresetMax)
+                {
+                    Reply(player, $"Не больше {PresetMax} образов — удалите ненужный", false);
+                    return;
+                }
+                var preset = same ?? new Preset { Id = DateTime.UtcNow.Ticks, Fraction = memberFractionData.Id, Gender = gender };
+                preset.Name = name;
+                preset.Author = player.Name;
+                preset.Outfit = outfit;
+                if (same == null)
+                    Presets.Add(preset);
+                NeptuneEvo.Database.DbQueue.Enqueue(
+                    @"INSERT INTO `fraction_presets` (`id`,`fraction`,`gender`,`name`,`author`,`outfit`) VALUES (@i,@f,@g,@n,@a,@o)
+                      ON DUPLICATE KEY UPDATE `name`=VALUES(`name`),`author`=VALUES(`author`),`outfit`=VALUES(`outfit`)",
+                    ("@i", preset.Id), ("@f", preset.Fraction), ("@g", gender ? 1 : 0), ("@n", name), ("@a", preset.Author), ("@o", JsonConvert.SerializeObject(outfit)));
+                Reply(player, same == null ? $"Образ фракции «{name}» сохранён — его видят все сотрудники" : $"Образ фракции «{name}» обновлён", true);
+                SendPresets(memberFractionData.Id, gender);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnPresetSave Exception: {e}");
+            }
+        }
+
+        [RemoteEvent("server.wardrobe.presetDelete")]
+        public static void OnPresetDelete(ExtPlayer player, string idText)
+        {
+            try
+            {
+                var memberFractionData = player.GetFractionMemberData();
+                if (memberFractionData == null || !long.TryParse(idText, out var id))
+                    return;
+                if (memberFractionData.Rank < PresetRank)
+                {
+                    Reply(player, $"Удалять образы фракции можно с {PresetRank} ранга", false);
+                    return;
+                }
+                var preset = Presets.FirstOrDefault(p => p.Id == id && p.Fraction == memberFractionData.Id);
+                if (preset == null)
+                    return;
+                Presets.Remove(preset);
+                NeptuneEvo.Database.DbQueue.Enqueue("DELETE FROM `fraction_presets` WHERE `id`=@i", ("@i", id));
+                Reply(player, $"Образ «{preset.Name}» удалён", true);
+                SendPresets(preset.Fraction, preset.Gender);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnPresetDelete Exception: {e}");
+            }
+        }
+
+        // ------------------------------------------------------------------ каталог
+
+        private static ClothesComponent? Component(string key) =>
+            Enum.TryParse<ClothesComponent>(key, out var c) && Categories.Any(x => x.component == c) ? c : (ClothesComponent?) null;
+
+        private static (int slot, bool isProp) SlotOf(ClothesComponent component)
+        {
+            if (Chars.Repository.ClothesComponentToPropId.TryGetValue(component, out var prop))
+                return (prop.SlotId, true);
+            if (Chars.Repository.ClothesComponentToComponentId.TryGetValue(component, out var comp))
+                return (comp.SlotId, false);
+            return (-1, false);
+        }
+
+        /// <summary>Добавить вещь каталога в список формы фракции (в памяти). true — добавлена новая.</summary>
+        private static bool AddExtra(int fraction, bool gender, ClothesComponent component, int id)
+        {
+            if (!ClothesComponents.ClothesComponentData.TryGetValue(gender, out var byComponent) ||
+                !byComponent.TryGetValue(component, out var data) || !data.TryGetValue(id, out var clothes))
+                return false;
+            var textures = clothes.Textures != null && clothes.Textures.Count > 0 ? clothes.Textures.Distinct().ToList() : new List<int> { 0 };
+            if (!FractionClothingSets.FractionAvailableSets.TryGetValue(gender, out var byFraction))
+                FractionClothingSets.FractionAvailableSets[gender] = byFraction = new Dictionary<Models.Fractions, Dictionary<ClothesComponent, List<FractionClothesData>>>();
+            if (!byFraction.TryGetValue((Models.Fractions) fraction, out var components))
+                byFraction[(Models.Fractions) fraction] = components = new Dictionary<ClothesComponent, List<FractionClothesData>>();
+            if (!components.TryGetValue(component, out var list))
+                components[component] = list = new List<FractionClothesData>();
+            var existing = list.FirstOrDefault(i => i.DrawableId == id);
+            if (existing != null)
+            {
+                // Уже есть (из кода) — добавим недостающие цвета, но убрать такую вещь из каталога нельзя
+                foreach (var t in textures.Where(t => !existing.Textures.Contains(t)))
+                    existing.Textures.Add(t);
+                return false;
+            }
+            list.Add(new FractionClothesData { DrawableId = id, Textures = textures });
+            Extras.Add((fraction, gender, component, id));
+            return true;
+        }
+
+        [RemoteEvent("server.wardrobe.catalog")]
+        public static void OnCatalog(ExtPlayer player, string key, int page, string search)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                var memberFractionData = player.GetFractionMemberData();
+                if (characterData == null || memberFractionData == null || characterData.AdminLVL < CatalogAdmin)
+                    return;
+                var component = Component(key);
+                if (component == null)
+                    return;
+                var gender = characterData.Gender;
+                var (slot, isProp) = SlotOf(component.Value);
+                if (!ClothesComponents.ClothesComponentData.TryGetValue(gender, out var byComponent) ||
+                    !byComponent.TryGetValue(component.Value, out var data))
+                {
+                    Trigger.ClientEvent(player, "client.wardrobe.catalogPage", JsonConvert.SerializeObject(new { key, slot, isProp, page = 0, pages = 0, total = 0, items = new List<object>() }));
+                    return;
+                }
+                var allowed = Allowed(memberFractionData.Id, gender);
+                allowed.TryGetValue(component.Value, out var allowedList);
+                search = (search ?? "").Trim().ToLower();
+                var all = data.OrderBy(d => d.Key)
+                    .Select(d => (id: d.Key, clothes: d.Value, name: ClothesComponents.GetClothesName(gender, component.Value, d.Key)))
+                    .Where(x => search.Length == 0 || x.id.ToString() == search || (x.name ?? "").ToLower().Contains(search))
+                    .ToList();
+                var pages = Math.Max(1, (all.Count + CatalogPage - 1) / CatalogPage);
+                page = Math.Max(0, Math.Min(page, pages - 1));
+                var items = all.Skip(page * CatalogPage).Take(CatalogPage).Select(x => new object[]
+                {
+                    x.id,
+                    x.clothes.Variation,
+                    x.clothes.Torso,
+                    (x.clothes.Textures ?? new List<int> { 0 }).Distinct().OrderBy(t => t).ToList(),
+                    x.name,
+                    string.IsNullOrEmpty(x.clothes.TName) ? null : x.clothes.TName,
+                    allowedList != null && allowedList.Any(i => i.DrawableId == x.id),
+                    Extras.Contains((memberFractionData.Id, gender, component.Value, x.id)),
+                }).ToList();
+                Trigger.ClientEvent(player, "client.wardrobe.catalogPage", JsonConvert.SerializeObject(new { key, slot, isProp, page, pages, total = all.Count, items }));
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnCatalog Exception: {e}");
+            }
+        }
+
+        [RemoteEvent("server.wardrobe.catalogToggle")]
+        public static void OnCatalogToggle(ExtPlayer player, string key, int id, bool add)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                var memberFractionData = player.GetFractionMemberData();
+                if (characterData == null || memberFractionData == null || characterData.AdminLVL < CatalogAdmin)
+                    return;
+                if (!NearCloakroom(player, memberFractionData.Id))
+                {
+                    Reply(player, "Вы отошли от раздевалки", false);
+                    return;
+                }
+                if (!_extraReady)
+                {
+                    Reply(player, "Каталог ещё загружается — повторите через секунду", false);
+                    return;
+                }
+                var component = Component(key);
+                if (component == null)
+                    return;
+                var fraction = memberFractionData.Id;
+                var gender = characterData.Gender;
+                var name = ClothesComponents.GetClothesName(gender, component.Value, id) ?? $"#{id}";
+                if (add)
+                {
+                    if (!AddExtra(fraction, gender, component.Value, id))
+                    {
+                        Reply(player, $"«{name}» уже есть в форме фракции", false);
+                        return;
+                    }
+                    NeptuneEvo.Database.DbQueue.Enqueue(
+                        "INSERT IGNORE INTO `fraction_clothes_extra` (`fraction`,`gender`,`component`,`clothes_id`) VALUES (@f,@g,@c,@i)",
+                        ("@f", fraction), ("@g", gender ? 1 : 0), ("@c", component.Value.ToString()), ("@i", id));
+                    Log.Write($"Каталог: {player.Name} добавил {component} #{id} во форму фракции {fraction} ({(gender ? "м" : "ж")})");
+                    Reply(player, $"«{name}» добавлено в форму фракции. В списке слева появится после переоткрытия гардероба", true);
+                }
+                else
+                {
+                    if (!Extras.Remove((fraction, gender, component.Value, id)))
+                    {
+                        Reply(player, "Убрать можно только вещи, добавленные из каталога", false);
+                        return;
+                    }
+                    var allowed = Allowed(fraction, gender);
+                    if (allowed.TryGetValue(component.Value, out var list))
+                        list.RemoveAll(i => i.DrawableId == id);
+                    NeptuneEvo.Database.DbQueue.Enqueue(
+                        "DELETE FROM `fraction_clothes_extra` WHERE `fraction`=@f AND `gender`=@g AND `component`=@c AND `clothes_id`=@i",
+                        ("@f", fraction), ("@g", gender ? 1 : 0), ("@c", component.Value.ToString()), ("@i", id));
+                    Log.Write($"Каталог: {player.Name} убрал {component} #{id} из формы фракции {fraction}");
+                    Reply(player, $"«{name}» убрано из формы фракции", true);
+                }
+                Trigger.ClientEvent(player, "client.wardrobe.catalogChanged", key, id, add);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnCatalogToggle Exception: {e}");
             }
         }
 

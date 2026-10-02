@@ -8,8 +8,13 @@ export const createLot = (lotData, price, data) => {
     if (type == "clothes")
         id = `${lotData.params.itemId}^${lotData.params.itemData}`;
 
+    // Предмет с данными (серийник оружия и т.п.) — вместе с данными, иначе только номер
     if (type == "item")
-        id = lotData.params.itemId;
+        id = lotData.params.itemData ? `${lotData.params.itemId}^${lotData.params.itemData}` : `${lotData.params.itemId}`;
+
+    // Вещь из инвентаря (а не со склада маркетплейса) — сервер списывает из инвентаря
+    if ((type == "item" || type == "clothes") && lotData.source == "inv")
+        id = `inv:${id}`;
 
     executeClient("client.marketPlace.create_lot", 
         lotData.type, id,

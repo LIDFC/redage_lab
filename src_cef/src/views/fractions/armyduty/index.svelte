@@ -1,6 +1,6 @@
 <script>
-    // Доска нарядов армии: заступить на кухню/уборку, офицер назначает других.
-    // Сервер: Fractions/ArmyRP/ArmyDuty.cs, клиент: src_client/fractions/army.js
+    // Доска нарядов армии: заступить на кухню/уборку, офицер назначает других; вкладка «Объявления».
+    // Сервер: Fractions/ArmyRP/ArmyDuty.cs и ArmyBoard.cs, клиент: src_client/fractions/army.js
     import { executeClient } from "api/rage";
     import { onDestroy } from "svelte";
     import { fade } from "svelte/transition";
@@ -34,11 +34,55 @@
         message = text || "";
         ok = !!success;
     });
-    onDestroy(() => window.events.removeEvent("cef.army.duty.update"));
+
+    // ---- Объявления
+    let tab = "duty";
+    let annTitle = "";
+    let annText = "";
+    let annMessage = "";
+    let annOk = true;
+    $: announcements = (data && data.announcements) || [];
+    const templates = [
+        { title: "Построение", text: "Общее построение на плацу сегодня в __:__. Форма — полевая, при оружии. Опоздавшим — наряд." },
+        { title: "Тренировка", text: "Тренировка в тире и на полосе препятствий в __:__. Сбор у штаба." },
+        { title: "Учения", text: "Плановые учения в __:__. Подробности — у командиров подразделений. Явка обязательна." },
+    ];
+    const useTemplate = (t) => {
+        annTitle = t.title;
+        annText = t.text;
+    };
+    const post = () => {
+        if (annTitle.trim().length < 3 || annText.trim().length < 5) {
+            annMessage = "Заполните заголовок (от 3 символов) и текст (от 5 символов)";
+            annOk = false;
+            return;
+        }
+        executeClient("client.army.board.post", annTitle.trim(), annText.trim());
+    };
+    const remove = (a) => executeClient("client.army.board.delete", a.id);
+
+    window.events.addEvent("cef.army.board.list", (json) => {
+        data = { ...data, announcements: parse(json) };
+    });
+    window.events.addEvent("cef.army.board.result", (text, success) => {
+        annMessage = text || "";
+        annOk = !!success;
+        if (success && text === "Объявление опубликовано") {
+            annTitle = "";
+            annText = "";
+        }
+    });
+
+    onDestroy(() => {
+        window.events.removeEvent("cef.army.duty.update");
+        window.events.removeEvent("cef.army.board.list");
+        window.events.removeEvent("cef.army.board.result");
+    });
 
     const onKey = (e) => {
         if (e.key === "Escape") close();
     };
+    const stop = (e) => e.stopPropagation();
 </script>
 
 <svelte:window on:keyup={onKey} />
@@ -49,6 +93,51 @@
             <div class="duty__title">Доска нарядов</div>
             <div class="duty__close" on:click={close}>✕</div>
         </div>
+
+        <div class="duty__tabs">
+            <div class="duty__tab" class:active={tab === "duty"} on:click={() => (tab = "duty")}>Наряды</div>
+            <div class="duty__tab" class:active={tab === "news"} on:click={() => (tab = "news")}>
+                Объявления{#if announcements.length}<span class="duty__count">{announcements.length}</span>{/if}
+            </div>
+        </div>
+
+        {#if tab === "news"}
+            {#if data.canPost}
+                <div class="duty__form">
+                    <div class="duty__section_title">Новое объявление</div>
+                    <div class="duty__templates">
+                        {#each templates as t}
+                            <div class="duty__chip" on:click={() => useTemplate(t)}>{t.title}</div>
+                        {/each}
+                    </div>
+                    <input class="duty__input" maxlength="60" placeholder="Заголовок (например: Построение в 20:00)" bind:value={annTitle} on:keyup={stop} on:keydown={stop} />
+                    <textarea class="duty__input duty__textarea" maxlength="600" placeholder="Текст объявления: что, где, когда, форма одежды" bind:value={annText} on:keyup={stop} on:keydown={stop}></textarea>
+                    <div class="duty__form_foot">
+                        <div class="duty__counter">{annText.length}/600</div>
+                        <div class="duty__btn" on:click={post}>Опубликовать</div>
+                    </div>
+                    <div class="duty__hint">Все военнослужащие в сети получат оповещение по рации.</div>
+                </div>
+            {/if}
+            {#if annMessage}<div class="duty__msg" class:bad={!annOk}>{annMessage}</div>{/if}
+            {#if !announcements.length}
+                <div class="duty__empty duty__empty_news">Объявлений пока нет</div>
+            {:else}
+                <div class="duty__news">
+                    {#each announcements as a (a.id)}
+                        <div class="duty__news_item">
+                            <div class="duty__news_head">
+                                <div class="duty__news_title">{a.title}</div>
+                                <div class="duty__news_date">{a.date}</div>
+                                {#if a.canDelete}<div class="duty__news_del" title="Удалить" on:click={() => remove(a)}>✕</div>{/if}
+                            </div>
+                            <div class="duty__news_text">{a.text}</div>
+                            <div class="duty__news_author">{a.rank} {a.author}</div>
+                        </div>
+                    {/each}
+                </div>
+            {/if}
+        {:else}
 
         {#if data.order}
             <div class="duty__order">
@@ -105,6 +194,7 @@
         {/if}
 
         <div class="duty__msg" class:bad={!ok}>{message}</div>
+        {/if}
     </div>
 </div>
 
@@ -268,5 +358,137 @@
     }
     .duty__msg.bad {
         color: #ff6b6f;
+    }
+    .duty__tabs {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .duty__tab {
+        padding: 8px 14px;
+        font-weight: 600;
+        font-size: 14px;
+        opacity: 0.6;
+        cursor: pointer;
+        border-bottom: 2px solid transparent;
+        margin-bottom: -1px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .duty__tab.active {
+        opacity: 1;
+        border-bottom-color: #7ea53f;
+    }
+    .duty__count {
+        font-size: 11px;
+        background: #4b6b2a;
+        border-radius: 8px;
+        padding: 1px 6px;
+    }
+    .duty__form {
+        padding: 12px 14px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+    .duty__templates {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+    .duty__chip {
+        font-size: 12px;
+        padding: 4px 10px;
+        border-radius: 12px;
+        background: rgba(107, 142, 35, 0.2);
+        border: 1px solid rgba(107, 142, 35, 0.5);
+        cursor: pointer;
+    }
+    .duty__input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(0, 0, 0, 0.25);
+        color: #fff;
+        font-family: inherit;
+        font-size: 13px;
+        outline: none;
+    }
+    .duty__input:focus {
+        border-color: #7ea53f;
+    }
+    .duty__textarea {
+        min-height: 80px;
+        resize: none;
+    }
+    .duty__form_foot {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .duty__counter {
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    .duty__empty_news {
+        padding: 20px 0;
+        text-align: center;
+    }
+    .duty__news {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .duty__news_item {
+        padding: 12px 14px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        border-left: 3px solid #6b8e23;
+    }
+    .duty__news_head {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .duty__news_title {
+        font-weight: 700;
+        font-size: 15px;
+        flex: 1;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+    .duty__news_date {
+        font-size: 12px;
+        opacity: 0.5;
+    }
+    .duty__news_del {
+        cursor: pointer;
+        opacity: 0.5;
+        font-size: 12px;
+        padding: 2px 6px;
+    }
+    .duty__news_del:hover {
+        opacity: 1;
+        color: #ff6b6f;
+    }
+    .duty__news_text {
+        margin-top: 6px;
+        font-size: 13px;
+        line-height: 1.5;
+        opacity: 0.9;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+    }
+    .duty__news_author {
+        margin-top: 6px;
+        font-size: 12px;
+        opacity: 0.55;
     }
 </style>

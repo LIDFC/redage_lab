@@ -65,6 +65,8 @@ gm.events.add('client.custom.open', async (pPercent, pVehicle, components, _even
         global.menuOpen();
         mp.gui.emmit(`window.router.setView("VehicleLsCustom");`);
         await global.wait(50); 
+        // 1 — оплата организацией: окно не сверяет цену с наличными игрока
+        mp.gui.emmit(`window.events.callEvent("cef.custom.mode", ${eventId});`);
         gm.discord(translateText("Подбирает тюнинг на авто"));
         OpenCustom ();
     }
@@ -115,7 +117,46 @@ gm.events.add('client.custom.color', (red, green, blue) => {
 
 gm.events.add('client.custom.updatecomponents', (components) => {
     defaultComponents = JSON.parse (components);
+    // после покупки: отметка «Установлено» и новые характеристики «до»
+    if (selectCategory)
+        emitInstalled ();
+    if (global.localplayer.vehicle)
+        UpdateVehicleStats (true);
 });
+
+// Номер пункта списка, который сейчас стоит на машине (null — для покраски и т.п. не показываем)
+const getInstalledIndex = () => {
+    const d = defaultComponents;
+    if (!selectCategory || !d)
+        return null;
+    switch (selectCategory) {
+        case "Color1":
+        case "Color2":
+        case "ColorAdditional":
+        case "Headlights":
+            return null;
+        case "Xenon":
+            return d.NeonIndex !== undefined ? d.NeonIndex : null;
+        case "FrontWheels":
+            return d.WheelsType == selectData.otherIndex && d.Wheels !== undefined ? d.Wheels : null;
+        case "Horn": {
+            const list = OtherCategory ("Horn", selectData.otherIndex) || [];
+            const pos = list.findIndex (h => h.index === d.Horn);
+            return pos >= 0 ? pos : null;
+        }
+    }
+    return d [selectCategory] !== undefined ? d [selectCategory] : null;
+}
+
+const emitInstalled = () => {
+    const index = getInstalledIndex ();
+    mp.gui.emmit(`window.events.callEvent("cef.custom.installed", ${index === null ? "null" : Number (index)});`);
+}
+
+const emitLists = (json) => {
+    mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+    emitInstalled ();
+}
 
 
 
@@ -235,10 +276,11 @@ const OpenCustom = () => {
         global.FadeScreen (false, 50);
     }, 500)
 }
-const UpdateVehicleStats = () => {
+// isBase — машина в установленной комплектации (без примерки): окно запоминает эти значения как «до»
+const UpdateVehicleStats = (isBase = false) => {
     const vehicle = global.localplayer.vehicle;
     mp.gui.emmit(
-        `window.events.callEvent("cef.custom.vehicleStats", ${Math.round (mp.game.vehicle.getVehicleModelMaxSpeed(vehicle.model) / 1.2)}, ${vehicle.getMaxBraking() * 100}, ${vehicle.getAcceleration() * 100}, ${vehicle.getMaxTraction() * 10});`
+        `window.events.callEvent("cef.custom.vehicleStats", ${Math.round (mp.game.vehicle.getVehicleModelMaxSpeed(vehicle.model) / 1.2)}, ${vehicle.getMaxBraking() * 100}, ${vehicle.getAcceleration() * 100}, ${vehicle.getMaxTraction() * 10}, ${isBase ? "true" : "false"});`
     );
 }
 
@@ -258,7 +300,7 @@ const UpdateMaxVehicleStats = () => {
     setDefaultComponent ("Transmission");
     setDefaultComponent ("Suspension");
     setDefaultComponent ("Brakes");
-    UpdateVehicleStats ();
+    UpdateVehicleStats (true);
 }
 
 //Категории
@@ -281,7 +323,7 @@ const OnSelectCategoryToHorn = (index) => {
         })
     });
     if (json && json.length >= 1) {
-        mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+        emitLists (json);
         return;
     }
     OnSetTuneComponent (0);
@@ -393,7 +435,7 @@ const OpenComponentToCover = () => {
             price: GetPrice ("Cover", item.index)
         })
     });
-    mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+    emitLists (json);
 }
 
 const OpenComponentToOther = (category) => {
@@ -405,7 +447,7 @@ const OpenComponentToOther = (category) => {
             price: GetPrice (category, item.index)
         })
     });
-    mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+    emitLists (json);
 }
 
 const OpenComponentToWindowTint = () => {
@@ -423,7 +465,7 @@ const OpenComponentToWindowTint = () => {
             price: GetPrice ("WindowTint", ModToIndex [item.index])
         })
     });
-    mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+    emitLists (json);
 }
 
 const OpenComponentToNumberPlate = () => {
@@ -435,7 +477,7 @@ const OpenComponentToNumberPlate = () => {
             price: GetPrice ("NumberPlate", item.index)
         })
     });
-    mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+    emitLists (json);
 }
 const OpenComponentToXenon = () => {
     const vehicle = global.localplayer.vehicle;    
@@ -450,7 +492,7 @@ const OpenComponentToXenon = () => {
         })
     });
     mp.gui.emmit(`window.events.callEvent("cef.custom.color", true, 0)`);
-    mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+    emitLists (json);
 }
 
 let OpenComponentToModFix = 0; 
@@ -494,7 +536,7 @@ const OpenComponentToMod = (category) => {
         }
         OpenComponentToModFix = 4; 
         if (json && json.length >= 1) {
-            mp.gui.emmit(`window.events.callEvent("cef.custom.lists", '${JSON.stringify (json)}')`);
+            emitLists (json);
             return;
         }
         OnSetTuneComponent (0);
@@ -636,7 +678,7 @@ const setDefaultComponent = (category) => {
             defaultComponents ["ColorAdditional"] ? defaultComponents ["ColorAdditional"] : 0,
             defaultComponents ["FrontWheels"] ? defaultComponents ["FrontWheels"] : 0);
     
-    UpdateVehicleStats ();
+    UpdateVehicleStats (true);
 }
 
 global.SetVehicleLightColor = (vehicle, index) => {

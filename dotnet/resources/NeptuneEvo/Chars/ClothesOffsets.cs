@@ -241,6 +241,73 @@ namespace NeptuneEvo.Chars
         }
 
         /// <summary>Клиент: {"male":{"c":{"1":n,..},"p":{"0":n,..}},"female":{...}} — всего моделей в игре.</summary>
+        /// <summary>
+        /// Ручная калибровка из гардероба (Каталог, админ 9): админ подбирает сдвиг на себе, пока кастомная вещь
+        /// не совпадёт со своим названием, и сохраняет. vanilla — сколько стандартных моделей в игре в этой категории
+        /// (0 — вернуть значение из кода). Меняются все кастомные вещи категории — и в магазине (client.clothes.shift).
+        /// </summary>
+        [RemoteEvent("server.clothes.calibrate")]
+        public void OnCalibrate(ExtPlayer player, string key, bool gender, int vanilla)
+        {
+            try
+            {
+                var characterData = player.GetCharacterData();
+                if (characterData == null || characterData.AdminLVL < 9)
+                    return;
+                if (!Enum.TryParse<ClothesComponent>(key, out var component) || !MaxClothesComponent[gender].ContainsKey(component))
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, "Эту категорию калибровать нельзя", 4000);
+                    return;
+                }
+                var used = UsedVanilla(gender, key);
+                if (vanilla != 0 && (vanilla < 1 || vanilla < used))
+                {
+                    Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"Слишком мало: стандартные вещи базы используют номера до {used - 1}", 5000);
+                    return;
+                }
+                OffsetsFile file = null;
+                try
+                {
+                    if (File.Exists(OffsetsPath))
+                    {
+                        file = JsonConvert.DeserializeObject<OffsetsFile>(File.ReadAllText(OffsetsPath));
+                        File.Copy(OffsetsPath, OffsetsPath + ".bak", true);
+                    }
+                }
+                catch (Exception e)
+                {
+                    Log.Write($"calibrate read: {e.Message}");
+                }
+                file ??= new OffsetsFile();
+                var dict = gender ? (file.Male ??= new Dictionary<string, int>()) : (file.Female ??= new Dictionary<string, int>());
+                var baseValue = _baseVanilla != null && _baseVanilla[gender].TryGetValue(key, out var b) ? b : MaxClothesComponent[gender][component];
+                if (vanilla == 0 || vanilla == baseValue)
+                    dict.Remove(key);
+                else
+                    dict[key] = vanilla;
+                file.Updated = DateTime.Now.ToString("dd.MM.yyyy HH:mm");
+                file.Admin = player.Name;
+                File.WriteAllText(OffsetsPath, JsonConvert.SerializeObject(file, Formatting.Indented));
+                // Значение из кода вернётся только после рестарта (как /clothoff reset) — поэтому ставим его сразу и здесь
+                MaxClothesComponent[gender][component] = vanilla == 0 ? baseValue : vanilla;
+                OnResourceStart();
+                BuildShift();
+                foreach (var p in Character.Repository.GetPlayers())
+                    SendClothesShift(p);
+                if (string.IsNullOrEmpty(_shiftJson))
+                    foreach (var p in Character.Repository.GetPlayers())
+                        Trigger.ClientEvent(p, "client.clothes.shift", "{}");
+                var now = MaxClothesComponent[gender][component];
+                GameLog.Admin(player.Name, $"clothes calibrate {(gender ? "M" : "F")} {key}={now}", "");
+                Trigger.SendToAdmins(6, $"~y~[CLOTHES] {player.Name} откалибровал кастомную одежду: {(gender ? "муж." : "жен.")} {key} — стандартных моделей {now} (было в коде {baseValue}). Игрокам — переодеться.");
+                Trigger.ClientEvent(player, "client.wardrobe.calibrated", key, now);
+            }
+            catch (Exception e)
+            {
+                Log.Write($"OnCalibrate Exception: {e}");
+            }
+        }
+
         [RemoteEvent("server.clothes.offsets")]
         public void OnClothesOffsets(ExtPlayer player, string json)
         {

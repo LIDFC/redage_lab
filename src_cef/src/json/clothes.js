@@ -74,13 +74,23 @@ const jsonClothesData = {
 // shift = { Male: { Tops: [base, delta], Hair: [base, delta], ... }, Female: {...} }
 const SHIFT_TARGETS = { Tops: ["Tops", "Undershort"] };
 let appliedShift = {};
+let appliedBase = {};
 window.clothesShift = (json) => {
     try {
         const shift = typeof json === "string" ? JSON.parse(json) : json || {};
+        // Категорию, которую сбросили (калибровка «вернуть из кода»), возвращаем: delta = 0
+        Object.keys(appliedShift).forEach((id) => {
+            const [gender, key] = id.split("_");
+            if (!shift[gender] || !shift[gender][key]) {
+                if (!shift[gender]) shift[gender] = {};
+                shift[gender][key] = [appliedBase[id], 0];
+            }
+        });
         Object.keys(shift).forEach((gender) => {
             Object.keys(shift[gender] || {}).forEach((key) => {
                 const [base, delta] = shift[gender][key];
                 const id = `${gender}_${key}`;
+                appliedBase[id] = base;
                 const change = delta - (appliedShift[id] || 0); // повторный вызов не сдвигает дважды
                 if (!change) return;
                 const isHair = key === "Hair";

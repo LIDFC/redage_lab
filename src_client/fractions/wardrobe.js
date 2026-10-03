@@ -104,6 +104,7 @@ const openWardrobe = (json) => {
         data.torsos = torsos;
 
         original = remember();
+        previewProps = {};
         isOpen = true;
         lockHeading = p.getHeading();
         global.menuOpen();
@@ -153,24 +154,50 @@ gm.events.add("client.wardrobe.part", (index, total, chunk) => {
 
 gm.events.add("client.wardrobe.open", (json) => openWardrobe(json));
 
+// Реквизит в предпросмотре (шапка, очки…): GTA снимает головной убор при смене маски/верха с капюшоном,
+// поэтому после каждой смены компонента реквизит ставится заново (выбранный или тот, что был на персонаже)
+let previewProps = {};
+let propsTimer = null;
+const reapplyProps = () => {
+    if (propsTimer) clearTimeout(propsTimer);
+    propsTimer = setTimeout(() => {
+        propsTimer = null;
+        if (!isOpen) return;
+        try {
+            const p = global.localplayer;
+            PROPS.forEach((slot) => {
+                const v = previewProps[slot];
+                if (v) p.setPropIndex(slot, v[0], v[1], true);
+                else restoreSlot(slot, true);
+            });
+        } catch (e) {}
+    }, 60);
+};
+
 gm.events.add("client.wardrobe.preview", (slot, isProp, drawable, texture, torso) => {
     if (!isOpen) return;
     const p = global.localplayer;
-    if (isProp) p.setPropIndex(slot, drawable, texture, true);
-    else {
+    if (isProp) {
+        previewProps[slot] = [drawable, texture];
+        p.setPropIndex(slot, drawable, texture, true);
+    } else {
         p.setComponentVariation(slot, drawable, texture, 0);
         if (slot === 11 && torso >= 0) p.setComponentVariation(3, torso, 0, 0);
+        reapplyProps();
     }
 });
 
 gm.events.add("client.wardrobe.previewTorso", (drawable, texture) => {
     if (!isOpen) return;
     global.localplayer.setComponentVariation(3, drawable, texture, 0);
+    reapplyProps();
 });
 
 gm.events.add("client.wardrobe.clear", (slot, isProp) => {
     if (!isOpen) return;
+    if (isProp) delete previewProps[slot];
     restoreSlot(slot, !!isProp);
+    if (!isProp) reapplyProps();
 });
 
 gm.events.add("client.wardrobe.camera", (bone) => {
@@ -218,6 +245,7 @@ gm.events.add("client.wardrobe.catalogPage", (json) => {
             const item = unpackItem(a);
             item.inForm = !!a[6];
             item.extra = !!a[7];
+            item.custom = Number(a[8]) || 0; // номер в паке кастомной одежды (0 — стандартная вещь GTA)
             item.title = itemName(item);
             return item;
         });
@@ -230,6 +258,17 @@ gm.events.add("client.wardrobe.catalogPage", (json) => {
 gm.events.add("client.wardrobe.catalogToggle", (key, id, add) => {
     if (!isOpen || !global.antiFlood("wardrobe.catalogToggle", 600)) return;
     mp.events.callRemote("server.wardrobe.catalogToggle", String(key), Number(id), !!add);
+});
+
+// Калибровка сдвига кастомной одежды (админ 9): сервер Chars/ClothesOffsets.cs OnCalibrate
+gm.events.add("client.wardrobe.calibrate", (key, gender, vanilla) => {
+    if (!isOpen || !global.antiFlood("wardrobe.calibrate", 2000)) return;
+    mp.events.callRemote("server.clothes.calibrate", String(key), !!gender, Number(vanilla) || 0);
+});
+
+gm.events.add("client.wardrobe.calibrated", (key, vanilla) => {
+    if (!isOpen) return;
+    mp.gui.emmit(`window.events.callEvent("cef.wardrobe.calibrated", ${JSON.stringify(String(key))}, ${Number(vanilla)})`);
 });
 
 gm.events.add("client.wardrobe.catalogChanged", (key, id, add) => {

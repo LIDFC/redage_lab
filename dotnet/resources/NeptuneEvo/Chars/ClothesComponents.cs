@@ -1019,8 +1019,12 @@ namespace NeptuneEvo.Chars
                 }
                 else
                 {
-                    var earsData = ClothesComponentData[gender][ClothesComponent.Hat];
-                    SetAccessories(player, 2, earsData[playerEarsData["Variation"]].Variation, playerEarsData["Texture"]);
+                    // Наушники — из списка Ears (раньше брались из шапок: чужой номер или KeyNotFound, и очки уже не надевались)
+                    var earsId = playerEarsData["Variation"];
+                    if (ClothesComponentData[gender].TryGetValue(ClothesComponent.Ears, out var earsData) && earsData.TryGetValue(earsId, out var ears))
+                        SetAccessories(player, 2, ears.Variation, playerEarsData["Texture"]);
+                    else
+                        SetAccessories(player, 2, earsId, playerEarsData["Texture"]);
                 }
 
                 var playerGlasses = GetItemData(player, "accessories", 3);

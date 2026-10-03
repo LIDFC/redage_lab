@@ -6,6 +6,7 @@
     import './css/main.css'
     import './fonts/Gilroy/stylesheet.css';
     import './fonts/SFPro/stylesheet.css';
+    import './fonts/style.css'; // значки фракций sm-icon-* (раньше не подключались)
     import { ItemType, itemsInfo, ItemId } from 'json/itemsInfo.js'
     import { charUUID, charWanted, charMoney, charBankMoney } from 'store/chars'
     import { format } from 'api/formatter'
@@ -69,6 +70,8 @@
         btn = _btn;
         elements = JSON.parse (_json);
         type = _type;
+        smGroup = "all";
+        smSearch = "";
     }
 
     const configImages = [
@@ -240,6 +243,48 @@
 
     let currentCategory = categories[0].Type;
 
+    // ---- Меню выдачи (не 24/7): группы по названию позиции — сервер присылает ItemId = 0
+    let smGroup = "all";
+    let smSearch = "";
+    const SM_GROUPS = [
+        { key: "weapon", title: "Оружие" },
+        { key: "ammo", title: "Патроны" },
+        { key: "gear", title: "Снаряжение" },
+        { key: "barrier", title: "Ограждения" },
+        { key: "mission", title: "Задания" },
+        { key: "other", title: "Прочее" },
+    ];
+    const smGroupOf = (value) => {
+        const name = String(value.Name || "").toLowerCase();
+        if (/калибр|дробь|патрон/.test(name)) return "ammo";
+        if (/конус|отбойник|перекрыти|знак|кпп|забор|ночной свет|камера/.test(name)) return "barrier";
+        if (/бронежилет|аптечк|бейдж|стяжк|мешок|рация|наручник/.test(name)) return "gear";
+        if (/^(угон|перевозка)/.test(name)) return "mission";
+        if (/дубинк|нож|бита|кастет/.test(name) || /^[a-z0-9 .\-]+$/i.test(String(value.Name || ""))) return "weapon";
+        return "other";
+    };
+    $: groupsShown = SM_GROUPS
+        .map((g) => ({ ...g, count: elements.filter((v) => smGroupOf(v) === g.key).length }))
+        .filter((g) => g.count > 0);
+    $: if (smGroup !== "all" && !groupsShown.some((g) => g.key === smGroup)) smGroup = "all";
+    $: smShown = elements.filter((v) =>
+        (smGroup === "all" || groupsShown.length < 2 || smGroupOf(v) === smGroup) &&
+        (!smSearch.trim() || String(v.Name).toLowerCase().includes(smSearch.trim().toLowerCase())));
+    const isGiveBack = (value) => /Сдать/.test(String(value.Name));
+    // Акцент окна по фракции (иконка в заголовке)
+    const accentOf = (icon) => {
+        const s = String(icon || "");
+        if (s.includes("polic")) return "#3b82f6";
+        if (s.includes("army")) return "#6b8e23";
+        if (s.includes("fib")) return "#64748b";
+        if (s.includes("gov")) return "#d4a72c";
+        if (s.includes("gang")) return "#22c55e";
+        if (s.includes("mafia")) return "#ef4444";
+        if (s.includes("ems") || s.includes("hosp")) return "#f43f5e";
+        return "#8b9bb4";
+    };
+    const rgbOf = (hex) => [1, 3, 5].map((i) => parseInt(hex.substr(i, 2), 16)).join(",");
+
     const selectCategory = (type) => {
         currentCategory = type;
     };
@@ -321,49 +366,275 @@
         </div>
     </div>
     {:else}
-            <div id='shop'>
-                <div class="box-ch">
-                    <div class="box-info">
-                        <div class="l">
-                            <div class="title"><span class="i-title {titleIcon}" />{title}</div>
-                        </div>
-                        <div class="button-box">
-                            <div class="btn red" on:keypress={() => {}} on:click={() => executeClient ('client.sm.exit')}>{translateText('business', 'Выйти')}</div>
-                        </div>
+        <!-- Выдача оружия фракций, чёрный рынок, задания, банк: тот же список и те же события (client.sm.click / client.sm.exit) -->
+        <div class="sm2" style="--acc: {accentOf(titleIcon)}; --acc-rgb: {rgbOf(accentOf(titleIcon))}">
+            <div class="sm2__box">
+                <div class="sm2__head">
+                    <div class="sm2__logo"><span class="i-title {titleIcon}" /></div>
+                    <div class="sm2__title">
+                        <span>{groupsShown.length > 1 ? `${elements.length} позиций` : "Меню"}</span>
+                        <h1>{title}</h1>
                     </div>
-                    <div class="item-info">
-            
-                        <ul class="items">
-                            {#each elements as value, index}
-                            <li id={value.id} key={index} class="block" on:keypress={() => {}} on:click={() => executeClient ('client.sm.click', value.Id)}>
-                                <div class="box">
-                                    <div class="name">{@html value.Name}</div>
-                                <!--<div class="name">{@html getPng(value, itemsInfo[value.ItemId])}</div>
-                                    <span class="item-img {value.Icon}" />  
-                                    <img src="{getPng(value, itemsInfo[value.ItemId])}">
-                                    <span class="item-img" style="background-image: url({getPng(value, itemsInfo[value.ItemId])})" />-->
-            
-                                    {#if value.ItemId == 0}
-                                        <div class="item-img"><img alt="" src="{getOtherImageUrl(value.Name)}"></div>
-                                        {:else}
-                                        <div class="item-img"><img alt="" src="{getPng(value, itemsInfo[value.ItemId])}"></div>
-                                     {/if}
-            
-                                    {#if value.Price}
-                                        <div class="price">
-                                            {value.Price.replace(/[^\d]+/g,'')}
-                                            <span class="green"> {value.Price.replace(/[0-9]+/,'')}</span>
-                                        </div>
-                                    {/if}
-                                </div>
-                                <div class="btn {btn}">{getTypeName(value.Name.match(/Сдать/g) ? 2 : type)}</div>
-                             </li>
-                             {/each}
-                         </ul>
-            
+                    {#if elements.length > 12}
+                        <input class="sm2__search" placeholder="Поиск" bind:value={smSearch} />
+                    {/if}
+                    <div class="sm2__close" on:keypress={() => {}} on:click={() => executeClient ('client.sm.exit')}>
+                        {translateText('business', 'Выйти')} <b>ESC</b>
                     </div>
-                    
-                    
+                </div>
+
+                {#if groupsShown.length > 1}
+                    <div class="sm2__tabs">
+                        <div class="sm2__tab" class:active={smGroup === "all"} on:keypress={() => {}} on:click={() => (smGroup = "all")}>
+                            Все <i>{elements.length}</i>
+                        </div>
+                        {#each groupsShown as group}
+                            <div class="sm2__tab" class:active={smGroup === group.key} on:keypress={() => {}} on:click={() => (smGroup = group.key)}>
+                                {group.title} <i>{group.count}</i>
+                            </div>
+                        {/each}
+                    </div>
+                {/if}
+
+                <div class="sm2__grid">
+                    {#each smShown as value, index (value.Id + "_" + index)}
+                        <div class="sm2__card" class:give={isGiveBack(value)} on:keypress={() => {}} on:click={() => executeClient ('client.sm.click', value.Id)}>
+                            <div class="sm2__img">
+                                {#if value.ItemId == 0}
+                                    <img alt="" src="{getOtherImageUrl(value.Name)}">
+                                {:else}
+                                    <img alt="" src="{getPng(value, itemsInfo[value.ItemId])}">
+                                {/if}
+                            </div>
+                            <div class="sm2__name">{@html value.Name}</div>
+                            {#if value.Price}
+                                <div class="sm2__price">{value.Price}</div>
+                            {/if}
+                            <div class="sm2__btn">{getTypeName(value.Name.match(/Сдать/g) ? 2 : type)}</div>
+                        </div>
+                    {:else}
+                        <div class="sm2__empty">Ничего не найдено</div>
+                    {/each}
                 </div>
             </div>
+        </div>
 {/if}
+
+<style>
+    .sm2 {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(ellipse at center, rgba(8, 10, 14, 0.55), rgba(8, 10, 14, 0.85));
+        font-family: "Gilroy", "Montserrat", sans-serif;
+        color: #e9ecf1;
+    }
+    .sm2__box {
+        width: 118vh;
+        max-width: 94vw;
+        height: 78vh;
+        display: flex;
+        flex-direction: column;
+        background: #14171c;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-top: 0.35vh solid var(--acc);
+        border-radius: 1.6vh;
+        box-shadow: 0 2.4vh 6vh rgba(0, 0, 0, 0.55);
+        overflow: hidden;
+    }
+    .sm2__head {
+        display: flex;
+        align-items: center;
+        gap: 1.6vh;
+        padding: 2vh 2.4vh;
+        background: linear-gradient(90deg, rgba(var(--acc-rgb), 0.18), transparent 60%);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .sm2__logo {
+        width: 5.6vh;
+        height: 5.6vh;
+        flex-shrink: 0;
+        border-radius: 1.2vh;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    /* Значок фракции — глиф иконочного шрифта sm (assets/fonts/sm) */
+    .sm2__logo :global(.i-title) {
+        font-size: 3.4vh;
+        line-height: 1;
+        margin: 0;
+        color: var(--acc);
+    }
+    .sm2__title {
+        margin-right: auto;
+        min-width: 0;
+    }
+    .sm2__title span {
+        font-size: 1.2vh;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--acc);
+        font-weight: 700;
+    }
+    .sm2__title h1 {
+        margin: 0.3vh 0 0;
+        font-size: 2.6vh;
+        font-weight: 800;
+        line-height: 1.1;
+    }
+    .sm2__search {
+        width: 24vh;
+        padding: 1vh 1.3vh;
+        border-radius: 1vh;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: #0e1014;
+        color: #e9ecf1;
+        font-size: 1.4vh;
+        outline: none;
+    }
+    .sm2__search:focus {
+        border-color: var(--acc);
+    }
+    .sm2__close {
+        padding: 1vh 1.4vh;
+        border-radius: 1vh;
+        background: rgba(255, 255, 255, 0.06);
+        font-size: 1.4vh;
+        font-weight: 700;
+        cursor: pointer;
+        white-space: nowrap;
+    }
+    .sm2__close:hover {
+        background: rgba(239, 68, 68, 0.35);
+    }
+    .sm2__close b {
+        margin-left: 0.6vh;
+        padding: 0.1vh 0.6vh;
+        border-radius: 0.5vh;
+        background: rgba(255, 255, 255, 0.12);
+        font-size: 1.1vh;
+        color: #b8c0cc;
+    }
+    .sm2__tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8vh;
+        padding: 1.4vh 2.4vh 0;
+    }
+    .sm2__tab {
+        padding: 0.9vh 1.4vh;
+        border-radius: 3vh;
+        font-size: 1.4vh;
+        font-weight: 700;
+        color: #b8c0cc;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid transparent;
+        cursor: pointer;
+        user-select: none;
+    }
+    .sm2__tab:hover {
+        color: #fff;
+    }
+    .sm2__tab.active {
+        color: #fff;
+        background: rgba(var(--acc-rgb), 0.28);
+        border-color: var(--acc);
+    }
+    .sm2__tab i {
+        font-style: normal;
+        margin-left: 0.4vh;
+        opacity: 0.6;
+        font-size: 1.2vh;
+    }
+    .sm2__grid {
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 1.6vh 2.4vh 2.4vh;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(17vh, 1fr));
+        gap: 1.2vh;
+        align-content: start;
+    }
+    .sm2__grid::-webkit-scrollbar {
+        width: 0.5vh;
+    }
+    .sm2__grid::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 0.5vh;
+    }
+    .sm2__card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8vh;
+        padding: 1.2vh;
+        border-radius: 1.2vh;
+        background: #1a1e25;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        cursor: pointer;
+        transition: transform 0.12s, border-color 0.12s, background 0.12s;
+        min-width: 0;
+    }
+    .sm2__card:hover {
+        transform: translateY(-0.3vh);
+        border-color: var(--acc);
+        background: #1e232b;
+    }
+    .sm2__img {
+        height: 10vh;
+        border-radius: 0.9vh;
+        background: radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.02) 70%);
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+    }
+    .sm2__img img {
+        max-width: 80%;
+        max-height: 8.4vh;
+        object-fit: contain;
+        filter: drop-shadow(0 0.6vh 0.8vh rgba(0, 0, 0, 0.45));
+    }
+    .sm2__name {
+        font-size: 1.5vh;
+        font-weight: 700;
+        line-height: 1.25;
+        min-height: 3.8vh;
+        overflow-wrap: anywhere;
+    }
+    .sm2__price {
+        font-size: 1.35vh;
+        font-weight: 700;
+        color: #7ee2a8;
+    }
+    .sm2__btn {
+        margin-top: auto;
+        padding: 0.9vh;
+        border-radius: 0.9vh;
+        text-align: center;
+        font-size: 1.35vh;
+        font-weight: 800;
+        background: rgba(var(--acc-rgb), 0.35);
+        border: 1px solid rgba(var(--acc-rgb), 0.7);
+    }
+    .sm2__card:hover .sm2__btn {
+        background: var(--acc);
+    }
+    .sm2__card.give .sm2__btn {
+        background: rgba(245, 184, 61, 0.2);
+        border-color: rgba(245, 184, 61, 0.6);
+        color: #f5d38a;
+    }
+    .sm2__empty {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 4vh 0;
+        color: #8a93a3;
+        font-size: 1.5vh;
+    }
+</style>

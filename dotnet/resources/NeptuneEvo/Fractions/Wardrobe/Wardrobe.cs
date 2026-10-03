@@ -368,6 +368,11 @@ namespace NeptuneEvo.Fractions.Wardrobe
             var main = new[] { ClothesComponent.Tops, ClothesComponent.Undershort, ClothesComponent.Legs, ClothesComponent.Shoes };
             if (main.Count(m => clean.Items.ContainsKey(m.ToString())) < 2)
                 error = "Форма не собрана: выберите хотя бы верх (или футболку), низ и обувь";
+            // Маска-шлем снимает головной убор (ClothesComponents.SetHat) — предупредить заранее, а не «потерять» шапку
+            else if (clean.Items.TryGetValue(ClothesComponent.Masks.ToString(), out var mask) && clean.Items.ContainsKey(ClothesComponent.Hat.ToString()) &&
+                     ClothesComponents.ClothesComponentData.TryGetValue(gender, out var byComponent) &&
+                     byComponent.TryGetValue(ClothesComponent.Masks, out var masks) && masks.TryGetValue(mask[0], out var maskData) && maskData.IsHat)
+                error = "Эта маска не надевается вместе с головным убором — уберите одно из двух";
             return clean;
         }
 
@@ -394,7 +399,7 @@ namespace NeptuneEvo.Fractions.Wardrobe
                     if (Chars.Repository.ClothesComponentToComponentId.TryGetValue(component, out var comp))
                         ClothesComponents.SetSpecialClothes(player, comp.SlotId, value[0], value[1]);
                     else if (Chars.Repository.ClothesComponentToPropId.TryGetValue(component, out var prop))
-                        ClothesComponents.SetSpecialAccessories(player, prop.SlotId, value[0], value[1]);
+                        SetPropItem(player, prop, value[0], value[1], gender);
                 }
                 if (outfit.Torso != null)
                     TorsoOverride[player] = (outfit.Torso[0], outfit.Torso[1]);
@@ -403,6 +408,14 @@ namespace NeptuneEvo.Fractions.Wardrobe
                 Chars.Repository.LoadAccessories(player);
                 if (outfit.Torso != null)
                     ClothesComponents.SetClothes(player, 3, outfit.Torso[0], outfit.Torso[1]);
+                // Реквизит (шапка, очки…) — настоящей моделью GTA и последним, плюс повтор через 400 мс:
+                // клиент мог сбросить шапку при смене маски/верха — тогда она «пропадала» или была без текстуры
+                ApplyProps(player, outfit, gender, false);
+                NAPI.Task.Run(() =>
+                {
+                    if (player.IsCharacterData() && player.GetSessionData()?.WorkData.OnDutyName == DutyName)
+                        ApplyProps(player, outfit, gender, true);
+                }, 400);
 
                 sessionData.WorkData.OnDuty = onDuty;
                 if (isDutySet && !onDuty)
@@ -418,6 +431,42 @@ namespace NeptuneEvo.Fractions.Wardrobe
                 Log.Write($"Apply Exception: {e}");
             }
             return false;
+        }
+
+        /// <summary>Номер модели GTA для вещи сервера (у кастомных Id ≠ Variation).</summary>
+        private static int ModelOf(bool gender, ClothesComponent component, int id) =>
+            ClothesComponents.ClothesComponentData.TryGetValue(gender, out var byComponent) &&
+            byComponent.TryGetValue(component, out var data) && data.TryGetValue(id, out var clothes)
+                ? clothes.Variation
+                : id;
+
+        /// <summary>Записать реквизит образа в «спец-вещи» (как SetSpecialAccessories), но без мгновенного
+        /// SetPlayerAccessory с серверным Id — модель ставят LoadAccessories/ApplyProps по Variation.</summary>
+        private static void SetPropItem(ExtPlayer player, Chars.ClothesComponentId prop, int id, int texture, bool gender)
+        {
+            var item = new Chars.Models.InventoryItemData(ItemId: prop.ItemId, Data: $"{id}_{texture}_{gender}");
+            player.SetAccessories(prop.AccessoriesSlotId, item);
+        }
+
+        private static void ApplyProps(ExtPlayer player, Outfit outfit, bool gender, bool force)
+        {
+            var characterData = player.GetCharacterData();
+            if (characterData == null)
+                return;
+            foreach (var (key, value) in outfit.Items)
+            {
+                if (!Enum.TryParse<ClothesComponent>(key, out var component) ||
+                    !Chars.Repository.ClothesComponentToPropId.TryGetValue(component, out var prop))
+                    continue;
+                var model = ModelOf(gender, component, value[0]);
+                if (force)
+                {
+                    characterData.Accessory[prop.SlotId] = new ComponentVariation(model, value[1]);
+                    NAPI.Player.SetPlayerAccessory(player, prop.SlotId, model, value[1]);
+                }
+                else
+                    ClothesComponents.SetAccessories(player, prop.SlotId, model, value[1]);
+            }
         }
 
         private static void Reply(ExtPlayer player, string text, bool ok) =>
@@ -661,6 +710,8 @@ namespace NeptuneEvo.Fractions.Wardrobe
                     .Select(d => (id: d.Key, clothes: d.Value, name: ClothesComponents.GetClothesName(gender, component.Value, d.Key)))
                     .Where(x => search.Length == 0 || x.id.ToString() == search || (x.name ?? "").ToLower().Contains(search))
                     .ToList();
+                // Для калибровки: стандартных моделей в категории; кастомная вещь — номер в паке (cvariation)
+                var vanilla = ClothesComponents.MaxClothesComponent[gender].TryGetValue(component.Value, out var max) ? max : 0;
                 var pages = Math.Max(1, (all.Count + CatalogPage - 1) / CatalogPage);
                 page = Math.Max(0, Math.Min(page, pages - 1));
                 var items = all.Skip(page * CatalogPage).Take(CatalogPage).Select(x => new object[]
@@ -673,8 +724,9 @@ namespace NeptuneEvo.Fractions.Wardrobe
                     string.IsNullOrEmpty(x.clothes.TName) ? null : x.clothes.TName,
                     allowedList != null && allowedList.Any(i => i.DrawableId == x.id),
                     Extras.Contains((memberFractionData.Id, gender, component.Value, x.id)),
+                    vanilla > 0 && x.clothes.Variation >= vanilla ? x.clothes.Variation - vanilla + 1 : 0,
                 }).ToList();
-                Trigger.ClientEvent(player, "client.wardrobe.catalogPage", JsonConvert.SerializeObject(new { key, slot, isProp, page, pages, total = all.Count, items }));
+                Trigger.ClientEvent(player, "client.wardrobe.catalogPage", JsonConvert.SerializeObject(new { key, slot, isProp, page, pages, total = all.Count, items, vanilla, gender }));
             }
             catch (Exception e)
             {

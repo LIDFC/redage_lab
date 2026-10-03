@@ -175,6 +175,8 @@
         executeClient("client.wardrobe.preview", catPage.slot, catPage.isProp, item.drawable, texture, item.torso === undefined ? -1 : item.torso);
     };
     const catPick = (item) => {
+        calDelta = 0;
+        calConfirm = "";
         catSelected = { item, texture: item.textures[0] || 0 };
         catPreview(item, catSelected.texture);
     };
@@ -184,6 +186,32 @@
         catPreview(catSelected.item, texture);
     };
     const catToggle = (item, add) => executeClient("client.wardrobe.catalogToggle", catKey, item.id, add);
+
+    // ---- Калибровка сдвига кастомной одежды: модель = стандартных в игре + сдвиг + номер в паке − 1
+    let calDelta = 0;
+    let calConfirm = "";
+    $: calModel = catSelected && catPage ? catPage.vanilla + calDelta + catSelected.item.custom - 1 : 0;
+    const calStep = (step) => {
+        if (!catSelected || !catPage) return;
+        calDelta += step;
+        calConfirm = "";
+        executeClient("client.wardrobe.preview", catPage.slot, catPage.isProp, catPage.vanilla + calDelta + catSelected.item.custom - 1, catSelected.texture, -1);
+    };
+    const calSave = (reset) => {
+        const id = reset ? "reset" : "save";
+        if (calConfirm !== id) {
+            calConfirm = id;
+            return;
+        }
+        calConfirm = "";
+        executeClient("client.wardrobe.calibrate", catKey, catPage.gender, reset ? 0 : catPage.vanilla + calDelta);
+    };
+    window.events.addEvent("cef.wardrobe.calibrated", (key, vanilla) => {
+        calDelta = 0;
+        message = `Калибровка сохранена: стандартных моделей ${vanilla}. Все кастомные вещи категории (и в магазине) сдвинуты`;
+        ok = true;
+        if (catPage) loadCatalog(key, catPage.page);
+    });
     window.events.addEvent("cef.wardrobe.catalogPage", (json) => {
         const page = parse(json);
         catLoading = false;
@@ -214,6 +242,7 @@
         window.events.removeEvent("cef.wardrobe.presets");
         window.events.removeEvent("cef.wardrobe.catalogPage");
         window.events.removeEvent("cef.wardrobe.catalogChanged");
+        window.events.removeEvent("cef.wardrobe.calibrated");
         clearTimeout(catTimer);
         executeClient("client.camera.toggled", false);
     });
@@ -303,6 +332,30 @@
                                 {/if}
                             </div>
                         </div>
+                        {#if catSelected.item.custom && catPage.vanilla}
+                            <div class="wr__cal">
+                                <div class="wr__cal_head">
+                                    <b>Калибровка кастомных вещей</b>
+                                    <span>модель в игре: {calModel}</span>
+                                </div>
+                                <div class="wr__cal_hint">Если вещь на персонаже не совпадает с названием — двигайте сдвиг, пока не появится нужная. Сохранение сдвигает все кастомные вещи категории, в том числе в магазине.</div>
+                                <div class="wr__cal_row">
+                                    <div class="wr__color" on:click={() => calStep(-10)}>−10</div>
+                                    <div class="wr__color" on:click={() => calStep(-1)}>−1</div>
+                                    <div class="wr__cal_val">сдвиг {calDelta > 0 ? "+" : ""}{calDelta}</div>
+                                    <div class="wr__color" on:click={() => calStep(1)}>+1</div>
+                                    <div class="wr__color" on:click={() => calStep(10)}>+10</div>
+                                </div>
+                                <div class="wr__cal_row">
+                                    <div class="wr__btn small" class:disabled={!calDelta} on:click={() => calDelta && calSave(false)}>
+                                        {calConfirm === "save" ? "Точно сохранить?" : "Сохранить сдвиг"}
+                                    </div>
+                                    <div class="wr__btn small danger" on:click={() => calSave(true)}>
+                                        {calConfirm === "reset" ? "Точно вернуть?" : "Вернуть из кода"}
+                                    </div>
+                                </div>
+                            </div>
+                        {/if}
                     {/if}
                 </div>
             {:else}
@@ -755,6 +808,49 @@
     .wr__cat_note {
         font-size: 1.2vh;
         opacity: 0.6;
+    }
+    .wr__cal {
+        margin-top: 1vh;
+        padding: 1vh 1.1vh;
+        border-radius: 1vh;
+        background: rgba(245, 184, 61, 0.08);
+        border: 1px solid rgba(245, 184, 61, 0.35);
+        display: flex;
+        flex-direction: column;
+        gap: 0.7vh;
+    }
+    .wr__cal_head {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 1.3vh;
+    }
+    .wr__cal_head span {
+        opacity: 0.65;
+        font-size: 1.15vh;
+    }
+    .wr__cal_hint {
+        font-size: 1.1vh;
+        opacity: 0.6;
+        line-height: 1.4;
+    }
+    .wr__cal_row {
+        display: flex;
+        align-items: center;
+        gap: 0.6vh;
+    }
+    .wr__cal_row .wr__btn {
+        flex: 1;
+    }
+    .wr__cal_val {
+        flex: 1;
+        text-align: center;
+        font-size: 1.3vh;
+        font-weight: 700;
+    }
+    .wr__btn.disabled {
+        opacity: 0.4;
+        cursor: default;
     }
     .wr__btn.small.danger {
         background: rgba(239, 68, 68, 0.45);

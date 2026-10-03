@@ -319259,7 +319259,7 @@ function get_each_context_5(ctx, list, i) {
 	return child_ctx;
 }
 
-// (144:28) {#if !(lists.length > 0 && category[selectCategory] !== undefined)}
+// (134:28) {#if !(lists.length > 0 && category[selectCategory] !== undefined)}
 function create_if_block_3(ctx) {
 	let t0_value = (0,lang__WEBPACK_IMPORTED_MODULE_1__.translateText)('vehicle', 'Баланс') + "";
 	let t0;
@@ -319282,7 +319282,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (160:24) {:else}
+// (150:24) {:else}
 function create_else_block(ctx) {
 	let i;
 	let i_class_value;
@@ -319306,7 +319306,7 @@ function create_else_block(ctx) {
 	};
 }
 
-// (156:24) {#if (lists.length > 0 && category[selectCategory] !== undefined) && typeof item.category == "number"}
+// (146:24) {#if (lists.length > 0 && category[selectCategory] !== undefined) && typeof item.category == "number"}
 function create_if_block_2(ctx) {
 	let div;
 	let t_value = /*item*/ ctx[31].title + "";
@@ -319331,7 +319331,7 @@ function create_if_block_2(ctx) {
 	};
 }
 
-// (154:20) {#each category as item, index}
+// (144:20) {#each category as item, index}
 function create_each_block_5(ctx) {
 	let li;
 	let t0;
@@ -319425,7 +319425,7 @@ function create_each_block_5(ctx) {
 	};
 }
 
-// (175:12) {#if (lists.length > 0 && category[selectCategory] !== undefined)}
+// (165:12) {#if (lists.length > 0 && category[selectCategory] !== undefined)}
 function create_if_block_1(ctx) {
 	let div3;
 	let div2;
@@ -319564,7 +319564,7 @@ function create_if_block_1(ctx) {
 	};
 }
 
-// (186:20) {#each lists as item, index}
+// (176:20) {#each lists as item, index}
 function create_each_block_4(ctx) {
 	let item;
 	let current;
@@ -319612,7 +319612,7 @@ function create_each_block_4(ctx) {
 	};
 }
 
-// (221:20) {#each GetSpec(stats_speed, mstats_speed) as step, _}
+// (211:20) {#each GetSpec(stats_speed, mstats_speed) as step, _}
 function create_each_block_3(ctx) {
 	let li;
 
@@ -319636,7 +319636,7 @@ function create_each_block_3(ctx) {
 	};
 }
 
-// (229:20) {#each GetSpec(stats_boost, mstats_boost) as step, _}
+// (219:20) {#each GetSpec(stats_boost, mstats_boost) as step, _}
 function create_each_block_2(ctx) {
 	let li;
 
@@ -319660,7 +319660,7 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (237:20) {#each GetSpec(stats_brakes, mstats_brakes) as step, _}
+// (227:20) {#each GetSpec(stats_brakes, mstats_brakes) as step, _}
 function create_each_block_1(ctx) {
 	let li;
 
@@ -319684,7 +319684,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (245:20) {#each GetSpec(stats_clutch, mstats_clutch) as step, _}
+// (235:20) {#each GetSpec(stats_clutch, mstats_clutch) as step, _}
 function create_each_block(ctx) {
 	let li;
 
@@ -319708,7 +319708,7 @@ function create_each_block(ctx) {
 	};
 }
 
-// (251:8) {#if color}
+// (241:8) {#if color}
 function create_if_block(ctx) {
 	let color_1;
 	let current;
@@ -320427,21 +320427,14 @@ function instance($$self, $$props, $$invalidate) {
 		});
 	});
 
+	// 10 делений: доля от максимума (с полным тюнингом), каждое деление заполняется отдельно
 	const GetSpec = (num, max) => {
-		let step;
-		let array = [];
-		let percentArray = [];
+		const pct = max > 0
+		? Math.min(100, Math.max(0, Number(num) * 100 / max))
+		: 0;
 
-		for (step = 1; step <= 10; step++) {
-			let progress = 0;
-			if (num >= step * 10) progress = 100; else if (num < step * 10 && num >= 10 * (step - 1)) progress = num - (step - 1) * 10 * 100 / max;
-			percentArray.push(progress);
-		}
-
-		percentArray.forEach((step, index) => {
-			array.push(`<li class="sort" style="background: linear-gradient(to right, #FFFFFF ${step}%, #434A5B 0%)"></li>`);
-		});
-
+		const percentArray = [];
+		for (let step = 1; step <= 10; step++) percentArray.push(Math.min(100, Math.max(0, (pct - (step - 1) * 10) * 10)));
 		return percentArray;
 	};
 
@@ -320449,7 +320442,7 @@ function instance($$self, $$props, $$invalidate) {
 		$$invalidate(3, selectCategory = index);
 		$$invalidate(4, lists = []);
 		$$invalidate(0, color = false);
-		$$invalidate(1, colorListsId = false);
+		$$invalidate(1, colorListsId = 0);
 		(0,api_rage__WEBPACK_IMPORTED_MODULE_7__.executeClient)('client.custom.category', category[index].category);
 	};
 
@@ -320642,7 +320635,6 @@ function create_fragment(ctx) {
 	let t3;
 	let t4;
 	let span;
-	let li_class_value;
 	let mounted;
 	let dispose;
 	let if_block = /*lvl*/ ctx[5] && create_if_block(ctx);
@@ -320666,8 +320658,9 @@ function create_fragment(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "desc");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "price");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "flex un");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "class", li_class_value = "listitems " + (/*selectItem*/ ctx[4] !== /*id*/ ctx[0] || "active"));
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "class", "listitems");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "id", /*id*/ ctx[0]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(li, "active", /*selectItem*/ ctx[4] === /*id*/ ctx[0]);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, li, anchor);
@@ -320714,12 +320707,12 @@ function create_fragment(ctx) {
 			if (dirty & /*text*/ 4) div0.innerHTML = /*text*/ ctx[2];;
 			if (dirty & /*price*/ 8) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, /*price*/ ctx[3]);
 
-			if (dirty & /*selectItem, id*/ 17 && li_class_value !== (li_class_value = "listitems " + (/*selectItem*/ ctx[4] !== /*id*/ ctx[0] || "active"))) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "class", li_class_value);
-			}
-
 			if (dirty & /*id*/ 1) {
 				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(li, "id", /*id*/ ctx[0]);
+			}
+
+			if (dirty & /*selectItem, id*/ 17) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(li, "active", /*selectItem*/ ctx[4] === /*id*/ ctx[0]);
 			}
 		},
 		i: svelte_internal__WEBPACK_IMPORTED_MODULE_0__.noop,

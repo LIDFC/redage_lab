@@ -126,6 +126,11 @@ namespace NeptuneEvo.Core
             // Бутылка воды для полива (Crime/Weed) — продаётся во всех 24/7, если нет своей строки в bus_products
             if (!BusProductsData.ContainsKey("Бутылка воды"))
                 BusProductsData["Бутылка воды"] = new BusProductData(25, 8, 0, 200, (sbyte)BusProductToType.Market, (int)ItemId.WaterBottle, true);
+            // «Ближний бой» в оружейных магазинах: госцена, если нет своей строки в bus_products.
+            // Оружейные бизнесы получают недостающие Gun-товары сами при загрузке.
+            foreach (var (name, price) in MeleeProducts)
+                if (!BusProductsData.ContainsKey(name))
+                    BusProductsData[name] = new BusProductData(price, 0, 0, 200, (sbyte)BusProductToType.Gun, 0, true);
         }
 
         /// <summary>Тип бизнеса «Грузовой автосалон».</summary>
@@ -3929,6 +3934,7 @@ namespace NeptuneEvo.Core
         {
             try
             {
+                if (cat == MeleeCategory || cat < 0 || cat >= gunsCat.Count || index < 0 || index >= gunsCat[cat].Count) return;
                 var sessionData = player.GetSessionData();
                 if (sessionData == null) return;
                 var characterData = player.GetCharacterData();
@@ -3985,6 +3991,7 @@ namespace NeptuneEvo.Core
         {
             try
             {
+                if (category == MeleeCategory || category < 0 || category >= AmmoPrices.Count()) return;
                 var sessionData = player.GetSessionData();
                 if (sessionData == null) return;
                 var characterData = player.GetCharacterData();
@@ -4053,7 +4060,9 @@ namespace NeptuneEvo.Core
                 if (characterData == null) return;
                 if (sessionData.TempBizID == -1 || !BizList.ContainsKey(sessionData.TempBizID)) return;
                 int bizid = sessionData.TempBizID;
-                if (!characterData.Licenses[6])
+                if (cat < 0 || cat >= gunsCat.Count || index < 0 || index >= gunsCat[cat].Count) return;
+                // Бита, нож и прочий ближний бой — без лицензии на оружие
+                if (cat != MeleeCategory && !characterData.Licenses[6])
                 {
                     Notify.Send(player, NotifyType.Error, NotifyPosition.BottomCenter, $"У Вас нет лицензии на оружие. Получить её можно в полицейском департаменте.", 10000);
                     return;
@@ -4061,6 +4070,7 @@ namespace NeptuneEvo.Core
                 Business biz = BizList[bizid];
                 string prodName = gunsCat[cat][index];
                 Product prod = biz.Products.FirstOrDefault(p => p.Name == prodName);
+                if (prod == null) return;
                 if (UpdateData.CanIChange(player, prod.Price, true) != 255) return;
                 ItemId wType = (ItemId)Enum.Parse(typeof(ItemId), prod.Name);
                 if (Chars.Repository.isFreeSlots(player, wType) != 0) return;
@@ -4122,6 +4132,24 @@ namespace NeptuneEvo.Core
                 "MarksmanRifle",
                 "SniperRifle",
             },*/
+            // Ближний бой (индекс MeleeCategory): без лицензии, без патронов и модификаций.
+            // Явный список: MeleeProducts объявлен ниже, а статические поля инициализируются по порядку
+            new List<string>()
+            {
+                "Bat", "Flashlight", "Wrench", "Hammer", "Crowbar", "GolfClub", "PoolCue",
+                "KnuckleDuster", "Knife", "SwitchBlade", "Dagger", "Hatchet", "Machete", "BattleAxe",
+            },
+        };
+
+        /// <summary>Номер категории «Ближний бой» в gunsCat и в окне магазина (CEF categoryNames[4]).</summary>
+        public const int MeleeCategory = 4;
+
+        /// <summary>Товары «Ближний бой» и их госцены по умолчанию (строка в mainconfig.bus_products важнее).</summary>
+        public static readonly (string Name, int Price)[] MeleeProducts =
+        {
+            ("Bat", 350), ("Flashlight", 250), ("Wrench", 300), ("Hammer", 300), ("Crowbar", 400),
+            ("GolfClub", 450), ("PoolCue", 300), ("KnuckleDuster", 800), ("Knife", 700), ("SwitchBlade", 900),
+            ("Dagger", 1200), ("Hatchet", 1500), ("Machete", 1800), ("BattleAxe", 2500),
         };
         #endregion
 

@@ -68929,38 +68929,38 @@ function add_css(target) {
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[40] = list[i];
+	child_ctx[41] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_2(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[46] = list[i];
-	child_ctx[48] = i;
+	child_ctx[47] = list[i];
+	child_ctx[49] = i;
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[43] = list[i];
+	child_ctx[44] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_4(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[52] = list[i];
-	child_ctx[48] = i;
+	child_ctx[53] = list[i];
+	child_ctx[49] = i;
 	return child_ctx;
 }
 
 function get_each_context_3(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[49] = list[i];
+	child_ctx[50] = list[i];
 	return child_ctx;
 }
 
-// (128:16) {#if modsMode}
-function create_if_block_6(ctx) {
+// (131:16) {#if modsMode}
+function create_if_block_8(ctx) {
 	let div;
 	let mounted;
 	let dispose;
@@ -68975,7 +68975,7 @@ function create_if_block_6(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*backFromMods*/ ctx[27]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div, "click", /*backFromMods*/ ctx[28]);
 				mounted = true;
 			}
 		},
@@ -68988,7 +68988,7 @@ function create_if_block_6(ctx) {
 	};
 }
 
-// (142:12) {:else}
+// (145:12) {:else}
 function create_else_block_3(ctx) {
 	let each_1_anchor;
 	let each_value_4 = /*weapons*/ ctx[0];
@@ -69016,7 +69016,7 @@ function create_else_block_3(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*category, selectCategory, categoryNames, weapons*/ 1081349) {
+			if (dirty[0] & /*category, selectCategory, categoryNames, weapons*/ 2162693) {
 				each_value_4 = /*weapons*/ ctx[0];
 				let i;
 
@@ -69046,8 +69046,8 @@ function create_else_block_3(ctx) {
 	};
 }
 
-// (136:12) {#if modsMode}
-function create_if_block_4(ctx) {
+// (139:12) {#if modsMode}
+function create_if_block_6(ctx) {
 	let each_1_anchor;
 	let each_value_3 = /*ctypes*/ ctx[1];
 	let each_blocks = [];
@@ -69074,7 +69074,7 @@ function create_if_block_4(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, each_1_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*componentType, ctypes, selectComponentType, componentItems*/ 4325394) {
+			if (dirty[0] & /*componentType, ctypes, selectComponentType, componentItems*/ 8650770) {
 				each_value_3 = /*ctypes*/ ctx[1];
 				let i;
 
@@ -69104,16 +69104,16 @@ function create_if_block_4(ctx) {
 	};
 }
 
-// (144:20) {#if cat && cat.length}
-function create_if_block_5(ctx) {
+// (147:20) {#if cat && cat.length}
+function create_if_block_7(ctx) {
 	let div;
-	let t_value = (/*categoryNames*/ ctx[15][/*i*/ ctx[48]] || `Категория ${/*i*/ ctx[48] + 1}`) + "";
+	let t_value = (/*categoryNames*/ ctx[16][/*i*/ ctx[49]] || `Категория ${/*i*/ ctx[49] + 1}`) + "";
 	let t;
 	let mounted;
 	let dispose;
 
 	function click_handler_1() {
-		return /*click_handler_1*/ ctx[34](/*i*/ ctx[48]);
+		return /*click_handler_1*/ ctx[35](/*i*/ ctx[49]);
 	}
 
 	return {
@@ -69121,7 +69121,7 @@ function create_if_block_5(ctx) {
 			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "ws__tab svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*category*/ ctx[2] === /*i*/ ctx[48]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*category*/ ctx[2] === /*i*/ ctx[49]);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -69136,7 +69136,7 @@ function create_if_block_5(ctx) {
 			ctx = new_ctx;
 
 			if (dirty[0] & /*category*/ 4) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*category*/ ctx[2] === /*i*/ ctx[48]);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*category*/ ctx[2] === /*i*/ ctx[49]);
 			}
 		},
 		d(detaching) {
@@ -69147,10 +69147,10 @@ function create_if_block_5(ctx) {
 	};
 }
 
-// (143:16) {#each weapons as cat, i}
+// (146:16) {#each weapons as cat, i}
 function create_each_block_4(ctx) {
 	let if_block_anchor;
-	let if_block = /*cat*/ ctx[52] && /*cat*/ ctx[52].length && create_if_block_5(ctx);
+	let if_block = /*cat*/ ctx[53] && /*cat*/ ctx[53].length && create_if_block_7(ctx);
 
 	return {
 		c() {
@@ -69162,11 +69162,11 @@ function create_each_block_4(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block_anchor, anchor);
 		},
 		p(ctx, dirty) {
-			if (/*cat*/ ctx[52] && /*cat*/ ctx[52].length) {
+			if (/*cat*/ ctx[53] && /*cat*/ ctx[53].length) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
-					if_block = create_if_block_5(ctx);
+					if_block = create_if_block_7(ctx);
 					if_block.c();
 					if_block.m(if_block_anchor.parentNode, if_block_anchor);
 				}
@@ -69182,13 +69182,13 @@ function create_each_block_4(ctx) {
 	};
 }
 
-// (137:16) {#each ctypes as type}
+// (140:16) {#each ctypes as type}
 function create_each_block_3(ctx) {
 	let div;
 
-	let t0_value = (/*componentItems*/ ctx[17][/*type*/ ctx[49]]
-	? /*componentItems*/ ctx[17][/*type*/ ctx[49]].name
-	: `Тип ${/*type*/ ctx[49]}`) + "";
+	let t0_value = (/*componentItems*/ ctx[18][/*type*/ ctx[50]]
+	? /*componentItems*/ ctx[18][/*type*/ ctx[50]].name
+	: `Тип ${/*type*/ ctx[50]}`) + "";
 
 	let t0;
 	let t1;
@@ -69196,7 +69196,7 @@ function create_each_block_3(ctx) {
 	let dispose;
 
 	function click_handler() {
-		return /*click_handler*/ ctx[33](/*type*/ ctx[49]);
+		return /*click_handler*/ ctx[34](/*type*/ ctx[50]);
 	}
 
 	return {
@@ -69205,7 +69205,7 @@ function create_each_block_3(ctx) {
 			t0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t0_value);
 			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "ws__tab svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*componentType*/ ctx[4] === /*type*/ ctx[49]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*componentType*/ ctx[4] === /*type*/ ctx[50]);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
@@ -69220,12 +69220,12 @@ function create_each_block_3(ctx) {
 		p(new_ctx, dirty) {
 			ctx = new_ctx;
 
-			if (dirty[0] & /*ctypes*/ 2 && t0_value !== (t0_value = (/*componentItems*/ ctx[17][/*type*/ ctx[49]]
-			? /*componentItems*/ ctx[17][/*type*/ ctx[49]].name
-			: `Тип ${/*type*/ ctx[49]}`) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
+			if (dirty[0] & /*ctypes*/ 2 && t0_value !== (t0_value = (/*componentItems*/ ctx[18][/*type*/ ctx[50]]
+			? /*componentItems*/ ctx[18][/*type*/ ctx[50]].name
+			: `Тип ${/*type*/ ctx[50]}`) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t0, t0_value);
 
 			if (dirty[0] & /*componentType, ctypes*/ 18) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*componentType*/ ctx[4] === /*type*/ ctx[49]);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div, "active", /*componentType*/ ctx[4] === /*type*/ ctx[50]);
 			}
 		},
 		d(detaching) {
@@ -69236,7 +69236,7 @@ function create_each_block_3(ctx) {
 	};
 }
 
-// (163:16) {:else}
+// (166:16) {:else}
 function create_else_block_1(ctx) {
 	let each_1_anchor;
 	let each_value_2 = /*list*/ ctx[8];
@@ -69278,7 +69278,7 @@ function create_else_block_1(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*weaponIndex, selectWeapon, list, weaponImage*/ 2359560) {
+			if (dirty[0] & /*weaponIndex, selectWeapon, list, weaponImage*/ 4718856) {
 				each_value_2 = /*list*/ ctx[8];
 				let i;
 
@@ -69320,13 +69320,13 @@ function create_else_block_1(ctx) {
 	};
 }
 
-// (153:16) {#if modsMode}
-function create_if_block_3(ctx) {
+// (156:16) {#if modsMode}
+function create_if_block_5(ctx) {
 	let each_blocks = [];
 	let each_1_lookup = new Map();
 	let each_1_anchor;
 	let each_value_1 = /*shownComponents*/ ctx[12];
-	const get_key = ctx => /*c*/ ctx[43].index;
+	const get_key = ctx => /*c*/ ctx[44].index;
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		let child_ctx = get_each_context_1(ctx, each_value_1, i);
@@ -69366,7 +69366,7 @@ function create_if_block_3(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*componentIndex, shownComponents, componentImage*/ 528416) {
+			if (dirty[0] & /*componentIndex, shownComponents, componentImage*/ 1052704) {
 				each_value_1 = /*shownComponents*/ ctx[12];
 				each_blocks = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.update_keyed_each)(each_blocks, dirty, get_key, 1, ctx, each_value_1, each_1_lookup, each_1_anchor.parentNode, svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_block, create_each_block_1, each_1_anchor, get_each_context_1);
 
@@ -69393,7 +69393,7 @@ function create_if_block_3(ctx) {
 	};
 }
 
-// (170:20) {:else}
+// (173:20) {:else}
 function create_else_block_2(ctx) {
 	let div;
 
@@ -69413,25 +69413,25 @@ function create_else_block_2(ctx) {
 	};
 }
 
-// (164:20) {#each list as w, i}
+// (167:20) {#each list as w, i}
 function create_each_block_2(ctx) {
 	let div3;
 	let div0;
 	let t0;
 	let div1;
-	let t1_value = /*w*/ ctx[46].Name + "";
+	let t1_value = /*w*/ ctx[47].Name + "";
 	let t1;
 	let t2;
 	let div2;
 	let t3;
-	let t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*w*/ ctx[46].Mats) + "";
+	let t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*w*/ ctx[47].Mats) + "";
 	let t4;
 	let t5;
 	let mounted;
 	let dispose;
 
 	function click_handler_3() {
-		return /*click_handler_3*/ ctx[36](/*i*/ ctx[48]);
+		return /*click_handler_3*/ ctx[37](/*i*/ ctx[49]);
 	}
 
 	return {
@@ -69447,11 +69447,11 @@ function create_each_block_2(ctx) {
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "ws__img svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[18](/*w*/ ctx[46]) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[19](/*w*/ ctx[47]) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "ws__name svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "ws__price svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "ws__card svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*weaponIndex*/ ctx[3] === /*i*/ ctx[48]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*weaponIndex*/ ctx[3] === /*i*/ ctx[49]);
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
@@ -69474,14 +69474,14 @@ function create_each_block_2(ctx) {
 			ctx = new_ctx;
 
 			if (dirty[0] & /*list*/ 256) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[18](/*w*/ ctx[46]) + ")");
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[19](/*w*/ ctx[47]) + ")");
 			}
 
-			if (dirty[0] & /*list*/ 256 && t1_value !== (t1_value = /*w*/ ctx[46].Name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
-			if (dirty[0] & /*list*/ 256 && t4_value !== (t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*w*/ ctx[46].Mats) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
+			if (dirty[0] & /*list*/ 256 && t1_value !== (t1_value = /*w*/ ctx[47].Name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
+			if (dirty[0] & /*list*/ 256 && t4_value !== (t4_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*w*/ ctx[47].Mats) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t4, t4_value);
 
 			if (dirty[0] & /*weaponIndex*/ 8) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*weaponIndex*/ ctx[3] === /*i*/ ctx[48]);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*weaponIndex*/ ctx[3] === /*i*/ ctx[49]);
 			}
 		},
 		d(detaching) {
@@ -69492,7 +69492,7 @@ function create_each_block_2(ctx) {
 	};
 }
 
-// (160:20) {:else}
+// (163:20) {:else}
 function create_else_block(ctx) {
 	let div;
 
@@ -69512,24 +69512,24 @@ function create_else_block(ctx) {
 	};
 }
 
-// (154:20) {#each shownComponents as c (c.index)}
+// (157:20) {#each shownComponents as c (c.index)}
 function create_each_block_1(key_1, ctx) {
 	let div3;
 	let div0;
 	let t0;
 	let div1;
-	let raw_value = /*c*/ ctx[43].Name + "";
+	let raw_value = /*c*/ ctx[44].Name + "";
 	let t1;
 	let div2;
 	let t2;
-	let t3_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*c*/ ctx[43].Mats) + "";
+	let t3_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*c*/ ctx[44].Mats) + "";
 	let t3;
 	let t4;
 	let mounted;
 	let dispose;
 
 	function click_handler_2() {
-		return /*click_handler_2*/ ctx[35](/*c*/ ctx[43]);
+		return /*click_handler_2*/ ctx[36](/*c*/ ctx[44]);
 	}
 
 	return {
@@ -69546,11 +69546,11 @@ function create_each_block_1(key_1, ctx) {
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "ws__img svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[19](/*c*/ ctx[43].type) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[20](/*c*/ ctx[44].type) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "ws__name svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "ws__price svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "ws__card svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*componentIndex*/ ctx[5] === /*c*/ ctx[43].index);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*componentIndex*/ ctx[5] === /*c*/ ctx[44].index);
 			this.first = div3;
 		},
 		m(target, anchor) {
@@ -69574,14 +69574,14 @@ function create_each_block_1(key_1, ctx) {
 			ctx = new_ctx;
 
 			if (dirty[0] & /*shownComponents*/ 4096) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[19](/*c*/ ctx[43].type) + ")");
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[20](/*c*/ ctx[44].type) + ")");
 			}
 
-			if (dirty[0] & /*shownComponents*/ 4096 && raw_value !== (raw_value = /*c*/ ctx[43].Name + "")) div1.innerHTML = raw_value;;
-			if (dirty[0] & /*shownComponents*/ 4096 && t3_value !== (t3_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*c*/ ctx[43].Mats) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
+			if (dirty[0] & /*shownComponents*/ 4096 && raw_value !== (raw_value = /*c*/ ctx[44].Name + "")) div1.innerHTML = raw_value;;
+			if (dirty[0] & /*shownComponents*/ 4096 && t3_value !== (t3_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*c*/ ctx[44].Mats) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 
 			if (dirty[0] & /*componentIndex, shownComponents*/ 4128) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*componentIndex*/ ctx[5] === /*c*/ ctx[43].index);
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div3, "active", /*componentIndex*/ ctx[5] === /*c*/ ctx[44].index);
 			}
 		},
 		d(detaching) {
@@ -69592,7 +69592,7 @@ function create_each_block_1(key_1, ctx) {
 	};
 }
 
-// (184:33) 
+// (187:33) 
 function create_if_block_2(ctx) {
 	let div0;
 	let t0;
@@ -69601,47 +69601,26 @@ function create_if_block_2(ctx) {
 	let t1;
 	let t2;
 	let div2;
-	let t3_value = (/*info*/ ctx[14] ? /*info*/ ctx[14].desc : "") + "";
+
+	let t3_value = (/*info*/ ctx[15]
+	? /*info*/ ctx[15].desc
+	: /*melee*/ ctx[13]
+		? "Оружие ближнего боя. Лицензия на оружие не нужна."
+		: "") + "";
+
 	let t3;
 	let t4;
-	let div3;
 	let t5;
-	let div4;
+	let div3;
 	let t6;
 	let t7_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*weapon*/ ctx[7].Mats) + "";
 	let t7;
 	let t8;
-	let div5;
-	let t10;
-	let div9;
-	let div6;
-	let span0;
-	let t12;
-	let span1;
-	let t13;
-	let t14;
-	let t15;
-	let div8;
-	let input;
-	let input_max_value;
-	let input_placeholder_value;
-	let t16;
-	let div7;
-	let t17;
-
-	let t18_value = (/*ammoN*/ ctx[11] > 0
-	? ` · $${(0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*ammoN*/ ctx[11] * /*ammoPrice*/ ctx[13])}`
-	: "") + "";
-
-	let t18;
+	let if_block1_anchor;
 	let mounted;
 	let dispose;
-	let each_value = /*stats*/ ctx[30];
-	let each_blocks = [];
-
-	for (let i = 0; i < each_value.length; i += 1) {
-		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
-	}
+	let if_block0 = /*info*/ ctx[15] && create_if_block_4(ctx);
+	let if_block1 = !/*melee*/ ctx[13] && create_if_block_3(ctx);
 
 	return {
 		c() {
@@ -69653,53 +69632,19 @@ function create_if_block_2(ctx) {
 			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t3_value);
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				each_blocks[i].c();
-			}
-
+			if (if_block0) if_block0.c();
 			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить за $");
 			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t7_value);
 			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div5.textContent = "Модификации";
-			t10 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			div6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			span0.textContent = "Патроны";
-			t12 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
-			t13 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("1 шт. = $");
-			t14 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*ammoPrice*/ ctx[13]);
-			t15 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
-			t16 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-			div7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
-			t17 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить");
-			t18 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t18_value);
+			if (if_block1) if_block1.c();
+			if_block1_anchor = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.empty)();
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "ws__big svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[18](/*weapon*/ ctx[7]) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[19](/*weapon*/ ctx[7]) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "ws__side-title svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "ws__desc svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "ws__stats svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "ws__buy svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div5, "class", "ws__btn wide svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "ws__muted svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div6, "class", "ws__ammo-head svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "ws__input svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*maxAmmo*/ ctx[16][/*category*/ ctx[2]] || 100);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", input_placeholder_value = "Количество (до " + (/*maxAmmo*/ ctx[16][/*category*/ ctx[2]] || 100) + ")");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div7, "class", "ws__btn svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div7, "disabled", /*ammoN*/ ctx[11] <= 0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div8, "class", "ws__row svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div9, "class", "ws__ammo svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "ws__buy svelte-12clm9f");
 		},
 		m(target, anchor) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
@@ -69710,100 +69655,59 @@ function create_if_block_2(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div2, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t3);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t4, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
-
-			for (let i = 0; i < each_blocks.length; i += 1) {
-				if (each_blocks[i]) {
-					each_blocks[i].m(div3, null);
-				}
-			}
-
+			if (if_block0) if_block0.m(target, anchor);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div3, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t8, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div5, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t10, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div9, anchor);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div6);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span0);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, t12);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div6, span1);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t13);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t14);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, t15);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div9, div8);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, input);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*ammoCount*/ ctx[6]);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, t16);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div8, div7);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t17);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div7, t18);
+			if (if_block1) if_block1.m(target, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, if_block1_anchor, anchor);
 
 			if (!mounted) {
-				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div4, "click", /*buyWeapon*/ ctx[23]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div5, "click", /*openMods*/ ctx[25]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[37]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div7, "click", /*buyAmmo*/ ctx[24])
-				];
-
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*buyWeapon*/ ctx[24]);
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
 			if (dirty[0] & /*weapon*/ 128) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[18](/*weapon*/ ctx[7]) + ")");
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*weaponImage*/ ctx[19](/*weapon*/ ctx[7]) + ")");
 			}
 
 			if (dirty[0] & /*weapon*/ 128 && t1_value !== (t1_value = /*weapon*/ ctx[7].Name + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t1, t1_value);
-			if (dirty[0] & /*info*/ 16384 && t3_value !== (t3_value = (/*info*/ ctx[14] ? /*info*/ ctx[14].desc : "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 
-			if (dirty[0] & /*info, stats*/ 1073758208) {
-				each_value = /*stats*/ ctx[30];
-				let i;
+			if (dirty[0] & /*info, melee*/ 40960 && t3_value !== (t3_value = (/*info*/ ctx[15]
+			? /*info*/ ctx[15].desc
+			: /*melee*/ ctx[13]
+				? "Оружие ближнего боя. Лицензия на оружие не нужна."
+				: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t3, t3_value);
 
-				for (i = 0; i < each_value.length; i += 1) {
-					const child_ctx = get_each_context(ctx, each_value, i);
-
-					if (each_blocks[i]) {
-						each_blocks[i].p(child_ctx, dirty);
-					} else {
-						each_blocks[i] = create_each_block(child_ctx);
-						each_blocks[i].c();
-						each_blocks[i].m(div3, null);
-					}
+			if (/*info*/ ctx[15]) {
+				if (if_block0) {
+					if_block0.p(ctx, dirty);
+				} else {
+					if_block0 = create_if_block_4(ctx);
+					if_block0.c();
+					if_block0.m(t5.parentNode, t5);
 				}
-
-				for (; i < each_blocks.length; i += 1) {
-					each_blocks[i].d(1);
-				}
-
-				each_blocks.length = each_value.length;
+			} else if (if_block0) {
+				if_block0.d(1);
+				if_block0 = null;
 			}
 
 			if (dirty[0] & /*weapon*/ 128 && t7_value !== (t7_value = (0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*weapon*/ ctx[7].Mats) + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t7, t7_value);
-			if (dirty[0] & /*ammoPrice*/ 8192) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t14, /*ammoPrice*/ ctx[13]);
 
-			if (dirty[0] & /*category*/ 4 && input_max_value !== (input_max_value = /*maxAmmo*/ ctx[16][/*category*/ ctx[2]] || 100)) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value);
-			}
-
-			if (dirty[0] & /*category*/ 4 && input_placeholder_value !== (input_placeholder_value = "Количество (до " + (/*maxAmmo*/ ctx[16][/*category*/ ctx[2]] || 100) + ")")) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", input_placeholder_value);
-			}
-
-			if (dirty[0] & /*ammoCount*/ 64 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*ammoCount*/ ctx[6]) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*ammoCount*/ ctx[6]);
-			}
-
-			if (dirty[0] & /*ammoN, ammoPrice*/ 10240 && t18_value !== (t18_value = (/*ammoN*/ ctx[11] > 0
-			? ` · $${(0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*ammoN*/ ctx[11] * /*ammoPrice*/ ctx[13])}`
-			: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t18, t18_value);
-
-			if (dirty[0] & /*ammoN*/ 2048) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div7, "disabled", /*ammoN*/ ctx[11] <= 0);
+			if (!/*melee*/ ctx[13]) {
+				if (if_block1) {
+					if_block1.p(ctx, dirty);
+				} else {
+					if_block1 = create_if_block_3(ctx);
+					if_block1.c();
+					if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
+				}
+			} else if (if_block1) {
+				if_block1.d(1);
+				if_block1 = null;
 			}
 		},
 		d(detaching) {
@@ -69813,21 +69717,19 @@ function create_if_block_2(ctx) {
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t2);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div2);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t4);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+			if (if_block0) if_block0.d(detaching);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t5);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div3);
 			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t8);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div5);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t10);
-			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div9);
+			if (if_block1) if_block1.d(detaching);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(if_block1_anchor);
 			mounted = false;
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+			dispose();
 		}
 	};
 }
 
-// (177:16) {#if modsMode}
+// (180:16) {#if modsMode}
 function create_if_block(ctx) {
 	let if_block_anchor;
 	let if_block = /*component*/ ctx[10] && create_if_block_1(ctx);
@@ -69862,11 +69764,71 @@ function create_if_block(ctx) {
 	};
 }
 
-// (189:24) {#each stats as s}
+// (191:20) {#if info}
+function create_if_block_4(ctx) {
+	let div;
+	let each_value = /*stats*/ ctx[31];
+	let each_blocks = [];
+
+	for (let i = 0; i < each_value.length; i += 1) {
+		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+	}
+
+	return {
+		c() {
+			div = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				each_blocks[i].c();
+			}
+
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div, "class", "ws__stats svelte-12clm9f");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div, anchor);
+
+			for (let i = 0; i < each_blocks.length; i += 1) {
+				if (each_blocks[i]) {
+					each_blocks[i].m(div, null);
+				}
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*info*/ 32768 | dirty[1] & /*stats*/ 1) {
+				each_value = /*stats*/ ctx[31];
+				let i;
+
+				for (i = 0; i < each_value.length; i += 1) {
+					const child_ctx = get_each_context(ctx, each_value, i);
+
+					if (each_blocks[i]) {
+						each_blocks[i].p(child_ctx, dirty);
+					} else {
+						each_blocks[i] = create_each_block(child_ctx);
+						each_blocks[i].c();
+						each_blocks[i].m(div, null);
+					}
+				}
+
+				for (; i < each_blocks.length; i += 1) {
+					each_blocks[i].d(1);
+				}
+
+				each_blocks.length = each_value.length;
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.destroy_each)(each_blocks, detaching);
+		}
+	};
+}
+
+// (193:28) {#each stats as s}
 function create_each_block(ctx) {
 	let div2;
 	let span;
-	let t0_value = /*s*/ ctx[40].name + "";
+	let t0_value = /*s*/ ctx[41].name + "";
 	let t0;
 	let t1;
 	let div1;
@@ -69882,11 +69844,7 @@ function create_each_block(ctx) {
 			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
 			t2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
-
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", Math.min(5, /*info*/ ctx[14]
-			? /*info*/ ctx[14][/*s*/ ctx[40].key] || 0
-			: 0) * 20 + "%");
-
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", Math.min(5, /*info*/ ctx[15][/*s*/ ctx[41].key] || 0) * 20 + "%");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "ws__bar svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "ws__stat svelte-12clm9f");
@@ -69901,10 +69859,8 @@ function create_each_block(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t2);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*info*/ 16384) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", Math.min(5, /*info*/ ctx[14]
-				? /*info*/ ctx[14][/*s*/ ctx[40].key] || 0
-				: 0) * 20 + "%");
+			if (dirty[0] & /*info*/ 32768) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "width", Math.min(5, /*info*/ ctx[15][/*s*/ ctx[41].key] || 0) * 20 + "%");
 			}
 		},
 		d(detaching) {
@@ -69913,7 +69869,130 @@ function create_each_block(ctx) {
 	};
 }
 
-// (178:20) {#if component}
+// (202:20) {#if !melee}
+function create_if_block_3(ctx) {
+	let div0;
+	let t1;
+	let div4;
+	let div1;
+	let span0;
+	let t3;
+	let span1;
+	let t4;
+	let t5;
+	let t6;
+	let div3;
+	let input;
+	let input_max_value;
+	let input_placeholder_value;
+	let t7;
+	let div2;
+	let t8;
+
+	let t9_value = (/*ammoN*/ ctx[11] > 0
+	? ` · $${(0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*ammoN*/ ctx[11] * /*ammoPrice*/ ctx[14])}`
+	: "") + "";
+
+	let t9;
+	let mounted;
+	let dispose;
+
+	return {
+		c() {
+			div0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div0.textContent = "Модификации";
+			t1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			div1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			span0 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			span0.textContent = "Патроны";
+			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			span1 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("span");
+			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("1 шт. = $");
+			t5 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(/*ammoPrice*/ ctx[14]);
+			t6 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			input = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("input");
+			t7 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.space)();
+			div2 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.element)("div");
+			t8 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить");
+			t9 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t9_value);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "ws__btn wide svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(span1, "class", "ws__muted svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "ws__ammo-head svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "class", "ws__input svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "type", "number");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "min", "1");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value = /*maxAmmo*/ ctx[17][/*category*/ ctx[2]] || 100);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", input_placeholder_value = "Количество (до " + (/*maxAmmo*/ ctx[17][/*category*/ ctx[2]] || 100) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "ws__btn svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "disabled", /*ammoN*/ ctx[11] <= 0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "ws__row svelte-12clm9f");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div4, "class", "ws__ammo svelte-12clm9f");
+		},
+		m(target, anchor) {
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div0, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, t1, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.insert)(target, div4, anchor);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span0);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, t3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div1, span1);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t4);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(span1, t5);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, t6);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div4, div3);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, input);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*ammoCount*/ ctx[6]);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t7);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, div2);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t8);
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div2, t9);
+
+			if (!mounted) {
+				dispose = [
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div0, "click", /*openMods*/ ctx[26]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(input, "input", /*input_input_handler*/ ctx[38]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div2, "click", /*buyAmmo*/ ctx[25])
+				];
+
+				mounted = true;
+			}
+		},
+		p(ctx, dirty) {
+			if (dirty[0] & /*ammoPrice*/ 16384) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t5, /*ammoPrice*/ ctx[14]);
+
+			if (dirty[0] & /*category*/ 4 && input_max_value !== (input_max_value = /*maxAmmo*/ ctx[17][/*category*/ ctx[2]] || 100)) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "max", input_max_value);
+			}
+
+			if (dirty[0] & /*category*/ 4 && input_placeholder_value !== (input_placeholder_value = "Количество (до " + (/*maxAmmo*/ ctx[17][/*category*/ ctx[2]] || 100) + ")")) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(input, "placeholder", input_placeholder_value);
+			}
+
+			if (dirty[0] & /*ammoCount*/ 64 && (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.to_number)(input.value) !== /*ammoCount*/ ctx[6]) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_input_value)(input, /*ammoCount*/ ctx[6]);
+			}
+
+			if (dirty[0] & /*ammoN, ammoPrice*/ 18432 && t9_value !== (t9_value = (/*ammoN*/ ctx[11] > 0
+			? ` · $${(0,api_formatter__WEBPACK_IMPORTED_MODULE_3__.format)("money", /*ammoN*/ ctx[11] * /*ammoPrice*/ ctx[14])}`
+			: "") + "")) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_data)(t9, t9_value);
+
+			if (dirty[0] & /*ammoN*/ 2048) {
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.toggle_class)(div2, "disabled", /*ammoN*/ ctx[11] <= 0);
+			}
+		},
+		d(detaching) {
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div0);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(t1);
+			if (detaching) (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.detach)(div4);
+			mounted = false;
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.run_all)(dispose);
+		}
+	};
+}
+
+// (181:20) {#if component}
 function create_if_block_1(ctx) {
 	let div0;
 	let t0;
@@ -69942,7 +70021,7 @@ function create_if_block_1(ctx) {
 			t3 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)("Купить за $");
 			t4 = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.text)(t4_value);
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div0, "class", "ws__big svelte-12clm9f");
-			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[19](/*component*/ ctx[10].type) + ")");
+			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[20](/*component*/ ctx[10].type) + ")");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div1, "class", "ws__side-title svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div2, "class", "ws__desc svelte-12clm9f");
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.attr)(div3, "class", "ws__buy svelte-12clm9f");
@@ -69961,13 +70040,13 @@ function create_if_block_1(ctx) {
 			(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.append)(div3, t4);
 
 			if (!mounted) {
-				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*buyComponent*/ ctx[26]);
+				dispose = (0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*buyComponent*/ ctx[27]);
 				mounted = true;
 			}
 		},
 		p(ctx, dirty) {
 			if (dirty[0] & /*component*/ 1024) {
-				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[19](/*component*/ ctx[10].type) + ")");
+				(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.set_style)(div0, "background-image", "url(" + /*componentImage*/ ctx[20](/*component*/ ctx[10].type) + ")");
 			}
 
 			if (dirty[0] & /*component*/ 1024 && raw0_value !== (raw0_value = /*component*/ ctx[10].Name + "")) div1.innerHTML = raw0_value;;
@@ -70015,10 +70094,10 @@ function create_fragment(ctx) {
 	let div8;
 	let mounted;
 	let dispose;
-	let if_block0 = /*modsMode*/ ctx[9] && create_if_block_6(ctx);
+	let if_block0 = /*modsMode*/ ctx[9] && create_if_block_8(ctx);
 
 	function select_block_type(ctx, dirty) {
-		if (/*modsMode*/ ctx[9]) return create_if_block_4;
+		if (/*modsMode*/ ctx[9]) return create_if_block_6;
 		return create_else_block_3;
 	}
 
@@ -70026,7 +70105,7 @@ function create_fragment(ctx) {
 	let if_block1 = current_block_type(ctx);
 
 	function select_block_type_1(ctx, dirty) {
-		if (/*modsMode*/ ctx[9]) return create_if_block_3;
+		if (/*modsMode*/ ctx[9]) return create_if_block_5;
 		return create_else_block_1;
 	}
 
@@ -70107,8 +70186,8 @@ function create_fragment(ctx) {
 
 			if (!mounted) {
 				dispose = [
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[29]),
-					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*exit*/ ctx[28])
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(window_1, "keyup", /*onKey*/ ctx[30]),
+					(0,svelte_internal__WEBPACK_IMPORTED_MODULE_0__.listen)(div3, "click", /*exit*/ ctx[29])
 				];
 
 				mounted = true;
@@ -70123,7 +70202,7 @@ function create_fragment(ctx) {
 				if (if_block0) {
 					if_block0.p(ctx, dirty);
 				} else {
-					if_block0 = create_if_block_6(ctx);
+					if_block0 = create_if_block_8(ctx);
 					if_block0.c();
 					if_block0.m(div4, t4);
 				}
@@ -70186,6 +70265,8 @@ function create_fragment(ctx) {
 	};
 }
 
+const MELEE = 4;
+
 function instance($$self, $$props, $$invalidate) {
 	let list;
 	let weapon;
@@ -70193,6 +70274,7 @@ function instance($$self, $$props, $$invalidate) {
 	let ammoPrice;
 	let ammoN;
 	let modsMode;
+	let melee;
 	let shownComponents;
 	let component;
 
@@ -70201,7 +70283,7 @@ function instance($$self, $$props, $$invalidate) {
 		'Дробовики',
 		'Пистолеты-пулемёты',
 		'Штурмовые винтовки',
-		'Снайперские винтовки'
+		'Ближний бой'
 	];
 
 	const maxAmmo = [100, 50, 300, 250, 48];
@@ -70237,7 +70319,7 @@ function instance($$self, $$props, $$invalidate) {
 
 	window.weaponshop = (weaponJson, ammoJson) => {
 		$$invalidate(0, weapons = JSON.parse(weaponJson) || []);
-		$$invalidate(31, ammo = JSON.parse(ammoJson) || []);
+		$$invalidate(32, ammo = JSON.parse(ammoJson) || []);
 
 		$$invalidate(2, category = weapons.findIndex(c => c && c.length) >= 0
 		? weapons.findIndex(c => c && c.length)
@@ -70247,7 +70329,7 @@ function instance($$self, $$props, $$invalidate) {
 	};
 
 	window.weaponshopcomponents = (componentsJson, ctypesJson) => {
-		$$invalidate(32, components = JSON.parse(componentsJson) || []);
+		$$invalidate(33, components = JSON.parse(componentsJson) || []);
 		$$invalidate(1, ctypes = JSON.parse(ctypesJson) || []);
 		if (ctypes.length) selectComponentType(ctypes[0]);
 	};
@@ -70304,7 +70386,7 @@ function instance($$self, $$props, $$invalidate) {
 	const buyComponent = () => component && (0,api_rage__WEBPACK_IMPORTED_MODULE_1__.executeClient)('client.weaponshop.buyComponent', category, weaponIndex, component.hash);
 
 	const backFromMods = () => {
-		$$invalidate(32, components = []);
+		$$invalidate(33, components = []);
 		$$invalidate(1, ctypes = []);
 	};
 
@@ -70345,11 +70427,11 @@ function instance($$self, $$props, $$invalidate) {
 		}
 
 		if ($$self.$$.dirty[0] & /*weapon*/ 128) {
-			$: $$invalidate(14, info = weapon ? _assets_js_weaponsinfo__WEBPACK_IMPORTED_MODULE_5__.default[weapon.Name] : null);
+			$: $$invalidate(15, info = weapon ? _assets_js_weaponsinfo__WEBPACK_IMPORTED_MODULE_5__.default[weapon.Name] : null);
 		}
 
-		if ($$self.$$.dirty[0] & /*category*/ 4 | $$self.$$.dirty[1] & /*ammo*/ 1) {
-			$: $$invalidate(13, ammoPrice = Number(ammo[category]) || 0);
+		if ($$self.$$.dirty[0] & /*category*/ 4 | $$self.$$.dirty[1] & /*ammo*/ 2) {
+			$: $$invalidate(14, ammoPrice = Number(ammo[category]) || 0);
 		}
 
 		if ($$self.$$.dirty[0] & /*ammoCount, category*/ 68) {
@@ -70360,11 +70442,15 @@ function instance($$self, $$props, $$invalidate) {
 			$: $$invalidate(9, modsMode = ctypes.length > 0);
 		}
 
-		if ($$self.$$.dirty[0] & /*componentType*/ 16 | $$self.$$.dirty[1] & /*components*/ 2) {
+		if ($$self.$$.dirty[0] & /*category*/ 4) {
+			$: $$invalidate(13, melee = category === MELEE);
+		}
+
+		if ($$self.$$.dirty[0] & /*componentType*/ 16 | $$self.$$.dirty[1] & /*components*/ 4) {
 			$: $$invalidate(12, shownComponents = components.map((c, index) => ({ ...c, index })).filter(c => c.type == componentType));
 		}
 
-		if ($$self.$$.dirty[0] & /*componentIndex*/ 32 | $$self.$$.dirty[1] & /*components*/ 2) {
+		if ($$self.$$.dirty[0] & /*componentIndex*/ 32 | $$self.$$.dirty[1] & /*components*/ 4) {
 			$: $$invalidate(10, component = components[componentIndex] || null);
 		}
 	};
@@ -70383,6 +70469,7 @@ function instance($$self, $$props, $$invalidate) {
 		component,
 		ammoN,
 		shownComponents,
+		melee,
 		ammoPrice,
 		info,
 		categoryNames,

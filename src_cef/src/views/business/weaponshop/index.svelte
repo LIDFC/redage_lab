@@ -8,7 +8,9 @@
     import { itemsInfo, ItemId } from 'json/itemsInfo'
     import weaponsinfo from './assets/js/weaponsinfo'
 
-    const categoryNames = ['Пистолеты', 'Дробовики', 'Пистолеты-пулемёты', 'Штурмовые винтовки', 'Снайперские винтовки'];
+    // Индекс 4 — «Ближний бой» (сервер Core/Businesses.cs gunsCat, MeleeCategory): без лицензии, патронов и модификаций
+    const categoryNames = ['Пистолеты', 'Дробовики', 'Пистолеты-пулемёты', 'Штурмовые винтовки', 'Ближний бой'];
+    const MELEE = 4;
     const maxAmmo = [100, 50, 300, 250, 48];
 
     // Тип модификации → предмет-обвес (для картинки и названия раздела)
@@ -73,6 +75,7 @@
     $: ammoPrice = Number(ammo[category]) || 0;
     $: ammoN = Math.min(Math.max(0, Math.floor(Number(ammoCount) || 0)), maxAmmo[category] || 100);
     $: modsMode = ctypes.length > 0;
+    $: melee = category === MELEE;
     $: shownComponents = components.map((c, index) => ({ ...c, index })).filter(c => c.type == componentType);
     $: component = components[componentIndex] || null;
 
@@ -184,16 +187,19 @@
                 {:else if weapon}
                     <div class="ws__big" style="background-image: url({weaponImage(weapon)})"></div>
                     <div class="ws__side-title">{weapon.Name}</div>
-                    <div class="ws__desc">{info ? info.desc : ""}</div>
-                    <div class="ws__stats">
-                        {#each stats as s}
-                            <div class="ws__stat">
-                                <span>{s.name}</span>
-                                <div class="ws__bar"><div style="width: {Math.min(5, info ? info[s.key] || 0 : 0) * 20}%"></div></div>
-                            </div>
-                        {/each}
-                    </div>
+                    <div class="ws__desc">{info ? info.desc : (melee ? "Оружие ближнего боя. Лицензия на оружие не нужна." : "")}</div>
+                    {#if info}
+                        <div class="ws__stats">
+                            {#each stats as s}
+                                <div class="ws__stat">
+                                    <span>{s.name}</span>
+                                    <div class="ws__bar"><div style="width: {Math.min(5, info[s.key] || 0) * 20}%"></div></div>
+                                </div>
+                            {/each}
+                        </div>
+                    {/if}
                     <div class="ws__buy" on:click={buyWeapon}>Купить за ${format("money", weapon.Mats)}</div>
+                    {#if !melee}
                     <div class="ws__btn wide" on:click={openMods}>Модификации</div>
 
                     <div class="ws__ammo">
@@ -206,6 +212,7 @@
                             <div class="ws__btn" class:disabled={ammoN <= 0} on:click={buyAmmo}>Купить{ammoN > 0 ? ` · $${format("money", ammoN * ammoPrice)}` : ""}</div>
                         </div>
                     </div>
+                    {/if}
                 {/if}
             </div>
         </div>

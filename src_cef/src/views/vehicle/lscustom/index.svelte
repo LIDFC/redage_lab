@@ -101,30 +101,20 @@
         });
     });
 
+    // 10 делений: доля от максимума (с полным тюнингом), каждое деление заполняется отдельно
     const GetSpec = (num, max) => {
-        
-        let step;
-        let array = [];
-
-        let percentArray = [];
-        for (step = 1; step <= 10; step++) {
-            let progress = 0;
-            if (num >= (step * 10)) progress = 100;
-            else if (num < (step * 10) && num >= (10 * (step - 1))) progress = num - (((step - 1) * 10) * 100 / max);
-            percentArray.push (progress);
-        }
-        
-        percentArray.forEach((step, index) => {
-            array.push (`<li class="sort" style="background: linear-gradient(to right, #FFFFFF ${step}%, #434A5B 0%)"></li>`)
-        })    
-        return percentArray
+        const pct = max > 0 ? Math.min(100, Math.max(0, Number(num) * 100 / max)) : 0;
+        const percentArray = [];
+        for (let step = 1; step <= 10; step++)
+            percentArray.push (Math.min(100, Math.max(0, (pct - (step - 1) * 10) * 10)));
+        return percentArray;
     }
 
     const onSelectCategory = (index) => {
         selectCategory = index;
         lists = [];
         color = false;
-        colorListsId = false;
+        colorListsId = 0;
         executeClient ('client.custom.category', category[index].category);
     }
 

@@ -19,7 +19,7 @@
     }
 </script>
 
-<li class={"listitems " + (selectItem !== id || "active")} id={id} on:click={onBuy} on:mouseenter={e => onSelect (id)}>
+<li class="listitems" class:active={selectItem === id} id={id} on:click={onBuy} on:mouseenter={e => onSelect (id)}>
     <i class={'icon ilsc-' + icon}></i>
     <div class="flex un">
         {#if lvl}
